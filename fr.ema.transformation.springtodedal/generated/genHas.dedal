@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="Generated Diagram">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="SpringModel - http://www.xtext.org/spring/SpringConfigDslConfiguration">
+    <configComponents name="&quot;AdjustableLamp&quot;" id="_E6YU4Q2gEeizy5Mvhx0eRQ"/>
+    <configComponents name="&quot;Clock&quot;" id="_E6aKEA2gEeizy5Mvhx0eRQ"/>
+    <configComponents name="&quot;Orchestrator&quot;" id="_E6axIA2gEeizy5Mvhx0eRQ"/>
+    <configConnections refID="_E6d0cA2gEeizy5Mvhx0eRQ" clientClassElem="_E6axIA2gEeizy5Mvhx0eRQ" serverClassElem="_E6YU4Q2gEeizy5Mvhx0eRQ"/>
+    <configConnections refID="_E6r24A2gEeizy5Mvhx0eRQ" clientClassElem="_E6axIA2gEeizy5Mvhx0eRQ" serverClassElem="_E6aKEA2gEeizy5Mvhx0eRQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="SpringModel - http://www.xtext.org/spring/SpringConfigDslAssembly">
+    <assmComponents name="&quot;lampDesk&quot;" id="_E6tsEA2gEeizy5Mvhx0eRQ" instantiates="_E6YU4Q2gEeizy5Mvhx0eRQ"/>
+    <assmComponents name="&quot;lampSitting&quot;" id="_E6uTIA2gEeizy5Mvhx0eRQ" instantiates="_E6YU4Q2gEeizy5Mvhx0eRQ"/>
+    <assmComponents name="&quot;clock1&quot;" id="_E6uTIQ2gEeizy5Mvhx0eRQ" instantiates="_E6aKEA2gEeizy5Mvhx0eRQ"/>
+    <assmComponents name="&quot;orchestrator1&quot;" id="_E6u6MA2gEeizy5Mvhx0eRQ" instantiates="_E6axIA2gEeizy5Mvhx0eRQ"/>
+    <assemblyConnections refID="_E6wIUA2gEeizy5Mvhx0eRQ" clientInstElem="_E6u6MA2gEeizy5Mvhx0eRQ" serverInstElem="_E6tsEA2gEeizy5Mvhx0eRQ"/>
+    <assemblyConnections refID="_E6wIUQ2gEeizy5Mvhx0eRQ" clientInstElem="_E6u6MA2gEeizy5Mvhx0eRQ" serverInstElem="_E6uTIA2gEeizy5Mvhx0eRQ"/>
+    <assemblyConnections refID="_E6wvYA2gEeizy5Mvhx0eRQ" clientInstElem="_E6u6MA2gEeizy5Mvhx0eRQ" serverInstElem="_E6uTIQ2gEeizy5Mvhx0eRQ"/>
+  </architectureDescriptions>
+</dedal:DedalDiagram>

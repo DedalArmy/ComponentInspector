@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Springtodedal
+Bundle-SymbolicName: fr.ema.transformation.springtodedal
+Bundle-Version: 1.0.0.qualifier

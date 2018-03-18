@@ -1,0 +1,430 @@
+transformation springToDedal(in spring : SpringModel, out dedal : DedalModel);
+
+
+modeltype SpringModel "strict" uses springConfigDsl('http://www.xtext.org/spring/SpringConfigDsl');
+modeltype DedalModel "strict" uses dedal('http://www.dedal.fr/metamodel');
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//																				//
+//								MAIN											//
+//																				//
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+
+
+main() {
+	spring.rootObjects()[SpringProject]->map toDedalDiagram();
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//																				//
+//								MAPPINGS										//
+//																				//
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////////
+//						DedalDiagram							//
+//////////////////////////////////////////////////////////////////
+
+mapping SpringModel::SpringProject::toDedalDiagram() : dedal::DedalDiagram {
+	name := "Generated Diagram";
+//	architectureDescriptions += self.configurations.map toDedalAssembly();
+//	name := "DefaultName " + self->size().toString();
+//	if(this.oclIsTypeOf(SpringModel::SpringProject))
+//	{
+//		name := "Generated Diagram"
+//	}
+//	else
+//	{
+//		name:=self.metaClassName();
+//	}
+//	name := getDiagramName(self);
+	architectureDescriptions := self.configurations.getArchitectureDescriptions();
+}
+
+//mapping OrderedSet(SpringModel::Configuration)::toDedalDiagram() : dedal::DedalDiagram {
+//	name := getDiagramName(self);
+//	architectureDescriptions := self.getArchitectureDescriptions();
+//}
+
+
+//////////////////////////////////////////////////////////////////
+//						DedalConfiguration						//
+//////////////////////////////////////////////////////////////////
+
+mapping SpringModel::Configuration::toDedalConfiguration() : DedalModel::Configuration {
+	if(self.alias->notEmpty())
+	{
+		result.name := self.alias->first().alias + "Configuration";
+	}
+	else
+	{
+		result.name := spring.toString() + "Configuration";
+	};
+	configComponents := self.getConfigComponents();
+	configConnections := self.getConfigConnections();
+	//TODO
+}
+
+
+//////////////////////////////////////////////////////////////////
+//						DedalAssembly							//
+//////////////////////////////////////////////////////////////////
+
+mapping SpringModel::Configuration::toDedalAssembly() : DedalModel::Assembly {
+	name:="defaultName";
+	if(self.alias->notEmpty())
+	{
+		result.name := self.alias->first().alias + "Assembly";
+	}
+	else
+	{
+		result.name := spring.toString() + "Assembly";
+	};
+	assmComponents := self.getAssmComponents();
+	assemblyConnections := self.getAssemblyConnections();
+	//TODO
+}
+
+
+//////////////////////////////////////////////////////////////////
+//						CompInstance							//
+//////////////////////////////////////////////////////////////////
+
+mapping SpringModel::Component::toCompInstance() : DedalModel::CompInstance {
+	if(self.name.<>(""))
+	{
+		name := self.name
+	}
+	else if (self.names.length().<>(0))
+	{
+		name := self.names->at(0)
+	}
+	else
+	{
+		if(self._class._class.oclIsTypeOf(SpringModel::Class))
+		{
+			name := self._class._class.oclAsType(SpringModel::Class).classname
+		}
+		else
+		{
+			name := self._class._class.oclAsType(SpringModel::Factory).factoryBean.name;
+		}
+	};
+	var instanciatedCompClass := resolveone(compClass:dedal::CompClass | compClass.name.=(self._class.getComponentClassName()));
+	instantiates := instanciatedCompClass;
+}
+
+
+//////////////////////////////////////////////////////////////////
+//						CompClass								//
+//////////////////////////////////////////////////////////////////
+
+mapping SpringModel::Component::toCompClass() : DedalModel::CompClass {
+	var tempname : oclstdlib::String;
+	if(self._class._class.oclIsTypeOf(SpringModel::Class))
+	{
+		tempname := self._class._class.oclAsType(SpringModel::Class).classname;
+	}
+	else
+	{
+		tempname := self._class._class.oclAsType(SpringModel::Factory).factoryBean.name;
+	};
+	name := tempname;
+}
+
+
+//////////////////////////////////////////////////////////////////
+//						ComponentClass							//
+//////////////////////////////////////////////////////////////////
+
+mapping SpringModel::CreationMethod::toComponentClass() : DedalModel::CompClass {
+	var compClass : DedalModel::CompClass;
+	var tempname : String;
+	if(self._class.oclIsTypeOf(SpringModel::Class))
+	{
+		tempname := self._class.oclAsType(SpringModel::Class).classname;
+		compClass := self.resolveone (compC:DedalModel::CompClass | compC.name = tempname);
+		if(compClass = null)
+			name := tempname;
+	}
+	else
+	{
+		name := self._class.oclAsType(SpringModel::Factory).factoryBean.name;
+	}
+}
+
+
+//////////////////////////////////////////////////////////////////
+//						AssemblyConnection						//
+//////////////////////////////////////////////////////////////////
+
+mapping SpringModel::Component::toAssemblyConnection(r:SpringModel::Reference) : DedalModel::InstConnection {
+	
+	var source := self.name;
+	var sourceRef : CompInstance;
+	sourceRef := resolveone(compInst:DedalModel::CompInstance | compInst.name=source);
+	var target := r.ref.name;
+	var targetRef : CompInstance;
+	targetRef := r.ref.map toCompInstance();
+	clientInstElem := sourceRef;
+	serverInstElem := targetRef;
+}
+
+
+//////////////////////////////////////////////////////////////////
+//						ConfigConnection						//
+//////////////////////////////////////////////////////////////////
+
+mapping SpringModel::Component::toConfigConnection(r:SpringModel::Reference) : DedalModel::ClassConnection {
+	
+	var source := self._class.getComponentClassName();
+	var sourceRef : CompClass;
+	sourceRef := resolveone(compClass:DedalModel::CompClass | compClass.name=source);
+	var target := r.ref.name;
+	var targetRef : CompClass;
+	targetRef := r.ref.map toCompClass();
+	clientClassElem := sourceRef;
+	serverClassElem := targetRef;
+	
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//																				//
+//								QUERIES											//
+//																				//
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+//////////////////////////////////////////////////////////////////
+//						getDiagramName							//
+//////////////////////////////////////////////////////////////////
+
+query getDiagramName(configs : Set(SpringModel::Configuration)) : String {
+	var name := "DefaultName";
+	if(configs = null)
+	{
+		name := "null";
+	}
+	else
+	{
+		name := configs->size().toString() + "_in_it";
+	};
+	configs -> forEach(c)
+	{
+		name := "GeneratedDiagram";
+	};
+	
+	return name;
+}
+
+
+//////////////////////////////////////////////////////////////////
+//						getArchitectureDescriptions				//
+//////////////////////////////////////////////////////////////////
+
+query SpringModel::Configuration::getArchitectureDescriptions() : OrderedSet(DedalModel::ArchitectureDescription) {
+	var architectureDescriptions : OrderedSet(DedalModel::ArchitectureDescription);
+	architectureDescriptions += self.map toDedalConfiguration();
+	architectureDescriptions += self.map toDedalAssembly();
+	return architectureDescriptions;
+}
+
+
+//////////////////////////////////////////////////////////////////
+//						getAssmComponents						//
+//////////////////////////////////////////////////////////////////
+
+query SpringModel::Configuration::getAssmComponents() : Sequence(DedalModel::CompInstance) {
+	var assmComponents : Sequence(DedalModel::CompInstance);
+	assmComponents := self.components -> map toCompInstance();
+	return assmComponents;
+}
+
+
+//////////////////////////////////////////////////////////////////
+//						getConfigComponents						//
+//////////////////////////////////////////////////////////////////
+
+query SpringModel::Configuration::getConfigComponents() : Sequence(DedalModel::CompClass) {
+	var configComponents : Sequence(DedalModel::CompClass);
+	self.components->forEach(c)
+	{
+		var s := c._class.getComponentClassName();
+		var cc := resolveone(compClass:DedalModel::CompClass | compClass.name = c._class.getComponentClassName());
+		if(cc = null)
+			configComponents += c.map toCompClass();
+	};
+	return configComponents;
+}
+
+
+//////////////////////////////////////////////////////////////////
+//						getComponentClass						//
+//////////////////////////////////////////////////////////////////
+
+query CreationMethod::getComponentClassName() : String {
+	var name : String;
+	if(self._class.oclIsTypeOf(SpringModel::Class))
+	{
+		name := self._class.oclAsType(SpringModel::Class).classname;
+	}
+	else
+	{
+		name := self._class.oclAsType(SpringModel::Factory).factoryBean.name.toString();
+	};
+	return name;
+}
+
+
+//////////////////////////////////////////////////////////////////
+//						getAssemblyConnections					//
+//////////////////////////////////////////////////////////////////
+
+query SpringModel::Configuration::getAssemblyConnections() : Sequence(DedalModel::InstConnection) {
+	var assemblyConnections : Sequence(DedalModel::InstConnection);
+	self.components->forEach(c)
+	{
+		 assemblyConnections += c.getInstConnections()
+	};
+	return assemblyConnections;
+}
+
+
+//////////////////////////////////////////////////////////////////
+//						getConfigConnections					//
+//////////////////////////////////////////////////////////////////
+
+query SpringModel::Configuration::getConfigConnections() : Sequence(DedalModel::ClassConnection) {
+	var configConnections : Sequence(DedalModel::ClassConnection);
+	self.components->forEach(c)
+	{
+		 configConnections += c.getClassConnections()
+	};
+	return configConnections;
+}
+
+
+//////////////////////////////////////////////////////////////////
+//						getInstConnections						//
+//////////////////////////////////////////////////////////////////
+
+query SpringModel::Component::getInstConnections() : Sequence(DedalModel::InstConnection) {
+	var connections : Sequence(DedalModel::InstConnection);
+	self.features->forEach(f)
+	{
+		if(f.artefact.oclIsTypeOf(SpringModel::Reference))
+		{
+			connections += self.map toAssemblyConnection(f.artefact.oclAsType(SpringModel::Reference));
+		}
+		else 
+		{
+			if(f.artefact.oclIsKindOf(SpringModel::Collection))
+			{
+				(f.artefact.oclAsType(SpringModel::sSet)).artefacts->forEach(f2)
+				{
+					if(f2.oclIsTypeOf(SpringModel::Reference))
+					{
+						connections += self.map toAssemblyConnection(f2.oclAsType(SpringModel::Reference));
+					}
+				}
+			}
+		}
+	};
+	return connections;
+}
+
+
+//////////////////////////////////////////////////////////////////
+//						getClassConnections						//
+//////////////////////////////////////////////////////////////////
+
+query SpringModel::Component::getClassConnections() : Sequence(DedalModel::ClassConnection) {
+	var connections : Sequence(DedalModel::ClassConnection);
+	self.features->forEach(f)
+	{
+		if(f.artefact.oclIsTypeOf(SpringModel::Reference))
+		{
+			var tempConnection : DedalModel::ClassConnection;
+			var exists : Boolean;
+			exists := false;
+			connections->forEach(c)
+			{
+//				if(c.clientClassElem.name.=(tempConnection.clientClassElem.name)
+//					and c.serverClassElem.name.=(tempConnection.serverClassElem.name))
+				if(c.clientClassElem.name.=(self._class.getComponentClassName())
+					and c.serverClassElem.name.=(f.artefact.oclAsType(SpringModel::Reference).ref._class.getComponentClassName()))
+				{
+					exists := true;
+				};
+			};
+			if(not exists)
+			{	
+				tempConnection := self.map toConfigConnection(f.artefact.oclAsType(SpringModel::Reference));
+				connections += tempConnection;
+			}
+			else
+			{
+			 	tempConnection := null;
+			}
+		}
+		else 
+		{
+			if(f.artefact.oclIsKindOf(SpringModel::Collection))
+			{
+				(f.artefact.oclAsType(SpringModel::sSet)).artefacts->forEach(f2)
+				{
+					if(f2.oclIsTypeOf(SpringModel::Reference))
+					{
+						var tempConnection : DedalModel::ClassConnection;
+						var exists : Boolean;
+						exists := false;
+						connections->forEach(c)
+						{
+//							if(c.clientClassElem.name.=(tempConnection.clientClassElem.name)
+//								and c.serverClassElem.name.=(tempConnection.serverClassElem.name))
+							var clientName = self._class.getComponentClassName();
+							var serverName = f2.oclAsType(SpringModel::Reference).ref._class.getComponentClassName();
+							if(c.clientClassElem.name.=(clientName)
+								and c.serverClassElem.name.=(serverName))
+							{
+								exists := true;
+							};
+						};
+						if(not exists)
+						{
+							tempConnection := self.map toConfigConnection(f2.oclAsType(SpringModel::Reference));
+							connections += tempConnection;
+						}
+						else
+						{
+						 	tempConnection := null;
+						}
+					}
+				}
+			}
+		}
+	};
+	return connections;
+}
