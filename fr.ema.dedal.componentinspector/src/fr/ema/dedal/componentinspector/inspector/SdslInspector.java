@@ -61,6 +61,7 @@ public class SdslInspector {
 			// input and output and execution context -> ChangeTheWorld(in, out)
 			// Remark: variable arguments count is supported
 			ExecutionDiagnostic executorResult = executor.execute(context, input, output);
+			
 			if(logger.isInfoEnabled())
 				logger.info(executorResult.getMessage());
 			// check the result for success

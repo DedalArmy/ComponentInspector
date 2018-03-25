@@ -29,15 +29,15 @@ public class FolderLoader {
 		List<URI> uris = new ArrayList<>();
 		Stream<Path> stream = Files.list(path);
 		stream.forEach(p -> {
-			try {
-				Stream<Path> stream2 = Files.list(p.toAbsolutePath());
-				stream2.forEach(p2 -> {
-					uris.add(p2.toUri());
-				});
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			uris.add(p.toUri());
+//			try {
+//				Stream<Path> stream2 = Files.list(p.toAbsolutePath());
+//				stream2.forEach(p2 -> {
+//					uris.add(p2.toUri());
+//				});
+//			} catch (IOException e) {
+//				logger.error(e.getMessage(), e);
+//			}
 		});
 		stream.close();
 		return uris;

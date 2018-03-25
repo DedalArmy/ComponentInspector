@@ -80,9 +80,10 @@ public class Main {
 		}		
 		
 		DedalDiagram dd = null;
-		if(!"".equals(libPath))
-			dd = Explorer.generate(libPath);
-		else if(!("".equals(singlePath) || "".equals(sdslPath)))
+//		if(!"".equals(libPath))
+//			dd = Explorer.generate(libPath);
+//		else 
+			if(!("".equals(singlePath) || "".equals(sdslPath)))
 			dd = Explorer.generate(singlePath, sdslPath);
 		else
 			logger.error("The Dedal diagram could not be generated due to path issues.");

@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
 import dedal.Assembly;
+import dedal.Attribute;
 import dedal.ClassConnection;
 import dedal.CompClass;
 import dedal.CompInstance;
@@ -27,6 +28,7 @@ import dedal.DedalFactory;
 import dedal.InstConnection;
 import dedal.Interaction;
 import dedal.Interface;
+import dedal.InterfaceType;
 import dedal.Repository;
 import dedal.RoleConnection;
 import dedal.Specification;
@@ -44,6 +46,7 @@ public class JarInspector {
 	JarLoader jarLoader = null;
 	Map<URI, List<Class<?>>> jarMapping = null;
 	Map<CompClass, List<CompRole>> typeHierarchy = null;
+	Map<CompClass, Map<Interface, Class<?>>> compIntToType = null;
 	DedalFactory factory;
 
 	/**
@@ -56,6 +59,8 @@ public class JarInspector {
 		super();
 		this.jarLoader = jarLoader;
 		this.jarMapping = this.jarLoader.loadClasses();
+		this.compIntToType = new HashMap<>();
+		this.typeHierarchy = new HashMap<>();
 		factory = DedalFactoryImpl.init();
 	}
 
@@ -87,31 +92,6 @@ public class JarInspector {
 		this.jarMapping = jarMapping;
 	}
 
-	public void generate(DedalDiagram dedalDiagram) {
-
-		Repository repo = new DedalFactoryImpl().createRepository();
-		repo.setName("genRepo");
-		dedalDiagram.getRepositories().add(repo);
-		this.jarMapping.forEach((uriKey, classList) -> 
-		{
-			Configuration config = factory.createConfiguration();
-			config.setName(new File(uriKey).getName().replace('.', '_')+"_config");
-			dedalDiagram.getArchitectureDescriptions().add(config);
-
-			if(logger.isInfoEnabled())
-				logger.info("URL : " + uriKey);
-
-			classList.forEach(c -> 
-			{
-				if(!(c.isInterface()||c.isEnum()||Modifier.isAbstract(c.getModifiers())))
-				{
-					ClassInspector ci = new ClassInspector(c, dedalDiagram, config, repo);
-					ci.generateFromScratch();
-				}			
-			});
-		});
-	}
-
 	/**
 	 * 
 	 * @param dedalDiagram
@@ -126,7 +106,6 @@ public class JarInspector {
 
 		this.jarMapping.forEach((uriKey, classList) -> 
 		{
-			typeHierarchy = new HashMap<>();
 			Specification spec = factory.createSpecification();
 			spec.setName(new File(uriKey).getName().replace('.', '_')+"_spec");
 			Configuration config = factory.createConfiguration();
@@ -144,11 +123,10 @@ public class JarInspector {
 			if(logger.isInfoEnabled())
 				logger.info("URL : " + uriKey);
 
-			fillDiagram(dedalDiagram, repo, classList, config);
+			mapComponentClasses(dedalDiagram, repo, classList, config);
+			setConfigConnections(config);
+			
 			instantiateInteractions(asm);
-
-
-			setConfigConnectionsFromExisting(config);
 			setAssmConnections(asm, config.getConfigConnections());
 
 			setSpecificationFromConfiguration(spec, config);
@@ -319,54 +297,37 @@ public class JarInspector {
 	/**
 	 * @param config
 	 */
-	private void setConfigConnectionsFromExisting(Configuration config) {
+	private void setConfigConnections(Configuration config) {
 		config.getConfigConnections().forEach(con -> {
 			CompClass client = con.getClientClassElem();
 			CompClass server = con.getServerClassElem();
-			Map<Interaction, Interaction> interactionMatching = new HashMap<>();
-			client.getCompInterfaces().forEach(ci1 ->
-			server.getCompInterfaces().forEach(ci2 -> {
-				if(ci1 instanceof Interface && ci2 instanceof Interface)
+			
+			String attrName = con.getProperty();
+			Attribute tempAttr = new DedalFactoryImpl().createAttribute();
+			for(Attribute a : client.getAttributes()) {
+				if(a.getName() == attrName)
 				{
-					Interface tmpInt1 = (Interface) ci1;
-					Interface tmpInt2 = (Interface) ci2;
-					if(tmpInt1.getType().getName().equals(tmpInt2.getType().getName()))
-					{
-						interactionMatching.put(ci1, ci2);
-					}
+					tempAttr = a;
+					break;
 				}
-			})
-					);
-			connectConfigInteractions(config, con, client, server, interactionMatching);
-		});
-	}
-
-	/**
-	 * @param config
-	 * @param con
-	 * @param client
-	 * @param server
-	 * @param interactionMatching
-	 */
-	private void connectConfigInteractions(Configuration config, ClassConnection con, CompClass client, CompClass server,
-			Map<Interaction, Interaction> interactionMatching) {
-		Boolean multiple = (interactionMatching.size()>1)? true : false;
-		int remaining = interactionMatching.size();
-		interactionMatching.forEach((i1,i2) -> {
-			if(multiple && remaining > 1)
-			{
-				ClassConnection cc = new ClassConnectionImpl();
-				cc.setClientClassElem(client);
-				cc.setServerClassElem(server);
-				cc.setClientIntElem(i1);
-				cc.setClientIntElem(i2);
-				config.getConfigConnections().add(cc);
 			}
-			else
-			{
-				con.setClientIntElem(i1);
-				con.setServerIntElem(i2);
-			}
+			final Attribute attr = tempAttr; //to be used in the following loop, attr must be final.
+			
+			Map<Interface, Class<?>> interfaceToClassMapServer = this.compIntToType.get(client);
+			interfaceToClassMapServer.forEach((key, clazz)  -> {
+				if(clazz.getCanonicalName().equals(attr.getType()))
+				{
+					con.setClientIntElem(key);
+				}
+			});
+			final Class<?> clientClass = (this.compIntToType.get(client)).get(con.getClientIntElem());
+			server.getCompInterfaces().forEach(ci -> {
+				Class<?> ciClass = (this.compIntToType.get(server)).get(ci);
+				if(clientClass.isAssignableFrom(ciClass))
+				{
+					con.setServerIntElem(ci);
+				}
+			});
 		});
 	}
 
@@ -375,14 +336,14 @@ public class JarInspector {
 	 */
 	private void instantiateInteractions(Assembly asm) {
 		asm.getAssmComponents().forEach(c ->
-		c.getInstantiates().getCompInterfaces().forEach(ci -> {
-			Interaction tempInteraction = EcoreUtil.copy(ci);
-			tempInteraction.setName(ci.getName() + "_" + c.getName());
-			if(ci instanceof Interface)
-				((Interface) tempInteraction).setInstantiates(((Interface) ci));
-			c.getCompInterfaces().add(tempInteraction);
-		})
-				);
+			c.getInstantiates().getCompInterfaces().forEach(ci -> {
+				Interaction tempInteraction = EcoreUtil.copy(ci);
+				tempInteraction.setName(ci.getName() + "_" + c.getName());
+				if(ci instanceof Interface)
+					((Interface) tempInteraction).setInstantiates(((Interface) ci));
+				c.getCompInterfaces().add(tempInteraction);
+			})
+		);
 	}
 
 	/**
@@ -391,7 +352,7 @@ public class JarInspector {
 	 * @param classList
 	 * @param config
 	 */
-	private void fillDiagram(DedalDiagram dedalDiagram, Repository repo, List<Class<?>> classList, Configuration config) {
+	private void mapComponentClasses(DedalDiagram dedalDiagram, Repository repo, List<Class<?>> classList, Configuration config) {
 //		while(!config.getConfigComponents().isEmpty())
 		for(CompClass tempCompClass : config.getConfigComponents())
 		{
@@ -417,8 +378,9 @@ public class JarInspector {
 						logger.info("className : " + className);
 					}
 					ClassInspector ci = new ClassInspector(c, dedalDiagram, config, repo);
-					ci.generateFromExistingDeployment(tempCompClass);
-					typeHierarchy.put(tempCompClass, ci.calculateSuperTypes());
+					ci.mapComponentClass(tempCompClass);
+					this.compIntToType.put(tempCompClass, ci.getInterfaceToClassMap());
+					this.typeHierarchy.put(tempCompClass, ci.calculateSuperTypes());
 					logger.info(typeHierarchy);
 				}			
 			}

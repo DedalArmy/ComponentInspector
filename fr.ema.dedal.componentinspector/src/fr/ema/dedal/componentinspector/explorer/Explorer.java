@@ -1,15 +1,11 @@
 package fr.ema.dedal.componentinspector.explorer;
 
 import java.io.IOException;
-import java.net.URI;
 import java.net.URL;
 import java.nio.file.Paths;
-import java.util.List;
-
 import org.apache.log4j.Logger;
 
 import dedal.DedalDiagram;
-import fr.ema.dedal.componentinspector.classloader.FolderLoader;
 import fr.ema.dedal.componentinspector.classloader.JarLoader;
 import fr.ema.dedal.componentinspector.inspector.JarInspector;
 import dedal.impl.DedalFactoryImpl;
@@ -29,36 +25,6 @@ public class Explorer {
 	 * @throws IOException
 	 * @throws ClassNotFoundException 
 	 */
-	public static DedalDiagram generate(String path) {
-		
-		
-		try {
-			/**
-			 * we instanciate a new Dedal diagram that we will return as the result of this method
-			 */
-			DedalDiagram result = new DedalFactoryImpl().createDedalDiagram();
-			result.setName("genDedalDiag");
-			
-			List<URI> listUri = FolderLoader.loadFolder(Paths.get(path));
-			URL[] urlToLoad = new URL[listUri.size()];
-			for (int i = 0; i < urlToLoad.length; i++) {
-				urlToLoad[i]=listUri.get(i).toURL();
-			}
-			JarLoader jarloader = new JarLoader(urlToLoad);
-			
-			/*
-			 * let's extract some component classes
-			 */
-			JarInspector jarInspector = new JarInspector(jarloader);
-			jarInspector.generate(result);
-			return result;
-			
-		} catch (IOException e) {
-			logger.error(e.getMessage(), e);
-			return null;
-		}
-	}
-
 	public static DedalDiagram generate(String singlePath, String sdslPath) {
 		try 
 		{

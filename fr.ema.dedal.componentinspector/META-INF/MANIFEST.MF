@@ -24,4 +24,6 @@ Require-Bundle: fr.ema.dedal.metamodel;bundle-version="0.1.0",
  org.eclipse.equinox.registry,
  org.xtext.spring.springConfig;bundle-version="1.0.0",
  org.xtext.spring.springConfig.edit;bundle-version="1.0.0",
- org.xtext.spring.springConfig.ide;bundle-version="1.0.0"
+ org.xtext.spring.springConfig.ide;bundle-version="1.0.0",
+ org.eclipse.core.runtime;bundle-version="3.13.0"
+Import-Package: org.eclipse.osgi.service.debug;version="1.2.0"

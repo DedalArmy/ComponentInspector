@@ -5,7 +5,9 @@ package fr.ema.dedal.componentinspector.inspector;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 import dedal.Configuration;
@@ -24,13 +26,12 @@ import dedal.impl.DedalFactoryImpl;
 public class InterfaceInspector {
 
 	static final Logger logger = Logger.getLogger(InterfaceInspector.class);
+	private Map<Interface, Class<?>> interfaceToClassMap;
 
 	private Class<?> objectToInspect;
 	private DedalDiagram dedaldiagram;
 	private Configuration configuration;
 	private Repository repository;
-	private List<Method> methods = null;
-	private List<Method> exploredMethods = null;
 
 	/**
 	 * @param config 
@@ -39,11 +40,10 @@ public class InterfaceInspector {
 	 */
 	public InterfaceInspector(Class<?> object, DedalDiagram dd, Configuration config, Repository repo) {
 		this.objectToInspect = object;
-		this.methods = new ArrayList<>();
-		this.exploredMethods = new ArrayList<>();
 		this.dedaldiagram = dd;
 		this.configuration = config;
 		this.repository = repo;
+		this.setInterfaceToClassMap(new HashMap<>());
 	}
 
 	/**
@@ -104,14 +104,6 @@ public class InterfaceInspector {
 
 	/**
 	 * 
-	 * @param methods
-	 */
-	public void setMethods(List<Method> methods) {
-		this.methods = methods;
-	}
-
-	/**
-	 * 
 	 * @return
 	 */
 	public String getName() {
@@ -135,23 +127,17 @@ public class InterfaceInspector {
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @return the interfaceToClassMap
 	 */
-	public List<Method> getMethods() {
-		return methods;
+	public Map<Interface, Class<?>> getInterfaceToClassMap() {
+		return interfaceToClassMap;
 	}
 
 	/**
-	 * 
-	 * @return
+	 * @param interfaceToClassMap the interfaceToClassMap to set
 	 */
-	public List<Method> getExploredMethods() {
-		return exploredMethods;
-	}
-
-	public void resetExploredMethods() {
-		exploredMethods = new ArrayList<>();
+	public void setInterfaceToClassMap(Map<Interface, Class<?>> interfaceToClassMap) {
+		this.interfaceToClassMap = interfaceToClassMap;
 	}
 
 	/**
@@ -176,34 +162,45 @@ public class InterfaceInspector {
 				//				!(IEnum.class).equals(objectToInspect.getSuperclass()) &&
 				objectToInspect.getSuperclass()!=null)
 		{
-			List<Interface> superClassInterfaces = calculateInterfaces(objectToInspect.getSuperclass());
-			result.addAll(superClassInterfaces);
+			result.add(mapAsInterface(objectToInspect));
 		}
 		if(objectToInspect.getInterfaces().length > 0)
 		{
 			Class<?>[] interfaces = objectToInspect.getInterfaces();
 			for (Class<?> i : interfaces) {
-				List<Interface> tempList = this.getDedalInterfaces(i);
-				result.addAll(tempList);
+				Interface tempInt = this.getDedalInterface(i);
+				result.add(tempInt);
 			}
 		}
 		if(objectToInspect.isInterface())
 		{
-			result.addAll(this.getDedalInterfaces(objectToInspect));
+			result.add(this.getDedalInterface(objectToInspect));
 			return result;
 		}
-		for (Method m : objectToInspect.getDeclaredMethods())
+		result.add(mapAsInterface(objectToInspect));
+		
+		return result;
+	}
+
+	/**
+	 * @param objectToInspect
+	 * @param result
+	 * @throws SecurityException
+	 */
+	private Interface mapAsInterface(Class<?> objectToInspect) {
+		List<Method> methods = new ArrayList<>();
+		for (Method m : objectToInspect.getMethods())
 		{
 			if(!methods.contains(m))
 				methods.add(m);
 		}
-		this.removeExploredMethods();
 		if(!methods.isEmpty())
 		{
 			Interface derivedInterface = this.deriveInterface("I" + objectToInspect.getSimpleName(), "I" + objectToInspect.getSimpleName() + "_Type",methods);
-			result.add(derivedInterface);
+			this.interfaceToClassMap.put(derivedInterface, objectToInspect);
+			return derivedInterface;
 		}
-		return result;
+		return null;
 	}
 
 	/**
@@ -211,23 +208,17 @@ public class InterfaceInspector {
 	 * @param inter
 	 * @return
 	 */
-	private List<Interface> getDedalInterfaces(Class<?> inter)
+	private Interface getDedalInterface(Class<?> inter)
 	{
-		List<Interface> result = new ArrayList<>();	
-		if(inter.getInterfaces().length > 0)
-		{
-			Class<?>[] interfaces = inter.getInterfaces();
-			for (Class<?> i : interfaces) {
-				result.addAll(this.getDedalInterfaces(i));
-			}
-		}
+		Interface result = new DedalFactoryImpl().createInterface();
 		if(inter.getMethods().length > 0)
 		{
 			List<Method> tempMethods = new ArrayList<>();
 			for (Method method : inter.getMethods()) {
 				tempMethods.add(method);
 			}
-			result.add(deriveInterface("I" + inter.getSimpleName(), inter.getSimpleName(),tempMethods));
+			result = deriveInterface("I" + inter.getSimpleName(), inter.getSimpleName(),tempMethods);
+			this.interfaceToClassMap.put(result, inter);
 		}
 		return result;
 	}
@@ -277,7 +268,6 @@ public class InterfaceInspector {
 		List<Signature> result = new ArrayList<>();
 		for (Method m : tempMethods)
 		{
-			exploredMethods.add(m);
 			Signature tempSignature = new DedalFactoryImpl().createSignature();
 			tempSignature.setName(m.getName());
 			tempSignature.setType(m.getReturnType().getCanonicalName());
@@ -291,50 +281,6 @@ public class InterfaceInspector {
 			result.add(tempSignature);
 		}
 		return result;
-	}
-
-	/**
-	 * 
-	 */
-	private void removeExploredMethods()
-	{
-		List<Method> methodsToRemove = new ArrayList<>();
-		for(Method m : methods)
-		{
-			for(Method em : exploredMethods)
-			{
-				java.lang.reflect.Parameter[] params1 = m.getParameters();
-				java.lang.reflect.Parameter[] params2 = em.getParameters();
-
-				if(m.getName().equals(em.getName()) 
-						&& m.getReturnType().equals(em.getReturnType()) 
-						&& parameterAreEquals(params1, params2))
-				{
-					methodsToRemove.add(m);
-				}
-			}
-		}
-		methods.removeAll(methodsToRemove);
-	}
-
-	/**
-	 * 
-	 * @param params1
-	 * @param params2
-	 * @return
-	 */
-	private boolean parameterAreEquals(java.lang.reflect.Parameter[] params1, java.lang.reflect.Parameter[] params2) {
-		if(params1.length == params2.length)
-		{
-			for(int i = 0; i<params1.length; i++)
-			{
-				if(!((params1[i].getType().equals(params2[i].getType()))
-						&& (params1[i].getName().equals(params2[i].getName()))))
-					return false;
-			}
-			return true;
-		}
-		return false;
 	}
 
 	/**
