@@ -159,7 +159,7 @@ mapping SpringModel::Component::toAssemblyConnection(name:String, r:SpringModel:
 	
 	var source := self.name;
 	var sourceRef : CompInstance;
-	refID := source.replaceAll("\"", "")+"."+name.replaceAll("\"", "");
+	_property := source.replaceAll("\"", "")+"."+name.replaceAll("\"", "");
 	sourceRef := resolveone(compInst:DedalModel::CompInstance | compInst.name=source);
 	var target := r.ref.name;
 	var targetRef : CompInstance;
@@ -173,10 +173,11 @@ mapping SpringModel::Component::toAssemblyConnection(name:String, r:SpringModel:
 //						ConfigConnection						//
 //////////////////////////////////////////////////////////////////
 
-mapping SpringModel::Component::toConfigConnection(r:SpringModel::Reference) : DedalModel::ClassConnection {
+mapping SpringModel::Component::toConfigConnection(name:String, r:SpringModel::Reference) : DedalModel::ClassConnection {
 	
 	var source := self._class.getComponentClassName();
 	var sourceRef : CompClass;
+	_property := name;
 	sourceRef := resolveone(compClass:DedalModel::CompClass | compClass.name=source);
 	var target := r.ref.name;
 	var targetRef : CompClass;
@@ -366,7 +367,7 @@ query SpringModel::Component::getClassConnections() : Sequence(DedalModel::Class
 			};
 			if(not exists)
 			{	
-				tempConnection := self.map toConfigConnection(f.artefact.oclAsType(SpringModel::Reference));
+				tempConnection := self.map toConfigConnection(f.name, f.artefact.oclAsType(SpringModel::Reference));
 				connections += tempConnection;
 			}
 			else
@@ -399,7 +400,7 @@ query SpringModel::Component::getClassConnections() : Sequence(DedalModel::Class
 						};
 						if(not exists)
 						{
-							tempConnection := self.map toConfigConnection(f2.oclAsType(SpringModel::Reference));
+							tempConnection := self.map toConfigConnection(f.name, f2.oclAsType(SpringModel::Reference));
 							connections += tempConnection;
 						}
 						else

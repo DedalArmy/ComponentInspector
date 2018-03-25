@@ -171,10 +171,11 @@ mapping SpringModel::CreationMethod::toComponentClass() : DedalModel::CompClass 
 //						AssemblyConnection						//
 //////////////////////////////////////////////////////////////////
 
-mapping SpringModel::Component::toAssemblyConnection(r:SpringModel::Reference) : DedalModel::InstConnection {
+mapping SpringModel::Component::toAssemblyConnection(name:String, r:SpringModel::Reference) : DedalModel::InstConnection {
 	
 	var source := self.name;
 	var sourceRef : CompInstance;
+	_property := name;
 	sourceRef := resolveone(compInst:DedalModel::CompInstance | compInst.name=source);
 	var target := r.ref.name;
 	var targetRef : CompInstance;
@@ -188,10 +189,11 @@ mapping SpringModel::Component::toAssemblyConnection(r:SpringModel::Reference) :
 //						ConfigConnection						//
 //////////////////////////////////////////////////////////////////
 
-mapping SpringModel::Component::toConfigConnection(r:SpringModel::Reference) : DedalModel::ClassConnection {
+mapping SpringModel::Component::toConfigConnection(name:String, r:SpringModel::Reference) : DedalModel::ClassConnection {
 	
 	var source := self._class.getComponentClassName();
 	var sourceRef : CompClass;
+	_property := name;
 	sourceRef := resolveone(compClass:DedalModel::CompClass | compClass.name=source);
 	var target := r.ref.name;
 	var targetRef : CompClass;
@@ -336,7 +338,7 @@ query SpringModel::Component::getInstConnections() : Sequence(DedalModel::InstCo
 	{
 		if(f.artefact.oclIsTypeOf(SpringModel::Reference))
 		{
-			connections += self.map toAssemblyConnection(f.artefact.oclAsType(SpringModel::Reference));
+			connections += self.map toAssemblyConnection(f.name, f.artefact.oclAsType(SpringModel::Reference));
 		}
 		else 
 		{
@@ -346,7 +348,7 @@ query SpringModel::Component::getInstConnections() : Sequence(DedalModel::InstCo
 				{
 					if(f2.oclIsTypeOf(SpringModel::Reference))
 					{
-						connections += self.map toAssemblyConnection(f2.oclAsType(SpringModel::Reference));
+						connections += self.map toAssemblyConnection(f.name, f2.oclAsType(SpringModel::Reference));
 					}
 				}
 			}
@@ -381,7 +383,7 @@ query SpringModel::Component::getClassConnections() : Sequence(DedalModel::Class
 			};
 			if(not exists)
 			{	
-				tempConnection := self.map toConfigConnection(f.artefact.oclAsType(SpringModel::Reference));
+				tempConnection := self.map toConfigConnection(f.name, f.artefact.oclAsType(SpringModel::Reference));
 				connections += tempConnection;
 			}
 			else
@@ -414,7 +416,7 @@ query SpringModel::Component::getClassConnections() : Sequence(DedalModel::Class
 						};
 						if(not exists)
 						{
-							tempConnection := self.map toConfigConnection(f2.oclAsType(SpringModel::Reference));
+							tempConnection := self.map toConfigConnection(f.name, f2.oclAsType(SpringModel::Reference));
 							connections += tempConnection;
 						}
 						else
