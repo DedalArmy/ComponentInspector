@@ -4,6 +4,8 @@
 package fr.ema.dedal.componentinspector.inspector;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.log4j.Logger;
@@ -90,7 +92,18 @@ public class ClassInspector extends InterfaceInspector {
 					logger.info("\t\t" + field.toGenericString());
 				Attribute tempAttribute = new DedalFactoryImpl().createAttribute();
 				tempAttribute.setName(field.getName());
-				tempAttribute.setType(field.getType().getCanonicalName());
+				
+				if(field.getType().isArray())
+					tempAttribute.setType(field.getType().getComponentType().getCanonicalName());
+				else
+				{
+//					Type genType = field.getGenericType();
+//					ParameterizedType pType = (ParameterizedType) genType;
+//					if(pType.getActualTypeArguments().length > 0)
+//						tempAttribute.setType(pType.getTypeName());
+//					else 
+						tempAttribute.setType(field.getType().getCanonicalName());
+				}
 				tempCompClass.getAttributes().add(tempAttribute);
 			}
 		}

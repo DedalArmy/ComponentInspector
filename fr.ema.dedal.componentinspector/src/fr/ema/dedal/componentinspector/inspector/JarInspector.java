@@ -28,11 +28,9 @@ import dedal.DedalFactory;
 import dedal.InstConnection;
 import dedal.Interaction;
 import dedal.Interface;
-import dedal.InterfaceType;
 import dedal.Repository;
 import dedal.RoleConnection;
 import dedal.Specification;
-import dedal.impl.ClassConnectionImpl;
 import dedal.impl.DedalFactoryImpl;
 import fr.ema.dedal.componentinspector.classloader.JarLoader;
 
@@ -45,6 +43,8 @@ public class JarInspector {
 	static final Logger logger = Logger.getLogger(JarInspector.class);
 	JarLoader jarLoader = null;
 	Map<URI, List<Class<?>>> jarMapping = null;
+	Map<CompRole, Class<?>> roleToClass = null;
+	Map<CompClass, Class<?>> compToClass = null;
 	Map<CompClass, List<CompRole>> typeHierarchy = null;
 	Map<CompClass, Map<Interface, Class<?>>> compIntToType = null;
 	DedalFactory factory;
@@ -59,6 +59,8 @@ public class JarInspector {
 		super();
 		this.jarLoader = jarLoader;
 		this.jarMapping = this.jarLoader.loadClasses();
+		this.compToClass = new HashMap<>();
+		this.roleToClass = new HashMap<>();
 		this.compIntToType = new HashMap<>();
 		this.typeHierarchy = new HashMap<>();
 		factory = DedalFactoryImpl.init();
@@ -117,7 +119,9 @@ public class JarInspector {
 			dedalDiagram.getArchitectureDescriptions().add(asm);
 
 			copyInDiagram(extractedFromSpring, config, asm);
-
+			config.getConfigConnections().forEach(cc -> cc.setRefID(EcoreUtil.generateUUID()));
+			asm.getAssemblyConnections().forEach(ac -> ac.setRefID(EcoreUtil.generateUUID()));
+			
 			standardizeNames(config, asm);
 
 			if(logger.isInfoEnabled())
@@ -129,9 +133,9 @@ public class JarInspector {
 			instantiateInteractions(asm);
 			setAssmConnections(asm, config.getConfigConnections());
 
-			setSpecificationFromConfiguration(spec, config);
-			dedalDiagram.getArchitectureDescriptions().add(spec);
-			config.getImplements().add(spec);
+//			setSpecificationFromConfiguration(spec, config);
+//			dedalDiagram.getArchitectureDescriptions().add(spec);
+//			config.getImplements().add(spec);
 
 		});		
 	}
@@ -298,14 +302,21 @@ public class JarInspector {
 	 * @param config
 	 */
 	private void setConfigConnections(Configuration config) {
+		/**
+		 * Setting configurations
+		 */
+		Map<Interaction, List<Interaction>> mapServerToClients = new HashMap<>();
 		config.getConfigConnections().forEach(con -> {
 			CompClass client = con.getClientClassElem();
 			CompClass server = con.getServerClassElem();
 			
-			String attrName = con.getProperty();
+			/**
+			 * calculate which is the corresponding required interface
+			 */
+			String attrName = con.getProperty().replaceAll("\"", "");
 			Attribute tempAttr = new DedalFactoryImpl().createAttribute();
 			for(Attribute a : client.getAttributes()) {
-				if(a.getName() == attrName)
+				if(a.getName().equals(attrName))
 				{
 					tempAttr = a;
 					break;
@@ -321,13 +332,38 @@ public class JarInspector {
 				}
 			});
 			final Class<?> clientClass = (this.compIntToType.get(client)).get(con.getClientIntElem());
+			
+			/**
+			 * matching the corresponding server interface
+			 */
 			server.getCompInterfaces().forEach(ci -> {
 				Class<?> ciClass = (this.compIntToType.get(server)).get(ci);
 				if(clientClass.isAssignableFrom(ciClass))
 				{
 					con.setServerIntElem(ci);
+					mapServerToClients.put(con.getServerIntElem(), new ArrayList<>());
 				}
 			});
+		});
+		
+		/**
+		 * Connect clients to the most abstract provided interface as possible
+		 */
+		config.getConfigConnections().forEach(con -> {
+			mapServerToClients.get(con.getServerIntElem()).add(con.getClientIntElem());
+		});	
+		
+		mapServerToClients.forEach((key,value) -> {
+			if(value.size()==1) //if a server is connected to a single client
+			{
+//				if( (this.compIntToType.get(value.get(0)).get()) )
+			}
+			else if (value.size()>1)
+			{
+				
+			}
+			else // a server cannot be connected to 0 value
+				logger.error("Something went terribly wrong while assembling connections");
 		});
 	}
 
@@ -379,9 +415,10 @@ public class JarInspector {
 					}
 					ClassInspector ci = new ClassInspector(c, dedalDiagram, config, repo);
 					ci.mapComponentClass(tempCompClass);
+					this.compToClass.put(tempCompClass, c);
 					this.compIntToType.put(tempCompClass, ci.getInterfaceToClassMap());
-					this.typeHierarchy.put(tempCompClass, ci.calculateSuperTypes());
-					logger.info(typeHierarchy);
+//					this.typeHierarchy.put(tempCompClass, ci.calculateSuperTypes());
+//					logger.info(typeHierarchy);
 				}			
 			}
 		}

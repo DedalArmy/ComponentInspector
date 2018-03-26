@@ -5,6 +5,7 @@ package fr.ema.dedal.componentinspector.inspector;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,6 +28,7 @@ public class InterfaceInspector {
 
 	static final Logger logger = Logger.getLogger(InterfaceInspector.class);
 	private Map<Interface, Class<?>> interfaceToClassMap;
+	private Map<Interface, List<Interface>> candidateInterfaces;
 
 	private Class<?> objectToInspect;
 	private DedalDiagram dedaldiagram;
@@ -44,6 +46,7 @@ public class InterfaceInspector {
 		this.configuration = config;
 		this.repository = repo;
 		this.setInterfaceToClassMap(new HashMap<>());
+		this.setCandidateInterfaces(new HashMap<>());
 	}
 
 	/**
@@ -140,6 +143,14 @@ public class InterfaceInspector {
 		this.interfaceToClassMap = interfaceToClassMap;
 	}
 
+	public Map<Interface, List<Interface>> getCandidateInterfaces() {
+		return candidateInterfaces;
+	}
+
+	public void setCandidateInterfaces(Map<Interface, List<Interface>> candidateInterfaces) {
+		this.candidateInterfaces = candidateInterfaces;
+	}
+
 	/**
 	 * 
 	 * @return
@@ -157,13 +168,6 @@ public class InterfaceInspector {
 	public List<Interface> calculateInterfaces(Class<?> objectToInspect)
 	{
 		List<Interface> result = new ArrayList<>();
-		if(!(Object.class).equals(objectToInspect.getSuperclass()) && 
-				//				!(Comparable.class).equals(objectToInspect.getSuperclass()) &&
-				//				!(IEnum.class).equals(objectToInspect.getSuperclass()) &&
-				objectToInspect.getSuperclass()!=null)
-		{
-			result.add(mapAsInterface(objectToInspect));
-		}
 		if(objectToInspect.getInterfaces().length > 0)
 		{
 			Class<?>[] interfaces = objectToInspect.getInterfaces();
@@ -177,10 +181,13 @@ public class InterfaceInspector {
 			result.add(this.getDedalInterface(objectToInspect));
 			return result;
 		}
-		result.add(mapAsInterface(objectToInspect));
+		Interface current = mapAsInterface(objectToInspect);
+		computeCandidateInterfaces(objectToInspect, current);
+		result.add(current);
 		
 		return result;
 	}
+	
 
 	/**
 	 * @param objectToInspect
@@ -189,11 +196,7 @@ public class InterfaceInspector {
 	 */
 	private Interface mapAsInterface(Class<?> objectToInspect) {
 		List<Method> methods = new ArrayList<>();
-		for (Method m : objectToInspect.getMethods())
-		{
-			if(!methods.contains(m))
-				methods.add(m);
-		}
+		methods.addAll(recursivelyGetMethods(objectToInspect));
 		if(!methods.isEmpty())
 		{
 			Interface derivedInterface = this.deriveInterface("I" + objectToInspect.getSimpleName(), "I" + objectToInspect.getSimpleName() + "_Type",methods);
@@ -201,6 +204,54 @@ public class InterfaceInspector {
 			return derivedInterface;
 		}
 		return null;
+	}
+
+	/**
+	 * @param objectToInspect
+	 * @param derivedInterface
+	 */
+	private void computeCandidateInterfaces(Class<?> objectToInspect, Interface derivedInterface) {
+		if(!(Object.class).equals(objectToInspect.getSuperclass()) && objectToInspect.getSuperclass()!=null)
+		{
+			this.candidateInterfaces.put(derivedInterface, this.calculateInterfaces(objectToInspect.getSuperclass()));
+		}
+		if(objectToInspect.getInterfaces().length > 0)
+		{
+			Class<?>[] interfaces = objectToInspect.getInterfaces();
+			for (Class<?> i : interfaces) {
+				this.candidateInterfaces.put(derivedInterface, this.calculateInterfaces(i));
+			}
+		}
+	}
+
+	private Collection<? extends Method> recursivelyGetMethods(Class<?> objectToInspect) {
+		List<Method> methods = new ArrayList<>();
+		if(!(Object.class).equals(objectToInspect.getSuperclass()) && objectToInspect.getSuperclass()!=null)
+		{
+			methods.addAll(recursivelyGetMethods(objectToInspect.getSuperclass()));
+		}
+		for(Class<?> i : objectToInspect.getInterfaces())
+		{
+			methods.addAll(recursivelyGetMethods(i));
+		}
+		for (Method m : objectToInspect.getDeclaredMethods())
+		{
+			if(!methods.contains(m))
+			{
+				List<Method> toRemove = new ArrayList<>();
+				methods.add(m);
+				for(Method m2 : methods)
+				{
+					String m1s = m.getName();
+					String m2s = m2.getName();
+					if(m1s.equals(m2s) && m!=m2)
+						toRemove.add(m);
+				}
+				methods.removeAll(toRemove);
+			}
+				
+		}		
+		return methods;
 	}
 
 	/**
@@ -341,4 +392,5 @@ public class InterfaceInspector {
 		}
 		return null;
 	}
+	
 }
