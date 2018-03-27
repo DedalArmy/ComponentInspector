@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.lang.reflect.Modifier;
 import java.net.URI;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -178,7 +177,8 @@ public class JarInspector {
 				for(Interaction inter2 : rclient.getCompInterfaces())
 				{
 					if((inter instanceof Interface) && (inter2 instanceof Interface)
-							&& (((Interface) inter).getType().equals(((Interface) ccon.getClientIntElem()).getType())) && ((Interface) inter).getType().equals(((Interface) inter2).getType()))
+							&& (((Interface) inter).getType().equals(((Interface) ccon.getClientIntElem()).getType())) 
+							&& ((Interface) inter).getType().equals(((Interface) inter2).getType()))
 					{
 						tempRoleConnection.setClientIntElem(inter2);
 						break;

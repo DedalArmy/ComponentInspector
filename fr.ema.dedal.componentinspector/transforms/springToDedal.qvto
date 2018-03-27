@@ -547,7 +547,20 @@ query SpringModel::_Collection::getClassConnections(c:SpringModel::Component, na
 		{
 			if(f2.oclIsTypeOf(SpringModel::Reference))
 			{
-				connections += c.map toConfigConnection(name,f2.oclAsType(SpringModel::Reference));
+				var exists : Boolean;
+				exists := false;
+				connections->forEach(con)
+				{
+					if(con.clientClassElem.name.=(c._class.getComponentClassName())
+						and con.serverClassElem.name.=(f2.oclAsType(SpringModel::Reference).ref._class.getComponentClassName()))
+					{
+						exists := true;
+					};
+				};
+				if(not exists)
+				{	
+					connections += c.map toConfigConnection(name,f2.oclAsType(SpringModel::Reference));
+				}
 			}
 		}
 	}
@@ -557,7 +570,20 @@ query SpringModel::_Collection::getClassConnections(c:SpringModel::Component, na
 		{
 			if(f2.oclIsTypeOf(SpringModel::Reference))
 			{
-				connections += c.map toConfigConnection(name,f2.oclAsType(SpringModel::Reference));
+				var exists : Boolean;
+				exists := false;
+				connections->forEach(con)
+				{
+					if(con.clientClassElem.name.=(c._class.getComponentClassName())
+						and con.serverClassElem.name.=(f2.oclAsType(SpringModel::Reference).ref._class.getComponentClassName()))
+					{
+						exists := true;
+					};
+				};
+				if(not exists)
+				{	
+					connections += c.map toConfigConnection(name,f2.oclAsType(SpringModel::Reference));
+				}
 			}
 		}
 	}
@@ -567,11 +593,37 @@ query SpringModel::_Collection::getClassConnections(c:SpringModel::Component, na
 		{
 			if(e.key.key.oclIsTypeOf(SpringModel::Reference))
 			{
-				connections += c.map toConfigConnection(name, e.key.key.oclAsType(SpringModel::Reference));
+				var exists : Boolean;
+				exists := false;
+				connections->forEach(con)
+				{
+					if(con.clientClassElem.name.=(c._class.getComponentClassName())
+						and con.serverClassElem.name.=(e.key.key.oclAsType(SpringModel::Reference).ref._class.getComponentClassName()))
+					{
+						exists := true;
+					};
+				};
+				if(not exists)
+				{	
+					connections += c.map toConfigConnection(name, e.key.key.oclAsType(SpringModel::Reference));
+				}
 			}
 			else if(e.key.key.oclIsTypeOf(SpringModel::Component))
 			{
-				connections += c.map toConfigConnection(name, e.key.key.oclAsType(SpringModel::Component));
+				var exists : Boolean;
+				exists := false;
+				connections->forEach(con)
+				{
+					if(con.clientClassElem.name.=(c._class.getComponentClassName())
+						and con.serverClassElem.name.=(e.key.key.oclAsType(SpringModel::Component)._class.getComponentClassName()))
+					{
+						exists := true;
+					};
+				};
+				if(not exists)
+				{	
+					connections += c.map toConfigConnection(name, e.key.key.oclAsType(SpringModel::Component));
+				}
 			}
 			else if(e.key.key.oclIsKindOf(SpringModel::Collection))
 			{
@@ -579,11 +631,37 @@ query SpringModel::_Collection::getClassConnections(c:SpringModel::Component, na
 			};
 			if(e.value.oclIsTypeOf(SpringModel::Reference))
 			{
-				connections += c.map toConfigConnection(name, e.value.oclAsType(SpringModel::Reference));
+				var exists : Boolean;
+				exists := false;
+				connections->forEach(con)
+				{
+					if(con.clientClassElem.name.=(c._class.getComponentClassName())
+						and con.serverClassElem.name.=(e.value.oclAsType(SpringModel::Reference).ref._class.getComponentClassName()))
+					{
+						exists := true;
+					};
+				};
+				if(not exists)
+				{	
+					connections += c.map toConfigConnection(name, e.value.oclAsType(SpringModel::Reference));
+				}
 			}
 			else if(e.value.oclIsTypeOf(SpringModel::Component))
 			{
-				connections += c.map toConfigConnection(name, e.value.oclAsType(SpringModel::Component));
+				var exists : Boolean;
+				exists := false;
+				connections->forEach(con)
+				{
+					if(con.clientClassElem.name.=(c._class.getComponentClassName())
+						and con.serverClassElem.name.=(e.value.oclAsType(SpringModel::Component)._class.getComponentClassName()))
+					{
+						exists := true;
+					};
+				};
+				if(not exists)
+				{	
+					connections += c.map toConfigConnection(name, e.value.oclAsType(SpringModel::Component));
+				}
 			}
 			else if(e.value.oclIsKindOf(SpringModel::Collection))
 			{

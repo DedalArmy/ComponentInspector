@@ -6,7 +6,7 @@ dedal_diagram genDedalDiag
 			implements has_jar_spec component_classes
 
 		primitive_component_class AdjustableLamp as Light_role
-			id "_fEsVADHkEeiIK4129ZcroA"
+			id "_62IoYDH0EeirtNkW8KWB5g"
 			implements fr_ema_examples_has_config_AdjustableLamp_Type
 			attributes (
 				^int intensity;
@@ -18,7 +18,7 @@ dedal_diagram genDedalDiag
 					implementation ILight_Type;
 
 		primitive_component_class Clock as Time_role
-			id "_fEuxQDHkEeiIK4129ZcroA"
+			id "_62IoYTH0EeirtNkW8KWB5g"
 			implements fr_ema_examples_has_config_Clock_Type
 			interfaces
 				interface ITime_Clock
@@ -29,7 +29,7 @@ dedal_diagram genDedalDiag
 					implementation Time;
 
 		primitive_component_class Orchestrator as HomeOrchestrator_role
-			id "_fEvYUDHkEeiIK4129ZcroA"
+			id "_62IoYjH0EeirtNkW8KWB5g"
 			implements fr_ema_examples_has_config_Orchestrator_Type
 			attributes (
 				"fr.ema.examples.has.spec.Light" lights;
@@ -48,11 +48,11 @@ dedal_diagram genDedalDiag
 
 			configConnections (
 
-				class_connection "_fExNgDHkEeiIK4129ZcroA" property "\"lights\""
+				class_connection "_62SZYDH0EeirtNkW8KWB5g" property "\"lights\""
 					client Orchestrator.ILight_Orchestrator
 					server AdjustableLamp.IAdjustableLamp;
 
-				class_connection "_fE_3ADHkEeiIK4129ZcroA" property "\"clock\""
+				class_connection "_62lUUDH0EeirtNkW8KWB5g" property "\"clock\""
 					client Orchestrator.ITime_Orchestrator
 					server Clock.IClock
 			);
@@ -63,7 +63,7 @@ dedal_diagram genDedalDiag
 			component_instances (
 
 				component_instance lampDesk
-					id "_fFBsMDHkEeiIK4129ZcroA"
+					id "_62lUUTH0EeirtNkW8KWB5g"
 					instance_of AdjustableLamp
 					component_interfaces
 						interface IAdjustableLamp_lampDesk
@@ -72,7 +72,7 @@ dedal_diagram genDedalDiag
 							instantiates IAdjustableLamp;
 
 				component_instance lampSitting
-					id "_fFBsMTHkEeiIK4129ZcroA"
+					id "_62lUUjH0EeirtNkW8KWB5g"
 					instance_of AdjustableLamp
 					component_interfaces
 						interface IAdjustableLamp_lampSitting
@@ -81,7 +81,7 @@ dedal_diagram genDedalDiag
 							instantiates IAdjustableLamp;
 
 				component_instance clock1
-					id "_fFCTQDHkEeiIK4129ZcroA"
+					id "_62lUUzH0EeirtNkW8KWB5g"
 					instance_of Clock
 					component_interfaces
 						interface ITime_Clock_clock1
@@ -94,7 +94,7 @@ dedal_diagram genDedalDiag
 							instantiates IClock;
 
 				component_instance orchestrator1
-					id "_fFCTQTHkEeiIK4129ZcroA"
+					id "_62lUVDH0EeirtNkW8KWB5g"
 					instance_of Orchestrator
 					component_interfaces
 						interface IOrchestrator_orchestrator1
@@ -113,29 +113,23 @@ dedal_diagram genDedalDiag
 
 			assembly_connections (
 
-				instance_connection "_fFDhYDHkEeiIK4129ZcroA"
+				instance_connection "_62ueQDH0EeirtNkW8KWB5g"
 					client orchestrator1.ILight_Orchestrator_orchestrator1
 					server lampDesk.IAdjustableLamp_lampDesk;
 
-				instance_connection "_fFEvgDHkEeiIK4129ZcroA"
+				instance_connection "_62ueQTH0EeirtNkW8KWB5g"
 					client orchestrator1.ILight_Orchestrator_orchestrator1
 					server lampSitting.IAdjustableLamp_lampSitting;
 
-				instance_connection "_fFEvgTHkEeiIK4129ZcroA"
+				instance_connection "_62ueQjH0EeirtNkW8KWB5g"
 					client orchestrator1.ITime_Orchestrator_orchestrator1
 					server clock1.IClock_clock1
 			);
 
 		specification has_jar_spec component_roles
 
-		component_role Time_role
-			id "_fF2LkDHkEeiIK4129ZcroA" required_interfaces
-				interface ITimeTime_role
-					interface_direction provided
-					implementation Time;
-
 		component_role HomeOrchestrator_role
-			id "_fF2yvjHkEeiIK4129ZcroA" required_interfaces
+			id "_63nPPjH0EeirtNkW8KWB5g" required_interfaces
 				interface IHomeOrchestratorHomeOrchestrator_role
 					interface_direction provided
 					implementation IHomeOrchestrator_Type;
@@ -147,18 +141,24 @@ dedal_diagram genDedalDiag
 					implementation Time;
 
 		component_role Light_role
-			id "_fF3ZuTHkEeiIK4129ZcroA" required_interfaces
+			id "_63nPTDH0EeirtNkW8KWB5g" required_interfaces
 				interface ILightLight_role
 					interface_direction provided
-					implementation ILight_Type
+					implementation ILight_Type;
+
+		component_role Time_role
+			id "_63nPVDH0EeirtNkW8KWB5g" required_interfaces
+				interface ITimeTime_role
+					interface_direction provided
+					implementation Time
 
 		connections
 
-		connection "_fF4AwDHkEeiIK4129ZcroA"
+		connection "_63nPVjH0EeirtNkW8KWB5g"
 			client HomeOrchestrator_role.ILightHomeOrchestrator_role
 			server Light_role.ILightLight_role
 
-		connection "_fF4n0DHkEeiIK4129ZcroA"
+		connection "_63nPVzH0EeirtNkW8KWB5g"
 			client HomeOrchestrator_role.ITimeHomeOrchestrator_role
 			server Time_role.ITimeTime_role
 	)
@@ -170,13 +170,13 @@ dedal_diagram genDedalDiag
 			components (
 
 				component_type fr_ema_examples_has_config_AdjustableLamp_Type
-					id "_fFm7ADHkEeiIK4129ZcroA" required_interfaces
+					id "_63TtEDH0EeirtNkW8KWB5g" required_interfaces
 						interface IAdjustableLamp_fr_ema_examples_has_config_AdjustableLamp_Type
 							interface_direction provided
 							implementation IAdjustableLamp_Type;
 
 				component_type fr_ema_examples_has_config_Clock_Type
-					id "_fFrMcDHkEeiIK4129ZcroA" required_interfaces
+					id "_63deEDH0EeirtNkW8KWB5g" required_interfaces
 						interface ITime_Clock_fr_ema_examples_has_config_Clock_Type
 							interface_direction provided
 							implementation Time;
@@ -185,7 +185,7 @@ dedal_diagram genDedalDiag
 							implementation IClock_Type;
 
 				component_type fr_ema_examples_has_config_Orchestrator_Type
-					id "_fFrzgDHkEeiIK4129ZcroA" required_interfaces
+					id "_63deFDH0EeirtNkW8KWB5g" required_interfaces
 						interface IOrchestrator_fr_ema_examples_has_config_Orchestrator_Type
 							interface_direction provided
 							implementation IOrchestrator_Type;
@@ -203,17 +203,17 @@ dedal_diagram genDedalDiag
 
 			type IAdjustableLamp_Type
 				signatures (
-					signature "_fFoJIDHkEeiIK4129ZcroA" name switchState
+					signature "_63TtETH0EeirtNkW8KWB5g" name switchState
 
 					type void parameters (
-						parameter "_fFoJITHkEeiIK4129ZcroA" name arg0
+						parameter "_63TtEjH0EeirtNkW8KWB5g" name arg0
 
 						type "fr.ema.examples.has.spec.Light.State"
 					);
-					signature "_fFoJIjHkEeiIK4129ZcroA" name adjustIntensity
+					signature "_63TtEzH0EeirtNkW8KWB5g" name adjustIntensity
 
 					type void parameters (
-						parameter "_fFoJIzHkEeiIK4129ZcroA" name arg0
+						parameter "_63TtFDH0EeirtNkW8KWB5g" name arg0
 
 						type ^int
 					)
@@ -221,10 +221,10 @@ dedal_diagram genDedalDiag
 
 			type ILight_Type
 				signatures (
-					signature "_fFpXQDHkEeiIK4129ZcroA" name switchState
+					signature "_63TtFTH0EeirtNkW8KWB5g" name switchState
 
 					type void parameters (
-						parameter "_fFpXQTHkEeiIK4129ZcroA" name arg0
+						parameter "_63TtFjH0EeirtNkW8KWB5g" name arg0
 
 						type "fr.ema.examples.has.spec.Light.State"
 					)
@@ -232,75 +232,75 @@ dedal_diagram genDedalDiag
 
 			type Time
 				signatures (
-					signature "_fFrMcTHkEeiIK4129ZcroA" name run
+					signature "_63deETH0EeirtNkW8KWB5g" name run
 
 					type void
 				);
 
 			type IClock_Type
 				signatures (
-					signature "_fFrMcjHkEeiIK4129ZcroA" name run
+					signature "_63deEjH0EeirtNkW8KWB5g" name run
 
 					type void
 				);
 
 			type IOrchestrator_Type
 				signatures (
-					signature "_fFrzgTHkEeiIK4129ZcroA" name run
+					signature "_63deFTH0EeirtNkW8KWB5g" name run
 
 					type void;
-					signature "_fFrzgjHkEeiIK4129ZcroA" name getLights
+					signature "_63deFjH0EeirtNkW8KWB5g" name getLights
 
 					type "fr.ema.examples.has.spec.Light[]";
-					signature "_fFrzgzHkEeiIK4129ZcroA" name setLights
-
-					type void parameters (
-						parameter "_fFrzhDHkEeiIK4129ZcroA" name arg0
-
-						type "fr.ema.examples.has.spec.Light[]"
-					);
-					signature "_fFrzhTHkEeiIK4129ZcroA" name getClock
+					signature "_63deFzH0EeirtNkW8KWB5g" name getClock
 
 					type "fr.ema.examples.has.spec.Time";
-					signature "_fFrzhjHkEeiIK4129ZcroA" name setClock
+					signature "_63deGDH0EeirtNkW8KWB5g" name setClock
 
 					type void parameters (
-						parameter "_fFrzhzHkEeiIK4129ZcroA" name arg0
+						parameter "_63deGTH0EeirtNkW8KWB5g" name arg0
 
 						type "fr.ema.examples.has.spec.Time"
+					);
+					signature "_63deGjH0EeirtNkW8KWB5g" name setLights
+
+					type void parameters (
+						parameter "_63deGzH0EeirtNkW8KWB5g" name arg0
+
+						type "fr.ema.examples.has.spec.Light[]"
 					)
 				);
 
 			type IHomeOrchestratorImpl_Type
 				signatures (
-					signature "_fFrziDHkEeiIK4129ZcroA" name run
+					signature "_63deHDH0EeirtNkW8KWB5g" name run
 
 					type void;
-					signature "_fFrziTHkEeiIK4129ZcroA" name getLights
+					signature "_63deHTH0EeirtNkW8KWB5g" name getLights
 
 					type "fr.ema.examples.has.spec.Light[]";
-					signature "_fFrzijHkEeiIK4129ZcroA" name setLights
-
-					type void parameters (
-						parameter "_fFrzizHkEeiIK4129ZcroA" name arg0
-
-						type "fr.ema.examples.has.spec.Light[]"
-					);
-					signature "_fFrzjDHkEeiIK4129ZcroA" name getClock
+					signature "_63deHjH0EeirtNkW8KWB5g" name getClock
 
 					type "fr.ema.examples.has.spec.Time";
-					signature "_fFrzjTHkEeiIK4129ZcroA" name setClock
+					signature "_63deHzH0EeirtNkW8KWB5g" name setClock
 
 					type void parameters (
-						parameter "_fFrzjjHkEeiIK4129ZcroA" name arg0
+						parameter "_63deIDH0EeirtNkW8KWB5g" name arg0
 
 						type "fr.ema.examples.has.spec.Time"
+					);
+					signature "_63deITH0EeirtNkW8KWB5g" name setLights
+
+					type void parameters (
+						parameter "_63deIjH0EeirtNkW8KWB5g" name arg0
+
+						type "fr.ema.examples.has.spec.Light[]"
 					)
 				);
 
 			type IHomeOrchestrator_Type
 				signatures (
-					signature "_fFrzjzHkEeiIK4129ZcroA" name run
+					signature "_63deIzH0EeirtNkW8KWB5g" name run
 
 					type void
 				)
