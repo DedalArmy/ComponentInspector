@@ -7,6 +7,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import org.apache.log4j.Logger;
 import org.eclipse.emf.ecore.util.EcoreUtil;
@@ -97,11 +98,9 @@ public class ClassInspector extends InterfaceInspector {
 					tempAttribute.setType(field.getType().getComponentType().getCanonicalName());
 				else
 				{
-//					Type genType = field.getGenericType();
-//					ParameterizedType pType = (ParameterizedType) genType;
-//					if(pType.getActualTypeArguments().length > 0)
-//						tempAttribute.setType(pType.getTypeName());
-//					else 
+					if(Collection.class.isAssignableFrom(field.getType()))
+						tempAttribute.setType(field.getType().getTypeName());
+					else 
 						tempAttribute.setType(field.getType().getCanonicalName());
 				}
 				tempCompClass.getAttributes().add(tempAttribute);
@@ -186,26 +185,4 @@ public class ClassInspector extends InterfaceInspector {
 		result.forEach(i -> i.setDirection(DIRECTION.REQUIRED));
 		return result;
 	}
-
-	public List<CompRole> calculateSuperTypes() {
-		return calculateSuperTypes(this.getObjectToInspect());
-	}
-	
-	public List<CompRole> calculateSuperTypes(Class<?> objectToInspect) {
-		List<CompRole> result = new ArrayList<>();
-		this.setObjectToInspect(objectToInspect);
-		CompRole tempRole = new DedalFactoryImpl().createCompRole();
-		tempRole.setName(objectToInspect.getSimpleName() + "_role");
-		tempRole.getCompInterfaces().addAll(this.calculateProvidedInterfaces());
-		tempRole.getCompInterfaces().addAll(this.calculateRequiredInterfaces());
-		tempRole.getCompInterfaces().forEach(ci -> ci.setName(ci.getName() + "_role"));
-		result.add(tempRole);
-		if(!getObjectToInspect().getSuperclass().equals(Object.class) &&
-				getObjectToInspect().getSuperclass() != null)
-		{
-			result.addAll(calculateSuperTypes(getObjectToInspect().getSuperclass()));
-		}
-		return result;
-	}
-
 }

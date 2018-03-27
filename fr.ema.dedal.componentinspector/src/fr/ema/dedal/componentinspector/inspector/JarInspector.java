@@ -123,8 +123,6 @@ public class JarInspector {
 			dedalDiagram.getArchitectureDescriptions().add(asm);
 
 			copyInDiagram(extractedFromSpring, config, asm);
-			config.getConfigConnections().forEach(cc -> cc.setRefID(EcoreUtil.generateUUID()));
-			asm.getAssemblyConnections().forEach(ac -> ac.setRefID(EcoreUtil.generateUUID()));
 			
 			standardizeNames(config, asm);
 
@@ -137,9 +135,9 @@ public class JarInspector {
 			instantiateInteractions(asm);
 			setAssmConnections(asm, config.getConfigConnections());
 
-//			setSpecificationFromConfiguration(dedalDiagram, repo, spec, config);
-//			dedalDiagram.getArchitectureDescriptions().add(spec);
-//			config.getImplements().add(spec);
+			setSpecificationFromConfiguration(repo, spec, config);
+			dedalDiagram.getArchitectureDescriptions().add(spec);
+			config.getImplements().add(spec);
 
 		});		
 	}
@@ -151,30 +149,14 @@ public class JarInspector {
 	 * @param spec
 	 * @param config
 	 */
-	private void setSpecificationFromConfiguration(DedalDiagram dedalDiagram, Repository repo, Specification spec, Configuration config) {
-		Map<CompClass, List<Interface>> mandatoryInterfaces = new HashMap<>();
-		config.getConfigConnections().forEach(ccon -> {
-			CompClass cclient = ccon.getClientClassElem();
-			CompClass cserver = ccon.getServerClassElem();
-			if(ccon.getClientIntElem() instanceof Interface && ccon.getServerIntElem() instanceof Interface)
-			{
-				if(mandatoryInterfaces.containsKey(cclient))
-					mandatoryInterfaces.get(cclient).add(((Interface) ccon.getClientIntElem()));
-				else {
-					List<Interface> list = new ArrayList<>();
-					list.add((Interface) ccon.getClientIntElem());
-					mandatoryInterfaces.put(cclient, list);
-				}
-				if(mandatoryInterfaces.containsKey(cserver))
-					mandatoryInterfaces.get(cserver).add((Interface) ccon.getServerIntElem());
-				else {
-					List<Interface> list = new ArrayList<>();
-					list.add((Interface) ccon.getServerIntElem());
-					mandatoryInterfaces.put(cserver, list);
-				}
-			}
+	private void setSpecificationFromConfiguration(Repository repo, Specification spec, Configuration config) {
+		this.compToClass.forEach((key,value) -> {
+			RoleExtractor re = new RoleExtractor(value, key, this.intToClass, repo);
+			List<CompRole> extractedRoles = re.calculateSuperTypes();
+			spec.getSpecComponents().addAll(extractedRoles);
+			key.getRealizes().addAll(extractedRoles);
+			
 		});
-		setMostSatifyingRoles(spec, mandatoryInterfaces);
 		setSpecConnections(spec, config);
 	}
 
@@ -218,49 +200,6 @@ public class JarInspector {
 		});
 	}
 
-	/**
-	 * @param spec
-	 * @param mandatoryInterfaces
-	 */
-	private void setMostSatifyingRoles(Specification spec, Map<CompClass, List<Interface>> mandatoryInterfaces) {
-		mandatoryInterfaces.forEach((cclass, list) -> {
-			Collection<Interaction> interfaces = EcoreUtil.copyAll(cclass.getCompInterfaces());
-			interfaces.forEach(i ->	i.setName(i.getName() + "_role"));
-			CompRole tempRole = factory.createCompRole();
-			tempRole.getCompInterfaces().addAll(interfaces);
-			for(CompRole role : typeHierarchy.get(cclass)) {
-				if(isSatisfyingForCompRole(role, list))
-				{
-					tempRole = role;
-				}
-			}
-			spec.getSpecComponents().add(tempRole);
-			cclass.getRealizes().add(tempRole);	
-		});
-	}
-
-	private Boolean isSatisfyingForCompRole(CompRole role, List<Interface> interfaces)
-	{
-		for(Interface i : interfaces)
-		{
-			if(!contains(role.getCompInterfaces(), i))
-				return Boolean.FALSE;
-		}
-		return Boolean.TRUE;
-	}
-
-	private boolean contains(EList<Interaction> compInterfaces, Interface i) {
-		for(Interaction inter : compInterfaces)
-		{
-			if(inter instanceof Interface && 
-					((Interface) inter).getDirection().equals(i.getDirection()) &&
-					((Interface) inter).getType().equals(i.getType()))
-			{
-				return Boolean.TRUE;
-			}
-		}
-		return Boolean.FALSE;
-	}
 	/**
 	 * 
 	 * @param asm
@@ -347,17 +286,15 @@ public class JarInspector {
 				if(clientClass.isAssignableFrom(ciClass))
 				{
 					con.setServerIntElem(ci);
-					mapServerToClients.put(con.getServerIntElem(), new ArrayList<>());
 				}
 			});
+			mapServerToClients.put(con.getServerIntElem(), new ArrayList<>());
 		});
 		
 		/**
 		 * Connect clients to the most abstract provided interface as possible
 		 */
-		config.getConfigConnections().forEach(con -> {
-			mapServerToClients.get(con.getServerIntElem()).add(con.getClientIntElem());
-		});
+		config.getConfigConnections().forEach(con -> mapServerToClients.get(con.getServerIntElem()).add(con.getClientIntElem()));
 		
 		mapServerToClients.forEach((key,value) -> {
 			if(value.size()==1) //if a server is connected to a single client
@@ -540,8 +477,6 @@ public class JarInspector {
 					this.compIntToType.put(tempCompClass, ci.getInterfaceToClassMap());
 					this.intToClass.putAll(ci.getInterfaceToClassMap());
 					this.candidateInterfaces.putAll(ci.getCandidateInterfaces());
-//					this.typeHierarchy.put(tempCompClass, ci.calculateSuperTypes());
-//					logger.info(typeHierarchy);
 				}			
 			}
 		}
