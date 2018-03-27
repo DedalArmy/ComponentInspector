@@ -40,24 +40,8 @@ main() {
 
 mapping SpringModel::SpringProject::toDedalDiagram() : dedal::DedalDiagram {
 	name := "Generated Diagram";
-//	architectureDescriptions += self.configurations.map toDedalAssembly();
-//	name := "DefaultName " + self->size().toString();
-//	if(this.oclIsTypeOf(SpringModel::SpringProject))
-//	{
-//		name := "Generated Diagram"
-//	}
-//	else
-//	{
-//		name:=self.metaClassName();
-//	}
-//	name := getDiagramName(self);
 	architectureDescriptions := self.configurations.getArchitectureDescriptions();
 }
-
-//mapping OrderedSet(SpringModel::Configuration)::toDedalDiagram() : dedal::DedalDiagram {
-//	name := getDiagramName(self);
-//	architectureDescriptions := self.getArchitectureDescriptions();
-//}
 
 
 //////////////////////////////////////////////////////////////////
@@ -175,7 +159,7 @@ mapping SpringModel::Component::toAssemblyConnection(name:String, r:SpringModel:
 	
 	var source := self.name;
 	var sourceRef : CompInstance;
-	_property := name;
+	_property := source.replaceAll("\"", "")+"."+name.replaceAll("\"", "");
 	sourceRef := resolveone(compInst:DedalModel::CompInstance | compInst.name=source);
 	var target := r.ref.name;
 	var targetRef : CompInstance;
@@ -184,6 +168,16 @@ mapping SpringModel::Component::toAssemblyConnection(name:String, r:SpringModel:
 	serverInstElem := targetRef;
 }
 
+mapping SpringModel::Component::toAssemblyConnection(name:String, c:SpringModel::Component) : DedalModel::InstConnection {
+	
+	var source := self.name;
+	var sourceRef : CompInstance;
+	_property := source.replaceAll("\"", "")+"."+name.replaceAll("\"", "");
+	sourceRef := resolveone(compInst:DedalModel::CompInstance | compInst.name=source);
+	var targetRef := c.map toCompInstance();
+	clientInstElem := sourceRef;
+	serverInstElem := targetRef;
+}
 
 //////////////////////////////////////////////////////////////////
 //						ConfigConnection						//
@@ -198,6 +192,18 @@ mapping SpringModel::Component::toConfigConnection(name:String, r:SpringModel::R
 	var target := r.ref.name;
 	var targetRef : CompClass;
 	targetRef := r.ref.map toCompClass();
+	clientClassElem := sourceRef;
+	serverClassElem := targetRef;
+	
+}
+
+mapping SpringModel::Component::toConfigConnection(name:String, c:SpringModel::Component) : DedalModel::ClassConnection {
+	
+	var source := self._class.getComponentClassName();
+	var sourceRef : CompClass;
+	_property := name;
+	sourceRef := resolveone(compClass:DedalModel::CompClass | compClass.name=source);
+	var targetRef := c.map toCompClass();
 	clientClassElem := sourceRef;
 	serverClassElem := targetRef;
 	
@@ -340,18 +346,121 @@ query SpringModel::Component::getInstConnections() : Sequence(DedalModel::InstCo
 		{
 			connections += self.map toAssemblyConnection(f.name, f.artefact.oclAsType(SpringModel::Reference));
 		}
+		else if(f.artefact.oclIsTypeOf(SpringModel::Component))
+		{
+			connections += self.map toAssemblyConnection(f.name, f.artefact.oclAsType(SpringModel::Component));
+		}
 		else 
 		{
 			if(f.artefact.oclIsKindOf(SpringModel::Collection))
 			{
-				(f.artefact.oclAsType(SpringModel::sSet)).artefacts->forEach(f2)
-				{
-					if(f2.oclIsTypeOf(SpringModel::Reference))
-					{
-						connections += self.map toAssemblyConnection(f.name, f2.oclAsType(SpringModel::Reference));
-					}
-				}
+				connections += f.artefact.oclAsType(SpringModel::Collection).getInstConnections(self, f.name);
+//				if(f.artefact.oclIsTypeOf(SpringModel::sSet))
+//				{
+//					(f.artefact.oclAsType(SpringModel::sSet)).artefacts->forEach(f2)
+//					{
+//						if(f2.oclIsTypeOf(SpringModel::Reference))
+//						{
+//							connections += self.map toAssemblyConnection(f.name,f2.oclAsType(SpringModel::Reference));
+//						}
+//					}
+//				}
+//				else if(f.artefact.oclIsTypeOf(SpringModel::sList))
+//				{
+//					(f.artefact.oclAsType(SpringModel::sList)).artefacts->forEach(f2)
+//					{
+//						if(f2.oclIsTypeOf(SpringModel::Reference))
+//						{
+//							connections += self.map toAssemblyConnection(f.name,f2.oclAsType(SpringModel::Reference));
+//						}
+//					}
+//				}
+//				else if(f.artefact.oclIsTypeOf(SpringModel::Map))
+//				{
+//					(f.artefact.oclAsType(SpringModel::Map)).entries->forEach(e)
+//					{
+//						if(e.key.key.oclIsTypeOf(SpringModel::Reference))
+//						{
+//							connections += self.map toAssemblyConnection(f.name, e.key.key.oclAsType(SpringModel::Reference));
+//						}
+//						else if(e.key.key.oclIsTypeOf(SpringModel::Component))
+//						{
+//							connections += self.map toAssemblyConnection(f.name, e.key.key.oclAsType(SpringModel::Component));
+//						}
+//						else if(e.key.key.oclIsKindOf(SpringModel::Collection))
+//						{
+//							connections += e.key.key.oclAsType(SpringModel::Collection).getInstConnections(self,f.name);
+//						};
+//						if(e.value.oclIsTypeOf(SpringModel::Reference))
+//						{
+//							connections += self.map toAssemblyConnection(f.name, e.value.oclAsType(SpringModel::Reference));
+//						}
+//						else if(e.value.oclIsTypeOf(SpringModel::Component))
+//						{
+//							connections += self.map toAssemblyConnection(f.name, e.value.oclAsType(SpringModel::Component));
+//						}
+//						else if(e.value.oclIsKindOf(SpringModel::Collection))
+//						{
+//							connections += e.value.oclAsType(SpringModel::Collection).getInstConnections(self,f.name);
+//						};
+//					}
+//				}
 			}
+		}
+	};
+	return connections;
+}
+
+query SpringModel::_Collection::getInstConnections(c:SpringModel::Component, name:String) : Sequence(DedalModel::InstConnection) {
+	var connections : Sequence(DedalModel::InstConnection);
+	if(self.oclIsTypeOf(SpringModel::sSet))
+	{
+		(self.oclAsType(SpringModel::sSet)).artefacts->forEach(f2)
+		{
+			if(f2.oclIsTypeOf(SpringModel::Reference))
+			{
+				connections += c.map toAssemblyConnection(name,f2.oclAsType(SpringModel::Reference));
+			}
+		}
+	}
+	else if(self.oclIsTypeOf(SpringModel::sList))
+	{
+		(self.oclAsType(SpringModel::sList)).artefacts->forEach(f2)
+		{
+			if(f2.oclIsTypeOf(SpringModel::Reference))
+			{
+				connections += c.map toAssemblyConnection(name,f2.oclAsType(SpringModel::Reference));
+			}
+		}
+	}
+	else if(self.oclIsTypeOf(SpringModel::Map))
+	{
+		(self.oclAsType(SpringModel::Map)).entries->forEach(e)
+		{
+			if(e.key.key.oclIsTypeOf(SpringModel::Reference))
+			{
+				connections += c.map toAssemblyConnection(name, e.key.key.oclAsType(SpringModel::Reference));
+			}
+			else if(e.key.key.oclIsTypeOf(SpringModel::Component))
+			{
+				connections += c.map toAssemblyConnection(name, e.key.key.oclAsType(SpringModel::Component));
+			}
+			else if(e.key.key.oclIsKindOf(SpringModel::Collection))
+			{
+				connections += e.key.key.oclAsType(SpringModel::Collection).getInstConnections(c,name);
+			};
+			if(e.value.oclIsTypeOf(SpringModel::Reference))
+			{
+				connections += c.map toAssemblyConnection(name, e.value.oclAsType(SpringModel::Reference));
+			}
+			else if(e.value.oclIsTypeOf(SpringModel::Component))
+			{
+				connections += c.map toAssemblyConnection(name, e.value.oclAsType(SpringModel::Component));
+			}
+			else if(e.value.oclIsKindOf(SpringModel::Collection))
+			{
+				connections += e.value.oclAsType(SpringModel::Collection).getInstConnections(c,name);
+			};
 		}
 	};
 	return connections;
@@ -368,13 +477,10 @@ query SpringModel::Component::getClassConnections() : Sequence(DedalModel::Class
 	{
 		if(f.artefact.oclIsTypeOf(SpringModel::Reference))
 		{
-			var tempConnection : DedalModel::ClassConnection;
 			var exists : Boolean;
 			exists := false;
 			connections->forEach(c)
 			{
-//				if(c.clientClassElem.name.=(tempConnection.clientClassElem.name)
-//					and c.serverClassElem.name.=(tempConnection.serverClassElem.name))
 				if(c.clientClassElem.name.=(self._class.getComponentClassName())
 					and c.serverClassElem.name.=(f.artefact.oclAsType(SpringModel::Reference).ref._class.getComponentClassName()))
 				{
@@ -383,49 +489,184 @@ query SpringModel::Component::getClassConnections() : Sequence(DedalModel::Class
 			};
 			if(not exists)
 			{	
-				tempConnection := self.map toConfigConnection(f.name, f.artefact.oclAsType(SpringModel::Reference));
-				connections += tempConnection;
-			}
-			else
-			{
-			 	tempConnection := null;
+				connections += self.map toConfigConnection(f.name, f.artefact.oclAsType(SpringModel::Reference));
 			}
 		}
-		else 
+		else if(f.artefact.oclIsTypeOf(SpringModel::Component))
 		{
-			if(f.artefact.oclIsKindOf(SpringModel::Collection))
+			var exists : Boolean;
+			exists := false;
+			connections->forEach(c)
 			{
-				(f.artefact.oclAsType(SpringModel::sSet)).artefacts->forEach(f2)
+				if(c.clientClassElem.name.=(self._class.getComponentClassName())
+					and c.serverClassElem.name.=(f.artefact.oclAsType(SpringModel::Reference).ref._class.getComponentClassName()))
 				{
-					if(f2.oclIsTypeOf(SpringModel::Reference))
+					exists := true;
+				};
+			};
+			if(not exists)
+			{	
+				connections += self.map toConfigConnection(f.name, f.artefact.oclAsType(SpringModel::Component));
+			}
+		}
+		else if(f.artefact.oclIsKindOf(SpringModel::Collection))
+		{
+				connections += f.artefact.oclAsType(SpringModel::Collection).getClassConnections(self, f.name);
+//				(f.artefact.oclAsType(SpringModel::sSet)).artefacts->forEach(f2)
+//				{
+//					if(f2.oclIsTypeOf(SpringModel::Reference))
+//					{
+//						var exists : Boolean;
+//						exists := false;
+//						connections->forEach(c)
+//						{
+//							var clientName = self._class.getComponentClassName();
+//							var serverName = f2.oclAsType(SpringModel::Reference).ref._class.getComponentClassName();
+//							if(c.clientClassElem.name.=(clientName)
+//								and c.serverClassElem.name.=(serverName))
+//							{
+//								exists := true;
+//							};
+//						};
+//						if(not exists)
+//						{
+//							connections += self.map toConfigConnection(f.name, f2.oclAsType(SpringModel::Reference));
+//						}
+//					}
+//				}
+		}
+	};
+	return connections;
+}
+
+query SpringModel::_Collection::getClassConnections(c:SpringModel::Component, name:String) : Sequence(DedalModel::ClassConnection) {
+	var connections : Sequence(DedalModel::ClassConnection);
+	if(self.oclIsTypeOf(SpringModel::sSet))
+	{
+		(self.oclAsType(SpringModel::sSet)).artefacts->forEach(f2)
+		{
+			if(f2.oclIsTypeOf(SpringModel::Reference))
+			{
+				var exists : Boolean;
+				exists := false;
+				connections->forEach(con)
+				{
+					if(con.clientClassElem.name.=(c._class.getComponentClassName())
+						and con.serverClassElem.name.=(f2.oclAsType(SpringModel::Reference).ref._class.getComponentClassName()))
 					{
-						var tempConnection : DedalModel::ClassConnection;
-						var exists : Boolean;
-						exists := false;
-						connections->forEach(c)
-						{
-//							if(c.clientClassElem.name.=(tempConnection.clientClassElem.name)
-//								and c.serverClassElem.name.=(tempConnection.serverClassElem.name))
-							var clientName = self._class.getComponentClassName();
-							var serverName = f2.oclAsType(SpringModel::Reference).ref._class.getComponentClassName();
-							if(c.clientClassElem.name.=(clientName)
-								and c.serverClassElem.name.=(serverName))
-							{
-								exists := true;
-							};
-						};
-						if(not exists)
-						{
-							tempConnection := self.map toConfigConnection(f.name, f2.oclAsType(SpringModel::Reference));
-							connections += tempConnection;
-						}
-						else
-						{
-						 	tempConnection := null;
-						}
-					}
+						exists := true;
+					};
+				};
+				if(not exists)
+				{	
+					connections += c.map toConfigConnection(name,f2.oclAsType(SpringModel::Reference));
 				}
 			}
+		}
+	}
+	else if(self.oclIsTypeOf(SpringModel::sList))
+	{
+		(self.oclAsType(SpringModel::sList)).artefacts->forEach(f2)
+		{
+			if(f2.oclIsTypeOf(SpringModel::Reference))
+			{
+				var exists : Boolean;
+				exists := false;
+				connections->forEach(con)
+				{
+					if(con.clientClassElem.name.=(c._class.getComponentClassName())
+						and con.serverClassElem.name.=(f2.oclAsType(SpringModel::Reference).ref._class.getComponentClassName()))
+					{
+						exists := true;
+					};
+				};
+				if(not exists)
+				{	
+					connections += c.map toConfigConnection(name,f2.oclAsType(SpringModel::Reference));
+				}
+			}
+		}
+	}
+	else if(self.oclIsTypeOf(SpringModel::Map))
+	{
+		(self.oclAsType(SpringModel::Map)).entries->forEach(e)
+		{
+			if(e.key.key.oclIsTypeOf(SpringModel::Reference))
+			{
+				var exists : Boolean;
+				exists := false;
+				connections->forEach(con)
+				{
+					if(con.clientClassElem.name.=(c._class.getComponentClassName())
+						and con.serverClassElem.name.=(e.key.key.oclAsType(SpringModel::Reference).ref._class.getComponentClassName()))
+					{
+						exists := true;
+					};
+				};
+				if(not exists)
+				{	
+					connections += c.map toConfigConnection(name, e.key.key.oclAsType(SpringModel::Reference));
+				}
+			}
+			else if(e.key.key.oclIsTypeOf(SpringModel::Component))
+			{
+				var exists : Boolean;
+				exists := false;
+				connections->forEach(con)
+				{
+					if(con.clientClassElem.name.=(c._class.getComponentClassName())
+						and con.serverClassElem.name.=(e.key.key.oclAsType(SpringModel::Component)._class.getComponentClassName()))
+					{
+						exists := true;
+					};
+				};
+				if(not exists)
+				{	
+					connections += c.map toConfigConnection(name, e.key.key.oclAsType(SpringModel::Component));
+				}
+			}
+			else if(e.key.key.oclIsKindOf(SpringModel::Collection))
+			{
+				connections += e.key.key.oclAsType(SpringModel::Collection).getClassConnections(c,name);
+			};
+			if(e.value.oclIsTypeOf(SpringModel::Reference))
+			{
+				var exists : Boolean;
+				exists := false;
+				connections->forEach(con)
+				{
+					if(con.clientClassElem.name.=(c._class.getComponentClassName())
+						and con.serverClassElem.name.=(e.value.oclAsType(SpringModel::Reference).ref._class.getComponentClassName()))
+					{
+						exists := true;
+					};
+				};
+				if(not exists)
+				{	
+					connections += c.map toConfigConnection(name, e.value.oclAsType(SpringModel::Reference));
+				}
+			}
+			else if(e.value.oclIsTypeOf(SpringModel::Component))
+			{
+				var exists : Boolean;
+				exists := false;
+				connections->forEach(con)
+				{
+					if(con.clientClassElem.name.=(c._class.getComponentClassName())
+						and con.serverClassElem.name.=(e.value.oclAsType(SpringModel::Component)._class.getComponentClassName()))
+					{
+						exists := true;
+					};
+				};
+				if(not exists)
+				{	
+					connections += c.map toConfigConnection(name, e.value.oclAsType(SpringModel::Component));
+				}
+			}
+			else if(e.value.oclIsKindOf(SpringModel::Collection))
+			{
+				connections += e.value.oclAsType(SpringModel::Collection).getClassConnections(c,name);
+			};
 		}
 	};
 	return connections;

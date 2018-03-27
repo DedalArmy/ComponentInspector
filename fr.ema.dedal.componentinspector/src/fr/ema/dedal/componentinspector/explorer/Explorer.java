@@ -1,8 +1,12 @@
 package fr.ema.dedal.componentinspector.explorer;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.log4j.Logger;
 
 import dedal.DedalDiagram;
@@ -34,20 +38,38 @@ public class Explorer {
 			DedalDiagram result = new DedalFactoryImpl().createDedalDiagram();
 			result.setName("genDedalDiag");
 			
-			URL[] urlToLoad=new URL[]{Paths.get(singlePath).toUri().toURL()};
-			JarLoader jarloader = new JarLoader(urlToLoad);
-			
-			/*
-			 * let's extract some component classes
-			 */
-			JarInspector jarInspector = new JarInspector(jarloader);
-			jarInspector.generate(result, sdslPath);
+			inspectJar(singlePath, sdslPath, result);
 			return result;
 		} 
 		catch (IOException e) {
 			logger.error(e.getMessage(), e);
 			return null;
 		}
+	}
+	
+	public static List<DedalDiagram> generate(String libPath)
+	{
+		List<DedalDiagram> result = new ArrayList<>();
+		
+		return result;
+	}
+	/**
+	 * Loads and inspects the jar file.
+	 * @param singlePath
+	 * @param sdslPath
+	 * @param result
+	 * @throws MalformedURLException
+	 */
+	private static void inspectJar(String singlePath, String sdslPath, DedalDiagram result)
+			throws MalformedURLException {
+		URL[] urlToLoad=new URL[]{Paths.get(singlePath).toUri().toURL()};
+		JarLoader jarloader = new JarLoader(urlToLoad);
+		
+		/**
+		 * Let's extract some component classes.
+		 */
+		JarInspector jarInspector = new JarInspector(jarloader);
+		jarInspector.generate(result, sdslPath);
 	}
 	
 }

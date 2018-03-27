@@ -79,21 +79,22 @@ public class Main {
 			logger.info("sdslPath = " + sdslPath);
 		}		
 		
-		DedalDiagram dd = null;
+		List<DedalDiagram> reconstructedArchitectures = new ArrayList<>();
 		if(!"".equals(libPath))
-			dd = Explorer.generate(libPath);
+			reconstructedArchitectures.addAll(Explorer.generate(libPath));
 		else 
 			if(!("".equals(singlePath) || "".equals(sdslPath)))
-			dd = Explorer.generate(singlePath, sdslPath);
+			reconstructedArchitectures.add(Explorer.generate(singlePath, sdslPath));
 		else
 			logger.error("The Dedal diagram could not be generated due to path issues.");
 
-		if(dd != null)
-		{
-			saveDiagram(dd);
-		}
+		if(!reconstructedArchitectures.isEmpty())
+			for(DedalDiagram dd : reconstructedArchitectures)
+			{
+				saveDiagram(dd);
+			}
 		else
-			logger.error("The Dedal diagram could not be saved as it refers to a null pointer.");
+			logger.error("No architecture were reconstructed.");
 	}
 
 	/**
@@ -106,10 +107,10 @@ public class Main {
 		ResourceSet resourceSet = injector.getInstance(XtextResourceSet.class);
 		resourceSet.setResourceFactoryRegistry(reg);
 
-		URI uri = URI.createURI("generated/livemodel.dedaladl");
+		URI uri = URI.createURI("generated/"+ dedalDiagram.getName() +".dedaladl");
 		Resource resource = resourceSet.createResource(uri);
 
-		URI uri2 = URI.createURI("generated/livemodel.dedal");
+		URI uri2 = URI.createURI("generated/"+ dedalDiagram.getName() +".dedal");
 		Resource resource2 = new XMIResourceImpl(uri2);
 
 		// Get the first model element and cast it to the right type, in my

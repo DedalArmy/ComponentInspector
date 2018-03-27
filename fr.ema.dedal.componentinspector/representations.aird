@@ -9,4 +9,6 @@
   <semanticResources>http://www.xtext.org/spring/SpringConfigDsl</semanticResources>
   <semanticResources>http://www.dedal.fr/metamodel</semanticResources>
   <semanticResources>transforms/springToDedal.qvto</semanticResources>
+  <semanticResources>generated/genDedalDiag.dedal</semanticResources>
+  <semanticResources>generated/genDedalDiag.dedaladl</semanticResources>
 </viewpoint:DAnalysis>
