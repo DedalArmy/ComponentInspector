@@ -80,9 +80,9 @@ public class Main {
 		}		
 		
 		DedalDiagram dd = null;
-//		if(!"".equals(libPath))
-//			dd = Explorer.generate(libPath);
-//		else 
+		if(!"".equals(libPath))
+			dd = Explorer.generate(libPath);
+		else 
 			if(!("".equals(singlePath) || "".equals(sdslPath)))
 			dd = Explorer.generate(singlePath, sdslPath);
 		else
