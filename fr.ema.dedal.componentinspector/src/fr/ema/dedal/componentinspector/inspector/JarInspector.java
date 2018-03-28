@@ -48,6 +48,7 @@ public class JarInspector {
 	Map<Interface, List<Interface>> candidateInterfaces = null;
 	Map<CompClass, List<CompRole>> typeHierarchy = null;
 	Map<CompClass, Map<Interface, Class<?>>> compIntToType = null;
+	Map<CompRole, Map<Interface, Class<?>>> roleIntToType = null;
 	DedalFactory factory;
 
 	/**
@@ -63,6 +64,7 @@ public class JarInspector {
 		this.compToClass = new HashMap<>();
 		this.roleToClass = new HashMap<>();
 		this.compIntToType = new HashMap<>();
+		this.roleIntToType = new HashMap<>();
 		this.typeHierarchy = new HashMap<>();
 		this.intToClass = new HashMap<>();
 		this.candidateInterfaces = new HashMap<>();
@@ -152,6 +154,8 @@ public class JarInspector {
 		this.compToClass.forEach((key,value) -> {
 			RoleExtractor re = new RoleExtractor(value, key, this.intToClass, repo);
 			List<CompRole> extractedRoles = re.calculateSuperTypes();
+			this.roleIntToType.putAll(re.getRoleToIntToType());
+			this.intToClass.putAll(re.getIntToType());
 			spec.getSpecComponents().addAll(extractedRoles);
 			key.getRealizes().addAll(extractedRoles);
 			
@@ -165,39 +169,65 @@ public class JarInspector {
 	 */
 	private void setSpecConnections(Specification spec, Configuration config) {
 		config.getConfigConnections().forEach(ccon -> {
-			RoleConnection tempRoleConnection = factory.createRoleConnection();
+			RoleConnection tempRoleConnection = new DedalFactoryImpl().createRoleConnection();
 			CompClass cclient = ccon.getClientClassElem();
 			CompClass cserver = ccon.getServerClassElem();
-			CompRole rclient = cclient.getRealizes().get(0);
-			CompRole rserver = cserver.getRealizes().get(0);
-			tempRoleConnection.setClientCompElem(rclient);
-			tempRoleConnection.setServerCompElem(rserver);
-			for(Interaction inter : cclient.getCompInterfaces())
-			{
-				for(Interaction inter2 : rclient.getCompInterfaces())
-				{
-					if((inter instanceof Interface) && (inter2 instanceof Interface)
-							&& (((Interface) inter).getType().equals(((Interface) ccon.getClientIntElem()).getType())) 
-							&& ((Interface) inter).getType().equals(((Interface) inter2).getType()))
-					{
-						tempRoleConnection.setClientIntElem(inter2);
-						break;
-					}
-				}
-			}
+			List<CompRole> realizedByClient = cclient.getRealizes();
+			List<CompRole> realizedByServer = cserver.getRealizes();
+			tempRoleConnection = findClientRole(tempRoleConnection, ccon.getClientIntElem(), realizedByClient);
+			tempRoleConnection = findServerRole(tempRoleConnection, cserver, realizedByServer);
+			spec.getSpecConnections().add(tempRoleConnection);
+		});
+	}
+
+	/**
+	 * @param tempRoleConnection
+	 * @param cserver
+	 * @param realizedByServer
+	 * @return 
+	 */
+	private RoleConnection findServerRole(RoleConnection tempRoleConnection, CompClass cserver, List<CompRole> realizedByServer) {
+		for(CompRole rserver : realizedByServer)
+		{
 			for(Interaction inter : cserver.getCompInterfaces())
 			{
 				for(Interaction inter2 : rserver.getCompInterfaces())
 				{
-					if((inter instanceof Interface) && (inter2 instanceof Interface)
-							&& ((Interface) inter).getType().equals(((Interface) inter2).getType()))
+					Class<?> icli = this.roleIntToType.get(tempRoleConnection.getClientCompElem()).get(tempRoleConnection.getClientIntElem());
+					Class<?> iserv = this.roleIntToType.get(rserver).get(inter2);
+					if(this.roleIntToType.get(rserver).get(inter2).isAssignableFrom(this.compIntToType.get(cserver).get(inter))
+							&& icli.isAssignableFrom(iserv))
 					{
+						tempRoleConnection.setServerCompElem(rserver);
 						tempRoleConnection.setServerIntElem(inter2);
+						return tempRoleConnection;
 					}
 				}
 			}
-			spec.getSpecConnections().add(tempRoleConnection);
-		});
+		}
+		return tempRoleConnection;
+	}
+
+	/**
+	 * @param tempRoleConnection
+	 * @param cclient
+	 * @param realizedByClient
+	 * @return 
+	 */
+	private RoleConnection findClientRole(RoleConnection tempRoleConnection, Interaction iclient, List<CompRole> realizedByClient) {
+		for(CompRole rclient: realizedByClient)
+		{
+				for(Interaction inter2 : rclient.getCompInterfaces())
+				{
+					if(this.intToClass.get(iclient).equals(this.roleIntToType.get(rclient).get(inter2)))
+					{
+						tempRoleConnection.setClientCompElem(rclient);
+						tempRoleConnection.setClientIntElem(inter2);
+						return tempRoleConnection;
+					}
+				}
+		}
+		return tempRoleConnection;
 	}
 
 	/**
@@ -251,6 +281,7 @@ public class JarInspector {
 		 * Setting configurations
 		 */
 		Map<Interaction, List<Interaction>> mapServerToClients = new HashMap<>();
+		Map<Interface, ClassConnection> intServToCon = new HashMap<>();
 		config.getConfigConnections().forEach(con -> {
 			CompClass client = con.getClientClassElem();
 			CompClass server = con.getServerClassElem();
@@ -289,49 +320,127 @@ public class JarInspector {
 				}
 			});
 			mapServerToClients.put(con.getServerIntElem(), new ArrayList<>());
+			intServToCon.put((Interface)con.getServerIntElem(),con);
 		});
 		
 		/**
 		 * Connect clients to the most abstract provided interface as possible
 		 */
 		config.getConfigConnections().forEach(con -> mapServerToClients.get(con.getServerIntElem()).add(con.getClientIntElem()));
+		Map<ClassConnection, Interface> transform = new HashMap<>();
+		mapServerToClients.forEach((key,value) -> transform.putAll(getMostAbstractProvidedInterfaces(config, key, value)));
 		
-		mapServerToClients.forEach((key,value) -> {
-			if(value.size()==1) //if a server is connected to a single client
+		intServToCon.forEach((initServ, con) -> {
+			CompClass server = con.getServerClassElem();
+			Interaction finalServ = transform.get(con);
+			server.getCompInterfaces().add(finalServ);
+			con.setServerIntElem(finalServ);
+			if(!server.getCompInterfaces().contains(finalServ))
+				server.getCompInterfaces().add(finalServ);
+			if(!connected(initServ, config.getConfigConnections()))
 			{
-				if( (key instanceof Interface) && (value.get(0) instanceof Interface))
-				{
-					Interface iserv = (Interface) key;
-					Interface icli = (Interface) value.get(0);
-					if((this.intToClass.get(icli)).isAssignableFrom(this.intToClass.get(iserv)) && !(this.intToClass.get(icli)).equals(this.intToClass.get(iserv)))
-					{
-						Interface intToAssign = this.getMostSatisfyingInterface(iserv, icli);
-						if(!intToAssign.equals(iserv))
-							iserv.setType(intToAssign.getType());
-					}
-				}
+				server.getCompInterfaces().remove(initServ);
 			}
-			else if (value.size()>1)
-			{
-				Interface iserv = (Interface) key;
-				if(comparable(value))
-				{
-					Interface intToAssign = this.getMostSatisfyingInterface(iserv, value);
-					if(!intToAssign.equals(iserv))
-						iserv.setType(intToAssign.getType());
-				}
-				else
-				{
-					this.decoupleInterfaces(iserv, value, config.getConfigConnections());
-				}
-			}
-			else // a server interface of a connection cannot be connected to 0 client interface
-				logger.error("Something went terribly wrong while assembling connections");
 		});
 	}
 
-	private void decoupleInterfaces(Interface iserv, List<Interaction> value,
+	/**
+	 * @param config
+	 * @param server
+	 * @param client
+	 * @return 
+	 */
+	private Map<ClassConnection, Interface> getMostAbstractProvidedInterfaces(Configuration config, Interaction server, List<Interaction> client) {
+		Map<ClassConnection,Interface> result = new HashMap<>();
+		if(client.size()==1) //if a server is connected to a single client
+		{
+			if( (server instanceof Interface) && (client.get(0) instanceof Interface))
+			{
+				Interface iserv = (Interface) server;
+				Interface icli = (Interface) client.get(0);
+				if((this.intToClass.get(icli)).isAssignableFrom(this.intToClass.get(iserv)) 
+						&& !(this.intToClass.get(icli)).equals(this.intToClass.get(iserv)))
+				{
+					result.put(this.findConnection(config,iserv,icli),assignNewServerInterface(iserv, icli));
+				}
+			}
+		}
+		else if (client.size()>1)
+		{
+			result.putAll(buildAbstractInterfacesMultiplyConnected(config, server, client));
+		}
+		else // a server interface of a connection cannot be connected to 0 client interface
+			logger.error("Something went terribly wrong while assembling connections");
+		return result;
+	}
+
+	/**
+	 * @param config
+	 * @param server
+	 * @param client
+	 * @param result
+	 * @return 
+	 */
+	private Map<? extends ClassConnection, ? extends Interface> buildAbstractInterfacesMultiplyConnected(Configuration config, Interaction server,
+			List<Interaction> client) {
+		Map<ClassConnection,Interface> result = new HashMap<>();
+		Interface iserv = (Interface) server;
+		if(comparable(client))
+		{
+			for(Interaction icli : client)
+			{
+				result.put(this.findConnection(config, iserv, (Interface) icli),assignNewServerInterface(iserv, (Interface) icli));
+			}
+		}
+		else
+		{
+			result.putAll(this.decoupleInterfaces(iserv, client, config.getConfigConnections()));
+		}
+		return result;
+	}
+
+	/**
+	 * 
+	 * @param config
+	 * @param iserv
+	 * @param icli
+	 * @return
+	 */
+	private ClassConnection findConnection(Configuration config, Interface iserv, Interface icli) {
+		ClassConnection result = new DedalFactoryImpl().createClassConnection();
+		for(ClassConnection cc : config.getConfigConnections())
+		{
+			if(iserv.equals(cc.getServerIntElem()) && icli.equals(cc.getClientIntElem()))
+			{
+				return cc;
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * @param iserv
+	 * @param icli
+	 */
+	private Interface assignNewServerInterface(Interface iserv, Interface icli) {
+		Interface intToAssign = this.getMostSatisfyingInterface(iserv, icli);
+		if(!intToAssign.equals(iserv))
+		{
+			return intToAssign;
+		}
+		return iserv;
+	}
+
+	/**
+	 * 
+	 * @param iserv
+	 * @param value
+	 * @param configConnections
+	 * @return 
+	 */
+	private Map<ClassConnection, Interface> decoupleInterfaces(Interface iserv, List<Interaction> value,
 			List<ClassConnection> configConnections) {
+		Map<ClassConnection, Interface> result = new HashMap<>();
 		List<ClassConnection> targetedConnections = new ArrayList<>();
 		for(ClassConnection cc : configConnections)
 		{
@@ -345,14 +454,9 @@ public class JarInspector {
 			List<Interaction> comparables =  assembleComparable((Interface) cc.getClientClassElem(), value);
 			Interface intToAssign = this.getMostSatisfyingInterface(iserv, comparables);
 			if(!intToAssign.equals(iserv))
-				iserv.setType(intToAssign.getType());
-			cc.setServerIntElem(intToAssign);
-			cc.getServerClassElem().getCompInterfaces().add(intToAssign);
-			if(!connected(iserv, configConnections))
-			{
-				cc.getServerClassElem().getCompInterfaces().remove(iserv);
-			}
+				result.put(cc,intToAssign);
 		}
+		return result;
 	}
 
 	private boolean connected(Interface iserv, List<ClassConnection> configConnections) {
@@ -447,14 +551,8 @@ public class JarInspector {
 	 * @param config
 	 */
 	private void mapComponentClasses(DedalDiagram dedalDiagram, Repository repo, List<Class<?>> classList, Configuration config) {
-//		while(!config.getConfigComponents().isEmpty())
 		for(CompClass tempCompClass : config.getConfigComponents())
 		{
-			/*
-			 * During the process, the components are pushed into the repository
-			 * and thus, they are removed from the configuration
-			 */
-//			CompClass tempCompClass = config.getConfigComponents().get(0);
 			if(logger.isInfoEnabled())
 			{
 				logger.info("compName : " + tempCompClass.getName());

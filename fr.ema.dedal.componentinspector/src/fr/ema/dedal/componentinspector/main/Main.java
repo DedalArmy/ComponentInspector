@@ -81,7 +81,7 @@ public class Main {
 		
 		List<DedalDiagram> reconstructedArchitectures = new ArrayList<>();
 		if(!"".equals(libPath))
-			reconstructedArchitectures.addAll(Explorer.generate(libPath));
+			reconstructedArchitectures.addAll(Explorer.generateAll(libPath));
 		else 
 			if(!("".equals(singlePath) || "".equals(sdslPath)))
 			reconstructedArchitectures.add(Explorer.generate(singlePath, sdslPath));

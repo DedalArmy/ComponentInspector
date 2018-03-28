@@ -4,8 +4,6 @@
 package fr.ema.dedal.componentinspector.inspector;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -13,7 +11,6 @@ import org.apache.log4j.Logger;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import dedal.Attribute;
 import dedal.CompClass;
-import dedal.CompRole;
 import dedal.CompType;
 import dedal.Configuration;
 import dedal.DIRECTION;
@@ -89,26 +86,34 @@ public class ClassInspector extends InterfaceInspector {
 		Field[] fields = objectToInspect.getDeclaredFields().length>0? objectToInspect.getDeclaredFields() : null;
 		if (fields != null) {
 			for (Field field : fields) {
-				if(logger.isInfoEnabled())
-					logger.info("\t\t" + field.toGenericString());
-				Attribute tempAttribute = new DedalFactoryImpl().createAttribute();
-				tempAttribute.setName(field.getName());
-				
-				if(field.getType().isArray())
-					tempAttribute.setType(field.getType().getComponentType().getCanonicalName());
-				else
-				{
-					if(Collection.class.isAssignableFrom(field.getType()))
-						tempAttribute.setType(field.getType().getTypeName());
-					else 
-						tempAttribute.setType(field.getType().getCanonicalName());
-				}
-				tempCompClass.getAttributes().add(tempAttribute);
+				exploreField(tempCompClass, field);
 			}
 		}
 		if(!objectToInspect.getSuperclass().equals(Object.class) &&
 				objectToInspect.getSuperclass()!=null)
 			mapAttributes(tempCompClass, objectToInspect.getSuperclass());
+	}
+
+	/**
+	 * @param tempCompClass
+	 * @param field
+	 */
+	private void exploreField(CompClass tempCompClass, Field field) {
+		if(logger.isInfoEnabled())
+			logger.info("\t\t" + field.toGenericString());
+		Attribute tempAttribute = new DedalFactoryImpl().createAttribute();
+		tempAttribute.setName(field.getName());
+		
+		if(field.getType().isArray())
+			tempAttribute.setType(field.getType().getComponentType().getCanonicalName());
+		else
+		{
+			if(Collection.class.isAssignableFrom(field.getType()))
+				tempAttribute.setType(field.getType().getTypeName());
+			else 
+				tempAttribute.setType(field.getType().getCanonicalName());
+		}
+		tempCompClass.getAttributes().add(tempAttribute);
 	}
 
 	/**

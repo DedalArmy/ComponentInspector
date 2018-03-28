@@ -2,14 +2,19 @@ package fr.ema.dedal.componentinspector.explorer;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.net.URI;
 import java.net.URL;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 
 import dedal.DedalDiagram;
+import fr.ema.dedal.componentinspector.classloader.FolderLoader;
 import fr.ema.dedal.componentinspector.classloader.JarLoader;
 import fr.ema.dedal.componentinspector.inspector.JarInspector;
 import dedal.impl.DedalFactoryImpl;
@@ -47,12 +52,36 @@ public class Explorer {
 		}
 	}
 	
-	public static List<DedalDiagram> generate(String libPath)
+	public static List<DedalDiagram> generateAll(String libPath)
 	{
 		List<DedalDiagram> result = new ArrayList<>();
+		/**
+		 * We know the library hierarchy tree
+		 * 
+		 * Library
+		 * |
+		 * |----Owners
+		 * |	|
+		 * |	|----Repositories
+		 */
 		
-		return result;
+		try {
+			List<URI> owners = FolderLoader.loadFolder(Paths.get(libPath));
+			Map<URI, List<URI>> ownerToRepos = new HashMap<>();
+			for(URI o : owners)
+			{
+				ownerToRepos.put(o, FolderLoader.loadFolder(Paths.get(o)));
+			}
+			if(logger.isInfoEnabled())
+				ownerToRepos.forEach((o,repos) -> repos.forEach(r -> logger.info(r.toString())));
+			
+			return result;
+		} catch (IOException e) {
+			logger.error(e.getMessage(), e);
+		}
+		return Collections.emptyList();
 	}
+	
 	/**
 	 * Loads and inspects the jar file.
 	 * @param singlePath

@@ -36,7 +36,7 @@ public class RoleExtractor {
 	private DedalDiagram dedalDiagram;
 	private Configuration config;
 	private Map<Interface, Class<?>> intToType;
-
+	private Map<CompRole, Map<Interface, Class<?>>> roleToIntToType = null;
 	private Repository repo;
 
 	/**
@@ -51,11 +51,20 @@ public class RoleExtractor {
 		this.clazz = object;
 		this.config = (Configuration) cc.eContainer();
 		this.dedalDiagram = (DedalDiagram) config.eContainer();
+		this.roleToIntToType = new HashMap<>();
 		if(interfaceToClass!=null)
 			this.intToType = interfaceToClass;
 		else
 			this.intToType = new HashMap<>();
 		this.repo = repo;
+	}
+
+	public Map<Interface, Class<?>> getIntToType() {
+		return intToType;
+	}
+
+	public Map<CompRole, Map<Interface, Class<?>>> getRoleToIntToType() {
+		return roleToIntToType;
 	}
 
 	/**
@@ -90,6 +99,8 @@ public class RoleExtractor {
 		tempRole.getCompInterfaces().addAll(cInspect.calculateProvidedInterfaces(objectToInspect));
 		tempRole.getCompInterfaces().addAll(cInspect.calculateRequiredInterfaces(objectToInspect));
 		tempRole.getCompInterfaces().forEach(ci -> ci.setName(ci.getName() + tempRole.getName()));
+		this.roleToIntToType.put(tempRole,cInspect.getInterfaceToClassMap());
+		this.intToType.putAll(this.roleToIntToType.get(tempRole));
 		
 		/**
 		 * calling the recursive fonction on all the super types.
@@ -161,7 +172,6 @@ public class RoleExtractor {
 		ClassInspector cInspect = new ClassInspector(superclass, dedalDiagram, config, repo);
 		List<Interface> providedInterfaces = cInspect.calculateProvidedInterfaces(superclass);
 		List<Interface> requiredInterfaces = cInspect.calculateRequiredInterfaces(superclass);
-		intToType.putAll(cInspect.getInterfaceToClassMap());
 		
 		/**
 		 * The second step is to make the intersection between required interfaces of the contract and required interface of the role to at least preserve required interfaces of the contract.
