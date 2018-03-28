@@ -96,11 +96,11 @@ public class Explorer {
 					JarLoader jarloarder = new JarLoader(urlsToLoad);
 					try
 					{
-						classes = jarloarder.loadClasses();
+						classes = jarloarder.loadClasses(f.getName());
 					}catch (Exception e) {
 						logger.error(e.getMessage(),e);
 					}
-					 
+					
 					System.out.println("coucou");
 				}
 			}
@@ -141,19 +141,24 @@ public class Explorer {
 	private static List<URI> recursivelyGetFileURIs(URI folder, String ... fileExtensions) throws IOException
 	{
 		List<URI> result = new ArrayList<>();
-		List<URI> tempURIs = FolderLoader.loadFolder(Paths.get(folder));
-		for(URI uri : tempURIs)
+		File f1 = new File(folder);
+		List<URI> tempURIs = new ArrayList<>();
+		if(f1.isDirectory() && !f1.getName().contains("lib") && !f1.getName().contains("dependenc"))
 		{
-			File f = new File(uri);
-			if(f.isFile())
-				for(String ext : fileExtensions)
-				{
-					if(f.getName().endsWith(ext))
-						result.add(uri);
-				}
-			else if(f.isDirectory())
+			tempURIs = FolderLoader.loadFolder(Paths.get(folder));
+			for(URI uri : tempURIs)
 			{
-				result.addAll(recursivelyGetFileURIs(uri, fileExtensions));
+				File f = new File(uri);
+				if(f.isFile())
+					for(String ext : fileExtensions)
+					{
+						if(f.getName().endsWith(ext))
+							result.add(uri);
+					}
+				else if(f.isDirectory())
+				{
+					result.addAll(recursivelyGetFileURIs(uri, fileExtensions));
+				}
 			}
 		}
 		return result;
