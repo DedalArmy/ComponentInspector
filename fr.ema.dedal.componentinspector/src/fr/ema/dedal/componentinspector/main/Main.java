@@ -78,11 +78,11 @@ public class Main {
 			logger.info("singlePath = " + singlePath);
 			logger.info("sdslPath = " + sdslPath);
 		}		
-		
+
 		List<DedalDiagram> reconstructedArchitectures = new ArrayList<>();
-		if(!"".equals(libPath))
+		if(!"".equals(libPath)) {
 			reconstructedArchitectures.addAll(Explorer.generateAll(libPath));
-		else 
+		} else 
 			if(!("".equals(singlePath) || "".equals(sdslPath)))
 			reconstructedArchitectures.add(Explorer.generate(singlePath, sdslPath));
 		else
@@ -106,9 +106,10 @@ public class Main {
 		Injector injector = new DedalADLStandaloneSetup().createInjectorAndDoEMFRegistration();
 		ResourceSet resourceSet = injector.getInstance(XtextResourceSet.class);
 		resourceSet.setResourceFactoryRegistry(reg);
-
-		URI uri = URI.createURI("generated/"+ dedalDiagram.getName() +".dedaladl");
-		Resource resource = resourceSet.createResource(uri);
+		
+			URI uri = URI.createURI("generated/"+ dedalDiagram.getName() +".dedaladl");
+			Resource resource = resourceSet.createResource(uri);
+		
 
 		URI uri2 = URI.createURI("generated/"+ dedalDiagram.getName() +".dedal");
 		Resource resource2 = new XMIResourceImpl(uri2);
@@ -133,7 +134,12 @@ public class Main {
 			 * of the DedalADL syntax.
 			 */
 			resource2.save(options2);
-			resource.save(options);
+			try {
+				resource.save(options);
+			} catch (Exception e) {
+				logger.error("could not generate " + dedalDiagram.getName() +".dedaladl");
+			}
+			
 		} catch (IOException e) {
 			logger.error(e.getMessage(), e);
 		}

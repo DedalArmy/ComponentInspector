@@ -31,15 +31,15 @@ public class JarLoader extends URLClassLoader {
 	static final Logger logger = Logger.getLogger(JarLoader.class);
 
 	private static final String JAVA_CLASS_SUFFIX = ".class";
-	private static final String SPRING_FRAMEWORK = "org.springframework";
-	private static final String AOP_ALLIANCE = "org.aopalliance";
-	private static final String JSON = "org.json";
-	private static final String ECLIPSE_JDT = "org.eclipse.jdt";
-	private static final String APACHE_COMMONS = "org.apache.commons.";
-	private static final String APACHE_LOG4J = "org.apache.log4j.";
-	private static final String ORG_OPENID4JAVA = "org.openid4java";
-
-	private static final String JAVAX = "javax";
+//	private static final String SPRING_FRAMEWORK = "org.springframework";
+//	private static final String AOP_ALLIANCE = "org.aopalliance";
+//	private static final String JSON = "org.json";
+//	private static final String ECLIPSE_JDT = "org.eclipse.jdt";
+//	private static final String APACHE_COMMONS = "org.apache.commons.";
+//	private static final String APACHE_LOG4J = "org.apache.log4j.";
+//	private static final String ORG_OPENID4JAVA = "org.openid4java";
+//	private static final String JAVAX = "javax";
+//	private static final String ORG_XML = "org.xml.";
 
 	/**
 	 * Parameterized constructor
@@ -57,9 +57,8 @@ public class JarLoader extends URLClassLoader {
 
 				try {
 					traverseJar(jarMapping, url, listClasses, name);
-				} catch (URISyntaxException | IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+				} catch (Exception e) {
+					logger.error(e.getMessage(), e);
 				}
 			
 			
@@ -73,49 +72,14 @@ public class JarLoader extends URLClassLoader {
 		URL[] urls = this.getURLs();
 		for (URL url : urls) {			
 			List<Class<?>> listClasses = new ArrayList<>();
-
-//			if(URI.create(url.getFile()).getPath().endsWith(".jar"))
-//			{
 				try {
 					traverseJar(jarMapping, url, listClasses, "");
 				} catch (URISyntaxException | IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+					logger.error("Could not traverse jar at " + url.getPath(), e);
 				}
-//			} else
-//				try {
-//					traverseFolder(jarMapping, url, listClasses);
-//				} catch (URISyntaxException e) {
-//					// TODO Auto-generated catch block
-//					e.printStackTrace();
-//				}
-			
-			
-			
 		}
 		return jarMapping;
 	}
-
-//	private void traverseFolder(Map<URI, List<Class<?>>> jarMapping, URL url, List<Class<?>> listClasses) throws URISyntaxException {
-//
-//		File file = new File(url.toURI());
-//		
-//		if(file.isDirectory())
-//		{
-//			for(File f : file.listFiles())
-//			{
-//				try {
-//					traverseFolder(jarMapping, new URL(f.getAbsolutePath()), listClasses);
-//				} catch (MalformedURLException e) {
-//					logger.error(e.getMessage(), e);
-//				}
-//			}
-//		}
-//		else if(file.getName().endsWith(".java")) {
-//			System.out.println("coucou");
-//		}
-//		
-//	}
 
 	/**
 	 * @param jarMapping
@@ -140,17 +104,19 @@ public class JarLoader extends URLClassLoader {
 			 * WE NEED TO AVOID TO ANALYZE FRAMEWORK DEPENDENCIES
 			 */
 			if(
-//					name.contains(name2)
-					//						!name.startsWith(SPRING_FRAMEWORK) 
-					//						&& !name.startsWith(AOP_ALLIANCE) 
-					//						&& !name.startsWith(JSON)
-					//						&& !name.startsWith(ECLIPSE_JDT)
-					//						&& !name.startsWith(APACHE_COMMONS)
-					//						&& !name.startsWith(APACHE_LOG4J)
-					//						&& !name.startsWith(ORG_OPENID4JAVA)
-//					&& !name.startsWith(JAVAX)
+					name.endsWith(JAVA_CLASS_SUFFIX)
+					&& name.contains(name2)
+//					&& !name.startsWith(SPRING_FRAMEWORK) 
+//					&& !name.startsWith(AOP_ALLIANCE) 
+//					&& !name.startsWith(JSON)
+//					&& !name.startsWith(ECLIPSE_JDT)
 //					&& 
-					name.endsWith(JAVA_CLASS_SUFFIX))
+//					!name.startsWith(APACHE_COMMONS)
+//					&& !name.startsWith(APACHE_LOG4J)
+//					&& !name.startsWith(ORG_OPENID4JAVA)
+//					&& !name.startsWith(JAVAX)
+//					&& !name.startsWith(ORG_XML)
+				)
 			{
 				if(logger.isInfoEnabled())
 					logger.info(name);
@@ -169,14 +135,20 @@ public class JarLoader extends URLClassLoader {
 	 * @throws ClassNotFoundException 
 	 * @throws URISyntaxException 
 	 */
-	private void load(Map<URI, List<Class<?>>> jarMapping, URL url, List<Class<?>> listClasses, String name) throws URISyntaxException {
+	private void load(Map<URI, List<Class<?>>> jarMapping, URL url, List<Class<?>> listClasses, String name) {
 			Class<?> loadClass;
 			try {
 				loadClass = this.loadClass(name.substring(0, name.length()-JAVA_CLASS_SUFFIX.length()));
 				listClasses.add(loadClass);
-			} catch (ClassNotFoundException e) {
+			} 
+			catch (ClassNotFoundException | NoClassDefFoundError | IllegalAccessError | VerifyError e) {
+				logger.error("A problem occured while loading class" + name + ". Loading ended with " + e.getCause());
+			}
+			try {
+				jarMapping.put(url.toURI(), listClasses);
+			} 
+			catch (URISyntaxException e) {
 				logger.error(e.getMessage(), e);
 			}
-			jarMapping.put(url.toURI(), listClasses);
 	}	
 }

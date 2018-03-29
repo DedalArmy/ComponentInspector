@@ -39,9 +39,10 @@ public class SdslInspector {
 		Injector injector = new SpringConfigDslStandaloneSetup().createInjectorAndDoEMFRegistration();
 		ResourceSet resourceSet = injector.getInstance(XtextResourceSet.class);
 		Resource inResource;
-		try {
+//		try {
 
-			inResource = resourceSet.getResource(org.eclipse.emf.common.util.URI.createFileURI(Paths.get(sdslPath).toFile().getCanonicalPath()),true);
+//			inResource = resourceSet.getResource(org.eclipse.emf.common.util.URI.createFileURI(Paths.get(sdslPath).toFile().getCanonicalPath()),true);
+			inResource = resourceSet.getResource(org.eclipse.emf.common.util.URI.createFileURI(sdslPath),true);
 			EList<EObject> inObjects = inResource.getContents();
 
 			// create the input extent with its initial contents
@@ -73,10 +74,10 @@ public class SdslInspector {
 				logger.error(status.getMessage());
 				return Collections.emptyList();
 			}
-		} catch (IOException e) {
-			logger.error(e.getMessage(), e);
-			return Collections.emptyList();
-		}
+//		} catch (IOException e) {
+//			logger.error(e.getMessage(), e);
+//			return Collections.emptyList();
+//		}
 	}
 
 }

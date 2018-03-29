@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="springside-3.3.4-src.springside-3.3.4">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="springside-3.3.4-src.springside-3.3.4_config" implements="//@architectureDescriptions[name='springside-3.3.4-src.springside-3.3.4_spec']">
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_G0LXUDNsEeiS3eZ7q_ARLw"/>
+    <configComponents name="&quot;org.springside.modules.utils.spring.SpringContextHolder&quot;" id="_G0LXUTNsEeiS3eZ7q_ARLw"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DriverManagerDataSource&quot;" id="_G0L-YDNsEeiS3eZ7q_ARLw"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_G00QgDNsEeiS3eZ7q_ARLw"/>
+    <configComponents name="&quot;org.springside.modules.utils.spring.SpringContextHolder&quot;" id="_G03T0DNsEeiS3eZ7q_ARLw"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DriverManagerDataSource&quot;" id="_G0364DNsEeiS3eZ7q_ARLw"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="springside-3.3.4-src.springside-3.3.4_asm" instantiates="//@architectureDescriptions[name='springside-3.3.4-src.springside-3.3.4_config']">
+    <assmComponents id="_G0NMgDNsEeiS3eZ7q_ARLw" instantiates="_G0LXUDNsEeiS3eZ7q_ARLw"/>
+    <assmComponents id="_G0NzkDNsEeiS3eZ7q_ARLw" instantiates="_G0LXUTNsEeiS3eZ7q_ARLw"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_G0NzkTNsEeiS3eZ7q_ARLw" instantiates="_G0L-YDNsEeiS3eZ7q_ARLw"/>
+    <assmComponents name="&quot;quartzDataSource&quot;" id="_G0NzkjNsEeiS3eZ7q_ARLw" instantiates="_G0L-YDNsEeiS3eZ7q_ARLw"/>
+    <assmComponents id="_G1MD8DNsEeiS3eZ7q_ARLw" instantiates="_G00QgDNsEeiS3eZ7q_ARLw"/>
+    <assmComponents id="_G1MD8TNsEeiS3eZ7q_ARLw" instantiates="_G03T0DNsEeiS3eZ7q_ARLw"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_G1MrADNsEeiS3eZ7q_ARLw" instantiates="_G0364DNsEeiS3eZ7q_ARLw"/>
+    <assmComponents name="&quot;quartzDataSource&quot;" id="_G1MrATNsEeiS3eZ7q_ARLw" instantiates="_G0364DNsEeiS3eZ7q_ARLw"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="springside-3.3.4-src.springside-3.3.4_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

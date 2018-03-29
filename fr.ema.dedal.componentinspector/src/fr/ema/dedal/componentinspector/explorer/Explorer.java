@@ -11,6 +11,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 
 import org.apache.log4j.Logger;
 
@@ -23,9 +24,11 @@ import dedal.impl.DedalFactoryImpl;
 public class Explorer {
 
 	static final Logger logger = Logger.getLogger(Explorer.class);
-	static final String xml = ".xml";
-	static final String jar = ".jar";
-	static final String war = ".war";
+	static final String XML = ".xml";
+	static final String JAR = ".jar";
+	static final String WAR = ".war";
+	static final String BEANS = "<beans";
+	static final String BEAN = "<bean";
 
 	private Explorer() {}
 
@@ -47,7 +50,7 @@ public class Explorer {
 			DedalDiagram result = new DedalFactoryImpl().createDedalDiagram();
 			result.setName("genDedalDiag");
 
-			inspectJar(singlePath, sdslPath, result);
+			inspectJarFromSinglePath(singlePath, sdslPath, result);
 			return result;
 		} 
 		catch (IOException e) {
@@ -83,34 +86,53 @@ public class Explorer {
 			for(URI folder : repos)
 			{
 				File f = new File(folder);
+				File parent = new File(f.getParent());
 				if(f.isDirectory())
 				{
-					List<URI> xmlFiles = recursivelyGetFileURIs(folder, xml);
-					List<URI> jarFiles = recursivelyGetFileURIs(folder, jar, war);
+					try {
+					DedalDiagram dd = new DedalFactoryImpl().createDedalDiagram();
+					dd.setName(parent.getName() + "." + f.getName());
+					List<URI> xmlFiles = recursivelyGetFileURIs(folder, XML);
+					List<URI> xmlSpringFiles = scanFiles(xmlFiles, BEANS, BEAN);
+					List<URI> jarFiles = recursivelyGetFileURIs(folder, JAR, WAR);
 					URL[] urlsToLoad = new URL[jarFiles.size()];
 					for(int i = 0; i<jarFiles.size(); i++)
 					{
 						urlsToLoad[i]=jarFiles.get(i).toURL();
 					}
-					Map<URI, List<Class<?>>> classes;
-					JarLoader jarloarder = new JarLoader(urlsToLoad);
-					try
+					JarLoader jarLoader = new JarLoader(urlsToLoad);
+					Map<URI, List<Class<?>>> classes = loadClasses(f, jarLoader);
+					JarInspector jarInspector = new JarInspector(jarLoader);
+					jarInspector.generate(dd, xmlSpringFiles);
+					jarLoader.close();
+					result.add(dd);
+					} catch(Exception | Error e) 
 					{
-						classes = jarloarder.loadClasses(f.getName());
-					}catch (Exception e) {
-						logger.error(e.getMessage(),e);
+						logger.error("the Dedal diagram could not be extracted... reconstruction ended with error " + e.getCause());
 					}
-					
-					System.out.println("coucou");
 				}
 			}
-			
-
 			return result;
 		} catch (IOException e) {
 			logger.error(e.getMessage(), e);
 		}
 		return Collections.emptyList();
+	}
+
+	/**
+	 * @param f
+	 * @param jarloarder
+	 * @return 
+	 */
+	private static Map<URI, List<Class<?>>> loadClasses(File f, JarLoader jarloarder) {
+		Map<URI, List<Class<?>>> classes = new HashMap<>();
+		try
+		{
+			classes = jarloarder.loadClasses(f.getName());
+		}catch (Exception e) {
+			logger.error(e.getMessage(),e);
+		}
+		return classes;
 	}
 
 	/**
@@ -120,7 +142,7 @@ public class Explorer {
 	 * @param result
 	 * @throws MalformedURLException
 	 */
-	private static void inspectJar(String singlePath, String sdslPath, DedalDiagram result)
+	private static void inspectJarFromSinglePath(String singlePath, String sdslPath, DedalDiagram result)
 			throws MalformedURLException {
 		URL[] urlToLoad=new URL[]{Paths.get(singlePath).toUri().toURL()};
 		JarLoader jarloader = new JarLoader(urlToLoad);
@@ -142,26 +164,74 @@ public class Explorer {
 	{
 		List<URI> result = new ArrayList<>();
 		File f1 = new File(folder);
-		List<URI> tempURIs = new ArrayList<>();
 		if(f1.isDirectory() && !f1.getName().contains("lib") && !f1.getName().contains("dependenc"))
 		{
-			tempURIs = FolderLoader.loadFolder(Paths.get(folder));
+			List<URI> tempURIs = FolderLoader.loadFolder(Paths.get(folder));
 			for(URI uri : tempURIs)
 			{
-				File f = new File(uri);
-				if(f.isFile())
-					for(String ext : fileExtensions)
-					{
-						if(f.getName().endsWith(ext))
-							result.add(uri);
-					}
-				else if(f.isDirectory())
-				{
-					result.addAll(recursivelyGetFileURIs(uri, fileExtensions));
-				}
+				getFileURI(result, uri, fileExtensions);
 			}
 		}
 		return result;
+	}
+
+	/**
+	 * @param result
+	 * @param uri
+	 * @param fileExtensions
+	 * @throws IOException
+	 */
+	private static void getFileURI(List<URI> result, URI uri, String... fileExtensions) throws IOException {
+		File f = new File(uri);
+		if(f.isFile())
+			for(String ext : fileExtensions)
+			{
+				if(f.getName().endsWith(ext))
+					result.add(uri);
+			}
+		else if(f.isDirectory())
+		{
+			result.addAll(recursivelyGetFileURIs(uri, fileExtensions));
+		}
+	}
+	
+	/**
+	 * 
+	 * @param queries
+	 * @param files
+	 * @return
+	 */
+	private static List<URI> scanFiles(List<URI> files, String ... queries) {
+		List<URI> result = new ArrayList<>();
+		for(URI uri : files)
+		{
+			File f = new File(uri);
+			if(existsInFile(f, queries))
+				result.add(uri);
+		}
+		return result;
+	}
+
+	private static Boolean existsInFile(File f, String[] queries) {
+			for(String query : queries)
+			{
+				if(!existsInFile(f, query))
+					return Boolean.FALSE;
+			}
+		return Boolean.TRUE;
+	}
+
+	private static Boolean existsInFile(File f, String query) {
+		try (Scanner input = new Scanner(f);){
+			while(input.hasNextLine())
+			{
+				if(input.nextLine().contains(query))
+					return Boolean.TRUE;
+			}
+        } catch (Exception e) {
+            logger.error("A problem occured while scanning file " + f.getName() + ". Scanning ended up with " + e.getCause());
+        }			
+		return Boolean.FALSE;
 	}
 
 }

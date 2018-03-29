@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Modifier;
+import java.net.MalformedURLException;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -98,6 +99,57 @@ public class JarInspector {
 	public void setJarMapping(Map<URI, List<Class<?>>> jarMapping) {
 		this.jarMapping = jarMapping;
 	}
+	
+
+	/**
+	 * 
+	 * @param dd
+	 * @param xmlSpringFiles
+	 */
+	public void generate(DedalDiagram dedalDiagram, List<URI> xmlSpringFiles) {
+		Repository repo = new DedalFactoryImpl().createRepository();
+		repo.setName("genRepo");
+		dedalDiagram.getRepositories().add(repo);
+		List<EObject> extractedFromSpring = new ArrayList<>();
+		for(URI uri : xmlSpringFiles)
+		{
+			try {
+				extractedFromSpring.addAll(SdslInspector.extractDedalArtifacts(uri.toURL().getFile()));
+			} catch (MalformedURLException e) {
+				logger.error("An error occured while extracting information in file " + uri.toString());
+			}
+		}
+		List<Class<?>> listOfClasses = new ArrayList<>();
+		this.jarMapping.forEach((uriKey, classList) -> listOfClasses.addAll(classList));	
+		
+		Specification spec = factory.createSpecification();
+		spec.setName(dedalDiagram.getName()+"_spec");
+		Configuration config = factory.createConfiguration();
+		config.setName(dedalDiagram.getName()+"_config");
+		dedalDiagram.getArchitectureDescriptions().add(config);
+		Assembly asm = factory.createAssembly();
+		asm.setInstantiates(config);
+		asm.setName(dedalDiagram.getName()+"_asm");
+		dedalDiagram.getArchitectureDescriptions().add(asm);
+
+		copyInDiagram(extractedFromSpring, config, asm);
+
+		standardizeNames(config, asm);
+
+		if(logger.isInfoEnabled())
+			logger.info("URL : " + dedalDiagram.getName());
+
+		mapComponentClasses(dedalDiagram, repo, listOfClasses, config);
+		setConfigConnections(config);
+
+		instantiateInteractions(asm);
+		setAssmConnections(asm, config.getConfigConnections());
+
+		setSpecificationFromConfiguration(repo, spec, config);
+		dedalDiagram.getArchitectureDescriptions().add(spec);
+		config.getImplements().add(spec);
+		
+	}
 
 	/**
 	 * 
@@ -139,7 +191,7 @@ public class JarInspector {
 			setSpecificationFromConfiguration(repo, spec, config);
 			dedalDiagram.getArchitectureDescriptions().add(spec);
 			config.getImplements().add(spec);
-
+			
 		});		
 	}
 
@@ -152,13 +204,17 @@ public class JarInspector {
 	 */
 	private void setSpecificationFromConfiguration(Repository repo, Specification spec, Configuration config) {
 		this.compToClass.forEach((key,value) -> {
-			RoleExtractor re = new RoleExtractor(value, key, this.intToClass, repo);
-			List<CompRole> extractedRoles = re.calculateSuperTypes();
-			this.roleIntToType.putAll(re.getRoleToIntToType());
-			this.intToClass.putAll(re.getIntToType());
-			spec.getSpecComponents().addAll(extractedRoles);
-			key.getRealizes().addAll(extractedRoles);
-			
+			try {
+				RoleExtractor re = new RoleExtractor(value, key, this.intToClass, repo);
+				List<CompRole> extractedRoles = re.calculateSuperTypes();
+				this.roleIntToType.putAll(re.getRoleToIntToType());
+				this.intToClass.putAll(re.getIntToType());
+				spec.getSpecComponents().addAll(extractedRoles);
+				key.getRealizes().addAll(extractedRoles);
+			} catch (Exception e)
+			{
+				logger.error("A problem occured while setting specification with error " + e.getCause());
+			}
 		});
 		setSpecConnections(spec, config);
 	}
@@ -169,14 +225,19 @@ public class JarInspector {
 	 */
 	private void setSpecConnections(Specification spec, Configuration config) {
 		config.getConfigConnections().forEach(ccon -> {
-			RoleConnection tempRoleConnection = new DedalFactoryImpl().createRoleConnection();
-			CompClass cclient = ccon.getClientClassElem();
-			CompClass cserver = ccon.getServerClassElem();
-			List<CompRole> realizedByClient = cclient.getRealizes();
-			List<CompRole> realizedByServer = cserver.getRealizes();
-			tempRoleConnection = findClientRole(tempRoleConnection, ccon.getClientIntElem(), realizedByClient);
-			tempRoleConnection = findServerRole(tempRoleConnection, cserver, realizedByServer);
-			spec.getSpecConnections().add(tempRoleConnection);
+			try {
+				RoleConnection tempRoleConnection = new DedalFactoryImpl().createRoleConnection();
+				CompClass cclient = ccon.getClientClassElem();
+				CompClass cserver = ccon.getServerClassElem();
+				List<CompRole> realizedByClient = cclient.getRealizes();
+				List<CompRole> realizedByServer = cserver.getRealizes();
+				tempRoleConnection = findClientRole(tempRoleConnection, ccon.getClientIntElem(), realizedByClient);
+				tempRoleConnection = findServerRole(tempRoleConnection, cserver, realizedByServer);
+				spec.getSpecConnections().add(tempRoleConnection);
+			} catch (Exception e)
+			{
+				logger.error("A problem occured while setting spec connection with error " + e.getCause());
+			}
 		});
 	}
 
@@ -257,19 +318,25 @@ public class JarInspector {
 	 */
 	private void setIntElem(InstConnection con, CompInstance client, CompInstance server, ClassConnection e,
 			CompClass cclient, CompClass cserver) {
-		if(client.getInstantiates().equals(cclient)
-				&& server.getInstantiates().equals(cserver))
+		try {
+			if(client.getInstantiates().equals(cclient)
+					&& server.getInstantiates().equals(cserver))
+			{
+				client.getCompInterfaces().forEach(ci -> {
+					if(ci instanceof Interface
+							&& ((Interface) ci).getInstantiates().equals(e.getClientIntElem()))
+						con.setClientIntElem(ci);
+				});
+				server.getCompInterfaces().forEach(ci -> {
+					if(ci instanceof Interface
+							&& ((Interface) ci).getInstantiates().equals(e.getServerIntElem()))
+						con.setServerIntElem(ci);
+				});
+			}
+		}
+		catch (Exception ex)
 		{
-			client.getCompInterfaces().forEach(ci -> {
-				if(ci instanceof Interface
-						&& ((Interface) ci).getInstantiates().equals(e.getClientIntElem()))
-					con.setClientIntElem(ci);
-			});
-			server.getCompInterfaces().forEach(ci -> {
-				if(ci instanceof Interface
-						&& ((Interface) ci).getInstantiates().equals(e.getServerIntElem()))
-					con.setServerIntElem(ci);
-			});
+			logger.error("An error occured when setting the interface implied in a connection. Ended up with " + ex.getCause());
 		}
 	}
 
@@ -289,36 +356,41 @@ public class JarInspector {
 			/**
 			 * calculate which is the corresponding required interface
 			 */
-			String attrName = con.getProperty().replaceAll("\"", "");
-			Attribute tempAttr = new DedalFactoryImpl().createAttribute();
-			for(Attribute a : client.getAttributes()) {
-				if(a.getName().equals(attrName))
-				{
-					tempAttr = a;
-					break;
+			if(con.getProperty()!=null)
+			{
+				String attrName = con.getProperty().replaceAll("\"", "");
+				Attribute tempAttr = new DedalFactoryImpl().createAttribute();
+				for(Attribute a : client.getAttributes()) {
+					if(a.getName().equals(attrName))
+					{
+						tempAttr = a;
+						break;
+					}
 				}
+				final Attribute attr = tempAttr; //to be used in the following loop, attr must be final.
+
+				Map<Interface, Class<?>> interfaceToClassMapServer = this.compIntToType.get(client);
+				if(interfaceToClassMapServer!=null)
+					interfaceToClassMapServer.forEach((key, clazz)  -> {
+						if(clazz.getCanonicalName().equals(attr.getType()))
+						{
+							con.setClientIntElem(key);
+						}
+					});
 			}
-			final Attribute attr = tempAttr; //to be used in the following loop, attr must be final.
-			
-			Map<Interface, Class<?>> interfaceToClassMapServer = this.compIntToType.get(client);
-			interfaceToClassMapServer.forEach((key, clazz)  -> {
-				if(clazz.getCanonicalName().equals(attr.getType()))
-				{
-					con.setClientIntElem(key);
-				}
-			});
-			final Class<?> clientClass = (this.compIntToType.get(client)).get(con.getClientIntElem());
+			final Class<?> clientClass = (this.compIntToType.get(client) != null)?(this.compIntToType.get(client)).get(con.getClientIntElem()):null;
 			
 			/**
 			 * matching the corresponding server interface
 			 */
-			server.getCompInterfaces().forEach(ci -> {
-				Class<?> ciClass = (this.compIntToType.get(server)).get(ci);
-				if(clientClass.isAssignableFrom(ciClass))
-				{
-					con.setServerIntElem(ci);
-				}
-			});
+			if(clientClass != null)
+				server.getCompInterfaces().forEach(ci -> {
+					Class<?> ciClass = (this.compIntToType.get(server)).get(ci);
+					if(clientClass.isAssignableFrom(ciClass))
+					{
+						con.setServerIntElem(ci);
+					}
+				});
 			mapServerToClients.put(con.getServerIntElem(), new ArrayList<>());
 			intServToCon.put((Interface)con.getServerIntElem(),con);
 		});
@@ -330,18 +402,23 @@ public class JarInspector {
 		Map<ClassConnection, Interface> transform = new HashMap<>();
 		mapServerToClients.forEach((key,value) -> transform.putAll(getMostAbstractProvidedInterfaces(config, key, value)));
 		
-		intServToCon.forEach((initServ, con) -> {
-			CompClass server = con.getServerClassElem();
-			Interaction finalServ = transform.get(con);
-			server.getCompInterfaces().add(finalServ);
-			con.setServerIntElem(finalServ);
-			if(!server.getCompInterfaces().contains(finalServ))
+		try {
+			intServToCon.forEach((initServ, con) -> {
+				CompClass server = con.getServerClassElem();
+				Interaction finalServ = transform.get(con);
 				server.getCompInterfaces().add(finalServ);
-			if(!connected(initServ, config.getConfigConnections()))
-			{
-				server.getCompInterfaces().remove(initServ);
-			}
-		});
+				con.setServerIntElem(finalServ);
+				if(!server.getCompInterfaces().contains(finalServ))
+					server.getCompInterfaces().add(finalServ);
+				if(!connected(initServ, config.getConfigConnections()))
+				{
+					server.getCompInterfaces().remove(initServ);
+				}
+			});
+		}
+		catch (Exception e) {
+			logger.error("A problem occured when building interfaces with error " + e.getCause());
+		}
 	}
 
 	/**
@@ -367,7 +444,12 @@ public class JarInspector {
 		}
 		else if (client.size()>1)
 		{
-			result.putAll(buildAbstractInterfacesMultiplyConnected(config, server, client));
+			try {
+				result.putAll(buildAbstractInterfacesMultiplyConnected(config, server, client));
+			}
+			catch (Exception e) {
+				logger.error("A problem occured when building interfaces with error " + e.getCause());
+			}
 		}
 		else // a server interface of a connection cannot be connected to 0 client interface
 			logger.error("Something went terribly wrong while assembling connections");
@@ -533,15 +615,18 @@ public class JarInspector {
 	 * @param asm
 	 */
 	private void instantiateInteractions(Assembly asm) {
-		asm.getAssmComponents().forEach(c ->
+		try {
+			asm.getAssmComponents().forEach(c ->
 			c.getInstantiates().getCompInterfaces().forEach(ci -> {
 				Interaction tempInteraction = EcoreUtil.copy(ci);
 				tempInteraction.setName(ci.getName() + "_" + c.getName());
 				if(ci instanceof Interface)
 					((Interface) tempInteraction).setInstantiates(((Interface) ci));
 				c.getCompInterfaces().add(tempInteraction);
-			})
-		);
+			}));
+		} catch (Exception e) {
+			logger.error("An problem occured while instantiating interactions. Ended up with error " + e.getCause());
+		}
 	}
 
 	/**
@@ -559,9 +644,16 @@ public class JarInspector {
 			}
 			for(Class<?> c : classList)
 			{
-				String compClassName = tempCompClass.getName().replace("\"", "");
-				String className = c.getSimpleName();
-				if(!(c.isInterface()||c.isEnum()||Modifier.isAbstract(c.getModifiers())) 
+				String compClassName = null;
+				String className = null;
+				try {
+					compClassName = tempCompClass.getName().replace("\"", "");
+					className = c.getSimpleName();
+				}
+				catch (IllegalAccessError | NoClassDefFoundError | NullPointerException e) {
+					logger.error("An error occured while taking the name of the class typed as " + c.getTypeName() + ". Ended with " + e.getCause());
+				}
+				if(!(className==null || compClassName == null || c.isInterface()||c.isEnum()||Modifier.isAbstract(c.getModifiers())) 
 						&&  className.equals(compClassName)
 						)
 				{
@@ -610,12 +702,12 @@ public class JarInspector {
 	 * @param asm
 	 */
 	private void standardizeNames(Configuration config, Assembly asm) {
-		asm.getAssmComponents().forEach(c -> 
-		c.setName(c.getName().replace("\"", ""))
-				);
-		config.getConfigComponents().forEach(c -> 
-		c.setName(c.getName().replace("\"", ""))
-				);
+		try {
+			asm.getAssmComponents().forEach(c -> c.setName(c.getName().replace("\"", "")));
+			config.getConfigComponents().forEach(c -> c.setName(c.getName().replace("\"", "")));
+		}
+		catch (Exception e) {
+			logger.error("A problem occured when building interfaces with error " + e.getCause());
+		}
 	}
-
 }

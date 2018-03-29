@@ -33,5 +33,50 @@
   		<artifactId>openid4java</artifactId>
   		<version>1.0.0</version>
   	</dependency>
+	<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId>
+	    <version>4.0.0</version>
+	    <scope>provided</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>5.0.4.RELEASE</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.apache.ibatis/ibatis-sqlmap -->
+	<dependency>
+	    <groupId>org.apache.ibatis</groupId>
+	    <artifactId>ibatis-sqlmap</artifactId>
+	    <version>2.3.4.726</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.apache.ibatis/ibatis-core -->
+	<dependency>
+	    <groupId>org.apache.ibatis</groupId>
+	    <artifactId>ibatis-core</artifactId>
+	    <version>3.0</version>
+	</dependency><!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
+<dependency>
+    <groupId>org.apache.zookeeper</groupId>
+    <artifactId>zookeeper</artifactId>
+    <version>3.4.11</version>
+    <type>pom</type>
+    <scope>compile</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-orm</artifactId>
+    <version>5.0.4.RELEASE</version>
+</dependency>
+
+
+	
+	
+	
+	
+  	
   </dependencies>
 </project>
