@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="jwpttcg66.NettyGameServer">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="jwpttcg66.NettyGameServer_config" implements="//@architectureDescriptions[name='jwpttcg66.NettyGameServer_spec']">
+    <configComponents name="&quot;com.snowcattle.game.common.util.BeanUtil&quot;" id="_JSHX8DPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.snowcattle.game.common.util.BeanUtil&quot;" id="_JSaS4DPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.snowcattle.game.db.service.config.DbConfig&quot;" id="_JSaS4TPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.redis.transaction.service.TransactionServiceImpl&quot;" id="_JSaS4jPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.snowcattle.game.common.util.BeanUtil&quot;" id="_JS2-0DPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.snowcattle.game.common.util.BeanUtil&quot;" id="_JTJ5wDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.snowcattle.game.db.service.config.DbConfig&quot;" id="_JTJ5wTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.redis.transaction.service.TransactionServiceImpl&quot;" id="_JTJ5wjPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="jwpttcg66.NettyGameServer_asm" instantiates="//@architectureDescriptions[name='jwpttcg66.NettyGameServer_config']">
+    <assmComponents id="_JSHX8TPxEei3dfHtumI11Q" instantiates="_JSHX8DPxEei3dfHtumI11Q"/>
+    <assmComponents id="_JSaS4zPxEei3dfHtumI11Q" instantiates="_JSaS4DPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dbConfig&quot;" id="_JSaS5DPxEei3dfHtumI11Q" instantiates="_JSaS4TPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionService&quot;" id="_JSaS5TPxEei3dfHtumI11Q" instantiates="_JSaS4jPxEei3dfHtumI11Q"/>
+    <assmComponents id="_JS2-0TPxEei3dfHtumI11Q" instantiates="_JS2-0DPxEei3dfHtumI11Q"/>
+    <assmComponents id="_JTJ5wzPxEei3dfHtumI11Q" instantiates="_JTJ5wDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dbConfig&quot;" id="_JTJ5xDPxEei3dfHtumI11Q" instantiates="_JTJ5wTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionService&quot;" id="_JTJ5xTPxEei3dfHtumI11Q" instantiates="_JTJ5wjPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="jwpttcg66.NettyGameServer_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

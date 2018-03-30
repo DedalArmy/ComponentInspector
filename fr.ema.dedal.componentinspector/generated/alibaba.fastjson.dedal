@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="alibaba.fastjson">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="alibaba.fastjson_config" implements="//@architectureDescriptions[name='alibaba.fastjson_spec']">
+    <configComponents name="org.apache.cxf.interceptor.LoggingInInterceptor" id="_ZGz8kDPtEei3dfHtumI11Q"/>
+    <configComponents name="org.apache.cxf.interceptor.LoggingOutInterceptor" id="_ZGz8kTPtEei3dfHtumI11Q"/>
+    <configComponents name="org.apache.cxf.interceptor.LoggingInInterceptor" id="_ZIOR0DPtEei3dfHtumI11Q"/>
+    <configComponents name="org.apache.cxf.interceptor.LoggingOutInterceptor" id="_ZIOR0TPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="alibaba.fastjson_asm" instantiates="//@architectureDescriptions[name='alibaba.fastjson_config']">
+    <assmComponents name="inMessageInterceptor" id="_ZGz8kjPtEei3dfHtumI11Q" instantiates="_ZGz8kDPtEei3dfHtumI11Q"/>
+    <assmComponents name="outMessageInterceptor" id="_ZG0joDPtEei3dfHtumI11Q" instantiates="_ZGz8kTPtEei3dfHtumI11Q"/>
+    <assmComponents name="inMessageInterceptor" id="_ZIOR0jPtEei3dfHtumI11Q" instantiates="_ZIOR0DPtEei3dfHtumI11Q"/>
+    <assmComponents name="outMessageInterceptor" id="_ZIOR0zPtEei3dfHtumI11Q" instantiates="_ZIOR0TPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="alibaba.fastjson_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

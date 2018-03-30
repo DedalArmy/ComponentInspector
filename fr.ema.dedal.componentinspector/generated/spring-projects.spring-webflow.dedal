@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="spring-projects.spring-webflow">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="spring-projects.spring-webflow_config" implements="//@architectureDescriptions[name='spring-projects.spring-webflow_spec']">
+    <configComponents name="org.springframework.webflow.action.FormAction" id="_OrlFEDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_OrlFETPzEei3dfHtumI11Q" property="&quot;validator&quot;" clientClassElem="_OrlFEDPzEei3dfHtumI11Q" serverClassElem="_OrlFEjPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="spring-projects.spring-webflow_asm" instantiates="//@architectureDescriptions[name='spring-projects.spring-webflow_config']">
+    <assmComponents name="formAction" id="_OrlFEzPzEei3dfHtumI11Q" instantiates="_OrlFEDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_OrlFFDPzEei3dfHtumI11Q" property="formAction.validator" clientInstElem="_OrlFEzPzEei3dfHtumI11Q" serverInstElem="_OrlFFTPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="spring-projects.spring-webflow_spec">
+    <specConnections refID="_Osnm4DPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

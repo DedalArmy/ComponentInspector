@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="sohutv.cachecloud">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="sohutv.cachecloud_config" implements="//@architectureDescriptions[name='sohutv.cachecloud_spec']">
+    <configComponents name="&quot;com.sohu.cache.alert.impl.BaseAlertService&quot;" id="_5cU5EDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.alert.impl.AppAlertServiceImpl&quot;" id="_5cU5ETPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.alert.impl.InstanceAlertServiceImpl&quot;" id="_5cU5EjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.ConfigServiceImpl&quot;" id="_5cn0ADPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.core.JdbcTemplate&quot;" id="_5c6u8DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_5c6u8TPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.inspect.impl.HostInspectHandler&quot;" id="_5dEf8DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.inspect.impl.AppInspectHandler&quot;" id="_5dEf8TPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.AppServiceImpl&quot;" id="_5dqV0DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.MemFaultServiceImpl&quot;" id="_5dqV0TPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.UserServiceImpl&quot;" id="_5dqV0jPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.component.EmailComponentImpl&quot;" id="_5dqV0zPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.component.MobileAlertComponentImpl&quot;" id="_5dqV1DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.util.AppEmailUtil&quot;" id="_5dqV1TPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.UserLoginStatusSessionServiceImpl&quot;" id="_5dqV1jPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.UserLoginStatusCookieServiceImpl&quot;" id="_5dqV1zPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.factory.UserLoginStatusFactory&quot;" id="_5dqV2DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;userLoginStatusFactory&quot;" id="_5dqV2TPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.stats.app.impl.AppDailyDataCenterImpl&quot;" id="_5dqV2jPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="_5eHBwDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.app.AliasesResourceSqlSessionFactoryBean&quot;" id="_5eHBwTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;" id="_5eHBwjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.alert.impl.BaseAlertService&quot;" id="_5fAZoDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.alert.impl.AppAlertServiceImpl&quot;" id="_5fAZoTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.alert.impl.InstanceAlertServiceImpl&quot;" id="_5fAZojPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.ConfigServiceImpl&quot;" id="_5fJjkDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.core.JdbcTemplate&quot;" id="_5feTsDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_5feTsTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.inspect.impl.HostInspectHandler&quot;" id="_5fxOoDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.inspect.impl.AppInspectHandler&quot;" id="_5fxOoTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.AppServiceImpl&quot;" id="_5gXEgDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.MemFaultServiceImpl&quot;" id="_5gXEgTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.UserServiceImpl&quot;" id="_5gXEgjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.component.EmailComponentImpl&quot;" id="_5gXEgzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.component.MobileAlertComponentImpl&quot;" id="_5gXEhDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.util.AppEmailUtil&quot;" id="_5gXEhTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.UserLoginStatusSessionServiceImpl&quot;" id="_5gXEhjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.UserLoginStatusCookieServiceImpl&quot;" id="_5gXEhzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.factory.UserLoginStatusFactory&quot;" id="_5gXEiDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;userLoginStatusFactory&quot;" id="_5gXEiTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.stats.app.impl.AppDailyDataCenterImpl&quot;" id="_5gXEijPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="_5gzwcDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.app.AliasesResourceSqlSessionFactoryBean&quot;" id="_5gzwcTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;" id="_5gzwcjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.alert.impl.BaseAlertService&quot;" id="_5hZmUDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.alert.impl.AppAlertServiceImpl&quot;" id="_5hZmUTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.alert.impl.InstanceAlertServiceImpl&quot;" id="_5hZmUjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.ConfigServiceImpl&quot;" id="_5hj-YDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.core.JdbcTemplate&quot;" id="_5iBRYDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_5iBRYTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.inspect.impl.HostInspectHandler&quot;" id="_5iKbUDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.inspect.impl.AppInspectHandler&quot;" id="_5iKbUTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.AppServiceImpl&quot;" id="_5inHQDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.MemFaultServiceImpl&quot;" id="_5inHQTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.UserServiceImpl&quot;" id="_5inHQjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.component.EmailComponentImpl&quot;" id="_5inHQzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.component.MobileAlertComponentImpl&quot;" id="_5inHRDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.util.AppEmailUtil&quot;" id="_5inHRTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.UserLoginStatusSessionServiceImpl&quot;" id="_5inHRjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.service.impl.UserLoginStatusCookieServiceImpl&quot;" id="_5inHRzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.web.factory.UserLoginStatusFactory&quot;" id="_5inHSDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;userLoginStatusFactory&quot;" id="_5inHSTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.stats.app.impl.AppDailyDataCenterImpl&quot;" id="_5inHSjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="_5jWuIDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sohu.cache.app.AliasesResourceSqlSessionFactoryBean&quot;" id="_5jWuITPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;" id="_5jWuIjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_5c6u8jPyEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_5c6u8DPyEei3dfHtumI11Q" serverClassElem="_5c6u8zPyEei3dfHtumI11Q"/>
+    <configConnections refID="_5c6u9DPyEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_5c6u8TPyEei3dfHtumI11Q" serverClassElem="_5c6u9TPyEei3dfHtumI11Q"/>
+    <configConnections refID="_5dqV2zPyEei3dfHtumI11Q" property="&quot;userloginTypeMap&quot;" clientClassElem="_5dqV2DPyEei3dfHtumI11Q" serverClassElem="_5dqV3DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_5eHBwzPyEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_5eHBwTPyEei3dfHtumI11Q" serverClassElem="_5eHBxDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_5feTsjPyEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_5feTsDPyEei3dfHtumI11Q" serverClassElem="_5feTszPyEei3dfHtumI11Q"/>
+    <configConnections refID="_5feTtDPyEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_5feTsTPyEei3dfHtumI11Q" serverClassElem="_5feTtTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_5gXEizPyEei3dfHtumI11Q" property="&quot;userloginTypeMap&quot;" clientClassElem="_5gXEiDPyEei3dfHtumI11Q" serverClassElem="_5gXEjDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_5gzwczPyEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_5gzwcTPyEei3dfHtumI11Q" serverClassElem="_5gzwdDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_5iBRYjPyEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_5iBRYDPyEei3dfHtumI11Q" serverClassElem="_5iBRYzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_5iBRZDPyEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_5iBRYTPyEei3dfHtumI11Q" serverClassElem="_5iBRZTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_5inHSzPyEei3dfHtumI11Q" property="&quot;userloginTypeMap&quot;" clientClassElem="_5inHSDPyEei3dfHtumI11Q" serverClassElem="_5inHTDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_5jWuIzPyEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_5jWuITPyEei3dfHtumI11Q" serverClassElem="_5jWuJDPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="sohutv.cachecloud_asm" instantiates="//@architectureDescriptions[name='sohutv.cachecloud_config']">
+    <assmComponents name="baseAlertService" id="_5cU5EzPyEei3dfHtumI11Q" instantiates="_5cU5EDPyEei3dfHtumI11Q"/>
+    <assmComponents name="appAlertService" id="_5cU5FDPyEei3dfHtumI11Q" instantiates="_5cU5ETPyEei3dfHtumI11Q"/>
+    <assmComponents name="instanceAlertService" id="_5cU5FTPyEei3dfHtumI11Q" instantiates="_5cU5EjPyEei3dfHtumI11Q"/>
+    <assmComponents name="configService" id="_5cn0ATPyEei3dfHtumI11Q" instantiates="_5cn0ADPyEei3dfHtumI11Q"/>
+    <assmComponents name="jdbcTemplate" id="_5c6u9jPyEei3dfHtumI11Q" instantiates="_5c6u8DPyEei3dfHtumI11Q"/>
+    <assmComponents id="_5c6u9zPyEei3dfHtumI11Q" instantiates="_5c6u8TPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;hostInspectHandler&quot;" id="_5dEf8jPyEei3dfHtumI11Q" instantiates="_5dEf8DPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;appInspectHandler&quot;" id="_5dEf8zPyEei3dfHtumI11Q" instantiates="_5dEf8TPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;appService&quot;" id="_5dqV3TPyEei3dfHtumI11Q" instantiates="_5dqV0DPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;memFaultService&quot;" id="_5dqV3jPyEei3dfHtumI11Q" instantiates="_5dqV0TPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userService&quot;" id="_5dqV3zPyEei3dfHtumI11Q" instantiates="_5dqV0jPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;emailComponent&quot;" id="_5dqV4DPyEei3dfHtumI11Q" instantiates="_5dqV0zPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mobileAlertComponent&quot;" id="_5dqV4TPyEei3dfHtumI11Q" instantiates="_5dqV1DPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;appEmailUtil&quot;" id="_5dqV4jPyEei3dfHtumI11Q" instantiates="_5dqV1TPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userLoginStatusSessionService&quot;" id="_5dqV4zPyEei3dfHtumI11Q" instantiates="_5dqV1jPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userLoginStatusCookieService&quot;" id="_5dqV5DPyEei3dfHtumI11Q" instantiates="_5dqV1zPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userLoginStatusFactory&quot;" id="_5dqV5TPyEei3dfHtumI11Q" instantiates="_5dqV2DPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userLoginStatusService&quot;" id="_5dqV5jPyEei3dfHtumI11Q" instantiates="_5dqV2TPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;appDailyDataCenter&quot;" id="_5dqV5zPyEei3dfHtumI11Q" instantiates="_5dqV2jPyEei3dfHtumI11Q"/>
+    <assmComponents id="_5eHBxTPyEei3dfHtumI11Q" instantiates="_5eHBwDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mysqlSessionFactory&quot;" id="_5eHBxjPyEei3dfHtumI11Q" instantiates="_5eHBwTPyEei3dfHtumI11Q"/>
+    <assmComponents id="_5eHBxzPyEei3dfHtumI11Q" instantiates="_5eHBwjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;baseAlertService&quot;" id="_5fAZozPyEei3dfHtumI11Q" instantiates="_5fAZoDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;appAlertService&quot;" id="_5fAZpDPyEei3dfHtumI11Q" instantiates="_5fAZoTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;instanceAlertService&quot;" id="_5fAZpTPyEei3dfHtumI11Q" instantiates="_5fAZojPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configService&quot;" id="_5fJjkTPyEei3dfHtumI11Q" instantiates="_5fJjkDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jdbcTemplate&quot;" id="_5feTtjPyEei3dfHtumI11Q" instantiates="_5feTsDPyEei3dfHtumI11Q"/>
+    <assmComponents id="_5feTtzPyEei3dfHtumI11Q" instantiates="_5feTsTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;hostInspectHandler&quot;" id="_5fxOojPyEei3dfHtumI11Q" instantiates="_5fxOoDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;appInspectHandler&quot;" id="_5fxOozPyEei3dfHtumI11Q" instantiates="_5fxOoTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;appService&quot;" id="_5gXEjTPyEei3dfHtumI11Q" instantiates="_5gXEgDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;memFaultService&quot;" id="_5gXEjjPyEei3dfHtumI11Q" instantiates="_5gXEgTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userService&quot;" id="_5gXEjzPyEei3dfHtumI11Q" instantiates="_5gXEgjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;emailComponent&quot;" id="_5gXEkDPyEei3dfHtumI11Q" instantiates="_5gXEgzPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mobileAlertComponent&quot;" id="_5gXEkTPyEei3dfHtumI11Q" instantiates="_5gXEhDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;appEmailUtil&quot;" id="_5gXEkjPyEei3dfHtumI11Q" instantiates="_5gXEhTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userLoginStatusSessionService&quot;" id="_5gXEkzPyEei3dfHtumI11Q" instantiates="_5gXEhjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userLoginStatusCookieService&quot;" id="_5gXElDPyEei3dfHtumI11Q" instantiates="_5gXEhzPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userLoginStatusFactory&quot;" id="_5gXElTPyEei3dfHtumI11Q" instantiates="_5gXEiDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userLoginStatusService&quot;" id="_5gXEljPyEei3dfHtumI11Q" instantiates="_5gXEiTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;appDailyDataCenter&quot;" id="_5gXElzPyEei3dfHtumI11Q" instantiates="_5gXEijPyEei3dfHtumI11Q"/>
+    <assmComponents id="_5gzwdTPyEei3dfHtumI11Q" instantiates="_5gzwcDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mysqlSessionFactory&quot;" id="_5gzwdjPyEei3dfHtumI11Q" instantiates="_5gzwcTPyEei3dfHtumI11Q"/>
+    <assmComponents id="_5gzwdzPyEei3dfHtumI11Q" instantiates="_5gzwcjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;baseAlertService&quot;" id="_5hZmUzPyEei3dfHtumI11Q" instantiates="_5hZmUDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;appAlertService&quot;" id="_5hZmVDPyEei3dfHtumI11Q" instantiates="_5hZmUTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;instanceAlertService&quot;" id="_5hZmVTPyEei3dfHtumI11Q" instantiates="_5hZmUjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configService&quot;" id="_5hj-YTPyEei3dfHtumI11Q" instantiates="_5hj-YDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jdbcTemplate&quot;" id="_5iBRZjPyEei3dfHtumI11Q" instantiates="_5iBRYDPyEei3dfHtumI11Q"/>
+    <assmComponents id="_5iBRZzPyEei3dfHtumI11Q" instantiates="_5iBRYTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;hostInspectHandler&quot;" id="_5iKbUjPyEei3dfHtumI11Q" instantiates="_5iKbUDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;appInspectHandler&quot;" id="_5iKbUzPyEei3dfHtumI11Q" instantiates="_5iKbUTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;appService&quot;" id="_5inHTTPyEei3dfHtumI11Q" instantiates="_5inHQDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;memFaultService&quot;" id="_5inHTjPyEei3dfHtumI11Q" instantiates="_5inHQTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userService&quot;" id="_5inHTzPyEei3dfHtumI11Q" instantiates="_5inHQjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;emailComponent&quot;" id="_5inHUDPyEei3dfHtumI11Q" instantiates="_5inHQzPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mobileAlertComponent&quot;" id="_5inHUTPyEei3dfHtumI11Q" instantiates="_5inHRDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;appEmailUtil&quot;" id="_5inHUjPyEei3dfHtumI11Q" instantiates="_5inHRTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userLoginStatusSessionService&quot;" id="_5inHUzPyEei3dfHtumI11Q" instantiates="_5inHRjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userLoginStatusCookieService&quot;" id="_5inHVDPyEei3dfHtumI11Q" instantiates="_5inHRzPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userLoginStatusFactory&quot;" id="_5inHVTPyEei3dfHtumI11Q" instantiates="_5inHSDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userLoginStatusService&quot;" id="_5inHVjPyEei3dfHtumI11Q" instantiates="_5inHSTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;appDailyDataCenter&quot;" id="_5inHVzPyEei3dfHtumI11Q" instantiates="_5inHSjPyEei3dfHtumI11Q"/>
+    <assmComponents id="_5jWuJTPyEei3dfHtumI11Q" instantiates="_5jWuIDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mysqlSessionFactory&quot;" id="_5jWuJjPyEei3dfHtumI11Q" instantiates="_5jWuITPyEei3dfHtumI11Q"/>
+    <assmComponents id="_5jWuJzPyEei3dfHtumI11Q" instantiates="_5jWuIjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_5c6u-DPyEei3dfHtumI11Q" property="jdbcTemplate.dataSource" clientInstElem="_5c6u9jPyEei3dfHtumI11Q" serverInstElem="_5c6u-TPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_5c6u-jPyEei3dfHtumI11Q" clientInstElem="_5c6u-TPyEei3dfHtumI11Q" serverInstElem="_5c6u-zPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_5dqV6DPyEei3dfHtumI11Q" property="userLoginStatusFactory.userloginTypeMap" clientInstElem="_5dqV5TPyEei3dfHtumI11Q" serverInstElem="_5dqV6TPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_5eHByDPyEei3dfHtumI11Q" property="mysqlSessionFactory.dataSource" clientInstElem="_5eHBxjPyEei3dfHtumI11Q" serverInstElem="_5eHByTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_5feTuDPyEei3dfHtumI11Q" property="jdbcTemplate.dataSource" clientInstElem="_5feTtjPyEei3dfHtumI11Q" serverInstElem="_5feTuTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_5feTujPyEei3dfHtumI11Q" clientInstElem="_5feTtzPyEei3dfHtumI11Q" serverInstElem="_5feTuzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_5gXEmDPyEei3dfHtumI11Q" property="userLoginStatusFactory.userloginTypeMap" clientInstElem="_5gXElTPyEei3dfHtumI11Q" serverInstElem="_5gXEmTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_5gzweDPyEei3dfHtumI11Q" property="mysqlSessionFactory.dataSource" clientInstElem="_5gzwdjPyEei3dfHtumI11Q" serverInstElem="_5gzweTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_5iBRaDPyEei3dfHtumI11Q" property="jdbcTemplate.dataSource" clientInstElem="_5iBRZjPyEei3dfHtumI11Q" serverInstElem="_5iBRaTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_5iBRajPyEei3dfHtumI11Q" clientInstElem="_5iBRZzPyEei3dfHtumI11Q" serverInstElem="_5iBRazPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_5inHWDPyEei3dfHtumI11Q" property="userLoginStatusFactory.userloginTypeMap" clientInstElem="_5inHVTPyEei3dfHtumI11Q" serverInstElem="_5inHWTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_5jWuKDPyEei3dfHtumI11Q" property="mysqlSessionFactory.dataSource" clientInstElem="_5jWuJjPyEei3dfHtumI11Q" serverInstElem="_5jWuKTPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="sohutv.cachecloud_spec">
+    <specConnections refID="_5kjA8DPyEei3dfHtumI11Q"/>
+    <specConnections refID="_5kjA8TPyEei3dfHtumI11Q"/>
+    <specConnections refID="_5kjA8jPyEei3dfHtumI11Q"/>
+    <specConnections refID="_5kjA8zPyEei3dfHtumI11Q"/>
+    <specConnections refID="_5kjA9DPyEei3dfHtumI11Q"/>
+    <specConnections refID="_5kjA9TPyEei3dfHtumI11Q"/>
+    <specConnections refID="_5kjA9jPyEei3dfHtumI11Q"/>
+    <specConnections refID="_5kjA9zPyEei3dfHtumI11Q"/>
+    <specConnections refID="_5kjA-DPyEei3dfHtumI11Q"/>
+    <specConnections refID="_5kjA-TPyEei3dfHtumI11Q"/>
+    <specConnections refID="_5kjA-jPyEei3dfHtumI11Q"/>
+    <specConnections refID="_5kjA-zPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

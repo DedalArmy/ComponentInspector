@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="inspectIT.inspectIT">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="inspectIT.inspectIT_config" implements="//@architectureDescriptions[name='inspectIT.inspectIT_spec']">
+    <configComponents name="&quot;org.springframework.context.support.ClassPathXmlApplicationContext&quot;" id="_jOVe0DPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.indexing.query.provider.impl.IndexQueryProvider&quot;" id="_jOfP0DPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.indexing.query.provider.impl.StorageIndexQueryProvider&quot;" id="_jOfP0TPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.all.storage.nio.stream.StreamProvider&quot;" id="_jOfP0jPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.storage.nio.stream.InputStreamProvider&quot;" id="_jOfP0zPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.all.serializer.provider.SerializationManagerProvider&quot;" id="_jOfP1DPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.server.storage.CmrStorageWriterProvider&quot;" id="_jOfP1TPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.storage.util.StorageIndexTreeProvider&quot;" id="_jOfP1jPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.storage.util.ExecutorServiceFactory&quot;" id="_jOfP1zPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.indexing.util.ForkJoinPoolWorkerThreadFactoryFactory&quot;" id="_jOfP2DPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.scheduling.concurrent.ForkJoinPoolFactoryBean&quot;" id="_jOfP2TPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.server.jetty.JettyWebApplicationContextInitializer&quot;" id="_jPYnsDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mortbay.jetty.Server&quot;" id="_jPYnsTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mortbay.jetty.servlet.Context&quot;" id="_jPYnsjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mortbay.thread.BoundedThreadPool&quot;" id="_jPYnszPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.context.support.HttpRequestHandlerServlet&quot;" id="_jPYntDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mortbay.jetty.servlet.ServletHolder&quot;" id="_jPYntTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mortbay.jetty.servlet.ServletMapping&quot;" id="_jPYntjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mortbay.jetty.servlet.DefaultServlet&quot;" id="_jPYntzPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.server.jetty.FileUploadServlet&quot;" id="_jPYnuDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mortbay.servlet.MultiPartFilter&quot;" id="_jPYnuTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mortbay.jetty.servlet.FilterHolder&quot;" id="_jPYnujPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mortbay.jetty.servlet.FilterMapping&quot;" id="_jPYnuzPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mortbay.servlet.GzipFilter&quot;" id="_jPYnvDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.DispatcherServlet&quot;" id="_jPYnvTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mortbay.jetty.servlet.ServletHandler&quot;" id="_jPYnvjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.server.processor.impl.CacheIdGeneratorCmrProcessor&quot;" id="_jP0skDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.server.processor.impl.EUMCorrelationCmrProcessor&quot;" id="_jP0skTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.server.processor.impl.BufferInserterCmrProcessor&quot;" id="_jP0skjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.server.processor.impl.ExceptionMessageCmrProcessor&quot;" id="_jP0skzPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.server.processor.impl.IndexerCmrProcessor&quot;" id="_jP0slDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.server.processor.impl.InfluxProcessor&quot;" id="_jP0slTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.server.processor.impl.PersistingCmrProcessor&quot;" id="_jP0sljPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.server.processor.impl.SystemInformationPersistingCmrProcessor&quot;" id="_jP0slzPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.server.processor.impl.SqlExclusiveTimeCmrProcessor&quot;" id="_jP0smDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.server.processor.impl.TimerDataChartingCmrProcessor&quot;" id="_jP0smTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.server.processor.impl.InvocationModifierCmrProcessor&quot;" id="_jP0smjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.server.processor.impl.RecorderCmrProcessor&quot;" id="_jP0smzPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.server.processor.impl.BusinessContextRecognitionProcessor&quot;" id="_jP0snDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.server.processor.impl.DiagnosisCmrProcessor&quot;" id="_jP0snTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&quot;" id="_jQIOkDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&quot;" id="_jQIOkTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.http.converter.StringHttpMessageConverter&quot;" id="_jQIOkjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.http.converter.json.MappingJacksonHttpMessageConverter&quot;" id="_jQIOkzPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.storage.nio.read.ReadingChannelManager&quot;" id="_jQbJgDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator&quot;" id="_jQkTcDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.repository.service.cmr.proxy.ServiceInterfaceDelegateInterceptor&quot;" id="_jQkTcTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.repository.service.cmr.proxy.ServiceMethodInterceptor&quot;" id="_jQkTcjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.repository.service.cmr.proxy.CachingPlatformIdentInterceptor&quot;" id="_jQkTczPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.aop.support.RegexpMethodPointcutAdvisor&quot;" id="_jQkTdDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.repository.service.cmr.CmrServiceProvider&quot;" id="_jQkTdTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.aop.framework.ProxyFactoryBean&quot;" id="_jQkTdjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.repository.service.cmr.CmrService&quot;" id="_jQkTdzPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.all.spring.logger.LoggerPostProcessor&quot;" id="_jQuEcDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.all.serializer.schema.ClassSchemaManager&quot;" id="_jQuEcTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.all.serializer.impl.SerializationManager&quot;" id="_jQuEcjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.all.util.KryoNetNetwork&quot;" id="_jQuEczPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.all.serializer.provider.SerializationManagerProvider&quot;" id="_jQuEdDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.details.generator.impl.JmxDetailsGenerator&quot;" id="_jQuEdTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.ci.InspectITConfigurationInterfaceManager&quot;" id="_jQuEdjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.storage.serializer.SerializationManagerPostProcessor&quot;" id="_jQuEdzPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.details.DetailsGenerationFactory&quot;" id="_jRT6UDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.all.version.VersionService&quot;" id="_jRT6UTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.version.BundleVersionProvider&quot;" id="_jRT6UjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.documentation.DocumentationService&quot;" id="_jRT6UzPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.indexing.storage.impl.StorageIndexQuery&quot;" id="_jRdrUDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.indexing.query.provider.impl.StorageIndexQueryProvider&quot;" id="_jRdrUTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.indexing.restriction.impl.CachingIndexQueryRestrictionProcessor&quot;" id="_jRdrUjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.all.storage.nio.ByteBufferProvider&quot;" id="_jRdrUzPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.storage.InspectITStorageManager&quot;" id="_jRdrVDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.indexing.query.factory.impl.TimerDataQueryFactory&quot;" id="_jRdrVTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.indexing.query.factory.impl.SqlStatementDataQueryFactory&quot;" id="_jRdrVjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.indexing.query.factory.impl.HttpTimerDataQueryFactory&quot;" id="_jRdrVzPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.indexing.query.factory.impl.InvocationSequenceDataQueryFactory&quot;" id="_jRdrWDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.indexing.query.factory.impl.ExceptionSensorDataQueryFactory&quot;" id="_jRdrWTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.indexing.query.factory.impl.SpanQueryFactory&quot;" id="_jRdrWjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.storage.util.DataRetriever&quot;" id="_jRdrWzPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.storage.util.DataUploader&quot;" id="_jRdrXDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.repository.StorageRepositoryDefinition&quot;" id="_jRdrXTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.repository.StorageRepositoryDefinitionProvider&quot;" id="_jRdrXjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.repository.service.storage.StorageTimerDataAccessService&quot;" id="_jRdrXzPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.repository.service.storage.StorageHttpTimerDataAccessService&quot;" id="_jRdrYDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.repository.service.storage.StorageSqlDataAccessService&quot;" id="_jRdrYTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.repository.service.storage.StorageExceptionDataAccessService&quot;" id="_jRdrYjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.repository.service.storage.StorageInvocationDataAccessService&quot;" id="_jRdrYzPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.repository.service.storage.StorageGlobalDataAccessService&quot;" id="_jRdrZDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.repository.service.storage.StorageJmxDataAccessService&quot;" id="_jRdrZTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.repository.service.storage.StorageBusinessContextService&quot;" id="_jRdrZjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.repository.service.storage.StorageSpanService&quot;" id="_jRdrZzPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.ui.rcp.repository.service.storage.StorageServiceProvider&quot;" id="_jRdraDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.storage.util.ExecutorServiceFactory&quot;" id="_jRdraTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.storage.nio.read.ReadingChannelManager&quot;" id="_jRncUDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.storage.nio.stream.ExtendedByteBufferInputStream&quot;" id="_jRncUTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;rocks.inspectit.shared.cs.storage.nio.stream.InputStreamProvider&quot;" id="_jRncUjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jOfP2jPwEei3dfHtumI11Q" property="&quot;threadFactory&quot;" clientClassElem="_jOfP2TPwEei3dfHtumI11Q" serverClassElem="_jOfP2DPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jOfP2zPwEei3dfHtumI11Q" property="&quot;uncaughtExceptionHandler&quot;" clientClassElem="_jOfP2TPwEei3dfHtumI11Q" serverClassElem="_jOfP3DPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYnvzPwEei3dfHtumI11Q" property="&quot;jettyContext&quot;" clientClassElem="_jPYnsDPwEei3dfHtumI11Q" serverClassElem="_jPYnsjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYnwDPwEei3dfHtumI11Q" property="&quot;threadPool&quot;" clientClassElem="_jPYnsTPwEei3dfHtumI11Q" serverClassElem="_jPYnszPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYnwTPwEei3dfHtumI11Q" clientClassElem="_jPYnsjPwEei3dfHtumI11Q" serverClassElem="_jPYnsTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYnwjPwEei3dfHtumI11Q" property="&quot;servletHandler&quot;" clientClassElem="_jPYnsjPwEei3dfHtumI11Q" serverClassElem="_jPYnvjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYnwzPwEei3dfHtumI11Q" property="&quot;mimeTypes&quot;" clientClassElem="_jPYnsjPwEei3dfHtumI11Q" serverClassElem="_jPYnxDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYnxTPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYnxjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYnxzPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYnyDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYnyTPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYnyjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYnyzPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYnzDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYnzTPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYnzjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYnzzPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYn0DPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn0TPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYn0jPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn0zPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYn1DPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn1TPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYn1jPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn1zPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYn2DPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn2TPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYn2jPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn2zPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYn3DPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn3TPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYn3jPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn3zPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYn4DPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn4TPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYn4jPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn4zPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYn5DPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn5TPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYntzPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn5jPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYnuDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn5zPwEei3dfHtumI11Q" property="&quot;filter&quot;" clientClassElem="_jPYnujPwEei3dfHtumI11Q" serverClassElem="_jPYnuTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn6DPwEei3dfHtumI11Q" property="&quot;filter&quot;" clientClassElem="_jPYnujPwEei3dfHtumI11Q" serverClassElem="_jPYnvDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn6TPwEei3dfHtumI11Q" property="&quot;servlet&quot;" clientClassElem="_jPYntTPwEei3dfHtumI11Q" serverClassElem="_jPYnvTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn6jPwEei3dfHtumI11Q" property="&quot;servlets&quot;" clientClassElem="_jPYnvjPwEei3dfHtumI11Q" serverClassElem="_jPYntTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn6zPwEei3dfHtumI11Q" property="&quot;servletMappings&quot;" clientClassElem="_jPYnvjPwEei3dfHtumI11Q" serverClassElem="_jPYntjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn7DPwEei3dfHtumI11Q" property="&quot;filters&quot;" clientClassElem="_jPYnvjPwEei3dfHtumI11Q" serverClassElem="_jPYnujPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jPYn7TPwEei3dfHtumI11Q" property="&quot;filterMappings&quot;" clientClassElem="_jPYnvjPwEei3dfHtumI11Q" serverClassElem="_jPYnuzPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQbJgTPwEei3dfHtumI11Q" property="&quot;executorService&quot;" clientClassElem="_jQbJgDPwEei3dfHtumI11Q" serverClassElem="_jQbJgjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQuEeDPwEei3dfHtumI11Q" property="&quot;advice&quot;" clientClassElem="_jQkTdDPwEei3dfHtumI11Q" serverClassElem="_jQkTczPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQuEeTPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_jQkTdjPwEei3dfHtumI11Q" serverClassElem="_jQkTdzPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQuEejPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_jQkTdjPwEei3dfHtumI11Q" serverClassElem="_jQuEezPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQuEfDPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_jQkTdjPwEei3dfHtumI11Q" serverClassElem="_jQuEfTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQuEfjPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_jQkTdjPwEei3dfHtumI11Q" serverClassElem="_jQuEfzPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQuEgDPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_jQkTdjPwEei3dfHtumI11Q" serverClassElem="_jQuEgTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQuEgjPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_jQkTdjPwEei3dfHtumI11Q" serverClassElem="_jQuEgzPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQuEhDPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_jQkTdjPwEei3dfHtumI11Q" serverClassElem="_jQuEhTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQuEhjPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_jQkTdjPwEei3dfHtumI11Q" serverClassElem="_jQuEhzPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQuEiDPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_jQkTdjPwEei3dfHtumI11Q" serverClassElem="_jQuEiTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQuEijPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_jQkTdjPwEei3dfHtumI11Q" serverClassElem="_jQuEizPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQuEjDPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_jQkTdjPwEei3dfHtumI11Q" serverClassElem="_jQuEjTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQuEjjPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_jQkTdjPwEei3dfHtumI11Q" serverClassElem="_jQuEjzPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQuEkDPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_jQkTdjPwEei3dfHtumI11Q" serverClassElem="_jQuEkTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQuEkjPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_jQkTdjPwEei3dfHtumI11Q" serverClassElem="_jQuEkzPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQuElDPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_jQkTdjPwEei3dfHtumI11Q" serverClassElem="_jQuElTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jQuEljPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_jQkTdjPwEei3dfHtumI11Q" serverClassElem="_jQuElzPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jRncUzPwEei3dfHtumI11Q" property="&quot;timerDataQueryFactory&quot;" clientClassElem="_jRdrXzPwEei3dfHtumI11Q" serverClassElem="_jRdrVTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jRncVDPwEei3dfHtumI11Q" property="&quot;httpDataQueryFactory&quot;" clientClassElem="_jRdrYDPwEei3dfHtumI11Q" serverClassElem="_jRdrVzPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jRncVTPwEei3dfHtumI11Q" property="&quot;sqlDataQueryFactory&quot;" clientClassElem="_jRdrYTPwEei3dfHtumI11Q" serverClassElem="_jRdrVjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jRncVjPwEei3dfHtumI11Q" property="&quot;exceptionSensorDataQueryFactory&quot;" clientClassElem="_jRdrYjPwEei3dfHtumI11Q" serverClassElem="_jRdrWTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jRncVzPwEei3dfHtumI11Q" property="&quot;invocationDataQueryFactory&quot;" clientClassElem="_jRdrYzPwEei3dfHtumI11Q" serverClassElem="_jRdrWDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jRncWDPwEei3dfHtumI11Q" property="&quot;spanQueryFactory&quot;" clientClassElem="_jRdrZzPwEei3dfHtumI11Q" serverClassElem="_jRdrWjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jRncWTPwEei3dfHtumI11Q" property="&quot;executorService&quot;" clientClassElem="_jRncUDPwEei3dfHtumI11Q" serverClassElem="_jRdraTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_jRncWjPwEei3dfHtumI11Q" property="&quot;executorService&quot;" clientClassElem="_jRncUTPwEei3dfHtumI11Q" serverClassElem="_jRncWzPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="inspectIT.inspectIT_asm" instantiates="//@architectureDescriptions[name='inspectIT.inspectIT_config']">
+    <assmComponents name="ctx" id="_jOVe0TPwEei3dfHtumI11Q" instantiates="_jOVe0DPwEei3dfHtumI11Q"/>
+    <assmComponents name="indexQueryProvider" id="_jOfP3TPwEei3dfHtumI11Q" instantiates="_jOfP0DPwEei3dfHtumI11Q"/>
+    <assmComponents name="storageIndexQueryProvider" id="_jOfP3jPwEei3dfHtumI11Q" instantiates="_jOfP0TPwEei3dfHtumI11Q"/>
+    <assmComponents name="streamProvider" id="_jOfP3zPwEei3dfHtumI11Q" instantiates="_jOfP0jPwEei3dfHtumI11Q"/>
+    <assmComponents name="inputStreamProvider" id="_jOfP4DPwEei3dfHtumI11Q" instantiates="_jOfP0zPwEei3dfHtumI11Q"/>
+    <assmComponents name="serializationManagerProvider" id="_jOfP4TPwEei3dfHtumI11Q" instantiates="_jOfP1DPwEei3dfHtumI11Q"/>
+    <assmComponents name="storageWriterProvider" id="_jOfP4jPwEei3dfHtumI11Q" instantiates="_jOfP1TPwEei3dfHtumI11Q"/>
+    <assmComponents name="storageIndexingTreeProvider" id="_jOpA0DPwEei3dfHtumI11Q" instantiates="_jOfP1jPwEei3dfHtumI11Q"/>
+    <assmComponents name="IOExecutorService" id="_jOpA0TPwEei3dfHtumI11Q" instantiates="_jOfP1zPwEei3dfHtumI11Q"/>
+    <assmComponents name="storageExecutorService" id="_jOpA0jPwEei3dfHtumI11Q" instantiates="_jOfP1zPwEei3dfHtumI11Q"/>
+    <assmComponents name="scheduledExecutorService" id="_jOpA0zPwEei3dfHtumI11Q" instantiates="_jOfP1zPwEei3dfHtumI11Q"/>
+    <assmComponents name="socketReadExecutorService" id="_jOpA1DPwEei3dfHtumI11Q" instantiates="_jOfP1zPwEei3dfHtumI11Q"/>
+    <assmComponents name="kryoNetObjectSpaceExecutorService" id="_jOpA1TPwEei3dfHtumI11Q" instantiates="_jOfP1zPwEei3dfHtumI11Q"/>
+    <assmComponents name="forkJoinWorkerThreadFactory" id="_jOpA1jPwEei3dfHtumI11Q" instantiates="_jOfP2DPwEei3dfHtumI11Q"/>
+    <assmComponents name="indexingTreeForkJoinPool" id="_jOpA1zPwEei3dfHtumI11Q" instantiates="_jOfP2TPwEei3dfHtumI11Q"/>
+    <assmComponents name="agentServiceExecutorService" id="_jOpA2DPwEei3dfHtumI11Q" instantiates="_jOfP1zPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jPYn7jPwEei3dfHtumI11Q" instantiates="_jPYnsDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;httpServer&quot;" id="_jPYn7zPwEei3dfHtumI11Q" instantiates="_jPYnsTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;servletContext&quot;" id="_jPYn8DPwEei3dfHtumI11Q" instantiates="_jPYnsjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;threadPool&quot;" id="_jPYn8TPwEei3dfHtumI11Q" instantiates="_jPYnszPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jPYn8jPwEei3dfHtumI11Q" instantiates="_jPYntDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;globalDataAccessServletHolder&quot;" id="_jPYn8zPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;globalDataAccessServiceMapping&quot;" id="_jPYn9DPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jPYn9TPwEei3dfHtumI11Q" instantiates="_jPYntDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sqlDataAccessServletHolder&quot;" id="_jPYn9jPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sqlDataAccessServiceMapping&quot;" id="_jPYn9zPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jPYn-DPwEei3dfHtumI11Q" instantiates="_jPYntDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;invocationDataAccessServletHolder&quot;" id="_jPYn-TPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;invocationDataAccessServiceMapping&quot;" id="_jPYn-jPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jPYn-zPwEei3dfHtumI11Q" instantiates="_jPYntDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cmrManagementServiceServletHolder&quot;" id="_jPYn_DPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cmrManagementServiceServiceMapping&quot;" id="_jPYn_TPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jPYn_jPwEei3dfHtumI11Q" instantiates="_jPYntDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;exceptionDataAccessServletHolder&quot;" id="_jPYn_zPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;exceptionDataAccessServiceMapping&quot;" id="_jPYoADPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jPYoATPwEei3dfHtumI11Q" instantiates="_jPYntDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jmxDataAccessServletHolder&quot;" id="_jPYoAjPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jmxDataAccessServiceMapping&quot;" id="_jPYoAzPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jPYoBDPwEei3dfHtumI11Q" instantiates="_jPYntDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;serverStatusServletHolder&quot;" id="_jPYoBTPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;serverStatusServiceMapping&quot;" id="_jPYoBjPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jPYoBzPwEei3dfHtumI11Q" instantiates="_jPYntDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;timerDataAccessServiceServletHolder&quot;" id="_jPhxoDPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;timerDataAccessServiceServiceMapping&quot;" id="_jPhxoTPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jPhxojPwEei3dfHtumI11Q" instantiates="_jPYntDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;httpTimerDataAccessServiceServletHolder&quot;" id="_jPhxozPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;httpTimerDataAccessServiceServiceMapping&quot;" id="_jPhxpDPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jPhxpTPwEei3dfHtumI11Q" instantiates="_jPYntDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageServiceServletHolder&quot;" id="_jPhxpjPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageServiceServiceMapping&quot;" id="_jPhxpzPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jPhxqDPwEei3dfHtumI11Q" instantiates="_jPYntDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configurationInterfaceServiceServletHolder&quot;" id="_jPhxqTPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configurationInterfaceServiceServiceMapping&quot;" id="_jPhxqjPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jPhxqzPwEei3dfHtumI11Q" instantiates="_jPYntDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;businessCtxMngmtServletHolder&quot;" id="_jPhxrDPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;businessCtxMngmtServiceMapping&quot;" id="_jPhxrTPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jPhxrjPwEei3dfHtumI11Q" instantiates="_jPYntDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;influxDBServletHolder&quot;" id="_jPhxrzPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;influxDBServiceMapping&quot;" id="_jPhxsDPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jPhxsTPwEei3dfHtumI11Q" instantiates="_jPYntDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;alertAccessServletHolder&quot;" id="_jPhxsjPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;alertAccessServiceMapping&quot;" id="_jPhxszPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jPhxtDPwEei3dfHtumI11Q" instantiates="_jPYntDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;agentInstrumentationServletHolder&quot;" id="_jPhxtTPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;agentInstrumentationServiceMapping&quot;" id="_jPhxtjPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jPhxtzPwEei3dfHtumI11Q" instantiates="_jPYntDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;spanServletHolder&quot;" id="_jPhxuDPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;spanServiceMapping&quot;" id="_jPhxuTPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;defaultServlet&quot;" id="_jPhxujPwEei3dfHtumI11Q" instantiates="_jPYntzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;defaultServletHolder&quot;" id="_jPhxuzPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;defaultServletMapping&quot;" id="_jPhxvDPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uploadServlet&quot;" id="_jPhxvTPwEei3dfHtumI11Q" instantiates="_jPYnuDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uploadServletHolder&quot;" id="_jPhxvjPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uploadServletMapping&quot;" id="_jPhxvzPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;multiPartFilter&quot;" id="_jPhxwDPwEei3dfHtumI11Q" instantiates="_jPYnuTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;multiPartFilterHolder&quot;" id="_jPhxwTPwEei3dfHtumI11Q" instantiates="_jPYnujPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;multiPartFilterMapping&quot;" id="_jPhxwjPwEei3dfHtumI11Q" instantiates="_jPYnuzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;gzipFilter&quot;" id="_jPhxwzPwEei3dfHtumI11Q" instantiates="_jPYnvDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;gzipFilterHolder&quot;" id="_jPhxxDPwEei3dfHtumI11Q" instantiates="_jPYnujPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;gzipFilterMapping&quot;" id="_jPhxxTPwEei3dfHtumI11Q" instantiates="_jPYnuzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;springDispatcherServlet&quot;" id="_jPhxxjPwEei3dfHtumI11Q" instantiates="_jPYnvTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;springDispatcherServletHolder&quot;" id="_jPhxxzPwEei3dfHtumI11Q" instantiates="_jPYntTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;springDispatcherServletMapping&quot;" id="_jPhxyDPwEei3dfHtumI11Q" instantiates="_jPYntjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;servletHandler&quot;" id="_jPhxyTPwEei3dfHtumI11Q" instantiates="_jPYnvjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cacheIdGeneratorCmrProcessor&quot;" id="_jP0snjPwEei3dfHtumI11Q" instantiates="_jP0skDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eumCorrelationCmrProcessor&quot;" id="_jP0snzPwEei3dfHtumI11Q" instantiates="_jP0skTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;bufferInserterCmrProcessor&quot;" id="_jP0soDPwEei3dfHtumI11Q" instantiates="_jP0skjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;exceptionMessageCmrProcessor&quot;" id="_jP0soTPwEei3dfHtumI11Q" instantiates="_jP0skzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;indexerCmrProcessor&quot;" id="_jP0sojPwEei3dfHtumI11Q" instantiates="_jP0slDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;influxProcessor&quot;" id="_jP0sozPwEei3dfHtumI11Q" instantiates="_jP0slTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;persistingCmrProcessor&quot;" id="_jP0spDPwEei3dfHtumI11Q" instantiates="_jP0sljPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;systemInformationPersistingCmrProcessor&quot;" id="_jP0spTPwEei3dfHtumI11Q" instantiates="_jP0slzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sqlExclusiveTimeCmrProcessor&quot;" id="_jP0spjPwEei3dfHtumI11Q" instantiates="_jP0smDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;timerDataChartingCmrProcessor&quot;" id="_jP0spzPwEei3dfHtumI11Q" instantiates="_jP0smTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;invocationModifierCmrProcessor&quot;" id="_jP0sqDPwEei3dfHtumI11Q" instantiates="_jP0smjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;recorderCmrProcessor&quot;" id="_jP0sqTPwEei3dfHtumI11Q" instantiates="_jP0smzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;businessContextRecognitionProcessor&quot;" id="_jP0sqjPwEei3dfHtumI11Q" instantiates="_jP0snDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;diagnosisCmrProcessor&quot;" id="_jP0sqzPwEei3dfHtumI11Q" instantiates="_jP0snTPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jQIOlDPwEei3dfHtumI11Q" instantiates="_jQIOkDPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jQIOlTPwEei3dfHtumI11Q" instantiates="_jQIOkTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;stringHttpMessageConverter&quot;" id="_jQIOljPwEei3dfHtumI11Q" instantiates="_jQIOkjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jsonHttpMessageConverter&quot;" id="_jQIOlzPwEei3dfHtumI11Q" instantiates="_jQIOkzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;readingChannelManager&quot;" id="_jQbJgzPwEei3dfHtumI11Q" instantiates="_jQbJgDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;advisorFactory&quot;" id="_jQuEmDPwEei3dfHtumI11Q" instantiates="_jQkTcDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;interfaceInterceptor&quot;" id="_jQuEmTPwEei3dfHtumI11Q" instantiates="_jQkTcTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;serviceMethodInterceptor&quot;" id="_jQuEmjPwEei3dfHtumI11Q" instantiates="_jQkTcjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cachingPlatformIdentInterceptor&quot;" id="_jQuEmzPwEei3dfHtumI11Q" instantiates="_jQkTczPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cachingPlatformAdvice&quot;" id="_jQuEnDPwEei3dfHtumI11Q" instantiates="_jQkTdDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cmrServiceProvider&quot;" id="_jQuEnTPwEei3dfHtumI11Q" instantiates="_jQkTdTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cmrManagementService&quot;" id="_jQuEnjPwEei3dfHtumI11Q" instantiates="_jQkTdjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cmrManagementServiceTarget&quot;" id="_jQuEnzPwEei3dfHtumI11Q" instantiates="_jQkTdzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;exceptionDataAccessService&quot;" id="_jQuEoDPwEei3dfHtumI11Q" instantiates="_jQkTdjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;exceptionDataAccessServiceTarget&quot;" id="_jQuEoTPwEei3dfHtumI11Q" instantiates="_jQkTdzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jmxDataAccessService&quot;" id="_jQuEojPwEei3dfHtumI11Q" instantiates="_jQkTdjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jmxDataAccessServiceTarget&quot;" id="_jQuEozPwEei3dfHtumI11Q" instantiates="_jQkTdzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;globalDataAccessService&quot;" id="_jQuEpDPwEei3dfHtumI11Q" instantiates="_jQkTdjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;globalDataAccessServiceTarget&quot;" id="_jQuEpTPwEei3dfHtumI11Q" instantiates="_jQkTdzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;invocationDataAccessService&quot;" id="_jQuEpjPwEei3dfHtumI11Q" instantiates="_jQkTdjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;invocationDataAccessServiceTarget&quot;" id="_jQuEpzPwEei3dfHtumI11Q" instantiates="_jQkTdzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;serverStatusService&quot;" id="_jQuEqDPwEei3dfHtumI11Q" instantiates="_jQkTdjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;serverStatusServiceTarget&quot;" id="_jQuEqTPwEei3dfHtumI11Q" instantiates="_jQkTdzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sqlDataAccessService&quot;" id="_jQuEqjPwEei3dfHtumI11Q" instantiates="_jQkTdjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sqlDataAccessServiceTarget&quot;" id="_jQuEqzPwEei3dfHtumI11Q" instantiates="_jQkTdzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;timerDataAccessService&quot;" id="_jQuErDPwEei3dfHtumI11Q" instantiates="_jQkTdjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;timerDataAccessServiceTarget&quot;" id="_jQuErTPwEei3dfHtumI11Q" instantiates="_jQkTdzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;httpTimerDataAccessService&quot;" id="_jQuErjPwEei3dfHtumI11Q" instantiates="_jQkTdjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;httpTimerDataAccessServiceTarget&quot;" id="_jQuErzPwEei3dfHtumI11Q" instantiates="_jQkTdzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageService&quot;" id="_jQuEsDPwEei3dfHtumI11Q" instantiates="_jQkTdjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageServiceTarget&quot;" id="_jQuEsTPwEei3dfHtumI11Q" instantiates="_jQkTdzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;businessContextManagementService&quot;" id="_jQuEsjPwEei3dfHtumI11Q" instantiates="_jQkTdjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;businessContextManagementServiceTarget&quot;" id="_jQuEszPwEei3dfHtumI11Q" instantiates="_jQkTdzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configurationInterfaceService&quot;" id="_jQuEtDPwEei3dfHtumI11Q" instantiates="_jQkTdjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configurationInterfaceServiceTarget&quot;" id="_jQuEtTPwEei3dfHtumI11Q" instantiates="_jQkTdzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;influxDBService&quot;" id="_jQuEtjPwEei3dfHtumI11Q" instantiates="_jQkTdjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;influxDBServiceTarget&quot;" id="_jQuEtzPwEei3dfHtumI11Q" instantiates="_jQkTdzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;alertAccessService&quot;" id="_jQuEuDPwEei3dfHtumI11Q" instantiates="_jQkTdjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;alertAccessServiceTarget&quot;" id="_jQuEuTPwEei3dfHtumI11Q" instantiates="_jQkTdzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;agentInstrumentationService&quot;" id="_jQuEujPwEei3dfHtumI11Q" instantiates="_jQkTdjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;agentInstrumentationServiceTarget&quot;" id="_jQuEuzPwEei3dfHtumI11Q" instantiates="_jQkTdzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;spanService&quot;" id="_jQuEvDPwEei3dfHtumI11Q" instantiates="_jQkTdjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;spanServiceTarget&quot;" id="_jQuEvTPwEei3dfHtumI11Q" instantiates="_jQkTdzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;loggerPostProcessor&quot;" id="_jQuEvjPwEei3dfHtumI11Q" instantiates="_jQuEcDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;classSchemaManager&quot;" id="_jQuEvzPwEei3dfHtumI11Q" instantiates="_jQuEcTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;serializationManager&quot;" id="_jQuEwDPwEei3dfHtumI11Q" instantiates="_jQuEcjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;kryoNetNetwork&quot;" id="_jQuEwTPwEei3dfHtumI11Q" instantiates="_jQuEczPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;serializationManagerProvider&quot;" id="_jQuEwjPwEei3dfHtumI11Q" instantiates="_jQuEdDPwEei3dfHtumI11Q"/>
+    <assmComponents id="_jQuEwzPwEei3dfHtumI11Q" instantiates="_jQuEdTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configurationInterfaceManager&quot;" id="_jQuExDPwEei3dfHtumI11Q" instantiates="_jQuEdjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;serializationManagerPostProcessor&quot;" id="_jQuExTPwEei3dfHtumI11Q" instantiates="_jQuEdzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;detailsGenerationFactory&quot;" id="_jRT6VDPwEei3dfHtumI11Q" instantiates="_jRT6UDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;versionService&quot;" id="_jRT6VTPwEei3dfHtumI11Q" instantiates="_jRT6UTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;versionProvider&quot;" id="_jRT6VjPwEei3dfHtumI11Q" instantiates="_jRT6UjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;documentationService&quot;" id="_jRT6VzPwEei3dfHtumI11Q" instantiates="_jRT6UzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageIndexQuery&quot;" id="_jRncXDPwEei3dfHtumI11Q" instantiates="_jRdrUDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageIndexQueryProvider&quot;" id="_jRncXTPwEei3dfHtumI11Q" instantiates="_jRdrUTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;restrictionProcessor&quot;" id="_jRncXjPwEei3dfHtumI11Q" instantiates="_jRdrUjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;byteBufferProvider&quot;" id="_jRncXzPwEei3dfHtumI11Q" instantiates="_jRdrUzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageManager&quot;" id="_jRncYDPwEei3dfHtumI11Q" instantiates="_jRdrVDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;timerDataQueryFactory&quot;" id="_jRncYTPwEei3dfHtumI11Q" instantiates="_jRdrVTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sqlStatementDataQueryFactory&quot;" id="_jRncYjPwEei3dfHtumI11Q" instantiates="_jRdrVjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;httpTimerDataQueryFactory&quot;" id="_jRncYzPwEei3dfHtumI11Q" instantiates="_jRdrVzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;invocationSequenceDataQueryFactory&quot;" id="_jRncZDPwEei3dfHtumI11Q" instantiates="_jRdrWDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;exceptionSensorDataQueryFactory&quot;" id="_jRncZTPwEei3dfHtumI11Q" instantiates="_jRdrWTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;spanQueryFactory&quot;" id="_jRncZjPwEei3dfHtumI11Q" instantiates="_jRdrWjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataRetriever&quot;" id="_jRncZzPwEei3dfHtumI11Q" instantiates="_jRdrWzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataUploader&quot;" id="_jRncaDPwEei3dfHtumI11Q" instantiates="_jRdrXDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageRepositoryDefinition&quot;" id="_jRncaTPwEei3dfHtumI11Q" instantiates="_jRdrXTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageRepositoryDefinitionProvider&quot;" id="_jRncajPwEei3dfHtumI11Q" instantiates="_jRdrXjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageTimerDataAccessService&quot;" id="_jRncazPwEei3dfHtumI11Q" instantiates="_jRdrXzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageHttpTimerDataAccessService&quot;" id="_jRncbDPwEei3dfHtumI11Q" instantiates="_jRdrYDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageSqlDataAccessService&quot;" id="_jRncbTPwEei3dfHtumI11Q" instantiates="_jRdrYTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageExceptionDataAccessService&quot;" id="_jRncbjPwEei3dfHtumI11Q" instantiates="_jRdrYjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageInvocationDataAccessService&quot;" id="_jRncbzPwEei3dfHtumI11Q" instantiates="_jRdrYzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageGlobalDataAccessService&quot;" id="_jRnccDPwEei3dfHtumI11Q" instantiates="_jRdrZDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageJmxDataAccessService&quot;" id="_jRnccTPwEei3dfHtumI11Q" instantiates="_jRdrZTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageBusinessContextService&quot;" id="_jRnccjPwEei3dfHtumI11Q" instantiates="_jRdrZjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageSpanService&quot;" id="_jRncczPwEei3dfHtumI11Q" instantiates="_jRdrZzPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageServiceProvider&quot;" id="_jRncdDPwEei3dfHtumI11Q" instantiates="_jRdraDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;IOExecutorService&quot;" id="_jRncdTPwEei3dfHtumI11Q" instantiates="_jRdraTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;storageExecutorService&quot;" id="_jRncdjPwEei3dfHtumI11Q" instantiates="_jRdraTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;readingChannelManager&quot;" id="_jRncdzPwEei3dfHtumI11Q" instantiates="_jRncUDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;extendedByteBufferInputStream&quot;" id="_jRnceDPwEei3dfHtumI11Q" instantiates="_jRncUTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;inputStreamProvider&quot;" id="_jRnceTPwEei3dfHtumI11Q" instantiates="_jRncUjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jOpA2TPwEei3dfHtumI11Q" property="indexingTreeForkJoinPool.threadFactory" clientInstElem="_jOpA1zPwEei3dfHtumI11Q" serverInstElem="_jOpA1jPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jOpA2jPwEei3dfHtumI11Q" property="indexingTreeForkJoinPool.uncaughtExceptionHandler" clientInstElem="_jOpA1zPwEei3dfHtumI11Q" serverInstElem="_jOpA2zPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhxyjPwEei3dfHtumI11Q" clientInstElem="_jPYn9TPwEei3dfHtumI11Q" serverInstElem="_jPYn8DPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhxyzPwEei3dfHtumI11Q" property="httpServer.threadPool" clientInstElem="_jPYn7zPwEei3dfHtumI11Q" serverInstElem="_jPYn8TPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhxzDPwEei3dfHtumI11Q" clientInstElem="_jPYn8DPwEei3dfHtumI11Q" serverInstElem="_jPYn7zPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhxzTPwEei3dfHtumI11Q" property="servletContext.server" clientInstElem="_jPYn8DPwEei3dfHtumI11Q" serverInstElem="_jPYn7zPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhxzjPwEei3dfHtumI11Q" property="servletContext.servletHandler" clientInstElem="_jPYn8DPwEei3dfHtumI11Q" serverInstElem="_jPhxyTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhxzzPwEei3dfHtumI11Q" property="servletContext.mimeTypes" clientInstElem="_jPYn8DPwEei3dfHtumI11Q" serverInstElem="_jPhx0DPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx0TPwEei3dfHtumI11Q" property="globalDataAccessServletHolder.servlet" clientInstElem="_jPYn8zPwEei3dfHtumI11Q" serverInstElem="_jPhx0jPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx0zPwEei3dfHtumI11Q" property="sqlDataAccessServletHolder.servlet" clientInstElem="_jPYn9jPwEei3dfHtumI11Q" serverInstElem="_jPhx1DPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx1TPwEei3dfHtumI11Q" property="invocationDataAccessServletHolder.servlet" clientInstElem="_jPYn-TPwEei3dfHtumI11Q" serverInstElem="_jPhx1jPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx1zPwEei3dfHtumI11Q" property="cmrManagementServiceServletHolder.servlet" clientInstElem="_jPYn_DPwEei3dfHtumI11Q" serverInstElem="_jPhx2DPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx2TPwEei3dfHtumI11Q" property="exceptionDataAccessServletHolder.servlet" clientInstElem="_jPYn_zPwEei3dfHtumI11Q" serverInstElem="_jPhx2jPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx2zPwEei3dfHtumI11Q" property="jmxDataAccessServletHolder.servlet" clientInstElem="_jPYoAjPwEei3dfHtumI11Q" serverInstElem="_jPhx3DPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx3TPwEei3dfHtumI11Q" property="serverStatusServletHolder.servlet" clientInstElem="_jPYoBTPwEei3dfHtumI11Q" serverInstElem="_jPhx3jPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx3zPwEei3dfHtumI11Q" property="timerDataAccessServiceServletHolder.servlet" clientInstElem="_jPhxoDPwEei3dfHtumI11Q" serverInstElem="_jPhx4DPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx4TPwEei3dfHtumI11Q" property="httpTimerDataAccessServiceServletHolder.servlet" clientInstElem="_jPhxozPwEei3dfHtumI11Q" serverInstElem="_jPhx4jPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx4zPwEei3dfHtumI11Q" property="storageServiceServletHolder.servlet" clientInstElem="_jPhxpjPwEei3dfHtumI11Q" serverInstElem="_jPhx5DPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx5TPwEei3dfHtumI11Q" property="configurationInterfaceServiceServletHolder.servlet" clientInstElem="_jPhxqTPwEei3dfHtumI11Q" serverInstElem="_jPhx5jPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx5zPwEei3dfHtumI11Q" property="businessCtxMngmtServletHolder.servlet" clientInstElem="_jPhxrDPwEei3dfHtumI11Q" serverInstElem="_jPhx6DPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx6TPwEei3dfHtumI11Q" property="influxDBServletHolder.servlet" clientInstElem="_jPhxrzPwEei3dfHtumI11Q" serverInstElem="_jPhx6jPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx6zPwEei3dfHtumI11Q" property="alertAccessServletHolder.servlet" clientInstElem="_jPhxsjPwEei3dfHtumI11Q" serverInstElem="_jPhx7DPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx7TPwEei3dfHtumI11Q" property="agentInstrumentationServletHolder.servlet" clientInstElem="_jPhxtTPwEei3dfHtumI11Q" serverInstElem="_jPhx7jPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx7zPwEei3dfHtumI11Q" property="spanServletHolder.servlet" clientInstElem="_jPhxuDPwEei3dfHtumI11Q" serverInstElem="_jPhx8DPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx8TPwEei3dfHtumI11Q" property="defaultServletHolder.servlet" clientInstElem="_jPhxuzPwEei3dfHtumI11Q" serverInstElem="_jPhxujPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx8jPwEei3dfHtumI11Q" property="uploadServletHolder.servlet" clientInstElem="_jPhxvjPwEei3dfHtumI11Q" serverInstElem="_jPhxvTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx8zPwEei3dfHtumI11Q" property="multiPartFilterHolder.filter" clientInstElem="_jPhxwTPwEei3dfHtumI11Q" serverInstElem="_jPhxwDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx9DPwEei3dfHtumI11Q" property="gzipFilterHolder.filter" clientInstElem="_jPhxxDPwEei3dfHtumI11Q" serverInstElem="_jPhxwzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx9TPwEei3dfHtumI11Q" property="springDispatcherServletHolder.servlet" clientInstElem="_jPhxxzPwEei3dfHtumI11Q" serverInstElem="_jPhxxjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx9jPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPYn8zPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx9zPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPYn9jPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx-DPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPYn_zPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx-TPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPYoAjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx-jPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPYn-TPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx-zPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPYoBTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx_DPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPYn_DPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx_TPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxoDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx_jPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxozPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhx_zPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxpjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhyADPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxqTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhyATPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxrDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhyAjPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxrzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhyAzPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxsjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhyBDPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxtTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhyBTPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxuDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhyBjPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxuzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhyBzPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxvjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhyCDPwEei3dfHtumI11Q" property="servletHandler.servlets" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxxzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhyCTPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPYn9DPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhyCjPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPYn9zPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPhyCzPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPYoADPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPrioDPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPYoAzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPrioTPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPYn-jPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPriojPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPYoBjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPriozPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPYn_TPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPripDPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxoTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPripTPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxpDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPripjPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxpzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPripzPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxqjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPriqDPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxrTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPriqTPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxsDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPriqjPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxszPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPriqzPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxtjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPrirDPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxuTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPrirTPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxvDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPrirjPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxvzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPrirzPwEei3dfHtumI11Q" property="servletHandler.servletMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxyDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPrisDPwEei3dfHtumI11Q" property="servletHandler.filters" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxwTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPrisTPwEei3dfHtumI11Q" property="servletHandler.filters" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxxDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPrisjPwEei3dfHtumI11Q" property="servletHandler.filterMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxwjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jPriszPwEei3dfHtumI11Q" property="servletHandler.filterMappings" clientInstElem="_jPhxyTPwEei3dfHtumI11Q" serverInstElem="_jPhxxTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQbJhDPwEei3dfHtumI11Q" property="readingChannelManager.executorService" clientInstElem="_jQbJgzPwEei3dfHtumI11Q" serverInstElem="_jQbJhTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQuExjPwEei3dfHtumI11Q" property="cachingPlatformAdvice.advice" clientInstElem="_jQuEnDPwEei3dfHtumI11Q" serverInstElem="_jQuEmzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQuExzPwEei3dfHtumI11Q" property="cmrManagementService.target" clientInstElem="_jQuEnjPwEei3dfHtumI11Q" serverInstElem="_jQuEnzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQuEyDPwEei3dfHtumI11Q" property="exceptionDataAccessService.target" clientInstElem="_jQuEoDPwEei3dfHtumI11Q" serverInstElem="_jQuEoTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQuEyTPwEei3dfHtumI11Q" property="jmxDataAccessService.target" clientInstElem="_jQuEojPwEei3dfHtumI11Q" serverInstElem="_jQuEozPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQuEyjPwEei3dfHtumI11Q" property="globalDataAccessService.target" clientInstElem="_jQuEpDPwEei3dfHtumI11Q" serverInstElem="_jQuEpTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQuEyzPwEei3dfHtumI11Q" property="invocationDataAccessService.target" clientInstElem="_jQuEpjPwEei3dfHtumI11Q" serverInstElem="_jQuEpzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQuEzDPwEei3dfHtumI11Q" property="serverStatusService.target" clientInstElem="_jQuEqDPwEei3dfHtumI11Q" serverInstElem="_jQuEqTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQuEzTPwEei3dfHtumI11Q" property="sqlDataAccessService.target" clientInstElem="_jQuEqjPwEei3dfHtumI11Q" serverInstElem="_jQuEqzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQuEzjPwEei3dfHtumI11Q" property="timerDataAccessService.target" clientInstElem="_jQuErDPwEei3dfHtumI11Q" serverInstElem="_jQuErTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQuEzzPwEei3dfHtumI11Q" property="httpTimerDataAccessService.target" clientInstElem="_jQuErjPwEei3dfHtumI11Q" serverInstElem="_jQuErzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQuE0DPwEei3dfHtumI11Q" property="storageService.target" clientInstElem="_jQuEsDPwEei3dfHtumI11Q" serverInstElem="_jQuEsTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQuE0TPwEei3dfHtumI11Q" property="businessContextManagementService.target" clientInstElem="_jQuEsjPwEei3dfHtumI11Q" serverInstElem="_jQuEszPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQuE0jPwEei3dfHtumI11Q" property="configurationInterfaceService.target" clientInstElem="_jQuEtDPwEei3dfHtumI11Q" serverInstElem="_jQuEtTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQuE0zPwEei3dfHtumI11Q" property="influxDBService.target" clientInstElem="_jQuEtjPwEei3dfHtumI11Q" serverInstElem="_jQuEtzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQuE1DPwEei3dfHtumI11Q" property="alertAccessService.target" clientInstElem="_jQuEuDPwEei3dfHtumI11Q" serverInstElem="_jQuEuTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQuE1TPwEei3dfHtumI11Q" property="agentInstrumentationService.target" clientInstElem="_jQuEujPwEei3dfHtumI11Q" serverInstElem="_jQuEuzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jQuE1jPwEei3dfHtumI11Q" property="spanService.target" clientInstElem="_jQuEvDPwEei3dfHtumI11Q" serverInstElem="_jQuEvTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jRncejPwEei3dfHtumI11Q" property="storageTimerDataAccessService.timerDataQueryFactory" clientInstElem="_jRncazPwEei3dfHtumI11Q" serverInstElem="_jRncYTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jRncezPwEei3dfHtumI11Q" property="storageHttpTimerDataAccessService.httpDataQueryFactory" clientInstElem="_jRncbDPwEei3dfHtumI11Q" serverInstElem="_jRncYzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jRncfDPwEei3dfHtumI11Q" property="storageSqlDataAccessService.sqlDataQueryFactory" clientInstElem="_jRncbTPwEei3dfHtumI11Q" serverInstElem="_jRncYjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jRncfTPwEei3dfHtumI11Q" property="storageExceptionDataAccessService.exceptionSensorDataQueryFactory" clientInstElem="_jRncbjPwEei3dfHtumI11Q" serverInstElem="_jRncZTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jRncfjPwEei3dfHtumI11Q" property="storageInvocationDataAccessService.invocationDataQueryFactory" clientInstElem="_jRncbzPwEei3dfHtumI11Q" serverInstElem="_jRncZDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jRncfzPwEei3dfHtumI11Q" property="storageSpanService.spanQueryFactory" clientInstElem="_jRncczPwEei3dfHtumI11Q" serverInstElem="_jRncZjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jRncgDPwEei3dfHtumI11Q" property="readingChannelManager.executorService" clientInstElem="_jRncdzPwEei3dfHtumI11Q" serverInstElem="_jRncdTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jRncgTPwEei3dfHtumI11Q" property="extendedByteBufferInputStream.executorService" clientInstElem="_jRnceDPwEei3dfHtumI11Q" serverInstElem="_jRncdjPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="inspectIT.inspectIT_spec">
+    <specConnections refID="_jRncgjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncgzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRnchDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRnchTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRnchjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRnchzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRnciDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRnciTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncijPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncizPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncjDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncjTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncjjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncjzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRnckDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRnckTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRnckjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRnckzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRnclDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRnclTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncljPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRnclzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncmDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncmTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncmjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncmzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncnDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncnTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncnjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncnzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncoDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncoTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncojPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncozPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncpDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncpTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncpjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncpzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncqDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncqTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncqjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncqzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncrDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncrTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncrjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncrzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncsDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncsTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncsjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncszPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRnctDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRnctTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRnctjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRnctzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncuDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncuTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncujPwEei3dfHtumI11Q"/>
+    <specConnections refID="_jRncuzPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

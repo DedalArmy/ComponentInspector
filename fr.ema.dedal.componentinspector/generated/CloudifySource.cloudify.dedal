@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="CloudifySource.cloudify">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="CloudifySource.cloudify_config" implements="//@architectureDescriptions[name='CloudifySource.cloudify_spec']">
+    <configComponents name="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="_Y5bV8DPvEei3dfHtumI11Q"/>
+    <configComponents name="org.openspaces.pu.container.jee.PortGenerator" id="_Y5bV8TPvEei3dfHtumI11Q"/>
+    <configComponents name="org.eclipse.jetty.webapp.WebAppContext" id="_Y5bV8jPvEei3dfHtumI11Q"/>
+    <configComponents name="org.openspaces.pu.container.jee.jetty.holder.PlainJettyHolder" id="_Y5b9ADPvEei3dfHtumI11Q"/>
+    <configComponents name="java.lang.Integer" id="_Y5b9ATPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Y5b9AjPvEei3dfHtumI11Q" clientClassElem="_Y5b9ADPvEei3dfHtumI11Q" serverClassElem="_Y5b9AzPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="CloudifySource.cloudify_asm" instantiates="//@architectureDescriptions[name='CloudifySource.cloudify_config']">
+    <assmComponents name="propertiesConfigurer" id="_Y5b9BDPvEei3dfHtumI11Q" instantiates="_Y5bV8DPvEei3dfHtumI11Q"/>
+    <assmComponents name="port" id="_Y5b9BTPvEei3dfHtumI11Q" instantiates="_Y5bV8TPvEei3dfHtumI11Q"/>
+    <assmComponents name="confidentialPort" id="_Y5b9BjPvEei3dfHtumI11Q" instantiates="_Y5bV8TPvEei3dfHtumI11Q"/>
+    <assmComponents name="webAppContext" id="_Y5b9BzPvEei3dfHtumI11Q" instantiates="_Y5bV8jPvEei3dfHtumI11Q"/>
+    <assmComponents name="jettyHolder" id="_Y5b9CDPvEei3dfHtumI11Q" instantiates="_Y5b9ADPvEei3dfHtumI11Q"/>
+    <assmComponents name="retryPortCount" id="_Y5b9CTPvEei3dfHtumI11Q" instantiates="_Y5b9ATPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Y5ckEDPvEei3dfHtumI11Q" clientInstElem="_Y5b9CDPvEei3dfHtumI11Q" serverInstElem="_Y5ckETPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="CloudifySource.cloudify_spec">
+    <specConnections refID="_Y8vIoDPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

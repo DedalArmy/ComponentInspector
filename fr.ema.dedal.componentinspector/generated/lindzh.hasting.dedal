@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="lindzh.hasting">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="lindzh.hasting_config" implements="//@architectureDescriptions[name='lindzh.hasting_spec']">
+    <configComponents name="&quot;com.alibaba.druid.pool.DruidDataSource&quot;" id="_p_VcEDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;" id="_p_VcETPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;" id="_p_VcEjPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_p_VcEzPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.lindzh.hasting.cluster.zk.ZkRpcAdminService&quot;" id="_p_fNEDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.scheduling.quartz.SchedulerFactoryBean&quot;" id="_p_fNETPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.scheduling.quartz.CronTriggerBean&quot;" id="_p_fNEjPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean&quot;" id="_p_fNEzPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.druid.pool.DruidDataSource&quot;" id="_qAFqADPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;" id="_qAFqATPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;" id="_qAFqAjPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_qAFqAzPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.lindzh.hasting.cluster.zk.ZkRpcAdminService&quot;" id="_qAYk8DPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.scheduling.quartz.SchedulerFactoryBean&quot;" id="_qAYk8TPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.scheduling.quartz.CronTriggerBean&quot;" id="_qAYk8jPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean&quot;" id="_qAYk8zPxEei3dfHtumI11Q"/>
+    <configConnections refID="_p_VcFDPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_p_VcETPxEei3dfHtumI11Q" serverClassElem="_p_VcFTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_p_VcFjPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_p_VcEzPxEei3dfHtumI11Q" serverClassElem="_p_VcFzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_p_oXADPxEei3dfHtumI11Q" property="&quot;triggers&quot;" clientClassElem="_p_fNETPxEei3dfHtumI11Q" serverClassElem="_p_fNEjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_p_oXATPxEei3dfHtumI11Q" property="&quot;jobDetail&quot;" clientClassElem="_p_fNEjPxEei3dfHtumI11Q" serverClassElem="_p_fNEzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_p_oXAjPxEei3dfHtumI11Q" property="&quot;targetObject&quot;" clientClassElem="_p_fNEzPxEei3dfHtumI11Q" serverClassElem="_p_oXAzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_p_oXBDPxEei3dfHtumI11Q" property="&quot;jobDetail&quot;" clientClassElem="_p_fNEjPxEei3dfHtumI11Q" serverClassElem="_p_oXBTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_p_oXBjPxEei3dfHtumI11Q" property="&quot;targetObject&quot;" clientClassElem="_p_oXBTPxEei3dfHtumI11Q" serverClassElem="_p_oXBzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_p_oXCDPxEei3dfHtumI11Q" property="&quot;jobDetail&quot;" clientClassElem="_p_fNEjPxEei3dfHtumI11Q" serverClassElem="_p_oXCTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_p_oXCjPxEei3dfHtumI11Q" property="&quot;targetObject&quot;" clientClassElem="_p_oXCTPxEei3dfHtumI11Q" serverClassElem="_p_oXCzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_p_oXDDPxEei3dfHtumI11Q" property="&quot;jobDetail&quot;" clientClassElem="_p_fNEjPxEei3dfHtumI11Q" serverClassElem="_p_oXDTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_p_oXDjPxEei3dfHtumI11Q" property="&quot;targetObject&quot;" clientClassElem="_p_oXCTPxEei3dfHtumI11Q" serverClassElem="_p_oXDzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_p_oXEDPxEei3dfHtumI11Q" property="&quot;jobDetail&quot;" clientClassElem="_p_fNEjPxEei3dfHtumI11Q" serverClassElem="_p_oXETPxEei3dfHtumI11Q"/>
+    <configConnections refID="_p_oXEjPxEei3dfHtumI11Q" property="&quot;targetObject&quot;" clientClassElem="_p_oXCTPxEei3dfHtumI11Q" serverClassElem="_p_oXEzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_p_oXFDPxEei3dfHtumI11Q" property="&quot;jobDetail&quot;" clientClassElem="_p_fNEjPxEei3dfHtumI11Q" serverClassElem="_p_oXFTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_p_oXFjPxEei3dfHtumI11Q" property="&quot;targetObject&quot;" clientClassElem="_p_oXCTPxEei3dfHtumI11Q" serverClassElem="_p_oXFzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qAFqBDPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_qAFqATPxEei3dfHtumI11Q" serverClassElem="_qAFqBTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qAFqBjPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_qAFqAzPxEei3dfHtumI11Q" serverClassElem="_qAFqBzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qAYk9DPxEei3dfHtumI11Q" property="&quot;triggers&quot;" clientClassElem="_qAYk8TPxEei3dfHtumI11Q" serverClassElem="_qAYk8jPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qAYk9TPxEei3dfHtumI11Q" property="&quot;jobDetail&quot;" clientClassElem="_qAYk8jPxEei3dfHtumI11Q" serverClassElem="_qAYk8zPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qAYk9jPxEei3dfHtumI11Q" property="&quot;targetObject&quot;" clientClassElem="_qAYk8zPxEei3dfHtumI11Q" serverClassElem="_qAYk9zPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qAYk-DPxEei3dfHtumI11Q" property="&quot;jobDetail&quot;" clientClassElem="_qAYk8jPxEei3dfHtumI11Q" serverClassElem="_qAYk-TPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qAYk-jPxEei3dfHtumI11Q" property="&quot;targetObject&quot;" clientClassElem="_qAYk8zPxEei3dfHtumI11Q" serverClassElem="_qAYk-zPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qAYk_DPxEei3dfHtumI11Q" property="&quot;jobDetail&quot;" clientClassElem="_qAYk8jPxEei3dfHtumI11Q" serverClassElem="_qAYk_TPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qAYk_jPxEei3dfHtumI11Q" property="&quot;targetObject&quot;" clientClassElem="_qAYk8zPxEei3dfHtumI11Q" serverClassElem="_qAYk_zPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qAYlADPxEei3dfHtumI11Q" property="&quot;jobDetail&quot;" clientClassElem="_qAYk8jPxEei3dfHtumI11Q" serverClassElem="_qAYlATPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qAYlAjPxEei3dfHtumI11Q" property="&quot;targetObject&quot;" clientClassElem="_qAYk8zPxEei3dfHtumI11Q" serverClassElem="_qAYlAzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qAYlBDPxEei3dfHtumI11Q" property="&quot;jobDetail&quot;" clientClassElem="_qAYk8jPxEei3dfHtumI11Q" serverClassElem="_qAYlBTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qAYlBjPxEei3dfHtumI11Q" property="&quot;targetObject&quot;" clientClassElem="_qAYk8zPxEei3dfHtumI11Q" serverClassElem="_qAYlBzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qAYlCDPxEei3dfHtumI11Q" property="&quot;jobDetail&quot;" clientClassElem="_qAYk8jPxEei3dfHtumI11Q" serverClassElem="_qAYlCTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qAYlCjPxEei3dfHtumI11Q" property="&quot;targetObject&quot;" clientClassElem="_qAYk8zPxEei3dfHtumI11Q" serverClassElem="_qAYlCzPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="lindzh.hasting_asm" instantiates="//@architectureDescriptions[name='lindzh.hasting_config']">
+    <assmComponents id="_p_VcGDPxEei3dfHtumI11Q" instantiates="_p_VcEDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;defaultSqlSessionFactory&quot;" id="_p_VcGTPxEei3dfHtumI11Q" instantiates="_p_VcETPxEei3dfHtumI11Q"/>
+    <assmComponents id="_p_VcGjPxEei3dfHtumI11Q" instantiates="_p_VcEjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_p_VcGzPxEei3dfHtumI11Q" instantiates="_p_VcEzPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;adminService&quot;" id="_p_oXGDPxEei3dfHtumI11Q" instantiates="_p_fNEDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;contextSchedule&quot;" id="_p_oXGTPxEei3dfHtumI11Q" instantiates="_p_fNETPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;updateServersTrigger&quot;" id="_p_oXGjPxEei3dfHtumI11Q" instantiates="_p_fNEjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;updateServersJobDetail&quot;" id="_p_oXGzPxEei3dfHtumI11Q" instantiates="_p_oXCTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;fetchHostInfoTrigger&quot;" id="_p_oXHDPxEei3dfHtumI11Q" instantiates="_p_fNEjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;fetchHostInfoJobDetail&quot;" id="_p_oXHTPxEei3dfHtumI11Q" instantiates="_p_oXCTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;syncConsumersTrigger&quot;" id="_p_oXHjPxEei3dfHtumI11Q" instantiates="_p_fNEjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;syncConsumersJobDetail&quot;" id="_p_oXHzPxEei3dfHtumI11Q" instantiates="_p_oXCTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;updateServiceCountAndStatusTrigger&quot;" id="_p_oXIDPxEei3dfHtumI11Q" instantiates="_p_fNEjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;updateServiceCountAndStatusJobDetail&quot;" id="_p_oXITPxEei3dfHtumI11Q" instantiates="_p_oXCTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;weightTaskTrigger&quot;" id="_p_oXIjPxEei3dfHtumI11Q" instantiates="_p_fNEjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;weightTaskJobDetail&quot;" id="_p_oXIzPxEei3dfHtumI11Q" instantiates="_p_oXCTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;limitTaskTrigger&quot;" id="_p_oXJDPxEei3dfHtumI11Q" instantiates="_p_fNEjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;limitTaskJobDetail&quot;" id="_p_oXJTPxEei3dfHtumI11Q" instantiates="_p_oXCTPxEei3dfHtumI11Q"/>
+    <assmComponents id="_qAFqCDPxEei3dfHtumI11Q" instantiates="_qAFqADPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;defaultSqlSessionFactory&quot;" id="_qAFqCTPxEei3dfHtumI11Q" instantiates="_qAFqATPxEei3dfHtumI11Q"/>
+    <assmComponents id="_qAFqCjPxEei3dfHtumI11Q" instantiates="_qAFqAjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_qAFqCzPxEei3dfHtumI11Q" instantiates="_qAFqAzPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;adminService&quot;" id="_qAYlDDPxEei3dfHtumI11Q" instantiates="_qAYk8DPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;contextSchedule&quot;" id="_qAYlDTPxEei3dfHtumI11Q" instantiates="_qAYk8TPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;updateServersTrigger&quot;" id="_qAYlDjPxEei3dfHtumI11Q" instantiates="_qAYk8jPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;updateServersJobDetail&quot;" id="_qAYlDzPxEei3dfHtumI11Q" instantiates="_qAYk8zPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;fetchHostInfoTrigger&quot;" id="_qAYlEDPxEei3dfHtumI11Q" instantiates="_qAYk8jPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;fetchHostInfoJobDetail&quot;" id="_qAYlETPxEei3dfHtumI11Q" instantiates="_qAYk8zPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;syncConsumersTrigger&quot;" id="_qAYlEjPxEei3dfHtumI11Q" instantiates="_qAYk8jPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;syncConsumersJobDetail&quot;" id="_qAYlEzPxEei3dfHtumI11Q" instantiates="_qAYk8zPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;updateServiceCountAndStatusTrigger&quot;" id="_qAYlFDPxEei3dfHtumI11Q" instantiates="_qAYk8jPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;updateServiceCountAndStatusJobDetail&quot;" id="_qAYlFTPxEei3dfHtumI11Q" instantiates="_qAYk8zPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;weightTaskTrigger&quot;" id="_qAYlFjPxEei3dfHtumI11Q" instantiates="_qAYk8jPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;weightTaskJobDetail&quot;" id="_qAYlFzPxEei3dfHtumI11Q" instantiates="_qAYk8zPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;limitTaskTrigger&quot;" id="_qAYlGDPxEei3dfHtumI11Q" instantiates="_qAYk8jPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;limitTaskJobDetail&quot;" id="_qAYlGTPxEei3dfHtumI11Q" instantiates="_qAYk8zPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_VcHDPxEei3dfHtumI11Q" property="defaultSqlSessionFactory.dataSource" clientInstElem="_p_VcGTPxEei3dfHtumI11Q" serverInstElem="_p_VcHTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_VcHjPxEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_p_VcGzPxEei3dfHtumI11Q" serverInstElem="_p_VcHzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXJjPxEei3dfHtumI11Q" property="contextSchedule.triggers" clientInstElem="_p_oXGTPxEei3dfHtumI11Q" serverInstElem="_p_oXGjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXJzPxEei3dfHtumI11Q" property="contextSchedule.triggers" clientInstElem="_p_oXGTPxEei3dfHtumI11Q" serverInstElem="_p_oXHDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXKDPxEei3dfHtumI11Q" property="contextSchedule.triggers" clientInstElem="_p_oXGTPxEei3dfHtumI11Q" serverInstElem="_p_oXHjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXKTPxEei3dfHtumI11Q" property="contextSchedule.triggers" clientInstElem="_p_oXGTPxEei3dfHtumI11Q" serverInstElem="_p_oXIDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXKjPxEei3dfHtumI11Q" property="contextSchedule.triggers" clientInstElem="_p_oXGTPxEei3dfHtumI11Q" serverInstElem="_p_oXIjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXKzPxEei3dfHtumI11Q" property="contextSchedule.triggers" clientInstElem="_p_oXGTPxEei3dfHtumI11Q" serverInstElem="_p_oXJDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXLDPxEei3dfHtumI11Q" property="updateServersTrigger.jobDetail" clientInstElem="_p_oXGjPxEei3dfHtumI11Q" serverInstElem="_p_oXGzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXLTPxEei3dfHtumI11Q" property="updateServersJobDetail.targetObject" clientInstElem="_p_oXGzPxEei3dfHtumI11Q" serverInstElem="_p_oXLjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXLzPxEei3dfHtumI11Q" property="fetchHostInfoTrigger.jobDetail" clientInstElem="_p_oXHDPxEei3dfHtumI11Q" serverInstElem="_p_oXHTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXMDPxEei3dfHtumI11Q" property="fetchHostInfoJobDetail.targetObject" clientInstElem="_p_oXHTPxEei3dfHtumI11Q" serverInstElem="_p_oXMTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXMjPxEei3dfHtumI11Q" property="syncConsumersTrigger.jobDetail" clientInstElem="_p_oXHjPxEei3dfHtumI11Q" serverInstElem="_p_oXHzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXMzPxEei3dfHtumI11Q" property="syncConsumersJobDetail.targetObject" clientInstElem="_p_oXHzPxEei3dfHtumI11Q" serverInstElem="_p_oXNDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXNTPxEei3dfHtumI11Q" property="updateServiceCountAndStatusTrigger.jobDetail" clientInstElem="_p_oXIDPxEei3dfHtumI11Q" serverInstElem="_p_oXITPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXNjPxEei3dfHtumI11Q" property="updateServiceCountAndStatusJobDetail.targetObject" clientInstElem="_p_oXITPxEei3dfHtumI11Q" serverInstElem="_p_oXNzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXODPxEei3dfHtumI11Q" property="weightTaskTrigger.jobDetail" clientInstElem="_p_oXIjPxEei3dfHtumI11Q" serverInstElem="_p_oXIzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXOTPxEei3dfHtumI11Q" property="weightTaskJobDetail.targetObject" clientInstElem="_p_oXIzPxEei3dfHtumI11Q" serverInstElem="_p_oXOjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXOzPxEei3dfHtumI11Q" property="limitTaskTrigger.jobDetail" clientInstElem="_p_oXJDPxEei3dfHtumI11Q" serverInstElem="_p_oXJTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_p_oXPDPxEei3dfHtumI11Q" property="limitTaskJobDetail.targetObject" clientInstElem="_p_oXJTPxEei3dfHtumI11Q" serverInstElem="_p_oXPTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAFqDDPxEei3dfHtumI11Q" property="defaultSqlSessionFactory.dataSource" clientInstElem="_qAFqCTPxEei3dfHtumI11Q" serverInstElem="_qAFqDTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAFqDjPxEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_qAFqCzPxEei3dfHtumI11Q" serverInstElem="_qAFqDzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlGjPxEei3dfHtumI11Q" property="contextSchedule.triggers" clientInstElem="_qAYlDTPxEei3dfHtumI11Q" serverInstElem="_qAYlDjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlGzPxEei3dfHtumI11Q" property="contextSchedule.triggers" clientInstElem="_qAYlDTPxEei3dfHtumI11Q" serverInstElem="_qAYlEDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlHDPxEei3dfHtumI11Q" property="contextSchedule.triggers" clientInstElem="_qAYlDTPxEei3dfHtumI11Q" serverInstElem="_qAYlEjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlHTPxEei3dfHtumI11Q" property="contextSchedule.triggers" clientInstElem="_qAYlDTPxEei3dfHtumI11Q" serverInstElem="_qAYlFDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlHjPxEei3dfHtumI11Q" property="contextSchedule.triggers" clientInstElem="_qAYlDTPxEei3dfHtumI11Q" serverInstElem="_qAYlFjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlHzPxEei3dfHtumI11Q" property="contextSchedule.triggers" clientInstElem="_qAYlDTPxEei3dfHtumI11Q" serverInstElem="_qAYlGDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlIDPxEei3dfHtumI11Q" property="updateServersTrigger.jobDetail" clientInstElem="_qAYlDjPxEei3dfHtumI11Q" serverInstElem="_qAYlDzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlITPxEei3dfHtumI11Q" property="updateServersJobDetail.targetObject" clientInstElem="_qAYlDzPxEei3dfHtumI11Q" serverInstElem="_qAYlIjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlIzPxEei3dfHtumI11Q" property="fetchHostInfoTrigger.jobDetail" clientInstElem="_qAYlEDPxEei3dfHtumI11Q" serverInstElem="_qAYlETPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlJDPxEei3dfHtumI11Q" property="fetchHostInfoJobDetail.targetObject" clientInstElem="_qAYlETPxEei3dfHtumI11Q" serverInstElem="_qAYlJTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlJjPxEei3dfHtumI11Q" property="syncConsumersTrigger.jobDetail" clientInstElem="_qAYlEjPxEei3dfHtumI11Q" serverInstElem="_qAYlEzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlJzPxEei3dfHtumI11Q" property="syncConsumersJobDetail.targetObject" clientInstElem="_qAYlEzPxEei3dfHtumI11Q" serverInstElem="_qAYlKDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlKTPxEei3dfHtumI11Q" property="updateServiceCountAndStatusTrigger.jobDetail" clientInstElem="_qAYlFDPxEei3dfHtumI11Q" serverInstElem="_qAYlFTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlKjPxEei3dfHtumI11Q" property="updateServiceCountAndStatusJobDetail.targetObject" clientInstElem="_qAYlFTPxEei3dfHtumI11Q" serverInstElem="_qAYlKzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlLDPxEei3dfHtumI11Q" property="weightTaskTrigger.jobDetail" clientInstElem="_qAYlFjPxEei3dfHtumI11Q" serverInstElem="_qAYlFzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlLTPxEei3dfHtumI11Q" property="weightTaskJobDetail.targetObject" clientInstElem="_qAYlFzPxEei3dfHtumI11Q" serverInstElem="_qAYlLjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlLzPxEei3dfHtumI11Q" property="limitTaskTrigger.jobDetail" clientInstElem="_qAYlGDPxEei3dfHtumI11Q" serverInstElem="_qAYlGTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qAYlMDPxEei3dfHtumI11Q" property="limitTaskJobDetail.targetObject" clientInstElem="_qAYlGTPxEei3dfHtumI11Q" serverInstElem="_qAYlMTPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="lindzh.hasting_spec">
+    <specConnections refID="_qArf4DPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf4TPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf4jPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf4zPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf5DPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf5TPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf5jPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf5zPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf6DPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf6TPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf6jPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf6zPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf7DPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf7TPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf7jPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf7zPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf8DPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf8TPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf8jPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf8zPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf9DPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf9TPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf9jPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf9zPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf-DPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf-TPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf-jPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf-zPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf_DPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qArf_TPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

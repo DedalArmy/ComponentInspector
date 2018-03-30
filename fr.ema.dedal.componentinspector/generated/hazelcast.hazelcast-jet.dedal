@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="hazelcast.hazelcast-jet">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="hazelcast.hazelcast-jet_config" implements="//@architectureDescriptions[name='hazelcast.hazelcast-jet_spec']"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="hazelcast.hazelcast-jet_asm" instantiates="//@architectureDescriptions[name='hazelcast.hazelcast-jet_config']"/>
+  <architectureDescriptions xsi:type="dedal:Specification" name="hazelcast.hazelcast-jet_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

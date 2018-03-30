@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="youseries.ureport">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="youseries.ureport_config" implements="//@architectureDescriptions[name='youseries.ureport_spec']">
+    <configComponents name="com.bstek.ureport.console.designer.DatasourceServletAction" id="_4kKskDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.console.res.ResourceLoaderServletAction" id="_4kKskTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.console.designer.DesignerServletAction" id="_4kKskjPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.console.designer.SearchFormDesignerAction" id="_4kKskzPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.console.html.HtmlPreviewServletAction" id="_4kKslDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.console.word.ExportWordServletAction" id="_4kKslTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.console.pdf.ExportPdfServletAction" id="_4kKsljPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.console.excel.ExportExcelServletAction" id="_4kKslzPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.console.excel.ExportExcel97ServletAction" id="_4kKsmDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.console.image.ImageServletAction" id="_4kKsmTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.console.importexcel.ImportExcelServletAction" id="_4kLToDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.console.chart.ChartServletAction" id="_4kLToTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.console.cache.HttpSessionReportCache" id="_4kLTojPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.UReportPropertyPlaceholderConfigurer" id="_4keOkDPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="_4keOkTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.export.ExportManagerImpl" id="_4keOkjPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.export.ReportRender" id="_4keOkzPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.provider.image.DefaultImageProvider" id="_4keOlDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.provider.report.file.FileReportProvider" id="_4keOlTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.provider.image.HttpImageProvider" id="_4keOljPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.provider.image.HttpsImageProvider" id="_4keOlzPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.build.ReportBuilder" id="_4keOmDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.build.HideRowColumnBuilder" id="_4keOmTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.parser.ReportParser" id="_4keOmjPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.parser.impl.searchform.FormParserUtils" id="_4ke1oDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.parser.impl.searchform.CheckboxParser" id="_4ke1oTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.parser.impl.searchform.GridParser" id="_4ke1ojPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.parser.impl.searchform.RadioInputParser" id="_4ke1ozPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.parser.impl.searchform.TextInputParser" id="_4ke1pDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.parser.impl.searchform.ResetButtonParser" id="_4ke1pTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.parser.impl.searchform.SubmitButtonParser" id="_4ke1pjPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.parser.impl.searchform.SelectInputParser" id="_4kfcsDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.parser.impl.searchform.DatetimeInputParser" id="_4kfcsTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.provider.report.classpath.ClasspathReportProvider" id="_4kfcsjPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.export.pdf.font.FontBuilder" id="_4kfcszPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.ExpressionUtils" id="_4kfctDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.Utils" id="_4kgDwDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.cache.CacheUtils" id="_4kgDwTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.CountFunction" id="_4kgDwjPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.SumFunction" id="_4kgDwzPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.MaxFunction" id="_4kgDxDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.MinFunction" id="_4kgq0DPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.ListFunction" id="_4kgq0TPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.AvgFunction" id="_4kgq0jPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.OrderFunction" id="_4kgq0zPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.date.WeekFunction" id="_4khR4DPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.date.DayFunction" id="_4khR4TPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.date.MonthFunction" id="_4khR4jPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.date.YearFunction" id="_4kh48DPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.date.DateFunction" id="_4kh48TPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.FormatNumberFunction" id="_4kh48jPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.FormatDateFunction" id="_4kigADPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.GetFunction" id="_4kigATPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.AbsFunction" id="_4kigAjPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.CeilFunction" id="_4kjHEDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.ChnFunction" id="_4kjHETPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.ChnMoneyFunction" id="_4kjHEjPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.CosFunction" id="_4kjuIDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.ExpFunction" id="_4kjuITPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.FloorFunction" id="_4kkVMDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.Log10Function" id="_4kkVMTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.LogFunction" id="_4kkVMjPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.PowFunction" id="_4kk8QDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.RandomFunction" id="_4kk8QTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.RoundFunction" id="_4kljUDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.SinFunction" id="_4kljUTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.SqrtFunction" id="_4kmKYDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.TanFunction" id="_4kmKYTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.StdevpFunction" id="_4kmKYjPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.VaraFunction" id="_4kmxcDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.ModeFunction" id="_4kmxcTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.math.MedianFunction" id="_4knYgDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.string.LengthFunction" id="_4knYgTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.string.LowerFunction" id="_4kn_kDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.string.IndexOfFunction" id="_4kn_kTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.string.ReplaceFunction" id="_4komoDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.string.SubstringFunction" id="_4kpNsDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.string.TrimFunction" id="_4kpNsTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.string.UpperFunction" id="_4kp0wDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.page.PageTotalFunction" id="_4kp0wTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.page.PageNumberFunction" id="_4kqb0DPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.page.PageAvgFunction" id="_4kqb0TPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.page.PageCountFunction" id="_4krC4DPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.page.PageMaxFunction" id="_4krp8DPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.page.PageMinFunction" id="_4krp8TPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.page.PageRowsFunction" id="_4ksRADPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.page.PageSumFunction" id="_4ksRATPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.ParameterFunction" id="_4ks4EDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.ParameterIsEmptyFunction" id="_4ktfIDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.JsonFunction" id="_4ktfITPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.RowFunction" id="_4kuGMDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.expression.function.ColumnFunction" id="_4kutQDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.font.arial.ArialFontRegister" id="_4lPqoDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.font.comicsansms.ComicSansMSFontRegister" id="_4lPqoTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.font.couriernew.CourierNewFontRegister" id="_4lPqojPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.font.fangsong.FangSongFontRegister" id="_4lPqozPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.font.heiti.HeiTiFontRegister" id="_4lPqpDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.font.kaiti.KaiTiFontRegister" id="_4lPqpTPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.font.songti.SongTiFontRegister" id="_4lPqpjPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.font.timesnewroman.TimesNewRomanFontRegister" id="_4lPqpzPzEei3dfHtumI11Q"/>
+    <configComponents name="com.bstek.ureport.font.yahei.YaheiFontRegister" id="_4lPqqDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kLTozPzEei3dfHtumI11Q" property="&quot;reportRender&quot;" clientClassElem="_4kKskjPzEei3dfHtumI11Q" serverClassElem="_4kLTpDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kLTpTPzEei3dfHtumI11Q" property="&quot;reportParser&quot;" clientClassElem="_4kKskjPzEei3dfHtumI11Q" serverClassElem="_4kLTpjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kLTpzPzEei3dfHtumI11Q" property="&quot;exportManager&quot;" clientClassElem="_4kKslDPzEei3dfHtumI11Q" serverClassElem="_4kLTqDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kLTqTPzEei3dfHtumI11Q" property="&quot;reportBuilder&quot;" clientClassElem="_4kKslDPzEei3dfHtumI11Q" serverClassElem="_4kLTqjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kL6sDPzEei3dfHtumI11Q" property="&quot;reportRender&quot;" clientClassElem="_4kKslDPzEei3dfHtumI11Q" serverClassElem="_4kL6sTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kL6sjPzEei3dfHtumI11Q" property="&quot;exportManager&quot;" clientClassElem="_4kKslTPzEei3dfHtumI11Q" serverClassElem="_4kL6szPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kL6tDPzEei3dfHtumI11Q" property="&quot;reportBuilder&quot;" clientClassElem="_4kKslTPzEei3dfHtumI11Q" serverClassElem="_4kL6tTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kL6tjPzEei3dfHtumI11Q" property="&quot;exportManager&quot;" clientClassElem="_4kKsljPzEei3dfHtumI11Q" serverClassElem="_4kL6tzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kL6uDPzEei3dfHtumI11Q" property="&quot;reportBuilder&quot;" clientClassElem="_4kKsljPzEei3dfHtumI11Q" serverClassElem="_4kL6uTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kL6ujPzEei3dfHtumI11Q" property="&quot;reportRender&quot;" clientClassElem="_4kKsljPzEei3dfHtumI11Q" serverClassElem="_4kL6uzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kL6vDPzEei3dfHtumI11Q" property="&quot;exportManager&quot;" clientClassElem="_4kKslzPzEei3dfHtumI11Q" serverClassElem="_4kL6vTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kL6vjPzEei3dfHtumI11Q" property="&quot;reportBuilder&quot;" clientClassElem="_4kKslzPzEei3dfHtumI11Q" serverClassElem="_4kL6vzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kL6wDPzEei3dfHtumI11Q" property="&quot;exportManager&quot;" clientClassElem="_4kKsmDPzEei3dfHtumI11Q" serverClassElem="_4kL6wTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kL6wjPzEei3dfHtumI11Q" property="&quot;reportBuilder&quot;" clientClassElem="_4kKsmDPzEei3dfHtumI11Q" serverClassElem="_4kMhwDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kutQTPzEei3dfHtumI11Q" property="&quot;reportRender&quot;" clientClassElem="_4keOkjPzEei3dfHtumI11Q" serverClassElem="_4keOkzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kutQjPzEei3dfHtumI11Q" property="&quot;reportParser&quot;" clientClassElem="_4keOkzPzEei3dfHtumI11Q" serverClassElem="_4keOmjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kvUUDPzEei3dfHtumI11Q" property="&quot;reportBuilder&quot;" clientClassElem="_4keOkzPzEei3dfHtumI11Q" serverClassElem="_4keOmDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4kvUUTPzEei3dfHtumI11Q" property="&quot;hideRowColumnBuilder&quot;" clientClassElem="_4keOmDPzEei3dfHtumI11Q" serverClassElem="_4keOmTPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="youseries.ureport_asm" instantiates="//@architectureDescriptions[name='youseries.ureport_config']">
+    <assmComponents name="ureport.datasourceServletAction" id="_4kMhwTPzEei3dfHtumI11Q" instantiates="_4kKskDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.resourceLoaderServletAction" id="_4kMhwjPzEei3dfHtumI11Q" instantiates="_4kKskTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.designerServletAction" id="_4kMhwzPzEei3dfHtumI11Q" instantiates="_4kKskjPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.searchFormDesignerAction" id="_4kMhxDPzEei3dfHtumI11Q" instantiates="_4kKskzPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.htmlPreviewServletAction" id="_4kMhxTPzEei3dfHtumI11Q" instantiates="_4kKslDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.exportWordServletAction" id="_4kMhxjPzEei3dfHtumI11Q" instantiates="_4kKslTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.exportPdfServletAction" id="_4kNI0DPzEei3dfHtumI11Q" instantiates="_4kKsljPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.exportExcelServletAction" id="_4kNI0TPzEei3dfHtumI11Q" instantiates="_4kKslzPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.exportExcel97ServletAction" id="_4kNI0jPzEei3dfHtumI11Q" instantiates="_4kKsmDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.imageServletAction" id="_4kNI0zPzEei3dfHtumI11Q" instantiates="_4kKsmTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.importExcelServletAction" id="_4kNI1DPzEei3dfHtumI11Q" instantiates="_4kLToDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.chartServletAction" id="_4kNI1TPzEei3dfHtumI11Q" instantiates="_4kLToTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.httpSessionReportCache" id="_4kNv4DPzEei3dfHtumI11Q" instantiates="_4kLTojPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.props" id="_4kvUUjPzEei3dfHtumI11Q" instantiates="_4keOkDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.propertyPlaceholderConfigurer" id="_4kv7YDPzEei3dfHtumI11Q" instantiates="_4keOkTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.exportManager" id="_4kv7YTPzEei3dfHtumI11Q" instantiates="_4keOkjPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.reportRender" id="_4kv7YjPzEei3dfHtumI11Q" instantiates="_4keOkzPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.defaultImageProvider" id="_4kwicDPzEei3dfHtumI11Q" instantiates="_4keOlDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.fileReportProvider" id="_4kwicTPzEei3dfHtumI11Q" instantiates="_4keOlTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.httpImageProvider" id="_4kxJgDPzEei3dfHtumI11Q" instantiates="_4keOljPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.httpsImageProvider" id="_4kxJgTPzEei3dfHtumI11Q" instantiates="_4keOlzPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.reportBuilder" id="_4kxJgjPzEei3dfHtumI11Q" instantiates="_4keOmDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.hideRowColumnBuilder" id="_4kxwkDPzEei3dfHtumI11Q" instantiates="_4keOmTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.reportParser" id="_4kxwkTPzEei3dfHtumI11Q" instantiates="_4keOmjPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.formParserUtils" id="_4kyXoDPzEei3dfHtumI11Q" instantiates="_4ke1oDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.checkboxParser" id="_4kyXoTPzEei3dfHtumI11Q" instantiates="_4ke1oTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.gridParser" id="_4ky-sDPzEei3dfHtumI11Q" instantiates="_4ke1ojPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.radioInputParser" id="_4ky-sTPzEei3dfHtumI11Q" instantiates="_4ke1ozPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.rextInputParser" id="_4kzlwDPzEei3dfHtumI11Q" instantiates="_4ke1pDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.resetButtonParser" id="_4kzlwTPzEei3dfHtumI11Q" instantiates="_4ke1pTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.submitButtonParser" id="_4kzlwjPzEei3dfHtumI11Q" instantiates="_4ke1pjPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.selectInputParser" id="_4k0M0DPzEei3dfHtumI11Q" instantiates="_4kfcsDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.datetimeInputParser" id="_4k0M0TPzEei3dfHtumI11Q" instantiates="_4kfcsTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.classpathReportProvider" id="_4k0M0jPzEei3dfHtumI11Q" instantiates="_4kfcsjPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.fontBuilder" id="_4k0M0zPzEei3dfHtumI11Q" instantiates="_4kfcszPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.expressionUtils" id="_4k0z4DPzEei3dfHtumI11Q" instantiates="_4kfctDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.utils" id="_4k0z4TPzEei3dfHtumI11Q" instantiates="_4kgDwDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.cacheUtils" id="_4k0z4jPzEei3dfHtumI11Q" instantiates="_4kgDwTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.countFunction" id="_4k1a8DPzEei3dfHtumI11Q" instantiates="_4kgDwjPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.sumFunction" id="_4k1a8TPzEei3dfHtumI11Q" instantiates="_4kgDwzPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.maxFunction" id="_4k1a8jPzEei3dfHtumI11Q" instantiates="_4kgDxDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.minFunction" id="_4k2CADPzEei3dfHtumI11Q" instantiates="_4kgq0DPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.listFunction" id="_4k2CATPzEei3dfHtumI11Q" instantiates="_4kgq0TPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.avgFunction" id="_4k2pEDPzEei3dfHtumI11Q" instantiates="_4kgq0jPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.orderFunction" id="_4k2pETPzEei3dfHtumI11Q" instantiates="_4kgq0zPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.WeekFunction" id="_4k2pEjPzEei3dfHtumI11Q" instantiates="_4khR4DPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.dayFunction" id="_4k2pEzPzEei3dfHtumI11Q" instantiates="_4khR4TPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.monthFunction" id="_4k3QIDPzEei3dfHtumI11Q" instantiates="_4khR4jPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.yearFunction" id="_4k33MDPzEei3dfHtumI11Q" instantiates="_4kh48DPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.dateFunction" id="_4k33MTPzEei3dfHtumI11Q" instantiates="_4kh48TPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.formatNumberFunction" id="_4k33MjPzEei3dfHtumI11Q" instantiates="_4kh48jPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.formatDateFunction" id="_4k4eQDPzEei3dfHtumI11Q" instantiates="_4kigADPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.getFunction" id="_4k4eQTPzEei3dfHtumI11Q" instantiates="_4kigATPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.absFunction" id="_4k4eQjPzEei3dfHtumI11Q" instantiates="_4kigAjPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.ceilFunction" id="_4k4eQzPzEei3dfHtumI11Q" instantiates="_4kjHEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.ChnFunction" id="_4k4eRDPzEei3dfHtumI11Q" instantiates="_4kjHETPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.ChnMoneyFunction" id="_4k5FUDPzEei3dfHtumI11Q" instantiates="_4kjHEjPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.CosFunction" id="_4k5FUTPzEei3dfHtumI11Q" instantiates="_4kjuIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.ExpFunction" id="_4k5FUjPzEei3dfHtumI11Q" instantiates="_4kjuITPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.floorFunction" id="_4k5sYDPzEei3dfHtumI11Q" instantiates="_4kkVMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.log10Function" id="_4k6TcDPzEei3dfHtumI11Q" instantiates="_4kkVMTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.logFunction" id="_4k6TcTPzEei3dfHtumI11Q" instantiates="_4kkVMjPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.powFunction" id="_4k6TcjPzEei3dfHtumI11Q" instantiates="_4kk8QDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.randomFunction" id="_4k6TczPzEei3dfHtumI11Q" instantiates="_4kk8QTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.roundFunction" id="_4k66gDPzEei3dfHtumI11Q" instantiates="_4kljUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.sinFunction" id="_4k66gTPzEei3dfHtumI11Q" instantiates="_4kljUTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.sqrtFunction" id="_4k66gjPzEei3dfHtumI11Q" instantiates="_4kmKYDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.tanFunction" id="_4k7hkDPzEei3dfHtumI11Q" instantiates="_4kmKYTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.stdevpFunction" id="_4k7hkTPzEei3dfHtumI11Q" instantiates="_4kmKYjPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.varaFunction" id="_4k8IoDPzEei3dfHtumI11Q" instantiates="_4kmxcDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.modeFunction" id="_4k8IoTPzEei3dfHtumI11Q" instantiates="_4kmxcTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.medianFunction" id="_4k8vsDPzEei3dfHtumI11Q" instantiates="_4knYgDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.lengthFunction" id="_4k8vsTPzEei3dfHtumI11Q" instantiates="_4knYgTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.lowerFunction" id="_4k8vsjPzEei3dfHtumI11Q" instantiates="_4kn_kDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.IndexOfFunction" id="_4k8vszPzEei3dfHtumI11Q" instantiates="_4kn_kTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.replaceFunction" id="_4k9WwDPzEei3dfHtumI11Q" instantiates="_4komoDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.substringFunction" id="_4k9WwTPzEei3dfHtumI11Q" instantiates="_4kpNsDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.trimFunction" id="_4k9WwjPzEei3dfHtumI11Q" instantiates="_4kpNsTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.upperFunction" id="_4k990DPzEei3dfHtumI11Q" instantiates="_4kp0wDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.pageTotalFunction" id="_4k990TPzEei3dfHtumI11Q" instantiates="_4kp0wTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.pageNumberFunction" id="_4k-k4DPzEei3dfHtumI11Q" instantiates="_4kqb0DPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.pageAvgFunction" id="_4k-k4TPzEei3dfHtumI11Q" instantiates="_4kqb0TPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.pageCountFunction" id="_4k-k4jPzEei3dfHtumI11Q" instantiates="_4krC4DPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.pageMaxFunction" id="_4k-k4zPzEei3dfHtumI11Q" instantiates="_4krp8DPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.pageMinFunction" id="_4k-k5DPzEei3dfHtumI11Q" instantiates="_4krp8TPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.pageRowsFunction" id="_4k_L8DPzEei3dfHtumI11Q" instantiates="_4ksRADPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.pageSumFunction" id="_4k_L8TPzEei3dfHtumI11Q" instantiates="_4ksRATPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.parameterFunction" id="_4k_L8jPzEei3dfHtumI11Q" instantiates="_4ks4EDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.parameterIsEmptyFunction" id="_4k_zADPzEei3dfHtumI11Q" instantiates="_4ktfIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.jsonFunction" id="_4k_zATPzEei3dfHtumI11Q" instantiates="_4ktfITPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.rowFunction" id="_4lAaEDPzEei3dfHtumI11Q" instantiates="_4kuGMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.columnFunction" id="_4lAaETPzEei3dfHtumI11Q" instantiates="_4kutQDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.arialFontRegister" id="_4lQRsDPzEei3dfHtumI11Q" instantiates="_4lPqoDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.comicSansMSFontRegister" id="_4lQRsTPzEei3dfHtumI11Q" instantiates="_4lPqoTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.courierNewFontRegister" id="_4lQRsjPzEei3dfHtumI11Q" instantiates="_4lPqojPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.fangSongFontRegister" id="_4lQRszPzEei3dfHtumI11Q" instantiates="_4lPqozPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.heiTiFontRegister" id="_4lQRtDPzEei3dfHtumI11Q" instantiates="_4lPqpDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.kaiTiFontRegister" id="_4lQRtTPzEei3dfHtumI11Q" instantiates="_4lPqpTPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.songTiFontRegister" id="_4lQRtjPzEei3dfHtumI11Q" instantiates="_4lPqpjPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.timesNewRomanFontRegister" id="_4lQRtzPzEei3dfHtumI11Q" instantiates="_4lPqpzPzEei3dfHtumI11Q"/>
+    <assmComponents name="ureport.yaheiFontRegister" id="_4lQRuDPzEei3dfHtumI11Q" instantiates="_4lPqqDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4kNv4TPzEei3dfHtumI11Q" property="ureport.designerServletAction.reportRender" clientInstElem="_4kMhwzPzEei3dfHtumI11Q" serverInstElem="_4kNv4jPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4kNv4zPzEei3dfHtumI11Q" property="ureport.designerServletAction.reportParser" clientInstElem="_4kMhwzPzEei3dfHtumI11Q" serverInstElem="_4kNv5DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4kNv5TPzEei3dfHtumI11Q" property="ureport.htmlPreviewServletAction.exportManager" clientInstElem="_4kMhxTPzEei3dfHtumI11Q" serverInstElem="_4kNv5jPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4kNv5zPzEei3dfHtumI11Q" property="ureport.htmlPreviewServletAction.reportBuilder" clientInstElem="_4kMhxTPzEei3dfHtumI11Q" serverInstElem="_4kNv6DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4kNv6TPzEei3dfHtumI11Q" property="ureport.htmlPreviewServletAction.reportRender" clientInstElem="_4kMhxTPzEei3dfHtumI11Q" serverInstElem="_4kOW8DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4kOW8TPzEei3dfHtumI11Q" property="ureport.exportWordServletAction.exportManager" clientInstElem="_4kMhxjPzEei3dfHtumI11Q" serverInstElem="_4kOW8jPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4kOW8zPzEei3dfHtumI11Q" property="ureport.exportWordServletAction.reportBuilder" clientInstElem="_4kMhxjPzEei3dfHtumI11Q" serverInstElem="_4kOW9DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4kOW9TPzEei3dfHtumI11Q" property="ureport.exportPdfServletAction.exportManager" clientInstElem="_4kNI0DPzEei3dfHtumI11Q" serverInstElem="_4kOW9jPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4kOW9zPzEei3dfHtumI11Q" property="ureport.exportPdfServletAction.reportBuilder" clientInstElem="_4kNI0DPzEei3dfHtumI11Q" serverInstElem="_4kOW-DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4kOW-TPzEei3dfHtumI11Q" property="ureport.exportPdfServletAction.reportRender" clientInstElem="_4kNI0DPzEei3dfHtumI11Q" serverInstElem="_4kOW-jPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4kOW-zPzEei3dfHtumI11Q" property="ureport.exportExcelServletAction.exportManager" clientInstElem="_4kNI0TPzEei3dfHtumI11Q" serverInstElem="_4kOW_DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4kO-ADPzEei3dfHtumI11Q" property="ureport.exportExcelServletAction.reportBuilder" clientInstElem="_4kNI0TPzEei3dfHtumI11Q" serverInstElem="_4kO-ATPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4kO-AjPzEei3dfHtumI11Q" property="ureport.exportExcel97ServletAction.exportManager" clientInstElem="_4kNI0jPzEei3dfHtumI11Q" serverInstElem="_4kO-AzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4kO-BDPzEei3dfHtumI11Q" property="ureport.exportExcel97ServletAction.reportBuilder" clientInstElem="_4kNI0jPzEei3dfHtumI11Q" serverInstElem="_4kO-BTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4lAaEjPzEei3dfHtumI11Q" property="ureport.exportManager.reportRender" clientInstElem="_4kv7YTPzEei3dfHtumI11Q" serverInstElem="_4kv7YjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4lAaEzPzEei3dfHtumI11Q" property="ureport.reportRender.reportParser" clientInstElem="_4kv7YjPzEei3dfHtumI11Q" serverInstElem="_4kxwkTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4lBBIDPzEei3dfHtumI11Q" property="ureport.reportRender.reportBuilder" clientInstElem="_4kv7YjPzEei3dfHtumI11Q" serverInstElem="_4kxJgjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4lBBITPzEei3dfHtumI11Q" property="ureport.reportBuilder.hideRowColumnBuilder" clientInstElem="_4kxJgjPzEei3dfHtumI11Q" serverInstElem="_4kxwkDPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="youseries.ureport_spec">
+    <specConnections refID="_4lQ4wDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4lQ4wTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4lQ4wjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4lQ4wzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4lQ4xDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4lQ4xTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4lQ4xjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4lQ4xzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4lQ4yDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4lQ4yTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4lQ4yjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4lQ4yzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4lQ4zDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4lQ4zTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4lQ4zjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4lQ4zzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4lQ40DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4lQ40TPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

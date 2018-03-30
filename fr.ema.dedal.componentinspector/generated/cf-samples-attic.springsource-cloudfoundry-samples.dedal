@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="cf-samples-attic.springsource-cloudfoundry-samples">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="cf-samples-attic.springsource-cloudfoundry-samples_config" implements="//@architectureDescriptions[name='cf-samples-attic.springsource-cloudfoundry-samples_spec']">
+    <configComponents name="&quot;org.springframework.core.task.SyncTaskExecutor&quot;" id="_VlijUDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.batch.admin.sample.web.EnvironmentController&quot;" id="_Vme-gDPvEei3dfHtumI11Q"/>
+    <configComponents id="_Vme-gTPvEei3dfHtumI11Q"/>
+    <configComponents id="_VmuPEDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter&quot;" id="_VmuPETPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.batch.admin.sample.StepLocatorStepFactoryBean&quot;" id="_VmuPEjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean&quot;" id="_Vnz0MDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.JpaTransactionManager&quot;" id="_Vnz0MTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.codehaus.groovy.grails.commons.GrailsApplicationFactoryBean&quot;" id="_VoXN0DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.codehaus.groovy.grails.plugins.GrailsPluginManagerFactoryBean&quot;" id="_VoXN0TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.codehaus.groovy.grails.commons.spring.GrailsRuntimeConfigurator&quot;" id="_VoXN0jPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.codehaus.groovy.grails.commons.GrailsResourceLoaderFactoryBean&quot;" id="_VoXN0zPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.filter.CharacterEncodingFilter&quot;" id="_VoXN1DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.mongodb.core.MongoTemplate&quot;" id="_VpwU8DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.commons.dbcp.BasicDataSource&quot;" id="_VrFKoDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.codehaus.groovy.grails.commons.GrailsApplicationFactoryBean&quot;" id="_VsQPUDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.codehaus.groovy.grails.plugins.GrailsPluginManagerFactoryBean&quot;" id="_VsQPUTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.codehaus.groovy.grails.commons.spring.GrailsRuntimeConfigurator&quot;" id="_VsQPUjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.codehaus.groovy.grails.commons.GrailsResourceLoaderFactoryBean&quot;" id="_VsQPUzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.filter.CharacterEncodingFilter&quot;" id="_VsQPVDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.redis.connection.jedis.JedisConnectionFactory&quot;" id="_Vv9qoDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.redis.core.StringRedisTemplate&quot;" id="_Vwxi8DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.redis.support.collections.RedisProperties&quot;" id="_Vwxi8TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.amqp.rabbit.stocks.web.EnvironmentController&quot;" id="_VxO18DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.amqp.rabbit.stocks.context.RefreshScope&quot;" id="_VxetkDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.scheduling.config.ScheduledTaskRegistrar&quot;" id="_VxetkTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertiesFactoryBean&quot;" id="_VxetkjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.amqp.rabbit.stocks.service.stubs.ExecutionVenueServiceStub&quot;" id="_VxetkzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.amqp.rabbit.stocks.service.stubs.CreditCheckServiceStub&quot;" id="_VxetlDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.amqp.rabbit.stocks.service.stubs.TradingServiceStub&quot;" id="_VxetlTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.amqp.rabbit.stocks.handler.ServerHandler&quot;" id="_VxetljPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.amqp.rabbit.stocks.gateway.RabbitMarketDataGateway&quot;" id="_VxetlzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.amqp.rabbit.stocks.gateway.RabbitStockServiceGateway&quot;" id="_VxulMDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VmuPEzPvEei3dfHtumI11Q" property="&quot;service&quot;" clientClassElem="_VmuPETPvEei3dfHtumI11Q" serverClassElem="_VmuPEjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Vmu2IDPvEei3dfHtumI11Q" property="&quot;stepLocator&quot;" clientClassElem="_VmuPEjPvEei3dfHtumI11Q" serverClassElem="_Vmu2ITPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Vnz0MjPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_Vnz0MDPvEei3dfHtumI11Q" serverClassElem="_Vn0bQDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Vn0bQTPvEei3dfHtumI11Q" property="&quot;jpaVendorAdapter&quot;" clientClassElem="_Vnz0MDPvEei3dfHtumI11Q" serverClassElem="_Vn0bQjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Vn0bQzPvEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_Vnz0MTPvEei3dfHtumI11Q" serverClassElem="_Vnz0MDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VoXN1TPvEei3dfHtumI11Q" property="&quot;grailsResourceLoader&quot;" clientClassElem="_VoXN0DPvEei3dfHtumI11Q" serverClassElem="_VoXN0zPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VoXN1jPvEei3dfHtumI11Q" property="&quot;application&quot;" clientClassElem="_VoXN0TPvEei3dfHtumI11Q" serverClassElem="_VoXN0DPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VoXN1zPvEei3dfHtumI11Q" clientClassElem="_VoXN0jPvEei3dfHtumI11Q" serverClassElem="_VoXN0DPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VoX04DPvEei3dfHtumI11Q" property="&quot;pluginManager&quot;" clientClassElem="_VoXN0jPvEei3dfHtumI11Q" serverClassElem="_VoXN0TPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VpwU8TPvEei3dfHtumI11Q" clientClassElem="_VpwU8DPvEei3dfHtumI11Q" serverClassElem="_Vpw8ADPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VsQPVTPvEei3dfHtumI11Q" property="&quot;grailsResourceLoader&quot;" clientClassElem="_VsQPUDPvEei3dfHtumI11Q" serverClassElem="_VsQPUzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VsQPVjPvEei3dfHtumI11Q" property="&quot;application&quot;" clientClassElem="_VsQPUTPvEei3dfHtumI11Q" serverClassElem="_VsQPUDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VsQPVzPvEei3dfHtumI11Q" clientClassElem="_VsQPUjPvEei3dfHtumI11Q" serverClassElem="_VsQPUDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VsQPWDPvEei3dfHtumI11Q" property="&quot;pluginManager&quot;" clientClassElem="_VsQPUjPvEei3dfHtumI11Q" serverClassElem="_VsQPUTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Vwxi8jPvEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_Vwxi8DPvEei3dfHtumI11Q" serverClassElem="_VwyKADPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VwyKATPvEei3dfHtumI11Q" clientClassElem="_Vwxi8TPvEei3dfHtumI11Q" serverClassElem="_Vwxi8DPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VxO18TPvEei3dfHtumI11Q" property="&quot;refreshScope&quot;" clientClassElem="_VxO18DPvEei3dfHtumI11Q" serverClassElem="_VxPdADPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VxPdATPvEei3dfHtumI11Q" property="&quot;redisTemplate&quot;" clientClassElem="_VxO18DPvEei3dfHtumI11Q" serverClassElem="_VxPdAjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VxPdAzPvEei3dfHtumI11Q" property="&quot;environmentProperties&quot;" clientClassElem="_VxO18DPvEei3dfHtumI11Q" serverClassElem="_VxPdBDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VxetmDPvEei3dfHtumI11Q" property="&quot;triggerTasks&quot;" clientClassElem="_VxetkTPvEei3dfHtumI11Q" serverClassElem="_VxetmTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VxetmjPvEei3dfHtumI11Q" property="&quot;triggerTasks&quot;" clientClassElem="_VxetkTPvEei3dfHtumI11Q" serverClassElem="_VxetmzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VxetnDPvEei3dfHtumI11Q" clientClassElem="_VxetljPvEei3dfHtumI11Q" serverClassElem="_VxetkzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VxfUoDPvEei3dfHtumI11Q" clientClassElem="_VxetljPvEei3dfHtumI11Q" serverClassElem="_VxetlDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VxfUoTPvEei3dfHtumI11Q" clientClassElem="_VxetljPvEei3dfHtumI11Q" serverClassElem="_VxetlTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_VxfUojPvEei3dfHtumI11Q" property="&quot;rabbitTemplate&quot;" clientClassElem="_VxetlzPvEei3dfHtumI11Q" serverClassElem="_VxfUozPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="cf-samples-attic.springsource-cloudfoundry-samples_asm" instantiates="//@architectureDescriptions[name='cf-samples-attic.springsource-cloudfoundry-samples_config']">
+    <assmComponents name="jobLauncherTaskExecutor" id="_VljKYDPvEei3dfHtumI11Q" instantiates="_VlijUDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_Vme-gjPvEei3dfHtumI11Q" instantiates="_Vme-gDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_Vme-gzPvEei3dfHtumI11Q"/>
+    <assmComponents id="_Vmu2IjPvEei3dfHtumI11Q"/>
+    <assmComponents id="_Vmu2IzPvEei3dfHtumI11Q" instantiates="_VmuPETPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;step1&quot;" id="_Vmu2JDPvEei3dfHtumI11Q" instantiates="_VmuPEjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;entityManagerFactory&quot;" id="_Vn0bRDPvEei3dfHtumI11Q" instantiates="_Vnz0MDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_Vn0bRTPvEei3dfHtumI11Q" instantiates="_Vnz0MTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;grailsApplication&quot;" id="_VoX04TPvEei3dfHtumI11Q" instantiates="_VoXN0DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;pluginManager&quot;" id="_VoX04jPvEei3dfHtumI11Q" instantiates="_VoXN0TPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;grailsConfigurator&quot;" id="_VoX04zPvEei3dfHtumI11Q" instantiates="_VoXN0jPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;grailsResourceLoader&quot;" id="_VoX05DPvEei3dfHtumI11Q" instantiates="_VoXN0zPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;characterEncodingFilter&quot;" id="_VoX05TPvEei3dfHtumI11Q" instantiates="_VoXN1DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mongoTemplate&quot;" id="_Vpw8ATPvEei3dfHtumI11Q" instantiates="_VpwU8DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_VrFKoTPvEei3dfHtumI11Q" instantiates="_VrFKoDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;grailsApplication&quot;" id="_VsQ2YDPvEei3dfHtumI11Q" instantiates="_VsQPUDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;pluginManager&quot;" id="_VsQ2YTPvEei3dfHtumI11Q" instantiates="_VsQPUTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;grailsConfigurator&quot;" id="_VsQ2YjPvEei3dfHtumI11Q" instantiates="_VsQPUjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;grailsResourceLoader&quot;" id="_VsQ2YzPvEei3dfHtumI11Q" instantiates="_VsQPUzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;characterEncodingFilter&quot;" id="_VsQ2ZDPvEei3dfHtumI11Q" instantiates="_VsQPVDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;redisConnectionFactory&quot;" id="_Vv9qoTPvEei3dfHtumI11Q" instantiates="_Vv9qoDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;redisTemplate&quot;" id="_VwyKAjPvEei3dfHtumI11Q" instantiates="_Vwxi8DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;environmentProperties&quot;" id="_VwyKAzPvEei3dfHtumI11Q" instantiates="_Vwxi8TPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;envController&quot;" id="_VxPdBTPvEei3dfHtumI11Q" instantiates="_VxO18DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;refreshScope&quot;" id="_VxfUpDPvEei3dfHtumI11Q" instantiates="_VxetkDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;scheduler&quot;" id="_VxfUpTPvEei3dfHtumI11Q" instantiates="_VxetkTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;environmentProperties&quot;" id="_VxfUpjPvEei3dfHtumI11Q" instantiates="_VxetkjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;executionVenueService&quot;" id="_VxfUpzPvEei3dfHtumI11Q" instantiates="_VxetkzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;creditCheckService&quot;" id="_VxfUqDPvEei3dfHtumI11Q" instantiates="_VxetlDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;tradingService&quot;" id="_VxfUqTPvEei3dfHtumI11Q" instantiates="_VxetlTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_Vxf7sDPvEei3dfHtumI11Q" instantiates="_VxetljPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;marketDataGateway&quot;" id="_Vxf7sTPvEei3dfHtumI11Q" instantiates="_VxetlzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;stockServiceGateway&quot;" id="_VxvMQDPvEei3dfHtumI11Q" instantiates="_VxulMDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Vmu2JTPvEei3dfHtumI11Q" clientInstElem="_Vmu2IzPvEei3dfHtumI11Q" serverInstElem="_Vmu2JDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Vmu2JjPvEei3dfHtumI11Q" property="step1.stepLocator" clientInstElem="_Vmu2JDPvEei3dfHtumI11Q" serverInstElem="_Vmu2JzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Vn0bRjPvEei3dfHtumI11Q" property="entityManagerFactory.dataSource" clientInstElem="_Vn0bRDPvEei3dfHtumI11Q" serverInstElem="_Vn0bRzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Vn0bSDPvEei3dfHtumI11Q" property="entityManagerFactory.jpaVendorAdapter" clientInstElem="_Vn0bRDPvEei3dfHtumI11Q" serverInstElem="_Vn0bSTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Vn0bSjPvEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_Vn0bRTPvEei3dfHtumI11Q" serverInstElem="_Vn0bRDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VoX05jPvEei3dfHtumI11Q" property="grailsApplication.grailsResourceLoader" clientInstElem="_VoX04TPvEei3dfHtumI11Q" serverInstElem="_VoX05DPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VoX05zPvEei3dfHtumI11Q" property="pluginManager.application" clientInstElem="_VoX04jPvEei3dfHtumI11Q" serverInstElem="_VoX04TPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VoX06DPvEei3dfHtumI11Q" clientInstElem="_VoX04zPvEei3dfHtumI11Q" serverInstElem="_VoX04TPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VoX06TPvEei3dfHtumI11Q" property="grailsConfigurator.pluginManager" clientInstElem="_VoX04zPvEei3dfHtumI11Q" serverInstElem="_VoX04jPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Vpw8AjPvEei3dfHtumI11Q" clientInstElem="_Vpw8ATPvEei3dfHtumI11Q" serverInstElem="_Vpw8AzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VsQ2ZTPvEei3dfHtumI11Q" property="grailsApplication.grailsResourceLoader" clientInstElem="_VsQ2YDPvEei3dfHtumI11Q" serverInstElem="_VsQ2YzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VsQ2ZjPvEei3dfHtumI11Q" property="pluginManager.application" clientInstElem="_VsQ2YTPvEei3dfHtumI11Q" serverInstElem="_VsQ2YDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VsQ2ZzPvEei3dfHtumI11Q" clientInstElem="_VsQ2YjPvEei3dfHtumI11Q" serverInstElem="_VsQ2YDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VsQ2aDPvEei3dfHtumI11Q" property="grailsConfigurator.pluginManager" clientInstElem="_VsQ2YjPvEei3dfHtumI11Q" serverInstElem="_VsQ2YTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VwyKBDPvEei3dfHtumI11Q" property="redisTemplate.connectionFactory" clientInstElem="_VwyKAjPvEei3dfHtumI11Q" serverInstElem="_VwyKBTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VwyKBjPvEei3dfHtumI11Q" clientInstElem="_VwyKAzPvEei3dfHtumI11Q" serverInstElem="_VwyKAjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VxPdBjPvEei3dfHtumI11Q" property="envController.refreshScope" clientInstElem="_VxPdBTPvEei3dfHtumI11Q" serverInstElem="_VxPdBzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VxPdCDPvEei3dfHtumI11Q" property="envController.redisTemplate" clientInstElem="_VxPdBTPvEei3dfHtumI11Q" serverInstElem="_VxPdCTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VxPdCjPvEei3dfHtumI11Q" property="envController.environmentProperties" clientInstElem="_VxPdBTPvEei3dfHtumI11Q" serverInstElem="_VxPdCzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Vxf7sjPvEei3dfHtumI11Q" property="scheduler.triggerTasks" clientInstElem="_VxfUpTPvEei3dfHtumI11Q" serverInstElem="_Vxf7szPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Vxf7tDPvEei3dfHtumI11Q" property="scheduler.triggerTasks" clientInstElem="_VxfUpTPvEei3dfHtumI11Q" serverInstElem="_Vxf7tTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Vxf7tjPvEei3dfHtumI11Q" clientInstElem="_Vxf7szPvEei3dfHtumI11Q" serverInstElem="_VxfUpzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Vxf7tzPvEei3dfHtumI11Q" clientInstElem="_Vxf7szPvEei3dfHtumI11Q" serverInstElem="_VxfUqDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Vxf7uDPvEei3dfHtumI11Q" clientInstElem="_Vxf7szPvEei3dfHtumI11Q" serverInstElem="_VxfUqTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Vxf7uTPvEei3dfHtumI11Q" property="marketDataGateway.rabbitTemplate" clientInstElem="_Vxf7sTPvEei3dfHtumI11Q" serverInstElem="_Vxf7ujPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="cf-samples-attic.springsource-cloudfoundry-samples_spec">
+    <specConnections refID="_VzGeMDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeMTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeMjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeMzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeNDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeNTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeNjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeNzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeODPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeOTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeOjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeOzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGePDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGePTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGePjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGePzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeQDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeQTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeQjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeQzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeRDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeRTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeRjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeRzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_VzGeSDPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

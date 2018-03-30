@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="chenlei2.spring-boot-mybatis-rw">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="chenlei2.spring-boot-mybatis-rw_config" implements="//@architectureDescriptions[name='chenlei2.spring-boot-mybatis-rw_spec']"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="chenlei2.spring-boot-mybatis-rw_asm" instantiates="//@architectureDescriptions[name='chenlei2.spring-boot-mybatis-rw_config']"/>
+  <architectureDescriptions xsi:type="dedal:Specification" name="chenlei2.spring-boot-mybatis-rw_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

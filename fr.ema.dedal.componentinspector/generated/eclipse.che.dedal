@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="eclipse.che">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="eclipse.che_config" implements="//@architectureDescriptions[name='eclipse.che_spec']">
+    <configComponents name="&quot;projects.debugStepInto.src.main.java.java.org.eclipse.qa.examples.AppController&quot;" id="_xRBL4DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xRBL4TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.eclipse.qa.examples.AppController&quot;" id="_xRKV0DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xRKV0TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.eclipse.qa.examples.AppController&quot;" id="_xRdQwDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xRdQwTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.eclipse.qa.examples.AppController&quot;" id="_xRwywDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xRwywTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.eclipse.qa.examples.AppController&quot;" id="_xR58sDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xR58sTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;projects.debugStepInto.src.main.java.java.org.eclipse.qa.examples.AppController&quot;" id="_xSM3oDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xSM3oTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.eclipse.qa.examples.AppController&quot;" id="_xSWooDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xSWooTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;helloworld.GreetingController&quot;" id="_xSpjkDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xSpjkTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;projects.debugStepInto.src.main.java.java.org.eclipse.qa.examples.AppController&quot;" id="_xSzUkDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xSzUkTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;projects.debugStepInto.src.main.java.java.org.eclipse.qa.examples.AppController&quot;" id="_xTGPgDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xTGPgTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;helloworld.GreetingController&quot;" id="_xTZxgDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xTZxgTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;helloworld.AppController&quot;" id="_xTjigDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xTjigTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.eclipse.qa.examples.AppController&quot;" id="_xT2dcDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xT2dcTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;projects.debugStepInto.src.main.java.java.org.eclipse.qa.examples.AppController&quot;" id="_xUAOcDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xUAOcTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;projects.debugStepInto.src.main.java.java.org.eclipse.qa.examples.AppController&quot;" id="_xUTJYDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xUTJYTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.codenvy.example.spring.GreetingController&quot;" id="_xUcTUDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xUcTUTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;projects.debugStepInto.src.main.java.java.org.eclipse.qa.examples.AppController&quot;" id="_xUv1UDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xUv1UTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.eclipse.che.examples.GreetingController&quot;" id="_xU4_QDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xU4_QTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;projects.debugStepInto.src.main.java.java.org.eclipse.qa.examples.AppController&quot;" id="_xVL6MDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xVL6MTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;projects.debugStepInto.src.main.java.java.org.eclipse.qa.examples.AppController&quot;" id="_xVfcMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xVfcMTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;projects.debugStepInto.src.main.java.java.org.eclipse.qa.examples.AppController&quot;" id="_xVomIDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xVomITPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.eclipse.che.examples.GreetingController&quot;" id="_xV7hEDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_xV7hETPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="eclipse.che_asm" instantiates="//@architectureDescriptions[name='eclipse.che_config']">
+    <assmComponents id="_xRBL4jPvEei3dfHtumI11Q" instantiates="_xRBL4DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xRBL4zPvEei3dfHtumI11Q" instantiates="_xRBL4TPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xRKV0jPvEei3dfHtumI11Q" instantiates="_xRKV0DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xRKV0zPvEei3dfHtumI11Q" instantiates="_xRKV0TPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xRdQwjPvEei3dfHtumI11Q" instantiates="_xRdQwDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xRdQwzPvEei3dfHtumI11Q" instantiates="_xRdQwTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xRwywjPvEei3dfHtumI11Q" instantiates="_xRwywDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xRwywzPvEei3dfHtumI11Q" instantiates="_xRwywTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xR58sjPvEei3dfHtumI11Q" instantiates="_xR58sDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xR58szPvEei3dfHtumI11Q" instantiates="_xR58sTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xSM3ojPvEei3dfHtumI11Q" instantiates="_xSM3oDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xSM3ozPvEei3dfHtumI11Q" instantiates="_xSM3oTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xSWoojPvEei3dfHtumI11Q" instantiates="_xSWooDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xSWoozPvEei3dfHtumI11Q" instantiates="_xSWooTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xSpjkjPvEei3dfHtumI11Q" instantiates="_xSpjkDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xSpjkzPvEei3dfHtumI11Q" instantiates="_xSpjkTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xSzUkjPvEei3dfHtumI11Q" instantiates="_xSzUkDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xSzUkzPvEei3dfHtumI11Q" instantiates="_xSzUkTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xTGPgjPvEei3dfHtumI11Q" instantiates="_xTGPgDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xTGPgzPvEei3dfHtumI11Q" instantiates="_xTGPgTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xTZxgjPvEei3dfHtumI11Q" instantiates="_xTZxgDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xTZxgzPvEei3dfHtumI11Q" instantiates="_xTZxgTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xTjigjPvEei3dfHtumI11Q" instantiates="_xTjigDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xTjigzPvEei3dfHtumI11Q" instantiates="_xTjigTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xT2dcjPvEei3dfHtumI11Q" instantiates="_xT2dcDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xT2dczPvEei3dfHtumI11Q" instantiates="_xT2dcTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xUAOcjPvEei3dfHtumI11Q" instantiates="_xUAOcDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xUAOczPvEei3dfHtumI11Q" instantiates="_xUAOcTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xUTJYjPvEei3dfHtumI11Q" instantiates="_xUTJYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xUTJYzPvEei3dfHtumI11Q" instantiates="_xUTJYTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xUcTUjPvEei3dfHtumI11Q" instantiates="_xUcTUDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xUcTUzPvEei3dfHtumI11Q" instantiates="_xUcTUTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xUv1UjPvEei3dfHtumI11Q" instantiates="_xUv1UDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xUv1UzPvEei3dfHtumI11Q" instantiates="_xUv1UTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xU4_QjPvEei3dfHtumI11Q" instantiates="_xU4_QDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xU4_QzPvEei3dfHtumI11Q" instantiates="_xU4_QTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xVL6MjPvEei3dfHtumI11Q" instantiates="_xVL6MDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xVL6MzPvEei3dfHtumI11Q" instantiates="_xVL6MTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xVfcMjPvEei3dfHtumI11Q" instantiates="_xVfcMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xVfcMzPvEei3dfHtumI11Q" instantiates="_xVfcMTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xVomIjPvEei3dfHtumI11Q" instantiates="_xVomIDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xVomIzPvEei3dfHtumI11Q" instantiates="_xVomITPvEei3dfHtumI11Q"/>
+    <assmComponents id="_xV7hEjPvEei3dfHtumI11Q" instantiates="_xV7hEDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_xV7hEzPvEei3dfHtumI11Q" instantiates="_xV7hETPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="eclipse.che_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

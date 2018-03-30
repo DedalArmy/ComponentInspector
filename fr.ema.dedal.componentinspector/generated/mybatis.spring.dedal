@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="mybatis.spring">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="mybatis.spring_config" implements="//@architectureDescriptions[name='mybatis.spring_spec']">
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperFactoryBean&quot;" id="_0vwRsDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperFactoryBean&quot;" id="_0wWuoDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;" id="_0wzakDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mockito.Mockito&quot;" id="_0xGVgDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.sample.dao.UserDaoImpl&quot;" id="_0xGVgTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.sample.service.BarService&quot;" id="_0xGVgjPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.atomikos.icatch.config.UserTransactionServiceImp&quot;" id="_0x18YDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.atomikos.icatch.jta.UserTransactionManager&quot;" id="_0x18YTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.atomikos.icatch.jta.UserTransactionImp&quot;" id="_0x18YjPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.transaction.jta.JtaTransactionManager&quot;" id="_0x18YzPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperFactoryBean&quot;" id="_0zx2EDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperFactoryBean&quot;" id="_00Xr8DPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;" id="_009h0DPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mockito.Mockito&quot;" id="_01HS0DPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.sample.dao.UserDaoImpl&quot;" id="_01HS0TPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.sample.service.BarService&quot;" id="_01HS0jPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.atomikos.icatch.config.UserTransactionServiceImp&quot;" id="_0125sDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.atomikos.icatch.jta.UserTransactionManager&quot;" id="_0125sTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.atomikos.icatch.jta.UserTransactionImp&quot;" id="_0125sjPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.transaction.jta.JtaTransactionManager&quot;" id="_0125szPxEei3dfHtumI11Q"/>
+    <configConnections refID="_0vwRsTPxEei3dfHtumI11Q" property="&quot;sqlSessionTemplate&quot;" clientClassElem="_0vwRsDPxEei3dfHtumI11Q" serverClassElem="_0vwRsjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_0xGVgzPxEei3dfHtumI11Q" clientClassElem="_0xGVgjPxEei3dfHtumI11Q" serverClassElem="_0xGVgTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_0x18ZDPxEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_0x18YzPxEei3dfHtumI11Q" serverClassElem="_0x18YTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_0x18ZTPxEei3dfHtumI11Q" property="&quot;userTransaction&quot;" clientClassElem="_0x18YzPxEei3dfHtumI11Q" serverClassElem="_0x18YjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_0zx2ETPxEei3dfHtumI11Q" property="&quot;sqlSessionTemplate&quot;" clientClassElem="_0zx2EDPxEei3dfHtumI11Q" serverClassElem="_0zx2EjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_01HS0zPxEei3dfHtumI11Q" clientClassElem="_01HS0jPxEei3dfHtumI11Q" serverClassElem="_01HS0TPxEei3dfHtumI11Q"/>
+    <configConnections refID="_0125tDPxEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_0125szPxEei3dfHtumI11Q" serverClassElem="_0125sTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_0125tTPxEei3dfHtumI11Q" property="&quot;userTransaction&quot;" clientClassElem="_0125szPxEei3dfHtumI11Q" serverClassElem="_0125sjPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="mybatis.spring_asm" instantiates="//@architectureDescriptions[name='mybatis.spring_config']">
+    <assmComponents name="userMapper" id="_0vwRszPxEei3dfHtumI11Q" instantiates="_0vwRsDPxEei3dfHtumI11Q"/>
+    <assmComponents name="userMapper" id="_0wWuoTPxEei3dfHtumI11Q" instantiates="_0wWuoDPxEei3dfHtumI11Q"/>
+    <assmComponents id="_0wzakTPxEei3dfHtumI11Q" instantiates="_0wzakDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userMapper&quot;" id="_0xGVhDPxEei3dfHtumI11Q" instantiates="_0xGVgDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userDao&quot;" id="_0xGVhTPxEei3dfHtumI11Q" instantiates="_0xGVgTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;barService&quot;" id="_0xGVhjPxEei3dfHtumI11Q" instantiates="_0xGVgjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userTransactionService&quot;" id="_0x18ZjPxEei3dfHtumI11Q" instantiates="_0x18YDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_0x18ZzPxEei3dfHtumI11Q" instantiates="_0x18YTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userTransaction&quot;" id="_0x18aDPxEei3dfHtumI11Q" instantiates="_0x18YjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;JtaTransactionManager&quot;" id="_0x18aTPxEei3dfHtumI11Q" instantiates="_0x18YzPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userMapper&quot;" id="_0zx2EzPxEei3dfHtumI11Q" instantiates="_0zx2EDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userMapper&quot;" id="_00hc8DPxEei3dfHtumI11Q" instantiates="_00Xr8DPxEei3dfHtumI11Q"/>
+    <assmComponents id="_009h0TPxEei3dfHtumI11Q" instantiates="_009h0DPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userMapper&quot;" id="_01HS1DPxEei3dfHtumI11Q" instantiates="_01HS0DPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userDao&quot;" id="_01HS1TPxEei3dfHtumI11Q" instantiates="_01HS0TPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;barService&quot;" id="_01HS1jPxEei3dfHtumI11Q" instantiates="_01HS0jPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userTransactionService&quot;" id="_0125tjPxEei3dfHtumI11Q" instantiates="_0125sDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_0125tzPxEei3dfHtumI11Q" instantiates="_0125sTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userTransaction&quot;" id="_0125uDPxEei3dfHtumI11Q" instantiates="_0125sjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;JtaTransactionManager&quot;" id="_0125uTPxEei3dfHtumI11Q" instantiates="_0125szPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0vwRtDPxEei3dfHtumI11Q" property="userMapper.sqlSessionTemplate" clientInstElem="_0vwRszPxEei3dfHtumI11Q" serverInstElem="_0vwRtTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0xGVhzPxEei3dfHtumI11Q" clientInstElem="_0xGVhjPxEei3dfHtumI11Q" serverInstElem="_0xGVhTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0x18ajPxEei3dfHtumI11Q" property="JtaTransactionManager.transactionManager" clientInstElem="_0x18aTPxEei3dfHtumI11Q" serverInstElem="_0x18ZzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0x18azPxEei3dfHtumI11Q" property="JtaTransactionManager.userTransaction" clientInstElem="_0x18aTPxEei3dfHtumI11Q" serverInstElem="_0x18aDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0zx2FDPxEei3dfHtumI11Q" property="userMapper.sqlSessionTemplate" clientInstElem="_0zx2EzPxEei3dfHtumI11Q" serverInstElem="_0zx2FTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_01HS1zPxEei3dfHtumI11Q" clientInstElem="_01HS1jPxEei3dfHtumI11Q" serverInstElem="_01HS1TPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0125ujPxEei3dfHtumI11Q" property="JtaTransactionManager.transactionManager" clientInstElem="_0125uTPxEei3dfHtumI11Q" serverInstElem="_0125tzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0125uzPxEei3dfHtumI11Q" property="JtaTransactionManager.userTransaction" clientInstElem="_0125uTPxEei3dfHtumI11Q" serverInstElem="_0125uDPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="mybatis.spring_spec">
+    <specConnections refID="_0125vDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_0125vTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_0125vjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_0125vzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_0125wDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_0125wTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_0125wjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_0125wzPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

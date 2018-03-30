@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="ff4j.ff4j">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ff4j.ff4j_config" implements="//@architectureDescriptions[name='ff4j.ff4j_spec']">
+    <configComponents name="org.ff4j.FF4j" id="_Aky38DPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.FF4j" id="_AlYt0DPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.aop.test.noannotation.GreetingServiceEnglishImpl2" id="_AlYt0TPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.aop.test.noannotation.GreetingServiceFrenchImpl2" id="_AlYt0jPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.aop.FeatureAdvisor" id="_AlYt0zPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.aop.FeatureAutoProxy" id="_AlYt1DPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.FF4j" id="_AmSFsDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.FF4j" id="_AmuxoDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.aop.test.noannotation.GreetingServiceEnglishImpl2" id="_AmuxoTPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.aop.test.noannotation.GreetingServiceFrenchImpl2" id="_AmuxojPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.aop.FeatureAdvisor" id="_AmuxozPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.aop.FeatureAutoProxy" id="_AmuxpDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.FF4j" id="_AnnicDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.store.InMemoryFeatureStore" id="_AnnicTPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.FF4j" id="_AnxTcDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.store.InMemoryFeatureStore" id="_AnxTcTPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.store.InMemoryFeatureStore" id="_AoEOYDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.cache.InMemoryCacheManager" id="_AoEOYTPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.cache.FeatureStoreCacheProxy" id="_AoEOYjPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.FF4j" id="_AoEOYzPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.store.InMemoryFeatureStore" id="_AoXJUDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.cache.InMemoryCacheManager" id="_AoXJUTPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.cache.FeatureStoreCacheProxy" id="_AoXJUjPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.FF4j" id="_AoXJUzPwEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.MBeanExporter" id="_Aog6UDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.annotation.AnnotationJmxAttributeSource" id="_AoqEQDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.assembler.MetadataMBeanInfoAssembler" id="_AoqEQTPwEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.naming.MetadataNamingStrategy" id="_AoqEQjPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.FF4j" id="_AoqEQzPwEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.MBeanExporter" id="_Ao9mQDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.annotation.AnnotationJmxAttributeSource" id="_Ao9mQTPwEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.assembler.MetadataMBeanInfoAssembler" id="_Ao9mQjPwEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.naming.MetadataNamingStrategy" id="_Ao9mQzPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.FF4j" id="_Ao9mRDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.FF4j" id="_ApQhMDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.FF4j" id="_ApjcIDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.FF4j" id="_Ap2XEDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.FF4j" id="_AqJSADPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.FF4j" id="_AqTDADPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.springjdbc.store.FeatureStoreSpringJdbc" id="_AqTDATPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.FF4j" id="_Aql98DPwEei3dfHtumI11Q"/>
+    <configComponents name="org.ff4j.springjdbc.store.FeatureStoreSpringJdbc" id="_Aql98TPwEei3dfHtumI11Q"/>
+    <configConnections refID="_AnnicjPwEei3dfHtumI11Q" property="&quot;featureStore&quot;" clientClassElem="_AnnicDPwEei3dfHtumI11Q" serverClassElem="_AnnicTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_AnxTcjPwEei3dfHtumI11Q" property="&quot;featureStore&quot;" clientClassElem="_AnxTcDPwEei3dfHtumI11Q" serverClassElem="_AnxTcTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_AoEOZDPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_AoEOYjPwEei3dfHtumI11Q" serverClassElem="_AoEOYDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_AoEOZTPwEei3dfHtumI11Q" property="&quot;cacheManager&quot;" clientClassElem="_AoEOYjPwEei3dfHtumI11Q" serverClassElem="_AoEOYTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_AoEOZjPwEei3dfHtumI11Q" property="&quot;store&quot;" clientClassElem="_AoEOYzPwEei3dfHtumI11Q" serverClassElem="_AoEOYjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_AoEOZzPwEei3dfHtumI11Q" property="&quot;authorizationsManager&quot;" clientClassElem="_AoEOYzPwEei3dfHtumI11Q" serverClassElem="_AoEOaDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_AoXJVDPwEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_AoXJUjPwEei3dfHtumI11Q" serverClassElem="_AoXJUDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_AoXJVTPwEei3dfHtumI11Q" property="&quot;cacheManager&quot;" clientClassElem="_AoXJUjPwEei3dfHtumI11Q" serverClassElem="_AoXJUTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_AoXJVjPwEei3dfHtumI11Q" property="&quot;store&quot;" clientClassElem="_AoXJUzPwEei3dfHtumI11Q" serverClassElem="_AoXJUjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_AoXJVzPwEei3dfHtumI11Q" property="&quot;authorizationsManager&quot;" clientClassElem="_AoXJUzPwEei3dfHtumI11Q" serverClassElem="_AoXJWDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_AoqERDPwEei3dfHtumI11Q" property="&quot;assembler&quot;" clientClassElem="_Aog6UDPwEei3dfHtumI11Q" serverClassElem="_AoqEQTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_AoqERTPwEei3dfHtumI11Q" property="&quot;namingStrategy&quot;" clientClassElem="_Aog6UDPwEei3dfHtumI11Q" serverClassElem="_AoqEQjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_AoqERjPwEei3dfHtumI11Q" property="&quot;attributeSource&quot;" clientClassElem="_AoqEQTPwEei3dfHtumI11Q" serverClassElem="_AoqEQDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_AoqERzPwEei3dfHtumI11Q" property="&quot;attributeSource&quot;" clientClassElem="_AoqEQjPwEei3dfHtumI11Q" serverClassElem="_AoqEQDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_Ao9mRTPwEei3dfHtumI11Q" property="&quot;assembler&quot;" clientClassElem="_Ao9mQDPwEei3dfHtumI11Q" serverClassElem="_Ao9mQjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_Ao9mRjPwEei3dfHtumI11Q" property="&quot;namingStrategy&quot;" clientClassElem="_Ao9mQDPwEei3dfHtumI11Q" serverClassElem="_Ao9mQzPwEei3dfHtumI11Q"/>
+    <configConnections refID="_Ao9mRzPwEei3dfHtumI11Q" property="&quot;attributeSource&quot;" clientClassElem="_Ao9mQjPwEei3dfHtumI11Q" serverClassElem="_Ao9mQTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_Ao9mSDPwEei3dfHtumI11Q" property="&quot;attributeSource&quot;" clientClassElem="_Ao9mQzPwEei3dfHtumI11Q" serverClassElem="_Ao9mQTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_ApQhMTPwEei3dfHtumI11Q" property="&quot;store&quot;" clientClassElem="_ApQhMDPwEei3dfHtumI11Q" serverClassElem="_ApQhMjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_ApQhMzPwEei3dfHtumI11Q" property="&quot;authorizationsManager&quot;" clientClassElem="_ApQhMDPwEei3dfHtumI11Q" serverClassElem="_ApQhNDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_ApjcITPwEei3dfHtumI11Q" property="&quot;store&quot;" clientClassElem="_ApjcIDPwEei3dfHtumI11Q" serverClassElem="_ApjcIjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_ApjcIzPwEei3dfHtumI11Q" property="&quot;authorizationsManager&quot;" clientClassElem="_ApjcIDPwEei3dfHtumI11Q" serverClassElem="_ApjcJDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_AqTDAjPwEei3dfHtumI11Q" property="&quot;featureStore&quot;" clientClassElem="_AqTDADPwEei3dfHtumI11Q" serverClassElem="_AqTDATPwEei3dfHtumI11Q"/>
+    <configConnections refID="_AqTDAzPwEei3dfHtumI11Q" property="dataSource" clientClassElem="_AqTDATPwEei3dfHtumI11Q" serverClassElem="_AqTDBDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_Aql98jPwEei3dfHtumI11Q" property="&quot;featureStore&quot;" clientClassElem="_Aql98DPwEei3dfHtumI11Q" serverClassElem="_Aql98TPwEei3dfHtumI11Q"/>
+    <configConnections refID="_Aql98zPwEei3dfHtumI11Q" property="dataSource" clientClassElem="_Aql98TPwEei3dfHtumI11Q" serverClassElem="_Aql99DPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ff4j.ff4j_asm" instantiates="//@architectureDescriptions[name='ff4j.ff4j_config']">
+    <assmComponents name="ff4j" id="_Aky38TPwEei3dfHtumI11Q" instantiates="_Aky38DPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j" id="_AlYt1TPwEei3dfHtumI11Q" instantiates="_AlYt0DPwEei3dfHtumI11Q"/>
+    <assmComponents name="greeting.noannotation.english" id="_AlYt1jPwEei3dfHtumI11Q" instantiates="_AlYt0TPwEei3dfHtumI11Q"/>
+    <assmComponents name="greeting.noannotation.french" id="_AlYt1zPwEei3dfHtumI11Q" instantiates="_AlYt0jPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff.advisor" id="_AlYt2DPwEei3dfHtumI11Q" instantiates="_AlYt0zPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff.autoproxy" id="_AlYt2TPwEei3dfHtumI11Q" instantiates="_AlYt1DPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j" id="_AmSFsTPwEei3dfHtumI11Q" instantiates="_AmSFsDPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j" id="_AmuxpTPwEei3dfHtumI11Q" instantiates="_AmuxoDPwEei3dfHtumI11Q"/>
+    <assmComponents name="greeting.noannotation.english" id="_AmuxpjPwEei3dfHtumI11Q" instantiates="_AmuxoTPwEei3dfHtumI11Q"/>
+    <assmComponents name="greeting.noannotation.french" id="_AmuxpzPwEei3dfHtumI11Q" instantiates="_AmuxojPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff.advisor" id="_AmuxqDPwEei3dfHtumI11Q" instantiates="_AmuxozPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff.autoproxy" id="_AmuxqTPwEei3dfHtumI11Q" instantiates="_AmuxpDPwEei3dfHtumI11Q"/>
+    <assmComponents name="dev" id="_AnniczPwEei3dfHtumI11Q" instantiates="_AnnicDPwEei3dfHtumI11Q"/>
+    <assmComponents name="int" id="_AnnidDPwEei3dfHtumI11Q" instantiates="_AnnicDPwEei3dfHtumI11Q"/>
+    <assmComponents name="INT.STORE" id="_AnnidTPwEei3dfHtumI11Q" instantiates="_AnnicTPwEei3dfHtumI11Q"/>
+    <assmComponents name="dev" id="_AnxTczPwEei3dfHtumI11Q" instantiates="_AnxTcDPwEei3dfHtumI11Q"/>
+    <assmComponents name="int" id="_AnxTdDPwEei3dfHtumI11Q" instantiates="_AnxTcDPwEei3dfHtumI11Q"/>
+    <assmComponents name="INT.STORE" id="_AnxTdTPwEei3dfHtumI11Q" instantiates="_AnxTcTPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j.store" id="_AoEOaTPwEei3dfHtumI11Q" instantiates="_AoEOYDPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j.cache" id="_AoEOajPwEei3dfHtumI11Q" instantiates="_AoEOYTPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j.storeproxy" id="_AoEOazPwEei3dfHtumI11Q" instantiates="_AoEOYjPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j" id="_AoEObDPwEei3dfHtumI11Q" instantiates="_AoEOYzPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j.store" id="_AoXJWTPwEei3dfHtumI11Q" instantiates="_AoXJUDPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j.cache" id="_AoXJWjPwEei3dfHtumI11Q" instantiates="_AoXJUTPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j.storeproxy" id="_AoXJWzPwEei3dfHtumI11Q" instantiates="_AoXJUjPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j" id="_AoXJXDPwEei3dfHtumI11Q" instantiates="_AoXJUzPwEei3dfHtumI11Q"/>
+    <assmComponents name="exporter" id="_AoqESDPwEei3dfHtumI11Q" instantiates="_Aog6UDPwEei3dfHtumI11Q"/>
+    <assmComponents name="jmxAttributeSource" id="_AoqESTPwEei3dfHtumI11Q" instantiates="_AoqEQDPwEei3dfHtumI11Q"/>
+    <assmComponents name="assembler" id="_AoqESjPwEei3dfHtumI11Q" instantiates="_AoqEQTPwEei3dfHtumI11Q"/>
+    <assmComponents name="namingStrategy" id="_AoqESzPwEei3dfHtumI11Q" instantiates="_AoqEQjPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j" id="_AoqETDPwEei3dfHtumI11Q" instantiates="_AoqEQzPwEei3dfHtumI11Q"/>
+    <assmComponents name="exporter" id="_Ao9mSTPwEei3dfHtumI11Q" instantiates="_Ao9mQDPwEei3dfHtumI11Q"/>
+    <assmComponents name="jmxAttributeSource" id="_Ao9mSjPwEei3dfHtumI11Q" instantiates="_Ao9mQTPwEei3dfHtumI11Q"/>
+    <assmComponents name="assembler" id="_Ao9mSzPwEei3dfHtumI11Q" instantiates="_Ao9mQjPwEei3dfHtumI11Q"/>
+    <assmComponents name="namingStrategy" id="_Ao9mTDPwEei3dfHtumI11Q" instantiates="_Ao9mQzPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j" id="_Ao9mTTPwEei3dfHtumI11Q" instantiates="_Ao9mRDPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j" id="_ApQhNTPwEei3dfHtumI11Q" instantiates="_ApQhMDPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j" id="_ApjcJTPwEei3dfHtumI11Q" instantiates="_ApjcIDPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j" id="_Ap2XETPwEei3dfHtumI11Q" instantiates="_Ap2XEDPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j" id="_AqJSATPwEei3dfHtumI11Q" instantiates="_AqJSADPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j" id="_AqTDBTPwEei3dfHtumI11Q" instantiates="_AqTDADPwEei3dfHtumI11Q"/>
+    <assmComponents name="dbStore" id="_AqTDBjPwEei3dfHtumI11Q" instantiates="_AqTDATPwEei3dfHtumI11Q"/>
+    <assmComponents name="ff4j" id="_Aql99TPwEei3dfHtumI11Q" instantiates="_Aql98DPwEei3dfHtumI11Q"/>
+    <assmComponents name="dbStore" id="_Aql99jPwEei3dfHtumI11Q" instantiates="_Aql98TPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AnnidjPwEei3dfHtumI11Q" property="int.featureStore" clientInstElem="_AnnidDPwEei3dfHtumI11Q" serverInstElem="_AnnidTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AnxTdjPwEei3dfHtumI11Q" property="int.featureStore" clientInstElem="_AnxTdDPwEei3dfHtumI11Q" serverInstElem="_AnxTdTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AoEObTPwEei3dfHtumI11Q" property="ff4j.storeproxy.target" clientInstElem="_AoEOazPwEei3dfHtumI11Q" serverInstElem="_AoEOaTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AoEObjPwEei3dfHtumI11Q" property="ff4j.storeproxy.cacheManager" clientInstElem="_AoEOazPwEei3dfHtumI11Q" serverInstElem="_AoEOajPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AoEObzPwEei3dfHtumI11Q" property="ff4j.store" clientInstElem="_AoEObDPwEei3dfHtumI11Q" serverInstElem="_AoEOazPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AoEOcDPwEei3dfHtumI11Q" property="ff4j.authorizationsManager" clientInstElem="_AoEObDPwEei3dfHtumI11Q" serverInstElem="_AoEOcTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AoXJXTPwEei3dfHtumI11Q" property="ff4j.storeproxy.target" clientInstElem="_AoXJWzPwEei3dfHtumI11Q" serverInstElem="_AoXJWTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AoXJXjPwEei3dfHtumI11Q" property="ff4j.storeproxy.cacheManager" clientInstElem="_AoXJWzPwEei3dfHtumI11Q" serverInstElem="_AoXJWjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AoXJXzPwEei3dfHtumI11Q" property="ff4j.store" clientInstElem="_AoXJXDPwEei3dfHtumI11Q" serverInstElem="_AoXJWzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AoXJYDPwEei3dfHtumI11Q" property="ff4j.authorizationsManager" clientInstElem="_AoXJXDPwEei3dfHtumI11Q" serverInstElem="_AoXJYTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AoqETTPwEei3dfHtumI11Q" property="exporter.assembler" clientInstElem="_AoqESDPwEei3dfHtumI11Q" serverInstElem="_AoqESjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AoqETjPwEei3dfHtumI11Q" property="exporter.namingStrategy" clientInstElem="_AoqESDPwEei3dfHtumI11Q" serverInstElem="_AoqESzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AoqETzPwEei3dfHtumI11Q" property="assembler.attributeSource" clientInstElem="_AoqESjPwEei3dfHtumI11Q" serverInstElem="_AoqESTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AoqEUDPwEei3dfHtumI11Q" property="namingStrategy.attributeSource" clientInstElem="_AoqESzPwEei3dfHtumI11Q" serverInstElem="_AoqESTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ao9mTjPwEei3dfHtumI11Q" property="exporter.assembler" clientInstElem="_Ao9mSTPwEei3dfHtumI11Q" serverInstElem="_Ao9mSzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ao9mTzPwEei3dfHtumI11Q" property="exporter.namingStrategy" clientInstElem="_Ao9mSTPwEei3dfHtumI11Q" serverInstElem="_Ao9mTDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ao9mUDPwEei3dfHtumI11Q" property="assembler.attributeSource" clientInstElem="_Ao9mSzPwEei3dfHtumI11Q" serverInstElem="_Ao9mSjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ao9mUTPwEei3dfHtumI11Q" property="namingStrategy.attributeSource" clientInstElem="_Ao9mTDPwEei3dfHtumI11Q" serverInstElem="_Ao9mSjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_ApQhNjPwEei3dfHtumI11Q" property="ff4j.store" clientInstElem="_ApQhNTPwEei3dfHtumI11Q" serverInstElem="_ApQhNzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_ApQhODPwEei3dfHtumI11Q" property="ff4j.authorizationsManager" clientInstElem="_ApQhNTPwEei3dfHtumI11Q" serverInstElem="_ApQhOTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_ApjcJjPwEei3dfHtumI11Q" property="ff4j.store" clientInstElem="_ApjcJTPwEei3dfHtumI11Q" serverInstElem="_ApjcJzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_ApjcKDPwEei3dfHtumI11Q" property="ff4j.authorizationsManager" clientInstElem="_ApjcJTPwEei3dfHtumI11Q" serverInstElem="_ApjcKTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AqTDBzPwEei3dfHtumI11Q" property="ff4j.featureStore" clientInstElem="_AqTDBTPwEei3dfHtumI11Q" serverInstElem="_AqTDBjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AqTDCDPwEei3dfHtumI11Q" property="dbStore.dataSource" clientInstElem="_AqTDBjPwEei3dfHtumI11Q" serverInstElem="_AqTDCTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Aql99zPwEei3dfHtumI11Q" property="ff4j.featureStore" clientInstElem="_Aql99TPwEei3dfHtumI11Q" serverInstElem="_Aql99jPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Aql9-DPwEei3dfHtumI11Q" property="dbStore.dataSource" clientInstElem="_Aql99jPwEei3dfHtumI11Q" serverInstElem="_Aql9-TPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ff4j.ff4j_spec">
+    <specConnections refID="_AsYtsDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtsTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtsjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtszPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYttDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYttTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYttjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYttzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtuDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtuTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtujPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtuzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtvDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtvTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtvjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtvzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtwDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtwTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtwjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtwzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtxDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtxTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtxjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtxzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtyDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_AsYtyTPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

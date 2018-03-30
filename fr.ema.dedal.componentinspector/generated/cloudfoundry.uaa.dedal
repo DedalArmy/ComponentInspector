@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="cloudfoundry.uaa">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="cloudfoundry.uaa_config" implements="//@architectureDescriptions[name='cloudfoundry.uaa_spec']">
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.db.DatabaseUrlModifier&quot;" id="_YpKsYDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.tomcat.jdbc.pool.DataSource&quot;" id="_YpKsYTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.db.DataSourceAccessor&quot;" id="_YpKsYjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.flywaydb.core.Flyway&quot;" id="_YpKsYzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_YpKsZDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertiesFactoryBean&quot;" id="_YpsQ0DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jmx.export.MBeanExporter&quot;" id="_YpsQ0TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.impl.config.EnvironmentMapFactoryBean&quot;" id="_YpsQ0jPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.String&quot;" id="_YpsQ0zPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.impl.config.LdapGroupsMappedToScopesConfig&quot;" id="_YqKK4DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.impl.config.LdapGroupsAsScopesConfig&quot;" id="_YqKK4TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.impl.config.LdapGroupsNullConfig&quot;" id="_YqKK4jPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.impl.config.LdapSearchAndBindConfig&quot;" id="_YqKK4zPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.impl.config.LdapSearchAndCompareConfig&quot;" id="_YqKK5DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.impl.config.LdapSimpleBindConfig&quot;" id="_YqKK5TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.impl.config.LdapIntegrationConfig&quot;" id="_YqKK5jPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.audit.event.AuditListener&quot;" id="_YqoE8DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.authentication.listener.BadCredentialsListener&quot;" id="_YqoE8TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.audit.JdbcFailedLoginCountingAuditService&quot;" id="_YqoE8jPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.audit.LoggingAuditService&quot;" id="_YqoE8zPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.codestore.CodeStoreEndpoints&quot;" id="_YrEJ0DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.authentication.manager.KeystoneAuthenticationManager&quot;" id="_YrSzUDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.authentication.manager.ExternalLoginAuthenticationManager&quot;" id="_YrSzUTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.zone.MultitenantJdbcClientDetailsService&quot;" id="_YsMLMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.client.JdbcQueryableClientDetailsService&quot;" id="_YsMLMTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.client.JdbcClientMetadataProvisioning&quot;" id="_YsMLMjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.client.ClientAdminBootstrap&quot;" id="_YsMLMzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.oauth.UaaOauth2RequestValidator&quot;" id="_Ysd4ADPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.security.web.TokenEndpointPostProcessor&quot;" id="_Ysd4ATPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.account.PasswordCheckEndpoint&quot;" id="_Ys9AMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.security.web.FilterChainProxy&quot;" id="_YtZsIDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.provider.saml.idp.IdpSamlAuthenticationProvider&quot;" id="_YtZsITPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.security.saml.SAMLProcessingFilter&quot;" id="_YtZsIjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.provider.saml.idp.IdpSamlAuthenticationSuccessHandler&quot;" id="_YtZsIzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.provider.saml.idp.NonSnarlIdpMetadataManager&quot;" id="_YtZsJDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.provider.saml.idp.IdpInitiatedLoginController&quot;" id="_YtZsJTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.provider.saml.idp.IdpWebSsoProfileImpl&quot;" id="_YtZsJjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.security.saml.processor.SAMLProcessorImpl&quot;" id="_YtZsJzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.provider.saml.ZoneAwareKeyManager&quot;" id="_YtZsKDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.provider.saml.NonCachingMetadataCredentialResolver&quot;" id="_YtZsKTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.provider.saml.idp.IdpSamlContextProviderImpl&quot;" id="_YtZsKjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.provider.saml.idp.IdpMetadataGeneratorFilter&quot;" id="_YtZsKzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.provider.saml.idp.IdpMetadataDisplayFilter&quot;" id="_YtaTMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.provider.saml.idp.ZoneAwareIdpMetadataGenerator&quot;" id="_YtaTMTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.provider.saml.idp.IdpExtendedMetadata&quot;" id="_YtaTMjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.String&quot;" id="_YtaTMzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.provider.saml.idp.SamlServiceProviderConfigurator&quot;" id="_YtaTNDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.provider.saml.SamlConfigurationBean&quot;" id="_YtaTNTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.scim.jdbc.JdbcScimUserProvisioning&quot;" id="_YuAJEDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.provider.PasswordPolicy&quot;" id="_YuAJETPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.account.event.PasswordChangeEventPublisher&quot;" id="_YuAJEjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.scim.event.ScimEventPublisher&quot;" id="_YuAJEzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.scim.jdbc.JdbcScimGroupProvisioning&quot;" id="_YuAJFDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.scim.jdbc.JdbcScimGroupMembershipManager&quot;" id="_YuAJFTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.scim.jdbc.JdbcScimGroupExternalMembershipManager&quot;" id="_YuAJFjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.scim.endpoints.ScimUserEndpoints&quot;" id="_YuAJFzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.scim.endpoints.ScimGroupEndpoints&quot;" id="_YuAJGDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.web.SessionIdleTimeoutSetter&quot;" id="_YuU5MDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.cache.ExpiringUrlCache&quot;" id="_YuU5MTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.impl.config.YamlConfigurationValidator&quot;" id="_YuU5MjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.zone.GeneralIdentityZoneValidator&quot;" id="_YuU5MzPvEei3dfHtumI11Q"/>
+    <configComponents id="_YuU5NDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.zone.MfaConfigValidator&quot;" id="_YuU5NTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.web.UaaSessionCookieConfig&quot;" id="_YuU5NjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping&quot;" id="_YuU5NzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.accept.ContentNegotiationManagerFactoryBean&quot;" id="_YuU5ODPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.web.BackwardsCompatibleScopeParsingFilter&quot;" id="_YuVgQDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.cloudfoundry.identity.uaa.oauth.DisableIdTokenResponseTypeFilter&quot;" id="_YuVgQTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.String&quot;" id="_YulX4DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.security.access.vote.UnanimousBased&quot;" id="_Yu0BYDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YpKsZTPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_YpKsYjPvEei3dfHtumI11Q" serverClassElem="_YpKsYTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YpLTcDPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_YpKsYzPvEei3dfHtumI11Q" serverClassElem="_YpKsYTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YpLTcTPvEei3dfHtumI11Q" property="&quot;baselineVersion&quot;" clientClassElem="_YpKsYzPvEei3dfHtumI11Q" serverClassElem="_YpLTcjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YpLTczPvEei3dfHtumI11Q" property="&quot;target&quot;" clientClassElem="_YpKsYzPvEei3dfHtumI11Q" serverClassElem="_YpLTdDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YpLTdTPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_YpKsZDPvEei3dfHtumI11Q" serverClassElem="_YpKsYTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YpsQ1DPvEei3dfHtumI11Q" property="&quot;propertiesArray&quot;" clientClassElem="_YpsQ0DPvEei3dfHtumI11Q" serverClassElem="_Yps34DPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Yps34TPvEei3dfHtumI11Q" property="&quot;server&quot;" clientClassElem="_YpsQ0TPvEei3dfHtumI11Q" serverClassElem="_Yps34jPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Yps34zPvEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_YpsQ0TPvEei3dfHtumI11Q" serverClassElem="_Yps35DPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Yps35TPvEei3dfHtumI11Q" property="&quot;assembler&quot;" clientClassElem="_YpsQ0TPvEei3dfHtumI11Q" serverClassElem="_Yps35jPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Yps35zPvEei3dfHtumI11Q" clientClassElem="_YpsQ0zPvEei3dfHtumI11Q" serverClassElem="_Yps36DPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YqoE9DPvEei3dfHtumI11Q" clientClassElem="_YqoE8DPvEei3dfHtumI11Q" serverClassElem="_YqoE8zPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YqoE9TPvEei3dfHtumI11Q" clientClassElem="_YqoE8DPvEei3dfHtumI11Q" serverClassElem="_YqoE8jPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YqosADPvEei3dfHtumI11Q" clientClassElem="_YqoE8jPvEei3dfHtumI11Q" serverClassElem="_YqosATPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YqosAjPvEei3dfHtumI11Q" property="&quot;timeService&quot;" clientClassElem="_YqoE8jPvEei3dfHtumI11Q" serverClassElem="_YqosAzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YrEJ0TPvEei3dfHtumI11Q" property="&quot;expiringCodeStore&quot;" clientClassElem="_YrEJ0DPvEei3dfHtumI11Q" serverClassElem="_YrEJ0jPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YrEJ0zPvEei3dfHtumI11Q" property="&quot;messageConverters&quot;" clientClassElem="_YrEJ0DPvEei3dfHtumI11Q" serverClassElem="_YrEJ1DPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YrSzUjPvEei3dfHtumI11Q" property="&quot;userDatabase&quot;" clientClassElem="_YrSzUTPvEei3dfHtumI11Q" serverClassElem="_YrSzUzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YsMLNDPvEei3dfHtumI11Q" clientClassElem="_YsMLMDPvEei3dfHtumI11Q" serverClassElem="_YsMyQDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YsMyQTPvEei3dfHtumI11Q" property="&quot;passwordEncoder&quot;" clientClassElem="_YsMLMDPvEei3dfHtumI11Q" serverClassElem="_YsMyQjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YsMyQzPvEei3dfHtumI11Q" property="&quot;delegate&quot;" clientClassElem="_YsMLMTPvEei3dfHtumI11Q" serverClassElem="_YsMLMDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YsMyRDPvEei3dfHtumI11Q" property="&quot;jdbcTemplate&quot;" clientClassElem="_YsMLMTPvEei3dfHtumI11Q" serverClassElem="_YsMyRTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YsMyRjPvEei3dfHtumI11Q" property="&quot;pagingListFactory&quot;" clientClassElem="_YsMLMTPvEei3dfHtumI11Q" serverClassElem="_YsMyRzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YsMySDPvEei3dfHtumI11Q" property="&quot;clientDetailsService&quot;" clientClassElem="_YsMLMjPvEei3dfHtumI11Q" serverClassElem="_YsMLMDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YsNZUDPvEei3dfHtumI11Q" property="&quot;template&quot;" clientClassElem="_YsMLMjPvEei3dfHtumI11Q" serverClassElem="_YsNZUTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YsNZUjPvEei3dfHtumI11Q" clientClassElem="_YsMLMzPvEei3dfHtumI11Q" serverClassElem="_YsNZUzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YsNZVDPvEei3dfHtumI11Q" property="&quot;clientRegistrationService&quot;" clientClassElem="_YsMLMzPvEei3dfHtumI11Q" serverClassElem="_YsMLMDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YsNZVTPvEei3dfHtumI11Q" property="&quot;clientMetadataProvisioning&quot;" clientClassElem="_YsMLMzPvEei3dfHtumI11Q" serverClassElem="_YsMLMjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ysd4AjPvEei3dfHtumI11Q" property="&quot;clientDetailsService&quot;" clientClassElem="_Ysd4ADPvEei3dfHtumI11Q" serverClassElem="_Ysd4AzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtaTNjPvEei3dfHtumI11Q" property="&quot;authenticationManager&quot;" clientClassElem="_YtZsIjPvEei3dfHtumI11Q" serverClassElem="_Yta6QDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Yta6QTPvEei3dfHtumI11Q" property="&quot;authenticationSuccessHandler&quot;" clientClassElem="_YtZsIjPvEei3dfHtumI11Q" serverClassElem="_YtZsIzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Yta6QjPvEei3dfHtumI11Q" property="&quot;contextProvider&quot;" clientClassElem="_YtZsIjPvEei3dfHtumI11Q" serverClassElem="_YtZsKjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Yta6QzPvEei3dfHtumI11Q" property="&quot;SAMLProcessor&quot;" clientClassElem="_YtZsIjPvEei3dfHtumI11Q" serverClassElem="_YtZsJzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Yta6RDPvEei3dfHtumI11Q" property="&quot;sessionAuthenticationStrategy&quot;" clientClassElem="_YtZsIjPvEei3dfHtumI11Q" serverClassElem="_Yta6RTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Yta6RjPvEei3dfHtumI11Q" property="&quot;idpWebSsoProfile&quot;" clientClassElem="_YtZsIzPvEei3dfHtumI11Q" serverClassElem="_YtZsJjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Yta6RzPvEei3dfHtumI11Q" property="&quot;metadataManager&quot;" clientClassElem="_YtZsIzPvEei3dfHtumI11Q" serverClassElem="_YtZsJDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtbhUDPvEei3dfHtumI11Q" property="&quot;configurator&quot;" clientClassElem="_YtZsJDPvEei3dfHtumI11Q" serverClassElem="_YtaTNDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtbhUTPvEei3dfHtumI11Q" property="&quot;generator&quot;" clientClassElem="_YtZsJDPvEei3dfHtumI11Q" serverClassElem="_YtaTMTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtbhUjPvEei3dfHtumI11Q" property="&quot;idpWebSsoProfile&quot;" clientClassElem="_YtZsJTPvEei3dfHtumI11Q" serverClassElem="_YtZsJjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtbhUzPvEei3dfHtumI11Q" property="&quot;metadataManager&quot;" clientClassElem="_YtZsJTPvEei3dfHtumI11Q" serverClassElem="_YtZsJDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtbhVDPvEei3dfHtumI11Q" property="&quot;configurator&quot;" clientClassElem="_YtZsJTPvEei3dfHtumI11Q" serverClassElem="_YtaTNDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtbhVTPvEei3dfHtumI11Q" property="&quot;contextProvider&quot;" clientClassElem="_YtZsJTPvEei3dfHtumI11Q" serverClassElem="_YtZsKjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtbhVjPvEei3dfHtumI11Q" property="&quot;idpSamlAuthenticationSuccessHandler&quot;" clientClassElem="_YtZsJTPvEei3dfHtumI11Q" serverClassElem="_YtZsIzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtbhVzPvEei3dfHtumI11Q" property="&quot;metadata&quot;" clientClassElem="_YtZsJjPvEei3dfHtumI11Q" serverClassElem="_YtZsJDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtbhWDPvEei3dfHtumI11Q" property="&quot;processor&quot;" clientClassElem="_YtZsJjPvEei3dfHtumI11Q" serverClassElem="_YtZsJzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtbhWTPvEei3dfHtumI11Q" property="&quot;samlServiceProviderProvisioning&quot;" clientClassElem="_YtZsJjPvEei3dfHtumI11Q" serverClassElem="_YtbhWjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtbhWzPvEei3dfHtumI11Q" property="&quot;scimUserProvisioning&quot;" clientClassElem="_YtZsJjPvEei3dfHtumI11Q" serverClassElem="_YtcIYDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcIYTPvEei3dfHtumI11Q" clientClassElem="_YtZsJzPvEei3dfHtumI11Q" serverClassElem="_YtcIYjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcIYzPvEei3dfHtumI11Q" clientClassElem="_YtZsJzPvEei3dfHtumI11Q" serverClassElem="_YtcIZDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcIZTPvEei3dfHtumI11Q" property="&quot;metadataProvider&quot;" clientClassElem="_YtZsKTPvEei3dfHtumI11Q" serverClassElem="_YtZsJDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcIZjPvEei3dfHtumI11Q" property="&quot;keyManager&quot;" clientClassElem="_YtZsKTPvEei3dfHtumI11Q" serverClassElem="_YtZsKDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcIZzPvEei3dfHtumI11Q" property="&quot;metadata&quot;" clientClassElem="_YtZsKjPvEei3dfHtumI11Q" serverClassElem="_YtZsJDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcIaDPvEei3dfHtumI11Q" property="&quot;metadataResolver&quot;" clientClassElem="_YtZsKjPvEei3dfHtumI11Q" serverClassElem="_YtZsKTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcIaTPvEei3dfHtumI11Q" property="&quot;keyManager&quot;" clientClassElem="_YtZsKjPvEei3dfHtumI11Q" serverClassElem="_YtZsKDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcIajPvEei3dfHtumI11Q" clientClassElem="_YtZsKzPvEei3dfHtumI11Q" serverClassElem="_YtaTMTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcIazPvEei3dfHtumI11Q" property="&quot;displayFilter&quot;" clientClassElem="_YtZsKzPvEei3dfHtumI11Q" serverClassElem="_YtaTMDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcIbDPvEei3dfHtumI11Q" property="&quot;manager&quot;" clientClassElem="_YtZsKzPvEei3dfHtumI11Q" serverClassElem="_YtZsJDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcIbTPvEei3dfHtumI11Q" property="&quot;contextProvider&quot;" clientClassElem="_YtaTMDPvEei3dfHtumI11Q" serverClassElem="_YtZsKjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcvcDPvEei3dfHtumI11Q" property="&quot;manager&quot;" clientClassElem="_YtaTMDPvEei3dfHtumI11Q" serverClassElem="_YtZsJDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcvcTPvEei3dfHtumI11Q" property="&quot;keyManager&quot;" clientClassElem="_YtaTMDPvEei3dfHtumI11Q" serverClassElem="_YtZsKDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcvcjPvEei3dfHtumI11Q" property="&quot;extendedMetadata&quot;" clientClassElem="_YtaTMTPvEei3dfHtumI11Q" serverClassElem="_YtaTMjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcvczPvEei3dfHtumI11Q" property="&quot;entityId&quot;" clientClassElem="_YtaTMTPvEei3dfHtumI11Q" serverClassElem="_YtcvdDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcvdTPvEei3dfHtumI11Q" property="&quot;samlWebSSOFilter&quot;" clientClassElem="_YtaTMTPvEei3dfHtumI11Q" serverClassElem="_YtZsIjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcvdjPvEei3dfHtumI11Q" property="&quot;keyManager&quot;" clientClassElem="_YtaTMTPvEei3dfHtumI11Q" serverClassElem="_YtZsKDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcvdzPvEei3dfHtumI11Q" property="&quot;clientParams&quot;" clientClassElem="_YtaTNDPvEei3dfHtumI11Q" serverClassElem="_YtcveDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcveTPvEei3dfHtumI11Q" property="&quot;parserPool&quot;" clientClassElem="_YtaTNDPvEei3dfHtumI11Q" serverClassElem="_YtcvejPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtcvezPvEei3dfHtumI11Q" property="&quot;contentCache&quot;" clientClassElem="_YtaTNDPvEei3dfHtumI11Q" serverClassElem="_YtdWgDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YtdWgTPvEei3dfHtumI11Q" property="&quot;providerProvisioning&quot;" clientClassElem="_YtaTNDPvEei3dfHtumI11Q" serverClassElem="_YtdWgjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuAJGTPvEei3dfHtumI11Q" clientClassElem="_YuAJEDPvEei3dfHtumI11Q" serverClassElem="_YuAwIDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuAwITPvEei3dfHtumI11Q" property="&quot;pagingListFactory&quot;" clientClassElem="_YuAJEDPvEei3dfHtumI11Q" serverClassElem="_YuAwIjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuAwIzPvEei3dfHtumI11Q" property="&quot;queryConverter&quot;" clientClassElem="_YuAJEDPvEei3dfHtumI11Q" serverClassElem="_YuAwJDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuAwJTPvEei3dfHtumI11Q" property="&quot;timeService&quot;" clientClassElem="_YuAJEDPvEei3dfHtumI11Q" serverClassElem="_YuAwJjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuAwJzPvEei3dfHtumI11Q" property="&quot;passwordEncoder&quot;" clientClassElem="_YuAJEDPvEei3dfHtumI11Q" serverClassElem="_YuAwKDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuAwKTPvEei3dfHtumI11Q" clientClassElem="_YuAJEjPvEei3dfHtumI11Q" serverClassElem="_YuAJEDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuAwKjPvEei3dfHtumI11Q" clientClassElem="_YuAJFDPvEei3dfHtumI11Q" serverClassElem="_YuAwKzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuBXMDPvEei3dfHtumI11Q" property="&quot;pagingListFactory&quot;" clientClassElem="_YuAJFDPvEei3dfHtumI11Q" serverClassElem="_YuBXMTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuBXMjPvEei3dfHtumI11Q" property="&quot;jdbcTemplate&quot;" clientClassElem="_YuAJFTPvEei3dfHtumI11Q" serverClassElem="_YuBXMzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuBXNDPvEei3dfHtumI11Q" property="&quot;scimGroupProvisioning&quot;" clientClassElem="_YuAJFTPvEei3dfHtumI11Q" serverClassElem="_YuAJFDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuBXNTPvEei3dfHtumI11Q" property="&quot;scimUserProvisioning&quot;" clientClassElem="_YuAJFTPvEei3dfHtumI11Q" serverClassElem="_YuAJEDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuBXNjPvEei3dfHtumI11Q" property="&quot;zoneProvisioning&quot;" clientClassElem="_YuAJFTPvEei3dfHtumI11Q" serverClassElem="_YuBXNzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuBXODPvEei3dfHtumI11Q" property="&quot;jdbcTemplate&quot;" clientClassElem="_YuAJFjPvEei3dfHtumI11Q" serverClassElem="_YuBXOTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuBXOjPvEei3dfHtumI11Q" property="&quot;scimGroupProvisioning&quot;" clientClassElem="_YuAJFjPvEei3dfHtumI11Q" serverClassElem="_YuAJFDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuBXOzPvEei3dfHtumI11Q" property="&quot;scimUserProvisioning&quot;" clientClassElem="_YuAJFzPvEei3dfHtumI11Q" serverClassElem="_YuAJEDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuBXPDPvEei3dfHtumI11Q" property="&quot;identityProviderProvisioning&quot;" clientClassElem="_YuAJFzPvEei3dfHtumI11Q" serverClassElem="_YuBXPTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuBXPjPvEei3dfHtumI11Q" property="&quot;scimGroupMembershipManager&quot;" clientClassElem="_YuAJFzPvEei3dfHtumI11Q" serverClassElem="_YuAJFTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuB-QDPvEei3dfHtumI11Q" property="&quot;approvalStore&quot;" clientClassElem="_YuAJFzPvEei3dfHtumI11Q" serverClassElem="_YuB-QTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuB-QjPvEei3dfHtumI11Q" property="&quot;statuses&quot;" clientClassElem="_YuAJFzPvEei3dfHtumI11Q" serverClassElem="_YuB-QzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuB-RDPvEei3dfHtumI11Q" property="&quot;messageConverters&quot;" clientClassElem="_YuAJFzPvEei3dfHtumI11Q" serverClassElem="_YuB-RTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuB-RjPvEei3dfHtumI11Q" property="&quot;passwordValidator&quot;" clientClassElem="_YuAJFzPvEei3dfHtumI11Q" serverClassElem="_YuB-RzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuB-SDPvEei3dfHtumI11Q" property="&quot;codeStore&quot;" clientClassElem="_YuAJFzPvEei3dfHtumI11Q" serverClassElem="_YuB-STPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuB-SjPvEei3dfHtumI11Q" property="&quot;mfaCredentialsProvisioning&quot;" clientClassElem="_YuAJFzPvEei3dfHtumI11Q" serverClassElem="_YuB-SzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuB-TDPvEei3dfHtumI11Q" property="&quot;scimGroupProvisioning&quot;" clientClassElem="_YuAJGDPvEei3dfHtumI11Q" serverClassElem="_YuAJFDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuClUDPvEei3dfHtumI11Q" property="&quot;membershipManager&quot;" clientClassElem="_YuAJGDPvEei3dfHtumI11Q" serverClassElem="_YuAJFTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuClUTPvEei3dfHtumI11Q" property="&quot;statuses&quot;" clientClassElem="_YuAJGDPvEei3dfHtumI11Q" serverClassElem="_YuClUjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuClUzPvEei3dfHtumI11Q" property="&quot;messageConverters&quot;" clientClassElem="_YuAJGDPvEei3dfHtumI11Q" serverClassElem="_YuClVDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuClVTPvEei3dfHtumI11Q" property="&quot;externalMembershipManager&quot;" clientClassElem="_YuAJGDPvEei3dfHtumI11Q" serverClassElem="_YuAJFjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuVgQjPvEei3dfHtumI11Q" property="&quot;ticker&quot;" clientClassElem="_YuU5MTPvEei3dfHtumI11Q" serverClassElem="_YuVgQzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuVgRDPvEei3dfHtumI11Q" clientClassElem="_YuU5MjPvEei3dfHtumI11Q" serverClassElem="_YuVgRTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuVgRjPvEei3dfHtumI11Q" property="&quot;configValidator&quot;" clientClassElem="_YuU5MzPvEei3dfHtumI11Q" serverClassElem="_YuVgRzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuVgSDPvEei3dfHtumI11Q" property="&quot;mfaProviderProvisioning&quot;" clientClassElem="_YuU5NTPvEei3dfHtumI11Q" serverClassElem="_YuVgSTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_YuVgSjPvEei3dfHtumI11Q" property="&quot;contentNegotiationManager&quot;" clientClassElem="_YuU5NzPvEei3dfHtumI11Q" serverClassElem="_YuVgSzPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="cloudfoundry.uaa_asm" instantiates="//@architectureDescriptions[name='cloudfoundry.uaa_config']">
+    <assmComponents name="databaseUrlModifier" id="_YpLTdjPvEei3dfHtumI11Q" instantiates="_YpKsYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_YpLTdzPvEei3dfHtumI11Q" instantiates="_YpKsYTPvEei3dfHtumI11Q"/>
+    <assmComponents name="dataSourceAccessor" id="_YpLTeDPvEei3dfHtumI11Q" instantiates="_YpKsYjPvEei3dfHtumI11Q"/>
+    <assmComponents name="flyway" id="_YpLTeTPvEei3dfHtumI11Q" instantiates="_YpKsYzPvEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_YpLTejPvEei3dfHtumI11Q" instantiates="_YpKsZDPvEei3dfHtumI11Q"/>
+    <assmComponents name="applicationProperties" id="_Yps36TPvEei3dfHtumI11Q" instantiates="_YpsQ0DPvEei3dfHtumI11Q"/>
+    <assmComponents id="_Yps36jPvEei3dfHtumI11Q" instantiates="_YpsQ0TPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;config&quot;" id="_Yps36zPvEei3dfHtumI11Q" instantiates="_YpsQ0jPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;scriptsversion&quot;" id="_Yps37DPvEei3dfHtumI11Q" instantiates="_Yps36DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;scripts&quot;" id="_Yps37TPvEei3dfHtumI11Q" instantiates="_Yps36DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ldapGroupsMappedToScopesConfig&quot;" id="_YqKK5zPvEei3dfHtumI11Q" instantiates="_YqKK4DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ldapGroupsAsScopesConfig&quot;" id="_YqKK6DPvEei3dfHtumI11Q" instantiates="_YqKK4TPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ldapGroupsNullConfig&quot;" id="_YqKK6TPvEei3dfHtumI11Q" instantiates="_YqKK4jPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ldapSearchAndBindConfig&quot;" id="_YqKK6jPvEei3dfHtumI11Q" instantiates="_YqKK4zPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ldapSearchAndCompareConfig&quot;" id="_YqKK6zPvEei3dfHtumI11Q" instantiates="_YqKK5DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ldapSimpleBindConfig&quot;" id="_YqKK7DPvEei3dfHtumI11Q" instantiates="_YqKK5TPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ldapIntegrationConfig&quot;" id="_YqKK7TPvEei3dfHtumI11Q" instantiates="_YqKK5jPvEei3dfHtumI11Q"/>
+    <assmComponents id="_YqosBDPvEei3dfHtumI11Q" instantiates="_YqoE8DPvEei3dfHtumI11Q"/>
+    <assmComponents id="_YqosBTPvEei3dfHtumI11Q" instantiates="_YqoE8TPvEei3dfHtumI11Q"/>
+    <assmComponents id="_YqosBjPvEei3dfHtumI11Q" instantiates="_YqoE8DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jdbcAuditService&quot;" id="_YqosBzPvEei3dfHtumI11Q" instantiates="_YqoE8jPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;loggingAuditService&quot;" id="_YqosCDPvEei3dfHtumI11Q" instantiates="_YqoE8zPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;codeStoreEndpoints&quot;" id="_YrEJ1TPvEei3dfHtumI11Q" instantiates="_YrEJ0DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;keystoneAuthenticationManager&quot;" id="_YrTaYDPvEei3dfHtumI11Q" instantiates="_YrSzUDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;keystoneLoginAuthenticationMgr&quot;" id="_YrTaYTPvEei3dfHtumI11Q" instantiates="_YrSzUTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jdbcClientDetailsService&quot;" id="_YsNZVjPvEei3dfHtumI11Q" instantiates="_YsMLMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;clientDetailsService&quot;" id="_YsNZVzPvEei3dfHtumI11Q" instantiates="_YsMLMTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jdbcClientMetadataProvisioning&quot;" id="_YsNZWDPvEei3dfHtumI11Q" instantiates="_YsMLMjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;clientAdminBootstrap&quot;" id="_YsNZWTPvEei3dfHtumI11Q" instantiates="_YsMLMzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;oauth2RequestValidator&quot;" id="_Ysd4BDPvEei3dfHtumI11Q" instantiates="_Ysd4ADPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;tokenEndpointPostProcessor&quot;" id="_Ysd4BTPvEei3dfHtumI11Q" instantiates="_Ysd4ATPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;passwordCheck&quot;" id="_Ys9AMTPvEei3dfHtumI11Q" instantiates="_Ys9AMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;samlIdpLoginFilter&quot;" id="_YtdWgzPvEei3dfHtumI11Q" instantiates="_YtZsIDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;samlIdpAuthenticationProvider&quot;" id="_YtdWhDPvEei3dfHtumI11Q" instantiates="_YtZsITPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;samlIdpWebSsoProcessingFilter&quot;" id="_YtdWhTPvEei3dfHtumI11Q" instantiates="_YtZsIjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;samlIdpSuccessHandler&quot;" id="_YtdWhjPvEei3dfHtumI11Q" instantiates="_YtZsIzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;idpMetadataManager&quot;" id="_YtdWhzPvEei3dfHtumI11Q" instantiates="_YtZsJDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;idpInitiatedLogin&quot;" id="_YtdWiDPvEei3dfHtumI11Q" instantiates="_YtZsJTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;idpWebSsoProfileImpl&quot;" id="_Ytd9kDPvEei3dfHtumI11Q" instantiates="_YtZsJjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;idpSamlProcessor&quot;" id="_Ytd9kTPvEei3dfHtumI11Q" instantiates="_YtZsJzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;idpZoneAwareSamlKeyManager&quot;" id="_Ytd9kjPvEei3dfHtumI11Q" instantiates="_YtZsKDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;idpNonCachingMetadataCredentialsResolver&quot;" id="_Ytd9kzPvEei3dfHtumI11Q" instantiates="_YtZsKTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;idpContextProvider&quot;" id="_Ytd9lDPvEei3dfHtumI11Q" instantiates="_YtZsKjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;idpMetadataGeneratorFilter&quot;" id="_Ytd9lTPvEei3dfHtumI11Q" instantiates="_YtZsKzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;idpMetadataDisplayFilter&quot;" id="_Ytd9ljPvEei3dfHtumI11Q" instantiates="_YtaTMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;zoneAwareIdpMetadataGenerator&quot;" id="_YtekoDPvEei3dfHtumI11Q" instantiates="_YtaTMTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;idpExtendedMetaData&quot;" id="_YtekoTPvEei3dfHtumI11Q" instantiates="_YtaTMjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;samlIdpAlias&quot;" id="_YtekojPvEei3dfHtumI11Q" instantiates="_YtcvdDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;samlIdpEntityID&quot;" id="_YtekozPvEei3dfHtumI11Q" instantiates="_YtcvdDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;spMetaDataProviders&quot;" id="_YtekpDPvEei3dfHtumI11Q" instantiates="_YtaTNDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;defaultSamlConfig&quot;" id="_YtekpTPvEei3dfHtumI11Q" instantiates="_YtaTNTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;scimUserProvisioning&quot;" id="_YuClVjPvEei3dfHtumI11Q" instantiates="_YuAJEDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;globalPasswordPolicy&quot;" id="_YuClVzPvEei3dfHtumI11Q" instantiates="_YuAJETPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;defaultUaaPasswordPolicy&quot;" id="_YuClWDPvEei3dfHtumI11Q" instantiates="_YuAJETPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;passwordEventPublisher&quot;" id="_YuClWTPvEei3dfHtumI11Q" instantiates="_YuAJEjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;scimEventPublisher&quot;" id="_YuDMYDPvEei3dfHtumI11Q" instantiates="_YuAJEzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;scimGroupProvisioning&quot;" id="_YuDMYTPvEei3dfHtumI11Q" instantiates="_YuAJFDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;groupMembershipManager&quot;" id="_YuDMYjPvEei3dfHtumI11Q" instantiates="_YuAJFTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;externalGroupMembershipManager&quot;" id="_YuDMYzPvEei3dfHtumI11Q" instantiates="_YuAJFjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;scimUserEndpoints&quot;" id="_YuDMZDPvEei3dfHtumI11Q" instantiates="_YuAJFzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;scimGroupEndpoints&quot;" id="_YuDMZTPvEei3dfHtumI11Q" instantiates="_YuAJGDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionIdleTimeoutSetter&quot;" id="_YuVgTDPvEei3dfHtumI11Q" instantiates="_YuU5MDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urlCache&quot;" id="_YuWHUDPvEei3dfHtumI11Q" instantiates="_YuU5MTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uaaConfig&quot;" id="_YuWHUTPvEei3dfHtumI11Q" instantiates="_YuU5MjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;identityZoneValidator&quot;" id="_YuWHUjPvEei3dfHtumI11Q" instantiates="_YuU5MzPvEei3dfHtumI11Q"/>
+    <assmComponents id="_YuWHUzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mfaConfigValidator&quot;" id="_YuWHVDPvEei3dfHtumI11Q" instantiates="_YuU5NTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionCookieConfig&quot;" id="_YuWHVTPvEei3dfHtumI11Q" instantiates="_YuU5NjPvEei3dfHtumI11Q"/>
+    <assmComponents id="_YuWHVjPvEei3dfHtumI11Q" instantiates="_YuU5NzPvEei3dfHtumI11Q"/>
+    <assmComponents id="_YuWHVzPvEei3dfHtumI11Q" instantiates="_YuU5ODPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;backwardsCompatibleScopeParameter&quot;" id="_YuWHWDPvEei3dfHtumI11Q" instantiates="_YuVgQDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;disableIdTokenResponseFilter&quot;" id="_YuWHWTPvEei3dfHtumI11Q" instantiates="_YuVgQTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;foo&quot;" id="_YulX4TPvEei3dfHtumI11Q" instantiates="_YulX4DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;accessDecisionManager&quot;" id="_Yu0BYTPvEei3dfHtumI11Q" instantiates="_Yu0BYDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YpL6gDPvEei3dfHtumI11Q" property="dataSourceAccessor.dataSource" clientInstElem="_YpLTeDPvEei3dfHtumI11Q" serverInstElem="_YpLTdzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YpL6gTPvEei3dfHtumI11Q" property="flyway.dataSource" clientInstElem="_YpLTeTPvEei3dfHtumI11Q" serverInstElem="_YpLTdzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YpL6gjPvEei3dfHtumI11Q" property="flyway.baselineVersion" clientInstElem="_YpLTeTPvEei3dfHtumI11Q" serverInstElem="_YpL6gzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YpL6hDPvEei3dfHtumI11Q" property="flyway.target" clientInstElem="_YpLTeTPvEei3dfHtumI11Q" serverInstElem="_YpL6hTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YpL6hjPvEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_YpLTejPvEei3dfHtumI11Q" serverInstElem="_YpLTdzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Yps37jPvEei3dfHtumI11Q" property="applicationProperties.propertiesArray" clientInstElem="_Yps36TPvEei3dfHtumI11Q" serverInstElem="_Yps37zPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Yps38DPvEei3dfHtumI11Q" clientInstElem="_Yps36jPvEei3dfHtumI11Q" serverInstElem="_Yps38TPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ypte8DPvEei3dfHtumI11Q" clientInstElem="_Yps36jPvEei3dfHtumI11Q" serverInstElem="_Ypte8TPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ypte8jPvEei3dfHtumI11Q" clientInstElem="_Yps36jPvEei3dfHtumI11Q" serverInstElem="_Ypte8zPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ypte9DPvEei3dfHtumI11Q" clientInstElem="_Yps37TPvEei3dfHtumI11Q" serverInstElem="_Ypte9TPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YqosCTPvEei3dfHtumI11Q" clientInstElem="_YqosBTPvEei3dfHtumI11Q" serverInstElem="_YqosCDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YqosCjPvEei3dfHtumI11Q" clientInstElem="_YqosBTPvEei3dfHtumI11Q" serverInstElem="_YqosBzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YqosCzPvEei3dfHtumI11Q" clientInstElem="_YqosBzPvEei3dfHtumI11Q" serverInstElem="_YqosDDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YqosDTPvEei3dfHtumI11Q" property="jdbcAuditService.timeService" clientInstElem="_YqosBzPvEei3dfHtumI11Q" serverInstElem="_YqosDjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YrEJ1jPvEei3dfHtumI11Q" property="codeStoreEndpoints.expiringCodeStore" clientInstElem="_YrEJ1TPvEei3dfHtumI11Q" serverInstElem="_YrEJ1zPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YrEJ2DPvEei3dfHtumI11Q" property="codeStoreEndpoints.messageConverters" clientInstElem="_YrEJ1TPvEei3dfHtumI11Q" serverInstElem="_YrEJ2TPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YrTaYjPvEei3dfHtumI11Q" property="keystoneLoginAuthenticationMgr.userDatabase" clientInstElem="_YrTaYTPvEei3dfHtumI11Q" serverInstElem="_YrTaYzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YsNZWjPvEei3dfHtumI11Q" clientInstElem="_YsNZVjPvEei3dfHtumI11Q" serverInstElem="_YsNZWzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YsNZXDPvEei3dfHtumI11Q" property="jdbcClientDetailsService.passwordEncoder" clientInstElem="_YsNZVjPvEei3dfHtumI11Q" serverInstElem="_YsNZXTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YsNZXjPvEei3dfHtumI11Q" property="clientDetailsService.delegate" clientInstElem="_YsNZVzPvEei3dfHtumI11Q" serverInstElem="_YsNZVjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YsNZXzPvEei3dfHtumI11Q" property="clientDetailsService.jdbcTemplate" clientInstElem="_YsNZVzPvEei3dfHtumI11Q" serverInstElem="_YsNZYDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YsNZYTPvEei3dfHtumI11Q" property="clientDetailsService.pagingListFactory" clientInstElem="_YsNZVzPvEei3dfHtumI11Q" serverInstElem="_YsNZYjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YsOAYDPvEei3dfHtumI11Q" property="jdbcClientMetadataProvisioning.clientDetailsService" clientInstElem="_YsNZWDPvEei3dfHtumI11Q" serverInstElem="_YsNZVjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YsOAYTPvEei3dfHtumI11Q" property="jdbcClientMetadataProvisioning.template" clientInstElem="_YsNZWDPvEei3dfHtumI11Q" serverInstElem="_YsOAYjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YsOAYzPvEei3dfHtumI11Q" clientInstElem="_YsNZWTPvEei3dfHtumI11Q" serverInstElem="_YsOAZDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YsOAZTPvEei3dfHtumI11Q" property="clientAdminBootstrap.clientRegistrationService" clientInstElem="_YsNZWTPvEei3dfHtumI11Q" serverInstElem="_YsNZVjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YsOAZjPvEei3dfHtumI11Q" property="clientAdminBootstrap.clientMetadataProvisioning" clientInstElem="_YsNZWTPvEei3dfHtumI11Q" serverInstElem="_YsNZWDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ysd4BjPvEei3dfHtumI11Q" property="oauth2RequestValidator.clientDetailsService" clientInstElem="_Ysd4BDPvEei3dfHtumI11Q" serverInstElem="_Ysd4BzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtekpjPvEei3dfHtumI11Q" property="samlIdpWebSsoProcessingFilter.authenticationManager" clientInstElem="_YtdWhTPvEei3dfHtumI11Q" serverInstElem="_YtekpzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtekqDPvEei3dfHtumI11Q" property="samlIdpWebSsoProcessingFilter.authenticationSuccessHandler" clientInstElem="_YtdWhTPvEei3dfHtumI11Q" serverInstElem="_YtdWhjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtekqTPvEei3dfHtumI11Q" property="samlIdpWebSsoProcessingFilter.contextProvider" clientInstElem="_YtdWhTPvEei3dfHtumI11Q" serverInstElem="_Ytd9lDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtekqjPvEei3dfHtumI11Q" property="samlIdpWebSsoProcessingFilter.SAMLProcessor" clientInstElem="_YtdWhTPvEei3dfHtumI11Q" serverInstElem="_Ytd9kTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfLsDPvEei3dfHtumI11Q" property="samlIdpWebSsoProcessingFilter.sessionAuthenticationStrategy" clientInstElem="_YtdWhTPvEei3dfHtumI11Q" serverInstElem="_YtfLsTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfLsjPvEei3dfHtumI11Q" property="samlIdpSuccessHandler.idpWebSsoProfile" clientInstElem="_YtdWhjPvEei3dfHtumI11Q" serverInstElem="_Ytd9kDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfLszPvEei3dfHtumI11Q" property="samlIdpSuccessHandler.metadataManager" clientInstElem="_YtdWhjPvEei3dfHtumI11Q" serverInstElem="_YtdWhzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfLtDPvEei3dfHtumI11Q" property="idpMetadataManager.configurator" clientInstElem="_YtdWhzPvEei3dfHtumI11Q" serverInstElem="_YtekpDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfLtTPvEei3dfHtumI11Q" property="idpMetadataManager.generator" clientInstElem="_YtdWhzPvEei3dfHtumI11Q" serverInstElem="_YtekoDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfLtjPvEei3dfHtumI11Q" property="idpInitiatedLogin.idpWebSsoProfile" clientInstElem="_YtdWiDPvEei3dfHtumI11Q" serverInstElem="_Ytd9kDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfLtzPvEei3dfHtumI11Q" property="idpInitiatedLogin.metadataManager" clientInstElem="_YtdWiDPvEei3dfHtumI11Q" serverInstElem="_YtdWhzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfLuDPvEei3dfHtumI11Q" property="idpInitiatedLogin.configurator" clientInstElem="_YtdWiDPvEei3dfHtumI11Q" serverInstElem="_YtekpDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfLuTPvEei3dfHtumI11Q" property="idpInitiatedLogin.contextProvider" clientInstElem="_YtdWiDPvEei3dfHtumI11Q" serverInstElem="_Ytd9lDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfLujPvEei3dfHtumI11Q" property="idpInitiatedLogin.idpSamlAuthenticationSuccessHandler" clientInstElem="_YtdWiDPvEei3dfHtumI11Q" serverInstElem="_YtdWhjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfLuzPvEei3dfHtumI11Q" property="idpWebSsoProfileImpl.metadata" clientInstElem="_Ytd9kDPvEei3dfHtumI11Q" serverInstElem="_YtdWhzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfLvDPvEei3dfHtumI11Q" property="idpWebSsoProfileImpl.processor" clientInstElem="_Ytd9kDPvEei3dfHtumI11Q" serverInstElem="_Ytd9kTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfLvTPvEei3dfHtumI11Q" property="idpWebSsoProfileImpl.samlServiceProviderProvisioning" clientInstElem="_Ytd9kDPvEei3dfHtumI11Q" serverInstElem="_YtfLvjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfLvzPvEei3dfHtumI11Q" property="idpWebSsoProfileImpl.scimUserProvisioning" clientInstElem="_Ytd9kDPvEei3dfHtumI11Q" serverInstElem="_YtfLwDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfywDPvEei3dfHtumI11Q" clientInstElem="_Ytd9kTPvEei3dfHtumI11Q" serverInstElem="_YtfywTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfywjPvEei3dfHtumI11Q" clientInstElem="_Ytd9kTPvEei3dfHtumI11Q" serverInstElem="_YtfywzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfyxDPvEei3dfHtumI11Q" property="idpNonCachingMetadataCredentialsResolver.metadataProvider" clientInstElem="_Ytd9kzPvEei3dfHtumI11Q" serverInstElem="_YtdWhzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfyxTPvEei3dfHtumI11Q" property="idpNonCachingMetadataCredentialsResolver.keyManager" clientInstElem="_Ytd9kzPvEei3dfHtumI11Q" serverInstElem="_Ytd9kjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfyxjPvEei3dfHtumI11Q" property="idpContextProvider.metadata" clientInstElem="_Ytd9lDPvEei3dfHtumI11Q" serverInstElem="_YtdWhzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfyxzPvEei3dfHtumI11Q" property="idpContextProvider.metadataResolver" clientInstElem="_Ytd9lDPvEei3dfHtumI11Q" serverInstElem="_Ytd9kzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfyyDPvEei3dfHtumI11Q" property="idpContextProvider.keyManager" clientInstElem="_Ytd9lDPvEei3dfHtumI11Q" serverInstElem="_Ytd9kjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfyyTPvEei3dfHtumI11Q" clientInstElem="_Ytd9lTPvEei3dfHtumI11Q" serverInstElem="_YtekoDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfyyjPvEei3dfHtumI11Q" property="idpMetadataGeneratorFilter.displayFilter" clientInstElem="_Ytd9lTPvEei3dfHtumI11Q" serverInstElem="_Ytd9ljPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfyyzPvEei3dfHtumI11Q" property="idpMetadataGeneratorFilter.manager" clientInstElem="_Ytd9lTPvEei3dfHtumI11Q" serverInstElem="_YtdWhzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfyzDPvEei3dfHtumI11Q" property="idpMetadataDisplayFilter.contextProvider" clientInstElem="_Ytd9ljPvEei3dfHtumI11Q" serverInstElem="_Ytd9lDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfyzTPvEei3dfHtumI11Q" property="idpMetadataDisplayFilter.manager" clientInstElem="_Ytd9ljPvEei3dfHtumI11Q" serverInstElem="_YtdWhzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtfyzjPvEei3dfHtumI11Q" property="idpMetadataDisplayFilter.keyManager" clientInstElem="_Ytd9ljPvEei3dfHtumI11Q" serverInstElem="_Ytd9kjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtgZ0DPvEei3dfHtumI11Q" property="zoneAwareIdpMetadataGenerator.extendedMetadata" clientInstElem="_YtekoDPvEei3dfHtumI11Q" serverInstElem="_YtekoTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtgZ0TPvEei3dfHtumI11Q" property="zoneAwareIdpMetadataGenerator.entityId" clientInstElem="_YtekoDPvEei3dfHtumI11Q" serverInstElem="_YtekozPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtgZ0jPvEei3dfHtumI11Q" property="zoneAwareIdpMetadataGenerator.samlWebSSOFilter" clientInstElem="_YtekoDPvEei3dfHtumI11Q" serverInstElem="_YtdWhTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtgZ0zPvEei3dfHtumI11Q" property="zoneAwareIdpMetadataGenerator.keyManager" clientInstElem="_YtekoDPvEei3dfHtumI11Q" serverInstElem="_Ytd9kjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtgZ1DPvEei3dfHtumI11Q" property="spMetaDataProviders.clientParams" clientInstElem="_YtekpDPvEei3dfHtumI11Q" serverInstElem="_YtgZ1TPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtgZ1jPvEei3dfHtumI11Q" property="spMetaDataProviders.parserPool" clientInstElem="_YtekpDPvEei3dfHtumI11Q" serverInstElem="_YtgZ1zPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtgZ2DPvEei3dfHtumI11Q" property="spMetaDataProviders.contentCache" clientInstElem="_YtekpDPvEei3dfHtumI11Q" serverInstElem="_YtgZ2TPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YtgZ2jPvEei3dfHtumI11Q" property="spMetaDataProviders.providerProvisioning" clientInstElem="_YtekpDPvEei3dfHtumI11Q" serverInstElem="_YtgZ2zPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuDMZjPvEei3dfHtumI11Q" clientInstElem="_YuClVjPvEei3dfHtumI11Q" serverInstElem="_YuDMZzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuDMaDPvEei3dfHtumI11Q" property="scimUserProvisioning.pagingListFactory" clientInstElem="_YuClVjPvEei3dfHtumI11Q" serverInstElem="_YuDMaTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuDMajPvEei3dfHtumI11Q" property="scimUserProvisioning.queryConverter" clientInstElem="_YuClVjPvEei3dfHtumI11Q" serverInstElem="_YuDMazPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuDzcDPvEei3dfHtumI11Q" property="scimUserProvisioning.timeService" clientInstElem="_YuClVjPvEei3dfHtumI11Q" serverInstElem="_YuDzcTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuDzcjPvEei3dfHtumI11Q" property="scimUserProvisioning.passwordEncoder" clientInstElem="_YuClVjPvEei3dfHtumI11Q" serverInstElem="_YuDzczPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuDzdDPvEei3dfHtumI11Q" clientInstElem="_YuClWTPvEei3dfHtumI11Q" serverInstElem="_YuClVjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuDzdTPvEei3dfHtumI11Q" clientInstElem="_YuDMYTPvEei3dfHtumI11Q" serverInstElem="_YuDzdjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuDzdzPvEei3dfHtumI11Q" property="scimGroupProvisioning.pagingListFactory" clientInstElem="_YuDMYTPvEei3dfHtumI11Q" serverInstElem="_YuDzeDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuDzeTPvEei3dfHtumI11Q" property="groupMembershipManager.jdbcTemplate" clientInstElem="_YuDMYjPvEei3dfHtumI11Q" serverInstElem="_YuDzejPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuDzezPvEei3dfHtumI11Q" property="groupMembershipManager.scimGroupProvisioning" clientInstElem="_YuDMYjPvEei3dfHtumI11Q" serverInstElem="_YuDMYTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuDzfDPvEei3dfHtumI11Q" property="groupMembershipManager.scimUserProvisioning" clientInstElem="_YuDMYjPvEei3dfHtumI11Q" serverInstElem="_YuClVjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuDzfTPvEei3dfHtumI11Q" property="groupMembershipManager.zoneProvisioning" clientInstElem="_YuDMYjPvEei3dfHtumI11Q" serverInstElem="_YuEagDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuEagTPvEei3dfHtumI11Q" property="externalGroupMembershipManager.jdbcTemplate" clientInstElem="_YuDMYzPvEei3dfHtumI11Q" serverInstElem="_YuEagjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuEagzPvEei3dfHtumI11Q" property="externalGroupMembershipManager.scimGroupProvisioning" clientInstElem="_YuDMYzPvEei3dfHtumI11Q" serverInstElem="_YuDMYTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuEahDPvEei3dfHtumI11Q" property="scimUserEndpoints.scimUserProvisioning" clientInstElem="_YuDMZDPvEei3dfHtumI11Q" serverInstElem="_YuClVjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuEahTPvEei3dfHtumI11Q" property="scimUserEndpoints.identityProviderProvisioning" clientInstElem="_YuDMZDPvEei3dfHtumI11Q" serverInstElem="_YuEahjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuEahzPvEei3dfHtumI11Q" property="scimUserEndpoints.scimUserResourceMonitor" clientInstElem="_YuDMZDPvEei3dfHtumI11Q" serverInstElem="_YuClVjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuEaiDPvEei3dfHtumI11Q" property="scimUserEndpoints.scimGroupMembershipManager" clientInstElem="_YuDMZDPvEei3dfHtumI11Q" serverInstElem="_YuDMYjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuEaiTPvEei3dfHtumI11Q" property="scimUserEndpoints.approvalStore" clientInstElem="_YuDMZDPvEei3dfHtumI11Q" serverInstElem="_YuEaijPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuEaizPvEei3dfHtumI11Q" property="scimUserEndpoints.statuses" clientInstElem="_YuDMZDPvEei3dfHtumI11Q" serverInstElem="_YuEajDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuEajTPvEei3dfHtumI11Q" property="scimUserEndpoints.messageConverters" clientInstElem="_YuDMZDPvEei3dfHtumI11Q" serverInstElem="_YuEajjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuFBkDPvEei3dfHtumI11Q" property="scimUserEndpoints.passwordValidator" clientInstElem="_YuDMZDPvEei3dfHtumI11Q" serverInstElem="_YuFBkTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuFBkjPvEei3dfHtumI11Q" property="scimUserEndpoints.codeStore" clientInstElem="_YuDMZDPvEei3dfHtumI11Q" serverInstElem="_YuFBkzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuFBlDPvEei3dfHtumI11Q" property="scimUserEndpoints.mfaCredentialsProvisioning" clientInstElem="_YuDMZDPvEei3dfHtumI11Q" serverInstElem="_YuFBlTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuFBljPvEei3dfHtumI11Q" property="scimGroupEndpoints.scimGroupProvisioning" clientInstElem="_YuDMZTPvEei3dfHtumI11Q" serverInstElem="_YuDMYTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuFBlzPvEei3dfHtumI11Q" property="scimGroupEndpoints.membershipManager" clientInstElem="_YuDMZTPvEei3dfHtumI11Q" serverInstElem="_YuDMYjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuFBmDPvEei3dfHtumI11Q" property="scimGroupEndpoints.statuses" clientInstElem="_YuDMZTPvEei3dfHtumI11Q" serverInstElem="_YuFBmTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuFBmjPvEei3dfHtumI11Q" property="scimGroupEndpoints.messageConverters" clientInstElem="_YuDMZTPvEei3dfHtumI11Q" serverInstElem="_YuFBmzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuFBnDPvEei3dfHtumI11Q" property="scimGroupEndpoints.externalMembershipManager" clientInstElem="_YuDMZTPvEei3dfHtumI11Q" serverInstElem="_YuDMYzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuWuYDPvEei3dfHtumI11Q" property="urlCache.ticker" clientInstElem="_YuWHUDPvEei3dfHtumI11Q" serverInstElem="_YuWuYTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuWuYjPvEei3dfHtumI11Q" clientInstElem="_YuWHUTPvEei3dfHtumI11Q" serverInstElem="_YuWuYzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuWuZDPvEei3dfHtumI11Q" property="identityZoneValidator.configValidator" clientInstElem="_YuWHUjPvEei3dfHtumI11Q" serverInstElem="_YuWuZTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuWuZjPvEei3dfHtumI11Q" property="mfaConfigValidator.mfaProviderProvisioning" clientInstElem="_YuWHVDPvEei3dfHtumI11Q" serverInstElem="_YuWuZzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YuWuaDPvEei3dfHtumI11Q" clientInstElem="_YuWuYTPvEei3dfHtumI11Q" serverInstElem="_YuWuaTPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="cloudfoundry.uaa_spec">
+    <specConnections refID="_Yu3rwDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3rwTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3rwjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3rwzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3rxDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3rxTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3rxjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3rxzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3ryDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3ryTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3ryjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3ryzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3rzDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3rzTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3rzjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3rzzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r0DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r0TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r0jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r0zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r1DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r1TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r1jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r1zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r2DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r2TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r2jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r2zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r3DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r3TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r3jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r3zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r4DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r4TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r4jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r4zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r5DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r5TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r5jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r5zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r6DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r6TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r6jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r6zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r7DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r7TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r7jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r7zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r8DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r8TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r8jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r8zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r9DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r9TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r9jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r9zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r-DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r-TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r-jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r-zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r_DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r_TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r_jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3r_zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sADPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sATPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sAjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sAzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sBDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sBTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sBjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sBzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sCDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sCTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sCjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sCzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sDDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sDTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sDjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sDzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sEDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sETPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sEjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sEzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sFDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sFTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sFjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sFzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sGDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sGTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sGjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sGzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sHDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sHTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sHjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sHzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sIDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sITPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sIjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_Yu3sIzPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

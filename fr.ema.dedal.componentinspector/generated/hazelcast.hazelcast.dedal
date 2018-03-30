@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="hazelcast.hazelcast">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="hazelcast.hazelcast_config" implements="//@architectureDescriptions[name='hazelcast.hazelcast_spec']">
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_TkjtkDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_TlmPYDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_TnFdIDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_TnrTADPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_Toa54DPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_Tot00DPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_TpBW0DPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_TpdbsDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_TqgkkDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_TrZVYDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_TswnUDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_TtWdMDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_TuGEEDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_TuGrIDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_TujXEDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_TvADADPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="hazelcast.hazelcast_asm" instantiates="//@architectureDescriptions[name='hazelcast.hazelcast_config']">
+    <assmComponents id="_TkjtkTPwEei3dfHtumI11Q" instantiates="_TkjtkDPwEei3dfHtumI11Q"/>
+    <assmComponents id="_TlvZUDPwEei3dfHtumI11Q" instantiates="_TlmPYDPwEei3dfHtumI11Q"/>
+    <assmComponents id="_TnFdITPwEei3dfHtumI11Q" instantiates="_TnFdIDPwEei3dfHtumI11Q"/>
+    <assmComponents id="_TnrTATPwEei3dfHtumI11Q" instantiates="_TnrTADPwEei3dfHtumI11Q"/>
+    <assmComponents id="_Toa54TPwEei3dfHtumI11Q" instantiates="_Toa54DPwEei3dfHtumI11Q"/>
+    <assmComponents id="_Tot00TPwEei3dfHtumI11Q" instantiates="_Tot00DPwEei3dfHtumI11Q"/>
+    <assmComponents id="_TpBW0TPwEei3dfHtumI11Q" instantiates="_TpBW0DPwEei3dfHtumI11Q"/>
+    <assmComponents id="_TpdbsTPwEei3dfHtumI11Q" instantiates="_TpdbsDPwEei3dfHtumI11Q"/>
+    <assmComponents id="_TqgkkTPwEei3dfHtumI11Q" instantiates="_TqgkkDPwEei3dfHtumI11Q"/>
+    <assmComponents id="_TrZVYTPwEei3dfHtumI11Q" instantiates="_TrZVYDPwEei3dfHtumI11Q"/>
+    <assmComponents id="_TswnUTPwEei3dfHtumI11Q" instantiates="_TswnUDPwEei3dfHtumI11Q"/>
+    <assmComponents id="_TtWdMTPwEei3dfHtumI11Q" instantiates="_TtWdMDPwEei3dfHtumI11Q"/>
+    <assmComponents id="_TuGEETPwEei3dfHtumI11Q" instantiates="_TuGEEDPwEei3dfHtumI11Q"/>
+    <assmComponents id="_TuGrITPwEei3dfHtumI11Q" instantiates="_TuGrIDPwEei3dfHtumI11Q"/>
+    <assmComponents id="_TujXETPwEei3dfHtumI11Q" instantiates="_TujXEDPwEei3dfHtumI11Q"/>
+    <assmComponents id="_TvADATPwEei3dfHtumI11Q" instantiates="_TvADADPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="hazelcast.hazelcast_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

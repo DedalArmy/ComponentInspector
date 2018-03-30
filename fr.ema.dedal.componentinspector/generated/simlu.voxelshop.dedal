@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="simlu.voxelshop">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="simlu.voxelshop_config" implements="//@architectureDescriptions[name='simlu.voxelshop_spec']">
+    <configComponents name="&quot;com.vitco.app.manager.error.ErrorHandler&quot;" id="_07X2YDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.MethodInvokingFactoryBean&quot;" id="_07X2YTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.console.Console&quot;" id="_07X2YjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.console.ConsoleView&quot;" id="_07X2YzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.pref.Preferences&quot;" id="_07X2ZDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.lang.LangSelector&quot;" id="_07X2ZTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.action.ActionManager&quot;" id="_07X2ZjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.action.ActionGroupManager&quot;" id="_07X2ZzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.action.ComplexActionManager&quot;" id="_07X2aDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.thread.ThreadManager&quot;" id="_07X2aTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.texture.TextureManager&quot;" id="_07X2ajPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.coloradjuster.ColorAdjusterView&quot;" id="_07X2azPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.shortcut.ShortcutManager&quot;" id="_07X2bDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.shortcut.ShortcutManagerView&quot;" id="_07X2bTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.layer.LayerView&quot;" id="_07X2bjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.menu.MenuGenerator&quot;" id="_07X2bzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.menu.MainMenuLogic&quot;" id="_07X2cDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.menu.ToolBarLogic&quot;" id="_07X2cTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.menu.SelectBarLogic&quot;" id="_07X2cjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.menu.OptionBarLogic&quot;" id="_07X2czPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.core.data.Data&quot;" id="_07X2dDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.mainview.MainView&quot;" id="_07X2dTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.sideview.SideView&quot;" id="_07X2djPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.updater.Updater&quot;" id="_07X2dzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.async.AsyncActionManager&quot;" id="_07X2eDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.WindowManager&quot;" id="_07X2eTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.error.ErrorHandler&quot;" id="_070iUDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.MethodInvokingFactoryBean&quot;" id="_070iUTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.console.Console&quot;" id="_070iUjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.console.ConsoleView&quot;" id="_070iUzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.pref.Preferences&quot;" id="_070iVDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.lang.LangSelector&quot;" id="_070iVTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.action.ActionManager&quot;" id="_070iVjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.action.ActionGroupManager&quot;" id="_070iVzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.action.ComplexActionManager&quot;" id="_070iWDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.thread.ThreadManager&quot;" id="_070iWTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.texture.TextureManager&quot;" id="_070iWjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.coloradjuster.ColorAdjusterView&quot;" id="_070iWzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.shortcut.ShortcutManager&quot;" id="_070iXDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.shortcut.ShortcutManagerView&quot;" id="_070iXTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.layer.LayerView&quot;" id="_070iXjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.menu.MenuGenerator&quot;" id="_070iXzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.menu.MainMenuLogic&quot;" id="_070iYDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.menu.ToolBarLogic&quot;" id="_070iYTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.menu.SelectBarLogic&quot;" id="_070iYjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.menu.OptionBarLogic&quot;" id="_070iYzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.core.data.Data&quot;" id="_070iZDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.mainview.MainView&quot;" id="_079sQDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.content.sideview.SideView&quot;" id="_079sQTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.updater.Updater&quot;" id="_079sQjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.manager.async.AsyncActionManager&quot;" id="_079sQzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vitco.app.layout.WindowManager&quot;" id="_079sRDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07X2ejPyEei3dfHtumI11Q" property="&quot;langSelector&quot;" clientClassElem="_07X2YDPyEei3dfHtumI11Q" serverClassElem="_07X2ZTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07X2ezPyEei3dfHtumI11Q" property="&quot;console&quot;" clientClassElem="_07X2YDPyEei3dfHtumI11Q" serverClassElem="_07X2YjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07X2fDPyEei3dfHtumI11Q" property="&quot;arguments&quot;" clientClassElem="_07X2YTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07X2fTPyEei3dfHtumI11Q" property="&quot;console&quot;" clientClassElem="_07X2YzPyEei3dfHtumI11Q" serverClassElem="_07X2YjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07X2fjPyEei3dfHtumI11Q" property="&quot;errorHandler&quot;" clientClassElem="_07X2ZDPyEei3dfHtumI11Q" serverClassElem="_07X2YDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07X2fzPyEei3dfHtumI11Q" property="&quot;langSelector&quot;" clientClassElem="_07X2azPyEei3dfHtumI11Q" serverClassElem="_07X2ZTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07X2gDPyEei3dfHtumI11Q" property="&quot;langSelector&quot;" clientClassElem="_07X2bDPyEei3dfHtumI11Q" serverClassElem="_07X2ZTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07X2gTPyEei3dfHtumI11Q" property="&quot;actionManager&quot;" clientClassElem="_07X2bDPyEei3dfHtumI11Q" serverClassElem="_07X2ZjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07X2gjPyEei3dfHtumI11Q" property="&quot;preferences&quot;" clientClassElem="_07X2bDPyEei3dfHtumI11Q" serverClassElem="_07X2ZDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07X2gzPyEei3dfHtumI11Q" property="&quot;errorHandler&quot;" clientClassElem="_07X2bDPyEei3dfHtumI11Q" serverClassElem="_07X2YDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07X2hDPyEei3dfHtumI11Q" property="&quot;langSelector&quot;" clientClassElem="_07X2bTPyEei3dfHtumI11Q" serverClassElem="_07X2ZTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07X2hTPyEei3dfHtumI11Q" property="&quot;shortcutManager&quot;" clientClassElem="_07X2bTPyEei3dfHtumI11Q" serverClassElem="_07X2bDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07X2hjPyEei3dfHtumI11Q" property="&quot;preferences&quot;" clientClassElem="_07X2bTPyEei3dfHtumI11Q" serverClassElem="_07X2ZDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07X2hzPyEei3dfHtumI11Q" property="&quot;shortcutManager&quot;" clientClassElem="_07X2bzPyEei3dfHtumI11Q" serverClassElem="_07X2bDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07X2iDPyEei3dfHtumI11Q" property="&quot;langSelector&quot;" clientClassElem="_07X2bzPyEei3dfHtumI11Q" serverClassElem="_07X2ZTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07X2iTPyEei3dfHtumI11Q" property="&quot;actionManager&quot;" clientClassElem="_07X2bzPyEei3dfHtumI11Q" serverClassElem="_07X2ZjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnYDPyEei3dfHtumI11Q" property="&quot;complexActionManager&quot;" clientClassElem="_07X2bzPyEei3dfHtumI11Q" serverClassElem="_07X2aDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnYTPyEei3dfHtumI11Q" property="&quot;errorHandler&quot;" clientClassElem="_07X2bzPyEei3dfHtumI11Q" serverClassElem="_07X2YDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnYjPyEei3dfHtumI11Q" property="&quot;langSelector&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07X2ZTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnYzPyEei3dfHtumI11Q" property="&quot;actionManager&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07X2ZjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnZDPyEei3dfHtumI11Q" property="&quot;complexActionManager&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07X2aDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnZTPyEei3dfHtumI11Q" property="&quot;preferences&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07X2ZDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnZjPyEei3dfHtumI11Q" property="&quot;errorHandler&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07X2YDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnZzPyEei3dfHtumI11Q" property="&quot;data&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07X2dDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnaDPyEei3dfHtumI11Q" property="&quot;shortcutManager&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07X2bDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnaTPyEei3dfHtumI11Q" property="&quot;barLinkageMap&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07hnajPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnazPyEei3dfHtumI11Q" property="&quot;barLinkageMap&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07hnbDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnbTPyEei3dfHtumI11Q" property="&quot;barLinkageMap&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07hnbjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnbzPyEei3dfHtumI11Q" property="&quot;barLinkageMap&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07hncDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hncTPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07hncjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnczPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07hndDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hndTPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07hndjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hndzPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07hneDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hneTPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07hnejPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnezPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07hnfDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnfTPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07hnfjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnfzPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07hngDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hngTPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07hngjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hngzPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07hnhDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnhTPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07hnhjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hnhzPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07hniDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_07hniTPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_07X2eTPyEei3dfHtumI11Q" serverClassElem="_07hnijPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sRTPyEei3dfHtumI11Q" property="&quot;langSelector&quot;" clientClassElem="_070iUDPyEei3dfHtumI11Q" serverClassElem="_070iVTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sRjPyEei3dfHtumI11Q" property="&quot;console&quot;" clientClassElem="_070iUDPyEei3dfHtumI11Q" serverClassElem="_070iUjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sRzPyEei3dfHtumI11Q" property="&quot;arguments&quot;" clientClassElem="_070iUTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sSDPyEei3dfHtumI11Q" property="&quot;console&quot;" clientClassElem="_070iUzPyEei3dfHtumI11Q" serverClassElem="_070iUjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sSTPyEei3dfHtumI11Q" property="&quot;errorHandler&quot;" clientClassElem="_070iVDPyEei3dfHtumI11Q" serverClassElem="_070iUDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sSjPyEei3dfHtumI11Q" property="&quot;langSelector&quot;" clientClassElem="_070iWzPyEei3dfHtumI11Q" serverClassElem="_070iVTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sSzPyEei3dfHtumI11Q" property="&quot;langSelector&quot;" clientClassElem="_070iXDPyEei3dfHtumI11Q" serverClassElem="_070iVTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sTDPyEei3dfHtumI11Q" property="&quot;actionManager&quot;" clientClassElem="_070iXDPyEei3dfHtumI11Q" serverClassElem="_070iVjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sTTPyEei3dfHtumI11Q" property="&quot;preferences&quot;" clientClassElem="_070iXDPyEei3dfHtumI11Q" serverClassElem="_070iVDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sTjPyEei3dfHtumI11Q" property="&quot;errorHandler&quot;" clientClassElem="_070iXDPyEei3dfHtumI11Q" serverClassElem="_070iUDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sTzPyEei3dfHtumI11Q" property="&quot;langSelector&quot;" clientClassElem="_070iXTPyEei3dfHtumI11Q" serverClassElem="_070iVTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sUDPyEei3dfHtumI11Q" property="&quot;shortcutManager&quot;" clientClassElem="_070iXTPyEei3dfHtumI11Q" serverClassElem="_070iXDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sUTPyEei3dfHtumI11Q" property="&quot;preferences&quot;" clientClassElem="_070iXTPyEei3dfHtumI11Q" serverClassElem="_070iVDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sUjPyEei3dfHtumI11Q" property="&quot;shortcutManager&quot;" clientClassElem="_070iXzPyEei3dfHtumI11Q" serverClassElem="_070iXDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sUzPyEei3dfHtumI11Q" property="&quot;langSelector&quot;" clientClassElem="_070iXzPyEei3dfHtumI11Q" serverClassElem="_070iVTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sVDPyEei3dfHtumI11Q" property="&quot;actionManager&quot;" clientClassElem="_070iXzPyEei3dfHtumI11Q" serverClassElem="_070iVjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sVTPyEei3dfHtumI11Q" property="&quot;complexActionManager&quot;" clientClassElem="_070iXzPyEei3dfHtumI11Q" serverClassElem="_070iWDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sVjPyEei3dfHtumI11Q" property="&quot;errorHandler&quot;" clientClassElem="_070iXzPyEei3dfHtumI11Q" serverClassElem="_070iUDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sVzPyEei3dfHtumI11Q" property="&quot;langSelector&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_070iVTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sWDPyEei3dfHtumI11Q" property="&quot;actionManager&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_070iVjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sWTPyEei3dfHtumI11Q" property="&quot;complexActionManager&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_070iWDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sWjPyEei3dfHtumI11Q" property="&quot;preferences&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_070iVDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sWzPyEei3dfHtumI11Q" property="&quot;errorHandler&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_070iUDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sXDPyEei3dfHtumI11Q" property="&quot;data&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_070iZDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sXTPyEei3dfHtumI11Q" property="&quot;shortcutManager&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_070iXDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sXjPyEei3dfHtumI11Q" property="&quot;barLinkageMap&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_079sXzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sYDPyEei3dfHtumI11Q" property="&quot;barLinkageMap&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_079sYTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sYjPyEei3dfHtumI11Q" property="&quot;barLinkageMap&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_079sYzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sZDPyEei3dfHtumI11Q" property="&quot;barLinkageMap&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_079sZTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sZjPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_079sZzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079saDPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_079saTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sajPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_079sazPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sbDPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_079sbTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sbjPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_079sbzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079scDPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_079scTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079scjPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_079sczPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sdDPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_079sdTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sdjPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_079sdzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079seDPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_079seTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sejPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_079sezPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sfDPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_079sfTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_079sfjPyEei3dfHtumI11Q" property="&quot;frameLinkageMap&quot;" clientClassElem="_079sRDPyEei3dfHtumI11Q" serverClassElem="_079sfzPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="simlu.voxelshop_asm" instantiates="//@architectureDescriptions[name='simlu.voxelshop_config']">
+    <assmComponents name="ErrorHandler" id="_07hnizPyEei3dfHtumI11Q" instantiates="_07X2YDPyEei3dfHtumI11Q"/>
+    <assmComponents id="_07hnjDPyEei3dfHtumI11Q" instantiates="_07X2YTPyEei3dfHtumI11Q"/>
+    <assmComponents id="_07hnjTPyEei3dfHtumI11Q" instantiates="_07X2YTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;Console&quot;" id="_07hnjjPyEei3dfHtumI11Q" instantiates="_07X2YjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ConsoleView&quot;" id="_07hnjzPyEei3dfHtumI11Q" instantiates="_07X2YzPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;Preferences&quot;" id="_07hnkDPyEei3dfHtumI11Q" instantiates="_07X2ZDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LangSelector&quot;" id="_07hnkTPyEei3dfHtumI11Q" instantiates="_07X2ZTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ActionManager&quot;" id="_07hnkjPyEei3dfHtumI11Q" instantiates="_07X2ZjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ActionGroupManager&quot;" id="_07hnkzPyEei3dfHtumI11Q" instantiates="_07X2ZzPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ComplexActionManager&quot;" id="_07hnlDPyEei3dfHtumI11Q" instantiates="_07X2aDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ThreadManager&quot;" id="_07hnlTPyEei3dfHtumI11Q" instantiates="_07X2aTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;TextureManager&quot;" id="_07hnljPyEei3dfHtumI11Q" instantiates="_07X2ajPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ColorAdjuster&quot;" id="_07hnlzPyEei3dfHtumI11Q" instantiates="_07X2azPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ShortcutManager&quot;" id="_07hnmDPyEei3dfHtumI11Q" instantiates="_07X2bDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ShortcutManagerView&quot;" id="_07hnmTPyEei3dfHtumI11Q" instantiates="_07X2bTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LayerView&quot;" id="_07hnmjPyEei3dfHtumI11Q" instantiates="_07X2bjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;MenuGenerator&quot;" id="_07hnmzPyEei3dfHtumI11Q" instantiates="_07X2bzPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;MainMenuLogic&quot;" id="_07hnnDPyEei3dfHtumI11Q" instantiates="_07X2cDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ToolBarLogic&quot;" id="_07hnnTPyEei3dfHtumI11Q" instantiates="_07X2cTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SelectBarLogic&quot;" id="_07hnnjPyEei3dfHtumI11Q" instantiates="_07X2cjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;OptionBarLogic&quot;" id="_07hnnzPyEei3dfHtumI11Q" instantiates="_07X2czPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;Data&quot;" id="_07hnoDPyEei3dfHtumI11Q" instantiates="_07X2dDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;MainView&quot;" id="_07hnoTPyEei3dfHtumI11Q" instantiates="_07X2dTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;xyView&quot;" id="_07hnojPyEei3dfHtumI11Q" instantiates="_07X2djPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;xzView&quot;" id="_07hnozPyEei3dfHtumI11Q" instantiates="_07X2djPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;yzView&quot;" id="_07hnpDPyEei3dfHtumI11Q" instantiates="_07X2djPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;Updater&quot;" id="_07hnpTPyEei3dfHtumI11Q" instantiates="_07X2dzPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;AsyncActionManager&quot;" id="_07hnpjPyEei3dfHtumI11Q" instantiates="_07X2eDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;WindowManager&quot;" id="_07hnpzPyEei3dfHtumI11Q" instantiates="_07X2eTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ErrorHandler&quot;" id="_079sgDPyEei3dfHtumI11Q" instantiates="_070iUDPyEei3dfHtumI11Q"/>
+    <assmComponents id="_079sgTPyEei3dfHtumI11Q" instantiates="_070iUTPyEei3dfHtumI11Q"/>
+    <assmComponents id="_079sgjPyEei3dfHtumI11Q" instantiates="_070iUTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;Console&quot;" id="_079sgzPyEei3dfHtumI11Q" instantiates="_070iUjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ConsoleView&quot;" id="_079shDPyEei3dfHtumI11Q" instantiates="_070iUzPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;Preferences&quot;" id="_079shTPyEei3dfHtumI11Q" instantiates="_070iVDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LangSelector&quot;" id="_079shjPyEei3dfHtumI11Q" instantiates="_070iVTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ActionManager&quot;" id="_079shzPyEei3dfHtumI11Q" instantiates="_070iVjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ActionGroupManager&quot;" id="_079siDPyEei3dfHtumI11Q" instantiates="_070iVzPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ComplexActionManager&quot;" id="_079siTPyEei3dfHtumI11Q" instantiates="_070iWDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ThreadManager&quot;" id="_079sijPyEei3dfHtumI11Q" instantiates="_070iWTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;TextureManager&quot;" id="_079sizPyEei3dfHtumI11Q" instantiates="_070iWjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ColorAdjuster&quot;" id="_079sjDPyEei3dfHtumI11Q" instantiates="_070iWzPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ShortcutManager&quot;" id="_079sjTPyEei3dfHtumI11Q" instantiates="_070iXDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ShortcutManagerView&quot;" id="_079sjjPyEei3dfHtumI11Q" instantiates="_070iXTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LayerView&quot;" id="_079sjzPyEei3dfHtumI11Q" instantiates="_070iXjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;MenuGenerator&quot;" id="_079skDPyEei3dfHtumI11Q" instantiates="_070iXzPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;MainMenuLogic&quot;" id="_079skTPyEei3dfHtumI11Q" instantiates="_070iYDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ToolBarLogic&quot;" id="_079skjPyEei3dfHtumI11Q" instantiates="_070iYTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SelectBarLogic&quot;" id="_079skzPyEei3dfHtumI11Q" instantiates="_070iYjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;OptionBarLogic&quot;" id="_079slDPyEei3dfHtumI11Q" instantiates="_070iYzPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;Data&quot;" id="_079slTPyEei3dfHtumI11Q" instantiates="_070iZDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;MainView&quot;" id="_079sljPyEei3dfHtumI11Q" instantiates="_079sQDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;xyView&quot;" id="_079slzPyEei3dfHtumI11Q" instantiates="_079sQTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;xzView&quot;" id="_079smDPyEei3dfHtumI11Q" instantiates="_079sQTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;yzView&quot;" id="_079smTPyEei3dfHtumI11Q" instantiates="_079sQTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;Updater&quot;" id="_079smjPyEei3dfHtumI11Q" instantiates="_079sQjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;AsyncActionManager&quot;" id="_079smzPyEei3dfHtumI11Q" instantiates="_079sQzPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;WindowManager&quot;" id="_079snDPyEei3dfHtumI11Q" instantiates="_079sRDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnqDPyEei3dfHtumI11Q" property="ErrorHandler.langSelector" clientInstElem="_07hnizPyEei3dfHtumI11Q" serverInstElem="_07hnkTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnqTPyEei3dfHtumI11Q" property="ErrorHandler.console" clientInstElem="_07hnizPyEei3dfHtumI11Q" serverInstElem="_07hnjjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnqjPyEei3dfHtumI11Q" clientInstElem="_07hnjTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnqzPyEei3dfHtumI11Q" property="ConsoleView.console" clientInstElem="_07hnjzPyEei3dfHtumI11Q" serverInstElem="_07hnjjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnrDPyEei3dfHtumI11Q" property="Preferences.errorHandler" clientInstElem="_07hnkDPyEei3dfHtumI11Q" serverInstElem="_07hnizPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnrTPyEei3dfHtumI11Q" property="ColorAdjuster.langSelector" clientInstElem="_07hnlzPyEei3dfHtumI11Q" serverInstElem="_07hnkTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnrjPyEei3dfHtumI11Q" property="ShortcutManager.langSelector" clientInstElem="_07hnmDPyEei3dfHtumI11Q" serverInstElem="_07hnkTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnrzPyEei3dfHtumI11Q" property="ShortcutManager.actionManager" clientInstElem="_07hnmDPyEei3dfHtumI11Q" serverInstElem="_07hnkjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnsDPyEei3dfHtumI11Q" property="ShortcutManager.preferences" clientInstElem="_07hnmDPyEei3dfHtumI11Q" serverInstElem="_07hnkDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnsTPyEei3dfHtumI11Q" property="ShortcutManager.errorHandler" clientInstElem="_07hnmDPyEei3dfHtumI11Q" serverInstElem="_07hnizPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnsjPyEei3dfHtumI11Q" property="ShortcutManagerView.langSelector" clientInstElem="_07hnmTPyEei3dfHtumI11Q" serverInstElem="_07hnkTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnszPyEei3dfHtumI11Q" property="ShortcutManagerView.shortcutManager" clientInstElem="_07hnmTPyEei3dfHtumI11Q" serverInstElem="_07hnmDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hntDPyEei3dfHtumI11Q" property="ShortcutManagerView.preferences" clientInstElem="_07hnmTPyEei3dfHtumI11Q" serverInstElem="_07hnkDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hntTPyEei3dfHtumI11Q" property="MenuGenerator.shortcutManager" clientInstElem="_07hnmzPyEei3dfHtumI11Q" serverInstElem="_07hnmDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hntjPyEei3dfHtumI11Q" property="MenuGenerator.langSelector" clientInstElem="_07hnmzPyEei3dfHtumI11Q" serverInstElem="_07hnkTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hntzPyEei3dfHtumI11Q" property="MenuGenerator.actionManager" clientInstElem="_07hnmzPyEei3dfHtumI11Q" serverInstElem="_07hnkjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnuDPyEei3dfHtumI11Q" property="MenuGenerator.complexActionManager" clientInstElem="_07hnmzPyEei3dfHtumI11Q" serverInstElem="_07hnlDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnuTPyEei3dfHtumI11Q" property="MenuGenerator.errorHandler" clientInstElem="_07hnmzPyEei3dfHtumI11Q" serverInstElem="_07hnizPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnujPyEei3dfHtumI11Q" property="WindowManager.langSelector" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07hnkTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnuzPyEei3dfHtumI11Q" property="WindowManager.actionManager" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07hnkjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnvDPyEei3dfHtumI11Q" property="WindowManager.complexActionManager" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07hnlDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnvTPyEei3dfHtumI11Q" property="WindowManager.preferences" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07hnkDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnvjPyEei3dfHtumI11Q" property="WindowManager.errorHandler" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07hnizPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnvzPyEei3dfHtumI11Q" property="WindowManager.data" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07hnoDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnwDPyEei3dfHtumI11Q" property="WindowManager.shortcutManager" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07hnmDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnwTPyEei3dfHtumI11Q" property="WindowManager.barLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07hnwjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnwzPyEei3dfHtumI11Q" property="WindowManager.barLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07hnxDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnxTPyEei3dfHtumI11Q" property="WindowManager.barLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07hnxjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnxzPyEei3dfHtumI11Q" property="WindowManager.barLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07hnyDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnyTPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07hnyjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnyzPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07hnzDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnzTPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07hnzjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hnzzPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07hn0DPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hn0TPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07hn0jPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07hn0zPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07qxUDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07qxUTPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07qxUjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07qxUzPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07qxVDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07qxVTPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07qxVjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07qxVzPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07qxWDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07qxWTPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07qxWjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07qxWzPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07qxXDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07qxXTPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07qxXjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07qxXzPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07qxYDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_07qxYTPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_07hnpzPyEei3dfHtumI11Q" serverInstElem="_07qxYjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079snTPyEei3dfHtumI11Q" property="ErrorHandler.langSelector" clientInstElem="_079sgDPyEei3dfHtumI11Q" serverInstElem="_079shjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079snjPyEei3dfHtumI11Q" property="ErrorHandler.console" clientInstElem="_079sgDPyEei3dfHtumI11Q" serverInstElem="_079sgzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079snzPyEei3dfHtumI11Q" clientInstElem="_079sgjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079soDPyEei3dfHtumI11Q" property="ConsoleView.console" clientInstElem="_079shDPyEei3dfHtumI11Q" serverInstElem="_079sgzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079soTPyEei3dfHtumI11Q" property="Preferences.errorHandler" clientInstElem="_079shTPyEei3dfHtumI11Q" serverInstElem="_079sgDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079sojPyEei3dfHtumI11Q" property="ColorAdjuster.langSelector" clientInstElem="_079sjDPyEei3dfHtumI11Q" serverInstElem="_079shjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079sozPyEei3dfHtumI11Q" property="ShortcutManager.langSelector" clientInstElem="_079sjTPyEei3dfHtumI11Q" serverInstElem="_079shjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079spDPyEei3dfHtumI11Q" property="ShortcutManager.actionManager" clientInstElem="_079sjTPyEei3dfHtumI11Q" serverInstElem="_079shzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079spTPyEei3dfHtumI11Q" property="ShortcutManager.preferences" clientInstElem="_079sjTPyEei3dfHtumI11Q" serverInstElem="_079shTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079spjPyEei3dfHtumI11Q" property="ShortcutManager.errorHandler" clientInstElem="_079sjTPyEei3dfHtumI11Q" serverInstElem="_079sgDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079spzPyEei3dfHtumI11Q" property="ShortcutManagerView.langSelector" clientInstElem="_079sjjPyEei3dfHtumI11Q" serverInstElem="_079shjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079sqDPyEei3dfHtumI11Q" property="ShortcutManagerView.shortcutManager" clientInstElem="_079sjjPyEei3dfHtumI11Q" serverInstElem="_079sjTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079sqTPyEei3dfHtumI11Q" property="ShortcutManagerView.preferences" clientInstElem="_079sjjPyEei3dfHtumI11Q" serverInstElem="_079shTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079sqjPyEei3dfHtumI11Q" property="MenuGenerator.shortcutManager" clientInstElem="_079skDPyEei3dfHtumI11Q" serverInstElem="_079sjTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079sqzPyEei3dfHtumI11Q" property="MenuGenerator.langSelector" clientInstElem="_079skDPyEei3dfHtumI11Q" serverInstElem="_079shjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079srDPyEei3dfHtumI11Q" property="MenuGenerator.actionManager" clientInstElem="_079skDPyEei3dfHtumI11Q" serverInstElem="_079shzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079srTPyEei3dfHtumI11Q" property="MenuGenerator.complexActionManager" clientInstElem="_079skDPyEei3dfHtumI11Q" serverInstElem="_079siTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079srjPyEei3dfHtumI11Q" property="MenuGenerator.errorHandler" clientInstElem="_079skDPyEei3dfHtumI11Q" serverInstElem="_079sgDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079srzPyEei3dfHtumI11Q" property="WindowManager.langSelector" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_079shjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079ssDPyEei3dfHtumI11Q" property="WindowManager.actionManager" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_079shzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079ssTPyEei3dfHtumI11Q" property="WindowManager.complexActionManager" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_079siTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079ssjPyEei3dfHtumI11Q" property="WindowManager.preferences" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_079shTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079sszPyEei3dfHtumI11Q" property="WindowManager.errorHandler" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_079sgDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_079stDPyEei3dfHtumI11Q" property="WindowManager.data" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_079slTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdQDPyEei3dfHtumI11Q" property="WindowManager.shortcutManager" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_079sjTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdQTPyEei3dfHtumI11Q" property="WindowManager.barLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdQjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdQzPyEei3dfHtumI11Q" property="WindowManager.barLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdRDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdRTPyEei3dfHtumI11Q" property="WindowManager.barLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdRjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdRzPyEei3dfHtumI11Q" property="WindowManager.barLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdSDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdSTPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdSjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdSzPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdTDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdTTPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdTjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdTzPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdUDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdUTPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdUjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdUzPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdVDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdVTPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdVjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdVzPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdWDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdWTPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdWjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdWzPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdXDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdXTPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdXjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdXzPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdYDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdYTPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdYjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdYzPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdZDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_08HdZTPyEei3dfHtumI11Q" property="WindowManager.frameLinkageMap" clientInstElem="_079snDPyEei3dfHtumI11Q" serverInstElem="_08HdZjPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="simlu.voxelshop_spec">
+    <specConnections refID="_08kJMDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJMTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJMzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJNDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJNTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJNjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJNzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJODPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJOTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJOjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJOzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJPDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJPTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJPjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJPzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJQDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJQTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJQjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJQzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJRDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJRTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJRjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJRzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJSDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJSTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJSjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJSzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJTDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJTTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJTjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJTzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJUDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJUTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJUjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJUzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJVDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJVTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJVjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJVzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJWDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJWTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJWjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJWzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJXTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJXjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJXzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJYDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJYTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJYjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJYzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJZDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJZTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJZjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJZzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJaDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJaTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJajPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJazPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJbDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJbTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJbjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJbzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJcDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJcTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJcjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJczPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJdDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJdTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJdjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJdzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJeDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJeTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJejPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJezPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJfDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJfTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJfjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJfzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJgDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJgTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJgjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_08kJgzPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

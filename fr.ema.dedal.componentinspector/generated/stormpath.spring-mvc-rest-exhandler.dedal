@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="stormpath.spring-mvc-rest-exhandler">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="stormpath.spring-mvc-rest-exhandler_config" implements="//@architectureDescriptions[name='stormpath.spring-mvc-rest-exhandler_spec']"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="stormpath.spring-mvc-rest-exhandler_asm" instantiates="//@architectureDescriptions[name='stormpath.spring-mvc-rest-exhandler_config']"/>
+  <architectureDescriptions xsi:type="dedal:Specification" name="stormpath.spring-mvc-rest-exhandler_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="hot13399.spring-mvc-mini">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="hot13399.spring-mvc-mini_config" implements="//@architectureDescriptions[name='hot13399.spring-mvc-mini_spec']">
+    <configComponents name="org.springframework.security.web.csrf.CsrfFilter" id="_dCUogDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.security.web.servlet.support.csrf.CsrfRequestDataValueProcessor" id="_dCUogTPwEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.security.web.csrf.CsrfFilter" id="_dDgUQDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.security.web.servlet.support.csrf.CsrfRequestDataValueProcessor" id="_dDgUQTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_dCUogjPwEei3dfHtumI11Q" clientClassElem="_dCUogDPwEei3dfHtumI11Q" serverClassElem="_dCUogzPwEei3dfHtumI11Q"/>
+    <configConnections refID="_dDgUQjPwEei3dfHtumI11Q" clientClassElem="_dDgUQDPwEei3dfHtumI11Q" serverClassElem="_dDgUQzPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="hot13399.spring-mvc-mini_asm" instantiates="//@architectureDescriptions[name='hot13399.spring-mvc-mini_config']">
+    <assmComponents name="csrfFilter" id="_dCUohDPwEei3dfHtumI11Q" instantiates="_dCUogDPwEei3dfHtumI11Q"/>
+    <assmComponents name="requestDataValueProcessor" id="_dCUohTPwEei3dfHtumI11Q" instantiates="_dCUogTPwEei3dfHtumI11Q"/>
+    <assmComponents name="csrfFilter" id="_dDgURDPwEei3dfHtumI11Q" instantiates="_dDgUQDPwEei3dfHtumI11Q"/>
+    <assmComponents name="requestDataValueProcessor" id="_dDgURTPwEei3dfHtumI11Q" instantiates="_dDgUQTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_dCUohjPwEei3dfHtumI11Q" clientInstElem="_dCUohDPwEei3dfHtumI11Q" serverInstElem="_dCUohzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_dDgURjPwEei3dfHtumI11Q" clientInstElem="_dDgURDPwEei3dfHtumI11Q" serverInstElem="_dDgURzPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="hot13399.spring-mvc-mini_spec">
+    <specConnections refID="_dDqFQDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_dDqFQTPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

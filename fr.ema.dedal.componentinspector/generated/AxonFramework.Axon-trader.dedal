@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="AxonFramework.Axon-trader">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="AxonFramework.Axon-trader_config" implements="//@architectureDescriptions[name='AxonFramework.Axon-trader_spec']"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="AxonFramework.Axon-trader_asm" instantiates="//@architectureDescriptions[name='AxonFramework.Axon-trader_config']"/>
+  <architectureDescriptions xsi:type="dedal:Specification" name="AxonFramework.Axon-trader_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

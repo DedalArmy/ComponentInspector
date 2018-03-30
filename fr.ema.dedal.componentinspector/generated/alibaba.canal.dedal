@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="alibaba.canal">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="alibaba.canal_config" implements="//@architectureDescriptions[name='alibaba.canal_spec']">
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.PropertyPlaceholderConfigurer&quot;" id="_VKUR0DPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.SocketAddressEditor&quot;" id="_VKUR0TPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.CustomEditorConfigurer&quot;" id="_VKUR0jPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.CanalInstanceWithSpring&quot;" id="_VKUR0zPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.common.alarm.LogAlarmHandler&quot;" id="_VKUR1DPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.MethodInvokingFactoryBean&quot;" id="_VKUR1TPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.meta.PeriodMixedMetaManager&quot;" id="_VKUR1jPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.store.memory.MemoryEventStoreWithBuffer&quot;" id="_VKUR1zPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.sink.entry.EntryEventSink&quot;" id="_VKUR2DPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.MysqlEventParser&quot;" id="_VKU44DPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.PropertyPlaceholderConfigurer&quot;" id="_VKq3IDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.SocketAddressEditor&quot;" id="_VKq3ITPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.CustomEditorConfigurer&quot;" id="_VKq3IjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.CanalInstanceWithSpring&quot;" id="_VKq3IzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.common.alarm.LogAlarmHandler&quot;" id="_VKq3JDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.meta.FileMixedMetaManager&quot;" id="_VKreMDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.store.memory.MemoryEventStoreWithBuffer&quot;" id="_VKreMTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.sink.entry.EntryEventSink&quot;" id="_VKreMjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.MysqlEventParser&quot;" id="_VKreMzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.PropertyPlaceholderConfigurer&quot;" id="_VLIKIDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.SocketAddressEditor&quot;" id="_VLIKITPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.CustomEditorConfigurer&quot;" id="_VLIKIjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.CanalInstanceWithSpring&quot;" id="_VLIKIzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.common.alarm.LogAlarmHandler&quot;" id="_VLIKJDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.meta.MemoryMetaManager&quot;" id="_VLIxMDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.store.memory.MemoryEventStoreWithBuffer&quot;" id="_VLIxMTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.sink.entry.EntryEventSink&quot;" id="_VLIxMjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.group.GroupEventParser&quot;" id="_VLIxMzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.MysqlEventParser&quot;" id="_VLIxNDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.PropertyPlaceholderConfigurer&quot;" id="_VLhLsDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.SocketAddressEditor&quot;" id="_VLhLsTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.CustomEditorConfigurer&quot;" id="_VLhLsjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.CanalInstanceWithSpring&quot;" id="_VLhLszPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.common.alarm.LogAlarmHandler&quot;" id="_VLhLtDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.meta.FileMixedMetaManager&quot;" id="_VLhLtTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.store.memory.MemoryEventStoreWithBuffer&quot;" id="_VLhLtjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.sink.entry.EntryEventSink&quot;" id="_VLhLtzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.rds.RdsLocalBinlogEventParser&quot;" id="_VLhLuDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.PropertyPlaceholderConfigurer&quot;" id="_VLzfkDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.SocketAddressEditor&quot;" id="_VLzfkTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.CustomEditorConfigurer&quot;" id="_VLzfkjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.CanalInstanceWithSpring&quot;" id="_VLzfkzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.common.alarm.LogAlarmHandler&quot;" id="_VLzflDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.meta.MemoryMetaManager&quot;" id="_VLzflTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.store.memory.MemoryEventStoreWithBuffer&quot;" id="_VL0GoDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.sink.entry.EntryEventSink&quot;" id="_VL0GoTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.MysqlEventParser&quot;" id="_VL0GojPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.PropertyPlaceholderConfigurer&quot;" id="_VMJd0DPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.tsdb.DatabaseTableMeta&quot;" id="_VMJd0TPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.druid.pool.DruidDataSource&quot;" id="_VMJd0jPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.ibatis.SqlMapClientFactoryBean&quot;" id="_VMJd0zPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.tsdb.dao.MetaHistoryDAO&quot;" id="_VMJd1DPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.tsdb.dao.MetaSnapshotDAO&quot;" id="_VMJd1TPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.PropertyPlaceholderConfigurer&quot;" id="_VMZ8gDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.tsdb.DatabaseTableMeta&quot;" id="_VMZ8gTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.druid.pool.DruidDataSource&quot;" id="_VMZ8gjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.ibatis.SqlMapClientFactoryBean&quot;" id="_VMZ8gzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.tsdb.dao.MetaHistoryDAO&quot;" id="_VMZ8hDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.tsdb.dao.MetaSnapshotDAO&quot;" id="_VMZ8hTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.PropertyPlaceholderConfigurer&quot;" id="_VMqbMDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.SocketAddressEditor&quot;" id="_VMqbMTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.CustomEditorConfigurer&quot;" id="_VMrCQDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.CanalInstanceWithSpring&quot;" id="_VMrCQTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.common.alarm.LogAlarmHandler&quot;" id="_VMrCQjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.MethodInvokingFactoryBean&quot;" id="_VMrCQzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.meta.PeriodMixedMetaManager&quot;" id="_VMrCRDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.store.memory.MemoryEventStoreWithBuffer&quot;" id="_VMrCRTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.sink.entry.EntryEventSink&quot;" id="_VMrCRjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.MysqlEventParser&quot;" id="_VMrCRzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.PropertyPlaceholderConfigurer&quot;" id="_VM-kQDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.SocketAddressEditor&quot;" id="_VM-kQTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.CustomEditorConfigurer&quot;" id="_VM-kQjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.CanalInstanceWithSpring&quot;" id="_VM-kQzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.common.alarm.LogAlarmHandler&quot;" id="_VM-kRDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.meta.FileMixedMetaManager&quot;" id="_VM-kRTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.store.memory.MemoryEventStoreWithBuffer&quot;" id="_VM-kRjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.sink.entry.EntryEventSink&quot;" id="_VM-kRzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.MysqlEventParser&quot;" id="_VM-kSDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.PropertyPlaceholderConfigurer&quot;" id="_VNQ4IDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.SocketAddressEditor&quot;" id="_VNQ4ITPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.CustomEditorConfigurer&quot;" id="_VNQ4IjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.CanalInstanceWithSpring&quot;" id="_VNQ4IzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.common.alarm.LogAlarmHandler&quot;" id="_VNQ4JDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.meta.MemoryMetaManager&quot;" id="_VNQ4JTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.store.memory.MemoryEventStoreWithBuffer&quot;" id="_VNQ4JjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.sink.entry.EntryEventSink&quot;" id="_VNQ4JzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.group.GroupEventParser&quot;" id="_VNQ4KDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.MysqlEventParser&quot;" id="_VNQ4KTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.PropertyPlaceholderConfigurer&quot;" id="_VNjMADPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.support.SocketAddressEditor&quot;" id="_VNjMATPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.CustomEditorConfigurer&quot;" id="_VNjzEDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.instance.spring.CanalInstanceWithSpring&quot;" id="_VNjzETPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.common.alarm.LogAlarmHandler&quot;" id="_VNjzEjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.meta.MemoryMetaManager&quot;" id="_VNjzEzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.store.memory.MemoryEventStoreWithBuffer&quot;" id="_VNjzFDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.sink.entry.EntryEventSink&quot;" id="_VNjzFTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.MysqlEventParser&quot;" id="_VNjzFjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.tsdb.DatabaseTableMeta&quot;" id="_VN040DPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.druid.pool.DruidDataSource&quot;" id="_VN040TPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.ibatis.SqlMapClientFactoryBean&quot;" id="_VN040jPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.tsdb.dao.MetaHistoryDAO&quot;" id="_VN040zPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.tsdb.dao.MetaSnapshotDAO&quot;" id="_VN041DPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.tsdb.DatabaseTableMeta&quot;" id="_VOEwcDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.druid.pool.DruidDataSource&quot;" id="_VOEwcTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.ibatis.SqlMapClientFactoryBean&quot;" id="_VOEwcjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.tsdb.dao.MetaHistoryDAO&quot;" id="_VOEwczPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.tsdb.dao.MetaSnapshotDAO&quot;" id="_VOEwdDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.tsdb.DatabaseTableMeta&quot;" id="_VOUoEDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.druid.pool.DruidDataSource&quot;" id="_VOUoETPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.ibatis.SqlMapClientFactoryBean&quot;" id="_VOUoEjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.tsdb.dao.MetaHistoryDAO&quot;" id="_VOUoEzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.otter.canal.parse.inbound.mysql.tsdb.dao.MetaSnapshotDAO&quot;" id="_VOUoFDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKU44TPtEei3dfHtumI11Q" property="&quot;propertyEditorRegistrars&quot;" clientClassElem="_VKUR0jPtEei3dfHtumI11Q" serverClassElem="_VKUR0TPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKU44jPtEei3dfHtumI11Q" property="&quot;eventParser&quot;" clientClassElem="_VKUR0zPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKVf8DPtEei3dfHtumI11Q" property="&quot;eventSink&quot;" clientClassElem="_VKUR0zPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKVf8TPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VKUR0zPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKVf8jPtEei3dfHtumI11Q" property="&quot;metaManager&quot;" clientClassElem="_VKUR0zPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKVf8zPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VKUR0zPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKVf9DPtEei3dfHtumI11Q" property="&quot;zooKeeperMetaManager&quot;" clientClassElem="_VKUR1jPtEei3dfHtumI11Q" serverClassElem="_VKVf9TPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKVf9jPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VKUR2DPtEei3dfHtumI11Q" serverClassElem="_VKUR1zPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKVf9zPtEei3dfHtumI11Q" property="&quot;haController&quot;" clientClassElem="_VKU44DPtEei3dfHtumI11Q" serverClassElem="_VKVf-DPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKVf-TPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VKU44DPtEei3dfHtumI11Q" serverClassElem="_VKUR1DPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKWHADPtEei3dfHtumI11Q" property="&quot;eventFilter&quot;" clientClassElem="_VKU44DPtEei3dfHtumI11Q" serverClassElem="_VKWHATPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKWHAjPtEei3dfHtumI11Q" property="&quot;eventBlackFilter&quot;" clientClassElem="_VKU44DPtEei3dfHtumI11Q" serverClassElem="_VKWHAzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKWHBDPtEei3dfHtumI11Q" property="&quot;logPositionManager&quot;" clientClassElem="_VKU44DPtEei3dfHtumI11Q" serverClassElem="_VKWHBTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKWHBjPtEei3dfHtumI11Q" property="&quot;masterInfo&quot;" clientClassElem="_VKU44DPtEei3dfHtumI11Q" serverClassElem="_VKWHBzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKWHCDPtEei3dfHtumI11Q" property="&quot;standbyInfo&quot;" clientClassElem="_VKU44DPtEei3dfHtumI11Q" serverClassElem="_VKWHCTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKWuEDPtEei3dfHtumI11Q" property="&quot;masterPosition&quot;" clientClassElem="_VKU44DPtEei3dfHtumI11Q" serverClassElem="_VKWuETPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKWuEjPtEei3dfHtumI11Q" property="&quot;standbyPosition&quot;" clientClassElem="_VKU44DPtEei3dfHtumI11Q" serverClassElem="_VKWuEzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKreNDPtEei3dfHtumI11Q" property="&quot;propertyEditorRegistrars&quot;" clientClassElem="_VKq3IjPtEei3dfHtumI11Q" serverClassElem="_VKq3ITPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKsFQDPtEei3dfHtumI11Q" property="&quot;eventParser&quot;" clientClassElem="_VKq3IzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKsFQTPtEei3dfHtumI11Q" property="&quot;eventSink&quot;" clientClassElem="_VKq3IzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKsFQjPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VKq3IzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKsFQzPtEei3dfHtumI11Q" property="&quot;metaManager&quot;" clientClassElem="_VKq3IzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKsFRDPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VKq3IzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKsFRTPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VKreMjPtEei3dfHtumI11Q" serverClassElem="_VKreMTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKsFRjPtEei3dfHtumI11Q" property="&quot;haController&quot;" clientClassElem="_VKreMzPtEei3dfHtumI11Q" serverClassElem="_VKsFRzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKssUDPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VKreMzPtEei3dfHtumI11Q" serverClassElem="_VKq3JDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKssUTPtEei3dfHtumI11Q" property="&quot;eventFilter&quot;" clientClassElem="_VKreMzPtEei3dfHtumI11Q" serverClassElem="_VKssUjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKssUzPtEei3dfHtumI11Q" property="&quot;eventBlackFilter&quot;" clientClassElem="_VKreMzPtEei3dfHtumI11Q" serverClassElem="_VKssVDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKssVTPtEei3dfHtumI11Q" property="&quot;logPositionManager&quot;" clientClassElem="_VKreMzPtEei3dfHtumI11Q" serverClassElem="_VKssVjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKssVzPtEei3dfHtumI11Q" property="&quot;masterInfo&quot;" clientClassElem="_VKreMzPtEei3dfHtumI11Q" serverClassElem="_VKssWDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKssWTPtEei3dfHtumI11Q" property="&quot;standbyInfo&quot;" clientClassElem="_VKreMzPtEei3dfHtumI11Q" serverClassElem="_VKssWjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKtTYDPtEei3dfHtumI11Q" property="&quot;masterPosition&quot;" clientClassElem="_VKreMzPtEei3dfHtumI11Q" serverClassElem="_VKtTYTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VKtTYjPtEei3dfHtumI11Q" property="&quot;standbyPosition&quot;" clientClassElem="_VKreMzPtEei3dfHtumI11Q" serverClassElem="_VKtTYzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLJYQDPtEei3dfHtumI11Q" property="&quot;propertyEditorRegistrars&quot;" clientClassElem="_VLIKIjPtEei3dfHtumI11Q" serverClassElem="_VLIKITPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLJYQTPtEei3dfHtumI11Q" property="&quot;eventParser&quot;" clientClassElem="_VLIKIzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLJYQjPtEei3dfHtumI11Q" property="&quot;eventSink&quot;" clientClassElem="_VLIKIzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLJ_UDPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VLIKIzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLJ_UTPtEei3dfHtumI11Q" property="&quot;metaManager&quot;" clientClassElem="_VLIKIzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLJ_UjPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VLIKIzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLJ_UzPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VLIxMjPtEei3dfHtumI11Q" serverClassElem="_VLIxMTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLJ_VDPtEei3dfHtumI11Q" property="&quot;eventParsers&quot;" clientClassElem="_VLIxMzPtEei3dfHtumI11Q" serverClassElem="_VLIxNDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLKmYDPtEei3dfHtumI11Q" property="&quot;haController&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLKmYTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLKmYjPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLIKJDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLKmYzPtEei3dfHtumI11Q" property="&quot;eventFilter&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLKmZDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLKmZTPtEei3dfHtumI11Q" property="&quot;eventBlackFilter&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLKmZjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLKmZzPtEei3dfHtumI11Q" property="&quot;logPositionManager&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLLNcDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLLNcTPtEei3dfHtumI11Q" property="&quot;masterInfo&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLLNcjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLLNczPtEei3dfHtumI11Q" property="&quot;standbyInfo&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLLNdDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLLNdTPtEei3dfHtumI11Q" property="&quot;masterPosition&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLLNdjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLLNdzPtEei3dfHtumI11Q" property="&quot;standbyPosition&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLLNeDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLL0gDPtEei3dfHtumI11Q" property="&quot;haController&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLL0gTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLL0gjPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLIKJDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLL0gzPtEei3dfHtumI11Q" property="&quot;eventFilter&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLL0hDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLL0hTPtEei3dfHtumI11Q" property="&quot;eventBlackFilter&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLL0hjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLL0hzPtEei3dfHtumI11Q" property="&quot;logPositionManager&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLL0iDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLMbkDPtEei3dfHtumI11Q" property="&quot;masterInfo&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLMbkTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLMbkjPtEei3dfHtumI11Q" property="&quot;standbyInfo&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLMbkzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLMblDPtEei3dfHtumI11Q" property="&quot;masterPosition&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLMblTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLMbljPtEei3dfHtumI11Q" property="&quot;standbyPosition&quot;" clientClassElem="_VLIxNDPtEei3dfHtumI11Q" serverClassElem="_VLMblzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLhywDPtEei3dfHtumI11Q" property="&quot;propertyEditorRegistrars&quot;" clientClassElem="_VLhLsjPtEei3dfHtumI11Q" serverClassElem="_VLhLsTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLhywTPtEei3dfHtumI11Q" property="&quot;eventParser&quot;" clientClassElem="_VLhLszPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLhywjPtEei3dfHtumI11Q" property="&quot;eventSink&quot;" clientClassElem="_VLhLszPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLhywzPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VLhLszPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLhyxDPtEei3dfHtumI11Q" property="&quot;metaManager&quot;" clientClassElem="_VLhLszPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLhyxTPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VLhLszPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLiZ0DPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VLhLtzPtEei3dfHtumI11Q" serverClassElem="_VLhLtjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLiZ0TPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VLhLuDPtEei3dfHtumI11Q" serverClassElem="_VLhLtDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLiZ0jPtEei3dfHtumI11Q" property="&quot;eventFilter&quot;" clientClassElem="_VLhLuDPtEei3dfHtumI11Q" serverClassElem="_VLiZ0zPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLiZ1DPtEei3dfHtumI11Q" property="&quot;eventBlackFilter&quot;" clientClassElem="_VLhLuDPtEei3dfHtumI11Q" serverClassElem="_VLiZ1TPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLiZ1jPtEei3dfHtumI11Q" property="&quot;logPositionManager&quot;" clientClassElem="_VLhLuDPtEei3dfHtumI11Q" serverClassElem="_VLiZ1zPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VLiZ2DPtEei3dfHtumI11Q" property="&quot;masterInfo&quot;" clientClassElem="_VLhLuDPtEei3dfHtumI11Q" serverClassElem="_VLiZ2TPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VL0GozPtEei3dfHtumI11Q" property="&quot;propertyEditorRegistrars&quot;" clientClassElem="_VLzfkjPtEei3dfHtumI11Q" serverClassElem="_VLzfkTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VL0GpDPtEei3dfHtumI11Q" property="&quot;eventParser&quot;" clientClassElem="_VLzfkzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VL0GpTPtEei3dfHtumI11Q" property="&quot;eventSink&quot;" clientClassElem="_VLzfkzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VL0tsDPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VLzfkzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VL0tsTPtEei3dfHtumI11Q" property="&quot;metaManager&quot;" clientClassElem="_VLzfkzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VL0tsjPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VLzfkzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VL0tszPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VL0GoTPtEei3dfHtumI11Q" serverClassElem="_VL0GoDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VL0ttDPtEei3dfHtumI11Q" property="&quot;haController&quot;" clientClassElem="_VL0GojPtEei3dfHtumI11Q" serverClassElem="_VL0ttTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VL0ttjPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VL0GojPtEei3dfHtumI11Q" serverClassElem="_VLzflDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VL0ttzPtEei3dfHtumI11Q" property="&quot;eventFilter&quot;" clientClassElem="_VL0GojPtEei3dfHtumI11Q" serverClassElem="_VL0tuDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VL0tuTPtEei3dfHtumI11Q" property="&quot;eventBlackFilter&quot;" clientClassElem="_VL0GojPtEei3dfHtumI11Q" serverClassElem="_VL0tujPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VL1UwDPtEei3dfHtumI11Q" property="&quot;logPositionManager&quot;" clientClassElem="_VL0GojPtEei3dfHtumI11Q" serverClassElem="_VL1UwTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VL1UwjPtEei3dfHtumI11Q" property="&quot;masterInfo&quot;" clientClassElem="_VL0GojPtEei3dfHtumI11Q" serverClassElem="_VL1UwzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VL1UxDPtEei3dfHtumI11Q" property="&quot;standbyInfo&quot;" clientClassElem="_VL0GojPtEei3dfHtumI11Q" serverClassElem="_VL1UxTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VL1UxjPtEei3dfHtumI11Q" property="&quot;masterPosition&quot;" clientClassElem="_VL0GojPtEei3dfHtumI11Q" serverClassElem="_VL1UxzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VL1UyDPtEei3dfHtumI11Q" property="&quot;standbyPosition&quot;" clientClassElem="_VL0GojPtEei3dfHtumI11Q" serverClassElem="_VL1UyTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMKE4DPtEei3dfHtumI11Q" property="&quot;metaHistoryDAO&quot;" clientClassElem="_VMJd0TPtEei3dfHtumI11Q" serverClassElem="_VMJd1DPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMKE4TPtEei3dfHtumI11Q" property="&quot;metaSnapshotDAO&quot;" clientClassElem="_VMJd0TPtEei3dfHtumI11Q" serverClassElem="_VMJd1TPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMKE4jPtEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_VMJd0zPtEei3dfHtumI11Q" serverClassElem="_VMJd0jPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMKE4zPtEei3dfHtumI11Q" property="&quot;sqlMapClient&quot;" clientClassElem="_VMJd1DPtEei3dfHtumI11Q" serverClassElem="_VMJd0zPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMKE5DPtEei3dfHtumI11Q" property="&quot;sqlMapClient&quot;" clientClassElem="_VMJd1TPtEei3dfHtumI11Q" serverClassElem="_VMJd0zPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMZ8hjPtEei3dfHtumI11Q" property="&quot;metaHistoryDAO&quot;" clientClassElem="_VMZ8gTPtEei3dfHtumI11Q" serverClassElem="_VMZ8hDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMajkDPtEei3dfHtumI11Q" property="&quot;metaSnapshotDAO&quot;" clientClassElem="_VMZ8gTPtEei3dfHtumI11Q" serverClassElem="_VMZ8hTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMajkTPtEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_VMZ8gzPtEei3dfHtumI11Q" serverClassElem="_VMZ8gjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMajkjPtEei3dfHtumI11Q" property="&quot;sqlMapClient&quot;" clientClassElem="_VMZ8hDPtEei3dfHtumI11Q" serverClassElem="_VMZ8gzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMajkzPtEei3dfHtumI11Q" property="&quot;sqlMapClient&quot;" clientClassElem="_VMZ8hTPtEei3dfHtumI11Q" serverClassElem="_VMZ8gzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMrCSDPtEei3dfHtumI11Q" property="&quot;propertyEditorRegistrars&quot;" clientClassElem="_VMrCQDPtEei3dfHtumI11Q" serverClassElem="_VMqbMTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMrpUDPtEei3dfHtumI11Q" property="&quot;eventParser&quot;" clientClassElem="_VMrCQTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMrpUTPtEei3dfHtumI11Q" property="&quot;eventSink&quot;" clientClassElem="_VMrCQTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMrpUjPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VMrCQTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMrpUzPtEei3dfHtumI11Q" property="&quot;metaManager&quot;" clientClassElem="_VMrCQTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMrpVDPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VMrCQTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMrpVTPtEei3dfHtumI11Q" property="&quot;zooKeeperMetaManager&quot;" clientClassElem="_VMrCRDPtEei3dfHtumI11Q" serverClassElem="_VMrpVjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMrpVzPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VMrCRjPtEei3dfHtumI11Q" serverClassElem="_VMrCRTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMsQYDPtEei3dfHtumI11Q" property="&quot;haController&quot;" clientClassElem="_VMrCRzPtEei3dfHtumI11Q" serverClassElem="_VMsQYTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMsQYjPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VMrCRzPtEei3dfHtumI11Q" serverClassElem="_VMrCQjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMsQYzPtEei3dfHtumI11Q" property="&quot;eventFilter&quot;" clientClassElem="_VMrCRzPtEei3dfHtumI11Q" serverClassElem="_VMsQZDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMsQZTPtEei3dfHtumI11Q" property="&quot;logPositionManager&quot;" clientClassElem="_VMrCRzPtEei3dfHtumI11Q" serverClassElem="_VMsQZjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMsQZzPtEei3dfHtumI11Q" property="&quot;masterInfo&quot;" clientClassElem="_VMrCRzPtEei3dfHtumI11Q" serverClassElem="_VMsQaDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMsQaTPtEei3dfHtumI11Q" property="&quot;standbyInfo&quot;" clientClassElem="_VMrCRzPtEei3dfHtumI11Q" serverClassElem="_VMsQajPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMsQazPtEei3dfHtumI11Q" property="&quot;masterPosition&quot;" clientClassElem="_VMrCRzPtEei3dfHtumI11Q" serverClassElem="_VMsQbDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VMsQbTPtEei3dfHtumI11Q" property="&quot;standbyPosition&quot;" clientClassElem="_VMrCRzPtEei3dfHtumI11Q" serverClassElem="_VMs3cDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VM-kSTPtEei3dfHtumI11Q" property="&quot;propertyEditorRegistrars&quot;" clientClassElem="_VM-kQjPtEei3dfHtumI11Q" serverClassElem="_VM-kQTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VM_LUDPtEei3dfHtumI11Q" property="&quot;eventParser&quot;" clientClassElem="_VM-kQzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VM_LUTPtEei3dfHtumI11Q" property="&quot;eventSink&quot;" clientClassElem="_VM-kQzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VM_LUjPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VM-kQzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VM_LUzPtEei3dfHtumI11Q" property="&quot;metaManager&quot;" clientClassElem="_VM-kQzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VM_LVDPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VM-kQzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VM_LVTPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VM-kRzPtEei3dfHtumI11Q" serverClassElem="_VM-kRjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VM_LVjPtEei3dfHtumI11Q" property="&quot;haController&quot;" clientClassElem="_VM-kSDPtEei3dfHtumI11Q" serverClassElem="_VM_LVzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VM_LWDPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VM-kSDPtEei3dfHtumI11Q" serverClassElem="_VM-kRDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VM_LWTPtEei3dfHtumI11Q" property="&quot;eventFilter&quot;" clientClassElem="_VM-kSDPtEei3dfHtumI11Q" serverClassElem="_VM_LWjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VM_yYDPtEei3dfHtumI11Q" property="&quot;logPositionManager&quot;" clientClassElem="_VM-kSDPtEei3dfHtumI11Q" serverClassElem="_VM_yYTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VM_yYjPtEei3dfHtumI11Q" property="&quot;masterInfo&quot;" clientClassElem="_VM-kSDPtEei3dfHtumI11Q" serverClassElem="_VM_yYzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VM_yZDPtEei3dfHtumI11Q" property="&quot;standbyInfo&quot;" clientClassElem="_VM-kSDPtEei3dfHtumI11Q" serverClassElem="_VM_yZTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VM_yZjPtEei3dfHtumI11Q" property="&quot;masterPosition&quot;" clientClassElem="_VM-kSDPtEei3dfHtumI11Q" serverClassElem="_VM_yZzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VM_yaDPtEei3dfHtumI11Q" property="&quot;standbyPosition&quot;" clientClassElem="_VM-kSDPtEei3dfHtumI11Q" serverClassElem="_VM_yaTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNQ4KjPtEei3dfHtumI11Q" property="&quot;propertyEditorRegistrars&quot;" clientClassElem="_VNQ4IjPtEei3dfHtumI11Q" serverClassElem="_VNQ4ITPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNRfMDPtEei3dfHtumI11Q" property="&quot;eventParser&quot;" clientClassElem="_VNQ4IzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNRfMTPtEei3dfHtumI11Q" property="&quot;eventSink&quot;" clientClassElem="_VNQ4IzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNRfMjPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VNQ4IzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNRfMzPtEei3dfHtumI11Q" property="&quot;metaManager&quot;" clientClassElem="_VNQ4IzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNRfNDPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VNQ4IzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNRfNTPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VNQ4JzPtEei3dfHtumI11Q" serverClassElem="_VNQ4JjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNRfNjPtEei3dfHtumI11Q" property="&quot;eventParsers&quot;" clientClassElem="_VNQ4KDPtEei3dfHtumI11Q" serverClassElem="_VNQ4KTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNSGQDPtEei3dfHtumI11Q" property="&quot;haController&quot;" clientClassElem="_VNQ4KTPtEei3dfHtumI11Q" serverClassElem="_VNSGQTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNSGQjPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VNQ4KTPtEei3dfHtumI11Q" serverClassElem="_VNQ4JDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNSGQzPtEei3dfHtumI11Q" property="&quot;eventFilter&quot;" clientClassElem="_VNQ4KTPtEei3dfHtumI11Q" serverClassElem="_VNSGRDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNSGRTPtEei3dfHtumI11Q" property="&quot;logPositionManager&quot;" clientClassElem="_VNQ4KTPtEei3dfHtumI11Q" serverClassElem="_VNSGRjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNSGRzPtEei3dfHtumI11Q" property="&quot;masterInfo&quot;" clientClassElem="_VNQ4KTPtEei3dfHtumI11Q" serverClassElem="_VNSGSDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNSGSTPtEei3dfHtumI11Q" property="&quot;standbyInfo&quot;" clientClassElem="_VNQ4KTPtEei3dfHtumI11Q" serverClassElem="_VNSGSjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNSGSzPtEei3dfHtumI11Q" property="&quot;masterPosition&quot;" clientClassElem="_VNQ4KTPtEei3dfHtumI11Q" serverClassElem="_VNSGTDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNStUDPtEei3dfHtumI11Q" property="&quot;standbyPosition&quot;" clientClassElem="_VNQ4KTPtEei3dfHtumI11Q" serverClassElem="_VNStUTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNStUjPtEei3dfHtumI11Q" property="&quot;haController&quot;" clientClassElem="_VNQ4KTPtEei3dfHtumI11Q" serverClassElem="_VNStUzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNStVDPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VNQ4KTPtEei3dfHtumI11Q" serverClassElem="_VNQ4JDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNStVTPtEei3dfHtumI11Q" property="&quot;eventFilter&quot;" clientClassElem="_VNQ4KTPtEei3dfHtumI11Q" serverClassElem="_VNStVjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNStVzPtEei3dfHtumI11Q" property="&quot;logPositionManager&quot;" clientClassElem="_VNQ4KTPtEei3dfHtumI11Q" serverClassElem="_VNStWDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNStWTPtEei3dfHtumI11Q" property="&quot;masterInfo&quot;" clientClassElem="_VNQ4KTPtEei3dfHtumI11Q" serverClassElem="_VNStWjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNStWzPtEei3dfHtumI11Q" property="&quot;standbyInfo&quot;" clientClassElem="_VNQ4KTPtEei3dfHtumI11Q" serverClassElem="_VNStXDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNStXTPtEei3dfHtumI11Q" property="&quot;masterPosition&quot;" clientClassElem="_VNQ4KTPtEei3dfHtumI11Q" serverClassElem="_VNStXjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNTUYDPtEei3dfHtumI11Q" property="&quot;standbyPosition&quot;" clientClassElem="_VNQ4KTPtEei3dfHtumI11Q" serverClassElem="_VNTUYTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNjzFzPtEei3dfHtumI11Q" property="&quot;propertyEditorRegistrars&quot;" clientClassElem="_VNjzEDPtEei3dfHtumI11Q" serverClassElem="_VNjMATPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNjzGDPtEei3dfHtumI11Q" property="&quot;eventParser&quot;" clientClassElem="_VNjzETPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNkaIDPtEei3dfHtumI11Q" property="&quot;eventSink&quot;" clientClassElem="_VNjzETPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNkaITPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VNjzETPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNkaIjPtEei3dfHtumI11Q" property="&quot;metaManager&quot;" clientClassElem="_VNjzETPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNkaIzPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VNjzETPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNkaJDPtEei3dfHtumI11Q" property="&quot;eventStore&quot;" clientClassElem="_VNjzFTPtEei3dfHtumI11Q" serverClassElem="_VNjzFDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNkaJTPtEei3dfHtumI11Q" property="&quot;haController&quot;" clientClassElem="_VNjzFjPtEei3dfHtumI11Q" serverClassElem="_VNkaJjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNkaJzPtEei3dfHtumI11Q" property="&quot;alarmHandler&quot;" clientClassElem="_VNjzFjPtEei3dfHtumI11Q" serverClassElem="_VNjzEjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNkaKDPtEei3dfHtumI11Q" property="&quot;eventFilter&quot;" clientClassElem="_VNjzFjPtEei3dfHtumI11Q" serverClassElem="_VNkaKTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNkaKjPtEei3dfHtumI11Q" property="&quot;logPositionManager&quot;" clientClassElem="_VNjzFjPtEei3dfHtumI11Q" serverClassElem="_VNkaKzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNkaLDPtEei3dfHtumI11Q" property="&quot;masterInfo&quot;" clientClassElem="_VNjzFjPtEei3dfHtumI11Q" serverClassElem="_VNkaLTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNlBMDPtEei3dfHtumI11Q" property="&quot;standbyInfo&quot;" clientClassElem="_VNjzFjPtEei3dfHtumI11Q" serverClassElem="_VNlBMTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNlBMjPtEei3dfHtumI11Q" property="&quot;masterPosition&quot;" clientClassElem="_VNjzFjPtEei3dfHtumI11Q" serverClassElem="_VNlBMzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VNlBNDPtEei3dfHtumI11Q" property="&quot;standbyPosition&quot;" clientClassElem="_VNjzFjPtEei3dfHtumI11Q" serverClassElem="_VNlBNTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VN1f4DPtEei3dfHtumI11Q" property="&quot;metaHistoryDAO&quot;" clientClassElem="_VN040DPtEei3dfHtumI11Q" serverClassElem="_VN040zPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VN1f4TPtEei3dfHtumI11Q" property="&quot;metaSnapshotDAO&quot;" clientClassElem="_VN040DPtEei3dfHtumI11Q" serverClassElem="_VN041DPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VN1f4jPtEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_VN040jPtEei3dfHtumI11Q" serverClassElem="_VN040TPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VN1f4zPtEei3dfHtumI11Q" property="&quot;sqlMapClient&quot;" clientClassElem="_VN040zPtEei3dfHtumI11Q" serverClassElem="_VN040jPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VN1f5DPtEei3dfHtumI11Q" property="&quot;sqlMapClient&quot;" clientClassElem="_VN041DPtEei3dfHtumI11Q" serverClassElem="_VN040jPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VOEwdTPtEei3dfHtumI11Q" property="&quot;metaHistoryDAO&quot;" clientClassElem="_VOEwcDPtEei3dfHtumI11Q" serverClassElem="_VOEwczPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VOFXgDPtEei3dfHtumI11Q" property="&quot;metaSnapshotDAO&quot;" clientClassElem="_VOEwcDPtEei3dfHtumI11Q" serverClassElem="_VOEwdDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VOFXgTPtEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_VOEwcjPtEei3dfHtumI11Q" serverClassElem="_VOEwcTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VOFXgjPtEei3dfHtumI11Q" property="&quot;sqlMapClient&quot;" clientClassElem="_VOEwczPtEei3dfHtumI11Q" serverClassElem="_VOEwcjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VOFXgzPtEei3dfHtumI11Q" property="&quot;sqlMapClient&quot;" clientClassElem="_VOEwdDPtEei3dfHtumI11Q" serverClassElem="_VOEwcjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VOUoFTPtEei3dfHtumI11Q" property="&quot;metaHistoryDAO&quot;" clientClassElem="_VOUoEDPtEei3dfHtumI11Q" serverClassElem="_VOUoEzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VOVPIDPtEei3dfHtumI11Q" property="&quot;metaSnapshotDAO&quot;" clientClassElem="_VOUoEDPtEei3dfHtumI11Q" serverClassElem="_VOUoFDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VOVPITPtEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_VOUoEjPtEei3dfHtumI11Q" serverClassElem="_VOUoETPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VOVPIjPtEei3dfHtumI11Q" property="&quot;sqlMapClient&quot;" clientClassElem="_VOUoEzPtEei3dfHtumI11Q" serverClassElem="_VOUoEjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VOVPIzPtEei3dfHtumI11Q" property="&quot;sqlMapClient&quot;" clientClassElem="_VOUoFDPtEei3dfHtumI11Q" serverClassElem="_VOUoEjPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="alibaba.canal_asm" instantiates="//@architectureDescriptions[name='alibaba.canal_config']">
+    <assmComponents id="_VKWuFDPtEei3dfHtumI11Q" instantiates="_VKUR0DPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;socketAddressEditor&quot;" id="_VKWuFTPtEei3dfHtumI11Q" instantiates="_VKUR0TPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VKWuFjPtEei3dfHtumI11Q" instantiates="_VKUR0jPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;instance&quot;" id="_VKXVIDPtEei3dfHtumI11Q" instantiates="_VKUR0zPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;alarmHandler&quot;" id="_VKXVITPtEei3dfHtumI11Q" instantiates="_VKUR1DPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;zkClientx&quot;" id="_VKXVIjPtEei3dfHtumI11Q" instantiates="_VKUR1TPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaManager&quot;" id="_VKXVIzPtEei3dfHtumI11Q" instantiates="_VKUR1jPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventStore&quot;" id="_VKXVJDPtEei3dfHtumI11Q" instantiates="_VKUR1zPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventSink&quot;" id="_VKXVJTPtEei3dfHtumI11Q" instantiates="_VKUR2DPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventParser&quot;" id="_VKXVJjPtEei3dfHtumI11Q" instantiates="_VKU44DPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VKtTZDPtEei3dfHtumI11Q" instantiates="_VKq3IDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;socketAddressEditor&quot;" id="_VKtTZTPtEei3dfHtumI11Q" instantiates="_VKq3ITPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VKt6cDPtEei3dfHtumI11Q" instantiates="_VKq3IjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;instance&quot;" id="_VKt6cTPtEei3dfHtumI11Q" instantiates="_VKq3IzPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;alarmHandler&quot;" id="_VKt6cjPtEei3dfHtumI11Q" instantiates="_VKq3JDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaManager&quot;" id="_VKt6czPtEei3dfHtumI11Q" instantiates="_VKreMDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventStore&quot;" id="_VKt6dDPtEei3dfHtumI11Q" instantiates="_VKreMTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventSink&quot;" id="_VKt6dTPtEei3dfHtumI11Q" instantiates="_VKreMjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventParser&quot;" id="_VKt6djPtEei3dfHtumI11Q" instantiates="_VKreMzPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VLNCoDPtEei3dfHtumI11Q" instantiates="_VLIKIDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;socketAddressEditor&quot;" id="_VLNCoTPtEei3dfHtumI11Q" instantiates="_VLIKITPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VLNCojPtEei3dfHtumI11Q" instantiates="_VLIKIjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;instance&quot;" id="_VLNCozPtEei3dfHtumI11Q" instantiates="_VLIKIzPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;alarmHandler&quot;" id="_VLNCpDPtEei3dfHtumI11Q" instantiates="_VLIKJDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaManager&quot;" id="_VLNCpTPtEei3dfHtumI11Q" instantiates="_VLIxMDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventStore&quot;" id="_VLNpsDPtEei3dfHtumI11Q" instantiates="_VLIxMTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventSink&quot;" id="_VLNpsTPtEei3dfHtumI11Q" instantiates="_VLIxMjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventParser&quot;" id="_VLNpsjPtEei3dfHtumI11Q" instantiates="_VLIxMzPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventParser1&quot;" id="_VLNpszPtEei3dfHtumI11Q" instantiates="_VLIxNDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventParser2&quot;" id="_VLNptDPtEei3dfHtumI11Q" instantiates="_VLIxNDPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VLiZ2jPtEei3dfHtumI11Q" instantiates="_VLhLsDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;socketAddressEditor&quot;" id="_VLiZ2zPtEei3dfHtumI11Q" instantiates="_VLhLsTPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VLiZ3DPtEei3dfHtumI11Q" instantiates="_VLhLsjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;instance&quot;" id="_VLjA4DPtEei3dfHtumI11Q" instantiates="_VLhLszPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;alarmHandler&quot;" id="_VLjA4TPtEei3dfHtumI11Q" instantiates="_VLhLtDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaManager&quot;" id="_VLjA4jPtEei3dfHtumI11Q" instantiates="_VLhLtTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventStore&quot;" id="_VLjA4zPtEei3dfHtumI11Q" instantiates="_VLhLtjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventSink&quot;" id="_VLjA5DPtEei3dfHtumI11Q" instantiates="_VLhLtzPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventParser&quot;" id="_VLjA5TPtEei3dfHtumI11Q" instantiates="_VLhLuDPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VL170DPtEei3dfHtumI11Q" instantiates="_VLzfkDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;socketAddressEditor&quot;" id="_VL170TPtEei3dfHtumI11Q" instantiates="_VLzfkTPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VL170jPtEei3dfHtumI11Q" instantiates="_VLzfkjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;instance&quot;" id="_VL170zPtEei3dfHtumI11Q" instantiates="_VLzfkzPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;alarmHandler&quot;" id="_VL171DPtEei3dfHtumI11Q" instantiates="_VLzflDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaManager&quot;" id="_VL171TPtEei3dfHtumI11Q" instantiates="_VLzflTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventStore&quot;" id="_VL171jPtEei3dfHtumI11Q" instantiates="_VL0GoDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventSink&quot;" id="_VL171zPtEei3dfHtumI11Q" instantiates="_VL0GoTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventParser&quot;" id="_VL2i4DPtEei3dfHtumI11Q" instantiates="_VL0GojPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VMKE5TPtEei3dfHtumI11Q" instantiates="_VMJd0DPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;tableMetaTSDB&quot;" id="_VMKE5jPtEei3dfHtumI11Q" instantiates="_VMJd0TPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_VMKr8DPtEei3dfHtumI11Q" instantiates="_VMJd0jPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sqlMapClient&quot;" id="_VMKr8TPtEei3dfHtumI11Q" instantiates="_VMJd0zPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaHistoryDAO&quot;" id="_VMKr8jPtEei3dfHtumI11Q" instantiates="_VMJd1DPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaSnapshotDAO&quot;" id="_VMKr8zPtEei3dfHtumI11Q" instantiates="_VMJd1TPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VMajlDPtEei3dfHtumI11Q" instantiates="_VMZ8gDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;tableMetaTSDB&quot;" id="_VMajlTPtEei3dfHtumI11Q" instantiates="_VMZ8gTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_VMajljPtEei3dfHtumI11Q" instantiates="_VMZ8gjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sqlMapClient&quot;" id="_VMbKoDPtEei3dfHtumI11Q" instantiates="_VMZ8gzPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaHistoryDAO&quot;" id="_VMbKoTPtEei3dfHtumI11Q" instantiates="_VMZ8hDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaSnapshotDAO&quot;" id="_VMbKojPtEei3dfHtumI11Q" instantiates="_VMZ8hTPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VMs3cTPtEei3dfHtumI11Q" instantiates="_VMqbMDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;socketAddressEditor&quot;" id="_VMs3cjPtEei3dfHtumI11Q" instantiates="_VMqbMTPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VMs3czPtEei3dfHtumI11Q" instantiates="_VMrCQDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;instance&quot;" id="_VMs3dDPtEei3dfHtumI11Q" instantiates="_VMrCQTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;alarmHandler&quot;" id="_VMs3dTPtEei3dfHtumI11Q" instantiates="_VMrCQjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;zkClientx&quot;" id="_VMs3djPtEei3dfHtumI11Q" instantiates="_VMrCQzPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaManager&quot;" id="_VMs3dzPtEei3dfHtumI11Q" instantiates="_VMrCRDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventStore&quot;" id="_VMs3eDPtEei3dfHtumI11Q" instantiates="_VMrCRTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventSink&quot;" id="_VMtegDPtEei3dfHtumI11Q" instantiates="_VMrCRjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventParser&quot;" id="_VMtegTPtEei3dfHtumI11Q" instantiates="_VMrCRzPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VM_yajPtEei3dfHtumI11Q" instantiates="_VM-kQDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;socketAddressEditor&quot;" id="_VM_yazPtEei3dfHtumI11Q" instantiates="_VM-kQTPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VM_ybDPtEei3dfHtumI11Q" instantiates="_VM-kQjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;instance&quot;" id="_VM_ybTPtEei3dfHtumI11Q" instantiates="_VM-kQzPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;alarmHandler&quot;" id="_VNAZcDPtEei3dfHtumI11Q" instantiates="_VM-kRDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaManager&quot;" id="_VNAZcTPtEei3dfHtumI11Q" instantiates="_VM-kRTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventStore&quot;" id="_VNAZcjPtEei3dfHtumI11Q" instantiates="_VM-kRjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventSink&quot;" id="_VNAZczPtEei3dfHtumI11Q" instantiates="_VM-kRzPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventParser&quot;" id="_VNAZdDPtEei3dfHtumI11Q" instantiates="_VM-kSDPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VNTUYjPtEei3dfHtumI11Q" instantiates="_VNQ4IDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;socketAddressEditor&quot;" id="_VNTUYzPtEei3dfHtumI11Q" instantiates="_VNQ4ITPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VNTUZDPtEei3dfHtumI11Q" instantiates="_VNQ4IjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;instance&quot;" id="_VNTUZTPtEei3dfHtumI11Q" instantiates="_VNQ4IzPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;alarmHandler&quot;" id="_VNTUZjPtEei3dfHtumI11Q" instantiates="_VNQ4JDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaManager&quot;" id="_VNTUZzPtEei3dfHtumI11Q" instantiates="_VNQ4JTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventStore&quot;" id="_VNTUaDPtEei3dfHtumI11Q" instantiates="_VNQ4JjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventSink&quot;" id="_VNTUaTPtEei3dfHtumI11Q" instantiates="_VNQ4JzPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventParser&quot;" id="_VNT7cDPtEei3dfHtumI11Q" instantiates="_VNQ4KDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventParser1&quot;" id="_VNT7cTPtEei3dfHtumI11Q" instantiates="_VNQ4KTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventParser2&quot;" id="_VNT7cjPtEei3dfHtumI11Q" instantiates="_VNQ4KTPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VNlBNjPtEei3dfHtumI11Q" instantiates="_VNjMADPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;socketAddressEditor&quot;" id="_VNlBNzPtEei3dfHtumI11Q" instantiates="_VNjMATPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VNlBODPtEei3dfHtumI11Q" instantiates="_VNjzEDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;instance&quot;" id="_VNlBOTPtEei3dfHtumI11Q" instantiates="_VNjzETPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;alarmHandler&quot;" id="_VNlBOjPtEei3dfHtumI11Q" instantiates="_VNjzEjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaManager&quot;" id="_VNlBOzPtEei3dfHtumI11Q" instantiates="_VNjzEzPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventStore&quot;" id="_VNlBPDPtEei3dfHtumI11Q" instantiates="_VNjzFDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventSink&quot;" id="_VNlBPTPtEei3dfHtumI11Q" instantiates="_VNjzFTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;eventParser&quot;" id="_VNloQDPtEei3dfHtumI11Q" instantiates="_VNjzFjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;tableMetaTSDB&quot;" id="_VN1f5TPtEei3dfHtumI11Q" instantiates="_VN040DPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_VN1f5jPtEei3dfHtumI11Q" instantiates="_VN040TPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sqlMapClient&quot;" id="_VN1f5zPtEei3dfHtumI11Q" instantiates="_VN040jPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaHistoryDAO&quot;" id="_VN1f6DPtEei3dfHtumI11Q" instantiates="_VN040zPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaSnapshotDAO&quot;" id="_VN1f6TPtEei3dfHtumI11Q" instantiates="_VN041DPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;tableMetaTSDB&quot;" id="_VOFXhDPtEei3dfHtumI11Q" instantiates="_VOEwcDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_VOFXhTPtEei3dfHtumI11Q" instantiates="_VOEwcTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sqlMapClient&quot;" id="_VOFXhjPtEei3dfHtumI11Q" instantiates="_VOEwcjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaHistoryDAO&quot;" id="_VOFXhzPtEei3dfHtumI11Q" instantiates="_VOEwczPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaSnapshotDAO&quot;" id="_VOFXiDPtEei3dfHtumI11Q" instantiates="_VOEwdDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;tableMetaTSDB&quot;" id="_VOVPJDPtEei3dfHtumI11Q" instantiates="_VOUoEDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_VOVPJTPtEei3dfHtumI11Q" instantiates="_VOUoETPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sqlMapClient&quot;" id="_VOVPJjPtEei3dfHtumI11Q" instantiates="_VOUoEjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaHistoryDAO&quot;" id="_VOVPJzPtEei3dfHtumI11Q" instantiates="_VOUoEzPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;metaSnapshotDAO&quot;" id="_VOVPKDPtEei3dfHtumI11Q" instantiates="_VOUoFDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKX8MDPtEei3dfHtumI11Q" clientInstElem="_VKWuFjPtEei3dfHtumI11Q" serverInstElem="_VKWuFTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKX8MTPtEei3dfHtumI11Q" property="instance.eventParser" clientInstElem="_VKXVIDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKX8MjPtEei3dfHtumI11Q" property="instance.eventSink" clientInstElem="_VKXVIDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKX8MzPtEei3dfHtumI11Q" property="instance.eventStore" clientInstElem="_VKXVIDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKX8NDPtEei3dfHtumI11Q" property="instance.metaManager" clientInstElem="_VKXVIDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKX8NTPtEei3dfHtumI11Q" property="instance.alarmHandler" clientInstElem="_VKXVIDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKX8NjPtEei3dfHtumI11Q" property="metaManager.zooKeeperMetaManager" clientInstElem="_VKXVIzPtEei3dfHtumI11Q" serverInstElem="_VKX8NzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKX8ODPtEei3dfHtumI11Q" property="eventSink.eventStore" clientInstElem="_VKXVJTPtEei3dfHtumI11Q" serverInstElem="_VKXVJDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKX8OTPtEei3dfHtumI11Q" property="eventParser.haController" clientInstElem="_VKXVJjPtEei3dfHtumI11Q" serverInstElem="_VKYjQDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKYjQTPtEei3dfHtumI11Q" property="eventParser.alarmHandler" clientInstElem="_VKXVJjPtEei3dfHtumI11Q" serverInstElem="_VKXVITPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKYjQjPtEei3dfHtumI11Q" property="eventParser.eventFilter" clientInstElem="_VKXVJjPtEei3dfHtumI11Q" serverInstElem="_VKYjQzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKYjRDPtEei3dfHtumI11Q" property="eventParser.eventBlackFilter" clientInstElem="_VKXVJjPtEei3dfHtumI11Q" serverInstElem="_VKYjRTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKYjRjPtEei3dfHtumI11Q" property="eventParser.logPositionManager" clientInstElem="_VKXVJjPtEei3dfHtumI11Q" serverInstElem="_VKYjRzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKYjSDPtEei3dfHtumI11Q" property="eventParser.masterInfo" clientInstElem="_VKXVJjPtEei3dfHtumI11Q" serverInstElem="_VKYjSTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKYjSjPtEei3dfHtumI11Q" property="eventParser.standbyInfo" clientInstElem="_VKXVJjPtEei3dfHtumI11Q" serverInstElem="_VKYjSzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKYjTDPtEei3dfHtumI11Q" property="eventParser.masterPosition" clientInstElem="_VKXVJjPtEei3dfHtumI11Q" serverInstElem="_VKZKUDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKZKUTPtEei3dfHtumI11Q" property="eventParser.standbyPosition" clientInstElem="_VKXVJjPtEei3dfHtumI11Q" serverInstElem="_VKZKUjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKuhgDPtEei3dfHtumI11Q" clientInstElem="_VKtTZDPtEei3dfHtumI11Q" serverInstElem="_VKtTZTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKuhgTPtEei3dfHtumI11Q" property="instance.eventParser" clientInstElem="_VKt6cTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKuhgjPtEei3dfHtumI11Q" property="instance.eventSink" clientInstElem="_VKt6cTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKuhgzPtEei3dfHtumI11Q" property="instance.eventStore" clientInstElem="_VKt6cTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKuhhDPtEei3dfHtumI11Q" property="instance.metaManager" clientInstElem="_VKt6cTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKuhhTPtEei3dfHtumI11Q" property="instance.alarmHandler" clientInstElem="_VKt6cTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKuhhjPtEei3dfHtumI11Q" property="eventSink.eventStore" clientInstElem="_VKt6dTPtEei3dfHtumI11Q" serverInstElem="_VKt6dDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKvIkDPtEei3dfHtumI11Q" property="eventParser.haController" clientInstElem="_VKt6djPtEei3dfHtumI11Q" serverInstElem="_VKvIkTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKvIkjPtEei3dfHtumI11Q" property="eventParser.alarmHandler" clientInstElem="_VKt6djPtEei3dfHtumI11Q" serverInstElem="_VKt6cjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKvIkzPtEei3dfHtumI11Q" property="eventParser.eventFilter" clientInstElem="_VKt6djPtEei3dfHtumI11Q" serverInstElem="_VKvIlDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKvIlTPtEei3dfHtumI11Q" property="eventParser.eventBlackFilter" clientInstElem="_VKt6djPtEei3dfHtumI11Q" serverInstElem="_VKvIljPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKvIlzPtEei3dfHtumI11Q" property="eventParser.logPositionManager" clientInstElem="_VKt6djPtEei3dfHtumI11Q" serverInstElem="_VKvImDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKvvoDPtEei3dfHtumI11Q" property="eventParser.masterInfo" clientInstElem="_VKt6djPtEei3dfHtumI11Q" serverInstElem="_VKvvoTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKvvojPtEei3dfHtumI11Q" property="eventParser.standbyInfo" clientInstElem="_VKt6djPtEei3dfHtumI11Q" serverInstElem="_VKvvozPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKvvpDPtEei3dfHtumI11Q" property="eventParser.masterPosition" clientInstElem="_VKt6djPtEei3dfHtumI11Q" serverInstElem="_VKvvpTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VKvvpjPtEei3dfHtumI11Q" property="eventParser.standbyPosition" clientInstElem="_VKt6djPtEei3dfHtumI11Q" serverInstElem="_VKvvpzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLOQwDPtEei3dfHtumI11Q" clientInstElem="_VLNCojPtEei3dfHtumI11Q" serverInstElem="_VLNCoTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLOQwTPtEei3dfHtumI11Q" property="instance.eventParser" clientInstElem="_VLNCozPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLOQwjPtEei3dfHtumI11Q" property="instance.eventSink" clientInstElem="_VLNCozPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLOQwzPtEei3dfHtumI11Q" property="instance.eventStore" clientInstElem="_VLNCozPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLOQxDPtEei3dfHtumI11Q" property="instance.metaManager" clientInstElem="_VLNCozPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLOQxTPtEei3dfHtumI11Q" property="instance.alarmHandler" clientInstElem="_VLNCozPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLOQxjPtEei3dfHtumI11Q" property="eventSink.eventStore" clientInstElem="_VLNpsTPtEei3dfHtumI11Q" serverInstElem="_VLNpsDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLOQxzPtEei3dfHtumI11Q" property="eventParser.eventParsers" clientInstElem="_VLNpsjPtEei3dfHtumI11Q" serverInstElem="_VLNpszPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLOQyDPtEei3dfHtumI11Q" property="eventParser.eventParsers" clientInstElem="_VLNpsjPtEei3dfHtumI11Q" serverInstElem="_VLNptDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLOQyTPtEei3dfHtumI11Q" property="eventParser1.haController" clientInstElem="_VLNpszPtEei3dfHtumI11Q" serverInstElem="_VLO30DPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLO30TPtEei3dfHtumI11Q" property="eventParser1.alarmHandler" clientInstElem="_VLNpszPtEei3dfHtumI11Q" serverInstElem="_VLNCpDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLO30jPtEei3dfHtumI11Q" property="eventParser1.eventFilter" clientInstElem="_VLNpszPtEei3dfHtumI11Q" serverInstElem="_VLO30zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLO31DPtEei3dfHtumI11Q" property="eventParser1.eventBlackFilter" clientInstElem="_VLNpszPtEei3dfHtumI11Q" serverInstElem="_VLO31TPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLO31jPtEei3dfHtumI11Q" property="eventParser1.logPositionManager" clientInstElem="_VLNpszPtEei3dfHtumI11Q" serverInstElem="_VLO31zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLO32DPtEei3dfHtumI11Q" property="eventParser1.masterInfo" clientInstElem="_VLNpszPtEei3dfHtumI11Q" serverInstElem="_VLO32TPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLPe4DPtEei3dfHtumI11Q" property="eventParser1.standbyInfo" clientInstElem="_VLNpszPtEei3dfHtumI11Q" serverInstElem="_VLPe4TPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLPe4jPtEei3dfHtumI11Q" property="eventParser1.masterPosition" clientInstElem="_VLNpszPtEei3dfHtumI11Q" serverInstElem="_VLPe4zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLPe5DPtEei3dfHtumI11Q" property="eventParser1.standbyPosition" clientInstElem="_VLNpszPtEei3dfHtumI11Q" serverInstElem="_VLPe5TPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLPe5jPtEei3dfHtumI11Q" property="eventParser2.haController" clientInstElem="_VLNptDPtEei3dfHtumI11Q" serverInstElem="_VLPe5zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLPe6DPtEei3dfHtumI11Q" property="eventParser2.alarmHandler" clientInstElem="_VLNptDPtEei3dfHtumI11Q" serverInstElem="_VLNCpDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLPe6TPtEei3dfHtumI11Q" property="eventParser2.eventFilter" clientInstElem="_VLNptDPtEei3dfHtumI11Q" serverInstElem="_VLPe6jPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLPe6zPtEei3dfHtumI11Q" property="eventParser2.eventBlackFilter" clientInstElem="_VLNptDPtEei3dfHtumI11Q" serverInstElem="_VLQF8DPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLQF8TPtEei3dfHtumI11Q" property="eventParser2.logPositionManager" clientInstElem="_VLNptDPtEei3dfHtumI11Q" serverInstElem="_VLQF8jPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLQF8zPtEei3dfHtumI11Q" property="eventParser2.masterInfo" clientInstElem="_VLNptDPtEei3dfHtumI11Q" serverInstElem="_VLQF9DPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLQF9TPtEei3dfHtumI11Q" property="eventParser2.standbyInfo" clientInstElem="_VLNptDPtEei3dfHtumI11Q" serverInstElem="_VLQF9jPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLQF9zPtEei3dfHtumI11Q" property="eventParser2.masterPosition" clientInstElem="_VLNptDPtEei3dfHtumI11Q" serverInstElem="_VLQtADPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLQtATPtEei3dfHtumI11Q" property="eventParser2.standbyPosition" clientInstElem="_VLNptDPtEei3dfHtumI11Q" serverInstElem="_VLQtAjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLjA5jPtEei3dfHtumI11Q" clientInstElem="_VLiZ2jPtEei3dfHtumI11Q" serverInstElem="_VLiZ2zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLjA5zPtEei3dfHtumI11Q" property="instance.eventParser" clientInstElem="_VLjA4DPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLjA6DPtEei3dfHtumI11Q" property="instance.eventSink" clientInstElem="_VLjA4DPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLjA6TPtEei3dfHtumI11Q" property="instance.eventStore" clientInstElem="_VLjA4DPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLjA6jPtEei3dfHtumI11Q" property="instance.metaManager" clientInstElem="_VLjA4DPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLjA6zPtEei3dfHtumI11Q" property="instance.alarmHandler" clientInstElem="_VLjA4DPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLjn8DPtEei3dfHtumI11Q" property="eventSink.eventStore" clientInstElem="_VLjA5DPtEei3dfHtumI11Q" serverInstElem="_VLjA4zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLjn8TPtEei3dfHtumI11Q" property="eventParser.alarmHandler" clientInstElem="_VLjA5TPtEei3dfHtumI11Q" serverInstElem="_VLjA4TPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLjn8jPtEei3dfHtumI11Q" property="eventParser.eventFilter" clientInstElem="_VLjA5TPtEei3dfHtumI11Q" serverInstElem="_VLjn8zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLjn9DPtEei3dfHtumI11Q" property="eventParser.eventBlackFilter" clientInstElem="_VLjA5TPtEei3dfHtumI11Q" serverInstElem="_VLjn9TPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLjn9jPtEei3dfHtumI11Q" property="eventParser.logPositionManager" clientInstElem="_VLjA5TPtEei3dfHtumI11Q" serverInstElem="_VLjn9zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VLjn-DPtEei3dfHtumI11Q" property="eventParser.masterInfo" clientInstElem="_VLjA5TPtEei3dfHtumI11Q" serverInstElem="_VLjn-TPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VL2i4TPtEei3dfHtumI11Q" clientInstElem="_VL170jPtEei3dfHtumI11Q" serverInstElem="_VL170TPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VL2i4jPtEei3dfHtumI11Q" property="instance.eventParser" clientInstElem="_VL170zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VL2i4zPtEei3dfHtumI11Q" property="instance.eventSink" clientInstElem="_VL170zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VL2i5DPtEei3dfHtumI11Q" property="instance.eventStore" clientInstElem="_VL170zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VL2i5TPtEei3dfHtumI11Q" property="instance.metaManager" clientInstElem="_VL170zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VL2i5jPtEei3dfHtumI11Q" property="instance.alarmHandler" clientInstElem="_VL170zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VL2i5zPtEei3dfHtumI11Q" property="eventSink.eventStore" clientInstElem="_VL171zPtEei3dfHtumI11Q" serverInstElem="_VL171jPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VL2i6DPtEei3dfHtumI11Q" property="eventParser.haController" clientInstElem="_VL2i4DPtEei3dfHtumI11Q" serverInstElem="_VL2i6TPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VL2i6jPtEei3dfHtumI11Q" property="eventParser.alarmHandler" clientInstElem="_VL2i4DPtEei3dfHtumI11Q" serverInstElem="_VL171DPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VL3J8DPtEei3dfHtumI11Q" property="eventParser.eventFilter" clientInstElem="_VL2i4DPtEei3dfHtumI11Q" serverInstElem="_VL3J8TPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VL3J8jPtEei3dfHtumI11Q" property="eventParser.eventBlackFilter" clientInstElem="_VL2i4DPtEei3dfHtumI11Q" serverInstElem="_VL3J8zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VL3J9DPtEei3dfHtumI11Q" property="eventParser.logPositionManager" clientInstElem="_VL2i4DPtEei3dfHtumI11Q" serverInstElem="_VL3J9TPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VL3J9jPtEei3dfHtumI11Q" property="eventParser.masterInfo" clientInstElem="_VL2i4DPtEei3dfHtumI11Q" serverInstElem="_VL3J9zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VL3J-DPtEei3dfHtumI11Q" property="eventParser.standbyInfo" clientInstElem="_VL2i4DPtEei3dfHtumI11Q" serverInstElem="_VL3J-TPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VL3J-jPtEei3dfHtumI11Q" property="eventParser.masterPosition" clientInstElem="_VL2i4DPtEei3dfHtumI11Q" serverInstElem="_VL3J-zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VL3J_DPtEei3dfHtumI11Q" property="eventParser.standbyPosition" clientInstElem="_VL2i4DPtEei3dfHtumI11Q" serverInstElem="_VL3J_TPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMKr9DPtEei3dfHtumI11Q" property="tableMetaTSDB.metaHistoryDAO" clientInstElem="_VMKE5jPtEei3dfHtumI11Q" serverInstElem="_VMKr8jPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMKr9TPtEei3dfHtumI11Q" property="tableMetaTSDB.metaSnapshotDAO" clientInstElem="_VMKE5jPtEei3dfHtumI11Q" serverInstElem="_VMKr8zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMKr9jPtEei3dfHtumI11Q" property="sqlMapClient.dataSource" clientInstElem="_VMKr8TPtEei3dfHtumI11Q" serverInstElem="_VMKr8DPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMKr9zPtEei3dfHtumI11Q" property="metaHistoryDAO.sqlMapClient" clientInstElem="_VMKr8jPtEei3dfHtumI11Q" serverInstElem="_VMKr8TPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMKr-DPtEei3dfHtumI11Q" property="metaSnapshotDAO.sqlMapClient" clientInstElem="_VMKr8zPtEei3dfHtumI11Q" serverInstElem="_VMKr8TPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMbKozPtEei3dfHtumI11Q" property="tableMetaTSDB.metaHistoryDAO" clientInstElem="_VMajlTPtEei3dfHtumI11Q" serverInstElem="_VMbKoTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMbKpDPtEei3dfHtumI11Q" property="tableMetaTSDB.metaSnapshotDAO" clientInstElem="_VMajlTPtEei3dfHtumI11Q" serverInstElem="_VMbKojPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMbKpTPtEei3dfHtumI11Q" property="sqlMapClient.dataSource" clientInstElem="_VMbKoDPtEei3dfHtumI11Q" serverInstElem="_VMajljPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMbKpjPtEei3dfHtumI11Q" property="metaHistoryDAO.sqlMapClient" clientInstElem="_VMbKoTPtEei3dfHtumI11Q" serverInstElem="_VMbKoDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMbKpzPtEei3dfHtumI11Q" property="metaSnapshotDAO.sqlMapClient" clientInstElem="_VMbKojPtEei3dfHtumI11Q" serverInstElem="_VMbKoDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMtegjPtEei3dfHtumI11Q" clientInstElem="_VMs3czPtEei3dfHtumI11Q" serverInstElem="_VMs3cjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMtegzPtEei3dfHtumI11Q" property="instance.eventParser" clientInstElem="_VMs3dDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMtehDPtEei3dfHtumI11Q" property="instance.eventSink" clientInstElem="_VMs3dDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMtehTPtEei3dfHtumI11Q" property="instance.eventStore" clientInstElem="_VMs3dDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMtehjPtEei3dfHtumI11Q" property="instance.metaManager" clientInstElem="_VMs3dDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMtehzPtEei3dfHtumI11Q" property="instance.alarmHandler" clientInstElem="_VMs3dDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMteiDPtEei3dfHtumI11Q" property="metaManager.zooKeeperMetaManager" clientInstElem="_VMs3dzPtEei3dfHtumI11Q" serverInstElem="_VMteiTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMteijPtEei3dfHtumI11Q" property="eventSink.eventStore" clientInstElem="_VMtegDPtEei3dfHtumI11Q" serverInstElem="_VMs3eDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMteizPtEei3dfHtumI11Q" property="eventParser.haController" clientInstElem="_VMtegTPtEei3dfHtumI11Q" serverInstElem="_VMtejDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMuFkDPtEei3dfHtumI11Q" property="eventParser.alarmHandler" clientInstElem="_VMtegTPtEei3dfHtumI11Q" serverInstElem="_VMs3dTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMuFkTPtEei3dfHtumI11Q" property="eventParser.eventFilter" clientInstElem="_VMtegTPtEei3dfHtumI11Q" serverInstElem="_VMuFkjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMuFkzPtEei3dfHtumI11Q" property="eventParser.logPositionManager" clientInstElem="_VMtegTPtEei3dfHtumI11Q" serverInstElem="_VMuFlDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMuFlTPtEei3dfHtumI11Q" property="eventParser.masterInfo" clientInstElem="_VMtegTPtEei3dfHtumI11Q" serverInstElem="_VMuFljPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMuFlzPtEei3dfHtumI11Q" property="eventParser.standbyInfo" clientInstElem="_VMtegTPtEei3dfHtumI11Q" serverInstElem="_VMuFmDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMuFmTPtEei3dfHtumI11Q" property="eventParser.masterPosition" clientInstElem="_VMtegTPtEei3dfHtumI11Q" serverInstElem="_VMuFmjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VMusoDPtEei3dfHtumI11Q" property="eventParser.standbyPosition" clientInstElem="_VMtegTPtEei3dfHtumI11Q" serverInstElem="_VMusoTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNAZdTPtEei3dfHtumI11Q" clientInstElem="_VM_yajPtEei3dfHtumI11Q" serverInstElem="_VM_yazPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNAZdjPtEei3dfHtumI11Q" property="instance.eventParser" clientInstElem="_VM_ybTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNAZdzPtEei3dfHtumI11Q" property="instance.eventSink" clientInstElem="_VM_ybTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNAZeDPtEei3dfHtumI11Q" property="instance.eventStore" clientInstElem="_VM_ybTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNAZeTPtEei3dfHtumI11Q" property="instance.metaManager" clientInstElem="_VM_ybTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNAZejPtEei3dfHtumI11Q" property="instance.alarmHandler" clientInstElem="_VM_ybTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNAZezPtEei3dfHtumI11Q" property="eventSink.eventStore" clientInstElem="_VNAZczPtEei3dfHtumI11Q" serverInstElem="_VNAZcjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNAZfDPtEei3dfHtumI11Q" property="eventParser.haController" clientInstElem="_VNAZdDPtEei3dfHtumI11Q" serverInstElem="_VNBAgDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNBAgTPtEei3dfHtumI11Q" property="eventParser.alarmHandler" clientInstElem="_VNAZdDPtEei3dfHtumI11Q" serverInstElem="_VNAZcDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNBAgjPtEei3dfHtumI11Q" property="eventParser.eventFilter" clientInstElem="_VNAZdDPtEei3dfHtumI11Q" serverInstElem="_VNBAgzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNBAhDPtEei3dfHtumI11Q" property="eventParser.logPositionManager" clientInstElem="_VNAZdDPtEei3dfHtumI11Q" serverInstElem="_VNBAhTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNBAhjPtEei3dfHtumI11Q" property="eventParser.masterInfo" clientInstElem="_VNAZdDPtEei3dfHtumI11Q" serverInstElem="_VNBAhzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNBAiDPtEei3dfHtumI11Q" property="eventParser.standbyInfo" clientInstElem="_VNAZdDPtEei3dfHtumI11Q" serverInstElem="_VNBAiTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNBAijPtEei3dfHtumI11Q" property="eventParser.masterPosition" clientInstElem="_VNAZdDPtEei3dfHtumI11Q" serverInstElem="_VNBAizPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNBAjDPtEei3dfHtumI11Q" property="eventParser.standbyPosition" clientInstElem="_VNAZdDPtEei3dfHtumI11Q" serverInstElem="_VNBnkDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNT7czPtEei3dfHtumI11Q" clientInstElem="_VNTUZDPtEei3dfHtumI11Q" serverInstElem="_VNTUYzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNT7dDPtEei3dfHtumI11Q" property="instance.eventParser" clientInstElem="_VNTUZTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNT7dTPtEei3dfHtumI11Q" property="instance.eventSink" clientInstElem="_VNTUZTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNT7djPtEei3dfHtumI11Q" property="instance.eventStore" clientInstElem="_VNTUZTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNT7dzPtEei3dfHtumI11Q" property="instance.metaManager" clientInstElem="_VNTUZTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNT7eDPtEei3dfHtumI11Q" property="instance.alarmHandler" clientInstElem="_VNTUZTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNT7eTPtEei3dfHtumI11Q" property="eventSink.eventStore" clientInstElem="_VNTUaTPtEei3dfHtumI11Q" serverInstElem="_VNTUaDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNT7ejPtEei3dfHtumI11Q" property="eventParser.eventParsers" clientInstElem="_VNT7cDPtEei3dfHtumI11Q" serverInstElem="_VNT7cTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNT7ezPtEei3dfHtumI11Q" property="eventParser.eventParsers" clientInstElem="_VNT7cDPtEei3dfHtumI11Q" serverInstElem="_VNT7cjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNT7fDPtEei3dfHtumI11Q" property="eventParser1.haController" clientInstElem="_VNT7cTPtEei3dfHtumI11Q" serverInstElem="_VNUigDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNUigTPtEei3dfHtumI11Q" property="eventParser1.alarmHandler" clientInstElem="_VNT7cTPtEei3dfHtumI11Q" serverInstElem="_VNTUZjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNUigjPtEei3dfHtumI11Q" property="eventParser1.eventFilter" clientInstElem="_VNT7cTPtEei3dfHtumI11Q" serverInstElem="_VNUigzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNUihDPtEei3dfHtumI11Q" property="eventParser1.logPositionManager" clientInstElem="_VNT7cTPtEei3dfHtumI11Q" serverInstElem="_VNUihTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNUihjPtEei3dfHtumI11Q" property="eventParser1.masterInfo" clientInstElem="_VNT7cTPtEei3dfHtumI11Q" serverInstElem="_VNUihzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNUiiDPtEei3dfHtumI11Q" property="eventParser1.standbyInfo" clientInstElem="_VNT7cTPtEei3dfHtumI11Q" serverInstElem="_VNUiiTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNUiijPtEei3dfHtumI11Q" property="eventParser1.masterPosition" clientInstElem="_VNT7cTPtEei3dfHtumI11Q" serverInstElem="_VNUiizPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNUijDPtEei3dfHtumI11Q" property="eventParser1.standbyPosition" clientInstElem="_VNT7cTPtEei3dfHtumI11Q" serverInstElem="_VNUijTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNUijjPtEei3dfHtumI11Q" property="eventParser2.haController" clientInstElem="_VNT7cjPtEei3dfHtumI11Q" serverInstElem="_VNUijzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNUikDPtEei3dfHtumI11Q" property="eventParser2.alarmHandler" clientInstElem="_VNT7cjPtEei3dfHtumI11Q" serverInstElem="_VNTUZjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNVJkDPtEei3dfHtumI11Q" property="eventParser2.eventFilter" clientInstElem="_VNT7cjPtEei3dfHtumI11Q" serverInstElem="_VNVJkTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNVJkjPtEei3dfHtumI11Q" property="eventParser2.logPositionManager" clientInstElem="_VNT7cjPtEei3dfHtumI11Q" serverInstElem="_VNVJkzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNVJlDPtEei3dfHtumI11Q" property="eventParser2.masterInfo" clientInstElem="_VNT7cjPtEei3dfHtumI11Q" serverInstElem="_VNVJlTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNVJljPtEei3dfHtumI11Q" property="eventParser2.standbyInfo" clientInstElem="_VNT7cjPtEei3dfHtumI11Q" serverInstElem="_VNVJlzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNVJmDPtEei3dfHtumI11Q" property="eventParser2.masterPosition" clientInstElem="_VNT7cjPtEei3dfHtumI11Q" serverInstElem="_VNVJmTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNVJmjPtEei3dfHtumI11Q" property="eventParser2.standbyPosition" clientInstElem="_VNT7cjPtEei3dfHtumI11Q" serverInstElem="_VNVJmzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNloQTPtEei3dfHtumI11Q" clientInstElem="_VNlBNjPtEei3dfHtumI11Q" serverInstElem="_VNlBNzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNloQjPtEei3dfHtumI11Q" property="instance.eventParser" clientInstElem="_VNlBOTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNloQzPtEei3dfHtumI11Q" property="instance.eventSink" clientInstElem="_VNlBOTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNloRDPtEei3dfHtumI11Q" property="instance.eventStore" clientInstElem="_VNlBOTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNloRTPtEei3dfHtumI11Q" property="instance.metaManager" clientInstElem="_VNlBOTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNloRjPtEei3dfHtumI11Q" property="instance.alarmHandler" clientInstElem="_VNlBOTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNloRzPtEei3dfHtumI11Q" property="eventSink.eventStore" clientInstElem="_VNlBPTPtEei3dfHtumI11Q" serverInstElem="_VNlBPDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNloSDPtEei3dfHtumI11Q" property="eventParser.haController" clientInstElem="_VNloQDPtEei3dfHtumI11Q" serverInstElem="_VNloSTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNloSjPtEei3dfHtumI11Q" property="eventParser.alarmHandler" clientInstElem="_VNloQDPtEei3dfHtumI11Q" serverInstElem="_VNlBOjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNloSzPtEei3dfHtumI11Q" property="eventParser.eventFilter" clientInstElem="_VNloQDPtEei3dfHtumI11Q" serverInstElem="_VNloTDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNmPUDPtEei3dfHtumI11Q" property="eventParser.logPositionManager" clientInstElem="_VNloQDPtEei3dfHtumI11Q" serverInstElem="_VNmPUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNmPUjPtEei3dfHtumI11Q" property="eventParser.masterInfo" clientInstElem="_VNloQDPtEei3dfHtumI11Q" serverInstElem="_VNmPUzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNmPVDPtEei3dfHtumI11Q" property="eventParser.standbyInfo" clientInstElem="_VNloQDPtEei3dfHtumI11Q" serverInstElem="_VNmPVTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNmPVjPtEei3dfHtumI11Q" property="eventParser.masterPosition" clientInstElem="_VNloQDPtEei3dfHtumI11Q" serverInstElem="_VNmPVzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VNmPWDPtEei3dfHtumI11Q" property="eventParser.standbyPosition" clientInstElem="_VNloQDPtEei3dfHtumI11Q" serverInstElem="_VNmPWTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VN2G8DPtEei3dfHtumI11Q" property="tableMetaTSDB.metaHistoryDAO" clientInstElem="_VN1f5TPtEei3dfHtumI11Q" serverInstElem="_VN1f6DPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VN2G8TPtEei3dfHtumI11Q" property="tableMetaTSDB.metaSnapshotDAO" clientInstElem="_VN1f5TPtEei3dfHtumI11Q" serverInstElem="_VN1f6TPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VN2G8jPtEei3dfHtumI11Q" property="sqlMapClient.dataSource" clientInstElem="_VN1f5zPtEei3dfHtumI11Q" serverInstElem="_VN1f5jPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VN2G8zPtEei3dfHtumI11Q" property="metaHistoryDAO.sqlMapClient" clientInstElem="_VN1f6DPtEei3dfHtumI11Q" serverInstElem="_VN1f5zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VN2G9DPtEei3dfHtumI11Q" property="metaSnapshotDAO.sqlMapClient" clientInstElem="_VN1f6TPtEei3dfHtumI11Q" serverInstElem="_VN1f5zPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VOFXiTPtEei3dfHtumI11Q" property="tableMetaTSDB.metaHistoryDAO" clientInstElem="_VOFXhDPtEei3dfHtumI11Q" serverInstElem="_VOFXhzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VOFXijPtEei3dfHtumI11Q" property="tableMetaTSDB.metaSnapshotDAO" clientInstElem="_VOFXhDPtEei3dfHtumI11Q" serverInstElem="_VOFXiDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VOF-kDPtEei3dfHtumI11Q" property="sqlMapClient.dataSource" clientInstElem="_VOFXhjPtEei3dfHtumI11Q" serverInstElem="_VOFXhTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VOF-kTPtEei3dfHtumI11Q" property="metaHistoryDAO.sqlMapClient" clientInstElem="_VOFXhzPtEei3dfHtumI11Q" serverInstElem="_VOFXhjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VOF-kjPtEei3dfHtumI11Q" property="metaSnapshotDAO.sqlMapClient" clientInstElem="_VOFXiDPtEei3dfHtumI11Q" serverInstElem="_VOFXhjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VOVPKTPtEei3dfHtumI11Q" property="tableMetaTSDB.metaHistoryDAO" clientInstElem="_VOVPJDPtEei3dfHtumI11Q" serverInstElem="_VOVPJzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VOVPKjPtEei3dfHtumI11Q" property="tableMetaTSDB.metaSnapshotDAO" clientInstElem="_VOVPJDPtEei3dfHtumI11Q" serverInstElem="_VOVPKDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VOVPKzPtEei3dfHtumI11Q" property="sqlMapClient.dataSource" clientInstElem="_VOVPJjPtEei3dfHtumI11Q" serverInstElem="_VOVPJTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VOVPLDPtEei3dfHtumI11Q" property="metaHistoryDAO.sqlMapClient" clientInstElem="_VOVPJzPtEei3dfHtumI11Q" serverInstElem="_VOVPJjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VOVPLTPtEei3dfHtumI11Q" property="metaSnapshotDAO.sqlMapClient" clientInstElem="_VOVPKDPtEei3dfHtumI11Q" serverInstElem="_VOVPJjPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="alibaba.canal_spec">
+    <specConnections refID="_VOoKEDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoKFjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoKFzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoKGDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoKGTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoKGjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoKGzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoKHDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoKHTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoKHjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoKHzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoKIDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoKITPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxIjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxIzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxJDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxJTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxJjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxJzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxKDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxKTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxKjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxKzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxLDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxMjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxMzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxNDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxNTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxNjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxNzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxODPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxOTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxOjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxOzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxPDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxPTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxPjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxPzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxQDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxQTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxQjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxQzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxRDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxRTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxRjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxTDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxTTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxTjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxTzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxUDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxUTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxUjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxWDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxWTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxWjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxWzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxXDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxXTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxXjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxXzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxYDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxYTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxYjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxYzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxZDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxZTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxZjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxZzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxaDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxaTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxajPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxazPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxbDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxcjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxczPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxdDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxdTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxdjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxdzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxeDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxeTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxejPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxezPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxfDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxgjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxgzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxhDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxhTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxhjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxhzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxiDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxiTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxijPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxizPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxkTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxkjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxkzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxlDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxlTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxljPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxlzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxmDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxmTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxmjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxmzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxnDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxnTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxnjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxnzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxoDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxoTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxojPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxozPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxqTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxqjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxqzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxrDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxrTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxrjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxrzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxsDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxsTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxsjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxszPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxtDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxtTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxtjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxtzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxuDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxuTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxujPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxuzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxvDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxvTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxvjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxvzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VOoxwDPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

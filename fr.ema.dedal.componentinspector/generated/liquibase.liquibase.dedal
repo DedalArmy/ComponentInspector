@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="liquibase.liquibase">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="liquibase.liquibase_config" implements="//@architectureDescriptions[name='liquibase.liquibase_spec']"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="liquibase.liquibase_asm" instantiates="//@architectureDescriptions[name='liquibase.liquibase_config']"/>
+  <architectureDescriptions xsi:type="dedal:Specification" name="liquibase.liquibase_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

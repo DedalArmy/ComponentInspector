@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="christophd.citrus">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="christophd.citrus_config" implements="//@architectureDescriptions[name='christophd.citrus_spec']">
+    <configComponents name="&quot;com.consol.citrus.endpoint.adapter.XmlTestExecutingEndpointAdapter&quot;" id="_XroGEDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mockito.Mockito&quot;" id="_XsUpoDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping&quot;" id="_Xu8f0DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.http.interceptor.LoggingHandlerInterceptor&quot;" id="_Xu8f0TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.http.interceptor.DelegatingHandlerInterceptor&quot;" id="_Xu8f0jPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter&quot;" id="_Xu8f0zPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.http.controller.HttpMessageController&quot;" id="_Xu8f1DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.xml.XsdSchemaRepository&quot;" id="_Xvc2IDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.http.interceptor.LoggingHandlerInterceptor&quot;" id="_XvddMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.http.interceptor.DelegatingHandlerInterceptor&quot;" id="_XvddMTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.http.controller.HttpMessageController&quot;" id="_XvddMjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.http.client.BasicAuthClientHttpRequestFactory&quot;" id="_XvddMzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping&quot;" id="_XvstwDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter&quot;" id="_XvstwTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.http.controller.HttpMessageController&quot;" id="_XvstwjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.xml.XsdSchemaRepository&quot;" id="_XxxKUDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping&quot;" id="_XyQSgDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter&quot;" id="_XyQSgTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.http.controller.HttpMessageController&quot;" id="_XyQSgjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.ActiveMQConnectionFactory&quot;" id="_XzLfkDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.dsl.endpoint.TestExecutingEndpointAdapter&quot;" id="_XzoykDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.xml.XsdSchemaRepository&quot;" id="_X4KtQDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.xml.XsdSchemaRepository&quot;" id="_X400kDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter&quot;" id="_X9G3oDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.websocket.handler.WebSocketUrlHandlerMapping&quot;" id="_X9G3oTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.socket.server.support.DefaultHandshakeHandler&quot;" id="_X9G3ojPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.socket.server.jetty.JettyRequestUpgradeStrategy&quot;" id="_X9G3ozPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping&quot;" id="_X9G3pDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.http.interceptor.LoggingHandlerInterceptor&quot;" id="_X9G3pTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.http.interceptor.DelegatingHandlerInterceptor&quot;" id="_X9G3pjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter&quot;" id="_X9G3pzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.http.controller.HttpMessageController&quot;" id="_X9G3qDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.xml.XsdSchemaRepository&quot;" id="_X9kxsDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.http.interceptor.DelegatingHandlerInterceptor&quot;" id="_X9kxsTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.http.controller.HttpMessageController&quot;" id="_X9kxsjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.websocket.handler.WebSocketUrlHandlerMapping&quot;" id="_X9kxszPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.socket.server.support.DefaultHandshakeHandler&quot;" id="_X9lYwDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.socket.server.jetty.JettyRequestUpgradeStrategy&quot;" id="_X9lYwTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.ws.server.endpoint.mapping.UriEndpointMapping&quot;" id="_X-f-wDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.ws.interceptor.LoggingEndpointInterceptor&quot;" id="_X-f-wTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.ws.interceptor.DelegatingEndpointInterceptor&quot;" id="_X-f-wjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.ws.server.WebServiceEndpoint&quot;" id="_X-f-wzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.ws.server.endpoint.interceptor.PayloadLoggingInterceptor&quot;" id="_X-_uADPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.ws.server.endpoint.mapping.PayloadRootQNameEndpointMapping&quot;" id="_X-_uATPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.consol.citrus.ws.server.WebServiceEndpoint&quot;" id="_X-_uAjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_XroGETPvEei3dfHtumI11Q" property="&quot;mappingKeyExtractor&quot;" clientClassElem="_XroGEDPvEei3dfHtumI11Q" serverClassElem="_XroGEjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_XrotIDPvEei3dfHtumI11Q" property="&quot;responseEndpointAdapter&quot;" clientClassElem="_XroGEDPvEei3dfHtumI11Q" serverClassElem="_XrotITPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Xu9G4DPvEei3dfHtumI11Q" property="&quot;interceptors&quot;" clientClassElem="_Xu8f0DPvEei3dfHtumI11Q" serverClassElem="_Xu8f0jPvEei3dfHtumI11Q"/>
+    <configConnections refID="_XvddNDPvEei3dfHtumI11Q" property="&quot;authScope&quot;" clientClassElem="_XvddMzPvEei3dfHtumI11Q" serverClassElem="_XvddNTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_XvddNjPvEei3dfHtumI11Q" property="&quot;credentials&quot;" clientClassElem="_XvddMzPvEei3dfHtumI11Q" serverClassElem="_XvddNzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_XvstwzPvEei3dfHtumI11Q" property="&quot;endpointAdapter&quot;" clientClassElem="_XvstwjPvEei3dfHtumI11Q" serverClassElem="_XvstxDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_XyQSgzPvEei3dfHtumI11Q" property="&quot;endpointAdapter&quot;" clientClassElem="_XyQSgjPvEei3dfHtumI11Q" serverClassElem="_XyQ5kDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_XzoykTPvEei3dfHtumI11Q" property="&quot;mappingKeyExtractor&quot;" clientClassElem="_XzoykDPvEei3dfHtumI11Q" serverClassElem="_XzoykjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_XzoykzPvEei3dfHtumI11Q" property="&quot;responseEndpointAdapter&quot;" clientClassElem="_XzoykDPvEei3dfHtumI11Q" serverClassElem="_XzoylDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_X9HesDPvEei3dfHtumI11Q" property="&quot;interceptors&quot;" clientClassElem="_X9G3oTPvEei3dfHtumI11Q" serverClassElem="_X9G3pjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_X9HesTPvEei3dfHtumI11Q" clientClassElem="_X9G3ojPvEei3dfHtumI11Q" serverClassElem="_X9G3ozPvEei3dfHtumI11Q"/>
+    <configConnections refID="_X9HesjPvEei3dfHtumI11Q" clientClassElem="_X9G3ozPvEei3dfHtumI11Q" serverClassElem="_X9HeszPvEei3dfHtumI11Q"/>
+    <configConnections refID="_X9HetDPvEei3dfHtumI11Q" property="&quot;interceptors&quot;" clientClassElem="_X9G3pDPvEei3dfHtumI11Q" serverClassElem="_X9G3pjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_X9lYwjPvEei3dfHtumI11Q" clientClassElem="_X9lYwDPvEei3dfHtumI11Q" serverClassElem="_X9lYwTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_X-f-xDPvEei3dfHtumI11Q" property="&quot;defaultEndpoint&quot;" clientClassElem="_X-f-wDPvEei3dfHtumI11Q" serverClassElem="_X-f-wzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_X-f-xTPvEei3dfHtumI11Q" property="&quot;interceptors&quot;" clientClassElem="_X-f-wDPvEei3dfHtumI11Q" serverClassElem="_X-f-wTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_X-_uAzPvEei3dfHtumI11Q" property="&quot;defaultEndpoint&quot;" clientClassElem="_X-_uATPvEei3dfHtumI11Q" serverClassElem="_X-_uAjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_X-_uBDPvEei3dfHtumI11Q" property="&quot;interceptors&quot;" clientClassElem="_X-_uATPvEei3dfHtumI11Q" serverClassElem="_X-_uADPvEei3dfHtumI11Q"/>
+    <configConnections refID="_X-_uBTPvEei3dfHtumI11Q" property="&quot;endpointAdapter&quot;" clientClassElem="_X-_uAjPvEei3dfHtumI11Q" serverClassElem="_X_AVEDPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="christophd.citrus_asm" instantiates="//@architectureDescriptions[name='christophd.citrus_config']">
+    <assmComponents name="testSimulator" id="_XrotIjPvEei3dfHtumI11Q" instantiates="_XroGEDPvEei3dfHtumI11Q"/>
+    <assmComponents name="httpClient" id="_XsUpoTPvEei3dfHtumI11Q" instantiates="_XsUpoDPvEei3dfHtumI11Q"/>
+    <assmComponents name="dockerClient" id="_XsUpojPvEei3dfHtumI11Q" instantiates="_XsUpoDPvEei3dfHtumI11Q"/>
+    <assmComponents name="seleniumBrowser" id="_XsUpozPvEei3dfHtumI11Q" instantiates="_XsUpoDPvEei3dfHtumI11Q"/>
+    <assmComponents name="citrusHandlerMapping" id="_Xu9G4TPvEei3dfHtumI11Q" instantiates="_Xu8f0DPvEei3dfHtumI11Q"/>
+    <assmComponents name="citrusLoggingInterceptor" id="_Xu9G4jPvEei3dfHtumI11Q" instantiates="_Xu8f0TPvEei3dfHtumI11Q"/>
+    <assmComponents name="citrusHandlerInterceptor" id="_Xu9G4zPvEei3dfHtumI11Q" instantiates="_Xu8f0jPvEei3dfHtumI11Q"/>
+    <assmComponents name="citrusMethodHandlerAdapter" id="_Xu9G5DPvEei3dfHtumI11Q" instantiates="_Xu8f0zPvEei3dfHtumI11Q"/>
+    <assmComponents name="citrusHttpMessageController" id="_Xu9G5TPvEei3dfHtumI11Q" instantiates="_Xu8f1DPvEei3dfHtumI11Q"/>
+    <assmComponents name="schemaRepository" id="_XvddODPvEei3dfHtumI11Q" instantiates="_Xvc2IDPvEei3dfHtumI11Q"/>
+    <assmComponents name="citrusLoggingInterceptor" id="_XvddOTPvEei3dfHtumI11Q" instantiates="_XvddMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="citrusHandlerInterceptor" id="_XvddOjPvEei3dfHtumI11Q" instantiates="_XvddMTPvEei3dfHtumI11Q"/>
+    <assmComponents name="citrusHttpMessageController" id="_XvddOzPvEei3dfHtumI11Q" instantiates="_XvddMjPvEei3dfHtumI11Q"/>
+    <assmComponents name="basicAuthClientRequestFactory" id="_XvddPDPvEei3dfHtumI11Q" instantiates="_XvddMzPvEei3dfHtumI11Q"/>
+    <assmComponents id="_XvstxTPvEei3dfHtumI11Q" instantiates="_XvstwDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_XvstxjPvEei3dfHtumI11Q" instantiates="_XvstwTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_XvstxzPvEei3dfHtumI11Q" instantiates="_XvstwjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;schemaRepository&quot;" id="_XxxKUTPvEei3dfHtumI11Q" instantiates="_XxxKUDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_XyQ5kTPvEei3dfHtumI11Q" instantiates="_XyQSgDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_XyQ5kjPvEei3dfHtumI11Q" instantiates="_XyQSgTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_XyQ5kzPvEei3dfHtumI11Q" instantiates="_XyQSgjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;connectionFactory&quot;" id="_XzLfkTPvEei3dfHtumI11Q" instantiates="_XzLfkDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;testSimulator&quot;" id="_XzoylTPvEei3dfHtumI11Q" instantiates="_XzoykDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;schemaRepository&quot;" id="_X4KtQTPvEei3dfHtumI11Q" instantiates="_X4KtQDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;schemaRepository&quot;" id="_X400kTPvEei3dfHtumI11Q" instantiates="_X400kDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_X9HetTPvEei3dfHtumI11Q" instantiates="_X9G3oDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;citrusUrlHandlerMapping&quot;" id="_X9HetjPvEei3dfHtumI11Q" instantiates="_X9G3oTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;citrusHandshakeHandler&quot;" id="_X9HetzPvEei3dfHtumI11Q" instantiates="_X9G3ojPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;upgradeStrategy&quot;" id="_X9HeuDPvEei3dfHtumI11Q" instantiates="_X9G3ozPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;citrusHandlerMapping&quot;" id="_X9HeuTPvEei3dfHtumI11Q" instantiates="_X9G3pDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;citrusLoggingInterceptor&quot;" id="_X9HeujPvEei3dfHtumI11Q" instantiates="_X9G3pTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;citrusHandlerInterceptor&quot;" id="_X9HeuzPvEei3dfHtumI11Q" instantiates="_X9G3pjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;citrusMethodHandlerAdapter&quot;" id="_X9HevDPvEei3dfHtumI11Q" instantiates="_X9G3pzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;citrusHttpMessageController&quot;" id="_X9IFwDPvEei3dfHtumI11Q" instantiates="_X9G3qDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;schemaRepository&quot;" id="_X9lYwzPvEei3dfHtumI11Q" instantiates="_X9kxsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;citrusHandlerInterceptor&quot;" id="_X9lYxDPvEei3dfHtumI11Q" instantiates="_X9kxsTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;citrusHttpMessageController&quot;" id="_X9lYxTPvEei3dfHtumI11Q" instantiates="_X9kxsjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;citrusUrlHandlerMapping&quot;" id="_X9lYxjPvEei3dfHtumI11Q" instantiates="_X9kxszPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;citrusHandshakeHandler&quot;" id="_X9lYxzPvEei3dfHtumI11Q" instantiates="_X9lYwDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;upgradeStrategy&quot;" id="_X9lYyDPvEei3dfHtumI11Q" instantiates="_X9lYwTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;citrusEndpointMapping&quot;" id="_X-gl0DPvEei3dfHtumI11Q" instantiates="_X-f-wDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;loggingInterceptor&quot;" id="_X-gl0TPvEei3dfHtumI11Q" instantiates="_X-f-wTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;citrusEndpointInterceptor&quot;" id="_X-gl0jPvEei3dfHtumI11Q" instantiates="_X-f-wjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;citrusWsEndpoint&quot;" id="_X-gl0zPvEei3dfHtumI11Q" instantiates="_X-f-wzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;loggingInterceptor&quot;" id="_X_AVETPvEei3dfHtumI11Q" instantiates="_X-_uADPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;defaultPayloadMapping&quot;" id="_X_AVEjPvEei3dfHtumI11Q" instantiates="_X-_uATPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;defaultWsEndpoint&quot;" id="_X_AVEzPvEei3dfHtumI11Q" instantiates="_X-_uAjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_XrotIzPvEei3dfHtumI11Q" property="testSimulator.mappingKeyExtractor" clientInstElem="_XrotIjPvEei3dfHtumI11Q" serverInstElem="_XrotJDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_XrotJTPvEei3dfHtumI11Q" property="testSimulator.responseEndpointAdapter" clientInstElem="_XrotIjPvEei3dfHtumI11Q" serverInstElem="_XrotJjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Xu9G5jPvEei3dfHtumI11Q" property="citrusHandlerMapping.interceptors" clientInstElem="_Xu9G4TPvEei3dfHtumI11Q" serverInstElem="_Xu9G4zPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_XvddPTPvEei3dfHtumI11Q" property="basicAuthClientRequestFactory.authScope" clientInstElem="_XvddPDPvEei3dfHtumI11Q" serverInstElem="_XvddPjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_XvddPzPvEei3dfHtumI11Q" property="basicAuthClientRequestFactory.credentials" clientInstElem="_XvddPDPvEei3dfHtumI11Q" serverInstElem="_XvddQDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_XvstyDPvEei3dfHtumI11Q" clientInstElem="_XvstxjPvEei3dfHtumI11Q" serverInstElem="_XvstyTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_XyQ5lDPvEei3dfHtumI11Q" clientInstElem="_XyQ5kTPvEei3dfHtumI11Q" serverInstElem="_XyQ5lTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_XzoyljPvEei3dfHtumI11Q" property="testSimulator.mappingKeyExtractor" clientInstElem="_XzoylTPvEei3dfHtumI11Q" serverInstElem="_XzoylzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_XzoymDPvEei3dfHtumI11Q" property="testSimulator.responseEndpointAdapter" clientInstElem="_XzoylTPvEei3dfHtumI11Q" serverInstElem="_XzoymTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_X9IFwTPvEei3dfHtumI11Q" property="citrusUrlHandlerMapping.interceptors" clientInstElem="_X9HetjPvEei3dfHtumI11Q" serverInstElem="_X9HeuzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_X9IFwjPvEei3dfHtumI11Q" clientInstElem="_X9HetzPvEei3dfHtumI11Q" serverInstElem="_X9HeuDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_X9IFwzPvEei3dfHtumI11Q" clientInstElem="_X9HeuDPvEei3dfHtumI11Q" serverInstElem="_X9IFxDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_X9IFxTPvEei3dfHtumI11Q" property="citrusHandlerMapping.interceptors" clientInstElem="_X9HeuTPvEei3dfHtumI11Q" serverInstElem="_X9HeuzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_X9lYyTPvEei3dfHtumI11Q" clientInstElem="_X9lYxzPvEei3dfHtumI11Q" serverInstElem="_X9lYyDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_X-gl1DPvEei3dfHtumI11Q" property="citrusEndpointMapping.defaultEndpoint" clientInstElem="_X-gl0DPvEei3dfHtumI11Q" serverInstElem="_X-gl0zPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_X-gl1TPvEei3dfHtumI11Q" property="citrusEndpointMapping.interceptors" clientInstElem="_X-gl0DPvEei3dfHtumI11Q" serverInstElem="_X-gl0TPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_X_AVFDPvEei3dfHtumI11Q" property="defaultPayloadMapping.defaultEndpoint" clientInstElem="_X_AVEjPvEei3dfHtumI11Q" serverInstElem="_X_AVEzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_X_AVFTPvEei3dfHtumI11Q" property="defaultPayloadMapping.interceptors" clientInstElem="_X_AVEjPvEei3dfHtumI11Q" serverInstElem="_X_AVETPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_X_AVFjPvEei3dfHtumI11Q" property="defaultWsEndpoint.endpointAdapter" clientInstElem="_X_AVEzPvEei3dfHtumI11Q" serverInstElem="_X_AVFzPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="christophd.citrus_spec">
+    <specConnections refID="_YCcDkDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDkTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDkjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDkzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDlDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDlTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDljPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDlzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDmDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDmTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDmjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDmzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDnDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDnTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDnjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDnzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDoDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDoTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_YCcDojPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

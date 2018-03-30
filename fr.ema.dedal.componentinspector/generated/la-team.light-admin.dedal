@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="la-team.light-admin">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="la-team.light-admin_config" implements="//@architectureDescriptions[name='la-team.light-admin_spec']">
+    <configComponents name="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" id="_cETroDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" id="_cEmmkDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" id="_cE5hgDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_cETroTPxEei3dfHtumI11Q" property="dataSource" clientClassElem="_cETroDPxEei3dfHtumI11Q" serverClassElem="_cETrojPxEei3dfHtumI11Q"/>
+    <configConnections refID="_cETrozPxEei3dfHtumI11Q" property="&quot;jpaVendorAdapter&quot;" clientClassElem="_cETroDPxEei3dfHtumI11Q" serverClassElem="_cETrpDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_cEmmkTPxEei3dfHtumI11Q" property="dataSource" clientClassElem="_cEmmkDPxEei3dfHtumI11Q" serverClassElem="_cEmmkjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_cEmmkzPxEei3dfHtumI11Q" property="&quot;jpaVendorAdapter&quot;" clientClassElem="_cEmmkDPxEei3dfHtumI11Q" serverClassElem="_cEmmlDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_cE5hgTPxEei3dfHtumI11Q" property="dataSource" clientClassElem="_cE5hgDPxEei3dfHtumI11Q" serverClassElem="_cE5hgjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_cE5hgzPxEei3dfHtumI11Q" property="&quot;jpaVendorAdapter&quot;" clientClassElem="_cE5hgDPxEei3dfHtumI11Q" serverClassElem="_cE5hhDPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="la-team.light-admin_asm" instantiates="//@architectureDescriptions[name='la-team.light-admin_config']">
+    <assmComponents name="entityManagerFactory" id="_cETrpTPxEei3dfHtumI11Q" instantiates="_cETroDPxEei3dfHtumI11Q"/>
+    <assmComponents name="entityManagerFactory" id="_cEmmlTPxEei3dfHtumI11Q" instantiates="_cEmmkDPxEei3dfHtumI11Q"/>
+    <assmComponents name="entityManagerFactory" id="_cE5hhTPxEei3dfHtumI11Q" instantiates="_cE5hgDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_cETrpjPxEei3dfHtumI11Q" property="entityManagerFactory.dataSource" clientInstElem="_cETrpTPxEei3dfHtumI11Q" serverInstElem="_cETrpzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_cETrqDPxEei3dfHtumI11Q" property="entityManagerFactory.jpaVendorAdapter" clientInstElem="_cETrpTPxEei3dfHtumI11Q" serverInstElem="_cETrqTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_cEmmljPxEei3dfHtumI11Q" property="entityManagerFactory.dataSource" clientInstElem="_cEmmlTPxEei3dfHtumI11Q" serverInstElem="_cEmmlzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_cEmmmDPxEei3dfHtumI11Q" property="entityManagerFactory.jpaVendorAdapter" clientInstElem="_cEmmlTPxEei3dfHtumI11Q" serverInstElem="_cEmmmTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_cE5hhjPxEei3dfHtumI11Q" property="entityManagerFactory.dataSource" clientInstElem="_cE5hhTPxEei3dfHtumI11Q" serverInstElem="_cE5hhzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_cE5hiDPxEei3dfHtumI11Q" property="entityManagerFactory.jpaVendorAdapter" clientInstElem="_cE5hhTPxEei3dfHtumI11Q" serverInstElem="_cE5hiTPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="la-team.light-admin_spec">
+    <specConnections refID="_cFDSgDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_cFDSgTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_cFDSgjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_cFDSgzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_cFDShDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_cFDShTPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

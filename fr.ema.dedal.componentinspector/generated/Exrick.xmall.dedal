@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="Exrick.xmall">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="Exrick.xmall_config" implements="//@architectureDescriptions[name='Exrick.xmall_spec']">
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_9HrQ0DPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="Exrick.xmall_asm" instantiates="//@architectureDescriptions[name='Exrick.xmall_config']">
+    <assmComponents id="_9HrQ0TPvEei3dfHtumI11Q" instantiates="_9HrQ0DPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="Exrick.xmall_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

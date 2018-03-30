@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="elasticjob.elastic-job-lite">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="elasticjob.elastic-job-lite_config" implements="//@architectureDescriptions[name='elasticjob.elastic-job-lite_spec']">
+    <configComponents name="io.elasticjob.lite.spring.fixture.job.ref.RefFooSimpleElasticJob" id="_3D-pADPvEei3dfHtumI11Q"/>
+    <configComponents name="io.elasticjob.lite.spring.fixture.job.ref.RefFooDataflowElasticJob" id="_3D-pATPvEei3dfHtumI11Q"/>
+    <configComponents name="io.elasticjob.lite.spring.fixture.job.ref.RefFooSimpleElasticJob" id="_3GETsDPvEei3dfHtumI11Q"/>
+    <configComponents name="io.elasticjob.lite.spring.fixture.job.ref.RefFooDataflowElasticJob" id="_3GETsTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_3D-pAjPvEei3dfHtumI11Q" property="&quot;fooService&quot;" clientClassElem="_3D-pADPvEei3dfHtumI11Q" serverClassElem="_3D-pAzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_3D-pBDPvEei3dfHtumI11Q" property="&quot;fooService&quot;" clientClassElem="_3D-pATPvEei3dfHtumI11Q" serverClassElem="_3D-pBTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_3GETsjPvEei3dfHtumI11Q" property="&quot;fooService&quot;" clientClassElem="_3GETsDPvEei3dfHtumI11Q" serverClassElem="_3GETszPvEei3dfHtumI11Q"/>
+    <configConnections refID="_3GETtDPvEei3dfHtumI11Q" property="&quot;fooService&quot;" clientClassElem="_3GETsTPvEei3dfHtumI11Q" serverClassElem="_3GETtTPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="elasticjob.elastic-job-lite_asm" instantiates="//@architectureDescriptions[name='elasticjob.elastic-job-lite_config']">
+    <assmComponents name="refSimpleJob" id="_3D-pBjPvEei3dfHtumI11Q" instantiates="_3D-pADPvEei3dfHtumI11Q"/>
+    <assmComponents name="refDataflowJob" id="_3D-pBzPvEei3dfHtumI11Q" instantiates="_3D-pATPvEei3dfHtumI11Q"/>
+    <assmComponents name="refSimpleJob" id="_3GETtjPvEei3dfHtumI11Q" instantiates="_3GETsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="refDataflowJob" id="_3GETtzPvEei3dfHtumI11Q" instantiates="_3GETsTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3D-pCDPvEei3dfHtumI11Q" property="refSimpleJob.fooService" clientInstElem="_3D-pBjPvEei3dfHtumI11Q" serverInstElem="_3D-pCTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3D-pCjPvEei3dfHtumI11Q" property="refDataflowJob.fooService" clientInstElem="_3D-pBzPvEei3dfHtumI11Q" serverInstElem="_3D-pCzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3GETuDPvEei3dfHtumI11Q" property="refSimpleJob.fooService" clientInstElem="_3GETtjPvEei3dfHtumI11Q" serverInstElem="_3GETuTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3GETujPvEei3dfHtumI11Q" property="refDataflowJob.fooService" clientInstElem="_3GETtzPvEei3dfHtumI11Q" serverInstElem="_3GETuzPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="elasticjob.elastic-job-lite_spec">
+    <specConnections refID="_3HHckDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_3HHckTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_3HHckjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_3HHckzPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

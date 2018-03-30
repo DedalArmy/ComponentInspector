@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="dianping.zebra">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dianping.zebra_config" implements="//@architectureDescriptions[name='dianping.zebra_spec']">
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="_qmB6kDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.shard.jdbc.ShardDataSource&quot;" id="_qmB6kTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="_qmWqsDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.shard.jdbc.ShardDataSource&quot;" id="_qmWqsTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="_qmploDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.shard.jdbc.ShardDataSource&quot;" id="_qmploTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="_qm8gkDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.shard.jdbc.ShardDataSource&quot;" id="_qm8gkTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="_qnGRkDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.shard.jdbc.ShardDataSource&quot;" id="_qnGRkTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.group.jdbc.GroupDataSource&quot;" id="_qnZMgDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.group.jdbc.GroupDataSource&quot;" id="_qni9gDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="_qn14cDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.shard.jdbc.ShardDataSource&quot;" id="_qn14cTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="_qoIzYDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.shard.jdbc.ShardDataSource&quot;" id="_qoIzYTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="_qoSkYDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.shard.jdbc.ShardDataSource&quot;" id="_qoSkYTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="_qolfUDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.shard.jdbc.ShardDataSource&quot;" id="_qolfUTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="_qov3YDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.shard.jdbc.ShardDataSource&quot;" id="_qov3YTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.group.jdbc.GroupDataSource&quot;" id="_qpDZYDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.group.jdbc.GroupDataSource&quot;" id="_qpMjUDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.monitor.spring.DataSourceAutoMonitor&quot;" id="_qpfeQDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.monitor.spring.DataSourceAutoReplacer&quot;" id="_qpzAQDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.monitor.spring.DataSourceAutoReplacer&quot;" id="_qp8KMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.monitor.spring.DataSourceAutoReplacer&quot;" id="_qqPFIDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.monitor.spring.DataSourceAutoReplacer&quot;" id="_qqY2IDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.monitor.spring.DataSourceAutoMonitor&quot;" id="_qqrxEDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.monitor.spring.DataSourceAutoReplacer&quot;" id="_qq1iEDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.monitor.spring.DataSourceAutoReplacer&quot;" id="_qrIdADPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.monitor.spring.DataSourceAutoReplacer&quot;" id="_qrb_ADPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.dianping.zebra.monitor.spring.DataSourceAutoReplacer&quot;" id="_qrlwADPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qmB6kjPvEei3dfHtumI11Q" property="&quot;dataSourcePool&quot;" clientClassElem="_qmB6kTPvEei3dfHtumI11Q" serverClassElem="_qmB6kDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qmB6kzPvEei3dfHtumI11Q" property="&quot;routerFactory&quot;" clientClassElem="_qmB6kTPvEei3dfHtumI11Q" serverClassElem="_qmB6lDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qmWqsjPvEei3dfHtumI11Q" property="&quot;dataSourcePool&quot;" clientClassElem="_qmWqsTPvEei3dfHtumI11Q" serverClassElem="_qmWqsDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qmWqszPvEei3dfHtumI11Q" property="&quot;routerFactory&quot;" clientClassElem="_qmWqsTPvEei3dfHtumI11Q" serverClassElem="_qmWqtDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qmplojPvEei3dfHtumI11Q" property="&quot;dataSourcePool&quot;" clientClassElem="_qmploTPvEei3dfHtumI11Q" serverClassElem="_qmploDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qmplozPvEei3dfHtumI11Q" property="&quot;routerFactory&quot;" clientClassElem="_qmploTPvEei3dfHtumI11Q" serverClassElem="_qmplpDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qm8gkjPvEei3dfHtumI11Q" property="&quot;dataSourcePool&quot;" clientClassElem="_qm8gkTPvEei3dfHtumI11Q" serverClassElem="_qm8gkDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qm8gkzPvEei3dfHtumI11Q" property="&quot;routerFactory&quot;" clientClassElem="_qm8gkTPvEei3dfHtumI11Q" serverClassElem="_qm8glDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qnGRkjPvEei3dfHtumI11Q" property="&quot;dataSourcePool&quot;" clientClassElem="_qnGRkTPvEei3dfHtumI11Q" serverClassElem="_qnGRkDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qnGRkzPvEei3dfHtumI11Q" property="&quot;routerFactory&quot;" clientClassElem="_qnGRkTPvEei3dfHtumI11Q" serverClassElem="_qnGRlDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qn14cjPvEei3dfHtumI11Q" property="&quot;dataSourcePool&quot;" clientClassElem="_qn14cTPvEei3dfHtumI11Q" serverClassElem="_qn14cDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qn14czPvEei3dfHtumI11Q" property="&quot;routerFactory&quot;" clientClassElem="_qn14cTPvEei3dfHtumI11Q" serverClassElem="_qn14dDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qoIzYjPvEei3dfHtumI11Q" property="&quot;dataSourcePool&quot;" clientClassElem="_qoIzYTPvEei3dfHtumI11Q" serverClassElem="_qoIzYDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qoIzYzPvEei3dfHtumI11Q" property="&quot;routerFactory&quot;" clientClassElem="_qoIzYTPvEei3dfHtumI11Q" serverClassElem="_qoIzZDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qoSkYjPvEei3dfHtumI11Q" property="&quot;dataSourcePool&quot;" clientClassElem="_qoSkYTPvEei3dfHtumI11Q" serverClassElem="_qoSkYDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qoSkYzPvEei3dfHtumI11Q" property="&quot;routerFactory&quot;" clientClassElem="_qoSkYTPvEei3dfHtumI11Q" serverClassElem="_qoSkZDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qolfUjPvEei3dfHtumI11Q" property="&quot;dataSourcePool&quot;" clientClassElem="_qolfUTPvEei3dfHtumI11Q" serverClassElem="_qolfUDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qolfUzPvEei3dfHtumI11Q" property="&quot;routerFactory&quot;" clientClassElem="_qolfUTPvEei3dfHtumI11Q" serverClassElem="_qolfVDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qov3YjPvEei3dfHtumI11Q" property="&quot;dataSourcePool&quot;" clientClassElem="_qov3YTPvEei3dfHtumI11Q" serverClassElem="_qov3YDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_qo5oYDPvEei3dfHtumI11Q" property="&quot;routerFactory&quot;" clientClassElem="_qov3YTPvEei3dfHtumI11Q" serverClassElem="_qo5oYTPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dianping.zebra_asm" instantiates="//@architectureDescriptions[name='dianping.zebra_config']">
+    <assmComponents name="id0" id="_qmB6lTPvEei3dfHtumI11Q" instantiates="_qmB6kDPvEei3dfHtumI11Q"/>
+    <assmComponents name="id1" id="_qmB6ljPvEei3dfHtumI11Q" instantiates="_qmB6kDPvEei3dfHtumI11Q"/>
+    <assmComponents name="id2" id="_qmB6lzPvEei3dfHtumI11Q" instantiates="_qmB6kDPvEei3dfHtumI11Q"/>
+    <assmComponents name="id3" id="_qmB6mDPvEei3dfHtumI11Q" instantiates="_qmB6kDPvEei3dfHtumI11Q"/>
+    <assmComponents name="class0" id="_qmB6mTPvEei3dfHtumI11Q" instantiates="_qmB6kDPvEei3dfHtumI11Q"/>
+    <assmComponents name="class1" id="_qmB6mjPvEei3dfHtumI11Q" instantiates="_qmB6kDPvEei3dfHtumI11Q"/>
+    <assmComponents name="class2" id="_qmB6mzPvEei3dfHtumI11Q" instantiates="_qmB6kDPvEei3dfHtumI11Q"/>
+    <assmComponents name="class3" id="_qmB6nDPvEei3dfHtumI11Q" instantiates="_qmB6kDPvEei3dfHtumI11Q"/>
+    <assmComponents name="zebraDS" id="_qmB6nTPvEei3dfHtumI11Q" instantiates="_qmB6kTPvEei3dfHtumI11Q"/>
+    <assmComponents name="id0" id="_qmWqtTPvEei3dfHtumI11Q" instantiates="_qmWqsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="id1" id="_qmWqtjPvEei3dfHtumI11Q" instantiates="_qmWqsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="id2" id="_qmWqtzPvEei3dfHtumI11Q" instantiates="_qmWqsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="id3" id="_qmWquDPvEei3dfHtumI11Q" instantiates="_qmWqsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="class0" id="_qmWquTPvEei3dfHtumI11Q" instantiates="_qmWqsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="class1" id="_qmWqujPvEei3dfHtumI11Q" instantiates="_qmWqsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="class2" id="_qmWquzPvEei3dfHtumI11Q" instantiates="_qmWqsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="class3" id="_qmWqvDPvEei3dfHtumI11Q" instantiates="_qmWqsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="zebraDS" id="_qmWqvTPvEei3dfHtumI11Q" instantiates="_qmWqsTPvEei3dfHtumI11Q"/>
+    <assmComponents name="groupdb" id="_qmplpTPvEei3dfHtumI11Q" instantiates="_qmploDPvEei3dfHtumI11Q"/>
+    <assmComponents name="zebraDS" id="_qmplpjPvEei3dfHtumI11Q" instantiates="_qmploTPvEei3dfHtumI11Q"/>
+    <assmComponents name="ds0" id="_qm8glTPvEei3dfHtumI11Q" instantiates="_qm8gkDPvEei3dfHtumI11Q"/>
+    <assmComponents name="zebraDS" id="_qm8gljPvEei3dfHtumI11Q" instantiates="_qm8gkTPvEei3dfHtumI11Q"/>
+    <assmComponents name="ds0" id="_qnGRlTPvEei3dfHtumI11Q" instantiates="_qnGRkDPvEei3dfHtumI11Q"/>
+    <assmComponents name="zebraDS" id="_qnGRljPvEei3dfHtumI11Q" instantiates="_qnGRkTPvEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_qnZMgTPvEei3dfHtumI11Q" instantiates="_qnZMgDPvEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource3" id="_qni9gTPvEei3dfHtumI11Q" instantiates="_qni9gDPvEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource4" id="_qni9gjPvEei3dfHtumI11Q" instantiates="_qni9gDPvEei3dfHtumI11Q"/>
+    <assmComponents name="id0" id="_qn14dTPvEei3dfHtumI11Q" instantiates="_qn14cDPvEei3dfHtumI11Q"/>
+    <assmComponents name="id1" id="_qn14djPvEei3dfHtumI11Q" instantiates="_qn14cDPvEei3dfHtumI11Q"/>
+    <assmComponents name="id2" id="_qn14dzPvEei3dfHtumI11Q" instantiates="_qn14cDPvEei3dfHtumI11Q"/>
+    <assmComponents name="id3" id="_qn14eDPvEei3dfHtumI11Q" instantiates="_qn14cDPvEei3dfHtumI11Q"/>
+    <assmComponents name="class0" id="_qn14eTPvEei3dfHtumI11Q" instantiates="_qn14cDPvEei3dfHtumI11Q"/>
+    <assmComponents name="class1" id="_qn14ejPvEei3dfHtumI11Q" instantiates="_qn14cDPvEei3dfHtumI11Q"/>
+    <assmComponents name="class2" id="_qn14ezPvEei3dfHtumI11Q" instantiates="_qn14cDPvEei3dfHtumI11Q"/>
+    <assmComponents name="class3" id="_qn14fDPvEei3dfHtumI11Q" instantiates="_qn14cDPvEei3dfHtumI11Q"/>
+    <assmComponents name="zebraDS" id="_qn14fTPvEei3dfHtumI11Q" instantiates="_qn14cTPvEei3dfHtumI11Q"/>
+    <assmComponents name="id0" id="_qoIzZTPvEei3dfHtumI11Q" instantiates="_qoIzYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="id1" id="_qoIzZjPvEei3dfHtumI11Q" instantiates="_qoIzYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="id2" id="_qoIzZzPvEei3dfHtumI11Q" instantiates="_qoIzYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="id3" id="_qoIzaDPvEei3dfHtumI11Q" instantiates="_qoIzYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="class0" id="_qoIzaTPvEei3dfHtumI11Q" instantiates="_qoIzYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="class1" id="_qoIzajPvEei3dfHtumI11Q" instantiates="_qoIzYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="class2" id="_qoIzazPvEei3dfHtumI11Q" instantiates="_qoIzYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="class3" id="_qoIzbDPvEei3dfHtumI11Q" instantiates="_qoIzYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="zebraDS" id="_qoIzbTPvEei3dfHtumI11Q" instantiates="_qoIzYTPvEei3dfHtumI11Q"/>
+    <assmComponents name="groupdb" id="_qoSkZTPvEei3dfHtumI11Q" instantiates="_qoSkYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="zebraDS" id="_qoSkZjPvEei3dfHtumI11Q" instantiates="_qoSkYTPvEei3dfHtumI11Q"/>
+    <assmComponents name="ds0" id="_qolfVTPvEei3dfHtumI11Q" instantiates="_qolfUDPvEei3dfHtumI11Q"/>
+    <assmComponents name="zebraDS" id="_qolfVjPvEei3dfHtumI11Q" instantiates="_qolfUTPvEei3dfHtumI11Q"/>
+    <assmComponents name="ds0" id="_qo5oYjPvEei3dfHtumI11Q" instantiates="_qov3YDPvEei3dfHtumI11Q"/>
+    <assmComponents name="zebraDS" id="_qo5oYzPvEei3dfHtumI11Q" instantiates="_qov3YTPvEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_qpDZYTPvEei3dfHtumI11Q" instantiates="_qpDZYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource3" id="_qpWUUDPvEei3dfHtumI11Q" instantiates="_qpMjUDPvEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource4" id="_qpWUUTPvEei3dfHtumI11Q" instantiates="_qpMjUDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_qpfeQTPvEei3dfHtumI11Q" instantiates="_qpfeQDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_qpzAQTPvEei3dfHtumI11Q" instantiates="_qpzAQDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_qp8KMTPvEei3dfHtumI11Q" instantiates="_qp8KMDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_qqPFITPvEei3dfHtumI11Q" instantiates="_qqPFIDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_qqY2ITPvEei3dfHtumI11Q" instantiates="_qqY2IDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_qqrxETPvEei3dfHtumI11Q" instantiates="_qqrxEDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_qq1iETPvEei3dfHtumI11Q" instantiates="_qq1iEDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_qrIdATPvEei3dfHtumI11Q" instantiates="_qrIdADPvEei3dfHtumI11Q"/>
+    <assmComponents id="_qrb_ATPvEei3dfHtumI11Q" instantiates="_qrb_ADPvEei3dfHtumI11Q"/>
+    <assmComponents id="_qrlwATPvEei3dfHtumI11Q" instantiates="_qrlwADPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmB6njPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qmB6nTPvEei3dfHtumI11Q" serverInstElem="_qmB6lTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmB6nzPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qmB6nTPvEei3dfHtumI11Q" serverInstElem="_qmB6ljPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmB6oDPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qmB6nTPvEei3dfHtumI11Q" serverInstElem="_qmB6lzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmB6oTPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qmB6nTPvEei3dfHtumI11Q" serverInstElem="_qmB6mDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmB6ojPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qmB6nTPvEei3dfHtumI11Q" serverInstElem="_qmB6mTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmB6ozPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qmB6nTPvEei3dfHtumI11Q" serverInstElem="_qmB6mjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmB6pDPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qmB6nTPvEei3dfHtumI11Q" serverInstElem="_qmB6mzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmB6pTPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qmB6nTPvEei3dfHtumI11Q" serverInstElem="_qmB6nDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmB6pjPvEei3dfHtumI11Q" property="zebraDS.routerFactory" clientInstElem="_qmB6nTPvEei3dfHtumI11Q" serverInstElem="_qmB6pzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmWqvjPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qmWqvTPvEei3dfHtumI11Q" serverInstElem="_qmWqtTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmf0oDPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qmWqvTPvEei3dfHtumI11Q" serverInstElem="_qmWqtjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmf0oTPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qmWqvTPvEei3dfHtumI11Q" serverInstElem="_qmWqtzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmf0ojPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qmWqvTPvEei3dfHtumI11Q" serverInstElem="_qmWquDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmf0ozPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qmWqvTPvEei3dfHtumI11Q" serverInstElem="_qmWquTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmf0pDPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qmWqvTPvEei3dfHtumI11Q" serverInstElem="_qmWqujPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmf0pTPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qmWqvTPvEei3dfHtumI11Q" serverInstElem="_qmWquzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmf0pjPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qmWqvTPvEei3dfHtumI11Q" serverInstElem="_qmWqvDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmf0pzPvEei3dfHtumI11Q" property="zebraDS.routerFactory" clientInstElem="_qmWqvTPvEei3dfHtumI11Q" serverInstElem="_qmf0qDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmplpzPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qmplpjPvEei3dfHtumI11Q" serverInstElem="_qmplpTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qmplqDPvEei3dfHtumI11Q" property="zebraDS.routerFactory" clientInstElem="_qmplpjPvEei3dfHtumI11Q" serverInstElem="_qmplqTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qm8glzPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qm8gljPvEei3dfHtumI11Q" serverInstElem="_qm8glTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qm8gmDPvEei3dfHtumI11Q" property="zebraDS.routerFactory" clientInstElem="_qm8gljPvEei3dfHtumI11Q" serverInstElem="_qm8gmTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qnGRlzPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qnGRljPvEei3dfHtumI11Q" serverInstElem="_qnGRlTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qnGRmDPvEei3dfHtumI11Q" property="zebraDS.routerFactory" clientInstElem="_qnGRljPvEei3dfHtumI11Q" serverInstElem="_qnGRmTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qn14fjPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qn14fTPvEei3dfHtumI11Q" serverInstElem="_qn14dTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qn14fzPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qn14fTPvEei3dfHtumI11Q" serverInstElem="_qn14djPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qn14gDPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qn14fTPvEei3dfHtumI11Q" serverInstElem="_qn14dzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qn14gTPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qn14fTPvEei3dfHtumI11Q" serverInstElem="_qn14eDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qn14gjPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qn14fTPvEei3dfHtumI11Q" serverInstElem="_qn14eTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qn14gzPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qn14fTPvEei3dfHtumI11Q" serverInstElem="_qn14ejPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qn14hDPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qn14fTPvEei3dfHtumI11Q" serverInstElem="_qn14ezPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qn14hTPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qn14fTPvEei3dfHtumI11Q" serverInstElem="_qn14fDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qn14hjPvEei3dfHtumI11Q" property="zebraDS.routerFactory" clientInstElem="_qn14fTPvEei3dfHtumI11Q" serverInstElem="_qn14hzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qoIzbjPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qoIzbTPvEei3dfHtumI11Q" serverInstElem="_qoIzZTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qoIzbzPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qoIzbTPvEei3dfHtumI11Q" serverInstElem="_qoIzZjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qoIzcDPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qoIzbTPvEei3dfHtumI11Q" serverInstElem="_qoIzZzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qoIzcTPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qoIzbTPvEei3dfHtumI11Q" serverInstElem="_qoIzaDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qoIzcjPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qoIzbTPvEei3dfHtumI11Q" serverInstElem="_qoIzaTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qoIzczPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qoIzbTPvEei3dfHtumI11Q" serverInstElem="_qoIzajPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qoIzdDPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qoIzbTPvEei3dfHtumI11Q" serverInstElem="_qoIzazPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qoIzdTPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qoIzbTPvEei3dfHtumI11Q" serverInstElem="_qoIzbDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qoIzdjPvEei3dfHtumI11Q" property="zebraDS.routerFactory" clientInstElem="_qoIzbTPvEei3dfHtumI11Q" serverInstElem="_qoIzdzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qoSkZzPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qoSkZjPvEei3dfHtumI11Q" serverInstElem="_qoSkZTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qoSkaDPvEei3dfHtumI11Q" property="zebraDS.routerFactory" clientInstElem="_qoSkZjPvEei3dfHtumI11Q" serverInstElem="_qoSkaTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qolfVzPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qolfVjPvEei3dfHtumI11Q" serverInstElem="_qolfVTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qolfWDPvEei3dfHtumI11Q" property="zebraDS.routerFactory" clientInstElem="_qolfVjPvEei3dfHtumI11Q" serverInstElem="_qolfWTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qo5oZDPvEei3dfHtumI11Q" property="zebraDS.dataSourcePool" clientInstElem="_qo5oYzPvEei3dfHtumI11Q" serverInstElem="_qo5oYjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qo5oZTPvEei3dfHtumI11Q" property="zebraDS.routerFactory" clientInstElem="_qo5oYzPvEei3dfHtumI11Q" serverInstElem="_qo5oZjPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dianping.zebra_spec">
+    <specConnections refID="_qru58DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru58TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru58jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru58zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru59DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru59TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru59jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru59zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru5-DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru5-TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru5-jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru5-zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru5_DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru5_TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru5_jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru5_zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru6ADPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru6ATPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru6AjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_qru6AzPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

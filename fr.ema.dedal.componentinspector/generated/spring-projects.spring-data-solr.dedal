@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="spring-projects.spring-data-solr">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="spring-projects.spring-data-solr_config" implements="//@architectureDescriptions[name='spring-projects.spring-data-solr_spec']">
+    <configComponents name="&quot;org.springframework.data.solr.test.util.GenericMockFactory&quot;" id="_D2E7IDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.solr.core.SolrTemplate&quot;" id="_D2E7ITPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.solr.repository.support.SolrRepositoryFactoryBean&quot;" id="_D2E7IjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.solr.test.util.GenericMockFactory&quot;" id="_D20iADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.solr.core.SolrTemplate&quot;" id="_D20iATPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.solr.repository.support.SolrRepositoryFactoryBean&quot;" id="_D20iAjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_D2E7IzPzEei3dfHtumI11Q" clientClassElem="_D2E7ITPzEei3dfHtumI11Q" serverClassElem="_D2E7IDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_D2E7JDPzEei3dfHtumI11Q" property="&quot;solrOperations&quot;" clientClassElem="_D2E7IjPzEei3dfHtumI11Q" serverClassElem="_D2E7ITPzEei3dfHtumI11Q"/>
+    <configConnections refID="_D2E7JTPzEei3dfHtumI11Q" property="&quot;namedQueries&quot;" clientClassElem="_D2E7IjPzEei3dfHtumI11Q" serverClassElem="_D2E7JjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_D20iAzPzEei3dfHtumI11Q" clientClassElem="_D20iATPzEei3dfHtumI11Q" serverClassElem="_D20iADPzEei3dfHtumI11Q"/>
+    <configConnections refID="_D20iBDPzEei3dfHtumI11Q" property="&quot;solrOperations&quot;" clientClassElem="_D20iAjPzEei3dfHtumI11Q" serverClassElem="_D20iATPzEei3dfHtumI11Q"/>
+    <configConnections refID="_D20iBTPzEei3dfHtumI11Q" property="&quot;namedQueries&quot;" clientClassElem="_D20iAjPzEei3dfHtumI11Q" serverClassElem="_D20iBjPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="spring-projects.spring-data-solr_asm" instantiates="//@architectureDescriptions[name='spring-projects.spring-data-solr_config']">
+    <assmComponents name="solrClient" id="_D2E7JzPzEei3dfHtumI11Q" instantiates="_D2E7IDPzEei3dfHtumI11Q"/>
+    <assmComponents name="solrTemplate" id="_D2E7KDPzEei3dfHtumI11Q" instantiates="_D2E7ITPzEei3dfHtumI11Q"/>
+    <assmComponents id="_D2E7KTPzEei3dfHtumI11Q" instantiates="_D2E7IjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;solrClient&quot;" id="_D20iBzPzEei3dfHtumI11Q" instantiates="_D20iADPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;solrTemplate&quot;" id="_D20iCDPzEei3dfHtumI11Q" instantiates="_D20iATPzEei3dfHtumI11Q"/>
+    <assmComponents id="_D20iCTPzEei3dfHtumI11Q" instantiates="_D20iAjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_D2E7KjPzEei3dfHtumI11Q" clientInstElem="_D2E7KDPzEei3dfHtumI11Q" serverInstElem="_D2E7JzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_D2E7KzPzEei3dfHtumI11Q" clientInstElem="_D2E7KTPzEei3dfHtumI11Q" serverInstElem="_D2E7KDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_D2E7LDPzEei3dfHtumI11Q" clientInstElem="_D2E7KTPzEei3dfHtumI11Q" serverInstElem="_D2E7LTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_D20iCjPzEei3dfHtumI11Q" clientInstElem="_D20iCDPzEei3dfHtumI11Q" serverInstElem="_D20iBzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_D20iCzPzEei3dfHtumI11Q" clientInstElem="_D20iCTPzEei3dfHtumI11Q" serverInstElem="_D20iCDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_D20iDDPzEei3dfHtumI11Q" clientInstElem="_D20iCTPzEei3dfHtumI11Q" serverInstElem="_D20iDTPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="spring-projects.spring-data-solr_spec">
+    <specConnections refID="_D3Hc8DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_D3Hc8TPzEei3dfHtumI11Q"/>
+    <specConnections refID="_D3Hc8jPzEei3dfHtumI11Q"/>
+    <specConnections refID="_D3Hc8zPzEei3dfHtumI11Q"/>
+    <specConnections refID="_D3Hc9DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_D3Hc9TPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="apache.jmeter">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="apache.jmeter_config" implements="//@architectureDescriptions[name='apache.jmeter_spec']"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="apache.jmeter_asm" instantiates="//@architectureDescriptions[name='apache.jmeter_config']"/>
+  <architectureDescriptions xsi:type="dedal:Specification" name="apache.jmeter_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="Teevity.ice">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="Teevity.ice_config" implements="//@architectureDescriptions[name='Teevity.ice_spec']">
+    <configComponents name="org.codehaus.groovy.grails.commons.GrailsApplicationFactoryBean" id="_RCXWQDPzEei3dfHtumI11Q"/>
+    <configComponents name="org.codehaus.groovy.grails.plugins.GrailsPluginManagerFactoryBean" id="_RCXWQTPzEei3dfHtumI11Q"/>
+    <configComponents name="org.codehaus.groovy.grails.commons.spring.GrailsRuntimeConfigurator" id="_RCXWQjPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.web.filter.CharacterEncodingFilter" id="_RCXWQzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_RCXWRDPzEei3dfHtumI11Q" property="&quot;application&quot;" clientClassElem="_RCXWQTPzEei3dfHtumI11Q" serverClassElem="_RCXWQDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_RCXWRTPzEei3dfHtumI11Q" clientClassElem="_RCXWQjPzEei3dfHtumI11Q" serverClassElem="_RCXWQDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_RCXWRjPzEei3dfHtumI11Q" property="&quot;pluginManager&quot;" clientClassElem="_RCXWQjPzEei3dfHtumI11Q" serverClassElem="_RCXWQTPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="Teevity.ice_asm" instantiates="//@architectureDescriptions[name='Teevity.ice_config']">
+    <assmComponents name="grailsApplication" id="_RCXWRzPzEei3dfHtumI11Q" instantiates="_RCXWQDPzEei3dfHtumI11Q"/>
+    <assmComponents name="pluginManager" id="_RCXWSDPzEei3dfHtumI11Q" instantiates="_RCXWQTPzEei3dfHtumI11Q"/>
+    <assmComponents name="grailsConfigurator" id="_RCXWSTPzEei3dfHtumI11Q" instantiates="_RCXWQjPzEei3dfHtumI11Q"/>
+    <assmComponents name="characterEncodingFilter" id="_RCXWSjPzEei3dfHtumI11Q" instantiates="_RCXWQzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_RCXWSzPzEei3dfHtumI11Q" property="pluginManager.application" clientInstElem="_RCXWSDPzEei3dfHtumI11Q" serverInstElem="_RCXWRzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_RCXWTDPzEei3dfHtumI11Q" clientInstElem="_RCXWSTPzEei3dfHtumI11Q" serverInstElem="_RCXWRzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_RCXWTTPzEei3dfHtumI11Q" property="grailsConfigurator.pluginManager" clientInstElem="_RCXWSTPzEei3dfHtumI11Q" serverInstElem="_RCXWSDPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="Teevity.ice_spec">
+    <specConnections refID="_RCXWTjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_RCXWTzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_RCXWUDPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

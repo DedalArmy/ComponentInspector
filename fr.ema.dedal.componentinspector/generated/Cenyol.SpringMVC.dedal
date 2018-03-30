@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="Cenyol.SpringMVC">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="Cenyol.SpringMVC_config" implements="//@architectureDescriptions[name='Cenyol.SpringMVC_spec']">
+    <configComponents name="com.cenyol.example.model.autowire.interfaces.impl.BlankDisc" id="_VUOJ0DPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="Cenyol.SpringMVC_asm" instantiates="//@architectureDescriptions[name='Cenyol.SpringMVC_config']">
+    <assmComponents name="blankDisc" id="_VUOJ0TPvEei3dfHtumI11Q" instantiates="_VUOJ0DPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="Cenyol.SpringMVC_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

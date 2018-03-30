@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="youseries.uflo">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="youseries.uflo_config" implements="//@architectureDescriptions[name='youseries.uflo_spec']">
+    <configComponents name="&quot;com.bstek.uflo.console.handler.impl.res.ResourceLoaderServletHandler&quot;" id="_4favcDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.console.handler.impl.todo.TodoServletHandler&quot;" id="_4favcTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.console.handler.impl.designer.DesignerServletHandler&quot;" id="_4favcjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.console.handler.impl.central.CentralServletHandler&quot;" id="_4favczPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.console.handler.impl.diagram.DefaultTaskDiagramInfoProvider&quot;" id="_4favdDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.console.handler.impl.calendar.CalendarServletHandler&quot;" id="_4favdTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.console.handler.impl.deploy.DeployServletHandler&quot;" id="_4favdjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.console.handler.impl.list.AssigneeProviderListServletHandler&quot;" id="_4favdzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.console.handler.impl.list.CalendarProviderListServletHandler&quot;" id="_4faveDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.console.handler.impl.list.HandlerListServletHandler&quot;" id="_4fbWgDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_4fbWgTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.console.provider.DefaultFileProcessProvider&quot;" id="_4fbWgjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.console.provider.ProcessProviderUtils&quot;" id="_4fbWgzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.console.handler.impl.diagram.ProcessDiagramServletHandler&quot;" id="_4fbWhDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.service.impl.CalendarServiceImpl&quot;" id="_4fuRcDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.process.node.reminder.impl.UfloCalendarProvider&quot;" id="_4fuRcTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.deploy.validate.impl.ProcessValidator&quot;" id="_4fuRcjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.utils.EnvironmentUtils&quot;" id="_4fuRczPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.env.impl.MemoryProcessCache&quot;" id="_4fuRdDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.command.impl.SpringTransactionCommandService&quot;" id="_4fu4gDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.UfloPropertyPlaceholderConfigurer&quot;" id="_4fu4gTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.deploy.impl.DefaultProcessDeployer&quot;" id="_4fu4gjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.process.node.calendar.BusinessCalendar&quot;" id="_4fu4gzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.service.impl.DefaultProcessService&quot;" id="_4fu4hDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.service.impl.DefaultTaskService&quot;" id="_4fu4hTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.service.impl.DefaultHistoryService&quot;" id="_4fu4hjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.expr.impl.ExpressionContextImpl&quot;" id="_4fu4hzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.service.impl.DefaultIdentityService&quot;" id="_4fu4iDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.process.assign.impl.DeptAssigneeProvider&quot;" id="_4fvfkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.process.assign.impl.UserAssigneeProvider&quot;" id="_4fvfkTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.service.impl.SchedulerServiceImpl&quot;" id="_4fvfkjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.heartbeat.InstanceDetection&quot;" id="_4fvfkzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.utils.IDGenerator&quot;" id="_4fvflDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.deploy.parse.impl.ProcessParser&quot;" id="_4fvflTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.deploy.parse.impl.StartParser&quot;" id="_4fwGoDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.deploy.parse.impl.TaskParser&quot;" id="_4fwGoTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.deploy.parse.impl.ForeachParser&quot;" id="_4fwGojPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.deploy.parse.impl.DecisionParser&quot;" id="_4fwGozPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.deploy.parse.impl.ActionParser&quot;" id="_4fwGpDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.deploy.parse.impl.SwimlaneParser&quot;" id="_4fwtsDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.deploy.parse.impl.SubprocessParser&quot;" id="_4fwtsTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.deploy.parse.impl.JoinParser&quot;" id="_4fwtsjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.deploy.parse.impl.EndParser&quot;" id="_4fwtszPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.deploy.parse.impl.SequenceFlowParser&quot;" id="_4fxUwDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.uflo.deploy.parse.impl.ForkParser&quot;" id="_4fxUwTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fbWhTPzEei3dfHtumI11Q" property="&quot;taskService&quot;" clientClassElem="_4favcTPzEei3dfHtumI11Q" serverClassElem="_4fb9kDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fb9kTPzEei3dfHtumI11Q" property="&quot;historyService&quot;" clientClassElem="_4favcTPzEei3dfHtumI11Q" serverClassElem="_4fb9kjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fb9kzPzEei3dfHtumI11Q" property="&quot;processService&quot;" clientClassElem="_4favcjPzEei3dfHtumI11Q" serverClassElem="_4fb9lDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fb9lTPzEei3dfHtumI11Q" property="&quot;taskService&quot;" clientClassElem="_4favczPzEei3dfHtumI11Q" serverClassElem="_4fb9ljPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fb9lzPzEei3dfHtumI11Q" property="&quot;processService&quot;" clientClassElem="_4favczPzEei3dfHtumI11Q" serverClassElem="_4fb9mDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fb9mTPzEei3dfHtumI11Q" property="&quot;historyService&quot;" clientClassElem="_4favczPzEei3dfHtumI11Q" serverClassElem="_4fb9mjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fb9mzPzEei3dfHtumI11Q" property="&quot;commandService&quot;" clientClassElem="_4favdTPzEei3dfHtumI11Q" serverClassElem="_4fb9nDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fb9nTPzEei3dfHtumI11Q" property="&quot;processService&quot;" clientClassElem="_4favdjPzEei3dfHtumI11Q" serverClassElem="_4fb9njPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fb9nzPzEei3dfHtumI11Q" property="&quot;processService&quot;" clientClassElem="_4fbWhDPzEei3dfHtumI11Q" serverClassElem="_4fb9oDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fckoDPzEei3dfHtumI11Q" property="&quot;taskService&quot;" clientClassElem="_4fbWhDPzEei3dfHtumI11Q" serverClassElem="_4fckoTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fckojPzEei3dfHtumI11Q" property="&quot;historyService&quot;" clientClassElem="_4fbWhDPzEei3dfHtumI11Q" serverClassElem="_4fckozPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fxUwjPzEei3dfHtumI11Q" property="&quot;commandService&quot;" clientClassElem="_4fuRcDPzEei3dfHtumI11Q" serverClassElem="_4fu4gDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fxUwzPzEei3dfHtumI11Q" property="&quot;calendarService&quot;" clientClassElem="_4fuRcTPzEei3dfHtumI11Q" serverClassElem="_4fuRcDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fx70DPzEei3dfHtumI11Q" property="&quot;commandService&quot;" clientClassElem="_4fu4gjPzEei3dfHtumI11Q" serverClassElem="_4fu4gDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fx70TPzEei3dfHtumI11Q" property="&quot;processValidator&quot;" clientClassElem="_4fu4gjPzEei3dfHtumI11Q" serverClassElem="_4fuRcjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fx70jPzEei3dfHtumI11Q" property="&quot;commandService&quot;" clientClassElem="_4fu4hDPzEei3dfHtumI11Q" serverClassElem="_4fu4gDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fx70zPzEei3dfHtumI11Q" property="&quot;processDeployer&quot;" clientClassElem="_4fu4hDPzEei3dfHtumI11Q" serverClassElem="_4fu4gjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fx71DPzEei3dfHtumI11Q" property="&quot;commandService&quot;" clientClassElem="_4fu4hTPzEei3dfHtumI11Q" serverClassElem="_4fu4gDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fx71TPzEei3dfHtumI11Q" property="&quot;processService&quot;" clientClassElem="_4fu4hTPzEei3dfHtumI11Q" serverClassElem="_4fu4hDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fx71jPzEei3dfHtumI11Q" property="&quot;historyService&quot;" clientClassElem="_4fu4hTPzEei3dfHtumI11Q" serverClassElem="_4fu4hjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fx71zPzEei3dfHtumI11Q" property="&quot;commandService&quot;" clientClassElem="_4fu4hjPzEei3dfHtumI11Q" serverClassElem="_4fu4gDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fx72DPzEei3dfHtumI11Q" property="&quot;processService&quot;" clientClassElem="_4fu4hzPzEei3dfHtumI11Q" serverClassElem="_4fu4hDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fx72TPzEei3dfHtumI11Q" property="&quot;identityService&quot;" clientClassElem="_4fvfkDPzEei3dfHtumI11Q" serverClassElem="_4fu4iDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fyi4DPzEei3dfHtumI11Q" property="&quot;identityService&quot;" clientClassElem="_4fvfkTPzEei3dfHtumI11Q" serverClassElem="_4fu4iDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fyi4TPzEei3dfHtumI11Q" property="&quot;taskService&quot;" clientClassElem="_4fvfkjPzEei3dfHtumI11Q" serverClassElem="_4fu4hTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fyi4jPzEei3dfHtumI11Q" property="&quot;processService&quot;" clientClassElem="_4fvfkjPzEei3dfHtumI11Q" serverClassElem="_4fu4hDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fyi4zPzEei3dfHtumI11Q" property="&quot;schedulerService&quot;" clientClassElem="_4fvfkzPzEei3dfHtumI11Q" serverClassElem="_4fvfkjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4fyi5DPzEei3dfHtumI11Q" property="&quot;commandService&quot;" clientClassElem="_4fvflDPzEei3dfHtumI11Q" serverClassElem="_4fu4gDPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="youseries.uflo_asm" instantiates="//@architectureDescriptions[name='youseries.uflo_config']">
+    <assmComponents name="uflo.console.resourceLoaderServletHandler" id="_4fckpDPzEei3dfHtumI11Q" instantiates="_4favcDPzEei3dfHtumI11Q"/>
+    <assmComponents name="uflo.console.todoServletHandler" id="_4fckpTPzEei3dfHtumI11Q" instantiates="_4favcTPzEei3dfHtumI11Q"/>
+    <assmComponents name="uflo.designerServletHandler" id="_4fckpjPzEei3dfHtumI11Q" instantiates="_4favcjPzEei3dfHtumI11Q"/>
+    <assmComponents name="uflo.console.centralServletHandler" id="_4fckpzPzEei3dfHtumI11Q" instantiates="_4favczPzEei3dfHtumI11Q"/>
+    <assmComponents name="uflo.console.defaultTaskDiagramInfoProvider" id="_4fckqDPzEei3dfHtumI11Q" instantiates="_4favdDPzEei3dfHtumI11Q"/>
+    <assmComponents name="uflo.console.calendarServletHandler" id="_4fckqTPzEei3dfHtumI11Q" instantiates="_4favdTPzEei3dfHtumI11Q"/>
+    <assmComponents name="uflo.console.deployServletHandler" id="_4fdLsDPzEei3dfHtumI11Q" instantiates="_4favdjPzEei3dfHtumI11Q"/>
+    <assmComponents name="uflo.console.assigneeProviderListServletHandler" id="_4fdLsTPzEei3dfHtumI11Q" instantiates="_4favdzPzEei3dfHtumI11Q"/>
+    <assmComponents name="uflo.console.calendarProviderListServletHandler" id="_4fdLsjPzEei3dfHtumI11Q" instantiates="_4faveDPzEei3dfHtumI11Q"/>
+    <assmComponents name="uflo.console.handlerListServletHandler" id="_4fdLszPzEei3dfHtumI11Q" instantiates="_4fbWgDPzEei3dfHtumI11Q"/>
+    <assmComponents name="uflo.console.propertyConfigurer" id="_4fdLtDPzEei3dfHtumI11Q" instantiates="_4fbWgTPzEei3dfHtumI11Q"/>
+    <assmComponents name="uflo.defaultFileProcessProvider" id="_4fdLtTPzEei3dfHtumI11Q" instantiates="_4fbWgjPzEei3dfHtumI11Q"/>
+    <assmComponents name="uflo.processProviderUtils" id="_4fdLtjPzEei3dfHtumI11Q" instantiates="_4fbWgzPzEei3dfHtumI11Q"/>
+    <assmComponents id="_4fdywDPzEei3dfHtumI11Q" instantiates="_4fbWhDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.calendarService&quot;" id="_4fyi5TPzEei3dfHtumI11Q" instantiates="_4fuRcDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.ufloCalendarProvider&quot;" id="_4fyi5jPzEei3dfHtumI11Q" instantiates="_4fuRcTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.processValidator&quot;" id="_4fzJ8DPzEei3dfHtumI11Q" instantiates="_4fuRcjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.environmentUtils&quot;" id="_4fzJ8TPzEei3dfHtumI11Q" instantiates="_4fuRczPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.processCache&quot;" id="_4fzJ8jPzEei3dfHtumI11Q" instantiates="_4fuRdDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.commandService&quot;" id="_4fzJ8zPzEei3dfHtumI11Q" instantiates="_4fu4gDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.props&quot;" id="_4fzJ9DPzEei3dfHtumI11Q" instantiates="_4fu4gTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.processDeployer&quot;" id="_4fzJ9TPzEei3dfHtumI11Q" instantiates="_4fu4gjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.businessCalendar&quot;" id="_4fzJ9jPzEei3dfHtumI11Q" instantiates="_4fu4gzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.processService&quot;" id="_4fzJ9zPzEei3dfHtumI11Q" instantiates="_4fu4hDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.taskService&quot;" id="_4fzJ-DPzEei3dfHtumI11Q" instantiates="_4fu4hTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.historyService&quot;" id="_4fzxADPzEei3dfHtumI11Q" instantiates="_4fu4hjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.expressionContext&quot;" id="_4fzxATPzEei3dfHtumI11Q" instantiates="_4fu4hzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.identityService&quot;" id="_4fzxAjPzEei3dfHtumI11Q" instantiates="_4fu4iDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.deptAssigneeProvider&quot;" id="_4fzxAzPzEei3dfHtumI11Q" instantiates="_4fvfkDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.userAssigneeProvider&quot;" id="_4fzxBDPzEei3dfHtumI11Q" instantiates="_4fvfkTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.schedulerService&quot;" id="_4fzxBTPzEei3dfHtumI11Q" instantiates="_4fvfkjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.instanceDetection&quot;" id="_4f0YEDPzEei3dfHtumI11Q" instantiates="_4fvfkzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.idGenerator&quot;" id="_4f0YETPzEei3dfHtumI11Q" instantiates="_4fvflDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.processParser&quot;" id="_4f0YEjPzEei3dfHtumI11Q" instantiates="_4fvflTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.startParser&quot;" id="_4f0YEzPzEei3dfHtumI11Q" instantiates="_4fwGoDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.taskParser&quot;" id="_4f0YFDPzEei3dfHtumI11Q" instantiates="_4fwGoTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.foreachParser&quot;" id="_4f0_IDPzEei3dfHtumI11Q" instantiates="_4fwGojPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.decisionParser&quot;" id="_4f0_ITPzEei3dfHtumI11Q" instantiates="_4fwGozPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.actionParser&quot;" id="_4f0_IjPzEei3dfHtumI11Q" instantiates="_4fwGpDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.swimlaneParser&quot;" id="_4f0_IzPzEei3dfHtumI11Q" instantiates="_4fwtsDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.subprocessParser&quot;" id="_4f0_JDPzEei3dfHtumI11Q" instantiates="_4fwtsTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.joinParser&quot;" id="_4f0_JTPzEei3dfHtumI11Q" instantiates="_4fwtsjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.endParser&quot;" id="_4f1mMDPzEei3dfHtumI11Q" instantiates="_4fwtszPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.sequenceFlowParser&quot;" id="_4f1mMTPzEei3dfHtumI11Q" instantiates="_4fxUwDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;uflo.forkParser&quot;" id="_4f1mMjPzEei3dfHtumI11Q" instantiates="_4fxUwTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4fdywTPzEei3dfHtumI11Q" property="uflo.console.todoServletHandler.taskService" clientInstElem="_4fckpTPzEei3dfHtumI11Q" serverInstElem="_4fdywjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4fdywzPzEei3dfHtumI11Q" property="uflo.console.todoServletHandler.historyService" clientInstElem="_4fckpTPzEei3dfHtumI11Q" serverInstElem="_4fdyxDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4fdyxTPzEei3dfHtumI11Q" property="uflo.designerServletHandler.processService" clientInstElem="_4fckpjPzEei3dfHtumI11Q" serverInstElem="_4fdyxjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4fdyxzPzEei3dfHtumI11Q" property="uflo.console.centralServletHandler.taskService" clientInstElem="_4fckpzPzEei3dfHtumI11Q" serverInstElem="_4fdyyDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4fdyyTPzEei3dfHtumI11Q" property="uflo.console.centralServletHandler.processService" clientInstElem="_4fckpzPzEei3dfHtumI11Q" serverInstElem="_4fdyyjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4feZ0DPzEei3dfHtumI11Q" property="uflo.console.centralServletHandler.historyService" clientInstElem="_4fckpzPzEei3dfHtumI11Q" serverInstElem="_4feZ0TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4feZ0jPzEei3dfHtumI11Q" property="uflo.console.calendarServletHandler.commandService" clientInstElem="_4fckqTPzEei3dfHtumI11Q" serverInstElem="_4feZ0zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4feZ1DPzEei3dfHtumI11Q" property="uflo.console.deployServletHandler.processService" clientInstElem="_4fdLsDPzEei3dfHtumI11Q" serverInstElem="_4feZ1TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4feZ1jPzEei3dfHtumI11Q" clientInstElem="_4fdyyDPzEei3dfHtumI11Q" serverInstElem="_4feZ1zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4feZ2DPzEei3dfHtumI11Q" clientInstElem="_4feZ1zPzEei3dfHtumI11Q" serverInstElem="_4feZ2TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4feZ2jPzEei3dfHtumI11Q" clientInstElem="_4feZ1zPzEei3dfHtumI11Q" serverInstElem="_4feZ2zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4f1mMzPzEei3dfHtumI11Q" property="uflo.calendarService.commandService" clientInstElem="_4fyi5TPzEei3dfHtumI11Q" serverInstElem="_4fzJ8zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4f1mNDPzEei3dfHtumI11Q" property="uflo.ufloCalendarProvider.calendarService" clientInstElem="_4fyi5jPzEei3dfHtumI11Q" serverInstElem="_4fyi5TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4f1mNTPzEei3dfHtumI11Q" property="uflo.processDeployer.commandService" clientInstElem="_4fzJ9TPzEei3dfHtumI11Q" serverInstElem="_4fzJ8zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4f1mNjPzEei3dfHtumI11Q" property="uflo.processDeployer.processValidator" clientInstElem="_4fzJ9TPzEei3dfHtumI11Q" serverInstElem="_4fzJ8DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4f1mNzPzEei3dfHtumI11Q" property="uflo.processService.commandService" clientInstElem="_4fzJ9zPzEei3dfHtumI11Q" serverInstElem="_4fzJ8zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4f1mODPzEei3dfHtumI11Q" property="uflo.processService.processDeployer" clientInstElem="_4fzJ9zPzEei3dfHtumI11Q" serverInstElem="_4fzJ9TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4f1mOTPzEei3dfHtumI11Q" property="uflo.taskService.commandService" clientInstElem="_4fzJ-DPzEei3dfHtumI11Q" serverInstElem="_4fzJ8zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4f2NQDPzEei3dfHtumI11Q" property="uflo.taskService.processService" clientInstElem="_4fzJ-DPzEei3dfHtumI11Q" serverInstElem="_4fzJ9zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4f2NQTPzEei3dfHtumI11Q" property="uflo.taskService.historyService" clientInstElem="_4fzJ-DPzEei3dfHtumI11Q" serverInstElem="_4fzxADPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4f2NQjPzEei3dfHtumI11Q" property="uflo.historyService.commandService" clientInstElem="_4fzxADPzEei3dfHtumI11Q" serverInstElem="_4fzJ8zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4f2NQzPzEei3dfHtumI11Q" property="uflo.expressionContext.processService" clientInstElem="_4fzxATPzEei3dfHtumI11Q" serverInstElem="_4fzJ9zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4f2NRDPzEei3dfHtumI11Q" property="uflo.deptAssigneeProvider.identityService" clientInstElem="_4fzxAzPzEei3dfHtumI11Q" serverInstElem="_4fzxAjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4f2NRTPzEei3dfHtumI11Q" property="uflo.userAssigneeProvider.identityService" clientInstElem="_4fzxBDPzEei3dfHtumI11Q" serverInstElem="_4fzxAjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4f2NRjPzEei3dfHtumI11Q" property="uflo.schedulerService.taskService" clientInstElem="_4fzxBTPzEei3dfHtumI11Q" serverInstElem="_4fzJ-DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4f2NRzPzEei3dfHtumI11Q" property="uflo.schedulerService.processService" clientInstElem="_4fzxBTPzEei3dfHtumI11Q" serverInstElem="_4fzJ9zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4f2NSDPzEei3dfHtumI11Q" property="uflo.instanceDetection.schedulerService" clientInstElem="_4f0YEDPzEei3dfHtumI11Q" serverInstElem="_4fzxBTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4f2NSTPzEei3dfHtumI11Q" property="uflo.idGenerator.commandService" clientInstElem="_4f0YETPzEei3dfHtumI11Q" serverInstElem="_4fzJ8zPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="youseries.uflo_spec">
+    <specConnections refID="_4f3bYDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bYTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bYjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bYzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bZDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bZTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bZjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bZzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3baDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3baTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bajPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bazPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bbDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bbTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bbjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bbzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bcDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bcTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bcjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bczPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bdDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bdTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bdjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bdzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3beDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3beTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bejPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4f3bezPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

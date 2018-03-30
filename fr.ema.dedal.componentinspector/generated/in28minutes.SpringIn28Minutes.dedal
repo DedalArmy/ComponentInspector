@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="in28minutes.SpringIn28Minutes">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="in28minutes.SpringIn28Minutes_config" implements="//@architectureDescriptions[name='in28minutes.SpringIn28Minutes_spec']">
+    <configComponents name="com.mchange.v2.c3p0.ComboPooledDataSource" id="_h4gUUDPwEei3dfHtumI11Q"/>
+    <configComponents name="com.in28minutes.data.impl.UserDataServiceImpl" id="_h4z2UDPwEei3dfHtumI11Q"/>
+    <configComponents name="com.in28minutes.data.impl.TodoDataServiceImpl" id="_h4z2UTPwEei3dfHtumI11Q"/>
+    <configComponents name="com.in28minutes.service.impl.UserServiceImpl" id="_h4z2UjPwEei3dfHtumI11Q"/>
+    <configComponents name="com.in28minutes.service.impl.TodoServiceImpl" id="_h4z2UzPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="in28minutes.SpringIn28Minutes_asm" instantiates="//@architectureDescriptions[name='in28minutes.SpringIn28Minutes_config']">
+    <assmComponents name="todolistDataSource" id="_h4gUUTPwEei3dfHtumI11Q" instantiates="_h4gUUDPwEei3dfHtumI11Q"/>
+    <assmComponents name="userRepository" id="_h4z2VDPwEei3dfHtumI11Q" instantiates="_h4z2UDPwEei3dfHtumI11Q"/>
+    <assmComponents name="todoRepository" id="_h4z2VTPwEei3dfHtumI11Q" instantiates="_h4z2UTPwEei3dfHtumI11Q"/>
+    <assmComponents name="userService" id="_h4z2VjPwEei3dfHtumI11Q" instantiates="_h4z2UjPwEei3dfHtumI11Q"/>
+    <assmComponents name="todoService" id="_h4z2VzPwEei3dfHtumI11Q" instantiates="_h4z2UzPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="in28minutes.SpringIn28Minutes_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

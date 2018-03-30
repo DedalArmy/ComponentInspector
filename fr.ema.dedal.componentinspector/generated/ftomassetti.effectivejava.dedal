@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="ftomassetti.effectivejava">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ftomassetti.effectivejava_config" implements="//@architectureDescriptions[name='ftomassetti.effectivejava_spec']">
+    <configComponents name="org.springframework.jdbc.datasource.TestDataSourceWrapper" id="_HXKjoDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jdbc.object.GenericSqlQuery" id="_HXKjoTPwEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jdbc.datasource.TestDataSourceWrapper" id="_HXdekDPwEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jdbc.object.GenericStoredProcedure" id="_HXdekTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_HXKjojPwEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_HXKjoTPwEei3dfHtumI11Q" serverClassElem="_HXKjoDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_HXKjozPwEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_HXKjoTPwEei3dfHtumI11Q" serverClassElem="_HXKjoDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_HXdekjPwEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_HXdekTPwEei3dfHtumI11Q" serverClassElem="_HXdekDPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ftomassetti.effectivejava_asm" instantiates="//@architectureDescriptions[name='ftomassetti.effectivejava_config']">
+    <assmComponents name="dataSource" id="_HXKjpDPwEei3dfHtumI11Q" instantiates="_HXKjoDPwEei3dfHtumI11Q"/>
+    <assmComponents name="queryWithPlaceHolders" id="_HXKjpTPwEei3dfHtumI11Q" instantiates="_HXKjoTPwEei3dfHtumI11Q"/>
+    <assmComponents name="queryWithNamedParameters" id="_HXKjpjPwEei3dfHtumI11Q" instantiates="_HXKjoTPwEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_HXdekzPwEei3dfHtumI11Q" instantiates="_HXdekDPwEei3dfHtumI11Q"/>
+    <assmComponents name="genericProcedure" id="_HXdelDPwEei3dfHtumI11Q" instantiates="_HXdekTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_HXKjpzPwEei3dfHtumI11Q" property="queryWithPlaceHolders.dataSource" clientInstElem="_HXKjpTPwEei3dfHtumI11Q" serverInstElem="_HXKjpDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_HXKjqDPwEei3dfHtumI11Q" property="queryWithNamedParameters.dataSource" clientInstElem="_HXKjpjPwEei3dfHtumI11Q" serverInstElem="_HXKjpDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_HXdelTPwEei3dfHtumI11Q" property="genericProcedure.dataSource" clientInstElem="_HXdelDPwEei3dfHtumI11Q" serverInstElem="_HXdekzPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ftomassetti.effectivejava_spec">
+    <specConnections refID="_HYW2cDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_HYW2cTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_HYW2cjPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="habuma.SpringInActionExamples">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="habuma.SpringInActionExamples_config" implements="//@architectureDescriptions[name='habuma.SpringInActionExamples_spec']">
+    <configComponents name="&quot;sia.knights.BraveKnight&quot;" id="_P10yADPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;sia.knights.SlayDragonQuest&quot;" id="_P10yATPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;sia.knights.BraveKnight&quot;" id="_P1-jADPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;sia.knights.SlayDragonQuest&quot;" id="_P1-jATPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;sia.knights.Minstrel&quot;" id="_P1-jAjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;sia.knights.BraveKnight&quot;" id="_P2I7EDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;sia.knights.SlayDragonQuest&quot;" id="_P2I7ETPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;sia.knights.Minstrel&quot;" id="_P2I7EjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;sia.knights.FakePrintStream&quot;" id="_P2I7EzPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.BlankDisc&quot;" id="_P3Br4DPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.CDConfig&quot;" id="_P3Lc4DPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.CDPlayer&quot;" id="_P3Lc4TPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.SgtPeppers&quot;" id="_P3eX0DPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.CDPlayer&quot;" id="_P3eX0TPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.BlankDisc&quot;" id="_P3xSwDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.CDPlayer&quot;" id="_P3xSwTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.collections.BlankDisc&quot;" id="_P37DwDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.CDPlayer&quot;" id="_P37DwTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.SgtPeppers&quot;" id="_P4N-sDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.CDPlayer&quot;" id="_P4N-sTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.BlankDisc&quot;" id="_P4XvsDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.CDPlayer&quot;" id="_P4XvsTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.BlankDisc&quot;" id="_P4qqoDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.properties.CDPlayer&quot;" id="_P4qqoTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.properties.BlankDisc&quot;" id="_P49lkDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.properties.CDPlayer&quot;" id="_P49lkTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.properties.BlankDisc&quot;" id="_P5HWkDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.properties.CDPlayer&quot;" id="_P5HWkTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.BlankDisc&quot;" id="_P5aRgDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.properties.CDPlayer&quot;" id="_P5aRgTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.properties.BlankDisc&quot;" id="_P5jbcDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;soundsystem.properties.CDPlayer&quot;" id="_P5jbcTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.soundsystem.BlankDisc&quot;" id="_P529cDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.myapp.Notepad&quot;" id="_P6mkUDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.myapp.UniqueThing&quot;" id="_P6mkUTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.springinaction.pizza.domain.Order&quot;" id="_P9Rd0DPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.springinaction.pizza.service.PricingEngineImpl&quot;" id="_P-K1sDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.springinaction.pizza.service.CustomerServiceImpl&quot;" id="_P-K1sTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.springinaction.pizza.service.PaymentProcessor&quot;" id="_P-K1sjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.springinaction.pizza.service.OrderServiceImpl&quot;" id="_P-K1szPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.hibernate4.HibernateTransactionManager&quot;" id="_P_E0oDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean&quot;" id="_P_XvkDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter&quot;" id="_P_XvkTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.JpaTransactionManager&quot;" id="_P_XvkjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P10yAjPwEei3dfHtumI11Q" clientClassElem="_P10yADPwEei3dfHtumI11Q" serverClassElem="_P10yATPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P1-jAzPwEei3dfHtumI11Q" clientClassElem="_P1-jADPwEei3dfHtumI11Q" serverClassElem="_P1-jATPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P2I7FDPwEei3dfHtumI11Q" clientClassElem="_P2I7EDPwEei3dfHtumI11Q" serverClassElem="_P2I7ETPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P2I7FTPwEei3dfHtumI11Q" clientClassElem="_P2I7ETPwEei3dfHtumI11Q" serverClassElem="_P2I7EzPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P2I7FjPwEei3dfHtumI11Q" clientClassElem="_P2I7EjPwEei3dfHtumI11Q" serverClassElem="_P2I7EzPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P3Lc4jPwEei3dfHtumI11Q" property="cd" clientClassElem="_P3Lc4TPwEei3dfHtumI11Q" serverClassElem="_P3Lc4zPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P3eX0jPwEei3dfHtumI11Q" property="cd" clientClassElem="_P3eX0TPwEei3dfHtumI11Q" serverClassElem="_P3eX0DPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P3xSwjPwEei3dfHtumI11Q" property="_" clientClassElem="_P3xSwTPwEei3dfHtumI11Q" serverClassElem="_P3xSwDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P37DwjPwEei3dfHtumI11Q" clientClassElem="_P37DwTPwEei3dfHtumI11Q" serverClassElem="_P37DwDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P4N-sjPwEei3dfHtumI11Q" clientClassElem="_P4N-sTPwEei3dfHtumI11Q" serverClassElem="_P4N-sDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P4XvsjPwEei3dfHtumI11Q" clientClassElem="_P4XvsTPwEei3dfHtumI11Q" serverClassElem="_P4XvsDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P4qqojPwEei3dfHtumI11Q" property="&quot;compactDisc&quot;" clientClassElem="_P4qqoTPwEei3dfHtumI11Q" serverClassElem="_P4qqoDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P49lkjPwEei3dfHtumI11Q" property="compactDisc" clientClassElem="_P49lkTPwEei3dfHtumI11Q" serverClassElem="_P49lkDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P5HWkjPwEei3dfHtumI11Q" property="tracks" clientClassElem="_P5HWkDPwEei3dfHtumI11Q" serverClassElem="_P5HWkzPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P5HWlDPwEei3dfHtumI11Q" property="compactDisc" clientClassElem="_P5HWkTPwEei3dfHtumI11Q" serverClassElem="_P5HWkDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P5aRgjPwEei3dfHtumI11Q" property="compactDisc" clientClassElem="_P5aRgTPwEei3dfHtumI11Q" serverClassElem="_P5aRgDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P5jbcjPwEei3dfHtumI11Q" property="compactDisc" clientClassElem="_P5jbcTPwEei3dfHtumI11Q" serverClassElem="_P5jbcDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P9Rd0TPwEei3dfHtumI11Q" property="&quot;pricingEngine&quot;" clientClassElem="_P9Rd0DPwEei3dfHtumI11Q" serverClassElem="_P9Rd0jPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P_E0oTPwEei3dfHtumI11Q" property="_" clientClassElem="_P_E0oDPwEei3dfHtumI11Q" serverClassElem="_P_E0ojPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P_XvkzPwEei3dfHtumI11Q" property="dataSource" clientClassElem="_P_XvkDPwEei3dfHtumI11Q" serverClassElem="_P_XvlDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P_XvlTPwEei3dfHtumI11Q" property="jpaVendorAdapter" clientClassElem="_P_XvkDPwEei3dfHtumI11Q" serverClassElem="_P_XvkTPwEei3dfHtumI11Q"/>
+    <configConnections refID="_P_XvljPwEei3dfHtumI11Q" property="entityManagerFactory" clientClassElem="_P_XvkjPwEei3dfHtumI11Q" serverClassElem="_P_XvkDPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="habuma.SpringInActionExamples_asm" instantiates="//@architectureDescriptions[name='habuma.SpringInActionExamples_config']">
+    <assmComponents name="knight" id="_P10yAzPwEei3dfHtumI11Q" instantiates="_P10yADPwEei3dfHtumI11Q"/>
+    <assmComponents name="quest" id="_P10yBDPwEei3dfHtumI11Q" instantiates="_P10yATPwEei3dfHtumI11Q"/>
+    <assmComponents name="knight" id="_P1-jBDPwEei3dfHtumI11Q" instantiates="_P1-jADPwEei3dfHtumI11Q"/>
+    <assmComponents name="quest" id="_P1-jBTPwEei3dfHtumI11Q" instantiates="_P1-jATPwEei3dfHtumI11Q"/>
+    <assmComponents name="minstrel" id="_P1-jBjPwEei3dfHtumI11Q" instantiates="_P1-jAjPwEei3dfHtumI11Q"/>
+    <assmComponents name="knight" id="_P2I7FzPwEei3dfHtumI11Q" instantiates="_P2I7EDPwEei3dfHtumI11Q"/>
+    <assmComponents name="quest" id="_P2I7GDPwEei3dfHtumI11Q" instantiates="_P2I7ETPwEei3dfHtumI11Q"/>
+    <assmComponents name="minstrel" id="_P2I7GTPwEei3dfHtumI11Q" instantiates="_P2I7EjPwEei3dfHtumI11Q"/>
+    <assmComponents name="fakePrintStream" id="_P2I7GjPwEei3dfHtumI11Q" instantiates="_P2I7EzPwEei3dfHtumI11Q"/>
+    <assmComponents name="compactDisc" id="_P3Br4TPwEei3dfHtumI11Q" instantiates="_P3Br4DPwEei3dfHtumI11Q"/>
+    <assmComponents id="_P3Lc5DPwEei3dfHtumI11Q" instantiates="_P3Lc4DPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cdPlayer&quot;" id="_P3Lc5TPwEei3dfHtumI11Q" instantiates="_P3Lc4TPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;compactDisc&quot;" id="_P3eX0zPwEei3dfHtumI11Q" instantiates="_P3eX0DPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cdPlayer&quot;" id="_P3eX1DPwEei3dfHtumI11Q" instantiates="_P3eX0TPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;compactDisc&quot;" id="_P3xSwzPwEei3dfHtumI11Q" instantiates="_P3xSwDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cdPlayer&quot;" id="_P3xSxDPwEei3dfHtumI11Q" instantiates="_P3xSwTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;compactDisc&quot;" id="_P37DwzPwEei3dfHtumI11Q" instantiates="_P37DwDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cdPlayer&quot;" id="_P37DxDPwEei3dfHtumI11Q" instantiates="_P37DwTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;compactDisc&quot;" id="_P4N-szPwEei3dfHtumI11Q" instantiates="_P4N-sDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cdPlayer&quot;" id="_P4N-tDPwEei3dfHtumI11Q" instantiates="_P4N-sTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;compactDisc&quot;" id="_P4XvszPwEei3dfHtumI11Q" instantiates="_P4XvsDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cdPlayer&quot;" id="_P4XvtDPwEei3dfHtumI11Q" instantiates="_P4XvsTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;compactDisc&quot;" id="_P4qqozPwEei3dfHtumI11Q" instantiates="_P4qqoDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cdPlayer&quot;" id="_P4qqpDPwEei3dfHtumI11Q" instantiates="_P4qqoTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;compactDisc&quot;" id="_P49lkzPwEei3dfHtumI11Q" instantiates="_P49lkDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cdPlayer&quot;" id="_P49llDPwEei3dfHtumI11Q" instantiates="_P49lkTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;compactDisc&quot;" id="_P5HWlTPwEei3dfHtumI11Q" instantiates="_P5HWkDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cdPlayer&quot;" id="_P5HWljPwEei3dfHtumI11Q" instantiates="_P5HWkTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;compactDisc&quot;" id="_P5aRgzPwEei3dfHtumI11Q" instantiates="_P5aRgDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cdPlayer&quot;" id="_P5aRhDPwEei3dfHtumI11Q" instantiates="_P5aRgTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;compactDisc&quot;" id="_P5jbczPwEei3dfHtumI11Q" instantiates="_P5jbcDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cdPlayer&quot;" id="_P5jbdDPwEei3dfHtumI11Q" instantiates="_P5jbcTPwEei3dfHtumI11Q"/>
+    <assmComponents id="_P529cTPwEei3dfHtumI11Q" instantiates="_P529cDPwEei3dfHtumI11Q"/>
+    <assmComponents id="_P6mkUjPwEei3dfHtumI11Q" instantiates="_P6mkUDPwEei3dfHtumI11Q"/>
+    <assmComponents id="_P6mkUzPwEei3dfHtumI11Q" instantiates="_P6mkUTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;order&quot;" id="_P9Rd0zPwEei3dfHtumI11Q" instantiates="_P9Rd0DPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;pricingEngine&quot;" id="_P-K1tDPwEei3dfHtumI11Q" instantiates="_P-K1sDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;customerService&quot;" id="_P-K1tTPwEei3dfHtumI11Q" instantiates="_P-K1sTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;paymentProcessor&quot;" id="_P-K1tjPwEei3dfHtumI11Q" instantiates="_P-K1sjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;orderService&quot;" id="_P-K1tzPwEei3dfHtumI11Q" instantiates="_P-K1szPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_P_E0ozPwEei3dfHtumI11Q" instantiates="_P_E0oDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;emf&quot;" id="_P_XvlzPwEei3dfHtumI11Q" instantiates="_P_XvkDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jpaVendorAdapter&quot;" id="_P_XvmDPwEei3dfHtumI11Q" instantiates="_P_XvkTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_P_XvmTPwEei3dfHtumI11Q" instantiates="_P_XvkjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P10yBTPwEei3dfHtumI11Q" clientInstElem="_P10yAzPwEei3dfHtumI11Q" serverInstElem="_P10yBDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P1-jBzPwEei3dfHtumI11Q" clientInstElem="_P1-jBDPwEei3dfHtumI11Q" serverInstElem="_P1-jBTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P2I7GzPwEei3dfHtumI11Q" clientInstElem="_P2I7FzPwEei3dfHtumI11Q" serverInstElem="_P2I7GDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P2I7HDPwEei3dfHtumI11Q" clientInstElem="_P2I7GDPwEei3dfHtumI11Q" serverInstElem="_P2I7GjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P2I7HTPwEei3dfHtumI11Q" clientInstElem="_P2I7GTPwEei3dfHtumI11Q" serverInstElem="_P2I7GjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P3Lc5jPwEei3dfHtumI11Q" property="cdPlayer.cd" clientInstElem="_P3Lc5TPwEei3dfHtumI11Q" serverInstElem="_P3Lc5zPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P3eX1TPwEei3dfHtumI11Q" property="cdPlayer.cd" clientInstElem="_P3eX1DPwEei3dfHtumI11Q" serverInstElem="_P3eX0zPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P3xSxTPwEei3dfHtumI11Q" property="cdPlayer._" clientInstElem="_P3xSxDPwEei3dfHtumI11Q" serverInstElem="_P3xSwzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P37DxTPwEei3dfHtumI11Q" clientInstElem="_P37DxDPwEei3dfHtumI11Q" serverInstElem="_P37DwzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P4N-tTPwEei3dfHtumI11Q" clientInstElem="_P4N-tDPwEei3dfHtumI11Q" serverInstElem="_P4N-szPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P4g5oDPwEei3dfHtumI11Q" clientInstElem="_P4XvtDPwEei3dfHtumI11Q" serverInstElem="_P4XvszPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P4qqpTPwEei3dfHtumI11Q" property="cdPlayer.compactDisc" clientInstElem="_P4qqpDPwEei3dfHtumI11Q" serverInstElem="_P4qqozPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P49llTPwEei3dfHtumI11Q" property="cdPlayer.compactDisc" clientInstElem="_P49llDPwEei3dfHtumI11Q" serverInstElem="_P49lkzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P5HWlzPwEei3dfHtumI11Q" property="compactDisc.tracks" clientInstElem="_P5HWlTPwEei3dfHtumI11Q" serverInstElem="_P5HWmDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P5HWmTPwEei3dfHtumI11Q" property="cdPlayer.compactDisc" clientInstElem="_P5HWljPwEei3dfHtumI11Q" serverInstElem="_P5HWlTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P5aRhTPwEei3dfHtumI11Q" property="cdPlayer.compactDisc" clientInstElem="_P5aRhDPwEei3dfHtumI11Q" serverInstElem="_P5aRgzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P5jbdTPwEei3dfHtumI11Q" property="cdPlayer.compactDisc" clientInstElem="_P5jbdDPwEei3dfHtumI11Q" serverInstElem="_P5jbczPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P9Rd1DPwEei3dfHtumI11Q" property="order.pricingEngine" clientInstElem="_P9Rd0zPwEei3dfHtumI11Q" serverInstElem="_P9Rd1TPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P_E0pDPwEei3dfHtumI11Q" property="transactionManager._" clientInstElem="_P_E0ozPwEei3dfHtumI11Q" serverInstElem="_P_E0pTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P_XvmjPwEei3dfHtumI11Q" property="emf.dataSource" clientInstElem="_P_XvlzPwEei3dfHtumI11Q" serverInstElem="_P_XvmzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P_XvnDPwEei3dfHtumI11Q" property="emf.jpaVendorAdapter" clientInstElem="_P_XvlzPwEei3dfHtumI11Q" serverInstElem="_P_XvmDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_P_XvnTPwEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_P_XvmTPwEei3dfHtumI11Q" serverInstElem="_P_XvlzPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="habuma.SpringInActionExamples_spec">
+    <specConnections refID="_QBKfUDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfUTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfUjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfUzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfVDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfVTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfVjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfVzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfWDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfWTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfWjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfWzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfXDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfXTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfXjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfXzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfYDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfYTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfYjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfYzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfZDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_QBKfZTPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

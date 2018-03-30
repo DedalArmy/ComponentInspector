@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="a466350665.smart">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="a466350665.smart_config" implements="//@architectureDescriptions[name='a466350665.smart_spec']">
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="__-sBkDPsEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.smart.sso.client.SmartContainer&quot;" id="__-sBkTPsEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.remoting.caucho.HessianProxyFactoryBean&quot;" id="__-sooDPsEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="___WI4DPsEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.smart.sso.client.SmartContainer&quot;" id="___Wv8DPsEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.remoting.caucho.HessianProxyFactoryBean&quot;" id="___Wv8TPsEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_AAKoQDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.smart.sso.client.SmartContainer&quot;" id="_AAKoQTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.remoting.caucho.HessianProxyFactoryBean&quot;" id="_AAKoQjPtEei3dfHtumI11Q"/>
+    <configConnections refID="__-sooTPsEei3dfHtumI11Q" property="&quot;authenticationRpcService&quot;" clientClassElem="__-sBkTPsEei3dfHtumI11Q" serverClassElem="__-sooDPsEei3dfHtumI11Q"/>
+    <configConnections refID="___XXADPsEei3dfHtumI11Q" property="&quot;authenticationRpcService&quot;" clientClassElem="___Wv8DPsEei3dfHtumI11Q" serverClassElem="___Wv8TPsEei3dfHtumI11Q"/>
+    <configConnections refID="_AALPUDPtEei3dfHtumI11Q" property="&quot;authenticationRpcService&quot;" clientClassElem="_AAKoQTPtEei3dfHtumI11Q" serverClassElem="_AAKoQjPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="a466350665.smart_asm" instantiates="//@architectureDescriptions[name='a466350665.smart_config']">
+    <assmComponents id="__-vE4DPsEei3dfHtumI11Q" instantiates="__-sBkDPsEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;smartFilter&quot;" id="__-vE4TPsEei3dfHtumI11Q" instantiates="__-sBkTPsEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;authenticationRpcService&quot;" id="__-vE4jPsEei3dfHtumI11Q" instantiates="__-sooDPsEei3dfHtumI11Q"/>
+    <assmComponents id="___bBYDPsEei3dfHtumI11Q" instantiates="___WI4DPsEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;smartFilter&quot;" id="___bBYTPsEei3dfHtumI11Q" instantiates="___Wv8DPsEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;authenticationRpcService&quot;" id="___bocDPsEei3dfHtumI11Q" instantiates="___Wv8TPsEei3dfHtumI11Q"/>
+    <assmComponents id="_AAL2YDPtEei3dfHtumI11Q" instantiates="_AAKoQDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;smartFilter&quot;" id="_AAL2YTPtEei3dfHtumI11Q" instantiates="_AAKoQTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;authenticationRpcService&quot;" id="_AAMdcDPtEei3dfHtumI11Q" instantiates="_AAKoQjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__-vr8DPsEei3dfHtumI11Q" property="smartFilter.authenticationRpcService" clientInstElem="__-vE4TPsEei3dfHtumI11Q" serverInstElem="__-vE4jPsEei3dfHtumI11Q"/>
+    <assemblyConnections refID="___bocTPsEei3dfHtumI11Q" property="smartFilter.authenticationRpcService" clientInstElem="___bBYTPsEei3dfHtumI11Q" serverInstElem="___bocDPsEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AAMdcTPtEei3dfHtumI11Q" property="smartFilter.authenticationRpcService" clientInstElem="_AAL2YTPtEei3dfHtumI11Q" serverInstElem="_AAMdcDPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="a466350665.smart_spec">
+    <specConnections refID="_ADWfIDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_ADWfITPtEei3dfHtumI11Q"/>
+    <specConnections refID="_ADWfIjPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="Comcast.jrugged">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="Comcast.jrugged_config" implements="//@architectureDescriptions[name='Comcast.jrugged_spec']">
+    <configComponents name="org.fishwife.jrugged.examples.webapp.RootController" id="_bFJmoDPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.examples.webapp.AspectPerformanceMonitorExample" id="_bFJmoTPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.examples.webapp.InterceptCircuitBreakerExample" id="_bFJmojPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.examples.webapp.InterceptPerformanceMonitorExample" id="_bFJmozPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.web.servlet.view.UrlBasedViewResolver" id="_bFJmpDPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.examples.webapp.RootController" id="_bFzt8DPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.examples.webapp.AspectPerformanceMonitorExample" id="_bFzt8TPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.examples.webapp.InterceptCircuitBreakerExample" id="_bFzt8jPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.examples.webapp.InterceptPerformanceMonitorExample" id="_bFzt8zPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.web.servlet.view.UrlBasedViewResolver" id="_bFzt9DPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.examples.webapp.RootController" id="_bGDlkDPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.examples.webapp.AspectPerformanceMonitorExample" id="_bGDlkTPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.examples.webapp.InterceptCircuitBreakerExample" id="_bGDlkjPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.examples.webapp.InterceptPerformanceMonitorExample" id="_bGDlkzPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.web.servlet.view.UrlBasedViewResolver" id="_bGEMoDPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.support.MBeanServerFactoryBean" id="_bGUEQDPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.annotation.AnnotationJmxAttributeSource" id="_bGUEQTPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.assembler.MetadataMBeanInfoAssembler" id="_bGUEQjPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.naming.MetadataNamingStrategy" id="_bGUEQzPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.spring.CircuitService" id="_bGwwMDPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.spring.circuit.ExceptionCircuitInterceptor" id="_bGwwMTPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.spring.monitor.PerformanceMonitorInterceptor" id="_bGwwMjPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.spring.TestMonitor" id="_bGwwMzPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.spring.monitor.DelegatingPerformanceMonitor" id="_bGwwNDPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.spring.TestCircuitMonitor" id="_bGwwNTPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator" id="_bGwwNjPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.MBeanExporter" id="_bGwwNzPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.annotation.AnnotationJmxAttributeSource" id="_bGwwODPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.assembler.MetadataMBeanInfoAssembler" id="_bGwwOTPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.naming.MetadataNamingStrategy" id="_bGwwOjPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.support.MBeanServerFactoryBean" id="_bHESMDPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.annotation.AnnotationJmxAttributeSource" id="_bHESMTPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.assembler.MetadataMBeanInfoAssembler" id="_bHESMjPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.naming.MetadataNamingStrategy" id="_bHESMzPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.spring.CircuitService" id="_bHXNIDPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.spring.circuit.ExceptionCircuitInterceptor" id="_bHXNITPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.spring.monitor.PerformanceMonitorInterceptor" id="_bHXNIjPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.spring.TestMonitor" id="_bHXNIzPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.spring.monitor.DelegatingPerformanceMonitor" id="_bHXNJDPvEei3dfHtumI11Q"/>
+    <configComponents name="org.fishwife.jrugged.spring.TestCircuitMonitor" id="_bHXNJTPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator" id="_bHXNJjPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.MBeanExporter" id="_bHXNJzPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.annotation.AnnotationJmxAttributeSource" id="_bHXNKDPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.assembler.MetadataMBeanInfoAssembler" id="_bHXNKTPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.naming.MetadataNamingStrategy" id="_bHXNKjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bGUERDPvEei3dfHtumI11Q" property="&quot;attributeSource&quot;" clientClassElem="_bGUEQjPvEei3dfHtumI11Q" serverClassElem="_bGUEQTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bGUERTPvEei3dfHtumI11Q" property="&quot;attributeSource&quot;" clientClassElem="_bGUEQzPvEei3dfHtumI11Q" serverClassElem="_bGUEQTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bGwwOzPvEei3dfHtumI11Q" property="monitorInterceptor" clientClassElem="_bGwwMzPvEei3dfHtumI11Q" serverClassElem="_bGwwMjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bGwwPDPvEei3dfHtumI11Q" property="delegatingMonitor" clientClassElem="_bGwwMzPvEei3dfHtumI11Q" serverClassElem="_bGwwNDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bGwwPTPvEei3dfHtumI11Q" property="monitorAspect" clientClassElem="_bGwwNTPvEei3dfHtumI11Q" serverClassElem="_bGwwMTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bGwwPjPvEei3dfHtumI11Q" property="assembler" clientClassElem="_bGwwNzPvEei3dfHtumI11Q" serverClassElem="_bGwwOTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bGwwPzPvEei3dfHtumI11Q" property="namingStrategy" clientClassElem="_bGwwNzPvEei3dfHtumI11Q" serverClassElem="_bGwwOjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bGwwQDPvEei3dfHtumI11Q" property="attributeSource" clientClassElem="_bGwwOTPvEei3dfHtumI11Q" serverClassElem="_bGwwODPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bGwwQTPvEei3dfHtumI11Q" property="attributeSource" clientClassElem="_bGwwOjPvEei3dfHtumI11Q" serverClassElem="_bGwwODPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bHESNDPvEei3dfHtumI11Q" property="&quot;attributeSource&quot;" clientClassElem="_bHESMjPvEei3dfHtumI11Q" serverClassElem="_bHESMTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bHESNTPvEei3dfHtumI11Q" property="&quot;attributeSource&quot;" clientClassElem="_bHESMzPvEei3dfHtumI11Q" serverClassElem="_bHESMTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bHXNKzPvEei3dfHtumI11Q" property="monitorInterceptor" clientClassElem="_bHXNIzPvEei3dfHtumI11Q" serverClassElem="_bHXNIjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bHXNLDPvEei3dfHtumI11Q" property="delegatingMonitor" clientClassElem="_bHXNIzPvEei3dfHtumI11Q" serverClassElem="_bHXNJDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bHXNLTPvEei3dfHtumI11Q" property="monitorAspect" clientClassElem="_bHXNJTPvEei3dfHtumI11Q" serverClassElem="_bHXNITPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bHXNLjPvEei3dfHtumI11Q" property="assembler" clientClassElem="_bHXNJzPvEei3dfHtumI11Q" serverClassElem="_bHXNKTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bHXNLzPvEei3dfHtumI11Q" property="namingStrategy" clientClassElem="_bHXNJzPvEei3dfHtumI11Q" serverClassElem="_bHXNKjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bHXNMDPvEei3dfHtumI11Q" property="attributeSource" clientClassElem="_bHXNKTPvEei3dfHtumI11Q" serverClassElem="_bHXNKDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_bHXNMTPvEei3dfHtumI11Q" property="attributeSource" clientClassElem="_bHXNKjPvEei3dfHtumI11Q" serverClassElem="_bHXNKDPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="Comcast.jrugged_asm" instantiates="//@architectureDescriptions[name='Comcast.jrugged_config']">
+    <assmComponents name="rootController" id="_bFJmpTPvEei3dfHtumI11Q" instantiates="_bFJmoDPvEei3dfHtumI11Q"/>
+    <assmComponents name="aspectPerformanceMonitorExample" id="_bFJmpjPvEei3dfHtumI11Q" instantiates="_bFJmoTPvEei3dfHtumI11Q"/>
+    <assmComponents name="interceptCircuitBreakerExample" id="_bFJmpzPvEei3dfHtumI11Q" instantiates="_bFJmojPvEei3dfHtumI11Q"/>
+    <assmComponents name="interceptPerformanceMonitorExample" id="_bFJmqDPvEei3dfHtumI11Q" instantiates="_bFJmozPvEei3dfHtumI11Q"/>
+    <assmComponents name="viewResolver" id="_bFJmqTPvEei3dfHtumI11Q" instantiates="_bFJmpDPvEei3dfHtumI11Q"/>
+    <assmComponents name="rootController" id="_bFzt9TPvEei3dfHtumI11Q" instantiates="_bFzt8DPvEei3dfHtumI11Q"/>
+    <assmComponents name="aspectPerformanceMonitorExample" id="_bFzt9jPvEei3dfHtumI11Q" instantiates="_bFzt8TPvEei3dfHtumI11Q"/>
+    <assmComponents name="interceptCircuitBreakerExample" id="_bFzt9zPvEei3dfHtumI11Q" instantiates="_bFzt8jPvEei3dfHtumI11Q"/>
+    <assmComponents name="interceptPerformanceMonitorExample" id="_bFzt-DPvEei3dfHtumI11Q" instantiates="_bFzt8zPvEei3dfHtumI11Q"/>
+    <assmComponents name="viewResolver" id="_bFzt-TPvEei3dfHtumI11Q" instantiates="_bFzt9DPvEei3dfHtumI11Q"/>
+    <assmComponents name="rootController" id="_bGEMoTPvEei3dfHtumI11Q" instantiates="_bGDlkDPvEei3dfHtumI11Q"/>
+    <assmComponents name="aspectPerformanceMonitorExample" id="_bGEMojPvEei3dfHtumI11Q" instantiates="_bGDlkTPvEei3dfHtumI11Q"/>
+    <assmComponents name="interceptCircuitBreakerExample" id="_bGEMozPvEei3dfHtumI11Q" instantiates="_bGDlkjPvEei3dfHtumI11Q"/>
+    <assmComponents name="interceptPerformanceMonitorExample" id="_bGEMpDPvEei3dfHtumI11Q" instantiates="_bGDlkzPvEei3dfHtumI11Q"/>
+    <assmComponents name="viewResolver" id="_bGEMpTPvEei3dfHtumI11Q" instantiates="_bGEMoDPvEei3dfHtumI11Q"/>
+    <assmComponents name="mbeanServer" id="_bGUERjPvEei3dfHtumI11Q" instantiates="_bGUEQDPvEei3dfHtumI11Q"/>
+    <assmComponents name="attributeSource" id="_bGUERzPvEei3dfHtumI11Q" instantiates="_bGUEQTPvEei3dfHtumI11Q"/>
+    <assmComponents name="assembler" id="_bGUESDPvEei3dfHtumI11Q" instantiates="_bGUEQjPvEei3dfHtumI11Q"/>
+    <assmComponents name="namingStrategy" id="_bGUESTPvEei3dfHtumI11Q" instantiates="_bGUEQzPvEei3dfHtumI11Q"/>
+    <assmComponents name="testCircuitService" id="_bGwwQjPvEei3dfHtumI11Q" instantiates="_bGwwMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="testCircuitBreakerInterceptor" id="_bGwwQzPvEei3dfHtumI11Q" instantiates="_bGwwMTPvEei3dfHtumI11Q"/>
+    <assmComponents name="testMonitorInterceptor" id="_bGwwRDPvEei3dfHtumI11Q" instantiates="_bGwwMjPvEei3dfHtumI11Q"/>
+    <assmComponents name="testMonitor" id="_bGwwRTPvEei3dfHtumI11Q" instantiates="_bGwwMzPvEei3dfHtumI11Q"/>
+    <assmComponents name="delegatingPerformanceMonitor" id="_bGwwRjPvEei3dfHtumI11Q" instantiates="_bGwwNDPvEei3dfHtumI11Q"/>
+    <assmComponents name="testCircuitMonitor" id="_bGwwRzPvEei3dfHtumI11Q" instantiates="_bGwwNTPvEei3dfHtumI11Q"/>
+    <assmComponents name="testCircuitServiceProxy" id="_bGwwSDPvEei3dfHtumI11Q" instantiates="_bGwwNjPvEei3dfHtumI11Q"/>
+    <assmComponents name="exporter" id="_bGwwSTPvEei3dfHtumI11Q" instantiates="_bGwwNzPvEei3dfHtumI11Q"/>
+    <assmComponents name="jmxAttributeSource" id="_bGwwSjPvEei3dfHtumI11Q" instantiates="_bGwwODPvEei3dfHtumI11Q"/>
+    <assmComponents name="assembler" id="_bGwwSzPvEei3dfHtumI11Q" instantiates="_bGwwOTPvEei3dfHtumI11Q"/>
+    <assmComponents name="namingStrategy" id="_bGwwTDPvEei3dfHtumI11Q" instantiates="_bGwwOjPvEei3dfHtumI11Q"/>
+    <assmComponents name="mbeanServer" id="_bHESNjPvEei3dfHtumI11Q" instantiates="_bHESMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="attributeSource" id="_bHESNzPvEei3dfHtumI11Q" instantiates="_bHESMTPvEei3dfHtumI11Q"/>
+    <assmComponents name="assembler" id="_bHESODPvEei3dfHtumI11Q" instantiates="_bHESMjPvEei3dfHtumI11Q"/>
+    <assmComponents name="namingStrategy" id="_bHESOTPvEei3dfHtumI11Q" instantiates="_bHESMzPvEei3dfHtumI11Q"/>
+    <assmComponents name="testCircuitService" id="_bHXNMjPvEei3dfHtumI11Q" instantiates="_bHXNIDPvEei3dfHtumI11Q"/>
+    <assmComponents name="testCircuitBreakerInterceptor" id="_bHXNMzPvEei3dfHtumI11Q" instantiates="_bHXNITPvEei3dfHtumI11Q"/>
+    <assmComponents name="testMonitorInterceptor" id="_bHXNNDPvEei3dfHtumI11Q" instantiates="_bHXNIjPvEei3dfHtumI11Q"/>
+    <assmComponents name="testMonitor" id="_bHXNNTPvEei3dfHtumI11Q" instantiates="_bHXNIzPvEei3dfHtumI11Q"/>
+    <assmComponents name="delegatingPerformanceMonitor" id="_bHXNNjPvEei3dfHtumI11Q" instantiates="_bHXNJDPvEei3dfHtumI11Q"/>
+    <assmComponents name="testCircuitMonitor" id="_bHXNNzPvEei3dfHtumI11Q" instantiates="_bHXNJTPvEei3dfHtumI11Q"/>
+    <assmComponents name="testCircuitServiceProxy" id="_bHXNODPvEei3dfHtumI11Q" instantiates="_bHXNJjPvEei3dfHtumI11Q"/>
+    <assmComponents name="exporter" id="_bHXNOTPvEei3dfHtumI11Q" instantiates="_bHXNJzPvEei3dfHtumI11Q"/>
+    <assmComponents name="jmxAttributeSource" id="_bHXNOjPvEei3dfHtumI11Q" instantiates="_bHXNKDPvEei3dfHtumI11Q"/>
+    <assmComponents name="assembler" id="_bHXNOzPvEei3dfHtumI11Q" instantiates="_bHXNKTPvEei3dfHtumI11Q"/>
+    <assmComponents name="namingStrategy" id="_bHXNPDPvEei3dfHtumI11Q" instantiates="_bHXNKjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bGUESjPvEei3dfHtumI11Q" property="assembler.attributeSource" clientInstElem="_bGUESDPvEei3dfHtumI11Q" serverInstElem="_bGUERzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bGUrUDPvEei3dfHtumI11Q" property="namingStrategy.attributeSource" clientInstElem="_bGUESTPvEei3dfHtumI11Q" serverInstElem="_bGUERzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bGwwTTPvEei3dfHtumI11Q" property="testMonitor.monitorInterceptor" clientInstElem="_bGwwRTPvEei3dfHtumI11Q" serverInstElem="_bGwwRDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bGwwTjPvEei3dfHtumI11Q" property="testMonitor.delegatingMonitor" clientInstElem="_bGwwRTPvEei3dfHtumI11Q" serverInstElem="_bGwwRjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bGwwTzPvEei3dfHtumI11Q" property="testCircuitMonitor.monitorAspect" clientInstElem="_bGwwRzPvEei3dfHtumI11Q" serverInstElem="_bGwwQzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bGwwUDPvEei3dfHtumI11Q" property="exporter.assembler" clientInstElem="_bGwwSTPvEei3dfHtumI11Q" serverInstElem="_bGwwSzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bGwwUTPvEei3dfHtumI11Q" property="exporter.namingStrategy" clientInstElem="_bGwwSTPvEei3dfHtumI11Q" serverInstElem="_bGwwTDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bGwwUjPvEei3dfHtumI11Q" property="assembler.attributeSource" clientInstElem="_bGwwSzPvEei3dfHtumI11Q" serverInstElem="_bGwwSjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bGwwUzPvEei3dfHtumI11Q" property="namingStrategy.attributeSource" clientInstElem="_bGwwTDPvEei3dfHtumI11Q" serverInstElem="_bGwwSjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bHESOjPvEei3dfHtumI11Q" property="assembler.attributeSource" clientInstElem="_bHESODPvEei3dfHtumI11Q" serverInstElem="_bHESNzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bHESOzPvEei3dfHtumI11Q" property="namingStrategy.attributeSource" clientInstElem="_bHESOTPvEei3dfHtumI11Q" serverInstElem="_bHESNzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bHXNPTPvEei3dfHtumI11Q" property="testMonitor.monitorInterceptor" clientInstElem="_bHXNNTPvEei3dfHtumI11Q" serverInstElem="_bHXNNDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bHXNPjPvEei3dfHtumI11Q" property="testMonitor.delegatingMonitor" clientInstElem="_bHXNNTPvEei3dfHtumI11Q" serverInstElem="_bHXNNjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bHXNPzPvEei3dfHtumI11Q" property="testCircuitMonitor.monitorAspect" clientInstElem="_bHXNNzPvEei3dfHtumI11Q" serverInstElem="_bHXNMzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bHXNQDPvEei3dfHtumI11Q" property="exporter.assembler" clientInstElem="_bHXNOTPvEei3dfHtumI11Q" serverInstElem="_bHXNOzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bHXNQTPvEei3dfHtumI11Q" property="exporter.namingStrategy" clientInstElem="_bHXNOTPvEei3dfHtumI11Q" serverInstElem="_bHXNPDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bHXNQjPvEei3dfHtumI11Q" property="assembler.attributeSource" clientInstElem="_bHXNOzPvEei3dfHtumI11Q" serverInstElem="_bHXNOjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_bHXNQzPvEei3dfHtumI11Q" property="namingStrategy.attributeSource" clientInstElem="_bHXNPDPvEei3dfHtumI11Q" serverInstElem="_bHXNOjPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="Comcast.jrugged_spec">
+    <specConnections refID="_bHgXEDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_bHgXETPvEei3dfHtumI11Q"/>
+    <specConnections refID="_bHgXEjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_bHgXEzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_bHgXFDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_bHgXFTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_bHgXFjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_bHgXFzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_bHgXGDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_bHgXGTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_bHgXGjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_bHgXGzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_bHgXHDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_bHgXHTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_bHgXHjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_bHgXHzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_bHgXIDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_bHgXITPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

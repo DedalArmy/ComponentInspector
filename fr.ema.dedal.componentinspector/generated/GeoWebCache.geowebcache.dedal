@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="GeoWebCache.geowebcache">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="GeoWebCache.geowebcache_config" implements="//@architectureDescriptions[name='GeoWebCache.geowebcache_spec']">
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_LAoksDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.multipart.commons.CommonsMultipartResolver&quot;" id="_LA8GsDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.geowebcache.sqlite.MbtilesConfigurationProvider&quot;" id="_LA8GsTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.geowebcache.service.wmts.WMTSService&quot;" id="_LB03gDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.geowebcache.io.ImageIOInitializer&quot;" id="_LCHycDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.geowebcache.io.PNGImageEncoder&quot;" id="_LCHycTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.geowebcache.io.ImageEncoderImpl&quot;" id="_LCHycjPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.geowebcache.io.ImageDecoderImpl&quot;" id="_LCHyczPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.geowebcache.io.ImageDecoderContainer&quot;" id="_LCHydDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.geowebcache.io.ImageEncoderContainer&quot;" id="_LCHydTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.geowebcache.io.ImageIOInitializer&quot;" id="_LCbUcDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.geowebcache.io.ImageDecoderImpl&quot;" id="_LCbUcTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.geowebcache.io.ImageDecoderContainer&quot;" id="_LCbUcjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LB03gTPwEei3dfHtumI11Q" clientClassElem="_LB03gDPwEei3dfHtumI11Q" serverClassElem="_LB03gjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LB03gzPwEei3dfHtumI11Q" clientClassElem="_LB03gDPwEei3dfHtumI11Q" serverClassElem="_LB03hDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LB03hTPwEei3dfHtumI11Q" clientClassElem="_LB03gDPwEei3dfHtumI11Q" serverClassElem="_LB03hjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LB03hzPwEei3dfHtumI11Q" clientClassElem="_LB03gDPwEei3dfHtumI11Q" serverClassElem="_LB03iDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LB03iTPwEei3dfHtumI11Q" clientClassElem="_LB03gDPwEei3dfHtumI11Q" serverClassElem="_LB03ijPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LB03izPwEei3dfHtumI11Q" clientClassElem="_LB03gDPwEei3dfHtumI11Q" serverClassElem="_LB03jDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LB03jTPwEei3dfHtumI11Q" property="&quot;securityDispatcher&quot;" clientClassElem="_LB03gDPwEei3dfHtumI11Q" serverClassElem="_LB03jjPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LB03jzPwEei3dfHtumI11Q" property="&quot;mainConfiguration&quot;" clientClassElem="_LB03gDPwEei3dfHtumI11Q" serverClassElem="_LB03kDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LCHydjPwEei3dfHtumI11Q" clientClassElem="_LCHycTPwEei3dfHtumI11Q" serverClassElem="_LCHycDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LCHydzPwEei3dfHtumI11Q" clientClassElem="_LCHycjPwEei3dfHtumI11Q" serverClassElem="_LCHycDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LCHyeDPwEei3dfHtumI11Q" clientClassElem="_LCHycjPwEei3dfHtumI11Q" serverClassElem="_LCHycDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LCHyeTPwEei3dfHtumI11Q" clientClassElem="_LCHycjPwEei3dfHtumI11Q" serverClassElem="_LCHycDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LCHyejPwEei3dfHtumI11Q" clientClassElem="_LCHycjPwEei3dfHtumI11Q" serverClassElem="_LCHycDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LCHyezPwEei3dfHtumI11Q" clientClassElem="_LCHyczPwEei3dfHtumI11Q" serverClassElem="_LCHycDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LCHyfDPwEei3dfHtumI11Q" clientClassElem="_LCHyczPwEei3dfHtumI11Q" serverClassElem="_LCHycDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LCHyfTPwEei3dfHtumI11Q" clientClassElem="_LCHyczPwEei3dfHtumI11Q" serverClassElem="_LCHycDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LCHyfjPwEei3dfHtumI11Q" clientClassElem="_LCHyczPwEei3dfHtumI11Q" serverClassElem="_LCHycDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LCHyfzPwEei3dfHtumI11Q" clientClassElem="_LCHyczPwEei3dfHtumI11Q" serverClassElem="_LCHycDPwEei3dfHtumI11Q"/>
+    <configConnections refID="_LCbUczPwEei3dfHtumI11Q" clientClassElem="_LCbUcTPwEei3dfHtumI11Q" serverClassElem="_LCbUcDPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="GeoWebCache.geowebcache_asm" instantiates="//@architectureDescriptions[name='GeoWebCache.geowebcache_config']">
+    <assmComponents id="_LAoksTPwEei3dfHtumI11Q" instantiates="_LAoksDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;multipartResolver&quot;" id="_LA8GsjPwEei3dfHtumI11Q" instantiates="_LA8GsDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;MbtilesConfigurationProvider&quot;" id="_LA8GszPwEei3dfHtumI11Q" instantiates="_LA8GsTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;gwcServiceWMTS&quot;" id="_LB03kTPwEei3dfHtumI11Q" instantiates="_LB03gDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ioInitializer&quot;" id="_LCHygDPwEei3dfHtumI11Q" instantiates="_LCHycDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PNGEncoder&quot;" id="_LCHygTPwEei3dfHtumI11Q" instantiates="_LCHycTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;GIFEncoder&quot;" id="_LCHygjPwEei3dfHtumI11Q" instantiates="_LCHycjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;JPEGEncoder&quot;" id="_LCHygzPwEei3dfHtumI11Q" instantiates="_LCHycjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;TIFFEncoder&quot;" id="_LCHyhDPwEei3dfHtumI11Q" instantiates="_LCHycjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BMPEncoder&quot;" id="_LCHyhTPwEei3dfHtumI11Q" instantiates="_LCHycjPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PNGDecoder&quot;" id="_LCHyhjPwEei3dfHtumI11Q" instantiates="_LCHyczPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;GIFDecoder&quot;" id="_LCHyhzPwEei3dfHtumI11Q" instantiates="_LCHyczPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;JPEGDecoder&quot;" id="_LCHyiDPwEei3dfHtumI11Q" instantiates="_LCHyczPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;TIFFDecoder&quot;" id="_LCHyiTPwEei3dfHtumI11Q" instantiates="_LCHyczPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BMPDecoder&quot;" id="_LCHyijPwEei3dfHtumI11Q" instantiates="_LCHyczPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;decoderContainer&quot;" id="_LCHyizPwEei3dfHtumI11Q" instantiates="_LCHydDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;encoderContainer&quot;" id="_LCHyjDPwEei3dfHtumI11Q" instantiates="_LCHydTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ioInitializer&quot;" id="_LCbUdDPwEei3dfHtumI11Q" instantiates="_LCbUcDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;TIFFDecoder&quot;" id="_LCbUdTPwEei3dfHtumI11Q" instantiates="_LCbUcTPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;decoderContainer&quot;" id="_LCbUdjPwEei3dfHtumI11Q" instantiates="_LCbUcjPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LB03kjPwEei3dfHtumI11Q" clientInstElem="_LB03kTPwEei3dfHtumI11Q" serverInstElem="_LB03kzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LB03lDPwEei3dfHtumI11Q" clientInstElem="_LB03kTPwEei3dfHtumI11Q" serverInstElem="_LB03lTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LB03ljPwEei3dfHtumI11Q" clientInstElem="_LB03kTPwEei3dfHtumI11Q" serverInstElem="_LB03lzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LB03mDPwEei3dfHtumI11Q" clientInstElem="_LB03kTPwEei3dfHtumI11Q" serverInstElem="_LB03mTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LB03mjPwEei3dfHtumI11Q" clientInstElem="_LB03kTPwEei3dfHtumI11Q" serverInstElem="_LB03mzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LB03nDPwEei3dfHtumI11Q" clientInstElem="_LB03kTPwEei3dfHtumI11Q" serverInstElem="_LB03nTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LB03njPwEei3dfHtumI11Q" property="gwcServiceWMTS.securityDispatcher" clientInstElem="_LB03kTPwEei3dfHtumI11Q" serverInstElem="_LB03nzPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LB03oDPwEei3dfHtumI11Q" property="gwcServiceWMTS.mainConfiguration" clientInstElem="_LB03kTPwEei3dfHtumI11Q" serverInstElem="_LB03oTPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LCHyjTPwEei3dfHtumI11Q" clientInstElem="_LCHygTPwEei3dfHtumI11Q" serverInstElem="_LCHygDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LCHyjjPwEei3dfHtumI11Q" clientInstElem="_LCHygjPwEei3dfHtumI11Q" serverInstElem="_LCHygDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LCHyjzPwEei3dfHtumI11Q" clientInstElem="_LCHygzPwEei3dfHtumI11Q" serverInstElem="_LCHygDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LCHykDPwEei3dfHtumI11Q" clientInstElem="_LCHyhDPwEei3dfHtumI11Q" serverInstElem="_LCHygDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LCHykTPwEei3dfHtumI11Q" clientInstElem="_LCHyhTPwEei3dfHtumI11Q" serverInstElem="_LCHygDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LCHykjPwEei3dfHtumI11Q" clientInstElem="_LCHyhjPwEei3dfHtumI11Q" serverInstElem="_LCHygDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LCHykzPwEei3dfHtumI11Q" clientInstElem="_LCHyhzPwEei3dfHtumI11Q" serverInstElem="_LCHygDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LCHylDPwEei3dfHtumI11Q" clientInstElem="_LCHyiDPwEei3dfHtumI11Q" serverInstElem="_LCHygDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LCHylTPwEei3dfHtumI11Q" clientInstElem="_LCHyiTPwEei3dfHtumI11Q" serverInstElem="_LCHygDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LCHyljPwEei3dfHtumI11Q" clientInstElem="_LCHyijPwEei3dfHtumI11Q" serverInstElem="_LCHygDPwEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LCbUdzPwEei3dfHtumI11Q" clientInstElem="_LCbUdTPwEei3dfHtumI11Q" serverInstElem="_LCbUdDPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="GeoWebCache.geowebcache_spec">
+    <specConnections refID="_LCbUeDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUeTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUejPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUezPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUfDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUfTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUfjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUfzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUgDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUgTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUgjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUgzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUhDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUhTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUhjPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUhzPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUiDPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUiTPwEei3dfHtumI11Q"/>
+    <specConnections refID="_LCbUijPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

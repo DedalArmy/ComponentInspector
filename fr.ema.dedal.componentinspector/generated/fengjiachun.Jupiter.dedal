@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="fengjiachun.Jupiter">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="fengjiachun.Jupiter_config" implements="//@architectureDescriptions[name='fengjiachun.Jupiter_spec']">
+    <configComponents name="org.jupiter.example.spring.interceptor.consumer.MyGlobalConsumerInterceptor1" id="__95QADPvEei3dfHtumI11Q"/>
+    <configComponents name="org.jupiter.example.spring.interceptor.consumer.MyGlobalConsumerInterceptor2" id="__95QATPvEei3dfHtumI11Q"/>
+    <configComponents name="org.jupiter.example.spring.interceptor.provider.MyGlobalProviderInterceptor1" id="__-MyADPvEei3dfHtumI11Q"/>
+    <configComponents name="org.jupiter.example.spring.interceptor.provider.MyGlobalProviderInterceptor2" id="__-MyATPvEei3dfHtumI11Q"/>
+    <configComponents name="org.jupiter.example.spring.flow.MyGlobalFlowController" id="__-MyAjPvEei3dfHtumI11Q"/>
+    <configComponents name="org.jupiter.example.spring.interceptor.consumer.MyGlobalConsumerInterceptor1" id="__-8Y4DPvEei3dfHtumI11Q"/>
+    <configComponents name="org.jupiter.example.spring.interceptor.consumer.MyGlobalConsumerInterceptor2" id="__-8Y4TPvEei3dfHtumI11Q"/>
+    <configComponents name="org.jupiter.example.spring.interceptor.provider.MyGlobalProviderInterceptor1" id="___Fi0DPvEei3dfHtumI11Q"/>
+    <configComponents name="org.jupiter.example.spring.interceptor.provider.MyGlobalProviderInterceptor2" id="___Fi0TPvEei3dfHtumI11Q"/>
+    <configComponents name="org.jupiter.example.spring.flow.MyGlobalFlowController" id="___Fi0jPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="fengjiachun.Jupiter_asm" instantiates="//@architectureDescriptions[name='fengjiachun.Jupiter_config']">
+    <assmComponents name="globalInterceptor1" id="__95QAjPvEei3dfHtumI11Q" instantiates="__95QADPvEei3dfHtumI11Q"/>
+    <assmComponents name="globalInterceptor2" id="__95QAzPvEei3dfHtumI11Q" instantiates="__95QATPvEei3dfHtumI11Q"/>
+    <assmComponents name="globalInterceptor1" id="__-MyAzPvEei3dfHtumI11Q" instantiates="__-MyADPvEei3dfHtumI11Q"/>
+    <assmComponents name="globalInterceptor2" id="__-MyBDPvEei3dfHtumI11Q" instantiates="__-MyATPvEei3dfHtumI11Q"/>
+    <assmComponents name="globalFlowController" id="__-MyBTPvEei3dfHtumI11Q" instantiates="__-MyAjPvEei3dfHtumI11Q"/>
+    <assmComponents name="globalInterceptor1" id="__-8Y4jPvEei3dfHtumI11Q" instantiates="__-8Y4DPvEei3dfHtumI11Q"/>
+    <assmComponents name="globalInterceptor2" id="__-8Y4zPvEei3dfHtumI11Q" instantiates="__-8Y4TPvEei3dfHtumI11Q"/>
+    <assmComponents name="globalInterceptor1" id="___Fi0zPvEei3dfHtumI11Q" instantiates="___Fi0DPvEei3dfHtumI11Q"/>
+    <assmComponents name="globalInterceptor2" id="___Fi1DPvEei3dfHtumI11Q" instantiates="___Fi0TPvEei3dfHtumI11Q"/>
+    <assmComponents name="globalFlowController" id="___Fi1TPvEei3dfHtumI11Q" instantiates="___Fi0jPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="fengjiachun.Jupiter_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="baichengzhou.SpringMVC-Mybatis-Shiro-redis-0.2">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="baichengzhou.SpringMVC-Mybatis-Shiro-redis-0.2_config" implements="//@architectureDescriptions[name='baichengzhou.SpringMVC-Mybatis-Shiro-redis-0.2_spec']">
+    <configComponents name="&quot;redis.clients.jedis.JedisPoolConfig&quot;" id="_EynYsDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;redis.clients.jedis.JedisPool&quot;" id="_EynYsTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator&quot;" id="_Ey3QUDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.servlet.SimpleCookie&quot;" id="_Ey3QUTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.listenter.CustomSessionListener&quot;" id="_Ey3QUjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.mgt.CookieRememberMeManager&quot;" id="_Ey3QUzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.CustomShiroSessionDAO&quot;" id="_Ey3QVDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.session.CustomSessionManager&quot;" id="_Ey3QVTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.session.mgt.ExecutorServiceSessionValidationScheduler&quot;" id="_Ey3QVjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.mgt.DefaultWebSecurityManager&quot;" id="_Ey3QVzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.cache.impl.CustomShiroCacheManager&quot;" id="_Ey3QWDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.cache.impl.JedisShiroCacheManager&quot;" id="_Ey33YDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.cache.JedisManager&quot;" id="_Ey33YTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.MethodInvokingFactoryBean&quot;" id="_Ey33YjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.filter.KickoutSessionFilter&quot;" id="_Ey33YzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.token.SampleRealm&quot;" id="_Ey33ZDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.session.mgt.DefaultWebSessionManager&quot;" id="_Ey33ZTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.cache.JedisShiroSessionRepository&quot;" id="_Ey33ZjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.service.impl.ShiroManagerImpl&quot;" id="_Ey4ecDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.filter.LoginFilter&quot;" id="_Ey4ecTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.filter.RoleFilter&quot;" id="_Ey4ecjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.filter.PermissionFilter&quot;" id="_Ey4eczPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.filter.SimpleAuthFilter&quot;" id="_Ey4edDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.spring.web.ShiroFilterFactoryBean&quot;" id="_Ey4edTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.spring.LifecycleBeanPostProcessor&quot;" id="_Ey5FgDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_EzaC4DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;redis.clients.jedis.JedisPoolConfig&quot;" id="_Ezp6gDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;redis.clients.jedis.JedisPool&quot;" id="_Ezp6gTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator&quot;" id="_Ez6ZMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.servlet.SimpleCookie&quot;" id="_Ez6ZMTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.listenter.CustomSessionListener&quot;" id="_Ez6ZMjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.mgt.CookieRememberMeManager&quot;" id="_Ez7AQDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.CustomShiroSessionDAO&quot;" id="_Ez7AQTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.session.CustomSessionManager&quot;" id="_Ez7AQjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.session.mgt.ExecutorServiceSessionValidationScheduler&quot;" id="_Ez7AQzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.mgt.DefaultWebSecurityManager&quot;" id="_Ez7ARDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.cache.impl.CustomShiroCacheManager&quot;" id="_Ez7ARTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.cache.impl.JedisShiroCacheManager&quot;" id="_Ez7ARjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.cache.JedisManager&quot;" id="_Ez7ARzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.MethodInvokingFactoryBean&quot;" id="_Ez7ASDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.filter.KickoutSessionFilter&quot;" id="_Ez7ASTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.token.SampleRealm&quot;" id="_Ez7nUDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.session.mgt.DefaultWebSessionManager&quot;" id="_Ez7nUTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.cache.JedisShiroSessionRepository&quot;" id="_Ez7nUjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.service.impl.ShiroManagerImpl&quot;" id="_Ez7nUzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.filter.LoginFilter&quot;" id="_Ez7nVDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.filter.RoleFilter&quot;" id="_Ez7nVTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.filter.PermissionFilter&quot;" id="_Ez8OYDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.filter.SimpleAuthFilter&quot;" id="_Ez8OYTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.spring.web.ShiroFilterFactoryBean&quot;" id="_Ez8OYjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.spring.LifecycleBeanPostProcessor&quot;" id="_Ez8OYzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_E0dy0DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;redis.clients.jedis.JedisPoolConfig&quot;" id="_E0tDYDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;redis.clients.jedis.JedisPool&quot;" id="_E0tDYTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator&quot;" id="_E087ADPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.servlet.SimpleCookie&quot;" id="_E087ATPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.listenter.CustomSessionListener&quot;" id="_E087AjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.mgt.CookieRememberMeManager&quot;" id="_E087AzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.CustomShiroSessionDAO&quot;" id="_E087BDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.session.CustomSessionManager&quot;" id="_E087BTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.session.mgt.ExecutorServiceSessionValidationScheduler&quot;" id="_E087BjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.mgt.DefaultWebSecurityManager&quot;" id="_E087BzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.cache.impl.CustomShiroCacheManager&quot;" id="_E087CDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.cache.impl.JedisShiroCacheManager&quot;" id="_E087CTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.cache.JedisManager&quot;" id="_E09iEDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.MethodInvokingFactoryBean&quot;" id="_E09iETPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.filter.KickoutSessionFilter&quot;" id="_E09iEjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.token.SampleRealm&quot;" id="_E09iEzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.session.mgt.DefaultWebSessionManager&quot;" id="_E09iFDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.cache.JedisShiroSessionRepository&quot;" id="_E09iFTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.service.impl.ShiroManagerImpl&quot;" id="_E09iFjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.filter.LoginFilter&quot;" id="_E0-JIDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.filter.RoleFilter&quot;" id="_E0-JITPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.filter.PermissionFilter&quot;" id="_E0-JIjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.sojson.core.shiro.filter.SimpleAuthFilter&quot;" id="_E0-JIzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.spring.web.ShiroFilterFactoryBean&quot;" id="_E0-JJDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.spring.LifecycleBeanPostProcessor&quot;" id="_E0-wMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_E1gUoDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_EynYsjPvEei3dfHtumI11Q" clientClassElem="_EynYsTPvEei3dfHtumI11Q" serverClassElem="_EynYsDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey5FgTPvEei3dfHtumI11Q" property="&quot;shiroSessionRepository&quot;" clientClassElem="_Ey3QUjPvEei3dfHtumI11Q" serverClassElem="_Ey33ZjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey5FgjPvEei3dfHtumI11Q" property="&quot;cookie&quot;" clientClassElem="_Ey3QUzPvEei3dfHtumI11Q" serverClassElem="_Ey5FgzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey5FhDPvEei3dfHtumI11Q" property="&quot;shiroSessionRepository&quot;" clientClassElem="_Ey3QVDPvEei3dfHtumI11Q" serverClassElem="_Ey33ZjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey5FhTPvEei3dfHtumI11Q" property="&quot;sessionIdGenerator&quot;" clientClassElem="_Ey3QVDPvEei3dfHtumI11Q" serverClassElem="_Ey3QUDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey5skDPvEei3dfHtumI11Q" property="&quot;shiroSessionRepository&quot;" clientClassElem="_Ey3QVTPvEei3dfHtumI11Q" serverClassElem="_Ey33ZjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey5skTPvEei3dfHtumI11Q" property="&quot;customShiroSessionDAO&quot;" clientClassElem="_Ey3QVTPvEei3dfHtumI11Q" serverClassElem="_Ey3QVDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey5skjPvEei3dfHtumI11Q" property="&quot;sessionManager&quot;" clientClassElem="_Ey3QVjPvEei3dfHtumI11Q" serverClassElem="_Ey33ZTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey5skzPvEei3dfHtumI11Q" property="&quot;realm&quot;" clientClassElem="_Ey3QVzPvEei3dfHtumI11Q" serverClassElem="_Ey33ZDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey5slDPvEei3dfHtumI11Q" property="&quot;sessionManager&quot;" clientClassElem="_Ey3QVzPvEei3dfHtumI11Q" serverClassElem="_Ey33ZTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey5slTPvEei3dfHtumI11Q" property="&quot;rememberMeManager&quot;" clientClassElem="_Ey3QVzPvEei3dfHtumI11Q" serverClassElem="_Ey3QUzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey5sljPvEei3dfHtumI11Q" property="&quot;cacheManager&quot;" clientClassElem="_Ey3QVzPvEei3dfHtumI11Q" serverClassElem="_Ey3QWDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey5slzPvEei3dfHtumI11Q" property="&quot;shiroCacheManager&quot;" clientClassElem="_Ey3QWDPvEei3dfHtumI11Q" serverClassElem="_Ey33YDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey5smDPvEei3dfHtumI11Q" property="&quot;jedisManager&quot;" clientClassElem="_Ey33YDPvEei3dfHtumI11Q" serverClassElem="_Ey33YTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey5smTPvEei3dfHtumI11Q" property="&quot;jedisPool&quot;" clientClassElem="_Ey33YTPvEei3dfHtumI11Q" serverClassElem="_Ey6ToDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey6ToTPvEei3dfHtumI11Q" property="&quot;arguments&quot;" clientClassElem="_Ey33YjPvEei3dfHtumI11Q" serverClassElem="_Ey3QVzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey6TojPvEei3dfHtumI11Q" property="&quot;arguments&quot;" clientClassElem="_Ey33YjPvEei3dfHtumI11Q" serverClassElem="_Ey33ZjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey6TozPvEei3dfHtumI11Q" property="&quot;sessionDAO&quot;" clientClassElem="_Ey33ZTPvEei3dfHtumI11Q" serverClassElem="_Ey3QVDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey6TpDPvEei3dfHtumI11Q" property="&quot;sessionListeners&quot;" clientClassElem="_Ey33ZTPvEei3dfHtumI11Q" serverClassElem="_Ey3QUjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey6TpTPvEei3dfHtumI11Q" property="&quot;sessionValidationScheduler&quot;" clientClassElem="_Ey33ZTPvEei3dfHtumI11Q" serverClassElem="_Ey3QVjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey6TpjPvEei3dfHtumI11Q" property="&quot;sessionIdCookie&quot;" clientClassElem="_Ey33ZTPvEei3dfHtumI11Q" serverClassElem="_Ey3QUTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey6TpzPvEei3dfHtumI11Q" property="&quot;jedisManager&quot;" clientClassElem="_Ey33ZjPvEei3dfHtumI11Q" serverClassElem="_Ey33YTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ey6TqDPvEei3dfHtumI11Q" property="&quot;securityManager&quot;" clientClassElem="_Ey4edTPvEei3dfHtumI11Q" serverClassElem="_Ey3QVzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ezp6gjPvEei3dfHtumI11Q" clientClassElem="_Ezp6gTPvEei3dfHtumI11Q" serverClassElem="_Ezp6gDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez8OZDPvEei3dfHtumI11Q" property="&quot;shiroSessionRepository&quot;" clientClassElem="_Ez6ZMjPvEei3dfHtumI11Q" serverClassElem="_Ez7nUjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez81cDPvEei3dfHtumI11Q" property="&quot;cookie&quot;" clientClassElem="_Ez7AQDPvEei3dfHtumI11Q" serverClassElem="_Ez81cTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez81cjPvEei3dfHtumI11Q" property="&quot;shiroSessionRepository&quot;" clientClassElem="_Ez7AQTPvEei3dfHtumI11Q" serverClassElem="_Ez7nUjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez81czPvEei3dfHtumI11Q" property="&quot;sessionIdGenerator&quot;" clientClassElem="_Ez7AQTPvEei3dfHtumI11Q" serverClassElem="_Ez6ZMDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez81dDPvEei3dfHtumI11Q" property="&quot;shiroSessionRepository&quot;" clientClassElem="_Ez7AQjPvEei3dfHtumI11Q" serverClassElem="_Ez7nUjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez81dTPvEei3dfHtumI11Q" property="&quot;customShiroSessionDAO&quot;" clientClassElem="_Ez7AQjPvEei3dfHtumI11Q" serverClassElem="_Ez7AQTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez81djPvEei3dfHtumI11Q" property="&quot;sessionManager&quot;" clientClassElem="_Ez7AQzPvEei3dfHtumI11Q" serverClassElem="_Ez7nUTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez81dzPvEei3dfHtumI11Q" property="&quot;realm&quot;" clientClassElem="_Ez7ARDPvEei3dfHtumI11Q" serverClassElem="_Ez7nUDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez81eDPvEei3dfHtumI11Q" property="&quot;sessionManager&quot;" clientClassElem="_Ez7ARDPvEei3dfHtumI11Q" serverClassElem="_Ez7nUTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez81eTPvEei3dfHtumI11Q" property="&quot;rememberMeManager&quot;" clientClassElem="_Ez7ARDPvEei3dfHtumI11Q" serverClassElem="_Ez7AQDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez9cgDPvEei3dfHtumI11Q" property="&quot;cacheManager&quot;" clientClassElem="_Ez7ARDPvEei3dfHtumI11Q" serverClassElem="_Ez7ARTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez9cgTPvEei3dfHtumI11Q" property="&quot;shiroCacheManager&quot;" clientClassElem="_Ez7ARTPvEei3dfHtumI11Q" serverClassElem="_Ez7ARjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez9cgjPvEei3dfHtumI11Q" property="&quot;jedisManager&quot;" clientClassElem="_Ez7ARjPvEei3dfHtumI11Q" serverClassElem="_Ez7ARzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez9cgzPvEei3dfHtumI11Q" property="&quot;jedisPool&quot;" clientClassElem="_Ez7ARzPvEei3dfHtumI11Q" serverClassElem="_Ez9chDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez9chTPvEei3dfHtumI11Q" property="&quot;arguments&quot;" clientClassElem="_Ez7ASDPvEei3dfHtumI11Q" serverClassElem="_Ez7ARDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez9chjPvEei3dfHtumI11Q" property="&quot;arguments&quot;" clientClassElem="_Ez7ASDPvEei3dfHtumI11Q" serverClassElem="_Ez7nUjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez9chzPvEei3dfHtumI11Q" property="&quot;sessionDAO&quot;" clientClassElem="_Ez7nUTPvEei3dfHtumI11Q" serverClassElem="_Ez7AQTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez9ciDPvEei3dfHtumI11Q" property="&quot;sessionListeners&quot;" clientClassElem="_Ez7nUTPvEei3dfHtumI11Q" serverClassElem="_Ez6ZMjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez9ciTPvEei3dfHtumI11Q" property="&quot;sessionValidationScheduler&quot;" clientClassElem="_Ez7nUTPvEei3dfHtumI11Q" serverClassElem="_Ez7AQzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez-DkDPvEei3dfHtumI11Q" property="&quot;sessionIdCookie&quot;" clientClassElem="_Ez7nUTPvEei3dfHtumI11Q" serverClassElem="_Ez6ZMTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez-DkTPvEei3dfHtumI11Q" property="&quot;jedisManager&quot;" clientClassElem="_Ez7nUjPvEei3dfHtumI11Q" serverClassElem="_Ez7ARzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Ez-DkjPvEei3dfHtumI11Q" property="&quot;securityManager&quot;" clientClassElem="_Ez8OYjPvEei3dfHtumI11Q" serverClassElem="_Ez7ARDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0tDYjPvEei3dfHtumI11Q" clientClassElem="_E0tDYTPvEei3dfHtumI11Q" serverClassElem="_E0tDYDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0-wMTPvEei3dfHtumI11Q" property="&quot;shiroSessionRepository&quot;" clientClassElem="_E087AjPvEei3dfHtumI11Q" serverClassElem="_E09iFTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0-wMjPvEei3dfHtumI11Q" property="&quot;cookie&quot;" clientClassElem="_E087AzPvEei3dfHtumI11Q" serverClassElem="_E0-wMzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0-wNDPvEei3dfHtumI11Q" property="&quot;shiroSessionRepository&quot;" clientClassElem="_E087BDPvEei3dfHtumI11Q" serverClassElem="_E09iFTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0-wNTPvEei3dfHtumI11Q" property="&quot;sessionIdGenerator&quot;" clientClassElem="_E087BDPvEei3dfHtumI11Q" serverClassElem="_E087ADPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0-wNjPvEei3dfHtumI11Q" property="&quot;shiroSessionRepository&quot;" clientClassElem="_E087BTPvEei3dfHtumI11Q" serverClassElem="_E09iFTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0_XQDPvEei3dfHtumI11Q" property="&quot;customShiroSessionDAO&quot;" clientClassElem="_E087BTPvEei3dfHtumI11Q" serverClassElem="_E087BDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0_XQTPvEei3dfHtumI11Q" property="&quot;sessionManager&quot;" clientClassElem="_E087BjPvEei3dfHtumI11Q" serverClassElem="_E09iFDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0_XQjPvEei3dfHtumI11Q" property="&quot;realm&quot;" clientClassElem="_E087BzPvEei3dfHtumI11Q" serverClassElem="_E09iEzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0_XQzPvEei3dfHtumI11Q" property="&quot;sessionManager&quot;" clientClassElem="_E087BzPvEei3dfHtumI11Q" serverClassElem="_E09iFDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0_XRDPvEei3dfHtumI11Q" property="&quot;rememberMeManager&quot;" clientClassElem="_E087BzPvEei3dfHtumI11Q" serverClassElem="_E087AzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0_XRTPvEei3dfHtumI11Q" property="&quot;cacheManager&quot;" clientClassElem="_E087BzPvEei3dfHtumI11Q" serverClassElem="_E087CDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0_XRjPvEei3dfHtumI11Q" property="&quot;shiroCacheManager&quot;" clientClassElem="_E087CDPvEei3dfHtumI11Q" serverClassElem="_E087CTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0_XRzPvEei3dfHtumI11Q" property="&quot;jedisManager&quot;" clientClassElem="_E087CTPvEei3dfHtumI11Q" serverClassElem="_E09iEDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0_XSDPvEei3dfHtumI11Q" property="&quot;jedisPool&quot;" clientClassElem="_E09iEDPvEei3dfHtumI11Q" serverClassElem="_E0_XSTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0_-UDPvEei3dfHtumI11Q" property="&quot;arguments&quot;" clientClassElem="_E09iETPvEei3dfHtumI11Q" serverClassElem="_E087BzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0_-UTPvEei3dfHtumI11Q" property="&quot;arguments&quot;" clientClassElem="_E09iETPvEei3dfHtumI11Q" serverClassElem="_E09iFTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0_-UjPvEei3dfHtumI11Q" property="&quot;sessionDAO&quot;" clientClassElem="_E09iFDPvEei3dfHtumI11Q" serverClassElem="_E087BDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0_-UzPvEei3dfHtumI11Q" property="&quot;sessionListeners&quot;" clientClassElem="_E09iFDPvEei3dfHtumI11Q" serverClassElem="_E087AjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0_-VDPvEei3dfHtumI11Q" property="&quot;sessionValidationScheduler&quot;" clientClassElem="_E09iFDPvEei3dfHtumI11Q" serverClassElem="_E087BjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0_-VTPvEei3dfHtumI11Q" property="&quot;sessionIdCookie&quot;" clientClassElem="_E09iFDPvEei3dfHtumI11Q" serverClassElem="_E087ATPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0_-VjPvEei3dfHtumI11Q" property="&quot;jedisManager&quot;" clientClassElem="_E09iFTPvEei3dfHtumI11Q" serverClassElem="_E09iEDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_E0_-VzPvEei3dfHtumI11Q" property="&quot;securityManager&quot;" clientClassElem="_E0-JJDPvEei3dfHtumI11Q" serverClassElem="_E087BzPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="baichengzhou.SpringMVC-Mybatis-Shiro-redis-0.2_asm" instantiates="//@architectureDescriptions[name='baichengzhou.SpringMVC-Mybatis-Shiro-redis-0.2_config']">
+    <assmComponents name="jedisPoolConfig" id="_Eyn_wDPvEei3dfHtumI11Q" instantiates="_EynYsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="jedisPool" id="_Eyn_wTPvEei3dfHtumI11Q" instantiates="_EynYsTPvEei3dfHtumI11Q"/>
+    <assmComponents name="sessionIdGenerator" id="_Ey66sDPvEei3dfHtumI11Q" instantiates="_Ey3QUDPvEei3dfHtumI11Q"/>
+    <assmComponents name="sessionIdCookie" id="_Ey66sTPvEei3dfHtumI11Q" instantiates="_Ey5FgzPvEei3dfHtumI11Q"/>
+    <assmComponents name="customSessionListener" id="_Ey66sjPvEei3dfHtumI11Q" instantiates="_Ey3QUjPvEei3dfHtumI11Q"/>
+    <assmComponents name="rememberMeCookie" id="_Ey66szPvEei3dfHtumI11Q" instantiates="_Ey5FgzPvEei3dfHtumI11Q"/>
+    <assmComponents name="rememberMeManager" id="_Ey66tDPvEei3dfHtumI11Q" instantiates="_Ey3QUzPvEei3dfHtumI11Q"/>
+    <assmComponents name="customShiroSessionDAO" id="_Ey66tTPvEei3dfHtumI11Q" instantiates="_Ey3QVDPvEei3dfHtumI11Q"/>
+    <assmComponents name="customSessionManager" id="_Ey66tjPvEei3dfHtumI11Q" instantiates="_Ey3QVTPvEei3dfHtumI11Q"/>
+    <assmComponents name="sessionValidationScheduler" id="_Ey66tzPvEei3dfHtumI11Q" instantiates="_Ey3QVjPvEei3dfHtumI11Q"/>
+    <assmComponents name="securityManager" id="_Ey66uDPvEei3dfHtumI11Q" instantiates="_Ey3QVzPvEei3dfHtumI11Q"/>
+    <assmComponents name="customShiroCacheManager" id="_Ey66uTPvEei3dfHtumI11Q" instantiates="_Ey3QWDPvEei3dfHtumI11Q"/>
+    <assmComponents name="jedisShiroCacheManager" id="_Ey7hwDPvEei3dfHtumI11Q" instantiates="_Ey33YDPvEei3dfHtumI11Q"/>
+    <assmComponents name="jedisManager" id="_Ey7hwTPvEei3dfHtumI11Q" instantiates="_Ey33YTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_Ey7hwjPvEei3dfHtumI11Q" instantiates="_Ey33YjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;kickoutSessionFilter&quot;" id="_Ey7hwzPvEei3dfHtumI11Q" instantiates="_Ey33YzPvEei3dfHtumI11Q"/>
+    <assmComponents id="_Ey7hxDPvEei3dfHtumI11Q" instantiates="_Ey33YjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sampleRealm&quot;" id="_Ey7hxTPvEei3dfHtumI11Q" instantiates="_Ey33ZDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionManager&quot;" id="_Ey7hxjPvEei3dfHtumI11Q" instantiates="_Ey33ZTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jedisShiroSessionRepository&quot;" id="_Ey7hxzPvEei3dfHtumI11Q" instantiates="_Ey33ZjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shiroManager&quot;" id="_Ey8I0DPvEei3dfHtumI11Q" instantiates="_Ey4ecDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;login&quot;" id="_Ey8I0TPvEei3dfHtumI11Q" instantiates="_Ey4ecTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;role&quot;" id="_Ey8I0jPvEei3dfHtumI11Q" instantiates="_Ey4ecjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;permission&quot;" id="_Ey8I0zPvEei3dfHtumI11Q" instantiates="_Ey4eczPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;simple&quot;" id="_Ey8I1DPvEei3dfHtumI11Q" instantiates="_Ey4edDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shiroFilter&quot;" id="_Ey8I1TPvEei3dfHtumI11Q" instantiates="_Ey4edTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lifecycleBeanPostProcessor&quot;" id="_Ey8v4DPvEei3dfHtumI11Q" instantiates="_Ey5FgDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyConfigurer&quot;" id="_Ezap8DPvEei3dfHtumI11Q" instantiates="_EzaC4DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jedisPoolConfig&quot;" id="_Ezp6gzPvEei3dfHtumI11Q" instantiates="_Ezp6gDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jedisPool&quot;" id="_Ezp6hDPvEei3dfHtumI11Q" instantiates="_Ezp6gTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionIdGenerator&quot;" id="_Ez-DkzPvEei3dfHtumI11Q" instantiates="_Ez6ZMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionIdCookie&quot;" id="_Ez-DlDPvEei3dfHtumI11Q" instantiates="_Ez6ZMTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;customSessionListener&quot;" id="_Ez-DlTPvEei3dfHtumI11Q" instantiates="_Ez6ZMjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;rememberMeCookie&quot;" id="_Ez-DljPvEei3dfHtumI11Q" instantiates="_Ez6ZMTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;rememberMeManager&quot;" id="_Ez-DlzPvEei3dfHtumI11Q" instantiates="_Ez7AQDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;customShiroSessionDAO&quot;" id="_Ez-DmDPvEei3dfHtumI11Q" instantiates="_Ez7AQTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;customSessionManager&quot;" id="_Ez-qoDPvEei3dfHtumI11Q" instantiates="_Ez7AQjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionValidationScheduler&quot;" id="_Ez-qoTPvEei3dfHtumI11Q" instantiates="_Ez7AQzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;securityManager&quot;" id="_Ez-qojPvEei3dfHtumI11Q" instantiates="_Ez7ARDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;customShiroCacheManager&quot;" id="_Ez-qozPvEei3dfHtumI11Q" instantiates="_Ez7ARTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jedisShiroCacheManager&quot;" id="_Ez-qpDPvEei3dfHtumI11Q" instantiates="_Ez7ARjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jedisManager&quot;" id="_Ez-qpTPvEei3dfHtumI11Q" instantiates="_Ez7ARzPvEei3dfHtumI11Q"/>
+    <assmComponents id="_Ez-qpjPvEei3dfHtumI11Q" instantiates="_Ez7ASDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;kickoutSessionFilter&quot;" id="_Ez-qpzPvEei3dfHtumI11Q" instantiates="_Ez7ASTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_Ez-qqDPvEei3dfHtumI11Q" instantiates="_Ez7ASDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sampleRealm&quot;" id="_Ez_RsDPvEei3dfHtumI11Q" instantiates="_Ez7nUDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionManager&quot;" id="_Ez_RsTPvEei3dfHtumI11Q" instantiates="_Ez7nUTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jedisShiroSessionRepository&quot;" id="_Ez_RsjPvEei3dfHtumI11Q" instantiates="_Ez7nUjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shiroManager&quot;" id="_Ez_RszPvEei3dfHtumI11Q" instantiates="_Ez7nUzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;login&quot;" id="_Ez_RtDPvEei3dfHtumI11Q" instantiates="_Ez7nVDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;role&quot;" id="_Ez_RtTPvEei3dfHtumI11Q" instantiates="_Ez7nVTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;permission&quot;" id="_Ez_RtjPvEei3dfHtumI11Q" instantiates="_Ez8OYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;simple&quot;" id="_Ez_RtzPvEei3dfHtumI11Q" instantiates="_Ez8OYTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shiroFilter&quot;" id="_Ez_4wDPvEei3dfHtumI11Q" instantiates="_Ez8OYjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lifecycleBeanPostProcessor&quot;" id="_Ez_4wTPvEei3dfHtumI11Q" instantiates="_Ez8OYzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyConfigurer&quot;" id="_E0dy0TPvEei3dfHtumI11Q" instantiates="_E0dy0DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jedisPoolConfig&quot;" id="_E0tqcDPvEei3dfHtumI11Q" instantiates="_E0tDYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jedisPool&quot;" id="_E0tqcTPvEei3dfHtumI11Q" instantiates="_E0tDYTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionIdGenerator&quot;" id="_E1AlYDPvEei3dfHtumI11Q" instantiates="_E087ADPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionIdCookie&quot;" id="_E1AlYTPvEei3dfHtumI11Q" instantiates="_E087ATPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;customSessionListener&quot;" id="_E1AlYjPvEei3dfHtumI11Q" instantiates="_E087AjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;rememberMeCookie&quot;" id="_E1AlYzPvEei3dfHtumI11Q" instantiates="_E087ATPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;rememberMeManager&quot;" id="_E1AlZDPvEei3dfHtumI11Q" instantiates="_E087AzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;customShiroSessionDAO&quot;" id="_E1AlZTPvEei3dfHtumI11Q" instantiates="_E087BDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;customSessionManager&quot;" id="_E1AlZjPvEei3dfHtumI11Q" instantiates="_E087BTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionValidationScheduler&quot;" id="_E1AlZzPvEei3dfHtumI11Q" instantiates="_E087BjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;securityManager&quot;" id="_E1AlaDPvEei3dfHtumI11Q" instantiates="_E087BzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;customShiroCacheManager&quot;" id="_E1BMcDPvEei3dfHtumI11Q" instantiates="_E087CDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jedisShiroCacheManager&quot;" id="_E1BMcTPvEei3dfHtumI11Q" instantiates="_E087CTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jedisManager&quot;" id="_E1BMcjPvEei3dfHtumI11Q" instantiates="_E09iEDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_E1BMczPvEei3dfHtumI11Q" instantiates="_E09iETPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;kickoutSessionFilter&quot;" id="_E1BMdDPvEei3dfHtumI11Q" instantiates="_E09iEjPvEei3dfHtumI11Q"/>
+    <assmComponents id="_E1BMdTPvEei3dfHtumI11Q" instantiates="_E09iETPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sampleRealm&quot;" id="_E1BMdjPvEei3dfHtumI11Q" instantiates="_E09iEzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionManager&quot;" id="_E1BzgDPvEei3dfHtumI11Q" instantiates="_E09iFDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jedisShiroSessionRepository&quot;" id="_E1BzgTPvEei3dfHtumI11Q" instantiates="_E09iFTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shiroManager&quot;" id="_E1BzgjPvEei3dfHtumI11Q" instantiates="_E09iFjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;login&quot;" id="_E1BzgzPvEei3dfHtumI11Q" instantiates="_E0-JIDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;role&quot;" id="_E1BzhDPvEei3dfHtumI11Q" instantiates="_E0-JITPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;permission&quot;" id="_E1BzhTPvEei3dfHtumI11Q" instantiates="_E0-JIjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;simple&quot;" id="_E1BzhjPvEei3dfHtumI11Q" instantiates="_E0-JIzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shiroFilter&quot;" id="_E1BzhzPvEei3dfHtumI11Q" instantiates="_E0-JJDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lifecycleBeanPostProcessor&quot;" id="_E1CakDPvEei3dfHtumI11Q" instantiates="_E0-wMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyConfigurer&quot;" id="_E1gUoTPvEei3dfHtumI11Q" instantiates="_E1gUoDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Eyn_wjPvEei3dfHtumI11Q" clientInstElem="_Eyn_wTPvEei3dfHtumI11Q" serverInstElem="_Eyn_wDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey8v4TPvEei3dfHtumI11Q" property="customSessionListener.shiroSessionRepository" clientInstElem="_Ey66sjPvEei3dfHtumI11Q" serverInstElem="_Ey7hxzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey8v4jPvEei3dfHtumI11Q" property="rememberMeManager.cookie" clientInstElem="_Ey66tDPvEei3dfHtumI11Q" serverInstElem="_Ey66szPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey8v4zPvEei3dfHtumI11Q" property="customShiroSessionDAO.shiroSessionRepository" clientInstElem="_Ey66tTPvEei3dfHtumI11Q" serverInstElem="_Ey7hxzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey8v5DPvEei3dfHtumI11Q" property="customShiroSessionDAO.sessionIdGenerator" clientInstElem="_Ey66tTPvEei3dfHtumI11Q" serverInstElem="_Ey66sDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey8v5TPvEei3dfHtumI11Q" property="customSessionManager.shiroSessionRepository" clientInstElem="_Ey66tjPvEei3dfHtumI11Q" serverInstElem="_Ey7hxzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey8v5jPvEei3dfHtumI11Q" property="customSessionManager.customShiroSessionDAO" clientInstElem="_Ey66tjPvEei3dfHtumI11Q" serverInstElem="_Ey66tTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey8v5zPvEei3dfHtumI11Q" property="sessionValidationScheduler.sessionManager" clientInstElem="_Ey66tzPvEei3dfHtumI11Q" serverInstElem="_Ey7hxjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey8v6DPvEei3dfHtumI11Q" property="securityManager.realm" clientInstElem="_Ey66uDPvEei3dfHtumI11Q" serverInstElem="_Ey7hxTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey8v6TPvEei3dfHtumI11Q" property="securityManager.sessionManager" clientInstElem="_Ey66uDPvEei3dfHtumI11Q" serverInstElem="_Ey7hxjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey8v6jPvEei3dfHtumI11Q" property="securityManager.rememberMeManager" clientInstElem="_Ey66uDPvEei3dfHtumI11Q" serverInstElem="_Ey66tDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey8v6zPvEei3dfHtumI11Q" property="securityManager.cacheManager" clientInstElem="_Ey66uDPvEei3dfHtumI11Q" serverInstElem="_Ey66uTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey9W8DPvEei3dfHtumI11Q" property="customShiroCacheManager.shiroCacheManager" clientInstElem="_Ey66uTPvEei3dfHtumI11Q" serverInstElem="_Ey7hwDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey9W8TPvEei3dfHtumI11Q" property="jedisShiroCacheManager.jedisManager" clientInstElem="_Ey7hwDPvEei3dfHtumI11Q" serverInstElem="_Ey7hwTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey9W8jPvEei3dfHtumI11Q" property="jedisManager.jedisPool" clientInstElem="_Ey7hwTPvEei3dfHtumI11Q" serverInstElem="_Ey9W8zPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey9W9DPvEei3dfHtumI11Q" clientInstElem="_Ey9W8zPvEei3dfHtumI11Q" serverInstElem="_Ey66uDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey9W9TPvEei3dfHtumI11Q" clientInstElem="_Ey9W8zPvEei3dfHtumI11Q" serverInstElem="_Ey7hxzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey9W9jPvEei3dfHtumI11Q" property="sessionManager.sessionDAO" clientInstElem="_Ey7hxjPvEei3dfHtumI11Q" serverInstElem="_Ey66tTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey9W9zPvEei3dfHtumI11Q" property="sessionManager.sessionListeners" clientInstElem="_Ey7hxjPvEei3dfHtumI11Q" serverInstElem="_Ey66sjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey9W-DPvEei3dfHtumI11Q" property="sessionManager.sessionValidationScheduler" clientInstElem="_Ey7hxjPvEei3dfHtumI11Q" serverInstElem="_Ey66tzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey9W-TPvEei3dfHtumI11Q" property="sessionManager.sessionIdCookie" clientInstElem="_Ey7hxjPvEei3dfHtumI11Q" serverInstElem="_Ey66sTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey9W-jPvEei3dfHtumI11Q" property="jedisShiroSessionRepository.jedisManager" clientInstElem="_Ey7hxzPvEei3dfHtumI11Q" serverInstElem="_Ey7hwTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ey9W-zPvEei3dfHtumI11Q" property="shiroFilter.securityManager" clientInstElem="_Ey8I1TPvEei3dfHtumI11Q" serverInstElem="_Ey66uDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ezp6hTPvEei3dfHtumI11Q" clientInstElem="_Ezp6hDPvEei3dfHtumI11Q" serverInstElem="_Ezp6gzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ez_4wjPvEei3dfHtumI11Q" property="customSessionListener.shiroSessionRepository" clientInstElem="_Ez-DlTPvEei3dfHtumI11Q" serverInstElem="_Ez_RsjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ez_4wzPvEei3dfHtumI11Q" property="rememberMeManager.cookie" clientInstElem="_Ez-DlzPvEei3dfHtumI11Q" serverInstElem="_Ez-DljPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ez_4xDPvEei3dfHtumI11Q" property="customShiroSessionDAO.shiroSessionRepository" clientInstElem="_Ez-DmDPvEei3dfHtumI11Q" serverInstElem="_Ez_RsjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Ez_4xTPvEei3dfHtumI11Q" property="customShiroSessionDAO.sessionIdGenerator" clientInstElem="_Ez-DmDPvEei3dfHtumI11Q" serverInstElem="_Ez-DkzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0Af0DPvEei3dfHtumI11Q" property="customSessionManager.shiroSessionRepository" clientInstElem="_Ez-qoDPvEei3dfHtumI11Q" serverInstElem="_Ez_RsjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0Af0TPvEei3dfHtumI11Q" property="customSessionManager.customShiroSessionDAO" clientInstElem="_Ez-qoDPvEei3dfHtumI11Q" serverInstElem="_Ez-DmDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0Af0jPvEei3dfHtumI11Q" property="sessionValidationScheduler.sessionManager" clientInstElem="_Ez-qoTPvEei3dfHtumI11Q" serverInstElem="_Ez_RsTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0Af0zPvEei3dfHtumI11Q" property="securityManager.realm" clientInstElem="_Ez-qojPvEei3dfHtumI11Q" serverInstElem="_Ez_RsDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0Af1DPvEei3dfHtumI11Q" property="securityManager.sessionManager" clientInstElem="_Ez-qojPvEei3dfHtumI11Q" serverInstElem="_Ez_RsTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0Af1TPvEei3dfHtumI11Q" property="securityManager.rememberMeManager" clientInstElem="_Ez-qojPvEei3dfHtumI11Q" serverInstElem="_Ez-DlzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0Af1jPvEei3dfHtumI11Q" property="securityManager.cacheManager" clientInstElem="_Ez-qojPvEei3dfHtumI11Q" serverInstElem="_Ez-qozPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0Af1zPvEei3dfHtumI11Q" property="customShiroCacheManager.shiroCacheManager" clientInstElem="_Ez-qozPvEei3dfHtumI11Q" serverInstElem="_Ez-qpDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0Af2DPvEei3dfHtumI11Q" property="jedisShiroCacheManager.jedisManager" clientInstElem="_Ez-qpDPvEei3dfHtumI11Q" serverInstElem="_Ez-qpTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0Af2TPvEei3dfHtumI11Q" property="jedisManager.jedisPool" clientInstElem="_Ez-qpTPvEei3dfHtumI11Q" serverInstElem="_E0Af2jPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0Af2zPvEei3dfHtumI11Q" clientInstElem="_Ez-qqDPvEei3dfHtumI11Q" serverInstElem="_Ez-qojPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0Af3DPvEei3dfHtumI11Q" clientInstElem="_Ez-qqDPvEei3dfHtumI11Q" serverInstElem="_Ez_RsjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0Af3TPvEei3dfHtumI11Q" property="sessionManager.sessionDAO" clientInstElem="_Ez_RsTPvEei3dfHtumI11Q" serverInstElem="_Ez-DmDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0Af3jPvEei3dfHtumI11Q" property="sessionManager.sessionListeners" clientInstElem="_Ez_RsTPvEei3dfHtumI11Q" serverInstElem="_Ez-DlTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0BG4DPvEei3dfHtumI11Q" property="sessionManager.sessionValidationScheduler" clientInstElem="_Ez_RsTPvEei3dfHtumI11Q" serverInstElem="_Ez-qoTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0BG4TPvEei3dfHtumI11Q" property="sessionManager.sessionIdCookie" clientInstElem="_Ez_RsTPvEei3dfHtumI11Q" serverInstElem="_Ez-DlDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0BG4jPvEei3dfHtumI11Q" property="jedisShiroSessionRepository.jedisManager" clientInstElem="_Ez_RsjPvEei3dfHtumI11Q" serverInstElem="_Ez-qpTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0BG4zPvEei3dfHtumI11Q" property="shiroFilter.securityManager" clientInstElem="_Ez_4wDPvEei3dfHtumI11Q" serverInstElem="_Ez-qojPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E0tqcjPvEei3dfHtumI11Q" clientInstElem="_E0tqcTPvEei3dfHtumI11Q" serverInstElem="_E0tqcDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1CakTPvEei3dfHtumI11Q" property="customSessionListener.shiroSessionRepository" clientInstElem="_E1AlYjPvEei3dfHtumI11Q" serverInstElem="_E1BzgTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1CakjPvEei3dfHtumI11Q" property="rememberMeManager.cookie" clientInstElem="_E1AlZDPvEei3dfHtumI11Q" serverInstElem="_E1AlYzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1CakzPvEei3dfHtumI11Q" property="customShiroSessionDAO.shiroSessionRepository" clientInstElem="_E1AlZTPvEei3dfHtumI11Q" serverInstElem="_E1BzgTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1CalDPvEei3dfHtumI11Q" property="customShiroSessionDAO.sessionIdGenerator" clientInstElem="_E1AlZTPvEei3dfHtumI11Q" serverInstElem="_E1AlYDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1CalTPvEei3dfHtumI11Q" property="customSessionManager.shiroSessionRepository" clientInstElem="_E1AlZjPvEei3dfHtumI11Q" serverInstElem="_E1BzgTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1CaljPvEei3dfHtumI11Q" property="customSessionManager.customShiroSessionDAO" clientInstElem="_E1AlZjPvEei3dfHtumI11Q" serverInstElem="_E1AlZTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1CalzPvEei3dfHtumI11Q" property="sessionValidationScheduler.sessionManager" clientInstElem="_E1AlZzPvEei3dfHtumI11Q" serverInstElem="_E1BzgDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1CamDPvEei3dfHtumI11Q" property="securityManager.realm" clientInstElem="_E1AlaDPvEei3dfHtumI11Q" serverInstElem="_E1BMdjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1CamTPvEei3dfHtumI11Q" property="securityManager.sessionManager" clientInstElem="_E1AlaDPvEei3dfHtumI11Q" serverInstElem="_E1BzgDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1CamjPvEei3dfHtumI11Q" property="securityManager.rememberMeManager" clientInstElem="_E1AlaDPvEei3dfHtumI11Q" serverInstElem="_E1AlZDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1CamzPvEei3dfHtumI11Q" property="securityManager.cacheManager" clientInstElem="_E1AlaDPvEei3dfHtumI11Q" serverInstElem="_E1BMcDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1CanDPvEei3dfHtumI11Q" property="customShiroCacheManager.shiroCacheManager" clientInstElem="_E1BMcDPvEei3dfHtumI11Q" serverInstElem="_E1BMcTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1CanTPvEei3dfHtumI11Q" property="jedisShiroCacheManager.jedisManager" clientInstElem="_E1BMcTPvEei3dfHtumI11Q" serverInstElem="_E1BMcjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1DBoDPvEei3dfHtumI11Q" property="jedisManager.jedisPool" clientInstElem="_E1BMcjPvEei3dfHtumI11Q" serverInstElem="_E1DBoTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1DBojPvEei3dfHtumI11Q" clientInstElem="_E1BMdTPvEei3dfHtumI11Q" serverInstElem="_E1AlaDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1DBozPvEei3dfHtumI11Q" clientInstElem="_E1BMdTPvEei3dfHtumI11Q" serverInstElem="_E1BzgTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1DBpDPvEei3dfHtumI11Q" property="sessionManager.sessionDAO" clientInstElem="_E1BzgDPvEei3dfHtumI11Q" serverInstElem="_E1AlZTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1DBpTPvEei3dfHtumI11Q" property="sessionManager.sessionListeners" clientInstElem="_E1BzgDPvEei3dfHtumI11Q" serverInstElem="_E1AlYjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1DBpjPvEei3dfHtumI11Q" property="sessionManager.sessionValidationScheduler" clientInstElem="_E1BzgDPvEei3dfHtumI11Q" serverInstElem="_E1AlZzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1DBpzPvEei3dfHtumI11Q" property="sessionManager.sessionIdCookie" clientInstElem="_E1BzgDPvEei3dfHtumI11Q" serverInstElem="_E1AlYTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1DBqDPvEei3dfHtumI11Q" property="jedisShiroSessionRepository.jedisManager" clientInstElem="_E1BzgTPvEei3dfHtumI11Q" serverInstElem="_E1BMcjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_E1DBqTPvEei3dfHtumI11Q" property="shiroFilter.securityManager" clientInstElem="_E1BzhzPvEei3dfHtumI11Q" serverInstElem="_E1AlaDPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="baichengzhou.SpringMVC-Mybatis-Shiro-redis-0.2_spec">
+    <specConnections refID="_E1hiwDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hiwTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hiwjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hiwzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hixDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hixTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hixjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hixzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hiyDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hiyTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hiyjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hiyzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hizDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hizTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hizjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hizzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi0DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi0TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi0jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi0zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi1DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi1TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi1jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi1zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi2DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi2TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi2jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi2zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi3DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi3TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi3jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi3zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi4DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi4TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi4jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi4zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi5DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi5TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi5jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi5zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi6DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi6TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi6jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi6zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi7DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi7TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi7jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi7zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi8DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi8TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi8jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi8zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi9DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi9TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi9jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi9zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi-DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi-TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi-jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi-zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi_DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi_TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi_jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hi_zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hjADPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hjATPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hjAjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hjAzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_E1hjBDPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

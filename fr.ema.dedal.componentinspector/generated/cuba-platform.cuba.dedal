@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="cuba-platform.cuba">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="cuba-platform.cuba_config" implements="//@architectureDescriptions[name='cuba-platform.cuba_spec']">
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.remoting.RemoteServicesBeanCreator&quot;" id="_hVp7YDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.remoting.HttpServiceExporter&quot;" id="_hVp7YTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.CubaPropertyPlaceholderConfigurer&quot;" id="_hV82UDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.CubaJndiDataSourceFactoryBean&quot;" id="_hV82UTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.CubaEclipseLinkJpaVendorAdapter&quot;" id="_hV82UjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean&quot;" id="_hV82UzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.JpaTransactionManager&quot;" id="_hV82VDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.testsupport.TestUserSessionSource&quot;" id="_hWPxQDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.testsupport.TestMBeanExporter&quot;" id="_hWPxQTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.testsupport.TestMailSender&quot;" id="_hWPxQjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.testsupport.TestEmailer&quot;" id="_hWPxQzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.testsupport.TestClusterManager&quot;" id="_hWPxRDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.testsupport.TestDbUpdaterImpl&quot;" id="_hWPxRTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.core.task.SyncTaskExecutor&quot;" id="_hWPxRjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.CubaPropertyPlaceholderConfigurer&quot;" id="_hWZiQDPvEei3dfHtumI11Q"/>
+    <configComponents id="_hWZiQTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.client.sys.cache.ConfigCacheStrategy&quot;" id="_hWZiQjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.PasswordEncryptionImpl&quot;" id="_hWZiQzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.desktop.sys.DesktopTimeSource&quot;" id="_hWZiRDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.desktop.sys.DesktopEvents&quot;" id="_hWZiRTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.remoting.discovery.RandomServerSorter&quot;" id="_hWZiRjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.remoting.discovery.StaticServerSelector&quot;" id="_hWZiRzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.remoting.RemoteProxyBeanCreator&quot;" id="_hWZiSDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.desktop.exception.ExceptionHandlersConfiguration&quot;" id="_hWZiSTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler&quot;" id="_hWZiSjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.CubaPropertyPlaceholderConfigurer&quot;" id="_hWsdMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.CubaPropertyPlaceholderConfigurer&quot;" id="_hW_YIDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.CubaPropertyPlaceholderConfigurer&quot;" id="_hXcEEDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.portal.sys.security.PortalUserSessionSource&quot;" id="_hXcEETPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;cuba_UserSessionSource&quot;" id="_hXcEEjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.portal.sys.PortalConnection&quot;" id="_hXcEEzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.PasswordEncryptionImpl&quot;" id="_hXcEFDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.jmx.MBeanExporter&quot;" id="_hXcEFTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.remoting.discovery.RandomServerSorter&quot;" id="_hXcEFjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.portal.sys.remoting.discovery.PortalHttpSessionUrlsHolder&quot;" id="_hXcEFzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.remoting.discovery.StaticServerSelector&quot;" id="_hXcEGDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.portal.sys.remoting.PortalRemoteProxyBeanCreator&quot;" id="_hXcEGTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.CubaPropertyPlaceholderConfigurer&quot;" id="_hXu_ADPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.EventsImpl&quot;" id="_hXu_ATPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.CubaPropertyPlaceholderConfigurer&quot;" id="_hYLq8DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.web.sys.VaadinSessionScope&quot;" id="_hYLq8TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.CustomScopeConfigurer&quot;" id="_hYLq8jPvEei3dfHtumI11Q"/>
+    <configComponents id="_hYLq8zPvEei3dfHtumI11Q"/>
+    <configComponents id="_hYLq9DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.PasswordEncryptionImpl&quot;" id="_hYLq9TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.web.sys.WebEvents&quot;" id="_hYLq9jPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.jmx.MBeanExporter&quot;" id="_hYLq9zPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.remoting.discovery.RandomServerSorter&quot;" id="_hYLq-DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.web.sys.remoting.discovery.WebHttpSessionUrlsHolder&quot;" id="_hYLq-TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.remoting.discovery.StaticServerSelector&quot;" id="_hYLq-jPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator&quot;" id="_hYLq-zPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.web.exception.ExceptionHandlersConfiguration&quot;" id="_hYLq_DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.haulmont.cuba.core.sys.CubaThreadPoolTaskScheduler&quot;" id="_hYLq_TPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hVp7YjPvEei3dfHtumI11Q" property="&quot;service&quot;" clientClassElem="_hVp7YTPvEei3dfHtumI11Q" serverClassElem="_hVp7YzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hVp7ZDPvEei3dfHtumI11Q" property="&quot;service&quot;" clientClassElem="_hVp7YTPvEei3dfHtumI11Q" serverClassElem="_hVp7ZTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hVp7ZjPvEei3dfHtumI11Q" property="&quot;service&quot;" clientClassElem="_hVp7YTPvEei3dfHtumI11Q" serverClassElem="_hVp7ZzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hVp7aDPvEei3dfHtumI11Q" property="&quot;service&quot;" clientClassElem="_hVp7YTPvEei3dfHtumI11Q" serverClassElem="_hVp7aTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hVp7ajPvEei3dfHtumI11Q" property="&quot;service&quot;" clientClassElem="_hVp7YTPvEei3dfHtumI11Q" serverClassElem="_hVp7azPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hVp7bDPvEei3dfHtumI11Q" property="&quot;service&quot;" clientClassElem="_hVp7YTPvEei3dfHtumI11Q" serverClassElem="_hVp7bTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hV82VTPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_hV82UzPvEei3dfHtumI11Q" serverClassElem="_hV82UTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hV82VjPvEei3dfHtumI11Q" property="&quot;jpaVendorAdapter&quot;" clientClassElem="_hV82UzPvEei3dfHtumI11Q" serverClassElem="_hV82UjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hV82VzPvEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_hV82VDPvEei3dfHtumI11Q" serverClassElem="_hV82UzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hV82WDPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_hV82VDPvEei3dfHtumI11Q" serverClassElem="_hV82UTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hWZiSzPvEei3dfHtumI11Q" property="&quot;encryptionModule&quot;" clientClassElem="_hWZiQzPvEei3dfHtumI11Q" serverClassElem="_hWZiTDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hWZiTTPvEei3dfHtumI11Q" property="&quot;serverSorter&quot;" clientClassElem="_hWZiRzPvEei3dfHtumI11Q" serverClassElem="_hWZiRjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hWZiTjPvEei3dfHtumI11Q" property="&quot;serverSelector&quot;" clientClassElem="_hWZiSDPvEei3dfHtumI11Q" serverClassElem="_hWZiRzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hXcEGjPvEei3dfHtumI11Q" property="&quot;encryptionModule&quot;" clientClassElem="_hXcEFDPvEei3dfHtumI11Q" serverClassElem="_hXcEGzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hXcEHDPvEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_hXcEFTPvEei3dfHtumI11Q" serverClassElem="_hXcEHTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hXcEHjPvEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_hXcEFTPvEei3dfHtumI11Q" serverClassElem="_hXcEHzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hXcEIDPvEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_hXcEFTPvEei3dfHtumI11Q" serverClassElem="_hXcEITPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hXcEIjPvEei3dfHtumI11Q" property="&quot;serverSorter&quot;" clientClassElem="_hXcEGDPvEei3dfHtumI11Q" serverClassElem="_hXcEFjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hXcEIzPvEei3dfHtumI11Q" property="&quot;anonymousSessionUrlsHolder&quot;" clientClassElem="_hXcEGDPvEei3dfHtumI11Q" serverClassElem="_hXcEFzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hXcEJDPvEei3dfHtumI11Q" property="&quot;serverSelector&quot;" clientClassElem="_hXcEGTPvEei3dfHtumI11Q" serverClassElem="_hXcEGDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hYLq_jPvEei3dfHtumI11Q" property="&quot;scopes&quot;" clientClassElem="_hYLq8jPvEei3dfHtumI11Q" serverClassElem="_hYLq8TPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hYLq_zPvEei3dfHtumI11Q" property="&quot;encryptionModule&quot;" clientClassElem="_hYLq9TPvEei3dfHtumI11Q" serverClassElem="_hYLrADPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hYLrATPvEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_hYLq9zPvEei3dfHtumI11Q" serverClassElem="_hYLrAjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hYLrAzPvEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_hYLq9zPvEei3dfHtumI11Q" serverClassElem="_hYLrBDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hYLrBTPvEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_hYLq9zPvEei3dfHtumI11Q" serverClassElem="_hYLrBjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hYLrBzPvEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_hYLq9zPvEei3dfHtumI11Q" serverClassElem="_hYLrCDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hYLrCTPvEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_hYLq9zPvEei3dfHtumI11Q" serverClassElem="_hYLrCjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hYLrCzPvEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_hYLq9zPvEei3dfHtumI11Q" serverClassElem="_hYLrDDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hYLrDTPvEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_hYLq9zPvEei3dfHtumI11Q" serverClassElem="_hYLrDjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hYLrDzPvEei3dfHtumI11Q" property="&quot;serverSorter&quot;" clientClassElem="_hYLq-jPvEei3dfHtumI11Q" serverClassElem="_hYLq-DPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hYLrEDPvEei3dfHtumI11Q" property="&quot;anonymousSessionUrlsHolder&quot;" clientClassElem="_hYLq-jPvEei3dfHtumI11Q" serverClassElem="_hYLq-TPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hYLrETPvEei3dfHtumI11Q" property="&quot;serverSelector&quot;" clientClassElem="_hYLq-zPvEei3dfHtumI11Q" serverClassElem="_hYLq-jPvEei3dfHtumI11Q"/>
+    <configConnections refID="_hYLrEjPvEei3dfHtumI11Q" property="&quot;statisticsAccumulator&quot;" clientClassElem="_hYLq_TPvEei3dfHtumI11Q" serverClassElem="_hYLrEzPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="cuba-platform.cuba_asm" instantiates="//@architectureDescriptions[name='cuba-platform.cuba_config']">
+    <assmComponents name="servicesExporter" id="_hVp7bjPvEei3dfHtumI11Q" instantiates="_hVp7YDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_hVp7bzPvEei3dfHtumI11Q" instantiates="_hVp7YTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_hVp7cDPvEei3dfHtumI11Q" instantiates="_hVp7YTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_hVp7cTPvEei3dfHtumI11Q" instantiates="_hVp7YTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_hVp7cjPvEei3dfHtumI11Q" instantiates="_hVp7YTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_hVp7czPvEei3dfHtumI11Q" instantiates="_hVp7YTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_hVp7dDPvEei3dfHtumI11Q" instantiates="_hVp7YTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_hV82WTPvEei3dfHtumI11Q" instantiates="_hV82UDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cubaDataSource&quot;" id="_hV82WjPvEei3dfHtumI11Q" instantiates="_hV82UTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jpaVendorAdapter&quot;" id="_hV82WzPvEei3dfHtumI11Q" instantiates="_hV82UjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;entityManagerFactory&quot;" id="_hV82XDPvEei3dfHtumI11Q" instantiates="_hV82UzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_hV82XTPvEei3dfHtumI11Q" instantiates="_hV82VDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_UserSessionSource&quot;" id="_hWPxRzPvEei3dfHtumI11Q" instantiates="_hWPxQDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_MBeanExporter&quot;" id="_hWPxSDPvEei3dfHtumI11Q" instantiates="_hWPxQTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_MailSender&quot;" id="_hWPxSTPvEei3dfHtumI11Q" instantiates="_hWPxQjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_Emailer&quot;" id="_hWPxSjPvEei3dfHtumI11Q" instantiates="_hWPxQzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_ClusterManager&quot;" id="_hWPxSzPvEei3dfHtumI11Q" instantiates="_hWPxRDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_DbUpdater&quot;" id="_hWPxTDPvEei3dfHtumI11Q" instantiates="_hWPxRTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mailSendTaskExecutor&quot;" id="_hWPxTTPvEei3dfHtumI11Q" instantiates="_hWPxRjPvEei3dfHtumI11Q"/>
+    <assmComponents id="_hWZiTzPvEei3dfHtumI11Q" instantiates="_hWZiQDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_UserSession&quot;" id="_hWZiUDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_ConfigCacheStrategy&quot;" id="_hWZiUTPvEei3dfHtumI11Q" instantiates="_hWZiQjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_PasswordEncryption&quot;" id="_hWZiUjPvEei3dfHtumI11Q" instantiates="_hWZiQzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_TimeSource&quot;" id="_hWZiUzPvEei3dfHtumI11Q" instantiates="_hWZiRDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_Events&quot;" id="_hWZiVDPvEei3dfHtumI11Q" instantiates="_hWZiRTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_ServerSorter&quot;" id="_hWZiVTPvEei3dfHtumI11Q" instantiates="_hWZiRjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_ServerSelector&quot;" id="_hWZiVjPvEei3dfHtumI11Q" instantiates="_hWZiRzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_proxyCreator&quot;" id="_hWZiVzPvEei3dfHtumI11Q" instantiates="_hWZiSDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_exceptionHandlersConf&quot;" id="_hWZiWDPvEei3dfHtumI11Q" instantiates="_hWZiSTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;backgroundWorkerScheduler&quot;" id="_hWZiWTPvEei3dfHtumI11Q" instantiates="_hWZiSjPvEei3dfHtumI11Q"/>
+    <assmComponents id="_hWsdMTPvEei3dfHtumI11Q" instantiates="_hWsdMDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_hW_YITPvEei3dfHtumI11Q" instantiates="_hW_YIDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_hXcEJTPvEei3dfHtumI11Q" instantiates="_hXcEEDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_UserSessionSource&quot;" id="_hXcEJjPvEei3dfHtumI11Q" instantiates="_hXcEETPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_UserSession&quot;" id="_hXcEJzPvEei3dfHtumI11Q" instantiates="_hXcEEjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_Connection&quot;" id="_hXcEKDPvEei3dfHtumI11Q" instantiates="_hXcEEzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_PasswordEncryption&quot;" id="_hXcEKTPvEei3dfHtumI11Q" instantiates="_hXcEFDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_web_MBeanExporter&quot;" id="_hXcEKjPvEei3dfHtumI11Q" instantiates="_hXcEFTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_ServerSorter&quot;" id="_hXcEKzPvEei3dfHtumI11Q" instantiates="_hXcEFjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_AnonymousSessionUrlsHolder&quot;" id="_hXcELDPvEei3dfHtumI11Q" instantiates="_hXcEFzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_ServerSelector&quot;" id="_hXcELTPvEei3dfHtumI11Q" instantiates="_hXcEGDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_proxyCreator&quot;" id="_hXcELjPvEei3dfHtumI11Q" instantiates="_hXcEGTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_hXu_AjPvEei3dfHtumI11Q" instantiates="_hXu_ADPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_Events&quot;" id="_hXu_AzPvEei3dfHtumI11Q" instantiates="_hXu_ATPvEei3dfHtumI11Q"/>
+    <assmComponents id="_hYLrFDPvEei3dfHtumI11Q" instantiates="_hYLq8DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;vaadin&quot;" id="_hYLrFTPvEei3dfHtumI11Q" instantiates="_hYLq8TPvEei3dfHtumI11Q"/>
+    <assmComponents id="_hYLrFjPvEei3dfHtumI11Q" instantiates="_hYLq8jPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_UserSession&quot;" id="_hYLrFzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_AuthProvider&quot;" id="_hYLrGDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_PasswordEncryption&quot;" id="_hYLrGTPvEei3dfHtumI11Q" instantiates="_hYLq9TPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_Events&quot;" id="_hYLrGjPvEei3dfHtumI11Q" instantiates="_hYLq9jPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_web_MBeanExporter&quot;" id="_hYLrGzPvEei3dfHtumI11Q" instantiates="_hYLq9zPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_ServerSorter&quot;" id="_hYLrHDPvEei3dfHtumI11Q" instantiates="_hYLq-DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_AnonymousSessionUrlsHolder&quot;" id="_hYLrHTPvEei3dfHtumI11Q" instantiates="_hYLq-TPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_ServerSelector&quot;" id="_hYLrHjPvEei3dfHtumI11Q" instantiates="_hYLq-jPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_proxyCreator&quot;" id="_hYLrHzPvEei3dfHtumI11Q" instantiates="_hYLq-zPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cuba_exceptionHandlersConf&quot;" id="_hYLrIDPvEei3dfHtumI11Q" instantiates="_hYLq_DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;scheduler&quot;" id="_hYLrITPvEei3dfHtumI11Q" instantiates="_hYLq_TPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hVp7dTPvEei3dfHtumI11Q" clientInstElem="_hVp7czPvEei3dfHtumI11Q" serverInstElem="_hVp7djPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hVp7dzPvEei3dfHtumI11Q" clientInstElem="_hVp7czPvEei3dfHtumI11Q" serverInstElem="_hVp7eDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hVp7eTPvEei3dfHtumI11Q" clientInstElem="_hVp7czPvEei3dfHtumI11Q" serverInstElem="_hVp7ejPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hVp7ezPvEei3dfHtumI11Q" clientInstElem="_hVp7czPvEei3dfHtumI11Q" serverInstElem="_hVp7fDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hVp7fTPvEei3dfHtumI11Q" clientInstElem="_hVp7fDPvEei3dfHtumI11Q" serverInstElem="_hVp7fjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hVp7fzPvEei3dfHtumI11Q" clientInstElem="_hVp7fDPvEei3dfHtumI11Q" serverInstElem="_hVp7gDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hV82XjPvEei3dfHtumI11Q" property="entityManagerFactory.dataSource" clientInstElem="_hV82XDPvEei3dfHtumI11Q" serverInstElem="_hV82WjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hV82XzPvEei3dfHtumI11Q" property="entityManagerFactory.jpaVendorAdapter" clientInstElem="_hV82XDPvEei3dfHtumI11Q" serverInstElem="_hV82WzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hV82YDPvEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_hV82XTPvEei3dfHtumI11Q" serverInstElem="_hV82XDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hV82YTPvEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_hV82XTPvEei3dfHtumI11Q" serverInstElem="_hV82WjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hWZiWjPvEei3dfHtumI11Q" property="cuba_PasswordEncryption.encryptionModule" clientInstElem="_hWZiUjPvEei3dfHtumI11Q" serverInstElem="_hWZiWzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hWZiXDPvEei3dfHtumI11Q" property="cuba_ServerSelector.serverSorter" clientInstElem="_hWZiVjPvEei3dfHtumI11Q" serverInstElem="_hWZiVTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hWZiXTPvEei3dfHtumI11Q" property="cuba_proxyCreator.serverSelector" clientInstElem="_hWZiVzPvEei3dfHtumI11Q" serverInstElem="_hWZiVjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hXcELzPvEei3dfHtumI11Q" property="cuba_PasswordEncryption.encryptionModule" clientInstElem="_hXcEKTPvEei3dfHtumI11Q" serverInstElem="_hXcEMDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hXcEMTPvEei3dfHtumI11Q" property="cuba_web_MBeanExporter.beans" clientInstElem="_hXcEKjPvEei3dfHtumI11Q" serverInstElem="_hXcEMjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hXcEMzPvEei3dfHtumI11Q" property="cuba_web_MBeanExporter.beans" clientInstElem="_hXcEKjPvEei3dfHtumI11Q" serverInstElem="_hXcENDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hXcENTPvEei3dfHtumI11Q" property="cuba_web_MBeanExporter.beans" clientInstElem="_hXcEKjPvEei3dfHtumI11Q" serverInstElem="_hXcENjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hXcENzPvEei3dfHtumI11Q" property="cuba_ServerSelector.serverSorter" clientInstElem="_hXcELTPvEei3dfHtumI11Q" serverInstElem="_hXcEKzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hXcEODPvEei3dfHtumI11Q" property="cuba_ServerSelector.anonymousSessionUrlsHolder" clientInstElem="_hXcELTPvEei3dfHtumI11Q" serverInstElem="_hXcELDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hXcEOTPvEei3dfHtumI11Q" property="cuba_proxyCreator.serverSelector" clientInstElem="_hXcELjPvEei3dfHtumI11Q" serverInstElem="_hXcELTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hYLrIjPvEei3dfHtumI11Q" clientInstElem="_hYLrFjPvEei3dfHtumI11Q" serverInstElem="_hYLrFTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hYLrIzPvEei3dfHtumI11Q" property="cuba_PasswordEncryption.encryptionModule" clientInstElem="_hYLrGTPvEei3dfHtumI11Q" serverInstElem="_hYLrJDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hYLrJTPvEei3dfHtumI11Q" property="cuba_web_MBeanExporter.beans" clientInstElem="_hYLrGzPvEei3dfHtumI11Q" serverInstElem="_hYLrJjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hYLrJzPvEei3dfHtumI11Q" property="cuba_web_MBeanExporter.beans" clientInstElem="_hYLrGzPvEei3dfHtumI11Q" serverInstElem="_hYLrKDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hYLrKTPvEei3dfHtumI11Q" property="cuba_web_MBeanExporter.beans" clientInstElem="_hYLrGzPvEei3dfHtumI11Q" serverInstElem="_hYLrKjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hYLrKzPvEei3dfHtumI11Q" property="cuba_web_MBeanExporter.beans" clientInstElem="_hYLrGzPvEei3dfHtumI11Q" serverInstElem="_hYLrLDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hYLrLTPvEei3dfHtumI11Q" property="cuba_web_MBeanExporter.beans" clientInstElem="_hYLrGzPvEei3dfHtumI11Q" serverInstElem="_hYLrLjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hYLrLzPvEei3dfHtumI11Q" property="cuba_web_MBeanExporter.beans" clientInstElem="_hYLrGzPvEei3dfHtumI11Q" serverInstElem="_hYLrMDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hYLrMTPvEei3dfHtumI11Q" property="cuba_web_MBeanExporter.beans" clientInstElem="_hYLrGzPvEei3dfHtumI11Q" serverInstElem="_hYLrMjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hYLrMzPvEei3dfHtumI11Q" property="cuba_ServerSelector.serverSorter" clientInstElem="_hYLrHjPvEei3dfHtumI11Q" serverInstElem="_hYLrHDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hYLrNDPvEei3dfHtumI11Q" property="cuba_ServerSelector.anonymousSessionUrlsHolder" clientInstElem="_hYLrHjPvEei3dfHtumI11Q" serverInstElem="_hYLrHTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hYLrNTPvEei3dfHtumI11Q" property="cuba_proxyCreator.serverSelector" clientInstElem="_hYLrHzPvEei3dfHtumI11Q" serverInstElem="_hYLrHjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_hYLrNjPvEei3dfHtumI11Q" property="scheduler.statisticsAccumulator" clientInstElem="_hYLrITPvEei3dfHtumI11Q" serverInstElem="_hYLrNzPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="cuba-platform.cuba_spec">
+    <specConnections refID="_hYVb8DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVb8TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVb8jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVb8zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVb9DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVb9TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVb9jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVb9zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVb-DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVb-TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVb-jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVb-zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVb_DPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVb_TPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVb_jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVb_zPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVcADPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVcATPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVcAjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVcAzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVcBDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVcBTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVcBjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVcBzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVcCDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVcCTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVcCjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVcCzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVcDDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVcDTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVcDjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVcDzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_hYVcEDPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

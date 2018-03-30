@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="apache.geode">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="apache.geode_config" implements="//@architectureDescriptions[name='apache.geode_spec']">
+    <configComponents name="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor" id="_VNtHkDPuEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.web.multipart.commons.CommonsMultipartResolver" id="_VNtHkTPuEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="apache.geode_asm" instantiates="//@architectureDescriptions[name='apache.geode_config']">
+    <assmComponents name="asyncTaskExecutor" id="_VNtHkjPuEei3dfHtumI11Q" instantiates="_VNtHkDPuEei3dfHtumI11Q"/>
+    <assmComponents name="multipartResolver" id="_VNtHkzPuEei3dfHtumI11Q" instantiates="_VNtHkTPuEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="apache.geode_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

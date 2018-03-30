@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="spring-projects.spring-amqp">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="spring-projects.spring-amqp_config" implements="//@architectureDescriptions[name='spring-projects.spring-amqp_spec']">
+    <configComponents name="&quot;org.springframework.amqp.support.converter.Jackson2JsonMessageConverter&quot;" id="_835BADPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_88NgUDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_89R3UDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.amqp.remoting.client.AmqpProxyFactoryBean&quot;" id="_8_EAADPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.amqp.remoting.service.AmqpInvokerServiceExporter&quot;" id="_8_EAATPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.amqp.rabbit.remoting.RemotingTests$ServiceImpl&quot;" id="_8_EAAjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_835BATPyEei3dfHtumI11Q" property="&quot;classMapper&quot;" clientClassElem="_835BADPyEei3dfHtumI11Q" serverClassElem="_835BAjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_8_EAAzPyEei3dfHtumI11Q" property="&quot;amqpTemplate&quot;" clientClassElem="_8_EAADPyEei3dfHtumI11Q" serverClassElem="_8_EABDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_8_EABTPyEei3dfHtumI11Q" property="&quot;service&quot;" clientClassElem="_8_EAATPyEei3dfHtumI11Q" serverClassElem="_8_EAAjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_8_EABjPyEei3dfHtumI11Q" property="&quot;amqpTemplate&quot;" clientClassElem="_8_EAATPyEei3dfHtumI11Q" serverClassElem="_8_EABzPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="spring-projects.spring-amqp_asm" instantiates="//@architectureDescriptions[name='spring-projects.spring-amqp_config']">
+    <assmComponents name="jsonConverterWithDefaultType" id="_835BAzPyEei3dfHtumI11Q" instantiates="_835BADPyEei3dfHtumI11Q"/>
+    <assmComponents id="_88NgUTPyEei3dfHtumI11Q" instantiates="_88NgUDPyEei3dfHtumI11Q"/>
+    <assmComponents id="_89R3UTPyEei3dfHtumI11Q" instantiates="_89R3UDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;client&quot;" id="_8_EACDPyEei3dfHtumI11Q" instantiates="_8_EAADPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;listener&quot;" id="_8_EACTPyEei3dfHtumI11Q" instantiates="_8_EAATPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;service&quot;" id="_8_EACjPyEei3dfHtumI11Q" instantiates="_8_EAAjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_835BBDPyEei3dfHtumI11Q" property="jsonConverterWithDefaultType.classMapper" clientInstElem="_835BAzPyEei3dfHtumI11Q" serverInstElem="_835BBTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_8_EACzPyEei3dfHtumI11Q" property="client.amqpTemplate" clientInstElem="_8_EACDPyEei3dfHtumI11Q" serverInstElem="_8_EADDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_8_EADTPyEei3dfHtumI11Q" property="listener.service" clientInstElem="_8_EACTPyEei3dfHtumI11Q" serverInstElem="_8_EACjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_8_EADjPyEei3dfHtumI11Q" property="listener.amqpTemplate" clientInstElem="_8_EACTPyEei3dfHtumI11Q" serverInstElem="_8_EADzPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="spring-projects.spring-amqp_spec">
+    <specConnections refID="_8_gr8DPyEei3dfHtumI11Q"/>
+    <specConnections refID="_8_gr8TPyEei3dfHtumI11Q"/>
+    <specConnections refID="_8_gr8jPyEei3dfHtumI11Q"/>
+    <specConnections refID="_8_gr8zPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

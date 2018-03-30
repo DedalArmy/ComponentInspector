@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="jreijn.spring-comparing-template-engines">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="jreijn.spring-comparing-template-engines_config" implements="//@architectureDescriptions[name='jreijn.spring-comparing-template-engines_spec']">
+    <configComponents name="com.jeroenreijn.examples.InMemoryPresentationsRepository" id="_GvH2wDPxEei3dfHtumI11Q"/>
+    <configComponents name="com.jeroenreijn.examples.services.PresentationsService" id="_GvH2wTPxEei3dfHtumI11Q"/>
+    <configComponents name="com.jeroenreijn.examples.InMemoryPresentationsRepository" id="_GvkisDPxEei3dfHtumI11Q"/>
+    <configComponents name="com.jeroenreijn.examples.services.PresentationsService" id="_GvkisTPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="jreijn.spring-comparing-template-engines_asm" instantiates="//@architectureDescriptions[name='jreijn.spring-comparing-template-engines_config']">
+    <assmComponents name="presentationsRepository" id="_GvH2wjPxEei3dfHtumI11Q" instantiates="_GvH2wDPxEei3dfHtumI11Q"/>
+    <assmComponents name="presentationsService" id="_GvH2wzPxEei3dfHtumI11Q" instantiates="_GvH2wTPxEei3dfHtumI11Q"/>
+    <assmComponents name="presentationsRepository" id="_GvkisjPxEei3dfHtumI11Q" instantiates="_GvkisDPxEei3dfHtumI11Q"/>
+    <assmComponents name="presentationsService" id="_GvkiszPxEei3dfHtumI11Q" instantiates="_GvkisTPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="jreijn.spring-comparing-template-engines_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

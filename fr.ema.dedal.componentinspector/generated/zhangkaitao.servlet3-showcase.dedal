@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="zhangkaitao.servlet3-showcase">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="zhangkaitao.servlet3-showcase_config" implements="//@architectureDescriptions[name='zhangkaitao.servlet3-showcase_spec']"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="zhangkaitao.servlet3-showcase_asm" instantiates="//@architectureDescriptions[name='zhangkaitao.servlet3-showcase_config']"/>
+  <architectureDescriptions xsi:type="dedal:Specification" name="zhangkaitao.servlet3-showcase_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

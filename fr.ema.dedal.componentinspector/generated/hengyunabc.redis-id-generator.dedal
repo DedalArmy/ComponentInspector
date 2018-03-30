@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="hengyunabc.redis-id-generator">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="hengyunabc.redis-id-generator_config" implements="//@architectureDescriptions[name='hengyunabc.redis-id-generator_spec']"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="hengyunabc.redis-id-generator_asm" instantiates="//@architectureDescriptions[name='hengyunabc.redis-id-generator_config']"/>
+  <architectureDescriptions xsi:type="dedal:Specification" name="hengyunabc.redis-id-generator_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

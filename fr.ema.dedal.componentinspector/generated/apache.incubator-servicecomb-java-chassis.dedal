@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="apache.incubator-servicecomb-java-chassis">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="apache.incubator-servicecomb-java-chassis_config" implements="//@architectureDescriptions[name='apache.incubator-servicecomb-java-chassis_spec']">
+    <configComponents name="&quot;org.apache.servicecomb.core.config.ConfigurationSpringInitializer&quot;" id="_ivAJYDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.core.CseContext&quot;" id="_ivAJYTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.core.CseApplicationListener&quot;" id="_ivAJYjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.core.executor.FixedThreadExecutor&quot;" id="_ivAJYzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.core.executor.ReactiveExecutor&quot;" id="_ivAJZDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.core.config.ConfigurationSpringInitializer&quot;" id="_ivOy4DPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.core.CseApplicationListener&quot;" id="_ivOy4TPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.core.executor.FixedThreadExecutor&quot;" id="_ivOy4jPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.core.executor.ReactiveExecutor&quot;" id="_ivOy4zPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.core.config.ConfigurationSpringInitializer&quot;" id="_iveqgDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.core.CseContext&quot;" id="_iveqgTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.core.CseApplicationListener&quot;" id="_iveqgjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.core.executor.FixedThreadExecutor&quot;" id="_iveqgzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.core.executor.ReactiveExecutor&quot;" id="_iveqhDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.core.config.ConfigurationSpringInitializer&quot;" id="_ivtUADPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.core.CseApplicationListener&quot;" id="_ivtUATPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.core.executor.FixedThreadExecutor&quot;" id="_ivtUAjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.core.executor.ReactiveExecutor&quot;" id="_ivtUAzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.demo.pojo.server.HelloImpl&quot;" id="_iwKnADPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.foundation.common.config.PaaSPropertyPlaceholderConfigurer&quot;" id="_ixSBUDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.foundation.common.config.BeanProp&quot;" id="_ixSBUTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.foundation.common.config.PaaSPropertyPlaceholderConfigurer&quot;" id="_ix7hkDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.foundation.common.config.BeanProp&quot;" id="_ix7hkTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.config.ConfigurationSpringInitializer&quot;" id="_iyKLEDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.config.DynamicPropertiesImpl&quot;" id="_iyKLETPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.config.ConfigurationSpringInitializer&quot;" id="_iyY0kDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.config.DynamicPropertiesImpl&quot;" id="_iyY0kTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.foundation.metrics.MetricsConfig&quot;" id="_iyneEDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.foundation.metrics.MetricsConfig&quot;" id="_iy1ggDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.foundation.vertx.executor.VertxWorkerExecutor&quot;" id="_izDi8DPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.foundation.vertx.executor.VertxWorkerExecutor&quot;" id="_izSMcDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.bizkeeper.BeansHolder&quot;" id="_izg18DPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.bizkeeper.BeansHolder&quot;" id="_izu4YDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.loadbalance.BeansHolder&quot;" id="_iz860DPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.servicecomb.loadbalance.BeansHolder&quot;" id="_i0LkUDPuEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="apache.incubator-servicecomb-java-chassis_asm" instantiates="//@architectureDescriptions[name='apache.incubator-servicecomb-java-chassis_config']">
+    <assmComponents id="_ivAwcDPuEei3dfHtumI11Q" instantiates="_ivAJYDPuEei3dfHtumI11Q"/>
+    <assmComponents id="_ivAwcTPuEei3dfHtumI11Q" instantiates="_ivAJYTPuEei3dfHtumI11Q"/>
+    <assmComponents id="_ivAwcjPuEei3dfHtumI11Q" instantiates="_ivAJYjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cse.executor.groupThreadPool&quot;" id="_ivAwczPuEei3dfHtumI11Q" instantiates="_ivAJYzPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cse.executor.reactive&quot;" id="_ivAwdDPuEei3dfHtumI11Q" instantiates="_ivAJZDPuEei3dfHtumI11Q"/>
+    <assmComponents id="_ivPZ8DPuEei3dfHtumI11Q" instantiates="_ivOy4DPuEei3dfHtumI11Q"/>
+    <assmComponents id="_ivPZ8TPuEei3dfHtumI11Q" instantiates="_ivOy4TPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cse.executor.default&quot;" id="_ivPZ8jPuEei3dfHtumI11Q" instantiates="_ivOy4jPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cse.executor.reactive&quot;" id="_ivPZ8zPuEei3dfHtumI11Q" instantiates="_ivOy4zPuEei3dfHtumI11Q"/>
+    <assmComponents id="_iveqhTPuEei3dfHtumI11Q" instantiates="_iveqgDPuEei3dfHtumI11Q"/>
+    <assmComponents id="_iveqhjPuEei3dfHtumI11Q" instantiates="_iveqgTPuEei3dfHtumI11Q"/>
+    <assmComponents id="_iveqhzPuEei3dfHtumI11Q" instantiates="_iveqgjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cse.executor.groupThreadPool&quot;" id="_iveqiDPuEei3dfHtumI11Q" instantiates="_iveqgzPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cse.executor.reactive&quot;" id="_iveqiTPuEei3dfHtumI11Q" instantiates="_iveqhDPuEei3dfHtumI11Q"/>
+    <assmComponents id="_ivtUBDPuEei3dfHtumI11Q" instantiates="_ivtUADPuEei3dfHtumI11Q"/>
+    <assmComponents id="_ivtUBTPuEei3dfHtumI11Q" instantiates="_ivtUATPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cse.executor.default&quot;" id="_ivtUBjPuEei3dfHtumI11Q" instantiates="_ivtUAjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cse.executor.reactive&quot;" id="_ivtUBzPuEei3dfHtumI11Q" instantiates="_ivtUAzPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;hello&quot;" id="_iwKnATPuEei3dfHtumI11Q" instantiates="_iwKnADPuEei3dfHtumI11Q"/>
+    <assmComponents id="_ixSoYDPuEei3dfHtumI11Q" instantiates="_ixSBUDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;beanProp&quot;" id="_ixSoYTPuEei3dfHtumI11Q" instantiates="_ixSBUTPuEei3dfHtumI11Q"/>
+    <assmComponents id="_ix7hkjPuEei3dfHtumI11Q" instantiates="_ix7hkDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;beanProp&quot;" id="_ix7hkzPuEei3dfHtumI11Q" instantiates="_ix7hkTPuEei3dfHtumI11Q"/>
+    <assmComponents id="_iyKLEjPuEei3dfHtumI11Q" instantiates="_iyKLEDPuEei3dfHtumI11Q"/>
+    <assmComponents id="_iyKLEzPuEei3dfHtumI11Q" instantiates="_iyKLETPuEei3dfHtumI11Q"/>
+    <assmComponents id="_iyY0kjPuEei3dfHtumI11Q" instantiates="_iyY0kDPuEei3dfHtumI11Q"/>
+    <assmComponents id="_iyY0kzPuEei3dfHtumI11Q" instantiates="_iyY0kTPuEei3dfHtumI11Q"/>
+    <assmComponents id="_iyneETPuEei3dfHtumI11Q" instantiates="_iyneEDPuEei3dfHtumI11Q"/>
+    <assmComponents id="_iy1ggTPuEei3dfHtumI11Q" instantiates="_iy1ggDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cse.executor.vertx-worker&quot;" id="_izDi8TPuEei3dfHtumI11Q" instantiates="_izDi8DPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cse.executor.vertx-worker&quot;" id="_izSMcTPuEei3dfHtumI11Q" instantiates="_izSMcDPuEei3dfHtumI11Q"/>
+    <assmComponents id="_izg18TPuEei3dfHtumI11Q" instantiates="_izg18DPuEei3dfHtumI11Q"/>
+    <assmComponents id="_izu4YTPuEei3dfHtumI11Q" instantiates="_izu4YDPuEei3dfHtumI11Q"/>
+    <assmComponents id="_iz9h4DPuEei3dfHtumI11Q" instantiates="_iz860DPuEei3dfHtumI11Q"/>
+    <assmComponents id="_i0LkUTPuEei3dfHtumI11Q" instantiates="_i0LkUDPuEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="apache.incubator-servicecomb-java-chassis_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

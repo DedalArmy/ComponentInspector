@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="OpenIotOrg.openiot">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="OpenIotOrg.openiot_config" implements="//@architectureDescriptions[name='OpenIotOrg.openiot_spec']">
+    <configComponents name="&quot;org.jasig.cas.services.web.ServiceThemeResolver&quot;" id="_3ik-oDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.ResourceBundleViewResolver&quot;" id="_3ik-oTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.XmlViewResolver&quot;" id="_3ik-ojPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.i18n.CookieLocaleResolver&quot;" id="_3ik-ozPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.i18n.LocaleChangeInterceptor&quot;" id="_3ik-pDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.UrlBasedViewResolver&quot;" id="_3ik-pTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.jasig.cas.web.FlowExecutionExceptionResolver&quot;" id="_3ik-pjPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter&quot;" id="_3ik-pzPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.handler.SimpleUrlHandlerMapping&quot;" id="_3ik-qDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.UrlFilenameViewController&quot;" id="_3ik-qTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.jasig.cas.web.OpenIdProviderController&quot;" id="_3ik-qjPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.ParameterizableViewController&quot;" id="_3ik-qzPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.webflow.mvc.servlet.FlowHandlerMapping&quot;" id="_3ik-rDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.webflow.mvc.servlet.FlowHandlerAdapter&quot;" id="_3ik-rTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.jasig.cas.web.flow.CasDefaultFlowUrlHandler&quot;" id="_3ik-rjPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.jasig.cas.authentication.AuthenticationManagerImpl&quot;" id="_3i35kDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.restlet.ext.spring.SpringRouter&quot;" id="_3jK0gDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.openiot.security.oauth.TicketResource&quot;" id="_3jK0gTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.openiot.security.oauth.TicketGrantingTicketResource&quot;" id="_3jK0gjPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.MethodInvokingFactoryBean&quot;" id="_3j7CcDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.jasig.cas.ticket.support.MultiTimeUseOrTimeoutExpirationPolicy&quot;" id="_3kiGcDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.jasig.cas.ticket.support.TicketGrantingTicketExpirationPolicy&quot;" id="_3kiGcTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.jasig.cas.web.support.CookieRetrievingCookieGenerator&quot;" id="_3k1BYDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.openiot.security.oauth.lsm.LSMTicketRegistry&quot;" id="_3lH8UDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.jasig.cas.ticket.registry.support.DefaultTicketRegistryCleaner&quot;" id="_3lH8UTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean&quot;" id="_3lH8UjPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.scheduling.quartz.SimpleTriggerBean&quot;" id="_3lH8UzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_3ik-rzPxEei3dfHtumI11Q" property="argumentExtractors" clientClassElem="_3ik-oDPxEei3dfHtumI11Q" serverClassElem="_3ik-sDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_3ik-sTPxEei3dfHtumI11Q" property="servicesManager" clientClassElem="_3ik-oDPxEei3dfHtumI11Q" serverClassElem="_3ik-sjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_3ik-szPxEei3dfHtumI11Q" property="flowRegistry" clientClassElem="_3ik-rDPxEei3dfHtumI11Q" serverClassElem="_3ik-tDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_3ik-tTPxEei3dfHtumI11Q" property="&quot;interceptors&quot;" clientClassElem="_3ik-rDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_3ik-tjPxEei3dfHtumI11Q" property="flowExecutor" clientClassElem="_3ik-rTPxEei3dfHtumI11Q" serverClassElem="_3ik-tzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_3ik-uDPxEei3dfHtumI11Q" property="flowUrlHandler" clientClassElem="_3ik-rTPxEei3dfHtumI11Q" serverClassElem="_3ik-rjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_3jK0gzPxEei3dfHtumI11Q" property="&quot;attachments&quot;" clientClassElem="_3jK0gDPxEei3dfHtumI11Q" serverClassElem="_3jK0hDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_3kiGcjPxEei3dfHtumI11Q" property="timeUnit" clientClassElem="_3kiGcDPxEei3dfHtumI11Q" serverClassElem="_3kiGczPxEei3dfHtumI11Q"/>
+    <configConnections refID="_3lH8VDPxEei3dfHtumI11Q" property="ticketRegistry" clientClassElem="_3lH8UTPxEei3dfHtumI11Q" serverClassElem="_3lH8UDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_3lH8VTPxEei3dfHtumI11Q" property="targetObject" clientClassElem="_3lH8UjPxEei3dfHtumI11Q" serverClassElem="_3lH8UTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_3lH8VjPxEei3dfHtumI11Q" property="jobDetail" clientClassElem="_3lH8UzPxEei3dfHtumI11Q" serverClassElem="_3lH8UjPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="OpenIotOrg.openiot_asm" instantiates="//@architectureDescriptions[name='OpenIotOrg.openiot_config']">
+    <assmComponents name="themeResolver" id="_3ik-uTPxEei3dfHtumI11Q" instantiates="_3ik-oDPxEei3dfHtumI11Q"/>
+    <assmComponents name="viewResolver" id="_3ik-ujPxEei3dfHtumI11Q" instantiates="_3ik-oTPxEei3dfHtumI11Q"/>
+    <assmComponents name="xmlViewResolver" id="_3ik-uzPxEei3dfHtumI11Q" instantiates="_3ik-ojPxEei3dfHtumI11Q"/>
+    <assmComponents name="localeResolver" id="_3ik-vDPxEei3dfHtumI11Q" instantiates="_3ik-ozPxEei3dfHtumI11Q"/>
+    <assmComponents name="localeChangeInterceptor" id="_3ik-vTPxEei3dfHtumI11Q" instantiates="_3ik-pDPxEei3dfHtumI11Q"/>
+    <assmComponents name="urlBasedViewResolver" id="_3ik-vjPxEei3dfHtumI11Q" instantiates="_3ik-pTPxEei3dfHtumI11Q"/>
+    <assmComponents name="errorHandlerResolver" id="_3ik-vzPxEei3dfHtumI11Q" instantiates="_3ik-pjPxEei3dfHtumI11Q"/>
+    <assmComponents id="_3ik-wDPxEei3dfHtumI11Q" instantiates="_3ik-pzPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;handlerMappingC&quot;" id="_3ik-wTPxEei3dfHtumI11Q" instantiates="_3ik-qDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;passThroughController&quot;" id="_3ik-wjPxEei3dfHtumI11Q" instantiates="_3ik-qTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;openIdProviderController&quot;" id="_3ik-wzPxEei3dfHtumI11Q" instantiates="_3ik-qjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;serviceLogoutViewController&quot;" id="_3ik-xDPxEei3dfHtumI11Q" instantiates="_3ik-qzPxEei3dfHtumI11Q"/>
+    <assmComponents id="_3ik-xTPxEei3dfHtumI11Q" instantiates="_3ik-rDPxEei3dfHtumI11Q"/>
+    <assmComponents id="_3ik-xjPxEei3dfHtumI11Q" instantiates="_3ik-rTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;flowUrlHandler&quot;" id="_3ik-xzPxEei3dfHtumI11Q" instantiates="_3ik-rjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;authenticationManager&quot;" id="_3i35kTPxEei3dfHtumI11Q" instantiates="_3i35kDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;root&quot;" id="_3jK0hTPxEei3dfHtumI11Q" instantiates="_3jK0gDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ticketResource&quot;" id="_3jK0hjPxEei3dfHtumI11Q" instantiates="_3jK0gTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ticketGrantingTicketResource&quot;" id="_3jK0hzPxEei3dfHtumI11Q" instantiates="_3jK0gjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;logbackInitialization&quot;" id="_3j7CcTPxEei3dfHtumI11Q" instantiates="_3j7CcDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;serviceTicketExpirationPolicy&quot;" id="_3kiGdDPxEei3dfHtumI11Q" instantiates="_3kiGcDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;grantingTicketExpirationPolicy&quot;" id="_3kiGdTPxEei3dfHtumI11Q" instantiates="_3kiGcTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ticketGrantingTicketCookieGenerator&quot;" id="_3k1BYTPxEei3dfHtumI11Q" instantiates="_3k1BYDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ticketRegistry&quot;" id="_3lH8VzPxEei3dfHtumI11Q" instantiates="_3lH8UDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ticketRegistryCleaner&quot;" id="_3lH8WDPxEei3dfHtumI11Q" instantiates="_3lH8UTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ticketRegistryCleanerJobDetail&quot;" id="_3lH8WTPxEei3dfHtumI11Q" instantiates="_3lH8UjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;periodicTicketRegistryCleanerTrigger&quot;" id="_3lH8WjPxEei3dfHtumI11Q" instantiates="_3lH8UzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3ik-yDPxEei3dfHtumI11Q" property="themeResolver.argumentExtractors" clientInstElem="_3ik-uTPxEei3dfHtumI11Q" serverInstElem="_3ik-yTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3ik-yjPxEei3dfHtumI11Q" property="themeResolver.servicesManager" clientInstElem="_3ik-uTPxEei3dfHtumI11Q" serverInstElem="_3ik-yzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3iuIkDPxEei3dfHtumI11Q" clientInstElem="_3ik-wDPxEei3dfHtumI11Q" serverInstElem="_3iuIkTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3iuIkjPxEei3dfHtumI11Q" clientInstElem="_3ik-wDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3iuIkzPxEei3dfHtumI11Q" clientInstElem="_3ik-wDPxEei3dfHtumI11Q" serverInstElem="_3iuIlDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3iuIlTPxEei3dfHtumI11Q" clientInstElem="_3iuIlDPxEei3dfHtumI11Q" serverInstElem="_3ik-xzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3jK0iDPxEei3dfHtumI11Q" property="root.attachments" clientInstElem="_3jK0hTPxEei3dfHtumI11Q" serverInstElem="_3jK0iTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3jK0ijPxEei3dfHtumI11Q" property="root.attachments" clientInstElem="_3jK0hTPxEei3dfHtumI11Q" serverInstElem="_3jK0izPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3kiGdjPxEei3dfHtumI11Q" property="serviceTicketExpirationPolicy.timeUnit" clientInstElem="_3kiGdDPxEei3dfHtumI11Q" serverInstElem="_3kiGdzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3lH8WzPxEei3dfHtumI11Q" property="ticketRegistryCleaner.ticketRegistry" clientInstElem="_3lH8WDPxEei3dfHtumI11Q" serverInstElem="_3lH8VzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3lH8XDPxEei3dfHtumI11Q" property="ticketRegistryCleanerJobDetail.targetObject" clientInstElem="_3lH8WTPxEei3dfHtumI11Q" serverInstElem="_3lH8WDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3lH8XTPxEei3dfHtumI11Q" property="periodicTicketRegistryCleanerTrigger.jobDetail" clientInstElem="_3lH8WjPxEei3dfHtumI11Q" serverInstElem="_3lH8WTPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="OpenIotOrg.openiot_spec">
+    <specConnections refID="_3oQI0DPxEei3dfHtumI11Q"/>
+    <specConnections refID="_3oQI0TPxEei3dfHtumI11Q"/>
+    <specConnections refID="_3oQI0jPxEei3dfHtumI11Q"/>
+    <specConnections refID="_3oQI1DPxEei3dfHtumI11Q"/>
+    <specConnections refID="_3oQI1TPxEei3dfHtumI11Q"/>
+    <specConnections refID="_3oQI1jPxEei3dfHtumI11Q"/>
+    <specConnections refID="_3oQI1zPxEei3dfHtumI11Q"/>
+    <specConnections refID="_3oQI2DPxEei3dfHtumI11Q"/>
+    <specConnections refID="_3oQI2TPxEei3dfHtumI11Q"/>
+    <specConnections refID="_3oQI2jPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="zstackio.zstack">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="zstackio.zstack_config" implements="//@architectureDescriptions[name='zstackio.zstack_spec']">
+    <configComponents name="&quot;org.springframework.context.support.ClassPathXmlApplicationContext&quot;" id="__t8ysDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.context.support.ClassPathXmlApplicationContext&quot;" id="__uLcMDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.appliancevm.ApplianceVmSimulatorConfig&quot;" id="__uaswDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.consoleproxy.ConsoleProxySimulatorConfig&quot;" id="__up9UDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.kvm.VolumeSnapshotKvmSimulator&quot;" id="__u3_wDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.kvm.KVMSimulatorConfig&quot;" id="__u3_wTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.storage.primary.nfs.NfsPrimaryStorageSimulatorConfig&quot;" id="__vGCMDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.storage.backup.sftp.SftpBackupStorageSimulatorConfig&quot;" id="__vUEoDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.virtualrouter.VirtualRouterSimulatorConfig&quot;" id="__viuIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.identity.AccountManagerImpl&quot;" id="__vx-sDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.identity.AccountSubQueryExtension&quot;" id="__vx-sTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.identity.QuotaChecker&quot;" id="__vx-sjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.identity.AccountCascadeExtension&quot;" id="__vx-szPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.ansible.AnsibleFacadeImpl&quot;" id="__wABIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.portal.apimediator.ApiMediatorImpl&quot;" id="__wODkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.appliancevm.ApplianceVmFacadeImpl&quot;" id="__wdUIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.appliancevm.ApplianceVmFactory&quot;" id="__wdUITPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.appliancevm.ApplianceVmKvmBackend&quot;" id="__wdUIjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.appliancevm.ApplianceVmKvmBootstrapFlowFactory&quot;" id="__wdUIzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.appliancevm.ApplianceVmCascadeExtension&quot;" id="__wdUJDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.appliancevm.ApplianceVmManagementIpChecker&quot;" id="__wdUJTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.aspect.ThreadAspect&quot;" id="__wty0DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.aspect.AsyncBackupAspect&quot;" id="__wty0TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.aspect.MessageSafeAspect&quot;" id="__wty0jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.aspect.AsyncSafeAspect&quot;" id="__wty0zPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.BackupStorageManagerImpl&quot;" id="__w9DYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.BackupStorageApiInterceptor&quot;" id="__w9DYTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.BackupStorageExtensionPointEmitter&quot;" id="__w9DYjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.BackupStorageCascadeExtension&quot;" id="__w9DYzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.BackupStoragePingTracker&quot;" id="__w9qcDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.DefaultBackupStorageAllocatorStrategyFactory&quot;" id="__w9qcTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.cascade.CascadeFacadeImpl&quot;" id="__xMT8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.timeout.ApiTimeoutManagerImpl&quot;" id="__xo_4DPzEei3dfHtumI11Q"/>
+    <configComponents id="__xo_4TPzEei3dfHtumI11Q"/>
+    <configComponents id="__xo_4jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.cloudbus.ResourceDestinationMakerImpl&quot;" id="__xo_4zPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.cloudbus.MessageIntegrityChecker&quot;" id="__xpm8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.cluster.ClusterManagerImpl&quot;" id="__x3pYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.cluster.BaseClusterFactory&quot;" id="__x3pYTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.cluster.ClusterApiInterceptor&quot;" id="__x3pYjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.cluster.ClusterExtensionToZone&quot;" id="__x3pYzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.cluster.ClusterExtensionPointEmitter&quot;" id="__x3pZDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.cluster.ClusterCascadeExtension&quot;" id="__x3pZTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.configuration.ConfigurationManagerImpl&quot;" id="__yFr0DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.configuration.ConfigurationApiInterceptor&quot;" id="__yFr0TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.configuration.UserVmInstanceOfferingFactory&quot;" id="__yFr0jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.configuration.DefaultDiskOfferingFactory&quot;" id="__yGS4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.configuration.DiskOfferingCascadeExtension&quot;" id="__yGS4TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.configuration.InstanceOfferingCascadeExtension&quot;" id="__yGS4jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.console.ConsoleManagerImpl&quot;" id="__yVjcDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.console.ConsoleApiInterceptor&quot;" id="__yVjcTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.console.ConsoleProxyAgentTracker&quot;" id="__yVjcjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.console.ManagementServerConsoleProxyBackend&quot;" id="__yVjczPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.externalservice.cronjob.CronJobFactory&quot;" id="__yk0ADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.aspect.DbDeadlockAspect&quot;" id="__yzdgDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.JpaTransactionManager&quot;" id="__yzdgTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="__yzdgjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean&quot;" id="__yzdgzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.db.DatabaseFacadeImpl&quot;" id="__yzdhDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.db.DbEntityListerImpl&quot;" id="__yzdhTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.debug.DebugManagerImpl&quot;" id="__zDVIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.deletion.DeletionFacadeImpl&quot;" id="__zRXkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.eip.EipManagerImpl&quot;" id="__zgBEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.eip.EipExtension&quot;" id="__zgBETPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.eip.EipApiInterceptor&quot;" id="__zgBEjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.eip.EipCascadeExtension&quot;" id="__zgBEzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.encrypt.EncryptRSA&quot;" id="__zuqkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.aspect.EncryptAspect&quot;" id="__zuqkTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.aspect.DecryptAspect&quot;" id="__zuqkjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.encrypt.EncryptManagerImpl&quot;" id="__zuqkzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.encrypt.EncryptApiInterceptor&quot;" id="__zuqlDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.errorcode.ErrorFacadeImpl&quot;" id="__z9UEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.externalservice.ExternalServiceManagerImpl&quot;" id="__0L9kDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.gc.GarbageCollectorManagerImpl&quot;" id="__06WUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.gc.GCApiInterceptor&quot;" id="__069YDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.config.GlobalConfigFacadeImpl&quot;" id="__1I_0DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.config.GlobalConfigApiInterceptor&quot;" id="__1I_0TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.HostCpuOverProvisioningManagerImpl&quot;" id="__1YQYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.HostCapacityOverProvisioningManagerImpl&quot;" id="__1YQYTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.HostAllocatorManagerImpl&quot;" id="__1YQYjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.HostCapacityReserveManagerImpl&quot;" id="__1YQYzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.HostAllocatorApiInterceptor&quot;" id="__1YQZDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.LeastVmPreferredHostAllocatorStrategyFactory&quot;" id="__1YQZTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.DefaultHostAllocatorStrategyFactory&quot;" id="__1YQZjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.DesignatedHostAllocatorStrategyFactory&quot;" id="__1Y3cDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.LastHostPreferredAllocatorStrategyFactory&quot;" id="__1Y3cTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.MigrateVmHostAllocatorStrategyFactory&quot;" id="__1Y3cjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.host.HostManagerImpl&quot;" id="__1oIADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.host.HostTrackImpl&quot;" id="__1oIATPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.host.HostExtensionToCluster&quot;" id="__1oIAjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.host.HostExtensionPointEmitter&quot;" id="__1oIAzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.host.HostApiInterceptor&quot;" id="__1oIBDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.host.HostCascadeExtension&quot;" id="__1oIBTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.image.ImageManagerImpl&quot;" id="__12xgDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.image.ImageApiInterceptor&quot;" id="__12xgTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.image.DefaultImageFactory&quot;" id="__13YkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.image.ImageCascadeExtension&quot;" id="__13YkTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.image.ImageUpgradeExtension&quot;" id="__13YkjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.image.ImageDeletionPolicyManagerImpl&quot;" id="__13YkzPzEei3dfHtumI11Q"/>
+    <configComponents id="__2GCEDPzEei3dfHtumI11Q"/>
+    <configComponents id="__2UrkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.job.JobQueueFacadeImpl2&quot;" id="__2jVEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.jsonlabel.JsonLabelResourceDeletionExtension&quot;" id="__2x-kDPzEei3dfHtumI11Q"/>
+    <configComponents id="__3ABADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KvmHostReserveExtension&quot;" id="__3PRkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMHostFactory&quot;" id="__3PRkTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMHostCapacityExtension&quot;" id="__3PRkjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMConnectExtensionForL2Network&quot;" id="__3PRkzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMRealizeL2NoVlanNetworkBackend&quot;" id="__3PRlDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMRealizeL2VlanNetworkBackend&quot;" id="__3PRlTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMExtensionEmitter&quot;" id="__3PRljPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KvmVmSyncPingTask&quot;" id="__3PRlzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMSecurityGroupBackend&quot;" id="__3PRmDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMConsoleHypervisorBackend&quot;" id="__3PRmTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMApiInterceptor&quot;" id="__3P4oDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.UsernameKVMHostFilter&quot;" id="__3P4oTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMHostAllocatorFilterExtensionPoint&quot;" id="__3P4ojPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.lb.LoadBalancerManagerImpl&quot;" id="__3fJMDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.lb.LoadBalancerApiInterceptor&quot;" id="__3fJMTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.lb.LoadBalancerExtension&quot;" id="__3fJMjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.ldap.LdapManagerImpl&quot;" id="__3tysDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.ldap.LdapApiInterceptor&quot;" id="__3tysTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.ldap.LdapUpgradeExtension&quot;" id="__3tysjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.longjob.LongJobManagerImpl&quot;" id="__4KeoDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.longjob.LongJobFactoryImpl&quot;" id="__4KeoTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.longjob.LongJobApiInterceptor&quot;" id="__4LFsDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.portal.managementnode.ManagementNodeManagerImpl&quot;" id="__4ZIIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.mediator.ApiValidator&quot;" id="__4nxoDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.mediator.EipPortForwardingAttachableMarshaler&quot;" id="__4nxoTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l3.L3NetworkApiInterceptor&quot;" id="__43CMDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.L2NetworkApiInterceptor&quot;" id="__43CMTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.L2NetworkManagerImpl&quot;" id="__43CMjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.L2NoVlanL2NetworkFactory&quot;" id="__43CMzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.L2NetworkExtensionPointEmitter&quot;" id="__43CNDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l3.L3NetworkManagerImpl&quot;" id="__43CNTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l3.L3BasicNetworkFactory&quot;" id="__43CNjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l3.L3NetworkExtensionPointEmitter&quot;" id="__43CNzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l3.FirstAvailableIpAllocatorStrategy&quot;" id="__43pQDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l3.RandomIpAllocatorStrategy&quot;" id="__43pQTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.NetworkServiceManagerImpl&quot;" id="__43pQjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.L2VlanNetworkFactory&quot;" id="__43pQzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l3.L3NetworkCascadeExtension&quot;" id="__43pRDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.L2NetworkCascadeExtension&quot;" id="__43pRTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l3.IpRangeCascadeExtension&quot;" id="__43pRjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.DhcpExtension&quot;" id="__5Hg4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.SnatExtension&quot;" id="__5Hg4TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.DnsExtension&quot;" id="__5Hg4jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.CentralizedDnsExtension&quot;" id="__5Hg4zPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.NetworkServiceApiInterceptor&quot;" id="__5Hg5DPzEei3dfHtumI11Q"/>
+    <configComponents id="__5kz4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.portforwarding.PortForwardingManagerImpl&quot;" id="__5zdYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.portforwarding.PortForwardingApiInterceptor&quot;" id="__5zdYTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.portforwarding.PortForwardingExtension&quot;" id="__5zdYjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.PrimaryStorageManagerImpl&quot;" id="__6DVADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.PrimaryStorageApiInterceptor&quot;" id="__6DVATPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.DefaultPrimaryStorageAllocatorFactory&quot;" id="__6DVAjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.PrimaryStorageExtensionPointEmitter&quot;" id="__6DVAzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.PrimaryStorageCascadeExtension&quot;" id="__6DVBDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.PrimaryStorageTagAllocatorExtension&quot;" id="__6DVBTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.DiskCapacityTracer&quot;" id="__6DVBjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.PrimaryStorageOverProvisioningManagerImpl&quot;" id="__6DVBzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.PrimaryStoragePhysicalCapacityManagerImpl&quot;" id="__6DVCDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.PrimaryStoragePingTracker&quot;" id="__6DVCTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.progress.ProgressReportService&quot;" id="__6SlkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.progress.ProgressApiInterceptor&quot;" id="__6SlkTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.progressbar.ProgressBarFacadeImpl&quot;" id="__6hPEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.puppet.PuppetFacadeImpl&quot;" id="__6v4kDPzEei3dfHtumI11Q"/>
+    <configComponents id="__6-iEDPzEei3dfHtumI11Q"/>
+    <configComponents id="__6-iETPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.query.MysqlQueryBuilderFactory&quot;" id="__6-iEjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.rest.MysqlAsyncRestStore&quot;" id="__7NLkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.rest.RestServer&quot;" id="__7NLkTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.rest.RESTFacadeImpl&quot;" id="__7b1EDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.rest.RESTApiFacadeImpl&quot;" id="__7b1ETPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="__7b1EjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean&quot;" id="__7b1EzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.salt.SaltFacadeImpl&quot;" id="__7rFoDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.search.InventoryIndexManagerImpl&quot;" id="__76WMDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.search.SearchMsgValidator&quot;" id="__76WMTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.securitygroup.SecurityGroupManagerImpl&quot;" id="__8I_sDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.securitygroup.SecurityGroupNetworkServiceExtension&quot;" id="__8I_sTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.securitygroup.SecurityGroupApiInterceptor&quot;" id="__8I_sjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.securitygroup.SecurityGroupExtensionEmitter&quot;" id="__8JmwDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.securitygroup.SecurityGroupCascadeExtension&quot;" id="__8JmwTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.securitygroup.SecurityGroupProviderFactory&quot;" id="__8JmwjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.sftp.SftpBackupStorageManagerImpl&quot;" id="__8YQQDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.sftp.SftpBackupStorageApiInterceptor&quot;" id="__8YQQTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.sftp.SftpBackupStorageFactory&quot;" id="__8YQQjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.sftp.SftpBackupStorageMetaDataMaker&quot;" id="__8YQQzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.sftp.SftpBackupStorageDumpMetadataInfo&quot;" id="__8YQRDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.SimulatorHostReservedCapacityExtension&quot;" id="__81jQDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.storage.primary.SimulatorPrimaryStorageFactory&quot;" id="__81jQTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.storage.backup.SimulatorBackupStorageFactory&quot;" id="__81jQjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.SimulatorConnectExtensionPointHostCapacityBackend&quot;" id="__81jQzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.SimulatorFactory&quot;" id="__81jRDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.SimulatorController&quot;" id="__81jRTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.SimulatorVmSyncPingTask&quot;" id="__81jRjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.L2NoVlanNetworkRealizer&quot;" id="__81jRzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.L2VlanNetworkRealizer&quot;" id="__81jSDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.SimulatorSecurityGroupBackend&quot;" id="__81jSTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.ApplianceVmSimulatorBootstrapFlowFactory&quot;" id="__81jSjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.SimulatorConfig&quot;" id="__81jSzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.thread.ThreadFacadeImpl&quot;" id="__9TdUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.aspect.ThreadAspect&quot;" id="__9TdUTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.validation.ValidationFacadeImpl&quot;" id="__9iG0DPzEei3dfHtumI11Q"/>
+    <configComponents id="__9iG0TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.vip.VipApiInterceptor&quot;" id="__9wwUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.vip.VipCascadeExtension&quot;" id="__9wwUTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.vip.VipManagerImpl&quot;" id="__9wwUjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.VirtualRouterApiInterceptor&quot;" id="__-An8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.VirtualRouterApplianceVmFactory&quot;" id="__-An8TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.VirtualRouterManagerImpl&quot;" id="__-An8jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.VirtualRouterPingTracker&quot;" id="__-An8zPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.VirtualRouterProviderFactory&quot;" id="__-An9DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.VirtualRouterOfferingFactory&quot;" id="__-An9TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.VirtualRouterKvmBackend&quot;" id="__-An9jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vip.VirtualRouterVipBackend&quot;" id="__-An9zPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.dhcp.VirtualRouterDhcpBackend&quot;" id="__-An-DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.nat.VirtualRouterSnatBackend&quot;" id="__-An-TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.dns.VirtualRouterDnsBackend&quot;" id="__-BPADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.dns.VirtualRouterCentralizedDnsBackend&quot;" id="__-BPATPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.eip.VirtualRouterEipBackend&quot;" id="__-BPAjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.VirtualRouterOfferingCascadeExtension&quot;" id="__-BPAzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.portforwarding.VirtualRouterPortForwardingBackend&quot;" id="__-BPBDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.lb.VirtualRouterLoadBalancerBackend&quot;" id="__-BPBTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vip.VirtualRouterVipFactory&quot;" id="__-BPBjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.vm.VmInstanceManagerImpl&quot;" id="__-SUwDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.vm.UserVmFactory&quot;" id="__-SUwTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.vm.VmInstanceExtensionPointEmitter&quot;" id="__-SUwjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.vm.VmInstanceNotifyPointEmitter&quot;" id="__-SUwzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.vm.VmInstanceApiInterceptor&quot;" id="__-SUxDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.vm.VmCascadeExtension&quot;" id="__-SUxTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.vm.VmInstanceDeletionPolicyManagerImpl&quot;" id="__-SUxjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.VolumeManagerImpl&quot;" id="__-hlUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.VolumeApiInterceptor&quot;" id="__-hlUTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.VolumeCascadeExtension&quot;" id="__-hlUjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.DetachDataVolumeOnVmDestroyedExtension&quot;" id="__-hlUzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.InstantiateVolumeForNewCreatedVmExtension&quot;" id="__-hlVDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.DownloadIsoForVmExtension&quot;" id="__-hlVTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.VolumeDeletionPolicyManagerImpl&quot;" id="__-hlVjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.VolumeUpgradeExtension&quot;" id="__-hlVzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.InstantiateVolumeForVmChangeImageExtension&quot;" id="__-hlWDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.DownloadIsoForVmChangeImageExtension&quot;" id="__-hlWTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.snapshot.VolumeSnapshotManagerImpl&quot;" id="__-w14DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.snapshot.VolumeSnapshotApiInterceptor&quot;" id="__-w14TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.snapshot.VolumeSnapshotCascadeExtension&quot;" id="__-w14jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetworkPool.VxlanNetworkPoolFactory&quot;" id="___AGcDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetwork.VxlanNetworkFactory&quot;" id="___AGcTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetworkPool.RandomVniAllocatorStrategy&quot;" id="___AGcjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetwork.InstantiateVxlanNetworkForNewCreatedVmExtension&quot;" id="___AGczPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetworkPool.VxlanPoolApiInterceptor&quot;" id="___AGdDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetworkPool.VxlanNetworkPool&quot;" id="___AGdTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetwork.VxlanNetwork&quot;" id="___AGdjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetworkPool.VxlanNetworkCheckerImpl&quot;" id="___AGdzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetworkPool.KVMConnectExtensionForVxlanNetwork&quot;" id="___AGeDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetworkPool.KVMRealizeL2VxlanNetworkBackend&quot;" id="___AtgDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetworkPool.KVMRealizeL2VxlanNetworkPoolBackend&quot;" id="___AtgTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vtep.VtepCascadeExtension&quot;" id="___AtgjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosVmFactory&quot;" id="___QlIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosDhcpBackend&quot;" id="___QlITPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosSnatBackend&quot;" id="___QlIjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosDnsBackend&quot;" id="___QlIzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosCentralizedDnsBackend&quot;" id="___QlJDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosEipBackend&quot;" id="___QlJTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosLbBackend&quot;" id="___QlJjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosPortForwardingBackend&quot;" id="___QlJzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosVipBackend&quot;" id="___QlKDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosVipFactory&quot;" id="___RMMDPzEei3dfHtumI11Q"/>
+    <configComponents id="___f1sDPzEei3dfHtumI11Q"/>
+    <configComponents id="___f1sTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.zone.ZoneManagerImpl&quot;" id="___t4IDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.zone.ZoneApiInterceptor&quot;" id="___t4ITPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.zone.BaseZoneFactory&quot;" id="___t4IjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.zone.ZoneExtensionPointEmitter&quot;" id="___t4IzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.zone.ZoneCascadeExtension&quot;" id="___t4JDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.context.support.ClassPathXmlApplicationContext&quot;" id="_AAnQADP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.context.support.ClassPathXmlApplicationContext&quot;" id="_AA15gDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.appliancevm.ApplianceVmSimulatorConfig&quot;" id="_ABD78DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.consoleproxy.ConsoleProxySimulatorConfig&quot;" id="_ABSlcDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.kvm.VolumeSnapshotKvmSimulator&quot;" id="_ABkSQDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.kvm.KVMSimulatorConfig&quot;" id="_ABkSQTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.storage.primary.nfs.NfsPrimaryStorageSimulatorConfig&quot;" id="_ABzi0DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.storage.backup.sftp.SftpBackupStorageSimulatorConfig&quot;" id="_ACEokDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.virtualrouter.VirtualRouterSimulatorConfig&quot;" id="_ACXjgDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.identity.AccountManagerImpl&quot;" id="_ACm0EDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.identity.AccountSubQueryExtension&quot;" id="_ACm0ETP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.identity.QuotaChecker&quot;" id="_ACm0EjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.identity.AccountCascadeExtension&quot;" id="_ACnbIDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.ansible.AnsibleFacadeImpl&quot;" id="_AC1dkDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.portal.apimediator.ApiMediatorImpl&quot;" id="_ADEHEDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.appliancevm.ApplianceVmFacadeImpl&quot;" id="_ADSwkDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.appliancevm.ApplianceVmFactory&quot;" id="_ADSwkTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.appliancevm.ApplianceVmKvmBackend&quot;" id="_ADTXoDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.appliancevm.ApplianceVmKvmBootstrapFlowFactory&quot;" id="_ADTXoTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.appliancevm.ApplianceVmCascadeExtension&quot;" id="_ADTXojP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.appliancevm.ApplianceVmManagementIpChecker&quot;" id="_ADTXozP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.aspect.ThreadAspect&quot;" id="_ADioMDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.aspect.AsyncBackupAspect&quot;" id="_ADioMTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.aspect.MessageSafeAspect&quot;" id="_ADioMjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.aspect.AsyncSafeAspect&quot;" id="_ADioMzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.BackupStorageManagerImpl&quot;" id="_ADwqoDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.BackupStorageApiInterceptor&quot;" id="_ADwqoTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.BackupStorageExtensionPointEmitter&quot;" id="_ADwqojP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.BackupStorageCascadeExtension&quot;" id="_ADwqozP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.BackupStoragePingTracker&quot;" id="_ADwqpDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.DefaultBackupStorageAllocatorStrategyFactory&quot;" id="_ADwqpTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.cascade.CascadeFacadeImpl&quot;" id="_AD_UIDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.timeout.ApiTimeoutManagerImpl&quot;" id="_AEcAEDP0Eei3dfHtumI11Q"/>
+    <configComponents id="_AEcAETP0Eei3dfHtumI11Q"/>
+    <configComponents id="_AEcnIDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.cloudbus.ResourceDestinationMakerImpl&quot;" id="_AEcnITP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.cloudbus.MessageIntegrityChecker&quot;" id="_AEcnIjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.cluster.ClusterManagerImpl&quot;" id="_AErQoDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.cluster.BaseClusterFactory&quot;" id="_AErQoTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.cluster.ClusterApiInterceptor&quot;" id="_AErQojP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.cluster.ClusterExtensionToZone&quot;" id="_AErQozP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.cluster.ClusterExtensionPointEmitter&quot;" id="_AErQpDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.cluster.ClusterCascadeExtension&quot;" id="_AErQpTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.configuration.ConfigurationManagerImpl&quot;" id="_AE6hMDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.configuration.ConfigurationApiInterceptor&quot;" id="_AE6hMTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.configuration.UserVmInstanceOfferingFactory&quot;" id="_AE6hMjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.configuration.DefaultDiskOfferingFactory&quot;" id="_AE6hMzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.configuration.DiskOfferingCascadeExtension&quot;" id="_AE6hNDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.configuration.InstanceOfferingCascadeExtension&quot;" id="_AE6hNTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.console.ConsoleManagerImpl&quot;" id="_AFJxwDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.console.ConsoleApiInterceptor&quot;" id="_AFJxwTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.console.ConsoleProxyAgentTracker&quot;" id="_AFJxwjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.console.ManagementServerConsoleProxyBackend&quot;" id="_AFJxwzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.externalservice.cronjob.CronJobFactory&quot;" id="_AFYbQDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.aspect.DbDeadlockAspect&quot;" id="_AFnEwDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.JpaTransactionManager&quot;" id="_AFnr0DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="_AFnr0TP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean&quot;" id="_AFnr0jP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.db.DatabaseFacadeImpl&quot;" id="_AFnr0zP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.db.DbEntityListerImpl&quot;" id="_AFnr1DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.debug.DebugManagerImpl&quot;" id="_AF28YDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.deletion.DeletionFacadeImpl&quot;" id="_AGFl4DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.eip.EipManagerImpl&quot;" id="_AGUPYDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.eip.EipExtension&quot;" id="_AGUPYTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.eip.EipApiInterceptor&quot;" id="_AGUPYjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.eip.EipCascadeExtension&quot;" id="_AGUPYzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.encrypt.EncryptRSA&quot;" id="_AGjf8DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.aspect.EncryptAspect&quot;" id="_AGjf8TP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.aspect.DecryptAspect&quot;" id="_AGjf8jP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.encrypt.EncryptManagerImpl&quot;" id="_AGjf8zP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.encrypt.EncryptApiInterceptor&quot;" id="_AGjf9DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.errorcode.ErrorFacadeImpl&quot;" id="_AGyJcDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.externalservice.ExternalServiceManagerImpl&quot;" id="_AHAy8DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.gc.GarbageCollectorManagerImpl&quot;" id="_AHsIYDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.gc.GCApiInterceptor&quot;" id="_AHsIYTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.config.GlobalConfigFacadeImpl&quot;" id="_AH6x4DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.config.GlobalConfigApiInterceptor&quot;" id="_AH6x4TP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.HostCpuOverProvisioningManagerImpl&quot;" id="_AIKCcDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.HostCapacityOverProvisioningManagerImpl&quot;" id="_AIKCcTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.HostAllocatorManagerImpl&quot;" id="_AIKCcjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.HostCapacityReserveManagerImpl&quot;" id="_AIKCczP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.HostAllocatorApiInterceptor&quot;" id="_AIKCdDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.LeastVmPreferredHostAllocatorStrategyFactory&quot;" id="_AIKCdTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.DefaultHostAllocatorStrategyFactory&quot;" id="_AIKCdjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.DesignatedHostAllocatorStrategyFactory&quot;" id="_AIKpgDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.LastHostPreferredAllocatorStrategyFactory&quot;" id="_AIKpgTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.MigrateVmHostAllocatorStrategyFactory&quot;" id="_AIKpgjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.host.HostManagerImpl&quot;" id="_AIZTADP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.host.HostTrackImpl&quot;" id="_AIZTATP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.host.HostExtensionToCluster&quot;" id="_AIZTAjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.host.HostExtensionPointEmitter&quot;" id="_AIZTAzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.host.HostApiInterceptor&quot;" id="_AIZTBDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.host.HostCascadeExtension&quot;" id="_AIZTBTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.image.ImageManagerImpl&quot;" id="_AIojkDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.image.ImageApiInterceptor&quot;" id="_AIojkTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.image.DefaultImageFactory&quot;" id="_AIojkjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.image.ImageCascadeExtension&quot;" id="_AIojkzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.image.ImageUpgradeExtension&quot;" id="_AIojlDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.image.ImageDeletionPolicyManagerImpl&quot;" id="_AIojlTP0Eei3dfHtumI11Q"/>
+    <configComponents id="_AI30IDP0Eei3dfHtumI11Q"/>
+    <configComponents id="_AJF2kDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.job.JobQueueFacadeImpl2&quot;" id="_AJUgEDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.jsonlabel.JsonLabelResourceDeletionExtension&quot;" id="_AJjJkDP0Eei3dfHtumI11Q"/>
+    <configComponents id="_AJxzEDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KvmHostReserveExtension&quot;" id="_AKAckDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMHostFactory&quot;" id="_AKAckTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMHostCapacityExtension&quot;" id="_AKAckjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMConnectExtensionForL2Network&quot;" id="_AKAckzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMRealizeL2NoVlanNetworkBackend&quot;" id="_AKAclDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMRealizeL2VlanNetworkBackend&quot;" id="_AKAclTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMExtensionEmitter&quot;" id="_AKBDoDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KvmVmSyncPingTask&quot;" id="_AKBDoTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMSecurityGroupBackend&quot;" id="_AKBDojP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMConsoleHypervisorBackend&quot;" id="_AKBDozP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMApiInterceptor&quot;" id="_AKBDpDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.UsernameKVMHostFilter&quot;" id="_AKBDpTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMHostAllocatorFilterExtensionPoint&quot;" id="_AKBDpjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.lb.LoadBalancerManagerImpl&quot;" id="_AKQUMDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.lb.LoadBalancerApiInterceptor&quot;" id="_AKQUMTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.lb.LoadBalancerExtension&quot;" id="_AKQUMjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.ldap.LdapManagerImpl&quot;" id="_AKe9sDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.ldap.LdapApiInterceptor&quot;" id="_AKe9sTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.ldap.LdapUpgradeExtension&quot;" id="_AKe9sjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.longjob.LongJobManagerImpl&quot;" id="_AK6bgDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.longjob.LongJobFactoryImpl&quot;" id="_AK6bgTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.longjob.LongJobApiInterceptor&quot;" id="_AK6bgjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.portal.managementnode.ManagementNodeManagerImpl&quot;" id="_ALId8DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.mediator.ApiValidator&quot;" id="_ALWgYDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.mediator.EipPortForwardingAttachableMarshaler&quot;" id="_ALWgYTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l3.L3NetworkApiInterceptor&quot;" id="_ALlJ4DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.L2NetworkApiInterceptor&quot;" id="_ALlJ4TP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.L2NetworkManagerImpl&quot;" id="_ALlJ4jP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.L2NoVlanL2NetworkFactory&quot;" id="_ALlJ4zP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.L2NetworkExtensionPointEmitter&quot;" id="_ALlJ5DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l3.L3NetworkManagerImpl&quot;" id="_ALlJ5TP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l3.L3BasicNetworkFactory&quot;" id="_ALlw8DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l3.L3NetworkExtensionPointEmitter&quot;" id="_ALlw8TP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l3.FirstAvailableIpAllocatorStrategy&quot;" id="_ALlw8jP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l3.RandomIpAllocatorStrategy&quot;" id="_ALlw8zP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.NetworkServiceManagerImpl&quot;" id="_ALlw9DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.L2VlanNetworkFactory&quot;" id="_ALlw9TP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l3.L3NetworkCascadeExtension&quot;" id="_ALlw9jP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.L2NetworkCascadeExtension&quot;" id="_ALlw9zP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l3.IpRangeCascadeExtension&quot;" id="_ALlw-DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.DhcpExtension&quot;" id="_AL1BgDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.SnatExtension&quot;" id="_AL1BgTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.DnsExtension&quot;" id="_AL1BgjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.CentralizedDnsExtension&quot;" id="_AL1BgzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.NetworkServiceApiInterceptor&quot;" id="_AL1BhDP0Eei3dfHtumI11Q"/>
+    <configComponents id="_AMRGYDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.portforwarding.PortForwardingManagerImpl&quot;" id="_AMfI0DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.portforwarding.PortForwardingApiInterceptor&quot;" id="_AMfI0TP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.portforwarding.PortForwardingExtension&quot;" id="_AMfI0jP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.PrimaryStorageManagerImpl&quot;" id="_AMtyUDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.PrimaryStorageApiInterceptor&quot;" id="_AMtyUTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.DefaultPrimaryStorageAllocatorFactory&quot;" id="_AMtyUjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.PrimaryStorageExtensionPointEmitter&quot;" id="_AMtyUzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.PrimaryStorageCascadeExtension&quot;" id="_AMtyVDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.PrimaryStorageTagAllocatorExtension&quot;" id="_AMtyVTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.DiskCapacityTracer&quot;" id="_AMtyVjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.PrimaryStorageOverProvisioningManagerImpl&quot;" id="_AMtyVzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.PrimaryStoragePhysicalCapacityManagerImpl&quot;" id="_AMtyWDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.PrimaryStoragePingTracker&quot;" id="_AMtyWTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.progress.ProgressReportService&quot;" id="_AM8b0DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.progress.ProgressApiInterceptor&quot;" id="_AM8b0TP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.progressbar.ProgressBarFacadeImpl&quot;" id="_ANLFUDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.puppet.PuppetFacadeImpl&quot;" id="_ANZHwDP0Eei3dfHtumI11Q"/>
+    <configComponents id="_ANnKMDP0Eei3dfHtumI11Q"/>
+    <configComponents id="_ANnKMTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.query.MysqlQueryBuilderFactory&quot;" id="_ANnKMjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.rest.MysqlAsyncRestStore&quot;" id="_AN5eEDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.rest.RestServer&quot;" id="_AN5eETP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.rest.RESTFacadeImpl&quot;" id="_AOHggDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.rest.RESTApiFacadeImpl&quot;" id="_AOHggTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="_AOHggjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean&quot;" id="_AOHggzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.salt.SaltFacadeImpl&quot;" id="_AOVi8DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.search.InventoryIndexManagerImpl&quot;" id="_AOjlYDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.search.SearchMsgValidator&quot;" id="_AOjlYTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.securitygroup.SecurityGroupManagerImpl&quot;" id="_AOxn0DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.securitygroup.SecurityGroupNetworkServiceExtension&quot;" id="_AOxn0TP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.securitygroup.SecurityGroupApiInterceptor&quot;" id="_AOxn0jP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.securitygroup.SecurityGroupExtensionEmitter&quot;" id="_AOxn0zP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.securitygroup.SecurityGroupCascadeExtension&quot;" id="_AOxn1DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.securitygroup.SecurityGroupProviderFactory&quot;" id="_AOxn1TP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.sftp.SftpBackupStorageManagerImpl&quot;" id="_AO_qQDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.sftp.SftpBackupStorageApiInterceptor&quot;" id="_AO_qQTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.sftp.SftpBackupStorageFactory&quot;" id="_AO_qQjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.sftp.SftpBackupStorageMetaDataMaker&quot;" id="_AO_qQzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.sftp.SftpBackupStorageDumpMetadataInfo&quot;" id="_AO_qRDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.SimulatorHostReservedCapacityExtension&quot;" id="_APbvIDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.storage.primary.SimulatorPrimaryStorageFactory&quot;" id="_APbvITP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.storage.backup.SimulatorBackupStorageFactory&quot;" id="_APbvIjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.SimulatorConnectExtensionPointHostCapacityBackend&quot;" id="_APcWMDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.SimulatorFactory&quot;" id="_APcWMTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.SimulatorController&quot;" id="_APcWMjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.SimulatorVmSyncPingTask&quot;" id="_APcWMzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.L2NoVlanNetworkRealizer&quot;" id="_APcWNDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.L2VlanNetworkRealizer&quot;" id="_APcWNTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.SimulatorSecurityGroupBackend&quot;" id="_APcWNjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.ApplianceVmSimulatorBootstrapFlowFactory&quot;" id="_APcWNzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.SimulatorConfig&quot;" id="_APcWODP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.thread.ThreadFacadeImpl&quot;" id="_AP30ADP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.aspect.ThreadAspect&quot;" id="_AP30ATP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.validation.ValidationFacadeImpl&quot;" id="_AQF2cDP0Eei3dfHtumI11Q"/>
+    <configComponents id="_AQF2cTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.vip.VipApiInterceptor&quot;" id="_AQT44DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.vip.VipCascadeExtension&quot;" id="_AQT44TP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.vip.VipManagerImpl&quot;" id="_AQT44jP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.VirtualRouterApiInterceptor&quot;" id="_AQiiYDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.VirtualRouterApplianceVmFactory&quot;" id="_AQiiYTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.VirtualRouterManagerImpl&quot;" id="_AQiiYjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.VirtualRouterPingTracker&quot;" id="_AQiiYzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.VirtualRouterProviderFactory&quot;" id="_AQiiZDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.VirtualRouterOfferingFactory&quot;" id="_AQiiZTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.VirtualRouterKvmBackend&quot;" id="_AQiiZjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vip.VirtualRouterVipBackend&quot;" id="_AQiiZzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.dhcp.VirtualRouterDhcpBackend&quot;" id="_AQjJcDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.nat.VirtualRouterSnatBackend&quot;" id="_AQjJcTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.dns.VirtualRouterDnsBackend&quot;" id="_AQjJcjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.dns.VirtualRouterCentralizedDnsBackend&quot;" id="_AQjJczP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.eip.VirtualRouterEipBackend&quot;" id="_AQjJdDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.VirtualRouterOfferingCascadeExtension&quot;" id="_AQjJdTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.portforwarding.VirtualRouterPortForwardingBackend&quot;" id="_AQjJdjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.lb.VirtualRouterLoadBalancerBackend&quot;" id="_AQjJdzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vip.VirtualRouterVipFactory&quot;" id="_AQjwgDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.vm.VmInstanceManagerImpl&quot;" id="_AQzBEDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.vm.UserVmFactory&quot;" id="_AQzBETP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.vm.VmInstanceExtensionPointEmitter&quot;" id="_AQzBEjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.vm.VmInstanceNotifyPointEmitter&quot;" id="_AQzBEzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.vm.VmInstanceApiInterceptor&quot;" id="_AQzBFDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.vm.VmCascadeExtension&quot;" id="_AQzBFTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.vm.VmInstanceDeletionPolicyManagerImpl&quot;" id="_AQzBFjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.VolumeManagerImpl&quot;" id="_ARBqkDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.VolumeApiInterceptor&quot;" id="_ARBqkTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.VolumeCascadeExtension&quot;" id="_ARBqkjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.DetachDataVolumeOnVmDestroyedExtension&quot;" id="_ARBqkzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.InstantiateVolumeForNewCreatedVmExtension&quot;" id="_ARBqlDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.DownloadIsoForVmExtension&quot;" id="_ARBqlTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.VolumeDeletionPolicyManagerImpl&quot;" id="_ARBqljP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.VolumeUpgradeExtension&quot;" id="_ARBqlzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.InstantiateVolumeForVmChangeImageExtension&quot;" id="_ARBqmDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.volume.DownloadIsoForVmChangeImageExtension&quot;" id="_ARBqmTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.snapshot.VolumeSnapshotManagerImpl&quot;" id="_ARQUEDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.snapshot.VolumeSnapshotApiInterceptor&quot;" id="_ARQUETP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.snapshot.VolumeSnapshotCascadeExtension&quot;" id="_ARQUEjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetworkPool.VxlanNetworkPoolFactory&quot;" id="_AReWgDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetwork.VxlanNetworkFactory&quot;" id="_AReWgTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetworkPool.RandomVniAllocatorStrategy&quot;" id="_AReWgjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetwork.InstantiateVxlanNetworkForNewCreatedVmExtension&quot;" id="_AReWgzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetworkPool.VxlanPoolApiInterceptor&quot;" id="_AReWhDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetworkPool.VxlanNetworkPool&quot;" id="_AReWhTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetwork.VxlanNetwork&quot;" id="_AReWhjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetworkPool.VxlanNetworkCheckerImpl&quot;" id="_AReWhzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetworkPool.KVMConnectExtensionForVxlanNetwork&quot;" id="_AReWiDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetworkPool.KVMRealizeL2VxlanNetworkBackend&quot;" id="_AReWiTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vxlanNetworkPool.KVMRealizeL2VxlanNetworkPoolBackend&quot;" id="_AReWijP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.l2.vxlan.vtep.VtepCascadeExtension&quot;" id="_AReWizP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosVmFactory&quot;" id="_ARtnEDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosDhcpBackend&quot;" id="_ARtnETP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosSnatBackend&quot;" id="_ARtnEjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosDnsBackend&quot;" id="_ARtnEzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosCentralizedDnsBackend&quot;" id="_ARuOIDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosEipBackend&quot;" id="_ARuOITP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosLbBackend&quot;" id="_ARuOIjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosPortForwardingBackend&quot;" id="_ARuOIzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosVipBackend&quot;" id="_ARuOJDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.virtualrouter.vyos.VyosVipFactory&quot;" id="_ARuOJTP0Eei3dfHtumI11Q"/>
+    <configComponents id="_AR8QkDP0Eei3dfHtumI11Q"/>
+    <configComponents id="_AR8QkTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.zone.ZoneManagerImpl&quot;" id="_ASKTADP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.zone.ZoneApiInterceptor&quot;" id="_ASKTATP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.zone.BaseZoneFactory&quot;" id="_ASK6EDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.zone.ZoneExtensionPointEmitter&quot;" id="_ASK6ETP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.zone.ZoneCascadeExtension&quot;" id="_ASK6EjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.context.support.ReloadableResourceBundleMessageSource&quot;" id="_ATE5ADP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.context.support.ClassPathXmlApplicationContext&quot;" id="_ATE5ATP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.apimediator.ApiValidator&quot;" id="_ATS7cDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.appliancevm.ApplianceVmSimulatorConfig&quot;" id="_ATgW0DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.storage.backup.BackupStorageAttachExtension&quot;" id="_ATuZQDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.storage.backup.BackupStorageChangeStateExtension&quot;" id="_AT9CwDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.storage.backup.BackupStorageDeleteExtension&quot;" id="_AUMTUDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.storage.backup.BackupStorageDetachExtension&quot;" id="_AUZusDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.cascade.CascadeAddonTestExtension&quot;" id="_AUnxIDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.ceph.backup.CephBackupStorageSimulatorConfig&quot;" id="_AU2aoDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.ceph.primary.CephPrimaryStorageSimulatorConfig&quot;" id="_AU2aoTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.compute.host.ChangeHostStateExtension&quot;" id="_AVEdEDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.checkpoint.CheckPointAspect&quot;" id="_AVSfgDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.checkpoint.CheckPointFacadeImpl&quot;" id="_AVSfgTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.aop.CloudBusAopProxy&quot;" id="_AVhJADP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.aop.ManInTheMiddleService&quot;" id="_AVhJATP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.compute.cluster.ClusterDeleteExtension&quot;" id="_AVvLcDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.compute.cluster.ClusteChangeStateExtension&quot;" id="_AVvLcTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.consoleproxy.ConsoleProxySimulatorConfig&quot;" id="_AV9N4DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.compute.host.DeletHostExtension&quot;" id="_AWKpQDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.identity.FakeAuthorizationServiceForRoleTest&quot;" id="_AWYrsDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.network.service.flat.FlatNetworkServiceSimulatorConfig&quot;" id="_AWnVMDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.ha.HaKvmSimulatorConfig&quot;" id="_AW1XoDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.DefaultHostAllocatorStrategyFactory&quot;" id="_AXEBIDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.DesignatedHostAllocatorStrategyFactory&quot;" id="_AXEBITP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.compute.allocator.LastHostPreferredAllocatorStrategyFactory&quot;" id="_AXEBIjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.backup.imagestore.ImageStoreBackupStorageSimulatorConfig&quot;" id="_AXSDkDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.imagestore.ImageStorePrimaryStorageSimulatorConfig&quot;" id="_AXgtEDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.ipsec.vyos.VyosIPsecSimulatorConfig&quot;" id="_AXvWkDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.iscsi.IscsiBtrfsPrimaryStorageSimulatorConfig&quot;" id="_AX-nIDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KvmHostReserveExtension&quot;" id="_AYNQoDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMHostFactory&quot;" id="_AYN3sDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMHostCapacityExtension&quot;" id="_AYN3sTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMConnectExtensionForL2Network&quot;" id="_AYN3sjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMRealizeL2NoVlanNetworkBackend&quot;" id="_AYN3szP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMRealizeL2VlanNetworkBackend&quot;" id="_AYN3tDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMExtensionEmitter&quot;" id="_AYN3tTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KvmVmSyncPingTask&quot;" id="_AYN3tjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMSecurityGroupBackend&quot;" id="_AYN3tzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMConsoleHypervisorBackend&quot;" id="_AYN3uDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMApiInterceptor&quot;" id="_AYN3uTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.UsernameKVMHostFilter&quot;" id="_AYN3ujP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.kvm.KVMHostAllocatorFilterExtensionPoint&quot;" id="_AYN3uzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.kvm.KVMPingAgentExtensionForTest&quot;" id="_AYdIQDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.kvm.VolumeSnapshotKvmSimulator&quot;" id="_AY7CUDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.kvm.KVMSimulatorConfig&quot;" id="_AY7CUTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.kvm.KVMStartVmExtension&quot;" id="_AY7CUjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.kvm.KVMStopVmExtension&quot;" id="_AY7CUzP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.kvm.KVMRebootVmExtension&quot;" id="_AY7CVDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.kvm.KVMDestroyVmExtension&quot;" id="_AY7CVTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.integration.core.branchcascade.BypassVmDetachNicBranchCascadeExtension&quot;" id="_AZJr0DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.network.L2NetworkDeleteExtension&quot;" id="_AZYVUDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.network.L3NetworkDeleteExtension&quot;" id="_AZrQQDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.local.LocalStorageSimulatorConfig&quot;" id="_AaHVIDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.mediator.ApiValidator&quot;" id="_AaWlsDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.storage.primary.nfs.NfsPrimaryStorageSimulatorConfig&quot;" id="_Aaz4sDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.core.plugin.PluginOrder2&quot;" id="_AbCiMDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.core.plugin.PluginOrder3&quot;" id="_AbCiMTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.core.plugin.PluginOrder1&quot;" id="_AbCiMjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.core.plugin.PluginOrder2&quot;" id="_AbQkoDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.core.plugin.PluginOrder3&quot;" id="_AbQkoTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.core.plugin.PluginOrder1&quot;" id="_AbQkojP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.storage.primary.PrimaryStorageAttachExtension&quot;" id="_Abt3oDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.storage.primary.PrimaryStorageChangeStateExtension&quot;" id="_Ab8hIDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.storage.primary.PrimaryStorageDeleteExtension&quot;" id="_AcKjkDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.storage.primary.PrimaryStorageDetachExtension&quot;" id="_AcZ0IDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.progress.ProgressReportService&quot;" id="_AcpEsDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.storage.backup.sftp.SftpBackupStorageSimulatorConfig&quot;" id="_Ac3uMDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.multinodes.SilentJobService&quot;" id="_AdG-wDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.multinodes.SilentService&quot;" id="_AdVoQDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.multinodes.SilentLockService&quot;" id="_AdVoQTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.multinodes.ReportGlobalConfigService&quot;" id="_AdVoQjP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.smp.SMPPrimaryStorageSimulatorConfig&quot;" id="_AdkRwDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.storage.primary.smp.SMPPrimaryStorageFactory&quot;" id="_AdkRwTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.virtualrouter.VirtualRouterSimulator&quot;" id="_Ad0JYDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.simulator.virtualrouter.VirtualRouterSimulatorConfig&quot;" id="_Ad0JYTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.compute.vm.VmDestroyExtension&quot;" id="_AeCy4DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.compute.vm.VmInstanceStartNewCreatedVmExtension&quot;" id="_AeRcYDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.compute.vm.VmMigrateExtension&quot;" id="_Aefe0DP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.compute.vm.VmRebootExtesnion&quot;" id="_AevWcDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.compute.vm.VmStartExtension&quot;" id="_Ae_OEDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.compute.vm.VmStopExtension&quot;" id="_AfNQgDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.compute.zone.PreventZoneDeleteExtensionPoint&quot;" id="_AfdIIDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.test.compute.zone.ZoneChnageStateExtension&quot;" id="_AfdIITP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.handler.SimpleUrlHandlerMapping&quot;" id="_AfrxoDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.rest.RestServerController&quot;" id="_AfrxoTP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.testlib.TestLibController&quot;" id="_AfrxojP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.zstack.core.rest.AsyncRESTCallController&quot;" id="_AfrxozP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_AgJEoDP0Eei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.context.support.ReloadableResourceBundleMessageSource&quot;" id="_AgJEoTP0Eei3dfHtumI11Q"/>
+    <configConnections refID="__yzdhjPzEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="__yzdgTPzEei3dfHtumI11Q" serverClassElem="__yzdgzPzEei3dfHtumI11Q"/>
+    <configConnections refID="__y0EkDPzEei3dfHtumI11Q" property="&quot;jpaDialect&quot;" clientClassElem="__yzdgzPzEei3dfHtumI11Q" serverClassElem="__y0EkTPzEei3dfHtumI11Q"/>
+    <configConnections refID="__y0EkjPzEei3dfHtumI11Q" property="&quot;jpaVendorAdapter&quot;" clientClassElem="__yzdgzPzEei3dfHtumI11Q" serverClassElem="__y0EkzPzEei3dfHtumI11Q"/>
+    <configConnections refID="__y0ElDPzEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="__yzdgzPzEei3dfHtumI11Q" serverClassElem="__yzdgjPzEei3dfHtumI11Q"/>
+    <configConnections refID="__7b1FDPzEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="__7b1ETPzEei3dfHtumI11Q" serverClassElem="__7b1EzPzEei3dfHtumI11Q"/>
+    <configConnections refID="__7ccIDPzEei3dfHtumI11Q" property="&quot;jpaDialect&quot;" clientClassElem="__7b1EzPzEei3dfHtumI11Q" serverClassElem="__7ccITPzEei3dfHtumI11Q"/>
+    <configConnections refID="__7ccIjPzEei3dfHtumI11Q" property="&quot;jpaVendorAdapter&quot;" clientClassElem="__7b1EzPzEei3dfHtumI11Q" serverClassElem="__7ccIzPzEei3dfHtumI11Q"/>
+    <configConnections refID="__7ccJDPzEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="__7b1EzPzEei3dfHtumI11Q" serverClassElem="__7b1EjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_AFnr1TP0Eei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_AFnr0DP0Eei3dfHtumI11Q" serverClassElem="_AFnr0jP0Eei3dfHtumI11Q"/>
+    <configConnections refID="_AFnr1jP0Eei3dfHtumI11Q" property="&quot;jpaDialect&quot;" clientClassElem="_AFnr0jP0Eei3dfHtumI11Q" serverClassElem="_AFnr1zP0Eei3dfHtumI11Q"/>
+    <configConnections refID="_AFnr2DP0Eei3dfHtumI11Q" property="&quot;jpaVendorAdapter&quot;" clientClassElem="_AFnr0jP0Eei3dfHtumI11Q" serverClassElem="_AFnr2TP0Eei3dfHtumI11Q"/>
+    <configConnections refID="_AFnr2jP0Eei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_AFnr0jP0Eei3dfHtumI11Q" serverClassElem="_AFnr0TP0Eei3dfHtumI11Q"/>
+    <configConnections refID="_AOHghDP0Eei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_AOHggTP0Eei3dfHtumI11Q" serverClassElem="_AOHggzP0Eei3dfHtumI11Q"/>
+    <configConnections refID="_AOHghTP0Eei3dfHtumI11Q" property="&quot;jpaDialect&quot;" clientClassElem="_AOHggzP0Eei3dfHtumI11Q" serverClassElem="_AOHghjP0Eei3dfHtumI11Q"/>
+    <configConnections refID="_AOHghzP0Eei3dfHtumI11Q" property="&quot;jpaVendorAdapter&quot;" clientClassElem="_AOHggzP0Eei3dfHtumI11Q" serverClassElem="_AOHgiDP0Eei3dfHtumI11Q"/>
+    <configConnections refID="_AOHgiTP0Eei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_AOHggzP0Eei3dfHtumI11Q" serverClassElem="_AOHggjP0Eei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="zstackio.zstack_asm" instantiates="//@architectureDescriptions[name='zstackio.zstack_config']">
+    <assmComponents name="parentContext" id="__t8ysTPzEei3dfHtumI11Q" instantiates="__t8ysDPzEei3dfHtumI11Q"/>
+    <assmComponents name="parentContext" id="__uLcMTPzEei3dfHtumI11Q" instantiates="__uLcMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ApplianceVmConfig" id="__uaswTPzEei3dfHtumI11Q" instantiates="__uaswDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ConsoleProxySimulatorConfig" id="__up9UTPzEei3dfHtumI11Q" instantiates="__up9UDPzEei3dfHtumI11Q"/>
+    <assmComponents name="VolumeSnapshotKvmSimulator" id="__u3_wjPzEei3dfHtumI11Q" instantiates="__u3_wDPzEei3dfHtumI11Q"/>
+    <assmComponents name="KVMSimulatorConfig" id="__u3_wzPzEei3dfHtumI11Q" instantiates="__u3_wTPzEei3dfHtumI11Q"/>
+    <assmComponents name="NfsPrimaryStorageSimulatorConfig" id="__vGCMTPzEei3dfHtumI11Q" instantiates="__vGCMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="SftpBackupStorageSimulatorConfig" id="__vUrsDPzEei3dfHtumI11Q" instantiates="__vUEoDPzEei3dfHtumI11Q"/>
+    <assmComponents name="VirtualRouterConfig" id="__viuITPzEei3dfHtumI11Q" instantiates="__viuIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="AccountManager" id="__vx-tDPzEei3dfHtumI11Q" instantiates="__vx-sDPzEei3dfHtumI11Q"/>
+    <assmComponents name="AccountSubQueryExtension" id="__vx-tTPzEei3dfHtumI11Q" instantiates="__vx-sTPzEei3dfHtumI11Q"/>
+    <assmComponents name="QuotaChecker" id="__vx-tjPzEei3dfHtumI11Q" instantiates="__vx-sjPzEei3dfHtumI11Q"/>
+    <assmComponents name="AccountCascadeExtension" id="__vx-tzPzEei3dfHtumI11Q" instantiates="__vx-szPzEei3dfHtumI11Q"/>
+    <assmComponents name="AnsibleFacade" id="__wABITPzEei3dfHtumI11Q" instantiates="__wABIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ApiMediator" id="__wODkTPzEei3dfHtumI11Q" instantiates="__wODkDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ApplianceVmFacade" id="__wdUJjPzEei3dfHtumI11Q" instantiates="__wdUIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ApplianceVmFactory" id="__wdUJzPzEei3dfHtumI11Q" instantiates="__wdUITPzEei3dfHtumI11Q"/>
+    <assmComponents name="ApplianceVmKvmBackend" id="__wdUKDPzEei3dfHtumI11Q" instantiates="__wdUIjPzEei3dfHtumI11Q"/>
+    <assmComponents name="ApplianceVmKvmBootstrapFlowFactory" id="__wdUKTPzEei3dfHtumI11Q" instantiates="__wdUIzPzEei3dfHtumI11Q"/>
+    <assmComponents name="ApplianceVmCascadeExtension" id="__wdUKjPzEei3dfHtumI11Q" instantiates="__wdUJDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ApplianceVmManagementIpChecker" id="__wdUKzPzEei3dfHtumI11Q" instantiates="__wdUJTPzEei3dfHtumI11Q"/>
+    <assmComponents id="__wty1DPzEei3dfHtumI11Q" instantiates="__wty0DPzEei3dfHtumI11Q"/>
+    <assmComponents id="__wty1TPzEei3dfHtumI11Q" instantiates="__wty0TPzEei3dfHtumI11Q"/>
+    <assmComponents id="__wty1jPzEei3dfHtumI11Q" instantiates="__wty0jPzEei3dfHtumI11Q"/>
+    <assmComponents id="__wty1zPzEei3dfHtumI11Q" instantiates="__wty0zPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BackupStorageManager&quot;" id="__w9qcjPzEei3dfHtumI11Q" instantiates="__w9DYDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BackupStorageApiInterceptor&quot;" id="__w9qczPzEei3dfHtumI11Q" instantiates="__w9DYTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BackupStorageExtensionPointEmitter&quot;" id="__w9qdDPzEei3dfHtumI11Q" instantiates="__w9DYjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BackupStorageCascadeExtension&quot;" id="__w9qdTPzEei3dfHtumI11Q" instantiates="__w9DYzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BackupStoragePingTracker&quot;" id="__w9qdjPzEei3dfHtumI11Q" instantiates="__w9qcDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DefaultBackupStorageAllocatorStrategyFactory&quot;" id="__w9qdzPzEei3dfHtumI11Q" instantiates="__w9qcTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;CascadeFacade&quot;" id="__xMT8TPzEei3dfHtumI11Q" instantiates="__xMT8DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;TimeoutManager&quot;" id="__xpm8TPzEei3dfHtumI11Q" instantiates="__xo_4DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;CloudBus&quot;" id="__xpm8jPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EventFacade&quot;" id="__xpm8zPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ResourceDestinationMaker&quot;" id="__xpm9DPzEei3dfHtumI11Q" instantiates="__xo_4zPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;MessageIntegrityChecker&quot;" id="__xpm9TPzEei3dfHtumI11Q" instantiates="__xpm8DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ClusterManager&quot;" id="__x3pZjPzEei3dfHtumI11Q" instantiates="__x3pYDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BaseClusterFactory&quot;" id="__x3pZzPzEei3dfHtumI11Q" instantiates="__x3pYTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ClusterApiInterceptor&quot;" id="__x3paDPzEei3dfHtumI11Q" instantiates="__x3pYjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ClusterExtensionToZone&quot;" id="__x3paTPzEei3dfHtumI11Q" instantiates="__x3pYzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ClusterExtensionPointEmitter&quot;" id="__x3pajPzEei3dfHtumI11Q" instantiates="__x3pZDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ClusterCascadeExtension&quot;" id="__x3pazPzEei3dfHtumI11Q" instantiates="__x3pZTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ConfigurationManager&quot;" id="__yGS4zPzEei3dfHtumI11Q" instantiates="__yFr0DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ConfigurationApiInterceptor&quot;" id="__yGS5DPzEei3dfHtumI11Q" instantiates="__yFr0TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;UserVmInstanceOfferingFactory&quot;" id="__yGS5TPzEei3dfHtumI11Q" instantiates="__yFr0jPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DefaultDiskOfferingFactory&quot;" id="__yGS5jPzEei3dfHtumI11Q" instantiates="__yGS4DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DiskOfferingCascadeExtension&quot;" id="__yGS5zPzEei3dfHtumI11Q" instantiates="__yGS4TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;InstanceOfferingCascadeExtension&quot;" id="__yGS6DPzEei3dfHtumI11Q" instantiates="__yGS4jPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ConsoleManager&quot;" id="__yVjdDPzEei3dfHtumI11Q" instantiates="__yVjcDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ConsoleApiInterceptor&quot;" id="__yVjdTPzEei3dfHtumI11Q" instantiates="__yVjcTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ConsoleProxyAgentTracker&quot;" id="__yVjdjPzEei3dfHtumI11Q" instantiates="__yVjcjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ManagementServerConsoleProxyBackend&quot;" id="__yVjdzPzEei3dfHtumI11Q" instantiates="__yVjczPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;CronJobFactory&quot;" id="__yk0ATPzEei3dfHtumI11Q" instantiates="__yk0ADPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DbDeadlockAspect&quot;" id="__y0ElTPzEei3dfHtumI11Q" instantiates="__yzdgDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="__y0EljPzEei3dfHtumI11Q" instantiates="__yzdgTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DbFacadeDataSource&quot;" id="__y0ElzPzEei3dfHtumI11Q" instantiates="__yzdgjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ExtraDataSource&quot;" id="__y0EmDPzEei3dfHtumI11Q" instantiates="__yzdgjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;entityManagerFactory&quot;" id="__y0EmTPzEei3dfHtumI11Q" instantiates="__yzdgzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;databaseFacade&quot;" id="__y0EmjPzEei3dfHtumI11Q" instantiates="__yzdhDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DbEntityLister&quot;" id="__y0roDPzEei3dfHtumI11Q" instantiates="__yzdhTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DebugManager&quot;" id="__zDVITPzEei3dfHtumI11Q" instantiates="__zDVIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DeletionFacade&quot;" id="__zRXkTPzEei3dfHtumI11Q" instantiates="__zRXkDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EipManager&quot;" id="__zgoIDPzEei3dfHtumI11Q" instantiates="__zgBEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EipExtension&quot;" id="__zgoITPzEei3dfHtumI11Q" instantiates="__zgBETPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EipApiInterceptor&quot;" id="__zgoIjPzEei3dfHtumI11Q" instantiates="__zgBEjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EipCascadeExtension&quot;" id="__zgoIzPzEei3dfHtumI11Q" instantiates="__zgBEzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EncryptRSA&quot;" id="__zuqlTPzEei3dfHtumI11Q" instantiates="__zuqkDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EncryptAspect&quot;" id="__zuqljPzEei3dfHtumI11Q" instantiates="__zuqkTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DecryptAspect&quot;" id="__zvRoDPzEei3dfHtumI11Q" instantiates="__zuqkjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EncryptManager&quot;" id="__zvRoTPzEei3dfHtumI11Q" instantiates="__zuqkzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EncryptApiInterceptor&quot;" id="__zvRojPzEei3dfHtumI11Q" instantiates="__zuqlDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ErrorFacade&quot;" id="__z9UETPzEei3dfHtumI11Q" instantiates="__z9UEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ExternalServiceManager&quot;" id="__0MkoDPzEei3dfHtumI11Q" instantiates="__0L9kDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;GarbageCollectorManager&quot;" id="__069YTPzEei3dfHtumI11Q" instantiates="__06WUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;GCApiInterceptor&quot;" id="__069YjPzEei3dfHtumI11Q" instantiates="__069YDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;GlobalConfigFacade&quot;" id="__1I_0jPzEei3dfHtumI11Q" instantiates="__1I_0DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;GlobalConfigApiInterceptor&quot;" id="__1I_0zPzEei3dfHtumI11Q" instantiates="__1I_0TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostCpuOverProvisioningManager&quot;" id="__1Y3czPzEei3dfHtumI11Q" instantiates="__1YQYDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostCapacityOverProvisioningManager&quot;" id="__1Y3dDPzEei3dfHtumI11Q" instantiates="__1YQYTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostAllocatorManager&quot;" id="__1Y3dTPzEei3dfHtumI11Q" instantiates="__1YQYjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostCapacityReserveManager&quot;" id="__1Y3djPzEei3dfHtumI11Q" instantiates="__1YQYzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostAllocatorApiInterceptor&quot;" id="__1Y3dzPzEei3dfHtumI11Q" instantiates="__1YQZDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LeastVmPreferredHostAllocatorStrategyFactory&quot;" id="__1Y3eDPzEei3dfHtumI11Q" instantiates="__1YQZTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DefaultHostAllocatorStrategyFactory&quot;" id="__1Y3eTPzEei3dfHtumI11Q" instantiates="__1YQZjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DesignatedHostAllocatorStrategyFactory&quot;" id="__1Y3ejPzEei3dfHtumI11Q" instantiates="__1Y3cDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LastHostPreferredAllocatorStrategyFactory&quot;" id="__1Y3ezPzEei3dfHtumI11Q" instantiates="__1Y3cTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;MigrateVmHostAllocatorStrategyFactory&quot;" id="__1Y3fDPzEei3dfHtumI11Q" instantiates="__1Y3cjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostManager&quot;" id="__1ovEDPzEei3dfHtumI11Q" instantiates="__1oIADPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostTracker&quot;" id="__1ovETPzEei3dfHtumI11Q" instantiates="__1oIATPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostExtensionToCluster&quot;" id="__1ovEjPzEei3dfHtumI11Q" instantiates="__1oIAjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostExtensionPointEmitter&quot;" id="__1ovEzPzEei3dfHtumI11Q" instantiates="__1oIAzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostApiInterceptor&quot;" id="__1ovFDPzEei3dfHtumI11Q" instantiates="__1oIBDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostCascadeExtension&quot;" id="__1ovFTPzEei3dfHtumI11Q" instantiates="__1oIBTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ImageManager&quot;" id="__13YlDPzEei3dfHtumI11Q" instantiates="__12xgDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ImageApiInterceptor&quot;" id="__13YlTPzEei3dfHtumI11Q" instantiates="__12xgTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DefaultImageFactory&quot;" id="__13YljPzEei3dfHtumI11Q" instantiates="__13YkDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ImageCascadeExtension&quot;" id="__13YlzPzEei3dfHtumI11Q" instantiates="__13YkTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ImageUpgradeExtension&quot;" id="__13YmDPzEei3dfHtumI11Q" instantiates="__13YkjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ImageDeletionPolicyManager&quot;" id="__13YmTPzEei3dfHtumI11Q" instantiates="__13YkzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;InventoryFacade&quot;" id="__2GCETPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;JmxFacade&quot;" id="__2UrkTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;JobQueueFacade&quot;" id="__2jVETPzEei3dfHtumI11Q" instantiates="__2jVEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;JsonLabelResourceDeletionExtension&quot;" id="__2x-kTPzEei3dfHtumI11Q" instantiates="__2x-kDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KeyValueFacade&quot;" id="__3AoEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KvmHostReserveExtension&quot;" id="__3P4ozPzEei3dfHtumI11Q" instantiates="__3PRkDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMHostFactory&quot;" id="__3P4pDPzEei3dfHtumI11Q" instantiates="__3PRkTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMHostCapacityExtension&quot;" id="__3P4pTPzEei3dfHtumI11Q" instantiates="__3PRkjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMConnectExtensionForL2Network&quot;" id="__3P4pjPzEei3dfHtumI11Q" instantiates="__3PRkzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMRealizeL2NoVlanNetworkBackend&quot;" id="__3P4pzPzEei3dfHtumI11Q" instantiates="__3PRlDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMRealizeL2VlanNetworkBackend&quot;" id="__3P4qDPzEei3dfHtumI11Q" instantiates="__3PRlTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMExtensionEmitter&quot;" id="__3P4qTPzEei3dfHtumI11Q" instantiates="__3PRljPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KvmVmSyncPingTask&quot;" id="__3QfsDPzEei3dfHtumI11Q" instantiates="__3PRlzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMSecurityGroupBackend&quot;" id="__3QfsTPzEei3dfHtumI11Q" instantiates="__3PRmDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMConsoleHypervisorBackend&quot;" id="__3QfsjPzEei3dfHtumI11Q" instantiates="__3PRmTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMApiInterceptor&quot;" id="__3QfszPzEei3dfHtumI11Q" instantiates="__3P4oDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;UsernameKVMHostFilter&quot;" id="__3QftDPzEei3dfHtumI11Q" instantiates="__3P4oTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMHostAllocatorFilterExtensionPoint&quot;" id="__3QftTPzEei3dfHtumI11Q" instantiates="__3P4ojPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LoadBalancerManager&quot;" id="__3fJMzPzEei3dfHtumI11Q" instantiates="__3fJMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LoadBalancerApiInterceptor&quot;" id="__3fJNDPzEei3dfHtumI11Q" instantiates="__3fJMTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LoadBalancerExtension&quot;" id="__3fJNTPzEei3dfHtumI11Q" instantiates="__3fJMjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LdapManager&quot;" id="__3tyszPzEei3dfHtumI11Q" instantiates="__3tysDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LdapApiInterceptor&quot;" id="__3tytDPzEei3dfHtumI11Q" instantiates="__3tysTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LdapUpgradeExtension&quot;" id="__3tytTPzEei3dfHtumI11Q" instantiates="__3tysjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LongJobManager&quot;" id="__4LFsTPzEei3dfHtumI11Q" instantiates="__4KeoDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LongJobFactory&quot;" id="__4LFsjPzEei3dfHtumI11Q" instantiates="__4KeoTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LongJobApiInterceptor&quot;" id="__4LFszPzEei3dfHtumI11Q" instantiates="__4LFsDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ManagementNodeManager&quot;" id="__4ZvMDPzEei3dfHtumI11Q" instantiates="__4ZIIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ApiMediatorValidator&quot;" id="__4nxojPzEei3dfHtumI11Q" instantiates="__4nxoDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EipPortForwardingAttachableMarshaler&quot;" id="__4nxozPzEei3dfHtumI11Q" instantiates="__4nxoTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L3NetworkApiInterceptor&quot;" id="__43pRzPzEei3dfHtumI11Q" instantiates="__43CMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2NetworkApiInterceptor&quot;" id="__44QUDPzEei3dfHtumI11Q" instantiates="__43CMTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2NetworkManager&quot;" id="__44QUTPzEei3dfHtumI11Q" instantiates="__43CMjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2NoVlanL2NetworkFactory&quot;" id="__44QUjPzEei3dfHtumI11Q" instantiates="__43CMzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2NetworkExtensionPointEmitter&quot;" id="__44QUzPzEei3dfHtumI11Q" instantiates="__43CNDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L3NetworkManager&quot;" id="__44QVDPzEei3dfHtumI11Q" instantiates="__43CNTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L3BasicNetworkFactory&quot;" id="__44QVTPzEei3dfHtumI11Q" instantiates="__43CNjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L3NetworkExtensionPointEmitter&quot;" id="__44QVjPzEei3dfHtumI11Q" instantiates="__43CNzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;FirstAvailableIpAllocatorStrategy&quot;" id="__44QVzPzEei3dfHtumI11Q" instantiates="__43pQDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;RandomIpAllocatorStrategy&quot;" id="__44QWDPzEei3dfHtumI11Q" instantiates="__43pQTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;NetworkServiceManager&quot;" id="__44QWTPzEei3dfHtumI11Q" instantiates="__43pQjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2VlanNetworkFactory&quot;" id="__44QWjPzEei3dfHtumI11Q" instantiates="__43pQzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L3NetworkCascadeExtension&quot;" id="__44QWzPzEei3dfHtumI11Q" instantiates="__43pRDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2NetworkCascadeExtension&quot;" id="__443YDPzEei3dfHtumI11Q" instantiates="__43pRTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;IpRangeCascadeExtension&quot;" id="__443YTPzEei3dfHtumI11Q" instantiates="__43pRjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DhcpExtension&quot;" id="__5Hg5TPzEei3dfHtumI11Q" instantiates="__5Hg4DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SnatExtension&quot;" id="__5Hg5jPzEei3dfHtumI11Q" instantiates="__5Hg4TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DnsExtension&quot;" id="__5Hg5zPzEei3dfHtumI11Q" instantiates="__5Hg4jPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;CentralizedDnsExtension&quot;" id="__5Hg6DPzEei3dfHtumI11Q" instantiates="__5Hg4zPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;NetworkServiceApiInterceptor&quot;" id="__5Hg6TPzEei3dfHtumI11Q" instantiates="__5Hg5DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;NotificationManager&quot;" id="__5kz4TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PortForwardingManager&quot;" id="__5zdYzPzEei3dfHtumI11Q" instantiates="__5zdYDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PortForwardingApiInterceptor&quot;" id="__5zdZDPzEei3dfHtumI11Q" instantiates="__5zdYTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PortForwardingExtension&quot;" id="__5zdZTPzEei3dfHtumI11Q" instantiates="__5zdYjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageManager&quot;" id="__6DVCjPzEei3dfHtumI11Q" instantiates="__6DVADPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageApiInterceptor&quot;" id="__6D8EDPzEei3dfHtumI11Q" instantiates="__6DVATPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DefaultPrimaryStorageAllocatorFactory&quot;" id="__6D8ETPzEei3dfHtumI11Q" instantiates="__6DVAjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageExtensionPointEmitter&quot;" id="__6D8EjPzEei3dfHtumI11Q" instantiates="__6DVAzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageCascadeExtension&quot;" id="__6D8EzPzEei3dfHtumI11Q" instantiates="__6DVBDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageTagAllocatorExtension&quot;" id="__6D8FDPzEei3dfHtumI11Q" instantiates="__6DVBTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageDiskCapacityTracer&quot;" id="__6D8FTPzEei3dfHtumI11Q" instantiates="__6DVBjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageOverProvisioningManager&quot;" id="__6D8FjPzEei3dfHtumI11Q" instantiates="__6DVBzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStoragePhysicalCapacityManager&quot;" id="__6D8FzPzEei3dfHtumI11Q" instantiates="__6DVCDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStoragePingTracker&quot;" id="__6D8GDPzEei3dfHtumI11Q" instantiates="__6DVCTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ProgressReportService&quot;" id="__6SlkjPzEei3dfHtumI11Q" instantiates="__6SlkDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ProgressApiInterceptor&quot;" id="__6SlkzPzEei3dfHtumI11Q" instantiates="__6SlkTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ProgressBarFacade&quot;" id="__6hPETPzEei3dfHtumI11Q" instantiates="__6hPEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PuppetFacade&quot;" id="__6v4kTPzEei3dfHtumI11Q" instantiates="__6v4kDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;QueryFacade&quot;" id="__6-iEzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;MysqlQueryBuilder&quot;" id="__6-iFDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;MysqlQueryBuilderFactory&quot;" id="__6-iFTPzEei3dfHtumI11Q" instantiates="__6-iEjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;MysqlAsyncRestStore&quot;" id="__7NLkjPzEei3dfHtumI11Q" instantiates="__7NLkDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;RestServer&quot;" id="__7NLkzPzEei3dfHtumI11Q" instantiates="__7NLkTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;RESTFacade&quot;" id="__7ccJTPzEei3dfHtumI11Q" instantiates="__7b1EDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;RESTApiFacade&quot;" id="__7ccJjPzEei3dfHtumI11Q" instantiates="__7b1ETPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;RESTApiDataSource&quot;" id="__7ccJzPzEei3dfHtumI11Q" instantiates="__7b1EjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;RESTApiEntityManagerFactory&quot;" id="__7ccKDPzEei3dfHtumI11Q" instantiates="__7b1EzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SaltFacade&quot;" id="__7rFoTPzEei3dfHtumI11Q" instantiates="__7rFoDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;InventoryIndexManager&quot;" id="__76WMjPzEei3dfHtumI11Q" instantiates="__76WMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SearchMsgValidator&quot;" id="__76WMzPzEei3dfHtumI11Q" instantiates="__76WMTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SecurityGroupManager&quot;" id="__8JmwzPzEei3dfHtumI11Q" instantiates="__8I_sDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SecurityGroupNetworkServiceExtension&quot;" id="__8JmxDPzEei3dfHtumI11Q" instantiates="__8I_sTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SecurityGroupApiInterceptor&quot;" id="__8JmxTPzEei3dfHtumI11Q" instantiates="__8I_sjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SecurityGroupExtensionEmitter&quot;" id="__8JmxjPzEei3dfHtumI11Q" instantiates="__8JmwDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SecurityGroupCascadeExtension&quot;" id="__8JmxzPzEei3dfHtumI11Q" instantiates="__8JmwTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SecurityGroupProviderFactory&quot;" id="__8JmyDPzEei3dfHtumI11Q" instantiates="__8JmwjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SftpBackupStorageManager&quot;" id="__8YQRTPzEei3dfHtumI11Q" instantiates="__8YQQDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SftpBackupStorageApiInterceptor&quot;" id="__8YQRjPzEei3dfHtumI11Q" instantiates="__8YQQTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SftpBackupStorageFactory&quot;" id="__8YQRzPzEei3dfHtumI11Q" instantiates="__8YQQjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SftpBackupStorageMetaDataMaker&quot;" id="__8YQSDPzEei3dfHtumI11Q" instantiates="__8YQQzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SftpBackupStorageDumpMetadataInfo&quot;" id="__8YQSTPzEei3dfHtumI11Q" instantiates="__8YQRDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorHostReservedCapacityExtension&quot;" id="__82KUDPzEei3dfHtumI11Q" instantiates="__81jQDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorPrimaryStorageFactory&quot;" id="__82KUTPzEei3dfHtumI11Q" instantiates="__81jQTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorBackupStorageFactory&quot;" id="__82KUjPzEei3dfHtumI11Q" instantiates="__81jQjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorConnectExtensionPointHostCapacityBackend&quot;" id="__82KUzPzEei3dfHtumI11Q" instantiates="__81jQzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorFactory&quot;" id="__82KVDPzEei3dfHtumI11Q" instantiates="__81jRDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorController&quot;" id="__82KVTPzEei3dfHtumI11Q" instantiates="__81jRTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorVmSyncPingTask&quot;" id="__82KVjPzEei3dfHtumI11Q" instantiates="__81jRjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2NoVlanNetworkRealizer&quot;" id="__82KVzPzEei3dfHtumI11Q" instantiates="__81jRzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2VlanNetworkRealizer&quot;" id="__82KWDPzEei3dfHtumI11Q" instantiates="__81jSDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorSecurityGroupBackend&quot;" id="__82KWTPzEei3dfHtumI11Q" instantiates="__81jSTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ApplianceVmSimulatorBootstrapFlowFactory&quot;" id="__82KWjPzEei3dfHtumI11Q" instantiates="__81jSjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorConfig&quot;" id="__82KWzPzEei3dfHtumI11Q" instantiates="__81jSzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ThreadFacade&quot;" id="__9TdUjPzEei3dfHtumI11Q" instantiates="__9TdUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ThreadAspectj&quot;" id="__9TdUzPzEei3dfHtumI11Q" instantiates="__9TdUTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ValidationFacade&quot;" id="__9iG0jPzEei3dfHtumI11Q" instantiates="__9iG0DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DefaultValidator&quot;" id="__9iG0zPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VipApiInterceptor&quot;" id="__9wwUzPzEei3dfHtumI11Q" instantiates="__9wwUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VipCascadeExtension&quot;" id="__9wwVDPzEei3dfHtumI11Q" instantiates="__9wwUTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VipManager&quot;" id="__9xXYDPzEei3dfHtumI11Q" instantiates="__9wwUjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterApiInterceptor&quot;" id="__-B2EDPzEei3dfHtumI11Q" instantiates="__-An8DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterApplianceVmFactory&quot;" id="__-B2ETPzEei3dfHtumI11Q" instantiates="__-An8TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterManager&quot;" id="__-B2EjPzEei3dfHtumI11Q" instantiates="__-An8jPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterPingTracker&quot;" id="__-B2EzPzEei3dfHtumI11Q" instantiates="__-An8zPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterProviderFactory&quot;" id="__-B2FDPzEei3dfHtumI11Q" instantiates="__-An9DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterOfferingFactory&quot;" id="__-B2FTPzEei3dfHtumI11Q" instantiates="__-An9TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterKvmBackend&quot;" id="__-B2FjPzEei3dfHtumI11Q" instantiates="__-An9jPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterVipBackend&quot;" id="__-B2FzPzEei3dfHtumI11Q" instantiates="__-An9zPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterDhcpBackend&quot;" id="__-B2GDPzEei3dfHtumI11Q" instantiates="__-An-DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterSnatBackend&quot;" id="__-B2GTPzEei3dfHtumI11Q" instantiates="__-An-TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterDnsBackend&quot;" id="__-CdIDPzEei3dfHtumI11Q" instantiates="__-BPADPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterCentralizedDnsBackend&quot;" id="__-CdITPzEei3dfHtumI11Q" instantiates="__-BPATPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterEipBackend&quot;" id="__-CdIjPzEei3dfHtumI11Q" instantiates="__-BPAjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterOfferingCascadeExtension&quot;" id="__-CdIzPzEei3dfHtumI11Q" instantiates="__-BPAzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterPortForwardingBackend&quot;" id="__-CdJDPzEei3dfHtumI11Q" instantiates="__-BPBDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterLoadBalancerBackend&quot;" id="__-CdJTPzEei3dfHtumI11Q" instantiates="__-BPBTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterVipFactory&quot;" id="__-CdJjPzEei3dfHtumI11Q" instantiates="__-BPBjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmInstanceManager&quot;" id="__-SUxzPzEei3dfHtumI11Q" instantiates="__-SUwDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;UserVmFactory&quot;" id="__-SUyDPzEei3dfHtumI11Q" instantiates="__-SUwTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmInstanceExtensionPointEmitter&quot;" id="__-SUyTPzEei3dfHtumI11Q" instantiates="__-SUwjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmInstanceNotifyPointEmitter&quot;" id="__-SUyjPzEei3dfHtumI11Q" instantiates="__-SUwzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmInstanceApiInterceptor&quot;" id="__-SUyzPzEei3dfHtumI11Q" instantiates="__-SUxDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmCascadeExtension&quot;" id="__-S70DPzEei3dfHtumI11Q" instantiates="__-SUxTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmInstanceDeletionPolicyManager&quot;" id="__-S70TPzEei3dfHtumI11Q" instantiates="__-SUxjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeManager&quot;" id="__-hlWjPzEei3dfHtumI11Q" instantiates="__-hlUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeApiInterceptor&quot;" id="__-hlWzPzEei3dfHtumI11Q" instantiates="__-hlUTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeCascadeExtension&quot;" id="__-hlXDPzEei3dfHtumI11Q" instantiates="__-hlUjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DetachDataVolumeOnVmDestroyedExtension&quot;" id="__-iMYDPzEei3dfHtumI11Q" instantiates="__-hlUzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;InstantiateVolumeForNewCreatedVmExtension&quot;" id="__-iMYTPzEei3dfHtumI11Q" instantiates="__-hlVDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DownloadIsoForVmExtension&quot;" id="__-iMYjPzEei3dfHtumI11Q" instantiates="__-hlVTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeDeletionPolicyManager&quot;" id="__-iMYzPzEei3dfHtumI11Q" instantiates="__-hlVjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeUpgradeExtension&quot;" id="__-iMZDPzEei3dfHtumI11Q" instantiates="__-hlVzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;InstantiateVolumeForVmChangeImageExtension&quot;" id="__-iMZTPzEei3dfHtumI11Q" instantiates="__-hlWDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DownloadIsoForVmChangeImageExtension&quot;" id="__-iMZjPzEei3dfHtumI11Q" instantiates="__-hlWTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeSnapshotManager&quot;" id="__-w14zPzEei3dfHtumI11Q" instantiates="__-w14DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeSnapshotApiInterceptor&quot;" id="__-w15DPzEei3dfHtumI11Q" instantiates="__-w14TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeSnapshotCascadeExtension&quot;" id="__-w15TPzEei3dfHtumI11Q" instantiates="__-w14jPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2VxlanNetworkPoolFactory&quot;" id="___AtgzPzEei3dfHtumI11Q" instantiates="___AGcDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2VxlanNetworkFactory&quot;" id="___AthDPzEei3dfHtumI11Q" instantiates="___AGcTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;RandomVniAllocatorStrategy&quot;" id="___AthTPzEei3dfHtumI11Q" instantiates="___AGcjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;InstantiateVxlanNetworkForNewCreatedVmExtension&quot;" id="___AthjPzEei3dfHtumI11Q" instantiates="___AGczPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VxlanPoolApiInterceptor&quot;" id="___AthzPzEei3dfHtumI11Q" instantiates="___AGdDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2VxlanNetworkPool&quot;" id="___AtiDPzEei3dfHtumI11Q" instantiates="___AGdTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VxlanNetwork&quot;" id="___AtiTPzEei3dfHtumI11Q" instantiates="___AGdjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VxlanNetworkChecker&quot;" id="___AtijPzEei3dfHtumI11Q" instantiates="___AGdzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMConnectExtensionForVxlanNetwork&quot;" id="___AtizPzEei3dfHtumI11Q" instantiates="___AGeDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMRealizeL2VxlanNetworkBackend&quot;" id="___BUkDPzEei3dfHtumI11Q" instantiates="___AtgDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMRealizeL2VxlanNetworkPoolBackend&quot;" id="___BUkTPzEei3dfHtumI11Q" instantiates="___AtgTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VtepCascadeExtension&quot;" id="___BUkjPzEei3dfHtumI11Q" instantiates="___AtgjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosVmFactory&quot;" id="___RMMTPzEei3dfHtumI11Q" instantiates="___QlIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosDhcpBackend&quot;" id="___RMMjPzEei3dfHtumI11Q" instantiates="___QlITPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosSnatBackend&quot;" id="___RMMzPzEei3dfHtumI11Q" instantiates="___QlIjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosDnsBackend&quot;" id="___RMNDPzEei3dfHtumI11Q" instantiates="___QlIzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosCentralizedDnsBackend&quot;" id="___RMNTPzEei3dfHtumI11Q" instantiates="___QlJDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosEipBackend&quot;" id="___RMNjPzEei3dfHtumI11Q" instantiates="___QlJTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosLbBackend&quot;" id="___RMNzPzEei3dfHtumI11Q" instantiates="___QlJjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosPortForwardingBackend&quot;" id="___RMODPzEei3dfHtumI11Q" instantiates="___QlJzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosVipBackend&quot;" id="___RMOTPzEei3dfHtumI11Q" instantiates="___QlKDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosVipFactory&quot;" id="___RMOjPzEei3dfHtumI11Q" instantiates="___RMMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;WebhookManager&quot;" id="___f1sjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;WebhookApiInterceptor&quot;" id="___f1szPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ZoneManager&quot;" id="___t4JTPzEei3dfHtumI11Q" instantiates="___t4IDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ZoneApiInterceptor&quot;" id="___ufMDPzEei3dfHtumI11Q" instantiates="___t4ITPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BaseZoneFactory&quot;" id="___ufMTPzEei3dfHtumI11Q" instantiates="___t4IjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ZoneExtensionPointEmitter&quot;" id="___ufMjPzEei3dfHtumI11Q" instantiates="___t4IzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ZoneCascadeExtension&quot;" id="___ufMzPzEei3dfHtumI11Q" instantiates="___t4JDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;parentContext&quot;" id="_AAnQATP0Eei3dfHtumI11Q" instantiates="_AAnQADP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;parentContext&quot;" id="_AA15gTP0Eei3dfHtumI11Q" instantiates="_AA15gDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ApplianceVmConfig&quot;" id="_ABEjADP0Eei3dfHtumI11Q" instantiates="_ABD78DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ConsoleProxySimulatorConfig&quot;" id="_ABSlcTP0Eei3dfHtumI11Q" instantiates="_ABSlcDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeSnapshotKvmSimulator&quot;" id="_ABkSQjP0Eei3dfHtumI11Q" instantiates="_ABkSQDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMSimulatorConfig&quot;" id="_ABkSQzP0Eei3dfHtumI11Q" instantiates="_ABkSQTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;NfsPrimaryStorageSimulatorConfig&quot;" id="_ABzi0TP0Eei3dfHtumI11Q" instantiates="_ABzi0DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SftpBackupStorageSimulatorConfig&quot;" id="_ACEokTP0Eei3dfHtumI11Q" instantiates="_ACEokDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterConfig&quot;" id="_ACXjgTP0Eei3dfHtumI11Q" instantiates="_ACXjgDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;AccountManager&quot;" id="_ACnbITP0Eei3dfHtumI11Q" instantiates="_ACm0EDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;AccountSubQueryExtension&quot;" id="_ACnbIjP0Eei3dfHtumI11Q" instantiates="_ACm0ETP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;QuotaChecker&quot;" id="_ACnbIzP0Eei3dfHtumI11Q" instantiates="_ACm0EjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;AccountCascadeExtension&quot;" id="_ACnbJDP0Eei3dfHtumI11Q" instantiates="_ACnbIDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;AnsibleFacade&quot;" id="_AC1dkTP0Eei3dfHtumI11Q" instantiates="_AC1dkDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ApiMediator&quot;" id="_ADEHETP0Eei3dfHtumI11Q" instantiates="_ADEHEDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ApplianceVmFacade&quot;" id="_ADTXpDP0Eei3dfHtumI11Q" instantiates="_ADSwkDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ApplianceVmFactory&quot;" id="_ADTXpTP0Eei3dfHtumI11Q" instantiates="_ADSwkTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ApplianceVmKvmBackend&quot;" id="_ADTXpjP0Eei3dfHtumI11Q" instantiates="_ADTXoDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ApplianceVmKvmBootstrapFlowFactory&quot;" id="_ADTXpzP0Eei3dfHtumI11Q" instantiates="_ADTXoTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ApplianceVmCascadeExtension&quot;" id="_ADTXqDP0Eei3dfHtumI11Q" instantiates="_ADTXojP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ApplianceVmManagementIpChecker&quot;" id="_ADTXqTP0Eei3dfHtumI11Q" instantiates="_ADTXozP0Eei3dfHtumI11Q"/>
+    <assmComponents id="_ADioNDP0Eei3dfHtumI11Q" instantiates="_ADioMDP0Eei3dfHtumI11Q"/>
+    <assmComponents id="_ADioNTP0Eei3dfHtumI11Q" instantiates="_ADioMTP0Eei3dfHtumI11Q"/>
+    <assmComponents id="_ADioNjP0Eei3dfHtumI11Q" instantiates="_ADioMjP0Eei3dfHtumI11Q"/>
+    <assmComponents id="_ADioNzP0Eei3dfHtumI11Q" instantiates="_ADioMzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BackupStorageManager&quot;" id="_ADwqpjP0Eei3dfHtumI11Q" instantiates="_ADwqoDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BackupStorageApiInterceptor&quot;" id="_ADwqpzP0Eei3dfHtumI11Q" instantiates="_ADwqoTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BackupStorageExtensionPointEmitter&quot;" id="_ADwqqDP0Eei3dfHtumI11Q" instantiates="_ADwqojP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BackupStorageCascadeExtension&quot;" id="_ADxRsDP0Eei3dfHtumI11Q" instantiates="_ADwqozP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BackupStoragePingTracker&quot;" id="_ADxRsTP0Eei3dfHtumI11Q" instantiates="_ADwqpDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DefaultBackupStorageAllocatorStrategyFactory&quot;" id="_ADxRsjP0Eei3dfHtumI11Q" instantiates="_ADwqpTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;CascadeFacade&quot;" id="_AD_UITP0Eei3dfHtumI11Q" instantiates="_AD_UIDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;TimeoutManager&quot;" id="_AEcnIzP0Eei3dfHtumI11Q" instantiates="_AEcAEDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;CloudBus&quot;" id="_AEcnJDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EventFacade&quot;" id="_AEcnJTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ResourceDestinationMaker&quot;" id="_AEcnJjP0Eei3dfHtumI11Q" instantiates="_AEcnITP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;MessageIntegrityChecker&quot;" id="_AEcnJzP0Eei3dfHtumI11Q" instantiates="_AEcnIjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ClusterManager&quot;" id="_AErQpjP0Eei3dfHtumI11Q" instantiates="_AErQoDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BaseClusterFactory&quot;" id="_AErQpzP0Eei3dfHtumI11Q" instantiates="_AErQoTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ClusterApiInterceptor&quot;" id="_AErQqDP0Eei3dfHtumI11Q" instantiates="_AErQojP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ClusterExtensionToZone&quot;" id="_AErQqTP0Eei3dfHtumI11Q" instantiates="_AErQozP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ClusterExtensionPointEmitter&quot;" id="_AErQqjP0Eei3dfHtumI11Q" instantiates="_AErQpDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ClusterCascadeExtension&quot;" id="_AEr3sDP0Eei3dfHtumI11Q" instantiates="_AErQpTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ConfigurationManager&quot;" id="_AE6hNjP0Eei3dfHtumI11Q" instantiates="_AE6hMDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ConfigurationApiInterceptor&quot;" id="_AE6hNzP0Eei3dfHtumI11Q" instantiates="_AE6hMTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;UserVmInstanceOfferingFactory&quot;" id="_AE6hODP0Eei3dfHtumI11Q" instantiates="_AE6hMjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DefaultDiskOfferingFactory&quot;" id="_AE7IQDP0Eei3dfHtumI11Q" instantiates="_AE6hMzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DiskOfferingCascadeExtension&quot;" id="_AE7IQTP0Eei3dfHtumI11Q" instantiates="_AE6hNDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;InstanceOfferingCascadeExtension&quot;" id="_AE7IQjP0Eei3dfHtumI11Q" instantiates="_AE6hNTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ConsoleManager&quot;" id="_AFJxxDP0Eei3dfHtumI11Q" instantiates="_AFJxwDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ConsoleApiInterceptor&quot;" id="_AFJxxTP0Eei3dfHtumI11Q" instantiates="_AFJxwTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ConsoleProxyAgentTracker&quot;" id="_AFJxxjP0Eei3dfHtumI11Q" instantiates="_AFJxwjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ManagementServerConsoleProxyBackend&quot;" id="_AFJxxzP0Eei3dfHtumI11Q" instantiates="_AFJxwzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;CronJobFactory&quot;" id="_AFYbQTP0Eei3dfHtumI11Q" instantiates="_AFYbQDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DbDeadlockAspect&quot;" id="_AFoS4DP0Eei3dfHtumI11Q" instantiates="_AFnEwDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_AFoS4TP0Eei3dfHtumI11Q" instantiates="_AFnr0DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DbFacadeDataSource&quot;" id="_AFoS4jP0Eei3dfHtumI11Q" instantiates="_AFnr0TP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ExtraDataSource&quot;" id="_AFoS4zP0Eei3dfHtumI11Q" instantiates="_AFnr0TP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;entityManagerFactory&quot;" id="_AFoS5DP0Eei3dfHtumI11Q" instantiates="_AFnr0jP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;databaseFacade&quot;" id="_AFoS5TP0Eei3dfHtumI11Q" instantiates="_AFnr0zP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DbEntityLister&quot;" id="_AFoS5jP0Eei3dfHtumI11Q" instantiates="_AFnr1DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DebugManager&quot;" id="_AF28YTP0Eei3dfHtumI11Q" instantiates="_AF28YDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DeletionFacade&quot;" id="_AGGM8DP0Eei3dfHtumI11Q" instantiates="_AGFl4DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EipManager&quot;" id="_AGUPZDP0Eei3dfHtumI11Q" instantiates="_AGUPYDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EipExtension&quot;" id="_AGUPZTP0Eei3dfHtumI11Q" instantiates="_AGUPYTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EipApiInterceptor&quot;" id="_AGUPZjP0Eei3dfHtumI11Q" instantiates="_AGUPYjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EipCascadeExtension&quot;" id="_AGU2cDP0Eei3dfHtumI11Q" instantiates="_AGUPYzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EncryptRSA&quot;" id="_AGjf9TP0Eei3dfHtumI11Q" instantiates="_AGjf8DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EncryptAspect&quot;" id="_AGjf9jP0Eei3dfHtumI11Q" instantiates="_AGjf8TP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DecryptAspect&quot;" id="_AGjf9zP0Eei3dfHtumI11Q" instantiates="_AGjf8jP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EncryptManager&quot;" id="_AGjf-DP0Eei3dfHtumI11Q" instantiates="_AGjf8zP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EncryptApiInterceptor&quot;" id="_AGjf-TP0Eei3dfHtumI11Q" instantiates="_AGjf9DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ErrorFacade&quot;" id="_AGywgDP0Eei3dfHtumI11Q" instantiates="_AGyJcDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ExternalServiceManager&quot;" id="_AHAy8TP0Eei3dfHtumI11Q" instantiates="_AHAy8DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;GarbageCollectorManager&quot;" id="_AHsIYjP0Eei3dfHtumI11Q" instantiates="_AHsIYDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;GCApiInterceptor&quot;" id="_AHsIYzP0Eei3dfHtumI11Q" instantiates="_AHsIYTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;GlobalConfigFacade&quot;" id="_AH6x4jP0Eei3dfHtumI11Q" instantiates="_AH6x4DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;GlobalConfigApiInterceptor&quot;" id="_AH6x4zP0Eei3dfHtumI11Q" instantiates="_AH6x4TP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostCpuOverProvisioningManager&quot;" id="_AIKpgzP0Eei3dfHtumI11Q" instantiates="_AIKCcDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostCapacityOverProvisioningManager&quot;" id="_AIKphDP0Eei3dfHtumI11Q" instantiates="_AIKCcTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostAllocatorManager&quot;" id="_AIKphTP0Eei3dfHtumI11Q" instantiates="_AIKCcjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostCapacityReserveManager&quot;" id="_AIKphjP0Eei3dfHtumI11Q" instantiates="_AIKCczP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostAllocatorApiInterceptor&quot;" id="_AIKphzP0Eei3dfHtumI11Q" instantiates="_AIKCdDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LeastVmPreferredHostAllocatorStrategyFactory&quot;" id="_AIKpiDP0Eei3dfHtumI11Q" instantiates="_AIKCdTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DefaultHostAllocatorStrategyFactory&quot;" id="_AIKpiTP0Eei3dfHtumI11Q" instantiates="_AIKCdjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DesignatedHostAllocatorStrategyFactory&quot;" id="_AIKpijP0Eei3dfHtumI11Q" instantiates="_AIKpgDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LastHostPreferredAllocatorStrategyFactory&quot;" id="_AIKpizP0Eei3dfHtumI11Q" instantiates="_AIKpgTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;MigrateVmHostAllocatorStrategyFactory&quot;" id="_AIKpjDP0Eei3dfHtumI11Q" instantiates="_AIKpgjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostManager&quot;" id="_AIZTBjP0Eei3dfHtumI11Q" instantiates="_AIZTADP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostTracker&quot;" id="_AIZTBzP0Eei3dfHtumI11Q" instantiates="_AIZTATP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostExtensionToCluster&quot;" id="_AIZTCDP0Eei3dfHtumI11Q" instantiates="_AIZTAjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostExtensionPointEmitter&quot;" id="_AIZTCTP0Eei3dfHtumI11Q" instantiates="_AIZTAzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostApiInterceptor&quot;" id="_AIZTCjP0Eei3dfHtumI11Q" instantiates="_AIZTBDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HostCascadeExtension&quot;" id="_AIZTCzP0Eei3dfHtumI11Q" instantiates="_AIZTBTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ImageManager&quot;" id="_AIojljP0Eei3dfHtumI11Q" instantiates="_AIojkDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ImageApiInterceptor&quot;" id="_AIojlzP0Eei3dfHtumI11Q" instantiates="_AIojkTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DefaultImageFactory&quot;" id="_AIojmDP0Eei3dfHtumI11Q" instantiates="_AIojkjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ImageCascadeExtension&quot;" id="_AIojmTP0Eei3dfHtumI11Q" instantiates="_AIojkzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ImageUpgradeExtension&quot;" id="_AIojmjP0Eei3dfHtumI11Q" instantiates="_AIojlDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ImageDeletionPolicyManager&quot;" id="_AIojmzP0Eei3dfHtumI11Q" instantiates="_AIojlTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;InventoryFacade&quot;" id="_AI30ITP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;JmxFacade&quot;" id="_AJF2kTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;JobQueueFacade&quot;" id="_AJUgETP0Eei3dfHtumI11Q" instantiates="_AJUgEDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;JsonLabelResourceDeletionExtension&quot;" id="_AJjJkTP0Eei3dfHtumI11Q" instantiates="_AJjJkDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KeyValueFacade&quot;" id="_AJxzETP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KvmHostReserveExtension&quot;" id="_AKBDpzP0Eei3dfHtumI11Q" instantiates="_AKAckDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMHostFactory&quot;" id="_AKBqsDP0Eei3dfHtumI11Q" instantiates="_AKAckTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMHostCapacityExtension&quot;" id="_AKBqsTP0Eei3dfHtumI11Q" instantiates="_AKAckjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMConnectExtensionForL2Network&quot;" id="_AKBqsjP0Eei3dfHtumI11Q" instantiates="_AKAckzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMRealizeL2NoVlanNetworkBackend&quot;" id="_AKBqszP0Eei3dfHtumI11Q" instantiates="_AKAclDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMRealizeL2VlanNetworkBackend&quot;" id="_AKBqtDP0Eei3dfHtumI11Q" instantiates="_AKAclTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMExtensionEmitter&quot;" id="_AKBqtTP0Eei3dfHtumI11Q" instantiates="_AKBDoDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KvmVmSyncPingTask&quot;" id="_AKBqtjP0Eei3dfHtumI11Q" instantiates="_AKBDoTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMSecurityGroupBackend&quot;" id="_AKBqtzP0Eei3dfHtumI11Q" instantiates="_AKBDojP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMConsoleHypervisorBackend&quot;" id="_AKBquDP0Eei3dfHtumI11Q" instantiates="_AKBDozP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMApiInterceptor&quot;" id="_AKBquTP0Eei3dfHtumI11Q" instantiates="_AKBDpDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;UsernameKVMHostFilter&quot;" id="_AKBqujP0Eei3dfHtumI11Q" instantiates="_AKBDpTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMHostAllocatorFilterExtensionPoint&quot;" id="_AKBquzP0Eei3dfHtumI11Q" instantiates="_AKBDpjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LoadBalancerManager&quot;" id="_AKQUMzP0Eei3dfHtumI11Q" instantiates="_AKQUMDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LoadBalancerApiInterceptor&quot;" id="_AKQUNDP0Eei3dfHtumI11Q" instantiates="_AKQUMTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LoadBalancerExtension&quot;" id="_AKQUNTP0Eei3dfHtumI11Q" instantiates="_AKQUMjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LdapManager&quot;" id="_AKe9szP0Eei3dfHtumI11Q" instantiates="_AKe9sDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LdapApiInterceptor&quot;" id="_AKe9tDP0Eei3dfHtumI11Q" instantiates="_AKe9sTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LdapUpgradeExtension&quot;" id="_AKe9tTP0Eei3dfHtumI11Q" instantiates="_AKe9sjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LongJobManager&quot;" id="_AK6bgzP0Eei3dfHtumI11Q" instantiates="_AK6bgDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LongJobFactory&quot;" id="_AK6bhDP0Eei3dfHtumI11Q" instantiates="_AK6bgTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LongJobApiInterceptor&quot;" id="_AK6bhTP0Eei3dfHtumI11Q" instantiates="_AK6bgjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ManagementNodeManager&quot;" id="_ALId8TP0Eei3dfHtumI11Q" instantiates="_ALId8DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ApiMediatorValidator&quot;" id="_ALWgYjP0Eei3dfHtumI11Q" instantiates="_ALWgYDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;EipPortForwardingAttachableMarshaler&quot;" id="_ALWgYzP0Eei3dfHtumI11Q" instantiates="_ALWgYTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L3NetworkApiInterceptor&quot;" id="_ALmYADP0Eei3dfHtumI11Q" instantiates="_ALlJ4DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2NetworkApiInterceptor&quot;" id="_ALmYATP0Eei3dfHtumI11Q" instantiates="_ALlJ4TP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2NetworkManager&quot;" id="_ALmYAjP0Eei3dfHtumI11Q" instantiates="_ALlJ4jP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2NoVlanL2NetworkFactory&quot;" id="_ALmYAzP0Eei3dfHtumI11Q" instantiates="_ALlJ4zP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2NetworkExtensionPointEmitter&quot;" id="_ALmYBDP0Eei3dfHtumI11Q" instantiates="_ALlJ5DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L3NetworkManager&quot;" id="_ALmYBTP0Eei3dfHtumI11Q" instantiates="_ALlJ5TP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L3BasicNetworkFactory&quot;" id="_ALmYBjP0Eei3dfHtumI11Q" instantiates="_ALlw8DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L3NetworkExtensionPointEmitter&quot;" id="_ALmYBzP0Eei3dfHtumI11Q" instantiates="_ALlw8TP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;FirstAvailableIpAllocatorStrategy&quot;" id="_ALmYCDP0Eei3dfHtumI11Q" instantiates="_ALlw8jP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;RandomIpAllocatorStrategy&quot;" id="_ALmYCTP0Eei3dfHtumI11Q" instantiates="_ALlw8zP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;NetworkServiceManager&quot;" id="_ALmYCjP0Eei3dfHtumI11Q" instantiates="_ALlw9DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2VlanNetworkFactory&quot;" id="_ALmYCzP0Eei3dfHtumI11Q" instantiates="_ALlw9TP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L3NetworkCascadeExtension&quot;" id="_ALm_EDP0Eei3dfHtumI11Q" instantiates="_ALlw9jP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2NetworkCascadeExtension&quot;" id="_ALm_ETP0Eei3dfHtumI11Q" instantiates="_ALlw9zP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;IpRangeCascadeExtension&quot;" id="_ALm_EjP0Eei3dfHtumI11Q" instantiates="_ALlw-DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DhcpExtension&quot;" id="_AL1BhTP0Eei3dfHtumI11Q" instantiates="_AL1BgDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SnatExtension&quot;" id="_AL1BhjP0Eei3dfHtumI11Q" instantiates="_AL1BgTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DnsExtension&quot;" id="_AL1BhzP0Eei3dfHtumI11Q" instantiates="_AL1BgjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;CentralizedDnsExtension&quot;" id="_AL1BiDP0Eei3dfHtumI11Q" instantiates="_AL1BgzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;NetworkServiceApiInterceptor&quot;" id="_AL1BiTP0Eei3dfHtumI11Q" instantiates="_AL1BhDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;NotificationManager&quot;" id="_AMRGYTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PortForwardingManager&quot;" id="_AMfI0zP0Eei3dfHtumI11Q" instantiates="_AMfI0DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PortForwardingApiInterceptor&quot;" id="_AMfI1DP0Eei3dfHtumI11Q" instantiates="_AMfI0TP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PortForwardingExtension&quot;" id="_AMfI1TP0Eei3dfHtumI11Q" instantiates="_AMfI0jP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageManager&quot;" id="_AMuZYDP0Eei3dfHtumI11Q" instantiates="_AMtyUDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageApiInterceptor&quot;" id="_AMuZYTP0Eei3dfHtumI11Q" instantiates="_AMtyUTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DefaultPrimaryStorageAllocatorFactory&quot;" id="_AMuZYjP0Eei3dfHtumI11Q" instantiates="_AMtyUjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageExtensionPointEmitter&quot;" id="_AMuZYzP0Eei3dfHtumI11Q" instantiates="_AMtyUzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageCascadeExtension&quot;" id="_AMuZZDP0Eei3dfHtumI11Q" instantiates="_AMtyVDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageTagAllocatorExtension&quot;" id="_AMuZZTP0Eei3dfHtumI11Q" instantiates="_AMtyVTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageDiskCapacityTracer&quot;" id="_AMuZZjP0Eei3dfHtumI11Q" instantiates="_AMtyVjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageOverProvisioningManager&quot;" id="_AMuZZzP0Eei3dfHtumI11Q" instantiates="_AMtyVzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStoragePhysicalCapacityManager&quot;" id="_AMuZaDP0Eei3dfHtumI11Q" instantiates="_AMtyWDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStoragePingTracker&quot;" id="_AMuZaTP0Eei3dfHtumI11Q" instantiates="_AMtyWTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ProgressReportService&quot;" id="_AM8b0jP0Eei3dfHtumI11Q" instantiates="_AM8b0DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ProgressApiInterceptor&quot;" id="_AM8b0zP0Eei3dfHtumI11Q" instantiates="_AM8b0TP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ProgressBarFacade&quot;" id="_ANLFUTP0Eei3dfHtumI11Q" instantiates="_ANLFUDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PuppetFacade&quot;" id="_ANZHwTP0Eei3dfHtumI11Q" instantiates="_ANZHwDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;QueryFacade&quot;" id="_ANnKMzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;MysqlQueryBuilder&quot;" id="_ANnKNDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;MysqlQueryBuilderFactory&quot;" id="_ANnKNTP0Eei3dfHtumI11Q" instantiates="_ANnKMjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;MysqlAsyncRestStore&quot;" id="_AN5eEjP0Eei3dfHtumI11Q" instantiates="_AN5eEDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;RestServer&quot;" id="_AN5eEzP0Eei3dfHtumI11Q" instantiates="_AN5eETP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;RESTFacade&quot;" id="_AOHgijP0Eei3dfHtumI11Q" instantiates="_AOHggDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;RESTApiFacade&quot;" id="_AOHgizP0Eei3dfHtumI11Q" instantiates="_AOHggTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;RESTApiDataSource&quot;" id="_AOHgjDP0Eei3dfHtumI11Q" instantiates="_AOHggjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;RESTApiEntityManagerFactory&quot;" id="_AOIHkDP0Eei3dfHtumI11Q" instantiates="_AOHggzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SaltFacade&quot;" id="_AOVi8TP0Eei3dfHtumI11Q" instantiates="_AOVi8DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;InventoryIndexManager&quot;" id="_AOjlYjP0Eei3dfHtumI11Q" instantiates="_AOjlYDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SearchMsgValidator&quot;" id="_AOjlYzP0Eei3dfHtumI11Q" instantiates="_AOjlYTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SecurityGroupManager&quot;" id="_AOxn1jP0Eei3dfHtumI11Q" instantiates="_AOxn0DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SecurityGroupNetworkServiceExtension&quot;" id="_AOxn1zP0Eei3dfHtumI11Q" instantiates="_AOxn0TP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SecurityGroupApiInterceptor&quot;" id="_AOxn2DP0Eei3dfHtumI11Q" instantiates="_AOxn0jP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SecurityGroupExtensionEmitter&quot;" id="_AOxn2TP0Eei3dfHtumI11Q" instantiates="_AOxn0zP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SecurityGroupCascadeExtension&quot;" id="_AOxn2jP0Eei3dfHtumI11Q" instantiates="_AOxn1DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SecurityGroupProviderFactory&quot;" id="_AOxn2zP0Eei3dfHtumI11Q" instantiates="_AOxn1TP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SftpBackupStorageManager&quot;" id="_AO_qRTP0Eei3dfHtumI11Q" instantiates="_AO_qQDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SftpBackupStorageApiInterceptor&quot;" id="_AO_qRjP0Eei3dfHtumI11Q" instantiates="_AO_qQTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SftpBackupStorageFactory&quot;" id="_AO_qRzP0Eei3dfHtumI11Q" instantiates="_AO_qQjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SftpBackupStorageMetaDataMaker&quot;" id="_AO_qSDP0Eei3dfHtumI11Q" instantiates="_AO_qQzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SftpBackupStorageDumpMetadataInfo&quot;" id="_AO_qSTP0Eei3dfHtumI11Q" instantiates="_AO_qRDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorHostReservedCapacityExtension&quot;" id="_APcWOTP0Eei3dfHtumI11Q" instantiates="_APbvIDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorPrimaryStorageFactory&quot;" id="_APcWOjP0Eei3dfHtumI11Q" instantiates="_APbvITP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorBackupStorageFactory&quot;" id="_APcWOzP0Eei3dfHtumI11Q" instantiates="_APbvIjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorConnectExtensionPointHostCapacityBackend&quot;" id="_APcWPDP0Eei3dfHtumI11Q" instantiates="_APcWMDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorFactory&quot;" id="_APc9QDP0Eei3dfHtumI11Q" instantiates="_APcWMTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorController&quot;" id="_APc9QTP0Eei3dfHtumI11Q" instantiates="_APcWMjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorVmSyncPingTask&quot;" id="_APc9QjP0Eei3dfHtumI11Q" instantiates="_APcWMzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2NoVlanNetworkRealizer&quot;" id="_APc9QzP0Eei3dfHtumI11Q" instantiates="_APcWNDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2VlanNetworkRealizer&quot;" id="_APc9RDP0Eei3dfHtumI11Q" instantiates="_APcWNTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorSecurityGroupBackend&quot;" id="_APc9RTP0Eei3dfHtumI11Q" instantiates="_APcWNjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ApplianceVmSimulatorBootstrapFlowFactory&quot;" id="_APc9RjP0Eei3dfHtumI11Q" instantiates="_APcWNzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SimulatorConfig&quot;" id="_APc9RzP0Eei3dfHtumI11Q" instantiates="_APcWODP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ThreadFacade&quot;" id="_AP30AjP0Eei3dfHtumI11Q" instantiates="_AP30ADP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ThreadAspectj&quot;" id="_AP30AzP0Eei3dfHtumI11Q" instantiates="_AP30ATP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ValidationFacade&quot;" id="_AQGdgDP0Eei3dfHtumI11Q" instantiates="_AQF2cDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DefaultValidator&quot;" id="_AQGdgTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VipApiInterceptor&quot;" id="_AQT44zP0Eei3dfHtumI11Q" instantiates="_AQT44DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VipCascadeExtension&quot;" id="_AQT45DP0Eei3dfHtumI11Q" instantiates="_AQT44TP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VipManager&quot;" id="_AQT45TP0Eei3dfHtumI11Q" instantiates="_AQT44jP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterApiInterceptor&quot;" id="_AQjwgTP0Eei3dfHtumI11Q" instantiates="_AQiiYDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterApplianceVmFactory&quot;" id="_AQjwgjP0Eei3dfHtumI11Q" instantiates="_AQiiYTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterManager&quot;" id="_AQjwgzP0Eei3dfHtumI11Q" instantiates="_AQiiYjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterPingTracker&quot;" id="_AQjwhDP0Eei3dfHtumI11Q" instantiates="_AQiiYzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterProviderFactory&quot;" id="_AQjwhTP0Eei3dfHtumI11Q" instantiates="_AQiiZDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterOfferingFactory&quot;" id="_AQjwhjP0Eei3dfHtumI11Q" instantiates="_AQiiZTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterKvmBackend&quot;" id="_AQjwhzP0Eei3dfHtumI11Q" instantiates="_AQiiZjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterVipBackend&quot;" id="_AQkXkDP0Eei3dfHtumI11Q" instantiates="_AQiiZzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterDhcpBackend&quot;" id="_AQkXkTP0Eei3dfHtumI11Q" instantiates="_AQjJcDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterSnatBackend&quot;" id="_AQkXkjP0Eei3dfHtumI11Q" instantiates="_AQjJcTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterDnsBackend&quot;" id="_AQkXkzP0Eei3dfHtumI11Q" instantiates="_AQjJcjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterCentralizedDnsBackend&quot;" id="_AQkXlDP0Eei3dfHtumI11Q" instantiates="_AQjJczP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterEipBackend&quot;" id="_AQkXlTP0Eei3dfHtumI11Q" instantiates="_AQjJdDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterOfferingCascadeExtension&quot;" id="_AQkXljP0Eei3dfHtumI11Q" instantiates="_AQjJdTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterPortForwardingBackend&quot;" id="_AQkXlzP0Eei3dfHtumI11Q" instantiates="_AQjJdjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterLoadBalancerBackend&quot;" id="_AQkXmDP0Eei3dfHtumI11Q" instantiates="_AQjJdzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterVipFactory&quot;" id="_AQkXmTP0Eei3dfHtumI11Q" instantiates="_AQjwgDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmInstanceManager&quot;" id="_AQzoIDP0Eei3dfHtumI11Q" instantiates="_AQzBEDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;UserVmFactory&quot;" id="_AQzoITP0Eei3dfHtumI11Q" instantiates="_AQzBETP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmInstanceExtensionPointEmitter&quot;" id="_AQzoIjP0Eei3dfHtumI11Q" instantiates="_AQzBEjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmInstanceNotifyPointEmitter&quot;" id="_AQzoIzP0Eei3dfHtumI11Q" instantiates="_AQzBEzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmInstanceApiInterceptor&quot;" id="_AQzoJDP0Eei3dfHtumI11Q" instantiates="_AQzBFDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmCascadeExtension&quot;" id="_AQzoJTP0Eei3dfHtumI11Q" instantiates="_AQzBFTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmInstanceDeletionPolicyManager&quot;" id="_AQzoJjP0Eei3dfHtumI11Q" instantiates="_AQzBFjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeManager&quot;" id="_ARBqmjP0Eei3dfHtumI11Q" instantiates="_ARBqkDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeApiInterceptor&quot;" id="_ARCRoDP0Eei3dfHtumI11Q" instantiates="_ARBqkTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeCascadeExtension&quot;" id="_ARCRoTP0Eei3dfHtumI11Q" instantiates="_ARBqkjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DetachDataVolumeOnVmDestroyedExtension&quot;" id="_ARCRojP0Eei3dfHtumI11Q" instantiates="_ARBqkzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;InstantiateVolumeForNewCreatedVmExtension&quot;" id="_ARCRozP0Eei3dfHtumI11Q" instantiates="_ARBqlDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DownloadIsoForVmExtension&quot;" id="_ARCRpDP0Eei3dfHtumI11Q" instantiates="_ARBqlTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeDeletionPolicyManager&quot;" id="_ARCRpTP0Eei3dfHtumI11Q" instantiates="_ARBqljP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeUpgradeExtension&quot;" id="_ARCRpjP0Eei3dfHtumI11Q" instantiates="_ARBqlzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;InstantiateVolumeForVmChangeImageExtension&quot;" id="_ARCRpzP0Eei3dfHtumI11Q" instantiates="_ARBqmDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DownloadIsoForVmChangeImageExtension&quot;" id="_ARCRqDP0Eei3dfHtumI11Q" instantiates="_ARBqmTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeSnapshotManager&quot;" id="_ARQUEzP0Eei3dfHtumI11Q" instantiates="_ARQUEDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeSnapshotApiInterceptor&quot;" id="_ARQUFDP0Eei3dfHtumI11Q" instantiates="_ARQUETP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeSnapshotCascadeExtension&quot;" id="_ARQUFTP0Eei3dfHtumI11Q" instantiates="_ARQUEjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2VxlanNetworkPoolFactory&quot;" id="_AReWjDP0Eei3dfHtumI11Q" instantiates="_AReWgDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2VxlanNetworkFactory&quot;" id="_ARe9kDP0Eei3dfHtumI11Q" instantiates="_AReWgTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;RandomVniAllocatorStrategy&quot;" id="_ARe9kTP0Eei3dfHtumI11Q" instantiates="_AReWgjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;InstantiateVxlanNetworkForNewCreatedVmExtension&quot;" id="_ARe9kjP0Eei3dfHtumI11Q" instantiates="_AReWgzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VxlanPoolApiInterceptor&quot;" id="_ARe9kzP0Eei3dfHtumI11Q" instantiates="_AReWhDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2VxlanNetworkPool&quot;" id="_ARe9lDP0Eei3dfHtumI11Q" instantiates="_AReWhTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VxlanNetwork&quot;" id="_ARe9lTP0Eei3dfHtumI11Q" instantiates="_AReWhjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VxlanNetworkChecker&quot;" id="_ARe9ljP0Eei3dfHtumI11Q" instantiates="_AReWhzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMConnectExtensionForVxlanNetwork&quot;" id="_ARe9lzP0Eei3dfHtumI11Q" instantiates="_AReWiDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMRealizeL2VxlanNetworkBackend&quot;" id="_ARe9mDP0Eei3dfHtumI11Q" instantiates="_AReWiTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMRealizeL2VxlanNetworkPoolBackend&quot;" id="_ARe9mTP0Eei3dfHtumI11Q" instantiates="_AReWijP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VtepCascadeExtension&quot;" id="_ARe9mjP0Eei3dfHtumI11Q" instantiates="_AReWizP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosVmFactory&quot;" id="_ARuOJjP0Eei3dfHtumI11Q" instantiates="_ARtnEDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosDhcpBackend&quot;" id="_ARuOJzP0Eei3dfHtumI11Q" instantiates="_ARtnETP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosSnatBackend&quot;" id="_ARuOKDP0Eei3dfHtumI11Q" instantiates="_ARtnEjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosDnsBackend&quot;" id="_ARuOKTP0Eei3dfHtumI11Q" instantiates="_ARtnEzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosCentralizedDnsBackend&quot;" id="_ARuOKjP0Eei3dfHtumI11Q" instantiates="_ARuOIDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosEipBackend&quot;" id="_ARuOKzP0Eei3dfHtumI11Q" instantiates="_ARuOITP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosLbBackend&quot;" id="_ARu1MDP0Eei3dfHtumI11Q" instantiates="_ARuOIjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosPortForwardingBackend&quot;" id="_ARu1MTP0Eei3dfHtumI11Q" instantiates="_ARuOIzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosVipBackend&quot;" id="_ARu1MjP0Eei3dfHtumI11Q" instantiates="_ARuOJDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosVipFactory&quot;" id="_ARu1MzP0Eei3dfHtumI11Q" instantiates="_ARuOJTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;WebhookManager&quot;" id="_AR83oDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;WebhookApiInterceptor&quot;" id="_AR83oTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ZoneManager&quot;" id="_ASK6EzP0Eei3dfHtumI11Q" instantiates="_ASKTADP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ZoneApiInterceptor&quot;" id="_ASK6FDP0Eei3dfHtumI11Q" instantiates="_ASKTATP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BaseZoneFactory&quot;" id="_ASK6FTP0Eei3dfHtumI11Q" instantiates="_ASK6EDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ZoneExtensionPointEmitter&quot;" id="_ASK6FjP0Eei3dfHtumI11Q" instantiates="_ASK6ETP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ZoneCascadeExtension&quot;" id="_ASK6FzP0Eei3dfHtumI11Q" instantiates="_ASK6EjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;messageSource&quot;" id="_ATE5AjP0Eei3dfHtumI11Q" instantiates="_ATE5ADP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;parentContext&quot;" id="_ATE5AzP0Eei3dfHtumI11Q" instantiates="_ATE5ATP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PremiumApiMediatorValidator&quot;" id="_ATS7cTP0Eei3dfHtumI11Q" instantiates="_ATS7cDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ApplianceVmConfig&quot;" id="_ATgW0TP0Eei3dfHtumI11Q" instantiates="_ATgW0DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BackupStorageAttachExtension&quot;" id="_ATvAUDP0Eei3dfHtumI11Q" instantiates="_ATuZQDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BackupStorageChangeStateExtension&quot;" id="_AT9CwTP0Eei3dfHtumI11Q" instantiates="_AT9CwDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BackupStorageDeleteExtension&quot;" id="_AUMTUTP0Eei3dfHtumI11Q" instantiates="_AUMTUDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BackupStorageDetachExtension&quot;" id="_AUZusTP0Eei3dfHtumI11Q" instantiates="_AUZusDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;CascadeAddonTestExtension&quot;" id="_AUnxITP0Eei3dfHtumI11Q" instantiates="_AUnxIDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;CephBackupStorageSimulatorConfig&quot;" id="_AU2aojP0Eei3dfHtumI11Q" instantiates="_AU2aoDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;CephPrimaryStorageSimulatorConfig&quot;" id="_AU2aozP0Eei3dfHtumI11Q" instantiates="_AU2aoTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ChangeHostStateExtension&quot;" id="_AVEdETP0Eei3dfHtumI11Q" instantiates="_AVEdEDP0Eei3dfHtumI11Q"/>
+    <assmComponents id="_AVSfgjP0Eei3dfHtumI11Q" instantiates="_AVSfgDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;CheckPointFacade&quot;" id="_AVSfgzP0Eei3dfHtumI11Q" instantiates="_AVSfgTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;CloudBusAopProxy&quot;" id="_AVhJAjP0Eei3dfHtumI11Q" instantiates="_AVhJADP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ManInTheMiddleService&quot;" id="_AVhJAzP0Eei3dfHtumI11Q" instantiates="_AVhJATP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ClusterDeleteExtension&quot;" id="_AVvLcjP0Eei3dfHtumI11Q" instantiates="_AVvLcDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ClusteChangeStateExtension&quot;" id="_AVvLczP0Eei3dfHtumI11Q" instantiates="_AVvLcTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ConsoleProxySimulatorConfig&quot;" id="_AV9N4TP0Eei3dfHtumI11Q" instantiates="_AV9N4DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DeletHostExtension&quot;" id="_AWKpQTP0Eei3dfHtumI11Q" instantiates="_AWKpQDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;FakeAuthorizationServiceForRoleTest&quot;" id="_AWZSwDP0Eei3dfHtumI11Q" instantiates="_AWYrsDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;FlatNetworkServiceSimulatorConfig&quot;" id="_AWnVMTP0Eei3dfHtumI11Q" instantiates="_AWnVMDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;HaKvmSimulatorConfig&quot;" id="_AW1XoTP0Eei3dfHtumI11Q" instantiates="_AW1XoDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DefaultHostAlloactorStrategyFactory&quot;" id="_AXEBIzP0Eei3dfHtumI11Q" instantiates="_AXEBIDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;DesignatedHostAllocatorStrategyFactory&quot;" id="_AXEBJDP0Eei3dfHtumI11Q" instantiates="_AXEBITP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LastHostPreferredAllocatorStrategyFactory&quot;" id="_AXEBJTP0Eei3dfHtumI11Q" instantiates="_AXEBIjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ImageStoreBackupStorageSimulatorConfig&quot;" id="_AXSDkTP0Eei3dfHtumI11Q" instantiates="_AXSDkDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ImageStorePrimaryStorageSimulatorConfig&quot;" id="_AXgtETP0Eei3dfHtumI11Q" instantiates="_AXgtEDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VyosIPsecSimulatorConfig&quot;" id="_AXvWkTP0Eei3dfHtumI11Q" instantiates="_AXvWkDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;IscsiBtrfsPrimaryStorageSimulatorConfig&quot;" id="_AX_OMDP0Eei3dfHtumI11Q" instantiates="_AX-nIDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KvmHostReserveExtension&quot;" id="_AYOewDP0Eei3dfHtumI11Q" instantiates="_AYNQoDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMHostFactory&quot;" id="_AYOewTP0Eei3dfHtumI11Q" instantiates="_AYN3sDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMHostFactExtension&quot;" id="_AYOewjP0Eei3dfHtumI11Q" instantiates="_AYN3sTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMConnectExtensionForL2Network&quot;" id="_AYOewzP0Eei3dfHtumI11Q" instantiates="_AYN3sjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMRealizeL2NoVlanNetworkBackend&quot;" id="_AYOexDP0Eei3dfHtumI11Q" instantiates="_AYN3szP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMRealizeL2VlanNetworkBackend&quot;" id="_AYOexTP0Eei3dfHtumI11Q" instantiates="_AYN3tDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMExtensionEmitter&quot;" id="_AYOexjP0Eei3dfHtumI11Q" instantiates="_AYN3tTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KvmVmSyncPingTask&quot;" id="_AYOexzP0Eei3dfHtumI11Q" instantiates="_AYN3tjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMSecurityGroupBackend&quot;" id="_AYOeyDP0Eei3dfHtumI11Q" instantiates="_AYN3tzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMConsoleHypervisorBackend&quot;" id="_AYOeyTP0Eei3dfHtumI11Q" instantiates="_AYN3uDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMApiInterceptor&quot;" id="_AYOeyjP0Eei3dfHtumI11Q" instantiates="_AYN3uTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;UsernameKVMHostFilter&quot;" id="_AYPF0DP0Eei3dfHtumI11Q" instantiates="_AYN3ujP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMHostAllocatorFilterExtensionPoint&quot;" id="_AYPF0TP0Eei3dfHtumI11Q" instantiates="_AYN3uzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMPingAgentExtensionForTest&quot;" id="_AYdIQTP0Eei3dfHtumI11Q" instantiates="_AYdIQDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VolumeSnapshotKvmSimulator&quot;" id="_AY7CVjP0Eei3dfHtumI11Q" instantiates="_AY7CUDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMSimulatorConfig&quot;" id="_AY7CVzP0Eei3dfHtumI11Q" instantiates="_AY7CUTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMStartVmExtension&quot;" id="_AY7CWDP0Eei3dfHtumI11Q" instantiates="_AY7CUjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMStopVmExtension&quot;" id="_AY7CWTP0Eei3dfHtumI11Q" instantiates="_AY7CUzP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMRebootVmExtension&quot;" id="_AY7CWjP0Eei3dfHtumI11Q" instantiates="_AY7CVDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;KVMDestroyVmExtension&quot;" id="_AY7CWzP0Eei3dfHtumI11Q" instantiates="_AY7CVTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BypassVmDetachNicBranchCascadeExtension&quot;" id="_AZJr0TP0Eei3dfHtumI11Q" instantiates="_AZJr0DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L2NetworkDeleteExtension&quot;" id="_AZYVUTP0Eei3dfHtumI11Q" instantiates="_AZYVUDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;L3NetworkDeleteExtension&quot;" id="_AZrQQTP0Eei3dfHtumI11Q" instantiates="_AZrQQDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;LocalStorageSimulatorConfig&quot;" id="_AaHVITP0Eei3dfHtumI11Q" instantiates="_AaHVIDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ApiValidator&quot;" id="_AaWlsTP0Eei3dfHtumI11Q" instantiates="_AaWlsDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;NfsPrimaryStorageSimulatorConfig&quot;" id="_Aaz4sTP0Eei3dfHtumI11Q" instantiates="_Aaz4sDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PluginOrder2&quot;" id="_AbCiMzP0Eei3dfHtumI11Q" instantiates="_AbCiMDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PluginOrder3&quot;" id="_AbCiNDP0Eei3dfHtumI11Q" instantiates="_AbCiMTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PluginOrder1&quot;" id="_AbCiNTP0Eei3dfHtumI11Q" instantiates="_AbCiMjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PluginOrder2&quot;" id="_AbRLsDP0Eei3dfHtumI11Q" instantiates="_AbQkoDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PluginOrder3&quot;" id="_AbRLsTP0Eei3dfHtumI11Q" instantiates="_AbQkoTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PluginOrder1&quot;" id="_AbRLsjP0Eei3dfHtumI11Q" instantiates="_AbQkojP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageAttachExtension&quot;" id="_Abt3oTP0Eei3dfHtumI11Q" instantiates="_Abt3oDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageChangeStateExtension&quot;" id="_Ab8hITP0Eei3dfHtumI11Q" instantiates="_Ab8hIDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageDeleteExtension&quot;" id="_AcKjkTP0Eei3dfHtumI11Q" instantiates="_AcKjkDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PrimaryStorageDetachExtension&quot;" id="_AcZ0ITP0Eei3dfHtumI11Q" instantiates="_AcZ0IDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ProgressReportService&quot;" id="_AcpEsTP0Eei3dfHtumI11Q" instantiates="_AcpEsDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SftpBackupStorageSimulatorConfig&quot;" id="_Ac3uMTP0Eei3dfHtumI11Q" instantiates="_Ac3uMDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SilentJobService&quot;" id="_AdG-wTP0Eei3dfHtumI11Q" instantiates="_AdG-wDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SilentService&quot;" id="_AdVoQzP0Eei3dfHtumI11Q" instantiates="_AdVoQDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SilentLockService&quot;" id="_AdVoRDP0Eei3dfHtumI11Q" instantiates="_AdVoQTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ReportGlobalConfigService&quot;" id="_AdVoRTP0Eei3dfHtumI11Q" instantiates="_AdVoQjP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SMPPrimaryStorageSimulatorConfig&quot;" id="_AdkRwjP0Eei3dfHtumI11Q" instantiates="_AdkRwDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;SMPPrimaryStorageFactory&quot;" id="_AdkRwzP0Eei3dfHtumI11Q" instantiates="_AdkRwTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterSimulator&quot;" id="_Ad0JYjP0Eei3dfHtumI11Q" instantiates="_Ad0JYDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VirtualRouterConfig&quot;" id="_Ad0JYzP0Eei3dfHtumI11Q" instantiates="_Ad0JYTP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmDestroyExtension&quot;" id="_AeCy4TP0Eei3dfHtumI11Q" instantiates="_AeCy4DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmInstanceStartNewCreatedVmExtension&quot;" id="_AeRcYTP0Eei3dfHtumI11Q" instantiates="_AeRcYDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmMigrateExtension&quot;" id="_Aefe0TP0Eei3dfHtumI11Q" instantiates="_Aefe0DP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmRebootExtesnion&quot;" id="_AevWcTP0Eei3dfHtumI11Q" instantiates="_AevWcDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmStartExtension&quot;" id="_Ae_OETP0Eei3dfHtumI11Q" instantiates="_Ae_OEDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;VmStopExtension&quot;" id="_AfN3kDP0Eei3dfHtumI11Q" instantiates="_AfNQgDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PreventZoneDeleteExtensionPoint&quot;" id="_AfdIIjP0Eei3dfHtumI11Q" instantiates="_AfdIIDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ZoneChnageStateExtension&quot;" id="_AfdIIzP0Eei3dfHtumI11Q" instantiates="_AfdIITP0Eei3dfHtumI11Q"/>
+    <assmComponents id="_AfrxpDP0Eei3dfHtumI11Q" instantiates="_AfrxoDP0Eei3dfHtumI11Q"/>
+    <assmComponents id="_AfrxpTP0Eei3dfHtumI11Q" instantiates="_AfrxoTP0Eei3dfHtumI11Q"/>
+    <assmComponents id="_AfrxpjP0Eei3dfHtumI11Q" instantiates="_AfrxojP0Eei3dfHtumI11Q"/>
+    <assmComponents id="_AfrxpzP0Eei3dfHtumI11Q" instantiates="_AfrxozP0Eei3dfHtumI11Q"/>
+    <assmComponents id="_AgJEojP0Eei3dfHtumI11Q" instantiates="_AgJEoDP0Eei3dfHtumI11Q"/>
+    <assmComponents name="&quot;messageSource&quot;" id="_AgJEozP0Eei3dfHtumI11Q" instantiates="_AgJEoTP0Eei3dfHtumI11Q"/>
+    <assemblyConnections refID="__y0roTPzEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="__y0EljPzEei3dfHtumI11Q" serverInstElem="__y0EmTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__y0rojPzEei3dfHtumI11Q" property="entityManagerFactory.jpaDialect" clientInstElem="__y0EmTPzEei3dfHtumI11Q" serverInstElem="__y0rozPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__y0rpDPzEei3dfHtumI11Q" property="entityManagerFactory.jpaVendorAdapter" clientInstElem="__y0EmTPzEei3dfHtumI11Q" serverInstElem="__y0rpTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__y0rpjPzEei3dfHtumI11Q" property="entityManagerFactory.dataSource" clientInstElem="__y0EmTPzEei3dfHtumI11Q" serverInstElem="__y0ElzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__7ccKTPzEei3dfHtumI11Q" property="RESTApiFacade.entityManagerFactory" clientInstElem="__7ccJjPzEei3dfHtumI11Q" serverInstElem="__7ccKDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__7ccKjPzEei3dfHtumI11Q" property="RESTApiEntityManagerFactory.jpaDialect" clientInstElem="__7ccKDPzEei3dfHtumI11Q" serverInstElem="__7ccKzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__7ccLDPzEei3dfHtumI11Q" property="RESTApiEntityManagerFactory.jpaVendorAdapter" clientInstElem="__7ccKDPzEei3dfHtumI11Q" serverInstElem="__7ccLTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__7ccLjPzEei3dfHtumI11Q" property="RESTApiEntityManagerFactory.dataSource" clientInstElem="__7ccKDPzEei3dfHtumI11Q" serverInstElem="__7ccJzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AFoS5zP0Eei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_AFoS4TP0Eei3dfHtumI11Q" serverInstElem="_AFoS5DP0Eei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AFoS6DP0Eei3dfHtumI11Q" property="entityManagerFactory.jpaDialect" clientInstElem="_AFoS5DP0Eei3dfHtumI11Q" serverInstElem="_AFoS6TP0Eei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AFoS6jP0Eei3dfHtumI11Q" property="entityManagerFactory.jpaVendorAdapter" clientInstElem="_AFoS5DP0Eei3dfHtumI11Q" serverInstElem="_AFoS6zP0Eei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AFoS7DP0Eei3dfHtumI11Q" property="entityManagerFactory.dataSource" clientInstElem="_AFoS5DP0Eei3dfHtumI11Q" serverInstElem="_AFoS4jP0Eei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AOIHkTP0Eei3dfHtumI11Q" property="RESTApiFacade.entityManagerFactory" clientInstElem="_AOHgizP0Eei3dfHtumI11Q" serverInstElem="_AOIHkDP0Eei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AOIHkjP0Eei3dfHtumI11Q" property="RESTApiEntityManagerFactory.jpaDialect" clientInstElem="_AOIHkDP0Eei3dfHtumI11Q" serverInstElem="_AOIHkzP0Eei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AOIHlDP0Eei3dfHtumI11Q" property="RESTApiEntityManagerFactory.jpaVendorAdapter" clientInstElem="_AOIHkDP0Eei3dfHtumI11Q" serverInstElem="_AOIHlTP0Eei3dfHtumI11Q"/>
+    <assemblyConnections refID="_AOIHljP0Eei3dfHtumI11Q" property="RESTApiEntityManagerFactory.dataSource" clientInstElem="_AOIHkDP0Eei3dfHtumI11Q" serverInstElem="_AOHgjDP0Eei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="zstackio.zstack_spec">
+    <specConnections refID="_HrPZYDP0Eei3dfHtumI11Q"/>
+    <specConnections refID="_HrPZYTP0Eei3dfHtumI11Q"/>
+    <specConnections refID="_HrPZYjP0Eei3dfHtumI11Q"/>
+    <specConnections refID="_HrPZYzP0Eei3dfHtumI11Q"/>
+    <specConnections refID="_HrPZZDP0Eei3dfHtumI11Q"/>
+    <specConnections refID="_HrPZZTP0Eei3dfHtumI11Q"/>
+    <specConnections refID="_HrPZZjP0Eei3dfHtumI11Q"/>
+    <specConnections refID="_HrPZZzP0Eei3dfHtumI11Q"/>
+    <specConnections refID="_HrPZaDP0Eei3dfHtumI11Q"/>
+    <specConnections refID="_HrPZaTP0Eei3dfHtumI11Q"/>
+    <specConnections refID="_HrPZajP0Eei3dfHtumI11Q"/>
+    <specConnections refID="_HrPZazP0Eei3dfHtumI11Q"/>
+    <specConnections refID="_HrPZbDP0Eei3dfHtumI11Q"/>
+    <specConnections refID="_HrPZbTP0Eei3dfHtumI11Q"/>
+    <specConnections refID="_HrPZbjP0Eei3dfHtumI11Q"/>
+    <specConnections refID="_HrPZbzP0Eei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

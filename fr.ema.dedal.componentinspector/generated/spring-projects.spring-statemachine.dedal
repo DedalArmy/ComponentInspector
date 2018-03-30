@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="spring-projects.spring-statemachine">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="spring-projects.spring-statemachine_config" implements="//@architectureDescriptions[name='spring-projects.spring-statemachine_spec']">
+    <configComponents name="org.springframework.statemachine.config.common.annotation.DependencyBean" id="_Of9q8DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_Of9q8TPzEei3dfHtumI11Q" property="&quot;beanB&quot;" clientClassElem="_Of9q8DPzEei3dfHtumI11Q" serverClassElem="_Of9q8jPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="spring-projects.spring-statemachine_asm" instantiates="//@architectureDescriptions[name='spring-projects.spring-statemachine_config']">
+    <assmComponents name="dependencyBean" id="_Of9q8zPzEei3dfHtumI11Q" instantiates="_Of9q8DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Of9q9DPzEei3dfHtumI11Q" property="dependencyBean.beanB" clientInstElem="_Of9q8zPzEei3dfHtumI11Q" serverInstElem="_Of9q9TPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="spring-projects.spring-statemachine_spec">
+    <specConnections refID="_Oh5koDPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

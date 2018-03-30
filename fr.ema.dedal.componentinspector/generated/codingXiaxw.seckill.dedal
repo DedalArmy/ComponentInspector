@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="codingXiaxw.seckill">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="codingXiaxw.seckill_config" implements="//@architectureDescriptions[name='codingXiaxw.seckill_spec']"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="codingXiaxw.seckill_asm" instantiates="//@architectureDescriptions[name='codingXiaxw.seckill_config']"/>
+  <architectureDescriptions xsi:type="dedal:Specification" name="codingXiaxw.seckill_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

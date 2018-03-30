@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="alibaba.taokeeper">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="alibaba.taokeeper_config" implements="//@architectureDescriptions[name='alibaba.taokeeper_spec']">
+    <configComponents name="&quot;com.taobao.taokeeper.monitor.service.impl.ReportServiceImpl&quot;" id="_acrjUDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.taobao.taokeeper.dao.impl.ZooKeeperClusterDAOImpl&quot;" id="_acrjUTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.taobao.taokeeper.dao.impl.AlarmSettingsDAOImpl&quot;" id="_acrjUjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.taobao.taokeeper.dao.impl.SettingsDAOImpl&quot;" id="_acrjUzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.taobao.taokeeper.dao.impl.ReportDAOImpl&quot;" id="_acrjVDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&quot;" id="_ac7a8DPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_ac7a8TPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.multipart.commons.CommonsMultipartResolver&quot;" id="_ac7a8jPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="alibaba.taokeeper_asm" instantiates="//@architectureDescriptions[name='alibaba.taokeeper_config']">
+    <assmComponents name="reportService" id="_acsKYDPtEei3dfHtumI11Q" instantiates="_acrjUDPtEei3dfHtumI11Q"/>
+    <assmComponents name="zooKeeperClusterDAO" id="_acsKYTPtEei3dfHtumI11Q" instantiates="_acrjUTPtEei3dfHtumI11Q"/>
+    <assmComponents name="alarmSettingsDAO" id="_acsKYjPtEei3dfHtumI11Q" instantiates="_acrjUjPtEei3dfHtumI11Q"/>
+    <assmComponents name="taoKeeperSettingsDAO" id="_acsKYzPtEei3dfHtumI11Q" instantiates="_acrjUzPtEei3dfHtumI11Q"/>
+    <assmComponents name="reportDAO" id="_acsKZDPtEei3dfHtumI11Q" instantiates="_acrjVDPtEei3dfHtumI11Q"/>
+    <assmComponents id="_ac7a8zPtEei3dfHtumI11Q" instantiates="_ac7a8DPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_ac7a9DPtEei3dfHtumI11Q" instantiates="_ac7a8TPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;multipartResolver&quot;" id="_ac7a9TPtEei3dfHtumI11Q" instantiates="_ac7a8jPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="alibaba.taokeeper_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

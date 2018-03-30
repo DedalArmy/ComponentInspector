@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="ameizi.oltu-oauth2-example">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ameizi.oltu-oauth2-example_config" implements="//@architectureDescriptions[name='ameizi.oltu-oauth2-example_spec']">
+    <configComponents name="org.springframework.cache.ehcache.EhCacheCacheManager" id="_a8QbQDPtEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.cache.ehcache.EhCacheManagerFactoryBean" id="_a8QbQTPtEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.cache.ehcache.EhCacheCacheManager" id="_a8iIEDPtEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.cache.ehcache.EhCacheManagerFactoryBean" id="_a8iIETPtEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.cache.ehcache.EhCacheCacheManager" id="_a8xYoDPtEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.cache.ehcache.EhCacheManagerFactoryBean" id="_a8xYoTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_a8QbQjPtEei3dfHtumI11Q" property="&quot;cacheManager&quot;" clientClassElem="_a8QbQDPtEei3dfHtumI11Q" serverClassElem="_a8QbQTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_a8iIEjPtEei3dfHtumI11Q" property="&quot;cacheManager&quot;" clientClassElem="_a8iIEDPtEei3dfHtumI11Q" serverClassElem="_a8iIETPtEei3dfHtumI11Q"/>
+    <configConnections refID="_a8xYojPtEei3dfHtumI11Q" property="&quot;cacheManager&quot;" clientClassElem="_a8xYoDPtEei3dfHtumI11Q" serverClassElem="_a8xYoTPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ameizi.oltu-oauth2-example_asm" instantiates="//@architectureDescriptions[name='ameizi.oltu-oauth2-example_config']">
+    <assmComponents name="springCacheManager" id="_a8QbQzPtEei3dfHtumI11Q" instantiates="_a8QbQDPtEei3dfHtumI11Q"/>
+    <assmComponents name="ehcacheManager" id="_a8QbRDPtEei3dfHtumI11Q" instantiates="_a8QbQTPtEei3dfHtumI11Q"/>
+    <assmComponents name="springCacheManager" id="_a8ivIDPtEei3dfHtumI11Q" instantiates="_a8iIEDPtEei3dfHtumI11Q"/>
+    <assmComponents name="ehcacheManager" id="_a8ivITPtEei3dfHtumI11Q" instantiates="_a8iIETPtEei3dfHtumI11Q"/>
+    <assmComponents name="springCacheManager" id="_a8xYozPtEei3dfHtumI11Q" instantiates="_a8xYoDPtEei3dfHtumI11Q"/>
+    <assmComponents name="ehcacheManager" id="_a8xYpDPtEei3dfHtumI11Q" instantiates="_a8xYoTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_a8QbRTPtEei3dfHtumI11Q" property="springCacheManager.cacheManager" clientInstElem="_a8QbQzPtEei3dfHtumI11Q" serverInstElem="_a8QbRDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_a8ivIjPtEei3dfHtumI11Q" property="springCacheManager.cacheManager" clientInstElem="_a8ivIDPtEei3dfHtumI11Q" serverInstElem="_a8ivITPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_a8xYpTPtEei3dfHtumI11Q" property="springCacheManager.cacheManager" clientInstElem="_a8xYozPtEei3dfHtumI11Q" serverInstElem="_a8xYpDPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ameizi.oltu-oauth2-example_spec">
+    <specConnections refID="_a8x_sDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_a8x_sTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_a8x_sjPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

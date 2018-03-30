@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="linkedin.rest.li">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.rest.li_config" implements="//@architectureDescriptions[name='linkedin.rest.li_spec']">
+    <configComponents name="com.linkedin.restli.server.spring.SpringInjectResourceFactory" id="_qMdSEDPxEei3dfHtumI11Q"/>
+    <configComponents name="com.linkedin.r2.filter.logging.SimpleLoggingFilter" id="_qMdSETPxEei3dfHtumI11Q"/>
+    <configComponents name="com.linkedin.r2.filter.compression.ServerCompressionFilter" id="_qMdSEjPxEei3dfHtumI11Q"/>
+    <configComponents name="com.linkedin.r2.filter.FilterChains" id="_qMdSEzPxEei3dfHtumI11Q"/>
+    <configComponents name="com.linkedin.restli.server.spring.RestliHttpRequestHandler" id="_qMdSFDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qMdSFTPxEei3dfHtumI11Q" clientClassElem="_qMdSEzPxEei3dfHtumI11Q" serverClassElem="_qMdSETPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qMdSFjPxEei3dfHtumI11Q" clientClassElem="_qMdSEzPxEei3dfHtumI11Q" serverClassElem="_qMdSEjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qMdSFzPxEei3dfHtumI11Q" clientClassElem="_qMdSFDPxEei3dfHtumI11Q" serverClassElem="_qMdSGDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qMdSGTPxEei3dfHtumI11Q" clientClassElem="_qMdSFDPxEei3dfHtumI11Q" serverClassElem="_qMdSEDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_qMdSGjPxEei3dfHtumI11Q" clientClassElem="_qMdSFDPxEei3dfHtumI11Q" serverClassElem="_qMdSEzPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.rest.li_asm" instantiates="//@architectureDescriptions[name='linkedin.rest.li_config']">
+    <assmComponents name="injectResourceFactory" id="_qMdSGzPxEei3dfHtumI11Q" instantiates="_qMdSEDPxEei3dfHtumI11Q"/>
+    <assmComponents name="loggingFilter" id="_qMdSHDPxEei3dfHtumI11Q" instantiates="_qMdSETPxEei3dfHtumI11Q"/>
+    <assmComponents name="compressionFilter" id="_qMdSHTPxEei3dfHtumI11Q" instantiates="_qMdSEjPxEei3dfHtumI11Q"/>
+    <assmComponents name="filterChain" id="_qMdSHjPxEei3dfHtumI11Q" instantiates="_qMdSEzPxEei3dfHtumI11Q"/>
+    <assmComponents name="restliRequestHandler" id="_qMdSHzPxEei3dfHtumI11Q" instantiates="_qMdSFDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qMdSIDPxEei3dfHtumI11Q" clientInstElem="_qMdSHjPxEei3dfHtumI11Q" serverInstElem="_qMdSHDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qMdSITPxEei3dfHtumI11Q" clientInstElem="_qMdSHjPxEei3dfHtumI11Q" serverInstElem="_qMdSHTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qMdSIjPxEei3dfHtumI11Q" clientInstElem="_qMdSHzPxEei3dfHtumI11Q" serverInstElem="_qMdSIzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qMdSJDPxEei3dfHtumI11Q" clientInstElem="_qMdSHzPxEei3dfHtumI11Q" serverInstElem="_qMdSGzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_qMdSJTPxEei3dfHtumI11Q" clientInstElem="_qMdSHzPxEei3dfHtumI11Q" serverInstElem="_qMdSHjPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="linkedin.rest.li_spec">
+    <specConnections refID="_qMmcADPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qMmcATPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qMmcAjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qMmcAzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_qMmcBDPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="rhuss.jolokia">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="rhuss.jolokia_config" implements="//@architectureDescriptions[name='rhuss.jolokia_spec']">
+    <configComponents name="org.jolokia.jvmagent.spring.SpringJolokiaAgent" id="_TWWnkDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.jolokia.jvmagent.spring.SpringJolokiaAgent" id="_TWzTgDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_TWWnkTPyEei3dfHtumI11Q" property="&quot;config&quot;" clientClassElem="_TWWnkDPyEei3dfHtumI11Q" serverClassElem="_TWWnkjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_TWzTgTPyEei3dfHtumI11Q" property="&quot;config&quot;" clientClassElem="_TWzTgDPyEei3dfHtumI11Q" serverClassElem="_TWzTgjPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="rhuss.jolokia_asm" instantiates="//@architectureDescriptions[name='rhuss.jolokia_config']">
+    <assmComponents name="jolokia" id="_TWWnkzPyEei3dfHtumI11Q" instantiates="_TWWnkDPyEei3dfHtumI11Q"/>
+    <assmComponents name="jolokia" id="_TWzTgzPyEei3dfHtumI11Q" instantiates="_TWzTgDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_TWWnlDPyEei3dfHtumI11Q" property="jolokia.config" clientInstElem="_TWWnkzPyEei3dfHtumI11Q" serverInstElem="_TWWnlTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_TWzThDPyEei3dfHtumI11Q" property="jolokia.config" clientInstElem="_TWzTgzPyEei3dfHtumI11Q" serverInstElem="_TWzThTPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="rhuss.jolokia_spec">
+    <specConnections refID="_TXGOcDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_TXGOcTPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="Unidata.thredds">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="Unidata.thredds_config" implements="//@architectureDescriptions[name='Unidata.thredds_spec']">
+    <configComponents name="java.util.concurrent.Executors" id="_dSg5QDPzEei3dfHtumI11Q"/>
+    <configComponents name="java.util.concurrent.ArrayBlockingQueue" id="_dSg5QTPzEei3dfHtumI11Q"/>
+    <configComponents name="java.util.concurrent.ExecutorCompletionService" id="_dSg5QjPzEei3dfHtumI11Q"/>
+    <configComponents name="thredds.ldm.MessageDispatchDDS" id="_dSg5QzPzEei3dfHtumI11Q"/>
+    <configComponents name="thredds.ldm.MessageBroker" id="_dSg5RDPzEei3dfHtumI11Q"/>
+    <configComponents name="thredds.ldm.TestBufrDispatch" id="_dSg5RTPzEei3dfHtumI11Q"/>
+    <configComponents name="java.util.concurrent.Executors" id="_dSz0MDPzEei3dfHtumI11Q"/>
+    <configComponents name="java.util.concurrent.ArrayBlockingQueue" id="_dSz0MTPzEei3dfHtumI11Q"/>
+    <configComponents name="java.util.concurrent.ExecutorCompletionService" id="_dSz0MjPzEei3dfHtumI11Q"/>
+    <configComponents name="thredds.tdm.Tdm" id="_dSz0MzPzEei3dfHtumI11Q"/>
+    <configComponents name="thredds.tdm.GCsummary" id="_dSz0NDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.google.common.eventbus.AsyncEventBus" id="_dSz0NTPzEei3dfHtumI11Q"/>
+    <configComponents name="thredds.featurecollection.CollectionUpdater" id="_dSz0NjPzEei3dfHtumI11Q"/>
+    <configComponents name="thredds.core.AllowedServices" id="_dTjbEDPzEei3dfHtumI11Q"/>
+    <configComponents name="thredds.server.views.FileView" id="_dT2WADPzEei3dfHtumI11Q"/>
+    <configComponents name="thredds.server.views.InvCatalogXmlView" id="_dT2WATPzEei3dfHtumI11Q"/>
+    <configComponents name="thredds.server.views.XmlView" id="_dT2WAjPzEei3dfHtumI11Q"/>
+    <configComponents name="thredds.server.views.XsltForHtmlView" id="_dT2WAzPzEei3dfHtumI11Q"/>
+    <configComponents name="thredds.ui.monitor.OpenRAFMonitorImpl" id="_dUAHADPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.MBeanExporter" id="_dUAHATPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.support.MBeanServerFactoryBean" id="_dUAHAjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_dSg5RjPzEei3dfHtumI11Q" property="&quot;messageBroker&quot;" clientClassElem="_dSg5RTPzEei3dfHtumI11Q" serverClassElem="_dSg5RDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_dSz0NzPzEei3dfHtumI11Q" property="&quot;executor&quot;" clientClassElem="_dSz0MzPzEei3dfHtumI11Q" serverClassElem="_dSz0MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_dSz0ODPzEei3dfHtumI11Q" property="&quot;executor&quot;" clientClassElem="_dSz0NDPzEei3dfHtumI11Q" serverClassElem="_dSz0MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_dSz0OTPzEei3dfHtumI11Q" clientClassElem="_dSz0NTPzEei3dfHtumI11Q" serverClassElem="_dSz0OjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_dUAHAzPzEei3dfHtumI11Q" property="&quot;server&quot;" clientClassElem="_dUAHATPzEei3dfHtumI11Q" serverClassElem="_dUAHAjPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="Unidata.thredds_asm" instantiates="//@architectureDescriptions[name='Unidata.thredds_config']">
+    <assmComponents name="executor" id="_dSg5RzPzEei3dfHtumI11Q" instantiates="_dSg5QDPzEei3dfHtumI11Q"/>
+    <assmComponents name="completionQ" id="_dSg5SDPzEei3dfHtumI11Q" instantiates="_dSg5QTPzEei3dfHtumI11Q"/>
+    <assmComponents name="completionService" id="_dSg5STPzEei3dfHtumI11Q" instantiates="_dSg5QjPzEei3dfHtumI11Q"/>
+    <assmComponents name="messageDispatch" id="_dSg5SjPzEei3dfHtumI11Q" instantiates="_dSg5QzPzEei3dfHtumI11Q"/>
+    <assmComponents name="messageBroker" id="_dSg5SzPzEei3dfHtumI11Q" instantiates="_dSg5RDPzEei3dfHtumI11Q"/>
+    <assmComponents name="testDriver" id="_dSg5TDPzEei3dfHtumI11Q" instantiates="_dSg5RTPzEei3dfHtumI11Q"/>
+    <assmComponents name="executor" id="_dSz0OzPzEei3dfHtumI11Q" instantiates="_dSz0OjPzEei3dfHtumI11Q"/>
+    <assmComponents name="completionQ" id="_dSz0PDPzEei3dfHtumI11Q" instantiates="_dSz0MTPzEei3dfHtumI11Q"/>
+    <assmComponents name="completionService" id="_dSz0PTPzEei3dfHtumI11Q" instantiates="_dSz0MjPzEei3dfHtumI11Q"/>
+    <assmComponents name="TDM" id="_dSz0PjPzEei3dfHtumI11Q" instantiates="_dSz0MzPzEei3dfHtumI11Q"/>
+    <assmComponents name="GCsummary" id="_dSz0PzPzEei3dfHtumI11Q" instantiates="_dSz0NDPzEei3dfHtumI11Q"/>
+    <assmComponents name="fcTriggerEventBus" id="_dSz0QDPzEei3dfHtumI11Q" instantiates="_dSz0NTPzEei3dfHtumI11Q"/>
+    <assmComponents name="fcTriggerExecutor" id="_dSz0QTPzEei3dfHtumI11Q" instantiates="_dSz0OjPzEei3dfHtumI11Q"/>
+    <assmComponents name="collectionUpdater" id="_dSz0QjPzEei3dfHtumI11Q" instantiates="_dSz0NjPzEei3dfHtumI11Q"/>
+    <assmComponents name="allowedServices" id="_dTjbETPzEei3dfHtumI11Q" instantiates="_dTjbEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="threddsFileView" id="_dT2WBDPzEei3dfHtumI11Q" instantiates="_dT2WADPzEei3dfHtumI11Q"/>
+    <assmComponents name="threddsInvCatXmlView" id="_dT2WBTPzEei3dfHtumI11Q" instantiates="_dT2WATPzEei3dfHtumI11Q"/>
+    <assmComponents name="threddsXmlView" id="_dT2WBjPzEei3dfHtumI11Q" instantiates="_dT2WAjPzEei3dfHtumI11Q"/>
+    <assmComponents name="threddsXsltView" id="_dT2WBzPzEei3dfHtumI11Q" instantiates="_dT2WAzPzEei3dfHtumI11Q"/>
+    <assmComponents name="openRAFMonitor" id="_dUAHBDPzEei3dfHtumI11Q" instantiates="_dUAHADPzEei3dfHtumI11Q"/>
+    <assmComponents name="mbeanExporter" id="_dUAHBTPzEei3dfHtumI11Q" instantiates="_dUAHATPzEei3dfHtumI11Q"/>
+    <assmComponents name="jmxServer" id="_dUAHBjPzEei3dfHtumI11Q" instantiates="_dUAHAjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_dSg5TTPzEei3dfHtumI11Q" property="testDriver.messageBroker" clientInstElem="_dSg5TDPzEei3dfHtumI11Q" serverInstElem="_dSg5SzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_dSz0QzPzEei3dfHtumI11Q" property="TDM.executor" clientInstElem="_dSz0PjPzEei3dfHtumI11Q" serverInstElem="_dSz0OzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_dSz0RDPzEei3dfHtumI11Q" property="GCsummary.executor" clientInstElem="_dSz0PzPzEei3dfHtumI11Q" serverInstElem="_dSz0OzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_dSz0RTPzEei3dfHtumI11Q" clientInstElem="_dSz0QDPzEei3dfHtumI11Q" serverInstElem="_dSz0QTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_dUAHBzPzEei3dfHtumI11Q" property="mbeanExporter.server" clientInstElem="_dUAHBTPzEei3dfHtumI11Q" serverInstElem="_dUAHBjPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="Unidata.thredds_spec">
+    <specConnections refID="_dUAHCDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_dUAHCTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_dUAHCjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_dUAHCzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_dUAHDDPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

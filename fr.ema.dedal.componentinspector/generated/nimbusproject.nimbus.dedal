@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="nimbusproject.nimbus">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="nimbusproject.nimbus_config" implements="//@architectureDescriptions[name='nimbusproject.nimbus_spec']">
+    <configComponents name="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="_2efEYDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.apache.commons.dbcp.BasicDataSource" id="_2ex_UDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbus.authz.AuthzDBAdapter" id="_2ex_UTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.query.security.NimbusAuthzUserDetailsService" id="_2ex_UjPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.querygeneral.security.FileUserDetailsService" id="_2fE6QDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="_2fOrQDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0.common.NimbusLocalModuleLocator" id="_2fhmMDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.rm.ServiceRMImpl" id="_2fhmMTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.rm.defaults.DefaultRun" id="_2fhmMjPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.rm.defaults.DefaultTerminate" id="_2fhmMzPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.rm.defaults.DefaultReboot" id="_2fhmNDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.rm.defaults.DefaultDescribe" id="_2fhmNTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.rm.defaults.DefaultContainerInterface" id="_2fhmNjPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.rm.defaults.DefaultIDMgmtProxy" id="_2fhmNzPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.general.defaults.DefaultElasticPersistence" id="_2fhmODPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.rm.defaults.DefaultIDMgmt" id="_2fhmOTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.rm.defaults.DefaultRequestSI" id="_2fhmOjPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.rm.defaults.DefaultCancelSI" id="_2fhmOzPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.rm.defaults.DefaultDescribeSI" id="_2fhmPDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.rm.defaults.DefaultDescribeSpotPriceHistory" id="_2fhmPTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.general.ServiceGeneralImpl" id="_2fhmPjPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.general.defaults.DefaultValidity" id="_2fhmPzPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.general.defaults.DefaultResourceAllocations" id="_2fhmQDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.general.defaults.DefaultNetworks" id="_2fhmQTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.general.defaults.DefaultAvailabilityZones" id="_2fhmQjPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.general.defaults.DefaultKernels" id="_2fhmQzPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.security.ServiceSecurityImpl" id="_2fhmRDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.security.defaults.DefaultSSHKeys" id="_2fhmRTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.security.defaults.DefaultKeyGen" id="_2fhmRjPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.image.ServiceImageImpl" id="_2fhmRzPxEei3dfHtumI11Q"/>
+    <configComponents name="org.apache.commons.dbcp.BasicDataSource" id="_2fhmSDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbus.authz.CumulusImageLocator" id="_2fhmSTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.gt4_0_elastic.v2008_05_05.image.defaults.CumulusRepository" id="_2fhmSjPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.messaging.query.HttpQuery" id="_2fhmSzPxEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="_2f-SIDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.services.rm.DefaultManager" id="_2gMUkDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.services.rm.DefaultBasicLegality" id="_2gMUkTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.brain.DefaultModuleLocator" id="_2gMUkjPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.DefaultReprFactory" id="_2glWIDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.DefaultAdvertised" id="_2glWITPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.DefaultCaller" id="_2glWIjPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.DefaultCreateRequest" id="_2glWIzPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.DefaultCreateResult" id="_2glWJDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.DefaultCustomizationRequest" id="_2glWJTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.DefaultShutdownTasks" id="_2glWJjPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.DefaultUsage" id="_2glWJzPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.DefaultSpotRequestInfo" id="_2glWKDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.DefaultSpotPriceEntry" id="_2glWKTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.vm.DefaultKernel" id="_2glWKjPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.vm.DefaultNIC" id="_2glWKzPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.vm.DefaultRequiredVMM" id="_2glWLDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.vm.DefaultResourceAllocation" id="_2glWLTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.vm.DefaultSchedule" id="_2glWLjPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.vm.DefaultState" id="_2glWLzPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.vm.DefaultVM" id="_2glWMDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.vm.DefaultVMFile" id="_2glWMTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.nimbustools.api.defaults.repr.ctx.DefaultContext" id="_2glWMjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2ex_UzPxEei3dfHtumI11Q" clientClassElem="_2ex_UTPxEei3dfHtumI11Q" serverClassElem="_2ex_UDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2ex_VDPxEei3dfHtumI11Q" property="&quot;authzDBAdapter&quot;" clientClassElem="_2ex_UjPxEei3dfHtumI11Q" serverClassElem="_2ex_UTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmTDPxEei3dfHtumI11Q" clientClassElem="_2fhmMTPxEei3dfHtumI11Q" serverClassElem="_2fhmMjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmTTPxEei3dfHtumI11Q" clientClassElem="_2fhmMTPxEei3dfHtumI11Q" serverClassElem="_2fhmMzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmTjPxEei3dfHtumI11Q" clientClassElem="_2fhmMTPxEei3dfHtumI11Q" serverClassElem="_2fhmNDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmTzPxEei3dfHtumI11Q" clientClassElem="_2fhmMTPxEei3dfHtumI11Q" serverClassElem="_2fhmNTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmUDPxEei3dfHtumI11Q" clientClassElem="_2fhmMTPxEei3dfHtumI11Q" serverClassElem="_2fhmOjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmUTPxEei3dfHtumI11Q" clientClassElem="_2fhmMTPxEei3dfHtumI11Q" serverClassElem="_2fhmOzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmUjPxEei3dfHtumI11Q" clientClassElem="_2fhmMTPxEei3dfHtumI11Q" serverClassElem="_2fhmPDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmUzPxEei3dfHtumI11Q" clientClassElem="_2fhmMTPxEei3dfHtumI11Q" serverClassElem="_2fhmPTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmVDPxEei3dfHtumI11Q" clientClassElem="_2fhmMTPxEei3dfHtumI11Q" serverClassElem="_2fhmNjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmVTPxEei3dfHtumI11Q" clientClassElem="_2fhmMTPxEei3dfHtumI11Q" serverClassElem="_2fhmMDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmVjPxEei3dfHtumI11Q" clientClassElem="_2fhmMjPxEei3dfHtumI11Q" serverClassElem="_2fhmQDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmVzPxEei3dfHtumI11Q" clientClassElem="_2fhmMjPxEei3dfHtumI11Q" serverClassElem="_2fhmQTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmWDPxEei3dfHtumI11Q" clientClassElem="_2fhmMjPxEei3dfHtumI11Q" serverClassElem="_2fhmNzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmWTPxEei3dfHtumI11Q" clientClassElem="_2fhmMjPxEei3dfHtumI11Q" serverClassElem="_2fhmNTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmWjPxEei3dfHtumI11Q" clientClassElem="_2fhmMjPxEei3dfHtumI11Q" serverClassElem="_2fhmNjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmWzPxEei3dfHtumI11Q" clientClassElem="_2fhmMjPxEei3dfHtumI11Q" serverClassElem="_2fhmRTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmXDPxEei3dfHtumI11Q" clientClassElem="_2fhmMjPxEei3dfHtumI11Q" serverClassElem="_2fhmSjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmXTPxEei3dfHtumI11Q" clientClassElem="_2fhmMjPxEei3dfHtumI11Q" serverClassElem="_2fhmMDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmXjPxEei3dfHtumI11Q" clientClassElem="_2fhmMzPxEei3dfHtumI11Q" serverClassElem="_2fhmNzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmXzPxEei3dfHtumI11Q" clientClassElem="_2fhmNDPxEei3dfHtumI11Q" serverClassElem="_2fhmNzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmYDPxEei3dfHtumI11Q" clientClassElem="_2fhmNTPxEei3dfHtumI11Q" serverClassElem="_2fhmNzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmYTPxEei3dfHtumI11Q" clientClassElem="_2fhmNTPxEei3dfHtumI11Q" serverClassElem="_2fhmPzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmYjPxEei3dfHtumI11Q" clientClassElem="_2fhmNTPxEei3dfHtumI11Q" serverClassElem="_2fhmQTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmYzPxEei3dfHtumI11Q" clientClassElem="_2fhmNTPxEei3dfHtumI11Q" serverClassElem="_2fhmQzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmZDPxEei3dfHtumI11Q" clientClassElem="_2fhmNTPxEei3dfHtumI11Q" serverClassElem="_2fhmQDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmZTPxEei3dfHtumI11Q" clientClassElem="_2fhmNTPxEei3dfHtumI11Q" serverClassElem="_2fhmQjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmZjPxEei3dfHtumI11Q" clientClassElem="_2fhmNjPxEei3dfHtumI11Q" serverClassElem="_2fhmMDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmZzPxEei3dfHtumI11Q" clientClassElem="_2fhmOTPxEei3dfHtumI11Q" serverClassElem="_2fhmODPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmaDPxEei3dfHtumI11Q" clientClassElem="_2fhmOjPxEei3dfHtumI11Q" serverClassElem="_2fhmQDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmaTPxEei3dfHtumI11Q" clientClassElem="_2fhmOjPxEei3dfHtumI11Q" serverClassElem="_2fhmQTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmajPxEei3dfHtumI11Q" clientClassElem="_2fhmOjPxEei3dfHtumI11Q" serverClassElem="_2fhmSjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmazPxEei3dfHtumI11Q" clientClassElem="_2fhmOjPxEei3dfHtumI11Q" serverClassElem="_2fhmNzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmbDPxEei3dfHtumI11Q" clientClassElem="_2fhmOjPxEei3dfHtumI11Q" serverClassElem="_2fhmNTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmbTPxEei3dfHtumI11Q" clientClassElem="_2fhmOjPxEei3dfHtumI11Q" serverClassElem="_2fhmPDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmbjPxEei3dfHtumI11Q" clientClassElem="_2fhmOjPxEei3dfHtumI11Q" serverClassElem="_2fhmOzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmbzPxEei3dfHtumI11Q" clientClassElem="_2fhmOjPxEei3dfHtumI11Q" serverClassElem="_2fhmNjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmcDPxEei3dfHtumI11Q" clientClassElem="_2fhmOjPxEei3dfHtumI11Q" serverClassElem="_2fhmRTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmcTPxEei3dfHtumI11Q" clientClassElem="_2fhmOjPxEei3dfHtumI11Q" serverClassElem="_2fhmMDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmcjPxEei3dfHtumI11Q" clientClassElem="_2fhmPDPxEei3dfHtumI11Q" serverClassElem="_2fhmNzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmczPxEei3dfHtumI11Q" clientClassElem="_2fhmPDPxEei3dfHtumI11Q" serverClassElem="_2fhmNTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmdDPxEei3dfHtumI11Q" clientClassElem="_2fhmPDPxEei3dfHtumI11Q" serverClassElem="_2fhmQDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmdTPxEei3dfHtumI11Q" clientClassElem="_2fhmPTPxEei3dfHtumI11Q" serverClassElem="_2fhmQDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmdjPxEei3dfHtumI11Q" clientClassElem="_2fhmPjPxEei3dfHtumI11Q" serverClassElem="_2fhmQjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmdzPxEei3dfHtumI11Q" clientClassElem="_2fhmQDPxEei3dfHtumI11Q" serverClassElem="_2fhmMDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmeDPxEei3dfHtumI11Q" clientClassElem="_2fhmQjPxEei3dfHtumI11Q" serverClassElem="_2fhmMDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmeTPxEei3dfHtumI11Q" clientClassElem="_2fhmRDPxEei3dfHtumI11Q" serverClassElem="_2fhmRTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmejPxEei3dfHtumI11Q" clientClassElem="_2fhmRDPxEei3dfHtumI11Q" serverClassElem="_2fhmRjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmezPxEei3dfHtumI11Q" clientClassElem="_2fhmRDPxEei3dfHtumI11Q" serverClassElem="_2fhmNjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmfDPxEei3dfHtumI11Q" clientClassElem="_2fhmRTPxEei3dfHtumI11Q" serverClassElem="_2fhmODPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmfTPxEei3dfHtumI11Q" clientClassElem="_2fhmRjPxEei3dfHtumI11Q" serverClassElem="_2fhmRTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmfjPxEei3dfHtumI11Q" clientClassElem="_2fhmRjPxEei3dfHtumI11Q" serverClassElem="_2fhmNjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmfzPxEei3dfHtumI11Q" clientClassElem="_2fhmRzPxEei3dfHtumI11Q" serverClassElem="_2fhmNjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmgDPxEei3dfHtumI11Q" clientClassElem="_2fhmRzPxEei3dfHtumI11Q" serverClassElem="_2fhmSjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmgTPxEei3dfHtumI11Q" clientClassElem="_2fhmSTPxEei3dfHtumI11Q" serverClassElem="_2fhmSDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmgjPxEei3dfHtumI11Q" clientClassElem="_2fhmSjPxEei3dfHtumI11Q" serverClassElem="_2fhmNjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmgzPxEei3dfHtumI11Q" clientClassElem="_2fhmSjPxEei3dfHtumI11Q" serverClassElem="_2fhmMDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fhmhDPxEei3dfHtumI11Q" clientClassElem="_2fhmSjPxEei3dfHtumI11Q" serverClassElem="_2fhmSDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2fqwIDPxEei3dfHtumI11Q" clientClassElem="_2fhmSjPxEei3dfHtumI11Q" serverClassElem="_2fhmSTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2gMUkzPxEei3dfHtumI11Q" clientClassElem="_2gMUkDPxEei3dfHtumI11Q" serverClassElem="_2gMUlDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_2gMUlTPxEei3dfHtumI11Q" clientClassElem="_2gMUkDPxEei3dfHtumI11Q" serverClassElem="_2gMUkTPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="nimbusproject.nimbus_asm" instantiates="//@architectureDescriptions[name='nimbusproject.nimbus_config']">
+    <assmComponents name="cumulusSettings" id="_2efEYTPxEei3dfHtumI11Q" instantiates="_2efEYDPxEei3dfHtumI11Q"/>
+    <assmComponents name="other.AuthzDataSource" id="_2ex_VTPxEei3dfHtumI11Q" instantiates="_2ex_UDPxEei3dfHtumI11Q"/>
+    <assmComponents name="authzDBAdapter" id="_2ex_VjPxEei3dfHtumI11Q" instantiates="_2ex_UTPxEei3dfHtumI11Q"/>
+    <assmComponents name="userDetailsService" id="_2ex_VzPxEei3dfHtumI11Q" instantiates="_2ex_UjPxEei3dfHtumI11Q"/>
+    <assmComponents name="userDetailsService" id="_2fE6QTPxEei3dfHtumI11Q" instantiates="_2fE6QDPxEei3dfHtumI11Q"/>
+    <assmComponents name="commonSettings" id="_2fOrQTPxEei3dfHtumI11Q" instantiates="_2fOrQDPxEei3dfHtumI11Q"/>
+    <assmComponents name="cumulusSettings" id="_2fOrQjPxEei3dfHtumI11Q" instantiates="_2fOrQDPxEei3dfHtumI11Q"/>
+    <assmComponents name="elasticSettings" id="_2fOrQzPxEei3dfHtumI11Q" instantiates="_2fOrQDPxEei3dfHtumI11Q"/>
+    <assmComponents name="otherElasticSettings" id="_2fOrRDPxEei3dfHtumI11Q" instantiates="_2fOrQDPxEei3dfHtumI11Q"/>
+    <assmComponents name="querySettings" id="_2fOrRTPxEei3dfHtumI11Q" instantiates="_2fOrQDPxEei3dfHtumI11Q"/>
+    <assmComponents name="asyncSettings" id="_2fOrRjPxEei3dfHtumI11Q" instantiates="_2fOrQDPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.rm.modulelocator" id="_2fqwITPxEei3dfHtumI11Q" instantiates="_2fhmMDPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.rm" id="_2fqwIjPxEei3dfHtumI11Q" instantiates="_2fhmMTPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.rm.run" id="_2fqwIzPxEei3dfHtumI11Q" instantiates="_2fhmMjPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.rm.terminate" id="_2fqwJDPxEei3dfHtumI11Q" instantiates="_2fhmMzPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.rm.reboot" id="_2fqwJTPxEei3dfHtumI11Q" instantiates="_2fhmNDPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.rm.describe" id="_2fqwJjPxEei3dfHtumI11Q" instantiates="_2fhmNTPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.rm.containerInterface" id="_2fqwJzPxEei3dfHtumI11Q" instantiates="_2fhmNjPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.rm.idmappings" id="_2fqwKDPxEei3dfHtumI11Q" instantiates="_2fhmNzPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.rm.persistence" id="_2fqwKTPxEei3dfHtumI11Q" instantiates="_2fhmODPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.rm.realidmappings" id="_2fqwKjPxEei3dfHtumI11Q" instantiates="_2fhmOTPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.rm.requestSI" id="_2fqwKzPxEei3dfHtumI11Q" instantiates="_2fhmOjPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.rm.cancelSI" id="_2fqwLDPxEei3dfHtumI11Q" instantiates="_2fhmOzPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.rm.describeSI" id="_2fqwLTPxEei3dfHtumI11Q" instantiates="_2fhmPDPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.rm.spHistory" id="_2fqwLjPxEei3dfHtumI11Q" instantiates="_2fhmPTPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.general" id="_2fqwLzPxEei3dfHtumI11Q" instantiates="_2fhmPjPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.general.validity" id="_2fqwMDPxEei3dfHtumI11Q" instantiates="_2fhmPzPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.general.ra" id="_2fqwMTPxEei3dfHtumI11Q" instantiates="_2fhmQDPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.general.networks" id="_2fqwMjPxEei3dfHtumI11Q" instantiates="_2fhmQTPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.general.avzone" id="_2fqwMzPxEei3dfHtumI11Q" instantiates="_2fhmQjPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.general.kernels" id="_2fqwNDPxEei3dfHtumI11Q" instantiates="_2fhmQzPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.security" id="_2fqwNTPxEei3dfHtumI11Q" instantiates="_2fhmRDPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.security.sshkeys" id="_2fqwNjPxEei3dfHtumI11Q" instantiates="_2fhmRTPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.security.keygen" id="_2fqwNzPxEei3dfHtumI11Q" instantiates="_2fhmRjPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.image" id="_2fqwODPxEei3dfHtumI11Q" instantiates="_2fhmRzPxEei3dfHtumI11Q"/>
+    <assmComponents name="other.AuthzDataSource" id="_2fqwOTPxEei3dfHtumI11Q" instantiates="_2fhmSDPxEei3dfHtumI11Q"/>
+    <assmComponents name="other.repo-imageLocator" id="_2fqwOjPxEei3dfHtumI11Q" instantiates="_2fhmSTPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-elastic.image.repository" id="_2fqwOzPxEei3dfHtumI11Q" instantiates="_2fhmSjPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-query.httpserver" id="_2fqwPDPxEei3dfHtumI11Q" instantiates="_2fhmSzPxEei3dfHtumI11Q"/>
+    <assmComponents name="commonSettings" id="_2f-SITPxEei3dfHtumI11Q" instantiates="_2f-SIDPxEei3dfHtumI11Q"/>
+    <assmComponents name="cumulusSettings" id="_2f-SIjPxEei3dfHtumI11Q" instantiates="_2f-SIDPxEei3dfHtumI11Q"/>
+    <assmComponents name="elasticSettings" id="_2f-SIzPxEei3dfHtumI11Q" instantiates="_2f-SIDPxEei3dfHtumI11Q"/>
+    <assmComponents name="otherElasticSettings" id="_2f-SJDPxEei3dfHtumI11Q" instantiates="_2f-SIDPxEei3dfHtumI11Q"/>
+    <assmComponents name="querySettings" id="_2f-SJTPxEei3dfHtumI11Q" instantiates="_2f-SIDPxEei3dfHtumI11Q"/>
+    <assmComponents name="asyncSettings" id="_2f-SJjPxEei3dfHtumI11Q" instantiates="_2f-SIDPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-rm.manager" id="_2gMUljPxEei3dfHtumI11Q" instantiates="_2gMUkDPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-rm.BasicLegality" id="_2gMUlzPxEei3dfHtumI11Q" instantiates="_2gMUkTPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-brain.ModuleLocator" id="_2gMUmDPxEei3dfHtumI11Q" instantiates="_2gMUkjPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.ReprFactory" id="_2glWMzPxEei3dfHtumI11Q" instantiates="_2glWIDPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.Advertised" id="_2glWNDPxEei3dfHtumI11Q" instantiates="_2glWITPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.Caller" id="_2glWNTPxEei3dfHtumI11Q" instantiates="_2glWIjPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.CreateRequest" id="_2glWNjPxEei3dfHtumI11Q" instantiates="_2glWIzPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.CreateResult" id="_2glWNzPxEei3dfHtumI11Q" instantiates="_2glWJDPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.CustomizationRequest" id="_2glWODPxEei3dfHtumI11Q" instantiates="_2glWJTPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.ShutdownTasks" id="_2glWOTPxEei3dfHtumI11Q" instantiates="_2glWJjPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.Usage" id="_2glWOjPxEei3dfHtumI11Q" instantiates="_2glWJzPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.SpotRequestInfo" id="_2glWOzPxEei3dfHtumI11Q" instantiates="_2glWKDPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.SpotPriceEntry" id="_2glWPDPxEei3dfHtumI11Q" instantiates="_2glWKTPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.vm.Kernel" id="_2glWPTPxEei3dfHtumI11Q" instantiates="_2glWKjPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.vm.NIC" id="_2glWPjPxEei3dfHtumI11Q" instantiates="_2glWKzPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.vm.RequiredVMM" id="_2glWPzPxEei3dfHtumI11Q" instantiates="_2glWLDPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.vm.ResourceAllocation" id="_2glWQDPxEei3dfHtumI11Q" instantiates="_2glWLTPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.vm.Schedule" id="_2glWQTPxEei3dfHtumI11Q" instantiates="_2glWLjPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.vm.State" id="_2gvHIDPxEei3dfHtumI11Q" instantiates="_2glWLzPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.vm.VM" id="_2gvHITPxEei3dfHtumI11Q" instantiates="_2glWMDPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.vm.VMFile" id="_2gvHIjPxEei3dfHtumI11Q" instantiates="_2glWMTPxEei3dfHtumI11Q"/>
+    <assmComponents name="nimbus-repr.ctx.Context" id="_2gvHIzPxEei3dfHtumI11Q" instantiates="_2glWMjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2ex_WDPxEei3dfHtumI11Q" clientInstElem="_2ex_VjPxEei3dfHtumI11Q" serverInstElem="_2ex_VTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2ex_WTPxEei3dfHtumI11Q" property="userDetailsService.authzDBAdapter" clientInstElem="_2ex_VzPxEei3dfHtumI11Q" serverInstElem="_2ex_VjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwPTPxEei3dfHtumI11Q" clientInstElem="_2fqwIjPxEei3dfHtumI11Q" serverInstElem="_2fqwIzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwPjPxEei3dfHtumI11Q" clientInstElem="_2fqwIjPxEei3dfHtumI11Q" serverInstElem="_2fqwJDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwPzPxEei3dfHtumI11Q" clientInstElem="_2fqwIjPxEei3dfHtumI11Q" serverInstElem="_2fqwJTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwQDPxEei3dfHtumI11Q" clientInstElem="_2fqwIjPxEei3dfHtumI11Q" serverInstElem="_2fqwJjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwQTPxEei3dfHtumI11Q" clientInstElem="_2fqwIjPxEei3dfHtumI11Q" serverInstElem="_2fqwKzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwQjPxEei3dfHtumI11Q" clientInstElem="_2fqwIjPxEei3dfHtumI11Q" serverInstElem="_2fqwLDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwQzPxEei3dfHtumI11Q" clientInstElem="_2fqwIjPxEei3dfHtumI11Q" serverInstElem="_2fqwLTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwRDPxEei3dfHtumI11Q" clientInstElem="_2fqwIjPxEei3dfHtumI11Q" serverInstElem="_2fqwLjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwRTPxEei3dfHtumI11Q" clientInstElem="_2fqwIjPxEei3dfHtumI11Q" serverInstElem="_2fqwJzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwRjPxEei3dfHtumI11Q" clientInstElem="_2fqwIjPxEei3dfHtumI11Q" serverInstElem="_2fqwITPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwRzPxEei3dfHtumI11Q" clientInstElem="_2fqwIzPxEei3dfHtumI11Q" serverInstElem="_2fqwMTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwSDPxEei3dfHtumI11Q" clientInstElem="_2fqwIzPxEei3dfHtumI11Q" serverInstElem="_2fqwMjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwSTPxEei3dfHtumI11Q" clientInstElem="_2fqwIzPxEei3dfHtumI11Q" serverInstElem="_2fqwKDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwSjPxEei3dfHtumI11Q" clientInstElem="_2fqwIzPxEei3dfHtumI11Q" serverInstElem="_2fqwJjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwSzPxEei3dfHtumI11Q" clientInstElem="_2fqwIzPxEei3dfHtumI11Q" serverInstElem="_2fqwJzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwTDPxEei3dfHtumI11Q" clientInstElem="_2fqwIzPxEei3dfHtumI11Q" serverInstElem="_2fqwNjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwTTPxEei3dfHtumI11Q" clientInstElem="_2fqwIzPxEei3dfHtumI11Q" serverInstElem="_2fqwOzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwTjPxEei3dfHtumI11Q" clientInstElem="_2fqwIzPxEei3dfHtumI11Q" serverInstElem="_2fqwITPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwTzPxEei3dfHtumI11Q" clientInstElem="_2fqwJDPxEei3dfHtumI11Q" serverInstElem="_2fqwKDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwUDPxEei3dfHtumI11Q" clientInstElem="_2fqwJTPxEei3dfHtumI11Q" serverInstElem="_2fqwKDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwUTPxEei3dfHtumI11Q" clientInstElem="_2fqwJjPxEei3dfHtumI11Q" serverInstElem="_2fqwKDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwUjPxEei3dfHtumI11Q" clientInstElem="_2fqwJjPxEei3dfHtumI11Q" serverInstElem="_2fqwMDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwUzPxEei3dfHtumI11Q" clientInstElem="_2fqwJjPxEei3dfHtumI11Q" serverInstElem="_2fqwMjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwVDPxEei3dfHtumI11Q" clientInstElem="_2fqwJjPxEei3dfHtumI11Q" serverInstElem="_2fqwNDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwVTPxEei3dfHtumI11Q" clientInstElem="_2fqwJjPxEei3dfHtumI11Q" serverInstElem="_2fqwMTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwVjPxEei3dfHtumI11Q" clientInstElem="_2fqwJjPxEei3dfHtumI11Q" serverInstElem="_2fqwMzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwVzPxEei3dfHtumI11Q" clientInstElem="_2fqwJzPxEei3dfHtumI11Q" serverInstElem="_2fqwITPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwWDPxEei3dfHtumI11Q" clientInstElem="_2fqwKjPxEei3dfHtumI11Q" serverInstElem="_2fqwKTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwWTPxEei3dfHtumI11Q" clientInstElem="_2fqwKzPxEei3dfHtumI11Q" serverInstElem="_2fqwMTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwWjPxEei3dfHtumI11Q" clientInstElem="_2fqwKzPxEei3dfHtumI11Q" serverInstElem="_2fqwMjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwWzPxEei3dfHtumI11Q" clientInstElem="_2fqwKzPxEei3dfHtumI11Q" serverInstElem="_2fqwOzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwXDPxEei3dfHtumI11Q" clientInstElem="_2fqwKzPxEei3dfHtumI11Q" serverInstElem="_2fqwKDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwXTPxEei3dfHtumI11Q" clientInstElem="_2fqwKzPxEei3dfHtumI11Q" serverInstElem="_2fqwJjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwXjPxEei3dfHtumI11Q" clientInstElem="_2fqwKzPxEei3dfHtumI11Q" serverInstElem="_2fqwLTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwXzPxEei3dfHtumI11Q" clientInstElem="_2fqwKzPxEei3dfHtumI11Q" serverInstElem="_2fqwLDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwYDPxEei3dfHtumI11Q" clientInstElem="_2fqwKzPxEei3dfHtumI11Q" serverInstElem="_2fqwJzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwYTPxEei3dfHtumI11Q" clientInstElem="_2fqwKzPxEei3dfHtumI11Q" serverInstElem="_2fqwNjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwYjPxEei3dfHtumI11Q" clientInstElem="_2fqwKzPxEei3dfHtumI11Q" serverInstElem="_2fqwITPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwYzPxEei3dfHtumI11Q" clientInstElem="_2fqwLTPxEei3dfHtumI11Q" serverInstElem="_2fqwKDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwZDPxEei3dfHtumI11Q" clientInstElem="_2fqwLTPxEei3dfHtumI11Q" serverInstElem="_2fqwJjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwZTPxEei3dfHtumI11Q" clientInstElem="_2fqwLTPxEei3dfHtumI11Q" serverInstElem="_2fqwMTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwZjPxEei3dfHtumI11Q" clientInstElem="_2fqwLjPxEei3dfHtumI11Q" serverInstElem="_2fqwMTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwZzPxEei3dfHtumI11Q" clientInstElem="_2fqwLzPxEei3dfHtumI11Q" serverInstElem="_2fqwMzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwaDPxEei3dfHtumI11Q" clientInstElem="_2fqwMTPxEei3dfHtumI11Q" serverInstElem="_2fqwITPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwaTPxEei3dfHtumI11Q" clientInstElem="_2fqwMzPxEei3dfHtumI11Q" serverInstElem="_2fqwITPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwajPxEei3dfHtumI11Q" clientInstElem="_2fqwNTPxEei3dfHtumI11Q" serverInstElem="_2fqwNjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwazPxEei3dfHtumI11Q" clientInstElem="_2fqwNTPxEei3dfHtumI11Q" serverInstElem="_2fqwNzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwbDPxEei3dfHtumI11Q" clientInstElem="_2fqwNTPxEei3dfHtumI11Q" serverInstElem="_2fqwJzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwbTPxEei3dfHtumI11Q" clientInstElem="_2fqwNjPxEei3dfHtumI11Q" serverInstElem="_2fqwKTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwbjPxEei3dfHtumI11Q" clientInstElem="_2fqwNzPxEei3dfHtumI11Q" serverInstElem="_2fqwNjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwbzPxEei3dfHtumI11Q" clientInstElem="_2fqwNzPxEei3dfHtumI11Q" serverInstElem="_2fqwJzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwcDPxEei3dfHtumI11Q" clientInstElem="_2fqwODPxEei3dfHtumI11Q" serverInstElem="_2fqwJzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwcTPxEei3dfHtumI11Q" clientInstElem="_2fqwODPxEei3dfHtumI11Q" serverInstElem="_2fqwOzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwcjPxEei3dfHtumI11Q" clientInstElem="_2fqwOjPxEei3dfHtumI11Q" serverInstElem="_2fqwOTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwczPxEei3dfHtumI11Q" clientInstElem="_2fqwOzPxEei3dfHtumI11Q" serverInstElem="_2fqwJzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwdDPxEei3dfHtumI11Q" clientInstElem="_2fqwOzPxEei3dfHtumI11Q" serverInstElem="_2fqwITPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwdTPxEei3dfHtumI11Q" clientInstElem="_2fqwOzPxEei3dfHtumI11Q" serverInstElem="_2fqwOTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2fqwdjPxEei3dfHtumI11Q" clientInstElem="_2fqwOzPxEei3dfHtumI11Q" serverInstElem="_2fqwOjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2gMUmTPxEei3dfHtumI11Q" clientInstElem="_2gMUljPxEei3dfHtumI11Q" serverInstElem="_2gMUmjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_2gMUmzPxEei3dfHtumI11Q" clientInstElem="_2gMUljPxEei3dfHtumI11Q" serverInstElem="_2gMUlzPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="nimbusproject.nimbus_spec">
+    <specConnections refID="_2gvHJDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHJTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHJjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHJzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHKDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHKTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHKjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHKzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHLDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHLTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHLjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHLzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHMDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHMTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHMjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHMzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHNDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHNTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHNjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHNzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHODPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHOTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHOjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHOzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHPDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHPTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHPjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHPzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHQDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHQTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHQjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHQzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHRDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHRTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHRjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHRzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHSDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHSTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHSjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHSzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHTDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHTTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHTjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHTzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHUDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHUTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHUjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHUzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHVDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHVTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHVjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHVzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHWDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHWTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHWjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHWzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHXDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHXTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHXjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHXzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHYDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_2gvHYTPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="dannytiehui.androidpn">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dannytiehui.androidpn_config" implements="//@architectureDescriptions[name='dannytiehui.androidpn_spec']">
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_jB2XcDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.commons.dbcp.BasicDataSource&quot;" id="_jB2XcTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean&quot;" id="_jB2XcjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.hibernate3.HibernateTransactionManager&quot;" id="_jB2XczPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.dao.hibernate.UserDaoHibernate&quot;" id="_jB2XdDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.service.impl.UserServiceImpl&quot;" id="_jB2XdTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.CustomEditorConfigurer&quot;" id="_jB2XdjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.xmpp.net.XmppIoHandler&quot;" id="_jB2XdzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.mina.core.filterchain.DefaultIoFilterChainBuilder&quot;" id="_jB2XeDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.mina.transport.socket.nio.NioSocketAcceptor&quot;" id="_jB2XeTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.handler.SimpleUrlHandlerMapping&quot;" id="_jCTDYDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.console.api.UserApiController&quot;" id="_jCTDYTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.console.api.NotificationApiController&quot;" id="_jCTDYjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.UrlFilenameViewController&quot;" id="_jCTDYzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.console.controller.UserController&quot;" id="_jCTDZDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.console.controller.SessionController&quot;" id="_jCTDZTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.console.controller.NotificationController&quot;" id="_jCTDZjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver&quot;" id="_jCTDZzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_jCTDaDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.context.support.ResourceBundleMessageSource&quot;" id="_jCTDaTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_jCl-UDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.commons.dbcp.BasicDataSource&quot;" id="_jCl-UTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean&quot;" id="_jCl-UjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.hibernate3.HibernateTransactionManager&quot;" id="_jCl-UzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.dao.hibernate.UserDaoHibernate&quot;" id="_jCl-VDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.service.impl.UserServiceImpl&quot;" id="_jCl-VTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.CustomEditorConfigurer&quot;" id="_jCl-VjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.xmpp.net.XmppIoHandler&quot;" id="_jCl-VzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.mina.core.filterchain.DefaultIoFilterChainBuilder&quot;" id="_jCl-WDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.mina.transport.socket.nio.NioSocketAcceptor&quot;" id="_jCl-WTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_jCwWYDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.commons.dbcp.BasicDataSource&quot;" id="_jCwWYTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean&quot;" id="_jCwWYjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.hibernate3.HibernateTransactionManager&quot;" id="_jCwWYzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.dao.hibernate.UserDaoHibernate&quot;" id="_jCwWZDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.service.impl.UserServiceImpl&quot;" id="_jCwWZTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.CustomEditorConfigurer&quot;" id="_jCwWZjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.xmpp.net.XmppIoHandler&quot;" id="_jCwWZzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.mina.core.filterchain.DefaultIoFilterChainBuilder&quot;" id="_jCwWaDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.mina.transport.socket.nio.NioSocketAcceptor&quot;" id="_jCwWaTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.handler.SimpleUrlHandlerMapping&quot;" id="_jDMbQDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.console.api.UserApiController&quot;" id="_jDMbQTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.console.api.NotificationApiController&quot;" id="_jDMbQjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.UrlFilenameViewController&quot;" id="_jDMbQzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.console.controller.UserController&quot;" id="_jDMbRDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.console.controller.SessionController&quot;" id="_jDMbRTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.console.controller.NotificationController&quot;" id="_jDMbRjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver&quot;" id="_jDMbRzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_jDMbSDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.context.support.ResourceBundleMessageSource&quot;" id="_jDMbSTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.handler.SimpleUrlHandlerMapping&quot;" id="_jDpHMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.UrlFilenameViewController&quot;" id="_jDpHMTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.console.controller.UserController&quot;" id="_jDpHMjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.console.controller.SessionController&quot;" id="_jDpHMzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.console.controller.NotificationController&quot;" id="_jDpHNDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver&quot;" id="_jDpHNTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;" id="_jDpHNjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.context.support.ResourceBundleMessageSource&quot;" id="_jDpHNzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_jD8CIDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.commons.dbcp.BasicDataSource&quot;" id="_jD8CITPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean&quot;" id="_jD8CIjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.hibernate3.HibernateTransactionManager&quot;" id="_jD8CIzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.dao.hibernate.UserDaoHibernate&quot;" id="_jD8CJDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.service.impl.UserServiceImpl&quot;" id="_jD8CJTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.CustomEditorConfigurer&quot;" id="_jD8CJjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.xmpp.net.XmppIoHandler&quot;" id="_jD8CJzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.mina.core.filterchain.DefaultIoFilterChainBuilder&quot;" id="_jD8CKDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.mina.transport.socket.nio.NioSocketAcceptor&quot;" id="_jD8CKTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_jEFzIDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.commons.dbcp.BasicDataSource&quot;" id="_jEFzITPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean&quot;" id="_jEFzIjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.hibernate3.HibernateTransactionManager&quot;" id="_jEFzIzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.dao.hibernate.UserDaoHibernate&quot;" id="_jEFzJDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.androidpn.server.service.impl.UserServiceImpl&quot;" id="_jEFzJTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jB2XejPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_jB2XcjPvEei3dfHtumI11Q" serverClassElem="_jB2XcTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jB2XezPvEei3dfHtumI11Q" property="&quot;sessionFactory&quot;" clientClassElem="_jB2XczPvEei3dfHtumI11Q" serverClassElem="_jB2XcjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jB2XfDPvEei3dfHtumI11Q" property="&quot;sessionFactory&quot;" clientClassElem="_jB2XdDPvEei3dfHtumI11Q" serverClassElem="_jB2XcjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jB2XfTPvEei3dfHtumI11Q" property="&quot;userDao&quot;" clientClassElem="_jB2XdTPvEei3dfHtumI11Q" serverClassElem="_jB2XdDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jB2XfjPvEei3dfHtumI11Q" property="&quot;customEditors&quot;" clientClassElem="_jB2XdjPvEei3dfHtumI11Q" serverClassElem="_jB2XfzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jB2XgDPvEei3dfHtumI11Q" property="&quot;filters&quot;" clientClassElem="_jB2XeDPvEei3dfHtumI11Q" serverClassElem="_jB2XgTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jB2XgjPvEei3dfHtumI11Q" property="&quot;filters&quot;" clientClassElem="_jB2XeDPvEei3dfHtumI11Q" serverClassElem="_jB2XgzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jB2XhDPvEei3dfHtumI11Q" property="&quot;handler&quot;" clientClassElem="_jB2XeTPvEei3dfHtumI11Q" serverClassElem="_jB2XdzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jB2XhTPvEei3dfHtumI11Q" property="&quot;filterChainBuilder&quot;" clientClassElem="_jB2XeTPvEei3dfHtumI11Q" serverClassElem="_jB2XeDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCTDajPvEei3dfHtumI11Q" property="&quot;methodNameResolver&quot;" clientClassElem="_jCTDYTPvEei3dfHtumI11Q" serverClassElem="_jCTDZzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCTDazPvEei3dfHtumI11Q" property="&quot;methodNameResolver&quot;" clientClassElem="_jCTDYjPvEei3dfHtumI11Q" serverClassElem="_jCTDZzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCTDbDPvEei3dfHtumI11Q" property="&quot;methodNameResolver&quot;" clientClassElem="_jCTDZDPvEei3dfHtumI11Q" serverClassElem="_jCTDZzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCTDbTPvEei3dfHtumI11Q" property="&quot;methodNameResolver&quot;" clientClassElem="_jCTDZTPvEei3dfHtumI11Q" serverClassElem="_jCTDZzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCTDbjPvEei3dfHtumI11Q" property="&quot;methodNameResolver&quot;" clientClassElem="_jCTDZjPvEei3dfHtumI11Q" serverClassElem="_jCTDZzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCl-WjPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_jCl-UjPvEei3dfHtumI11Q" serverClassElem="_jCl-UTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCl-WzPvEei3dfHtumI11Q" property="&quot;sessionFactory&quot;" clientClassElem="_jCl-UzPvEei3dfHtumI11Q" serverClassElem="_jCl-UjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCl-XDPvEei3dfHtumI11Q" property="&quot;sessionFactory&quot;" clientClassElem="_jCl-VDPvEei3dfHtumI11Q" serverClassElem="_jCl-UjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCl-XTPvEei3dfHtumI11Q" property="&quot;userDao&quot;" clientClassElem="_jCl-VTPvEei3dfHtumI11Q" serverClassElem="_jCl-VDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCl-XjPvEei3dfHtumI11Q" property="&quot;customEditors&quot;" clientClassElem="_jCl-VjPvEei3dfHtumI11Q" serverClassElem="_jCl-XzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCl-YDPvEei3dfHtumI11Q" property="&quot;filters&quot;" clientClassElem="_jCl-WDPvEei3dfHtumI11Q" serverClassElem="_jCl-YTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCl-YjPvEei3dfHtumI11Q" property="&quot;filters&quot;" clientClassElem="_jCl-WDPvEei3dfHtumI11Q" serverClassElem="_jCl-YzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCl-ZDPvEei3dfHtumI11Q" property="&quot;handler&quot;" clientClassElem="_jCl-WTPvEei3dfHtumI11Q" serverClassElem="_jCl-VzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCl-ZTPvEei3dfHtumI11Q" property="&quot;filterChainBuilder&quot;" clientClassElem="_jCl-WTPvEei3dfHtumI11Q" serverClassElem="_jCl-WDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCwWajPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_jCwWYjPvEei3dfHtumI11Q" serverClassElem="_jCwWYTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCwWazPvEei3dfHtumI11Q" property="&quot;sessionFactory&quot;" clientClassElem="_jCwWYzPvEei3dfHtumI11Q" serverClassElem="_jCwWYjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCwWbDPvEei3dfHtumI11Q" property="&quot;sessionFactory&quot;" clientClassElem="_jCwWZDPvEei3dfHtumI11Q" serverClassElem="_jCwWYjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCwWbTPvEei3dfHtumI11Q" property="&quot;userDao&quot;" clientClassElem="_jCwWZTPvEei3dfHtumI11Q" serverClassElem="_jCwWZDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCwWbjPvEei3dfHtumI11Q" property="&quot;customEditors&quot;" clientClassElem="_jCwWZjPvEei3dfHtumI11Q" serverClassElem="_jCwWbzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCwWcDPvEei3dfHtumI11Q" property="&quot;filters&quot;" clientClassElem="_jCwWaDPvEei3dfHtumI11Q" serverClassElem="_jCwWcTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCwWcjPvEei3dfHtumI11Q" property="&quot;filters&quot;" clientClassElem="_jCwWaDPvEei3dfHtumI11Q" serverClassElem="_jCwWczPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCwWdDPvEei3dfHtumI11Q" property="&quot;handler&quot;" clientClassElem="_jCwWaTPvEei3dfHtumI11Q" serverClassElem="_jCwWZzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jCwWdTPvEei3dfHtumI11Q" property="&quot;filterChainBuilder&quot;" clientClassElem="_jCwWaTPvEei3dfHtumI11Q" serverClassElem="_jCwWaDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jDMbSjPvEei3dfHtumI11Q" property="&quot;methodNameResolver&quot;" clientClassElem="_jDMbQTPvEei3dfHtumI11Q" serverClassElem="_jDMbRzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jDMbSzPvEei3dfHtumI11Q" property="&quot;methodNameResolver&quot;" clientClassElem="_jDMbQjPvEei3dfHtumI11Q" serverClassElem="_jDMbRzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jDMbTDPvEei3dfHtumI11Q" property="&quot;methodNameResolver&quot;" clientClassElem="_jDMbRDPvEei3dfHtumI11Q" serverClassElem="_jDMbRzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jDMbTTPvEei3dfHtumI11Q" property="&quot;methodNameResolver&quot;" clientClassElem="_jDMbRTPvEei3dfHtumI11Q" serverClassElem="_jDMbRzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jDMbTjPvEei3dfHtumI11Q" property="&quot;methodNameResolver&quot;" clientClassElem="_jDMbRjPvEei3dfHtumI11Q" serverClassElem="_jDMbRzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jDpHODPvEei3dfHtumI11Q" property="&quot;methodNameResolver&quot;" clientClassElem="_jDpHMjPvEei3dfHtumI11Q" serverClassElem="_jDpHNTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jDpHOTPvEei3dfHtumI11Q" property="&quot;methodNameResolver&quot;" clientClassElem="_jDpHMzPvEei3dfHtumI11Q" serverClassElem="_jDpHNTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jDpHOjPvEei3dfHtumI11Q" property="&quot;methodNameResolver&quot;" clientClassElem="_jDpHNDPvEei3dfHtumI11Q" serverClassElem="_jDpHNTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jD8CKjPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_jD8CIjPvEei3dfHtumI11Q" serverClassElem="_jD8CITPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jD8CKzPvEei3dfHtumI11Q" property="&quot;sessionFactory&quot;" clientClassElem="_jD8CIzPvEei3dfHtumI11Q" serverClassElem="_jD8CIjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jD8CLDPvEei3dfHtumI11Q" property="&quot;sessionFactory&quot;" clientClassElem="_jD8CJDPvEei3dfHtumI11Q" serverClassElem="_jD8CIjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jD8CLTPvEei3dfHtumI11Q" property="&quot;userDao&quot;" clientClassElem="_jD8CJTPvEei3dfHtumI11Q" serverClassElem="_jD8CJDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jD8CLjPvEei3dfHtumI11Q" property="&quot;customEditors&quot;" clientClassElem="_jD8CJjPvEei3dfHtumI11Q" serverClassElem="_jD8CLzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jD8CMDPvEei3dfHtumI11Q" property="&quot;filters&quot;" clientClassElem="_jD8CKDPvEei3dfHtumI11Q" serverClassElem="_jD8CMTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jD8CMjPvEei3dfHtumI11Q" property="&quot;filters&quot;" clientClassElem="_jD8CKDPvEei3dfHtumI11Q" serverClassElem="_jD8CMzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jD8CNDPvEei3dfHtumI11Q" property="&quot;handler&quot;" clientClassElem="_jD8CKTPvEei3dfHtumI11Q" serverClassElem="_jD8CJzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jD8CNTPvEei3dfHtumI11Q" property="&quot;filterChainBuilder&quot;" clientClassElem="_jD8CKTPvEei3dfHtumI11Q" serverClassElem="_jD8CKDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jEFzJjPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_jEFzIjPvEei3dfHtumI11Q" serverClassElem="_jEFzITPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jEFzJzPvEei3dfHtumI11Q" property="&quot;sessionFactory&quot;" clientClassElem="_jEFzIzPvEei3dfHtumI11Q" serverClassElem="_jEFzIjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jEFzKDPvEei3dfHtumI11Q" property="&quot;sessionFactory&quot;" clientClassElem="_jEFzJDPvEei3dfHtumI11Q" serverClassElem="_jEFzIjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_jEFzKTPvEei3dfHtumI11Q" property="&quot;userDao&quot;" clientClassElem="_jEFzJTPvEei3dfHtumI11Q" serverClassElem="_jEFzJDPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dannytiehui.androidpn_asm" instantiates="//@architectureDescriptions[name='dannytiehui.androidpn_config']">
+    <assmComponents name="propertyConfigurer" id="_jB2XhjPvEei3dfHtumI11Q" instantiates="_jB2XcDPvEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_jB2XhzPvEei3dfHtumI11Q" instantiates="_jB2XcTPvEei3dfHtumI11Q"/>
+    <assmComponents name="sessionFactory" id="_jB2XiDPvEei3dfHtumI11Q" instantiates="_jB2XcjPvEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_jB2XiTPvEei3dfHtumI11Q" instantiates="_jB2XczPvEei3dfHtumI11Q"/>
+    <assmComponents name="userDao" id="_jB2XijPvEei3dfHtumI11Q" instantiates="_jB2XdDPvEei3dfHtumI11Q"/>
+    <assmComponents name="userService" id="_jB2XizPvEei3dfHtumI11Q" instantiates="_jB2XdTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_jB2XjDPvEei3dfHtumI11Q" instantiates="_jB2XdjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;xmppHandler&quot;" id="_jB2XjTPvEei3dfHtumI11Q" instantiates="_jB2XdzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;filterChainBuilder&quot;" id="_jB2XjjPvEei3dfHtumI11Q" instantiates="_jB2XeDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ioAcceptor&quot;" id="_jB2XjzPvEei3dfHtumI11Q" instantiates="_jB2XeTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urlMapping&quot;" id="_jCTDbzPvEei3dfHtumI11Q" instantiates="_jCTDYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userapiController&quot;" id="_jCTDcDPvEei3dfHtumI11Q" instantiates="_jCTDYTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;notificationapiController&quot;" id="_jCTDcTPvEei3dfHtumI11Q" instantiates="_jCTDYjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;filenameController&quot;" id="_jCTDcjPvEei3dfHtumI11Q" instantiates="_jCTDYzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userController&quot;" id="_jCTDczPvEei3dfHtumI11Q" instantiates="_jCTDZDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionController&quot;" id="_jCTDdDPvEei3dfHtumI11Q" instantiates="_jCTDZTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;notificationController&quot;" id="_jCTDdTPvEei3dfHtumI11Q" instantiates="_jCTDZjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;paramResolver&quot;" id="_jCTDdjPvEei3dfHtumI11Q" instantiates="_jCTDZzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_jCTDdzPvEei3dfHtumI11Q" instantiates="_jCTDaDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;messageSource&quot;" id="_jCTDeDPvEei3dfHtumI11Q" instantiates="_jCTDaTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyConfigurer&quot;" id="_jCl-ZjPvEei3dfHtumI11Q" instantiates="_jCl-UDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_jCl-ZzPvEei3dfHtumI11Q" instantiates="_jCl-UTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionFactory&quot;" id="_jCl-aDPvEei3dfHtumI11Q" instantiates="_jCl-UjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_jCl-aTPvEei3dfHtumI11Q" instantiates="_jCl-UzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userDao&quot;" id="_jCl-ajPvEei3dfHtumI11Q" instantiates="_jCl-VDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userService&quot;" id="_jCl-azPvEei3dfHtumI11Q" instantiates="_jCl-VTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_jCl-bDPvEei3dfHtumI11Q" instantiates="_jCl-VjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;xmppHandler&quot;" id="_jCl-bTPvEei3dfHtumI11Q" instantiates="_jCl-VzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;filterChainBuilder&quot;" id="_jCl-bjPvEei3dfHtumI11Q" instantiates="_jCl-WDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ioAcceptor&quot;" id="_jCl-bzPvEei3dfHtumI11Q" instantiates="_jCl-WTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyConfigurer&quot;" id="_jCwWdjPvEei3dfHtumI11Q" instantiates="_jCwWYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_jCwWdzPvEei3dfHtumI11Q" instantiates="_jCwWYTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionFactory&quot;" id="_jCwWeDPvEei3dfHtumI11Q" instantiates="_jCwWYjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_jCwWeTPvEei3dfHtumI11Q" instantiates="_jCwWYzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userDao&quot;" id="_jCwWejPvEei3dfHtumI11Q" instantiates="_jCwWZDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userService&quot;" id="_jCwWezPvEei3dfHtumI11Q" instantiates="_jCwWZTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_jCwWfDPvEei3dfHtumI11Q" instantiates="_jCwWZjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;xmppHandler&quot;" id="_jCwWfTPvEei3dfHtumI11Q" instantiates="_jCwWZzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;filterChainBuilder&quot;" id="_jCwWfjPvEei3dfHtumI11Q" instantiates="_jCwWaDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ioAcceptor&quot;" id="_jCwWfzPvEei3dfHtumI11Q" instantiates="_jCwWaTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urlMapping&quot;" id="_jDMbTzPvEei3dfHtumI11Q" instantiates="_jDMbQDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userapiController&quot;" id="_jDMbUDPvEei3dfHtumI11Q" instantiates="_jDMbQTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;notificationapiController&quot;" id="_jDMbUTPvEei3dfHtumI11Q" instantiates="_jDMbQjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;filenameController&quot;" id="_jDMbUjPvEei3dfHtumI11Q" instantiates="_jDMbQzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userController&quot;" id="_jDMbUzPvEei3dfHtumI11Q" instantiates="_jDMbRDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionController&quot;" id="_jDMbVDPvEei3dfHtumI11Q" instantiates="_jDMbRTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;notificationController&quot;" id="_jDMbVTPvEei3dfHtumI11Q" instantiates="_jDMbRjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;paramResolver&quot;" id="_jDMbVjPvEei3dfHtumI11Q" instantiates="_jDMbRzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_jDMbVzPvEei3dfHtumI11Q" instantiates="_jDMbSDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;messageSource&quot;" id="_jDMbWDPvEei3dfHtumI11Q" instantiates="_jDMbSTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urlMapping&quot;" id="_jDpHOzPvEei3dfHtumI11Q" instantiates="_jDpHMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;filenameController&quot;" id="_jDpHPDPvEei3dfHtumI11Q" instantiates="_jDpHMTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userController&quot;" id="_jDpHPTPvEei3dfHtumI11Q" instantiates="_jDpHMjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionController&quot;" id="_jDpHPjPvEei3dfHtumI11Q" instantiates="_jDpHMzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;notificationController&quot;" id="_jDpHPzPvEei3dfHtumI11Q" instantiates="_jDpHNDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;paramResolver&quot;" id="_jDpHQDPvEei3dfHtumI11Q" instantiates="_jDpHNTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;viewResolver&quot;" id="_jDpHQTPvEei3dfHtumI11Q" instantiates="_jDpHNjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;messageSource&quot;" id="_jDpHQjPvEei3dfHtumI11Q" instantiates="_jDpHNzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyConfigurer&quot;" id="_jD8CNjPvEei3dfHtumI11Q" instantiates="_jD8CIDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_jD8CNzPvEei3dfHtumI11Q" instantiates="_jD8CITPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionFactory&quot;" id="_jD8CODPvEei3dfHtumI11Q" instantiates="_jD8CIjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_jD8COTPvEei3dfHtumI11Q" instantiates="_jD8CIzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userDao&quot;" id="_jD8COjPvEei3dfHtumI11Q" instantiates="_jD8CJDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userService&quot;" id="_jD8COzPvEei3dfHtumI11Q" instantiates="_jD8CJTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_jD8CPDPvEei3dfHtumI11Q" instantiates="_jD8CJjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;xmppHandler&quot;" id="_jD8CPTPvEei3dfHtumI11Q" instantiates="_jD8CJzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;filterChainBuilder&quot;" id="_jD8CPjPvEei3dfHtumI11Q" instantiates="_jD8CKDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ioAcceptor&quot;" id="_jD8CPzPvEei3dfHtumI11Q" instantiates="_jD8CKTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyConfigurer&quot;" id="_jEFzKjPvEei3dfHtumI11Q" instantiates="_jEFzIDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_jEFzKzPvEei3dfHtumI11Q" instantiates="_jEFzITPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionFactory&quot;" id="_jEFzLDPvEei3dfHtumI11Q" instantiates="_jEFzIjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_jEFzLTPvEei3dfHtumI11Q" instantiates="_jEFzIzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userDao&quot;" id="_jEFzLjPvEei3dfHtumI11Q" instantiates="_jEFzJDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userService&quot;" id="_jEFzLzPvEei3dfHtumI11Q" instantiates="_jEFzJTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jB2XkDPvEei3dfHtumI11Q" property="sessionFactory.dataSource" clientInstElem="_jB2XiDPvEei3dfHtumI11Q" serverInstElem="_jB2XhzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jB2XkTPvEei3dfHtumI11Q" property="transactionManager.sessionFactory" clientInstElem="_jB2XiTPvEei3dfHtumI11Q" serverInstElem="_jB2XiDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jB2XkjPvEei3dfHtumI11Q" property="userDao.sessionFactory" clientInstElem="_jB2XijPvEei3dfHtumI11Q" serverInstElem="_jB2XiDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jB2XkzPvEei3dfHtumI11Q" property="userService.userDao" clientInstElem="_jB2XizPvEei3dfHtumI11Q" serverInstElem="_jB2XijPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jB2XlDPvEei3dfHtumI11Q" clientInstElem="_jB2XjDPvEei3dfHtumI11Q" serverInstElem="_jB2XlTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jB2XljPvEei3dfHtumI11Q" property="filterChainBuilder.filters" clientInstElem="_jB2XjjPvEei3dfHtumI11Q" serverInstElem="_jB2XlzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jB2XmDPvEei3dfHtumI11Q" property="filterChainBuilder.filters" clientInstElem="_jB2XjjPvEei3dfHtumI11Q" serverInstElem="_jB2XmTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jB2XmjPvEei3dfHtumI11Q" property="ioAcceptor.handler" clientInstElem="_jB2XjzPvEei3dfHtumI11Q" serverInstElem="_jB2XjTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jB2XmzPvEei3dfHtumI11Q" property="ioAcceptor.filterChainBuilder" clientInstElem="_jB2XjzPvEei3dfHtumI11Q" serverInstElem="_jB2XjjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCTDeTPvEei3dfHtumI11Q" property="userapiController.methodNameResolver" clientInstElem="_jCTDcDPvEei3dfHtumI11Q" serverInstElem="_jCTDdjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCTDejPvEei3dfHtumI11Q" property="notificationapiController.methodNameResolver" clientInstElem="_jCTDcTPvEei3dfHtumI11Q" serverInstElem="_jCTDdjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCTDezPvEei3dfHtumI11Q" property="userController.methodNameResolver" clientInstElem="_jCTDczPvEei3dfHtumI11Q" serverInstElem="_jCTDdjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCTDfDPvEei3dfHtumI11Q" property="sessionController.methodNameResolver" clientInstElem="_jCTDdDPvEei3dfHtumI11Q" serverInstElem="_jCTDdjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCTDfTPvEei3dfHtumI11Q" property="notificationController.methodNameResolver" clientInstElem="_jCTDdTPvEei3dfHtumI11Q" serverInstElem="_jCTDdjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCl-cDPvEei3dfHtumI11Q" property="sessionFactory.dataSource" clientInstElem="_jCl-aDPvEei3dfHtumI11Q" serverInstElem="_jCl-ZzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCl-cTPvEei3dfHtumI11Q" property="transactionManager.sessionFactory" clientInstElem="_jCl-aTPvEei3dfHtumI11Q" serverInstElem="_jCl-aDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCl-cjPvEei3dfHtumI11Q" property="userDao.sessionFactory" clientInstElem="_jCl-ajPvEei3dfHtumI11Q" serverInstElem="_jCl-aDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCl-czPvEei3dfHtumI11Q" property="userService.userDao" clientInstElem="_jCl-azPvEei3dfHtumI11Q" serverInstElem="_jCl-ajPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCl-dDPvEei3dfHtumI11Q" clientInstElem="_jCl-bDPvEei3dfHtumI11Q" serverInstElem="_jCl-dTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCl-djPvEei3dfHtumI11Q" property="filterChainBuilder.filters" clientInstElem="_jCl-bjPvEei3dfHtumI11Q" serverInstElem="_jCl-dzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCl-eDPvEei3dfHtumI11Q" property="filterChainBuilder.filters" clientInstElem="_jCl-bjPvEei3dfHtumI11Q" serverInstElem="_jCl-eTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCl-ejPvEei3dfHtumI11Q" property="ioAcceptor.handler" clientInstElem="_jCl-bzPvEei3dfHtumI11Q" serverInstElem="_jCl-bTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCl-ezPvEei3dfHtumI11Q" property="ioAcceptor.filterChainBuilder" clientInstElem="_jCl-bzPvEei3dfHtumI11Q" serverInstElem="_jCl-bjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCwWgDPvEei3dfHtumI11Q" property="sessionFactory.dataSource" clientInstElem="_jCwWeDPvEei3dfHtumI11Q" serverInstElem="_jCwWdzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCwWgTPvEei3dfHtumI11Q" property="transactionManager.sessionFactory" clientInstElem="_jCwWeTPvEei3dfHtumI11Q" serverInstElem="_jCwWeDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCwWgjPvEei3dfHtumI11Q" property="userDao.sessionFactory" clientInstElem="_jCwWejPvEei3dfHtumI11Q" serverInstElem="_jCwWeDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCwWgzPvEei3dfHtumI11Q" property="userService.userDao" clientInstElem="_jCwWezPvEei3dfHtumI11Q" serverInstElem="_jCwWejPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCwWhDPvEei3dfHtumI11Q" clientInstElem="_jCwWfDPvEei3dfHtumI11Q" serverInstElem="_jCwWhTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCwWhjPvEei3dfHtumI11Q" property="filterChainBuilder.filters" clientInstElem="_jCwWfjPvEei3dfHtumI11Q" serverInstElem="_jCwWhzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCwWiDPvEei3dfHtumI11Q" property="filterChainBuilder.filters" clientInstElem="_jCwWfjPvEei3dfHtumI11Q" serverInstElem="_jCwWiTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCwWijPvEei3dfHtumI11Q" property="ioAcceptor.handler" clientInstElem="_jCwWfzPvEei3dfHtumI11Q" serverInstElem="_jCwWfTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jCwWizPvEei3dfHtumI11Q" property="ioAcceptor.filterChainBuilder" clientInstElem="_jCwWfzPvEei3dfHtumI11Q" serverInstElem="_jCwWfjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jDMbWTPvEei3dfHtumI11Q" property="userapiController.methodNameResolver" clientInstElem="_jDMbUDPvEei3dfHtumI11Q" serverInstElem="_jDMbVjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jDMbWjPvEei3dfHtumI11Q" property="notificationapiController.methodNameResolver" clientInstElem="_jDMbUTPvEei3dfHtumI11Q" serverInstElem="_jDMbVjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jDMbWzPvEei3dfHtumI11Q" property="userController.methodNameResolver" clientInstElem="_jDMbUzPvEei3dfHtumI11Q" serverInstElem="_jDMbVjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jDMbXDPvEei3dfHtumI11Q" property="sessionController.methodNameResolver" clientInstElem="_jDMbVDPvEei3dfHtumI11Q" serverInstElem="_jDMbVjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jDMbXTPvEei3dfHtumI11Q" property="notificationController.methodNameResolver" clientInstElem="_jDMbVTPvEei3dfHtumI11Q" serverInstElem="_jDMbVjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jDpHQzPvEei3dfHtumI11Q" property="userController.methodNameResolver" clientInstElem="_jDpHPTPvEei3dfHtumI11Q" serverInstElem="_jDpHQDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jDpHRDPvEei3dfHtumI11Q" property="sessionController.methodNameResolver" clientInstElem="_jDpHPjPvEei3dfHtumI11Q" serverInstElem="_jDpHQDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jDpHRTPvEei3dfHtumI11Q" property="notificationController.methodNameResolver" clientInstElem="_jDpHPzPvEei3dfHtumI11Q" serverInstElem="_jDpHQDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jD8CQDPvEei3dfHtumI11Q" property="sessionFactory.dataSource" clientInstElem="_jD8CODPvEei3dfHtumI11Q" serverInstElem="_jD8CNzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jD8CQTPvEei3dfHtumI11Q" property="transactionManager.sessionFactory" clientInstElem="_jD8COTPvEei3dfHtumI11Q" serverInstElem="_jD8CODPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jD8CQjPvEei3dfHtumI11Q" property="userDao.sessionFactory" clientInstElem="_jD8COjPvEei3dfHtumI11Q" serverInstElem="_jD8CODPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jD8CQzPvEei3dfHtumI11Q" property="userService.userDao" clientInstElem="_jD8COzPvEei3dfHtumI11Q" serverInstElem="_jD8COjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jD8CRDPvEei3dfHtumI11Q" clientInstElem="_jD8CPDPvEei3dfHtumI11Q" serverInstElem="_jD8CRTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jD8CRjPvEei3dfHtumI11Q" property="filterChainBuilder.filters" clientInstElem="_jD8CPjPvEei3dfHtumI11Q" serverInstElem="_jD8CRzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jD8CSDPvEei3dfHtumI11Q" property="filterChainBuilder.filters" clientInstElem="_jD8CPjPvEei3dfHtumI11Q" serverInstElem="_jD8CSTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jD8CSjPvEei3dfHtumI11Q" property="ioAcceptor.handler" clientInstElem="_jD8CPzPvEei3dfHtumI11Q" serverInstElem="_jD8CPTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jD8CSzPvEei3dfHtumI11Q" property="ioAcceptor.filterChainBuilder" clientInstElem="_jD8CPzPvEei3dfHtumI11Q" serverInstElem="_jD8CPjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jEFzMDPvEei3dfHtumI11Q" property="sessionFactory.dataSource" clientInstElem="_jEFzLDPvEei3dfHtumI11Q" serverInstElem="_jEFzKzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jEFzMTPvEei3dfHtumI11Q" property="transactionManager.sessionFactory" clientInstElem="_jEFzLTPvEei3dfHtumI11Q" serverInstElem="_jEFzLDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jEFzMjPvEei3dfHtumI11Q" property="userDao.sessionFactory" clientInstElem="_jEFzLjPvEei3dfHtumI11Q" serverInstElem="_jEFzLDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_jEFzMzPvEei3dfHtumI11Q" property="userService.userDao" clientInstElem="_jEFzLzPvEei3dfHtumI11Q" serverInstElem="_jEFzLjPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dannytiehui.androidpn_spec">
+    <specConnections refID="_jEFzNDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzNTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzNjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzNzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzODPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzOTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzOjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzOzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzPDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzPTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzPjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzPzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzQDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzQTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzQjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzQzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzRDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzRTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzRjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzRzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzSDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzSTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzSjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzSzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzTDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzTTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzTjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzTzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzUDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzUTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzUjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzUzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzVDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzVTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzVjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzVzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzWDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzWTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzWjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzWzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzXDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzXTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzXjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzXzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzYDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzYTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzYjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzYzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzZDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzZTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzZjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzZzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_jEFzaDPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

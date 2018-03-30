@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="roghughe.captaindebug">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="roghughe.captaindebug_config" implements="//@architectureDescriptions[name='roghughe.captaindebug_spec']">
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_UQeGcDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DriverManagerDataSource&quot;" id="_UQeGcTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.util.concurrent.LinkedBlockingQueue&quot;" id="_UQxBYDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.producerconsumer.MatchReporter&quot;" id="_UQxBYTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.producerconsumer.PrintHead&quot;" id="_UQxBYjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.producerconsumer.original.Teletype&quot;" id="_UQxBYzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.errortrack.validator.RegexValidator&quot;" id="_UQ6LUDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_UQ6LUTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.mail.javamail.JavaMailSenderImpl&quot;" id="_UQ6LUjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.mail.SimpleMailMessage&quot;" id="_UQ6LUzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean&quot;" id="_UQ6LVDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.scheduling.quartz.CronTriggerFactoryBean&quot;" id="_UQ6LVTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.scheduling.quartz.SchedulerFactoryBean&quot;" id="_UQ6LVjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.longpoll.source.Match&quot;" id="_USjKEDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.util.concurrent.LinkedBlockingQueue&quot;" id="_UTI_8DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.producerconsumer.MatchReporter&quot;" id="_UTI_8TPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.producerconsumer.PrintHead&quot;" id="_UTI_8jPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.producerconsumer.original.Teletype&quot;" id="_UTI_8zPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.util.concurrent.LinkedBlockingQueue&quot;" id="_UTSw8DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.producerconsumer.MatchReporter&quot;" id="_UTSw8TPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.producerconsumer.PrintHead&quot;" id="_UTSw8jPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.producerconsumer.interruptible.Teletype&quot;" id="_UTSw8zPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.util.concurrent.LinkedBlockingQueue&quot;" id="_UTlr4DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.producerconsumer.MatchReporter&quot;" id="_UTlr4TPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.producerconsumer.PrintHead&quot;" id="_UTlr4jPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.producerconsumer.poisonpill.Teletype&quot;" id="_UTlr4zPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.producerconsumer.Match&quot;" id="_UT4m0DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.producerconsumer.Match&quot;" id="_UUMI0DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.util.concurrent.LinkedBlockingQueue&quot;" id="_UUfDwDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.producerconsumer.problem.OrderRecord&quot;" id="_UUfDwTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.producerconsumer.problem.OrderFeed&quot;" id="_UUfDwjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.captaindebug.producerconsumer.problem.OrderQueueMonitor&quot;" id="_UUfDwzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UQxBZDPyEei3dfHtumI11Q" clientClassElem="_UQxBYTPyEei3dfHtumI11Q" serverClassElem="_UQxBZTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UQxBZjPyEei3dfHtumI11Q" clientClassElem="_UQxBYTPyEei3dfHtumI11Q" serverClassElem="_UQxBYDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UQxBZzPyEei3dfHtumI11Q" clientClassElem="_UQxBYTPyEei3dfHtumI11Q" serverClassElem="_UQxBaDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UQxBaTPyEei3dfHtumI11Q" clientClassElem="_UQxBYTPyEei3dfHtumI11Q" serverClassElem="_UQxBYDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UQxBajPyEei3dfHtumI11Q" clientClassElem="_UQxBYzPyEei3dfHtumI11Q" serverClassElem="_UQxBYjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UQxBazPyEei3dfHtumI11Q" clientClassElem="_UQxBYzPyEei3dfHtumI11Q" serverClassElem="_UQxBYDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UQ6LVzPyEei3dfHtumI11Q" property="&quot;targetObject&quot;" clientClassElem="_UQ6LVDPyEei3dfHtumI11Q" serverClassElem="_UQ6LWDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UQ6LWTPyEei3dfHtumI11Q" property="&quot;jobDetail&quot;" clientClassElem="_UQ6LVTPyEei3dfHtumI11Q" serverClassElem="_UQ6LVDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UQ6LWjPyEei3dfHtumI11Q" property="&quot;triggers&quot;" clientClassElem="_UQ6LVjPyEei3dfHtumI11Q" serverClassElem="_UQ6LVTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTI_9DPyEei3dfHtumI11Q" clientClassElem="_UTI_8TPyEei3dfHtumI11Q" serverClassElem="_UTI_9TPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTI_9jPyEei3dfHtumI11Q" clientClassElem="_UTI_8TPyEei3dfHtumI11Q" serverClassElem="_UTI_8DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTI_9zPyEei3dfHtumI11Q" clientClassElem="_UTI_8TPyEei3dfHtumI11Q" serverClassElem="_UTI_-DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTI_-TPyEei3dfHtumI11Q" clientClassElem="_UTI_8TPyEei3dfHtumI11Q" serverClassElem="_UTI_8DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTI_-jPyEei3dfHtumI11Q" clientClassElem="_UTI_8zPyEei3dfHtumI11Q" serverClassElem="_UTI_8jPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTI_-zPyEei3dfHtumI11Q" clientClassElem="_UTI_8zPyEei3dfHtumI11Q" serverClassElem="_UTI_8DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTSw9DPyEei3dfHtumI11Q" clientClassElem="_UTSw8TPyEei3dfHtumI11Q" serverClassElem="_UTSw9TPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTSw9jPyEei3dfHtumI11Q" clientClassElem="_UTSw8TPyEei3dfHtumI11Q" serverClassElem="_UTSw8DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTSw9zPyEei3dfHtumI11Q" clientClassElem="_UTSw8TPyEei3dfHtumI11Q" serverClassElem="_UTSw-DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTSw-TPyEei3dfHtumI11Q" clientClassElem="_UTSw8TPyEei3dfHtumI11Q" serverClassElem="_UTSw8DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTSw-jPyEei3dfHtumI11Q" clientClassElem="_UTSw8zPyEei3dfHtumI11Q" serverClassElem="_UTSw8jPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTSw-zPyEei3dfHtumI11Q" clientClassElem="_UTSw8zPyEei3dfHtumI11Q" serverClassElem="_UTSw8DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTlr5DPyEei3dfHtumI11Q" clientClassElem="_UTlr4TPyEei3dfHtumI11Q" serverClassElem="_UTlr5TPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTlr5jPyEei3dfHtumI11Q" clientClassElem="_UTlr4TPyEei3dfHtumI11Q" serverClassElem="_UTlr4DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTlr5zPyEei3dfHtumI11Q" clientClassElem="_UTlr4TPyEei3dfHtumI11Q" serverClassElem="_UTlr6DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTlr6TPyEei3dfHtumI11Q" clientClassElem="_UTlr4TPyEei3dfHtumI11Q" serverClassElem="_UTlr4DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTlr6jPyEei3dfHtumI11Q" clientClassElem="_UTlr4zPyEei3dfHtumI11Q" serverClassElem="_UTlr4jPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UTlr6zPyEei3dfHtumI11Q" clientClassElem="_UTlr4zPyEei3dfHtumI11Q" serverClassElem="_UTlr4DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UUfDxDPyEei3dfHtumI11Q" clientClassElem="_UUfDwTPyEei3dfHtumI11Q" serverClassElem="_UUfDwDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UUfDxTPyEei3dfHtumI11Q" clientClassElem="_UUfDwjPyEei3dfHtumI11Q" serverClassElem="_UUfDwDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_UUfDxjPyEei3dfHtumI11Q" clientClassElem="_UUfDwzPyEei3dfHtumI11Q" serverClassElem="_UUfDwDPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="roghughe.captaindebug_asm" instantiates="//@architectureDescriptions[name='roghughe.captaindebug_config']">
+    <assmComponents name="propertyConfigurer" id="_UQeGcjPyEei3dfHtumI11Q" instantiates="_UQeGcDPyEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_UQeGczPyEei3dfHtumI11Q" instantiates="_UQeGcTPyEei3dfHtumI11Q"/>
+    <assmComponents name="theQueue" id="_UQxBbDPyEei3dfHtumI11Q" instantiates="_UQxBYDPyEei3dfHtumI11Q"/>
+    <assmComponents name="BillSkyes" id="_UQxBbTPyEei3dfHtumI11Q" instantiates="_UQxBYTPyEei3dfHtumI11Q"/>
+    <assmComponents name="JohnSmith" id="_UQxBbjPyEei3dfHtumI11Q" instantiates="_UQxBYTPyEei3dfHtumI11Q"/>
+    <assmComponents name="printHead" id="_UQxBbzPyEei3dfHtumI11Q" instantiates="_UQxBYjPyEei3dfHtumI11Q"/>
+    <assmComponents name="StudioTeletype" id="_UQxBcDPyEei3dfHtumI11Q" instantiates="_UQxBYzPyEei3dfHtumI11Q"/>
+    <assmComponents name="scan-for" id="_UQ6LWzPyEei3dfHtumI11Q" instantiates="_UQ6LUDPyEei3dfHtumI11Q"/>
+    <assmComponents name="exclude" id="_UQ6LXDPyEei3dfHtumI11Q" instantiates="_UQ6LUDPyEei3dfHtumI11Q"/>
+    <assmComponents name="propertyConfigurer" id="_UQ6LXTPyEei3dfHtumI11Q" instantiates="_UQ6LUTPyEei3dfHtumI11Q"/>
+    <assmComponents name="mailSender" id="_UQ6LXjPyEei3dfHtumI11Q" instantiates="_UQ6LUjPyEei3dfHtumI11Q"/>
+    <assmComponents name="mailMessage" id="_UQ6LXzPyEei3dfHtumI11Q" instantiates="_UQ6LUzPyEei3dfHtumI11Q"/>
+    <assmComponents name="FileLocatorJob" id="_UQ6LYDPyEei3dfHtumI11Q" instantiates="_UQ6LVDPyEei3dfHtumI11Q"/>
+    <assmComponents name="FileLocatorTrigger" id="_UQ6LYTPyEei3dfHtumI11Q" instantiates="_UQ6LVTPyEei3dfHtumI11Q"/>
+    <assmComponents id="_UQ6LYjPyEei3dfHtumI11Q" instantiates="_UQ6LVjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;the-match&quot;" id="_USjKETPyEei3dfHtumI11Q" instantiates="_USjKEDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;theQueue&quot;" id="_UTI__DPyEei3dfHtumI11Q" instantiates="_UTI_8DPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BillSkyes&quot;" id="_UTI__TPyEei3dfHtumI11Q" instantiates="_UTI_8TPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;JohnSmith&quot;" id="_UTI__jPyEei3dfHtumI11Q" instantiates="_UTI_8TPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;printHead&quot;" id="_UTI__zPyEei3dfHtumI11Q" instantiates="_UTI_8jPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;StudioTeletype&quot;" id="_UTJAADPyEei3dfHtumI11Q" instantiates="_UTI_8zPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;theQueue&quot;" id="_UTSw_DPyEei3dfHtumI11Q" instantiates="_UTSw8DPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BillSkyes&quot;" id="_UTSw_TPyEei3dfHtumI11Q" instantiates="_UTSw8TPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;JohnSmith&quot;" id="_UTSw_jPyEei3dfHtumI11Q" instantiates="_UTSw8TPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;printHead&quot;" id="_UTSw_zPyEei3dfHtumI11Q" instantiates="_UTSw8jPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;StudioTeletype&quot;" id="_UTSxADPyEei3dfHtumI11Q" instantiates="_UTSw8zPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;theQueue&quot;" id="_UTlr7DPyEei3dfHtumI11Q" instantiates="_UTlr4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;BillSkyes&quot;" id="_UTlr7TPyEei3dfHtumI11Q" instantiates="_UTlr4TPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;JohnSmith&quot;" id="_UTlr7jPyEei3dfHtumI11Q" instantiates="_UTlr4TPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;printHead&quot;" id="_UTlr7zPyEei3dfHtumI11Q" instantiates="_UTlr4jPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;StudioTeletype&quot;" id="_UTlr8DPyEei3dfHtumI11Q" instantiates="_UTlr4zPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;match1&quot;" id="_UT4m0TPyEei3dfHtumI11Q" instantiates="_UT4m0DPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;match2&quot;" id="_UT4m0jPyEei3dfHtumI11Q" instantiates="_UT4m0DPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;match1&quot;" id="_UUMI0TPyEei3dfHtumI11Q" instantiates="_UUMI0DPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;match2&quot;" id="_UUMI0jPyEei3dfHtumI11Q" instantiates="_UUMI0DPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;theQueue&quot;" id="_UUfDxzPyEei3dfHtumI11Q" instantiates="_UUfDwDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;orderProducer&quot;" id="_UUfDyDPyEei3dfHtumI11Q" instantiates="_UUfDwTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;OrderRecorder&quot;" id="_UUfDyTPyEei3dfHtumI11Q" instantiates="_UUfDwjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;QueueMonitor&quot;" id="_UUfDyjPyEei3dfHtumI11Q" instantiates="_UUfDwzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UQxBcTPyEei3dfHtumI11Q" clientInstElem="_UQxBbTPyEei3dfHtumI11Q" serverInstElem="_UQxBcjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UQxBczPyEei3dfHtumI11Q" clientInstElem="_UQxBbTPyEei3dfHtumI11Q" serverInstElem="_UQxBbDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UQxBdDPyEei3dfHtumI11Q" clientInstElem="_UQxBbjPyEei3dfHtumI11Q" serverInstElem="_UQxBdTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UQxBdjPyEei3dfHtumI11Q" clientInstElem="_UQxBbjPyEei3dfHtumI11Q" serverInstElem="_UQxBbDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UQxBdzPyEei3dfHtumI11Q" clientInstElem="_UQxBcDPyEei3dfHtumI11Q" serverInstElem="_UQxBbzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UQxBeDPyEei3dfHtumI11Q" clientInstElem="_UQxBcDPyEei3dfHtumI11Q" serverInstElem="_UQxBbDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UQ6LYzPyEei3dfHtumI11Q" property="FileLocatorJob.targetObject" clientInstElem="_UQ6LYDPyEei3dfHtumI11Q" serverInstElem="_UQ6LZDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UQ6LZTPyEei3dfHtumI11Q" property="FileLocatorTrigger.jobDetail" clientInstElem="_UQ6LYTPyEei3dfHtumI11Q" serverInstElem="_UQ6LYDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UQ6LZjPyEei3dfHtumI11Q" clientInstElem="_UQ6LZDPyEei3dfHtumI11Q" serverInstElem="_UQ6LYTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTJAATPyEei3dfHtumI11Q" clientInstElem="_UTI__TPyEei3dfHtumI11Q" serverInstElem="_UTJAAjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTJAAzPyEei3dfHtumI11Q" clientInstElem="_UTI__TPyEei3dfHtumI11Q" serverInstElem="_UTI__DPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTJABDPyEei3dfHtumI11Q" clientInstElem="_UTI__jPyEei3dfHtumI11Q" serverInstElem="_UTJABTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTJABjPyEei3dfHtumI11Q" clientInstElem="_UTI__jPyEei3dfHtumI11Q" serverInstElem="_UTI__DPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTJABzPyEei3dfHtumI11Q" clientInstElem="_UTJAADPyEei3dfHtumI11Q" serverInstElem="_UTI__zPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTJACDPyEei3dfHtumI11Q" clientInstElem="_UTJAADPyEei3dfHtumI11Q" serverInstElem="_UTI__DPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTSxATPyEei3dfHtumI11Q" clientInstElem="_UTSw_TPyEei3dfHtumI11Q" serverInstElem="_UTSxAjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTSxAzPyEei3dfHtumI11Q" clientInstElem="_UTSw_TPyEei3dfHtumI11Q" serverInstElem="_UTSw_DPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTSxBDPyEei3dfHtumI11Q" clientInstElem="_UTSw_jPyEei3dfHtumI11Q" serverInstElem="_UTSxBTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTSxBjPyEei3dfHtumI11Q" clientInstElem="_UTSw_jPyEei3dfHtumI11Q" serverInstElem="_UTSw_DPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTSxBzPyEei3dfHtumI11Q" clientInstElem="_UTSxADPyEei3dfHtumI11Q" serverInstElem="_UTSw_zPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTSxCDPyEei3dfHtumI11Q" clientInstElem="_UTSxADPyEei3dfHtumI11Q" serverInstElem="_UTSw_DPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTlr8TPyEei3dfHtumI11Q" clientInstElem="_UTlr7TPyEei3dfHtumI11Q" serverInstElem="_UTlr8jPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTlr8zPyEei3dfHtumI11Q" clientInstElem="_UTlr7TPyEei3dfHtumI11Q" serverInstElem="_UTlr7DPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTlr9DPyEei3dfHtumI11Q" clientInstElem="_UTlr7jPyEei3dfHtumI11Q" serverInstElem="_UTlr9TPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTlr9jPyEei3dfHtumI11Q" clientInstElem="_UTlr7jPyEei3dfHtumI11Q" serverInstElem="_UTlr7DPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTlr9zPyEei3dfHtumI11Q" clientInstElem="_UTlr8DPyEei3dfHtumI11Q" serverInstElem="_UTlr7zPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UTlr-DPyEei3dfHtumI11Q" clientInstElem="_UTlr8DPyEei3dfHtumI11Q" serverInstElem="_UTlr7DPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UUfDyzPyEei3dfHtumI11Q" clientInstElem="_UUfDyDPyEei3dfHtumI11Q" serverInstElem="_UUfDxzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UUfDzDPyEei3dfHtumI11Q" clientInstElem="_UUfDyTPyEei3dfHtumI11Q" serverInstElem="_UUfDxzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_UUfDzTPyEei3dfHtumI11Q" clientInstElem="_UUfDyjPyEei3dfHtumI11Q" serverInstElem="_UUfDxzPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="roghughe.captaindebug_spec">
+    <specConnections refID="_UXAzUDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzUTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzUjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzUzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzVDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzVTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzVjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzVzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzWDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzWTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzWjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzWzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzXDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzXTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzXjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzXzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzYDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzYTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzYjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzYzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzZDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzZTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzZjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzZzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzaDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzaTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzajPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzazPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzbDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_UXAzbTPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="spring-projects.spring-data-commons">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="spring-projects.spring-data-commons_config" implements="//@architectureDescriptions[name='spring-projects.spring-data-commons_spec']">
+    <configComponents name="&quot;org.springframework.data.web.PagedResourcesAssembler&quot;" id="_B0v8kDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.web.config.HateoasAwareSpringDataWebConfiguration&quot;" id="_B1DekDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.web.PagedResourcesAssembler&quot;" id="_B1fjcDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.web.config.HateoasAwareSpringDataWebConfiguration&quot;" id="_B1zFcDPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="spring-projects.spring-data-commons_asm" instantiates="//@architectureDescriptions[name='spring-projects.spring-data-commons_config']">
+    <assmComponents id="_B0v8kzPzEei3dfHtumI11Q" instantiates="_B0v8kDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_B1DekTPzEei3dfHtumI11Q" instantiates="_B1DekDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_B1fjczPzEei3dfHtumI11Q" instantiates="_B1fjcDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_B1zFcTPzEei3dfHtumI11Q" instantiates="_B1zFcDPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="spring-projects.spring-data-commons_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

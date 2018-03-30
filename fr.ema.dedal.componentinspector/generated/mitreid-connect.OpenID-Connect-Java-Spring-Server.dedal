@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="mitreid-connect.OpenID-Connect-Java-Spring-Server">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="mitreid-connect.OpenID-Connect-Java-Spring-Server_config" implements="//@architectureDescriptions[name='mitreid-connect.OpenID-Connect-Java-Spring-Server_spec']">
+    <configComponents name="org.mitre.jwt.assertion.impl.NullAssertionValidator" id="_ysdkQDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.oauth2.assertion.impl.DirectCopyRequestFactory" id="_ysdkQTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jwt.assertion.impl.WhitelistedIssuerAssertionValidator" id="_ysdkQjPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jose.keystore.JWKSetKeyStore" id="_ys6QMDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jwt.signer.service.impl.DefaultJWTSigningAndValidationService" id="_ys6QMTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jwt.encryption.service.impl.DefaultJWTEncryptionAndDecryptionService" id="_ys6QMjPxEei3dfHtumI11Q"/>
+    <configComponents name="com.zaxxer.hikari.HikariDataSource" id="_ytNLIDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.JpaTransactionManager" id="_ytp3EDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" id="_ytp3ETPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.JsonMessageSource" id="_yuGjADPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.ConfigurationBeanLocaleResolver" id="_yuGjATPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.ConfigurationPropertiesBean" id="_yuZd8DPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.UIConfiguration" id="_yu_64DPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jwt.assertion.impl.NullAssertionValidator" id="_yvvhwDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.oauth2.assertion.impl.DirectCopyRequestFactory" id="_yvvhwTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jwt.assertion.impl.WhitelistedIssuerAssertionValidator" id="_yvvhwjPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jose.keystore.JWKSetKeyStore" id="_ywLmoDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jwt.signer.service.impl.DefaultJWTSigningAndValidationService" id="_ywLmoTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jwt.encryption.service.impl.DefaultJWTEncryptionAndDecryptionService" id="_ywLmojPxEei3dfHtumI11Q"/>
+    <configComponents name="com.zaxxer.hikari.HikariDataSource" id="_ywfIoDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.JpaTransactionManager" id="_yw7NgDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" id="_yw7NgTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.JsonMessageSource" id="_yxX5cDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.ConfigurationBeanLocaleResolver" id="_yxX5cTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.ConfigurationPropertiesBean" id="_yxq0YDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.UIConfiguration" id="_yyRRUDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.ConfigurationPropertiesBean" id="_yzBfQDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.UIConfiguration" id="_yzKpMDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jwt.assertion.impl.NullAssertionValidator" id="_yz6QEDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.oauth2.assertion.impl.DirectCopyRequestFactory" id="_yz6QETPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jwt.assertion.impl.WhitelistedIssuerAssertionValidator" id="_yz6QEjPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jose.keystore.JWKSetKeyStore" id="_y0W8ADPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jwt.signer.service.impl.DefaultJWTSigningAndValidationService" id="_y0W8ATPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jwt.encryption.service.impl.DefaultJWTEncryptionAndDecryptionService" id="_y0W8AjPxEei3dfHtumI11Q"/>
+    <configComponents name="com.zaxxer.hikari.HikariDataSource" id="_y0p28DPxEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.JpaTransactionManager" id="_y1Gi4DPxEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" id="_y1Gi4TPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.JsonMessageSource" id="_y1jO0DPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.ConfigurationBeanLocaleResolver" id="_y1jO0TPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.ConfigurationPropertiesBean" id="_y12w0DPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.UIConfiguration" id="_y2dNwDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jwt.assertion.impl.NullAssertionValidator" id="_y3M0oDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.oauth2.assertion.impl.DirectCopyRequestFactory" id="_y3M0oTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jwt.assertion.impl.WhitelistedIssuerAssertionValidator" id="_y3M0ojPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jose.keystore.JWKSetKeyStore" id="_y3o5gDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jwt.signer.service.impl.DefaultJWTSigningAndValidationService" id="_y3o5gTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.jwt.encryption.service.impl.DefaultJWTEncryptionAndDecryptionService" id="_y3o5gjPxEei3dfHtumI11Q"/>
+    <configComponents name="com.zaxxer.hikari.HikariDataSource" id="_y38bgDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.JpaTransactionManager" id="_y4YgYDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" id="_y4YgYTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.JsonMessageSource" id="_y41MUDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.ConfigurationBeanLocaleResolver" id="_y41MUTPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.ConfigurationPropertiesBean" id="_y5IHQDPxEei3dfHtumI11Q"/>
+    <configComponents name="org.mitre.openid.connect.config.UIConfiguration" id="_y5ukMDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_ys6QMzPxEei3dfHtumI11Q" property="&quot;keyStore&quot;" clientClassElem="_ys6QMTPxEei3dfHtumI11Q" serverClassElem="_ys6QMDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_ys6QNDPxEei3dfHtumI11Q" property="&quot;keyStore&quot;" clientClassElem="_ys6QMjPxEei3dfHtumI11Q" serverClassElem="_ys6QMDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_ytp3EjPxEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_ytp3EDPxEei3dfHtumI11Q" serverClassElem="_ytp3ETPxEei3dfHtumI11Q"/>
+    <configConnections refID="_ytp3EzPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_ytp3ETPxEei3dfHtumI11Q" serverClassElem="_ytp3FDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_ytp3FTPxEei3dfHtumI11Q" property="&quot;jpaVendorAdapter&quot;" clientClassElem="_ytp3ETPxEei3dfHtumI11Q" serverClassElem="_ytp3FjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_ywLmozPxEei3dfHtumI11Q" property="&quot;keyStore&quot;" clientClassElem="_ywLmoTPxEei3dfHtumI11Q" serverClassElem="_ywLmoDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_ywLmpDPxEei3dfHtumI11Q" property="&quot;keyStore&quot;" clientClassElem="_ywLmojPxEei3dfHtumI11Q" serverClassElem="_ywLmoDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_yw7NgjPxEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_yw7NgDPxEei3dfHtumI11Q" serverClassElem="_yw7NgTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_yw7NgzPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_yw7NgTPxEei3dfHtumI11Q" serverClassElem="_yw7NhDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_yw7NhTPxEei3dfHtumI11Q" property="&quot;jpaVendorAdapter&quot;" clientClassElem="_yw7NgTPxEei3dfHtumI11Q" serverClassElem="_yw7NhjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_y0W8AzPxEei3dfHtumI11Q" property="&quot;keyStore&quot;" clientClassElem="_y0W8ATPxEei3dfHtumI11Q" serverClassElem="_y0W8ADPxEei3dfHtumI11Q"/>
+    <configConnections refID="_y0W8BDPxEei3dfHtumI11Q" property="&quot;keyStore&quot;" clientClassElem="_y0W8AjPxEei3dfHtumI11Q" serverClassElem="_y0W8ADPxEei3dfHtumI11Q"/>
+    <configConnections refID="_y1Gi4jPxEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_y1Gi4DPxEei3dfHtumI11Q" serverClassElem="_y1Gi4TPxEei3dfHtumI11Q"/>
+    <configConnections refID="_y1Gi4zPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_y1Gi4TPxEei3dfHtumI11Q" serverClassElem="_y1Gi5DPxEei3dfHtumI11Q"/>
+    <configConnections refID="_y1Gi5TPxEei3dfHtumI11Q" property="&quot;jpaVendorAdapter&quot;" clientClassElem="_y1Gi4TPxEei3dfHtumI11Q" serverClassElem="_y1Gi5jPxEei3dfHtumI11Q"/>
+    <configConnections refID="_y3o5gzPxEei3dfHtumI11Q" property="&quot;keyStore&quot;" clientClassElem="_y3o5gTPxEei3dfHtumI11Q" serverClassElem="_y3o5gDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_y3o5hDPxEei3dfHtumI11Q" property="&quot;keyStore&quot;" clientClassElem="_y3o5gjPxEei3dfHtumI11Q" serverClassElem="_y3o5gDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_y4YgYjPxEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_y4YgYDPxEei3dfHtumI11Q" serverClassElem="_y4YgYTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_y4YgYzPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_y4YgYTPxEei3dfHtumI11Q" serverClassElem="_y4YgZDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_y4YgZTPxEei3dfHtumI11Q" property="&quot;jpaVendorAdapter&quot;" clientClassElem="_y4YgYTPxEei3dfHtumI11Q" serverClassElem="_y4YgZjPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="mitreid-connect.OpenID-Connect-Java-Spring-Server_asm" instantiates="//@architectureDescriptions[name='mitreid-connect.OpenID-Connect-Java-Spring-Server_config']">
+    <assmComponents name="jwtAssertionValidator" id="_ysdkQzPxEei3dfHtumI11Q" instantiates="_ysdkQDPxEei3dfHtumI11Q"/>
+    <assmComponents name="jwtAssertionTokenFactory" id="_ysdkRDPxEei3dfHtumI11Q" instantiates="_ysdkQTPxEei3dfHtumI11Q"/>
+    <assmComponents name="clientAssertionValidator" id="_ysdkRTPxEei3dfHtumI11Q" instantiates="_ysdkQjPxEei3dfHtumI11Q"/>
+    <assmComponents name="defaultKeyStore" id="_ys6QNTPxEei3dfHtumI11Q" instantiates="_ys6QMDPxEei3dfHtumI11Q"/>
+    <assmComponents name="defaultsignerService" id="_ys6QNjPxEei3dfHtumI11Q" instantiates="_ys6QMTPxEei3dfHtumI11Q"/>
+    <assmComponents name="defaultEncryptionService" id="_ys6QNzPxEei3dfHtumI11Q" instantiates="_ys6QMjPxEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_ytNLITPxEei3dfHtumI11Q" instantiates="_ytNLIDPxEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_ytp3FzPxEei3dfHtumI11Q" instantiates="_ytp3EDPxEei3dfHtumI11Q"/>
+    <assmComponents name="entityManagerFactory" id="_ytp3GDPxEei3dfHtumI11Q" instantiates="_ytp3ETPxEei3dfHtumI11Q"/>
+    <assmComponents name="messageSource" id="_yuGjAjPxEei3dfHtumI11Q" instantiates="_yuGjADPxEei3dfHtumI11Q"/>
+    <assmComponents name="localeResolver" id="_yuGjAzPxEei3dfHtumI11Q" instantiates="_yuGjATPxEei3dfHtumI11Q"/>
+    <assmComponents name="configBean" id="_yuZd8TPxEei3dfHtumI11Q" instantiates="_yuZd8DPxEei3dfHtumI11Q"/>
+    <assmComponents name="uiConfiguration" id="_yu_64TPxEei3dfHtumI11Q" instantiates="_yu_64DPxEei3dfHtumI11Q"/>
+    <assmComponents name="jwtAssertionValidator" id="_yvvhwzPxEei3dfHtumI11Q" instantiates="_yvvhwDPxEei3dfHtumI11Q"/>
+    <assmComponents name="jwtAssertionTokenFactory" id="_yvvhxDPxEei3dfHtumI11Q" instantiates="_yvvhwTPxEei3dfHtumI11Q"/>
+    <assmComponents name="clientAssertionValidator" id="_yvvhxTPxEei3dfHtumI11Q" instantiates="_yvvhwjPxEei3dfHtumI11Q"/>
+    <assmComponents name="defaultKeyStore" id="_ywLmpTPxEei3dfHtumI11Q" instantiates="_ywLmoDPxEei3dfHtumI11Q"/>
+    <assmComponents name="defaultsignerService" id="_ywLmpjPxEei3dfHtumI11Q" instantiates="_ywLmoTPxEei3dfHtumI11Q"/>
+    <assmComponents name="defaultEncryptionService" id="_ywLmpzPxEei3dfHtumI11Q" instantiates="_ywLmojPxEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_ywfIoTPxEei3dfHtumI11Q" instantiates="_ywfIoDPxEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_yw7NhzPxEei3dfHtumI11Q" instantiates="_yw7NgDPxEei3dfHtumI11Q"/>
+    <assmComponents name="entityManagerFactory" id="_yw7NiDPxEei3dfHtumI11Q" instantiates="_yw7NgTPxEei3dfHtumI11Q"/>
+    <assmComponents name="messageSource" id="_yxX5cjPxEei3dfHtumI11Q" instantiates="_yxX5cDPxEei3dfHtumI11Q"/>
+    <assmComponents name="localeResolver" id="_yxX5czPxEei3dfHtumI11Q" instantiates="_yxX5cTPxEei3dfHtumI11Q"/>
+    <assmComponents name="configBean" id="_yxq0YTPxEei3dfHtumI11Q" instantiates="_yxq0YDPxEei3dfHtumI11Q"/>
+    <assmComponents name="uiConfiguration" id="_yyRRUTPxEei3dfHtumI11Q" instantiates="_yyRRUDPxEei3dfHtumI11Q"/>
+    <assmComponents name="configBean" id="_yzBfQTPxEei3dfHtumI11Q" instantiates="_yzBfQDPxEei3dfHtumI11Q"/>
+    <assmComponents name="uiConfiguration" id="_yzKpMTPxEei3dfHtumI11Q" instantiates="_yzKpMDPxEei3dfHtumI11Q"/>
+    <assmComponents name="jwtAssertionValidator" id="_yz6QEzPxEei3dfHtumI11Q" instantiates="_yz6QEDPxEei3dfHtumI11Q"/>
+    <assmComponents name="jwtAssertionTokenFactory" id="_yz6QFDPxEei3dfHtumI11Q" instantiates="_yz6QETPxEei3dfHtumI11Q"/>
+    <assmComponents name="clientAssertionValidator" id="_yz6QFTPxEei3dfHtumI11Q" instantiates="_yz6QEjPxEei3dfHtumI11Q"/>
+    <assmComponents name="defaultKeyStore" id="_y0W8BTPxEei3dfHtumI11Q" instantiates="_y0W8ADPxEei3dfHtumI11Q"/>
+    <assmComponents name="defaultsignerService" id="_y0W8BjPxEei3dfHtumI11Q" instantiates="_y0W8ATPxEei3dfHtumI11Q"/>
+    <assmComponents name="defaultEncryptionService" id="_y0W8BzPxEei3dfHtumI11Q" instantiates="_y0W8AjPxEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_y0p28TPxEei3dfHtumI11Q" instantiates="_y0p28DPxEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_y1Gi5zPxEei3dfHtumI11Q" instantiates="_y1Gi4DPxEei3dfHtumI11Q"/>
+    <assmComponents name="entityManagerFactory" id="_y1Gi6DPxEei3dfHtumI11Q" instantiates="_y1Gi4TPxEei3dfHtumI11Q"/>
+    <assmComponents name="messageSource" id="_y1jO0jPxEei3dfHtumI11Q" instantiates="_y1jO0DPxEei3dfHtumI11Q"/>
+    <assmComponents name="localeResolver" id="_y1jO0zPxEei3dfHtumI11Q" instantiates="_y1jO0TPxEei3dfHtumI11Q"/>
+    <assmComponents name="configBean" id="_y12w0TPxEei3dfHtumI11Q" instantiates="_y12w0DPxEei3dfHtumI11Q"/>
+    <assmComponents name="uiConfiguration" id="_y2dNwTPxEei3dfHtumI11Q" instantiates="_y2dNwDPxEei3dfHtumI11Q"/>
+    <assmComponents name="jwtAssertionValidator" id="_y3M0ozPxEei3dfHtumI11Q" instantiates="_y3M0oDPxEei3dfHtumI11Q"/>
+    <assmComponents name="jwtAssertionTokenFactory" id="_y3M0pDPxEei3dfHtumI11Q" instantiates="_y3M0oTPxEei3dfHtumI11Q"/>
+    <assmComponents name="clientAssertionValidator" id="_y3M0pTPxEei3dfHtumI11Q" instantiates="_y3M0ojPxEei3dfHtumI11Q"/>
+    <assmComponents name="defaultKeyStore" id="_y3o5hTPxEei3dfHtumI11Q" instantiates="_y3o5gDPxEei3dfHtumI11Q"/>
+    <assmComponents name="defaultsignerService" id="_y3o5hjPxEei3dfHtumI11Q" instantiates="_y3o5gTPxEei3dfHtumI11Q"/>
+    <assmComponents name="defaultEncryptionService" id="_y3o5hzPxEei3dfHtumI11Q" instantiates="_y3o5gjPxEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_y38bgTPxEei3dfHtumI11Q" instantiates="_y38bgDPxEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_y4YgZzPxEei3dfHtumI11Q" instantiates="_y4YgYDPxEei3dfHtumI11Q"/>
+    <assmComponents name="entityManagerFactory" id="_y4YgaDPxEei3dfHtumI11Q" instantiates="_y4YgYTPxEei3dfHtumI11Q"/>
+    <assmComponents name="messageSource" id="_y41MUjPxEei3dfHtumI11Q" instantiates="_y41MUDPxEei3dfHtumI11Q"/>
+    <assmComponents name="localeResolver" id="_y41MUzPxEei3dfHtumI11Q" instantiates="_y41MUTPxEei3dfHtumI11Q"/>
+    <assmComponents name="configBean" id="_y5IHQTPxEei3dfHtumI11Q" instantiates="_y5IHQDPxEei3dfHtumI11Q"/>
+    <assmComponents name="uiConfiguration" id="_y5ukMTPxEei3dfHtumI11Q" instantiates="_y5ukMDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_ys6QODPxEei3dfHtumI11Q" property="defaultsignerService.keyStore" clientInstElem="_ys6QNjPxEei3dfHtumI11Q" serverInstElem="_ys6QNTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_ys6QOTPxEei3dfHtumI11Q" property="defaultEncryptionService.keyStore" clientInstElem="_ys6QNzPxEei3dfHtumI11Q" serverInstElem="_ys6QNTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_ytp3GTPxEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_ytp3FzPxEei3dfHtumI11Q" serverInstElem="_ytp3GDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_ytp3GjPxEei3dfHtumI11Q" property="entityManagerFactory.dataSource" clientInstElem="_ytp3GDPxEei3dfHtumI11Q" serverInstElem="_ytp3GzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_ytp3HDPxEei3dfHtumI11Q" property="entityManagerFactory.jpaVendorAdapter" clientInstElem="_ytp3GDPxEei3dfHtumI11Q" serverInstElem="_ytp3HTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_ywLmqDPxEei3dfHtumI11Q" property="defaultsignerService.keyStore" clientInstElem="_ywLmpjPxEei3dfHtumI11Q" serverInstElem="_ywLmpTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_ywLmqTPxEei3dfHtumI11Q" property="defaultEncryptionService.keyStore" clientInstElem="_ywLmpzPxEei3dfHtumI11Q" serverInstElem="_ywLmpTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_yw7NiTPxEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_yw7NhzPxEei3dfHtumI11Q" serverInstElem="_yw7NiDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_yw7NijPxEei3dfHtumI11Q" property="entityManagerFactory.dataSource" clientInstElem="_yw7NiDPxEei3dfHtumI11Q" serverInstElem="_yw7NizPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_yw7NjDPxEei3dfHtumI11Q" property="entityManagerFactory.jpaVendorAdapter" clientInstElem="_yw7NiDPxEei3dfHtumI11Q" serverInstElem="_yw7NjTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_y0W8CDPxEei3dfHtumI11Q" property="defaultsignerService.keyStore" clientInstElem="_y0W8BjPxEei3dfHtumI11Q" serverInstElem="_y0W8BTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_y0W8CTPxEei3dfHtumI11Q" property="defaultEncryptionService.keyStore" clientInstElem="_y0W8BzPxEei3dfHtumI11Q" serverInstElem="_y0W8BTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_y1Gi6TPxEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_y1Gi5zPxEei3dfHtumI11Q" serverInstElem="_y1Gi6DPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_y1Gi6jPxEei3dfHtumI11Q" property="entityManagerFactory.dataSource" clientInstElem="_y1Gi6DPxEei3dfHtumI11Q" serverInstElem="_y1Gi6zPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_y1Gi7DPxEei3dfHtumI11Q" property="entityManagerFactory.jpaVendorAdapter" clientInstElem="_y1Gi6DPxEei3dfHtumI11Q" serverInstElem="_y1Gi7TPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_y3o5iDPxEei3dfHtumI11Q" property="defaultsignerService.keyStore" clientInstElem="_y3o5hjPxEei3dfHtumI11Q" serverInstElem="_y3o5hTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_y3o5iTPxEei3dfHtumI11Q" property="defaultEncryptionService.keyStore" clientInstElem="_y3o5hzPxEei3dfHtumI11Q" serverInstElem="_y3o5hTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_y4YgaTPxEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_y4YgZzPxEei3dfHtumI11Q" serverInstElem="_y4YgaDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_y4YgajPxEei3dfHtumI11Q" property="entityManagerFactory.dataSource" clientInstElem="_y4YgaDPxEei3dfHtumI11Q" serverInstElem="_y4YgazPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_y4YgbDPxEei3dfHtumI11Q" property="entityManagerFactory.jpaVendorAdapter" clientInstElem="_y4YgaDPxEei3dfHtumI11Q" serverInstElem="_y4YgbTPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="mitreid-connect.OpenID-Connect-Java-Spring-Server_spec">
+    <specConnections refID="_y6UaEDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaETPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaEjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaEzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaFDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaFTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaFjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaFzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaGDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaGTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaGjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaGzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaHDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaHTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaHjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaHzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaIDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaITPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaIjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_y6UaIzPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

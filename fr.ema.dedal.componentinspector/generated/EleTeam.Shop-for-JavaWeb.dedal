@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="EleTeam.Shop-for-JavaWeb">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="EleTeam.Shop-for-JavaWeb_config" implements="//@architectureDescriptions[name='EleTeam.Shop-for-JavaWeb_spec']">
+    <configComponents name="org.mybatis.spring.SqlSessionFactoryBean" id="_3kJ94DPvEei3dfHtumI11Q"/>
+    <configComponents name="org.mybatis.spring.mapper.MapperScannerConfigurer" id="_3kJ94TPvEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jdbc.datasource.DataSourceTransactionManager" id="_3kJ94jPvEei3dfHtumI11Q"/>
+    <configConnections refID="_3kJ94zPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_3kJ94DPvEei3dfHtumI11Q" serverClassElem="_3kJ95DPvEei3dfHtumI11Q"/>
+    <configConnections refID="_3kJ95TPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_3kJ94jPvEei3dfHtumI11Q" serverClassElem="_3kJ95jPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="EleTeam.Shop-for-JavaWeb_asm" instantiates="//@architectureDescriptions[name='EleTeam.Shop-for-JavaWeb_config']">
+    <assmComponents name="sqlSessionFactory" id="_3kJ95zPvEei3dfHtumI11Q" instantiates="_3kJ94DPvEei3dfHtumI11Q"/>
+    <assmComponents name="mapperScannerConfigurer" id="_3kJ96DPvEei3dfHtumI11Q" instantiates="_3kJ94TPvEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_3kJ96TPvEei3dfHtumI11Q" instantiates="_3kJ94jPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3kJ96jPvEei3dfHtumI11Q" property="sqlSessionFactory.dataSource" clientInstElem="_3kJ95zPvEei3dfHtumI11Q" serverInstElem="_3kJ96zPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_3kJ97DPvEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_3kJ96TPvEei3dfHtumI11Q" serverInstElem="_3kJ97TPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="EleTeam.Shop-for-JavaWeb_spec">
+    <specConnections refID="_3kJ97jPvEei3dfHtumI11Q"/>
+    <specConnections refID="_3kJ97zPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

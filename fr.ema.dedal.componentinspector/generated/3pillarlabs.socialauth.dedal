@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="3pillarlabs.socialauth">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="3pillarlabs.socialauth_config" implements="//@architectureDescriptions[name='3pillarlabs.socialauth_spec']">
+    <configComponents name="org.codehaus.groovy.grails.commons.GrailsApplicationFactoryBean" id="__X6VcDPsEei3dfHtumI11Q"/>
+    <configComponents name="org.codehaus.groovy.grails.plugins.GrailsPluginManagerFactoryBean" id="__X7jkDPsEei3dfHtumI11Q"/>
+    <configComponents name="org.codehaus.groovy.grails.commons.spring.GrailsRuntimeConfigurator" id="__X8xsDPsEei3dfHtumI11Q"/>
+    <configComponents name="org.codehaus.groovy.grails.commons.GrailsResourceLoaderFactoryBean" id="__X9YwDPsEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.web.filter.CharacterEncodingFilter" id="__X9_0DPsEei3dfHtumI11Q"/>
+    <configComponents name="org.codehaus.groovy.grails.commons.GrailsApplicationFactoryBean" id="__Z1oEDPsEei3dfHtumI11Q"/>
+    <configComponents name="org.codehaus.groovy.grails.plugins.GrailsPluginManagerFactoryBean" id="__Z1oETPsEei3dfHtumI11Q"/>
+    <configComponents name="org.codehaus.groovy.grails.commons.spring.GrailsRuntimeConfigurator" id="__Z3dQDPsEei3dfHtumI11Q"/>
+    <configComponents name="org.codehaus.groovy.grails.commons.GrailsResourceLoaderFactoryBean" id="__aLmUDPsEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.web.filter.CharacterEncodingFilter" id="__aMNYDPsEei3dfHtumI11Q"/>
+    <configConnections refID="__X_1ADPsEei3dfHtumI11Q" property="&quot;grailsResourceLoader&quot;" clientClassElem="__X6VcDPsEei3dfHtumI11Q" serverClassElem="__X9YwDPsEei3dfHtumI11Q"/>
+    <configConnections refID="__YMCQDPsEei3dfHtumI11Q" property="&quot;application&quot;" clientClassElem="__X7jkDPsEei3dfHtumI11Q" serverClassElem="__X6VcDPsEei3dfHtumI11Q"/>
+    <configConnections refID="__YN3cDPsEei3dfHtumI11Q" clientClassElem="__X8xsDPsEei3dfHtumI11Q" serverClassElem="__X6VcDPsEei3dfHtumI11Q"/>
+    <configConnections refID="__YPsoDPsEei3dfHtumI11Q" property="&quot;pluginManager&quot;" clientClassElem="__X8xsDPsEei3dfHtumI11Q" serverClassElem="__X7jkDPsEei3dfHtumI11Q"/>
+    <configConnections refID="__aM0cDPsEei3dfHtumI11Q" property="&quot;grailsResourceLoader&quot;" clientClassElem="__Z1oEDPsEei3dfHtumI11Q" serverClassElem="__aLmUDPsEei3dfHtumI11Q"/>
+    <configConnections refID="__aOpoDPsEei3dfHtumI11Q" property="&quot;application&quot;" clientClassElem="__Z1oETPsEei3dfHtumI11Q" serverClassElem="__Z1oEDPsEei3dfHtumI11Q"/>
+    <configConnections refID="__aPQsDPsEei3dfHtumI11Q" clientClassElem="__Z3dQDPsEei3dfHtumI11Q" serverClassElem="__Z1oEDPsEei3dfHtumI11Q"/>
+    <configConnections refID="__aQe0DPsEei3dfHtumI11Q" property="&quot;pluginManager&quot;" clientClassElem="__Z3dQDPsEei3dfHtumI11Q" serverClassElem="__Z1oETPsEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="3pillarlabs.socialauth_asm" instantiates="//@architectureDescriptions[name='3pillarlabs.socialauth_config']">
+    <assmComponents name="grailsApplication" id="__YQ6wDPsEei3dfHtumI11Q" instantiates="__X6VcDPsEei3dfHtumI11Q"/>
+    <assmComponents name="pluginManager" id="__YRh0DPsEei3dfHtumI11Q" instantiates="__X7jkDPsEei3dfHtumI11Q"/>
+    <assmComponents name="grailsConfigurator" id="__YSI4DPsEei3dfHtumI11Q" instantiates="__X8xsDPsEei3dfHtumI11Q"/>
+    <assmComponents name="grailsResourceLoader" id="__YTXADPsEei3dfHtumI11Q" instantiates="__X9YwDPsEei3dfHtumI11Q"/>
+    <assmComponents name="characterEncodingFilter" id="__YXBYDPsEei3dfHtumI11Q" instantiates="__X9_0DPsEei3dfHtumI11Q"/>
+    <assmComponents name="grailsApplication" id="__aS7EDPsEei3dfHtumI11Q" instantiates="__Z1oEDPsEei3dfHtumI11Q"/>
+    <assmComponents name="pluginManager" id="__aS7ETPsEei3dfHtumI11Q" instantiates="__Z1oETPsEei3dfHtumI11Q"/>
+    <assmComponents name="grailsConfigurator" id="__aS7EjPsEei3dfHtumI11Q" instantiates="__Z3dQDPsEei3dfHtumI11Q"/>
+    <assmComponents name="grailsResourceLoader" id="__aTiIDPsEei3dfHtumI11Q" instantiates="__aLmUDPsEei3dfHtumI11Q"/>
+    <assmComponents name="characterEncodingFilter" id="__aTiITPsEei3dfHtumI11Q" instantiates="__aMNYDPsEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__YY2kDPsEei3dfHtumI11Q" property="grailsApplication.grailsResourceLoader" clientInstElem="__YQ6wDPsEei3dfHtumI11Q" serverInstElem="__YTXADPsEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__YaEsDPsEei3dfHtumI11Q" property="pluginManager.application" clientInstElem="__YRh0DPsEei3dfHtumI11Q" serverInstElem="__YQ6wDPsEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__YarwDPsEei3dfHtumI11Q" clientInstElem="__YSI4DPsEei3dfHtumI11Q" serverInstElem="__YQ6wDPsEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__Yb54DPsEei3dfHtumI11Q" property="grailsConfigurator.pluginManager" clientInstElem="__YSI4DPsEei3dfHtumI11Q" serverInstElem="__YRh0DPsEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__aUwQDPsEei3dfHtumI11Q" property="grailsApplication.grailsResourceLoader" clientInstElem="__aS7EDPsEei3dfHtumI11Q" serverInstElem="__aTiIDPsEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__aUwQTPsEei3dfHtumI11Q" property="pluginManager.application" clientInstElem="__aS7ETPsEei3dfHtumI11Q" serverInstElem="__aS7EDPsEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__aVXUDPsEei3dfHtumI11Q" clientInstElem="__aS7EjPsEei3dfHtumI11Q" serverInstElem="__aS7EDPsEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__aVXUTPsEei3dfHtumI11Q" property="grailsConfigurator.pluginManager" clientInstElem="__aS7EjPsEei3dfHtumI11Q" serverInstElem="__aS7ETPsEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="3pillarlabs.socialauth_spec">
+    <specConnections refID="__flqwDPsEei3dfHtumI11Q"/>
+    <specConnections refID="__flqwTPsEei3dfHtumI11Q"/>
+    <specConnections refID="__flqwjPsEei3dfHtumI11Q"/>
+    <specConnections refID="__flqwzPsEei3dfHtumI11Q"/>
+    <specConnections refID="__flqxDPsEei3dfHtumI11Q"/>
+    <specConnections refID="__flqxTPsEei3dfHtumI11Q"/>
+    <specConnections refID="__flqxjPsEei3dfHtumI11Q"/>
+    <specConnections refID="__flqxzPsEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

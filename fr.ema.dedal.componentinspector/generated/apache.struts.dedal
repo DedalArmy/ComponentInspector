@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="apache.struts">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="apache.struts_config" implements="//@architectureDescriptions[name='apache.struts_spec']">
+    <configComponents name="&quot;org.apache.struts2.showcase.freemarker.CustomFreemarkerManager&quot;" id="_uRVkIDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.freemarker.CustomFreemarkerManagerUtil&quot;" id="_uRVkITPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.ChatServiceImpl&quot;" id="_uRVkIjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.ChatLoginAction&quot;" id="_uRVkIzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.ChatLogoutAction&quot;" id="_uRVkJDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.UsersAvailableAction&quot;" id="_uRVkJTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.RoomsAvailableAction&quot;" id="_uRVkJjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.CrudRoomAction&quot;" id="_uRVkJzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.EnterRoomAction&quot;" id="_uRVkKDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.MessagesAvailableInRoomAction&quot;" id="_uRVkKTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.SendMessageToRoomAction&quot;" id="_uRWLMDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.UsersAvailableInRoomAction&quot;" id="_uRWLMTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.ExitRoomAction&quot;" id="_uRWLMjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.hangman.HangmanService&quot;" id="_uRWLMzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.hangman.StartHangmanAction&quot;" id="_uRWLNDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.hangman.GuessCharacterAction&quot;" id="_uRWLNTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.hangman.GetUpdatedHangmanAction&quot;" id="_uRWLNjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.freemarker.CustomFreemarkerManager&quot;" id="_uRofEDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.freemarker.CustomFreemarkerManagerUtil&quot;" id="_uRpGIDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.ChatServiceImpl&quot;" id="_uRpGITPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.ChatLoginAction&quot;" id="_uRpGIjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.ChatLogoutAction&quot;" id="_uRpGIzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.UsersAvailableAction&quot;" id="_uRpGJDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.RoomsAvailableAction&quot;" id="_uRpGJTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.CrudRoomAction&quot;" id="_uRpGJjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.EnterRoomAction&quot;" id="_uRpGJzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.MessagesAvailableInRoomAction&quot;" id="_uRpGKDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.SendMessageToRoomAction&quot;" id="_uRpGKTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.UsersAvailableInRoomAction&quot;" id="_uRpGKjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.chat.ExitRoomAction&quot;" id="_uRpGKzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.hangman.HangmanService&quot;" id="_uRptMDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.hangman.StartHangmanAction&quot;" id="_uRptMTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.hangman.GuessCharacterAction&quot;" id="_uRptMjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.showcase.hangman.GetUpdatedHangmanAction&quot;" id="_uRptMzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;actions.osgi.Message&quot;" id="_uR7aADPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;actions.osgi.HelloWorldAction&quot;" id="_uR7aATPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;actions.osgi.Message&quot;" id="_uSKqkDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;actions.osgi.HelloWorldAction&quot;" id="_uSKqkTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.opensymphony.xwork2.SimpleAction&quot;" id="_uSZUEDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.opensymphony.xwork2.spring.ExecuteInterceptor&quot;" id="_uSZUETPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.aop.framework.ProxyFactoryBean&quot;" id="_uSZUEjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator&quot;" id="_uSZUEzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.opensymphony.xwork2.spring.SpringResult&quot;" id="_uSZUFDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.opensymphony.xwork2.TestBean&quot;" id="_uSZUFTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.opensymphony.xwork2.TestSubBean&quot;" id="_uSZUFjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.opensymphony.xwork2.spring.TestAspect&quot;" id="_uSZ7IDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.opensymphony.xwork2.SimpleAction&quot;" id="_uTVvQDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.opensymphony.xwork2.spring.ExecuteInterceptor&quot;" id="_uTVvQTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.aop.framework.ProxyFactoryBean&quot;" id="_uTVvQjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator&quot;" id="_uTVvQzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.opensymphony.xwork2.spring.SpringResult&quot;" id="_uTVvRDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.opensymphony.xwork2.TestBean&quot;" id="_uTWWUDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.opensymphony.xwork2.TestSubBean&quot;" id="_uTWWUTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.opensymphony.xwork2.spring.TestAspect&quot;" id="_uTWWUjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.CustomScopeConfigurer&quot;" id="_uU8RwDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.JUnitTestAction&quot;" id="_uU8RwTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.MySessionBean&quot;" id="_uU8RwjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.CustomScopeConfigurer&quot;" id="_uVPMsDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.JUnitTestAction&quot;" id="_uVPMsTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.struts2.MySessionBean&quot;" id="_uVPMsjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRWLNzPuEei3dfHtumI11Q" clientClassElem="_uRVkIDPuEei3dfHtumI11Q" serverClassElem="_uRVkITPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRWyQDPuEei3dfHtumI11Q" clientClassElem="_uRVkIzPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRWyQTPuEei3dfHtumI11Q" clientClassElem="_uRVkJDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRWyQjPuEei3dfHtumI11Q" clientClassElem="_uRVkJTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRWyQzPuEei3dfHtumI11Q" clientClassElem="_uRVkJjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRWyRDPuEei3dfHtumI11Q" clientClassElem="_uRVkJzPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRWyRTPuEei3dfHtumI11Q" clientClassElem="_uRVkKDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRWyRjPuEei3dfHtumI11Q" clientClassElem="_uRVkKTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRWyRzPuEei3dfHtumI11Q" clientClassElem="_uRWLMDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRWySDPuEei3dfHtumI11Q" clientClassElem="_uRWLMTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRWySTPuEei3dfHtumI11Q" clientClassElem="_uRWLMjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRWySjPuEei3dfHtumI11Q" clientClassElem="_uRWLMzPuEei3dfHtumI11Q" serverClassElem="_uRWySzPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRWyTDPuEei3dfHtumI11Q" clientClassElem="_uRWLNDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRptNDPuEei3dfHtumI11Q" clientClassElem="_uRofEDPuEei3dfHtumI11Q" serverClassElem="_uRpGIDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRptNTPuEei3dfHtumI11Q" clientClassElem="_uRpGIjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRptNjPuEei3dfHtumI11Q" clientClassElem="_uRpGIzPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRqUQDPuEei3dfHtumI11Q" clientClassElem="_uRpGJDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRqUQTPuEei3dfHtumI11Q" clientClassElem="_uRpGJTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRqUQjPuEei3dfHtumI11Q" clientClassElem="_uRpGJjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRqUQzPuEei3dfHtumI11Q" clientClassElem="_uRpGJzPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRqURDPuEei3dfHtumI11Q" clientClassElem="_uRpGKDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRqURTPuEei3dfHtumI11Q" clientClassElem="_uRpGKTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRqURjPuEei3dfHtumI11Q" clientClassElem="_uRpGKjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRqURzPuEei3dfHtumI11Q" clientClassElem="_uRpGKzPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRqUSDPuEei3dfHtumI11Q" clientClassElem="_uRptMDPuEei3dfHtumI11Q" serverClassElem="_uRqUSTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uRqUSjPuEei3dfHtumI11Q" clientClassElem="_uRptMTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uR7aAjPuEei3dfHtumI11Q" property="&quot;message&quot;" clientClassElem="_uR7aATPuEei3dfHtumI11Q" serverClassElem="_uR7aADPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uSKqkjPuEei3dfHtumI11Q" property="&quot;message&quot;" clientClassElem="_uSKqkTPuEei3dfHtumI11Q" serverClassElem="_uSKqkDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uU8RwzPuEei3dfHtumI11Q" property="&quot;scopes&quot;" clientClassElem="_uU8RwDPuEei3dfHtumI11Q" serverClassElem="_uU8RxDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_uVPMszPuEei3dfHtumI11Q" property="&quot;scopes&quot;" clientClassElem="_uVPMsDPuEei3dfHtumI11Q" serverClassElem="_uVPMtDPuEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="apache.struts_asm" instantiates="//@architectureDescriptions[name='apache.struts_config']">
+    <assmComponents name="customFreemarkerManager" id="_uRXZUDPuEei3dfHtumI11Q" instantiates="_uRVkIDPuEei3dfHtumI11Q"/>
+    <assmComponents name="customFreemarkerManagerUtil" id="_uRXZUTPuEei3dfHtumI11Q" instantiates="_uRVkITPuEei3dfHtumI11Q"/>
+    <assmComponents name="chatService" id="_uRXZUjPuEei3dfHtumI11Q" instantiates="_uRVkIjPuEei3dfHtumI11Q"/>
+    <assmComponents name="chatLoginAction" id="_uRXZUzPuEei3dfHtumI11Q" instantiates="_uRVkIzPuEei3dfHtumI11Q"/>
+    <assmComponents name="chatLogoutAction" id="_uRXZVDPuEei3dfHtumI11Q" instantiates="_uRVkJDPuEei3dfHtumI11Q"/>
+    <assmComponents name="usersAvailableAction" id="_uRXZVTPuEei3dfHtumI11Q" instantiates="_uRVkJTPuEei3dfHtumI11Q"/>
+    <assmComponents name="roomsAvailableAction" id="_uRXZVjPuEei3dfHtumI11Q" instantiates="_uRVkJjPuEei3dfHtumI11Q"/>
+    <assmComponents name="crudRoomAction" id="_uRXZVzPuEei3dfHtumI11Q" instantiates="_uRVkJzPuEei3dfHtumI11Q"/>
+    <assmComponents name="enterRoomAction" id="_uRXZWDPuEei3dfHtumI11Q" instantiates="_uRVkKDPuEei3dfHtumI11Q"/>
+    <assmComponents name="messagesAvailableInRoomAction" id="_uRXZWTPuEei3dfHtumI11Q" instantiates="_uRVkKTPuEei3dfHtumI11Q"/>
+    <assmComponents name="sendMessageToRoomAction" id="_uRXZWjPuEei3dfHtumI11Q" instantiates="_uRWLMDPuEei3dfHtumI11Q"/>
+    <assmComponents name="usersAvailableInRoomAction" id="_uRYAYDPuEei3dfHtumI11Q" instantiates="_uRWLMTPuEei3dfHtumI11Q"/>
+    <assmComponents name="exitRoomAction" id="_uRYAYTPuEei3dfHtumI11Q" instantiates="_uRWLMjPuEei3dfHtumI11Q"/>
+    <assmComponents name="hangmanService" id="_uRYAYjPuEei3dfHtumI11Q" instantiates="_uRWLMzPuEei3dfHtumI11Q"/>
+    <assmComponents name="startHangmanAction" id="_uRYAYzPuEei3dfHtumI11Q" instantiates="_uRWLNDPuEei3dfHtumI11Q"/>
+    <assmComponents name="guessCharacterAction" id="_uRYAZDPuEei3dfHtumI11Q" instantiates="_uRWLNTPuEei3dfHtumI11Q"/>
+    <assmComponents name="getUpdatedHangmanAction" id="_uRYAZTPuEei3dfHtumI11Q" instantiates="_uRWLNjPuEei3dfHtumI11Q"/>
+    <assmComponents name="customFreemarkerManager" id="_uRqUSzPuEei3dfHtumI11Q" instantiates="_uRofEDPuEei3dfHtumI11Q"/>
+    <assmComponents name="customFreemarkerManagerUtil" id="_uRqUTDPuEei3dfHtumI11Q" instantiates="_uRpGIDPuEei3dfHtumI11Q"/>
+    <assmComponents name="chatService" id="_uRqUTTPuEei3dfHtumI11Q" instantiates="_uRpGITPuEei3dfHtumI11Q"/>
+    <assmComponents name="chatLoginAction" id="_uRqUTjPuEei3dfHtumI11Q" instantiates="_uRpGIjPuEei3dfHtumI11Q"/>
+    <assmComponents name="chatLogoutAction" id="_uRq7UDPuEei3dfHtumI11Q" instantiates="_uRpGIzPuEei3dfHtumI11Q"/>
+    <assmComponents name="usersAvailableAction" id="_uRq7UTPuEei3dfHtumI11Q" instantiates="_uRpGJDPuEei3dfHtumI11Q"/>
+    <assmComponents name="roomsAvailableAction" id="_uRq7UjPuEei3dfHtumI11Q" instantiates="_uRpGJTPuEei3dfHtumI11Q"/>
+    <assmComponents name="crudRoomAction" id="_uRq7UzPuEei3dfHtumI11Q" instantiates="_uRpGJjPuEei3dfHtumI11Q"/>
+    <assmComponents name="enterRoomAction" id="_uRq7VDPuEei3dfHtumI11Q" instantiates="_uRpGJzPuEei3dfHtumI11Q"/>
+    <assmComponents name="messagesAvailableInRoomAction" id="_uRq7VTPuEei3dfHtumI11Q" instantiates="_uRpGKDPuEei3dfHtumI11Q"/>
+    <assmComponents name="sendMessageToRoomAction" id="_uRq7VjPuEei3dfHtumI11Q" instantiates="_uRpGKTPuEei3dfHtumI11Q"/>
+    <assmComponents name="usersAvailableInRoomAction" id="_uRq7VzPuEei3dfHtumI11Q" instantiates="_uRpGKjPuEei3dfHtumI11Q"/>
+    <assmComponents name="exitRoomAction" id="_uRq7WDPuEei3dfHtumI11Q" instantiates="_uRpGKzPuEei3dfHtumI11Q"/>
+    <assmComponents name="hangmanService" id="_uRq7WTPuEei3dfHtumI11Q" instantiates="_uRptMDPuEei3dfHtumI11Q"/>
+    <assmComponents name="startHangmanAction" id="_uRriYDPuEei3dfHtumI11Q" instantiates="_uRptMTPuEei3dfHtumI11Q"/>
+    <assmComponents name="guessCharacterAction" id="_uRriYTPuEei3dfHtumI11Q" instantiates="_uRptMjPuEei3dfHtumI11Q"/>
+    <assmComponents name="getUpdatedHangmanAction" id="_uRriYjPuEei3dfHtumI11Q" instantiates="_uRptMzPuEei3dfHtumI11Q"/>
+    <assmComponents name="message" id="_uR7aAzPuEei3dfHtumI11Q" instantiates="_uR7aADPuEei3dfHtumI11Q"/>
+    <assmComponents name="helloWorldAction" id="_uR7aBDPuEei3dfHtumI11Q" instantiates="_uR7aATPuEei3dfHtumI11Q"/>
+    <assmComponents name="message" id="_uSKqkzPuEei3dfHtumI11Q" instantiates="_uSKqkDPuEei3dfHtumI11Q"/>
+    <assmComponents name="helloWorldAction" id="_uSKqlDPuEei3dfHtumI11Q" instantiates="_uSKqkTPuEei3dfHtumI11Q"/>
+    <assmComponents name="simple-action" id="_uSZ7ITPuEei3dfHtumI11Q" instantiates="_uSZUEDPuEei3dfHtumI11Q"/>
+    <assmComponents name="dependency-action" id="_uSZ7IjPuEei3dfHtumI11Q" instantiates="_uSZUEDPuEei3dfHtumI11Q"/>
+    <assmComponents name="execute-interceptor" id="_uSZ7IzPuEei3dfHtumI11Q" instantiates="_uSZUETPuEei3dfHtumI11Q"/>
+    <assmComponents name="proxied-action" id="_uSZ7JDPuEei3dfHtumI11Q" instantiates="_uSZUEjPuEei3dfHtumI11Q"/>
+    <assmComponents name="auto-proxied-action" id="_uSZ7JTPuEei3dfHtumI11Q" instantiates="_uSZUEDPuEei3dfHtumI11Q"/>
+    <assmComponents name="xwork-actions-proxy-creator" id="_uSZ7JjPuEei3dfHtumI11Q" instantiates="_uSZUEzPuEei3dfHtumI11Q"/>
+    <assmComponents name="springResult" id="_uSZ7JzPuEei3dfHtumI11Q" instantiates="_uSZUFDPuEei3dfHtumI11Q"/>
+    <assmComponents name="pointcutted-test-bean" id="_uSZ7KDPuEei3dfHtumI11Q" instantiates="_uSZUFTPuEei3dfHtumI11Q"/>
+    <assmComponents name="pointcutted-test-sub-bean" id="_uSZ7KTPuEei3dfHtumI11Q" instantiates="_uSZUFjPuEei3dfHtumI11Q"/>
+    <assmComponents name="test-aspect" id="_uSZ7KjPuEei3dfHtumI11Q" instantiates="_uSZ7IDPuEei3dfHtumI11Q"/>
+    <assmComponents name="simple-action" id="_uTWWUzPuEei3dfHtumI11Q" instantiates="_uTVvQDPuEei3dfHtumI11Q"/>
+    <assmComponents name="dependency-action" id="_uTWWVDPuEei3dfHtumI11Q" instantiates="_uTVvQDPuEei3dfHtumI11Q"/>
+    <assmComponents name="execute-interceptor" id="_uTWWVTPuEei3dfHtumI11Q" instantiates="_uTVvQTPuEei3dfHtumI11Q"/>
+    <assmComponents name="proxied-action" id="_uTWWVjPuEei3dfHtumI11Q" instantiates="_uTVvQjPuEei3dfHtumI11Q"/>
+    <assmComponents name="auto-proxied-action" id="_uTWWVzPuEei3dfHtumI11Q" instantiates="_uTVvQDPuEei3dfHtumI11Q"/>
+    <assmComponents name="xwork-actions-proxy-creator" id="_uTWWWDPuEei3dfHtumI11Q" instantiates="_uTVvQzPuEei3dfHtumI11Q"/>
+    <assmComponents name="springResult" id="_uTWWWTPuEei3dfHtumI11Q" instantiates="_uTVvRDPuEei3dfHtumI11Q"/>
+    <assmComponents name="pointcutted-test-bean" id="_uTWWWjPuEei3dfHtumI11Q" instantiates="_uTWWUDPuEei3dfHtumI11Q"/>
+    <assmComponents name="pointcutted-test-sub-bean" id="_uTWWWzPuEei3dfHtumI11Q" instantiates="_uTWWUTPuEei3dfHtumI11Q"/>
+    <assmComponents name="test-aspect" id="_uTWWXDPuEei3dfHtumI11Q" instantiates="_uTWWUjPuEei3dfHtumI11Q"/>
+    <assmComponents id="_uU840DPuEei3dfHtumI11Q" instantiates="_uU8RwDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;testAction&quot;" id="_uU840TPuEei3dfHtumI11Q" instantiates="_uU8RwTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mySessionBean&quot;" id="_uU840jPuEei3dfHtumI11Q" instantiates="_uU8RwjPuEei3dfHtumI11Q"/>
+    <assmComponents id="_uVPMtTPuEei3dfHtumI11Q" instantiates="_uVPMsDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;testAction&quot;" id="_uVPMtjPuEei3dfHtumI11Q" instantiates="_uVPMsTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mySessionBean&quot;" id="_uVPMtzPuEei3dfHtumI11Q" instantiates="_uVPMsjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRYAZjPuEei3dfHtumI11Q" clientInstElem="_uRXZUDPuEei3dfHtumI11Q" serverInstElem="_uRXZUTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRYAZzPuEei3dfHtumI11Q" clientInstElem="_uRXZUzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRYAaDPuEei3dfHtumI11Q" clientInstElem="_uRXZVDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRYAaTPuEei3dfHtumI11Q" clientInstElem="_uRXZVTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRYAajPuEei3dfHtumI11Q" clientInstElem="_uRXZVjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRYAazPuEei3dfHtumI11Q" clientInstElem="_uRXZVzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRYncDPuEei3dfHtumI11Q" clientInstElem="_uRXZWDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRYncTPuEei3dfHtumI11Q" clientInstElem="_uRXZWTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRYncjPuEei3dfHtumI11Q" clientInstElem="_uRXZWjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRYnczPuEei3dfHtumI11Q" clientInstElem="_uRYAYDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRYndDPuEei3dfHtumI11Q" clientInstElem="_uRYAYTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRYndTPuEei3dfHtumI11Q" clientInstElem="_uRYAYjPuEei3dfHtumI11Q" serverInstElem="_uRYndjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRYndzPuEei3dfHtumI11Q" clientInstElem="_uRYAYzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRriYzPuEei3dfHtumI11Q" clientInstElem="_uRqUSzPuEei3dfHtumI11Q" serverInstElem="_uRqUTDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRriZDPuEei3dfHtumI11Q" clientInstElem="_uRqUTjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRriZTPuEei3dfHtumI11Q" clientInstElem="_uRq7UDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRriZjPuEei3dfHtumI11Q" clientInstElem="_uRq7UTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRriZzPuEei3dfHtumI11Q" clientInstElem="_uRq7UjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRriaDPuEei3dfHtumI11Q" clientInstElem="_uRq7UzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRriaTPuEei3dfHtumI11Q" clientInstElem="_uRq7VDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRriajPuEei3dfHtumI11Q" clientInstElem="_uRq7VTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRriazPuEei3dfHtumI11Q" clientInstElem="_uRq7VjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRribDPuEei3dfHtumI11Q" clientInstElem="_uRq7VzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRribTPuEei3dfHtumI11Q" clientInstElem="_uRq7WDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRribjPuEei3dfHtumI11Q" clientInstElem="_uRq7WTPuEei3dfHtumI11Q" serverInstElem="_uRsJcDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uRsJcTPuEei3dfHtumI11Q" clientInstElem="_uRriYDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uR7aBTPuEei3dfHtumI11Q" property="helloWorldAction.message" clientInstElem="_uR7aBDPuEei3dfHtumI11Q" serverInstElem="_uR7aAzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uSKqlTPuEei3dfHtumI11Q" property="helloWorldAction.message" clientInstElem="_uSKqlDPuEei3dfHtumI11Q" serverInstElem="_uSKqkzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uU840zPuEei3dfHtumI11Q" clientInstElem="_uU840DPuEei3dfHtumI11Q" serverInstElem="_uU841DPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_uVPMuDPuEei3dfHtumI11Q" clientInstElem="_uVPMtTPuEei3dfHtumI11Q" serverInstElem="_uVPMuTPuEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="apache.struts_spec">
+    <specConnections refID="_uX44EDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_uX44GzPuEei3dfHtumI11Q"/>
+    <specConnections refID="_uX44HTPuEei3dfHtumI11Q"/>
+    <specConnections refID="_uX44KDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_uX44KjPuEei3dfHtumI11Q"/>
+    <specConnections refID="_uX44KzPuEei3dfHtumI11Q"/>
+    <specConnections refID="_uX44LDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_uX44LTPuEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

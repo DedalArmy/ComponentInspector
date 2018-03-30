@@ -137,6 +137,7 @@ public class Main {
 			try {
 				resource.save(options);
 			} catch (Exception e) {
+				resource.delete(options2);
 				logger.error("could not generate " + dedalDiagram.getName() +".dedaladl");
 			}
 			

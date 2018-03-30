@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="killme2008.xmemcached">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="killme2008.xmemcached_config" implements="//@architectureDescriptions[name='killme2008.xmemcached_spec']">
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_Yc45ADPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;net.rubyeye.xmemcached.utils.XMemcachedClientFactoryBean&quot;" id="_Yc45ATPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.net.InetSocketAddress&quot;" id="_YdCC8DPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;net.rubyeye.xmemcached.utils.XMemcachedClientFactoryBean&quot;" id="_YdCC8TPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;net.rubyeye.xmemcached.XMemcachedClientBuilder&quot;" id="_YdCC8jPxEei3dfHtumI11Q"/>
+    <configComponents id="_YdCC8zPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_YdVk8DPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;net.rubyeye.xmemcached.utils.XMemcachedClientFactoryBean&quot;" id="_YdVk8TPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.net.InetSocketAddress&quot;" id="_YdpuADPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;net.rubyeye.xmemcached.utils.XMemcachedClientFactoryBean&quot;" id="_YdpuATPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;net.rubyeye.xmemcached.XMemcachedClientBuilder&quot;" id="_YdpuAjPxEei3dfHtumI11Q"/>
+    <configComponents id="_YdpuAzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_Yc45AjPxEei3dfHtumI11Q" property="&quot;commandFactory&quot;" clientClassElem="_Yc45ATPxEei3dfHtumI11Q" serverClassElem="_Yc45AzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_Yc45BDPxEei3dfHtumI11Q" property="&quot;sessionLocator&quot;" clientClassElem="_Yc45ATPxEei3dfHtumI11Q" serverClassElem="_Yc45BTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_Yc45BjPxEei3dfHtumI11Q" property="&quot;transcoder&quot;" clientClassElem="_Yc45ATPxEei3dfHtumI11Q" serverClassElem="_Yc45BzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_Yc45CDPxEei3dfHtumI11Q" property="&quot;bufferAllocator&quot;" clientClassElem="_Yc45ATPxEei3dfHtumI11Q" serverClassElem="_Yc45CTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdCC9DPxEei3dfHtumI11Q" property="&quot;authInfoMap&quot;" clientClassElem="_YdCC8TPxEei3dfHtumI11Q" serverClassElem="_YdCC9TPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdCC9jPxEei3dfHtumI11Q" property="&quot;authInfoMap&quot;" clientClassElem="_YdCC8TPxEei3dfHtumI11Q" serverClassElem="_YdCC9zPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdCC-DPxEei3dfHtumI11Q" property="&quot;commandFactory&quot;" clientClassElem="_YdCC8TPxEei3dfHtumI11Q" serverClassElem="_YdCC-TPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdCC-jPxEei3dfHtumI11Q" property="&quot;sessionLocator&quot;" clientClassElem="_YdCC8TPxEei3dfHtumI11Q" serverClassElem="_YdCC-zPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdCC_DPxEei3dfHtumI11Q" property="&quot;transcoder&quot;" clientClassElem="_YdCC8TPxEei3dfHtumI11Q" serverClassElem="_YdCC_TPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdCC_jPxEei3dfHtumI11Q" property="&quot;bufferAllocator&quot;" clientClassElem="_YdCC8TPxEei3dfHtumI11Q" serverClassElem="_YdCC_zPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdCDADPxEei3dfHtumI11Q" clientClassElem="_YdCC8jPxEei3dfHtumI11Q" serverClassElem="_YdCDATPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdCDAjPxEei3dfHtumI11Q" property="&quot;authInfoMap&quot;" clientClassElem="_YdCC8jPxEei3dfHtumI11Q" serverClassElem="_YdCDAzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdCDBDPxEei3dfHtumI11Q" property="&quot;authInfoMap&quot;" clientClassElem="_YdCC8jPxEei3dfHtumI11Q" serverClassElem="_YdCDBTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdCDBjPxEei3dfHtumI11Q" property="&quot;commandFactory&quot;" clientClassElem="_YdCC8jPxEei3dfHtumI11Q" serverClassElem="_YdCDBzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdCDCDPxEei3dfHtumI11Q" property="&quot;sessionLocator&quot;" clientClassElem="_YdCC8jPxEei3dfHtumI11Q" serverClassElem="_YdCDCTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdCDCjPxEei3dfHtumI11Q" property="&quot;transcoder&quot;" clientClassElem="_YdCC8jPxEei3dfHtumI11Q" serverClassElem="_YdCDCzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdVk8jPxEei3dfHtumI11Q" property="&quot;commandFactory&quot;" clientClassElem="_YdVk8TPxEei3dfHtumI11Q" serverClassElem="_YdVk8zPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdVk9DPxEei3dfHtumI11Q" property="&quot;sessionLocator&quot;" clientClassElem="_YdVk8TPxEei3dfHtumI11Q" serverClassElem="_YdVk9TPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdVk9jPxEei3dfHtumI11Q" property="&quot;transcoder&quot;" clientClassElem="_YdVk8TPxEei3dfHtumI11Q" serverClassElem="_YdVk9zPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdVk-DPxEei3dfHtumI11Q" property="&quot;bufferAllocator&quot;" clientClassElem="_YdVk8TPxEei3dfHtumI11Q" serverClassElem="_YdVk-TPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdpuBDPxEei3dfHtumI11Q" property="&quot;authInfoMap&quot;" clientClassElem="_YdpuATPxEei3dfHtumI11Q" serverClassElem="_YdpuBTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdpuBjPxEei3dfHtumI11Q" property="&quot;authInfoMap&quot;" clientClassElem="_YdpuATPxEei3dfHtumI11Q" serverClassElem="_YdpuBzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdpuCDPxEei3dfHtumI11Q" property="&quot;commandFactory&quot;" clientClassElem="_YdpuATPxEei3dfHtumI11Q" serverClassElem="_YdpuCTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdpuCjPxEei3dfHtumI11Q" property="&quot;sessionLocator&quot;" clientClassElem="_YdpuATPxEei3dfHtumI11Q" serverClassElem="_YdpuCzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdpuDDPxEei3dfHtumI11Q" property="&quot;transcoder&quot;" clientClassElem="_YdpuATPxEei3dfHtumI11Q" serverClassElem="_YdpuDTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdpuDjPxEei3dfHtumI11Q" property="&quot;bufferAllocator&quot;" clientClassElem="_YdpuATPxEei3dfHtumI11Q" serverClassElem="_YdpuDzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdpuEDPxEei3dfHtumI11Q" clientClassElem="_YdpuAjPxEei3dfHtumI11Q" serverClassElem="_YdpuETPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdpuEjPxEei3dfHtumI11Q" property="&quot;authInfoMap&quot;" clientClassElem="_YdpuAjPxEei3dfHtumI11Q" serverClassElem="_YdpuEzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdpuFDPxEei3dfHtumI11Q" property="&quot;authInfoMap&quot;" clientClassElem="_YdpuAjPxEei3dfHtumI11Q" serverClassElem="_YdpuFTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdpuFjPxEei3dfHtumI11Q" property="&quot;commandFactory&quot;" clientClassElem="_YdpuAjPxEei3dfHtumI11Q" serverClassElem="_YdpuFzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdpuGDPxEei3dfHtumI11Q" property="&quot;sessionLocator&quot;" clientClassElem="_YdpuAjPxEei3dfHtumI11Q" serverClassElem="_YdpuGTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_YdpuGjPxEei3dfHtumI11Q" property="&quot;transcoder&quot;" clientClassElem="_YdpuAjPxEei3dfHtumI11Q" serverClassElem="_YdpuGzPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="killme2008.xmemcached_asm" instantiates="//@architectureDescriptions[name='killme2008.xmemcached_config']">
+    <assmComponents name="propertyConfigurer" id="_Yc45CjPxEei3dfHtumI11Q" instantiates="_Yc45ADPxEei3dfHtumI11Q"/>
+    <assmComponents id="_Yc45CzPxEei3dfHtumI11Q" instantiates="_Yc45ATPxEei3dfHtumI11Q"/>
+    <assmComponents id="_Yc45DDPxEei3dfHtumI11Q" instantiates="_Yc45ATPxEei3dfHtumI11Q"/>
+    <assmComponents id="_YdCDDDPxEei3dfHtumI11Q" instantiates="_YdCC8DPxEei3dfHtumI11Q"/>
+    <assmComponents id="_YdCDDTPxEei3dfHtumI11Q" instantiates="_YdCC8TPxEei3dfHtumI11Q"/>
+    <assmComponents id="_YdCDDjPxEei3dfHtumI11Q" instantiates="_YdCC8jPxEei3dfHtumI11Q"/>
+    <assmComponents id="_YdCDDzPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyConfigurer&quot;" id="_YdVk-jPxEei3dfHtumI11Q" instantiates="_YdVk8DPxEei3dfHtumI11Q"/>
+    <assmComponents id="_YdVk-zPxEei3dfHtumI11Q" instantiates="_YdVk8TPxEei3dfHtumI11Q"/>
+    <assmComponents id="_YdVk_DPxEei3dfHtumI11Q" instantiates="_YdVk8TPxEei3dfHtumI11Q"/>
+    <assmComponents id="_YdpuHDPxEei3dfHtumI11Q" instantiates="_YdpuADPxEei3dfHtumI11Q"/>
+    <assmComponents id="_YdpuHTPxEei3dfHtumI11Q" instantiates="_YdpuATPxEei3dfHtumI11Q"/>
+    <assmComponents id="_YdpuHjPxEei3dfHtumI11Q" instantiates="_YdpuAjPxEei3dfHtumI11Q"/>
+    <assmComponents id="_YdpuHzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Yc45DTPxEei3dfHtumI11Q" clientInstElem="_Yc45CzPxEei3dfHtumI11Q" serverInstElem="_Yc45DjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Yc45DzPxEei3dfHtumI11Q" clientInstElem="_Yc45DjPxEei3dfHtumI11Q" serverInstElem="_Yc45EDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Yc45ETPxEei3dfHtumI11Q" clientInstElem="_Yc45EDPxEei3dfHtumI11Q" serverInstElem="_Yc45EjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Yc45EzPxEei3dfHtumI11Q" clientInstElem="_Yc45EjPxEei3dfHtumI11Q" serverInstElem="_Yc45FDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdCDEDPxEei3dfHtumI11Q" clientInstElem="_YdCDDTPxEei3dfHtumI11Q" serverInstElem="_YdCDETPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdCDEjPxEei3dfHtumI11Q" clientInstElem="_YdCDDTPxEei3dfHtumI11Q" serverInstElem="_YdCDEzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdCDFDPxEei3dfHtumI11Q" clientInstElem="_YdCDDTPxEei3dfHtumI11Q" serverInstElem="_YdCDFTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdCDFjPxEei3dfHtumI11Q" clientInstElem="_YdCDDTPxEei3dfHtumI11Q" serverInstElem="_YdCDFzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdCDGDPxEei3dfHtumI11Q" clientInstElem="_YdCDFzPxEei3dfHtumI11Q" serverInstElem="_YdCDGTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdCDGjPxEei3dfHtumI11Q" clientInstElem="_YdCDFzPxEei3dfHtumI11Q" serverInstElem="_YdCDGzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdCDHDPxEei3dfHtumI11Q" clientInstElem="_YdCDFzPxEei3dfHtumI11Q" serverInstElem="_YdCDHTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdLz8DPxEei3dfHtumI11Q" clientInstElem="_YdCDHTPxEei3dfHtumI11Q" serverInstElem="_YdLz8TPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdLz8jPxEei3dfHtumI11Q" clientInstElem="_YdCDHTPxEei3dfHtumI11Q" serverInstElem="_YdLz8zPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdLz9DPxEei3dfHtumI11Q" clientInstElem="_YdCDHTPxEei3dfHtumI11Q" serverInstElem="_YdLz9TPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdLz9jPxEei3dfHtumI11Q" clientInstElem="_YdCDHTPxEei3dfHtumI11Q" serverInstElem="_YdLz9zPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdLz-DPxEei3dfHtumI11Q" clientInstElem="_YdCDHTPxEei3dfHtumI11Q" serverInstElem="_YdLz-TPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdVk_TPxEei3dfHtumI11Q" clientInstElem="_YdVk_DPxEei3dfHtumI11Q" serverInstElem="_YdVk_jPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdVk_zPxEei3dfHtumI11Q" clientInstElem="_YdVk_jPxEei3dfHtumI11Q" serverInstElem="_YdVlADPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdVlATPxEei3dfHtumI11Q" clientInstElem="_YdVlADPxEei3dfHtumI11Q" serverInstElem="_YdVlAjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdVlAzPxEei3dfHtumI11Q" clientInstElem="_YdVlAjPxEei3dfHtumI11Q" serverInstElem="_YdVlBDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdpuIDPxEei3dfHtumI11Q" clientInstElem="_YdpuHzPxEei3dfHtumI11Q" serverInstElem="_YdpuITPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdpuIjPxEei3dfHtumI11Q" clientInstElem="_YdpuITPxEei3dfHtumI11Q" serverInstElem="_YdpuIzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdpuJDPxEei3dfHtumI11Q" clientInstElem="_YdpuIzPxEei3dfHtumI11Q" serverInstElem="_YdpuJTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdpuJjPxEei3dfHtumI11Q" clientInstElem="_YdpuIzPxEei3dfHtumI11Q" serverInstElem="_YdpuJzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdpuKDPxEei3dfHtumI11Q" clientInstElem="_YdpuIzPxEei3dfHtumI11Q" serverInstElem="_YdpuKTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdpuKjPxEei3dfHtumI11Q" clientInstElem="_YdpuIzPxEei3dfHtumI11Q" serverInstElem="_YdpuKzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdpuLDPxEei3dfHtumI11Q" clientInstElem="_YdpuIzPxEei3dfHtumI11Q" serverInstElem="_YdpuLTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdpuLjPxEei3dfHtumI11Q" clientInstElem="_YdpuIzPxEei3dfHtumI11Q" serverInstElem="_YdpuLzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdpuMDPxEei3dfHtumI11Q" clientInstElem="_YdpuIzPxEei3dfHtumI11Q" serverInstElem="_YdpuMTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdpuMjPxEei3dfHtumI11Q" clientInstElem="_YdpuIzPxEei3dfHtumI11Q" serverInstElem="_YdpuMzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdpuNDPxEei3dfHtumI11Q" clientInstElem="_YdpuIzPxEei3dfHtumI11Q" serverInstElem="_YdpuNTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_YdpuNjPxEei3dfHtumI11Q" clientInstElem="_YdpuIzPxEei3dfHtumI11Q" serverInstElem="_YdpuNzPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="killme2008.xmemcached_spec">
+    <specConnections refID="_Ydy38DPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy38TPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy38jPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy38zPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy39DPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy39TPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy39jPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy39zPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy3-DPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy3-TPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy3-jPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy3-zPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy3_DPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy3_TPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy3_jPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy3_zPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy4ADPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy4ATPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy4AjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy4AzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy4BDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy4BTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy4BjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy4BzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy4CDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy4CTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy4CjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy4CzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy4DDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy4DTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy4DjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_Ydy4DzPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

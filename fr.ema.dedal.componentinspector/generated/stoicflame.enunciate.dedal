@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="stoicflame.enunciate">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="stoicflame.enunciate_config" implements="//@architectureDescriptions[name='stoicflame.enunciate_spec']">
+    <configComponents name="com.sun.jersey.samples.storageservice.resources.SpringManagedResource" id="_Qtq4oDPzEei3dfHtumI11Q"/>
+    <configComponents name="com.sun.jersey.samples.storageservice.Item" id="_Qtq4oTPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="stoicflame.enunciate_asm" instantiates="//@architectureDescriptions[name='stoicflame.enunciate_config']">
+    <assmComponents name="springManaged" id="_Qtq4ojPzEei3dfHtumI11Q" instantiates="_Qtq4oDPzEei3dfHtumI11Q"/>
+    <assmComponents name="autowiredItem" id="_Qtq4ozPzEei3dfHtumI11Q" instantiates="_Qtq4oTPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="stoicflame.enunciate_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

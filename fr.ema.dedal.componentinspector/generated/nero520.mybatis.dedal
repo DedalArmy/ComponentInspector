@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="nero520.mybatis">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="nero520.mybatis_config" implements="//@architectureDescriptions[name='nero520.mybatis_spec']"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="nero520.mybatis_asm" instantiates="//@architectureDescriptions[name='nero520.mybatis_config']"/>
+  <architectureDescriptions xsi:type="dedal:Specification" name="nero520.mybatis_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

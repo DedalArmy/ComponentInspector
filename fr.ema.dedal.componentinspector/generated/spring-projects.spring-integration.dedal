@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="spring-projects.spring-integration">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="spring-projects.spring-integration_config" implements="//@architectureDescriptions[name='spring-projects.spring-integration_spec']">
+    <configComponents name="&quot;org.mockito.Mockito&quot;" id="_IDtZMDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.amqp.support.DefaultAmqpHeaderMapper&quot;" id="_IEKFIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.amqp.support.DefaultAmqpHeaderMapper&quot;" id="_IEmxEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.amqp.support.DefaultAmqpHeaderMapper&quot;" id="_IFMm8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.amqp.support.DefaultAmqpHeaderMapper&quot;" id="_IFyc0DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.aop.AnnotationConfigRegistrationTests$TestBean&quot;" id="_IJgfMDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.aop.MessagePublishingAnnotationUsageTests$TestBean&quot;" id="_IJ0BMDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.aop.MessagePublishingInterceptorUsageTests$TestBean&quot;" id="_IJ9LIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.test.util.TestUtils&quot;" id="_IKQGEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.channel.QueueChannel&quot;" id="_IKQGETPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.endpoint.PollingConsumer&quot;" id="_IKQGEjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.handler.ServiceActivatingHandler&quot;" id="_IKQGEzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.message.TestHandlers&quot;" id="_IKQGFDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.core.convert.support.DefaultConversionService&quot;" id="_IKQGFTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.transaction.PseudoTransactionManager&quot;" id="_ISKr8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.channel.TransactionSynchronizationQueueChannelTests$Service&quot;" id="_ISKr8TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.context.support.ConversionServiceFactoryBean&quot;" id="_IfHi0DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.config.ChannelInitializer&quot;" id="_Ih-pkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.config.ChannelInitializer&quot;" id="_IwMEsDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.config.ChannelInitializer&quot;" id="_IwowoDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mockito.Mockito&quot;" id="_IyH-YDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.String&quot;" id="_I1-joDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.String&quot;" id="_I2b2oDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.handler.advice.SpelExpressionRetryStateGenerator&quot;" id="_I7QsQDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.store.SimpleMessageStore&quot;" id="_JGcBgDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.store.MessageStoreReaperTests$ExpiryCallback&quot;" id="_JGcBgTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.store.MessageGroupStoreReaper&quot;" id="_JGcBgjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.file.FileReadingMessageSource&quot;" id="_JPhsEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.file.filters.CompositeFileListFilter&quot;" id="_JPhsETPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.file.FileReadingMessageSource&quot;" id="_JPrdEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.file.filters.FileSystemPersistentAcceptOnceFileListFilter&quot;" id="_JPrdETPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.metadata.PropertiesPersistingMetadataStore&quot;" id="_JPrdEjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.file.filters.RegexPatternFileListFilter&quot;" id="_JQHh8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.file.FileReadingMessageSource&quot;" id="_JQbrADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.file.locking.NioFileLocker&quot;" id="_JQbrATPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.file.filters.RegexPatternFileListFilter&quot;" id="_JQ3v4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.ftp.session.DefaultFtpSessionFactory&quot;" id="_JUJtYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.ftp.session.DefaultFtpSessionFactory&quot;" id="_JUvjQDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.ip.tcp.serializer.ByteArrayCrLfSerializer&quot;" id="_JfxukDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.ip.tcp.serializer.ByteArrayStxEtxSerializer&quot;" id="_JfxukTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.ip.tcp.serializer.ByteArrayLengthHeaderSerializer&quot;" id="_JfxukjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.core.serializer.DefaultSerializer&quot;" id="_JfxukzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.core.serializer.DefaultDeserializer&quot;" id="_JfxulDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.commons.dbcp2.BasicDataSource&quot;" id="_JtpygDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_JtpygTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.commons.dbcp2.BasicDataSource&quot;" id="_JuGecDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_JuGecTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_JuZZYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.commons.dbcp2.BasicDataSource&quot;" id="_Ju2FUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.commons.dbcp2.BasicDataSource&quot;" id="_Ju_2UDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.commons.dbcp2.BasicDataSource&quot;" id="_JvSxQDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.jdbc.store.channel.MySqlChannelMessageStoreQueryProvider&quot;" id="_JvSxQTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;oracle.jdbc.pool.OracleDataSource&quot;" id="_JvlsMDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.jdbc.store.channel.OracleChannelMessageStoreQueryProvider&quot;" id="_JvlsMTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.commons.dbcp2.BasicDataSource&quot;" id="_JvvdMDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.jdbc.store.channel.PostgresChannelMessageStoreQueryProvider&quot;" id="_JvvdMTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.String&quot;" id="_KMPL8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.config.RouterFactoryBean&quot;" id="_KMPL8TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.config.RouterFactoryBean&quot;" id="_KMiG4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.String&quot;" id="_KMiG4TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.monitor.IntegrationMBeanExporter&quot;" id="_KSyf4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jmx.support.MBeanServerFactoryBean&quot;" id="_KSyf4TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.monitor.IntegrationMBeanExporter&quot;" id="_KTOkwDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jmx.support.MBeanServerFactoryBean&quot;" id="_KTOkwTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.monitor.IntegrationMBeanExporter&quot;" id="_KTiGwDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jmx.support.MBeanServerFactoryBean&quot;" id="_KTiGwTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.monitor.MBeanExporterIntegrationTests$BogusEndpoint&quot;" id="_KTiGwjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.monitor.IntegrationMBeanExporter&quot;" id="_KTrQsDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jmx.support.MBeanServerFactoryBean&quot;" id="_KTrQsTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.monitor.MBeanExporterIntegrationTests$MetricHolder&quot;" id="_KVWEoDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jmx.export.annotation.AnnotationMBeanExporter&quot;" id="_KVWEoTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jmx.export.MBeanExporter&quot;" id="_KVWEojPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.monitor.MBeanExporterIntegrationTests$MetricFactoryBean&quot;" id="_KVfOkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jmx.export.annotation.AnnotationMBeanExporter&quot;" id="_KVfOkTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.monitor.MBeanExporterIntegrationTests$MetricFactoryBean&quot;" id="_KVywkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.monitor.MBeanExporterIntegrationTests$DateFactoryBean&quot;" id="_KV76gDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.util.Date&quot;" id="_KV76gTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jmx.export.annotation.AnnotationMBeanExporter&quot;" id="_KV76gjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jmx.export.MBeanExporter&quot;" id="_KV76gzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.monitor.MBeanExporterIntegrationTests$DateHolder&quot;" id="_KWO1cDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.util.Date&quot;" id="_KWO1cTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jmx.export.annotation.AnnotationMBeanExporter&quot;" id="_KWO1cjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jmx.export.MBeanExporter&quot;" id="_KWO1czPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.vendor.EclipseLinkJpaDialect&quot;" id="_KZ830DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.vendor.EclipseLinkJpaVendorAdapter&quot;" id="_KZ830TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.jpa.core.DefaultJpaOperations&quot;" id="_KbAAsDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.jpa.test.TestHibernateJpaDialect&quot;" id="_KcfOcDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter&quot;" id="_KcfOcTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.redis.connection.jedis.JedisConnectionFactory&quot;" id="_KnWaoDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.redis.connection.jedis.JedisConnectionFactory&quot;" id="_KnqjsDPzEei3dfHtumI11Q"/>
+    <configComponents id="_KnqjsTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.util.ErrorHandlingTaskExecutor&quot;" id="_KnqjsjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.redis.connection.jedis.JedisConnectionFactory&quot;" id="_KoGokDPzEei3dfHtumI11Q"/>
+    <configComponents id="_KoGokTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.redis.serializer.StringRedisSerializer&quot;" id="_KoGokjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.redis.connection.jedis.JedisConnectionFactory&quot;" id="_KpS7YDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.redis.connection.jedis.JedisConnectionFactory&quot;" id="_Kp5YUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.redis.store.RedisChannelMessageStore&quot;" id="_Kq76IDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.ws.config.UriVariableTests$TestClientInterceptor&quot;" id="_K8F7kDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.integration.xml.selector.XmlValidatingMessageSelector&quot;" id="_LAG44DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_IKQGFjPzEei3dfHtumI11Q" clientClassElem="_IKQGEjPzEei3dfHtumI11Q" serverClassElem="_IKQGETPzEei3dfHtumI11Q"/>
+    <configConnections refID="_IKQGFzPzEei3dfHtumI11Q" clientClassElem="_IKQGEjPzEei3dfHtumI11Q" serverClassElem="_IKQGEzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_IKQGGDPzEei3dfHtumI11Q" property="&quot;trigger&quot;" clientClassElem="_IKQGEjPzEei3dfHtumI11Q" serverClassElem="_IKQGGTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_IKQGGjPzEei3dfHtumI11Q" clientClassElem="_IKQGEzPzEei3dfHtumI11Q" serverClassElem="_IKQGFDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_IKQGGzPzEei3dfHtumI11Q" property="&quot;outputChannel&quot;" clientClassElem="_IKQGEzPzEei3dfHtumI11Q" serverClassElem="_IKQGHDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_IyH-YTPzEei3dfHtumI11Q" clientClassElem="_IyH-YDPzEei3dfHtumI11Q" serverClassElem="_IyH-YjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_JGcBgzPzEei3dfHtumI11Q" property="&quot;expiryCallbacks&quot;" clientClassElem="_JGcBgDPzEei3dfHtumI11Q" serverClassElem="_JGcBgTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_JGcBhDPzEei3dfHtumI11Q" property="&quot;messageGroupStore&quot;" clientClassElem="_JGcBgjPzEei3dfHtumI11Q" serverClassElem="_JGcBgDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_JPhsEjPzEei3dfHtumI11Q" property="filter" clientClassElem="_JPhsEDPzEei3dfHtumI11Q" serverClassElem="_JPhsETPzEei3dfHtumI11Q"/>
+    <configConnections refID="_JPrdEzPzEei3dfHtumI11Q" property="filter" clientClassElem="_JPrdEDPzEei3dfHtumI11Q" serverClassElem="_JPrdETPzEei3dfHtumI11Q"/>
+    <configConnections refID="_JPrdFDPzEei3dfHtumI11Q" clientClassElem="_JPrdETPzEei3dfHtumI11Q" serverClassElem="_JPrdEjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_JQHh8TPzEei3dfHtumI11Q" clientClassElem="_JQHh8DPzEei3dfHtumI11Q" serverClassElem="_JQRS8DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_JQbrAjPzEei3dfHtumI11Q" property="filter" clientClassElem="_JQbrADPzEei3dfHtumI11Q" serverClassElem="_JQbrATPzEei3dfHtumI11Q"/>
+    <configConnections refID="_JQbrAzPzEei3dfHtumI11Q" property="filter" clientClassElem="_JQbrADPzEei3dfHtumI11Q" serverClassElem="_JQbrBDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_JQbrBTPzEei3dfHtumI11Q" property="filter" clientClassElem="_JQbrADPzEei3dfHtumI11Q" serverClassElem="_JQbrATPzEei3dfHtumI11Q"/>
+    <configConnections refID="_JtpygjPzEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JtpygTPzEei3dfHtumI11Q" serverClassElem="_JtpygDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_JuGecjPzEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JuGecTPzEei3dfHtumI11Q" serverClassElem="_JuGecDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_JuZZYTPzEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JuZZYDPzEei3dfHtumI11Q" serverClassElem="_JuZZYjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KSyf4jPzEei3dfHtumI11Q" property="server" clientClassElem="_KSyf4DPzEei3dfHtumI11Q" serverClassElem="_KSyf4TPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KTOkwjPzEei3dfHtumI11Q" property="&quot;server&quot;" clientClassElem="_KTOkwDPzEei3dfHtumI11Q" serverClassElem="_KTOkwTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KTiGwzPzEei3dfHtumI11Q" property="&quot;server&quot;" clientClassElem="_KTiGwDPzEei3dfHtumI11Q" serverClassElem="_KTiGwTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KTiGxDPzEei3dfHtumI11Q" property="&quot;parent&quot;" clientClassElem="_KTiGwjPzEei3dfHtumI11Q" serverClassElem="_KTiGwjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KTrQsjPzEei3dfHtumI11Q" property="&quot;server&quot;" clientClassElem="_KTrQsDPzEei3dfHtumI11Q" serverClassElem="_KTrQsTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KVWEozPzEei3dfHtumI11Q" property="&quot;channel&quot;" clientClassElem="_KVWEoDPzEei3dfHtumI11Q" serverClassElem="_KVWEpDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KVWEpTPzEei3dfHtumI11Q" property="&quot;server&quot;" clientClassElem="_KVWEoTPzEei3dfHtumI11Q" serverClassElem="_KVWEpjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KVWEpzPzEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_KVWEojPzEei3dfHtumI11Q" serverClassElem="_KVWEoDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KVWEqDPzEei3dfHtumI11Q" property="&quot;server&quot;" clientClassElem="_KVWEojPzEei3dfHtumI11Q" serverClassElem="_KVWEqTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KVfOkjPzEei3dfHtumI11Q" property="&quot;channel&quot;" clientClassElem="_KVfOkDPzEei3dfHtumI11Q" serverClassElem="_KVfOkzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KVfOlDPzEei3dfHtumI11Q" property="&quot;server&quot;" clientClassElem="_KVfOkTPzEei3dfHtumI11Q" serverClassElem="_KVfOlTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KVywkTPzEei3dfHtumI11Q" property="&quot;channel&quot;" clientClassElem="_KVywkDPzEei3dfHtumI11Q" serverClassElem="_KVywkjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KV76hDPzEei3dfHtumI11Q" property="&quot;date&quot;" clientClassElem="_KV76gDPzEei3dfHtumI11Q" serverClassElem="_KV76gTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KV76hTPzEei3dfHtumI11Q" property="&quot;server&quot;" clientClassElem="_KV76gjPzEei3dfHtumI11Q" serverClassElem="_KV76hjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KV76hzPzEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_KV76gzPzEei3dfHtumI11Q" serverClassElem="_KV76gDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KV76iDPzEei3dfHtumI11Q" property="&quot;server&quot;" clientClassElem="_KV76gzPzEei3dfHtumI11Q" serverClassElem="_KV76iTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KWO1dDPzEei3dfHtumI11Q" property="&quot;date&quot;" clientClassElem="_KWO1cDPzEei3dfHtumI11Q" serverClassElem="_KWO1cTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KWO1dTPzEei3dfHtumI11Q" property="&quot;server&quot;" clientClassElem="_KWO1cjPzEei3dfHtumI11Q" serverClassElem="_KWO1djPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KWO1dzPzEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_KWO1czPzEei3dfHtumI11Q" serverClassElem="_KWO1cDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KWO1eDPzEei3dfHtumI11Q" property="&quot;server&quot;" clientClassElem="_KWO1czPzEei3dfHtumI11Q" serverClassElem="_KWO1eTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KbAAsTPzEei3dfHtumI11Q" property="&quot;entityManager&quot;" clientClassElem="_KbAAsDPzEei3dfHtumI11Q" serverClassElem="_KbAAsjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_KnqjszPzEei3dfHtumI11Q" clientClassElem="_KnqjsjPzEei3dfHtumI11Q" serverClassElem="_KnqjtDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_Kq76ITPzEei3dfHtumI11Q" clientClassElem="_Kq76IDPzEei3dfHtumI11Q" serverClassElem="_Kq76IjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_LAG44TPzEei3dfHtumI11Q" clientClassElem="_LAG44DPzEei3dfHtumI11Q" serverClassElem="_LAG44jPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="spring-projects.spring-integration_asm" instantiates="//@architectureDescriptions[name='spring-projects.spring-integration_config']">
+    <assmComponents name="rabbitConnectionFactory" id="_IDtZMTPzEei3dfHtumI11Q" instantiates="_IDtZMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="amqpHeaderMapper" id="_IEKFITPzEei3dfHtumI11Q" instantiates="_IEKFIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="amqpHeaderMapper" id="_IEmxETPzEei3dfHtumI11Q" instantiates="_IEmxEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="amqpHeaderMapper" id="_IFMm8TPzEei3dfHtumI11Q" instantiates="_IFMm8DPzEei3dfHtumI11Q"/>
+    <assmComponents name="amqpHeaderMapper" id="_IFyc0TPzEei3dfHtumI11Q" instantiates="_IFyc0DPzEei3dfHtumI11Q"/>
+    <assmComponents name="testBean" id="_IJgfMTPzEei3dfHtumI11Q" instantiates="_IJgfMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="testBean" id="_IJ0BMTPzEei3dfHtumI11Q" instantiates="_IJ0BMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="testBean" id="_IJ9LITPzEei3dfHtumI11Q" instantiates="_IJ9LIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="taskScheduler" id="_IKQGHTPzEei3dfHtumI11Q" instantiates="_IKQGEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="sourceChannel" id="_IKQGHjPzEei3dfHtumI11Q" instantiates="_IKQGETPzEei3dfHtumI11Q"/>
+    <assmComponents name="targetChannel" id="_IKQGHzPzEei3dfHtumI11Q" instantiates="_IKQGETPzEei3dfHtumI11Q"/>
+    <assmComponents name="endpoint" id="_IKQGIDPzEei3dfHtumI11Q" instantiates="_IKQGEjPzEei3dfHtumI11Q"/>
+    <assmComponents name="serviceActivator" id="_IKQGITPzEei3dfHtumI11Q" instantiates="_IKQGEzPzEei3dfHtumI11Q"/>
+    <assmComponents name="handler" id="_IKQGIjPzEei3dfHtumI11Q" instantiates="_IKQGFDPzEei3dfHtumI11Q"/>
+    <assmComponents name="integrationConversionService" id="_IKQGIzPzEei3dfHtumI11Q" instantiates="_IKQGFTPzEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_ISKr8jPzEei3dfHtumI11Q" instantiates="_ISKr8DPzEei3dfHtumI11Q"/>
+    <assmComponents name="service" id="_ISKr8zPzEei3dfHtumI11Q" instantiates="_ISKr8TPzEei3dfHtumI11Q"/>
+    <assmComponents name="integrationConversionService" id="_IfHi0TPzEei3dfHtumI11Q" instantiates="_IfHi0DPzEei3dfHtumI11Q"/>
+    <assmComponents name="channelInitializer" id="_Ih-pkTPzEei3dfHtumI11Q" instantiates="_Ih-pkDPzEei3dfHtumI11Q"/>
+    <assmComponents name="channelInitializer" id="_IwMEsTPzEei3dfHtumI11Q" instantiates="_IwMEsDPzEei3dfHtumI11Q"/>
+    <assmComponents name="channelInitializer" id="_IwowoTPzEei3dfHtumI11Q" instantiates="_IwowoDPzEei3dfHtumI11Q"/>
+    <assmComponents name="idGenerator" id="_IyH-YzPzEei3dfHtumI11Q" instantiates="_IyH-YDPzEei3dfHtumI11Q"/>
+    <assmComponents name="barString" id="_I1-joTPzEei3dfHtumI11Q" instantiates="_I1-joDPzEei3dfHtumI11Q"/>
+    <assmComponents name="foo" id="_I2b2oTPzEei3dfHtumI11Q" instantiates="_I2b2oDPzEei3dfHtumI11Q"/>
+    <assmComponents name="generator" id="_I7QsQTPzEei3dfHtumI11Q" instantiates="_I7QsQDPzEei3dfHtumI11Q"/>
+    <assmComponents name="messageStore" id="_JGcBhTPzEei3dfHtumI11Q" instantiates="_JGcBgDPzEei3dfHtumI11Q"/>
+    <assmComponents name="expiryCallback" id="_JGcBhjPzEei3dfHtumI11Q" instantiates="_JGcBgTPzEei3dfHtumI11Q"/>
+    <assmComponents name="reaper" id="_JGcBhzPzEei3dfHtumI11Q" instantiates="_JGcBgjPzEei3dfHtumI11Q"/>
+    <assmComponents name="pollableFileSource" id="_JPhsEzPzEei3dfHtumI11Q" instantiates="_JPhsEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="compositeFilter" id="_JPhsFDPzEei3dfHtumI11Q" instantiates="_JPhsETPzEei3dfHtumI11Q"/>
+    <assmComponents name="pollableFileSource" id="_JPrdFTPzEei3dfHtumI11Q" instantiates="_JPrdEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="persistentFilter" id="_JPrdFjPzEei3dfHtumI11Q" instantiates="_JPrdETPzEei3dfHtumI11Q"/>
+    <assmComponents name="ppms" id="_JPrdFzPzEei3dfHtumI11Q" instantiates="_JPrdEjPzEei3dfHtumI11Q"/>
+    <assmComponents name="filter" id="_JQRS8TPzEei3dfHtumI11Q" instantiates="_JQHh8DPzEei3dfHtumI11Q"/>
+    <assmComponents name="fileSource1" id="_JQbrBjPzEei3dfHtumI11Q" instantiates="_JQbrADPzEei3dfHtumI11Q"/>
+    <assmComponents name="fileSource2" id="_JQbrBzPzEei3dfHtumI11Q" instantiates="_JQbrADPzEei3dfHtumI11Q"/>
+    <assmComponents name="fileSource3" id="_JQbrCDPzEei3dfHtumI11Q" instantiates="_JQbrADPzEei3dfHtumI11Q"/>
+    <assmComponents name="filter1" id="_JQbrCTPzEei3dfHtumI11Q" instantiates="_JQbrATPzEei3dfHtumI11Q"/>
+    <assmComponents name="filter2" id="_JQbrCjPzEei3dfHtumI11Q" instantiates="_JQbrATPzEei3dfHtumI11Q"/>
+    <assmComponents name="filter" id="_JQ3v4TPzEei3dfHtumI11Q" instantiates="_JQ3v4DPzEei3dfHtumI11Q"/>
+    <assmComponents name="ftpSessionFactory" id="_JUJtYTPzEei3dfHtumI11Q" instantiates="_JUJtYDPzEei3dfHtumI11Q"/>
+    <assmComponents name="ftpSessionFactory" id="_JUvjQTPzEei3dfHtumI11Q" instantiates="_JUvjQDPzEei3dfHtumI11Q"/>
+    <assmComponents name="crLfSerializer" id="_JfxulTPzEei3dfHtumI11Q" instantiates="_JfxukDPzEei3dfHtumI11Q"/>
+    <assmComponents name="stxEtxSerializer" id="_JfxuljPzEei3dfHtumI11Q" instantiates="_JfxukTPzEei3dfHtumI11Q"/>
+    <assmComponents name="lengthHeaderSerializer" id="_JfxulzPzEei3dfHtumI11Q" instantiates="_JfxukjPzEei3dfHtumI11Q"/>
+    <assmComponents name="javaSerializer" id="_JfxumDPzEei3dfHtumI11Q" instantiates="_JfxukzPzEei3dfHtumI11Q"/>
+    <assmComponents name="javaDeserializer" id="_JfxumTPzEei3dfHtumI11Q" instantiates="_JfxulDPzEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_JtpygzPzEei3dfHtumI11Q" instantiates="_JtpygDPzEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_JtpyhDPzEei3dfHtumI11Q" instantiates="_JtpygTPzEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_JuGeczPzEei3dfHtumI11Q" instantiates="_JuGecDPzEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_JuGedDPzEei3dfHtumI11Q" instantiates="_JuGecTPzEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_JuZZYzPzEei3dfHtumI11Q" instantiates="_JuZZYDPzEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_Ju2FUTPzEei3dfHtumI11Q" instantiates="_Ju2FUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_Ju_2UTPzEei3dfHtumI11Q" instantiates="_Ju_2UDPzEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_JvSxQjPzEei3dfHtumI11Q" instantiates="_JvSxQDPzEei3dfHtumI11Q"/>
+    <assmComponents name="queryProvider" id="_JvSxQzPzEei3dfHtumI11Q" instantiates="_JvSxQTPzEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_JvlsMjPzEei3dfHtumI11Q" instantiates="_JvlsMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="queryProvider" id="_JvlsMzPzEei3dfHtumI11Q" instantiates="_JvlsMTPzEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_JvvdMjPzEei3dfHtumI11Q" instantiates="_JvvdMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="queryProvider" id="_JvvdMzPzEei3dfHtumI11Q" instantiates="_JvvdMTPzEei3dfHtumI11Q"/>
+    <assmComponents id="_KMPL8jPzEei3dfHtumI11Q" instantiates="_KMPL8DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;router&quot;" id="_KMPL8zPzEei3dfHtumI11Q" instantiates="_KMPL8TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;router&quot;" id="_KMiG4jPzEei3dfHtumI11Q" instantiates="_KMiG4DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_KMiG4zPzEei3dfHtumI11Q" instantiates="_KMiG4TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mbeanExporter&quot;" id="_KSyf4zPzEei3dfHtumI11Q" instantiates="_KSyf4DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mbeanServer&quot;" id="_KSyf5DPzEei3dfHtumI11Q" instantiates="_KSyf4TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;integrationExecutions&quot;" id="_KTOkwzPzEei3dfHtumI11Q" instantiates="_KTOkwDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mbeanServer&quot;" id="_KTOkxDPzEei3dfHtumI11Q" instantiates="_KTOkwTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;integrationExecutions&quot;" id="_KTiGxTPzEei3dfHtumI11Q" instantiates="_KTiGwDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mbeanServer&quot;" id="_KTiGxjPzEei3dfHtumI11Q" instantiates="_KTiGwTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;parent&quot;" id="_KTiGxzPzEei3dfHtumI11Q" instantiates="_KTiGwjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;child&quot;" id="_KTiGyDPzEei3dfHtumI11Q" instantiates="_KTiGwjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;integrationExecutions&quot;" id="_KTrQszPzEei3dfHtumI11Q" instantiates="_KTrQsDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mbeanServer&quot;" id="_KTrQtDPzEei3dfHtumI11Q" instantiates="_KTrQsTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;foo&quot;" id="_KVWEqjPzEei3dfHtumI11Q" instantiates="_KVWEoDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;auto&quot;" id="_KVWEqzPzEei3dfHtumI11Q" instantiates="_KVWEoTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;exporter&quot;" id="_KVWErDPzEei3dfHtumI11Q" instantiates="_KVWEojPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;foo&quot;" id="_KVfOljPzEei3dfHtumI11Q" instantiates="_KVfOkDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;exporter&quot;" id="_KVfOlzPzEei3dfHtumI11Q" instantiates="_KVfOkTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;foo&quot;" id="_KVywkzPzEei3dfHtumI11Q" instantiates="_KVywkDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;foo&quot;" id="_KV76ijPzEei3dfHtumI11Q" instantiates="_KV76gDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;date&quot;" id="_KV76izPzEei3dfHtumI11Q" instantiates="_KV76gTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;auto&quot;" id="_KV76jDPzEei3dfHtumI11Q" instantiates="_KV76gjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;exporter&quot;" id="_KV76jTPzEei3dfHtumI11Q" instantiates="_KV76gzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;foo&quot;" id="_KWO1ejPzEei3dfHtumI11Q" instantiates="_KWO1cDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;date&quot;" id="_KWO1ezPzEei3dfHtumI11Q" instantiates="_KWO1cTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;auto&quot;" id="_KWO1fDPzEei3dfHtumI11Q" instantiates="_KWO1cjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;exporter&quot;" id="_KWO1fTPzEei3dfHtumI11Q" instantiates="_KWO1czPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jpaDialect&quot;" id="_KZ830jPzEei3dfHtumI11Q" instantiates="_KZ830DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;vendorAdaptor&quot;" id="_KZ830zPzEei3dfHtumI11Q" instantiates="_KZ830TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jpaOperations&quot;" id="_KbAAszPzEei3dfHtumI11Q" instantiates="_KbAAsDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jpaDialect&quot;" id="_KcfOcjPzEei3dfHtumI11Q" instantiates="_KcfOcDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;vendorAdaptor&quot;" id="_KcfOczPzEei3dfHtumI11Q" instantiates="_KcfOcTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;redisConnectionFactory&quot;" id="_KnWaoTPzEei3dfHtumI11Q" instantiates="_KnWaoDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;redisConnectionFactory&quot;" id="_KnqjtTPzEei3dfHtumI11Q" instantiates="_KnqjsDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;customRedisConnectionFactory&quot;" id="_KnqjtjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;executor&quot;" id="_KnqjtzPzEei3dfHtumI11Q" instantiates="_KnqjsjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;redisConnectionFactory&quot;" id="_KoGokzPzEei3dfHtumI11Q" instantiates="_KoGokDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;customRedisConnectionFactory&quot;" id="_KoGolDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;serializer&quot;" id="_KoGolTPzEei3dfHtumI11Q" instantiates="_KoGokjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;redisConnectionFactory&quot;" id="_KpS7YTPzEei3dfHtumI11Q" instantiates="_KpS7YDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;redisConnectionFactory&quot;" id="_Kp5YUTPzEei3dfHtumI11Q" instantiates="_Kp5YUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cms&quot;" id="_Kq76IzPzEei3dfHtumI11Q" instantiates="_Kq76IDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;interceptor&quot;" id="_K8F7kTPzEei3dfHtumI11Q" instantiates="_K8F7kDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;xmlValidatingMessageSelector&quot;" id="_LAG44zPzEei3dfHtumI11Q" instantiates="_LAG44DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_IKQGJDPzEei3dfHtumI11Q" clientInstElem="_IKQGIDPzEei3dfHtumI11Q" serverInstElem="_IKQGHjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_IKQGJTPzEei3dfHtumI11Q" clientInstElem="_IKQGIDPzEei3dfHtumI11Q" serverInstElem="_IKQGITPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_IKQGJjPzEei3dfHtumI11Q" property="endpoint.trigger" clientInstElem="_IKQGIDPzEei3dfHtumI11Q" serverInstElem="_IKQGJzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_IKQGKDPzEei3dfHtumI11Q" clientInstElem="_IKQGITPzEei3dfHtumI11Q" serverInstElem="_IKQGIjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_IKQGKTPzEei3dfHtumI11Q" property="serviceActivator.outputChannel" clientInstElem="_IKQGITPzEei3dfHtumI11Q" serverInstElem="_IKQGHzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_IyH-ZDPzEei3dfHtumI11Q" clientInstElem="_IyH-YzPzEei3dfHtumI11Q" serverInstElem="_IyH-ZTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JGcBiDPzEei3dfHtumI11Q" property="messageStore.expiryCallbacks" clientInstElem="_JGcBhTPzEei3dfHtumI11Q" serverInstElem="_JGcBhjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JGcBiTPzEei3dfHtumI11Q" property="reaper.messageGroupStore" clientInstElem="_JGcBhzPzEei3dfHtumI11Q" serverInstElem="_JGcBhTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JPhsFTPzEei3dfHtumI11Q" property="pollableFileSource.filter" clientInstElem="_JPhsEzPzEei3dfHtumI11Q" serverInstElem="_JPhsFDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JPrdGDPzEei3dfHtumI11Q" property="pollableFileSource.filter" clientInstElem="_JPrdFTPzEei3dfHtumI11Q" serverInstElem="_JPrdFjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JPrdGTPzEei3dfHtumI11Q" clientInstElem="_JPrdFjPzEei3dfHtumI11Q" serverInstElem="_JPrdFzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JQRS8jPzEei3dfHtumI11Q" clientInstElem="_JQRS8TPzEei3dfHtumI11Q" serverInstElem="_JQRS8zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JQbrCzPzEei3dfHtumI11Q" property="fileSource1.filter" clientInstElem="_JQbrBjPzEei3dfHtumI11Q" serverInstElem="_JQbrCTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JQbrDDPzEei3dfHtumI11Q" property="fileSource1.locker" clientInstElem="_JQbrBjPzEei3dfHtumI11Q" serverInstElem="_JQbrCTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JQbrDTPzEei3dfHtumI11Q" property="fileSource2.filter" clientInstElem="_JQbrBzPzEei3dfHtumI11Q" serverInstElem="_JQbrCjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JQbrDjPzEei3dfHtumI11Q" property="fileSource2.locker" clientInstElem="_JQbrBzPzEei3dfHtumI11Q" serverInstElem="_JQbrCjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JQbrDzPzEei3dfHtumI11Q" property="fileSource3.filter" clientInstElem="_JQbrCDPzEei3dfHtumI11Q" serverInstElem="_JQbrCTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JQbrEDPzEei3dfHtumI11Q" property="fileSource3.locker" clientInstElem="_JQbrCDPzEei3dfHtumI11Q" serverInstElem="_JQbrCTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JtpyhTPzEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_JtpyhDPzEei3dfHtumI11Q" serverInstElem="_JtpygzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JuGedTPzEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_JuGedDPzEei3dfHtumI11Q" serverInstElem="_JuGeczPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JuZZZDPzEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_JuZZYzPzEei3dfHtumI11Q" serverInstElem="_JuZZZTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KSyf5TPzEei3dfHtumI11Q" property="mbeanExporter.server" clientInstElem="_KSyf4zPzEei3dfHtumI11Q" serverInstElem="_KSyf5DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KTOkxTPzEei3dfHtumI11Q" property="integrationExecutions.server" clientInstElem="_KTOkwzPzEei3dfHtumI11Q" serverInstElem="_KTOkxDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KTiGyTPzEei3dfHtumI11Q" property="integrationExecutions.server" clientInstElem="_KTiGxTPzEei3dfHtumI11Q" serverInstElem="_KTiGxjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KTiGyjPzEei3dfHtumI11Q" property="child.parent" clientInstElem="_KTiGyDPzEei3dfHtumI11Q" serverInstElem="_KTiGxzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KTrQtTPzEei3dfHtumI11Q" property="integrationExecutions.server" clientInstElem="_KTrQszPzEei3dfHtumI11Q" serverInstElem="_KTrQtDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KVWErTPzEei3dfHtumI11Q" property="foo.channel" clientInstElem="_KVWEqjPzEei3dfHtumI11Q" serverInstElem="_KVWErjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KVWErzPzEei3dfHtumI11Q" property="auto.server" clientInstElem="_KVWEqzPzEei3dfHtumI11Q" serverInstElem="_KVWEsDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KVWEsTPzEei3dfHtumI11Q" property="exporter.beans" clientInstElem="_KVWErDPzEei3dfHtumI11Q" serverInstElem="_KVWEqjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KVWEsjPzEei3dfHtumI11Q" property="exporter.server" clientInstElem="_KVWErDPzEei3dfHtumI11Q" serverInstElem="_KVWEszPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KVfOmDPzEei3dfHtumI11Q" property="foo.channel" clientInstElem="_KVfOljPzEei3dfHtumI11Q" serverInstElem="_KVfOmTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KVfOmjPzEei3dfHtumI11Q" property="exporter.server" clientInstElem="_KVfOlzPzEei3dfHtumI11Q" serverInstElem="_KVfOmzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KVywlDPzEei3dfHtumI11Q" property="foo.channel" clientInstElem="_KVywkzPzEei3dfHtumI11Q" serverInstElem="_KVywlTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KV76jjPzEei3dfHtumI11Q" property="foo.date" clientInstElem="_KV76ijPzEei3dfHtumI11Q" serverInstElem="_KV76izPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KV76jzPzEei3dfHtumI11Q" property="auto.server" clientInstElem="_KV76jDPzEei3dfHtumI11Q" serverInstElem="_KV76kDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KV76kTPzEei3dfHtumI11Q" property="exporter.beans" clientInstElem="_KV76jTPzEei3dfHtumI11Q" serverInstElem="_KV76ijPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KV76kjPzEei3dfHtumI11Q" property="exporter.server" clientInstElem="_KV76jTPzEei3dfHtumI11Q" serverInstElem="_KV76kzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KWO1fjPzEei3dfHtumI11Q" property="foo.date" clientInstElem="_KWO1ejPzEei3dfHtumI11Q" serverInstElem="_KWO1ezPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KWO1fzPzEei3dfHtumI11Q" property="auto.server" clientInstElem="_KWO1fDPzEei3dfHtumI11Q" serverInstElem="_KWO1gDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KWO1gTPzEei3dfHtumI11Q" property="exporter.beans" clientInstElem="_KWO1fTPzEei3dfHtumI11Q" serverInstElem="_KWO1ejPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KWO1gjPzEei3dfHtumI11Q" property="exporter.server" clientInstElem="_KWO1fTPzEei3dfHtumI11Q" serverInstElem="_KWO1gzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KbAAtDPzEei3dfHtumI11Q" property="jpaOperations.entityManager" clientInstElem="_KbAAszPzEei3dfHtumI11Q" serverInstElem="_KbAAtTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KnqjuDPzEei3dfHtumI11Q" clientInstElem="_KnqjtzPzEei3dfHtumI11Q" serverInstElem="_KnqjuTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Kq76JDPzEei3dfHtumI11Q" clientInstElem="_Kq76IzPzEei3dfHtumI11Q" serverInstElem="_Kq76JTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_LAG45DPzEei3dfHtumI11Q" clientInstElem="_LAG44zPzEei3dfHtumI11Q" serverInstElem="_LAG45TPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="spring-projects.spring-integration_spec">
+    <specConnections refID="_LESOQDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOQTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOQjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOQzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESORDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESORTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESORjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESORzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOSDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOSTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOSjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOSzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOTDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOTTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOTjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOTzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOUDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOUTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOUjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOUzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOVDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOVTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOVjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOVzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOWDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOWTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOWjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOWzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOXDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOXTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOXjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOXzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOYDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOYTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOYjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOYzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOZDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOZTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOZjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOZzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOaDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_LESOaTPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

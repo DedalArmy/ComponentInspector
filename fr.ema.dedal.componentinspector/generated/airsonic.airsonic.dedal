@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="airsonic.airsonic">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="airsonic.airsonic_config" implements="//@architectureDescriptions[name='airsonic.airsonic_spec']">
+    <configComponents name="org.airsonic.player.cache.CacheFactory" id="_Er0fEDPtEei3dfHtumI11Q"/>
+    <configComponents name="cacheFactory" id="_Er0fETPtEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jdbc.datasource.DriverManagerDataSource" id="_EsKdUDPtEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jdbc.datasource.DriverManagerDataSource" id="_EsvFEDPtEei3dfHtumI11Q"/>
+    <configComponents name="org.airsonic.player.service.metadata.MetaDataParserFactory" id="_EtTs0DPtEei3dfHtumI11Q"/>
+    <configComponents name="org.mockito.Mockito" id="_EuvQMDPtEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jdbc.datasource.DriverManagerDataSource" id="_Eu_u4DPtEei3dfHtumI11Q"/>
+    <configConnections refID="_EtTs0TPtEei3dfHtumI11Q" property="&quot;parsers&quot;" clientClassElem="_EtTs0DPtEei3dfHtumI11Q" serverClassElem="_EtTs0jPtEei3dfHtumI11Q"/>
+    <configConnections refID="_EtUT4DPtEei3dfHtumI11Q" property="&quot;parsers&quot;" clientClassElem="_EtTs0DPtEei3dfHtumI11Q" serverClassElem="_EtUT4TPtEei3dfHtumI11Q"/>
+    <configConnections refID="_EtU68DPtEei3dfHtumI11Q" property="&quot;parsers&quot;" clientClassElem="_EtTs0DPtEei3dfHtumI11Q" serverClassElem="_EtU68TPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="airsonic.airsonic_asm" instantiates="//@architectureDescriptions[name='airsonic.airsonic_config']">
+    <assmComponents name="cacheFactory" id="_Er0fEjPtEei3dfHtumI11Q" instantiates="_Er0fEDPtEei3dfHtumI11Q"/>
+    <assmComponents name="userCache" id="_Er0fEzPtEei3dfHtumI11Q" instantiates="_Er0fETPtEei3dfHtumI11Q"/>
+    <assmComponents name="mediaFileMemoryCache" id="_Er0fFDPtEei3dfHtumI11Q" instantiates="_Er0fETPtEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_EsKdUTPtEei3dfHtumI11Q" instantiates="_EsKdUDPtEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_EsvFETPtEei3dfHtumI11Q" instantiates="_EsvFEDPtEei3dfHtumI11Q"/>
+    <assmComponents name="metaDataParserFactory" id="_EtU68jPtEei3dfHtumI11Q" instantiates="_EtTs0DPtEei3dfHtumI11Q"/>
+    <assmComponents name="sonosHelper" id="_EuvQMTPtEei3dfHtumI11Q" instantiates="_EuvQMDPtEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_Eu_u4TPtEei3dfHtumI11Q" instantiates="_Eu_u4DPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_EtWwIDPtEei3dfHtumI11Q" property="metaDataParserFactory.parsers" clientInstElem="_EtU68jPtEei3dfHtumI11Q" serverInstElem="_EtWwITPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Et6w0DPtEei3dfHtumI11Q" property="metaDataParserFactory.parsers" clientInstElem="_EtU68jPtEei3dfHtumI11Q" serverInstElem="_Et6w0TPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Et6w0jPtEei3dfHtumI11Q" property="metaDataParserFactory.parsers" clientInstElem="_EtU68jPtEei3dfHtumI11Q" serverInstElem="_Et6w0zPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="airsonic.airsonic_spec">
+    <specConnections refID="_EvMjMDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_EvMjMTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_EvMjMjPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

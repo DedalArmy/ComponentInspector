@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="yandex-qatools.postgresql-embedded">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="yandex-qatools.postgresql-embedded_config" implements="//@architectureDescriptions[name='yandex-qatools.postgresql-embedded_spec']">
+    <configComponents name="&quot;ru.yandex.qatools.embed.postgresql.PostgresqlService&quot;" id="_4ZJIUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;ru.yandex.qatools.embed.postgresql.PostgresqlService&quot;" id="_4ZXx0DPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="yandex-qatools.postgresql-embedded_asm" instantiates="//@architectureDescriptions[name='yandex-qatools.postgresql-embedded_config']">
+    <assmComponents id="_4ZJIUTPzEei3dfHtumI11Q" instantiates="_4ZJIUDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_4ZXx0TPzEei3dfHtumI11Q" instantiates="_4ZXx0DPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="yandex-qatools.postgresql-embedded_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

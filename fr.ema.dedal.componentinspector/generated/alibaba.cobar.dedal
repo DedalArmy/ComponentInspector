@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="alibaba.cobar">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="alibaba.cobar_config" implements="//@architectureDescriptions[name='alibaba.cobar_spec']">
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_VRJSkDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping&quot;" id="_VRJSkTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.velocity.VelocityConfigurer&quot;" id="_VRJSkjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.velocity.VelocityViewResolver&quot;" id="_VRJSkzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.AuthenticationInterceptor&quot;" id="_VRJSlDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.PermissionInterceptor&quot;" id="_VRJSlTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.Alert&quot;" id="_VRJSljPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.LogIn&quot;" id="_VRJSlzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.RecoveryConfirm&quot;" id="_VRJSmDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.PropertyConfirm&quot;" id="_VRJSmTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.KillConfirm&quot;" id="_VRJSmjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.MModifyPwdConfirm&quot;" id="_VRJ5oDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.Index&quot;" id="_VRJ5oTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.AddClusterPage&quot;" id="_VRJ5ojPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.AddCobarPage&quot;" id="_VRJ5ozPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.AddUserPage&quot;" id="_VRJ5pDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.ClusterListScreen&quot;" id="_VRJ5pTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.CobarListScreen&quot;" id="_VRJ5pjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.CobarDetailScreen&quot;" id="_VRKgsDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.ConnectionControlScreen&quot;" id="_VRKgsTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.DatanodesControlScreen&quot;" id="_VRKgsjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.EditClusterPage&quot;" id="_VRKgszPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.EditCobarPage&quot;" id="_VRLHwDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.EditStopTimesPage&quot;" id="_VRLHwTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.EditUserPage&quot;" id="_VRLHwjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.ForbiddenScreen&quot;" id="_VRLHwzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.LogInPage&quot;" id="_VRLHxDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.LogInFail&quot;" id="_VRLu0DPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.MClusterListScreen&quot;" id="_VRLu0TPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.MPropertyListScreen&quot;" id="_VRLu0jPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.MCobarListScreen&quot;" id="_VRLu0zPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.MUserListScreen&quot;" id="_VRMV4DPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.MUserModifyPwd&quot;" id="_VRMV4TPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.PropertyReloadScreen&quot;" id="_VRMV4jPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.action.PropertyReload&quot;" id="_VRM88DPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.ChooseIndexPage&quot;" id="_VRM88TPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.ChooseStoptimePage&quot;" id="_VRM88jPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.action.SwitchDatanodes&quot;" id="_VRNkADPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.action.StopHeartbeat&quot;" id="_VRNkATPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.action.AddCluster&quot;" id="_VRNkAjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.action.KillConnection&quot;" id="_VROLEDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.action.AddCobar&quot;" id="_VROLETPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.action.AddStopTime&quot;" id="_VROLEjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.action.AddUser&quot;" id="_VROyIDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.action.LoginAction&quot;" id="_VROyITPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.action.LogoutAction&quot;" id="_VRPZMDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.action.ModifyCluster&quot;" id="_VRPZMTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.action.ModifyCobar&quot;" id="_VRPZMjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.action.ModifyUser&quot;" id="_VRQAQDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.action.ModifyPassword&quot;" id="_VRQAQTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.ajax.XmlManagerAjax&quot;" id="_VRQnUDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.ajax.ClusterInstantPerfValueAjax&quot;" id="_VRQnUTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.ajax.CobarNodeInstantPerfValueAjax&quot;" id="_VRROYDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.ajax.CobarControlAjax&quot;" id="_VRROYTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.service.CobarAccesser&quot;" id="_VRROYjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.dao.delegate.AdapterDelegate&quot;" id="_VRR1cDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.dao.delegate.DataSourceCreator&quot;" id="_VRR1cTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.service.XmlAccesser&quot;" id="_VRScgDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.dao.xml.ClusterDAOImple&quot;" id="_VRScgTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.dao.xml.CobarDAOImple&quot;" id="_VRTDkDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.dao.xml.UserDAOImple&quot;" id="_VRTDkTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.dao.xml.PropertyDAOImple&quot;" id="_VRTqoDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.dao.xml.XMLFileLoaderPath&quot;" id="_VRURsDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping&quot;" id="_VR2dMDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.AuthenticationInterceptor&quot;" id="_VR2dMTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.PermissionInterceptor&quot;" id="_VR2dMjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.screen.DatanodesControlScreen&quot;" id="_VR2dMzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.action.AddCobar&quot;" id="_VR2dNDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.service.CobarAccesser&quot;" id="_VR2dNTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.dao.delegate.AdapterDelegate&quot;" id="_VR2dNjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.mock.DataSourceCreatorMock&quot;" id="_VR2dNzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.service.XmlAccesser&quot;" id="_VR2dODPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.dao.xml.ClusterDAOImple&quot;" id="_VR3EQDPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.dao.xml.CobarDAOImple&quot;" id="_VR3EQTPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.dao.xml.UserDAOImple&quot;" id="_VR3EQjPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.dao.xml.PropertyDAOImple&quot;" id="_VR3EQzPtEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.cobar.manager.web.commons.XMLFileLoaderCreator&quot;" id="_VR3ERDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRURsTPtEei3dfHtumI11Q" property="&quot;interceptors&quot;" clientClassElem="_VRJSkTPtEei3dfHtumI11Q" serverClassElem="_VRJSlDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRU4wDPtEei3dfHtumI11Q" property="&quot;interceptors&quot;" clientClassElem="_VRJSkTPtEei3dfHtumI11Q" serverClassElem="_VRJSlTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRU4wTPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRJ5oTPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRU4wjPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRJ5ojPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRVf0DPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRJ5ozPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRVf0TPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRJ5pTPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRVf0jPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRJ5pjPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRVf0zPtEei3dfHtumI11Q" property="&quot;cobarAccesser&quot;" clientClassElem="_VRJ5pjPtEei3dfHtumI11Q" serverClassElem="_VRROYjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRVf1DPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRKgsDPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRVf1TPtEei3dfHtumI11Q" property="&quot;cobarAccesser&quot;" clientClassElem="_VRKgsDPtEei3dfHtumI11Q" serverClassElem="_VRROYjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRVf1jPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRKgsTPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRVf1zPtEei3dfHtumI11Q" property="&quot;cobarAccesser&quot;" clientClassElem="_VRKgsTPtEei3dfHtumI11Q" serverClassElem="_VRROYjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRWG4DPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRKgsjPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRWG4TPtEei3dfHtumI11Q" property="&quot;cobarAccesser&quot;" clientClassElem="_VRKgsjPtEei3dfHtumI11Q" serverClassElem="_VRROYjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRWG4jPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRKgszPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRWG4zPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRLHwDPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRWG5DPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRLHwTPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRWG5TPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRLHwjPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRWG5jPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRLu0TPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRWt8DPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRLu0jPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRWt8TPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRLu0zPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRWt8jPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRMV4DPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRWt8zPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRMV4jPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRWt9DPtEei3dfHtumI11Q" property="&quot;cobarAccesser&quot;" clientClassElem="_VRMV4jPtEei3dfHtumI11Q" serverClassElem="_VRROYjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRWt9TPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRM88DPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRWt9jPtEei3dfHtumI11Q" property="&quot;cobarAccesser&quot;" clientClassElem="_VRM88DPtEei3dfHtumI11Q" serverClassElem="_VRROYjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRWt9zPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRM88jPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRXVADPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRNkADPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRXVATPtEei3dfHtumI11Q" property="&quot;cobarAccesser&quot;" clientClassElem="_VRNkADPtEei3dfHtumI11Q" serverClassElem="_VRROYjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRXVAjPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRNkATPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRXVAzPtEei3dfHtumI11Q" property="&quot;cobarAccesser&quot;" clientClassElem="_VRNkATPtEei3dfHtumI11Q" serverClassElem="_VRROYjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRXVBDPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRNkAjPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRXVBTPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VROLEDPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRXVBjPtEei3dfHtumI11Q" property="&quot;cobarAccesser&quot;" clientClassElem="_VROLEDPtEei3dfHtumI11Q" serverClassElem="_VRROYjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRXVBzPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VROLETPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRX8EDPtEei3dfHtumI11Q" property="&quot;cobarAccesser&quot;" clientClassElem="_VROLETPtEei3dfHtumI11Q" serverClassElem="_VRROYjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRX8ETPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VROLEjPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRX8EjPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VROyIDPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRX8EzPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VROyITPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRX8FDPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRPZMTPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRX8FTPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRPZMjPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRX8FjPtEei3dfHtumI11Q" property="&quot;cobarAccesser&quot;" clientClassElem="_VRPZMjPtEei3dfHtumI11Q" serverClassElem="_VRROYjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRX8FzPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRQAQDPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRX8GDPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRQAQTPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRYjIDPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRQnUDPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRYjITPtEei3dfHtumI11Q" property="&quot;cobarAccesser&quot;" clientClassElem="_VRQnUTPtEei3dfHtumI11Q" serverClassElem="_VRROYjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRYjIjPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRQnUTPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRYjIzPtEei3dfHtumI11Q" property="&quot;cobarAccesser&quot;" clientClassElem="_VRROYDPtEei3dfHtumI11Q" serverClassElem="_VRROYjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRYjJDPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRROYDPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRYjJTPtEei3dfHtumI11Q" property="&quot;cobarAccesser&quot;" clientClassElem="_VRROYTPtEei3dfHtumI11Q" serverClassElem="_VRROYjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRZKMDPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRROYTPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRZKMTPtEei3dfHtumI11Q" property="&quot;cobarAdapterDelegate&quot;" clientClassElem="_VRROYjPtEei3dfHtumI11Q" serverClassElem="_VRR1cDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRZKMjPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VRROYjPtEei3dfHtumI11Q" serverClassElem="_VRScgDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRZKMzPtEei3dfHtumI11Q" property="&quot;dsFactory&quot;" clientClassElem="_VRR1cDPtEei3dfHtumI11Q" serverClassElem="_VRR1cTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRZKNDPtEei3dfHtumI11Q" property="&quot;clusterDAO&quot;" clientClassElem="_VRScgDPtEei3dfHtumI11Q" serverClassElem="_VRScgTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRZKNTPtEei3dfHtumI11Q" property="&quot;cobarDAO&quot;" clientClassElem="_VRScgDPtEei3dfHtumI11Q" serverClassElem="_VRTDkDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRZKNjPtEei3dfHtumI11Q" property="&quot;userDAO&quot;" clientClassElem="_VRScgDPtEei3dfHtumI11Q" serverClassElem="_VRTDkTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRZxQDPtEei3dfHtumI11Q" property="&quot;propertyDAO&quot;" clientClassElem="_VRScgDPtEei3dfHtumI11Q" serverClassElem="_VRTqoDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRZxQTPtEei3dfHtumI11Q" property="&quot;xmlFileLoader&quot;" clientClassElem="_VRScgTPtEei3dfHtumI11Q" serverClassElem="_VRURsDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRZxQjPtEei3dfHtumI11Q" property="&quot;xmlFileLoader&quot;" clientClassElem="_VRTDkDPtEei3dfHtumI11Q" serverClassElem="_VRURsDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRZxQzPtEei3dfHtumI11Q" property="&quot;xmlFileLoader&quot;" clientClassElem="_VRTDkTPtEei3dfHtumI11Q" serverClassElem="_VRURsDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VRZxRDPtEei3dfHtumI11Q" property="&quot;xmlFileLoader&quot;" clientClassElem="_VRTqoDPtEei3dfHtumI11Q" serverClassElem="_VRURsDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VR3ERTPtEei3dfHtumI11Q" property="&quot;interceptors&quot;" clientClassElem="_VR2dMDPtEei3dfHtumI11Q" serverClassElem="_VR2dMTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VR3ERjPtEei3dfHtumI11Q" property="&quot;interceptors&quot;" clientClassElem="_VR2dMDPtEei3dfHtumI11Q" serverClassElem="_VR2dMjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VR3rUDPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VR2dMzPtEei3dfHtumI11Q" serverClassElem="_VR2dODPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VR3rUTPtEei3dfHtumI11Q" property="&quot;cobarAccesser&quot;" clientClassElem="_VR2dMzPtEei3dfHtumI11Q" serverClassElem="_VR2dNTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VR3rUjPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VR2dNDPtEei3dfHtumI11Q" serverClassElem="_VR2dODPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VR3rUzPtEei3dfHtumI11Q" property="&quot;cobarAccesser&quot;" clientClassElem="_VR2dNDPtEei3dfHtumI11Q" serverClassElem="_VR2dNTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VR3rVDPtEei3dfHtumI11Q" property="&quot;cobarAdapterDelegate&quot;" clientClassElem="_VR2dNTPtEei3dfHtumI11Q" serverClassElem="_VR2dNjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VR3rVTPtEei3dfHtumI11Q" property="&quot;xmlAccesser&quot;" clientClassElem="_VR2dNTPtEei3dfHtumI11Q" serverClassElem="_VR2dODPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VR3rVjPtEei3dfHtumI11Q" property="&quot;dsFactory&quot;" clientClassElem="_VR2dNjPtEei3dfHtumI11Q" serverClassElem="_VR2dNzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VR3rVzPtEei3dfHtumI11Q" property="&quot;clusterDAO&quot;" clientClassElem="_VR2dODPtEei3dfHtumI11Q" serverClassElem="_VR3EQDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VR3rWDPtEei3dfHtumI11Q" property="&quot;cobarDAO&quot;" clientClassElem="_VR2dODPtEei3dfHtumI11Q" serverClassElem="_VR3EQTPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VR4SYDPtEei3dfHtumI11Q" property="&quot;userDAO&quot;" clientClassElem="_VR2dODPtEei3dfHtumI11Q" serverClassElem="_VR3EQjPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VR4SYTPtEei3dfHtumI11Q" property="&quot;propertyDAO&quot;" clientClassElem="_VR2dODPtEei3dfHtumI11Q" serverClassElem="_VR3EQzPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VR4SYjPtEei3dfHtumI11Q" property="&quot;xmlFileLoader&quot;" clientClassElem="_VR3EQDPtEei3dfHtumI11Q" serverClassElem="_VR3ERDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VR4SYzPtEei3dfHtumI11Q" property="&quot;xmlFileLoader&quot;" clientClassElem="_VR3EQTPtEei3dfHtumI11Q" serverClassElem="_VR3ERDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VR4SZDPtEei3dfHtumI11Q" property="&quot;xmlFileLoader&quot;" clientClassElem="_VR3EQjPtEei3dfHtumI11Q" serverClassElem="_VR3ERDPtEei3dfHtumI11Q"/>
+    <configConnections refID="_VR4SZTPtEei3dfHtumI11Q" property="&quot;xmlFileLoader&quot;" clientClassElem="_VR3EQzPtEei3dfHtumI11Q" serverClassElem="_VR3ERDPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="alibaba.cobar_asm" instantiates="//@architectureDescriptions[name='alibaba.cobar_config']">
+    <assmComponents name="propertyConfigurerServlet" id="_VRZxRTPtEei3dfHtumI11Q" instantiates="_VRJSkDPtEei3dfHtumI11Q"/>
+    <assmComponents name="handlerMapping" id="_VRaYUDPtEei3dfHtumI11Q" instantiates="_VRJSkTPtEei3dfHtumI11Q"/>
+    <assmComponents name="velocifyConfig" id="_VRaYUTPtEei3dfHtumI11Q" instantiates="_VRJSkjPtEei3dfHtumI11Q"/>
+    <assmComponents name="viewResolver" id="_VRaYUjPtEei3dfHtumI11Q" instantiates="_VRJSkzPtEei3dfHtumI11Q"/>
+    <assmComponents name="authenticationInterceptor" id="_VRa_YDPtEei3dfHtumI11Q" instantiates="_VRJSlDPtEei3dfHtumI11Q"/>
+    <assmComponents name="permissionInterceptor" id="_VRa_YTPtEei3dfHtumI11Q" instantiates="_VRJSlTPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRa_YjPtEei3dfHtumI11Q" instantiates="_VRJSljPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRa_YzPtEei3dfHtumI11Q" instantiates="_VRJSlzPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRbmcDPtEei3dfHtumI11Q" instantiates="_VRJSmDPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRbmcTPtEei3dfHtumI11Q" instantiates="_VRJSmTPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRbmcjPtEei3dfHtumI11Q" instantiates="_VRJSmjPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRbmczPtEei3dfHtumI11Q" instantiates="_VRJ5oDPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRbmdDPtEei3dfHtumI11Q" instantiates="_VRJ5oTPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRcNgDPtEei3dfHtumI11Q" instantiates="_VRJ5ojPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRcNgTPtEei3dfHtumI11Q" instantiates="_VRJ5ozPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRc0kDPtEei3dfHtumI11Q" instantiates="_VRJ5pDPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRc0kTPtEei3dfHtumI11Q" instantiates="_VRJ5pTPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRc0kjPtEei3dfHtumI11Q" instantiates="_VRJ5pjPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRc0kzPtEei3dfHtumI11Q" instantiates="_VRKgsDPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRc0lDPtEei3dfHtumI11Q" instantiates="_VRKgsTPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRdboDPtEei3dfHtumI11Q" instantiates="_VRKgsjPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRdboTPtEei3dfHtumI11Q" instantiates="_VRKgszPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VReCsDPtEei3dfHtumI11Q" instantiates="_VRLHwDPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VReCsTPtEei3dfHtumI11Q" instantiates="_VRLHwTPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VReCsjPtEei3dfHtumI11Q" instantiates="_VRLHwjPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VReCszPtEei3dfHtumI11Q" instantiates="_VRLHwzPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRepwDPtEei3dfHtumI11Q" instantiates="_VRLHxDPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRepwTPtEei3dfHtumI11Q" instantiates="_VRLu0DPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRepwjPtEei3dfHtumI11Q" instantiates="_VRLu0TPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRfQ0DPtEei3dfHtumI11Q" instantiates="_VRLu0jPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRfQ0TPtEei3dfHtumI11Q" instantiates="_VRLu0zPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRfQ0jPtEei3dfHtumI11Q" instantiates="_VRMV4DPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRf34DPtEei3dfHtumI11Q" instantiates="_VRMV4TPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRf34TPtEei3dfHtumI11Q" instantiates="_VRMV4jPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRf34jPtEei3dfHtumI11Q" instantiates="_VRM88DPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRf34zPtEei3dfHtumI11Q" instantiates="_VRM88TPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRf35DPtEei3dfHtumI11Q" instantiates="_VRM88jPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRge8DPtEei3dfHtumI11Q" instantiates="_VRNkADPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRge8TPtEei3dfHtumI11Q" instantiates="_VRNkATPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRge8jPtEei3dfHtumI11Q" instantiates="_VRNkAjPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRhGADPtEei3dfHtumI11Q" instantiates="_VROLEDPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRhGATPtEei3dfHtumI11Q" instantiates="_VROLETPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRhGAjPtEei3dfHtumI11Q" instantiates="_VROLEjPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRhGAzPtEei3dfHtumI11Q" instantiates="_VROyIDPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRhtEDPtEei3dfHtumI11Q" instantiates="_VROyITPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRhtETPtEei3dfHtumI11Q" instantiates="_VRPZMDPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRhtEjPtEei3dfHtumI11Q" instantiates="_VRPZMTPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRhtEzPtEei3dfHtumI11Q" instantiates="_VRPZMjPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRiUIDPtEei3dfHtumI11Q" instantiates="_VRQAQDPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRiUITPtEei3dfHtumI11Q" instantiates="_VRQAQTPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRiUIjPtEei3dfHtumI11Q" instantiates="_VRQnUDPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRiUIzPtEei3dfHtumI11Q" instantiates="_VRQnUTPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRi7MDPtEei3dfHtumI11Q" instantiates="_VRROYDPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VRi7MTPtEei3dfHtumI11Q" instantiates="_VRROYTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cobarAccesser&quot;" id="_VRjiQDPtEei3dfHtumI11Q" instantiates="_VRROYjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cobarAdapterDelegate&quot;" id="_VRjiQTPtEei3dfHtumI11Q" instantiates="_VRR1cDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dsFactory&quot;" id="_VRkJUDPtEei3dfHtumI11Q" instantiates="_VRR1cTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;xmlAccesser&quot;" id="_VRkJUTPtEei3dfHtumI11Q" instantiates="_VRScgDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;clusterDAO&quot;" id="_VRkJUjPtEei3dfHtumI11Q" instantiates="_VRScgTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cobarDAO&quot;" id="_VRkwYDPtEei3dfHtumI11Q" instantiates="_VRTDkDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userDAO&quot;" id="_VRkwYTPtEei3dfHtumI11Q" instantiates="_VRTDkTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyDAO&quot;" id="_VRkwYjPtEei3dfHtumI11Q" instantiates="_VRTqoDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;xmlFileLoader&quot;" id="_VRkwYzPtEei3dfHtumI11Q" instantiates="_VRURsDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;handlerMapping&quot;" id="_VR4SZjPtEei3dfHtumI11Q" instantiates="_VR2dMDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;authenticationInterceptor&quot;" id="_VR4SZzPtEei3dfHtumI11Q" instantiates="_VR2dMTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;permissionInterceptor&quot;" id="_VR4SaDPtEei3dfHtumI11Q" instantiates="_VR2dMjPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VR4SaTPtEei3dfHtumI11Q" instantiates="_VR2dMzPtEei3dfHtumI11Q"/>
+    <assmComponents id="_VR4SajPtEei3dfHtumI11Q" instantiates="_VR2dNDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cobarAccesser&quot;" id="_VR45cDPtEei3dfHtumI11Q" instantiates="_VR2dNTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cobarAdapterDelegate&quot;" id="_VR45cTPtEei3dfHtumI11Q" instantiates="_VR2dNjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dsFactory&quot;" id="_VR45cjPtEei3dfHtumI11Q" instantiates="_VR2dNzPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;xmlAccesser&quot;" id="_VR45czPtEei3dfHtumI11Q" instantiates="_VR2dODPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;clusterDAO&quot;" id="_VR45dDPtEei3dfHtumI11Q" instantiates="_VR3EQDPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cobarDAO&quot;" id="_VR45dTPtEei3dfHtumI11Q" instantiates="_VR3EQTPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userDAO&quot;" id="_VR45djPtEei3dfHtumI11Q" instantiates="_VR3EQjPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyDAO&quot;" id="_VR45dzPtEei3dfHtumI11Q" instantiates="_VR3EQzPtEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;xmlFileLoader&quot;" id="_VR45eDPtEei3dfHtumI11Q" instantiates="_VR3ERDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRlXcDPtEei3dfHtumI11Q" property="handlerMapping.interceptors" clientInstElem="_VRaYUDPtEei3dfHtumI11Q" serverInstElem="_VRa_YDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRlXcTPtEei3dfHtumI11Q" property="handlerMapping.interceptors" clientInstElem="_VRaYUDPtEei3dfHtumI11Q" serverInstElem="_VRa_YTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRlXcjPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRlXczPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRlXdDPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRlXdTPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRlXdjPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRlXdzPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRjiQDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-gDPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-gTPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRjiQDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-gjPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-gzPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRjiQDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-hDPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-hTPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRjiQDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-hjPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-hzPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-iDPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-iTPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-ijPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-izPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-jDPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-jTPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-jjPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-jzPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRjiQDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-kDPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-kTPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRjiQDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRl-kjPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmlkDPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmlkTPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRjiQDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmlkjPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmlkzPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRjiQDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmllDPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmllTPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmlljPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRjiQDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmllzPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmlmDPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRjiQDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmlmTPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmlmjPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmlmzPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmlnDPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmlnTPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmlnjPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRjiQDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmlnzPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmloDPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmloTPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmlojPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRjiQDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRmlozPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRnMoDPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRjiQDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRnMoTPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRnMojPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRjiQDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRnMozPtEei3dfHtumI11Q" clientInstElem="_VRc0kDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRnMpDPtEei3dfHtumI11Q" property="cobarAccesser.cobarAdapterDelegate" clientInstElem="_VRjiQDPtEei3dfHtumI11Q" serverInstElem="_VRjiQTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRnMpTPtEei3dfHtumI11Q" property="cobarAccesser.xmlAccesser" clientInstElem="_VRjiQDPtEei3dfHtumI11Q" serverInstElem="_VRkJUTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRnMpjPtEei3dfHtumI11Q" property="cobarAdapterDelegate.dsFactory" clientInstElem="_VRjiQTPtEei3dfHtumI11Q" serverInstElem="_VRkJUDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRnMpzPtEei3dfHtumI11Q" property="xmlAccesser.clusterDAO" clientInstElem="_VRkJUTPtEei3dfHtumI11Q" serverInstElem="_VRkJUjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRnMqDPtEei3dfHtumI11Q" property="xmlAccesser.cobarDAO" clientInstElem="_VRkJUTPtEei3dfHtumI11Q" serverInstElem="_VRkwYDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRnMqTPtEei3dfHtumI11Q" property="xmlAccesser.userDAO" clientInstElem="_VRkJUTPtEei3dfHtumI11Q" serverInstElem="_VRkwYTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRnMqjPtEei3dfHtumI11Q" property="xmlAccesser.propertyDAO" clientInstElem="_VRkJUTPtEei3dfHtumI11Q" serverInstElem="_VRkwYjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRnMqzPtEei3dfHtumI11Q" property="clusterDAO.xmlFileLoader" clientInstElem="_VRkJUjPtEei3dfHtumI11Q" serverInstElem="_VRkwYzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRnzsDPtEei3dfHtumI11Q" property="cobarDAO.xmlFileLoader" clientInstElem="_VRkwYDPtEei3dfHtumI11Q" serverInstElem="_VRkwYzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRnzsTPtEei3dfHtumI11Q" property="userDAO.xmlFileLoader" clientInstElem="_VRkwYTPtEei3dfHtumI11Q" serverInstElem="_VRkwYzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VRnzsjPtEei3dfHtumI11Q" property="propertyDAO.xmlFileLoader" clientInstElem="_VRkwYjPtEei3dfHtumI11Q" serverInstElem="_VRkwYzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VR45eTPtEei3dfHtumI11Q" property="handlerMapping.interceptors" clientInstElem="_VR4SZjPtEei3dfHtumI11Q" serverInstElem="_VR4SZzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VR45ejPtEei3dfHtumI11Q" property="handlerMapping.interceptors" clientInstElem="_VR4SZjPtEei3dfHtumI11Q" serverInstElem="_VR4SaDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VR5ggDPtEei3dfHtumI11Q" clientInstElem="_VR4SajPtEei3dfHtumI11Q" serverInstElem="_VR45czPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VR5ggTPtEei3dfHtumI11Q" clientInstElem="_VR4SajPtEei3dfHtumI11Q" serverInstElem="_VR45cDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VR5ggjPtEei3dfHtumI11Q" clientInstElem="_VR4SajPtEei3dfHtumI11Q" serverInstElem="_VR45czPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VR5ggzPtEei3dfHtumI11Q" clientInstElem="_VR4SajPtEei3dfHtumI11Q" serverInstElem="_VR45cDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VR5ghDPtEei3dfHtumI11Q" property="cobarAccesser.cobarAdapterDelegate" clientInstElem="_VR45cDPtEei3dfHtumI11Q" serverInstElem="_VR45cTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VR5ghTPtEei3dfHtumI11Q" property="cobarAccesser.xmlAccesser" clientInstElem="_VR45cDPtEei3dfHtumI11Q" serverInstElem="_VR45czPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VR5ghjPtEei3dfHtumI11Q" property="cobarAdapterDelegate.dsFactory" clientInstElem="_VR45cTPtEei3dfHtumI11Q" serverInstElem="_VR45cjPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VR5ghzPtEei3dfHtumI11Q" property="xmlAccesser.clusterDAO" clientInstElem="_VR45czPtEei3dfHtumI11Q" serverInstElem="_VR45dDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VR5giDPtEei3dfHtumI11Q" property="xmlAccesser.cobarDAO" clientInstElem="_VR45czPtEei3dfHtumI11Q" serverInstElem="_VR45dTPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VR5giTPtEei3dfHtumI11Q" property="xmlAccesser.userDAO" clientInstElem="_VR45czPtEei3dfHtumI11Q" serverInstElem="_VR45djPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VR5gijPtEei3dfHtumI11Q" property="xmlAccesser.propertyDAO" clientInstElem="_VR45czPtEei3dfHtumI11Q" serverInstElem="_VR45dzPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VR5gizPtEei3dfHtumI11Q" property="clusterDAO.xmlFileLoader" clientInstElem="_VR45dDPtEei3dfHtumI11Q" serverInstElem="_VR45eDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VR5gjDPtEei3dfHtumI11Q" property="cobarDAO.xmlFileLoader" clientInstElem="_VR45dTPtEei3dfHtumI11Q" serverInstElem="_VR45eDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VR5gjTPtEei3dfHtumI11Q" property="userDAO.xmlFileLoader" clientInstElem="_VR45djPtEei3dfHtumI11Q" serverInstElem="_VR45eDPtEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_VR5gjjPtEei3dfHtumI11Q" property="propertyDAO.xmlFileLoader" clientInstElem="_VR45dzPtEei3dfHtumI11Q" serverInstElem="_VR45eDPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="alibaba.cobar_spec">
+    <specConnections refID="_VR6HkDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HkTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HkjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HkzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HlDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HlTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HljPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HlzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HmDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HmTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HmjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HmzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HnDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HnTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HnjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HnzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HoDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HoTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HojPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HozPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HpDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HpTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HpjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HpzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HqDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HqTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HqjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HqzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HrDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HrTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HrjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HrzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HsDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HsTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HsjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HszPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HtDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HtTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HtjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HtzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HuDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HuTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HujPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HuzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HvDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HvTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HvjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HvzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HwDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HwTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HwjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HwzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HxDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HxTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HxjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HxzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HyDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HyTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HyjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HyzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HzDPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HzTPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HzjPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6HzzPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6H0DPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6H0TPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6H0jPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6H0zPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6H1DPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6H1TPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6H1jPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6H1zPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6H2DPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6H2TPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6H2jPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6H2zPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6H3DPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6H3TPtEei3dfHtumI11Q"/>
+    <specConnections refID="_VR6H3jPtEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="appfuse.appfuse">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="appfuse.appfuse_config" implements="//@architectureDescriptions[name='appfuse.appfuse_spec']">
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_DEK54DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DriverManagerDataSource&quot;" id="_DEK54TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_DEZjYDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.commons.dbcp.BasicDataSource&quot;" id="_DEZjYTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.hibernate4.HibernateExceptionTranslator&quot;" id="_DE4rkDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor&quot;" id="_DE4rkTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.hibernate4.LocalSessionFactoryBean&quot;" id="_DE4rkjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.hibernate4.HibernateTransactionManager&quot;" id="_DE4rkzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_DFJKQDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DriverManagerDataSource&quot;" id="_DFJKQTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.hibernate4.HibernateExceptionTranslator&quot;" id="_DFXzwDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor&quot;" id="_DFXzwTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.hibernate4.LocalSessionFactoryBean&quot;" id="_DFXzwjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.hibernate4.HibernateTransactionManager&quot;" id="_DFXzwzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_DFoScDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DriverManagerDataSource&quot;" id="_DFoScTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.ibatis.SqlMapClientFactoryBean&quot;" id="_DF70cDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_DF70cTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.compass.spring.LocalCompassBean&quot;" id="_DF70cjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.compass.core.CompassTemplate&quot;" id="_DF70czPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.compass.core.support.search.CompassSearchHelper&quot;" id="_DF70dDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.compass.gps.impl.SingleCompassGps&quot;" id="_DF70dTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.appfuse.dao.ibatis.search.CompassSaveAdvice&quot;" id="_DF70djPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.appfuse.dao.ibatis.search.CompassDeleteAdvice&quot;" id="_DF70dzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_DGLsEDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DriverManagerDataSource&quot;" id="_DGLsETPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor&quot;" id="_DGZugDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean&quot;" id="_DGZugTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager&quot;" id="_DGZugjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor&quot;" id="_DGZugzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.JpaTransactionManager&quot;" id="_DGZuhDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_DGqNMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DriverManagerDataSource&quot;" id="_DGqNMTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor&quot;" id="_DG5dwDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean&quot;" id="_DG6E0DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager&quot;" id="_DG6E0TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor&quot;" id="_DG6E0jPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.orm.jpa.JpaTransactionManager&quot;" id="_DG6E0zPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_DHKjgDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DriverManagerDataSource&quot;" id="_DHKjgTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_DHsvADPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DriverManagerDataSource&quot;" id="_DHsvATPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.aop.support.RegexpMethodPointcutAdvisor&quot;" id="_DH7YgDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.appfuse.service.UserSecurityAdvice&quot;" id="_DH7YgTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder&quot;" id="_DH7YgjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.security.crypto.password.StandardPasswordEncoder&quot;" id="_DH7YgzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.appfuse.service.impl.UserManagerImpl&quot;" id="_DH7_kDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.aop.framework.ProxyFactoryBean&quot;" id="_DH7_kTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.appfuse.service.impl.PersistentPasswordTokenManagerImpl&quot;" id="_DH7_kjPvEei3dfHtumI11Q"/>
+    <configComponents id="_DH7_kzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_DIagsDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DriverManagerDataSource&quot;" id="_DIagsTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.aop.support.RegexpMethodPointcutAdvisor&quot;" id="_DIojIDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.appfuse.service.UserSecurityAdvice&quot;" id="_DIojITPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder&quot;" id="_DIpKMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.security.crypto.password.StandardPasswordEncoder&quot;" id="_DIpKMTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.appfuse.service.impl.UserManagerImpl&quot;" id="_DIpKMjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.aop.framework.ProxyFactoryBean&quot;" id="_DIpKMzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.appfuse.service.impl.PersistentPasswordTokenManagerImpl&quot;" id="_DIpKNDPvEei3dfHtumI11Q"/>
+    <configComponents id="_DIpKNTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_DI3zsDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.commons.dbcp.BasicDataSource&quot;" id="_DI3zsTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_DJUfoDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.commons.dbcp.BasicDataSource&quot;" id="_DJUfoTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.handler.SimpleMappingExceptionResolver&quot;" id="_DKCRUDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.multipart.commons.CommonsMultipartResolver&quot;" id="_DKCRUTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springmodules.validation.commons.DefaultValidatorFactory&quot;" id="_DK7pMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springmodules.validation.commons.DefaultBeanValidator&quot;" id="_DK7pMTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.servlet.handler.SimpleMappingExceptionResolver&quot;" id="_DLY8MDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.web.multipart.commons.CommonsMultipartResolver&quot;" id="_DLY8MTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.context.support.ResourceBundleMessageSource&quot;" id="_DLY8MjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.appfuse.webapp.interceptor.UserRoleAuthorizationInterceptor&quot;" id="_DMAAMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.appfuse.webapp.interceptor.AccessDeniedInterceptor&quot;" id="_DMAAMTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.appfuse.webapp.action.SignupAction&quot;" id="_DMAnQDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.appfuse.webapp.action.UserAction&quot;" id="_DMAnQTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.appfuse.webapp.action.PasswordHintAction&quot;" id="_DMAnQjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.appfuse.webapp.AppFuseWicketApplication&quot;" id="_DNLr8DPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DE4rlDPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_DE4rkjPvEei3dfHtumI11Q" serverClassElem="_DE5SoDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DE5SoTPvEei3dfHtumI11Q" property="&quot;sessionFactory&quot;" clientClassElem="_DE4rkzPvEei3dfHtumI11Q" serverClassElem="_DE4rkjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DFXzxDPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_DFXzwjPvEei3dfHtumI11Q" serverClassElem="_DFYa0DPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DFYa0TPvEei3dfHtumI11Q" property="&quot;sessionFactory&quot;" clientClassElem="_DFXzwzPvEei3dfHtumI11Q" serverClassElem="_DFXzwjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DF70eDPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_DF70cDPvEei3dfHtumI11Q" serverClassElem="_DF8bgDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DF8bgTPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_DF70cTPvEei3dfHtumI11Q" serverClassElem="_DF8bgjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DF8bgzPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_DF70cjPvEei3dfHtumI11Q" serverClassElem="_DF70cTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DF8bhDPvEei3dfHtumI11Q" property="&quot;compass&quot;" clientClassElem="_DF70czPvEei3dfHtumI11Q" serverClassElem="_DF70cjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DF8bhTPvEei3dfHtumI11Q" clientClassElem="_DF70dDPvEei3dfHtumI11Q" serverClassElem="_DF70cjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DF8bhjPvEei3dfHtumI11Q" property="&quot;compass&quot;" clientClassElem="_DF70dTPvEei3dfHtumI11Q" serverClassElem="_DF70cjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DF8bhzPvEei3dfHtumI11Q" property="&quot;compass&quot;" clientClassElem="_DF70djPvEei3dfHtumI11Q" serverClassElem="_DF70cjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DF8biDPvEei3dfHtumI11Q" property="&quot;compass&quot;" clientClassElem="_DF70dzPvEei3dfHtumI11Q" serverClassElem="_DF70cjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DGZuhTPvEei3dfHtumI11Q" property="&quot;persistenceUnitManager&quot;" clientClassElem="_DGZugTPvEei3dfHtumI11Q" serverClassElem="_DGZugjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DGaVkDPvEei3dfHtumI11Q" property="&quot;defaultDataSource&quot;" clientClassElem="_DGZugjPvEei3dfHtumI11Q" serverClassElem="_DGaVkTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DGaVkjPvEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_DGZuhDPvEei3dfHtumI11Q" serverClassElem="_DGZugTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DG6E1DPvEei3dfHtumI11Q" property="&quot;persistenceUnitManager&quot;" clientClassElem="_DG6E0DPvEei3dfHtumI11Q" serverClassElem="_DG6E0TPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DG6E1TPvEei3dfHtumI11Q" property="&quot;defaultDataSource&quot;" clientClassElem="_DG6E0TPvEei3dfHtumI11Q" serverClassElem="_DG6E1jPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DG6E1zPvEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_DG6E0zPvEei3dfHtumI11Q" serverClassElem="_DG6E0DPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DH7_lDPvEei3dfHtumI11Q" property="&quot;advice&quot;" clientClassElem="_DH7YgDPvEei3dfHtumI11Q" serverClassElem="_DH7YgTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DH7_lTPvEei3dfHtumI11Q" property="&quot;passwordEncoder&quot;" clientClassElem="_DH7_kDPvEei3dfHtumI11Q" serverClassElem="_DH7YgjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DIpKNjPvEei3dfHtumI11Q" property="&quot;advice&quot;" clientClassElem="_DIojIDPvEei3dfHtumI11Q" serverClassElem="_DIojITPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DIpKNzPvEei3dfHtumI11Q" property="&quot;passwordEncoder&quot;" clientClassElem="_DIpKMjPvEei3dfHtumI11Q" serverClassElem="_DIpKMDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DK7pMjPvEei3dfHtumI11Q" property="&quot;validatorFactory&quot;" clientClassElem="_DK7pMTPvEei3dfHtumI11Q" serverClassElem="_DK7pMDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DMAnQzPvEei3dfHtumI11Q" property="&quot;userManager&quot;" clientClassElem="_DMAnQDPvEei3dfHtumI11Q" serverClassElem="_DMAnRDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DMAnRTPvEei3dfHtumI11Q" property="&quot;roleManager&quot;" clientClassElem="_DMAnQDPvEei3dfHtumI11Q" serverClassElem="_DMAnRjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DMAnRzPvEei3dfHtumI11Q" property="&quot;mailEngine&quot;" clientClassElem="_DMAnQDPvEei3dfHtumI11Q" serverClassElem="_DMAnSDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DMAnSTPvEei3dfHtumI11Q" property="&quot;mailMessage&quot;" clientClassElem="_DMAnQDPvEei3dfHtumI11Q" serverClassElem="_DMAnSjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DMAnSzPvEei3dfHtumI11Q" property="&quot;userManager&quot;" clientClassElem="_DMAnQTPvEei3dfHtumI11Q" serverClassElem="_DMAnTDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DMAnTTPvEei3dfHtumI11Q" property="&quot;roleManager&quot;" clientClassElem="_DMAnQTPvEei3dfHtumI11Q" serverClassElem="_DMAnTjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DMBOUDPvEei3dfHtumI11Q" property="&quot;mailEngine&quot;" clientClassElem="_DMAnQTPvEei3dfHtumI11Q" serverClassElem="_DMBOUTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DMBOUjPvEei3dfHtumI11Q" property="&quot;mailMessage&quot;" clientClassElem="_DMAnQTPvEei3dfHtumI11Q" serverClassElem="_DMBOUzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DMBOVDPvEei3dfHtumI11Q" property="&quot;userManager&quot;" clientClassElem="_DMAnQjPvEei3dfHtumI11Q" serverClassElem="_DMBOVTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DMBOVjPvEei3dfHtumI11Q" property="&quot;mailEngine&quot;" clientClassElem="_DMAnQjPvEei3dfHtumI11Q" serverClassElem="_DMBOVzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_DMBOWDPvEei3dfHtumI11Q" property="&quot;mailMessage&quot;" clientClassElem="_DMAnQjPvEei3dfHtumI11Q" serverClassElem="_DMBOWTPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="appfuse.appfuse_asm" instantiates="//@architectureDescriptions[name='appfuse.appfuse_config']">
+    <assmComponents name="propertyConfigurer" id="_DEK54jPvEei3dfHtumI11Q" instantiates="_DEK54DPvEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_DEK54zPvEei3dfHtumI11Q" instantiates="_DEK54TPvEei3dfHtumI11Q"/>
+    <assmComponents name="propertyConfigurer" id="_DEZjYjPvEei3dfHtumI11Q" instantiates="_DEZjYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_DEZjYzPvEei3dfHtumI11Q" instantiates="_DEZjYTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_DE5SojPvEei3dfHtumI11Q" instantiates="_DE4rkDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_DE5SozPvEei3dfHtumI11Q" instantiates="_DE4rkTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionFactory&quot;" id="_DE5SpDPvEei3dfHtumI11Q" instantiates="_DE4rkjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_DE5SpTPvEei3dfHtumI11Q" instantiates="_DE4rkzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyConfigurer&quot;" id="_DFJKQjPvEei3dfHtumI11Q" instantiates="_DFJKQDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_DFJKQzPvEei3dfHtumI11Q" instantiates="_DFJKQTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_DFYa0jPvEei3dfHtumI11Q" instantiates="_DFXzwDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_DFYa0zPvEei3dfHtumI11Q" instantiates="_DFXzwTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionFactory&quot;" id="_DFYa1DPvEei3dfHtumI11Q" instantiates="_DFXzwjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_DFYa1TPvEei3dfHtumI11Q" instantiates="_DFXzwzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyConfigurer&quot;" id="_DFoScjPvEei3dfHtumI11Q" instantiates="_DFoScDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_DFoSczPvEei3dfHtumI11Q" instantiates="_DFoScTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sqlMapClient&quot;" id="_DF8biTPvEei3dfHtumI11Q" instantiates="_DF70cDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_DF8bijPvEei3dfHtumI11Q" instantiates="_DF70cTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;compass&quot;" id="_DF8bizPvEei3dfHtumI11Q" instantiates="_DF70cjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;compassTemplate&quot;" id="_DF8bjDPvEei3dfHtumI11Q" instantiates="_DF70czPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;compassSearchHelper&quot;" id="_DF8bjTPvEei3dfHtumI11Q" instantiates="_DF70dDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;compassGps&quot;" id="_DF8bjjPvEei3dfHtumI11Q" instantiates="_DF70dTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;compassSearchSaveAdvice&quot;" id="_DF9CkDPvEei3dfHtumI11Q" instantiates="_DF70djPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;compassSearchDeleteAdvice&quot;" id="_DF9CkTPvEei3dfHtumI11Q" instantiates="_DF70dzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyConfigurer&quot;" id="_DGLsEjPvEei3dfHtumI11Q" instantiates="_DGLsEDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_DGLsEzPvEei3dfHtumI11Q" instantiates="_DGLsETPvEei3dfHtumI11Q"/>
+    <assmComponents id="_DGaVkzPvEei3dfHtumI11Q" instantiates="_DGZugDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;entityManagerFactory&quot;" id="_DGaVlDPvEei3dfHtumI11Q" instantiates="_DGZugTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;persistenceUnitManager&quot;" id="_DGaVlTPvEei3dfHtumI11Q" instantiates="_DGZugjPvEei3dfHtumI11Q"/>
+    <assmComponents id="_DGaVljPvEei3dfHtumI11Q" instantiates="_DGZugzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_DGaVlzPvEei3dfHtumI11Q" instantiates="_DGZuhDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyConfigurer&quot;" id="_DGqNMjPvEei3dfHtumI11Q" instantiates="_DGqNMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_DGqNMzPvEei3dfHtumI11Q" instantiates="_DGqNMTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_DG6E2DPvEei3dfHtumI11Q" instantiates="_DG5dwDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;entityManagerFactory&quot;" id="_DG6E2TPvEei3dfHtumI11Q" instantiates="_DG6E0DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;persistenceUnitManager&quot;" id="_DG6E2jPvEei3dfHtumI11Q" instantiates="_DG6E0TPvEei3dfHtumI11Q"/>
+    <assmComponents id="_DG6E2zPvEei3dfHtumI11Q" instantiates="_DG6E0jPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_DG6r4DPvEei3dfHtumI11Q" instantiates="_DG6E0zPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyConfigurer&quot;" id="_DHKjgjPvEei3dfHtumI11Q" instantiates="_DHKjgDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_DHKjgzPvEei3dfHtumI11Q" instantiates="_DHKjgTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyConfigurer&quot;" id="_DHsvAjPvEei3dfHtumI11Q" instantiates="_DHsvADPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_DHtWEDPvEei3dfHtumI11Q" instantiates="_DHsvATPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userSecurityInterceptor&quot;" id="_DH7_ljPvEei3dfHtumI11Q" instantiates="_DH7YgDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userSecurityAdvice&quot;" id="_DH7_lzPvEei3dfHtumI11Q" instantiates="_DH7YgTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;passwordEncoder&quot;" id="_DH7_mDPvEei3dfHtumI11Q" instantiates="_DH7YgjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;passwordTokenEncoder&quot;" id="_DH7_mTPvEei3dfHtumI11Q" instantiates="_DH7YgzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userManager&quot;" id="_DH7_mjPvEei3dfHtumI11Q" instantiates="_DH7_kDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;target&quot;" id="_DH8moDPvEei3dfHtumI11Q" instantiates="_DH7_kTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;persistentPasswordTokenManager&quot;" id="_DH8moTPvEei3dfHtumI11Q" instantiates="_DH7_kjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;persistentPasswordTokenManager.userManager&quot;" id="_DH8mojPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyConfigurer&quot;" id="_DIagsjPvEei3dfHtumI11Q" instantiates="_DIagsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_DIagszPvEei3dfHtumI11Q" instantiates="_DIagsTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userSecurityInterceptor&quot;" id="_DIpKODPvEei3dfHtumI11Q" instantiates="_DIojIDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userSecurityAdvice&quot;" id="_DIpxQDPvEei3dfHtumI11Q" instantiates="_DIojITPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;passwordEncoder&quot;" id="_DIpxQTPvEei3dfHtumI11Q" instantiates="_DIpKMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;passwordTokenEncoder&quot;" id="_DIpxQjPvEei3dfHtumI11Q" instantiates="_DIpKMTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userManager&quot;" id="_DIpxQzPvEei3dfHtumI11Q" instantiates="_DIpKMjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;target&quot;" id="_DIpxRDPvEei3dfHtumI11Q" instantiates="_DIpKMzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;persistentPasswordTokenManager&quot;" id="_DIpxRTPvEei3dfHtumI11Q" instantiates="_DIpKNDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;persistentPasswordTokenManager.userManager&quot;" id="_DIpxRjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyConfigurer&quot;" id="_DI4awDPvEei3dfHtumI11Q" instantiates="_DI3zsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_DI4awTPvEei3dfHtumI11Q" instantiates="_DI3zsTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyConfigurer&quot;" id="_DJVGsDPvEei3dfHtumI11Q" instantiates="_DJUfoDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_DJVGsTPvEei3dfHtumI11Q" instantiates="_DJUfoTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;exceptionResolver&quot;" id="_DKCRUjPvEei3dfHtumI11Q" instantiates="_DKCRUDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;multipartResolver&quot;" id="_DKCRUzPvEei3dfHtumI11Q" instantiates="_DKCRUTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;validatorFactory&quot;" id="_DK8QQDPvEei3dfHtumI11Q" instantiates="_DK7pMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;beanValidator&quot;" id="_DK8QQTPvEei3dfHtumI11Q" instantiates="_DK7pMTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;exceptionResolver&quot;" id="_DLY8MzPvEei3dfHtumI11Q" instantiates="_DLY8MDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;multipartResolver&quot;" id="_DLY8NDPvEei3dfHtumI11Q" instantiates="_DLY8MTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;messageSource&quot;" id="_DLY8NTPvEei3dfHtumI11Q" instantiates="_DLY8MjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;adminInterceptor&quot;" id="_DMBOWjPvEei3dfHtumI11Q" instantiates="_DMAAMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;accessDeniedInterceptor&quot;" id="_DMBOWzPvEei3dfHtumI11Q" instantiates="_DMAAMTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;signupAction&quot;" id="_DMBOXDPvEei3dfHtumI11Q" instantiates="_DMAnQDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;userAction&quot;" id="_DMBOXTPvEei3dfHtumI11Q" instantiates="_DMAnQTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;passwordHintAction&quot;" id="_DMBOXjPvEei3dfHtumI11Q" instantiates="_DMAnQjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;appFuseWicketApplication&quot;" id="_DNLr8TPvEei3dfHtumI11Q" instantiates="_DNLr8DPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DE5SpjPvEei3dfHtumI11Q" property="sessionFactory.dataSource" clientInstElem="_DE5SpDPvEei3dfHtumI11Q" serverInstElem="_DE5SpzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DE5SqDPvEei3dfHtumI11Q" property="transactionManager.sessionFactory" clientInstElem="_DE5SpTPvEei3dfHtumI11Q" serverInstElem="_DE5SpDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DFYa1jPvEei3dfHtumI11Q" property="sessionFactory.dataSource" clientInstElem="_DFYa1DPvEei3dfHtumI11Q" serverInstElem="_DFYa1zPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DFYa2DPvEei3dfHtumI11Q" property="transactionManager.sessionFactory" clientInstElem="_DFYa1TPvEei3dfHtumI11Q" serverInstElem="_DFYa1DPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DF9CkjPvEei3dfHtumI11Q" property="sqlMapClient.dataSource" clientInstElem="_DF8biTPvEei3dfHtumI11Q" serverInstElem="_DF9CkzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DF9ClDPvEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_DF8bijPvEei3dfHtumI11Q" serverInstElem="_DF9ClTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DF9CljPvEei3dfHtumI11Q" property="compass.transactionManager" clientInstElem="_DF8bizPvEei3dfHtumI11Q" serverInstElem="_DF8bijPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DF9ClzPvEei3dfHtumI11Q" property="compassTemplate.compass" clientInstElem="_DF8bjDPvEei3dfHtumI11Q" serverInstElem="_DF8bizPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DF9CmDPvEei3dfHtumI11Q" clientInstElem="_DF8bjTPvEei3dfHtumI11Q" serverInstElem="_DF8bizPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DF9CmTPvEei3dfHtumI11Q" property="compassGps.compass" clientInstElem="_DF8bjjPvEei3dfHtumI11Q" serverInstElem="_DF8bizPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DF9CmjPvEei3dfHtumI11Q" property="compassSearchSaveAdvice.compass" clientInstElem="_DF9CkDPvEei3dfHtumI11Q" serverInstElem="_DF8bizPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DF9CmzPvEei3dfHtumI11Q" property="compassSearchDeleteAdvice.compass" clientInstElem="_DF9CkTPvEei3dfHtumI11Q" serverInstElem="_DF8bizPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DGaVmDPvEei3dfHtumI11Q" property="entityManagerFactory.persistenceUnitManager" clientInstElem="_DGaVlDPvEei3dfHtumI11Q" serverInstElem="_DGaVlTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DGaVmTPvEei3dfHtumI11Q" property="persistenceUnitManager.defaultDataSource" clientInstElem="_DGaVlTPvEei3dfHtumI11Q" serverInstElem="_DGaVmjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DGa8oDPvEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_DGaVlzPvEei3dfHtumI11Q" serverInstElem="_DGaVlDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DG6r4TPvEei3dfHtumI11Q" property="entityManagerFactory.persistenceUnitManager" clientInstElem="_DG6E2TPvEei3dfHtumI11Q" serverInstElem="_DG6E2jPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DG6r4jPvEei3dfHtumI11Q" property="persistenceUnitManager.defaultDataSource" clientInstElem="_DG6E2jPvEei3dfHtumI11Q" serverInstElem="_DG6r4zPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DG6r5DPvEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_DG6r4DPvEei3dfHtumI11Q" serverInstElem="_DG6E2TPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DH8mozPvEei3dfHtumI11Q" property="userSecurityInterceptor.advice" clientInstElem="_DH7_ljPvEei3dfHtumI11Q" serverInstElem="_DH7_lzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DH8mpDPvEei3dfHtumI11Q" property="userManager.passwordEncoder" clientInstElem="_DH7_mjPvEei3dfHtumI11Q" serverInstElem="_DH7_mDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DIpxRzPvEei3dfHtumI11Q" property="userSecurityInterceptor.advice" clientInstElem="_DIpKODPvEei3dfHtumI11Q" serverInstElem="_DIpxQDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DIpxSDPvEei3dfHtumI11Q" property="userManager.passwordEncoder" clientInstElem="_DIpxQzPvEei3dfHtumI11Q" serverInstElem="_DIpxQTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DK8QQjPvEei3dfHtumI11Q" property="beanValidator.validatorFactory" clientInstElem="_DK8QQTPvEei3dfHtumI11Q" serverInstElem="_DK8QQDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DMB1YDPvEei3dfHtumI11Q" property="signupAction.userManager" clientInstElem="_DMBOXDPvEei3dfHtumI11Q" serverInstElem="_DMB1YTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DMB1YjPvEei3dfHtumI11Q" property="signupAction.roleManager" clientInstElem="_DMBOXDPvEei3dfHtumI11Q" serverInstElem="_DMB1YzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DMB1ZDPvEei3dfHtumI11Q" property="signupAction.mailEngine" clientInstElem="_DMBOXDPvEei3dfHtumI11Q" serverInstElem="_DMB1ZTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DMB1ZjPvEei3dfHtumI11Q" property="signupAction.mailMessage" clientInstElem="_DMBOXDPvEei3dfHtumI11Q" serverInstElem="_DMB1ZzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DMB1aDPvEei3dfHtumI11Q" property="userAction.userManager" clientInstElem="_DMBOXTPvEei3dfHtumI11Q" serverInstElem="_DMB1aTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DMB1ajPvEei3dfHtumI11Q" property="userAction.roleManager" clientInstElem="_DMBOXTPvEei3dfHtumI11Q" serverInstElem="_DMB1azPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DMB1bDPvEei3dfHtumI11Q" property="userAction.mailEngine" clientInstElem="_DMBOXTPvEei3dfHtumI11Q" serverInstElem="_DMB1bTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DMB1bjPvEei3dfHtumI11Q" property="userAction.mailMessage" clientInstElem="_DMBOXTPvEei3dfHtumI11Q" serverInstElem="_DMB1bzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DMB1cDPvEei3dfHtumI11Q" property="passwordHintAction.userManager" clientInstElem="_DMBOXjPvEei3dfHtumI11Q" serverInstElem="_DMCccDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DMCccTPvEei3dfHtumI11Q" property="passwordHintAction.mailEngine" clientInstElem="_DMBOXjPvEei3dfHtumI11Q" serverInstElem="_DMCccjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DMCcczPvEei3dfHtumI11Q" property="passwordHintAction.mailMessage" clientInstElem="_DMBOXjPvEei3dfHtumI11Q" serverInstElem="_DMCcdDPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="appfuse.appfuse_spec">
+    <specConnections refID="_DNiRQDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRQTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRQjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRQzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRRDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRRTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRRjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRRzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRSDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRSTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRSjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRSzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRTDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRTTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRTjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRTzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRUDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRUTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRUjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRUzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRVDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRVTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRVjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRVzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRWDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRWTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRWjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRWzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRXDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRXTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRXjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRXzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRYDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_DNiRYTPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

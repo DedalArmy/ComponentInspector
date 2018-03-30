@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="qalingo.qalingo-engine">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="qalingo.qalingo-engine_config" implements="//@architectureDescriptions[name='qalingo.qalingo-engine_spec']">
+    <configComponents name="org.springframework.ui.velocity.VelocityEngineFactoryBean" id="_L8xx8DPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.mail.javamail.JavaMailSenderImpl" id="_L8xx8TPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.core.batch.AlertMailSender" id="_L8xx8jPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.mail.SimpleMailMessage" id="_L8xx8zPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.core.web.servlet.VelocityLayoutViewResolver" id="_L9rw4DPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.core.web.servlet.VelocityLayoutViewResolver" id="_L9-r0DPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.mail.javamail.JavaMailSenderImpl" id="_L-lIwDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.support.MBeanServerFactoryBean" id="_L_K-oDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.annotation.AnnotationMBeanExporter" id="_L_K-oTPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.assembler.MethodExclusionMBeanInfoAssembler" id="_L_K-ojPyEei3dfHtumI11Q"/>
+    <configComponents name="org.apache.commons.dbcp.BasicDataSource" id="_L_nqkDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.web.servlet.view.velocity.VelocityConfigurer" id="_MAEWgDPyEei3dfHtumI11Q"/>
+    <configComponents name="java.util.HashMap" id="_MAEWgTPyEei3dfHtumI11Q"/>
+    <configComponents name="org.dozer.spring.DozerBeanMapperFactoryBean" id="_MAXRcDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="_MAz9YDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.dozer.spring.DozerBeanMapperFactoryBean" id="_MA9HUDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.core.dozer.CatalogCustomBeanFactory" id="_MA9HUTPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.core.dozer.CatalogCategoryCustomBeanFactory" id="_MA9HUjPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.core.dozer.ProductMarketingCustomBeanFactory" id="_MA9HUzPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.core.dozer.ProductSkuCustomBeanFactory" id="_MA9HVDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="_MBjkQDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.dozer.spring.DozerBeanMapperFactoryBean" id="_MBsuMDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.core.dozer.CartCustomBeanFactory" id="_MBsuMTPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="_MCcVEDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.apache.cxf.jaxrs.model.wadl.WadlGenerator" id="_MC5BADPyEei3dfHtumI11Q"/>
+    <configComponents name="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider" id="_MC5BATPyEei3dfHtumI11Q"/>
+    <configComponents name="org.apache.cxf.rs.security.cors.CrossOriginResourceSharingFilter" id="_MC5BAjPyEei3dfHtumI11Q"/>
+    <configComponents name="org.dozer.spring.DozerBeanMapperFactoryBean" id="_MDL78DPyEei3dfHtumI11Q"/>
+    <configComponents name="org.apache.cxf.jaxrs.model.wadl.WadlGenerator" id="_MDVs8DPyEei3dfHtumI11Q"/>
+    <configComponents name="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider" id="_MDVs8TPyEei3dfHtumI11Q"/>
+    <configComponents name="org.apache.cxf.rs.security.cors.CrossOriginResourceSharingFilter" id="_MDVs8jPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.core.ws.service.CustomerWebService" id="_MDp2ADPyEei3dfHtumI11Q"/>
+    <configComponents name="org.apache.cxf.jaxws.JaxWsProxyFactoryBean" id="_MDp2ATPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.core.ws.service.StoreWebService" id="_MDp2AjPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.scheduling.quartz.CronTriggerBean" id="_MEGh8DPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean" id="_MEGh8TPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jms.core.JmsTemplate" id="_MEZc4DPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jms.connection.CachingConnectionFactory" id="_MEjN4DPyEei3dfHtumI11Q"/>
+    <configComponents name="org.apache.solr.client.solrj.impl.HttpSolrServer" id="_ME2I0DPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="_MFJDwDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.core.i18n.message.ExtReloadableResourceBundleMessageSource" id="_MFJDwTPyEei3dfHtumI11Q"/>
+    <configComponents name="org.apache.solr.core.CoreContainer" id="_MFJDwjPyEei3dfHtumI11Q"/>
+    <configComponents name="org.apache.solr.client.solrj.embedded.EmbeddedSolrServer" id="_MFJDwzPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.jmx.export.MBeanExporter" id="_MFS0wDPyEei3dfHtumI11Q"/>
+    <configComponents name="javax.xml.bind.JAXBContext" id="_MFlvsDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.binding.jaxb.factory.MarshallerFactory" id="_MFlvsTPyEei3dfHtumI11Q"/>
+    <configComponents name="javax.xml.bind.Marshaller" id="_MFlvsjPyEei3dfHtumI11Q"/>
+    <configComponents name="javax.xml.bind.Unmarshaller" id="_MFlvszPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.pool.ManagedCommonsPoolTargetSource" id="_MFlvtDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.aop.framework.ProxyFactoryBean" id="_MFlvtTPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.binding.jaxb.helper.StoreUnmarshalXmlHelper" id="_MFlvtjPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.binding.jaxb.helper.StoreMarshalXmlHelper" id="_MFlvtzPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.web.mvc.factory.BoBusinessViewBeanFactory" id="_MF4qoDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.web.mvc.factory.BoBusinessFormFactory " id="_MF4qoTPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="_MGCboDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.web.mvc.factory.BoReportingViewBeanFactory" id="_MGVWkDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.web.mvc.factory.BoReportingFormFactory" id="_MGVWkTPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="_MGfHkDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.web.mvc.factory.BoTechnicalViewBeanFactory" id="_MGzQoDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.web.mvc.factory.BoTechnicalFormFactory" id="_MGzQoTPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="_MHGLkDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.web.mvc.factory.MCommerceViewBeanFactory" id="_MHPVgDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.core.service.MCommerceWebManagementService" id="_MHPVgTPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="_MHi3gDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.web.mvc.factory.PrehomeViewBeanFactory" id="_MHsBcDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.core.service.PrehomeWebManagementService" id="_MHsBcTPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="_MH-8YDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.dozer.spring.DozerBeanMapperFactoryBean" id="_MIItYDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.hoteia.qalingo.core.dozer.CartCustomBeanFactory" id="_MIItYTPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="_MIboUDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_L8xx9DPyEei3dfHtumI11Q" property="&quot;mailSender&quot;" clientClassElem="_L8xx8jPyEei3dfHtumI11Q" serverClassElem="_L8xx8TPyEei3dfHtumI11Q"/>
+    <configConnections refID="_L8xx9TPyEei3dfHtumI11Q" property="&quot;templateMessage&quot;" clientClassElem="_L8xx8jPyEei3dfHtumI11Q" serverClassElem="_L8xx8zPyEei3dfHtumI11Q"/>
+    <configConnections refID="_L_K-ozPyEei3dfHtumI11Q" property="&quot;server&quot;" clientClassElem="_L_K-oTPyEei3dfHtumI11Q" serverClassElem="_L_K-oDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_L_K-pDPyEei3dfHtumI11Q" property="&quot;assembler&quot;" clientClassElem="_L_K-oTPyEei3dfHtumI11Q" serverClassElem="_L_K-ojPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MAEWgjPyEei3dfHtumI11Q" property="&quot;velocityPropertiesMap&quot;" clientClassElem="_MAEWgDPyEei3dfHtumI11Q" serverClassElem="_MAEWgTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MA9HVTPyEei3dfHtumI11Q" property="&quot;customFieldMapper&quot;" clientClassElem="_MA9HUDPyEei3dfHtumI11Q" serverClassElem="_MA9HVjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MA9HVzPyEei3dfHtumI11Q" property="&quot;factories&quot;" clientClassElem="_MA9HUDPyEei3dfHtumI11Q" serverClassElem="_MA9HUTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MA9HWDPyEei3dfHtumI11Q" property="&quot;factories&quot;" clientClassElem="_MA9HUDPyEei3dfHtumI11Q" serverClassElem="_MA9HUjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MA9HWTPyEei3dfHtumI11Q" property="&quot;factories&quot;" clientClassElem="_MA9HUDPyEei3dfHtumI11Q" serverClassElem="_MA9HUzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MA9HWjPyEei3dfHtumI11Q" property="&quot;factories&quot;" clientClassElem="_MA9HUDPyEei3dfHtumI11Q" serverClassElem="_MA9HVDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MA9HWzPyEei3dfHtumI11Q" property="&quot;eventListeners&quot;" clientClassElem="_MA9HUDPyEei3dfHtumI11Q" serverClassElem="_MA9HXDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MBsuMjPyEei3dfHtumI11Q" property="&quot;customFieldMapper&quot;" clientClassElem="_MBsuMDPyEei3dfHtumI11Q" serverClassElem="_MBsuMzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MBsuNDPyEei3dfHtumI11Q" property="&quot;factories&quot;" clientClassElem="_MBsuMDPyEei3dfHtumI11Q" serverClassElem="_MBsuMTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MBsuNTPyEei3dfHtumI11Q" property="&quot;eventListeners&quot;" clientClassElem="_MBsuMDPyEei3dfHtumI11Q" serverClassElem="_MBsuNjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MDL78TPyEei3dfHtumI11Q" property="&quot;customFieldMapper&quot;" clientClassElem="_MDL78DPyEei3dfHtumI11Q" serverClassElem="_MDL78jPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MEGh8jPyEei3dfHtumI11Q" property="&quot;jobDetail&quot;" clientClassElem="_MEGh8DPyEei3dfHtumI11Q" serverClassElem="_MEGh8TPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MEGh8zPyEei3dfHtumI11Q" property="&quot;targetObject&quot;" clientClassElem="_MEGh8TPyEei3dfHtumI11Q" serverClassElem="_MEGh9DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MEZc4TPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_MEZc4DPyEei3dfHtumI11Q" serverClassElem="_MEZc4jPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MEZc4zPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_MEZc4DPyEei3dfHtumI11Q" serverClassElem="_MEZc5DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MEZc5TPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_MEZc4DPyEei3dfHtumI11Q" serverClassElem="_MEZc5jPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MEZc5zPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_MEZc4DPyEei3dfHtumI11Q" serverClassElem="_MEZc6DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MEZc6TPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_MEZc4DPyEei3dfHtumI11Q" serverClassElem="_MEZc6jPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MEZc6zPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_MEZc4DPyEei3dfHtumI11Q" serverClassElem="_MEZc7DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MEZc7TPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_MEZc4DPyEei3dfHtumI11Q" serverClassElem="_MEZc7jPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MEZc7zPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_MEZc4DPyEei3dfHtumI11Q" serverClassElem="_MEZc8DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MEZc8TPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_MEZc4DPyEei3dfHtumI11Q" serverClassElem="_MEZc8jPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MEZc8zPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_MEZc4DPyEei3dfHtumI11Q" serverClassElem="_MEZc9DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MEZc9TPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_MEZc4DPyEei3dfHtumI11Q" serverClassElem="_MEZc9jPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MEZc9zPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_MEZc4DPyEei3dfHtumI11Q" serverClassElem="_MEZc-DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MEjN4TPyEei3dfHtumI11Q" property="&quot;targetConnectionFactory&quot;" clientClassElem="_MEjN4DPyEei3dfHtumI11Q" serverClassElem="_MEjN4jPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MFJDxDPyEei3dfHtumI11Q" clientClassElem="_MFJDwzPyEei3dfHtumI11Q" serverClassElem="_MFJDwjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MFJDxTPyEei3dfHtumI11Q" clientClassElem="_MFJDwzPyEei3dfHtumI11Q" serverClassElem="_MFJDwjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MFJDxjPyEei3dfHtumI11Q" clientClassElem="_MFJDwzPyEei3dfHtumI11Q" serverClassElem="_MFJDwjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MFJDxzPyEei3dfHtumI11Q" clientClassElem="_MFJDwzPyEei3dfHtumI11Q" serverClassElem="_MFJDwjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MFJDyDPyEei3dfHtumI11Q" clientClassElem="_MFJDwzPyEei3dfHtumI11Q" serverClassElem="_MFJDwjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MFJDyTPyEei3dfHtumI11Q" clientClassElem="_MFJDwzPyEei3dfHtumI11Q" serverClassElem="_MFJDwjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MFJDyjPyEei3dfHtumI11Q" clientClassElem="_MFJDwzPyEei3dfHtumI11Q" serverClassElem="_MFJDwjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MFS0wTPyEei3dfHtumI11Q" property="&quot;server&quot;" clientClassElem="_MFS0wDPyEei3dfHtumI11Q" serverClassElem="_MFS0wjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MFS0wzPyEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_MFS0wDPyEei3dfHtumI11Q" serverClassElem="_MFS0xDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MFS0xTPyEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_MFS0wDPyEei3dfHtumI11Q" serverClassElem="_MFS0xjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MFS0xzPyEei3dfHtumI11Q" property="&quot;assembler&quot;" clientClassElem="_MFS0wDPyEei3dfHtumI11Q" serverClassElem="_MFS0yDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MFlvuDPyEei3dfHtumI11Q" property="&quot;context&quot;" clientClassElem="_MFlvsTPyEei3dfHtumI11Q" serverClassElem="_MFlvsDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MFlvuTPyEei3dfHtumI11Q" property="&quot;targetSource&quot;" clientClassElem="_MFlvtTPyEei3dfHtumI11Q" serverClassElem="_MFlvtDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MFlvujPyEei3dfHtumI11Q" property="&quot;targetSource&quot;" clientClassElem="_MFlvtTPyEei3dfHtumI11Q" serverClassElem="_MFlvuzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MFlvvDPyEei3dfHtumI11Q" property="&quot;unmarshaller&quot;" clientClassElem="_MFlvtjPyEei3dfHtumI11Q" serverClassElem="_MFlvvTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MFlvvjPyEei3dfHtumI11Q" property="&quot;marshaller&quot;" clientClassElem="_MFlvtzPyEei3dfHtumI11Q" serverClassElem="_MFlvtTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MIItYjPyEei3dfHtumI11Q" property="&quot;customFieldMapper&quot;" clientClassElem="_MIItYDPyEei3dfHtumI11Q" serverClassElem="_MIItYzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MIItZDPyEei3dfHtumI11Q" property="&quot;factories&quot;" clientClassElem="_MIItYDPyEei3dfHtumI11Q" serverClassElem="_MIItYTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_MIItZTPyEei3dfHtumI11Q" property="&quot;eventListeners&quot;" clientClassElem="_MIItYDPyEei3dfHtumI11Q" serverClassElem="_MIItZjPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="qalingo.qalingo-engine_asm" instantiates="//@architectureDescriptions[name='qalingo.qalingo-engine_config']">
+    <assmComponents name="velocityEngine" id="_L8xx9jPyEei3dfHtumI11Q" instantiates="_L8xx8DPyEei3dfHtumI11Q"/>
+    <assmComponents name="mailSender" id="_L8xx9zPyEei3dfHtumI11Q" instantiates="_L8xx8TPyEei3dfHtumI11Q"/>
+    <assmComponents name="alertMailSender" id="_L8xx-DPyEei3dfHtumI11Q" instantiates="_L8xx8jPyEei3dfHtumI11Q"/>
+    <assmComponents name="alertMailTemplateMessage" id="_L8xx-TPyEei3dfHtumI11Q" instantiates="_L8xx8zPyEei3dfHtumI11Q"/>
+    <assmComponents name="viewResolver" id="_L9rw4TPyEei3dfHtumI11Q" instantiates="_L9rw4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="viewResolver" id="_L9-r0TPyEei3dfHtumI11Q" instantiates="_L9-r0DPyEei3dfHtumI11Q"/>
+    <assmComponents name="mailSender" id="_L-uSsDPyEei3dfHtumI11Q" instantiates="_L-lIwDPyEei3dfHtumI11Q"/>
+    <assmComponents name="mbeanServer" id="_L_K-pTPyEei3dfHtumI11Q" instantiates="_L_K-oDPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmxAdapter" id="_L_K-pjPyEei3dfHtumI11Q" instantiates="_L_K-oTPyEei3dfHtumI11Q"/>
+    <assmComponents name="mbeanInfoAssembler" id="_L_K-pzPyEei3dfHtumI11Q" instantiates="_L_K-ojPyEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_L_nqkTPyEei3dfHtumI11Q" instantiates="_L_nqkDPyEei3dfHtumI11Q"/>
+    <assmComponents name="velocityConfigurer" id="_MAEWgzPyEei3dfHtumI11Q" instantiates="_MAEWgDPyEei3dfHtumI11Q"/>
+    <assmComponents name="velocityPropertiesMap" id="_MAEWhDPyEei3dfHtumI11Q" instantiates="_MAEWgTPyEei3dfHtumI11Q"/>
+    <assmComponents name="org.dozer.Mapper" id="_MAXRcTPyEei3dfHtumI11Q" instantiates="_MAXRcDPyEei3dfHtumI11Q"/>
+    <assmComponents name="propertyConfigurer" id="_MAz9YTPyEei3dfHtumI11Q" instantiates="_MAz9YDPyEei3dfHtumI11Q"/>
+    <assmComponents name="org.dozer.Mapper" id="_MA9HXTPyEei3dfHtumI11Q" instantiates="_MA9HUDPyEei3dfHtumI11Q"/>
+    <assmComponents name="catalogCustomBeanFactory" id="_MA9HXjPyEei3dfHtumI11Q" instantiates="_MA9HUTPyEei3dfHtumI11Q"/>
+    <assmComponents name="catalogCategoryCustomBeanFactory" id="_MBG4UDPyEei3dfHtumI11Q" instantiates="_MA9HUjPyEei3dfHtumI11Q"/>
+    <assmComponents name="productMarketingCustomBeanFactory" id="_MBG4UTPyEei3dfHtumI11Q" instantiates="_MA9HUzPyEei3dfHtumI11Q"/>
+    <assmComponents name="productSkuCustomBeanFactory" id="_MBG4UjPyEei3dfHtumI11Q" instantiates="_MA9HVDPyEei3dfHtumI11Q"/>
+    <assmComponents name="propertyConfigurer" id="_MBjkQTPyEei3dfHtumI11Q" instantiates="_MBjkQDPyEei3dfHtumI11Q"/>
+    <assmComponents name="org.dozer.Mapper" id="_MBsuNzPyEei3dfHtumI11Q" instantiates="_MBsuMDPyEei3dfHtumI11Q"/>
+    <assmComponents name="cartCustomBeanFactory" id="_MBsuODPyEei3dfHtumI11Q" instantiates="_MBsuMTPyEei3dfHtumI11Q"/>
+    <assmComponents name="propertyConfigurer" id="_MCcVETPyEei3dfHtumI11Q" instantiates="_MCcVEDPyEei3dfHtumI11Q"/>
+    <assmComponents name="wadlProvider" id="_MC5BAzPyEei3dfHtumI11Q" instantiates="_MC5BADPyEei3dfHtumI11Q"/>
+    <assmComponents name="jsonProvider" id="_MC5BBDPyEei3dfHtumI11Q" instantiates="_MC5BATPyEei3dfHtumI11Q"/>
+    <assmComponents name="cors-filter" id="_MC5BBTPyEei3dfHtumI11Q" instantiates="_MC5BAjPyEei3dfHtumI11Q"/>
+    <assmComponents name="org.dozer.Mapper" id="_MDL78zPyEei3dfHtumI11Q" instantiates="_MDL78DPyEei3dfHtumI11Q"/>
+    <assmComponents name="wadlProvider" id="_MDVs8zPyEei3dfHtumI11Q" instantiates="_MDVs8DPyEei3dfHtumI11Q"/>
+    <assmComponents name="jsonProvider" id="_MDVs9DPyEei3dfHtumI11Q" instantiates="_MDVs8TPyEei3dfHtumI11Q"/>
+    <assmComponents name="cors-filter" id="_MDVs9TPyEei3dfHtumI11Q" instantiates="_MDVs8jPyEei3dfHtumI11Q"/>
+    <assmComponents name="customerWsClient" id="_MDp2AzPyEei3dfHtumI11Q" instantiates="_MDp2ADPyEei3dfHtumI11Q"/>
+    <assmComponents name="customerWsClientFactory" id="_MDp2BDPyEei3dfHtumI11Q" instantiates="_MDp2ATPyEei3dfHtumI11Q"/>
+    <assmComponents name="storeWsClient" id="_MDp2BTPyEei3dfHtumI11Q" instantiates="_MDp2AjPyEei3dfHtumI11Q"/>
+    <assmComponents name="storeWsClientFactory" id="_MDp2BjPyEei3dfHtumI11Q" instantiates="_MDp2ATPyEei3dfHtumI11Q"/>
+    <assmComponents name="catalogWsClient" id="_MDp2BzPyEei3dfHtumI11Q" instantiates="_MDp2AjPyEei3dfHtumI11Q"/>
+    <assmComponents name="catalogWsClientFactory" id="_MDp2CDPyEei3dfHtumI11Q" instantiates="_MDp2ATPyEei3dfHtumI11Q"/>
+    <assmComponents name="retailerWsClient" id="_MDp2CTPyEei3dfHtumI11Q" instantiates="_MDp2AjPyEei3dfHtumI11Q"/>
+    <assmComponents name="retailerWsClientFactory" id="_MDp2CjPyEei3dfHtumI11Q" instantiates="_MDp2ATPyEei3dfHtumI11Q"/>
+    <assmComponents name="syncServeurStatusCronTrigger" id="_MEGh9TPyEei3dfHtumI11Q" instantiates="_MEGh8DPyEei3dfHtumI11Q"/>
+    <assmComponents name="syncServeurStatusJobDetail" id="_MEGh9jPyEei3dfHtumI11Q" instantiates="_MEGh8TPyEei3dfHtumI11Q"/>
+    <assmComponents name="cacheFlushJmsTemplate" id="_MEZc-TPyEei3dfHtumI11Q" instantiates="_MEZc4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="syncServeurStatusJmsTemplate" id="_MEZc-jPyEei3dfHtumI11Q" instantiates="_MEZc4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="searchIndexJmsTemplate" id="_MEZc-zPyEei3dfHtumI11Q" instantiates="_MEZc4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="emailNotificationJmsTemplate" id="_MEZc_DPyEei3dfHtumI11Q" instantiates="_MEZc4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="entityAuditJmsTemplate" id="_MEZc_TPyEei3dfHtumI11Q" instantiates="_MEZc4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="entityCheckJmsTemplate" id="_MEZc_jPyEei3dfHtumI11Q" instantiates="_MEZc4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="erpJmsTemplate" id="_MEZc_zPyEei3dfHtumI11Q" instantiates="_MEZc4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="cmsJmsTemplate" id="_MEZdADPyEei3dfHtumI11Q" instantiates="_MEZc4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="crmJmsTemplate" id="_MEZdATPyEei3dfHtumI11Q" instantiates="_MEZc4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="documentJmsTemplate" id="_MEZdAjPyEei3dfHtumI11Q" instantiates="_MEZc4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="addressGeolocJmsTemplate" id="_MEZdAzPyEei3dfHtumI11Q" instantiates="_MEZc4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="indexingObjectJmsTemplate" id="_MEZdBDPyEei3dfHtumI11Q" instantiates="_MEZc4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_MEsX0DPyEei3dfHtumI11Q" instantiates="_MEjN4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="userSolrServer" id="_ME2I0TPyEei3dfHtumI11Q" instantiates="_ME2I0DPyEei3dfHtumI11Q"/>
+    <assmComponents name="companySolrServer" id="_ME2I0jPyEei3dfHtumI11Q" instantiates="_ME2I0DPyEei3dfHtumI11Q"/>
+    <assmComponents name="customerSolrServer" id="_ME2I0zPyEei3dfHtumI11Q" instantiates="_ME2I0DPyEei3dfHtumI11Q"/>
+    <assmComponents name="storeSolrServer" id="_ME2I1DPyEei3dfHtumI11Q" instantiates="_ME2I0DPyEei3dfHtumI11Q"/>
+    <assmComponents name="productMarketingSolrServer" id="_ME2I1TPyEei3dfHtumI11Q" instantiates="_ME2I0DPyEei3dfHtumI11Q"/>
+    <assmComponents name="productSkuSolrServer" id="_ME2I1jPyEei3dfHtumI11Q" instantiates="_ME2I0DPyEei3dfHtumI11Q"/>
+    <assmComponents name="catalogCategorySolrServer" id="_ME2I1zPyEei3dfHtumI11Q" instantiates="_ME2I0DPyEei3dfHtumI11Q"/>
+    <assmComponents name="propertyConfigurer" id="_MFJDyzPyEei3dfHtumI11Q" instantiates="_MFJDwDPyEei3dfHtumI11Q"/>
+    <assmComponents name="messageSource" id="_MFJDzDPyEei3dfHtumI11Q" instantiates="_MFJDwTPyEei3dfHtumI11Q"/>
+    <assmComponents name="multiCore" id="_MFJDzTPyEei3dfHtumI11Q" instantiates="_MFJDwjPyEei3dfHtumI11Q"/>
+    <assmComponents name="userSolrServer" id="_MFJDzjPyEei3dfHtumI11Q" instantiates="_MFJDwzPyEei3dfHtumI11Q"/>
+    <assmComponents name="companySolrServer" id="_MFJDzzPyEei3dfHtumI11Q" instantiates="_MFJDwzPyEei3dfHtumI11Q"/>
+    <assmComponents name="customerSolrServer" id="_MFJD0DPyEei3dfHtumI11Q" instantiates="_MFJDwzPyEei3dfHtumI11Q"/>
+    <assmComponents name="storeSolrServer" id="_MFJD0TPyEei3dfHtumI11Q" instantiates="_MFJDwzPyEei3dfHtumI11Q"/>
+    <assmComponents name="productMarketingSolrServer" id="_MFJD0jPyEei3dfHtumI11Q" instantiates="_MFJDwzPyEei3dfHtumI11Q"/>
+    <assmComponents name="productSkuSolrServer" id="_MFJD0zPyEei3dfHtumI11Q" instantiates="_MFJDwzPyEei3dfHtumI11Q"/>
+    <assmComponents name="catalogCategorySolrServer" id="_MFJD1DPyEei3dfHtumI11Q" instantiates="_MFJDwzPyEei3dfHtumI11Q"/>
+    <assmComponents name="xmlhandlerExporter" id="_MFS0yTPyEei3dfHtumI11Q" instantiates="_MFS0wDPyEei3dfHtumI11Q"/>
+    <assmComponents name="storeJaxbContext" id="_MFlvvzPyEei3dfHtumI11Q" instantiates="_MFlvsDPyEei3dfHtumI11Q"/>
+    <assmComponents name="storeMarshallerFactory" id="_MFlvwDPyEei3dfHtumI11Q" instantiates="_MFlvsTPyEei3dfHtumI11Q"/>
+    <assmComponents name="storeMarshallerTargetSource" id="_MFlvwTPyEei3dfHtumI11Q" instantiates="_MFlvsjPyEei3dfHtumI11Q"/>
+    <assmComponents name="storeUnmarshallerTargetSource" id="_MFlvwjPyEei3dfHtumI11Q" instantiates="_MFlvszPyEei3dfHtumI11Q"/>
+    <assmComponents name="storeMarshallerTarget" id="_MFlvwzPyEei3dfHtumI11Q" instantiates="_MFlvtDPyEei3dfHtumI11Q"/>
+    <assmComponents name="storeMarshaller" id="_MFlvxDPyEei3dfHtumI11Q" instantiates="_MFlvvTPyEei3dfHtumI11Q"/>
+    <assmComponents name="storeUnmarshallerTarget" id="_MFlvxTPyEei3dfHtumI11Q" instantiates="_MFlvtDPyEei3dfHtumI11Q"/>
+    <assmComponents name="storeUnmarshaller" id="_MFlvxjPyEei3dfHtumI11Q" instantiates="_MFlvvTPyEei3dfHtumI11Q"/>
+    <assmComponents name="storeUnmarshalXmlHelper" id="_MFlvxzPyEei3dfHtumI11Q" instantiates="_MFlvtjPyEei3dfHtumI11Q"/>
+    <assmComponents name="storeMarshalXmlHelper" id="_MFlvyDPyEei3dfHtumI11Q" instantiates="_MFlvtzPyEei3dfHtumI11Q"/>
+    <assmComponents name="backofficeViewBeanFactory" id="_MF4qojPyEei3dfHtumI11Q" instantiates="_MF4qoDPyEei3dfHtumI11Q"/>
+    <assmComponents name="backofficeFormFactory" id="_MF4qozPyEei3dfHtumI11Q" instantiates="_MF4qoTPyEei3dfHtumI11Q"/>
+    <assmComponents name="propertyConfigurer" id="_MGCboTPyEei3dfHtumI11Q" instantiates="_MGCboDPyEei3dfHtumI11Q"/>
+    <assmComponents name="backofficeViewBeanFactory" id="_MGVWkjPyEei3dfHtumI11Q" instantiates="_MGVWkDPyEei3dfHtumI11Q"/>
+    <assmComponents name="backofficeFormFactory" id="_MGVWkzPyEei3dfHtumI11Q" instantiates="_MGVWkTPyEei3dfHtumI11Q"/>
+    <assmComponents name="propertyConfigurer" id="_MGfHkTPyEei3dfHtumI11Q" instantiates="_MGfHkDPyEei3dfHtumI11Q"/>
+    <assmComponents name="backofficeViewBeanFactory" id="_MGzQojPyEei3dfHtumI11Q" instantiates="_MGzQoDPyEei3dfHtumI11Q"/>
+    <assmComponents name="backofficeFormFactory" id="_MGzQozPyEei3dfHtumI11Q" instantiates="_MGzQoTPyEei3dfHtumI11Q"/>
+    <assmComponents name="propertyConfigurer" id="_MHGLkTPyEei3dfHtumI11Q" instantiates="_MHGLkDPyEei3dfHtumI11Q"/>
+    <assmComponents name="frontofficeViewBeanFactory" id="_MHPVgjPyEei3dfHtumI11Q" instantiates="_MHPVgDPyEei3dfHtumI11Q"/>
+    <assmComponents name="webManagementService" id="_MHPVgzPyEei3dfHtumI11Q" instantiates="_MHPVgTPyEei3dfHtumI11Q"/>
+    <assmComponents name="propertyConfigurer" id="_MHi3gTPyEei3dfHtumI11Q" instantiates="_MHi3gDPyEei3dfHtumI11Q"/>
+    <assmComponents name="frontofficeViewBeanFactory" id="_MHsBcjPyEei3dfHtumI11Q" instantiates="_MHsBcDPyEei3dfHtumI11Q"/>
+    <assmComponents name="webManagementService" id="_MHsBczPyEei3dfHtumI11Q" instantiates="_MHsBcTPyEei3dfHtumI11Q"/>
+    <assmComponents name="propertyConfigurer" id="_MH-8YTPyEei3dfHtumI11Q" instantiates="_MH-8YDPyEei3dfHtumI11Q"/>
+    <assmComponents name="org.dozer.Mapper" id="_MIItZzPyEei3dfHtumI11Q" instantiates="_MIItYDPyEei3dfHtumI11Q"/>
+    <assmComponents name="cartCustomBeanFactory" id="_MIItaDPyEei3dfHtumI11Q" instantiates="_MIItYTPyEei3dfHtumI11Q"/>
+    <assmComponents name="propertyConfigurer" id="_MIboUTPyEei3dfHtumI11Q" instantiates="_MIboUDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_L8xx-jPyEei3dfHtumI11Q" property="alertMailSender.mailSender" clientInstElem="_L8xx-DPyEei3dfHtumI11Q" serverInstElem="_L8xx9zPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_L8xx-zPyEei3dfHtumI11Q" property="alertMailSender.templateMessage" clientInstElem="_L8xx-DPyEei3dfHtumI11Q" serverInstElem="_L8xx-TPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_L_K-qDPyEei3dfHtumI11Q" property="jmxAdapter.server" clientInstElem="_L_K-pjPyEei3dfHtumI11Q" serverInstElem="_L_K-pTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_L_K-qTPyEei3dfHtumI11Q" property="jmxAdapter.assembler" clientInstElem="_L_K-pjPyEei3dfHtumI11Q" serverInstElem="_L_K-pzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MAEWhTPyEei3dfHtumI11Q" property="velocityConfigurer.velocityPropertiesMap" clientInstElem="_MAEWgzPyEei3dfHtumI11Q" serverInstElem="_MAEWhDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MBG4UzPyEei3dfHtumI11Q" property="org.dozer.Mapper.customFieldMapper" clientInstElem="_MA9HXTPyEei3dfHtumI11Q" serverInstElem="_MBG4VDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MBG4VTPyEei3dfHtumI11Q" property="org.dozer.Mapper.factories" clientInstElem="_MA9HXTPyEei3dfHtumI11Q" serverInstElem="_MA9HXjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MBG4VjPyEei3dfHtumI11Q" property="org.dozer.Mapper.factories" clientInstElem="_MA9HXTPyEei3dfHtumI11Q" serverInstElem="_MBG4UDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MBG4VzPyEei3dfHtumI11Q" property="org.dozer.Mapper.factories" clientInstElem="_MA9HXTPyEei3dfHtumI11Q" serverInstElem="_MBG4UTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MBG4WDPyEei3dfHtumI11Q" property="org.dozer.Mapper.factories" clientInstElem="_MA9HXTPyEei3dfHtumI11Q" serverInstElem="_MBG4UjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MBG4WTPyEei3dfHtumI11Q" property="org.dozer.Mapper.eventListeners" clientInstElem="_MA9HXTPyEei3dfHtumI11Q" serverInstElem="_MBG4WjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MBsuOTPyEei3dfHtumI11Q" property="org.dozer.Mapper.customFieldMapper" clientInstElem="_MBsuNzPyEei3dfHtumI11Q" serverInstElem="_MBsuOjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MBsuOzPyEei3dfHtumI11Q" property="org.dozer.Mapper.factories" clientInstElem="_MBsuNzPyEei3dfHtumI11Q" serverInstElem="_MBsuODPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MBsuPDPyEei3dfHtumI11Q" property="org.dozer.Mapper.eventListeners" clientInstElem="_MBsuNzPyEei3dfHtumI11Q" serverInstElem="_MBsuPTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MDL79DPyEei3dfHtumI11Q" property="org.dozer.Mapper.customFieldMapper" clientInstElem="_MDL78zPyEei3dfHtumI11Q" serverInstElem="_MDL79TPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MEGh9zPyEei3dfHtumI11Q" property="syncServeurStatusCronTrigger.jobDetail" clientInstElem="_MEGh9TPyEei3dfHtumI11Q" serverInstElem="_MEGh9jPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MEGh-DPyEei3dfHtumI11Q" property="syncServeurStatusJobDetail.targetObject" clientInstElem="_MEGh9jPyEei3dfHtumI11Q" serverInstElem="_MEGh-TPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MEZdBTPyEei3dfHtumI11Q" property="cacheFlushJmsTemplate.connectionFactory" clientInstElem="_MEZc-TPyEei3dfHtumI11Q" serverInstElem="_MEZdBjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MEZdBzPyEei3dfHtumI11Q" property="syncServeurStatusJmsTemplate.connectionFactory" clientInstElem="_MEZc-jPyEei3dfHtumI11Q" serverInstElem="_MEZdCDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MEZdCTPyEei3dfHtumI11Q" property="searchIndexJmsTemplate.connectionFactory" clientInstElem="_MEZc-zPyEei3dfHtumI11Q" serverInstElem="_MEZdCjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MEZdCzPyEei3dfHtumI11Q" property="emailNotificationJmsTemplate.connectionFactory" clientInstElem="_MEZc_DPyEei3dfHtumI11Q" serverInstElem="_MEZdDDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MEZdDTPyEei3dfHtumI11Q" property="entityAuditJmsTemplate.connectionFactory" clientInstElem="_MEZc_TPyEei3dfHtumI11Q" serverInstElem="_MEZdDjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MEZdDzPyEei3dfHtumI11Q" property="entityCheckJmsTemplate.connectionFactory" clientInstElem="_MEZc_jPyEei3dfHtumI11Q" serverInstElem="_MEZdEDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MEZdETPyEei3dfHtumI11Q" property="erpJmsTemplate.connectionFactory" clientInstElem="_MEZc_zPyEei3dfHtumI11Q" serverInstElem="_MEZdEjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MEZdEzPyEei3dfHtumI11Q" property="cmsJmsTemplate.connectionFactory" clientInstElem="_MEZdADPyEei3dfHtumI11Q" serverInstElem="_MEZdFDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MEZdFTPyEei3dfHtumI11Q" property="crmJmsTemplate.connectionFactory" clientInstElem="_MEZdATPyEei3dfHtumI11Q" serverInstElem="_MEZdFjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MEZdFzPyEei3dfHtumI11Q" property="documentJmsTemplate.connectionFactory" clientInstElem="_MEZdAjPyEei3dfHtumI11Q" serverInstElem="_MEZdGDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MEZdGTPyEei3dfHtumI11Q" property="addressGeolocJmsTemplate.connectionFactory" clientInstElem="_MEZdAzPyEei3dfHtumI11Q" serverInstElem="_MEZdGjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MEZdGzPyEei3dfHtumI11Q" property="indexingObjectJmsTemplate.connectionFactory" clientInstElem="_MEZdBDPyEei3dfHtumI11Q" serverInstElem="_MEZdHDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MEsX0TPyEei3dfHtumI11Q" property="connectionFactory.targetConnectionFactory" clientInstElem="_MEsX0DPyEei3dfHtumI11Q" serverInstElem="_MEsX0jPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MFJD1TPyEei3dfHtumI11Q" clientInstElem="_MFJDzjPyEei3dfHtumI11Q" serverInstElem="_MFJDzTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MFJD1jPyEei3dfHtumI11Q" clientInstElem="_MFJDzzPyEei3dfHtumI11Q" serverInstElem="_MFJDzTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MFJD1zPyEei3dfHtumI11Q" clientInstElem="_MFJD0DPyEei3dfHtumI11Q" serverInstElem="_MFJDzTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MFJD2DPyEei3dfHtumI11Q" clientInstElem="_MFJD0TPyEei3dfHtumI11Q" serverInstElem="_MFJDzTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MFJD2TPyEei3dfHtumI11Q" clientInstElem="_MFJD0jPyEei3dfHtumI11Q" serverInstElem="_MFJDzTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MFJD2jPyEei3dfHtumI11Q" clientInstElem="_MFJD0zPyEei3dfHtumI11Q" serverInstElem="_MFJDzTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MFJD2zPyEei3dfHtumI11Q" clientInstElem="_MFJD1DPyEei3dfHtumI11Q" serverInstElem="_MFJDzTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MFS0yjPyEei3dfHtumI11Q" property="xmlhandlerExporter.server" clientInstElem="_MFS0yTPyEei3dfHtumI11Q" serverInstElem="_MFS0yzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MFS0zDPyEei3dfHtumI11Q" property="xmlhandlerExporter.beans" clientInstElem="_MFS0yTPyEei3dfHtumI11Q" serverInstElem="_MFS0zTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MFS0zjPyEei3dfHtumI11Q" property="xmlhandlerExporter.beans" clientInstElem="_MFS0yTPyEei3dfHtumI11Q" serverInstElem="_MFS0zzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MFS00DPyEei3dfHtumI11Q" property="xmlhandlerExporter.assembler" clientInstElem="_MFS0yTPyEei3dfHtumI11Q" serverInstElem="_MFS00TPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MFlvyTPyEei3dfHtumI11Q" property="storeMarshallerFactory.context" clientInstElem="_MFlvwDPyEei3dfHtumI11Q" serverInstElem="_MFlvvzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MFlvyjPyEei3dfHtumI11Q" property="storeMarshaller.targetSource" clientInstElem="_MFlvxDPyEei3dfHtumI11Q" serverInstElem="_MFlvwzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MFlvyzPyEei3dfHtumI11Q" property="storeUnmarshaller.targetSource" clientInstElem="_MFlvxjPyEei3dfHtumI11Q" serverInstElem="_MFlvxTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MFlvzDPyEei3dfHtumI11Q" property="storeUnmarshalXmlHelper.unmarshaller" clientInstElem="_MFlvxzPyEei3dfHtumI11Q" serverInstElem="_MFlvxjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MFlvzTPyEei3dfHtumI11Q" property="storeMarshalXmlHelper.marshaller" clientInstElem="_MFlvyDPyEei3dfHtumI11Q" serverInstElem="_MFlvxDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MIItaTPyEei3dfHtumI11Q" property="org.dozer.Mapper.customFieldMapper" clientInstElem="_MIItZzPyEei3dfHtumI11Q" serverInstElem="_MIItajPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MISeYDPyEei3dfHtumI11Q" property="org.dozer.Mapper.factories" clientInstElem="_MIItZzPyEei3dfHtumI11Q" serverInstElem="_MIItaDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_MISeYTPyEei3dfHtumI11Q" property="org.dozer.Mapper.eventListeners" clientInstElem="_MIItZzPyEei3dfHtumI11Q" serverInstElem="_MISeYjPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="qalingo.qalingo-engine_spec">
+    <specConnections refID="_MIboUjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboUzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboVDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboVTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboVjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboVzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboWDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboWTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboWjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboWzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboXDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboXTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboXjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboXzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboYDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboYTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboYjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboYzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboZDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboZTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboZjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboZzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboaDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboaTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboajPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboazPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbobDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbobTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbobjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbobzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbocDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbocTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbocjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboczPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbodDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbodTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbodjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbodzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboeDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboeTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboejPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIboezPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbofDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbofTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbofjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbofzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbogDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbogTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_MIbogjPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

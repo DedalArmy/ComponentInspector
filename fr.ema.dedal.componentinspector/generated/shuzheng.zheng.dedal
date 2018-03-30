@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="shuzheng.zheng">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="shuzheng.zheng_config" implements="//@architectureDescriptions[name='shuzheng.zheng_spec']">
+    <configComponents name="&quot;com.zheng.common.util.SpringContextUtil&quot;" id="_0a3KUDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.common.util.SpringContextUtil&quot;" id="_0bVrcDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.ActiveMQConnectionFactory&quot;" id="_0bomYDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.connection.CachingConnectionFactory&quot;" id="_0bomYTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQQueue&quot;" id="_0bomYjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQTopic&quot;" id="_0bomYzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.core.JmsTemplate&quot;" id="_0bomZDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.api.server.jms.DefaultMessageQueueListener&quot;" id="_0bomZTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.listener.DefaultMessageListenerContainer&quot;" id="_0bomZjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.ActiveMQConnectionFactory&quot;" id="_0byXYDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.connection.CachingConnectionFactory&quot;" id="_0byXYTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQQueue&quot;" id="_0byXYjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQTopic&quot;" id="_0byXYzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.core.JmsTemplate&quot;" id="_0byXZDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.api.server.jms.DefaultMessageQueueListener&quot;" id="_0byXZTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.listener.DefaultMessageListenerContainer&quot;" id="_0byXZjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.ActiveMQConnectionFactory&quot;" id="_0cFSUDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.connection.CachingConnectionFactory&quot;" id="_0cFSUTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQQueue&quot;" id="_0cFSUjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQTopic&quot;" id="_0cFSUzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.core.JmsTemplate&quot;" id="_0cFSVDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.api.server.jms.DefaultMessageQueueListener&quot;" id="_0cFSVTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.listener.DefaultMessageListenerContainer&quot;" id="_0cFSVjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.ActiveMQConnectionFactory&quot;" id="_0cYNQDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.connection.CachingConnectionFactory&quot;" id="_0cYNQTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQQueue&quot;" id="_0cYNQjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQTopic&quot;" id="_0cYNQzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.core.JmsTemplate&quot;" id="_0cYNRDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.cms.admin.jms.DefaultMessageQueueListener&quot;" id="_0cYNRTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.listener.DefaultMessageListenerContainer&quot;" id="_0cYNRjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.ActiveMQConnectionFactory&quot;" id="_0ch-QDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.connection.CachingConnectionFactory&quot;" id="_0ch-QTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQQueue&quot;" id="_0ch-QjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQTopic&quot;" id="_0ch-QzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.core.JmsTemplate&quot;" id="_0ch-RDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.cms.admin.jms.DefaultMessageQueueListener&quot;" id="_0ch-RTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.listener.DefaultMessageListenerContainer&quot;" id="_0ch-RjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.ActiveMQConnectionFactory&quot;" id="_0c05MDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.connection.CachingConnectionFactory&quot;" id="_0c05MTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQQueue&quot;" id="_0c05MjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQTopic&quot;" id="_0c05MzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.core.JmsTemplate&quot;" id="_0c05NDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.cms.admin.jms.DefaultMessageQueueListener&quot;" id="_0c05NTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.listener.DefaultMessageListenerContainer&quot;" id="_0c05NjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.ActiveMQConnectionFactory&quot;" id="_0dH0IDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.connection.CachingConnectionFactory&quot;" id="_0dH0ITPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQQueue&quot;" id="_0dH0IjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQTopic&quot;" id="_0dH0IzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.cms.job.jms.DefaultMessageQueueListener&quot;" id="_0dH0JDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.listener.DefaultMessageListenerContainer&quot;" id="_0dH0JTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.ActiveMQConnectionFactory&quot;" id="_0davEDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.connection.CachingConnectionFactory&quot;" id="_0davETPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQQueue&quot;" id="_0davEjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQTopic&quot;" id="_0davEzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.cms.job.jms.DefaultMessageQueueListener&quot;" id="_0davFDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.listener.DefaultMessageListenerContainer&quot;" id="_0davFTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.ActiveMQConnectionFactory&quot;" id="_0dkgEDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.connection.CachingConnectionFactory&quot;" id="_0dkgETPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQQueue&quot;" id="_0dkgEjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQTopic&quot;" id="_0dkgEzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.cms.job.jms.DefaultMessageQueueListener&quot;" id="_0dkgFDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.listener.DefaultMessageListenerContainer&quot;" id="_0dkgFTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.common.util.SpringContextUtil&quot;" id="_0eKV8DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.common.util.SpringContextUtil&quot;" id="_0enB4DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.ActiveMQConnectionFactory&quot;" id="_0ewy4DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.connection.CachingConnectionFactory&quot;" id="_0ewy4TPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQQueue&quot;" id="_0ewy4jPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQTopic&quot;" id="_0ewy4zPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.core.JmsTemplate&quot;" id="_0ewy5DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.cms.web.jms.DefaultMessageQueueListener&quot;" id="_0ewy5TPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.listener.DefaultMessageListenerContainer&quot;" id="_0ewy5jPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.ActiveMQConnectionFactory&quot;" id="_0fDt0DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.connection.CachingConnectionFactory&quot;" id="_0fDt0TPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQQueue&quot;" id="_0fDt0jPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQTopic&quot;" id="_0fDt0zPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.core.JmsTemplate&quot;" id="_0fDt1DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.cms.web.jms.DefaultMessageQueueListener&quot;" id="_0fDt1TPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.listener.DefaultMessageListenerContainer&quot;" id="_0fDt1jPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.ActiveMQConnectionFactory&quot;" id="_0fM3wDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.connection.CachingConnectionFactory&quot;" id="_0fM3wTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQQueue&quot;" id="_0fM3wjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.command.ActiveMQTopic&quot;" id="_0fWowDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.core.JmsTemplate&quot;" id="_0fWowTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.cms.web.jms.DefaultMessageQueueListener&quot;" id="_0fWowjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.listener.DefaultMessageListenerContainer&quot;" id="_0fWowzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.common.util.SpringContextUtil&quot;" id="_0fXP0DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.common.util.SpringContextUtil&quot;" id="_0f0i0DPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.demo.rpc.service.impl.DemoServiceImpl&quot;" id="_0f9swDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.demo.rpc.service.impl.DemoServiceImpl&quot;" id="_0gROwDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.aliyun.oss.OSSClient&quot;" id="_0gaYsDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.aliyun.oss.OSSClient&quot;" id="_0gtToDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.common.util.SpringContextUtil&quot;" id="_0g3EoDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.common.util.SpringContextUtil&quot;" id="_0hJ_kDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.DefaultAlipayClient&quot;" id="_0hTwkDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradePagePayRequest&quot;" id="_0hTwkTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradeWapPayRequest&quot;" id="_0hTwkjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradeQueryRequest&quot;" id="_0hTwkzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradeRefundRequest&quot;" id="_0hTwlDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradeFastpayRefundQueryRequest&quot;" id="_0hTwlTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradeCloseRequest&quot;" id="_0hTwljPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayDataDataserviceBillDownloadurlQueryRequest&quot;" id="_0hTwlzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.DefaultAlipayClient&quot;" id="_0hmrgDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradePagePayRequest&quot;" id="_0hmrgTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradeWapPayRequest&quot;" id="_0hmrgjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradeQueryRequest&quot;" id="_0hmrgzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradeRefundRequest&quot;" id="_0hmrhDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradeFastpayRefundQueryRequest&quot;" id="_0hmrhTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradeCloseRequest&quot;" id="_0hmrhjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayDataDataserviceBillDownloadurlQueryRequest&quot;" id="_0hmrhzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.DefaultAlipayClient&quot;" id="_0h5mcDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradePagePayRequest&quot;" id="_0h5mcTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradeWapPayRequest&quot;" id="_0h5mcjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradeQueryRequest&quot;" id="_0h5mczPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradeRefundRequest&quot;" id="_0h5mdDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradeFastpayRefundQueryRequest&quot;" id="_0h5mdTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayTradeCloseRequest&quot;" id="_0h5mdjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alipay.api.request.AlipayDataDataserviceBillDownloadurlQueryRequest&quot;" id="_0h5mdzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.common.util.SpringContextUtil&quot;" id="_0iDXcDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.common.util.SpringContextUtil&quot;" id="_0iWSYDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.spring.web.ShiroFilterFactoryBean&quot;" id="_0igDYDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.upms.client.shiro.filter.UpmsAuthenticationFilter&quot;" id="_0igDYTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.upms.client.shiro.filter.UpmsSessionForceLogoutFilter&quot;" id="_0igDYjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.mgt.DefaultWebSecurityManager&quot;" id="_0igDYzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.upms.client.shiro.realm.UpmsRealm&quot;" id="_0igDZDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.session.mgt.DefaultWebSessionManager&quot;" id="_0igDZTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.upms.client.shiro.session.UpmsSessionDao&quot;" id="_0igDZjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.servlet.SimpleCookie&quot;" id="_0igDZzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.upms.client.shiro.listener.UpmsSessionListener&quot;" id="_0igDaDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.upms.client.shiro.session.UpmsSessionFactory&quot;" id="_0igDaTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.mgt.CookieRememberMeManager&quot;" id="_0igDajPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.MethodInvokingFactoryBean&quot;" id="_0igDazPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator&quot;" id="_0igDbDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor&quot;" id="_0ipNUDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.spring.LifecycleBeanPostProcessor&quot;" id="_0ipNUTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.spring.web.ShiroFilterFactoryBean&quot;" id="_0jF5QDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.upms.client.shiro.filter.UpmsAuthenticationFilter&quot;" id="_0jF5QTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.upms.client.shiro.filter.UpmsSessionForceLogoutFilter&quot;" id="_0jF5QjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.mgt.DefaultWebSecurityManager&quot;" id="_0jF5QzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.upms.client.shiro.realm.UpmsRealm&quot;" id="_0jF5RDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.session.mgt.DefaultWebSessionManager&quot;" id="_0jF5RTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.upms.client.shiro.session.UpmsSessionDao&quot;" id="_0jF5RjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.servlet.SimpleCookie&quot;" id="_0jF5RzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.upms.client.shiro.listener.UpmsSessionListener&quot;" id="_0jF5SDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.upms.client.shiro.session.UpmsSessionFactory&quot;" id="_0jF5STPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.web.mgt.CookieRememberMeManager&quot;" id="_0jF5SjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.MethodInvokingFactoryBean&quot;" id="_0jF5SzPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator&quot;" id="_0jF5TDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor&quot;" id="_0jF5TTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.spring.LifecycleBeanPostProcessor&quot;" id="_0jF5TjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.common.util.SpringContextUtil&quot;" id="_0j1gIDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zheng.common.util.SpringContextUtil&quot;" id="_0kSMEDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0bomZzPyEei3dfHtumI11Q" property="&quot;targetConnectionFactory&quot;" clientClassElem="_0bomYTPyEei3dfHtumI11Q" serverClassElem="_0bomYDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0bomaDPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0bomZDPyEei3dfHtumI11Q" serverClassElem="_0bomYTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0bomaTPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0bomZDPyEei3dfHtumI11Q" serverClassElem="_0bomYTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0bomajPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0bomZjPyEei3dfHtumI11Q" serverClassElem="_0bomYTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0bomazPyEei3dfHtumI11Q" property="&quot;destination&quot;" clientClassElem="_0bomZjPyEei3dfHtumI11Q" serverClassElem="_0bomYjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0bombDPyEei3dfHtumI11Q" property="&quot;messageListener&quot;" clientClassElem="_0bomZjPyEei3dfHtumI11Q" serverClassElem="_0bomZTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0byXZzPyEei3dfHtumI11Q" property="&quot;targetConnectionFactory&quot;" clientClassElem="_0byXYTPyEei3dfHtumI11Q" serverClassElem="_0byXYDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0byXaDPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0byXZDPyEei3dfHtumI11Q" serverClassElem="_0byXYTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0byXaTPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0byXZDPyEei3dfHtumI11Q" serverClassElem="_0byXYTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0byXajPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0byXZjPyEei3dfHtumI11Q" serverClassElem="_0byXYTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0byXazPyEei3dfHtumI11Q" property="&quot;destination&quot;" clientClassElem="_0byXZjPyEei3dfHtumI11Q" serverClassElem="_0byXYjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0byXbDPyEei3dfHtumI11Q" property="&quot;messageListener&quot;" clientClassElem="_0byXZjPyEei3dfHtumI11Q" serverClassElem="_0byXZTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0cFSVzPyEei3dfHtumI11Q" property="&quot;targetConnectionFactory&quot;" clientClassElem="_0cFSUTPyEei3dfHtumI11Q" serverClassElem="_0cFSUDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0cFSWDPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0cFSVDPyEei3dfHtumI11Q" serverClassElem="_0cFSUTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0cFSWTPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0cFSVDPyEei3dfHtumI11Q" serverClassElem="_0cFSUTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0cFSWjPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0cFSVjPyEei3dfHtumI11Q" serverClassElem="_0cFSUTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0cFSWzPyEei3dfHtumI11Q" property="&quot;destination&quot;" clientClassElem="_0cFSVjPyEei3dfHtumI11Q" serverClassElem="_0cFSUjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0cFSXDPyEei3dfHtumI11Q" property="&quot;messageListener&quot;" clientClassElem="_0cFSVjPyEei3dfHtumI11Q" serverClassElem="_0cFSVTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0cYNRzPyEei3dfHtumI11Q" property="&quot;targetConnectionFactory&quot;" clientClassElem="_0cYNQTPyEei3dfHtumI11Q" serverClassElem="_0cYNQDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0cYNSDPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0cYNRDPyEei3dfHtumI11Q" serverClassElem="_0cYNQTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0cYNSTPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0cYNRDPyEei3dfHtumI11Q" serverClassElem="_0cYNQTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0cYNSjPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0cYNRjPyEei3dfHtumI11Q" serverClassElem="_0cYNQTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0cYNSzPyEei3dfHtumI11Q" property="&quot;destination&quot;" clientClassElem="_0cYNRjPyEei3dfHtumI11Q" serverClassElem="_0cYNQjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0cYNTDPyEei3dfHtumI11Q" property="&quot;messageListener&quot;" clientClassElem="_0cYNRjPyEei3dfHtumI11Q" serverClassElem="_0cYNRTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ch-RzPyEei3dfHtumI11Q" property="&quot;targetConnectionFactory&quot;" clientClassElem="_0ch-QTPyEei3dfHtumI11Q" serverClassElem="_0ch-QDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ch-SDPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0ch-RDPyEei3dfHtumI11Q" serverClassElem="_0ch-QTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ch-STPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0ch-RDPyEei3dfHtumI11Q" serverClassElem="_0ch-QTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ch-SjPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0ch-RjPyEei3dfHtumI11Q" serverClassElem="_0ch-QTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ch-SzPyEei3dfHtumI11Q" property="&quot;destination&quot;" clientClassElem="_0ch-RjPyEei3dfHtumI11Q" serverClassElem="_0ch-QjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ch-TDPyEei3dfHtumI11Q" property="&quot;messageListener&quot;" clientClassElem="_0ch-RjPyEei3dfHtumI11Q" serverClassElem="_0ch-RTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0c05NzPyEei3dfHtumI11Q" property="&quot;targetConnectionFactory&quot;" clientClassElem="_0c05MTPyEei3dfHtumI11Q" serverClassElem="_0c05MDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0c-DIDPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0c05NDPyEei3dfHtumI11Q" serverClassElem="_0c05MTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0c-DITPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0c05NDPyEei3dfHtumI11Q" serverClassElem="_0c05MTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0c-DIjPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0c05NjPyEei3dfHtumI11Q" serverClassElem="_0c05MTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0c-DIzPyEei3dfHtumI11Q" property="&quot;destination&quot;" clientClassElem="_0c05NjPyEei3dfHtumI11Q" serverClassElem="_0c05MjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0c-DJDPyEei3dfHtumI11Q" property="&quot;messageListener&quot;" clientClassElem="_0c05NjPyEei3dfHtumI11Q" serverClassElem="_0c05NTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0dH0JjPyEei3dfHtumI11Q" property="&quot;targetConnectionFactory&quot;" clientClassElem="_0dH0ITPyEei3dfHtumI11Q" serverClassElem="_0dH0IDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0dH0JzPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0dH0JTPyEei3dfHtumI11Q" serverClassElem="_0dH0ITPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0dH0KDPyEei3dfHtumI11Q" property="&quot;destination&quot;" clientClassElem="_0dH0JTPyEei3dfHtumI11Q" serverClassElem="_0dH0IjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0dH0KTPyEei3dfHtumI11Q" property="&quot;messageListener&quot;" clientClassElem="_0dH0JTPyEei3dfHtumI11Q" serverClassElem="_0dH0JDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0davFjPyEei3dfHtumI11Q" property="&quot;targetConnectionFactory&quot;" clientClassElem="_0davETPyEei3dfHtumI11Q" serverClassElem="_0davEDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0davFzPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0davFTPyEei3dfHtumI11Q" serverClassElem="_0davETPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0davGDPyEei3dfHtumI11Q" property="&quot;destination&quot;" clientClassElem="_0davFTPyEei3dfHtumI11Q" serverClassElem="_0davEjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0davGTPyEei3dfHtumI11Q" property="&quot;messageListener&quot;" clientClassElem="_0davFTPyEei3dfHtumI11Q" serverClassElem="_0davFDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0dkgFjPyEei3dfHtumI11Q" property="&quot;targetConnectionFactory&quot;" clientClassElem="_0dkgETPyEei3dfHtumI11Q" serverClassElem="_0dkgEDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0dkgFzPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0dkgFTPyEei3dfHtumI11Q" serverClassElem="_0dkgETPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0dkgGDPyEei3dfHtumI11Q" property="&quot;destination&quot;" clientClassElem="_0dkgFTPyEei3dfHtumI11Q" serverClassElem="_0dkgEjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0dkgGTPyEei3dfHtumI11Q" property="&quot;messageListener&quot;" clientClassElem="_0dkgFTPyEei3dfHtumI11Q" serverClassElem="_0dkgFDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ewy5zPyEei3dfHtumI11Q" property="&quot;targetConnectionFactory&quot;" clientClassElem="_0ewy4TPyEei3dfHtumI11Q" serverClassElem="_0ewy4DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ewy6DPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0ewy5DPyEei3dfHtumI11Q" serverClassElem="_0ewy4TPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ewy6TPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0ewy5DPyEei3dfHtumI11Q" serverClassElem="_0ewy4TPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ewy6jPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0ewy5jPyEei3dfHtumI11Q" serverClassElem="_0ewy4TPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ewy6zPyEei3dfHtumI11Q" property="&quot;destination&quot;" clientClassElem="_0ewy5jPyEei3dfHtumI11Q" serverClassElem="_0ewy4jPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ewy7DPyEei3dfHtumI11Q" property="&quot;messageListener&quot;" clientClassElem="_0ewy5jPyEei3dfHtumI11Q" serverClassElem="_0ewy5TPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0fDt1zPyEei3dfHtumI11Q" property="&quot;targetConnectionFactory&quot;" clientClassElem="_0fDt0TPyEei3dfHtumI11Q" serverClassElem="_0fDt0DPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0fDt2DPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0fDt1DPyEei3dfHtumI11Q" serverClassElem="_0fDt0TPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0fDt2TPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0fDt1DPyEei3dfHtumI11Q" serverClassElem="_0fDt0TPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0fDt2jPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0fDt1jPyEei3dfHtumI11Q" serverClassElem="_0fDt0TPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0fDt2zPyEei3dfHtumI11Q" property="&quot;destination&quot;" clientClassElem="_0fDt1jPyEei3dfHtumI11Q" serverClassElem="_0fDt0jPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0fDt3DPyEei3dfHtumI11Q" property="&quot;messageListener&quot;" clientClassElem="_0fDt1jPyEei3dfHtumI11Q" serverClassElem="_0fDt1TPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0fWoxDPyEei3dfHtumI11Q" property="&quot;targetConnectionFactory&quot;" clientClassElem="_0fM3wTPyEei3dfHtumI11Q" serverClassElem="_0fM3wDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0fWoxTPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0fWowTPyEei3dfHtumI11Q" serverClassElem="_0fM3wTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0fWoxjPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0fWowTPyEei3dfHtumI11Q" serverClassElem="_0fM3wTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0fWoxzPyEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_0fWowzPyEei3dfHtumI11Q" serverClassElem="_0fM3wTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0fWoyDPyEei3dfHtumI11Q" property="&quot;destination&quot;" clientClassElem="_0fWowzPyEei3dfHtumI11Q" serverClassElem="_0fM3wjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0fWoyTPyEei3dfHtumI11Q" property="&quot;messageListener&quot;" clientClassElem="_0fWowzPyEei3dfHtumI11Q" serverClassElem="_0fWowjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ipNUjPyEei3dfHtumI11Q" property="&quot;securityManager&quot;" clientClassElem="_0igDYDPyEei3dfHtumI11Q" serverClassElem="_0igDYzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ipNUzPyEei3dfHtumI11Q" property="&quot;realms&quot;" clientClassElem="_0igDYzPyEei3dfHtumI11Q" serverClassElem="_0igDZDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ipNVDPyEei3dfHtumI11Q" property="&quot;sessionManager&quot;" clientClassElem="_0igDYzPyEei3dfHtumI11Q" serverClassElem="_0igDZTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ipNVTPyEei3dfHtumI11Q" property="&quot;rememberMeManager&quot;" clientClassElem="_0igDYzPyEei3dfHtumI11Q" serverClassElem="_0igDajPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ipNVjPyEei3dfHtumI11Q" property="&quot;sessionDAO&quot;" clientClassElem="_0igDZTPyEei3dfHtumI11Q" serverClassElem="_0igDZjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ipNVzPyEei3dfHtumI11Q" property="&quot;sessionIdCookie&quot;" clientClassElem="_0igDZTPyEei3dfHtumI11Q" serverClassElem="_0igDZzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ipNWDPyEei3dfHtumI11Q" property="&quot;sessionListeners&quot;" clientClassElem="_0igDZTPyEei3dfHtumI11Q" serverClassElem="_0igDaDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ipNWTPyEei3dfHtumI11Q" property="&quot;sessionFactory&quot;" clientClassElem="_0igDZTPyEei3dfHtumI11Q" serverClassElem="_0igDaTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ipNWjPyEei3dfHtumI11Q" property="&quot;cookie&quot;" clientClassElem="_0igDajPyEei3dfHtumI11Q" serverClassElem="_0ipNWzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ipNXDPyEei3dfHtumI11Q" property="&quot;arguments&quot;" clientClassElem="_0igDazPyEei3dfHtumI11Q" serverClassElem="_0igDYzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0ipNXTPyEei3dfHtumI11Q" property="&quot;securityManager&quot;" clientClassElem="_0ipNUDPyEei3dfHtumI11Q" serverClassElem="_0igDYzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0jF5TzPyEei3dfHtumI11Q" property="&quot;securityManager&quot;" clientClassElem="_0jF5QDPyEei3dfHtumI11Q" serverClassElem="_0jF5QzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0jF5UDPyEei3dfHtumI11Q" property="&quot;realms&quot;" clientClassElem="_0jF5QzPyEei3dfHtumI11Q" serverClassElem="_0jF5RDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0jF5UTPyEei3dfHtumI11Q" property="&quot;sessionManager&quot;" clientClassElem="_0jF5QzPyEei3dfHtumI11Q" serverClassElem="_0jF5RTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0jF5UjPyEei3dfHtumI11Q" property="&quot;rememberMeManager&quot;" clientClassElem="_0jF5QzPyEei3dfHtumI11Q" serverClassElem="_0jF5SjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0jF5UzPyEei3dfHtumI11Q" property="&quot;sessionDAO&quot;" clientClassElem="_0jF5RTPyEei3dfHtumI11Q" serverClassElem="_0jF5RjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0jF5VDPyEei3dfHtumI11Q" property="&quot;sessionIdCookie&quot;" clientClassElem="_0jF5RTPyEei3dfHtumI11Q" serverClassElem="_0jF5RzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0jF5VTPyEei3dfHtumI11Q" property="&quot;sessionListeners&quot;" clientClassElem="_0jF5RTPyEei3dfHtumI11Q" serverClassElem="_0jF5SDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0jF5VjPyEei3dfHtumI11Q" property="&quot;sessionFactory&quot;" clientClassElem="_0jF5RTPyEei3dfHtumI11Q" serverClassElem="_0jF5STPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0jF5VzPyEei3dfHtumI11Q" property="&quot;cookie&quot;" clientClassElem="_0jF5SjPyEei3dfHtumI11Q" serverClassElem="_0jF5WDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0jF5WTPyEei3dfHtumI11Q" property="&quot;arguments&quot;" clientClassElem="_0jF5SzPyEei3dfHtumI11Q" serverClassElem="_0jF5QzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_0jF5WjPyEei3dfHtumI11Q" property="&quot;securityManager&quot;" clientClassElem="_0jF5TTPyEei3dfHtumI11Q" serverClassElem="_0jF5QzPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="shuzheng.zheng_asm" instantiates="//@architectureDescriptions[name='shuzheng.zheng_config']">
+    <assmComponents name="springContextUtil" id="_0a3KUTPyEei3dfHtumI11Q" instantiates="_0a3KUDPyEei3dfHtumI11Q"/>
+    <assmComponents name="springContextUtil" id="_0bVrcTPyEei3dfHtumI11Q" instantiates="_0bVrcDPyEei3dfHtumI11Q"/>
+    <assmComponents name="activeMqConnectionFactory" id="_0bombTPyEei3dfHtumI11Q" instantiates="_0bomYDPyEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_0bombjPyEei3dfHtumI11Q" instantiates="_0bomYTPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultQueueDestination" id="_0bombzPyEei3dfHtumI11Q" instantiates="_0bomYjPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultTopicDestination" id="_0bomcDPyEei3dfHtumI11Q" instantiates="_0bomYzPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsQueueTemplate" id="_0bomcTPyEei3dfHtumI11Q" instantiates="_0bomZDPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsTopicTemplate" id="_0bomcjPyEei3dfHtumI11Q" instantiates="_0bomZDPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultMessageQueueListener" id="_0bomczPyEei3dfHtumI11Q" instantiates="_0bomZTPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsContainer" id="_0bomdDPyEei3dfHtumI11Q" instantiates="_0bomZjPyEei3dfHtumI11Q"/>
+    <assmComponents name="activeMqConnectionFactory" id="_0byXbTPyEei3dfHtumI11Q" instantiates="_0byXYDPyEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_0byXbjPyEei3dfHtumI11Q" instantiates="_0byXYTPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultQueueDestination" id="_0byXbzPyEei3dfHtumI11Q" instantiates="_0byXYjPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultTopicDestination" id="_0byXcDPyEei3dfHtumI11Q" instantiates="_0byXYzPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsQueueTemplate" id="_0b7hUDPyEei3dfHtumI11Q" instantiates="_0byXZDPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsTopicTemplate" id="_0b7hUTPyEei3dfHtumI11Q" instantiates="_0byXZDPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultMessageQueueListener" id="_0b7hUjPyEei3dfHtumI11Q" instantiates="_0byXZTPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsContainer" id="_0b7hUzPyEei3dfHtumI11Q" instantiates="_0byXZjPyEei3dfHtumI11Q"/>
+    <assmComponents name="activeMqConnectionFactory" id="_0cFSXTPyEei3dfHtumI11Q" instantiates="_0cFSUDPyEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_0cFSXjPyEei3dfHtumI11Q" instantiates="_0cFSUTPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultQueueDestination" id="_0cFSXzPyEei3dfHtumI11Q" instantiates="_0cFSUjPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultTopicDestination" id="_0cFSYDPyEei3dfHtumI11Q" instantiates="_0cFSUzPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsQueueTemplate" id="_0cFSYTPyEei3dfHtumI11Q" instantiates="_0cFSVDPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsTopicTemplate" id="_0cFSYjPyEei3dfHtumI11Q" instantiates="_0cFSVDPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultMessageQueueListener" id="_0cFSYzPyEei3dfHtumI11Q" instantiates="_0cFSVTPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsContainer" id="_0cFSZDPyEei3dfHtumI11Q" instantiates="_0cFSVjPyEei3dfHtumI11Q"/>
+    <assmComponents name="activeMqConnectionFactory" id="_0cYNTTPyEei3dfHtumI11Q" instantiates="_0cYNQDPyEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_0cYNTjPyEei3dfHtumI11Q" instantiates="_0cYNQTPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultQueueDestination" id="_0cYNTzPyEei3dfHtumI11Q" instantiates="_0cYNQjPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultTopicDestination" id="_0cYNUDPyEei3dfHtumI11Q" instantiates="_0cYNQzPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsQueueTemplate" id="_0cYNUTPyEei3dfHtumI11Q" instantiates="_0cYNRDPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsTopicTemplate" id="_0cYNUjPyEei3dfHtumI11Q" instantiates="_0cYNRDPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultMessageQueueListener" id="_0cYNUzPyEei3dfHtumI11Q" instantiates="_0cYNRTPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsContainer" id="_0cYNVDPyEei3dfHtumI11Q" instantiates="_0cYNRjPyEei3dfHtumI11Q"/>
+    <assmComponents name="activeMqConnectionFactory" id="_0ch-TTPyEei3dfHtumI11Q" instantiates="_0ch-QDPyEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_0crIMDPyEei3dfHtumI11Q" instantiates="_0ch-QTPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultQueueDestination" id="_0crIMTPyEei3dfHtumI11Q" instantiates="_0ch-QjPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultTopicDestination" id="_0crIMjPyEei3dfHtumI11Q" instantiates="_0ch-QzPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsQueueTemplate" id="_0crIMzPyEei3dfHtumI11Q" instantiates="_0ch-RDPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsTopicTemplate" id="_0crINDPyEei3dfHtumI11Q" instantiates="_0ch-RDPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultMessageQueueListener" id="_0crINTPyEei3dfHtumI11Q" instantiates="_0ch-RTPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsContainer" id="_0crINjPyEei3dfHtumI11Q" instantiates="_0ch-RjPyEei3dfHtumI11Q"/>
+    <assmComponents name="activeMqConnectionFactory" id="_0c-DJTPyEei3dfHtumI11Q" instantiates="_0c05MDPyEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_0c-DJjPyEei3dfHtumI11Q" instantiates="_0c05MTPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultQueueDestination" id="_0c-DJzPyEei3dfHtumI11Q" instantiates="_0c05MjPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultTopicDestination" id="_0c-DKDPyEei3dfHtumI11Q" instantiates="_0c05MzPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsQueueTemplate" id="_0c-DKTPyEei3dfHtumI11Q" instantiates="_0c05NDPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsTopicTemplate" id="_0c-DKjPyEei3dfHtumI11Q" instantiates="_0c05NDPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultMessageQueueListener" id="_0c-DKzPyEei3dfHtumI11Q" instantiates="_0c05NTPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsContainer" id="_0c-DLDPyEei3dfHtumI11Q" instantiates="_0c05NjPyEei3dfHtumI11Q"/>
+    <assmComponents name="activeMqConnectionFactory" id="_0dH0KjPyEei3dfHtumI11Q" instantiates="_0dH0IDPyEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_0dH0KzPyEei3dfHtumI11Q" instantiates="_0dH0ITPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultQueueDestination" id="_0dH0LDPyEei3dfHtumI11Q" instantiates="_0dH0IjPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultTopicDestination" id="_0dH0LTPyEei3dfHtumI11Q" instantiates="_0dH0IzPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultMessageQueueListener" id="_0dH0LjPyEei3dfHtumI11Q" instantiates="_0dH0JDPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsContainer" id="_0dH0LzPyEei3dfHtumI11Q" instantiates="_0dH0JTPyEei3dfHtumI11Q"/>
+    <assmComponents name="activeMqConnectionFactory" id="_0davGjPyEei3dfHtumI11Q" instantiates="_0davEDPyEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_0davGzPyEei3dfHtumI11Q" instantiates="_0davETPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultQueueDestination" id="_0davHDPyEei3dfHtumI11Q" instantiates="_0davEjPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultTopicDestination" id="_0davHTPyEei3dfHtumI11Q" instantiates="_0davEzPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultMessageQueueListener" id="_0davHjPyEei3dfHtumI11Q" instantiates="_0davFDPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsContainer" id="_0davHzPyEei3dfHtumI11Q" instantiates="_0davFTPyEei3dfHtumI11Q"/>
+    <assmComponents name="activeMqConnectionFactory" id="_0dtqADPyEei3dfHtumI11Q" instantiates="_0dkgEDPyEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_0dtqATPyEei3dfHtumI11Q" instantiates="_0dkgETPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultQueueDestination" id="_0dtqAjPyEei3dfHtumI11Q" instantiates="_0dkgEjPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultTopicDestination" id="_0dtqAzPyEei3dfHtumI11Q" instantiates="_0dkgEzPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultMessageQueueListener" id="_0dtqBDPyEei3dfHtumI11Q" instantiates="_0dkgFDPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsContainer" id="_0dtqBTPyEei3dfHtumI11Q" instantiates="_0dkgFTPyEei3dfHtumI11Q"/>
+    <assmComponents name="springContextUtil" id="_0eKV8TPyEei3dfHtumI11Q" instantiates="_0eKV8DPyEei3dfHtumI11Q"/>
+    <assmComponents name="springContextUtil" id="_0enB4TPyEei3dfHtumI11Q" instantiates="_0enB4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="activeMqConnectionFactory" id="_0ewy7TPyEei3dfHtumI11Q" instantiates="_0ewy4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_0ewy7jPyEei3dfHtumI11Q" instantiates="_0ewy4TPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultQueueDestination" id="_0ewy7zPyEei3dfHtumI11Q" instantiates="_0ewy4jPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultTopicDestination" id="_0ewy8DPyEei3dfHtumI11Q" instantiates="_0ewy4zPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsQueueTemplate" id="_0ewy8TPyEei3dfHtumI11Q" instantiates="_0ewy5DPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsTopicTemplate" id="_0ewy8jPyEei3dfHtumI11Q" instantiates="_0ewy5DPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultMessageQueueListener" id="_0ewy8zPyEei3dfHtumI11Q" instantiates="_0ewy5TPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsContainer" id="_0ewy9DPyEei3dfHtumI11Q" instantiates="_0ewy5jPyEei3dfHtumI11Q"/>
+    <assmComponents name="activeMqConnectionFactory" id="_0fDt3TPyEei3dfHtumI11Q" instantiates="_0fDt0DPyEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_0fDt3jPyEei3dfHtumI11Q" instantiates="_0fDt0TPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultQueueDestination" id="_0fDt3zPyEei3dfHtumI11Q" instantiates="_0fDt0jPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultTopicDestination" id="_0fDt4DPyEei3dfHtumI11Q" instantiates="_0fDt0zPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsQueueTemplate" id="_0fDt4TPyEei3dfHtumI11Q" instantiates="_0fDt1DPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsTopicTemplate" id="_0fDt4jPyEei3dfHtumI11Q" instantiates="_0fDt1DPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultMessageQueueListener" id="_0fDt4zPyEei3dfHtumI11Q" instantiates="_0fDt1TPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsContainer" id="_0fDt5DPyEei3dfHtumI11Q" instantiates="_0fDt1jPyEei3dfHtumI11Q"/>
+    <assmComponents name="activeMqConnectionFactory" id="_0fWoyjPyEei3dfHtumI11Q" instantiates="_0fM3wDPyEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_0fWoyzPyEei3dfHtumI11Q" instantiates="_0fM3wTPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultQueueDestination" id="_0fWozDPyEei3dfHtumI11Q" instantiates="_0fM3wjPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultTopicDestination" id="_0fWozTPyEei3dfHtumI11Q" instantiates="_0fWowDPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsQueueTemplate" id="_0fWozjPyEei3dfHtumI11Q" instantiates="_0fWowTPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsTopicTemplate" id="_0fWozzPyEei3dfHtumI11Q" instantiates="_0fWowTPyEei3dfHtumI11Q"/>
+    <assmComponents name="defaultMessageQueueListener" id="_0fWo0DPyEei3dfHtumI11Q" instantiates="_0fWowjPyEei3dfHtumI11Q"/>
+    <assmComponents name="jmsContainer" id="_0fWo0TPyEei3dfHtumI11Q" instantiates="_0fWowzPyEei3dfHtumI11Q"/>
+    <assmComponents name="springContextUtil" id="_0fXP0TPyEei3dfHtumI11Q" instantiates="_0fXP0DPyEei3dfHtumI11Q"/>
+    <assmComponents name="springContextUtil" id="_0f0i0TPyEei3dfHtumI11Q" instantiates="_0f0i0DPyEei3dfHtumI11Q"/>
+    <assmComponents name="demoService" id="_0f9swTPyEei3dfHtumI11Q" instantiates="_0f9swDPyEei3dfHtumI11Q"/>
+    <assmComponents name="demoService" id="_0gROwTPyEei3dfHtumI11Q" instantiates="_0gROwDPyEei3dfHtumI11Q"/>
+    <assmComponents name="aliyunOssClient" id="_0gaYsTPyEei3dfHtumI11Q" instantiates="_0gaYsDPyEei3dfHtumI11Q"/>
+    <assmComponents name="aliyunOssClient" id="_0gtToTPyEei3dfHtumI11Q" instantiates="_0gtToDPyEei3dfHtumI11Q"/>
+    <assmComponents name="springContextUtil" id="_0g3EoTPyEei3dfHtumI11Q" instantiates="_0g3EoDPyEei3dfHtumI11Q"/>
+    <assmComponents name="springContextUtil" id="_0hJ_kTPyEei3dfHtumI11Q" instantiates="_0hJ_kDPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayClient" id="_0hTwmDPyEei3dfHtumI11Q" instantiates="_0hTwkDPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradePagePayRequest" id="_0hTwmTPyEei3dfHtumI11Q" instantiates="_0hTwkTPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradeWapPayRequest" id="_0hTwmjPyEei3dfHtumI11Q" instantiates="_0hTwkjPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradeQueryRequest" id="_0hTwmzPyEei3dfHtumI11Q" instantiates="_0hTwkzPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradeRefundRequest" id="_0hTwnDPyEei3dfHtumI11Q" instantiates="_0hTwlDPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradeFastpayRefundQueryRequest" id="_0hTwnTPyEei3dfHtumI11Q" instantiates="_0hTwlTPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradeCloseRequest" id="_0hTwnjPyEei3dfHtumI11Q" instantiates="_0hTwljPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayDataDataserviceBillDownloadurlQueryRequest" id="_0hTwnzPyEei3dfHtumI11Q" instantiates="_0hTwlzPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayClient" id="_0hmriDPyEei3dfHtumI11Q" instantiates="_0hmrgDPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradePagePayRequest" id="_0hmriTPyEei3dfHtumI11Q" instantiates="_0hmrgTPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradeWapPayRequest" id="_0hmrijPyEei3dfHtumI11Q" instantiates="_0hmrgjPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradeQueryRequest" id="_0hmrizPyEei3dfHtumI11Q" instantiates="_0hmrgzPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradeRefundRequest" id="_0hmrjDPyEei3dfHtumI11Q" instantiates="_0hmrhDPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradeFastpayRefundQueryRequest" id="_0hmrjTPyEei3dfHtumI11Q" instantiates="_0hmrhTPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradeCloseRequest" id="_0hmrjjPyEei3dfHtumI11Q" instantiates="_0hmrhjPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayDataDataserviceBillDownloadurlQueryRequest" id="_0hmrjzPyEei3dfHtumI11Q" instantiates="_0hmrhzPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayClient" id="_0h5meDPyEei3dfHtumI11Q" instantiates="_0h5mcDPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradePagePayRequest" id="_0h5meTPyEei3dfHtumI11Q" instantiates="_0h5mcTPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradeWapPayRequest" id="_0h5mejPyEei3dfHtumI11Q" instantiates="_0h5mcjPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradeQueryRequest" id="_0h5mezPyEei3dfHtumI11Q" instantiates="_0h5mczPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradeRefundRequest" id="_0h5mfDPyEei3dfHtumI11Q" instantiates="_0h5mdDPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradeFastpayRefundQueryRequest" id="_0h5mfTPyEei3dfHtumI11Q" instantiates="_0h5mdTPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayTradeCloseRequest" id="_0h5mfjPyEei3dfHtumI11Q" instantiates="_0h5mdjPyEei3dfHtumI11Q"/>
+    <assmComponents name="alipayDataDataserviceBillDownloadurlQueryRequest" id="_0h5mfzPyEei3dfHtumI11Q" instantiates="_0h5mdzPyEei3dfHtumI11Q"/>
+    <assmComponents name="springContextUtil" id="_0iDXcTPyEei3dfHtumI11Q" instantiates="_0iDXcDPyEei3dfHtumI11Q"/>
+    <assmComponents name="springContextUtil" id="_0iWSYTPyEei3dfHtumI11Q" instantiates="_0iWSYDPyEei3dfHtumI11Q"/>
+    <assmComponents name="shiroFilter" id="_0ipNXjPyEei3dfHtumI11Q" instantiates="_0igDYDPyEei3dfHtumI11Q"/>
+    <assmComponents name="upmsAuthenticationFilter" id="_0ipNXzPyEei3dfHtumI11Q" instantiates="_0igDYTPyEei3dfHtumI11Q"/>
+    <assmComponents name="upmsSessionForceLogout" id="_0ipNYDPyEei3dfHtumI11Q" instantiates="_0igDYjPyEei3dfHtumI11Q"/>
+    <assmComponents name="securityManager" id="_0ipNYTPyEei3dfHtumI11Q" instantiates="_0igDYzPyEei3dfHtumI11Q"/>
+    <assmComponents name="upmsRealm" id="_0ipNYjPyEei3dfHtumI11Q" instantiates="_0igDZDPyEei3dfHtumI11Q"/>
+    <assmComponents name="sessionManager" id="_0ipNYzPyEei3dfHtumI11Q" instantiates="_0igDZTPyEei3dfHtumI11Q"/>
+    <assmComponents name="sessionDAO" id="_0ipNZDPyEei3dfHtumI11Q" instantiates="_0igDZjPyEei3dfHtumI11Q"/>
+    <assmComponents name="sessionIdCookie" id="_0ipNZTPyEei3dfHtumI11Q" instantiates="_0igDZzPyEei3dfHtumI11Q"/>
+    <assmComponents name="sessionListener" id="_0ipNZjPyEei3dfHtumI11Q" instantiates="_0igDaDPyEei3dfHtumI11Q"/>
+    <assmComponents name="sessionFactory" id="_0ipNZzPyEei3dfHtumI11Q" instantiates="_0igDaTPyEei3dfHtumI11Q"/>
+    <assmComponents name="rememberMeManager" id="_0ipNaDPyEei3dfHtumI11Q" instantiates="_0igDajPyEei3dfHtumI11Q"/>
+    <assmComponents name="rememberMeCookie" id="_0ipNaTPyEei3dfHtumI11Q" instantiates="_0igDZzPyEei3dfHtumI11Q"/>
+    <assmComponents id="_0ipNajPyEei3dfHtumI11Q" instantiates="_0igDazPyEei3dfHtumI11Q"/>
+    <assmComponents id="_0ipNazPyEei3dfHtumI11Q" instantiates="_0igDbDPyEei3dfHtumI11Q"/>
+    <assmComponents id="_0ipNbDPyEei3dfHtumI11Q" instantiates="_0ipNUDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lifecycleBeanPostProcessor&quot;" id="_0ipNbTPyEei3dfHtumI11Q" instantiates="_0ipNUTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shiroFilter&quot;" id="_0jF5WzPyEei3dfHtumI11Q" instantiates="_0jF5QDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;upmsAuthenticationFilter&quot;" id="_0jF5XDPyEei3dfHtumI11Q" instantiates="_0jF5QTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;upmsSessionForceLogout&quot;" id="_0jF5XTPyEei3dfHtumI11Q" instantiates="_0jF5QjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;securityManager&quot;" id="_0jF5XjPyEei3dfHtumI11Q" instantiates="_0jF5QzPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;upmsRealm&quot;" id="_0jF5XzPyEei3dfHtumI11Q" instantiates="_0jF5RDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionManager&quot;" id="_0jF5YDPyEei3dfHtumI11Q" instantiates="_0jF5RTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionDAO&quot;" id="_0jF5YTPyEei3dfHtumI11Q" instantiates="_0jF5RjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionIdCookie&quot;" id="_0jF5YjPyEei3dfHtumI11Q" instantiates="_0jF5WDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionListener&quot;" id="_0jF5YzPyEei3dfHtumI11Q" instantiates="_0jF5SDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sessionFactory&quot;" id="_0jF5ZDPyEei3dfHtumI11Q" instantiates="_0jF5STPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;rememberMeManager&quot;" id="_0jF5ZTPyEei3dfHtumI11Q" instantiates="_0jF5SjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;rememberMeCookie&quot;" id="_0jF5ZjPyEei3dfHtumI11Q" instantiates="_0jF5WDPyEei3dfHtumI11Q"/>
+    <assmComponents id="_0jF5ZzPyEei3dfHtumI11Q" instantiates="_0jF5SzPyEei3dfHtumI11Q"/>
+    <assmComponents id="_0jF5aDPyEei3dfHtumI11Q" instantiates="_0jF5TDPyEei3dfHtumI11Q"/>
+    <assmComponents id="_0jF5aTPyEei3dfHtumI11Q" instantiates="_0jF5TTPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lifecycleBeanPostProcessor&quot;" id="_0jF5ajPyEei3dfHtumI11Q" instantiates="_0jF5TjPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;springContextUtil&quot;" id="_0j1gITPyEei3dfHtumI11Q" instantiates="_0j1gIDPyEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;springContextUtil&quot;" id="_0kSMETPyEei3dfHtumI11Q" instantiates="_0kSMEDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0bomdTPyEei3dfHtumI11Q" property="connectionFactory.targetConnectionFactory" clientInstElem="_0bombjPyEei3dfHtumI11Q" serverInstElem="_0bombTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0bomdjPyEei3dfHtumI11Q" property="jmsQueueTemplate.connectionFactory" clientInstElem="_0bomcTPyEei3dfHtumI11Q" serverInstElem="_0bombjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0bomdzPyEei3dfHtumI11Q" property="jmsTopicTemplate.connectionFactory" clientInstElem="_0bomcjPyEei3dfHtumI11Q" serverInstElem="_0bombjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0bomeDPyEei3dfHtumI11Q" property="jmsContainer.connectionFactory" clientInstElem="_0bomdDPyEei3dfHtumI11Q" serverInstElem="_0bombjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0bomeTPyEei3dfHtumI11Q" property="jmsContainer.destination" clientInstElem="_0bomdDPyEei3dfHtumI11Q" serverInstElem="_0bombzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0bomejPyEei3dfHtumI11Q" property="jmsContainer.messageListener" clientInstElem="_0bomdDPyEei3dfHtumI11Q" serverInstElem="_0bomczPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0b7hVDPyEei3dfHtumI11Q" property="connectionFactory.targetConnectionFactory" clientInstElem="_0byXbjPyEei3dfHtumI11Q" serverInstElem="_0byXbTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0b7hVTPyEei3dfHtumI11Q" property="jmsQueueTemplate.connectionFactory" clientInstElem="_0b7hUDPyEei3dfHtumI11Q" serverInstElem="_0byXbjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0b7hVjPyEei3dfHtumI11Q" property="jmsTopicTemplate.connectionFactory" clientInstElem="_0b7hUTPyEei3dfHtumI11Q" serverInstElem="_0byXbjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0b7hVzPyEei3dfHtumI11Q" property="jmsContainer.connectionFactory" clientInstElem="_0b7hUzPyEei3dfHtumI11Q" serverInstElem="_0byXbjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0b7hWDPyEei3dfHtumI11Q" property="jmsContainer.destination" clientInstElem="_0b7hUzPyEei3dfHtumI11Q" serverInstElem="_0byXbzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0b7hWTPyEei3dfHtumI11Q" property="jmsContainer.messageListener" clientInstElem="_0b7hUzPyEei3dfHtumI11Q" serverInstElem="_0b7hUjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0cFSZTPyEei3dfHtumI11Q" property="connectionFactory.targetConnectionFactory" clientInstElem="_0cFSXjPyEei3dfHtumI11Q" serverInstElem="_0cFSXTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0cFSZjPyEei3dfHtumI11Q" property="jmsQueueTemplate.connectionFactory" clientInstElem="_0cFSYTPyEei3dfHtumI11Q" serverInstElem="_0cFSXjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0cFSZzPyEei3dfHtumI11Q" property="jmsTopicTemplate.connectionFactory" clientInstElem="_0cFSYjPyEei3dfHtumI11Q" serverInstElem="_0cFSXjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0cFSaDPyEei3dfHtumI11Q" property="jmsContainer.connectionFactory" clientInstElem="_0cFSZDPyEei3dfHtumI11Q" serverInstElem="_0cFSXjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0cFSaTPyEei3dfHtumI11Q" property="jmsContainer.destination" clientInstElem="_0cFSZDPyEei3dfHtumI11Q" serverInstElem="_0cFSXzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0cFSajPyEei3dfHtumI11Q" property="jmsContainer.messageListener" clientInstElem="_0cFSZDPyEei3dfHtumI11Q" serverInstElem="_0cFSYzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0cYNVTPyEei3dfHtumI11Q" property="connectionFactory.targetConnectionFactory" clientInstElem="_0cYNTjPyEei3dfHtumI11Q" serverInstElem="_0cYNTTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0cYNVjPyEei3dfHtumI11Q" property="jmsQueueTemplate.connectionFactory" clientInstElem="_0cYNUTPyEei3dfHtumI11Q" serverInstElem="_0cYNTjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0cYNVzPyEei3dfHtumI11Q" property="jmsTopicTemplate.connectionFactory" clientInstElem="_0cYNUjPyEei3dfHtumI11Q" serverInstElem="_0cYNTjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0cYNWDPyEei3dfHtumI11Q" property="jmsContainer.connectionFactory" clientInstElem="_0cYNVDPyEei3dfHtumI11Q" serverInstElem="_0cYNTjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0cYNWTPyEei3dfHtumI11Q" property="jmsContainer.destination" clientInstElem="_0cYNVDPyEei3dfHtumI11Q" serverInstElem="_0cYNTzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0cYNWjPyEei3dfHtumI11Q" property="jmsContainer.messageListener" clientInstElem="_0cYNVDPyEei3dfHtumI11Q" serverInstElem="_0cYNUzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0crINzPyEei3dfHtumI11Q" property="connectionFactory.targetConnectionFactory" clientInstElem="_0crIMDPyEei3dfHtumI11Q" serverInstElem="_0ch-TTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0crIODPyEei3dfHtumI11Q" property="jmsQueueTemplate.connectionFactory" clientInstElem="_0crIMzPyEei3dfHtumI11Q" serverInstElem="_0crIMDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0crIOTPyEei3dfHtumI11Q" property="jmsTopicTemplate.connectionFactory" clientInstElem="_0crINDPyEei3dfHtumI11Q" serverInstElem="_0crIMDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0crIOjPyEei3dfHtumI11Q" property="jmsContainer.connectionFactory" clientInstElem="_0crINjPyEei3dfHtumI11Q" serverInstElem="_0crIMDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0crIOzPyEei3dfHtumI11Q" property="jmsContainer.destination" clientInstElem="_0crINjPyEei3dfHtumI11Q" serverInstElem="_0crIMTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0crIPDPyEei3dfHtumI11Q" property="jmsContainer.messageListener" clientInstElem="_0crINjPyEei3dfHtumI11Q" serverInstElem="_0crINTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0c-DLTPyEei3dfHtumI11Q" property="connectionFactory.targetConnectionFactory" clientInstElem="_0c-DJjPyEei3dfHtumI11Q" serverInstElem="_0c-DJTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0c-DLjPyEei3dfHtumI11Q" property="jmsQueueTemplate.connectionFactory" clientInstElem="_0c-DKTPyEei3dfHtumI11Q" serverInstElem="_0c-DJjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0c-DLzPyEei3dfHtumI11Q" property="jmsTopicTemplate.connectionFactory" clientInstElem="_0c-DKjPyEei3dfHtumI11Q" serverInstElem="_0c-DJjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0c-DMDPyEei3dfHtumI11Q" property="jmsContainer.connectionFactory" clientInstElem="_0c-DLDPyEei3dfHtumI11Q" serverInstElem="_0c-DJjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0c-DMTPyEei3dfHtumI11Q" property="jmsContainer.destination" clientInstElem="_0c-DLDPyEei3dfHtumI11Q" serverInstElem="_0c-DJzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0c-DMjPyEei3dfHtumI11Q" property="jmsContainer.messageListener" clientInstElem="_0c-DLDPyEei3dfHtumI11Q" serverInstElem="_0c-DKzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0dH0MDPyEei3dfHtumI11Q" property="connectionFactory.targetConnectionFactory" clientInstElem="_0dH0KzPyEei3dfHtumI11Q" serverInstElem="_0dH0KjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0dH0MTPyEei3dfHtumI11Q" property="jmsContainer.connectionFactory" clientInstElem="_0dH0LzPyEei3dfHtumI11Q" serverInstElem="_0dH0KzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0dH0MjPyEei3dfHtumI11Q" property="jmsContainer.destination" clientInstElem="_0dH0LzPyEei3dfHtumI11Q" serverInstElem="_0dH0LDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0dH0MzPyEei3dfHtumI11Q" property="jmsContainer.messageListener" clientInstElem="_0dH0LzPyEei3dfHtumI11Q" serverInstElem="_0dH0LjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0davIDPyEei3dfHtumI11Q" property="connectionFactory.targetConnectionFactory" clientInstElem="_0davGzPyEei3dfHtumI11Q" serverInstElem="_0davGjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0davITPyEei3dfHtumI11Q" property="jmsContainer.connectionFactory" clientInstElem="_0davHzPyEei3dfHtumI11Q" serverInstElem="_0davGzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0davIjPyEei3dfHtumI11Q" property="jmsContainer.destination" clientInstElem="_0davHzPyEei3dfHtumI11Q" serverInstElem="_0davHDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0davIzPyEei3dfHtumI11Q" property="jmsContainer.messageListener" clientInstElem="_0davHzPyEei3dfHtumI11Q" serverInstElem="_0davHjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0dtqBjPyEei3dfHtumI11Q" property="connectionFactory.targetConnectionFactory" clientInstElem="_0dtqATPyEei3dfHtumI11Q" serverInstElem="_0dtqADPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0dtqBzPyEei3dfHtumI11Q" property="jmsContainer.connectionFactory" clientInstElem="_0dtqBTPyEei3dfHtumI11Q" serverInstElem="_0dtqATPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0dtqCDPyEei3dfHtumI11Q" property="jmsContainer.destination" clientInstElem="_0dtqBTPyEei3dfHtumI11Q" serverInstElem="_0dtqAjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0dtqCTPyEei3dfHtumI11Q" property="jmsContainer.messageListener" clientInstElem="_0dtqBTPyEei3dfHtumI11Q" serverInstElem="_0dtqBDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0ewy9TPyEei3dfHtumI11Q" property="connectionFactory.targetConnectionFactory" clientInstElem="_0ewy7jPyEei3dfHtumI11Q" serverInstElem="_0ewy7TPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0ewy9jPyEei3dfHtumI11Q" property="jmsQueueTemplate.connectionFactory" clientInstElem="_0ewy8TPyEei3dfHtumI11Q" serverInstElem="_0ewy7jPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0ewy9zPyEei3dfHtumI11Q" property="jmsTopicTemplate.connectionFactory" clientInstElem="_0ewy8jPyEei3dfHtumI11Q" serverInstElem="_0ewy7jPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0ewy-DPyEei3dfHtumI11Q" property="jmsContainer.connectionFactory" clientInstElem="_0ewy9DPyEei3dfHtumI11Q" serverInstElem="_0ewy7jPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0ewy-TPyEei3dfHtumI11Q" property="jmsContainer.destination" clientInstElem="_0ewy9DPyEei3dfHtumI11Q" serverInstElem="_0ewy7zPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0ewy-jPyEei3dfHtumI11Q" property="jmsContainer.messageListener" clientInstElem="_0ewy9DPyEei3dfHtumI11Q" serverInstElem="_0ewy8zPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0fDt5TPyEei3dfHtumI11Q" property="connectionFactory.targetConnectionFactory" clientInstElem="_0fDt3jPyEei3dfHtumI11Q" serverInstElem="_0fDt3TPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0fDt5jPyEei3dfHtumI11Q" property="jmsQueueTemplate.connectionFactory" clientInstElem="_0fDt4TPyEei3dfHtumI11Q" serverInstElem="_0fDt3jPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0fDt5zPyEei3dfHtumI11Q" property="jmsTopicTemplate.connectionFactory" clientInstElem="_0fDt4jPyEei3dfHtumI11Q" serverInstElem="_0fDt3jPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0fDt6DPyEei3dfHtumI11Q" property="jmsContainer.connectionFactory" clientInstElem="_0fDt5DPyEei3dfHtumI11Q" serverInstElem="_0fDt3jPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0fDt6TPyEei3dfHtumI11Q" property="jmsContainer.destination" clientInstElem="_0fDt5DPyEei3dfHtumI11Q" serverInstElem="_0fDt3zPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0fDt6jPyEei3dfHtumI11Q" property="jmsContainer.messageListener" clientInstElem="_0fDt5DPyEei3dfHtumI11Q" serverInstElem="_0fDt4zPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0fWo0jPyEei3dfHtumI11Q" property="connectionFactory.targetConnectionFactory" clientInstElem="_0fWoyzPyEei3dfHtumI11Q" serverInstElem="_0fWoyjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0fWo0zPyEei3dfHtumI11Q" property="jmsQueueTemplate.connectionFactory" clientInstElem="_0fWozjPyEei3dfHtumI11Q" serverInstElem="_0fWoyzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0fWo1DPyEei3dfHtumI11Q" property="jmsTopicTemplate.connectionFactory" clientInstElem="_0fWozzPyEei3dfHtumI11Q" serverInstElem="_0fWoyzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0fWo1TPyEei3dfHtumI11Q" property="jmsContainer.connectionFactory" clientInstElem="_0fWo0TPyEei3dfHtumI11Q" serverInstElem="_0fWoyzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0fWo1jPyEei3dfHtumI11Q" property="jmsContainer.destination" clientInstElem="_0fWo0TPyEei3dfHtumI11Q" serverInstElem="_0fWozDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0fWo1zPyEei3dfHtumI11Q" property="jmsContainer.messageListener" clientInstElem="_0fWo0TPyEei3dfHtumI11Q" serverInstElem="_0fWo0DPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0ipNbjPyEei3dfHtumI11Q" property="shiroFilter.securityManager" clientInstElem="_0ipNXjPyEei3dfHtumI11Q" serverInstElem="_0ipNYTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0ipNbzPyEei3dfHtumI11Q" property="securityManager.realms" clientInstElem="_0ipNYTPyEei3dfHtumI11Q" serverInstElem="_0ipNYjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0ipNcDPyEei3dfHtumI11Q" property="securityManager.sessionManager" clientInstElem="_0ipNYTPyEei3dfHtumI11Q" serverInstElem="_0ipNYzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0ipNcTPyEei3dfHtumI11Q" property="securityManager.rememberMeManager" clientInstElem="_0ipNYTPyEei3dfHtumI11Q" serverInstElem="_0ipNaDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0ipNcjPyEei3dfHtumI11Q" property="sessionManager.sessionDAO" clientInstElem="_0ipNYzPyEei3dfHtumI11Q" serverInstElem="_0ipNZDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0ipNczPyEei3dfHtumI11Q" property="sessionManager.sessionIdCookie" clientInstElem="_0ipNYzPyEei3dfHtumI11Q" serverInstElem="_0ipNZTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0ipNdDPyEei3dfHtumI11Q" property="sessionManager.sessionListeners" clientInstElem="_0ipNYzPyEei3dfHtumI11Q" serverInstElem="_0ipNZjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0ipNdTPyEei3dfHtumI11Q" property="sessionManager.sessionFactory" clientInstElem="_0ipNYzPyEei3dfHtumI11Q" serverInstElem="_0ipNZzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0ipNdjPyEei3dfHtumI11Q" property="rememberMeManager.cookie" clientInstElem="_0ipNaDPyEei3dfHtumI11Q" serverInstElem="_0ipNaTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0ipNdzPyEei3dfHtumI11Q" clientInstElem="_0ipNajPyEei3dfHtumI11Q" serverInstElem="_0ipNYTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0ipNeDPyEei3dfHtumI11Q" clientInstElem="_0ipNajPyEei3dfHtumI11Q" serverInstElem="_0ipNYTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0jF5azPyEei3dfHtumI11Q" property="shiroFilter.securityManager" clientInstElem="_0jF5WzPyEei3dfHtumI11Q" serverInstElem="_0jF5XjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0jF5bDPyEei3dfHtumI11Q" property="securityManager.realms" clientInstElem="_0jF5XjPyEei3dfHtumI11Q" serverInstElem="_0jF5XzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0jF5bTPyEei3dfHtumI11Q" property="securityManager.sessionManager" clientInstElem="_0jF5XjPyEei3dfHtumI11Q" serverInstElem="_0jF5YDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0jF5bjPyEei3dfHtumI11Q" property="securityManager.rememberMeManager" clientInstElem="_0jF5XjPyEei3dfHtumI11Q" serverInstElem="_0jF5ZTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0jF5bzPyEei3dfHtumI11Q" property="sessionManager.sessionDAO" clientInstElem="_0jF5YDPyEei3dfHtumI11Q" serverInstElem="_0jF5YTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0jF5cDPyEei3dfHtumI11Q" property="sessionManager.sessionIdCookie" clientInstElem="_0jF5YDPyEei3dfHtumI11Q" serverInstElem="_0jF5YjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0jF5cTPyEei3dfHtumI11Q" property="sessionManager.sessionListeners" clientInstElem="_0jF5YDPyEei3dfHtumI11Q" serverInstElem="_0jF5YzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0jF5cjPyEei3dfHtumI11Q" property="sessionManager.sessionFactory" clientInstElem="_0jF5YDPyEei3dfHtumI11Q" serverInstElem="_0jF5ZDPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0jF5czPyEei3dfHtumI11Q" property="rememberMeManager.cookie" clientInstElem="_0jF5ZTPyEei3dfHtumI11Q" serverInstElem="_0jF5ZjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0jF5dDPyEei3dfHtumI11Q" clientInstElem="_0jF5aDPyEei3dfHtumI11Q" serverInstElem="_0jF5XjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_0jF5dTPyEei3dfHtumI11Q" clientInstElem="_0jF5aDPyEei3dfHtumI11Q" serverInstElem="_0jF5XjPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="shuzheng.zheng_spec">
+    <specConnections refID="_0k4pADPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pATPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pAjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pAzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pBDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pBTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pBjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pBzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pCDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pCTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pCjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pCzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pDDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pDTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pDjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pDzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pEDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pETPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pEjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pEzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pFDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pFTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pFjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pFzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pGDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pGTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pGjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pGzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pHDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pHTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pHjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pHzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pIDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pITPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pIjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pIzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pJDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pJTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pJjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pJzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pKDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pKTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pKjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pKzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pLDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pLTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pLjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pLzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pMDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pMTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pMjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pMzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pNDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pNTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pNjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pNzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pODPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pOTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pOjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pOzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pPDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pPTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pPjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pPzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pQDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pQTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pQjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pQzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pRDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pRTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pRjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pRzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pSDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pSTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pSjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pSzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pTDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pTTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pTjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pTzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pUDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pUTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pUjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pUzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pVDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pVTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pVjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_0k4pVzPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

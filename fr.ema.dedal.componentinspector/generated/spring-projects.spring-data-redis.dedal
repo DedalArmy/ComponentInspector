@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="spring-projects.spring-data-redis">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="spring-projects.spring-data-redis_config" implements="//@architectureDescriptions[name='spring-projects.spring-data-redis_spec']">
+    <configComponents name="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" id="_Df2zgDPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" id="_DgJucDPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory" id="_DgTfcDPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.listener.adapter.MessageListenerAdapter" id="_DgmaYDPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" id="_DgmaYTPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.listener.RedisMessageListenerContainer" id="_DgmaYjPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" id="_Dg5VUDPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.core.RedisTemplate" id="_Dg5VUTPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.RedisViewPE" id="_Dg5VUjPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" id="_DhDGUDPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.core.StringRedisTemplate" id="_DhDGUTPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" id="_DhWBQDPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" id="_DhWoUDPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory" id="_DhzUQDPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.listener.adapter.MessageListenerAdapter" id="_Dh8eMDPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" id="_Dh8eMTPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.listener.RedisMessageListenerContainer" id="_Dh8eMjPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" id="_DiQAMDPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.core.RedisTemplate" id="_DiQAMTPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.RedisViewPE" id="_DiQAMjPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" id="_Dii7IDPzEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.data.redis.core.StringRedisTemplate" id="_Dii7ITPzEei3dfHtumI11Q"/>
+    <configConnections refID="_DgJucTPzEei3dfHtumI11Q" property="&quot;hostName&quot;" clientClassElem="_DgJucDPzEei3dfHtumI11Q" serverClassElem="_DgJucjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_DgJuczPzEei3dfHtumI11Q" property="&quot;port&quot;" clientClassElem="_DgJucDPzEei3dfHtumI11Q" serverClassElem="_DgJudDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_DgTfcTPzEei3dfHtumI11Q" property="&quot;hostName&quot;" clientClassElem="_DgTfcDPzEei3dfHtumI11Q" serverClassElem="_DgTfcjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_DgTfczPzEei3dfHtumI11Q" property="&quot;port&quot;" clientClassElem="_DgTfcDPzEei3dfHtumI11Q" serverClassElem="_DgTfdDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_DgTfdTPzEei3dfHtumI11Q" property="&quot;clientResources&quot;" clientClassElem="_DgTfcDPzEei3dfHtumI11Q" serverClassElem="_DgTfdjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_DgmaYzPzEei3dfHtumI11Q" clientClassElem="_DgmaYDPzEei3dfHtumI11Q" serverClassElem="_DgmaZDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_DgmaZTPzEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_DgmaYjPzEei3dfHtumI11Q" serverClassElem="_DgmaYTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_DgmaZjPzEei3dfHtumI11Q" property="&quot;messageListeners&quot;" clientClassElem="_DgmaYjPzEei3dfHtumI11Q" serverClassElem="_DgmaYDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_DgmaZzPzEei3dfHtumI11Q" property="&quot;messageListeners&quot;" clientClassElem="_DgmaYjPzEei3dfHtumI11Q" serverClassElem="_DgmaaDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_DhDGUjPzEei3dfHtumI11Q" property="connectionFactory" clientClassElem="_DhDGUTPzEei3dfHtumI11Q" serverClassElem="_DhDGUDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_DhWoUTPzEei3dfHtumI11Q" property="&quot;hostName&quot;" clientClassElem="_DhWoUDPzEei3dfHtumI11Q" serverClassElem="_DhWoUjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_DhWoUzPzEei3dfHtumI11Q" property="&quot;port&quot;" clientClassElem="_DhWoUDPzEei3dfHtumI11Q" serverClassElem="_DhWoVDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_DhzUQTPzEei3dfHtumI11Q" property="&quot;hostName&quot;" clientClassElem="_DhzUQDPzEei3dfHtumI11Q" serverClassElem="_DhzUQjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_DhzUQzPzEei3dfHtumI11Q" property="&quot;port&quot;" clientClassElem="_DhzUQDPzEei3dfHtumI11Q" serverClassElem="_DhzURDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_DhzURTPzEei3dfHtumI11Q" property="&quot;clientResources&quot;" clientClassElem="_DhzUQDPzEei3dfHtumI11Q" serverClassElem="_DhzURjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_Dh8eMzPzEei3dfHtumI11Q" clientClassElem="_Dh8eMDPzEei3dfHtumI11Q" serverClassElem="_Dh8eNDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_Dh8eNTPzEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_Dh8eMjPzEei3dfHtumI11Q" serverClassElem="_Dh8eMTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_Dh8eNjPzEei3dfHtumI11Q" property="&quot;messageListeners&quot;" clientClassElem="_Dh8eMjPzEei3dfHtumI11Q" serverClassElem="_Dh8eMDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_DiGPMDPzEei3dfHtumI11Q" property="&quot;messageListeners&quot;" clientClassElem="_Dh8eMjPzEei3dfHtumI11Q" serverClassElem="_DiGPMTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_Dii7IjPzEei3dfHtumI11Q" property="connectionFactory" clientClassElem="_Dii7ITPzEei3dfHtumI11Q" serverClassElem="_Dii7IDPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="spring-projects.spring-data-redis_asm" instantiates="//@architectureDescriptions[name='spring-projects.spring-data-redis_config']">
+    <assmComponents name="redisConnectionFactory" id="_Df2zgTPzEei3dfHtumI11Q" instantiates="_Df2zgDPzEei3dfHtumI11Q"/>
+    <assmComponents name="jedisConnectionFactory" id="_DgJudTPzEei3dfHtumI11Q" instantiates="_DgJucDPzEei3dfHtumI11Q"/>
+    <assmComponents name="lettuceConnectionFactory " id="_DgTfdzPzEei3dfHtumI11Q" instantiates="_DgTfcDPzEei3dfHtumI11Q"/>
+    <assmComponents name="messageListener" id="_DgmaaTPzEei3dfHtumI11Q" instantiates="_DgmaYDPzEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_DgmaajPzEei3dfHtumI11Q" instantiates="_DgmaYTPzEei3dfHtumI11Q"/>
+    <assmComponents name="redisContainer" id="_DgmaazPzEei3dfHtumI11Q" instantiates="_DgmaYjPzEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_Dg5VVDPzEei3dfHtumI11Q" instantiates="_Dg5VUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="redisTemplate" id="_Dg5VVTPzEei3dfHtumI11Q" instantiates="_Dg5VUTPzEei3dfHtumI11Q"/>
+    <assmComponents name="injected" id="_Dg5VVjPzEei3dfHtumI11Q" instantiates="_Dg5VUjPzEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_DhDGUzPzEei3dfHtumI11Q" instantiates="_DhDGUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="redisTemplate" id="_DhDGVDPzEei3dfHtumI11Q" instantiates="_DhDGUTPzEei3dfHtumI11Q"/>
+    <assmComponents name="redisConnectionFactory" id="_DhWBQTPzEei3dfHtumI11Q" instantiates="_DhWBQDPzEei3dfHtumI11Q"/>
+    <assmComponents name="jedisConnectionFactory" id="_DhWoVTPzEei3dfHtumI11Q" instantiates="_DhWoUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="lettuceConnectionFactory " id="_DhzURzPzEei3dfHtumI11Q" instantiates="_DhzUQDPzEei3dfHtumI11Q"/>
+    <assmComponents name="messageListener" id="_DiGPMjPzEei3dfHtumI11Q" instantiates="_Dh8eMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_DiGPMzPzEei3dfHtumI11Q" instantiates="_Dh8eMTPzEei3dfHtumI11Q"/>
+    <assmComponents name="redisContainer" id="_DiGPNDPzEei3dfHtumI11Q" instantiates="_Dh8eMjPzEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_DiQANDPzEei3dfHtumI11Q" instantiates="_DiQAMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="redisTemplate" id="_DiQANTPzEei3dfHtumI11Q" instantiates="_DiQAMTPzEei3dfHtumI11Q"/>
+    <assmComponents name="injected" id="_DiQANjPzEei3dfHtumI11Q" instantiates="_DiQAMjPzEei3dfHtumI11Q"/>
+    <assmComponents name="connectionFactory" id="_Dii7IzPzEei3dfHtumI11Q" instantiates="_Dii7IDPzEei3dfHtumI11Q"/>
+    <assmComponents name="redisTemplate" id="_Dii7JDPzEei3dfHtumI11Q" instantiates="_Dii7ITPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DgJudjPzEei3dfHtumI11Q" property="jedisConnectionFactory.hostName" clientInstElem="_DgJudTPzEei3dfHtumI11Q" serverInstElem="_DgJudzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DgJueDPzEei3dfHtumI11Q" property="jedisConnectionFactory.port" clientInstElem="_DgJudTPzEei3dfHtumI11Q" serverInstElem="_DgJueTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DgTfeDPzEei3dfHtumI11Q" property="lettuceConnectionFactory .hostName" clientInstElem="_DgTfdzPzEei3dfHtumI11Q" serverInstElem="_DgTfeTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DgTfejPzEei3dfHtumI11Q" property="lettuceConnectionFactory .port" clientInstElem="_DgTfdzPzEei3dfHtumI11Q" serverInstElem="_DgTfezPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DgTffDPzEei3dfHtumI11Q" property="lettuceConnectionFactory .clientResources" clientInstElem="_DgTfdzPzEei3dfHtumI11Q" serverInstElem="_DgTffTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DgmabDPzEei3dfHtumI11Q" clientInstElem="_DgmaaTPzEei3dfHtumI11Q" serverInstElem="_DgmabTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DgmabjPzEei3dfHtumI11Q" property="redisContainer.connectionFactory" clientInstElem="_DgmaazPzEei3dfHtumI11Q" serverInstElem="_DgmaajPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DgmabzPzEei3dfHtumI11Q" property="redisContainer.messageListeners" clientInstElem="_DgmaazPzEei3dfHtumI11Q" serverInstElem="_DgmaaTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DgmacDPzEei3dfHtumI11Q" property="redisContainer.messageListeners" clientInstElem="_DgmaazPzEei3dfHtumI11Q" serverInstElem="_DgmacTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DhDGVTPzEei3dfHtumI11Q" property="redisTemplate.connectionFactory" clientInstElem="_DhDGVDPzEei3dfHtumI11Q" serverInstElem="_DhDGUzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DhWoVjPzEei3dfHtumI11Q" property="jedisConnectionFactory.hostName" clientInstElem="_DhWoVTPzEei3dfHtumI11Q" serverInstElem="_DhWoVzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DhWoWDPzEei3dfHtumI11Q" property="jedisConnectionFactory.port" clientInstElem="_DhWoVTPzEei3dfHtumI11Q" serverInstElem="_DhWoWTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DhzUSDPzEei3dfHtumI11Q" property="lettuceConnectionFactory .hostName" clientInstElem="_DhzURzPzEei3dfHtumI11Q" serverInstElem="_DhzUSTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DhzUSjPzEei3dfHtumI11Q" property="lettuceConnectionFactory .port" clientInstElem="_DhzURzPzEei3dfHtumI11Q" serverInstElem="_DhzUSzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DhzUTDPzEei3dfHtumI11Q" property="lettuceConnectionFactory .clientResources" clientInstElem="_DhzURzPzEei3dfHtumI11Q" serverInstElem="_DhzUTTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DiGPNTPzEei3dfHtumI11Q" clientInstElem="_DiGPMjPzEei3dfHtumI11Q" serverInstElem="_DiGPNjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DiGPNzPzEei3dfHtumI11Q" property="redisContainer.connectionFactory" clientInstElem="_DiGPNDPzEei3dfHtumI11Q" serverInstElem="_DiGPMzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DiGPODPzEei3dfHtumI11Q" property="redisContainer.messageListeners" clientInstElem="_DiGPNDPzEei3dfHtumI11Q" serverInstElem="_DiGPMjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_DiGPOTPzEei3dfHtumI11Q" property="redisContainer.messageListeners" clientInstElem="_DiGPNDPzEei3dfHtumI11Q" serverInstElem="_DiGPOjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Dii7JTPzEei3dfHtumI11Q" property="redisTemplate.connectionFactory" clientInstElem="_Dii7JDPzEei3dfHtumI11Q" serverInstElem="_Dii7IzPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="spring-projects.spring-data-redis_spec">
+    <specConnections refID="_Di_nEDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nETPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nEjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nEzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nFDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nFTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nFjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nFzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nGDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nGTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nGjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nGzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nHDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nHTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nHjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nHzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nIDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nITPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nIjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_Di_nIzPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

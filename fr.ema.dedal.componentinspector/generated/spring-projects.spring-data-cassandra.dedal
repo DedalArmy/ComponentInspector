@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="spring-projects.spring-data-cassandra">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="spring-projects.spring-data-cassandra_config" implements="//@architectureDescriptions[name='spring-projects.spring-data-cassandra_spec']">
+    <configComponents name="&quot;java.lang.String&quot;" id="_Bd8mIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.cassandra.support.IntegrationTestNettyOptions&quot;" id="_Bd8mITPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.cassandra.support.IntegrationTestNettyOptions&quot;" id="_BeGXIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.cassandra.support.IntegrationTestNettyOptions&quot;" id="_BesNADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.cassandra.config.CassandraMappingBeanFactoryPostProcessorUnitTests.MockSessionFactory&quot;" id="_BfSp8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.cassandra.config.CassandraMappingBeanFactoryPostProcessorUnitTests.MockSessionFactory&quot;" id="_Bflk4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.cassandra.support.IntegrationTestNettyOptions&quot;" id="_BgoGsDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.datastax.driver.core.PlainTextAuthProvider&quot;" id="_BgoGsTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.datastax.driver.core.policies.ConstantReconnectionPolicy&quot;" id="_BgoGsjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.datastax.driver.core.policies.DowngradingConsistencyRetryPolicy&quot;" id="_BgoGszPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.cassandra.config.TestHostStateListener&quot;" id="_BgoGtDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.cassandra.config.TestLatencyTracker&quot;" id="_BgoGtTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.String&quot;" id="_Bh2OsDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.cassandra.support.IntegrationTestNettyOptions&quot;" id="_Bh2OsTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.cassandra.support.IntegrationTestNettyOptions&quot;" id="_BiJJoDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.cassandra.support.IntegrationTestNettyOptions&quot;" id="_Bil1kDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.cassandra.config.CassandraMappingBeanFactoryPostProcessorUnitTests.MockSessionFactory&quot;" id="_BjLrcDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.cassandra.config.CassandraMappingBeanFactoryPostProcessorUnitTests.MockSessionFactory&quot;" id="_BjfNcDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.cassandra.support.IntegrationTestNettyOptions&quot;" id="_Bkq5MDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.datastax.driver.core.PlainTextAuthProvider&quot;" id="_Bkq5MTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.datastax.driver.core.policies.ConstantReconnectionPolicy&quot;" id="_Bkq5MjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.datastax.driver.core.policies.DowngradingConsistencyRetryPolicy&quot;" id="_Bkq5MzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.cassandra.config.TestHostStateListener&quot;" id="_Bkq5NDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.cassandra.config.TestLatencyTracker&quot;" id="_Bkq5NTPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="spring-projects.spring-data-cassandra_asm" instantiates="//@architectureDescriptions[name='spring-projects.spring-data-cassandra_config']">
+    <assmComponents id="_Bd8mIjPzEei3dfHtumI11Q" instantiates="_Bd8mIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;nettyOptions&quot;" id="_Bd8mIzPzEei3dfHtumI11Q" instantiates="_Bd8mITPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;nettyOptions&quot;" id="_BeGXITPzEei3dfHtumI11Q" instantiates="_BeGXIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;nettyOptions&quot;" id="_BesNATPzEei3dfHtumI11Q" instantiates="_BesNADPzEei3dfHtumI11Q"/>
+    <assmComponents id="_BfSp8TPzEei3dfHtumI11Q" instantiates="_BfSp8DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_Bflk4TPzEei3dfHtumI11Q" instantiates="_Bflk4DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;nettyOptions&quot;" id="_BgoGtjPzEei3dfHtumI11Q" instantiates="_BgoGsDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;authProvider&quot;" id="_BgoGtzPzEei3dfHtumI11Q" instantiates="_BgoGsTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;reconnectionPolicy&quot;" id="_Bgx3sDPzEei3dfHtumI11Q" instantiates="_BgoGsjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;retryPolicy&quot;" id="_Bgx3sTPzEei3dfHtumI11Q" instantiates="_BgoGszPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;hostStateListener&quot;" id="_Bgx3sjPzEei3dfHtumI11Q" instantiates="_BgoGtDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;latencyTracker&quot;" id="_Bgx3szPzEei3dfHtumI11Q" instantiates="_BgoGtTPzEei3dfHtumI11Q"/>
+    <assmComponents id="_Bh2OsjPzEei3dfHtumI11Q" instantiates="_Bh2OsDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;nettyOptions&quot;" id="_Bh2OszPzEei3dfHtumI11Q" instantiates="_Bh2OsTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;nettyOptions&quot;" id="_BiJJoTPzEei3dfHtumI11Q" instantiates="_BiJJoDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;nettyOptions&quot;" id="_Bil1kTPzEei3dfHtumI11Q" instantiates="_Bil1kDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_BjLrcTPzEei3dfHtumI11Q" instantiates="_BjLrcDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_BjfNcTPzEei3dfHtumI11Q" instantiates="_BjfNcDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;nettyOptions&quot;" id="_Bkq5NjPzEei3dfHtumI11Q" instantiates="_Bkq5MDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;authProvider&quot;" id="_Bkq5NzPzEei3dfHtumI11Q" instantiates="_Bkq5MTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;reconnectionPolicy&quot;" id="_Bkq5ODPzEei3dfHtumI11Q" instantiates="_Bkq5MjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;retryPolicy&quot;" id="_Bkq5OTPzEei3dfHtumI11Q" instantiates="_Bkq5MzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;hostStateListener&quot;" id="_Bkq5OjPzEei3dfHtumI11Q" instantiates="_Bkq5NDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;latencyTracker&quot;" id="_Bkq5OzPzEei3dfHtumI11Q" instantiates="_Bkq5NTPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="spring-projects.spring-data-cassandra_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

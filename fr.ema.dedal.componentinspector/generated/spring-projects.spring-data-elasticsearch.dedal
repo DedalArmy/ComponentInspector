@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="spring-projects.spring-data-elasticsearch">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="spring-projects.spring-data-elasticsearch_config" implements="//@architectureDescriptions[name='spring-projects.spring-data-elasticsearch_spec']">
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CE_YADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CFSS8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CFcD8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CFu-4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CF4I0DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CGLq0DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.CustomEntityMapper&quot;" id="_CGLq0TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.CustomResultMapper&quot;" id="_CGLq0jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CGelwDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CGnvsDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CG7RsDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CHXWkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CH9zgDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CIQucDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CIjpYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CI2kUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CJKGUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CJdBQDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CJv8MDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CKC3IDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CKWZIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CKfjEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CKyeADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CK8PADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CLPJ8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CLiE4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.CustomEntityMapper&quot;" id="_CLiE4TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.CustomResultMapper&quot;" id="_CLiE4jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CLr14DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CL-w0DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CMRrwDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CMuXsDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CNnvkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CN6qgDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CONlcDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_COggYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_COqRYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CO0pcDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CPHkYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.elasticsearch.core.ElasticsearchTemplate&quot;" id="_CPafUDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CE_YATPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CE_YADPzEei3dfHtumI11Q" serverClassElem="_CE_YAjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CFSS8TPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CFSS8DPzEei3dfHtumI11Q" serverClassElem="_CFSS8jPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CFcD8TPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CFcD8DPzEei3dfHtumI11Q" serverClassElem="_CFcD8jPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CFu-4TPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CFu-4DPzEei3dfHtumI11Q" serverClassElem="_CFu-4jPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CF4I0TPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CF4I0DPzEei3dfHtumI11Q" serverClassElem="_CF4I0jPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CGLq0zPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CGLq0DPzEei3dfHtumI11Q" serverClassElem="_CGLq1DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CGLq1TPzEei3dfHtumI11Q" property="&quot;resultsMapper&quot;" clientClassElem="_CGLq0DPzEei3dfHtumI11Q" serverClassElem="_CGLq1jPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CGLq1zPzEei3dfHtumI11Q" clientClassElem="_CGLq0jPzEei3dfHtumI11Q" serverClassElem="_CGLq2DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CGelwTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CGelwDPzEei3dfHtumI11Q" serverClassElem="_CGelwjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CGnvsTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CGnvsDPzEei3dfHtumI11Q" serverClassElem="_CGnvsjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CG7RsTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CG7RsDPzEei3dfHtumI11Q" serverClassElem="_CG7RsjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CHXWkTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CHXWkDPzEei3dfHtumI11Q" serverClassElem="_CHXWkjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CH9zgTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CH9zgDPzEei3dfHtumI11Q" serverClassElem="_CH9zgjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CIQucTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CIQucDPzEei3dfHtumI11Q" serverClassElem="_CIQucjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CIjpYTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CIjpYDPzEei3dfHtumI11Q" serverClassElem="_CIjpYjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CI2kUTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CI2kUDPzEei3dfHtumI11Q" serverClassElem="_CI2kUjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CJKGUTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CJKGUDPzEei3dfHtumI11Q" serverClassElem="_CJKGUjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CJdBQTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CJdBQDPzEei3dfHtumI11Q" serverClassElem="_CJdBQjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CJv8MTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CJv8MDPzEei3dfHtumI11Q" serverClassElem="_CJv8MjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CKC3ITPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CKC3IDPzEei3dfHtumI11Q" serverClassElem="_CKC3IjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CKWZITPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CKWZIDPzEei3dfHtumI11Q" serverClassElem="_CKWZIjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CKfjETPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CKfjEDPzEei3dfHtumI11Q" serverClassElem="_CKfjEjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CKyeATPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CKyeADPzEei3dfHtumI11Q" serverClassElem="_CKyeAjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CK8PATPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CK8PADPzEei3dfHtumI11Q" serverClassElem="_CK8PAjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CLPJ8TPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CLPJ8DPzEei3dfHtumI11Q" serverClassElem="_CLPJ8jPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CLiE4zPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CLiE4DPzEei3dfHtumI11Q" serverClassElem="_CLiE5DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CLiE5TPzEei3dfHtumI11Q" property="&quot;resultsMapper&quot;" clientClassElem="_CLiE4DPzEei3dfHtumI11Q" serverClassElem="_CLiE5jPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CLiE5zPzEei3dfHtumI11Q" clientClassElem="_CLiE4jPzEei3dfHtumI11Q" serverClassElem="_CLiE6DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CLr14TPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CLr14DPzEei3dfHtumI11Q" serverClassElem="_CLr14jPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CL-w0TPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CL-w0DPzEei3dfHtumI11Q" serverClassElem="_CL-w0jPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CMRrwTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CMRrwDPzEei3dfHtumI11Q" serverClassElem="_CMRrwjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CMuXsTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CMuXsDPzEei3dfHtumI11Q" serverClassElem="_CMuXsjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CNnvkTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CNnvkDPzEei3dfHtumI11Q" serverClassElem="_CNnvkjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CN6qgTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CN6qgDPzEei3dfHtumI11Q" serverClassElem="_CN6qgjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CONlcTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CONlcDPzEei3dfHtumI11Q" serverClassElem="_CONlcjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_COggYTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_COggYDPzEei3dfHtumI11Q" serverClassElem="_COggYjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_COqRYTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_COqRYDPzEei3dfHtumI11Q" serverClassElem="_COqRYjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CO0pcTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CO0pcDPzEei3dfHtumI11Q" serverClassElem="_CO0pcjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CPHkYTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CPHkYDPzEei3dfHtumI11Q" serverClassElem="_CPHkYjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_CPafUTPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_CPafUDPzEei3dfHtumI11Q" serverClassElem="_CPafUjPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="spring-projects.spring-data-elasticsearch_asm" instantiates="//@architectureDescriptions[name='spring-projects.spring-data-elasticsearch_config']">
+    <assmComponents id="_CE_YAzPzEei3dfHtumI11Q" instantiates="_CE_YADPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CFSS8zPzEei3dfHtumI11Q" instantiates="_CFSS8DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CFcD8zPzEei3dfHtumI11Q" instantiates="_CFcD8DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CFu-4zPzEei3dfHtumI11Q" instantiates="_CFu-4DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CF4I0zPzEei3dfHtumI11Q" instantiates="_CF4I0DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CGLq2TPzEei3dfHtumI11Q" instantiates="_CGLq0DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CGLq2jPzEei3dfHtumI11Q" instantiates="_CGLq0TPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CGLq2zPzEei3dfHtumI11Q" instantiates="_CGLq0jPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CGelwzPzEei3dfHtumI11Q" instantiates="_CGelwDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CGnvszPzEei3dfHtumI11Q" instantiates="_CGnvsDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CG7RszPzEei3dfHtumI11Q" instantiates="_CG7RsDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CHXWkzPzEei3dfHtumI11Q" instantiates="_CHXWkDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CH9zgzPzEei3dfHtumI11Q" instantiates="_CH9zgDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CIQuczPzEei3dfHtumI11Q" instantiates="_CIQucDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CIjpYzPzEei3dfHtumI11Q" instantiates="_CIjpYDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CI2kUzPzEei3dfHtumI11Q" instantiates="_CI2kUDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CJKGUzPzEei3dfHtumI11Q" instantiates="_CJKGUDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CJdBQzPzEei3dfHtumI11Q" instantiates="_CJdBQDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CJv8MzPzEei3dfHtumI11Q" instantiates="_CJv8MDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CKC3IzPzEei3dfHtumI11Q" instantiates="_CKC3IDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CKWZIzPzEei3dfHtumI11Q" instantiates="_CKWZIDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CKfjEzPzEei3dfHtumI11Q" instantiates="_CKfjEDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CKyeAzPzEei3dfHtumI11Q" instantiates="_CKyeADPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CK8PAzPzEei3dfHtumI11Q" instantiates="_CK8PADPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CLPJ8zPzEei3dfHtumI11Q" instantiates="_CLPJ8DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CLiE6TPzEei3dfHtumI11Q" instantiates="_CLiE4DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CLiE6jPzEei3dfHtumI11Q" instantiates="_CLiE4TPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CLiE6zPzEei3dfHtumI11Q" instantiates="_CLiE4jPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CLr14zPzEei3dfHtumI11Q" instantiates="_CLr14DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CL-w0zPzEei3dfHtumI11Q" instantiates="_CL-w0DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CMRrwzPzEei3dfHtumI11Q" instantiates="_CMRrwDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CMuXszPzEei3dfHtumI11Q" instantiates="_CMuXsDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CNnvkzPzEei3dfHtumI11Q" instantiates="_CNnvkDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CN6qgzPzEei3dfHtumI11Q" instantiates="_CN6qgDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CONlczPzEei3dfHtumI11Q" instantiates="_CONlcDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_COggYzPzEei3dfHtumI11Q" instantiates="_COggYDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_COqRYzPzEei3dfHtumI11Q" instantiates="_COqRYDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CO0pczPzEei3dfHtumI11Q" instantiates="_CO0pcDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CPHkYzPzEei3dfHtumI11Q" instantiates="_CPHkYDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_CPafUzPzEei3dfHtumI11Q" instantiates="_CPafUDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CE_YBDPzEei3dfHtumI11Q" clientInstElem="_CE_YAzPzEei3dfHtumI11Q" serverInstElem="_CE_YBTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CFSS9DPzEei3dfHtumI11Q" clientInstElem="_CFSS8zPzEei3dfHtumI11Q" serverInstElem="_CFSS9TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CFcD9DPzEei3dfHtumI11Q" clientInstElem="_CFcD8zPzEei3dfHtumI11Q" serverInstElem="_CFcD9TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CFu-5DPzEei3dfHtumI11Q" clientInstElem="_CFu-4zPzEei3dfHtumI11Q" serverInstElem="_CFu-5TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CF4I1DPzEei3dfHtumI11Q" clientInstElem="_CF4I0zPzEei3dfHtumI11Q" serverInstElem="_CF4I1TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CGLq3DPzEei3dfHtumI11Q" clientInstElem="_CGLq2zPzEei3dfHtumI11Q" serverInstElem="_CGLq3TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CGLq3jPzEei3dfHtumI11Q" clientInstElem="_CGLq2zPzEei3dfHtumI11Q" serverInstElem="_CGLq3zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CGLq4DPzEei3dfHtumI11Q" clientInstElem="_CGLq2zPzEei3dfHtumI11Q" serverInstElem="_CGLq4TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CGelxDPzEei3dfHtumI11Q" clientInstElem="_CGelwzPzEei3dfHtumI11Q" serverInstElem="_CGelxTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CGnvtDPzEei3dfHtumI11Q" clientInstElem="_CGnvszPzEei3dfHtumI11Q" serverInstElem="_CGnvtTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CG7RtDPzEei3dfHtumI11Q" clientInstElem="_CG7RszPzEei3dfHtumI11Q" serverInstElem="_CG7RtTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CHXWlDPzEei3dfHtumI11Q" clientInstElem="_CHXWkzPzEei3dfHtumI11Q" serverInstElem="_CHXWlTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CH9zhDPzEei3dfHtumI11Q" clientInstElem="_CH9zgzPzEei3dfHtumI11Q" serverInstElem="_CH9zhTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CIQudDPzEei3dfHtumI11Q" clientInstElem="_CIQuczPzEei3dfHtumI11Q" serverInstElem="_CIQudTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CIjpZDPzEei3dfHtumI11Q" clientInstElem="_CIjpYzPzEei3dfHtumI11Q" serverInstElem="_CIjpZTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CI2kVDPzEei3dfHtumI11Q" clientInstElem="_CI2kUzPzEei3dfHtumI11Q" serverInstElem="_CI2kVTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CJKGVDPzEei3dfHtumI11Q" clientInstElem="_CJKGUzPzEei3dfHtumI11Q" serverInstElem="_CJKGVTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CJdBRDPzEei3dfHtumI11Q" clientInstElem="_CJdBQzPzEei3dfHtumI11Q" serverInstElem="_CJmLMDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CJv8NDPzEei3dfHtumI11Q" clientInstElem="_CJv8MzPzEei3dfHtumI11Q" serverInstElem="_CJv8NTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CKC3JDPzEei3dfHtumI11Q" clientInstElem="_CKC3IzPzEei3dfHtumI11Q" serverInstElem="_CKC3JTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CKWZJDPzEei3dfHtumI11Q" clientInstElem="_CKWZIzPzEei3dfHtumI11Q" serverInstElem="_CKWZJTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CKfjFDPzEei3dfHtumI11Q" clientInstElem="_CKfjEzPzEei3dfHtumI11Q" serverInstElem="_CKfjFTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CKyeBDPzEei3dfHtumI11Q" clientInstElem="_CKyeAzPzEei3dfHtumI11Q" serverInstElem="_CKyeBTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CK8PBDPzEei3dfHtumI11Q" clientInstElem="_CK8PAzPzEei3dfHtumI11Q" serverInstElem="_CK8PBTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CLPJ9DPzEei3dfHtumI11Q" clientInstElem="_CLPJ8zPzEei3dfHtumI11Q" serverInstElem="_CLPJ9TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CLiE7DPzEei3dfHtumI11Q" clientInstElem="_CLiE6TPzEei3dfHtumI11Q" serverInstElem="_CLiE7TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CLiE7jPzEei3dfHtumI11Q" clientInstElem="_CLiE6TPzEei3dfHtumI11Q" serverInstElem="_CLiE7zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CLiE8DPzEei3dfHtumI11Q" clientInstElem="_CLiE6TPzEei3dfHtumI11Q" serverInstElem="_CLiE8TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CLr15DPzEei3dfHtumI11Q" clientInstElem="_CLr14zPzEei3dfHtumI11Q" serverInstElem="_CLr15TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CL-w1DPzEei3dfHtumI11Q" clientInstElem="_CL-w0zPzEei3dfHtumI11Q" serverInstElem="_CL-w1TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CMRrxDPzEei3dfHtumI11Q" clientInstElem="_CMRrwzPzEei3dfHtumI11Q" serverInstElem="_CMRrxTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CMuXtDPzEei3dfHtumI11Q" clientInstElem="_CMuXszPzEei3dfHtumI11Q" serverInstElem="_CMuXtTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CNnvlDPzEei3dfHtumI11Q" clientInstElem="_CNnvkzPzEei3dfHtumI11Q" serverInstElem="_CNnvlTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CN6qhDPzEei3dfHtumI11Q" clientInstElem="_CN6qgzPzEei3dfHtumI11Q" serverInstElem="_CN6qhTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CONldDPzEei3dfHtumI11Q" clientInstElem="_CONlczPzEei3dfHtumI11Q" serverInstElem="_CONldTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_COggZDPzEei3dfHtumI11Q" clientInstElem="_COggYzPzEei3dfHtumI11Q" serverInstElem="_COggZTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_COqRZDPzEei3dfHtumI11Q" clientInstElem="_COqRYzPzEei3dfHtumI11Q" serverInstElem="_COqRZTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CO0pdDPzEei3dfHtumI11Q" clientInstElem="_CO0pczPzEei3dfHtumI11Q" serverInstElem="_CO0pdTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CPHkZDPzEei3dfHtumI11Q" clientInstElem="_CPHkYzPzEei3dfHtumI11Q" serverInstElem="_CPHkZTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_CPafVDPzEei3dfHtumI11Q" clientInstElem="_CPafUzPzEei3dfHtumI11Q" serverInstElem="_CPafVTPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="spring-projects.spring-data-elasticsearch_spec">
+    <specConnections refID="_CP3LQDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LQTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LQjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LQzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LRDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LRTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LRjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LRzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LSDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LSTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LSjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LSzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LTDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LTTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LTjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LTzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LUDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LUTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LUjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LUzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LVDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LVTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LVjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LVzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LWDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LWTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LWjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LWzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LXDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LXTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LXjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LXzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LYDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LYTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LYjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LYzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LZDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LZTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LZjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_CP3LZzPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

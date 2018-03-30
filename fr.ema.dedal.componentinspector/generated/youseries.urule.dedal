@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="youseries.urule">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="youseries.urule_config" implements="//@architectureDescriptions[name='youseries.urule_spec']">
+    <configComponents name="&quot;com.bstek.urule.console.DefaultKnowledgePackageService&quot;" id="_4o-UEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.console.ConsoleServletHandler&quot;" id="_4o-UETPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.console.ConsoleDebugWriter&quot;" id="_4o-UEjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.console.DebugMessageHolder&quot;" id="_4o-UEzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.respackage.HttpSessionKnowledgeCache&quot;" id="_4o-UFDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.repository.RepositoryResourceProvider&quot;" id="_4o-UFTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.permission.PermissionConfigServletHandler&quot;" id="_4o-UFjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.repository.permission.PermissionServiceImpl&quot;" id="_4o-UFzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.scorecard.ScorecardEditorServletHandler&quot;" id="_4o-UGDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.ResourceLoaderServletHandler&quot;" id="_4o-UGTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.knowledge.LoadKnowledgeServletHandler&quot;" id="_4o-7IDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.xml.XmlServletHandler&quot;" id="_4o-7ITPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.frame.FrameServletHandler&quot;" id="_4o-7IjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.respackage.PackageServletHandler&quot;" id="_4o-7IzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.diagram.ReteDiagramServletHandler&quot;" id="_4o-7JDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.ruleset.RuleSetServletEditorHandler&quot;" id="_4o-7JTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.decisiontree.DecisionTreeEditorServletHandler&quot;" id="_4o-7JjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.variable.VariableEditorServletHandler&quot;" id="_4o_iMDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.constant.ConstantServletHandler&quot;" id="_4o_iMTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.parameter.ParameterServletHandler&quot;" id="_4o_iMjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.action.ActionServletHandler&quot;" id="_4o_iMzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.flow.RuleFlowDesignerServletHandler&quot;" id="_4o_iNDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.ul.ULEditorServletHandler&quot;" id="_4pAJQDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.decisiontable.DecisiontableEditorServletHandler&quot;" id="_4pAJQTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.scriptdecisiontable.ScriptDecisiontableEditorServletHandler&quot;" id="_4pAJQjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.common.CommonServletHandler&quot;" id="_4pAJQzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.servlet.client.ClientConfigServletHandler&quot;" id="_4pAwUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_4pAwUTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.repository.RepositoryBuilder&quot;" id="_4pAwUjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.console.repository.RepositoryServiceImpl&quot;" id="_4pAwUzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.URulePropertyPlaceholderConfigurer&quot;" id="_4pZx4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_4pZx4TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.debug.DefaultHtmlFileDebugWriter&quot;" id="_4pZx4jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.KnowledgeBuilder&quot;" id="_4pZx4zPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.BuiltInActionLibraryBuilder&quot;" id="_4paY8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.RulesRebuilder&quot;" id="_4paY8TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.function.impl.SinFunctionDescriptor&quot;" id="_4paY8jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.function.impl.CosFunctionDescriptor&quot;" id="_4paY8zPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.function.impl.TanFunctionDescriptor&quot;" id="_4paY9DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.function.impl.LnFunctionDescriptor&quot;" id="_4paY9TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.function.impl.ExpFunctionDescriptor&quot;" id="_4paY9jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.function.impl.UpdateFactFunctionDescriptor&quot;" id="_4paY9zPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.function.impl.UpdateParameterFunctionDescriptor&quot;" id="_4paY-DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.function.impl.TrimFunctionDescriptor&quot;" id="_4pbAADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.function.impl.StringLengthFunctionDescriptor&quot;" id="_4pbAATPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.function.impl.AbsFunctionDescriptor&quot;" id="_4pbAAjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.function.impl.AvgFunctionDescriptor&quot;" id="_4pbAAzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.function.impl.MaxFunctionDescriptor&quot;" id="_4pbABDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.function.impl.MinFunctionDescriptor&quot;" id="_4pbnEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.function.impl.SumFunctionDescriptor&quot;" id="_4pbnETPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.function.impl.CountFunctionDescriptor&quot;" id="_4pbnEjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.service.RemoteServiceImpl&quot;" id="_4pbnEzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.Configure&quot;" id="_4pbnFDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.dsl.builder.ActionContextBuilder&quot;" id="_4pcOIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.dsl.builder.CriteriaContextBuilder&quot;" id="_4pcOITPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.dsl.builder.LibraryContextBuilder&quot;" id="_4pcOIjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.dsl.DSLRuleSetBuilder&quot;" id="_4pcOIzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.ResourceLibraryBuilder&quot;" id="_4pc1MDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.service.KnowledgeServiceImpl&quot;" id="_4pc1MTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.builtinaction.DateAction&quot;" id="_4pc1MjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.builtinaction.StringAction&quot;" id="_4pdcQDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.builtinaction.MathAction&quot;" id="_4pdcQTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.builtinaction.ListAction&quot;" id="_4pdcQjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.builtinaction.MapAction&quot;" id="_4peDUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.builtinaction.LoopAction&quot;" id="_4peDUTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.cache.CacheUtils&quot;" id="_4peDUjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.resource.FileResourceProvider&quot;" id="_4peqYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.rete.ValueCompute&quot;" id="_4peqYTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.Utils&quot;" id="_4peqYjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.resource.FlowResourceBuilder&quot;" id="_4pfRcDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.resource.DecisionTableResourceBuilder&quot;" id="_4pfRcTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.resource.ParameterLibraryResourceBuilder&quot;" id="_4pf4gDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.resource.ConstantLibraryResourceBuilder&quot;" id="_4pf4gTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.resource.ActionLibraryResourceBuilder&quot;" id="_4pf4gjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.resource.RuleSetResourceBuilder&quot;" id="_4pgfkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.resource.VariableLibraryResourceBuilder&quot;" id="_4pgfkTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.table.CellContentBuilder&quot;" id="_4phGoDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.table.DecisionTableRulesBuilder&quot;" id="_4phGoTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.resource.ScriptDecisionTableResourceBuilder&quot;" id="_4phtsDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.deserializer.FlowDeserializer&quot;" id="_4phtsTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.deserializer.ScriptDecisionTableDeserializer&quot;" id="_4piUwDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.table.CellScriptDSLBuilder&quot;" id="_4piUwTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.table.ScriptDecisionTableRulesBuilder&quot;" id="_4pi70DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.table.ScriptDecisionTableParser&quot;" id="_4pi70TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.deserializer.ActionLibraryDeserializer&quot;" id="_4pji4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.deserializer.ConstantLibraryDeserializer&quot;" id="_4pji4TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.AssertorEvaluator&quot;" id="_4pkJ8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.deserializer.VariableLibraryDeserializer&quot;" id="_4pkJ8TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.deserializer.ParameterLibraryDeserializer&quot;" id="_4pkxADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.table.JointParser&quot;" id="_4pkxATPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.table.CellParser&quot;" id="_4plYEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.table.ScriptCellParser&quot;" id="_4plYETPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.table.RowParser&quot;" id="_4pl_IDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.table.ColumnParser&quot;" id="_4pl_ITPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.table.DecisionTableParser&quot;" id="_4pmmMDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.deserializer.DecisionTableDeserializer&quot;" id="_4pnNQDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.ParameterLibraryParser&quot;" id="_4pnNQTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.ParenParser&quot;" id="_4pn0UDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.ConstantLibraryParser&quot;" id="_4pn0UTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.flow.ActionNodeParser&quot;" id="_4pobYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.flow.DecisionNodeParser&quot;" id="_4ppCcDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.flow.EndNodeParser&quot;" id="_4ppCcTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.flow.FlowDefinitionParser&quot;" id="_4pppgDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.flow.ForkNodeParser&quot;" id="_4pppgTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.flow.JoinNodeParser&quot;" id="_4pqQkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.flow.StartNodeParser&quot;" id="_4pq3oDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.flow.ScriptNodeParser&quot;" id="_4presDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.flow.RuleNodeParser&quot;" id="_4psFwDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.flow.RulePackageNodeParser&quot;" id="_4psFwTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.EndWithAssertor&quot;" id="_4pss0DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.EqualsAssertor&quot;" id="_4ptT4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.GreaterThenAssertor&quot;" id="_4ptT4TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.GreaterThenEqualsAssertor&quot;" id="_4pt68DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.InAssertor&quot;" id="_4puiADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.LessThenAssertor&quot;" id="_4pvJEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.LessThenEqualsAssertor&quot;" id="_4pvJETPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.NotEndWithAssertor&quot;" id="_4pvwIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.NotEqualsAssertor&quot;" id="_4pwXMDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.NotInAssertor&quot;" id="_4pw-QDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.NotStartWithAssertor&quot;" id="_4pw-QTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.StartWithAssertor&quot;" id="_4pxlUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.NotMatchAssertor&quot;" id="_4pyMYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.MatchAssertor&quot;" id="_4pyzcDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.NullAssertor&quot;" id="_4pyzcTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.NotNullAssertor&quot;" id="_4pzagDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.EqualsIgnoreCaseAssertor&quot;" id="_4p0BkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.NotEqualsIgnoreCaseAssertor&quot;" id="_4p0ooDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.ContainAssertor&quot;" id="_4p1PsDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.runtime.assertor.NotContainAssertor&quot;" id="_4p1PsTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.rete.builder.ReteBuilder&quot;" id="_4p12wDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.rete.builder.CriteriaBuilder&quot;" id="_4p2d0DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.rete.builder.NamedCriteriaBuilder&quot;" id="_4p3E4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.rete.builder.AndBuilder&quot;" id="_4p3r8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.model.rete.builder.OrBuilder&quot;" id="_4p4TADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.deserializer.RuleSetDeserializer&quot;" id="_4p46EDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.CommonFunctionActionParser&quot;" id="_4p46ETPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.ConsolePrintActionParser&quot;" id="_4p5hIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.ExecuteMethodActionParser&quot;" id="_4p6IMDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.LhsParser&quot;" id="_4p6vQDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.LeftParser&quot;" id="_4p7WUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.CriteriaParser&quot;" id="_4p79YDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.JunctionParser&quot;" id="_4p8kcDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.NamedJunctionParser&quot;" id="_4p9LgDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.VariableLibraryParser&quot;" id="_4p9ykDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.ActionLibraryParser&quot;" id="_4p-ZoDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.RhsParser&quot;" id="_4p_AsDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.RuleParser&quot;" id="_4p_nwDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.LoopRuleParser&quot;" id="_4qAO0DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.OtherParser&quot;" id="_4qA14DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.RuleSetParser&quot;" id="_4qBc8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.VariableAssignActionParser&quot;" id="_4qCEADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.SimpleArithmeticParser&quot;" id="_4qCrEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.ComplexArithmeticParser&quot;" id="_4qDSIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.ValueParser&quot;" id="_4qD5MDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.VariableParser&quot;" id="_4qEgQDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.VariableCategoryParser&quot;" id="_4qFHUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.decisiontree.DecisionTreeParser&quot;" id="_4qFuYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.scorecard.ScorecardParser&quot;" id="_4qGVcDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.scorecard.CardCellParser&quot;" id="_4qG8gDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.deserializer.ScorecardDeserializer&quot;" id="_4qIKoDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.decisiontree.ActionTreeNodeParser&quot;" id="_4qIxsDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.decisiontree.VariableTreeNodeParser&quot;" id="_4qJYwDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.decisiontree.ConditionTreeNodeParser&quot;" id="_4qJ_0DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.DecisionTreeRulesBuilder&quot;" id="_4qKm4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.resource.ScorecardResourceBuilder&quot;" id="_4qLN8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.parse.deserializer.DecisionTreeDeserializer&quot;" id="_4qL1ADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.bstek.urule.builder.resource.DecisionTreeResourceBuilder&quot;" id="_4qMcEDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pAwVDPzEei3dfHtumI11Q" property="&quot;knowledgeBuilder&quot;" clientClassElem="_4o-UEDPzEei3dfHtumI11Q" serverClassElem="_4pBXYDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pBXYTPzEei3dfHtumI11Q" property="&quot;repositoryService&quot;" clientClassElem="_4o-UEDPzEei3dfHtumI11Q" serverClassElem="_4pAwUzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pBXYjPzEei3dfHtumI11Q" property="&quot;debugMessageHolder&quot;" clientClassElem="_4o-UETPzEei3dfHtumI11Q" serverClassElem="_4o-UEzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pBXYzPzEei3dfHtumI11Q" property="&quot;debugMessageHolder&quot;" clientClassElem="_4o-UEjPzEei3dfHtumI11Q" serverClassElem="_4o-UEzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pBXZDPzEei3dfHtumI11Q" property="&quot;repositoryService&quot;" clientClassElem="_4o-UFTPzEei3dfHtumI11Q" serverClassElem="_4pAwUzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pBXZTPzEei3dfHtumI11Q" property="&quot;repositoryService&quot;" clientClassElem="_4o-UFjPzEei3dfHtumI11Q" serverClassElem="_4pAwUzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pB-cDPzEei3dfHtumI11Q" property="&quot;permissionStore&quot;" clientClassElem="_4o-UFjPzEei3dfHtumI11Q" serverClassElem="_4o-UFzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pB-cTPzEei3dfHtumI11Q" property="&quot;repositoryService&quot;" clientClassElem="_4o-UFzPzEei3dfHtumI11Q" serverClassElem="_4pAwUzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pB-cjPzEei3dfHtumI11Q" property="&quot;knowledgePackageService&quot;" clientClassElem="_4o-7IDPzEei3dfHtumI11Q" serverClassElem="_4o-UEDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pB-czPzEei3dfHtumI11Q" property="&quot;repositoryService&quot;" clientClassElem="_4o-7ITPzEei3dfHtumI11Q" serverClassElem="_4pAwUzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pB-dDPzEei3dfHtumI11Q" property="&quot;builtInActionLibraryBuilder&quot;" clientClassElem="_4o-7ITPzEei3dfHtumI11Q" serverClassElem="_4pB-dTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pB-djPzEei3dfHtumI11Q" property="&quot;repositoryService&quot;" clientClassElem="_4o-7IjPzEei3dfHtumI11Q" serverClassElem="_4pAwUzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pB-dzPzEei3dfHtumI11Q" property="&quot;repositoryService&quot;" clientClassElem="_4o-7IzPzEei3dfHtumI11Q" serverClassElem="_4pAwUzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pB-eDPzEei3dfHtumI11Q" property="&quot;knowledgeBuilder&quot;" clientClassElem="_4o-7IzPzEei3dfHtumI11Q" serverClassElem="_4pB-eTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pB-ejPzEei3dfHtumI11Q" property="&quot;httpSessionKnowledgeCache&quot;" clientClassElem="_4o-7IzPzEei3dfHtumI11Q" serverClassElem="_4o-UFDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pB-ezPzEei3dfHtumI11Q" property="&quot;knowledgeBuilder&quot;" clientClassElem="_4o-7JDPzEei3dfHtumI11Q" serverClassElem="_4pB-fDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pClgDPzEei3dfHtumI11Q" property="&quot;httpSessionKnowledgeCache&quot;" clientClassElem="_4o-7JDPzEei3dfHtumI11Q" serverClassElem="_4o-UFDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pClgTPzEei3dfHtumI11Q" property="&quot;repositoryService&quot;" clientClassElem="_4o_iNDPzEei3dfHtumI11Q" serverClassElem="_4pAwUzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pClgjPzEei3dfHtumI11Q" property="&quot;flowDeserializer&quot;" clientClassElem="_4o_iNDPzEei3dfHtumI11Q" serverClassElem="_4pClgzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pClhDPzEei3dfHtumI11Q" property="&quot;repositoryService&quot;" clientClassElem="_4pAJQDPzEei3dfHtumI11Q" serverClassElem="_4pAwUzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pClhTPzEei3dfHtumI11Q" property="&quot;dslRuleSetBuilder&quot;" clientClassElem="_4pAJQDPzEei3dfHtumI11Q" serverClassElem="_4pClhjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pClhzPzEei3dfHtumI11Q" property="&quot;resourceLibraryBuilder&quot;" clientClassElem="_4pAJQDPzEei3dfHtumI11Q" serverClassElem="_4pCliDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pCliTPzEei3dfHtumI11Q" property="&quot;repositoryService&quot;" clientClassElem="_4pAJQzPzEei3dfHtumI11Q" serverClassElem="_4pAwUzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pClijPzEei3dfHtumI11Q" property="&quot;builtInActionLibraryBuilder&quot;" clientClassElem="_4pAJQzPzEei3dfHtumI11Q" serverClassElem="_4pClizPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pCljDPzEei3dfHtumI11Q" property="&quot;repositoryService&quot;" clientClassElem="_4pAwUDPzEei3dfHtumI11Q" serverClassElem="_4pAwUzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pDMkDPzEei3dfHtumI11Q" property="&quot;repositoryBuilder&quot;" clientClassElem="_4pAwUzPzEei3dfHtumI11Q" serverClassElem="_4pAwUjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4pDMkTPzEei3dfHtumI11Q" property="&quot;permissionService&quot;" clientClassElem="_4pAwUzPzEei3dfHtumI11Q" serverClassElem="_4o-UFzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qMcETPzEei3dfHtumI11Q" property="&quot;reteBuilder&quot;" clientClassElem="_4pZx4zPzEei3dfHtumI11Q" serverClassElem="_4p12wDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qNDIDPzEei3dfHtumI11Q" property="&quot;rulesRebuilder&quot;" clientClassElem="_4pZx4zPzEei3dfHtumI11Q" serverClassElem="_4paY8TPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qNqMDPzEei3dfHtumI11Q" property="&quot;scriptDecisionTableRulesBuilder&quot;" clientClassElem="_4pZx4zPzEei3dfHtumI11Q" serverClassElem="_4pi70DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qNqMTPzEei3dfHtumI11Q" property="&quot;resourceLibraryBuilder&quot;" clientClassElem="_4pZx4zPzEei3dfHtumI11Q" serverClassElem="_4pc1MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qNqMjPzEei3dfHtumI11Q" property="&quot;decisionTableRulesBuilder&quot;" clientClassElem="_4pZx4zPzEei3dfHtumI11Q" serverClassElem="_4phGoTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qORQDPzEei3dfHtumI11Q" property="&quot;dslRuleSetBuilder&quot;" clientClassElem="_4pZx4zPzEei3dfHtumI11Q" serverClassElem="_4pcOIzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qORQTPzEei3dfHtumI11Q" property="&quot;decisionTreeRulesBuilder&quot;" clientClassElem="_4pZx4zPzEei3dfHtumI11Q" serverClassElem="_4qKm4DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qORQjPzEei3dfHtumI11Q" property="&quot;resourceLibraryBuilder&quot;" clientClassElem="_4paY8TPzEei3dfHtumI11Q" serverClassElem="_4pc1MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qO4UDPzEei3dfHtumI11Q" property="&quot;rulesRebuilder&quot;" clientClassElem="_4pcOIzPzEei3dfHtumI11Q" serverClassElem="_4paY8TPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qO4UTPzEei3dfHtumI11Q" property="&quot;builtInActionLibraryBuilder&quot;" clientClassElem="_4pc1MDPzEei3dfHtumI11Q" serverClassElem="_4paY8DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qO4UjPzEei3dfHtumI11Q" property="&quot;remoteService&quot;" clientClassElem="_4pc1MTPzEei3dfHtumI11Q" serverClassElem="_4pbnEzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qO4UzPzEei3dfHtumI11Q" property="&quot;flowDeserializer&quot;" clientClassElem="_4pfRcDPzEei3dfHtumI11Q" serverClassElem="_4phtsTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qO4VDPzEei3dfHtumI11Q" property="&quot;decisionTableDeserializer&quot;" clientClassElem="_4pfRcTPzEei3dfHtumI11Q" serverClassElem="_4pnNQDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qO4VTPzEei3dfHtumI11Q" property="&quot;parameterLibraryDeserializer&quot;" clientClassElem="_4pf4gDPzEei3dfHtumI11Q" serverClassElem="_4pkxADPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qPfYDPzEei3dfHtumI11Q" property="&quot;constantLibraryDeserializer&quot;" clientClassElem="_4pf4gTPzEei3dfHtumI11Q" serverClassElem="_4pji4TPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qPfYTPzEei3dfHtumI11Q" property="&quot;actionLibraryDeserializer&quot;" clientClassElem="_4pf4gjPzEei3dfHtumI11Q" serverClassElem="_4pji4DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qPfYjPzEei3dfHtumI11Q" property="&quot;ruleSetDeserializer&quot;" clientClassElem="_4pgfkDPzEei3dfHtumI11Q" serverClassElem="_4p46EDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qPfYzPzEei3dfHtumI11Q" property="&quot;variableLibraryDeserializer&quot;" clientClassElem="_4pgfkTPzEei3dfHtumI11Q" serverClassElem="_4pkJ8TPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qQGcDPzEei3dfHtumI11Q" property="&quot;cellContentBuilder&quot;" clientClassElem="_4phGoTPzEei3dfHtumI11Q" serverClassElem="_4phGoDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qQGcTPzEei3dfHtumI11Q" property="&quot;scriptDecisionTableDeserializer&quot;" clientClassElem="_4phtsDPzEei3dfHtumI11Q" serverClassElem="_4piUwDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qQGcjPzEei3dfHtumI11Q" property="&quot;flowDefinitionParser&quot;" clientClassElem="_4phtsTPzEei3dfHtumI11Q" serverClassElem="_4pppgDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qQGczPzEei3dfHtumI11Q" property="&quot;scriptDecisionTableParser&quot;" clientClassElem="_4piUwDPzEei3dfHtumI11Q" serverClassElem="_4pi70TPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qQGdDPzEei3dfHtumI11Q" property="&quot;cellScriptDSLBuilder&quot;" clientClassElem="_4pi70DPzEei3dfHtumI11Q" serverClassElem="_4piUwTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qQtgDPzEei3dfHtumI11Q" property="&quot;dslRuleSetBuilder&quot;" clientClassElem="_4pi70DPzEei3dfHtumI11Q" serverClassElem="_4pcOIzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qQtgTPzEei3dfHtumI11Q" property="&quot;rowParser&quot;" clientClassElem="_4pi70TPzEei3dfHtumI11Q" serverClassElem="_4pl_IDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qQtgjPzEei3dfHtumI11Q" property="&quot;columnParser&quot;" clientClassElem="_4pi70TPzEei3dfHtumI11Q" serverClassElem="_4pl_ITPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qQtgzPzEei3dfHtumI11Q" property="&quot;scriptCellParser&quot;" clientClassElem="_4pi70TPzEei3dfHtumI11Q" serverClassElem="_4plYETPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qQthDPzEei3dfHtumI11Q" property="&quot;actionLibraryParser&quot;" clientClassElem="_4pji4DPzEei3dfHtumI11Q" serverClassElem="_4p-ZoDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qQthTPzEei3dfHtumI11Q" property="&quot;constantLibraryParser&quot;" clientClassElem="_4pji4TPzEei3dfHtumI11Q" serverClassElem="_4pn0UTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qQthjPzEei3dfHtumI11Q" property="&quot;variableLibraryParser&quot;" clientClassElem="_4pkJ8TPzEei3dfHtumI11Q" serverClassElem="_4p9ykDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qQthzPzEei3dfHtumI11Q" property="&quot;parameterLibraryParser&quot;" clientClassElem="_4pkxADPzEei3dfHtumI11Q" serverClassElem="_4pnNQTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qRUkDPzEei3dfHtumI11Q" property="&quot;valueParser&quot;" clientClassElem="_4pkxATPzEei3dfHtumI11Q" serverClassElem="_4qD5MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qRUkTPzEei3dfHtumI11Q" property="&quot;jointParser&quot;" clientClassElem="_4plYEDPzEei3dfHtumI11Q" serverClassElem="_4pkxATPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qRUkjPzEei3dfHtumI11Q" property="&quot;valueParser&quot;" clientClassElem="_4plYEDPzEei3dfHtumI11Q" serverClassElem="_4qD5MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qRUkzPzEei3dfHtumI11Q" property="&quot;rowParser&quot;" clientClassElem="_4pmmMDPzEei3dfHtumI11Q" serverClassElem="_4pl_IDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qR7oDPzEei3dfHtumI11Q" property="&quot;columnParser&quot;" clientClassElem="_4pmmMDPzEei3dfHtumI11Q" serverClassElem="_4pl_ITPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qR7oTPzEei3dfHtumI11Q" property="&quot;cellParser&quot;" clientClassElem="_4pmmMDPzEei3dfHtumI11Q" serverClassElem="_4plYEDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qR7ojPzEei3dfHtumI11Q" property="&quot;rulesRebuilder&quot;" clientClassElem="_4pmmMDPzEei3dfHtumI11Q" serverClassElem="_4paY8TPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qR7ozPzEei3dfHtumI11Q" property="&quot;decisionTableParser&quot;" clientClassElem="_4pnNQDPzEei3dfHtumI11Q" serverClassElem="_4pmmMDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qSisDPzEei3dfHtumI11Q" property="&quot;variableParser&quot;" clientClassElem="_4pnNQTPzEei3dfHtumI11Q" serverClassElem="_4qEgQDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qSisTPzEei3dfHtumI11Q" property="&quot;valueParser&quot;" clientClassElem="_4pn0UDPzEei3dfHtumI11Q" serverClassElem="_4qD5MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qSisjPzEei3dfHtumI11Q" property="&quot;arithmeticParser&quot;" clientClassElem="_4pn0UDPzEei3dfHtumI11Q" serverClassElem="_4qDSIDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qSiszPzEei3dfHtumI11Q" property="&quot;ruleSetParser&quot;" clientClassElem="_4p46EDPzEei3dfHtumI11Q" serverClassElem="_4qBc8DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qTJwDPzEei3dfHtumI11Q" property="&quot;valueParser&quot;" clientClassElem="_4p46ETPzEei3dfHtumI11Q" serverClassElem="_4qD5MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qTJwTPzEei3dfHtumI11Q" property="&quot;valueParser&quot;" clientClassElem="_4p5hIDPzEei3dfHtumI11Q" serverClassElem="_4qD5MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qTJwjPzEei3dfHtumI11Q" property="&quot;valueParser&quot;" clientClassElem="_4p6IMDPzEei3dfHtumI11Q" serverClassElem="_4qD5MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qTJwzPzEei3dfHtumI11Q" property="&quot;valueParser&quot;" clientClassElem="_4p7WUDPzEei3dfHtumI11Q" serverClassElem="_4qD5MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qTJxDPzEei3dfHtumI11Q" property="&quot;arithmeticParser&quot;" clientClassElem="_4p7WUDPzEei3dfHtumI11Q" serverClassElem="_4qCrEDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qTJxTPzEei3dfHtumI11Q" property="&quot;valueParser&quot;" clientClassElem="_4p79YDPzEei3dfHtumI11Q" serverClassElem="_4qD5MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qTw0DPzEei3dfHtumI11Q" property="&quot;leftParser&quot;" clientClassElem="_4p79YDPzEei3dfHtumI11Q" serverClassElem="_4p7WUDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qTw0TPzEei3dfHtumI11Q" property="&quot;valueParser&quot;" clientClassElem="_4p9LgDPzEei3dfHtumI11Q" serverClassElem="_4qD5MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qTw0jPzEei3dfHtumI11Q" property="&quot;variableCategoryParser&quot;" clientClassElem="_4p9ykDPzEei3dfHtumI11Q" serverClassElem="_4qFHUDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qTw0zPzEei3dfHtumI11Q" property="&quot;lhsParser&quot;" clientClassElem="_4p_nwDPzEei3dfHtumI11Q" serverClassElem="_4p6vQDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qTw1DPzEei3dfHtumI11Q" property="&quot;rhsParser&quot;" clientClassElem="_4p_nwDPzEei3dfHtumI11Q" serverClassElem="_4p_AsDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qTw1TPzEei3dfHtumI11Q" property="&quot;otherParser&quot;" clientClassElem="_4p_nwDPzEei3dfHtumI11Q" serverClassElem="_4qA14DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qTw1jPzEei3dfHtumI11Q" property="&quot;lhsParser&quot;" clientClassElem="_4qAO0DPzEei3dfHtumI11Q" serverClassElem="_4p6vQDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qUX4DPzEei3dfHtumI11Q" property="&quot;rhsParser&quot;" clientClassElem="_4qAO0DPzEei3dfHtumI11Q" serverClassElem="_4p_AsDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qUX4TPzEei3dfHtumI11Q" property="&quot;otherParser&quot;" clientClassElem="_4qAO0DPzEei3dfHtumI11Q" serverClassElem="_4qA14DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qUX4jPzEei3dfHtumI11Q" property="&quot;valueParser&quot;" clientClassElem="_4qAO0DPzEei3dfHtumI11Q" serverClassElem="_4qD5MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qUX4zPzEei3dfHtumI11Q" property="&quot;ruleParser&quot;" clientClassElem="_4qBc8DPzEei3dfHtumI11Q" serverClassElem="_4p_nwDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qU-8DPzEei3dfHtumI11Q" property="&quot;loopRuleParser&quot;" clientClassElem="_4qBc8DPzEei3dfHtumI11Q" serverClassElem="_4qAO0DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qU-8TPzEei3dfHtumI11Q" property="&quot;rulesRebuilder&quot;" clientClassElem="_4qBc8DPzEei3dfHtumI11Q" serverClassElem="_4paY8TPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qU-8jPzEei3dfHtumI11Q" property="&quot;valueParser&quot;" clientClassElem="_4qCEADPzEei3dfHtumI11Q" serverClassElem="_4qD5MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qU-8zPzEei3dfHtumI11Q" property="&quot;valueParser&quot;" clientClassElem="_4qDSIDPzEei3dfHtumI11Q" serverClassElem="_4qD5MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qU-9DPzEei3dfHtumI11Q" property="&quot;parenParser&quot;" clientClassElem="_4qDSIDPzEei3dfHtumI11Q" serverClassElem="_4pn0UDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qVmADPzEei3dfHtumI11Q" property="&quot;arithmeticParser&quot;" clientClassElem="_4qD5MDPzEei3dfHtumI11Q" serverClassElem="_4qDSIDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qVmATPzEei3dfHtumI11Q" property="&quot;variableParser&quot;" clientClassElem="_4qFHUDPzEei3dfHtumI11Q" serverClassElem="_4qEgQDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qVmAjPzEei3dfHtumI11Q" property="&quot;variableTreeNodeParser&quot;" clientClassElem="_4qFuYDPzEei3dfHtumI11Q" serverClassElem="_4qJYwDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qVmAzPzEei3dfHtumI11Q" property="&quot;rulesRebuilder&quot;" clientClassElem="_4qFuYDPzEei3dfHtumI11Q" serverClassElem="_4paY8TPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qVmBDPzEei3dfHtumI11Q" property="&quot;cardCellParser&quot;" clientClassElem="_4qGVcDPzEei3dfHtumI11Q" serverClassElem="_4qG8gDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qWNEDPzEei3dfHtumI11Q" property="&quot;rulesRebuilder&quot;" clientClassElem="_4qGVcDPzEei3dfHtumI11Q" serverClassElem="_4paY8TPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qWNETPzEei3dfHtumI11Q" property="&quot;valueParser&quot;" clientClassElem="_4qG8gDPzEei3dfHtumI11Q" serverClassElem="_4qD5MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qWNEjPzEei3dfHtumI11Q" property="&quot;jointParser&quot;" clientClassElem="_4qG8gDPzEei3dfHtumI11Q" serverClassElem="_4pkxATPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qWNEzPzEei3dfHtumI11Q" property="&quot;scorecardParser&quot;" clientClassElem="_4qIKoDPzEei3dfHtumI11Q" serverClassElem="_4qGVcDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qWNFDPzEei3dfHtumI11Q" property="&quot;leftParser&quot;" clientClassElem="_4qJYwDPzEei3dfHtumI11Q" serverClassElem="_4p7WUDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qW0IDPzEei3dfHtumI11Q" property="&quot;conditionTreeNodeParser&quot;" clientClassElem="_4qJYwDPzEei3dfHtumI11Q" serverClassElem="_4qJ_0DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qW0ITPzEei3dfHtumI11Q" property="&quot;valueParser&quot;" clientClassElem="_4qJ_0DPzEei3dfHtumI11Q" serverClassElem="_4qD5MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qW0IjPzEei3dfHtumI11Q" property="&quot;variableTreeNodeParser&quot;" clientClassElem="_4qJ_0DPzEei3dfHtumI11Q" serverClassElem="_4qJYwDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qW0IzPzEei3dfHtumI11Q" property="&quot;actionTreeNodeParser&quot;" clientClassElem="_4qJ_0DPzEei3dfHtumI11Q" serverClassElem="_4qIxsDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qW0JDPzEei3dfHtumI11Q" property="&quot;reteBuilder&quot;" clientClassElem="_4qLN8DPzEei3dfHtumI11Q" serverClassElem="_4p12wDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qXbMDPzEei3dfHtumI11Q" property="&quot;resourceLibraryBuilder&quot;" clientClassElem="_4qLN8DPzEei3dfHtumI11Q" serverClassElem="_4pc1MDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qXbMTPzEei3dfHtumI11Q" property="&quot;scorecardDeserializer&quot;" clientClassElem="_4qLN8DPzEei3dfHtumI11Q" serverClassElem="_4qIKoDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qXbMjPzEei3dfHtumI11Q" property="&quot;rulesRebuilder&quot;" clientClassElem="_4qLN8DPzEei3dfHtumI11Q" serverClassElem="_4paY8TPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qXbMzPzEei3dfHtumI11Q" property="&quot;decisionTreeParser&quot;" clientClassElem="_4qL1ADPzEei3dfHtumI11Q" serverClassElem="_4qFuYDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_4qXbNDPzEei3dfHtumI11Q" property="&quot;decisionTreeDeserializer&quot;" clientClassElem="_4qMcEDPzEei3dfHtumI11Q" serverClassElem="_4qL1ADPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="youseries.urule_asm" instantiates="//@architectureDescriptions[name='youseries.urule_config']">
+    <assmComponents name="urule.knowledgePackageService" id="_4pDMkjPzEei3dfHtumI11Q" instantiates="_4o-UEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.consoleServletHandler" id="_4pDMkzPzEei3dfHtumI11Q" instantiates="_4o-UETPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.consoleDebugWriter" id="_4pDMlDPzEei3dfHtumI11Q" instantiates="_4o-UEjPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.debugMessageHolder" id="_4pDMlTPzEei3dfHtumI11Q" instantiates="_4o-UEzPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.httpSessionKnowledgeCache" id="_4pDzoDPzEei3dfHtumI11Q" instantiates="_4o-UFDPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.repositoryResourceProvider" id="_4pDzoTPzEei3dfHtumI11Q" instantiates="_4o-UFTPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.permissionConfigServletHandler" id="_4pDzojPzEei3dfHtumI11Q" instantiates="_4o-UFjPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.permissionService" id="_4pDzozPzEei3dfHtumI11Q" instantiates="_4o-UFzPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.scorecardEditorServletHandler" id="_4pDzpDPzEei3dfHtumI11Q" instantiates="_4o-UGDPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.resourceLoaderServletHandler" id="_4pDzpTPzEei3dfHtumI11Q" instantiates="_4o-UGTPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.loadKnowledgeServletHandler" id="_4pEasDPzEei3dfHtumI11Q" instantiates="_4o-7IDPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.xmlServletHandler" id="_4pEasTPzEei3dfHtumI11Q" instantiates="_4o-7ITPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.frameServletHandler" id="_4pEasjPzEei3dfHtumI11Q" instantiates="_4o-7IjPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.packageServletHandler" id="_4pEaszPzEei3dfHtumI11Q" instantiates="_4o-7IzPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.reteDiagramServletHandler" id="_4pFBwDPzEei3dfHtumI11Q" instantiates="_4o-7JDPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.ruleSetServletEditorHandler" id="_4pFBwTPzEei3dfHtumI11Q" instantiates="_4o-7JTPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.decisionTreeEditorServletHandler" id="_4pFBwjPzEei3dfHtumI11Q" instantiates="_4o-7JjPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.variableEditorServletHandler" id="_4pFBwzPzEei3dfHtumI11Q" instantiates="_4o_iMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.constantServletHandler" id="_4pFBxDPzEei3dfHtumI11Q" instantiates="_4o_iMTPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.parameterServletHandler" id="_4pFo0DPzEei3dfHtumI11Q" instantiates="_4o_iMjPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.actionServletHandler" id="_4pFo0TPzEei3dfHtumI11Q" instantiates="_4o_iMzPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.ruleFlowDesignerServletHandler" id="_4pFo0jPzEei3dfHtumI11Q" instantiates="_4o_iNDPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.ulEditorServletHandler" id="_4pFo0zPzEei3dfHtumI11Q" instantiates="_4pAJQDPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.decisiontableEditorServletHandler" id="_4pGP4DPzEei3dfHtumI11Q" instantiates="_4pAJQTPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.scriptDecisiontableEditorServletHandler" id="_4pGP4TPzEei3dfHtumI11Q" instantiates="_4pAJQjPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.commonServletHandler" id="_4pGP4jPzEei3dfHtumI11Q" instantiates="_4pAJQzPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.clientConfigServletHandler" id="_4pGP4zPzEei3dfHtumI11Q" instantiates="_4pAwUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.console.propertyPlaceholderConfigurer" id="_4pGP5DPzEei3dfHtumI11Q" instantiates="_4pAwUTPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.repositoryBuilder" id="_4pGP5TPzEei3dfHtumI11Q" instantiates="_4pAwUjPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.repositoryService" id="_4pG28DPzEei3dfHtumI11Q" instantiates="_4pAwUzPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.props" id="_4qYCQDPzEei3dfHtumI11Q" instantiates="_4pZx4DPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.core.propertyPlaceholderConfigurer" id="_4qYCQTPzEei3dfHtumI11Q" instantiates="_4pZx4TPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.defaultHtmlFileDebugWriter" id="_4qYpUDPzEei3dfHtumI11Q" instantiates="_4pZx4jPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.knowledgeBuilder" id="_4qYpUTPzEei3dfHtumI11Q" instantiates="_4pZx4zPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.builtInActionLibraryBuilder" id="_4qZQYDPzEei3dfHtumI11Q" instantiates="_4paY8DPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.rulesRebuilder" id="_4qZ3cDPzEei3dfHtumI11Q" instantiates="_4paY8TPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.sinFunctionDescriptor" id="_4qaegDPzEei3dfHtumI11Q" instantiates="_4paY8jPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.cosFunctionDescriptor" id="_4qbsoDPzEei3dfHtumI11Q" instantiates="_4paY8zPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.tanFunctionDescriptor" id="_4qbsoTPzEei3dfHtumI11Q" instantiates="_4paY9DPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.lnFunctionDescriptor" id="_4qbsojPzEei3dfHtumI11Q" instantiates="_4paY9TPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.expFunctionDescriptor" id="_4qcTsDPzEei3dfHtumI11Q" instantiates="_4paY9jPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.updateFactFunctionDescriptor" id="_4qc6wDPzEei3dfHtumI11Q" instantiates="_4paY9zPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.updateParameterFunctionDescriptor" id="_4qc6wTPzEei3dfHtumI11Q" instantiates="_4paY-DPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.trimFunctionDescriptor" id="_4qdh0DPzEei3dfHtumI11Q" instantiates="_4pbAADPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.stringLengthFunctionDescriptor" id="_4qeI4DPzEei3dfHtumI11Q" instantiates="_4pbAATPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.absFunctionDescriptor" id="_4qeI4TPzEei3dfHtumI11Q" instantiates="_4pbAAjPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.avgFunctionDescriptor" id="_4qfXADPzEei3dfHtumI11Q" instantiates="_4pbAAzPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.maxFunctionDescriptor" id="_4qf-EDPzEei3dfHtumI11Q" instantiates="_4pbABDPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.minFunctionDescriptor" id="_4qf-ETPzEei3dfHtumI11Q" instantiates="_4pbnEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.sumFunctionDescriptor" id="_4qglIDPzEei3dfHtumI11Q" instantiates="_4pbnETPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.CountFunctionDescriptor" id="_4qhMMDPzEei3dfHtumI11Q" instantiates="_4pbnEjPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.remoteService" id="_4qhzQDPzEei3dfHtumI11Q" instantiates="_4pbnEzPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.configure" id="_4qhzQTPzEei3dfHtumI11Q" instantiates="_4pbnFDPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.actionContextBuilder" id="_4qiaUDPzEei3dfHtumI11Q" instantiates="_4pcOIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.criteriaContextBuilder" id="_4qjBYDPzEei3dfHtumI11Q" instantiates="_4pcOITPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.libraryContextBuilder" id="_4qjocDPzEei3dfHtumI11Q" instantiates="_4pcOIjPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.dslRuleSetBuilder" id="_4qjocTPzEei3dfHtumI11Q" instantiates="_4pcOIzPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.resourceLibraryBuilder" id="_4qjocjPzEei3dfHtumI11Q" instantiates="_4pc1MDPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.knowledgeService" id="_4qkPgDPzEei3dfHtumI11Q" instantiates="_4pc1MTPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.dateAction" id="_4qkPgTPzEei3dfHtumI11Q" instantiates="_4pc1MjPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.stringAction" id="_4qk2kDPzEei3dfHtumI11Q" instantiates="_4pdcQDPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.mathAction" id="_4qk2kTPzEei3dfHtumI11Q" instantiates="_4pdcQTPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.listAction" id="_4qldoDPzEei3dfHtumI11Q" instantiates="_4pdcQjPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.mapAction" id="_4qmEsDPzEei3dfHtumI11Q" instantiates="_4peDUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.loopAction" id="_4qmrwDPzEei3dfHtumI11Q" instantiates="_4peDUTPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.cacheUtils" id="_4qnS0DPzEei3dfHtumI11Q" instantiates="_4peDUjPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.fileResourceProvider" id="_4qn54DPzEei3dfHtumI11Q" instantiates="_4peqYDPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.valueCompute" id="_4qn54TPzEei3dfHtumI11Q" instantiates="_4peqYTPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.utils" id="_4qog8DPzEei3dfHtumI11Q" instantiates="_4peqYjPzEei3dfHtumI11Q"/>
+    <assmComponents name="urule.flowResourceBuilder" id="_4qog8TPzEei3dfHtumI11Q" instantiates="_4pfRcDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_4qpIADPzEei3dfHtumI11Q" instantiates="_4pfRcTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.parameterLibraryResourceBuilder&quot;" id="_4qpIATPzEei3dfHtumI11Q" instantiates="_4pf4gDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.constantLibraryResourceBuilder&quot;" id="_4qpvEDPzEei3dfHtumI11Q" instantiates="_4pf4gTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.actionLibraryResourceBuilder&quot;" id="_4qqWIDPzEei3dfHtumI11Q" instantiates="_4pf4gjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.ruleSetResourceBuilder&quot;" id="_4qqWITPzEei3dfHtumI11Q" instantiates="_4pgfkDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.variableLibraryResourceBuilder&quot;" id="_4qq9MDPzEei3dfHtumI11Q" instantiates="_4pgfkTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.cellContentBuilder&quot;" id="_4qrkQDPzEei3dfHtumI11Q" instantiates="_4phGoDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.decisionTableRulesBuilder&quot;" id="_4qrkQTPzEei3dfHtumI11Q" instantiates="_4phGoTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.scriptDecisionTableResourceBuilder&quot;" id="_4qrkQjPzEei3dfHtumI11Q" instantiates="_4phtsDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.flowDeserializer&quot;" id="_4qsLUDPzEei3dfHtumI11Q" instantiates="_4phtsTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.scriptDecisionTableDeserializer&quot;" id="_4qsyYDPzEei3dfHtumI11Q" instantiates="_4piUwDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.cellScriptDSLBuilder&quot;" id="_4qtZcDPzEei3dfHtumI11Q" instantiates="_4piUwTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.scriptDecisionTableRulesBuilder&quot;" id="_4qtZcTPzEei3dfHtumI11Q" instantiates="_4pi70DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.scriptDecisionTableParser&quot;" id="_4quAgDPzEei3dfHtumI11Q" instantiates="_4pi70TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.actionLibraryDeserializer&quot;" id="_4quAgTPzEei3dfHtumI11Q" instantiates="_4pji4DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.constantLibraryDeserializer&quot;" id="_4quAgjPzEei3dfHtumI11Q" instantiates="_4pji4TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.assertorEvaluator&quot;" id="_4quAgzPzEei3dfHtumI11Q" instantiates="_4pkJ8DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.variableLibraryDeserializer&quot;" id="_4quAhDPzEei3dfHtumI11Q" instantiates="_4pkJ8TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.parameterLibraryDeserializer&quot;" id="_4qunkDPzEei3dfHtumI11Q" instantiates="_4pkxADPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.jointParser&quot;" id="_4qunkTPzEei3dfHtumI11Q" instantiates="_4pkxATPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.cellParser&quot;" id="_4qvOoDPzEei3dfHtumI11Q" instantiates="_4plYEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.scriptCellParser&quot;" id="_4qv1sDPzEei3dfHtumI11Q" instantiates="_4plYETPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.rowParser&quot;" id="_4qwcwDPzEei3dfHtumI11Q" instantiates="_4pl_IDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.columnParser&quot;" id="_4qxD0DPzEei3dfHtumI11Q" instantiates="_4pl_ITPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.decisionTableParser&quot;" id="_4qxD0TPzEei3dfHtumI11Q" instantiates="_4pmmMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.decisionTableDeserializer&quot;" id="_4qyR8DPzEei3dfHtumI11Q" instantiates="_4pnNQDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.parameterLibraryParser&quot;" id="_4qyR8TPzEei3dfHtumI11Q" instantiates="_4pnNQTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.parenParser&quot;" id="_4qy5ADPzEei3dfHtumI11Q" instantiates="_4pn0UDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.constantLibraryParser&quot;" id="_4qy5ATPzEei3dfHtumI11Q" instantiates="_4pn0UTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.actionNodeParser&quot;" id="_4qzgEDPzEei3dfHtumI11Q" instantiates="_4pobYDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.decisionNodeParser&quot;" id="_4qzgETPzEei3dfHtumI11Q" instantiates="_4ppCcDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.endNodeParser&quot;" id="_4q0HIDPzEei3dfHtumI11Q" instantiates="_4ppCcTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.flowDefinitionParser&quot;" id="_4q0HITPzEei3dfHtumI11Q" instantiates="_4pppgDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.forkNodeParser&quot;" id="_4q0uMDPzEei3dfHtumI11Q" instantiates="_4pppgTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.joinNodeParser&quot;" id="_4q0uMTPzEei3dfHtumI11Q" instantiates="_4pqQkDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.startNodeParser&quot;" id="_4q1VQDPzEei3dfHtumI11Q" instantiates="_4pq3oDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.scriptNodeParser&quot;" id="_4q18UDPzEei3dfHtumI11Q" instantiates="_4presDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.ruleNodeParser&quot;" id="_4q18UTPzEei3dfHtumI11Q" instantiates="_4psFwDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.rulePackageNodeParser&quot;" id="_4q18UjPzEei3dfHtumI11Q" instantiates="_4psFwTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.endWithAssertor&quot;" id="_4q2jYDPzEei3dfHtumI11Q" instantiates="_4pss0DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.equalsAssertor&quot;" id="_4q3KcDPzEei3dfHtumI11Q" instantiates="_4ptT4DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.greaterThenAssertor&quot;" id="_4q3KcTPzEei3dfHtumI11Q" instantiates="_4ptT4TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.greaterThenEqualsAssertor&quot;" id="_4q3xgDPzEei3dfHtumI11Q" instantiates="_4pt68DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.inAssertor&quot;" id="_4q4YkDPzEei3dfHtumI11Q" instantiates="_4puiADPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.lessThenAssertor&quot;" id="_4q4_oDPzEei3dfHtumI11Q" instantiates="_4pvJEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.lessThenEqualsAssertor&quot;" id="_4q4_oTPzEei3dfHtumI11Q" instantiates="_4pvJETPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.notEndWithAssertor&quot;" id="_4q4_ojPzEei3dfHtumI11Q" instantiates="_4pvwIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.notEqualsAssertor&quot;" id="_4q5msDPzEei3dfHtumI11Q" instantiates="_4pwXMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.notInAssertor&quot;" id="_4q5msTPzEei3dfHtumI11Q" instantiates="_4pw-QDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.notStartWithAssertor&quot;" id="_4q6NwDPzEei3dfHtumI11Q" instantiates="_4pw-QTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.startWithAssertor&quot;" id="_4q600DPzEei3dfHtumI11Q" instantiates="_4pxlUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.notMatchAssertor&quot;" id="_4q7b4DPzEei3dfHtumI11Q" instantiates="_4pyMYDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.matchAssertor&quot;" id="_4q7b4TPzEei3dfHtumI11Q" instantiates="_4pyzcDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.nullAssertor&quot;" id="_4q8C8DPzEei3dfHtumI11Q" instantiates="_4pyzcTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.notNullAssertor&quot;" id="_4q8qADPzEei3dfHtumI11Q" instantiates="_4pzagDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.equalsIgnoreCaseAssertor&quot;" id="_4q8qATPzEei3dfHtumI11Q" instantiates="_4p0BkDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.notEqualsIgnoreCaseAssertor&quot;" id="_4q9REDPzEei3dfHtumI11Q" instantiates="_4p0ooDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.containAssertor&quot;" id="_4q9RETPzEei3dfHtumI11Q" instantiates="_4p1PsDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.notContainAssertor&quot;" id="_4q94IDPzEei3dfHtumI11Q" instantiates="_4p1PsTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.reteBuilder&quot;" id="_4q-fMDPzEei3dfHtumI11Q" instantiates="_4p12wDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.criteriaBuilder&quot;" id="_4q-fMTPzEei3dfHtumI11Q" instantiates="_4p2d0DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.namedCriteriaBuilder&quot;" id="_4q-fMjPzEei3dfHtumI11Q" instantiates="_4p3E4DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.andBuilder&quot;" id="_4q_GQDPzEei3dfHtumI11Q" instantiates="_4p3r8DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.orBuilder&quot;" id="_4q_tUDPzEei3dfHtumI11Q" instantiates="_4p4TADPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.ruleSetDeserializer&quot;" id="_4rAUYDPzEei3dfHtumI11Q" instantiates="_4p46EDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.commonFunctionActionParser&quot;" id="_4rA7cDPzEei3dfHtumI11Q" instantiates="_4p46ETPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.consolePrintActionParser&quot;" id="_4rBigDPzEei3dfHtumI11Q" instantiates="_4p5hIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.executeMethodActionParser&quot;" id="_4rBigTPzEei3dfHtumI11Q" instantiates="_4p6IMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.lhsParser&quot;" id="_4rCJkDPzEei3dfHtumI11Q" instantiates="_4p6vQDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.leftParser&quot;" id="_4rCJkTPzEei3dfHtumI11Q" instantiates="_4p7WUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.criteriaParser&quot;" id="_4rCwoDPzEei3dfHtumI11Q" instantiates="_4p79YDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.junctionParser&quot;" id="_4rCwoTPzEei3dfHtumI11Q" instantiates="_4p8kcDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.namedJunctionParser&quot;" id="_4rDXsDPzEei3dfHtumI11Q" instantiates="_4p9LgDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.variableLibraryParser&quot;" id="_4rDXsTPzEei3dfHtumI11Q" instantiates="_4p9ykDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.actionLibraryParser&quot;" id="_4rDXsjPzEei3dfHtumI11Q" instantiates="_4p-ZoDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.rhsParser&quot;" id="_4rD-wDPzEei3dfHtumI11Q" instantiates="_4p_AsDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.ruleParser&quot;" id="_4rD-wTPzEei3dfHtumI11Q" instantiates="_4p_nwDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.loopRuleParser&quot;" id="_4rEl0DPzEei3dfHtumI11Q" instantiates="_4qAO0DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.otherParser&quot;" id="_4rFM4DPzEei3dfHtumI11Q" instantiates="_4qA14DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.ruleSetParser&quot;" id="_4rFz8DPzEei3dfHtumI11Q" instantiates="_4qBc8DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.variableAssignActionParser&quot;" id="_4rFz8TPzEei3dfHtumI11Q" instantiates="_4qCEADPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.simpleArithmeticParser&quot;" id="_4rGbADPzEei3dfHtumI11Q" instantiates="_4qCrEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.complexArithmeticParser&quot;" id="_4rHCEDPzEei3dfHtumI11Q" instantiates="_4qDSIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.valueParser&quot;" id="_4rHpIDPzEei3dfHtumI11Q" instantiates="_4qD5MDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.variableParser&quot;" id="_4rIQMDPzEei3dfHtumI11Q" instantiates="_4qEgQDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.variableCategoryParser&quot;" id="_4rIQMTPzEei3dfHtumI11Q" instantiates="_4qFHUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.decisionTreeParser&quot;" id="_4rI3QDPzEei3dfHtumI11Q" instantiates="_4qFuYDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.scorecardParser&quot;" id="_4rI3QTPzEei3dfHtumI11Q" instantiates="_4qGVcDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.cardCellParser&quot;" id="_4rJeUDPzEei3dfHtumI11Q" instantiates="_4qG8gDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.scorecardDeserializer&quot;" id="_4rKFYDPzEei3dfHtumI11Q" instantiates="_4qIKoDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.actionTreeNodeParser&quot;" id="_4rKFYTPzEei3dfHtumI11Q" instantiates="_4qIxsDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.variableTreeNodeParser&quot;" id="_4rKscDPzEei3dfHtumI11Q" instantiates="_4qJYwDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.conditionTreeNodeParser&quot;" id="_4rLTgDPzEei3dfHtumI11Q" instantiates="_4qJ_0DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.decisionTreeRulesBuilder&quot;" id="_4rLTgTPzEei3dfHtumI11Q" instantiates="_4qKm4DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.scorecardResourceBuilder&quot;" id="_4rL6kDPzEei3dfHtumI11Q" instantiates="_4qLN8DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.decisionTreeDeserializer&quot;" id="_4rL6kTPzEei3dfHtumI11Q" instantiates="_4qL1ADPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;urule.decisionTreeResourceBuilder&quot;" id="_4rL6kjPzEei3dfHtumI11Q" instantiates="_4qMcEDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pG28TPzEei3dfHtumI11Q" property="urule.knowledgePackageService.knowledgeBuilder" clientInstElem="_4pDMkjPzEei3dfHtumI11Q" serverInstElem="_4pG28jPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pG28zPzEei3dfHtumI11Q" property="urule.knowledgePackageService.repositoryService" clientInstElem="_4pDMkjPzEei3dfHtumI11Q" serverInstElem="_4pG28DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pG29DPzEei3dfHtumI11Q" property="urule.consoleServletHandler.debugMessageHolder" clientInstElem="_4pDMkzPzEei3dfHtumI11Q" serverInstElem="_4pDMlTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pG29TPzEei3dfHtumI11Q" property="urule.consoleDebugWriter.debugMessageHolder" clientInstElem="_4pDMlDPzEei3dfHtumI11Q" serverInstElem="_4pDMlTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pG29jPzEei3dfHtumI11Q" property="urule.repositoryResourceProvider.repositoryService" clientInstElem="_4pDzoTPzEei3dfHtumI11Q" serverInstElem="_4pG28DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pG29zPzEei3dfHtumI11Q" property="urule.permissionConfigServletHandler.repositoryService" clientInstElem="_4pDzojPzEei3dfHtumI11Q" serverInstElem="_4pG28DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pG2-DPzEei3dfHtumI11Q" property="urule.permissionConfigServletHandler.permissionStore" clientInstElem="_4pDzojPzEei3dfHtumI11Q" serverInstElem="_4pDzozPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pG2-TPzEei3dfHtumI11Q" property="urule.permissionService.repositoryService" clientInstElem="_4pDzozPzEei3dfHtumI11Q" serverInstElem="_4pG28DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pG2-jPzEei3dfHtumI11Q" property="urule.loadKnowledgeServletHandler.knowledgePackageService" clientInstElem="_4pEasDPzEei3dfHtumI11Q" serverInstElem="_4pDMkjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pG2-zPzEei3dfHtumI11Q" property="urule.xmlServletHandler.repositoryService" clientInstElem="_4pEasTPzEei3dfHtumI11Q" serverInstElem="_4pG28DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pHeADPzEei3dfHtumI11Q" property="urule.xmlServletHandler.builtInActionLibraryBuilder" clientInstElem="_4pEasTPzEei3dfHtumI11Q" serverInstElem="_4pHeATPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pHeAjPzEei3dfHtumI11Q" property="urule.frameServletHandler.repositoryService" clientInstElem="_4pEasjPzEei3dfHtumI11Q" serverInstElem="_4pG28DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pHeAzPzEei3dfHtumI11Q" property="urule.packageServletHandler.repositoryService" clientInstElem="_4pEaszPzEei3dfHtumI11Q" serverInstElem="_4pG28DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pHeBDPzEei3dfHtumI11Q" property="urule.packageServletHandler.knowledgeBuilder" clientInstElem="_4pEaszPzEei3dfHtumI11Q" serverInstElem="_4pHeBTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pHeBjPzEei3dfHtumI11Q" property="urule.packageServletHandler.httpSessionKnowledgeCache" clientInstElem="_4pEaszPzEei3dfHtumI11Q" serverInstElem="_4pDzoDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pHeBzPzEei3dfHtumI11Q" property="urule.reteDiagramServletHandler.knowledgeBuilder" clientInstElem="_4pFBwDPzEei3dfHtumI11Q" serverInstElem="_4pHeCDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pIFEDPzEei3dfHtumI11Q" property="urule.reteDiagramServletHandler.httpSessionKnowledgeCache" clientInstElem="_4pFBwDPzEei3dfHtumI11Q" serverInstElem="_4pDzoDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pIFETPzEei3dfHtumI11Q" property="urule.ruleFlowDesignerServletHandler.repositoryService" clientInstElem="_4pFo0jPzEei3dfHtumI11Q" serverInstElem="_4pG28DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pIFEjPzEei3dfHtumI11Q" property="urule.ruleFlowDesignerServletHandler.flowDeserializer" clientInstElem="_4pFo0jPzEei3dfHtumI11Q" serverInstElem="_4pIFEzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pIFFDPzEei3dfHtumI11Q" property="urule.ulEditorServletHandler.repositoryService" clientInstElem="_4pFo0zPzEei3dfHtumI11Q" serverInstElem="_4pG28DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pIFFTPzEei3dfHtumI11Q" property="urule.ulEditorServletHandler.dslRuleSetBuilder" clientInstElem="_4pFo0zPzEei3dfHtumI11Q" serverInstElem="_4pIFFjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pIFFzPzEei3dfHtumI11Q" property="urule.ulEditorServletHandler.resourceLibraryBuilder" clientInstElem="_4pFo0zPzEei3dfHtumI11Q" serverInstElem="_4pIFGDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pIsIDPzEei3dfHtumI11Q" property="urule.commonServletHandler.repositoryService" clientInstElem="_4pGP4jPzEei3dfHtumI11Q" serverInstElem="_4pG28DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pIsITPzEei3dfHtumI11Q" property="urule.commonServletHandler.builtInActionLibraryBuilder" clientInstElem="_4pGP4jPzEei3dfHtumI11Q" serverInstElem="_4pIsIjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pIsIzPzEei3dfHtumI11Q" property="urule.clientConfigServletHandler.repositoryService" clientInstElem="_4pGP4zPzEei3dfHtumI11Q" serverInstElem="_4pG28DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pIsJDPzEei3dfHtumI11Q" property="urule.repositoryService.repositoryBuilder" clientInstElem="_4pG28DPzEei3dfHtumI11Q" serverInstElem="_4pGP5TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4pIsJTPzEei3dfHtumI11Q" property="urule.repositoryService.permissionService" clientInstElem="_4pG28DPzEei3dfHtumI11Q" serverInstElem="_4pDzozPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rMhoDPzEei3dfHtumI11Q" property="urule.knowledgeBuilder.reteBuilder" clientInstElem="_4qYpUTPzEei3dfHtumI11Q" serverInstElem="_4q-fMDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rMhoTPzEei3dfHtumI11Q" property="urule.knowledgeBuilder.rulesRebuilder" clientInstElem="_4qYpUTPzEei3dfHtumI11Q" serverInstElem="_4qZ3cDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rMhojPzEei3dfHtumI11Q" property="urule.knowledgeBuilder.scriptDecisionTableRulesBuilder" clientInstElem="_4qYpUTPzEei3dfHtumI11Q" serverInstElem="_4qtZcTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rNIsDPzEei3dfHtumI11Q" property="urule.knowledgeBuilder.resourceLibraryBuilder" clientInstElem="_4qYpUTPzEei3dfHtumI11Q" serverInstElem="_4qjocjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rNIsTPzEei3dfHtumI11Q" property="urule.knowledgeBuilder.decisionTableRulesBuilder" clientInstElem="_4qYpUTPzEei3dfHtumI11Q" serverInstElem="_4qrkQTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rNIsjPzEei3dfHtumI11Q" property="urule.knowledgeBuilder.dslRuleSetBuilder" clientInstElem="_4qYpUTPzEei3dfHtumI11Q" serverInstElem="_4qjocTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rNIszPzEei3dfHtumI11Q" property="urule.knowledgeBuilder.decisionTreeRulesBuilder" clientInstElem="_4qYpUTPzEei3dfHtumI11Q" serverInstElem="_4rLTgTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rNItDPzEei3dfHtumI11Q" property="urule.rulesRebuilder.resourceLibraryBuilder" clientInstElem="_4qZ3cDPzEei3dfHtumI11Q" serverInstElem="_4qjocjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rNvwDPzEei3dfHtumI11Q" property="urule.dslRuleSetBuilder.rulesRebuilder" clientInstElem="_4qjocTPzEei3dfHtumI11Q" serverInstElem="_4qZ3cDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rNvwTPzEei3dfHtumI11Q" property="urule.resourceLibraryBuilder.builtInActionLibraryBuilder" clientInstElem="_4qjocjPzEei3dfHtumI11Q" serverInstElem="_4qZQYDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rNvwjPzEei3dfHtumI11Q" property="urule.knowledgeService.remoteService" clientInstElem="_4qkPgDPzEei3dfHtumI11Q" serverInstElem="_4qhzQDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rNvwzPzEei3dfHtumI11Q" property="urule.flowResourceBuilder.flowDeserializer" clientInstElem="_4qog8TPzEei3dfHtumI11Q" serverInstElem="_4qsLUDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rOW0DPzEei3dfHtumI11Q" clientInstElem="_4qpIADPzEei3dfHtumI11Q" serverInstElem="_4qyR8DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rOW0TPzEei3dfHtumI11Q" property="urule.parameterLibraryResourceBuilder.parameterLibraryDeserializer" clientInstElem="_4qpIATPzEei3dfHtumI11Q" serverInstElem="_4qunkDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rOW0jPzEei3dfHtumI11Q" property="urule.constantLibraryResourceBuilder.constantLibraryDeserializer" clientInstElem="_4qpvEDPzEei3dfHtumI11Q" serverInstElem="_4quAgjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rOW0zPzEei3dfHtumI11Q" property="urule.actionLibraryResourceBuilder.actionLibraryDeserializer" clientInstElem="_4qqWIDPzEei3dfHtumI11Q" serverInstElem="_4quAgTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rOW1DPzEei3dfHtumI11Q" property="urule.ruleSetResourceBuilder.ruleSetDeserializer" clientInstElem="_4qqWITPzEei3dfHtumI11Q" serverInstElem="_4rAUYDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rO94DPzEei3dfHtumI11Q" property="urule.variableLibraryResourceBuilder.variableLibraryDeserializer" clientInstElem="_4qq9MDPzEei3dfHtumI11Q" serverInstElem="_4quAhDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rO94TPzEei3dfHtumI11Q" property="urule.decisionTableRulesBuilder.cellContentBuilder" clientInstElem="_4qrkQTPzEei3dfHtumI11Q" serverInstElem="_4qrkQDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rO94jPzEei3dfHtumI11Q" property="urule.scriptDecisionTableResourceBuilder.scriptDecisionTableDeserializer" clientInstElem="_4qrkQjPzEei3dfHtumI11Q" serverInstElem="_4qsyYDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rO94zPzEei3dfHtumI11Q" property="urule.flowDeserializer.flowDefinitionParser" clientInstElem="_4qsLUDPzEei3dfHtumI11Q" serverInstElem="_4q0HITPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rO95DPzEei3dfHtumI11Q" property="urule.scriptDecisionTableDeserializer.scriptDecisionTableParser" clientInstElem="_4qsyYDPzEei3dfHtumI11Q" serverInstElem="_4quAgDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rPk8DPzEei3dfHtumI11Q" property="urule.scriptDecisionTableRulesBuilder.cellScriptDSLBuilder" clientInstElem="_4qtZcTPzEei3dfHtumI11Q" serverInstElem="_4qtZcDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rPk8TPzEei3dfHtumI11Q" property="urule.scriptDecisionTableRulesBuilder.dslRuleSetBuilder" clientInstElem="_4qtZcTPzEei3dfHtumI11Q" serverInstElem="_4qjocTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rPk8jPzEei3dfHtumI11Q" property="urule.scriptDecisionTableParser.rowParser" clientInstElem="_4quAgDPzEei3dfHtumI11Q" serverInstElem="_4qwcwDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rPk8zPzEei3dfHtumI11Q" property="urule.scriptDecisionTableParser.columnParser" clientInstElem="_4quAgDPzEei3dfHtumI11Q" serverInstElem="_4qxD0DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rPk9DPzEei3dfHtumI11Q" property="urule.scriptDecisionTableParser.scriptCellParser" clientInstElem="_4quAgDPzEei3dfHtumI11Q" serverInstElem="_4qv1sDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rPk9TPzEei3dfHtumI11Q" property="urule.actionLibraryDeserializer.actionLibraryParser" clientInstElem="_4quAgTPzEei3dfHtumI11Q" serverInstElem="_4rDXsjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rPk9jPzEei3dfHtumI11Q" property="urule.constantLibraryDeserializer.constantLibraryParser" clientInstElem="_4quAgjPzEei3dfHtumI11Q" serverInstElem="_4qy5ATPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rPk9zPzEei3dfHtumI11Q" property="urule.variableLibraryDeserializer.variableLibraryParser" clientInstElem="_4quAhDPzEei3dfHtumI11Q" serverInstElem="_4rDXsTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rPk-DPzEei3dfHtumI11Q" property="urule.parameterLibraryDeserializer.parameterLibraryParser" clientInstElem="_4qunkDPzEei3dfHtumI11Q" serverInstElem="_4qyR8TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rQMADPzEei3dfHtumI11Q" property="urule.jointParser.valueParser" clientInstElem="_4qunkTPzEei3dfHtumI11Q" serverInstElem="_4rHpIDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rQMATPzEei3dfHtumI11Q" property="urule.cellParser.jointParser" clientInstElem="_4qvOoDPzEei3dfHtumI11Q" serverInstElem="_4qunkTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rQMAjPzEei3dfHtumI11Q" property="urule.cellParser.valueParser" clientInstElem="_4qvOoDPzEei3dfHtumI11Q" serverInstElem="_4rHpIDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rQMAzPzEei3dfHtumI11Q" property="urule.decisionTableParser.rowParser" clientInstElem="_4qxD0TPzEei3dfHtumI11Q" serverInstElem="_4qwcwDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rQzEDPzEei3dfHtumI11Q" property="urule.decisionTableParser.columnParser" clientInstElem="_4qxD0TPzEei3dfHtumI11Q" serverInstElem="_4qxD0DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rQzETPzEei3dfHtumI11Q" property="urule.decisionTableParser.cellParser" clientInstElem="_4qxD0TPzEei3dfHtumI11Q" serverInstElem="_4qvOoDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rQzEjPzEei3dfHtumI11Q" property="urule.decisionTableParser.rulesRebuilder" clientInstElem="_4qxD0TPzEei3dfHtumI11Q" serverInstElem="_4qZ3cDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rRaIDPzEei3dfHtumI11Q" property="urule.decisionTableDeserializer.decisionTableParser" clientInstElem="_4qyR8DPzEei3dfHtumI11Q" serverInstElem="_4qxD0TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rRaITPzEei3dfHtumI11Q" property="urule.parameterLibraryParser.variableParser" clientInstElem="_4qyR8TPzEei3dfHtumI11Q" serverInstElem="_4rIQMDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rRaIjPzEei3dfHtumI11Q" property="urule.parenParser.valueParser" clientInstElem="_4qy5ADPzEei3dfHtumI11Q" serverInstElem="_4rHpIDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rRaIzPzEei3dfHtumI11Q" property="urule.parenParser.arithmeticParser" clientInstElem="_4qy5ADPzEei3dfHtumI11Q" serverInstElem="_4rHCEDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rRaJDPzEei3dfHtumI11Q" property="urule.ruleSetDeserializer.ruleSetParser" clientInstElem="_4rAUYDPzEei3dfHtumI11Q" serverInstElem="_4rFz8DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rSBMDPzEei3dfHtumI11Q" property="urule.commonFunctionActionParser.valueParser" clientInstElem="_4rA7cDPzEei3dfHtumI11Q" serverInstElem="_4rHpIDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rSBMTPzEei3dfHtumI11Q" property="urule.consolePrintActionParser.valueParser" clientInstElem="_4rBigDPzEei3dfHtumI11Q" serverInstElem="_4rHpIDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rSBMjPzEei3dfHtumI11Q" property="urule.executeMethodActionParser.valueParser" clientInstElem="_4rBigTPzEei3dfHtumI11Q" serverInstElem="_4rHpIDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rSBMzPzEei3dfHtumI11Q" property="urule.leftParser.valueParser" clientInstElem="_4rCJkTPzEei3dfHtumI11Q" serverInstElem="_4rHpIDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rSBNDPzEei3dfHtumI11Q" property="urule.leftParser.arithmeticParser" clientInstElem="_4rCJkTPzEei3dfHtumI11Q" serverInstElem="_4rGbADPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rSoQDPzEei3dfHtumI11Q" property="urule.criteriaParser.valueParser" clientInstElem="_4rCwoDPzEei3dfHtumI11Q" serverInstElem="_4rHpIDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rSoQTPzEei3dfHtumI11Q" property="urule.criteriaParser.leftParser" clientInstElem="_4rCwoDPzEei3dfHtumI11Q" serverInstElem="_4rCJkTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rSoQjPzEei3dfHtumI11Q" property="urule.namedJunctionParser.valueParser" clientInstElem="_4rDXsDPzEei3dfHtumI11Q" serverInstElem="_4rHpIDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rSoQzPzEei3dfHtumI11Q" property="urule.variableLibraryParser.variableCategoryParser" clientInstElem="_4rDXsTPzEei3dfHtumI11Q" serverInstElem="_4rIQMTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rSoRDPzEei3dfHtumI11Q" property="urule.ruleParser.lhsParser" clientInstElem="_4rD-wTPzEei3dfHtumI11Q" serverInstElem="_4rCJkDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rSoRTPzEei3dfHtumI11Q" property="urule.ruleParser.rhsParser" clientInstElem="_4rD-wTPzEei3dfHtumI11Q" serverInstElem="_4rD-wDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rSoRjPzEei3dfHtumI11Q" property="urule.ruleParser.otherParser" clientInstElem="_4rD-wTPzEei3dfHtumI11Q" serverInstElem="_4rFM4DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rSoRzPzEei3dfHtumI11Q" property="urule.loopRuleParser.lhsParser" clientInstElem="_4rEl0DPzEei3dfHtumI11Q" serverInstElem="_4rCJkDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rTPUDPzEei3dfHtumI11Q" property="urule.loopRuleParser.rhsParser" clientInstElem="_4rEl0DPzEei3dfHtumI11Q" serverInstElem="_4rD-wDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rTPUTPzEei3dfHtumI11Q" property="urule.loopRuleParser.otherParser" clientInstElem="_4rEl0DPzEei3dfHtumI11Q" serverInstElem="_4rFM4DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rTPUjPzEei3dfHtumI11Q" property="urule.loopRuleParser.valueParser" clientInstElem="_4rEl0DPzEei3dfHtumI11Q" serverInstElem="_4rHpIDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rTPUzPzEei3dfHtumI11Q" property="urule.ruleSetParser.ruleParser" clientInstElem="_4rFz8DPzEei3dfHtumI11Q" serverInstElem="_4rD-wTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rTPVDPzEei3dfHtumI11Q" property="urule.ruleSetParser.loopRuleParser" clientInstElem="_4rFz8DPzEei3dfHtumI11Q" serverInstElem="_4rEl0DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rT2YDPzEei3dfHtumI11Q" property="urule.ruleSetParser.rulesRebuilder" clientInstElem="_4rFz8DPzEei3dfHtumI11Q" serverInstElem="_4qZ3cDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rT2YTPzEei3dfHtumI11Q" property="urule.variableAssignActionParser.valueParser" clientInstElem="_4rFz8TPzEei3dfHtumI11Q" serverInstElem="_4rHpIDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rT2YjPzEei3dfHtumI11Q" property="urule.complexArithmeticParser.valueParser" clientInstElem="_4rHCEDPzEei3dfHtumI11Q" serverInstElem="_4rHpIDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rT2YzPzEei3dfHtumI11Q" property="urule.complexArithmeticParser.parenParser" clientInstElem="_4rHCEDPzEei3dfHtumI11Q" serverInstElem="_4qy5ADPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rT2ZDPzEei3dfHtumI11Q" property="urule.valueParser.arithmeticParser" clientInstElem="_4rHpIDPzEei3dfHtumI11Q" serverInstElem="_4rHCEDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rUdcDPzEei3dfHtumI11Q" property="urule.variableCategoryParser.variableParser" clientInstElem="_4rIQMTPzEei3dfHtumI11Q" serverInstElem="_4rIQMDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rUdcTPzEei3dfHtumI11Q" property="urule.decisionTreeParser.variableTreeNodeParser" clientInstElem="_4rI3QDPzEei3dfHtumI11Q" serverInstElem="_4rKscDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rUdcjPzEei3dfHtumI11Q" property="urule.decisionTreeParser.rulesRebuilder" clientInstElem="_4rI3QDPzEei3dfHtumI11Q" serverInstElem="_4qZ3cDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rUdczPzEei3dfHtumI11Q" property="urule.scorecardParser.cardCellParser" clientInstElem="_4rI3QTPzEei3dfHtumI11Q" serverInstElem="_4rJeUDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rUddDPzEei3dfHtumI11Q" property="urule.scorecardParser.rulesRebuilder" clientInstElem="_4rI3QTPzEei3dfHtumI11Q" serverInstElem="_4qZ3cDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rVEgDPzEei3dfHtumI11Q" property="urule.cardCellParser.valueParser" clientInstElem="_4rJeUDPzEei3dfHtumI11Q" serverInstElem="_4rHpIDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rVEgTPzEei3dfHtumI11Q" property="urule.cardCellParser.jointParser" clientInstElem="_4rJeUDPzEei3dfHtumI11Q" serverInstElem="_4qunkTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rVEgjPzEei3dfHtumI11Q" property="urule.scorecardDeserializer.scorecardParser" clientInstElem="_4rKFYDPzEei3dfHtumI11Q" serverInstElem="_4rI3QTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rVEgzPzEei3dfHtumI11Q" property="urule.variableTreeNodeParser.leftParser" clientInstElem="_4rKscDPzEei3dfHtumI11Q" serverInstElem="_4rCJkTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rVEhDPzEei3dfHtumI11Q" property="urule.variableTreeNodeParser.conditionTreeNodeParser" clientInstElem="_4rKscDPzEei3dfHtumI11Q" serverInstElem="_4rLTgDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rVrkDPzEei3dfHtumI11Q" property="urule.conditionTreeNodeParser.valueParser" clientInstElem="_4rLTgDPzEei3dfHtumI11Q" serverInstElem="_4rHpIDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rVrkTPzEei3dfHtumI11Q" property="urule.conditionTreeNodeParser.variableTreeNodeParser" clientInstElem="_4rLTgDPzEei3dfHtumI11Q" serverInstElem="_4rKscDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rVrkjPzEei3dfHtumI11Q" property="urule.conditionTreeNodeParser.actionTreeNodeParser" clientInstElem="_4rLTgDPzEei3dfHtumI11Q" serverInstElem="_4rKFYTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rVrkzPzEei3dfHtumI11Q" property="urule.scorecardResourceBuilder.reteBuilder" clientInstElem="_4rL6kDPzEei3dfHtumI11Q" serverInstElem="_4q-fMDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rVrlDPzEei3dfHtumI11Q" property="urule.scorecardResourceBuilder.resourceLibraryBuilder" clientInstElem="_4rL6kDPzEei3dfHtumI11Q" serverInstElem="_4qjocjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rVrlTPzEei3dfHtumI11Q" property="urule.scorecardResourceBuilder.scorecardDeserializer" clientInstElem="_4rL6kDPzEei3dfHtumI11Q" serverInstElem="_4rKFYDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rWSoDPzEei3dfHtumI11Q" property="urule.scorecardResourceBuilder.rulesRebuilder" clientInstElem="_4rL6kDPzEei3dfHtumI11Q" serverInstElem="_4qZ3cDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rWSoTPzEei3dfHtumI11Q" property="urule.decisionTreeDeserializer.decisionTreeParser" clientInstElem="_4rL6kTPzEei3dfHtumI11Q" serverInstElem="_4rI3QDPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_4rWSojPzEei3dfHtumI11Q" property="urule.decisionTreeResourceBuilder.decisionTreeDeserializer" clientInstElem="_4rL6kjPzEei3dfHtumI11Q" serverInstElem="_4rL6kTPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="youseries.urule_spec">
+    <specConnections refID="_4rXgwDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXgwTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXgwjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXgwzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXgxDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXgxTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXgxjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXgxzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXgyDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXgyTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXgyjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXgyzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXgzDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXgzTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXgzjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXgzzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg0DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg0TPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg0jPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg0zPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg1DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg1TPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg1jPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg1zPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg2DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg2TPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg2jPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg2zPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg3DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg3TPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg3jPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg3zPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg4DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg4TPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg4jPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg4zPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg5DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg5TPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg5jPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg5zPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg6DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg6TPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg6jPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg6zPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg7DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg7TPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg7jPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg7zPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg8DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg8TPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg8jPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg8zPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg9DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg9TPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg9jPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg9zPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg-DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg-TPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg-jPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg-zPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg_DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg_TPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg_jPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXg_zPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhADPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhATPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhAjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhAzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhBDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhBTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhBjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhBzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhCDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhCTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhCjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhCzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhDDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhDTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhDjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhDzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhEDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhETPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhEjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhEzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhFDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhFTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhFjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhFzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhGDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhGTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhGjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhGzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhHDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhHTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhHjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhHzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhIDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhITPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhIjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhIzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhJDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhJTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhJjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhJzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhKDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhKTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhKjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhKzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhLDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhLTPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhLjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_4rXhLzPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="linux-china.dubbo3">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linux-china.dubbo3_config" implements="//@architectureDescriptions[name='linux-china.dubbo3_spec']">
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_rJ4joDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_rNTrEDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_rNwXADPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.dubbo.container.spring.SpringContainer&quot;" id="_rRV2gDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.dubbo.container.spring.SpringContainer&quot;" id="_rRfAcDPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linux-china.dubbo3_asm" instantiates="//@architectureDescriptions[name='linux-china.dubbo3_config']">
+    <assmComponents id="_rJ4joTPxEei3dfHtumI11Q" instantiates="_rJ4joDPxEei3dfHtumI11Q"/>
+    <assmComponents id="_rNTrETPxEei3dfHtumI11Q" instantiates="_rNTrEDPxEei3dfHtumI11Q"/>
+    <assmComponents id="_rNwXATPxEei3dfHtumI11Q" instantiates="_rNwXADPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;container&quot;" id="_rRV2gTPxEei3dfHtumI11Q" instantiates="_rRV2gDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;container&quot;" id="_rRfAcTPxEei3dfHtumI11Q" instantiates="_rRfAcDPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="linux-china.dubbo3_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

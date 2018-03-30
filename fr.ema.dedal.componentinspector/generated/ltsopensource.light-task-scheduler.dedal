@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="ltsopensource.light-task-scheduler">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ltsopensource.light-task-scheduler_config" implements="//@architectureDescriptions[name='ltsopensource.light-task-scheduler_spec']">
+    <configComponents name="com.github.ltsopensource.startup.tasktracker.TaskTrackerFactoryBean" id="_xBnMADPxEei3dfHtumI11Q"/>
+    <configComponents name="com.github.ltsopensource.startup.tasktracker.TaskTrackerFactoryBean" id="_xBwV8DPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ltsopensource.light-task-scheduler_asm" instantiates="//@architectureDescriptions[name='ltsopensource.light-task-scheduler_config']">
+    <assmComponents name="ltsTaskTracker" id="_xBnMATPxEei3dfHtumI11Q" instantiates="_xBnMADPxEei3dfHtumI11Q"/>
+    <assmComponents name="ltsTaskTracker" id="_xBwV8TPxEei3dfHtumI11Q" instantiates="_xBwV8DPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ltsopensource.light-task-scheduler_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

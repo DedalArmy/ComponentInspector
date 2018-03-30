@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="chengdedeng.waf">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="chengdedeng.waf_config" implements="//@architectureDescriptions[name='chengdedeng.waf_spec']">
+    <configComponents name="&quot;info.yangguo.waf.util.PooledAllocatorStats&quot;" id="_W48E4DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jmx.export.MBeanExporter&quot;" id="_W48E4TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;info.yangguo.waf.util.PooledAllocatorStats&quot;" id="_W5KHUDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jmx.export.MBeanExporter&quot;" id="_W5KHUTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;info.yangguo.waf.util.PooledAllocatorStats&quot;" id="_W5ZX4DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jmx.export.MBeanExporter&quot;" id="_W5ZX4TPvEei3dfHtumI11Q"/>
+    <configConnections refID="_W48E4jPvEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_W48E4TPvEei3dfHtumI11Q" serverClassElem="_W48E4DPvEei3dfHtumI11Q"/>
+    <configConnections refID="_W5KHUjPvEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_W5KHUTPvEei3dfHtumI11Q" serverClassElem="_W5KHUDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_W5ZX4jPvEei3dfHtumI11Q" property="&quot;beans&quot;" clientClassElem="_W5ZX4TPvEei3dfHtumI11Q" serverClassElem="_W5ZX4DPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="chengdedeng.waf_asm" instantiates="//@architectureDescriptions[name='chengdedeng.waf_config']">
+    <assmComponents name="pooledstats" id="_W48E4zPvEei3dfHtumI11Q" instantiates="_W48E4DPvEei3dfHtumI11Q"/>
+    <assmComponents id="_W48E5DPvEei3dfHtumI11Q" instantiates="_W48E4TPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;pooledstats&quot;" id="_W5KHUzPvEei3dfHtumI11Q" instantiates="_W5KHUDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_W5KuYDPvEei3dfHtumI11Q" instantiates="_W5KHUTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;pooledstats&quot;" id="_W5ZX4zPvEei3dfHtumI11Q" instantiates="_W5ZX4DPvEei3dfHtumI11Q"/>
+    <assmComponents id="_W5ZX5DPvEei3dfHtumI11Q" instantiates="_W5ZX4TPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_W48E5TPvEei3dfHtumI11Q" clientInstElem="_W48E5DPvEei3dfHtumI11Q" serverInstElem="_W48E4zPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_W5KuYTPvEei3dfHtumI11Q" clientInstElem="_W5KuYDPvEei3dfHtumI11Q" serverInstElem="_W5KHUzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_W5ZX5TPvEei3dfHtumI11Q" clientInstElem="_W5ZX5DPvEei3dfHtumI11Q" serverInstElem="_W5ZX4zPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="chengdedeng.waf_spec">
+    <specConnections refID="_W5dpUDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_W5dpUTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_W5dpUjPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

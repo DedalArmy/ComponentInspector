@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="SeldonIO.seldon-server">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="SeldonIO.seldon-server_config" implements="//@architectureDescriptions[name='SeldonIO.seldon-server_spec']">
+    <configComponents name="&quot;io.seldon.client.services.ApiState&quot;" id="_v-d3gDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;io.seldon.client.services.ApiServiceImpl&quot;" id="_v-d3gTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;io.seldon.client.DefaultApiClient&quot;" id="_v-nBcDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;io.seldon.client.test.js.JsTestState&quot;" id="_v-nBcTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;io.seldon.client.attributes.ItemAttributeServiceImpl&quot;" id="_v-nBcjPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;io.seldon.client.attributes.UserAttributeServiceImpl&quot;" id="_v-nBczPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.text.SimpleDateFormat&quot;" id="_v_DtYDPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;io.seldon.api.controller.serialisation.JsonDateSerialiser&quot;" id="_v_DtYTPyEei3dfHtumI11Q"/>
+    <configComponents name="&quot;io.seldon.api.resource.VersionBean&quot;" id="_v_DtYjPyEei3dfHtumI11Q"/>
+    <configConnections refID="_v_DtYzPyEei3dfHtumI11Q" clientClassElem="_v_DtYTPyEei3dfHtumI11Q" serverClassElem="_v_DtYDPyEei3dfHtumI11Q"/>
+    <configConnections refID="_v_DtZDPyEei3dfHtumI11Q" clientClassElem="_v_DtYjPyEei3dfHtumI11Q" serverClassElem="_v_DtZTPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="SeldonIO.seldon-server_asm" instantiates="//@architectureDescriptions[name='SeldonIO.seldon-server_config']">
+    <assmComponents name="apiState" id="_v-d3gjPyEei3dfHtumI11Q" instantiates="_v-d3gDPyEei3dfHtumI11Q"/>
+    <assmComponents name="service.apiService" id="_v-d3gzPyEei3dfHtumI11Q" instantiates="_v-d3gTPyEei3dfHtumI11Q"/>
+    <assmComponents name="seldonApiService" id="_v-nBdDPyEei3dfHtumI11Q" instantiates="_v-nBcDPyEei3dfHtumI11Q"/>
+    <assmComponents name="jsTestState" id="_v-nBdTPyEei3dfHtumI11Q" instantiates="_v-nBcTPyEei3dfHtumI11Q"/>
+    <assmComponents name="itemAttributeService" id="_v-nBdjPyEei3dfHtumI11Q" instantiates="_v-nBcjPyEei3dfHtumI11Q"/>
+    <assmComponents name="userAttributeService" id="_v-nBdzPyEei3dfHtumI11Q" instantiates="_v-nBczPyEei3dfHtumI11Q"/>
+    <assmComponents name="dateFormat" id="_v_DtZjPyEei3dfHtumI11Q" instantiates="_v_DtYDPyEei3dfHtumI11Q"/>
+    <assmComponents id="_v_DtZzPyEei3dfHtumI11Q" instantiates="_v_DtYTPyEei3dfHtumI11Q"/>
+    <assmComponents id="_v_DtaDPyEei3dfHtumI11Q" instantiates="_v_DtYjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_v_DtaTPyEei3dfHtumI11Q" clientInstElem="_v_DtZzPyEei3dfHtumI11Q" serverInstElem="_v_DtZjPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_v_DtajPyEei3dfHtumI11Q" clientInstElem="_v_DtZzPyEei3dfHtumI11Q" serverInstElem="_v_DtazPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="SeldonIO.seldon-server_spec">
+    <specConnections refID="_v_WoUDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_v_WoUTPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="makersoft.mybatis-shards">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="makersoft.mybatis-shards_config" implements="//@architectureDescriptions[name='makersoft.mybatis-shards_spec']">
+    <configComponents name="&quot;org.makersoft.shards.cfg.impl.ShardConfigurationImpl&quot;" id="_xJqUwDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.makersoft.shards.spring.ShardedSqlSessionFactoryBean&quot;" id="_xJqUwTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;" id="_xJqUwjPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.makersoft.shards.transaction.MultiDataSourcesTransactionManager&quot;" id="_xJqUwzPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.SimpleDriverDataSource&quot;" id="_xJ0FwDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy&quot;" id="_xJ0FwTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.SimpleDriverDataSource&quot;" id="_xJ9PsDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy&quot;" id="_xJ9PsTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.makersoft.shards.cfg.impl.ShardConfigurationImpl&quot;" id="_xKQKoDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.makersoft.shards.spring.ShardedSqlSessionFactoryBean&quot;" id="_xKQKoTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;" id="_xKQKojPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.makersoft.shards.transaction.MultiDataSourcesTransactionManager&quot;" id="_xKQKozPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.SimpleDriverDataSource&quot;" id="_xKQKpDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy&quot;" id="_xKQKpTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.util.HashMap&quot;" id="_xKjsoDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.makersoft.shards.spring.ShardedSqlSessionFactoryBean&quot;" id="_xKjsoTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;" id="_xKjsojPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.makersoft.shards.transaction.MultiDataSourcesTransactionManager&quot;" id="_xKjsozPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.SimpleDriverDataSource&quot;" id="_xKjspDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy&quot;" id="_xKjspTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.makersoft.shards.cfg.impl.ShardConfigurationImpl&quot;" id="_xK2nkDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.makersoft.shards.spring.ShardedSqlSessionFactoryBean&quot;" id="_xK2nkTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;" id="_xK2nkjPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.makersoft.shards.transaction.MultiDataSourcesTransactionManager&quot;" id="_xK2nkzPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.SimpleDriverDataSource&quot;" id="_xK2nlDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy&quot;" id="_xK2nlTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.SimpleDriverDataSource&quot;" id="_xLJigDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy&quot;" id="_xLJigTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.makersoft.shards.cfg.impl.ShardConfigurationImpl&quot;" id="_xLTTgDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.makersoft.shards.spring.ShardedSqlSessionFactoryBean&quot;" id="_xLTTgTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;" id="_xLTTgjPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.makersoft.shards.transaction.MultiDataSourcesTransactionManager&quot;" id="_xLTTgzPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.SimpleDriverDataSource&quot;" id="_xLTThDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy&quot;" id="_xLTThTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.util.HashMap&quot;" id="_xLmOcDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.makersoft.shards.spring.ShardedSqlSessionFactoryBean&quot;" id="_xLmOcTPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;" id="_xLmOcjPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.makersoft.shards.transaction.MultiDataSourcesTransactionManager&quot;" id="_xLmOczPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.SimpleDriverDataSource&quot;" id="_xLmOdDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy&quot;" id="_xLmOdTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xJ0FwjPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_xJqUwDPxEei3dfHtumI11Q" serverClassElem="_xJ0FwTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xJ0FwzPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_xJqUwDPxEei3dfHtumI11Q" serverClassElem="_xJ0FxDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xJ0FxTPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_xJqUwDPxEei3dfHtumI11Q" serverClassElem="_xJ0FxjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xJ0FxzPxEei3dfHtumI11Q" property="&quot;shardStrategyFactory&quot;" clientClassElem="_xJqUwTPxEei3dfHtumI11Q" serverClassElem="_xJ0FyDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xJ0FyTPxEei3dfHtumI11Q" property="&quot;idGenerator&quot;" clientClassElem="_xJqUwTPxEei3dfHtumI11Q" serverClassElem="_xJ0FyjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xJ0FyzPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xJqUwzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xJ0FzDPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xJqUwzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xJ0FzTPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xJqUwzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xJ0FzjPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xJqUwzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xJ0FzzPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xJ0FxjPxEei3dfHtumI11Q" serverClassElem="_xJ0FwDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xJ0F0DPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xJ0FxjPxEei3dfHtumI11Q" serverClassElem="_xJ0F0TPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xJ0F0jPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xJ0FxjPxEei3dfHtumI11Q" serverClassElem="_xJ0F0zPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xJ0F1DPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xJ0FwTPxEei3dfHtumI11Q" serverClassElem="_xJ0F1TPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xJ9PsjPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xJ9PsTPxEei3dfHtumI11Q" serverClassElem="_xJ9PsDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xJ9PszPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xJ9PsTPxEei3dfHtumI11Q" serverClassElem="_xJ9PtDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xJ9PtTPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xJ9PsTPxEei3dfHtumI11Q" serverClassElem="_xJ9PtjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKQKpjPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_xKQKoDPxEei3dfHtumI11Q" serverClassElem="_xKQKpTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKQKpzPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_xKQKoDPxEei3dfHtumI11Q" serverClassElem="_xKQKqDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKQKqTPxEei3dfHtumI11Q" property="&quot;shardStrategyFactory&quot;" clientClassElem="_xKQKoTPxEei3dfHtumI11Q" serverClassElem="_xKQKqjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKQKqzPxEei3dfHtumI11Q" property="&quot;idGenerator&quot;" clientClassElem="_xKQKoTPxEei3dfHtumI11Q" serverClassElem="_xKQKrDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKQKrTPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xKQKozPxEei3dfHtumI11Q" serverClassElem="_xKQKpTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKQKrjPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xKQKpTPxEei3dfHtumI11Q" serverClassElem="_xKQKpDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKQKrzPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xKQKpTPxEei3dfHtumI11Q" serverClassElem="_xKQKsDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKjspjPxEei3dfHtumI11Q" clientClassElem="_xKjsoDPxEei3dfHtumI11Q" serverClassElem="_xKjspTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKjspzPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xKjsoTPxEei3dfHtumI11Q" serverClassElem="_xKjsoDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKjsqDPxEei3dfHtumI11Q" property="&quot;shardStrategyFactory&quot;" clientClassElem="_xKjsoTPxEei3dfHtumI11Q" serverClassElem="_xKjsqTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKjsqjPxEei3dfHtumI11Q" property="&quot;idGenerator&quot;" clientClassElem="_xKjsoTPxEei3dfHtumI11Q" serverClassElem="_xKjsqzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKjsrDPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xKjsozPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKjsrTPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xKjsozPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKjsrjPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xKjsozPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKjsrzPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xKjsozPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKjssDPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xKjspTPxEei3dfHtumI11Q" serverClassElem="_xKjspDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKjssTPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xKjspTPxEei3dfHtumI11Q" serverClassElem="_xKjssjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKjsszPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xKjspTPxEei3dfHtumI11Q" serverClassElem="_xKjstDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xKjstTPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xKjspTPxEei3dfHtumI11Q" serverClassElem="_xKjstjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xK2nljPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_xK2nkDPxEei3dfHtumI11Q" serverClassElem="_xK2nlTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xK2nlzPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_xK2nkDPxEei3dfHtumI11Q" serverClassElem="_xK2nmDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xK2nmTPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_xK2nkDPxEei3dfHtumI11Q" serverClassElem="_xK2nmjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xK2nmzPxEei3dfHtumI11Q" property="&quot;shardStrategyFactory&quot;" clientClassElem="_xK2nkTPxEei3dfHtumI11Q" serverClassElem="_xK2nnDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xK2nnTPxEei3dfHtumI11Q" property="&quot;idGenerator&quot;" clientClassElem="_xK2nkTPxEei3dfHtumI11Q" serverClassElem="_xK2nnjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xK2nnzPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xK2nkzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xK2noDPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xK2nkzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xK2noTPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xK2nkzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xK2nojPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xK2nkzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xK2nozPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xK2nlTPxEei3dfHtumI11Q" serverClassElem="_xK2nlDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xK2npDPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xK2nlTPxEei3dfHtumI11Q" serverClassElem="_xK2npTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xK2npjPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xK2nlTPxEei3dfHtumI11Q" serverClassElem="_xK2npzPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xK2nqDPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xK2nlTPxEei3dfHtumI11Q" serverClassElem="_xK2nqTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLJigjPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xLJigTPxEei3dfHtumI11Q" serverClassElem="_xLJigDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLJigzPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xLJigTPxEei3dfHtumI11Q" serverClassElem="_xLJihDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLJihTPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xLJigTPxEei3dfHtumI11Q" serverClassElem="_xLJihjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLTThjPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_xLTTgDPxEei3dfHtumI11Q" serverClassElem="_xLTThTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLTThzPxEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_xLTTgDPxEei3dfHtumI11Q" serverClassElem="_xLTTiDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLTTiTPxEei3dfHtumI11Q" property="&quot;shardStrategyFactory&quot;" clientClassElem="_xLTTgTPxEei3dfHtumI11Q" serverClassElem="_xLTTijPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLTTizPxEei3dfHtumI11Q" property="&quot;idGenerator&quot;" clientClassElem="_xLTTgTPxEei3dfHtumI11Q" serverClassElem="_xLTTjDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLTTjTPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xLTTgzPxEei3dfHtumI11Q" serverClassElem="_xLTThTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLTTjjPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xLTThTPxEei3dfHtumI11Q" serverClassElem="_xLTThDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLTTjzPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xLTThTPxEei3dfHtumI11Q" serverClassElem="_xLTTkDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLmOdjPxEei3dfHtumI11Q" clientClassElem="_xLmOcDPxEei3dfHtumI11Q" serverClassElem="_xLmOdTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLmOdzPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xLmOcTPxEei3dfHtumI11Q" serverClassElem="_xLmOcDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLmOeDPxEei3dfHtumI11Q" property="&quot;shardStrategyFactory&quot;" clientClassElem="_xLmOcTPxEei3dfHtumI11Q" serverClassElem="_xLmOeTPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLmOejPxEei3dfHtumI11Q" property="&quot;idGenerator&quot;" clientClassElem="_xLmOcTPxEei3dfHtumI11Q" serverClassElem="_xLmOezPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLmOfDPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xLmOczPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLmOfTPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xLmOczPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLmOfjPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xLmOczPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLmOfzPxEei3dfHtumI11Q" property="&quot;dataSources&quot;" clientClassElem="_xLmOczPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLmOgDPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xLmOdTPxEei3dfHtumI11Q" serverClassElem="_xLmOdDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLmOgTPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xLmOdTPxEei3dfHtumI11Q" serverClassElem="_xLmOgjPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLmOgzPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xLmOdTPxEei3dfHtumI11Q" serverClassElem="_xLmOhDPxEei3dfHtumI11Q"/>
+    <configConnections refID="_xLmOhTPxEei3dfHtumI11Q" property="&quot;targetDataSource&quot;" clientClassElem="_xLmOdTPxEei3dfHtumI11Q" serverClassElem="_xLmOhjPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="makersoft.mybatis-shards_asm" instantiates="//@architectureDescriptions[name='makersoft.mybatis-shards_config']">
+    <assmComponents name="shard_0" id="_xJ0F1jPxEei3dfHtumI11Q" instantiates="_xJqUwDPxEei3dfHtumI11Q"/>
+    <assmComponents name="shard_1" id="_xJ0F1zPxEei3dfHtumI11Q" instantiates="_xJqUwDPxEei3dfHtumI11Q"/>
+    <assmComponents name="shard_2" id="_xJ0F2DPxEei3dfHtumI11Q" instantiates="_xJqUwDPxEei3dfHtumI11Q"/>
+    <assmComponents name="shardedSqlSessionFactory" id="_xJ0F2TPxEei3dfHtumI11Q" instantiates="_xJqUwTPxEei3dfHtumI11Q"/>
+    <assmComponents id="_xJ0F2jPxEei3dfHtumI11Q" instantiates="_xJqUwjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_xJ0F2zPxEei3dfHtumI11Q" instantiates="_xJqUwzPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_1&quot;" id="_xJ0F3DPxEei3dfHtumI11Q" instantiates="_xJ0F0TPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_2&quot;" id="_xJ0F3TPxEei3dfHtumI11Q" instantiates="_xJ0F0TPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_3&quot;" id="_xJ0F3jPxEei3dfHtumI11Q" instantiates="_xJ0F0TPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_h2&quot;" id="_xJ0F3zPxEei3dfHtumI11Q" instantiates="_xJ0F0TPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_1&quot;" id="_xJ0F4DPxEei3dfHtumI11Q" instantiates="_xJ0FwTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_2&quot;" id="_xJ0F4TPxEei3dfHtumI11Q" instantiates="_xJ0FwTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_3&quot;" id="_xJ0F4jPxEei3dfHtumI11Q" instantiates="_xJ0FwTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_h2&quot;" id="_xJ0F4zPxEei3dfHtumI11Q" instantiates="_xJ0FwTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_0&quot;" id="_xJ9PtzPxEei3dfHtumI11Q" instantiates="_xJ9PtDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_1&quot;" id="_xJ9PuDPxEei3dfHtumI11Q" instantiates="_xJ9PtDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_2&quot;" id="_xJ9PuTPxEei3dfHtumI11Q" instantiates="_xJ9PtDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_0&quot;" id="_xJ9PujPxEei3dfHtumI11Q" instantiates="_xJ9PsTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_1&quot;" id="_xJ9PuzPxEei3dfHtumI11Q" instantiates="_xJ9PsTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_2&quot;" id="_xJ9PvDPxEei3dfHtumI11Q" instantiates="_xJ9PsTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shard_1&quot;" id="_xKQKsTPxEei3dfHtumI11Q" instantiates="_xKQKoDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shard_0&quot;" id="_xKQKsjPxEei3dfHtumI11Q" instantiates="_xKQKoDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shardedSqlSessionFactory&quot;" id="_xKQKszPxEei3dfHtumI11Q" instantiates="_xKQKoTPxEei3dfHtumI11Q"/>
+    <assmComponents id="_xKQKtDPxEei3dfHtumI11Q" instantiates="_xKQKojPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_xKQKtTPxEei3dfHtumI11Q" instantiates="_xKQKozPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_1&quot;" id="_xKQKtjPxEei3dfHtumI11Q" instantiates="_xKQKpDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_2&quot;" id="_xKQKtzPxEei3dfHtumI11Q" instantiates="_xKQKpDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_1&quot;" id="_xKQKuDPxEei3dfHtumI11Q" instantiates="_xKQKpTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_2&quot;" id="_xKQKuTPxEei3dfHtumI11Q" instantiates="_xKQKpTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dsMap&quot;" id="_xKjstzPxEei3dfHtumI11Q" instantiates="_xKjsoDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shardedSqlSessionFactory&quot;" id="_xKjsuDPxEei3dfHtumI11Q" instantiates="_xKjsoTPxEei3dfHtumI11Q"/>
+    <assmComponents id="_xKjsuTPxEei3dfHtumI11Q" instantiates="_xKjsojPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_xKjsujPxEei3dfHtumI11Q" instantiates="_xKjsozPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_1&quot;" id="_xKjsuzPxEei3dfHtumI11Q" instantiates="_xKjstDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_2&quot;" id="_xKjsvDPxEei3dfHtumI11Q" instantiates="_xKjstDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_3&quot;" id="_xKjsvTPxEei3dfHtumI11Q" instantiates="_xKjstDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_h2&quot;" id="_xKjsvjPxEei3dfHtumI11Q" instantiates="_xKjstDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_1&quot;" id="_xKjsvzPxEei3dfHtumI11Q" instantiates="_xKjspTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_2&quot;" id="_xKjswDPxEei3dfHtumI11Q" instantiates="_xKjspTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_3&quot;" id="_xKjswTPxEei3dfHtumI11Q" instantiates="_xKjspTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_h2&quot;" id="_xKjswjPxEei3dfHtumI11Q" instantiates="_xKjspTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shard_0&quot;" id="_xK2nqjPxEei3dfHtumI11Q" instantiates="_xK2nkDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shard_1&quot;" id="_xK2nqzPxEei3dfHtumI11Q" instantiates="_xK2nkDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shard_2&quot;" id="_xK2nrDPxEei3dfHtumI11Q" instantiates="_xK2nkDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shardedSqlSessionFactory&quot;" id="_xK2nrTPxEei3dfHtumI11Q" instantiates="_xK2nkTPxEei3dfHtumI11Q"/>
+    <assmComponents id="_xK2nrjPxEei3dfHtumI11Q" instantiates="_xK2nkjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_xK2nrzPxEei3dfHtumI11Q" instantiates="_xK2nkzPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_1&quot;" id="_xK2nsDPxEei3dfHtumI11Q" instantiates="_xK2npzPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_2&quot;" id="_xK2nsTPxEei3dfHtumI11Q" instantiates="_xK2npzPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_3&quot;" id="_xK2nsjPxEei3dfHtumI11Q" instantiates="_xK2npzPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_h2&quot;" id="_xK2nszPxEei3dfHtumI11Q" instantiates="_xK2npzPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_1&quot;" id="_xK2ntDPxEei3dfHtumI11Q" instantiates="_xK2nlTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_2&quot;" id="_xK2ntTPxEei3dfHtumI11Q" instantiates="_xK2nlTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_3&quot;" id="_xK2ntjPxEei3dfHtumI11Q" instantiates="_xK2nlTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_h2&quot;" id="_xK2ntzPxEei3dfHtumI11Q" instantiates="_xK2nlTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_0&quot;" id="_xLJihzPxEei3dfHtumI11Q" instantiates="_xLJihDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_1&quot;" id="_xLJiiDPxEei3dfHtumI11Q" instantiates="_xLJihDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_2&quot;" id="_xLJiiTPxEei3dfHtumI11Q" instantiates="_xLJihDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_0&quot;" id="_xLJiijPxEei3dfHtumI11Q" instantiates="_xLJigTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_1&quot;" id="_xLJiizPxEei3dfHtumI11Q" instantiates="_xLJigTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_2&quot;" id="_xLJijDPxEei3dfHtumI11Q" instantiates="_xLJigTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shard_1&quot;" id="_xLTTkTPxEei3dfHtumI11Q" instantiates="_xLTTgDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shard_0&quot;" id="_xLTTkjPxEei3dfHtumI11Q" instantiates="_xLTTgDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shardedSqlSessionFactory&quot;" id="_xLTTkzPxEei3dfHtumI11Q" instantiates="_xLTTgTPxEei3dfHtumI11Q"/>
+    <assmComponents id="_xLTTlDPxEei3dfHtumI11Q" instantiates="_xLTTgjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_xLTTlTPxEei3dfHtumI11Q" instantiates="_xLTTgzPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_1&quot;" id="_xLTTljPxEei3dfHtumI11Q" instantiates="_xLTThDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_2&quot;" id="_xLTTlzPxEei3dfHtumI11Q" instantiates="_xLTThDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_1&quot;" id="_xLTTmDPxEei3dfHtumI11Q" instantiates="_xLTThTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_2&quot;" id="_xLTTmTPxEei3dfHtumI11Q" instantiates="_xLTThTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dsMap&quot;" id="_xLmOhzPxEei3dfHtumI11Q" instantiates="_xLmOcDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shardedSqlSessionFactory&quot;" id="_xLmOiDPxEei3dfHtumI11Q" instantiates="_xLmOcTPxEei3dfHtumI11Q"/>
+    <assmComponents id="_xLmOiTPxEei3dfHtumI11Q" instantiates="_xLmOcjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_xLmOijPxEei3dfHtumI11Q" instantiates="_xLmOczPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_1&quot;" id="_xLmOizPxEei3dfHtumI11Q" instantiates="_xLmOhjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_2&quot;" id="_xLmOjDPxEei3dfHtumI11Q" instantiates="_xLmOhjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_3&quot;" id="_xLmOjTPxEei3dfHtumI11Q" instantiates="_xLmOhjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource_h2&quot;" id="_xLmOjjPxEei3dfHtumI11Q" instantiates="_xLmOhjPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_1&quot;" id="_xLmOjzPxEei3dfHtumI11Q" instantiates="_xLmOdTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_2&quot;" id="_xLmOkDPxEei3dfHtumI11Q" instantiates="_xLmOdTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_3&quot;" id="_xLmOkTPxEei3dfHtumI11Q" instantiates="_xLmOdTPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lazyConnectionDataSource_h2&quot;" id="_xLmOkjPxEei3dfHtumI11Q" instantiates="_xLmOdTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xJ0F5DPxEei3dfHtumI11Q" property="shard_0.dataSource" clientInstElem="_xJ0F1jPxEei3dfHtumI11Q" serverInstElem="_xJ0F4DPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xJ0F5TPxEei3dfHtumI11Q" property="shard_1.dataSource" clientInstElem="_xJ0F1zPxEei3dfHtumI11Q" serverInstElem="_xJ0F4TPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xJ0F5jPxEei3dfHtumI11Q" property="shard_2.dataSource" clientInstElem="_xJ0F2DPxEei3dfHtumI11Q" serverInstElem="_xJ0F4jPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xJ0F5zPxEei3dfHtumI11Q" property="shardedSqlSessionFactory.shardStrategyFactory" clientInstElem="_xJ0F2TPxEei3dfHtumI11Q" serverInstElem="_xJ0F6DPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xJ0F6TPxEei3dfHtumI11Q" property="shardedSqlSessionFactory.idGenerator" clientInstElem="_xJ0F2TPxEei3dfHtumI11Q" serverInstElem="_xJ0F6jPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xJ0F6zPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xJ0F2zPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xJ0F7DPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xJ0F2zPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xJ0F7TPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xJ0F2zPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xJ0F7jPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xJ0F2zPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xJ0F7zPxEei3dfHtumI11Q" property="lazyConnectionDataSource_1.targetDataSource" clientInstElem="_xJ0F4DPxEei3dfHtumI11Q" serverInstElem="_xJ0F3DPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xJ0F8DPxEei3dfHtumI11Q" property="lazyConnectionDataSource_2.targetDataSource" clientInstElem="_xJ0F4TPxEei3dfHtumI11Q" serverInstElem="_xJ0F3TPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xJ0F8TPxEei3dfHtumI11Q" property="lazyConnectionDataSource_3.targetDataSource" clientInstElem="_xJ0F4jPxEei3dfHtumI11Q" serverInstElem="_xJ0F3jPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xJ0F8jPxEei3dfHtumI11Q" property="lazyConnectionDataSource_h2.targetDataSource" clientInstElem="_xJ0F4zPxEei3dfHtumI11Q" serverInstElem="_xJ0F3zPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xJ9PvTPxEei3dfHtumI11Q" property="lazyConnectionDataSource_0.targetDataSource" clientInstElem="_xJ9PujPxEei3dfHtumI11Q" serverInstElem="_xJ9PtzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xJ9PvjPxEei3dfHtumI11Q" property="lazyConnectionDataSource_1.targetDataSource" clientInstElem="_xJ9PuzPxEei3dfHtumI11Q" serverInstElem="_xJ9PuDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xJ9PvzPxEei3dfHtumI11Q" property="lazyConnectionDataSource_2.targetDataSource" clientInstElem="_xJ9PvDPxEei3dfHtumI11Q" serverInstElem="_xJ9PuTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKQKujPxEei3dfHtumI11Q" property="shard_1.dataSource" clientInstElem="_xKQKsTPxEei3dfHtumI11Q" serverInstElem="_xKQKuDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKQKuzPxEei3dfHtumI11Q" property="shard_0.dataSource" clientInstElem="_xKQKsjPxEei3dfHtumI11Q" serverInstElem="_xKQKuTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKQKvDPxEei3dfHtumI11Q" property="shardedSqlSessionFactory.shardStrategyFactory" clientInstElem="_xKQKszPxEei3dfHtumI11Q" serverInstElem="_xKQKvTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKQKvjPxEei3dfHtumI11Q" property="shardedSqlSessionFactory.idGenerator" clientInstElem="_xKQKszPxEei3dfHtumI11Q" serverInstElem="_xKQKvzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKQKwDPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xKQKtTPxEei3dfHtumI11Q" serverInstElem="_xKQKuDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKQKwTPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xKQKtTPxEei3dfHtumI11Q" serverInstElem="_xKQKuTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKQKwjPxEei3dfHtumI11Q" property="lazyConnectionDataSource_1.targetDataSource" clientInstElem="_xKQKuDPxEei3dfHtumI11Q" serverInstElem="_xKQKtjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKQKwzPxEei3dfHtumI11Q" property="lazyConnectionDataSource_2.targetDataSource" clientInstElem="_xKQKuTPxEei3dfHtumI11Q" serverInstElem="_xKQKtzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKjswzPxEei3dfHtumI11Q" clientInstElem="_xKjstzPxEei3dfHtumI11Q" serverInstElem="_xKjsvzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKjsxDPxEei3dfHtumI11Q" clientInstElem="_xKjstzPxEei3dfHtumI11Q" serverInstElem="_xKjswDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKjsxTPxEei3dfHtumI11Q" clientInstElem="_xKjstzPxEei3dfHtumI11Q" serverInstElem="_xKjswTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKjsxjPxEei3dfHtumI11Q" property="shardedSqlSessionFactory.dataSources" clientInstElem="_xKjsuDPxEei3dfHtumI11Q" serverInstElem="_xKjstzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKjsxzPxEei3dfHtumI11Q" property="shardedSqlSessionFactory.shardStrategyFactory" clientInstElem="_xKjsuDPxEei3dfHtumI11Q" serverInstElem="_xKjsyDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKjsyTPxEei3dfHtumI11Q" property="shardedSqlSessionFactory.idGenerator" clientInstElem="_xKjsuDPxEei3dfHtumI11Q" serverInstElem="_xKjsyjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKjsyzPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xKjsujPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKjszDPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xKjsujPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKjszTPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xKjsujPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKjszjPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xKjsujPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKjszzPxEei3dfHtumI11Q" property="lazyConnectionDataSource_1.targetDataSource" clientInstElem="_xKjsvzPxEei3dfHtumI11Q" serverInstElem="_xKjsuzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKjs0DPxEei3dfHtumI11Q" property="lazyConnectionDataSource_2.targetDataSource" clientInstElem="_xKjswDPxEei3dfHtumI11Q" serverInstElem="_xKjsvDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKjs0TPxEei3dfHtumI11Q" property="lazyConnectionDataSource_3.targetDataSource" clientInstElem="_xKjswTPxEei3dfHtumI11Q" serverInstElem="_xKjsvTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xKjs0jPxEei3dfHtumI11Q" property="lazyConnectionDataSource_h2.targetDataSource" clientInstElem="_xKjswjPxEei3dfHtumI11Q" serverInstElem="_xKjsvjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xK2nuDPxEei3dfHtumI11Q" property="shard_0.dataSource" clientInstElem="_xK2nqjPxEei3dfHtumI11Q" serverInstElem="_xK2ntDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xK2nuTPxEei3dfHtumI11Q" property="shard_1.dataSource" clientInstElem="_xK2nqzPxEei3dfHtumI11Q" serverInstElem="_xK2ntTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xK2nujPxEei3dfHtumI11Q" property="shard_2.dataSource" clientInstElem="_xK2nrDPxEei3dfHtumI11Q" serverInstElem="_xK2ntjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xK2nuzPxEei3dfHtumI11Q" property="shardedSqlSessionFactory.shardStrategyFactory" clientInstElem="_xK2nrTPxEei3dfHtumI11Q" serverInstElem="_xK2nvDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xK2nvTPxEei3dfHtumI11Q" property="shardedSqlSessionFactory.idGenerator" clientInstElem="_xK2nrTPxEei3dfHtumI11Q" serverInstElem="_xK2nvjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xK2nvzPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xK2nrzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xK2nwDPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xK2nrzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xK2nwTPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xK2nrzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xK2nwjPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xK2nrzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xK2nwzPxEei3dfHtumI11Q" property="lazyConnectionDataSource_1.targetDataSource" clientInstElem="_xK2ntDPxEei3dfHtumI11Q" serverInstElem="_xK2nsDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xK2nxDPxEei3dfHtumI11Q" property="lazyConnectionDataSource_2.targetDataSource" clientInstElem="_xK2ntTPxEei3dfHtumI11Q" serverInstElem="_xK2nsTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xK2nxTPxEei3dfHtumI11Q" property="lazyConnectionDataSource_3.targetDataSource" clientInstElem="_xK2ntjPxEei3dfHtumI11Q" serverInstElem="_xK2nsjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xK2nxjPxEei3dfHtumI11Q" property="lazyConnectionDataSource_h2.targetDataSource" clientInstElem="_xK2ntzPxEei3dfHtumI11Q" serverInstElem="_xK2nszPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLJijTPxEei3dfHtumI11Q" property="lazyConnectionDataSource_0.targetDataSource" clientInstElem="_xLJiijPxEei3dfHtumI11Q" serverInstElem="_xLJihzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLJijjPxEei3dfHtumI11Q" property="lazyConnectionDataSource_1.targetDataSource" clientInstElem="_xLJiizPxEei3dfHtumI11Q" serverInstElem="_xLJiiDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLJijzPxEei3dfHtumI11Q" property="lazyConnectionDataSource_2.targetDataSource" clientInstElem="_xLJijDPxEei3dfHtumI11Q" serverInstElem="_xLJiiTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLTTmjPxEei3dfHtumI11Q" property="shard_1.dataSource" clientInstElem="_xLTTkTPxEei3dfHtumI11Q" serverInstElem="_xLTTmDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLTTmzPxEei3dfHtumI11Q" property="shard_0.dataSource" clientInstElem="_xLTTkjPxEei3dfHtumI11Q" serverInstElem="_xLTTmTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLTTnDPxEei3dfHtumI11Q" property="shardedSqlSessionFactory.shardStrategyFactory" clientInstElem="_xLTTkzPxEei3dfHtumI11Q" serverInstElem="_xLTTnTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLTTnjPxEei3dfHtumI11Q" property="shardedSqlSessionFactory.idGenerator" clientInstElem="_xLTTkzPxEei3dfHtumI11Q" serverInstElem="_xLTTnzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLTToDPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xLTTlTPxEei3dfHtumI11Q" serverInstElem="_xLTTmDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLTToTPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xLTTlTPxEei3dfHtumI11Q" serverInstElem="_xLTTmTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLTTojPxEei3dfHtumI11Q" property="lazyConnectionDataSource_1.targetDataSource" clientInstElem="_xLTTmDPxEei3dfHtumI11Q" serverInstElem="_xLTTljPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLTTozPxEei3dfHtumI11Q" property="lazyConnectionDataSource_2.targetDataSource" clientInstElem="_xLTTmTPxEei3dfHtumI11Q" serverInstElem="_xLTTlzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLmOkzPxEei3dfHtumI11Q" clientInstElem="_xLmOhzPxEei3dfHtumI11Q" serverInstElem="_xLmOjzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLmOlDPxEei3dfHtumI11Q" clientInstElem="_xLmOhzPxEei3dfHtumI11Q" serverInstElem="_xLmOkDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLmOlTPxEei3dfHtumI11Q" clientInstElem="_xLmOhzPxEei3dfHtumI11Q" serverInstElem="_xLmOkTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLmOljPxEei3dfHtumI11Q" property="shardedSqlSessionFactory.dataSources" clientInstElem="_xLmOiDPxEei3dfHtumI11Q" serverInstElem="_xLmOhzPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLmOlzPxEei3dfHtumI11Q" property="shardedSqlSessionFactory.shardStrategyFactory" clientInstElem="_xLmOiDPxEei3dfHtumI11Q" serverInstElem="_xLmOmDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLmOmTPxEei3dfHtumI11Q" property="shardedSqlSessionFactory.idGenerator" clientInstElem="_xLmOiDPxEei3dfHtumI11Q" serverInstElem="_xLmOmjPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLmOmzPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xLmOijPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLmOnDPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xLmOijPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLmOnTPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xLmOijPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLmOnjPxEei3dfHtumI11Q" property="transactionManager.dataSources" clientInstElem="_xLmOijPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLmOnzPxEei3dfHtumI11Q" property="lazyConnectionDataSource_1.targetDataSource" clientInstElem="_xLmOjzPxEei3dfHtumI11Q" serverInstElem="_xLmOizPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLmOoDPxEei3dfHtumI11Q" property="lazyConnectionDataSource_2.targetDataSource" clientInstElem="_xLmOkDPxEei3dfHtumI11Q" serverInstElem="_xLmOjDPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLmOoTPxEei3dfHtumI11Q" property="lazyConnectionDataSource_3.targetDataSource" clientInstElem="_xLmOkTPxEei3dfHtumI11Q" serverInstElem="_xLmOjTPxEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_xLmOojPxEei3dfHtumI11Q" property="lazyConnectionDataSource_h2.targetDataSource" clientInstElem="_xLmOkjPxEei3dfHtumI11Q" serverInstElem="_xLmOjjPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="makersoft.mybatis-shards_spec">
+    <specConnections refID="_xLvYYDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYYTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYYjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYYzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYZDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYaTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYajPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYazPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYbDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYbTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYbjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYbzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYcDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYcTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYcjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYczPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYdDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYdTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYdjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYdzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYeDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYeTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYejPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYfzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYgDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYgTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYgjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYgzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYhDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYhTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYhjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYhzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYjDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYjTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYjjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYjzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYkDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYkTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYkjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYkzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYlDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYlTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYljPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYlzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYmDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYmTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYmjPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYmzPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYnDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYnTPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYojPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYozPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYpDPxEei3dfHtumI11Q"/>
+    <specConnections refID="_xLvYpTPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

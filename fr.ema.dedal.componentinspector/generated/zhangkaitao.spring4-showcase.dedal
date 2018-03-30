@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="zhangkaitao.spring4-showcase">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="zhangkaitao.spring4-showcase_config" implements="//@architectureDescriptions[name='zhangkaitao.spring4-showcase_spec']">
+    <configComponents name="&quot;org.springframework.cache.ehcache.EhCacheManagerFactoryBean&quot;" id="_6x8ywDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.cache.ehcache.EhCacheCacheManager&quot;" id="_6x8ywTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.validation.beanvalidation.MethodValidationPostProcessor&quot;" id="_6y08gDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.util.ArrayList&quot;" id="_6zDmADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.validation.beanvalidation.MethodValidationPostProcessor&quot;" id="_6zRocDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.validation.beanvalidation.MethodValidationPostProcessor&quot;" id="_6zfq4DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_6x8ywjPzEei3dfHtumI11Q" property="&quot;cacheManager&quot;" clientClassElem="_6x8ywTPzEei3dfHtumI11Q" serverClassElem="_6x8ywDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_6y08gTPzEei3dfHtumI11Q" property="&quot;validator&quot;" clientClassElem="_6y08gDPzEei3dfHtumI11Q" serverClassElem="_6y08gjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_6zDmATPzEei3dfHtumI11Q" clientClassElem="_6zDmADPzEei3dfHtumI11Q" serverClassElem="_6zDmAjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_6zRocTPzEei3dfHtumI11Q" property="&quot;validator&quot;" clientClassElem="_6zRocDPzEei3dfHtumI11Q" serverClassElem="_6zRocjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_6zfq4TPzEei3dfHtumI11Q" property="&quot;validator&quot;" clientClassElem="_6zfq4DPzEei3dfHtumI11Q" serverClassElem="_6zfq4jPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="zhangkaitao.spring4-showcase_asm" instantiates="//@architectureDescriptions[name='zhangkaitao.spring4-showcase_config']">
+    <assmComponents name="ehcacheManager" id="_6x8ywzPzEei3dfHtumI11Q" instantiates="_6x8ywDPzEei3dfHtumI11Q"/>
+    <assmComponents name="cacheManager" id="_6x8yxDPzEei3dfHtumI11Q" instantiates="_6x8ywTPzEei3dfHtumI11Q"/>
+    <assmComponents id="_6y08gzPzEei3dfHtumI11Q" instantiates="_6y08gDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;myList2&quot;" id="_6zDmAzPzEei3dfHtumI11Q" instantiates="_6zDmADPzEei3dfHtumI11Q"/>
+    <assmComponents id="_6zRoczPzEei3dfHtumI11Q" instantiates="_6zRocDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_6zfq4zPzEei3dfHtumI11Q" instantiates="_6zfq4DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_6x8yxTPzEei3dfHtumI11Q" property="cacheManager.cacheManager" clientInstElem="_6x8yxDPzEei3dfHtumI11Q" serverInstElem="_6x8ywzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_6y08hDPzEei3dfHtumI11Q" clientInstElem="_6y08gzPzEei3dfHtumI11Q" serverInstElem="_6y08hTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_6zDmBDPzEei3dfHtumI11Q" clientInstElem="_6zDmAzPzEei3dfHtumI11Q" serverInstElem="_6zDmBTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_6zRodDPzEei3dfHtumI11Q" clientInstElem="_6zRoczPzEei3dfHtumI11Q" serverInstElem="_6zRodTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_6zfq5DPzEei3dfHtumI11Q" clientInstElem="_6zfq4zPzEei3dfHtumI11Q" serverInstElem="_6zfq5TPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="zhangkaitao.spring4-showcase_spec">
+    <specConnections refID="_6zgR8DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_6zgR8TPzEei3dfHtumI11Q"/>
+    <specConnections refID="_6zgR8jPzEei3dfHtumI11Q"/>
+    <specConnections refID="_6zgR8zPzEei3dfHtumI11Q"/>
+    <specConnections refID="_6zgR9DPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

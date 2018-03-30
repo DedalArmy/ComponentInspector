@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="benas.random-beans">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="benas.random-beans_config" implements="//@architectureDescriptions[name='benas.random-beans_spec']">
+    <configComponents name="&quot;io.github.benas.randombeans.spring.EnhancedRandomFactoryBean&quot;" id="_FJ7FcDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;io.github.benas.randombeans.spring.RandomizerBean&quot;" id="_FJ7FcTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.Class&quot;" id="_FJ7FcjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;io.github.benas.randombeans.spring.EnhancedRandomFactoryBean&quot;" id="_FKbbwDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;io.github.benas.randombeans.spring.EnhancedRandomFactoryBean&quot;" id="_FKqsUDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;io.github.benas.randombeans.spring.RandomizerBean&quot;" id="_FKqsUTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.Class&quot;" id="_FKqsUjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;io.github.benas.randombeans.spring.EnhancedRandomFactoryBean&quot;" id="_FK6j8DPvEei3dfHtumI11Q"/>
+    <configConnections refID="_FJ7FczPvEei3dfHtumI11Q" property="&quot;randomizers&quot;" clientClassElem="_FJ7FcDPvEei3dfHtumI11Q" serverClassElem="_FJ7FcTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_FJ7sgDPvEei3dfHtumI11Q" property="&quot;mappings&quot;" clientClassElem="_FJ7FcDPvEei3dfHtumI11Q" serverClassElem="_FJ7sgTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_FJ7sgjPvEei3dfHtumI11Q" property="&quot;randomizer&quot;" clientClassElem="_FJ7FcTPvEei3dfHtumI11Q" serverClassElem="_FJ7sgzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_FKrTYDPvEei3dfHtumI11Q" property="&quot;randomizers&quot;" clientClassElem="_FKqsUDPvEei3dfHtumI11Q" serverClassElem="_FKqsUTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_FKrTYTPvEei3dfHtumI11Q" property="&quot;mappings&quot;" clientClassElem="_FKqsUDPvEei3dfHtumI11Q" serverClassElem="_FKrTYjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_FKrTYzPvEei3dfHtumI11Q" property="&quot;randomizer&quot;" clientClassElem="_FKqsUTPvEei3dfHtumI11Q" serverClassElem="_FKrTZDPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="benas.random-beans_asm" instantiates="//@architectureDescriptions[name='benas.random-beans_config']">
+    <assmComponents name="enhancedRandom" id="_FJ7shDPvEei3dfHtumI11Q" instantiates="_FJ7FcDPvEei3dfHtumI11Q"/>
+    <assmComponents name="nameRandomizer" id="_FJ7shTPvEei3dfHtumI11Q" instantiates="_FJ7FcTPvEei3dfHtumI11Q"/>
+    <assmComponents name="barRandomizer" id="_FJ7shjPvEei3dfHtumI11Q" instantiates="_FJ7FcTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_FJ7shzPvEei3dfHtumI11Q" instantiates="_FJ7FcjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;enhancedRandom&quot;" id="_FKbbwTPvEei3dfHtumI11Q" instantiates="_FKbbwDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;enhancedRandom&quot;" id="_FKrTZTPvEei3dfHtumI11Q" instantiates="_FKqsUDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;nameRandomizer&quot;" id="_FKrTZjPvEei3dfHtumI11Q" instantiates="_FKqsUTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;barRandomizer&quot;" id="_FKrTZzPvEei3dfHtumI11Q" instantiates="_FKqsUTPvEei3dfHtumI11Q"/>
+    <assmComponents id="_FKrTaDPvEei3dfHtumI11Q" instantiates="_FKqsUjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;enhancedRandom&quot;" id="_FK6j8TPvEei3dfHtumI11Q" instantiates="_FK6j8DPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_FJ7siDPvEei3dfHtumI11Q" property="enhancedRandom.randomizers" clientInstElem="_FJ7shDPvEei3dfHtumI11Q" serverInstElem="_FJ7shTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_FJ7siTPvEei3dfHtumI11Q" property="enhancedRandom.randomizers" clientInstElem="_FJ7shDPvEei3dfHtumI11Q" serverInstElem="_FJ7shjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_FJ7sijPvEei3dfHtumI11Q" property="enhancedRandom.mappings" clientInstElem="_FJ7shDPvEei3dfHtumI11Q" serverInstElem="_FJ7sizPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_FJ7sjDPvEei3dfHtumI11Q" property="nameRandomizer.randomizer" clientInstElem="_FJ7shTPvEei3dfHtumI11Q" serverInstElem="_FJ7sjTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_FKrTaTPvEei3dfHtumI11Q" property="enhancedRandom.randomizers" clientInstElem="_FKrTZTPvEei3dfHtumI11Q" serverInstElem="_FKrTZjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_FKrTajPvEei3dfHtumI11Q" property="enhancedRandom.randomizers" clientInstElem="_FKrTZTPvEei3dfHtumI11Q" serverInstElem="_FKrTZzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_FKrTazPvEei3dfHtumI11Q" property="enhancedRandom.mappings" clientInstElem="_FKrTZTPvEei3dfHtumI11Q" serverInstElem="_FKrTbDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_FKr6cDPvEei3dfHtumI11Q" property="nameRandomizer.randomizer" clientInstElem="_FKrTZjPvEei3dfHtumI11Q" serverInstElem="_FKr6cTPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="benas.random-beans_spec">
+    <specConnections refID="_FK7LADPvEei3dfHtumI11Q"/>
+    <specConnections refID="_FK7LATPvEei3dfHtumI11Q"/>
+    <specConnections refID="_FK7LAjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_FK7LAzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_FK7LBDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_FK7LBTPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

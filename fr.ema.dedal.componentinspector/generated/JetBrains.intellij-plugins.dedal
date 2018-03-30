@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="JetBrains.intellij-plugins">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JetBrains.intellij-plugins_config" implements="//@architectureDescriptions[name='JetBrains.intellij-plugins_spec']">
+    <configComponents name="&quot;MyClass&quot;" id="_FNpc8DPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.opensymphony.xwork2.spring.interceptor.ActionAutowiringInterceptor&quot;" id="_FNpc8TPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.opensymphony.xwork2.ActionChainResult&quot;" id="_FNpc8jPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JetBrains.intellij-plugins_asm" instantiates="//@architectureDescriptions[name='JetBrains.intellij-plugins_config']">
+    <assmComponents name="bean1" id="_FNpc8zPxEei3dfHtumI11Q" instantiates="_FNpc8DPxEei3dfHtumI11Q"/>
+    <assmComponents id="_FNpc9DPxEei3dfHtumI11Q" instantiates="_FNpc8DPxEei3dfHtumI11Q"/>
+    <assmComponents id="_FNpc9TPxEei3dfHtumI11Q" instantiates="_FNpc8DPxEei3dfHtumI11Q"/>
+    <assmComponents id="_FNpc9jPxEei3dfHtumI11Q" instantiates="_FNpc8TPxEei3dfHtumI11Q"/>
+    <assmComponents id="_FNpc9zPxEei3dfHtumI11Q" instantiates="_FNpc8jPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="JetBrains.intellij-plugins_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="apache.usergrid">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="apache.usergrid_config" implements="//@architectureDescriptions[name='apache.usergrid_spec']">
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_zkZZMDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;me.prettyprint.cassandra.service.clock.MicrosecondsClockResolution&quot;" id="_zkZZMTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.persistence.cassandra.util.TraceTagManager&quot;" id="_zkZZMjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.persistence.cassandra.util.Slf4jTraceTagReporter&quot;" id="_zkZZMzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.persistence.cassandra.util.TaggedOpTimer&quot;" id="_zkZZNDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;me.prettyprint.cassandra.service.CassandraHostConfigurator&quot;" id="_zkZZNTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;me.prettyprint.cassandra.service.ThriftCluster&quot;" id="_zkZZNjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;me.prettyprint.cassandra.connection.DynamicLoadBalancingPolicy&quot;" id="_zkZZNzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.corepersistence.GuiceFactory&quot;" id="_zkZZODPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.persistence.cassandra.CassandraService&quot;" id="_zkZZOTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;me.prettyprint.cassandra.model.ConfigurableConsistencyLevel&quot;" id="_zkZZOjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.corepersistence.CpEntityManagerFactory&quot;" id="_zkZZOzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.mq.cassandra.QueueManagerFactoryImpl&quot;" id="_zkaAQDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.count.SimpleBatcher&quot;" id="_zkaAQTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.count.CassandraSubmitter&quot;" id="_zkaAQjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.count.CassandraCounterStore&quot;" id="_zkaAQzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.persistence.cassandra.CounterUtils&quot;" id="_zkaARDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.system.UsergridSystemMonitor&quot;" id="_zkaARTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.utils.MailUtils&quot;" id="_zkaARjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.batch.service.JobSchedulerService&quot;" id="_zkanUDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.batch.service.SchedulerServiceImpl&quot;" id="_zkanUTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.batch.UsergridJobFactory&quot;" id="_zkanUjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.batch.service.JobSchedulerService&quot;" id="_zkuJUDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.batch.service.SchedulerServiceImpl&quot;" id="_zkuJUTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.batch.UsergridJobFactory&quot;" id="_zkuJUjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertiesFactoryBean&quot;" id="_zk-A8DPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.corepersistence.CpSetup&quot;" id="_zk-A8TPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.persistence.CoreSchemaManager&quot;" id="_zk-A8jPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertiesFactoryBean&quot;" id="_zlNRgDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.launcher.Server&quot;" id="_zlNRgTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertiesFactoryBean&quot;" id="_zlb7ADPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.mongo.MongoServer&quot;" id="_zlb7ATPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.mongo.DatabaseInitializer&quot;" id="_zlb7AjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DriverManagerDataSource&quot;" id="_zlqkgDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.core.JdbcTemplate&quot;" id="_zlqkgTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertiesFactoryBean&quot;" id="_zl7DMDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.persistence.cassandra.util.TraceTagManager&quot;" id="_zl7DMTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.services.assets.BinaryStoreFactory&quot;" id="_zl7DMjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.corepersistence.CpSetup&quot;" id="_zl7DMzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.persistence.CoreSchemaManager&quot;" id="_zl7DNDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.rest.ServerEnvironmentProperties&quot;" id="_zmLh4DPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.rest.ApiResponse&quot;" id="_zmLh4TPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator&quot;" id="_zmLh4jPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor&quot;" id="_zmLh4zPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.spring.web.ShiroFilterFactoryBean&quot;" id="_zmLh5DPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.rest.security.shiro.RestSecurityManager&quot;" id="_zmLh5TPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.rest.JobServiceBoostrap&quot;" id="_zmLh5jPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor&quot;" id="_zmLh5zPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.services.assets.BinaryStoreFactory&quot;" id="_zmLh6DPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertiesFactoryBean&quot;" id="_zmcAkDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.MethodInvokingFactoryBean&quot;" id="_zmcAkTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertiesFactoryBean&quot;" id="_zmqqEDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.persistence.cassandra.util.TraceTagManager&quot;" id="_zmqqETPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.corepersistence.CpSetup&quot;" id="_zmqqEjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.persistence.CoreSchemaManager&quot;" id="_zmqqEzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertiesFactoryBean&quot;" id="_zm7v0DPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.persistence.cassandra.util.TraceTagManager&quot;" id="_zm7v0TPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.corepersistence.CpSetup&quot;" id="_zm7v0jPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.persistence.CoreSchemaManager&quot;" id="_zm7v0zPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.corepersistence.GuiceFactory&quot;" id="_znM1kDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.security.shiro.ShiroCacheManager&quot;" id="_znM1kTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.security.shiro.Realm&quot;" id="_znM1kjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.mgt.DefaultSecurityManager&quot;" id="_znM1kzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.spring.LifecycleBeanPostProcessor&quot;" id="_znM1lDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.MethodInvokingFactoryBean&quot;" id="_znM1lTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.core.task.SyncTaskExecutor&quot;" id="_znM1ljPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.security.tokens.impl.TokenServiceImpl&quot;" id="_znM1lzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.management.cassandra.ManagementServiceImpl&quot;" id="_znNcoDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.security.salt.NoOpSaltProvider&quot;" id="_znNcoTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.security.sso.ApigeeSSO2Provider&quot;" id="_znNcojPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.security.sso.UsergridExternalProvider&quot;" id="_znNcozPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.services.ServiceManagerFactory&quot;" id="_znNcpDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.management.cassandra.ApplicationCreatorImpl&quot;" id="_znNcpTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.security.providers.SignInProviderFactory&quot;" id="_znNcpjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.security.sso.SSOProviderFactory&quot;" id="_znNcpzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.management.export.ExportServiceImpl&quot;" id="_znODsDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.management.export.ExportJob&quot;" id="_znODsTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.services.guice.ServiceModuleImpl&quot;" id="_znODsjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.services.notifications.QueueListener&quot;" id="_znODszPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.management.importer.ImportServiceImpl&quot;" id="_znODtDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.management.importer.ImportJob&quot;" id="_znOqwDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.management.importer.FileImportJob&quot;" id="_znOqwTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertiesFactoryBean&quot;" id="_znlQEDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertiesFactoryBean&quot;" id="_znz5kDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.corepersistence.CpSetup&quot;" id="_znz5kTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.persistence.CoreSchemaManager&quot;" id="_znz5kjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.services.assets.BinaryStoreFactory&quot;" id="_znz5kzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertiesFactoryBean&quot;" id="_zoGNcDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.String&quot;" id="_zoU28DPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.cassandra.FakeSchemaManager&quot;" id="_zoVeADPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertiesFactoryBean&quot;" id="_zokHgDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.MethodInvokingFactoryBean&quot;" id="_zokHgTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_zokHgjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertiesFactoryBean&quot;" id="_zoyxADPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.persistence.cassandra.util.TraceTagManager&quot;" id="_zoyxATPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.corepersistence.CpSetup&quot;" id="_zoyxAjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.persistence.CoreSchemaManager&quot;" id="_zoyxAzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertiesFactoryBean&quot;" id="_zpQrEDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;" id="_zpQrETPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.Boolean&quot;" id="_zpQrEjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.String&quot;" id="_zpQrEzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.security.shiro.Realm&quot;" id="_zpQrFDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.mgt.DefaultSecurityManager&quot;" id="_zpQrFTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.shiro.spring.LifecycleBeanPostProcessor&quot;" id="_zpQrFjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.config.MethodInvokingFactoryBean&quot;" id="_zpQrFzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;me.prettyprint.cassandra.service.clock.MicrosecondsClockResolution&quot;" id="_zpQrGDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;me.prettyprint.cassandra.service.CassandraHostConfigurator&quot;" id="_zpQrGTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;me.prettyprint.cassandra.service.ThriftCluster&quot;" id="_zpRSIDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.corepersistence.GuiceFactory&quot;" id="_zpRSITPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.persistence.cassandra.CassandraService&quot;" id="_zpRSIjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.persistence.cassandra.EntityManagerFactoryImpl&quot;" id="_zpRSIzPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.mq.cassandra.QueueManagerFactoryImpl&quot;" id="_zpRSJDPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.services.ServiceManagerFactory&quot;" id="_zpRSJTPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.security.tokens.impl.TokenServiceImpl&quot;" id="_zpRSJjPuEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.usergrid.management.cassandra.ManagementServiceImpl&quot;" id="_zpRSJzPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkanUzPuEei3dfHtumI11Q" property="&quot;properties&quot;" clientClassElem="_zkZZMDPuEei3dfHtumI11Q" serverClassElem="_zkbOYDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkbOYTPuEei3dfHtumI11Q" clientClassElem="_zkZZNDPuEei3dfHtumI11Q" serverClassElem="_zkZZMjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkbOYjPuEei3dfHtumI11Q" property="&quot;opTimer&quot;" clientClassElem="_zkZZNTPuEei3dfHtumI11Q" serverClassElem="_zkZZNDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkbOYzPuEei3dfHtumI11Q" property="&quot;loadBalancingPolicy&quot;" clientClassElem="_zkZZNTPuEei3dfHtumI11Q" serverClassElem="_zkZZNzPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkbOZDPuEei3dfHtumI11Q" clientClassElem="_zkZZNjPuEei3dfHtumI11Q" serverClassElem="_zkZZNTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkbOZTPuEei3dfHtumI11Q" clientClassElem="_zkZZNjPuEei3dfHtumI11Q" serverClassElem="_zkbOZjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkbOZzPuEei3dfHtumI11Q" clientClassElem="_zkZZOTPuEei3dfHtumI11Q" serverClassElem="_zkbOaDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkb1cDPuEei3dfHtumI11Q" clientClassElem="_zkZZOTPuEei3dfHtumI11Q" serverClassElem="_zkZZNjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkb1cTPuEei3dfHtumI11Q" clientClassElem="_zkZZOTPuEei3dfHtumI11Q" serverClassElem="_zkZZNTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkb1cjPuEei3dfHtumI11Q" clientClassElem="_zkZZOTPuEei3dfHtumI11Q" serverClassElem="_zkZZODPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkb1czPuEei3dfHtumI11Q" property="&quot;consistencyLevelPolicy&quot;" clientClassElem="_zkZZOTPuEei3dfHtumI11Q" serverClassElem="_zkb1dDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkb1dTPuEei3dfHtumI11Q" clientClassElem="_zkZZOzPuEei3dfHtumI11Q" serverClassElem="_zkZZOTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkb1djPuEei3dfHtumI11Q" clientClassElem="_zkZZOzPuEei3dfHtumI11Q" serverClassElem="_zkaARDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkb1dzPuEei3dfHtumI11Q" clientClassElem="_zkZZOzPuEei3dfHtumI11Q" serverClassElem="_zkZZODPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkb1eDPuEei3dfHtumI11Q" clientClassElem="_zkaAQDPuEei3dfHtumI11Q" serverClassElem="_zkZZOTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkb1eTPuEei3dfHtumI11Q" clientClassElem="_zkaAQDPuEei3dfHtumI11Q" serverClassElem="_zkaARDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkccgDPuEei3dfHtumI11Q" clientClassElem="_zkaAQDPuEei3dfHtumI11Q" serverClassElem="_zkZZODPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkccgTPuEei3dfHtumI11Q" property="&quot;batchSubmitter&quot;" clientClassElem="_zkaAQTPuEei3dfHtumI11Q" serverClassElem="_zkaAQjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkccgjPuEei3dfHtumI11Q" clientClassElem="_zkaAQjPuEei3dfHtumI11Q" serverClassElem="_zkaAQzPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkccgzPuEei3dfHtumI11Q" clientClassElem="_zkaAQzPuEei3dfHtumI11Q" serverClassElem="_zkcchDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkcchTPuEei3dfHtumI11Q" property="&quot;batcher&quot;" clientClassElem="_zkaARDPuEei3dfHtumI11Q" serverClassElem="_zkaAQTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkcchjPuEei3dfHtumI11Q" clientClassElem="_zkaARTPuEei3dfHtumI11Q" serverClassElem="_zkZZNjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkcchzPuEei3dfHtumI11Q" clientClassElem="_zkaARTPuEei3dfHtumI11Q" serverClassElem="_zkcciDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkcciTPuEei3dfHtumI11Q" property="&quot;jobFactory&quot;" clientClassElem="_zkanUDPuEei3dfHtumI11Q" serverClassElem="_zkanUjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkccijPuEei3dfHtumI11Q" property="&quot;jobAccessor&quot;" clientClassElem="_zkanUDPuEei3dfHtumI11Q" serverClassElem="_zkanUTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkccizPuEei3dfHtumI11Q" property="&quot;injector&quot;" clientClassElem="_zkanUDPuEei3dfHtumI11Q" serverClassElem="_zkZZODPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkuJUzPuEei3dfHtumI11Q" property="&quot;jobFactory&quot;" clientClassElem="_zkuJUDPuEei3dfHtumI11Q" serverClassElem="_zkuJUjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zkuwYDPuEei3dfHtumI11Q" property="&quot;jobAccessor&quot;" clientClassElem="_zkuJUDPuEei3dfHtumI11Q" serverClassElem="_zkuJUTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zk-A8zPuEei3dfHtumI11Q" clientClassElem="_zk-A8TPuEei3dfHtumI11Q" serverClassElem="_zk-A9DPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zk-A9TPuEei3dfHtumI11Q" clientClassElem="_zk-A8TPuEei3dfHtumI11Q" serverClassElem="_zk-A9jPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zk-A9zPuEei3dfHtumI11Q" clientClassElem="_zk-A8TPuEei3dfHtumI11Q" serverClassElem="_zk-A-DPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zk-oADPuEei3dfHtumI11Q" clientClassElem="_zk-A8jPuEei3dfHtumI11Q" serverClassElem="_zk-A8TPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zk-oATPuEei3dfHtumI11Q" clientClassElem="_zk-A8jPuEei3dfHtumI11Q" serverClassElem="_zk-oAjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zlqkgjPuEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_zlqkgTPuEei3dfHtumI11Q" serverClassElem="_zlqkgDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zl7DNTPuEei3dfHtumI11Q" property="&quot;properties&quot;" clientClassElem="_zl7DMjPuEei3dfHtumI11Q" serverClassElem="_zl7DMDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zl7qQDPuEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_zl7DMjPuEei3dfHtumI11Q" serverClassElem="_zl7qQTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zl7qQjPuEei3dfHtumI11Q" clientClassElem="_zl7DMzPuEei3dfHtumI11Q" serverClassElem="_zl7qQzPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zl7qRDPuEei3dfHtumI11Q" clientClassElem="_zl7DMzPuEei3dfHtumI11Q" serverClassElem="_zl7qRTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zl7qRjPuEei3dfHtumI11Q" clientClassElem="_zl7DMzPuEei3dfHtumI11Q" serverClassElem="_zl7qRzPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zl7qSDPuEei3dfHtumI11Q" clientClassElem="_zl7DNDPuEei3dfHtumI11Q" serverClassElem="_zl7DMzPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zl7qSTPuEei3dfHtumI11Q" clientClassElem="_zl7DNDPuEei3dfHtumI11Q" serverClassElem="_zl7qSjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zmMI8DPuEei3dfHtumI11Q" clientClassElem="_zmLh4DPuEei3dfHtumI11Q" serverClassElem="_zmMI8TPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zmMI8jPuEei3dfHtumI11Q" property="&quot;securityManager&quot;" clientClassElem="_zmLh4zPuEei3dfHtumI11Q" serverClassElem="_zmLh5TPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zmMI8zPuEei3dfHtumI11Q" property="&quot;securityManager&quot;" clientClassElem="_zmLh5DPuEei3dfHtumI11Q" serverClassElem="_zmLh5TPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zmMI9DPuEei3dfHtumI11Q" property="&quot;cacheManager&quot;" clientClassElem="_zmLh5TPuEei3dfHtumI11Q" serverClassElem="_zmMI9TPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zmMI9jPuEei3dfHtumI11Q" property="&quot;realm&quot;" clientClassElem="_zmLh5TPuEei3dfHtumI11Q" serverClassElem="_zmMI9zPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zmMI-DPuEei3dfHtumI11Q" property="&quot;properties&quot;" clientClassElem="_zmLh6DPuEei3dfHtumI11Q" serverClassElem="_zmMI-TPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zmMI-jPuEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_zmLh6DPuEei3dfHtumI11Q" serverClassElem="_zmMwADPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zmcAkjPuEei3dfHtumI11Q" property="&quot;properties&quot;" clientClassElem="_zmcAkDPuEei3dfHtumI11Q" serverClassElem="_zmcAkTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zmqqFDPuEei3dfHtumI11Q" clientClassElem="_zmqqEjPuEei3dfHtumI11Q" serverClassElem="_zmqqFTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zmrRIDPuEei3dfHtumI11Q" clientClassElem="_zmqqEjPuEei3dfHtumI11Q" serverClassElem="_zmrRITPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zmrRIjPuEei3dfHtumI11Q" clientClassElem="_zmqqEjPuEei3dfHtumI11Q" serverClassElem="_zmrRIzPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zmrRJDPuEei3dfHtumI11Q" clientClassElem="_zmqqEzPuEei3dfHtumI11Q" serverClassElem="_zmqqEjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zmrRJTPuEei3dfHtumI11Q" clientClassElem="_zmqqEzPuEei3dfHtumI11Q" serverClassElem="_zmrRJjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zm7v1DPuEei3dfHtumI11Q" clientClassElem="_zm7v0jPuEei3dfHtumI11Q" serverClassElem="_zm7v1TPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zm7v1jPuEei3dfHtumI11Q" clientClassElem="_zm7v0jPuEei3dfHtumI11Q" serverClassElem="_zm7v1zPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zm7v2DPuEei3dfHtumI11Q" clientClassElem="_zm7v0jPuEei3dfHtumI11Q" serverClassElem="_zm7v2TPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zm7v2jPuEei3dfHtumI11Q" clientClassElem="_zm7v0zPuEei3dfHtumI11Q" serverClassElem="_zm7v0jPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zm7v2zPuEei3dfHtumI11Q" clientClassElem="_zm7v0zPuEei3dfHtumI11Q" serverClassElem="_zm8W4DPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znOqwjPuEei3dfHtumI11Q" property="&quot;injector&quot;" clientClassElem="_znM1kTPuEei3dfHtumI11Q" serverClassElem="_znM1kDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znOqwzPuEei3dfHtumI11Q" property="&quot;properties&quot;" clientClassElem="_znM1kTPuEei3dfHtumI11Q" serverClassElem="_znOqxDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znOqxTPuEei3dfHtumI11Q" property="&quot;cacheManager&quot;" clientClassElem="_znM1kjPuEei3dfHtumI11Q" serverClassElem="_znM1kTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znPR0DPuEei3dfHtumI11Q" property="&quot;realm&quot;" clientClassElem="_znM1kzPuEei3dfHtumI11Q" serverClassElem="_znM1kjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znPR0TPuEei3dfHtumI11Q" property="&quot;arguments&quot;" clientClassElem="_znM1lTPuEei3dfHtumI11Q" serverClassElem="_znM1kzPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znPR0jPuEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_znM1lzPuEei3dfHtumI11Q" serverClassElem="_znPR0zPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znPR1DPuEei3dfHtumI11Q" property="&quot;saltProvider&quot;" clientClassElem="_znNcoDPuEei3dfHtumI11Q" serverClassElem="_znNcoTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znPR1TPuEei3dfHtumI11Q" clientClassElem="_znNcoDPuEei3dfHtumI11Q" serverClassElem="_znM1kDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znPR1jPuEei3dfHtumI11Q" property="&quot;management&quot;" clientClassElem="_znNcojPuEei3dfHtumI11Q" serverClassElem="_znNcoDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znPR1zPuEei3dfHtumI11Q" property="&quot;management&quot;" clientClassElem="_znNcozPuEei3dfHtumI11Q" serverClassElem="_znNcoDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znPR2DPuEei3dfHtumI11Q" clientClassElem="_znNcpDPuEei3dfHtumI11Q" serverClassElem="_znPR2TPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znPR2jPuEei3dfHtumI11Q" clientClassElem="_znNcpDPuEei3dfHtumI11Q" serverClassElem="_znPR2zPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znPR3DPuEei3dfHtumI11Q" clientClassElem="_znNcpDPuEei3dfHtumI11Q" serverClassElem="_znP44DPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znP44TPuEei3dfHtumI11Q" clientClassElem="_znNcpDPuEei3dfHtumI11Q" serverClassElem="_znM1kDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znP44jPuEei3dfHtumI11Q" clientClassElem="_znNcpDPuEei3dfHtumI11Q" serverClassElem="_znP44zPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znP45DPuEei3dfHtumI11Q" clientClassElem="_znNcpTPuEei3dfHtumI11Q" serverClassElem="_znP45TPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znP45jPuEei3dfHtumI11Q" clientClassElem="_znNcpTPuEei3dfHtumI11Q" serverClassElem="_znNcoDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znP45zPuEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_znNcpjPuEei3dfHtumI11Q" serverClassElem="_znP46DPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znP46TPuEei3dfHtumI11Q" property="&quot;managementService&quot;" clientClassElem="_znNcpjPuEei3dfHtumI11Q" serverClassElem="_znNcoDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znP46jPuEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_znNcpzPuEei3dfHtumI11Q" serverClassElem="_znP46zPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znP47DPuEei3dfHtumI11Q" property="&quot;properties&quot;" clientClassElem="_znNcpzPuEei3dfHtumI11Q" serverClassElem="_znQf8DPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znQf8TPuEei3dfHtumI11Q" property="&quot;managementService&quot;" clientClassElem="_znODsDPuEei3dfHtumI11Q" serverClassElem="_znNcoDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znQf8jPuEei3dfHtumI11Q" property="&quot;emf&quot;" clientClassElem="_znODsDPuEei3dfHtumI11Q" serverClassElem="_znQf8zPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znQf9DPuEei3dfHtumI11Q" property="&quot;sch&quot;" clientClassElem="_znODsDPuEei3dfHtumI11Q" serverClassElem="_znQf9TPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znQf9jPuEei3dfHtumI11Q" property="&quot;emf&quot;" clientClassElem="_znODszPuEei3dfHtumI11Q" serverClassElem="_znQf9zPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znQf-DPuEei3dfHtumI11Q" property="&quot;props&quot;" clientClassElem="_znODszPuEei3dfHtumI11Q" serverClassElem="_znQf-TPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znQf-jPuEei3dfHtumI11Q" property="&quot;smf&quot;" clientClassElem="_znODszPuEei3dfHtumI11Q" serverClassElem="_znNcpDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znQf-zPuEei3dfHtumI11Q" property="&quot;managementService&quot;" clientClassElem="_znODtDPuEei3dfHtumI11Q" serverClassElem="_znNcoDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znQf_DPuEei3dfHtumI11Q" property="&quot;emf&quot;" clientClassElem="_znODtDPuEei3dfHtumI11Q" serverClassElem="_znQf_TPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znQf_jPuEei3dfHtumI11Q" property="&quot;sch&quot;" clientClassElem="_znODtDPuEei3dfHtumI11Q" serverClassElem="_znRHADPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znz5lDPuEei3dfHtumI11Q" clientClassElem="_znz5kTPuEei3dfHtumI11Q" serverClassElem="_znz5lTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_znz5ljPuEei3dfHtumI11Q" clientClassElem="_znz5kTPuEei3dfHtumI11Q" serverClassElem="_zn0goDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zn0goTPuEei3dfHtumI11Q" clientClassElem="_znz5kTPuEei3dfHtumI11Q" serverClassElem="_zn0gojPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zn0gozPuEei3dfHtumI11Q" clientClassElem="_znz5kjPuEei3dfHtumI11Q" serverClassElem="_znz5kTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zn0gpDPuEei3dfHtumI11Q" clientClassElem="_znz5kjPuEei3dfHtumI11Q" serverClassElem="_zn0gpTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zn0gpjPuEei3dfHtumI11Q" property="&quot;properties&quot;" clientClassElem="_znz5kzPuEei3dfHtumI11Q" serverClassElem="_znz5kDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zn0gpzPuEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_znz5kzPuEei3dfHtumI11Q" serverClassElem="_zn0gqDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zokHgzPuEei3dfHtumI11Q" property="&quot;properties&quot;" clientClassElem="_zokHgDPuEei3dfHtumI11Q" serverClassElem="_zokHgTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zokHhDPuEei3dfHtumI11Q" property="&quot;properties&quot;" clientClassElem="_zokHgjPuEei3dfHtumI11Q" serverClassElem="_zokHgDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zoyxBDPuEei3dfHtumI11Q" clientClassElem="_zoyxAjPuEei3dfHtumI11Q" serverClassElem="_zozYEDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zozYETPuEei3dfHtumI11Q" clientClassElem="_zoyxAjPuEei3dfHtumI11Q" serverClassElem="_zozYEjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zozYEzPuEei3dfHtumI11Q" clientClassElem="_zoyxAjPuEei3dfHtumI11Q" serverClassElem="_zozYFDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zozYFTPuEei3dfHtumI11Q" clientClassElem="_zoyxAzPuEei3dfHtumI11Q" serverClassElem="_zoyxAjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zozYFjPuEei3dfHtumI11Q" clientClassElem="_zoyxAzPuEei3dfHtumI11Q" serverClassElem="_zozYFzPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zpR5MDPuEei3dfHtumI11Q" property="&quot;properties&quot;" clientClassElem="_zpQrETPuEei3dfHtumI11Q" serverClassElem="_zpQrEDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zpR5MTPuEei3dfHtumI11Q" property="&quot;realm&quot;" clientClassElem="_zpQrFTPuEei3dfHtumI11Q" serverClassElem="_zpQrFDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zpR5MjPuEei3dfHtumI11Q" property="&quot;arguments&quot;" clientClassElem="_zpQrFzPuEei3dfHtumI11Q" serverClassElem="_zpQrFTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zpR5MzPuEei3dfHtumI11Q" clientClassElem="_zpQrGTPuEei3dfHtumI11Q" serverClassElem="_zpR5NDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zpR5NTPuEei3dfHtumI11Q" property="&quot;clockResolution&quot;" clientClassElem="_zpQrGTPuEei3dfHtumI11Q" serverClassElem="_zpQrGDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zpR5NjPuEei3dfHtumI11Q" clientClassElem="_zpRSIDPuEei3dfHtumI11Q" serverClassElem="_zpQrGTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zpR5NzPuEei3dfHtumI11Q" clientClassElem="_zpRSIDPuEei3dfHtumI11Q" serverClassElem="_zpR5ODPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zpSgQDPuEei3dfHtumI11Q" clientClassElem="_zpRSIjPuEei3dfHtumI11Q" serverClassElem="_zpQrEDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zpSgQTPuEei3dfHtumI11Q" clientClassElem="_zpRSIjPuEei3dfHtumI11Q" serverClassElem="_zpRSIDPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zpSgQjPuEei3dfHtumI11Q" clientClassElem="_zpRSIjPuEei3dfHtumI11Q" serverClassElem="_zpQrGTPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zpSgQzPuEei3dfHtumI11Q" clientClassElem="_zpRSIjPuEei3dfHtumI11Q" serverClassElem="_zpRSITPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zpSgRDPuEei3dfHtumI11Q" clientClassElem="_zpRSIzPuEei3dfHtumI11Q" serverClassElem="_zpRSIjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zpSgRTPuEei3dfHtumI11Q" clientClassElem="_zpRSJDPuEei3dfHtumI11Q" serverClassElem="_zpRSIjPuEei3dfHtumI11Q"/>
+    <configConnections refID="_zpSgRjPuEei3dfHtumI11Q" clientClassElem="_zpRSJTPuEei3dfHtumI11Q" serverClassElem="_zpRSIzPuEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="apache.usergrid_asm" instantiates="//@architectureDescriptions[name='apache.usergrid_config']">
+    <assmComponents name="propertyPlaceholderConfigurer" id="_zkdDkDPuEei3dfHtumI11Q" instantiates="_zkZZMDPuEei3dfHtumI11Q"/>
+    <assmComponents name="microsecondsTimeResolution" id="_zkdDkTPuEei3dfHtumI11Q" instantiates="_zkZZMTPuEei3dfHtumI11Q"/>
+    <assmComponents name="traceTagManager" id="_zkdDkjPuEei3dfHtumI11Q" instantiates="_zkZZMjPuEei3dfHtumI11Q"/>
+    <assmComponents name="traceTagReporter" id="_zkdDkzPuEei3dfHtumI11Q" instantiates="_zkZZMzPuEei3dfHtumI11Q"/>
+    <assmComponents name="taggedOpTimer" id="_zkdDlDPuEei3dfHtumI11Q" instantiates="_zkZZNDPuEei3dfHtumI11Q"/>
+    <assmComponents name="cassandraHostConfigurator" id="_zkdDlTPuEei3dfHtumI11Q" instantiates="_zkZZNTPuEei3dfHtumI11Q"/>
+    <assmComponents name="cassandraCluster" id="_zkdDljPuEei3dfHtumI11Q" instantiates="_zkZZNjPuEei3dfHtumI11Q"/>
+    <assmComponents name="loadBalancingPolicy" id="_zkdDlzPuEei3dfHtumI11Q" instantiates="_zkZZNzPuEei3dfHtumI11Q"/>
+    <assmComponents name="injector" id="_zkdqoDPuEei3dfHtumI11Q" instantiates="_zkZZODPuEei3dfHtumI11Q"/>
+    <assmComponents name="cassandraService" id="_zkdqoTPuEei3dfHtumI11Q" instantiates="_zkZZOTPuEei3dfHtumI11Q"/>
+    <assmComponents id="_zkdqojPuEei3dfHtumI11Q" instantiates="_zkZZOjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;entityManagerFactory&quot;" id="_zkdqozPuEei3dfHtumI11Q" instantiates="_zkZZOzPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;queueManagerFactory&quot;" id="_zkdqpDPuEei3dfHtumI11Q" instantiates="_zkaAQDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;simpleBatcher&quot;" id="_zkdqpTPuEei3dfHtumI11Q" instantiates="_zkaAQTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;batchSubmitter&quot;" id="_zkdqpjPuEei3dfHtumI11Q" instantiates="_zkaAQjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cassandraCounterStore&quot;" id="_zkdqpzPuEei3dfHtumI11Q" instantiates="_zkaAQzPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;counterUtils&quot;" id="_zkeRsDPuEei3dfHtumI11Q" instantiates="_zkaARDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;usergridSystemMonitor&quot;" id="_zkeRsTPuEei3dfHtumI11Q" instantiates="_zkaARTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mailUtils&quot;" id="_zkeRsjPuEei3dfHtumI11Q" instantiates="_zkaARjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jobSchedulerBackgroundService&quot;" id="_zkeRszPuEei3dfHtumI11Q" instantiates="_zkanUDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;schedulerService&quot;" id="_zkeRtDPuEei3dfHtumI11Q" instantiates="_zkanUTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jobFactory&quot;" id="_zkeRtTPuEei3dfHtumI11Q" instantiates="_zkanUjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jobSchedulerBackgroundService&quot;" id="_zkuwYTPuEei3dfHtumI11Q" instantiates="_zkuJUDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;schedulerService&quot;" id="_zkuwYjPuEei3dfHtumI11Q" instantiates="_zkuJUTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jobFactory&quot;" id="_zkuwYzPuEei3dfHtumI11Q" instantiates="_zkuJUjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;properties&quot;" id="_zk-oAzPuEei3dfHtumI11Q" instantiates="_zk-A8DPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;setup&quot;" id="_zk-oBDPuEei3dfHtumI11Q" instantiates="_zk-A8TPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;coreManager&quot;" id="_zk-oBTPuEei3dfHtumI11Q" instantiates="_zk-A8jPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;properties&quot;" id="_zlN4kDPuEei3dfHtumI11Q" instantiates="_zlNRgDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;standaloneServer&quot;" id="_zlN4kTPuEei3dfHtumI11Q" instantiates="_zlNRgTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;properties&quot;" id="_zlb7AzPuEei3dfHtumI11Q" instantiates="_zlb7ADPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mongoServer&quot;" id="_zlb7BDPuEei3dfHtumI11Q" instantiates="_zlb7ATPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;databaseInitializer&quot;" id="_zlb7BTPuEei3dfHtumI11Q" instantiates="_zlb7AjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_zlqkgzPuEei3dfHtumI11Q" instantiates="_zlqkgDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jdbcTemplate&quot;" id="_zlqkhDPuEei3dfHtumI11Q" instantiates="_zlqkgTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;properties&quot;" id="_zl7qSzPuEei3dfHtumI11Q" instantiates="_zl7DMDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;traceTagManager&quot;" id="_zl7qTDPuEei3dfHtumI11Q" instantiates="_zl7DMTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;binaryStoreFactory&quot;" id="_zl7qTTPuEei3dfHtumI11Q" instantiates="_zl7DMjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;setup&quot;" id="_zl7qTjPuEei3dfHtumI11Q" instantiates="_zl7DMzPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;coreManager&quot;" id="_zl7qTzPuEei3dfHtumI11Q" instantiates="_zl7DNDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;serverEnvironmentProperties&quot;" id="_zmMwATPuEei3dfHtumI11Q" instantiates="_zmLh4DPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;apiResponse&quot;" id="_zmMwAjPuEei3dfHtumI11Q" instantiates="_zmLh4TPuEei3dfHtumI11Q"/>
+    <assmComponents id="_zmMwAzPuEei3dfHtumI11Q" instantiates="_zmLh4jPuEei3dfHtumI11Q"/>
+    <assmComponents id="_zmMwBDPuEei3dfHtumI11Q" instantiates="_zmLh4zPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;shiroFilter&quot;" id="_zmMwBTPuEei3dfHtumI11Q" instantiates="_zmLh5DPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;securityManager&quot;" id="_zmMwBjPuEei3dfHtumI11Q" instantiates="_zmLh5TPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jobServiceBootstrap&quot;" id="_zmMwBzPuEei3dfHtumI11Q" instantiates="_zmLh5jPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;taskExecutor&quot;" id="_zmMwCDPuEei3dfHtumI11Q" instantiates="_zmLh5zPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;binaryStoreFactory&quot;" id="_zmMwCTPuEei3dfHtumI11Q" instantiates="_zmLh6DPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;properties&quot;" id="_zmcnoDPuEei3dfHtumI11Q" instantiates="_zmcAkDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sysProps&quot;" id="_zmcnoTPuEei3dfHtumI11Q" instantiates="_zmcAkTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;properties&quot;" id="_zmrRJzPuEei3dfHtumI11Q" instantiates="_zmqqEDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;traceTagManager&quot;" id="_zmrRKDPuEei3dfHtumI11Q" instantiates="_zmqqETPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;setup&quot;" id="_zmrRKTPuEei3dfHtumI11Q" instantiates="_zmqqEjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;coreManager&quot;" id="_zmrRKjPuEei3dfHtumI11Q" instantiates="_zmqqEzPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;properties&quot;" id="_zm8W4TPuEei3dfHtumI11Q" instantiates="_zm7v0DPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;traceTagManager&quot;" id="_zm8W4jPuEei3dfHtumI11Q" instantiates="_zm7v0TPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;setup&quot;" id="_zm8W4zPuEei3dfHtumI11Q" instantiates="_zm7v0jPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;coreManager&quot;" id="_zm8W5DPuEei3dfHtumI11Q" instantiates="_zm7v0zPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;injector&quot;" id="_znRHATPuEei3dfHtumI11Q" instantiates="_znM1kDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cacheManager&quot;" id="_znRHAjPuEei3dfHtumI11Q" instantiates="_znM1kTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;realm&quot;" id="_znRHAzPuEei3dfHtumI11Q" instantiates="_znM1kjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;securityManager&quot;" id="_znRHBDPuEei3dfHtumI11Q" instantiates="_znM1kzPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lifecycleBeanPostProcessor&quot;" id="_znRHBTPuEei3dfHtumI11Q" instantiates="_znM1lDPuEei3dfHtumI11Q"/>
+    <assmComponents id="_znRHBjPuEei3dfHtumI11Q" instantiates="_znM1lTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;taskExecutor&quot;" id="_znRuEDPuEei3dfHtumI11Q" instantiates="_znM1ljPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;tokenService&quot;" id="_znRuETPuEei3dfHtumI11Q" instantiates="_znM1lzPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;managementService&quot;" id="_znRuEjPuEei3dfHtumI11Q" instantiates="_znNcoDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;saltProvider&quot;" id="_znRuEzPuEei3dfHtumI11Q" instantiates="_znNcoTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;apigeeSSO2Provider&quot;" id="_znSVIDPuEei3dfHtumI11Q" instantiates="_znNcojPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;usergridExternalProvider&quot;" id="_znSVITPuEei3dfHtumI11Q" instantiates="_znNcozPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;serviceManagerFactory&quot;" id="_znSVIjPuEei3dfHtumI11Q" instantiates="_znNcpDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;applicationCreator&quot;" id="_znSVIzPuEei3dfHtumI11Q" instantiates="_znNcpTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;signInProviderFactory&quot;" id="_znS8MDPuEei3dfHtumI11Q" instantiates="_znNcpjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ssoProviderFactory&quot;" id="_znS8MTPuEei3dfHtumI11Q" instantiates="_znNcpzPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;exportService&quot;" id="_znS8MjPuEei3dfHtumI11Q" instantiates="_znODsDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;exportJob&quot;" id="_znS8MzPuEei3dfHtumI11Q" instantiates="_znODsTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;serviceModule&quot;" id="_znS8NDPuEei3dfHtumI11Q" instantiates="_znODsjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;notificationsQueueListener&quot;" id="_znS8NTPuEei3dfHtumI11Q" instantiates="_znODszPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;importService&quot;" id="_znTjQDPuEei3dfHtumI11Q" instantiates="_znODtDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;importJob&quot;" id="_znTjQTPuEei3dfHtumI11Q" instantiates="_znOqwDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;fileImportJob&quot;" id="_znTjQjPuEei3dfHtumI11Q" instantiates="_znOqwTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;properties&quot;" id="_znlQETPuEei3dfHtumI11Q" instantiates="_znlQEDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;properties&quot;" id="_zn0gqTPuEei3dfHtumI11Q" instantiates="_znz5kDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;setup&quot;" id="_zn0gqjPuEei3dfHtumI11Q" instantiates="_znz5kTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;coreManager&quot;" id="_zn0gqzPuEei3dfHtumI11Q" instantiates="_znz5kjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;binaryStoreFactory&quot;" id="_zn0grDPuEei3dfHtumI11Q" instantiates="_znz5kzPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;properties&quot;" id="_zoG0gDPuEei3dfHtumI11Q" instantiates="_zoGNcDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;testBean&quot;" id="_zoVeATPuEei3dfHtumI11Q" instantiates="_zoU28DPuEei3dfHtumI11Q"/>
+    <assmComponents id="_zoVeAjPuEei3dfHtumI11Q" instantiates="_zoVeADPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;properties&quot;" id="_zokHhTPuEei3dfHtumI11Q" instantiates="_zokHgDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sysProps&quot;" id="_zokHhjPuEei3dfHtumI11Q" instantiates="_zokHgTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyPlaceholderConfigurer&quot;" id="_zokHhzPuEei3dfHtumI11Q" instantiates="_zokHgjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;properties&quot;" id="_zozYGDPuEei3dfHtumI11Q" instantiates="_zoyxADPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;traceTagManager&quot;" id="_zozYGTPuEei3dfHtumI11Q" instantiates="_zoyxATPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;setup&quot;" id="_zozYGjPuEei3dfHtumI11Q" instantiates="_zoyxAjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;coreManager&quot;" id="_zozYGzPuEei3dfHtumI11Q" instantiates="_zoyxAzPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;properties&quot;" id="_zpSgRzPuEei3dfHtumI11Q" instantiates="_zpQrEDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;propertyPlaceholderConfigurer&quot;" id="_zpSgSDPuEei3dfHtumI11Q" instantiates="_zpQrETPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cassandraUseRemote&quot;" id="_zpSgSTPuEei3dfHtumI11Q" instantiates="_zpQrEjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cassandraLocalUrl&quot;" id="_zpTHUDPuEei3dfHtumI11Q" instantiates="_zpQrEzPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cassandraRemoteUrl&quot;" id="_zpTHUTPuEei3dfHtumI11Q" instantiates="_zpQrEzPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cassandraUrl&quot;" id="_zpTHUjPuEei3dfHtumI11Q" instantiates="_zpQrEzPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;realm&quot;" id="_zpTHUzPuEei3dfHtumI11Q" instantiates="_zpQrFDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;securityManager&quot;" id="_zpTHVDPuEei3dfHtumI11Q" instantiates="_zpQrFTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;lifecycleBeanPostProcessor&quot;" id="_zpTHVTPuEei3dfHtumI11Q" instantiates="_zpQrFjPuEei3dfHtumI11Q"/>
+    <assmComponents id="_zpTHVjPuEei3dfHtumI11Q" instantiates="_zpQrFzPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;microsecondsTimeResolution&quot;" id="_zpTHVzPuEei3dfHtumI11Q" instantiates="_zpQrGDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cassandraHostConfigurator&quot;" id="_zpTHWDPuEei3dfHtumI11Q" instantiates="_zpQrGTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cassandraCluster&quot;" id="_zpTHWTPuEei3dfHtumI11Q" instantiates="_zpRSIDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;injector&quot;" id="_zpTuYDPuEei3dfHtumI11Q" instantiates="_zpRSITPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cassandraService&quot;" id="_zpTuYTPuEei3dfHtumI11Q" instantiates="_zpRSIjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;entityManagerFactory&quot;" id="_zpTuYjPuEei3dfHtumI11Q" instantiates="_zpRSIzPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;queueManagerFactory&quot;" id="_zpTuYzPuEei3dfHtumI11Q" instantiates="_zpRSJDPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;serviceManagerFactory&quot;" id="_zpTuZDPuEei3dfHtumI11Q" instantiates="_zpRSJTPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;tokenService&quot;" id="_zpTuZTPuEei3dfHtumI11Q" instantiates="_zpRSJjPuEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;managementService&quot;" id="_zpTuZjPuEei3dfHtumI11Q" instantiates="_zpRSJzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkeRtjPuEei3dfHtumI11Q" property="propertyPlaceholderConfigurer.properties" clientInstElem="_zkdDkDPuEei3dfHtumI11Q" serverInstElem="_zkeRtzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zke4wDPuEei3dfHtumI11Q" clientInstElem="_zkdDlDPuEei3dfHtumI11Q" serverInstElem="_zkdDkjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zke4wTPuEei3dfHtumI11Q" property="cassandraHostConfigurator.opTimer" clientInstElem="_zkdDlTPuEei3dfHtumI11Q" serverInstElem="_zkdDlDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zke4wjPuEei3dfHtumI11Q" property="cassandraHostConfigurator.loadBalancingPolicy" clientInstElem="_zkdDlTPuEei3dfHtumI11Q" serverInstElem="_zkdDlzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zke4wzPuEei3dfHtumI11Q" clientInstElem="_zkdDljPuEei3dfHtumI11Q" serverInstElem="_zkdDlTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zke4xDPuEei3dfHtumI11Q" clientInstElem="_zkdDljPuEei3dfHtumI11Q" serverInstElem="_zke4xTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zke4xjPuEei3dfHtumI11Q" clientInstElem="_zkdqoTPuEei3dfHtumI11Q" serverInstElem="_zke4xzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zke4yDPuEei3dfHtumI11Q" clientInstElem="_zkdqoTPuEei3dfHtumI11Q" serverInstElem="_zkdDljPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zke4yTPuEei3dfHtumI11Q" clientInstElem="_zkdqoTPuEei3dfHtumI11Q" serverInstElem="_zkdDlTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zke4yjPuEei3dfHtumI11Q" clientInstElem="_zkdqoTPuEei3dfHtumI11Q" serverInstElem="_zkdqoDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zke4yzPuEei3dfHtumI11Q" property="cassandraService.consistencyLevelPolicy" clientInstElem="_zkdqoTPuEei3dfHtumI11Q" serverInstElem="_zke4zDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkff0DPuEei3dfHtumI11Q" clientInstElem="_zkdqozPuEei3dfHtumI11Q" serverInstElem="_zkdqoTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkff0TPuEei3dfHtumI11Q" clientInstElem="_zkdqozPuEei3dfHtumI11Q" serverInstElem="_zkeRsDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkff0jPuEei3dfHtumI11Q" clientInstElem="_zkdqozPuEei3dfHtumI11Q" serverInstElem="_zkdqoDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkff0zPuEei3dfHtumI11Q" clientInstElem="_zkdqpDPuEei3dfHtumI11Q" serverInstElem="_zkdqoTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkff1DPuEei3dfHtumI11Q" clientInstElem="_zkdqpDPuEei3dfHtumI11Q" serverInstElem="_zkeRsDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkff1TPuEei3dfHtumI11Q" clientInstElem="_zkdqpDPuEei3dfHtumI11Q" serverInstElem="_zkdqoDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkff1jPuEei3dfHtumI11Q" property="simpleBatcher.batchSubmitter" clientInstElem="_zkdqpTPuEei3dfHtumI11Q" serverInstElem="_zkdqpjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkff1zPuEei3dfHtumI11Q" clientInstElem="_zkdqpjPuEei3dfHtumI11Q" serverInstElem="_zkdqpzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkff2DPuEei3dfHtumI11Q" clientInstElem="_zkdqpzPuEei3dfHtumI11Q" serverInstElem="_zkff2TPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkff2jPuEei3dfHtumI11Q" property="counterUtils.batcher" clientInstElem="_zkeRsDPuEei3dfHtumI11Q" serverInstElem="_zkdqpTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkff2zPuEei3dfHtumI11Q" clientInstElem="_zkeRsTPuEei3dfHtumI11Q" serverInstElem="_zkdDljPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkgG4DPuEei3dfHtumI11Q" clientInstElem="_zkeRsTPuEei3dfHtumI11Q" serverInstElem="_zkgG4TPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkgG4jPuEei3dfHtumI11Q" property="jobSchedulerBackgroundService.jobFactory" clientInstElem="_zkeRszPuEei3dfHtumI11Q" serverInstElem="_zkeRtTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkgG4zPuEei3dfHtumI11Q" property="jobSchedulerBackgroundService.jobAccessor" clientInstElem="_zkeRszPuEei3dfHtumI11Q" serverInstElem="_zkeRtDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkgG5DPuEei3dfHtumI11Q" property="jobSchedulerBackgroundService.injector" clientInstElem="_zkeRszPuEei3dfHtumI11Q" serverInstElem="_zkdqoDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkuwZDPuEei3dfHtumI11Q" property="jobSchedulerBackgroundService.jobFactory" clientInstElem="_zkuwYTPuEei3dfHtumI11Q" serverInstElem="_zkuwYzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zkuwZTPuEei3dfHtumI11Q" property="jobSchedulerBackgroundService.jobAccessor" clientInstElem="_zkuwYTPuEei3dfHtumI11Q" serverInstElem="_zkuwYjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zk-oBjPuEei3dfHtumI11Q" clientInstElem="_zk-oBDPuEei3dfHtumI11Q" serverInstElem="_zk-oBzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zk-oCDPuEei3dfHtumI11Q" clientInstElem="_zk-oBDPuEei3dfHtumI11Q" serverInstElem="_zk-oCTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zk-oCjPuEei3dfHtumI11Q" clientInstElem="_zk-oBDPuEei3dfHtumI11Q" serverInstElem="_zk-oCzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zk-oDDPuEei3dfHtumI11Q" clientInstElem="_zk-oBTPuEei3dfHtumI11Q" serverInstElem="_zk-oBDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zk-oDTPuEei3dfHtumI11Q" clientInstElem="_zk-oBTPuEei3dfHtumI11Q" serverInstElem="_zk-oDjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zlqkhTPuEei3dfHtumI11Q" property="jdbcTemplate.dataSource" clientInstElem="_zlqkhDPuEei3dfHtumI11Q" serverInstElem="_zlqkgzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zl8RUDPuEei3dfHtumI11Q" property="binaryStoreFactory.properties" clientInstElem="_zl7qTTPuEei3dfHtumI11Q" serverInstElem="_zl7qSzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zl8RUTPuEei3dfHtumI11Q" property="binaryStoreFactory.entityManagerFactory" clientInstElem="_zl7qTTPuEei3dfHtumI11Q" serverInstElem="_zl8RUjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zl8RUzPuEei3dfHtumI11Q" clientInstElem="_zl7qTjPuEei3dfHtumI11Q" serverInstElem="_zl8RVDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zl8RVTPuEei3dfHtumI11Q" clientInstElem="_zl7qTjPuEei3dfHtumI11Q" serverInstElem="_zl8RVjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zl8RVzPuEei3dfHtumI11Q" clientInstElem="_zl7qTjPuEei3dfHtumI11Q" serverInstElem="_zl8RWDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zl8RWTPuEei3dfHtumI11Q" clientInstElem="_zl7qTzPuEei3dfHtumI11Q" serverInstElem="_zl7qTjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zl8RWjPuEei3dfHtumI11Q" clientInstElem="_zl7qTzPuEei3dfHtumI11Q" serverInstElem="_zl8RWzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zmMwCjPuEei3dfHtumI11Q" clientInstElem="_zmMwATPuEei3dfHtumI11Q" serverInstElem="_zmMwCzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zmMwDDPuEei3dfHtumI11Q" clientInstElem="_zmMwBDPuEei3dfHtumI11Q" serverInstElem="_zmMwBjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zmMwDTPuEei3dfHtumI11Q" property="shiroFilter.securityManager" clientInstElem="_zmMwBTPuEei3dfHtumI11Q" serverInstElem="_zmMwBjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zmMwDjPuEei3dfHtumI11Q" property="securityManager.cacheManager" clientInstElem="_zmMwBjPuEei3dfHtumI11Q" serverInstElem="_zmNXEDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zmNXETPuEei3dfHtumI11Q" property="securityManager.realm" clientInstElem="_zmMwBjPuEei3dfHtumI11Q" serverInstElem="_zmNXEjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zmNXEzPuEei3dfHtumI11Q" property="binaryStoreFactory.properties" clientInstElem="_zmMwCTPuEei3dfHtumI11Q" serverInstElem="_zmNXFDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zmNXFTPuEei3dfHtumI11Q" property="binaryStoreFactory.entityManagerFactory" clientInstElem="_zmMwCTPuEei3dfHtumI11Q" serverInstElem="_zmNXFjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zmcnojPuEei3dfHtumI11Q" property="properties.properties" clientInstElem="_zmcnoDPuEei3dfHtumI11Q" serverInstElem="_zmcnoTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zmrRKzPuEei3dfHtumI11Q" clientInstElem="_zmrRKTPuEei3dfHtumI11Q" serverInstElem="_zmrRLDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zmrRLTPuEei3dfHtumI11Q" clientInstElem="_zmrRKTPuEei3dfHtumI11Q" serverInstElem="_zmrRLjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zmrRLzPuEei3dfHtumI11Q" clientInstElem="_zmrRKTPuEei3dfHtumI11Q" serverInstElem="_zmrRMDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zmrRMTPuEei3dfHtumI11Q" clientInstElem="_zmrRKjPuEei3dfHtumI11Q" serverInstElem="_zmrRKTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zmrRMjPuEei3dfHtumI11Q" clientInstElem="_zmrRKjPuEei3dfHtumI11Q" serverInstElem="_zmr4MDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zm8W5TPuEei3dfHtumI11Q" clientInstElem="_zm8W4zPuEei3dfHtumI11Q" serverInstElem="_zm8W5jPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zm8W5zPuEei3dfHtumI11Q" clientInstElem="_zm8W4zPuEei3dfHtumI11Q" serverInstElem="_zm8W6DPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zm8W6TPuEei3dfHtumI11Q" clientInstElem="_zm8W4zPuEei3dfHtumI11Q" serverInstElem="_zm8W6jPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zm8W6zPuEei3dfHtumI11Q" clientInstElem="_zm8W5DPuEei3dfHtumI11Q" serverInstElem="_zm8W4zPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zm8W7DPuEei3dfHtumI11Q" clientInstElem="_zm8W5DPuEei3dfHtumI11Q" serverInstElem="_zm8W7TPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znTjQzPuEei3dfHtumI11Q" property="cacheManager.injector" clientInstElem="_znRHAjPuEei3dfHtumI11Q" serverInstElem="_znRHATPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znUKUDPuEei3dfHtumI11Q" property="cacheManager.properties" clientInstElem="_znRHAjPuEei3dfHtumI11Q" serverInstElem="_znUKUTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znUKUjPuEei3dfHtumI11Q" property="realm.cacheManager" clientInstElem="_znRHAzPuEei3dfHtumI11Q" serverInstElem="_znRHAjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znUKUzPuEei3dfHtumI11Q" property="securityManager.realm" clientInstElem="_znRHBDPuEei3dfHtumI11Q" serverInstElem="_znRHAzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znUKVDPuEei3dfHtumI11Q" clientInstElem="_znUKUTPuEei3dfHtumI11Q" serverInstElem="_znRHBDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znUKVTPuEei3dfHtumI11Q" property="tokenService.entityManagerFactory" clientInstElem="_znRuETPuEei3dfHtumI11Q" serverInstElem="_znUKVjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znUKVzPuEei3dfHtumI11Q" property="managementService.saltProvider" clientInstElem="_znRuEjPuEei3dfHtumI11Q" serverInstElem="_znRuEzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znUKWDPuEei3dfHtumI11Q" clientInstElem="_znRuEjPuEei3dfHtumI11Q" serverInstElem="_znRHATPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znUKWTPuEei3dfHtumI11Q" property="apigeeSSO2Provider.management" clientInstElem="_znSVIDPuEei3dfHtumI11Q" serverInstElem="_znRuEjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znUKWjPuEei3dfHtumI11Q" property="usergridExternalProvider.management" clientInstElem="_znSVITPuEei3dfHtumI11Q" serverInstElem="_znRuEjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znUKWzPuEei3dfHtumI11Q" clientInstElem="_znSVIjPuEei3dfHtumI11Q" serverInstElem="_znUKXDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znUxYDPuEei3dfHtumI11Q" clientInstElem="_znSVIjPuEei3dfHtumI11Q" serverInstElem="_znUxYTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znUxYjPuEei3dfHtumI11Q" clientInstElem="_znSVIjPuEei3dfHtumI11Q" serverInstElem="_znUxYzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znUxZDPuEei3dfHtumI11Q" clientInstElem="_znSVIjPuEei3dfHtumI11Q" serverInstElem="_znRHATPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znUxZTPuEei3dfHtumI11Q" clientInstElem="_znSVIjPuEei3dfHtumI11Q" serverInstElem="_znUxZjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znUxZzPuEei3dfHtumI11Q" clientInstElem="_znSVIzPuEei3dfHtumI11Q" serverInstElem="_znUxaDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znVYcDPuEei3dfHtumI11Q" clientInstElem="_znSVIzPuEei3dfHtumI11Q" serverInstElem="_znRuEjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znVYcTPuEei3dfHtumI11Q" property="signInProviderFactory.entityManagerFactory" clientInstElem="_znS8MDPuEei3dfHtumI11Q" serverInstElem="_znVYcjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znVYczPuEei3dfHtumI11Q" property="signInProviderFactory.managementService" clientInstElem="_znS8MDPuEei3dfHtumI11Q" serverInstElem="_znRuEjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znVYdDPuEei3dfHtumI11Q" property="ssoProviderFactory.entityManagerFactory" clientInstElem="_znS8MTPuEei3dfHtumI11Q" serverInstElem="_znVYdTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znVYdjPuEei3dfHtumI11Q" property="ssoProviderFactory.properties" clientInstElem="_znS8MTPuEei3dfHtumI11Q" serverInstElem="_znVYdzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znVYeDPuEei3dfHtumI11Q" property="exportService.managementService" clientInstElem="_znS8MjPuEei3dfHtumI11Q" serverInstElem="_znRuEjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znVYeTPuEei3dfHtumI11Q" property="exportService.emf" clientInstElem="_znS8MjPuEei3dfHtumI11Q" serverInstElem="_znVYejPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znV_gDPuEei3dfHtumI11Q" property="exportService.sch" clientInstElem="_znS8MjPuEei3dfHtumI11Q" serverInstElem="_znV_gTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znV_gjPuEei3dfHtumI11Q" property="notificationsQueueListener.emf" clientInstElem="_znS8NTPuEei3dfHtumI11Q" serverInstElem="_znV_gzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znV_hDPuEei3dfHtumI11Q" property="notificationsQueueListener.props" clientInstElem="_znS8NTPuEei3dfHtumI11Q" serverInstElem="_znV_hTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znV_hjPuEei3dfHtumI11Q" property="notificationsQueueListener.smf" clientInstElem="_znS8NTPuEei3dfHtumI11Q" serverInstElem="_znSVIjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znV_hzPuEei3dfHtumI11Q" property="importService.managementService" clientInstElem="_znTjQDPuEei3dfHtumI11Q" serverInstElem="_znRuEjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znV_iDPuEei3dfHtumI11Q" property="importService.emf" clientInstElem="_znTjQDPuEei3dfHtumI11Q" serverInstElem="_znV_iTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_znWmkDPuEei3dfHtumI11Q" property="importService.sch" clientInstElem="_znTjQDPuEei3dfHtumI11Q" serverInstElem="_znWmkTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zn0grTPuEei3dfHtumI11Q" clientInstElem="_zn0gqjPuEei3dfHtumI11Q" serverInstElem="_zn0grjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zn0grzPuEei3dfHtumI11Q" clientInstElem="_zn0gqjPuEei3dfHtumI11Q" serverInstElem="_zn0gsDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zn0gsTPuEei3dfHtumI11Q" clientInstElem="_zn0gqjPuEei3dfHtumI11Q" serverInstElem="_zn1HsDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zn1HsTPuEei3dfHtumI11Q" clientInstElem="_zn0gqzPuEei3dfHtumI11Q" serverInstElem="_zn0gqjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zn1HsjPuEei3dfHtumI11Q" clientInstElem="_zn0gqzPuEei3dfHtumI11Q" serverInstElem="_zn1HszPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zn1HtDPuEei3dfHtumI11Q" property="binaryStoreFactory.properties" clientInstElem="_zn0grDPuEei3dfHtumI11Q" serverInstElem="_zn0gqTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zn1HtTPuEei3dfHtumI11Q" property="binaryStoreFactory.entityManagerFactory" clientInstElem="_zn0grDPuEei3dfHtumI11Q" serverInstElem="_zn1HtjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zokHiDPuEei3dfHtumI11Q" property="properties.properties" clientInstElem="_zokHhTPuEei3dfHtumI11Q" serverInstElem="_zokHhjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zokukDPuEei3dfHtumI11Q" property="propertyPlaceholderConfigurer.properties" clientInstElem="_zokHhzPuEei3dfHtumI11Q" serverInstElem="_zokHhTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zoz_IDPuEei3dfHtumI11Q" clientInstElem="_zozYGjPuEei3dfHtumI11Q" serverInstElem="_zoz_ITPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zoz_IjPuEei3dfHtumI11Q" clientInstElem="_zozYGjPuEei3dfHtumI11Q" serverInstElem="_zoz_IzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zoz_JDPuEei3dfHtumI11Q" clientInstElem="_zozYGjPuEei3dfHtumI11Q" serverInstElem="_zoz_JTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zoz_JjPuEei3dfHtumI11Q" clientInstElem="_zozYGzPuEei3dfHtumI11Q" serverInstElem="_zozYGjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zoz_JzPuEei3dfHtumI11Q" clientInstElem="_zozYGzPuEei3dfHtumI11Q" serverInstElem="_zoz_KDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zpTuZzPuEei3dfHtumI11Q" property="propertyPlaceholderConfigurer.properties" clientInstElem="_zpSgSDPuEei3dfHtumI11Q" serverInstElem="_zpSgRzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zpTuaDPuEei3dfHtumI11Q" property="securityManager.realm" clientInstElem="_zpTHVDPuEei3dfHtumI11Q" serverInstElem="_zpTHUzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zpUVcDPuEei3dfHtumI11Q" clientInstElem="_zpTHVjPuEei3dfHtumI11Q" serverInstElem="_zpTHVDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zpUVcTPuEei3dfHtumI11Q" clientInstElem="_zpTHWDPuEei3dfHtumI11Q" serverInstElem="_zpTHUjPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zpUVcjPuEei3dfHtumI11Q" property="cassandraHostConfigurator.clockResolution" clientInstElem="_zpTHWDPuEei3dfHtumI11Q" serverInstElem="_zpTHVzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zpUVczPuEei3dfHtumI11Q" clientInstElem="_zpTHWTPuEei3dfHtumI11Q" serverInstElem="_zpTHWDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zpUVdDPuEei3dfHtumI11Q" clientInstElem="_zpTHWTPuEei3dfHtumI11Q" serverInstElem="_zpUVdTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zpUVdjPuEei3dfHtumI11Q" clientInstElem="_zpTuYTPuEei3dfHtumI11Q" serverInstElem="_zpSgRzPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zpUVdzPuEei3dfHtumI11Q" clientInstElem="_zpTuYTPuEei3dfHtumI11Q" serverInstElem="_zpTHWTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zpUVeDPuEei3dfHtumI11Q" clientInstElem="_zpTuYTPuEei3dfHtumI11Q" serverInstElem="_zpTHWDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zpUVeTPuEei3dfHtumI11Q" clientInstElem="_zpTuYTPuEei3dfHtumI11Q" serverInstElem="_zpTuYDPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zpUVejPuEei3dfHtumI11Q" clientInstElem="_zpTuYjPuEei3dfHtumI11Q" serverInstElem="_zpTuYTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zpUVezPuEei3dfHtumI11Q" clientInstElem="_zpTuYzPuEei3dfHtumI11Q" serverInstElem="_zpTuYTPuEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_zpUVfDPuEei3dfHtumI11Q" clientInstElem="_zpTuZDPuEei3dfHtumI11Q" serverInstElem="_zpTuYjPuEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="apache.usergrid_spec">
+    <specConnections refID="_zpWKoDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKoTPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKojPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKozPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKpDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKpTPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKpjPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKpzPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKqDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKqTPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKqjPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKqzPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKrDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKrTPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKrjPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKrzPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKsDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKsTPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKsjPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKszPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKtDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKtTPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKtjPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKtzPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKuDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKuTPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKujPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKuzPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKvDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKvTPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKvjPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKvzPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKwDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKwTPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKwjPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKwzPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKxDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKxTPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKxjPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKxzPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKyDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKyTPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKyjPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKyzPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKzDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKzTPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKzjPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWKzzPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK0DPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK0TPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK0jPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK0zPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK1DPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK1TPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK1jPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK1zPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK2DPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK2TPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK2jPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK2zPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK3DPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK3TPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK3jPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK3zPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK4DPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK4TPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK4jPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK4zPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK5DPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK5TPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK5jPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK5zPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK6DPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK6TPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK6jPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK6zPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK7DPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK7TPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK7jPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK7zPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK8DPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK8TPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK8jPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK8zPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK9DPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK9TPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK9jPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK9zPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK-DPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK-TPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK-jPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK-zPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK_DPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK_TPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK_jPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWK_zPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLADPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLATPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLAjPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLAzPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLBDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLBTPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLBjPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLBzPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLCDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLCTPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLCjPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLCzPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLDDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLDTPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLDjPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLDzPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLEDPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLETPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLEjPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLEzPuEei3dfHtumI11Q"/>
+    <specConnections refID="_zpWLFDPuEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

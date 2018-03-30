@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="zhegexiaohuozi.SeimiCrawler">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="zhegexiaohuozi.SeimiCrawler_config" implements="//@architectureDescriptions[name='zhegexiaohuozi.SeimiCrawler_spec']">
+    <configComponents name="&quot;org.apache.commons.dbcp2.BasicDataSource&quot;" id="_63pyIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;" id="_63pyITPzEei3dfHtumI11Q"/>
+    <configComponents id="_63pyIjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;" id="_63pyIzPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="zhegexiaohuozi.SeimiCrawler_asm" instantiates="//@architectureDescriptions[name='zhegexiaohuozi.SeimiCrawler_config']">
+    <assmComponents name="mybatisDataSource" id="_63pyJDPzEei3dfHtumI11Q" instantiates="_63pyIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="sqlSessionFactory" id="_63pyJTPzEei3dfHtumI11Q" instantiates="_63pyITPzEei3dfHtumI11Q"/>
+    <assmComponents name="seimiSqlSessionFactory" id="_63pyJjPzEei3dfHtumI11Q"/>
+    <assmComponents id="_63pyJzPzEei3dfHtumI11Q" instantiates="_63pyIzPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="zhegexiaohuozi.SeimiCrawler_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

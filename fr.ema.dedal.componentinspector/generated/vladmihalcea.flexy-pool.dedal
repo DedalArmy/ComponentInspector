@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="vladmihalcea.flexy-pool">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="vladmihalcea.flexy-pool_config" implements="//@architectureDescriptions[name='vladmihalcea.flexy-pool_spec']">
+    <configComponents name="&quot;com.atomikos.icatch.jta.UserTransactionManager&quot;" id="_pvRU4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.atomikos.icatch.jta.J2eeUserTransaction&quot;" id="_pvRU4TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.transaction.jta.JtaTransactionManager&quot;" id="_pvRU4jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.atomikos.jdbc.nonxa.AtomikosNonXADataSourceBean&quot;" id="_pvkP0DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.atomikos.jdbc.AtomikosDataSourceBean&quot;" id="_pvuA0DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.config.Configuration$Builder&quot;" id="_pvy5UDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;configurationBuilder&quot;" id="_pvy5UTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.FlexyPoolDataSource&quot;" id="_pvy5UjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.IncrementPoolOnTimeoutConnectionAcquiringStrategy.Factory&quot;" id="_pvy5UzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.RetryConnectionAcquiringStrategy.Factory&quot;" id="_pvy5VDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.jolbox.bonecp.BoneCPDataSource&quot;" id="_pwCJ4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.config.Configuration$Builder&quot;" id="_pwQzYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;configurationBuilder&quot;" id="_pwQzYTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.FlexyPoolDataSource&quot;" id="_pwQzYjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.RetryConnectionAcquiringStrategy.Factory&quot;" id="_pwQzYzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;bitronix.tm.TransactionManagerServices&quot;" id="_pwhSEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.transaction.jta.JtaTransactionManager&quot;" id="_pwhSETPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;bitronix.tm.resource.jdbc.PoolingDataSource&quot;" id="_pwy-4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.config.Configuration$Builder&quot;" id="_pxErsDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;configurationBuilder&quot;" id="_pxFSwDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.FlexyPoolDataSource&quot;" id="_pxFSwTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.IncrementPoolOnTimeoutConnectionAcquiringStrategy.Factory&quot;" id="_pxFSwjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.RetryConnectionAcquiringStrategy.Factory&quot;" id="_pxFSwzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;" id="_pxW_kDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.config.Configuration$Builder&quot;" id="_pxm3MDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;configurationBuilder&quot;" id="_pxm3MTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.FlexyPoolDataSource&quot;" id="_pxm3MjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.IncrementPoolOnTimeoutConnectionAcquiringStrategy.Factory&quot;" id="_pxm3MzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.RetryConnectionAcquiringStrategy.Factory&quot;" id="_pxm3NDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.transaction.support.TransactionTemplate&quot;" id="_px_4wDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.core.JdbcTemplate&quot;" id="_px_4wTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_pyPwYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.hsqldb.jdbc.JDBCDataSource&quot;" id="_pyhdMDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.commons.dbcp.BasicDataSource&quot;" id="_pyx74DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.config.Configuration$Builder&quot;" id="_pzXxwDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;configurationBuilder&quot;" id="_pzXxwTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.FlexyPoolDataSource&quot;" id="_pzXxwjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.IncrementPoolOnTimeoutConnectionAcquiringStrategy.Factory&quot;" id="_pzXxwzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.RetryConnectionAcquiringStrategy.Factory&quot;" id="_pzXxxDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.commons.dbcp2.BasicDataSource&quot;" id="_pzqssDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.config.Configuration$Builder&quot;" id="_pz0dsDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;configurationBuilder&quot;" id="_pz0dsTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.FlexyPoolDataSource&quot;" id="_pz0dsjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.IncrementPoolOnTimeoutConnectionAcquiringStrategy.Factory&quot;" id="_pz0dszPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.RetryConnectionAcquiringStrategy.Factory&quot;" id="_pz0dtDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.druid.pool.DruidDataSource&quot;" id="_p0HYoDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.config.Configuration$Builder&quot;" id="_p0RJoDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;configurationBuilder&quot;" id="_p0RJoTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.FlexyPoolDataSource&quot;" id="_p0RJojPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.IncrementPoolOnTimeoutConnectionAcquiringStrategy.Factory&quot;" id="_p0RJozPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.RetryConnectionAcquiringStrategy.Factory&quot;" id="_p0RJpDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zaxxer.hikari.HikariDataSource&quot;" id="_p02_gDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.config.Configuration$Builder&quot;" id="_p1AwgDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;configurationBuilder&quot;" id="_p1AwgTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.FlexyPoolDataSource&quot;" id="_p1AwgjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.IncrementPoolOnTimeoutConnectionAcquiringStrategy.Factory&quot;" id="_p1AwgzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.RetryConnectionAcquiringStrategy.Factory&quot;" id="_p1AwhDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.zaxxer.hikari.HikariDataSource&quot;" id="_p2DSUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.config.Configuration$Builder&quot;" id="_p2NDUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;configurationBuilder&quot;" id="_p2NDUTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.FlexyPoolDataSource&quot;" id="_p2NDUjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.IncrementPoolOnTimeoutConnectionAcquiringStrategy.Factory&quot;" id="_p2NDUzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.RetryConnectionAcquiringStrategy.Factory&quot;" id="_p2NDVDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.tomcat.jdbc.pool.DataSource&quot;" id="_p2f-QDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.config.Configuration$Builder&quot;" id="_p2pIMDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;configurationBuilder&quot;" id="_p2pIMTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.FlexyPoolDataSource&quot;" id="_p2pIMjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.IncrementPoolOnTimeoutConnectionAcquiringStrategy.Factory&quot;" id="_p2pIMzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.RetryConnectionAcquiringStrategy.Factory&quot;" id="_p2pINDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.vibur.dbcp.ViburDBCPDataSource&quot;" id="_p3PlIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.config.Configuration$Builder&quot;" id="_p3YvEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;configurationBuilder&quot;" id="_p3YvETPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.FlexyPoolDataSource&quot;" id="_p3YvEjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vladmihalcea.flexypool.strategy.RetryConnectionAcquiringStrategy.Factory&quot;" id="_p3YvEzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_pvRU4zPzEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_pvRU4jPzEei3dfHtumI11Q" serverClassElem="_pvRU4DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_pvRU5DPzEei3dfHtumI11Q" property="&quot;userTransaction&quot;" clientClassElem="_pvRU4jPzEei3dfHtumI11Q" serverClassElem="_pvRU4TPzEei3dfHtumI11Q"/>
+    <configConnections refID="_pwhSEjPzEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_pwhSETPzEei3dfHtumI11Q" serverClassElem="_pwhSEzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_px_4wjPzEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_px_4wDPzEei3dfHtumI11Q" serverClassElem="_px_4wzPzEei3dfHtumI11Q"/>
+    <configConnections refID="_px_4xDPzEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_px_4wTPzEei3dfHtumI11Q" serverClassElem="_px_4xTPzEei3dfHtumI11Q"/>
+    <configConnections refID="_pyPwYTPzEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_pyPwYDPzEei3dfHtumI11Q" serverClassElem="_pyPwYjPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="vladmihalcea.flexy-pool_asm" instantiates="//@architectureDescriptions[name='vladmihalcea.flexy-pool_config']">
+    <assmComponents name="atomikosTransactionManager" id="_pvRU5TPzEei3dfHtumI11Q" instantiates="_pvRU4DPzEei3dfHtumI11Q"/>
+    <assmComponents name="atomikosUserTransaction" id="_pvRU5jPzEei3dfHtumI11Q" instantiates="_pvRU4TPzEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_pvRU5zPzEei3dfHtumI11Q" instantiates="_pvRU4jPzEei3dfHtumI11Q"/>
+    <assmComponents name="poolingDataSource" id="_pvkP0TPzEei3dfHtumI11Q" instantiates="_pvkP0DPzEei3dfHtumI11Q"/>
+    <assmComponents name="poolingDataSource" id="_pvuA0TPzEei3dfHtumI11Q" instantiates="_pvuA0DPzEei3dfHtumI11Q"/>
+    <assmComponents name="configurationBuilder" id="_pvzgYjPzEei3dfHtumI11Q" instantiates="_pvy5UDPzEei3dfHtumI11Q"/>
+    <assmComponents name="configuration" id="_pvzgYzPzEei3dfHtumI11Q" instantiates="_pvy5UTPzEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_pvzgZDPzEei3dfHtumI11Q" instantiates="_pvy5UjPzEei3dfHtumI11Q"/>
+    <assmComponents id="_pvzgZTPzEei3dfHtumI11Q" instantiates="_pvy5UzPzEei3dfHtumI11Q"/>
+    <assmComponents id="_pvzgZjPzEei3dfHtumI11Q" instantiates="_pvy5VDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;poolingDataSource&quot;" id="_pwCJ4TPzEei3dfHtumI11Q" instantiates="_pwCJ4DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configurationBuilder&quot;" id="_pwQzZzPzEei3dfHtumI11Q" instantiates="_pwQzYDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configuration&quot;" id="_pwQzaDPzEei3dfHtumI11Q" instantiates="_pwQzYTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_pwRacDPzEei3dfHtumI11Q" instantiates="_pwQzYjPzEei3dfHtumI11Q"/>
+    <assmComponents id="_pwRacTPzEei3dfHtumI11Q" instantiates="_pwQzYzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;btmConfig&quot;" id="_pwhSFDPzEei3dfHtumI11Q" instantiates="_pwhSEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jtaTransactionManager&quot;" id="_pwhSFTPzEei3dfHtumI11Q" instantiates="_pwhSEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_pwhSFjPzEei3dfHtumI11Q" instantiates="_pwhSETPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;poolingDataSource&quot;" id="_pwy-4TPzEei3dfHtumI11Q" instantiates="_pwy-4DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configurationBuilder&quot;" id="_pxFSxzPzEei3dfHtumI11Q" instantiates="_pxErsDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configuration&quot;" id="_pxFSyDPzEei3dfHtumI11Q" instantiates="_pxFSwDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_pxFSyTPzEei3dfHtumI11Q" instantiates="_pxFSwTPzEei3dfHtumI11Q"/>
+    <assmComponents id="_pxFSyjPzEei3dfHtumI11Q" instantiates="_pxFSwjPzEei3dfHtumI11Q"/>
+    <assmComponents id="_pxFSyzPzEei3dfHtumI11Q" instantiates="_pxFSwzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;poolingDataSource&quot;" id="_pxW_kTPzEei3dfHtumI11Q" instantiates="_pxW_kDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configurationBuilder&quot;" id="_pxneQDPzEei3dfHtumI11Q" instantiates="_pxm3MDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configuration&quot;" id="_pxneQTPzEei3dfHtumI11Q" instantiates="_pxm3MTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_pxneQjPzEei3dfHtumI11Q" instantiates="_pxm3MjPzEei3dfHtumI11Q"/>
+    <assmComponents id="_pxneQzPzEei3dfHtumI11Q" instantiates="_pxm3MzPzEei3dfHtumI11Q"/>
+    <assmComponents id="_pxneRDPzEei3dfHtumI11Q" instantiates="_pxm3NDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionTemplate&quot;" id="_px_4xjPzEei3dfHtumI11Q" instantiates="_px_4wDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jdbcTemplate&quot;" id="_px_4xzPzEei3dfHtumI11Q" instantiates="_px_4wTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_pyPwYzPzEei3dfHtumI11Q" instantiates="_pyPwYDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jdbcDataSource&quot;" id="_pyhdMTPzEei3dfHtumI11Q" instantiates="_pyhdMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;poolingDataSource&quot;" id="_pyx74TPzEei3dfHtumI11Q" instantiates="_pyx74DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configurationBuilder&quot;" id="_pzXxyDPzEei3dfHtumI11Q" instantiates="_pzXxwDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configuration&quot;" id="_pzXxyTPzEei3dfHtumI11Q" instantiates="_pzXxwTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_pzXxyjPzEei3dfHtumI11Q" instantiates="_pzXxwjPzEei3dfHtumI11Q"/>
+    <assmComponents id="_pzXxyzPzEei3dfHtumI11Q" instantiates="_pzXxwzPzEei3dfHtumI11Q"/>
+    <assmComponents id="_pzXxzDPzEei3dfHtumI11Q" instantiates="_pzXxxDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;poolingDataSource&quot;" id="_pzqssTPzEei3dfHtumI11Q" instantiates="_pzqssDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configurationBuilder&quot;" id="_pz0duDPzEei3dfHtumI11Q" instantiates="_pz0dsDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configuration&quot;" id="_pz0duTPzEei3dfHtumI11Q" instantiates="_pz0dsTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_pz0dujPzEei3dfHtumI11Q" instantiates="_pz0dsjPzEei3dfHtumI11Q"/>
+    <assmComponents id="_pz0duzPzEei3dfHtumI11Q" instantiates="_pz0dszPzEei3dfHtumI11Q"/>
+    <assmComponents id="_pz0dvDPzEei3dfHtumI11Q" instantiates="_pz0dtDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;poolingDataSource&quot;" id="_p0HYoTPzEei3dfHtumI11Q" instantiates="_p0HYoDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configurationBuilder&quot;" id="_p0aTkTPzEei3dfHtumI11Q" instantiates="_p0RJoDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configuration&quot;" id="_p0aTkjPzEei3dfHtumI11Q" instantiates="_p0RJoTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_p0aTkzPzEei3dfHtumI11Q" instantiates="_p0RJojPzEei3dfHtumI11Q"/>
+    <assmComponents id="_p0aTlDPzEei3dfHtumI11Q" instantiates="_p0RJozPzEei3dfHtumI11Q"/>
+    <assmComponents id="_p0aTlTPzEei3dfHtumI11Q" instantiates="_p0RJpDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;poolingDataSource&quot;" id="_p02_gTPzEei3dfHtumI11Q" instantiates="_p02_gDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configurationBuilder&quot;" id="_p1AwiDPzEei3dfHtumI11Q" instantiates="_p1AwgDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configuration&quot;" id="_p1AwiTPzEei3dfHtumI11Q" instantiates="_p1AwgTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_p1AwijPzEei3dfHtumI11Q" instantiates="_p1AwgjPzEei3dfHtumI11Q"/>
+    <assmComponents id="_p1AwizPzEei3dfHtumI11Q" instantiates="_p1AwgzPzEei3dfHtumI11Q"/>
+    <assmComponents id="_p1AwjDPzEei3dfHtumI11Q" instantiates="_p1AwhDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;poolingDataSource&quot;" id="_p2DSUTPzEei3dfHtumI11Q" instantiates="_p2DSUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configurationBuilder&quot;" id="_p2NDWDPzEei3dfHtumI11Q" instantiates="_p2NDUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configuration&quot;" id="_p2NDWTPzEei3dfHtumI11Q" instantiates="_p2NDUTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_p2NDWjPzEei3dfHtumI11Q" instantiates="_p2NDUjPzEei3dfHtumI11Q"/>
+    <assmComponents id="_p2NDWzPzEei3dfHtumI11Q" instantiates="_p2NDUzPzEei3dfHtumI11Q"/>
+    <assmComponents id="_p2NDXDPzEei3dfHtumI11Q" instantiates="_p2NDVDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;poolingDataSource&quot;" id="_p2f-QTPzEei3dfHtumI11Q" instantiates="_p2f-QDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configurationBuilder&quot;" id="_p2y5MDPzEei3dfHtumI11Q" instantiates="_p2pIMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configuration&quot;" id="_p2y5MTPzEei3dfHtumI11Q" instantiates="_p2pIMTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_p2y5MjPzEei3dfHtumI11Q" instantiates="_p2pIMjPzEei3dfHtumI11Q"/>
+    <assmComponents id="_p2y5MzPzEei3dfHtumI11Q" instantiates="_p2pIMzPzEei3dfHtumI11Q"/>
+    <assmComponents id="_p2y5NDPzEei3dfHtumI11Q" instantiates="_p2pINDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;poolingDataSource&quot;" id="_p3PlITPzEei3dfHtumI11Q" instantiates="_p3PlIDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configurationBuilder&quot;" id="_p3YvFzPzEei3dfHtumI11Q" instantiates="_p3YvEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;configuration&quot;" id="_p3YvGDPzEei3dfHtumI11Q" instantiates="_p3YvETPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource&quot;" id="_p3YvGTPzEei3dfHtumI11Q" instantiates="_p3YvEjPzEei3dfHtumI11Q"/>
+    <assmComponents id="_p3YvGjPzEei3dfHtumI11Q" instantiates="_p3YvEzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_pvRU6DPzEei3dfHtumI11Q" property="transactionManager.transactionManager" clientInstElem="_pvRU5zPzEei3dfHtumI11Q" serverInstElem="_pvRU5TPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_pvRU6TPzEei3dfHtumI11Q" property="transactionManager.userTransaction" clientInstElem="_pvRU5zPzEei3dfHtumI11Q" serverInstElem="_pvRU5jPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_pwhSFzPzEei3dfHtumI11Q" property="transactionManager.transactionManager" clientInstElem="_pwhSFjPzEei3dfHtumI11Q" serverInstElem="_pwhSFTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_pwhSGDPzEei3dfHtumI11Q" property="transactionManager.userTransaction" clientInstElem="_pwhSFjPzEei3dfHtumI11Q" serverInstElem="_pwhSFTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_px_4yDPzEei3dfHtumI11Q" property="transactionTemplate.transactionManager" clientInstElem="_px_4xjPzEei3dfHtumI11Q" serverInstElem="_px_4yTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_px_4yjPzEei3dfHtumI11Q" property="jdbcTemplate.dataSource" clientInstElem="_px_4xzPzEei3dfHtumI11Q" serverInstElem="_px_4yzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_pyPwZDPzEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_pyPwYzPzEei3dfHtumI11Q" serverInstElem="_pyPwZTPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="vladmihalcea.flexy-pool_spec">
+    <specConnections refID="_p3YvHjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_p3YvHzPzEei3dfHtumI11Q"/>
+    <specConnections refID="_p3YvIDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_p3YvITPzEei3dfHtumI11Q"/>
+    <specConnections refID="_p3YvIjPzEei3dfHtumI11Q"/>
+    <specConnections refID="_p3YvIzPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

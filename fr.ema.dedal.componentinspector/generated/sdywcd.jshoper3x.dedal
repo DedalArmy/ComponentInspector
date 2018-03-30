@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="sdywcd.jshoper3x">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="sdywcd.jshoper3x_config" implements="//@architectureDescriptions[name='sdywcd.jshoper3x_spec']">
+    <configComponents name="org.springframework.cache.ehcache.EhCacheCacheManager" id="_v3xZoDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.cache.ehcache.EhCacheManagerFactoryBean" id="_v3xZoTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_v3xZojPyEei3dfHtumI11Q" property="&quot;cacheManager&quot;" clientClassElem="_v3xZoDPyEei3dfHtumI11Q" serverClassElem="_v3xZoTPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="sdywcd.jshoper3x_asm" instantiates="//@architectureDescriptions[name='sdywcd.jshoper3x_config']">
+    <assmComponents name="springCacheManager" id="_v3xZozPyEei3dfHtumI11Q" instantiates="_v3xZoDPyEei3dfHtumI11Q"/>
+    <assmComponents name="ehcacheManager" id="_v3xZpDPyEei3dfHtumI11Q" instantiates="_v3xZoTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_v3xZpTPyEei3dfHtumI11Q" property="springCacheManager.cacheManager" clientInstElem="_v3xZozPyEei3dfHtumI11Q" serverInstElem="_v3xZpDPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="sdywcd.jshoper3x_spec">
+    <specConnections refID="_v3xZpjPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

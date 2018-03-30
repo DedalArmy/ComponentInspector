@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="dadoonet.spring-elasticsearch">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dadoonet.spring-elasticsearch_config" implements="//@architectureDescriptions[name='dadoonet.spring-elasticsearch_spec']">
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.it.annotation.rest.AppConfig&quot;" id="_iMF0IDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.it.annotation.transport.AppConfig&quot;" id="_iMO-EDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.ElasticsearchRestClientFactoryBean&quot;" id="_iOnjsDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.ElasticsearchTransportClientFactoryBean&quot;" id="_iOwtoDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.ElasticsearchRestClientFactoryBean&quot;" id="_iTsQ8DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.ElasticsearchTransportClientFactoryBean&quot;" id="_iYWHcDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.ElasticsearchTransportClientFactoryBean&quot;" id="_iYpCYDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.ElasticsearchTransportClientFactoryBean&quot;" id="_idklsDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.ElasticsearchTransportClientFactoryBean&quot;" id="_id3goDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.it.annotation.rest.AppConfig&quot;" id="_iguAUDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.it.annotation.transport.AppConfig&quot;" id="_ig3xUDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.ElasticsearchRestClientFactoryBean&quot;" id="_ijGl8DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.ElasticsearchTransportClientFactoryBean&quot;" id="_ijZg4DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.ElasticsearchRestClientFactoryBean&quot;" id="_ioD-cDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.ElasticsearchTransportClientFactoryBean&quot;" id="_is9skDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.ElasticsearchTransportClientFactoryBean&quot;" id="_itG2gDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.ElasticsearchTransportClientFactoryBean&quot;" id="_iyCZ0DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;fr.pilato.spring.elasticsearch.ElasticsearchTransportClientFactoryBean&quot;" id="_iyVUwDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_iTsQ8TPvEei3dfHtumI11Q" property="&quot;properties&quot;" clientClassElem="_iTsQ8DPvEei3dfHtumI11Q" serverClassElem="_iTsQ8jPvEei3dfHtumI11Q"/>
+    <configConnections refID="_idklsTPvEei3dfHtumI11Q" property="&quot;properties&quot;" clientClassElem="_idklsDPvEei3dfHtumI11Q" serverClassElem="_idklsjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_id3goTPvEei3dfHtumI11Q" property="&quot;properties&quot;" clientClassElem="_id3goDPvEei3dfHtumI11Q" serverClassElem="_id3gojPvEei3dfHtumI11Q"/>
+    <configConnections refID="_ioD-cTPvEei3dfHtumI11Q" property="&quot;properties&quot;" clientClassElem="_ioD-cDPvEei3dfHtumI11Q" serverClassElem="_ioD-cjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_iyCZ0TPvEei3dfHtumI11Q" property="&quot;properties&quot;" clientClassElem="_iyCZ0DPvEei3dfHtumI11Q" serverClassElem="_iyCZ0jPvEei3dfHtumI11Q"/>
+    <configConnections refID="_iyVUwTPvEei3dfHtumI11Q" property="&quot;properties&quot;" clientClassElem="_iyVUwDPvEei3dfHtumI11Q" serverClassElem="_iyVUwjPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dadoonet.spring-elasticsearch_asm" instantiates="//@architectureDescriptions[name='dadoonet.spring-elasticsearch_config']">
+    <assmComponents id="_iMF0ITPvEei3dfHtumI11Q" instantiates="_iMF0IDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_iMO-ETPvEei3dfHtumI11Q" instantiates="_iMO-EDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;esClient&quot;" id="_iOnjsTPvEei3dfHtumI11Q" instantiates="_iOnjsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;esClient&quot;" id="_iOwtoTPvEei3dfHtumI11Q" instantiates="_iOwtoDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;esClient&quot;" id="_iTsQ8zPvEei3dfHtumI11Q" instantiates="_iTsQ8DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;esClient&quot;" id="_iYWHcTPvEei3dfHtumI11Q" instantiates="_iYWHcDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;esClient&quot;" id="_iYpCYTPvEei3dfHtumI11Q" instantiates="_iYpCYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;esClient&quot;" id="_idklszPvEei3dfHtumI11Q" instantiates="_idklsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;esClient&quot;" id="_id3gozPvEei3dfHtumI11Q" instantiates="_id3goDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_iguAUTPvEei3dfHtumI11Q" instantiates="_iguAUDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_ig3xUTPvEei3dfHtumI11Q" instantiates="_ig3xUDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;esClient&quot;" id="_ijGl8TPvEei3dfHtumI11Q" instantiates="_ijGl8DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;esClient&quot;" id="_ijZg4TPvEei3dfHtumI11Q" instantiates="_ijZg4DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;esClient&quot;" id="_ioD-czPvEei3dfHtumI11Q" instantiates="_ioD-cDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;esClient&quot;" id="_is9skTPvEei3dfHtumI11Q" instantiates="_is9skDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;esClient&quot;" id="_itG2gTPvEei3dfHtumI11Q" instantiates="_itG2gDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;esClient&quot;" id="_iyCZ0zPvEei3dfHtumI11Q" instantiates="_iyCZ0DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;esClient&quot;" id="_iyVUwzPvEei3dfHtumI11Q" instantiates="_iyVUwDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_iTsQ9DPvEei3dfHtumI11Q" property="esClient.properties" clientInstElem="_iTsQ8zPvEei3dfHtumI11Q" serverInstElem="_iTsQ9TPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_idkltDPvEei3dfHtumI11Q" property="esClient.properties" clientInstElem="_idklszPvEei3dfHtumI11Q" serverInstElem="_idkltTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_id3gpDPvEei3dfHtumI11Q" property="esClient.properties" clientInstElem="_id3gozPvEei3dfHtumI11Q" serverInstElem="_id3gpTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_ioD-dDPvEei3dfHtumI11Q" property="esClient.properties" clientInstElem="_ioD-czPvEei3dfHtumI11Q" serverInstElem="_ioD-dTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_iyCZ1DPvEei3dfHtumI11Q" property="esClient.properties" clientInstElem="_iyCZ0zPvEei3dfHtumI11Q" serverInstElem="_iyCZ1TPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_iyVUxDPvEei3dfHtumI11Q" property="esClient.properties" clientInstElem="_iyVUwzPvEei3dfHtumI11Q" serverInstElem="_iyVUxTPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dadoonet.spring-elasticsearch_spec">
+    <specConnections refID="_i0vvkDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_i0vvkTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_i0vvkjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_i0vvkzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_i0vvlDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_i0vvlTPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

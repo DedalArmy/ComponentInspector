@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="spring-projects.spring-hateoas">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="spring-projects.spring-hateoas_config" implements="//@architectureDescriptions[name='spring-projects.spring-hateoas_spec']">
+    <configComponents name="&quot;org.springframework.hateoas.config.XmlConfigurationIntegrationTest$HypermediaConfiguration&quot;" id="_HZv2MDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.hateoas.config.XmlConfigurationIntegrationTest$HypermediaConfiguration&quot;" id="_HaCxIDPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="spring-projects.spring-hateoas_asm" instantiates="//@architectureDescriptions[name='spring-projects.spring-hateoas_config']">
+    <assmComponents id="_HZv2MTPzEei3dfHtumI11Q" instantiates="_HZv2MDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_HaCxITPzEei3dfHtumI11Q" instantiates="_HaCxIDPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="spring-projects.spring-hateoas_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

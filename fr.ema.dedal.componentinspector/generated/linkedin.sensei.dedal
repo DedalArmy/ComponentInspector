@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="linkedin.sensei">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei_config" implements="//@architectureDescriptions[name='linkedin.sensei_spec']">
+    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qe7iIDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qfYOEDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.senseidb.test.plugin.MockRuntimeFacetHandlerFactory&quot;" id="_qfh_EDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qf1hEDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qgRl8DPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qguR4DPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.senseidb.test.plugin.MockRuntimeFacetHandlerFactory&quot;" id="_qhBM0DPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qhK90DPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qhnpwDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qiEVsDPxEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qigakDPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei_config']">
+    <assmComponents name="demo" id="_qe7iITPxEei3dfHtumI11Q" instantiates="_qe7iIDPxEei3dfHtumI11Q"/>
+    <assmComponents name="demo" id="_qfYOETPxEei3dfHtumI11Q" instantiates="_qfYOEDPxEei3dfHtumI11Q"/>
+    <assmComponents id="_qfh_ETPxEei3dfHtumI11Q" instantiates="_qfh_EDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;demo&quot;" id="_qf1hETPxEei3dfHtumI11Q" instantiates="_qf1hEDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;demo&quot;" id="_qgRl8TPxEei3dfHtumI11Q" instantiates="_qgRl8DPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;demo&quot;" id="_qguR4TPxEei3dfHtumI11Q" instantiates="_qguR4DPxEei3dfHtumI11Q"/>
+    <assmComponents id="_qhBM0TPxEei3dfHtumI11Q" instantiates="_qhBM0DPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;demo&quot;" id="_qhK90TPxEei3dfHtumI11Q" instantiates="_qhK90DPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;demo&quot;" id="_qhnpwTPxEei3dfHtumI11Q" instantiates="_qhnpwDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;demo&quot;" id="_qiEVsTPxEei3dfHtumI11Q" instantiates="_qiEVsDPxEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;demo&quot;" id="_qigakTPxEei3dfHtumI11Q" instantiates="_qigakDPxEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="linkedin.sensei_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="vipshop.Saturn">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="vipshop.Saturn_config" implements="//@architectureDescriptions[name='vipshop.Saturn_spec']">
+    <configComponents name="&quot;com.vip.saturn.demo.embed.tomcat.utils.SpringContextUtils&quot;" id="_poHkADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor&quot;" id="_poHkATPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.demo.embed.tomcat.service.DemoService&quot;" id="_poHkAjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.demo.embed.tomcat.job.DemoJob&quot;" id="_poHkAzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.demo.embed.tomcat.utils.SaturnEmbedUtils&quot;" id="_poHkBDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor&quot;" id="_poLOYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.demo.service.DemoService&quot;" id="_poLOYTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.demo.job.DemoJob2&quot;" id="_poLOYjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.demo.job.DemoJob3&quot;" id="_poLOYzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.service.impl.SystemConfigServiceImpl&quot;" id="_posLwDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.service.impl.AlarmStatisticsServiceImpl&quot;" id="_posLwTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.service.impl.DashboardServiceImpl&quot;" id="_posLwjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.service.impl.ExecutorServiceImpl&quot;" id="_posLwzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.service.impl.JobServiceImpl&quot;" id="_posLxDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.service.impl.NamespaceZkClusterMappingServiceImpl&quot;" id="_posLxTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.service.impl.ReportAlarmServiceImpl&quot;" id="_posLxjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.service.impl.UtilsServiceImpl&quot;" id="_posLxzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.service.impl.ZkDBDiffServiceImpl&quot;" id="_posLyDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.service.impl.ZkTreeServiceImpl&quot;" id="_posLyTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.service.impl.UpdateJobConfigServiceImpl&quot;" id="_posLyjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.service.impl.RestApiServiceImpl&quot;" id="_posLyzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.service.impl.statistics.StatisticsPersistence&quot;" id="_posLzDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.service.impl.statistics.StatisticsRefreshServiceImpl&quot;" id="_posLzTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.service.impl.RegistryCenterServiceImpl&quot;" id="_posLzjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.druid.pool.DruidDataSource&quot;" id="_posy0DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.druid.pool.DruidDataSource&quot;" id="_po61QDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.gui.AuthorizationController&quot;" id="_ppe18DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.gui.DashboardController&quot;" id="_ppe18TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.gui.ExecutorOverviewController&quot;" id="_ppe18jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.gui.HomeController&quot;" id="_ppe18zPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.gui.JobAlarmStatisticsController&quot;" id="_ppe19DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.gui.JobConfigController&quot;" id="_ppe19TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.gui.JobExecutionController&quot;" id="_ppe19jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.gui.JobOverviewController&quot;" id="_ppe19zPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.gui.JobShardingController&quot;" id="_ppe1-DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.gui.MarathonController&quot;" id="_ppe1-TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.gui.NamespaceAlarmStatisticsController&quot;" id="_ppe1-jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.gui.OverallAlarmStatisticsController&quot;" id="_ppe1-zPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.gui.RegistryCenterController&quot;" id="_ppe1_DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.gui.StaticResourceController&quot;" id="_ppe1_TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.gui.SystemConfigController&quot;" id="_ppe1_jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.gui.UtilsController&quot;" id="_ppe1_zPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.rest.AlarmRestApiController&quot;" id="_ppe2ADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.rest.DashboardRefreshRestApiController&quot;" id="_ppe2ATPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.rest.JobOperationRestApiController&quot;" id="_ppe2AjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.rest.NamespaceManagementRestApiController&quot;" id="_ppe2AzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.rest.ZkDbDiffRestApiController&quot;" id="_ppe2BDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.vip.saturn.job.console.controller.rest.ZkDiscoveryRestApiController&quot;" id="_ppe2BTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_ppxw4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.mapper.MapperScannerConfigurer&quot;" id="_ppxw4TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;" id="_ppxw4jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.druid.pool.DruidDataSource&quot;" id="_pqEr0DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.druid.pool.DruidDataSource&quot;" id="_pqOc0DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_ppxw4zPzEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_ppxw4DPzEei3dfHtumI11Q" serverClassElem="_ppxw5DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_ppxw5TPzEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_ppxw4jPzEei3dfHtumI11Q" serverClassElem="_ppxw5jPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="vipshop.Saturn_asm" instantiates="//@architectureDescriptions[name='vipshop.Saturn_config']">
+    <assmComponents name="SpringContextUtils" id="_poHkBTPzEei3dfHtumI11Q" instantiates="_poHkADPzEei3dfHtumI11Q"/>
+    <assmComponents id="_poHkBjPzEei3dfHtumI11Q" instantiates="_poHkATPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;demoService&quot;" id="_poHkBzPzEei3dfHtumI11Q" instantiates="_poHkAjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;demoJob&quot;" id="_poHkCDPzEei3dfHtumI11Q" instantiates="_poHkAzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;saturnEmbedUtils&quot;" id="_poHkCTPzEei3dfHtumI11Q" instantiates="_poHkBDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_poLOZDPzEei3dfHtumI11Q" instantiates="_poLOYDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;demoService&quot;" id="_poLOZTPzEei3dfHtumI11Q" instantiates="_poLOYTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;demoJob2&quot;" id="_poLOZjPzEei3dfHtumI11Q" instantiates="_poLOYjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;demoJob3&quot;" id="_poLOZzPzEei3dfHtumI11Q" instantiates="_poLOYzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;systemConfigService&quot;" id="_posLzzPzEei3dfHtumI11Q" instantiates="_posLwDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;alarmStatisticsService&quot;" id="_posL0DPzEei3dfHtumI11Q" instantiates="_posLwTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dashboardService&quot;" id="_posL0TPzEei3dfHtumI11Q" instantiates="_posLwjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;executorService&quot;" id="_posL0jPzEei3dfHtumI11Q" instantiates="_posLwzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jobService&quot;" id="_posL0zPzEei3dfHtumI11Q" instantiates="_posLxDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;namespaceZkClusterMappingService&quot;" id="_posL1DPzEei3dfHtumI11Q" instantiates="_posLxTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;reportAlarmService&quot;" id="_posL1TPzEei3dfHtumI11Q" instantiates="_posLxjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;utilsService&quot;" id="_posL1jPzEei3dfHtumI11Q" instantiates="_posLxzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;zkDBDiffService&quot;" id="_posL1zPzEei3dfHtumI11Q" instantiates="_posLyDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;zkTreeService&quot;" id="_posL2DPzEei3dfHtumI11Q" instantiates="_posLyTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;updateJobConfigService&quot;" id="_posL2TPzEei3dfHtumI11Q" instantiates="_posLyjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;restApiService&quot;" id="_posL2jPzEei3dfHtumI11Q" instantiates="_posLyzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;statisticPersistence&quot;" id="_posL2zPzEei3dfHtumI11Q" instantiates="_posLzDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;statisticRefreshService&quot;" id="_posL3DPzEei3dfHtumI11Q" instantiates="_posLzTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;registryCenterService&quot;" id="_posL3TPzEei3dfHtumI11Q" instantiates="_posLzjPzEei3dfHtumI11Q"/>
+    <assmComponents id="_posy0TPzEei3dfHtumI11Q" instantiates="_posy0DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_po61QTPzEei3dfHtumI11Q" instantiates="_po61QDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;authorizationController&quot;" id="_ppe2BjPzEei3dfHtumI11Q" instantiates="_ppe18DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dashboardController&quot;" id="_ppe2BzPzEei3dfHtumI11Q" instantiates="_ppe18TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;executorOverviewController&quot;" id="_ppe2CDPzEei3dfHtumI11Q" instantiates="_ppe18jPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;homeController&quot;" id="_ppe2CTPzEei3dfHtumI11Q" instantiates="_ppe18zPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jobAlarmStatController&quot;" id="_ppe2CjPzEei3dfHtumI11Q" instantiates="_ppe19DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jobConfigController&quot;" id="_ppe2CzPzEei3dfHtumI11Q" instantiates="_ppe19TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jobExecutionController&quot;" id="_ppe2DDPzEei3dfHtumI11Q" instantiates="_ppe19jPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jobOverviewController&quot;" id="_ppe2DTPzEei3dfHtumI11Q" instantiates="_ppe19zPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jobShardingController&quot;" id="_ppe2DjPzEei3dfHtumI11Q" instantiates="_ppe1-DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;marathonController&quot;" id="_ppe2DzPzEei3dfHtumI11Q" instantiates="_ppe1-TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;namespaceAlramStatController&quot;" id="_ppe2EDPzEei3dfHtumI11Q" instantiates="_ppe1-jPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;overallAlramStatController&quot;" id="_ppe2ETPzEei3dfHtumI11Q" instantiates="_ppe1-zPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;registryCenterController&quot;" id="_ppe2EjPzEei3dfHtumI11Q" instantiates="_ppe1_DPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;staticResourceController&quot;" id="_ppe2EzPzEei3dfHtumI11Q" instantiates="_ppe1_TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;systemConfigController&quot;" id="_ppe2FDPzEei3dfHtumI11Q" instantiates="_ppe1_jPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;utilsController&quot;" id="_ppe2FTPzEei3dfHtumI11Q" instantiates="_ppe1_zPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;alarmRestApiController&quot;" id="_ppe2FjPzEei3dfHtumI11Q" instantiates="_ppe2ADPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dashboardRefreshApiController&quot;" id="_ppe2FzPzEei3dfHtumI11Q" instantiates="_ppe2ATPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jobOperationRestApiController&quot;" id="_ppe2GDPzEei3dfHtumI11Q" instantiates="_ppe2AjPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;namespaceMgmtRestApiController&quot;" id="_ppe2GTPzEei3dfHtumI11Q" instantiates="_ppe2AzPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;zkDbDiffRestApiController&quot;" id="_ppe2GjPzEei3dfHtumI11Q" instantiates="_ppe2BDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;zkDiscoveryRestApiController&quot;" id="_ppe2GzPzEei3dfHtumI11Q" instantiates="_ppe2BTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_ppxw5zPzEei3dfHtumI11Q" instantiates="_ppxw4DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_ppxw6DPzEei3dfHtumI11Q" instantiates="_ppxw4TPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sqlSessionFactory&quot;" id="_ppxw6TPzEei3dfHtumI11Q" instantiates="_ppxw4jPzEei3dfHtumI11Q"/>
+    <assmComponents id="_pqEr0TPzEei3dfHtumI11Q" instantiates="_pqEr0DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_pqOc0TPzEei3dfHtumI11Q" instantiates="_pqOc0DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_ppxw6jPzEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_ppxw5zPzEei3dfHtumI11Q" serverInstElem="_ppxw6zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_ppxw7DPzEei3dfHtumI11Q" property="sqlSessionFactory.dataSource" clientInstElem="_ppxw6TPzEei3dfHtumI11Q" serverInstElem="_ppxw7TPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="vipshop.Saturn_spec">
+    <specConnections refID="_prH0sDPzEei3dfHtumI11Q"/>
+    <specConnections refID="_prH0sTPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

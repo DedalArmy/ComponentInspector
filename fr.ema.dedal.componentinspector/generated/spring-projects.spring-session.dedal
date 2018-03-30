@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="spring-projects.spring-session">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="spring-projects.spring-session_config" implements="//@architectureDescriptions[name='spring-projects.spring-session_spec']">
+    <configComponents name="&quot;org.springframework.security.web.session.HttpSessionEventPublisher&quot;" id="_OLFnIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration&quot;" id="_OLFnITPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;docs.http.AbstractHttpSessionListenerTests&quot;" id="_OLFnIjPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;docs.http.AbstractHttpSessionListenerTests$SecuritySessionDestroyedListener&quot;" id="_OLFnIzPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration&quot;" id="_OLYiEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;docs.HttpSessionConfigurationNoOpConfigureRedisActionXmlTests&quot;" id="_OLYiETPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.session.jdbc.config.annotation.web.http.JdbcHttpSessionConfiguration&quot;" id="_OL-X8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration&quot;" id="_OMR58DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory&quot;" id="_OMR58TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;sample.EmbeddedRedisConfig&quot;" id="_OMR58jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration&quot;" id="_OMbq8DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfigurationClassPathXmlApplicationContextTests&quot;" id="_OMbq8TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration&quot;" id="_OMul4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfigurationXmlCustomExpireTests&quot;" id="_OMul4TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration&quot;" id="_ONCH4DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfigurationXmlTests&quot;" id="_ONCH4TPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="spring-projects.spring-session_asm" instantiates="//@architectureDescriptions[name='spring-projects.spring-session_config']">
+    <assmComponents id="_OLFnJDPzEei3dfHtumI11Q" instantiates="_OLFnIDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_OLFnJTPzEei3dfHtumI11Q" instantiates="_OLFnITPzEei3dfHtumI11Q"/>
+    <assmComponents id="_OLFnJjPzEei3dfHtumI11Q" instantiates="_OLFnIjPzEei3dfHtumI11Q"/>
+    <assmComponents id="_OLFnJzPzEei3dfHtumI11Q" instantiates="_OLFnIzPzEei3dfHtumI11Q"/>
+    <assmComponents id="_OLYiEjPzEei3dfHtumI11Q" instantiates="_OLYiEDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_OLYiEzPzEei3dfHtumI11Q" instantiates="_OLYiETPzEei3dfHtumI11Q"/>
+    <assmComponents id="_OL-X8TPzEei3dfHtumI11Q" instantiates="_OL-X8DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_OMR58zPzEei3dfHtumI11Q" instantiates="_OMR58DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_OMR59DPzEei3dfHtumI11Q" instantiates="_OMR58TPzEei3dfHtumI11Q"/>
+    <assmComponents id="_OMR59TPzEei3dfHtumI11Q" instantiates="_OMR58jPzEei3dfHtumI11Q"/>
+    <assmComponents id="_OMbq8jPzEei3dfHtumI11Q" instantiates="_OMbq8DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_OMbq8zPzEei3dfHtumI11Q" instantiates="_OMbq8TPzEei3dfHtumI11Q"/>
+    <assmComponents id="_OMul4jPzEei3dfHtumI11Q" instantiates="_OMul4DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_OMul4zPzEei3dfHtumI11Q" instantiates="_OMul4TPzEei3dfHtumI11Q"/>
+    <assmComponents id="_ONCH4jPzEei3dfHtumI11Q" instantiates="_ONCH4DPzEei3dfHtumI11Q"/>
+    <assmComponents id="_ONCH4zPzEei3dfHtumI11Q" instantiates="_ONCH4TPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="spring-projects.spring-session_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

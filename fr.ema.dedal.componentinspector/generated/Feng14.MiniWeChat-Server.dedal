@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="Feng14.MiniWeChat-Server">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="Feng14.MiniWeChat-Server_config" implements="//@architectureDescriptions[name='Feng14.MiniWeChat-Server_spec']">
+    <configComponents name="server.MinaServerHandle" id="__k2d4DPvEei3dfHtumI11Q"/>
+    <configComponents name="server.MyLogger" id="__k2d4TPvEei3dfHtumI11Q"/>
+    <configComponents name="server.Server" id="__k2d4jPvEei3dfHtumI11Q"/>
+    <configComponents name="server.ServerNetwork" id="__k2d4zPvEei3dfHtumI11Q"/>
+    <configComponents name="server.ServerModel" id="__k2d5DPvEei3dfHtumI11Q"/>
+    <configComponents name="server.ClientRequest_Dispatcher" id="__k2d5TPvEei3dfHtumI11Q"/>
+    <configComponents name="server.ServerModel_Chatting" id="__k2d5jPvEei3dfHtumI11Q"/>
+    <configComponents name="server.Server_Chatting" id="__k2d5zPvEei3dfHtumI11Q"/>
+    <configComponents name="server.Server_Friend" id="__k2d6DPvEei3dfHtumI11Q"/>
+    <configComponents name="server.Server_User" id="__k2d6TPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d6jPvEei3dfHtumI11Q" property="&quot;clientRequest_Dispatcher&quot;" clientClassElem="__k2d4DPvEei3dfHtumI11Q" serverClassElem="__k2d5TPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d6zPvEei3dfHtumI11Q" property="&quot;serverModel&quot;" clientClassElem="__k2d4DPvEei3dfHtumI11Q" serverClassElem="__k2d5DPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d7DPvEei3dfHtumI11Q" property="&quot;serverModel&quot;" clientClassElem="__k2d4TPvEei3dfHtumI11Q" serverClassElem="__k2d5DPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d7TPvEei3dfHtumI11Q" property="&quot;serverNetwork&quot;" clientClassElem="__k2d4jPvEei3dfHtumI11Q" serverClassElem="__k2d4zPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d7jPvEei3dfHtumI11Q" property="&quot;serverModel&quot;" clientClassElem="__k2d4jPvEei3dfHtumI11Q" serverClassElem="__k2d5DPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d7zPvEei3dfHtumI11Q" property="&quot;serverModel_Chatting&quot;" clientClassElem="__k2d4jPvEei3dfHtumI11Q" serverClassElem="__k2d5jPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d8DPvEei3dfHtumI11Q" property="&quot;serverModel&quot;" clientClassElem="__k2d4zPvEei3dfHtumI11Q" serverClassElem="__k2d5DPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d8TPvEei3dfHtumI11Q" property="&quot;clientRequest_Dispatcher&quot;" clientClassElem="__k2d4zPvEei3dfHtumI11Q" serverClassElem="__k2d5TPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d8jPvEei3dfHtumI11Q" property="&quot;minaServerHandle&quot;" clientClassElem="__k2d4zPvEei3dfHtumI11Q" serverClassElem="__k2d4DPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d8zPvEei3dfHtumI11Q" property="&quot;myLogger&quot;" clientClassElem="__k2d4zPvEei3dfHtumI11Q" serverClassElem="__k2d4TPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d9DPvEei3dfHtumI11Q" property="&quot;serverNetwork&quot;" clientClassElem="__k2d5DPvEei3dfHtumI11Q" serverClassElem="__k2d4zPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d9TPvEei3dfHtumI11Q" property="&quot;server_User&quot;" clientClassElem="__k2d5TPvEei3dfHtumI11Q" serverClassElem="__k2d6TPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d9jPvEei3dfHtumI11Q" property="&quot;server_Friend&quot;" clientClassElem="__k2d5TPvEei3dfHtumI11Q" serverClassElem="__k2d6DPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d9zPvEei3dfHtumI11Q" property="&quot;server_Chatting&quot;" clientClassElem="__k2d5TPvEei3dfHtumI11Q" serverClassElem="__k2d5zPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d-DPvEei3dfHtumI11Q" property="&quot;serverModel&quot;" clientClassElem="__k2d5jPvEei3dfHtumI11Q" serverClassElem="__k2d5DPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d-TPvEei3dfHtumI11Q" property="&quot;serverNetwork&quot;" clientClassElem="__k2d5jPvEei3dfHtumI11Q" serverClassElem="__k2d4zPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d-jPvEei3dfHtumI11Q" property="&quot;serverModel&quot;" clientClassElem="__k2d5zPvEei3dfHtumI11Q" serverClassElem="__k2d5DPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d-zPvEei3dfHtumI11Q" property="&quot;serverModel_Chatting&quot;" clientClassElem="__k2d5zPvEei3dfHtumI11Q" serverClassElem="__k2d5jPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d_DPvEei3dfHtumI11Q" property="&quot;serverNetwork&quot;" clientClassElem="__k2d5zPvEei3dfHtumI11Q" serverClassElem="__k2d4zPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d_TPvEei3dfHtumI11Q" property="&quot;server_User&quot;" clientClassElem="__k2d5zPvEei3dfHtumI11Q" serverClassElem="__k2d6TPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d_jPvEei3dfHtumI11Q" property="&quot;serverModel&quot;" clientClassElem="__k2d6DPvEei3dfHtumI11Q" serverClassElem="__k2d5DPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2d_zPvEei3dfHtumI11Q" property="&quot;serverNetwork&quot;" clientClassElem="__k2d6DPvEei3dfHtumI11Q" serverClassElem="__k2d4zPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2eADPvEei3dfHtumI11Q" property="&quot;server_Chatting&quot;" clientClassElem="__k2d6DPvEei3dfHtumI11Q" serverClassElem="__k2d5zPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2eATPvEei3dfHtumI11Q" property="&quot;serverModel&quot;" clientClassElem="__k2d6TPvEei3dfHtumI11Q" serverClassElem="__k2d5DPvEei3dfHtumI11Q"/>
+    <configConnections refID="__k2eAjPvEei3dfHtumI11Q" property="&quot;serverNetwork&quot;" clientClassElem="__k2d6TPvEei3dfHtumI11Q" serverClassElem="__k2d4zPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="Feng14.MiniWeChat-Server_asm" instantiates="//@architectureDescriptions[name='Feng14.MiniWeChat-Server_config']">
+    <assmComponents name="MinaServerHandle" id="__k2eAzPvEei3dfHtumI11Q" instantiates="__k2d4DPvEei3dfHtumI11Q"/>
+    <assmComponents name="MyLogger" id="__k2eBDPvEei3dfHtumI11Q" instantiates="__k2d4TPvEei3dfHtumI11Q"/>
+    <assmComponents name="Server" id="__k2eBTPvEei3dfHtumI11Q" instantiates="__k2d4jPvEei3dfHtumI11Q"/>
+    <assmComponents name="ServerNetwork" id="__k2eBjPvEei3dfHtumI11Q" instantiates="__k2d4zPvEei3dfHtumI11Q"/>
+    <assmComponents name="ServerModel" id="__k2eBzPvEei3dfHtumI11Q" instantiates="__k2d5DPvEei3dfHtumI11Q"/>
+    <assmComponents name="ClientRequest_Dispatcher" id="__k2eCDPvEei3dfHtumI11Q" instantiates="__k2d5TPvEei3dfHtumI11Q"/>
+    <assmComponents name="ServerModel_Chatting" id="__k2eCTPvEei3dfHtumI11Q" instantiates="__k2d5jPvEei3dfHtumI11Q"/>
+    <assmComponents name="Server_Chatting" id="__k2eCjPvEei3dfHtumI11Q" instantiates="__k2d5zPvEei3dfHtumI11Q"/>
+    <assmComponents name="Server_Friend" id="__k2eCzPvEei3dfHtumI11Q" instantiates="__k2d6DPvEei3dfHtumI11Q"/>
+    <assmComponents name="Server_User" id="__k2eDDPvEei3dfHtumI11Q" instantiates="__k2d6TPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eDTPvEei3dfHtumI11Q" property="MinaServerHandle.clientRequest_Dispatcher" clientInstElem="__k2eAzPvEei3dfHtumI11Q" serverInstElem="__k2eCDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eDjPvEei3dfHtumI11Q" property="MinaServerHandle.serverModel" clientInstElem="__k2eAzPvEei3dfHtumI11Q" serverInstElem="__k2eBzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eDzPvEei3dfHtumI11Q" property="MyLogger.serverModel" clientInstElem="__k2eBDPvEei3dfHtumI11Q" serverInstElem="__k2eBzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eEDPvEei3dfHtumI11Q" property="Server.serverNetwork" clientInstElem="__k2eBTPvEei3dfHtumI11Q" serverInstElem="__k2eBjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eETPvEei3dfHtumI11Q" property="Server.serverModel" clientInstElem="__k2eBTPvEei3dfHtumI11Q" serverInstElem="__k2eBzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eEjPvEei3dfHtumI11Q" property="Server.serverModel_Chatting" clientInstElem="__k2eBTPvEei3dfHtumI11Q" serverInstElem="__k2eCTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eEzPvEei3dfHtumI11Q" property="ServerNetwork.serverModel" clientInstElem="__k2eBjPvEei3dfHtumI11Q" serverInstElem="__k2eBzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eFDPvEei3dfHtumI11Q" property="ServerNetwork.clientRequest_Dispatcher" clientInstElem="__k2eBjPvEei3dfHtumI11Q" serverInstElem="__k2eCDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eFTPvEei3dfHtumI11Q" property="ServerNetwork.minaServerHandle" clientInstElem="__k2eBjPvEei3dfHtumI11Q" serverInstElem="__k2eAzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eFjPvEei3dfHtumI11Q" property="ServerNetwork.myLogger" clientInstElem="__k2eBjPvEei3dfHtumI11Q" serverInstElem="__k2eBDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eFzPvEei3dfHtumI11Q" property="ServerModel.serverNetwork" clientInstElem="__k2eBzPvEei3dfHtumI11Q" serverInstElem="__k2eBjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eGDPvEei3dfHtumI11Q" property="ClientRequest_Dispatcher.server_User" clientInstElem="__k2eCDPvEei3dfHtumI11Q" serverInstElem="__k2eDDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eGTPvEei3dfHtumI11Q" property="ClientRequest_Dispatcher.server_Friend" clientInstElem="__k2eCDPvEei3dfHtumI11Q" serverInstElem="__k2eCzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eGjPvEei3dfHtumI11Q" property="ClientRequest_Dispatcher.server_Chatting" clientInstElem="__k2eCDPvEei3dfHtumI11Q" serverInstElem="__k2eCjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eGzPvEei3dfHtumI11Q" property="ServerModel_Chatting.serverModel" clientInstElem="__k2eCTPvEei3dfHtumI11Q" serverInstElem="__k2eBzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eHDPvEei3dfHtumI11Q" property="ServerModel_Chatting.serverNetwork" clientInstElem="__k2eCTPvEei3dfHtumI11Q" serverInstElem="__k2eBjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eHTPvEei3dfHtumI11Q" property="Server_Chatting.serverModel" clientInstElem="__k2eCjPvEei3dfHtumI11Q" serverInstElem="__k2eBzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eHjPvEei3dfHtumI11Q" property="Server_Chatting.serverModel_Chatting" clientInstElem="__k2eCjPvEei3dfHtumI11Q" serverInstElem="__k2eCTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eHzPvEei3dfHtumI11Q" property="Server_Chatting.serverNetwork" clientInstElem="__k2eCjPvEei3dfHtumI11Q" serverInstElem="__k2eBjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eIDPvEei3dfHtumI11Q" property="Server_Chatting.server_User" clientInstElem="__k2eCjPvEei3dfHtumI11Q" serverInstElem="__k2eDDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eITPvEei3dfHtumI11Q" property="Server_Friend.serverModel" clientInstElem="__k2eCzPvEei3dfHtumI11Q" serverInstElem="__k2eBzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eIjPvEei3dfHtumI11Q" property="Server_Friend.serverNetwork" clientInstElem="__k2eCzPvEei3dfHtumI11Q" serverInstElem="__k2eBjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eIzPvEei3dfHtumI11Q" property="Server_Friend.server_Chatting" clientInstElem="__k2eCzPvEei3dfHtumI11Q" serverInstElem="__k2eCjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eJDPvEei3dfHtumI11Q" property="Server_User.serverModel" clientInstElem="__k2eDDPvEei3dfHtumI11Q" serverInstElem="__k2eBzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="__k2eJTPvEei3dfHtumI11Q" property="Server_User.serverNetwork" clientInstElem="__k2eDDPvEei3dfHtumI11Q" serverInstElem="__k2eBjPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="Feng14.MiniWeChat-Server_spec">
+    <specConnections refID="__k2eJjPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eJzPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eKDPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eKTPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eKjPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eKzPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eLDPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eLTPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eLjPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eLzPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eMDPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eMTPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eMjPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eMzPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eNDPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eNTPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eNjPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eNzPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eODPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eOTPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eOjPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2eOzPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2ePDPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2ePTPvEei3dfHtumI11Q"/>
+    <specConnections refID="__k2ePjPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

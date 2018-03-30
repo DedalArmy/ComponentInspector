@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="CamelCookbook.camel-cookbook-examples">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="CamelCookbook.camel-cookbook-examples_config" implements="//@architectureDescriptions[name='CamelCookbook.camel-cookbook-examples_spec']">
+    <configComponents name="&quot;org.camelcookbook.structuringroutes.propertyplaceholder.PropertyConsumingRoute&quot;" id="_JR5ncDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.structuringroutes.routecontrol.OrderProcessor&quot;" id="_JSI4ADPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.structuringroutes.seda.LongRunningProcessor&quot;" id="_JSYIkDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.component.log.LogComponent&quot;" id="_JSmyEDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.component.log.LogComponent&quot;" id="_JS1bkDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.structuringroutes.simple.LogMessageOnTimerEventRoute&quot;" id="_JS1bkTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.structuringroutes.templating.OrderFileNameProcessor&quot;" id="_JTEsIDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.structuringroutes.templating.OrderProcessingRoute&quot;" id="_JTEsITPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.routing.dynamicrouter.DynamicRouterAnnotated&quot;" id="_JT_5MDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.routing.dynamicrouter.MyDynamicRouter&quot;" id="_JUN7oDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.IllegalArgumentException&quot;" id="_JVV9ADPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.routing.recipientlist.MessageRouter&quot;" id="_JVl0oDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.routing.routingslip.RoutingSlipAnnotated&quot;" id="_JWB5gDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.routing.model.CheeseCloningProcessor&quot;" id="_JXsGYDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.extend.binding.MyBean&quot;" id="_JX6v4DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.extend.dataformat.EbcdicDataFormat&quot;" id="_JYYC4DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.extend.predicate.MyPredicate&quot;" id="_JYmsYDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.extend.processor.MyProcessor&quot;" id="_JY2kADPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.transformation.enrich.MergeInReplacementText&quot;" id="_Jbkg0DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.transformation.enrich.AbbreviationExpander&quot;" id="_JbyjQDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.transformation.normalizer.MyNormalizer&quot;" id="_Jc7ywDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.splitjoin.aggregate.SetAggregationStrategy&quot;" id="_JehHIDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.splitjoin.aggregate.SetAggregationStrategy&quot;" id="_JevwoDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.splitjoin.aggregate.SetAggregationStrategy&quot;" id="_Je-aIDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.splitjoin.aggregate.SetAggregationStrategy&quot;" id="_JfNDoDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.splitjoin.aggregate.SetAggregationStrategy&quot;" id="_JfbtIDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.splitjoin.aggregate.SetAggregationStrategy&quot;" id="_Jfq9sDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.splitjoin.aggregate.SetAggregationStrategy&quot;" id="_Jf6OQDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.splitjoin.aggregate.SetAggregationStrategy&quot;" id="_JgIQsDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.splitjoin.splitaggregate.ExceptionHandlingSetAggregationStrategy&quot;" id="_JgXhQDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.IllegalStateException&quot;" id="_JgXhQTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.IllegalStateException&quot;" id="_JgmKwDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.IllegalStateException&quot;" id="_Jg0NMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.splitjoin.aggregate.SetAggregationStrategy&quot;" id="_JiMGMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.parallelprocessing.asyncprocessor.SlowOperationProcessor&quot;" id="_JjEP8DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.parallelprocessing.threadpools.CustomThreadPoolRefRoute&quot;" id="_Jj9n0DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.errorhandling.shared.FlakyProcessor&quot;" id="_JkdXEDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.errorhandling.shared.FlakyProcessor&quot;" id="_JksAkDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.errorhandling.shared.FlakyProcessor&quot;" id="_Jk7RIDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.errorhandling.shared.FlakyProcessor&quot;" id="_JlJ6oDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.IllegalArgumentException&quot;" id="_JlYkIDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.IllegalArgumentException&quot;" id="_JlmmkDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.errorhandling.shared.SporadicProcessor&quot;" id="_Jl1QEDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.errorhandling.shared.SporadicProcessor&quot;" id="_JmFHsDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.errorhandling.retryconditional.SimplePredicateWrapper&quot;" id="_JmFHsTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.errorhandling.shared.FlakyProcessor&quot;" id="_JmTxMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.errorhandling.retrycustom.RetryCustomProcessor&quot;" id="_JmTxMTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.component.sql.SqlComponent&quot;" id="_Jmjo0DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_Jmjo0TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.spring.spi.SpringTransactionPolicy&quot;" id="_Jmjo0jPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.IllegalArgumentException&quot;" id="_Jmjo0zPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.processor.idempotent.MemoryIdempotentRepository&quot;" id="_JncZoDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.component.sql.SqlComponent&quot;" id="_JnsRQDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_JnsRQTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.IllegalArgumentException&quot;" id="_JnsRQjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.spring.spi.SpringTransactionPolicy&quot;" id="_JnsRQzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.transaction.support.TransactionTemplate&quot;" id="_JnsRRDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.processor.idempotent.jdbc.JdbcMessageIdRepository&quot;" id="_JnsRRTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.processor.idempotent.MemoryIdempotentRepository&quot;" id="_Jn7h0DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.processor.idempotent.MemoryIdempotentRepository&quot;" id="_JoKyYDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.camel.component.ActiveMQComponent&quot;" id="_JoZb4DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.component.sql.SqlComponent&quot;" id="_JoZb4TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_JoZb4jPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.spring.spi.SpringTransactionPolicy&quot;" id="_JoZb4zPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.connection.JmsTransactionManager&quot;" id="_JooFYDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.camel.component.ActiveMQComponent&quot;" id="_JooFYTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.spring.spi.SpringTransactionPolicy&quot;" id="_JooFYjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.camel.component.ActiveMQComponent&quot;" id="_Jo4kEDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.IllegalArgumentException&quot;" id="_Jo4kETPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.connection.JmsTransactionManager&quot;" id="_JpHNkDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.camel.component.ActiveMQComponent&quot;" id="_JpHNkTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.IllegalArgumentException&quot;" id="_JpHNkjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.spring.spi.SpringTransactionPolicy&quot;" id="_JpHNkzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.connection.JmsTransactionManager&quot;" id="_Jpb9sDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.spring.spi.SpringTransactionPolicy&quot;" id="_Jpb9sTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.camel.component.ActiveMQComponent&quot;" id="_Jpb9sjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.ActiveMQConnectionFactory&quot;" id="_Jpb9szPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.connection.JmsTransactionManager&quot;" id="_JprOQDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.camel.component.ActiveMQComponent&quot;" id="_JprOQTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.IllegalArgumentException&quot;" id="_Jpr1UDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.spring.spi.SpringTransactionPolicy&quot;" id="_Jpr1UTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.camel.component.ActiveMQComponent&quot;" id="_Jp7F4DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.IllegalArgumentException&quot;" id="_Jp7F4TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.component.sql.SqlComponent&quot;" id="_JqKWcDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_JqKWcTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.spring.spi.SpringTransactionPolicy&quot;" id="_JqKWcjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.IllegalArgumentException&quot;" id="_JqKWczPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.component.sql.SqlComponent&quot;" id="_JqZnADPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_JqZnATPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.spring.spi.SpringTransactionPolicy&quot;" id="_JqZnAjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.IllegalArgumentException&quot;" id="_JqZnAzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.component.sql.SqlComponent&quot;" id="_JqpeoDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_JqpeoTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.spring.spi.SpringTransactionPolicy&quot;" id="_JqqFsDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.component.sql.SqlComponent&quot;" id="_Jq4vMDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_Jq4vMTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.spring.spi.SpringTransactionPolicy&quot;" id="_Jq4vMjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.component.sql.SqlComponent&quot;" id="_JrHYsDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_JrHYsTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.spring.spi.SpringTransactionPolicy&quot;" id="_JrHYsjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.component.sql.SqlComponent&quot;" id="_JrXQUDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;" id="_JrXQUTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.spring.spi.SpringTransactionPolicy&quot;" id="_JrXQUjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.h2.jdbcx.JdbcDataSource&quot;" id="_JrnH8DPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.transactions.util.DataSourceInitializer&quot;" id="_JrnH8TPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.transactions.dao.AuditLogDao&quot;" id="_JrnvADPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.atomikos.jms.AtomikosConnectionFactoryBean&quot;" id="_JsGQIDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.atomikos.jdbc.AtomikosDataSourceBean&quot;" id="_JsGQITPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.atomikos.icatch.jta.UserTransactionManager&quot;" id="_JsGQIjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.atomikos.icatch.jta.UserTransactionImp&quot;" id="_JsGQIzPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.transaction.jta.JtaTransactionManager&quot;" id="_JsGQJDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.camel.component.ActiveMQComponent&quot;" id="_JsG3MDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.component.sql.SqlComponent&quot;" id="_JsG3MTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.spring.spi.SpringTransactionPolicy&quot;" id="_JsG3MjPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.activemq.pool.PooledConnectionFactory&quot;" id="_JtfXQDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.jms.core.JmsTemplate&quot;" id="_JtfXQTPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.camelcookbook.monitoring.managed.MyManagedBean&quot;" id="_JvT8MDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.processor.interceptor.Tracer&quot;" id="_JwMtADPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.processor.interceptor.DefaultTraceFormatter&quot;" id="_JwMtATPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.component.jasypt.JasyptPropertiesParser&quot;" id="_Jwb9kDPvEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.camel.component.jasypt.JasyptPropertiesParser&quot;" id="_Jwr1MDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JTEsIjPvEei3dfHtumI11Q" property="&quot;orderFileNameProcessor&quot;" clientClassElem="_JTEsITPvEei3dfHtumI11Q" serverClassElem="_JTEsIDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JTFTMDPvEei3dfHtumI11Q" property="&quot;orderFileNameProcessor&quot;" clientClassElem="_JTEsITPvEei3dfHtumI11Q" serverClassElem="_JTFTMTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JTFTMjPvEei3dfHtumI11Q" property="&quot;orderFileNameProcessor&quot;" clientClassElem="_JTEsITPvEei3dfHtumI11Q" serverClassElem="_JTEsIDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Jmjo1DPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_Jmjo0DPvEei3dfHtumI11Q" serverClassElem="_Jmjo1TPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Jmjo1jPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_Jmjo0TPvEei3dfHtumI11Q" serverClassElem="_Jmjo1zPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Jmjo2DPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_Jmjo0jPvEei3dfHtumI11Q" serverClassElem="_Jmjo0TPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JnsRRjPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JnsRQDPvEei3dfHtumI11Q" serverClassElem="_JnsRRzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JnsRSDPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JnsRQTPvEei3dfHtumI11Q" serverClassElem="_JnsRSTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JnsRSjPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JnsRQzPvEei3dfHtumI11Q" serverClassElem="_JnsRQTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JnsRSzPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JnsRRDPvEei3dfHtumI11Q" serverClassElem="_JnsRQTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Jns4UDPvEei3dfHtumI11Q" clientClassElem="_JnsRRTPvEei3dfHtumI11Q" serverClassElem="_Jns4UTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Jns4UjPvEei3dfHtumI11Q" clientClassElem="_JnsRRTPvEei3dfHtumI11Q" serverClassElem="_JnsRRDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JoZb5DPvEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_JoZb4DPvEei3dfHtumI11Q" serverClassElem="_JoZb5TPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JoZb5jPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JoZb4TPvEei3dfHtumI11Q" serverClassElem="_JoZb5zPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JoZb6DPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JoZb4jPvEei3dfHtumI11Q" serverClassElem="_JoZb6TPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JoZb6jPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JoZb4zPvEei3dfHtumI11Q" serverClassElem="_JoZb4jPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JooFYzPvEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_JooFYDPvEei3dfHtumI11Q" serverClassElem="_JooscDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JooscTPvEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_JooFYTPvEei3dfHtumI11Q" serverClassElem="_JooscjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JoosczPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JooFYTPvEei3dfHtumI11Q" serverClassElem="_JooFYDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JoosdDPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JooFYjPvEei3dfHtumI11Q" serverClassElem="_JooFYDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Jo4kEjPvEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_Jo4kEDPvEei3dfHtumI11Q" serverClassElem="_Jo4kEzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JpH0oDPvEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_JpHNkDPvEei3dfHtumI11Q" serverClassElem="_JpH0oTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JpH0ojPvEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_JpHNkTPvEei3dfHtumI11Q" serverClassElem="_JpH0ozPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JpH0pDPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JpHNkTPvEei3dfHtumI11Q" serverClassElem="_JpHNkDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JpH0pTPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JpHNkzPvEei3dfHtumI11Q" serverClassElem="_JpHNkDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Jpb9tDPvEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_Jpb9sDPvEei3dfHtumI11Q" serverClassElem="_JpckwDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JpckwTPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_Jpb9sTPvEei3dfHtumI11Q" serverClassElem="_Jpb9sDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JpckwjPvEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_Jpb9sjPvEei3dfHtumI11Q" serverClassElem="_JpckwzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JpckxDPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_Jpb9sjPvEei3dfHtumI11Q" serverClassElem="_Jpb9sDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JpckxTPvEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_Jpb9sjPvEei3dfHtumI11Q" serverClassElem="_Jpb9szPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Jpr1UjPvEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_JprOQDPvEei3dfHtumI11Q" serverClassElem="_Jpr1UzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Jpr1VDPvEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_JprOQTPvEei3dfHtumI11Q" serverClassElem="_Jpr1VTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Jpr1VjPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JprOQTPvEei3dfHtumI11Q" serverClassElem="_JprOQDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Jpr1VzPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_Jpr1UTPvEei3dfHtumI11Q" serverClassElem="_JprOQDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Jpr1WDPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_Jpr1UTPvEei3dfHtumI11Q" serverClassElem="_JprOQDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Jp7F4jPvEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_Jp7F4DPvEei3dfHtumI11Q" serverClassElem="_Jp7F4zPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JqKWdDPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JqKWcDPvEei3dfHtumI11Q" serverClassElem="_JqKWdTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JqKWdjPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JqKWcTPvEei3dfHtumI11Q" serverClassElem="_JqKWdzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JqKWeDPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JqKWcjPvEei3dfHtumI11Q" serverClassElem="_JqKWcTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JqZnBDPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JqZnADPvEei3dfHtumI11Q" serverClassElem="_JqZnBTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JqZnBjPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JqZnATPvEei3dfHtumI11Q" serverClassElem="_JqZnBzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JqZnCDPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JqZnAjPvEei3dfHtumI11Q" serverClassElem="_JqZnATPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JqqFsTPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JqpeoDPvEei3dfHtumI11Q" serverClassElem="_JqqFsjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JqqFszPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JqpeoTPvEei3dfHtumI11Q" serverClassElem="_JqqFtDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JqqFtTPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JqqFsDPvEei3dfHtumI11Q" serverClassElem="_JqpeoTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JqqFtjPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JqqFsDPvEei3dfHtumI11Q" serverClassElem="_JqpeoTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Jq4vMzPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_Jq4vMDPvEei3dfHtumI11Q" serverClassElem="_Jq4vNDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Jq4vNTPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_Jq4vMTPvEei3dfHtumI11Q" serverClassElem="_Jq4vNjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_Jq4vNzPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_Jq4vMjPvEei3dfHtumI11Q" serverClassElem="_Jq4vMTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JrHYszPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JrHYsDPvEei3dfHtumI11Q" serverClassElem="_JrH_wDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JrH_wTPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JrHYsTPvEei3dfHtumI11Q" serverClassElem="_JrH_wjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JrH_wzPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JrHYsjPvEei3dfHtumI11Q" serverClassElem="_JrHYsTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JrH_xDPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JrHYsjPvEei3dfHtumI11Q" serverClassElem="_JrHYsTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JrXQUzPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JrXQUDPvEei3dfHtumI11Q" serverClassElem="_JrXQVDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JrXQVTPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JrXQUTPvEei3dfHtumI11Q" serverClassElem="_JrXQVjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JrXQVzPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JrXQUjPvEei3dfHtumI11Q" serverClassElem="_JrXQUTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JrXQWDPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JrXQUjPvEei3dfHtumI11Q" serverClassElem="_JrXQUTPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JrnvATPvEei3dfHtumI11Q" clientClassElem="_JrnH8TPvEei3dfHtumI11Q" serverClassElem="_JrnH8DPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JrnvAjPvEei3dfHtumI11Q" clientClassElem="_JrnvADPvEei3dfHtumI11Q" serverClassElem="_JrnH8TPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JsG3MzPvEei3dfHtumI11Q" property="&quot;xaConnectionFactory&quot;" clientClassElem="_JsGQIDPvEei3dfHtumI11Q" serverClassElem="_JsG3NDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JsG3NTPvEei3dfHtumI11Q" property="&quot;xaDataSource&quot;" clientClassElem="_JsGQITPvEei3dfHtumI11Q" serverClassElem="_JsG3NjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JsG3NzPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JsGQJDPvEei3dfHtumI11Q" serverClassElem="_JsGQIjPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JsG3ODPvEei3dfHtumI11Q" property="&quot;userTransaction&quot;" clientClassElem="_JsGQJDPvEei3dfHtumI11Q" serverClassElem="_JsGQIzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JsHeQDPvEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_JsG3MDPvEei3dfHtumI11Q" serverClassElem="_JsGQIDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JsHeQTPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JsG3MDPvEei3dfHtumI11Q" serverClassElem="_JsGQJDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JsHeQjPvEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_JsG3MDPvEei3dfHtumI11Q" serverClassElem="_JsHeQzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JsHeRDPvEei3dfHtumI11Q" property="&quot;dataSource&quot;" clientClassElem="_JsG3MTPvEei3dfHtumI11Q" serverClassElem="_JsGQITPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JsHeRTPvEei3dfHtumI11Q" property="&quot;transactionManager&quot;" clientClassElem="_JsG3MjPvEei3dfHtumI11Q" serverClassElem="_JsGQJDPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JtfXQjPvEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_JtfXQDPvEei3dfHtumI11Q" serverClassElem="_JtfXQzPvEei3dfHtumI11Q"/>
+    <configConnections refID="_JtfXRDPvEei3dfHtumI11Q" property="&quot;connectionFactory&quot;" clientClassElem="_JtfXQTPvEei3dfHtumI11Q" serverClassElem="_JtfXQDPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="CamelCookbook.camel-cookbook-examples_asm" instantiates="//@architectureDescriptions[name='CamelCookbook.camel-cookbook-examples_config']">
+    <assmComponents name="propertyConsumingRouteBuilder" id="_JR5ncTPvEei3dfHtumI11Q" instantiates="_JR5ncDPvEei3dfHtumI11Q"/>
+    <assmComponents id="_JSI4ATPvEei3dfHtumI11Q" instantiates="_JSI4ADPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;longRunningProcessor&quot;" id="_JSYIkTPvEei3dfHtumI11Q" instantiates="_JSYIkDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mylogger&quot;" id="_JSmyETPvEei3dfHtumI11Q" instantiates="_JSmyEDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mylogger&quot;" id="_JS1bkjPvEei3dfHtumI11Q" instantiates="_JS1bkDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;logMessageOnTimerEvent&quot;" id="_JS1bkzPvEei3dfHtumI11Q" instantiates="_JS1bkTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dateFirstOrderFileNameProcessor&quot;" id="_JTFTMzPvEei3dfHtumI11Q" instantiates="_JTEsIDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;monthFirstOrderFileNameProcessor&quot;" id="_JTFTNDPvEei3dfHtumI11Q" instantiates="_JTEsIDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ukOrdersRouteBuilder&quot;" id="_JTFTNTPvEei3dfHtumI11Q" instantiates="_JTEsITPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;usOrdersRouteBuilder&quot;" id="_JTFTNjPvEei3dfHtumI11Q" instantiates="_JTEsITPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jamaicaOrdersRouteBuilder&quot;" id="_JTFTNzPvEei3dfHtumI11Q" instantiates="_JTEsITPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;myDynamicRouter&quot;" id="_JT_5MTPvEei3dfHtumI11Q" instantiates="_JT_5MDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;myDynamicRouter&quot;" id="_JUN7oTPvEei3dfHtumI11Q" instantiates="_JUN7oDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;illegalArg&quot;" id="_JVV9ATPvEei3dfHtumI11Q" instantiates="_JVV9ADPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;messageRouter&quot;" id="_JVl0oTPvEei3dfHtumI11Q" instantiates="_JVl0oDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;myRoutingSlip&quot;" id="_JWCgkDPvEei3dfHtumI11Q" instantiates="_JWB5gDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;cheeseCloningProcessor&quot;" id="_JXsGYTPvEei3dfHtumI11Q" instantiates="_JXsGYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;myBean&quot;" id="_JX6v4TPvEei3dfHtumI11Q" instantiates="_JX6v4DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ebcdic&quot;" id="_JYYC4TPvEei3dfHtumI11Q" instantiates="_JYYC4DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;myPredicate&quot;" id="_JYmsYTPvEei3dfHtumI11Q" instantiates="_JYmsYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;myProcessor&quot;" id="_JY3LEDPvEei3dfHtumI11Q" instantiates="_JY2kADPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;myMerger&quot;" id="_Jbkg0TPvEei3dfHtumI11Q" instantiates="_Jbkg0DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;myExpander&quot;" id="_JbzKUDPvEei3dfHtumI11Q" instantiates="_JbyjQDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;myNormalizer&quot;" id="_Jc7ywTPvEei3dfHtumI11Q" instantiates="_Jc7ywDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;setAggregationStrategy&quot;" id="_JehHITPvEei3dfHtumI11Q" instantiates="_JehHIDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;setAggregationStrategy&quot;" id="_JevwoTPvEei3dfHtumI11Q" instantiates="_JevwoDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;setAggregationStrategy&quot;" id="_Je-aITPvEei3dfHtumI11Q" instantiates="_Je-aIDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;setAggregationStrategy&quot;" id="_JfNDoTPvEei3dfHtumI11Q" instantiates="_JfNDoDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;setAggregationStrategy&quot;" id="_JfbtITPvEei3dfHtumI11Q" instantiates="_JfbtIDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;setAggregationStrategy&quot;" id="_Jfq9sTPvEei3dfHtumI11Q" instantiates="_Jfq9sDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;setAggregationStrategy&quot;" id="_Jf6OQTPvEei3dfHtumI11Q" instantiates="_Jf6OQDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;setAggregationStrategy&quot;" id="_JgI3wDPvEei3dfHtumI11Q" instantiates="_JgIQsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;exceptionHandlingSetAggregationStrategy&quot;" id="_JgXhQjPvEei3dfHtumI11Q" instantiates="_JgXhQDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ise&quot;" id="_JgXhQzPvEei3dfHtumI11Q" instantiates="_JgXhQTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ise&quot;" id="_JgmKwTPvEei3dfHtumI11Q" instantiates="_JgmKwDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;ise&quot;" id="_Jg0NMTPvEei3dfHtumI11Q" instantiates="_Jg0NMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;setAggregationStrategy&quot;" id="_JiMGMTPvEei3dfHtumI11Q" instantiates="_JiMGMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;mySlowProcessor&quot;" id="_JjEP8TPvEei3dfHtumI11Q" instantiates="_JjEP8DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;routeBuilderUsingRef&quot;" id="_Jj9n0TPvEei3dfHtumI11Q" instantiates="_Jj9n0DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;flakyProcessor&quot;" id="_JkdXETPvEei3dfHtumI11Q" instantiates="_JkdXEDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;flakyProcessor&quot;" id="_JksAkTPvEei3dfHtumI11Q" instantiates="_JksAkDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;flakyProcessor&quot;" id="_Jk7RITPvEei3dfHtumI11Q" instantiates="_Jk7RIDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;flakyProcessor&quot;" id="_JlJ6oTPvEei3dfHtumI11Q" instantiates="_JlJ6oDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;illegalArgumentException&quot;" id="_JlYkITPvEei3dfHtumI11Q" instantiates="_JlYkIDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;illegalArgumentException&quot;" id="_JlmmkTPvEei3dfHtumI11Q" instantiates="_JlmmkDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sporadicProcessor&quot;" id="_Jl1QETPvEei3dfHtumI11Q" instantiates="_Jl1QEDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sporadicProcessor&quot;" id="_JmFHsjPvEei3dfHtumI11Q" instantiates="_JmFHsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;myRetryPredicate&quot;" id="_JmFHszPvEei3dfHtumI11Q" instantiates="_JmFHsTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;flakyProcessor&quot;" id="_JmTxMjPvEei3dfHtumI11Q" instantiates="_JmTxMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;myRetryProcessor&quot;" id="_JmTxMzPvEei3dfHtumI11Q" instantiates="_JmTxMTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sql&quot;" id="_Jmjo2TPvEei3dfHtumI11Q" instantiates="_Jmjo0DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_Jmjo2jPvEei3dfHtumI11Q" instantiates="_Jmjo0TPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_REQUIRED&quot;" id="_Jmjo2zPvEei3dfHtumI11Q" instantiates="_Jmjo0jPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;illegalArgumentException&quot;" id="_Jmjo3DPvEei3dfHtumI11Q" instantiates="_Jmjo0zPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;wsIdempotentRepository&quot;" id="_JncZoTPvEei3dfHtumI11Q" instantiates="_JncZoDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sql&quot;" id="_Jns4UzPvEei3dfHtumI11Q" instantiates="_JnsRQDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_Jns4VDPvEei3dfHtumI11Q" instantiates="_JnsRQTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;illegalArgumentException&quot;" id="_Jns4VTPvEei3dfHtumI11Q" instantiates="_JnsRQjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_REQUIRED&quot;" id="_Jns4VjPvEei3dfHtumI11Q" instantiates="_JnsRQzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionTemplate&quot;" id="_Jns4VzPvEei3dfHtumI11Q" instantiates="_JnsRRDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jdbcIdempotentRepository&quot;" id="_Jns4WDPvEei3dfHtumI11Q" instantiates="_JnsRRTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;wsIdempotentRepository&quot;" id="_Jn7h0TPvEei3dfHtumI11Q" instantiates="_Jn7h0DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;wsIdempotentRepository&quot;" id="_JoKyYTPvEei3dfHtumI11Q" instantiates="_JoKyYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jms&quot;" id="_JoaC8DPvEei3dfHtumI11Q" instantiates="_JoZb4DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sql&quot;" id="_JoaC8TPvEei3dfHtumI11Q" instantiates="_JoZb4TPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_JoaC8jPvEei3dfHtumI11Q" instantiates="_JoZb4jPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_REQUIRED&quot;" id="_JoaC8zPvEei3dfHtumI11Q" instantiates="_JoZb4zPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jmsTransactionManager&quot;" id="_JoosdTPvEei3dfHtumI11Q" instantiates="_JooFYDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jms&quot;" id="_JoosdjPvEei3dfHtumI11Q" instantiates="_JooFYTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_REQUIRED&quot;" id="_JoosdzPvEei3dfHtumI11Q" instantiates="_JooFYjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jms&quot;" id="_Jo4kFDPvEei3dfHtumI11Q" instantiates="_Jo4kEDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;illegalArgumentException&quot;" id="_Jo4kFTPvEei3dfHtumI11Q" instantiates="_Jo4kETPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jmsTransactionManager&quot;" id="_JpH0pjPvEei3dfHtumI11Q" instantiates="_JpHNkDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jms&quot;" id="_JpH0pzPvEei3dfHtumI11Q" instantiates="_JpHNkTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;illegalArgumentException&quot;" id="_JpH0qDPvEei3dfHtumI11Q" instantiates="_JpHNkjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_REQUIRED&quot;" id="_JpH0qTPvEei3dfHtumI11Q" instantiates="_JpHNkzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jmsTransactionManager&quot;" id="_JpckxjPvEei3dfHtumI11Q" instantiates="_Jpb9sDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_REQUIRED&quot;" id="_JpckxzPvEei3dfHtumI11Q" instantiates="_Jpb9sTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jms&quot;" id="_JpckyDPvEei3dfHtumI11Q" instantiates="_Jpb9sjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;nonTxConnectionFactory&quot;" id="_JpckyTPvEei3dfHtumI11Q" instantiates="_Jpb9szPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jmsNonTx&quot;" id="_JpckyjPvEei3dfHtumI11Q" instantiates="_Jpb9sjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jmsTransactionManager&quot;" id="_Jpr1WTPvEei3dfHtumI11Q" instantiates="_JprOQDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jms&quot;" id="_Jpr1WjPvEei3dfHtumI11Q" instantiates="_JprOQTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;illegalArgumentException&quot;" id="_Jpr1WzPvEei3dfHtumI11Q" instantiates="_Jpr1UDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_REQUIRED&quot;" id="_Jpr1XDPvEei3dfHtumI11Q" instantiates="_Jpr1UTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_NOT_SUPPORTED&quot;" id="_Jpr1XTPvEei3dfHtumI11Q" instantiates="_Jpr1UTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jms&quot;" id="_Jp7F5DPvEei3dfHtumI11Q" instantiates="_Jp7F4DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;illegalArgumentException&quot;" id="_Jp7F5TPvEei3dfHtumI11Q" instantiates="_Jp7F4TPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sql&quot;" id="_JqKWeTPvEei3dfHtumI11Q" instantiates="_JqKWcDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_JqK9gDPvEei3dfHtumI11Q" instantiates="_JqKWcTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_REQUIRED&quot;" id="_JqK9gTPvEei3dfHtumI11Q" instantiates="_JqKWcjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;illegalArgumentException&quot;" id="_JqK9gjPvEei3dfHtumI11Q" instantiates="_JqKWczPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sql&quot;" id="_JqZnCTPvEei3dfHtumI11Q" instantiates="_JqZnADPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_JqaOEDPvEei3dfHtumI11Q" instantiates="_JqZnATPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_REQUIRED&quot;" id="_JqaOETPvEei3dfHtumI11Q" instantiates="_JqZnAjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;illegalArgumentException&quot;" id="_JqaOEjPvEei3dfHtumI11Q" instantiates="_JqZnAzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sql&quot;" id="_JqqFtzPvEei3dfHtumI11Q" instantiates="_JqpeoDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_JqqFuDPvEei3dfHtumI11Q" instantiates="_JqpeoTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_REQUIRES_NEW&quot;" id="_JqqFuTPvEei3dfHtumI11Q" instantiates="_JqqFsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_REQUIRES_NEW-2&quot;" id="_JqqFujPvEei3dfHtumI11Q" instantiates="_JqqFsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sql&quot;" id="_Jq4vODPvEei3dfHtumI11Q" instantiates="_Jq4vMDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_Jq4vOTPvEei3dfHtumI11Q" instantiates="_Jq4vMTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_REQUIRED&quot;" id="_Jq4vOjPvEei3dfHtumI11Q" instantiates="_Jq4vMjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sql&quot;" id="_JrH_xTPvEei3dfHtumI11Q" instantiates="_JrHYsDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_JrH_xjPvEei3dfHtumI11Q" instantiates="_JrHYsTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_REQUIRED&quot;" id="_JrH_xzPvEei3dfHtumI11Q" instantiates="_JrHYsjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_NOT_SUPPORTED&quot;" id="_JrH_yDPvEei3dfHtumI11Q" instantiates="_JrHYsjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sql&quot;" id="_JrXQWTPvEei3dfHtumI11Q" instantiates="_JrXQUDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;transactionManager&quot;" id="_JrXQWjPvEei3dfHtumI11Q" instantiates="_JrXQUTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_REQUIRES_NEW&quot;" id="_JrXQWzPvEei3dfHtumI11Q" instantiates="_JrXQUjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_REQUIRES_NEW-2&quot;" id="_JrXQXDPvEei3dfHtumI11Q" instantiates="_JrXQUjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;h2.xaDataSource&quot;" id="_JrnvAzPvEei3dfHtumI11Q" instantiates="_JrnH8DPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;auditDataSource&quot;" id="_JrnvBDPvEei3dfHtumI11Q" instantiates="_JrnH8TPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;auditLogDao&quot;" id="_JrnvBTPvEei3dfHtumI11Q" instantiates="_JrnvADPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;atomikos.connectionFactory&quot;" id="_JsHeRjPvEei3dfHtumI11Q" instantiates="_JsGQIDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;atomikos.dataSource&quot;" id="_JsHeRzPvEei3dfHtumI11Q" instantiates="_JsGQITPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;atomikos.transactionManager&quot;" id="_JsHeSDPvEei3dfHtumI11Q" instantiates="_JsGQIjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;atomikos.userTransaction&quot;" id="_JsHeSTPvEei3dfHtumI11Q" instantiates="_JsGQIzPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jta.transactionManager&quot;" id="_JsHeSjPvEei3dfHtumI11Q" instantiates="_JsGQJDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jms&quot;" id="_JsHeSzPvEei3dfHtumI11Q" instantiates="_JsG3MDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;nonTxJms&quot;" id="_JsHeTDPvEei3dfHtumI11Q" instantiates="_JsG3MDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;sql&quot;" id="_JsHeTTPvEei3dfHtumI11Q" instantiates="_JsG3MTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;PROPAGATION_REQUIRED&quot;" id="_JsIFUDPvEei3dfHtumI11Q" instantiates="_JsG3MjPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;pooledConnectionFactory&quot;" id="_JtfXRTPvEei3dfHtumI11Q" instantiates="_JtfXQDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jmsTemplate&quot;" id="_JtfXRjPvEei3dfHtumI11Q" instantiates="_JtfXQTPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;myBean&quot;" id="_JvT8MTPvEei3dfHtumI11Q" instantiates="_JvT8MDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;camelTracer&quot;" id="_JwMtAjPvEei3dfHtumI11Q" instantiates="_JwMtADPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;traceFormatter&quot;" id="_JwMtAzPvEei3dfHtumI11Q" instantiates="_JwMtATPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jasypt&quot;" id="_Jwb9kTPvEei3dfHtumI11Q" instantiates="_Jwb9kDPvEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;jasypt&quot;" id="_Jwr1MTPvEei3dfHtumI11Q" instantiates="_Jwr1MDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JTFTODPvEei3dfHtumI11Q" property="ukOrdersRouteBuilder.orderFileNameProcessor" clientInstElem="_JTFTNTPvEei3dfHtumI11Q" serverInstElem="_JTFTMzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JTFTOTPvEei3dfHtumI11Q" property="usOrdersRouteBuilder.orderFileNameProcessor" clientInstElem="_JTFTNjPvEei3dfHtumI11Q" serverInstElem="_JTFTNDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JTFTOjPvEei3dfHtumI11Q" property="jamaicaOrdersRouteBuilder.orderFileNameProcessor" clientInstElem="_JTFTNzPvEei3dfHtumI11Q" serverInstElem="_JTFTMzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Jmjo3TPvEei3dfHtumI11Q" property="sql.dataSource" clientInstElem="_Jmjo2TPvEei3dfHtumI11Q" serverInstElem="_Jmjo3jPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Jmjo3zPvEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_Jmjo2jPvEei3dfHtumI11Q" serverInstElem="_Jmjo4DPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Jmjo4TPvEei3dfHtumI11Q" property="PROPAGATION_REQUIRED.transactionManager" clientInstElem="_Jmjo2zPvEei3dfHtumI11Q" serverInstElem="_Jmjo2jPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Jns4WTPvEei3dfHtumI11Q" property="sql.dataSource" clientInstElem="_Jns4UzPvEei3dfHtumI11Q" serverInstElem="_Jns4WjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Jns4WzPvEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_Jns4VDPvEei3dfHtumI11Q" serverInstElem="_Jns4XDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Jns4XTPvEei3dfHtumI11Q" property="PROPAGATION_REQUIRED.transactionManager" clientInstElem="_Jns4VjPvEei3dfHtumI11Q" serverInstElem="_Jns4VDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Jns4XjPvEei3dfHtumI11Q" property="transactionTemplate.transactionManager" clientInstElem="_Jns4VzPvEei3dfHtumI11Q" serverInstElem="_Jns4VDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Jns4XzPvEei3dfHtumI11Q" clientInstElem="_Jns4WDPvEei3dfHtumI11Q" serverInstElem="_Jns4YDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Jns4YTPvEei3dfHtumI11Q" clientInstElem="_Jns4WDPvEei3dfHtumI11Q" serverInstElem="_Jns4VzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JoaC9DPvEei3dfHtumI11Q" property="jms.connectionFactory" clientInstElem="_JoaC8DPvEei3dfHtumI11Q" serverInstElem="_JoaC9TPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JoaC9jPvEei3dfHtumI11Q" property="sql.dataSource" clientInstElem="_JoaC8TPvEei3dfHtumI11Q" serverInstElem="_JoaC9zPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JoaC-DPvEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_JoaC8jPvEei3dfHtumI11Q" serverInstElem="_JoaC-TPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JoaC-jPvEei3dfHtumI11Q" property="PROPAGATION_REQUIRED.transactionManager" clientInstElem="_JoaC8zPvEei3dfHtumI11Q" serverInstElem="_JoaC8jPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JooseDPvEei3dfHtumI11Q" property="jmsTransactionManager.connectionFactory" clientInstElem="_JoosdTPvEei3dfHtumI11Q" serverInstElem="_JooseTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JoosejPvEei3dfHtumI11Q" property="jms.connectionFactory" clientInstElem="_JoosdjPvEei3dfHtumI11Q" serverInstElem="_JoosezPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JoosfDPvEei3dfHtumI11Q" property="jms.transactionManager" clientInstElem="_JoosdjPvEei3dfHtumI11Q" serverInstElem="_JoosdTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JoosfTPvEei3dfHtumI11Q" property="PROPAGATION_REQUIRED.transactionManager" clientInstElem="_JoosdzPvEei3dfHtumI11Q" serverInstElem="_JoosdTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Jo4kFjPvEei3dfHtumI11Q" property="jms.connectionFactory" clientInstElem="_Jo4kFDPvEei3dfHtumI11Q" serverInstElem="_Jo4kFzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JpH0qjPvEei3dfHtumI11Q" property="jmsTransactionManager.connectionFactory" clientInstElem="_JpH0pjPvEei3dfHtumI11Q" serverInstElem="_JpH0qzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JpH0rDPvEei3dfHtumI11Q" property="jms.connectionFactory" clientInstElem="_JpH0pzPvEei3dfHtumI11Q" serverInstElem="_JpH0rTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JpH0rjPvEei3dfHtumI11Q" property="jms.transactionManager" clientInstElem="_JpH0pzPvEei3dfHtumI11Q" serverInstElem="_JpH0pjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JpIbsDPvEei3dfHtumI11Q" property="PROPAGATION_REQUIRED.transactionManager" clientInstElem="_JpH0qTPvEei3dfHtumI11Q" serverInstElem="_JpH0pjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JpckyzPvEei3dfHtumI11Q" property="jmsTransactionManager.connectionFactory" clientInstElem="_JpckxjPvEei3dfHtumI11Q" serverInstElem="_JpckzDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JpckzTPvEei3dfHtumI11Q" property="PROPAGATION_REQUIRED.transactionManager" clientInstElem="_JpckxzPvEei3dfHtumI11Q" serverInstElem="_JpckxjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JpckzjPvEei3dfHtumI11Q" property="jms.connectionFactory" clientInstElem="_JpckyDPvEei3dfHtumI11Q" serverInstElem="_JpckzzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Jpck0DPvEei3dfHtumI11Q" property="jms.transactionManager" clientInstElem="_JpckyDPvEei3dfHtumI11Q" serverInstElem="_JpckxjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Jpck0TPvEei3dfHtumI11Q" property="jmsNonTx.connectionFactory" clientInstElem="_JpckyjPvEei3dfHtumI11Q" serverInstElem="_JpckyTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JpscYDPvEei3dfHtumI11Q" property="jmsTransactionManager.connectionFactory" clientInstElem="_Jpr1WTPvEei3dfHtumI11Q" serverInstElem="_JpscYTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JpscYjPvEei3dfHtumI11Q" property="jms.connectionFactory" clientInstElem="_Jpr1WjPvEei3dfHtumI11Q" serverInstElem="_JpscYzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JpscZDPvEei3dfHtumI11Q" property="jms.transactionManager" clientInstElem="_Jpr1WjPvEei3dfHtumI11Q" serverInstElem="_Jpr1WTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JpscZTPvEei3dfHtumI11Q" property="PROPAGATION_REQUIRED.transactionManager" clientInstElem="_Jpr1XDPvEei3dfHtumI11Q" serverInstElem="_Jpr1WTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JpscZjPvEei3dfHtumI11Q" property="PROPAGATION_NOT_SUPPORTED.transactionManager" clientInstElem="_Jpr1XTPvEei3dfHtumI11Q" serverInstElem="_Jpr1WTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Jp7F5jPvEei3dfHtumI11Q" property="jms.connectionFactory" clientInstElem="_Jp7F5DPvEei3dfHtumI11Q" serverInstElem="_Jp7F5zPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JqK9gzPvEei3dfHtumI11Q" property="sql.dataSource" clientInstElem="_JqKWeTPvEei3dfHtumI11Q" serverInstElem="_JqK9hDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JqK9hTPvEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_JqK9gDPvEei3dfHtumI11Q" serverInstElem="_JqK9hjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JqK9hzPvEei3dfHtumI11Q" property="PROPAGATION_REQUIRED.transactionManager" clientInstElem="_JqK9gTPvEei3dfHtumI11Q" serverInstElem="_JqK9gDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JqaOEzPvEei3dfHtumI11Q" property="sql.dataSource" clientInstElem="_JqZnCTPvEei3dfHtumI11Q" serverInstElem="_JqaOFDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JqaOFTPvEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_JqaOEDPvEei3dfHtumI11Q" serverInstElem="_JqaOFjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JqaOFzPvEei3dfHtumI11Q" property="PROPAGATION_REQUIRED.transactionManager" clientInstElem="_JqaOETPvEei3dfHtumI11Q" serverInstElem="_JqaOEDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JqqFuzPvEei3dfHtumI11Q" property="sql.dataSource" clientInstElem="_JqqFtzPvEei3dfHtumI11Q" serverInstElem="_JqqFvDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JqqFvTPvEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_JqqFuDPvEei3dfHtumI11Q" serverInstElem="_JqqFvjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JqqswDPvEei3dfHtumI11Q" property="PROPAGATION_REQUIRES_NEW.transactionManager" clientInstElem="_JqqFuTPvEei3dfHtumI11Q" serverInstElem="_JqqFuDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JqqswTPvEei3dfHtumI11Q" property="PROPAGATION_REQUIRES_NEW-2.transactionManager" clientInstElem="_JqqFujPvEei3dfHtumI11Q" serverInstElem="_JqqFuDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Jq5WQDPvEei3dfHtumI11Q" property="sql.dataSource" clientInstElem="_Jq4vODPvEei3dfHtumI11Q" serverInstElem="_Jq5WQTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Jq5WQjPvEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_Jq4vOTPvEei3dfHtumI11Q" serverInstElem="_Jq5WQzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Jq5WRDPvEei3dfHtumI11Q" property="PROPAGATION_REQUIRED.transactionManager" clientInstElem="_Jq4vOjPvEei3dfHtumI11Q" serverInstElem="_Jq4vOTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JrH_yTPvEei3dfHtumI11Q" property="sql.dataSource" clientInstElem="_JrH_xTPvEei3dfHtumI11Q" serverInstElem="_JrH_yjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JrH_yzPvEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_JrH_xjPvEei3dfHtumI11Q" serverInstElem="_JrH_zDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JrH_zTPvEei3dfHtumI11Q" property="PROPAGATION_REQUIRED.transactionManager" clientInstElem="_JrH_xzPvEei3dfHtumI11Q" serverInstElem="_JrH_xjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JrH_zjPvEei3dfHtumI11Q" property="PROPAGATION_NOT_SUPPORTED.transactionManager" clientInstElem="_JrH_yDPvEei3dfHtumI11Q" serverInstElem="_JrH_xjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JrXQXTPvEei3dfHtumI11Q" property="sql.dataSource" clientInstElem="_JrXQWTPvEei3dfHtumI11Q" serverInstElem="_JrXQXjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JrX3YDPvEei3dfHtumI11Q" property="transactionManager.dataSource" clientInstElem="_JrXQWjPvEei3dfHtumI11Q" serverInstElem="_JrX3YTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JrX3YjPvEei3dfHtumI11Q" property="PROPAGATION_REQUIRES_NEW.transactionManager" clientInstElem="_JrXQWzPvEei3dfHtumI11Q" serverInstElem="_JrXQWjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JrX3YzPvEei3dfHtumI11Q" property="PROPAGATION_REQUIRES_NEW-2.transactionManager" clientInstElem="_JrXQXDPvEei3dfHtumI11Q" serverInstElem="_JrXQWjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JrnvBjPvEei3dfHtumI11Q" clientInstElem="_JrnvBDPvEei3dfHtumI11Q" serverInstElem="_JrnvAzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JrnvBzPvEei3dfHtumI11Q" clientInstElem="_JrnvBTPvEei3dfHtumI11Q" serverInstElem="_JrnvBDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JsIFUTPvEei3dfHtumI11Q" property="atomikos.connectionFactory.xaConnectionFactory" clientInstElem="_JsHeRjPvEei3dfHtumI11Q" serverInstElem="_JsIFUjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JsIFUzPvEei3dfHtumI11Q" property="atomikos.dataSource.xaDataSource" clientInstElem="_JsHeRzPvEei3dfHtumI11Q" serverInstElem="_JsIFVDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JsIFVTPvEei3dfHtumI11Q" property="jta.transactionManager.transactionManager" clientInstElem="_JsHeSjPvEei3dfHtumI11Q" serverInstElem="_JsHeSDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JsIFVjPvEei3dfHtumI11Q" property="jta.transactionManager.userTransaction" clientInstElem="_JsHeSjPvEei3dfHtumI11Q" serverInstElem="_JsHeSTPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JsIFVzPvEei3dfHtumI11Q" property="jms.connectionFactory" clientInstElem="_JsHeSzPvEei3dfHtumI11Q" serverInstElem="_JsHeRjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JsIFWDPvEei3dfHtumI11Q" property="jms.transactionManager" clientInstElem="_JsHeSzPvEei3dfHtumI11Q" serverInstElem="_JsHeSjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JsIFWTPvEei3dfHtumI11Q" property="nonTxJms.connectionFactory" clientInstElem="_JsHeTDPvEei3dfHtumI11Q" serverInstElem="_JsIFWjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JsIFWzPvEei3dfHtumI11Q" property="sql.dataSource" clientInstElem="_JsHeTTPvEei3dfHtumI11Q" serverInstElem="_JsHeRzPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JsIFXDPvEei3dfHtumI11Q" property="PROPAGATION_REQUIRED.transactionManager" clientInstElem="_JsIFUDPvEei3dfHtumI11Q" serverInstElem="_JsHeSjPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JtfXRzPvEei3dfHtumI11Q" property="pooledConnectionFactory.connectionFactory" clientInstElem="_JtfXRTPvEei3dfHtumI11Q" serverInstElem="_JtfXSDPvEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_JtfXSTPvEei3dfHtumI11Q" property="jmsTemplate.connectionFactory" clientInstElem="_JtfXRjPvEei3dfHtumI11Q" serverInstElem="_JtfXRTPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="CamelCookbook.camel-cookbook-examples_spec">
+    <specConnections refID="_JzeqgDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqgTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqgjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqgzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqhDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqhTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqhjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqhzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqiDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqiTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqijPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqizPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqjDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqjTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqjjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqjzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqkDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqkTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqkjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqkzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqlDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqlTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqljPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqlzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqmDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqmTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqmjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqmzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqnDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqnTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqnjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqnzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqoDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqoTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqojPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqozPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqpDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqpTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqpjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqpzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqqDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqqTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqqjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqqzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqrDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqrTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqrjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqrzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqsDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqsTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqsjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqszPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqtDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqtTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqtjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqtzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzequDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzequTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzequjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzequzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqvDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqvTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqvjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqvzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqwDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqwTPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqwjPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqwzPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqxDPvEei3dfHtumI11Q"/>
+    <specConnections refID="_JzeqxTPvEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

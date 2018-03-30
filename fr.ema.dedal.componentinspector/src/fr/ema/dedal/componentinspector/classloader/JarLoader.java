@@ -105,7 +105,7 @@ public class JarLoader extends URLClassLoader {
 			 */
 			if(
 					name.endsWith(JAVA_CLASS_SUFFIX)
-					&& name.contains(name2)
+//					&& name.contains(name2)
 //					&& !name.startsWith(SPRING_FRAMEWORK) 
 //					&& !name.startsWith(AOP_ALLIANCE) 
 //					&& !name.startsWith(JSON)

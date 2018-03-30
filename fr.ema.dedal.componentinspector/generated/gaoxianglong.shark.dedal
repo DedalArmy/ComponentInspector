@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="gaoxianglong.shark">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="gaoxianglong.shark_config" implements="//@architectureDescriptions[name='gaoxianglong.shark_spec']">
+    <configComponents name="&quot;com.test.sharksharding.util.sequence.GetMysqlSequenceId2Test&quot;" id="_IG7MoDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.druid.pool.DruidDataSource&quot;" id="_IG7MoTPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.test.sharksharding.util.sequence.GetMysqlSequenceId2Test&quot;" id="_IH-VgDPwEei3dfHtumI11Q"/>
+    <configComponents name="&quot;com.alibaba.druid.pool.DruidDataSource&quot;" id="_IH-VgTPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="gaoxianglong.shark_asm" instantiates="//@architectureDescriptions[name='gaoxianglong.shark_config']">
+    <assmComponents id="_IG7MojPwEei3dfHtumI11Q" instantiates="_IG7MoDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource1&quot;" id="_IG7MozPwEei3dfHtumI11Q" instantiates="_IG7MoTPwEei3dfHtumI11Q"/>
+    <assmComponents id="_IH-VgjPwEei3dfHtumI11Q" instantiates="_IH-VgDPwEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dataSource1&quot;" id="_IH-VgzPwEei3dfHtumI11Q" instantiates="_IH-VgTPwEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="gaoxianglong.shark_spec"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

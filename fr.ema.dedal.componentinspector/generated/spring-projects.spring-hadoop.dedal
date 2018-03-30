@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="spring-projects.spring-hadoop">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="spring-projects.spring-hadoop_config" implements="//@architectureDescriptions[name='spring-projects.spring-hadoop_spec']">
+    <configComponents name="&quot;org.springframework.data.hadoop.mapreduce.JobFactoryBean&quot;" id="_GuFDADPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.hadoop.mapreduce.JobFactoryBean&quot;" id="_GuX98DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.hadoop.test.word.TokenizerMapper&quot;" id="_GuX98TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.hadoop.test.word.IntSumReducer&quot;" id="_GuX98jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.hadoop.mapreduce.JobFactoryBean&quot;" id="_Guq44DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.hadoop.test.word.CustomTokenizerMapper&quot;" id="_Guq44TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.hadoop.test.word.CustomTokenizerMapper$SimpleTokenizer&quot;" id="_Guq44jPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.hadoop.test.word.WordTokenizer&quot;" id="_Guq44zPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.hadoop.test.word.IntSumReducer&quot;" id="_Guq45DPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.hadoop.context.BootstrapPropertiesFactoryBean&quot;" id="_Guq45TPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.hadoop.config.common.annotation.DependencyBean&quot;" id="_Gx82YDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.apache.hadoop.mapreduce.Job&quot;" id="_GzIiIDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.batch.core.scope.StepScope&quot;" id="_G3CKsDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.hadoop.test.support.HadoopClusterFactoryBean&quot;" id="_G6KXMDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.data.hadoop.test.support.ConfigurationDelegatingFactoryBean&quot;" id="_G6KXMTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.String&quot;" id="_G6mcEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;java.lang.String&quot;" id="_G65-EDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.yarn.client.ClientRmTemplate&quot;" id="_G8sGwDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.yarn.test.support.YarnClusterFactoryBean&quot;" id="_G9btoDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.yarn.test.support.ConfigurationDelegatingFactoryBean&quot;" id="_G9btoTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.scheduling.concurrent.ConcurrentTaskScheduler&quot;" id="_G94ZkDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.core.task.SyncTaskExecutor&quot;" id="_G94ZkTPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.yarn.config.annotation.DependencyBean&quot;" id="_G-UecDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.yarn.container.TestContainer&quot;" id="_G_EFUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.scheduling.concurrent.ConcurrentTaskScheduler&quot;" id="_G_hYUDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.yarn.launch.AbstractCommandLineRunnerTests$StubBean&quot;" id="_G__SYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.yarn.launch.AbstractCommandLineRunnerTests$StubBean&quot;" id="_HAJDYDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.core.serializer.DefaultSerializer&quot;" id="_HBxbEDPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.core.serializer.DefaultDeserializer&quot;" id="_HBxbETPzEei3dfHtumI11Q"/>
+    <configComponents name="&quot;org.springframework.yarn.integration.ServerBindTests$TestTcpSocketSupport&quot;" id="_HBxbEjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_GuFDATPzEei3dfHtumI11Q" property="&quot;mapper&quot;" clientClassElem="_GuFDADPzEei3dfHtumI11Q" serverClassElem="_GuFDAjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_GuFDAzPzEei3dfHtumI11Q" property="&quot;reducer&quot;" clientClassElem="_GuFDADPzEei3dfHtumI11Q" serverClassElem="_GuFDBDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_GuFDBTPzEei3dfHtumI11Q" property="&quot;inputFormat&quot;" clientClassElem="_GuFDADPzEei3dfHtumI11Q" serverClassElem="_GuFDBjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_GuX98zPzEei3dfHtumI11Q" property="&quot;mapper&quot;" clientClassElem="_GuX98DPzEei3dfHtumI11Q" serverClassElem="_GuX98TPzEei3dfHtumI11Q"/>
+    <configConnections refID="_GuX99DPzEei3dfHtumI11Q" property="&quot;combiner&quot;" clientClassElem="_GuX98DPzEei3dfHtumI11Q" serverClassElem="_GuX98jPzEei3dfHtumI11Q"/>
+    <configConnections refID="_Guq45jPzEei3dfHtumI11Q" property="&quot;mapper&quot;" clientClassElem="_Guq44DPzEei3dfHtumI11Q" serverClassElem="_Guq44TPzEei3dfHtumI11Q"/>
+    <configConnections refID="_Guq45zPzEei3dfHtumI11Q" property="&quot;combiner&quot;" clientClassElem="_Guq44DPzEei3dfHtumI11Q" serverClassElem="_Guq45DPzEei3dfHtumI11Q"/>
+    <configConnections refID="_Guq46DPzEei3dfHtumI11Q" property="&quot;tokenizer&quot;" clientClassElem="_Guq44TPzEei3dfHtumI11Q" serverClassElem="_Guq46TPzEei3dfHtumI11Q"/>
+    <configConnections refID="_Gx82YTPzEei3dfHtumI11Q" property="&quot;beanB&quot;" clientClassElem="_Gx82YDPzEei3dfHtumI11Q" serverClassElem="_Gx82YjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_G6KXMjPzEei3dfHtumI11Q" property="&quot;cluster&quot;" clientClassElem="_G6KXMTPzEei3dfHtumI11Q" serverClassElem="_G6KXMDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_G8sGwTPzEei3dfHtumI11Q" clientClassElem="_G8sGwDPzEei3dfHtumI11Q" serverClassElem="_G8sGwjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_G9btojPzEei3dfHtumI11Q" property="&quot;cluster&quot;" clientClassElem="_G9btoTPzEei3dfHtumI11Q" serverClassElem="_G9btoDPzEei3dfHtumI11Q"/>
+    <configConnections refID="_G-UecTPzEei3dfHtumI11Q" property="&quot;configuration&quot;" clientClassElem="_G-UecDPzEei3dfHtumI11Q" serverClassElem="_G-UecjPzEei3dfHtumI11Q"/>
+    <configConnections refID="_G-UeczPzEei3dfHtumI11Q" property="&quot;client&quot;" clientClassElem="_G-UecDPzEei3dfHtumI11Q" serverClassElem="_G-UedDPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="spring-projects.spring-hadoop_asm" instantiates="//@architectureDescriptions[name='spring-projects.spring-hadoop_config']">
+    <assmComponents name="autowiredWordCount" id="_GuFDBzPzEei3dfHtumI11Q" instantiates="_GuFDADPzEei3dfHtumI11Q"/>
+    <assmComponents name="autowiredWordCount" id="_GuX99TPzEei3dfHtumI11Q" instantiates="_GuX98DPzEei3dfHtumI11Q"/>
+    <assmComponents name="mapper" id="_GuX99jPzEei3dfHtumI11Q" instantiates="_GuX98TPzEei3dfHtumI11Q"/>
+    <assmComponents name="reducer" id="_GuX99zPzEei3dfHtumI11Q" instantiates="_GuX98jPzEei3dfHtumI11Q"/>
+    <assmComponents name="autowiredWordCount" id="_Guq46jPzEei3dfHtumI11Q" instantiates="_Guq44DPzEei3dfHtumI11Q"/>
+    <assmComponents name="mapper" id="_Guq46zPzEei3dfHtumI11Q" instantiates="_Guq44TPzEei3dfHtumI11Q"/>
+    <assmComponents name="simpleTokenizer" id="_Guq47DPzEei3dfHtumI11Q" instantiates="_Guq44jPzEei3dfHtumI11Q"/>
+    <assmComponents name="wordTokenizer" id="_Guq47TPzEei3dfHtumI11Q" instantiates="_Guq44zPzEei3dfHtumI11Q"/>
+    <assmComponents name="reducer" id="_Guq47jPzEei3dfHtumI11Q" instantiates="_Guq45DPzEei3dfHtumI11Q"/>
+    <assmComponents name="bootstrap" id="_Guq47zPzEei3dfHtumI11Q" instantiates="_Guq45TPzEei3dfHtumI11Q"/>
+    <assmComponents name="dependencyBean" id="_Gx82YzPzEei3dfHtumI11Q" instantiates="_Gx82YDPzEei3dfHtumI11Q"/>
+    <assmComponents name="job" id="_GzIiITPzEei3dfHtumI11Q" instantiates="_GzIiIDPzEei3dfHtumI11Q"/>
+    <assmComponents id="_G3CKsTPzEei3dfHtumI11Q" instantiates="_G3CKsDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;hadoopCluster&quot;" id="_G6KXMzPzEei3dfHtumI11Q" instantiates="_G6KXMDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;hadoopConfiguration&quot;" id="_G6KXNDPzEei3dfHtumI11Q" instantiates="_G6KXMTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;path&quot;" id="_G6mcETPzEei3dfHtumI11Q" instantiates="_G6mcEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;path&quot;" id="_G65-ETPzEei3dfHtumI11Q" instantiates="_G65-EDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;yarnClientRmTemplate&quot;" id="_G8sGwzPzEei3dfHtumI11Q" instantiates="_G8sGwDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;yarnCluster&quot;" id="_G9btozPzEei3dfHtumI11Q" instantiates="_G9btoDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;yarnConfiguredConfiguration&quot;" id="_G9btpDPzEei3dfHtumI11Q" instantiates="_G9btoTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;taskScheduler&quot;" id="_G94ZkjPzEei3dfHtumI11Q" instantiates="_G94ZkDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;taskExecutor&quot;" id="_G94ZkzPzEei3dfHtumI11Q" instantiates="_G94ZkTPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;dependencyBean&quot;" id="_G-UedTPzEei3dfHtumI11Q" instantiates="_G-UecDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;testContainer&quot;" id="_G_EFUTPzEei3dfHtumI11Q" instantiates="_G_EFUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;taskScheduler&quot;" id="_G_hYUTPzEei3dfHtumI11Q" instantiates="_G_hYUDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;stubTestChildBean&quot;" id="_G__SYTPzEei3dfHtumI11Q" instantiates="_G__SYDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;stubTestBean&quot;" id="_HAJDYTPzEei3dfHtumI11Q" instantiates="_HAJDYDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;javaSerializer&quot;" id="_HBxbEzPzEei3dfHtumI11Q" instantiates="_HBxbEDPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;javaDeserializer&quot;" id="_HBxbFDPzEei3dfHtumI11Q" instantiates="_HBxbETPzEei3dfHtumI11Q"/>
+    <assmComponents name="&quot;socketSupport&quot;" id="_HBxbFTPzEei3dfHtumI11Q" instantiates="_HBxbEjPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_GuFDCDPzEei3dfHtumI11Q" property="autowiredWordCount.mapper" clientInstElem="_GuFDBzPzEei3dfHtumI11Q" serverInstElem="_GuFDCTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_GuFDCjPzEei3dfHtumI11Q" property="autowiredWordCount.reducer" clientInstElem="_GuFDBzPzEei3dfHtumI11Q" serverInstElem="_GuFDCzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_GuFDDDPzEei3dfHtumI11Q" property="autowiredWordCount.inputFormat" clientInstElem="_GuFDBzPzEei3dfHtumI11Q" serverInstElem="_GuFDDTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_GuX9-DPzEei3dfHtumI11Q" property="autowiredWordCount.mapper" clientInstElem="_GuX99TPzEei3dfHtumI11Q" serverInstElem="_GuX99jPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_GuX9-TPzEei3dfHtumI11Q" property="autowiredWordCount.combiner" clientInstElem="_GuX99TPzEei3dfHtumI11Q" serverInstElem="_GuX99zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_GuX9-jPzEei3dfHtumI11Q" property="autowiredWordCount.reducer" clientInstElem="_GuX99TPzEei3dfHtumI11Q" serverInstElem="_GuX99zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Guq48DPzEei3dfHtumI11Q" property="autowiredWordCount.mapper" clientInstElem="_Guq46jPzEei3dfHtumI11Q" serverInstElem="_Guq46zPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Guq48TPzEei3dfHtumI11Q" property="autowiredWordCount.combiner" clientInstElem="_Guq46jPzEei3dfHtumI11Q" serverInstElem="_Guq47jPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Guq48jPzEei3dfHtumI11Q" property="autowiredWordCount.reducer" clientInstElem="_Guq46jPzEei3dfHtumI11Q" serverInstElem="_Guq47jPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Guq48zPzEei3dfHtumI11Q" property="mapper.tokenizer" clientInstElem="_Guq46zPzEei3dfHtumI11Q" serverInstElem="_Guq49DPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Gx82ZDPzEei3dfHtumI11Q" property="dependencyBean.beanB" clientInstElem="_Gx82YzPzEei3dfHtumI11Q" serverInstElem="_Gx82ZTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_G6KXNTPzEei3dfHtumI11Q" property="hadoopConfiguration.cluster" clientInstElem="_G6KXNDPzEei3dfHtumI11Q" serverInstElem="_G6KXMzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_G8sGxDPzEei3dfHtumI11Q" clientInstElem="_G8sGwzPzEei3dfHtumI11Q" serverInstElem="_G8sGxTPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_G9btpTPzEei3dfHtumI11Q" property="yarnConfiguredConfiguration.cluster" clientInstElem="_G9btpDPzEei3dfHtumI11Q" serverInstElem="_G9btozPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_G-UedjPzEei3dfHtumI11Q" property="dependencyBean.configuration" clientInstElem="_G-UedTPzEei3dfHtumI11Q" serverInstElem="_G-UedzPzEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_G-UeeDPzEei3dfHtumI11Q" property="dependencyBean.client" clientInstElem="_G-UedTPzEei3dfHtumI11Q" serverInstElem="_G-UeeTPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="spring-projects.spring-hadoop_spec">
+    <specConnections refID="_HChB8DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_HChB8TPzEei3dfHtumI11Q"/>
+    <specConnections refID="_HChB8jPzEei3dfHtumI11Q"/>
+    <specConnections refID="_HChB8zPzEei3dfHtumI11Q"/>
+    <specConnections refID="_HChB9DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_HChB9TPzEei3dfHtumI11Q"/>
+    <specConnections refID="_HChB9jPzEei3dfHtumI11Q"/>
+    <specConnections refID="_HChB9zPzEei3dfHtumI11Q"/>
+    <specConnections refID="_HChB-DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_HChB-TPzEei3dfHtumI11Q"/>
+    <specConnections refID="_HChB-jPzEei3dfHtumI11Q"/>
+    <specConnections refID="_HChB-zPzEei3dfHtumI11Q"/>
+    <specConnections refID="_HChB_DPzEei3dfHtumI11Q"/>
+    <specConnections refID="_HChB_TPzEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

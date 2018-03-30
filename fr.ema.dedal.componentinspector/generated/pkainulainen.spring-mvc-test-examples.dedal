@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="pkainulainen.spring-mvc-test-examples">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="pkainulainen.spring-mvc-test-examples_config" implements="//@architectureDescriptions[name='pkainulainen.spring-mvc-test-examples_spec']">
+    <configComponents name="com.jolbox.bonecp.BoneCPDataSource" id="_KyeiADPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.JpaTransactionManager" id="_KyeiATPyEei3dfHtumI11Q"/>
+    <configComponents name="com.jolbox.bonecp.BoneCPDataSource" id="_KzE-8DPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.JpaTransactionManager" id="_KzE-8TPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.context.support.ResourceBundleMessageSource" id="_Kzhq4DPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.context.support.ResourceBundleMessageSource" id="_Kz0l0DPyEei3dfHtumI11Q"/>
+    <configComponents name="org.mockito.Mockito" id="_Kz0l0TPyEei3dfHtumI11Q"/>
+    <configComponents name="com.jolbox.bonecp.BoneCPDataSource" id="_Kz9vwDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.JpaTransactionManager" id="_Kz9vwTPyEei3dfHtumI11Q"/>
+    <configComponents name="com.jolbox.bonecp.BoneCPDataSource" id="_K0absDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.JpaTransactionManager" id="_K0absTPyEei3dfHtumI11Q"/>
+    <configComponents name="com.jolbox.bonecp.BoneCPDataSource" id="_K1TzkDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.JpaTransactionManager" id="_K1TzkTPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.context.support.ResourceBundleMessageSource" id="_K1wfgDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.context.support.ResourceBundleMessageSource" id="_K15pcDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.mockito.Mockito" id="_K15pcTPyEei3dfHtumI11Q"/>
+    <configComponents name="com.jolbox.bonecp.BoneCPDataSource" id="_K2MkYDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.JpaTransactionManager" id="_K2MkYTPyEei3dfHtumI11Q"/>
+    <configComponents name="com.jolbox.bonecp.BoneCPDataSource" id="_K28LQDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.JpaTransactionManager" id="_K28LQTPyEei3dfHtumI11Q"/>
+    <configComponents name="com.jolbox.bonecp.BoneCPDataSource" id="_K3ioMDPyEei3dfHtumI11Q"/>
+    <configComponents name="org.springframework.orm.jpa.JpaTransactionManager" id="_K3ioMTPyEei3dfHtumI11Q"/>
+    <configConnections refID="_KyeiAjPyEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_KyeiATPyEei3dfHtumI11Q" serverClassElem="_KyeiAzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_KzE-8jPyEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_KzE-8TPyEei3dfHtumI11Q" serverClassElem="_KzE-8zPyEei3dfHtumI11Q"/>
+    <configConnections refID="_Kz9vwjPyEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_Kz9vwTPyEei3dfHtumI11Q" serverClassElem="_Kz9vwzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_K0absjPyEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_K0absTPyEei3dfHtumI11Q" serverClassElem="_K0abszPyEei3dfHtumI11Q"/>
+    <configConnections refID="_K1TzkjPyEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_K1TzkTPyEei3dfHtumI11Q" serverClassElem="_K1TzkzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_K2MkYjPyEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_K2MkYTPyEei3dfHtumI11Q" serverClassElem="_K2MkYzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_K28LQjPyEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_K28LQTPyEei3dfHtumI11Q" serverClassElem="_K28LQzPyEei3dfHtumI11Q"/>
+    <configConnections refID="_K3ioMjPyEei3dfHtumI11Q" property="&quot;entityManagerFactory&quot;" clientClassElem="_K3ioMTPyEei3dfHtumI11Q" serverClassElem="_K3ioMzPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="pkainulainen.spring-mvc-test-examples_asm" instantiates="//@architectureDescriptions[name='pkainulainen.spring-mvc-test-examples_config']">
+    <assmComponents name="dataSource" id="_KyeiBDPyEei3dfHtumI11Q" instantiates="_KyeiADPyEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_KyeiBTPyEei3dfHtumI11Q" instantiates="_KyeiATPyEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_KzE-9DPyEei3dfHtumI11Q" instantiates="_KzE-8DPyEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_KzE-9TPyEei3dfHtumI11Q" instantiates="_KzE-8TPyEei3dfHtumI11Q"/>
+    <assmComponents name="messageSource" id="_Kzhq4TPyEei3dfHtumI11Q" instantiates="_Kzhq4DPyEei3dfHtumI11Q"/>
+    <assmComponents name="messageSource" id="_Kz0l0jPyEei3dfHtumI11Q" instantiates="_Kz0l0DPyEei3dfHtumI11Q"/>
+    <assmComponents name="todoService" id="_Kz0l0zPyEei3dfHtumI11Q" instantiates="_Kz0l0TPyEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_Kz9vxDPyEei3dfHtumI11Q" instantiates="_Kz9vwDPyEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_Kz9vxTPyEei3dfHtumI11Q" instantiates="_Kz9vwTPyEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_K0abtDPyEei3dfHtumI11Q" instantiates="_K0absDPyEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_K0abtTPyEei3dfHtumI11Q" instantiates="_K0absTPyEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_K1TzlDPyEei3dfHtumI11Q" instantiates="_K1TzkDPyEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_K1TzlTPyEei3dfHtumI11Q" instantiates="_K1TzkTPyEei3dfHtumI11Q"/>
+    <assmComponents name="messageSource" id="_K1wfgTPyEei3dfHtumI11Q" instantiates="_K1wfgDPyEei3dfHtumI11Q"/>
+    <assmComponents name="messageSource" id="_K15pcjPyEei3dfHtumI11Q" instantiates="_K15pcDPyEei3dfHtumI11Q"/>
+    <assmComponents name="todoService" id="_K15pczPyEei3dfHtumI11Q" instantiates="_K15pcTPyEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_K2MkZDPyEei3dfHtumI11Q" instantiates="_K2MkYDPyEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_K2MkZTPyEei3dfHtumI11Q" instantiates="_K2MkYTPyEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_K28LRDPyEei3dfHtumI11Q" instantiates="_K28LQDPyEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_K28LRTPyEei3dfHtumI11Q" instantiates="_K28LQTPyEei3dfHtumI11Q"/>
+    <assmComponents name="dataSource" id="_K3ioNDPyEei3dfHtumI11Q" instantiates="_K3ioMDPyEei3dfHtumI11Q"/>
+    <assmComponents name="transactionManager" id="_K3ioNTPyEei3dfHtumI11Q" instantiates="_K3ioMTPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KyeiBjPyEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_KyeiBTPyEei3dfHtumI11Q" serverInstElem="_KyeiBzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_KzE-9jPyEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_KzE-9TPyEei3dfHtumI11Q" serverInstElem="_KzE-9zPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_Kz9vxjPyEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_Kz9vxTPyEei3dfHtumI11Q" serverInstElem="_Kz9vxzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_K0abtjPyEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_K0abtTPyEei3dfHtumI11Q" serverInstElem="_K0abtzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_K1TzljPyEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_K1TzlTPyEei3dfHtumI11Q" serverInstElem="_K1TzlzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_K2MkZjPyEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_K2MkZTPyEei3dfHtumI11Q" serverInstElem="_K2MkZzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_K28LRjPyEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_K28LRTPyEei3dfHtumI11Q" serverInstElem="_K28LRzPyEei3dfHtumI11Q"/>
+    <assemblyConnections refID="_K3ioNjPyEei3dfHtumI11Q" property="transactionManager.entityManagerFactory" clientInstElem="_K3ioNTPyEei3dfHtumI11Q" serverInstElem="_K3ioNzPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="pkainulainen.spring-mvc-test-examples_spec">
+    <specConnections refID="_K3-tEDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_K3-tETPyEei3dfHtumI11Q"/>
+    <specConnections refID="_K3-tEjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_K3-tEzPyEei3dfHtumI11Q"/>
+    <specConnections refID="_K3-tFDPyEei3dfHtumI11Q"/>
+    <specConnections refID="_K3-tFTPyEei3dfHtumI11Q"/>
+    <specConnections refID="_K3-tFjPyEei3dfHtumI11Q"/>
+    <specConnections refID="_K3-tFzPyEei3dfHtumI11Q"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>
