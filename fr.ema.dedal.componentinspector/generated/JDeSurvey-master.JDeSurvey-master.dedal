@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="JDeSurvey-master.JDeSurvey-master">
-  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.JDeSurvey-master_config" implements="//@architectureDescriptions[name='JDeSurvey-master.JDeSurvey-master_spec']"/>
-  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.JDeSurvey-master_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.JDeSurvey-master_config']"/>
-  <architectureDescriptions xsi:type="dedal:Specification" name="JDeSurvey-master.JDeSurvey-master_spec"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.external.acl-config.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.external.acl-config.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.external.acl-config.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.external.security-context.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.external.security-context.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.external.security-context.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.external.service-context.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.external.service-context.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.external.service-context.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.external.webmvc-config.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.external.webmvc-config.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.external.webmvc-config.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.internal.acl-config.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.internal.acl-config.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.internal.acl-config.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.internal.scheduler-config.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.internal.scheduler-config.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.internal.scheduler-config.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.internal.security-context.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.internal.security-context.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.internal.security-context.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.internal.service-context.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.internal.service-context.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.internal.service-context.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.internal.webmvc-config.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.internal.webmvc-config.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.JDeSurvey-master.JDESURVEY.xml.internal.webmvc-config.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.JDeSurvey-master.jdsurvey-core.src.test.resources.service-context.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.JDeSurvey-master.jdsurvey-core.src.test.resources.service-context.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.JDeSurvey-master.jdsurvey-core.src.test.resources.service-context.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.JDeSurvey-master.jdsurvey-core.target.test-classes.service-context.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.JDeSurvey-master.jdsurvey-core.target.test-classes.service-context.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.JDeSurvey-master.jdsurvey-core.target.test-classes.service-context.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.JDeSurvey-master.jdsurvey-intweb.src.main.webapp.WEB-INF.excel-views.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.JDeSurvey-master.jdsurvey-intweb.src.main.webapp.WEB-INF.excel-views.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.JDeSurvey-master.jdsurvey-intweb.src.main.webapp.WEB-INF.excel-views.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.JDeSurvey-master.jdsurvey-intweb.src.main.webapp.WEB-INF.pdf-views.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.JDeSurvey-master.jdsurvey-intweb.src.main.webapp.WEB-INF.pdf-views.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.JDeSurvey-master.jdsurvey-intweb.src.main.webapp.WEB-INF.pdf-views.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.JDeSurvey-master.jdsurvey-intweb.target.admin.WEB-INF.excel-views.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.JDeSurvey-master.jdsurvey-intweb.target.admin.WEB-INF.excel-views.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.JDeSurvey-master.jdsurvey-intweb.target.admin.WEB-INF.excel-views.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.JDeSurvey-master.jdsurvey-intweb.target.admin.WEB-INF.pdf-views.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.JDeSurvey-master.jdsurvey-intweb.target.admin.WEB-INF.pdf-views.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.JDeSurvey-master.jdsurvey-intweb.target.admin.WEB-INF.pdf-views.xml_config']"/>
   <repositories name="genRepo"/>
 </dedal:DedalDiagram>

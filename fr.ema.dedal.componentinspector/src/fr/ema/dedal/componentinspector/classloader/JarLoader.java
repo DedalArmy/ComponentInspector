@@ -19,7 +19,10 @@ import java.util.Map;
 import java.util.jar.JarEntry;
 import java.util.jar.JarInputStream;
 
+
 import org.apache.log4j.Logger;
+
+import groovy.lang.GroovyClassLoader;
 
 
 /**
@@ -40,6 +43,9 @@ public class JarLoader extends URLClassLoader {
 //	private static final String ORG_OPENID4JAVA = "org.openid4java";
 //	private static final String JAVAX = "javax";
 //	private static final String ORG_XML = "org.xml.";
+	private static final String GROOVY_CLASS_SUFFIX = ".groovy";
+	
+	private List<String> toReload = new ArrayList<>();
 
 	/**
 	 * Parameterized constructor
@@ -70,7 +76,10 @@ public class JarLoader extends URLClassLoader {
 	public Map<URI, List<Class<?>>> loadClasses() {
 		Map<URI, List<Class<?>>> jarMapping = new HashMap<>();
 		URL[] urls = this.getURLs();
-		for (URL url : urls) {			
+		for (URL url : urls) {		
+			
+			
+			
 			List<Class<?>> listClasses = new ArrayList<>();
 				try {
 					traverseJar(jarMapping, url, listClasses, "");
@@ -94,15 +103,29 @@ public class JarLoader extends URLClassLoader {
 		InputStream in = new FileInputStream(url.getFile());
 		JarInputStream jar = new JarInputStream(in);
 		entry = jar.getNextJarEntry();
+		if(logger.isInfoEnabled())
+			logger.info(url.toString());
 		while(entry != null)
 		{	
 			/*
 			 * WE TRANSFORM THE PATH INTO THE FULLY QUALIFIED NAME OF THE CLASS
 			 */
-			String name = entry.getName().replaceAll("/", ".");
+//			String name = entry.getName().replaceAll("/", ".");
+//			if(name.startsWith("WEB-INF."))
+//				name = name.replaceFirst("WEB-INF.", "");
+//			if(name.startsWith("classes."))
+//				name = name.replaceFirst("classes.", "");
+//			String name = entry.getName();
+			String name = entry.toString();
 			/*
 			 * WE NEED TO AVOID TO ANALYZE FRAMEWORK DEPENDENCIES
 			 */
+			if(name.endsWith(GROOVY_CLASS_SUFFIX))
+			{
+				if(logger.isInfoEnabled())
+					logger.info(name);
+				loadGroovy(jarMapping, url, listClasses, name);
+			}
 			if(
 					name.endsWith(JAVA_CLASS_SUFFIX)
 //					&& name.contains(name2)
@@ -118,13 +141,32 @@ public class JarLoader extends URLClassLoader {
 //					&& !name.startsWith(ORG_XML)
 				)
 			{
-				if(logger.isInfoEnabled())
-					logger.info(name);
+//				if(logger.isInfoEnabled())
+//					logger.info(name);
 				load(jarMapping, url, listClasses, name);
 			}
 			entry = jar.getNextJarEntry();
 		}
 		jar.close();
+	}
+
+	/**
+	 * 
+	 * @param jarMapping
+	 * @param url
+	 * @param listClasses
+	 * @param name
+	 */
+	private void loadGroovy(Map<URI, List<Class<?>>> jarMapping, URL url, List<Class<?>> listClasses, String name) {
+		// TODO Auto-generated method stub
+		Class<?> loadClass;
+		
+		try (GroovyClassLoader gcl = new GroovyClassLoader()){
+			loadClass = gcl.loadClass(name);
+			listClasses.add(loadClass);
+		} catch (ClassNotFoundException | IOException e) {
+			logger.error("An error occured whie loading groovy class");
+		}
 	}
 
 	/**
@@ -138,11 +180,17 @@ public class JarLoader extends URLClassLoader {
 	private void load(Map<URI, List<Class<?>>> jarMapping, URL url, List<Class<?>> listClasses, String name) {
 			Class<?> loadClass;
 			try {
-				loadClass = this.loadClass(name.substring(0, name.length()-JAVA_CLASS_SUFFIX.length()));
-				listClasses.add(loadClass);
+//				URL toAppend = this.getResource(name);
+//				super.addURL(toAppend);
+//				String classToLoad = (new File(URI.create(toAppend.getFile()))).getName();
+//				loadClass = this.loadClass(name.substring(0, name.length()-JAVA_CLASS_SUFFIX.length()));
+				this.addURL(URI.create(name).toURL());
+//				loadClass = this.loadClass(classToLoad.substring(0, classToLoad.length()-JAVA_CLASS_SUFFIX.length()));
+//				listClasses.add(loadClass);
 			} 
-			catch (ClassNotFoundException | NoClassDefFoundError | IllegalAccessError | VerifyError e) {
-				logger.error("A problem occured while loading class" + name + ". Loading ended with " + e.getCause());
+			catch (NoClassDefFoundError | IllegalAccessError | VerifyError | MalformedURLException e) {
+				toReload.add(name.substring(0, name.length()-JAVA_CLASS_SUFFIX.length()));
+				logger.error("A problem occured while loading class " + name + ". Loading ended with " + e.getCause());
 			}
 			try {
 				jarMapping.put(url.toURI(), listClasses);

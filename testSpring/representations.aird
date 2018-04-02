@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:springConfigDsl="http://www.xtext.org/spring/SpringConfigDsl" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis xmi:id="_GtsfgLfTEeef6_HWaojyxQ" selectedViews="_nJsgsLfnEeeHAfXMJ3csrg" version="12.0.0.201704271200">
+  <viewpoint:DAnalysis xmi:id="_GtsfgLfTEeef6_HWaojyxQ" selectedViews="_nJsgsLfnEeeHAfXMJ3csrg" version="12.1.0.201708031200">
     <semanticResources>Exemple.sdsl</semanticResources>
     <semanticResources>example2.sdsl</semanticResources>
     <semanticResources>HAS.sdsl</semanticResources>
+    <semanticResources>exemple3.sdsl</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_nJsgsLfnEeeHAfXMJ3csrg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/spring.design/description/spring.odesign#//@ownedViewpoints[name='SpringProject']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_VcpWIMPaEeewX5yqj2W3Hg" name="example2" repPath="#_VcbTsMPaEeewX5yqj2W3Hg">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_VcpWIMPaEeewX5yqj2W3Hg" name="example2" repPath="#_N6YM0DbAEeiC-MWSILStTA">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/spring.design/description/spring.odesign#//@ownedViewpoints[name='SpringProject']/@ownedRepresentations[name='Spring%20Project%20Diagram']"/>
         <target xmi:type="springConfigDsl:SpringProject" href="example2.sdsl#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_zFfaIMRlEeegkenhHJaG1Q" name="HAS_spring" repPath="#_zFTz8MRlEeegkenhHJaG1Q">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_zFfaIMRlEeegkenhHJaG1Q" name="HAS_spring" repPath="#_N9XPYDbAEeiC-MWSILStTA">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/spring.design/description/spring.odesign#//@ownedViewpoints[name='SpringProject']/@ownedRepresentations[name='Spring%20Project%20Diagram']"/>
         <target xmi:type="springConfigDsl:SpringProject" href="HAS.sdsl#/"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
-  <diagram:DSemanticDiagram xmi:id="_VcbTsMPaEeewX5yqj2W3Hg" name="example2">
+  <diagram:DSemanticDiagram xmi:id="_VcbTsMPaEeewX5yqj2W3Hg" name="example2" uid="_N6YM0DbAEeiC-MWSILStTA">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_Vcb6wMPaEeewX5yqj2W3Hg" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_Vcb6wcPaEeewX5yqj2W3Hg"/>
     </ownedAnnotationEntries>
@@ -4186,7 +4187,7 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/spring.design/description/spring.odesign#//@ownedViewpoints[name='SpringProject']/@ownedRepresentations[name='Spring%20Project%20Diagram']/@defaultLayer"/>
     <target xmi:type="springConfigDsl:SpringProject" href="example2.sdsl#/"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram xmi:id="_zFTz8MRlEeegkenhHJaG1Q" name="HAS_spring">
+  <diagram:DSemanticDiagram xmi:id="_zFTz8MRlEeegkenhHJaG1Q" name="HAS_spring" uid="_N9XPYDbAEeiC-MWSILStTA">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_zFTz8cRlEeegkenhHJaG1Q" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_zFTz8sRlEeegkenhHJaG1Q"/>
     </ownedAnnotationEntries>
@@ -4687,8 +4688,8 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/spring.design/description/spring.odesign#//@ownedViewpoints[name='SpringProject']/@ownedRepresentations[name='Spring%20Project%20Diagram']/@defaultLayer/@nodeMappings[name='FeatureNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_zFT0BMRlEeegkenhHJaG1Q" name="Attribute &#xA; type &#xA; value 1 " width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="springConfigDsl:Attribute" href="HAS.sdsl#//@configurations.0/@components.3/@features.0/@artefact/@artefacts.0"/>
-      <semanticElements xmi:type="springConfigDsl:Attribute" href="HAS.sdsl#//@configurations.0/@components.3/@features.0/@artefact/@artefacts.0"/>
+      <target xmi:type="springConfigDsl:Reference" href="HAS.sdsl#//@configurations.0/@components.3/@features.0/@artefact/@artefacts.0"/>
+      <semanticElements xmi:type="springConfigDsl:Reference" href="HAS.sdsl#//@configurations.0/@components.3/@features.0/@artefact/@artefacts.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>

@@ -3,6 +3,7 @@
  */
 package fr.ema.dedal.componentinspector.classloader;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.nio.file.Files;

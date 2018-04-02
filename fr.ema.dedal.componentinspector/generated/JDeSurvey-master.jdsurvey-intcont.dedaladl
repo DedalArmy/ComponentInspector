@@ -1,0 +1,6 @@
+dedal_diagram "JDeSurvey-master.jdsurvey-intcont"
+
+	repositories (
+
+		repository genRepo
+	)

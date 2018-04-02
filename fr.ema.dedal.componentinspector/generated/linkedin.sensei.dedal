@@ -1,31 +1,84 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="linkedin.sensei">
-  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei_config" implements="//@architectureDescriptions[name='linkedin.sensei_spec']">
-    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qe7iIDPxEei3dfHtumI11Q"/>
-    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qfYOEDPxEei3dfHtumI11Q"/>
-    <configComponents name="&quot;com.senseidb.test.plugin.MockRuntimeFacetHandlerFactory&quot;" id="_qfh_EDPxEei3dfHtumI11Q"/>
-    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qf1hEDPxEei3dfHtumI11Q"/>
-    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qgRl8DPxEei3dfHtumI11Q"/>
-    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qguR4DPxEei3dfHtumI11Q"/>
-    <configComponents name="&quot;com.senseidb.test.plugin.MockRuntimeFacetHandlerFactory&quot;" id="_qhBM0DPxEei3dfHtumI11Q"/>
-    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qhK90DPxEei3dfHtumI11Q"/>
-    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qhnpwDPxEei3dfHtumI11Q"/>
-    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qiEVsDPxEei3dfHtumI11Q"/>
-    <configComponents name="&quot;com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory&quot;" id="_qigakDPxEei3dfHtumI11Q"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.example.cars.conf.custom-facets.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.example.cars.conf.custom-facets.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.example.cars.conf.custom-facets.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.example.cars.conf.plugins.xml_config">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_7wXlYDa9Eei0HqgVsAguRg"/>
   </architectureDescriptions>
-  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei_config']">
-    <assmComponents name="demo" id="_qe7iITPxEei3dfHtumI11Q" instantiates="_qe7iIDPxEei3dfHtumI11Q"/>
-    <assmComponents name="demo" id="_qfYOETPxEei3dfHtumI11Q" instantiates="_qfYOEDPxEei3dfHtumI11Q"/>
-    <assmComponents id="_qfh_ETPxEei3dfHtumI11Q" instantiates="_qfh_EDPxEei3dfHtumI11Q"/>
-    <assmComponents name="&quot;demo&quot;" id="_qf1hETPxEei3dfHtumI11Q" instantiates="_qf1hEDPxEei3dfHtumI11Q"/>
-    <assmComponents name="&quot;demo&quot;" id="_qgRl8TPxEei3dfHtumI11Q" instantiates="_qgRl8DPxEei3dfHtumI11Q"/>
-    <assmComponents name="&quot;demo&quot;" id="_qguR4TPxEei3dfHtumI11Q" instantiates="_qguR4DPxEei3dfHtumI11Q"/>
-    <assmComponents id="_qhBM0TPxEei3dfHtumI11Q" instantiates="_qhBM0DPxEei3dfHtumI11Q"/>
-    <assmComponents name="&quot;demo&quot;" id="_qhK90TPxEei3dfHtumI11Q" instantiates="_qhK90DPxEei3dfHtumI11Q"/>
-    <assmComponents name="&quot;demo&quot;" id="_qhnpwTPxEei3dfHtumI11Q" instantiates="_qhnpwDPxEei3dfHtumI11Q"/>
-    <assmComponents name="&quot;demo&quot;" id="_qiEVsTPxEei3dfHtumI11Q" instantiates="_qiEVsDPxEei3dfHtumI11Q"/>
-    <assmComponents name="&quot;demo&quot;" id="_qigakTPxEei3dfHtumI11Q" instantiates="_qigakDPxEei3dfHtumI11Q"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.example.cars.conf.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.example.cars.conf.plugins.xml_config']">
+    <assmComponents name="demo" id="_7wXlYTa9Eei0HqgVsAguRg" instantiates="_7wXlYDa9Eei0HqgVsAguRg"/>
   </architectureDescriptions>
-  <architectureDescriptions xsi:type="dedal:Specification" name="linkedin.sensei_spec"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.perf.conf-perf.custom-facets.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.perf.conf-perf.custom-facets.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.perf.conf-perf.custom-facets.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.perf.conf-perf.plugins.xml_config">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_7yTfEDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.perf.conf-perf.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.perf.conf-perf.plugins.xml_config']">
+    <assmComponents name="demo" id="_7yTfETa9Eei0HqgVsAguRg" instantiates="_7yTfEDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.bin.src.test.resources.refactored-configuration.custom-facets.xml_config">
+    <configComponents name="com.senseidb.test.plugin.MockRuntimeFacetHandlerFactory" id="_7zWA4Da9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.bin.src.test.resources.refactored-configuration.custom-facets.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.bin.src.test.resources.refactored-configuration.custom-facets.xml_config']">
+    <assmComponents name="com.senseidb.test.plugin.MockRuntimeFacetHandlerFactory1" id="_7zWA4Ta9Eei0HqgVsAguRg" instantiates="_7zWA4Da9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.bin.src.test.resources.refactored-configuration.plugins.xml_config">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_70ZJwDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.bin.src.test.resources.refactored-configuration.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.bin.src.test.resources.refactored-configuration.plugins.xml_config']">
+    <assmComponents name="demo" id="_70ZJwTa9Eei0HqgVsAguRg" instantiates="_70ZJwDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node1.custom-facets.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node1.custom-facets.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node1.custom-facets.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node1.plugins.xml_config">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_7193EDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node1.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node1.plugins.xml_config']">
+    <assmComponents name="demo" id="_72HBADa9Eei0HqgVsAguRg" instantiates="_7193EDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node2.custom-facets.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node2.custom-facets.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node2.custom-facets.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node2.plugins.xml_config">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_733UgDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node2.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node2.plugins.xml_config']">
+    <assmComponents name="demo" id="_733UgTa9Eei0HqgVsAguRg" instantiates="_733UgDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.src.test.resources.refactored-configuration.custom-facets.xml_config">
+    <configComponents name="com.senseidb.test.plugin.MockRuntimeFacetHandlerFactory" id="_74wsYDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.src.test.resources.refactored-configuration.custom-facets.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.src.test.resources.refactored-configuration.custom-facets.xml_config']">
+    <assmComponents name="com.senseidb.test.plugin.MockRuntimeFacetHandlerFactory1" id="_74wsYTa9Eei0HqgVsAguRg" instantiates="_74wsYDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.src.test.resources.refactored-configuration.plugins.xml_config">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_754GsDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.src.test.resources.refactored-configuration.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.src.test.resources.refactored-configuration.plugins.xml_config']">
+    <assmComponents name="demo" id="_754GsTa9Eei0HqgVsAguRg" instantiates="_754GsDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.src.test.resources.test-conf.node1.custom-facets.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.src.test.resources.test-conf.node1.custom-facets.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.src.test.resources.test-conf.node1.custom-facets.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.src.test.resources.test-conf.node1.plugins.xml_config">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_77ZJoDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.src.test.resources.test-conf.node1.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.src.test.resources.test-conf.node1.plugins.xml_config']">
+    <assmComponents name="demo" id="_77ZJoTa9Eei0HqgVsAguRg" instantiates="_77ZJoDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.src.test.resources.test-conf.node2.custom-facets.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.src.test.resources.test-conf.node2.custom-facets.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.src.test.resources.test-conf.node2.custom-facets.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.src.test.resources.test-conf.node2.plugins.xml_config">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_79e0UDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.src.test.resources.test-conf.node2.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.src.test.resources.test-conf.node2.plugins.xml_config']">
+    <assmComponents name="demo" id="_79e0UTa9Eei0HqgVsAguRg" instantiates="_79e0UDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-federated-broker.src.test.resources.conf.custom-facets.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-federated-broker.src.test.resources.conf.custom-facets.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-federated-broker.src.test.resources.conf.custom-facets.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-federated-broker.src.test.resources.conf.plugins.xml_config">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_7--CEDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-federated-broker.src.test.resources.conf.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-federated-broker.src.test.resources.conf.plugins.xml_config']">
+    <assmComponents name="demo" id="_7--CETa9Eei0HqgVsAguRg" instantiates="_7--CEDa9Eei0HqgVsAguRg"/>
+  </architectureDescriptions>
   <repositories name="genRepo"/>
 </dedal:DedalDiagram>

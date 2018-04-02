@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="jiangmin168168.jim-framework">
-  <architectureDescriptions xsi:type="dedal:Configuration" name="jiangmin168168.jim-framework_config" implements="//@architectureDescriptions[name='jiangmin168168.jim-framework_spec']"/>
-  <architectureDescriptions xsi:type="dedal:Assembly" name="jiangmin168168.jim-framework_asm" instantiates="//@architectureDescriptions[name='jiangmin168168.jim-framework_config']"/>
-  <architectureDescriptions xsi:type="dedal:Specification" name="jiangmin168168.jim-framework_spec"/>
-  <repositories name="genRepo"/>
-</dedal:DedalDiagram>

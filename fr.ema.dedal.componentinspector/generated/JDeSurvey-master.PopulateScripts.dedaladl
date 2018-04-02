@@ -1,0 +1,6 @@
+dedal_diagram "JDeSurvey-master.PopulateScripts"
+
+	repositories (
+
+		repository genRepo
+	)

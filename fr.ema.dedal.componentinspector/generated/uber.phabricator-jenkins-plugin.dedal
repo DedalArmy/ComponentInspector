@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="uber.phabricator-jenkins-plugin">
-  <architectureDescriptions xsi:type="dedal:Configuration" name="uber.phabricator-jenkins-plugin_config" implements="//@architectureDescriptions[name='uber.phabricator-jenkins-plugin_spec']"/>
-  <architectureDescriptions xsi:type="dedal:Assembly" name="uber.phabricator-jenkins-plugin_asm" instantiates="//@architectureDescriptions[name='uber.phabricator-jenkins-plugin_config']"/>
-  <architectureDescriptions xsi:type="dedal:Specification" name="uber.phabricator-jenkins-plugin_spec"/>
-  <repositories name="genRepo"/>
-</dedal:DedalDiagram>

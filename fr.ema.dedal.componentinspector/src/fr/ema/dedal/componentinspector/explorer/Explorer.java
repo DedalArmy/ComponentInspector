@@ -14,6 +14,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 import org.apache.log4j.Logger;
+import org.xeustechnologies.jcl.JarClassLoader;
 
 import dedal.DedalDiagram;
 import fr.ema.dedal.componentinspector.classloader.FolderLoader;
@@ -76,7 +77,8 @@ public class Explorer {
 			List<URI> repos = new ArrayList<>();
 			for(URI o : FolderLoader.loadFolder(Paths.get(libPath)))
 			{
-				repos.addAll(FolderLoader.loadFolder(Paths.get(o)));
+				if(new File(o).isDirectory())
+					repos.addAll(FolderLoader.loadFolder(Paths.get(o)));
 			}
 			if(logger.isInfoEnabled())
 			{
@@ -95,14 +97,16 @@ public class Explorer {
 					List<URI> xmlFiles = recursivelyGetFileURIs(folder, XML);
 					List<URI> xmlSpringFiles = scanFiles(xmlFiles, BEANS, BEAN);
 					List<URI> jarFiles = recursivelyGetFileURIs(folder, JAR, WAR);
+					
 					URL[] urlsToLoad = new URL[jarFiles.size()];
 					for(int i = 0; i<jarFiles.size(); i++)
 					{
 						urlsToLoad[i]=jarFiles.get(i).toURL();
 					}
 					JarLoader jarLoader = new JarLoader(urlsToLoad);
-					Map<URI, List<Class<?>>> classes = loadClasses(f, jarLoader);
-					JarInspector jarInspector = new JarInspector(jarLoader);
+//					Map<URI, List<Class<?>>> classes = loadClasses(f, jarLoader);
+//					JarInspector jarInspector = new JarInspector(jarLoader);
+					JarInspector jarInspector = new JarInspector(f.getPath());
 					jarInspector.generate(dd, xmlSpringFiles);
 					jarLoader.close();
 					result.add(dd);
@@ -150,7 +154,11 @@ public class Explorer {
 		/**
 		 * Let's extract some component classes.
 		 */
-		JarInspector jarInspector = new JarInspector(jarloader);
+		
+//		List<URI> jar = (new ArrayList<>());
+//		jar.add(URI.create(singlePath));
+		JarInspector jarInspector = new JarInspector(singlePath);
+//		JarInspector jarInspector = new JarInspector(jarloader);
 		jarInspector.generate(result, sdslPath);
 	}
 	

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="glowroot.glowroot">
-  <architectureDescriptions xsi:type="dedal:Configuration" name="glowroot.glowroot_config" implements="//@architectureDescriptions[name='glowroot.glowroot_spec']"/>
-  <architectureDescriptions xsi:type="dedal:Assembly" name="glowroot.glowroot_asm" instantiates="//@architectureDescriptions[name='glowroot.glowroot_config']"/>
-  <architectureDescriptions xsi:type="dedal:Specification" name="glowroot.glowroot_spec"/>
-  <repositories name="genRepo"/>
-</dedal:DedalDiagram>

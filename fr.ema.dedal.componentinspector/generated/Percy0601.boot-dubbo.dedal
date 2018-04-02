@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="Percy0601.boot-dubbo">
-  <architectureDescriptions xsi:type="dedal:Configuration" name="Percy0601.boot-dubbo_config" implements="//@architectureDescriptions[name='Percy0601.boot-dubbo_spec']"/>
-  <architectureDescriptions xsi:type="dedal:Assembly" name="Percy0601.boot-dubbo_asm" instantiates="//@architectureDescriptions[name='Percy0601.boot-dubbo_config']"/>
-  <architectureDescriptions xsi:type="dedal:Specification" name="Percy0601.boot-dubbo_spec"/>
-  <repositories name="genRepo"/>
-</dedal:DedalDiagram>

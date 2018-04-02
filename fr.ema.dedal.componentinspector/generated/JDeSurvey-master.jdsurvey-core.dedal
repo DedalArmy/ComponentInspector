@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="JDeSurvey-master.jdsurvey-core">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.jdsurvey-core.src.test.resources.service-context.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.jdsurvey-core.src.test.resources.service-context.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.jdsurvey-core.src.test.resources.service-context.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.jdsurvey-core.target.test-classes.service-context.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.jdsurvey-core.target.test-classes.service-context.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.jdsurvey-core.target.test-classes.service-context.xml_config']"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="Zephery.newblog">
-  <architectureDescriptions xsi:type="dedal:Configuration" name="Zephery.newblog_config" implements="//@architectureDescriptions[name='Zephery.newblog_spec']"/>
-  <architectureDescriptions xsi:type="dedal:Assembly" name="Zephery.newblog_asm" instantiates="//@architectureDescriptions[name='Zephery.newblog_config']"/>
-  <architectureDescriptions xsi:type="dedal:Specification" name="Zephery.newblog_spec"/>
-  <repositories name="genRepo"/>
-</dedal:DedalDiagram>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="kermitt2.grobid">
-  <architectureDescriptions xsi:type="dedal:Configuration" name="kermitt2.grobid_config" implements="//@architectureDescriptions[name='kermitt2.grobid_spec']"/>
-  <architectureDescriptions xsi:type="dedal:Assembly" name="kermitt2.grobid_asm" instantiates="//@architectureDescriptions[name='kermitt2.grobid_config']"/>
-  <architectureDescriptions xsi:type="dedal:Specification" name="kermitt2.grobid_spec"/>
-  <repositories name="genRepo"/>
-</dedal:DedalDiagram>

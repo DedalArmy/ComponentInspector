@@ -15,6 +15,8 @@ import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.xeustechnologies.jcl.JarClassLoader;
+import org.xeustechnologies.jcl.JclObjectFactory;
 
 import dedal.Assembly;
 import dedal.Attribute;
@@ -41,7 +43,9 @@ import fr.ema.dedal.componentinspector.classloader.JarLoader;
 public class JarInspector {
 
 	static final Logger logger = Logger.getLogger(JarInspector.class);
-	JarLoader jarLoader = null;
+//	JarLoader jarLoader = null;
+	JarClassLoader jarLoader = null;
+	JclObjectFactory jclFactory = JclObjectFactory.getInstance();
 	Map<URI, List<Class<?>>> jarMapping = null;
 	Map<CompRole, Class<?>> roleToClass = null;
 	Map<CompClass, Class<?>> compToClass = null;
@@ -53,15 +57,16 @@ public class JarInspector {
 	DedalFactory factory;
 
 	/**
-	 * @param jarLoader
+	 * @param string
 	 * @throws IOException 
 	 * @throws ClassNotFoundException 
 	 * @throws FileNotFoundException 
 	 */
-	public JarInspector(JarLoader jarLoader) {
+	public JarInspector(String folder) {
 		super();
-		this.jarLoader = jarLoader;
-		this.jarMapping = this.jarLoader.loadClasses();
+		this.jarLoader = new JarClassLoader();
+		jarLoader.add(folder);
+//		this.jarMapping = this.jarLoader.loadClasses();
 		this.compToClass = new HashMap<>();
 		this.roleToClass = new HashMap<>();
 		this.compIntToType = new HashMap<>();
@@ -72,19 +77,19 @@ public class JarInspector {
 		factory = DedalFactoryImpl.init();
 	}
 
-	/**
-	 * @return the _JarLoader
-	 */
-	public JarLoader getJarLoader() {
-		return jarLoader;
-	}
-
-	/**
-	 * @param jarLoader the _JarLoader to set
-	 */
-	public void setJarLoader(JarLoader jarLoader) {
-		this.jarLoader = jarLoader;
-	}
+//	/**
+//	 * @return the _JarLoader
+//	 */
+//	public JarLoader getJarLoader() {
+//		return jarLoader;
+//	}
+//
+//	/**
+//	 * @param jarLoader the _JarLoader to set
+//	 */
+//	public void setJarLoader(JarLoader jarLoader) {
+//		this.jarLoader = jarLoader;
+//	}
 
 	/**
 	 * @return the _JarMapping
@@ -111,43 +116,47 @@ public class JarInspector {
 		repo.setName("genRepo");
 		dedalDiagram.getRepositories().add(repo);
 		List<EObject> extractedFromSpring = new ArrayList<>();
+
+		List<Class<?>> listOfClasses = new ArrayList<>();
+//		this.jarMapping.forEach((uriKey, classList) -> listOfClasses.addAll(classList));
 		for(URI uri : xmlSpringFiles)
 		{
 			try {
 				extractedFromSpring.addAll(SdslInspector.extractDedalArtifacts(uri.toURL().getFile()));
-			} catch (MalformedURLException e) {
-				logger.error("An error occured while extracting information in file " + uri.toString());
+				Specification spec = factory.createSpecification();
+				String tempName = uri.toString().replaceAll("/", ".").substring(
+						uri.toString().replaceAll("/", ".").indexOf(dedalDiagram.getName()));
+				spec.setName(tempName+"_spec");
+				Configuration config = factory.createConfiguration();
+				config.setName(tempName+"_config");
+				dedalDiagram.getArchitectureDescriptions().add(config);
+				Assembly asm = factory.createAssembly();
+				asm.setInstantiates(config);
+				asm.setName(tempName+"_asm");
+				dedalDiagram.getArchitectureDescriptions().add(asm);
+
+				copyInDiagram(extractedFromSpring, config, asm);
+
+				standardizeNames(config, asm);
+				if(logger.isInfoEnabled())
+					logger.info("URL : " + dedalDiagram.getName());
+
+				if(!config.getConfigComponents().isEmpty())
+				{
+					mapComponentClasses(dedalDiagram, repo, listOfClasses, config);
+					setConfigConnections(config);
+	
+					instantiateInteractions(asm);
+					setAssmConnections(asm, config.getConfigConnections());
+	
+					setSpecificationFromConfiguration(repo, spec, config);
+					dedalDiagram.getArchitectureDescriptions().add(spec);
+					config.getImplements().add(spec);
+				}
+			} catch (Exception | Error e) {
+				logger.error("An error occured while extracting information in file " + uri.toString() + "Error -> " + e.getCause());
 			}
-		}
-		List<Class<?>> listOfClasses = new ArrayList<>();
-		this.jarMapping.forEach((uriKey, classList) -> listOfClasses.addAll(classList));	
-		
-		Specification spec = factory.createSpecification();
-		spec.setName(dedalDiagram.getName()+"_spec");
-		Configuration config = factory.createConfiguration();
-		config.setName(dedalDiagram.getName()+"_config");
-		dedalDiagram.getArchitectureDescriptions().add(config);
-		Assembly asm = factory.createAssembly();
-		asm.setInstantiates(config);
-		asm.setName(dedalDiagram.getName()+"_asm");
-		dedalDiagram.getArchitectureDescriptions().add(asm);
-
-		copyInDiagram(extractedFromSpring, config, asm);
-
-		standardizeNames(config, asm);
-
-		if(logger.isInfoEnabled())
-			logger.info("URL : " + dedalDiagram.getName());
-
-		mapComponentClasses(dedalDiagram, repo, listOfClasses, config);
-		setConfigConnections(config);
-
-		instantiateInteractions(asm);
-		setAssmConnections(asm, config.getConfigConnections());
-
-		setSpecificationFromConfiguration(repo, spec, config);
-		dedalDiagram.getArchitectureDescriptions().add(spec);
-		config.getImplements().add(spec);
+		}	
 		
 	}
 
@@ -182,7 +191,12 @@ public class JarInspector {
 			if(logger.isInfoEnabled())
 				logger.info("URL : " + uriKey);
 
-			mapComponentClasses(dedalDiagram, repo, classList, config);
+			try {
+				mapComponentClasses(dedalDiagram, repo, classList, config);
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			setConfigConnections(config);
 			
 			instantiateInteractions(asm);
@@ -635,39 +649,51 @@ public class JarInspector {
 	 * @param classList
 	 * @param config
 	 */
-	private void mapComponentClasses(DedalDiagram dedalDiagram, Repository repo, List<Class<?>> classList, Configuration config) {
+	private void mapComponentClasses(DedalDiagram dedalDiagram, Repository repo, List<Class<?>> classList, Configuration config) throws ClassNotFoundException {
 		for(CompClass tempCompClass : config.getConfigComponents())
 		{
 			if(logger.isInfoEnabled())
 			{
 				logger.info("compName : " + tempCompClass.getName());
 			}
-			for(Class<?> c : classList)
+//			for(Class<?> c : classList)
+//			{
+//				String compClassName = null;
+//				String className = null;
+//				try {
+//					compClassName = tempCompClass.getName().replace("\"", "");
+//					className = c.getSimpleName();
+//				}
+//				catch (IllegalAccessError | NoClassDefFoundError | NullPointerException e) {
+//					logger.error("An error occured while taking the name of the class typed as " + c.getTypeName() + ". Ended with " + e.getCause());
+//				}
+//				if(!(className==null || compClassName == null || c.isInterface()||c.isEnum()||Modifier.isAbstract(c.getModifiers())) 
+//						&&  className.equals(compClassName)
+//						)
+//				{
+//					if(logger.isInfoEnabled())
+//					{
+//						logger.info("className : " + className);
+//					}
+			Class<?> c = null;
+			Object o = jclFactory.create(jarLoader, tempCompClass.getName());
+			c = o.getClass();
+//			for(Class<?> cl : classList)
+//			{
+//				
+//				String simpleName = cl.getSimpleName();
+//				if(simpleName.equals(tempCompClass.getName()))
+//					c = cl;
+//			}
+			if(c!=null)
 			{
-				String compClassName = null;
-				String className = null;
-				try {
-					compClassName = tempCompClass.getName().replace("\"", "");
-					className = c.getSimpleName();
-				}
-				catch (IllegalAccessError | NoClassDefFoundError | NullPointerException e) {
-					logger.error("An error occured while taking the name of the class typed as " + c.getTypeName() + ". Ended with " + e.getCause());
-				}
-				if(!(className==null || compClassName == null || c.isInterface()||c.isEnum()||Modifier.isAbstract(c.getModifiers())) 
-						&&  className.equals(compClassName)
-						)
-				{
-					if(logger.isInfoEnabled())
-					{
-						logger.info("className : " + className);
-					}
 					ClassInspector ci = new ClassInspector(c, dedalDiagram, config, repo);
 					ci.mapComponentClass(tempCompClass);
 					this.compToClass.put(tempCompClass, c);
 					this.compIntToType.put(tempCompClass, ci.getInterfaceToClassMap());
 					this.intToClass.putAll(ci.getInterfaceToClassMap());
 					this.candidateInterfaces.putAll(ci.getCandidateInterfaces());
-				}			
+//				}			
 			}
 		}
 	}

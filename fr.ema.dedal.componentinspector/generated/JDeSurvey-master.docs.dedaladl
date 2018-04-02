@@ -1,0 +1,6 @@
+dedal_diagram "JDeSurvey-master.docs"
+
+	repositories (
+
+		repository genRepo
+	)

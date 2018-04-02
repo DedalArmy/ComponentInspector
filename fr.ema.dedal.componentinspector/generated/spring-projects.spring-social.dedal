@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="spring-projects.spring-social">
-  <architectureDescriptions xsi:type="dedal:Configuration" name="spring-projects.spring-social_config" implements="//@architectureDescriptions[name='spring-projects.spring-social_spec']"/>
-  <architectureDescriptions xsi:type="dedal:Assembly" name="spring-projects.spring-social_asm" instantiates="//@architectureDescriptions[name='spring-projects.spring-social_config']"/>
-  <architectureDescriptions xsi:type="dedal:Specification" name="spring-projects.spring-social_spec"/>
-  <repositories name="genRepo"/>
-</dedal:DedalDiagram>

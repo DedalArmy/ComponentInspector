@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="JDeSurvey-master.jdsurvey-intweb">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.jdsurvey-intweb.src.main.webapp.WEB-INF.excel-views.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.jdsurvey-intweb.src.main.webapp.WEB-INF.excel-views.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.jdsurvey-intweb.src.main.webapp.WEB-INF.excel-views.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.jdsurvey-intweb.src.main.webapp.WEB-INF.pdf-views.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.jdsurvey-intweb.src.main.webapp.WEB-INF.pdf-views.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.jdsurvey-intweb.src.main.webapp.WEB-INF.pdf-views.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.jdsurvey-intweb.target.admin.WEB-INF.excel-views.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.jdsurvey-intweb.target.admin.WEB-INF.excel-views.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.jdsurvey-intweb.target.admin.WEB-INF.excel-views.xml_config']"/>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="JDeSurvey-master.jdsurvey-intweb.target.admin.WEB-INF.pdf-views.xml_config"/>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="JDeSurvey-master.jdsurvey-intweb.target.admin.WEB-INF.pdf-views.xml_asm" instantiates="//@architectureDescriptions[name='JDeSurvey-master.jdsurvey-intweb.target.admin.WEB-INF.pdf-views.xml_config']"/>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

@@ -1,0 +1,6 @@
+dedal_diagram "JDeSurvey-master.jdsurvey-extweb"
+
+	repositories (
+
+		repository genRepo
+	)

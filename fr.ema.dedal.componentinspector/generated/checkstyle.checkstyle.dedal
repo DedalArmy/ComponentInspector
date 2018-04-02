@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="checkstyle.checkstyle">
-  <architectureDescriptions xsi:type="dedal:Configuration" name="checkstyle.checkstyle_config" implements="//@architectureDescriptions[name='checkstyle.checkstyle_spec']"/>
-  <architectureDescriptions xsi:type="dedal:Assembly" name="checkstyle.checkstyle_asm" instantiates="//@architectureDescriptions[name='checkstyle.checkstyle_config']"/>
-  <architectureDescriptions xsi:type="dedal:Specification" name="checkstyle.checkstyle_spec"/>
-  <repositories name="genRepo"/>
-</dedal:DedalDiagram>

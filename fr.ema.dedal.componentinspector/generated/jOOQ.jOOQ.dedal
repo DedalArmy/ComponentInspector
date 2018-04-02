@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="jOOQ.jOOQ">
-  <architectureDescriptions xsi:type="dedal:Configuration" name="jOOQ.jOOQ_config" implements="//@architectureDescriptions[name='jOOQ.jOOQ_spec']"/>
-  <architectureDescriptions xsi:type="dedal:Assembly" name="jOOQ.jOOQ_asm" instantiates="//@architectureDescriptions[name='jOOQ.jOOQ_config']"/>
-  <architectureDescriptions xsi:type="dedal:Specification" name="jOOQ.jOOQ_spec"/>
-  <repositories name="genRepo"/>
-</dedal:DedalDiagram>
