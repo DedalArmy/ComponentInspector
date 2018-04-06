@@ -89,7 +89,7 @@ public class ClassInspector extends InterfaceInspector {
 				exploreField(tempCompClass, field);
 			}
 		}
-		if(!objectToInspect.getSuperclass().equals(Object.class) &&
+		if(!(Object.class).equals(objectToInspect.getSuperclass()) &&
 				objectToInspect.getSuperclass()!=null)
 			mapAttributes(tempCompClass, objectToInspect.getSuperclass());
 	}
@@ -125,7 +125,7 @@ public class ClassInspector extends InterfaceInspector {
 		result.forEach(pi -> {
 			String piName = pi.getName();
 			String objName = "I" + this.getObjectToInspect().getSimpleName();
-			String adId = (piName.equals(objName))?"":"_"+this.getObjectToInspect().getSimpleName();
+			String adId = (objName.equals(piName))?"":"_"+this.getObjectToInspect().getSimpleName();
 			pi.setName(piName+adId);
 		});
 		return result;
@@ -151,7 +151,7 @@ public class ClassInspector extends InterfaceInspector {
 		result.forEach(ri -> {
 			String riName = ri.getName();
 			String objName = this.getObjectToInspect().getSimpleName();
-			String adId = (riName.equals("I" + objName))?"":"_"+this.getObjectToInspect().getSimpleName();
+			String adId = (("I" + objName).equals(riName))?"":"_"+this.getObjectToInspect().getSimpleName();
 			ri.setName(ri.getName()+adId);
 		});
 		return result;

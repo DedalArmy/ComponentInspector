@@ -1,6 +1,5 @@
 package fr.ema.dedal.componentinspector.inspector;
 
-import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.Collections;
 import java.util.List;
@@ -39,45 +38,38 @@ public class SdslInspector {
 		Injector injector = new SpringConfigDslStandaloneSetup().createInjectorAndDoEMFRegistration();
 		ResourceSet resourceSet = injector.getInstance(XtextResourceSet.class);
 		Resource inResource;
-//		try {
-
-//			inResource = resourceSet.getResource(org.eclipse.emf.common.util.URI.createFileURI(Paths.get(sdslPath).toFile().getCanonicalPath()),true);
-			inResource = resourceSet.getResource(org.eclipse.emf.common.util.URI.createFileURI(sdslPath),true);
-			EList<EObject> inObjects = inResource.getContents();
-
-			// create the input extent with its initial contents
-			ModelExtent input = new BasicModelExtent(inObjects);		
-			// create an empty extent to catch the output
-			ModelExtent output = new BasicModelExtent();
-
-			EPackage.Registry.INSTANCE.put(DedalPackage.eNS_URI,
-					DedalPackage.eINSTANCE);
-
-			// setup the execution environment details -> 
-			// configuration properties, logger, monitor object etc.
-			ExecutionContextImpl context = new ExecutionContextImpl();
-			context.setConfigProperty("keepModeling", true);
-
-			// run the transformation assigned to the executor with the given 
-			// input and output and execution context -> ChangeTheWorld(in, out)
-			// Remark: variable arguments count is supported
-			ExecutionDiagnostic executorResult = executor.execute(context, input, output);
-			
-			if(logger.isInfoEnabled())
-				logger.info(executorResult.getMessage());
-			// check the result for success
-			if(executorResult.getSeverity() == Diagnostic.OK) {
-				return output.getContents();
-			} else {
-				// turn the result diagnostic into status and send it to error log			
-				IStatus status = BasicDiagnostic.toIStatus(executorResult);
-				logger.error(status.getMessage());
-				return Collections.emptyList();
-			}
-//		} catch (IOException e) {
-//			logger.error(e.getMessage(), e);
-//			return Collections.emptyList();
-//		}
+					inResource = resourceSet.getResource(org.eclipse.emf.common.util.URI.createFileURI(sdslPath),true);
+					EList<EObject> inObjects = inResource.getContents();
+		
+					// create the input extent with its initial contents
+					ModelExtent input = new BasicModelExtent(inObjects);		
+					// create an empty extent to catch the output
+					ModelExtent output = new BasicModelExtent();
+		
+					EPackage.Registry.INSTANCE.put(DedalPackage.eNS_URI,
+							DedalPackage.eINSTANCE);
+		
+					// setup the execution environment details -> 
+					// configuration properties, logger, monitor object etc.
+					ExecutionContextImpl context = new ExecutionContextImpl();
+					context.setConfigProperty("keepModeling", true);
+		
+					// run the transformation assigned to the executor with the given 
+					// input and output and execution context -> ChangeTheWorld(in, out)
+					// Remark: variable arguments count is supported
+					ExecutionDiagnostic executorResult = executor.execute(context, input, output);
+					
+					// check the result for success
+					if(executorResult.getSeverity() == Diagnostic.OK) {
+						return output.getContents();
+					} else {
+						// turn the result diagnostic into status and send it to error log			
+						IStatus status = BasicDiagnostic.toIStatus(executorResult);
+						logger.error(status.getMessage());
+						return Collections.emptyList();
+					}
 	}
 
 }
+
+

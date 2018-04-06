@@ -97,16 +97,23 @@ public class Explorer {
 					List<URI> xmlFiles = recursivelyGetFileURIs(folder, XML);
 					List<URI> xmlSpringFiles = scanFiles(xmlFiles, BEANS, BEAN);
 					List<URI> jarFiles = recursivelyGetFileURIs(folder, JAR, WAR);
+					List<URI> subFolders = recursivelyGetFolders(folder);
 					
-					URL[] urlsToLoad = new URL[jarFiles.size()];
+					URL[] jarUrlsToLoad = new URL[jarFiles.size()];
 					for(int i = 0; i<jarFiles.size(); i++)
 					{
-						urlsToLoad[i]=jarFiles.get(i).toURL();
+						jarUrlsToLoad[i]=jarFiles.get(i).toURL();
 					}
-					JarLoader jarLoader = new JarLoader(urlsToLoad);
+
+					URL[] urlsToLoad = new URL[subFolders.size()];
+					for(int i = 0; i<subFolders.size(); i++)
+					{
+						urlsToLoad[i]=subFolders.get(i).toURL();
+					}
+					JarLoader jarLoader = new JarLoader(urlsToLoad, jarUrlsToLoad);
 //					Map<URI, List<Class<?>>> classes = loadClasses(f, jarLoader);
-//					JarInspector jarInspector = new JarInspector(jarLoader);
-					JarInspector jarInspector = new JarInspector(f.getPath());
+					JarInspector jarInspector = new JarInspector(jarLoader);
+//					JarInspector jarInspector = new JarInspector(f.getPath());
 					jarInspector.generate(dd, xmlSpringFiles);
 					jarLoader.close();
 					result.add(dd);
@@ -121,6 +128,26 @@ public class Explorer {
 			logger.error(e.getMessage(), e);
 		}
 		return Collections.emptyList();
+	}
+
+	private static List<URI> recursivelyGetFolders(URI folder) {
+		List<URI> result = new ArrayList<>();
+		File f1 = new File(folder);
+		if(f1.isDirectory())
+		{
+			result.add(folder);
+			List<URI> tempURIs;
+			try {
+				tempURIs = FolderLoader.loadFolder(Paths.get(folder));
+				for(URI uri : tempURIs)
+				{
+					result.addAll(recursivelyGetFolders(uri));
+				}
+			} catch (IOException e) {
+				logger.error("An error occured while getting the full list of subfolders");
+			}
+		}
+		return result;
 	}
 
 	/**
@@ -149,7 +176,7 @@ public class Explorer {
 	private static void inspectJarFromSinglePath(String singlePath, String sdslPath, DedalDiagram result)
 			throws MalformedURLException {
 		URL[] urlToLoad=new URL[]{Paths.get(singlePath).toUri().toURL()};
-		JarLoader jarloader = new JarLoader(urlToLoad);
+		JarLoader jarloader = new JarLoader(new URL[]{}, urlToLoad);
 
 		/**
 		 * Let's extract some component classes.
@@ -157,8 +184,8 @@ public class Explorer {
 		
 //		List<URI> jar = (new ArrayList<>());
 //		jar.add(URI.create(singlePath));
-		JarInspector jarInspector = new JarInspector(singlePath);
-//		JarInspector jarInspector = new JarInspector(jarloader);
+//		JarInspector jarInspector = new JarInspector(singlePath);
+		JarInspector jarInspector = new JarInspector(jarloader);
 		jarInspector.generate(result, sdslPath);
 	}
 	
@@ -172,7 +199,7 @@ public class Explorer {
 	{
 		List<URI> result = new ArrayList<>();
 		File f1 = new File(folder);
-		if(f1.isDirectory() && !f1.getName().contains("lib") && !f1.getName().contains("dependenc"))
+		if(f1.isDirectory()) // && !f1.getName().contains("lib") && !f1.getName().contains("dependenc"))
 		{
 			List<URI> tempURIs = FolderLoader.loadFolder(Paths.get(folder));
 			for(URI uri : tempURIs)

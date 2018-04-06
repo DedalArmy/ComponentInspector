@@ -183,7 +183,7 @@ public class RoleExtractor {
 		initialContract.forEach((key,value) -> {
 			key.forEach(k -> 
 				requiredInterfaces.forEach(ri -> {
-					if(k.getType().equals(ri.getType()))
+					if(k.getType()!=null && k.getType().equals(ri.getType()))
 					{
 						reqInt.add(ri);
 					}
