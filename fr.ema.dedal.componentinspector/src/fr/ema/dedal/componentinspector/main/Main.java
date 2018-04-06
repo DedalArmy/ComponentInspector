@@ -18,7 +18,12 @@ import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
 import org.eclipse.xtext.resource.XtextResource;
 import org.eclipse.xtext.resource.XtextResourceSet;
 import com.google.inject.Injector;
+
+import dedal.ArchitectureDescription;
+import dedal.Assembly;
+import dedal.Configuration;
 import dedal.DedalDiagram;
+import dedal.Specification;
 import fr.ema.dedal.componentinspector.explorer.Explorer;
 import fr.ema.dedal.xtext.DedalADLStandaloneSetup;
 
@@ -107,8 +112,20 @@ public class Main {
 		ResourceSet resourceSet = injector.getInstance(XtextResourceSet.class);
 		resourceSet.setResourceFactoryRegistry(reg);
 		
-			URI uri = URI.createURI("generated/"+ dedalDiagram.getName() +".dedaladl");
-			Resource resource = resourceSet.createResource(uri);
+
+		List<ArchitectureDescription> toRemoveFromDiagram = new ArrayList<>();
+		dedalDiagram.getArchitectureDescriptions().forEach(ad -> {
+			if(ad instanceof Specification && ((Specification) ad).getSpecComponents().isEmpty())
+				toRemoveFromDiagram.add(ad);
+			if(ad instanceof Configuration && ((Configuration) ad).getConfigComponents().isEmpty())
+				toRemoveFromDiagram.add(ad);
+			if(ad instanceof Assembly && ((Assembly) ad).getAssmComponents().isEmpty())
+				toRemoveFromDiagram.add(ad);
+		});
+		dedalDiagram.getArchitectureDescriptions().removeAll(toRemoveFromDiagram);
+		
+		URI uri = URI.createURI("generated/"+ dedalDiagram.getName() +".dedaladl");
+		Resource resource = resourceSet.createResource(uri);
 		
 
 		URI uri2 = URI.createURI("generated/"+ dedalDiagram.getName() +".dedal");

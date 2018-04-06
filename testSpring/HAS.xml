@@ -4,10 +4,10 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
 						http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
-	<bean class="AdjustableLamp" id="lampDesk" />
-	<bean class="AdjustableLamp" id="lampSitting" />
-	<bean class="Clock" id="clock1" />
-	<bean class="Orchestrator" id="orchestrator1" >
+	<bean class="fr.ema.examples.has.config.AdjustableLamp" id="lampDesk" />
+	<bean class="fr.ema.examples.has.config.AdjustableLamp" id="lampSitting" />
+	<bean class="fr.ema.examples.has.config.Clock" id="clock1" />
+	<bean class="fr.ema.examples.has.config.Orchestrator" id="orchestrator1" >
 		<property name="lights">
 			<set>
 				<ref bean="lampDesk" />

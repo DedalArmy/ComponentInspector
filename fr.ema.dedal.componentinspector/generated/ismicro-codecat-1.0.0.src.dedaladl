@@ -1,6 +1,0 @@
-dedal_diagram "ismicro-codecat-1.0.0.src"
-
-	repositories (
-
-		repository genRepo
-	)

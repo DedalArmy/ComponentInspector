@@ -5,6 +5,7 @@ package fr.ema.dedal.componentinspector.classloader;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -21,6 +22,7 @@ import java.util.jar.JarInputStream;
 
 
 import org.apache.log4j.Logger;
+import org.xeustechnologies.jcl.JarClassLoader;
 
 import groovy.lang.GroovyClassLoader;
 
@@ -44,15 +46,45 @@ public class JarLoader extends URLClassLoader {
 //	private static final String JAVAX = "javax";
 //	private static final String ORG_XML = "org.xml.";
 	private static final String GROOVY_CLASS_SUFFIX = ".groovy";
+
+	static final String JAR = ".jar";
+	static final String WAR = ".war";
 	
 	private List<String> toReload = new ArrayList<>();
-
+	private URL[] jars;
+	
 	/**
 	 * Parameterized constructor
 	 * @param urls
 	 */
-	public JarLoader(URL[] urls) {
+	public JarLoader(URL[] urls, URL[] jarUrls) {
 		super(urls);
+		jars = jarUrls;
+		this.initURLs();
+	}
+	
+	private void initURLs()
+	{
+		for(URL url : jars)
+		{
+			this.addURL(url);
+			JarEntry entry = null;
+			try (InputStream in = new FileInputStream(url.getFile());
+					JarInputStream jar = new JarInputStream(in);) {
+				entry = jar.getNextJarEntry();
+				while(entry != null)
+				{	
+					if (entry.isDirectory()) {
+						String tempURL = url.toString() + "!/" + entry.getName();
+						this.addURL(URI.create(tempURL).toURL());
+					}
+					entry = jar.getNextJarEntry();
+				}
+			} catch (IOException e) {
+				logger.error("Error While initializing JarLoader", e);
+			}
+		}
+		
 	}
 
 	public Map<URI, List<Class<?>>> loadClasses(String name) {
@@ -62,7 +94,10 @@ public class JarLoader extends URLClassLoader {
 			List<Class<?>> listClasses = new ArrayList<>();
 
 				try {
-					traverseJar(jarMapping, url, listClasses, name);
+					if(url.getPath().endsWith(JAR) || url.getPath().endsWith(WAR))
+					{
+						traverseJar(jarMapping, url, listClasses);
+					}
 				} catch (Exception e) {
 					logger.error(e.getMessage(), e);
 				}
@@ -77,17 +112,24 @@ public class JarLoader extends URLClassLoader {
 		Map<URI, List<Class<?>>> jarMapping = new HashMap<>();
 		URL[] urls = this.getURLs();
 		for (URL url : urls) {		
-			
-			
-			
 			List<Class<?>> listClasses = new ArrayList<>();
 				try {
-					traverseJar(jarMapping, url, listClasses, "");
-				} catch (URISyntaxException | IOException e) {
+					if(url.getPath().endsWith(JAR) || url.getPath().endsWith(WAR))
+					{
+						traverseJar(jarMapping, url, listClasses);
+					}
+					else
+						traveseFolder(jarMapping, url, listClasses);
+				} catch (IOException e) {
 					logger.error("Could not traverse jar at " + url.getPath(), e);
 				}
 		}
 		return jarMapping;
+	}
+
+	private void traveseFolder(Map<URI, List<Class<?>>> jarMapping, URL url, List<Class<?>> listClasses) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	/**
@@ -98,7 +140,7 @@ public class JarLoader extends URLClassLoader {
 	 * @throws URISyntaxException 
 	 * @throws IOException 
 	 */
-	private void traverseJar(Map<URI, List<Class<?>>> jarMapping, URL url, List<Class<?>> listClasses, String name2) throws URISyntaxException, IOException {
+	private void traverseJar(Map<URI, List<Class<?>>> jarMapping, URL url, List<Class<?>> listClasses) throws IOException {
 		JarEntry entry = null;
 		InputStream in = new FileInputStream(url.getFile());
 		JarInputStream jar = new JarInputStream(in);
@@ -110,13 +152,15 @@ public class JarLoader extends URLClassLoader {
 			/*
 			 * WE TRANSFORM THE PATH INTO THE FULLY QUALIFIED NAME OF THE CLASS
 			 */
-//			String name = entry.getName().replaceAll("/", ".");
+			String name = entry.getName().replaceAll("/", ".");
+			if(name.startsWith("WEB-INF.classes."))
+				name = name.replaceFirst("WEB-INF.classes.", "");
 //			if(name.startsWith("WEB-INF."))
 //				name = name.replaceFirst("WEB-INF.", "");
 //			if(name.startsWith("classes."))
 //				name = name.replaceFirst("classes.", "");
 //			String name = entry.getName();
-			String name = entry.toString();
+//			String name = entry.toString();
 			/*
 			 * WE NEED TO AVOID TO ANALYZE FRAMEWORK DEPENDENCIES
 			 */
@@ -141,8 +185,6 @@ public class JarLoader extends URLClassLoader {
 //					&& !name.startsWith(ORG_XML)
 				)
 			{
-//				if(logger.isInfoEnabled())
-//					logger.info(name);
 				load(jarMapping, url, listClasses, name);
 			}
 			entry = jar.getNextJarEntry();
@@ -158,7 +200,6 @@ public class JarLoader extends URLClassLoader {
 	 * @param name
 	 */
 	private void loadGroovy(Map<URI, List<Class<?>>> jarMapping, URL url, List<Class<?>> listClasses, String name) {
-		// TODO Auto-generated method stub
 		Class<?> loadClass;
 		
 		try (GroovyClassLoader gcl = new GroovyClassLoader()){
@@ -180,15 +221,10 @@ public class JarLoader extends URLClassLoader {
 	private void load(Map<URI, List<Class<?>>> jarMapping, URL url, List<Class<?>> listClasses, String name) {
 			Class<?> loadClass;
 			try {
-//				URL toAppend = this.getResource(name);
-//				super.addURL(toAppend);
-//				String classToLoad = (new File(URI.create(toAppend.getFile()))).getName();
-//				loadClass = this.loadClass(name.substring(0, name.length()-JAVA_CLASS_SUFFIX.length()));
-				this.addURL(URI.create(name).toURL());
-//				loadClass = this.loadClass(classToLoad.substring(0, classToLoad.length()-JAVA_CLASS_SUFFIX.length()));
-//				listClasses.add(loadClass);
+				loadClass = this.loadClass(name.substring(0, name.length()-JAVA_CLASS_SUFFIX.length()));
+				listClasses.add(loadClass);
 			} 
-			catch (NoClassDefFoundError | IllegalAccessError | VerifyError | MalformedURLException e) {
+			catch (NoClassDefFoundError | IllegalAccessError | VerifyError | ClassNotFoundException e) {
 				toReload.add(name.substring(0, name.length()-JAVA_CLASS_SUFFIX.length()));
 				logger.error("A problem occured while loading class " + name + ". Loading ended with " + e.getCause());
 			}

@@ -1,6 +1,0 @@
-dedal_diagram "spring-richclient-1.1.0.samples"
-
-	repositories (
-
-		repository genRepo
-	)

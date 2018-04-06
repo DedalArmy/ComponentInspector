@@ -43,9 +43,9 @@ import fr.ema.dedal.componentinspector.classloader.JarLoader;
 public class JarInspector {
 
 	static final Logger logger = Logger.getLogger(JarInspector.class);
-//	JarLoader jarLoader = null;
-	JarClassLoader jarLoader = null;
-	JclObjectFactory jclFactory = JclObjectFactory.getInstance();
+	JarLoader jarLoader = null;
+//	JarClassLoader jarLoader = null;
+//	JclObjectFactory jclFactory = JclObjectFactory.getInstance();
 	Map<URI, List<Class<?>>> jarMapping = null;
 	Map<CompRole, Class<?>> roleToClass = null;
 	Map<CompClass, Class<?>> compToClass = null;
@@ -57,15 +57,29 @@ public class JarInspector {
 	DedalFactory factory;
 
 	/**
+	 * @param jarLoader 
 	 * @param string
 	 * @throws IOException 
 	 * @throws ClassNotFoundException 
 	 * @throws FileNotFoundException 
 	 */
-	public JarInspector(String folder) {
+//	public JarInspector(String folder) {
+//		super();
+////		this.jarLoader = new JarClassLoader();
+////		jarLoader.add(folder);
+//		this.jarMapping = this.jarLoader.loadClasses();
+//		this.compToClass = new HashMap<>();
+//		this.roleToClass = new HashMap<>();
+//		this.compIntToType = new HashMap<>();
+//		this.roleIntToType = new HashMap<>();
+//		this.typeHierarchy = new HashMap<>();
+//		this.intToClass = new HashMap<>();
+//		this.candidateInterfaces = new HashMap<>();
+//		factory = DedalFactoryImpl.init();
+//	}
+	public JarInspector(JarLoader jarLoader) {
 		super();
-		this.jarLoader = new JarClassLoader();
-		jarLoader.add(folder);
+		this.jarLoader = jarLoader;
 //		this.jarMapping = this.jarLoader.loadClasses();
 		this.compToClass = new HashMap<>();
 		this.roleToClass = new HashMap<>();
@@ -76,20 +90,31 @@ public class JarInspector {
 		this.candidateInterfaces = new HashMap<>();
 		factory = DedalFactoryImpl.init();
 	}
+	
+	private void init()
+	{
+		this.compToClass = new HashMap<>();
+		this.roleToClass = new HashMap<>();
+		this.compIntToType = new HashMap<>();
+		this.roleIntToType = new HashMap<>();
+		this.typeHierarchy = new HashMap<>();
+		this.intToClass = new HashMap<>();
+		this.candidateInterfaces = new HashMap<>();
+	}
 
-//	/**
-//	 * @return the _JarLoader
-//	 */
-//	public JarLoader getJarLoader() {
-//		return jarLoader;
-//	}
-//
-//	/**
-//	 * @param jarLoader the _JarLoader to set
-//	 */
-//	public void setJarLoader(JarLoader jarLoader) {
-//		this.jarLoader = jarLoader;
-//	}
+	/**
+	 * @return the _JarLoader
+	 */
+	public JarLoader getJarLoader() {
+		return jarLoader;
+	}
+
+	/**
+	 * @param jarLoader the _JarLoader to set
+	 */
+	public void setJarLoader(JarLoader jarLoader) {
+		this.jarLoader = jarLoader;
+	}
 
 	/**
 	 * @return the _JarMapping
@@ -117,10 +142,11 @@ public class JarInspector {
 		dedalDiagram.getRepositories().add(repo);
 		List<EObject> extractedFromSpring = new ArrayList<>();
 
-		List<Class<?>> listOfClasses = new ArrayList<>();
+//		List<Class<?>> listOfClasses = new ArrayList<>();
 //		this.jarMapping.forEach((uriKey, classList) -> listOfClasses.addAll(classList));
 		for(URI uri : xmlSpringFiles)
 		{
+			init();
 			try {
 				extractedFromSpring.addAll(SdslInspector.extractDedalArtifacts(uri.toURL().getFile()));
 				Specification spec = factory.createSpecification();
@@ -138,12 +164,11 @@ public class JarInspector {
 				copyInDiagram(extractedFromSpring, config, asm);
 
 				standardizeNames(config, asm);
-				if(logger.isInfoEnabled())
-					logger.info("URL : " + dedalDiagram.getName());
 
 				if(!config.getConfigComponents().isEmpty())
 				{
-					mapComponentClasses(dedalDiagram, repo, listOfClasses, config);
+					mapComponentClasses(dedalDiagram, repo, config);
+//					mapComponentClasses(dedalDiagram, repo, listOfClasses, config);
 					setConfigConnections(config);
 	
 					instantiateInteractions(asm);
@@ -154,7 +179,7 @@ public class JarInspector {
 					config.getImplements().add(spec);
 				}
 			} catch (Exception | Error e) {
-				logger.error("An error occured while extracting information in file " + uri.toString() + "Error -> " + e.getCause());
+				logger.error("An error occured while extracting information in file " + uri.toString() + "Error -> " + e.getCause(), e);
 			}
 		}	
 		
@@ -172,41 +197,68 @@ public class JarInspector {
 		dedalDiagram.getRepositories().add(repo);
 		List<EObject> extractedFromSpring = SdslInspector.extractDedalArtifacts(sdslPath);
 
-		this.jarMapping.forEach((uriKey, classList) -> 
-		{
-			Specification spec = factory.createSpecification();
-			spec.setName(new File(uriKey).getName().replace('.', '_')+"_spec");
-			Configuration config = factory.createConfiguration();
-			config.setName(new File(uriKey).getName().replace('.', '_')+"_config");
-			dedalDiagram.getArchitectureDescriptions().add(config);
-			Assembly asm = factory.createAssembly();
-			asm.setInstantiates(config);
-			asm.setName(new File(uriKey).getName().replace('.', '_')+"_asm");
-			dedalDiagram.getArchitectureDescriptions().add(asm);
+//		this.jarMapping.forEach((uriKey, classList) -> 
+//		{
+//			Specification spec = factory.createSpecification();
+//			spec.setName(new File(uriKey).getName().replace('.', '_')+"_spec");
+//			Configuration config = factory.createConfiguration();
+//			config.setName(new File(uriKey).getName().replace('.', '_')+"_config");
+//			dedalDiagram.getArchitectureDescriptions().add(config);
+//			Assembly asm = factory.createAssembly();
+//			asm.setInstantiates(config);
+//			asm.setName(new File(uriKey).getName().replace('.', '_')+"_asm");
+//			dedalDiagram.getArchitectureDescriptions().add(asm);
+//
+//			copyInDiagram(extractedFromSpring, config, asm);
+//			
+//			standardizeNames(config, asm);
+//
+//			if(logger.isInfoEnabled())
+//				logger.info("URL : " + uriKey);
+//
+//			mapComponentClasses(dedalDiagram, repo, config);
+////			mapComponentClasses(dedalDiagram, repo, classList, config);
+//			setConfigConnections(config);
+//			
+//			instantiateInteractions(asm);
+//			setAssmConnections(asm, config.getConfigConnections());
+//
+//			setSpecificationFromConfiguration(repo, spec, config);
+//			dedalDiagram.getArchitectureDescriptions().add(spec);
+//			config.getImplements().add(spec);
+//			
+//		});		
+		
 
-			copyInDiagram(extractedFromSpring, config, asm);
-			
-			standardizeNames(config, asm);
+		Specification spec = factory.createSpecification();
+		spec.setName(sdslPath.replace('.', '_')+"_spec");
+		Configuration config = factory.createConfiguration();
+		config.setName(sdslPath.replace('.', '_')+"_config");
+		dedalDiagram.getArchitectureDescriptions().add(config);
+		Assembly asm = factory.createAssembly();
+		asm.setInstantiates(config);
+		asm.setName(sdslPath.replace('.', '_')+"_asm");
+		dedalDiagram.getArchitectureDescriptions().add(asm);
 
-			if(logger.isInfoEnabled())
-				logger.info("URL : " + uriKey);
+		copyInDiagram(extractedFromSpring, config, asm);
+		
+		standardizeNames(config, asm);
 
-			try {
-				mapComponentClasses(dedalDiagram, repo, classList, config);
-			} catch (ClassNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			setConfigConnections(config);
-			
-			instantiateInteractions(asm);
-			setAssmConnections(asm, config.getConfigConnections());
+		if(logger.isInfoEnabled())
+			logger.info("URL : " + sdslPath);
 
-			setSpecificationFromConfiguration(repo, spec, config);
-			dedalDiagram.getArchitectureDescriptions().add(spec);
-			config.getImplements().add(spec);
-			
-		});		
+		List<Class<?>> classList = new ArrayList<>();
+		mapComponentClasses(dedalDiagram, repo, config);
+//		mapComponentClasses(dedalDiagram, repo, classList , config);
+		setConfigConnections(config);
+		
+		instantiateInteractions(asm);
+		setAssmConnections(asm, config.getConfigConnections());
+
+		setSpecificationFromConfiguration(repo, spec, config);
+		dedalDiagram.getArchitectureDescriptions().add(spec);
+		config.getImplements().add(spec);
+
 	}
 
 	/**
@@ -227,7 +279,7 @@ public class JarInspector {
 				key.getRealizes().addAll(extractedRoles);
 			} catch (Exception e)
 			{
-				logger.error("A problem occured while setting specification with error " + e.getCause());
+				logger.error("A problem occured while setting specification with error " + e.getCause(), e);
 			}
 		});
 		setSpecConnections(spec, config);
@@ -649,35 +701,35 @@ public class JarInspector {
 	 * @param classList
 	 * @param config
 	 */
-	private void mapComponentClasses(DedalDiagram dedalDiagram, Repository repo, List<Class<?>> classList, Configuration config) throws ClassNotFoundException {
+	private void mapComponentClasses(DedalDiagram dedalDiagram, Repository repo, List<Class<?>> classList, Configuration config){
 		for(CompClass tempCompClass : config.getConfigComponents())
 		{
 			if(logger.isInfoEnabled())
 			{
 				logger.info("compName : " + tempCompClass.getName());
 			}
-//			for(Class<?> c : classList)
-//			{
-//				String compClassName = null;
-//				String className = null;
-//				try {
-//					compClassName = tempCompClass.getName().replace("\"", "");
-//					className = c.getSimpleName();
-//				}
-//				catch (IllegalAccessError | NoClassDefFoundError | NullPointerException e) {
-//					logger.error("An error occured while taking the name of the class typed as " + c.getTypeName() + ". Ended with " + e.getCause());
-//				}
-//				if(!(className==null || compClassName == null || c.isInterface()||c.isEnum()||Modifier.isAbstract(c.getModifiers())) 
-//						&&  className.equals(compClassName)
-//						)
-//				{
-//					if(logger.isInfoEnabled())
-//					{
-//						logger.info("className : " + className);
-//					}
-			Class<?> c = null;
-			Object o = jclFactory.create(jarLoader, tempCompClass.getName());
-			c = o.getClass();
+			for(Class<?> c : classList)
+			{
+				String compClassName = null;
+				String className = null;
+				try {
+					compClassName = tempCompClass.getName().replace("\"", "");
+					className = c.getCanonicalName();
+				}
+				catch (IllegalAccessError | NoClassDefFoundError | NullPointerException e) {
+					className = c.getTypeName();
+				}
+				if(!(className==null || compClassName == null || c.isInterface()||c.isEnum()||Modifier.isAbstract(c.getModifiers())) 
+						&&  className.equals(compClassName)
+						)
+				{
+					if(logger.isInfoEnabled())
+					{
+						logger.info("className : " + className);
+					}
+//			Class<?> c = null;
+//			Object o = jclFactory.create(jarLoader, tempCompClass.getName());
+//			c = o.getClass();
 //			for(Class<?> cl : classList)
 //			{
 //				
@@ -685,17 +737,72 @@ public class JarInspector {
 //				if(simpleName.equals(tempCompClass.getName()))
 //					c = cl;
 //			}
-			if(c!=null)
-			{
+//			if(c!=null)
+//			{
 					ClassInspector ci = new ClassInspector(c, dedalDiagram, config, repo);
 					ci.mapComponentClass(tempCompClass);
 					this.compToClass.put(tempCompClass, c);
 					this.compIntToType.put(tempCompClass, ci.getInterfaceToClassMap());
 					this.intToClass.putAll(ci.getInterfaceToClassMap());
 					this.candidateInterfaces.putAll(ci.getCandidateInterfaces());
-//				}			
+				}			
 			}
 		}
+	}
+	
+	/**
+	 * @param dedalDiagram
+	 * @param repo
+	 * @param classList
+	 * @param config
+	 */
+	private void mapComponentClasses(DedalDiagram dedalDiagram, Repository repo, Configuration config){
+		for(CompClass tempCompClass : config.getConfigComponents())
+		{
+			if(logger.isInfoEnabled())
+			{
+				logger.info("compName : " + tempCompClass.getName());
+			}
+			Class<?> c = null;
+			try {
+				c = loadClass(tempCompClass.getName());
+			} catch (NoClassDefFoundError e) {
+				logger.error("No class has been found for component class" + tempCompClass.getName());
+			}
+			if(c == null)
+				c = Object.class;
+//			if(c!=null)
+//			{
+			ClassInspector ci = new ClassInspector(c, dedalDiagram, config, repo);
+			ci.mapComponentClass(tempCompClass);
+			this.compToClass.put(tempCompClass, c);
+			this.compIntToType.put(tempCompClass, ci.getInterfaceToClassMap());
+			this.intToClass.putAll(ci.getInterfaceToClassMap());
+			this.candidateInterfaces.putAll(ci.getCandidateInterfaces());
+//			}
+//			else {
+//				c = Object.class;
+//			}
+		}
+	}
+
+	/**
+	 * @param tempCompClass
+	 * @return
+	 * @throws ClassNotFoundException
+	 */
+	private Class<?> loadClass(String compClass) throws NoClassDefFoundError {
+		try {
+			return jarLoader.loadClass(compClass);
+		} catch (ClassNotFoundException e) {
+			if(compClass.lastIndexOf('.')>-1)
+			{
+				String newName = compClass.substring(0, compClass.lastIndexOf('.')) 
+						+ "$" + compClass.substring(compClass.lastIndexOf('.')+1);
+				return loadClass(newName);
+			}
+		}
+		return null;
 	}
 
 	/**
