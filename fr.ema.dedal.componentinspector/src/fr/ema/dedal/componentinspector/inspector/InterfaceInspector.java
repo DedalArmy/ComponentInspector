@@ -19,6 +19,7 @@ import dedal.Parameter;
 import dedal.Repository;
 import dedal.Signature;
 import dedal.impl.DedalFactoryImpl;
+import fr.ema.dedal.componentinspector.metrics.Metrics;
 
 /**
  * @author Alexandre Le Borgne
@@ -167,18 +168,21 @@ public class InterfaceInspector {
 	 */
 	public List<Interface> calculateInterfaces(Class<?> objectToInspect)
 	{
+		Metrics.addNbClasses();
 		List<Interface> result = new ArrayList<>();
 		if(objectToInspect.getInterfaces().length > 0)
 		{
 			Class<?>[] interfaces = objectToInspect.getInterfaces();
 			for (Class<?> i : interfaces) {
 				Interface tempInt = this.getDedalInterface(i);
+				Metrics.addNbInterfaces();
 				result.add(tempInt);
 			}
 		}
 		if(objectToInspect.isInterface())
 		{
 			result.add(this.getDedalInterface(objectToInspect));
+			Metrics.addNbInterfaces();
 			return result;
 		}
 		Interface current = mapAsInterface(objectToInspect);
@@ -261,6 +265,7 @@ public class InterfaceInspector {
 	 */
 	private Interface getDedalInterface(Class<?> inter)
 	{
+		Metrics.addNbClasses();
 		Interface result = new DedalFactoryImpl().createInterface();
 		if(inter.getMethods().length > 0)
 		{

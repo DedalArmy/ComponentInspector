@@ -18,6 +18,9 @@ public class Metrics {
 	private static int nbCompClassMultiRoles= 0;
 	private static int nbSplitInterfaces = 0;
 	private static int nbAbstractedInterfaceType= 0;
+	private static int nbFailedClass= 0;
+	
+	private Metrics() {}
 	
 	public static int getNbClasses() {
 		return nbClasses;
@@ -114,6 +117,12 @@ public class Metrics {
 	}
 	public static void addNbAbstractType() {
 		Metrics.nbAbstractedInterfaceType++;
+	}
+	public static int getNbFailedClass() {
+		return nbFailedClass;
+	}
+	public static void addNbFailedClass() {
+		Metrics.nbFailedClass++;
 	}
 	
 }

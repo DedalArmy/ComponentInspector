@@ -20,6 +20,7 @@ import dedal.DedalDiagram;
 import fr.ema.dedal.componentinspector.classloader.FolderLoader;
 import fr.ema.dedal.componentinspector.classloader.JarLoader;
 import fr.ema.dedal.componentinspector.inspector.JarInspector;
+import fr.ema.dedal.componentinspector.metrics.Metrics;
 import dedal.impl.DedalFactoryImpl;
 
 public class Explorer {

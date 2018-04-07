@@ -1,0 +1,6 @@
+dedal_diagram "airsonic.repo"
+
+	repositories (
+
+		repository genRepo
+	)
