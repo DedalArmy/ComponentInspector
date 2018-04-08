@@ -1,0 +1,6 @@
+dedal_diagram "dangdangdotcom.config-toolkit-demo"
+
+	repositories (
+
+		repository genRepo
+	)

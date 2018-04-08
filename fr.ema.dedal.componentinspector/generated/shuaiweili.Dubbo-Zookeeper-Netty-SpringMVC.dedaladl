@@ -1,0 +1,6 @@
+dedal_diagram "shuaiweili.Dubbo-Zookeeper-Netty-SpringMVC"
+
+	repositories (
+
+		repository genRepo
+	)

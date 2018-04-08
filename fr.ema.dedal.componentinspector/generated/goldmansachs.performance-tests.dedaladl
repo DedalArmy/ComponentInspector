@@ -1,0 +1,6 @@
+dedal_diagram "goldmansachs.performance-tests"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,6 @@
+dedal_diagram "eclipse.jmh-scala-tests"
+
+	repositories (
+
+		repository genRepo
+	)

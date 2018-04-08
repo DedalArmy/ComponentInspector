@@ -1,0 +1,6 @@
+dedal_diagram "Elricyo.target"
+
+	repositories (
+
+		repository genRepo
+	)

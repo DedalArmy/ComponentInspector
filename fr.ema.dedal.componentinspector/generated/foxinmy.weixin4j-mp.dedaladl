@@ -1,0 +1,6 @@
+dedal_diagram "foxinmy.weixin4j-mp"
+
+	repositories (
+
+		repository genRepo
+	)

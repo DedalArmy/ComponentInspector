@@ -1,0 +1,6 @@
+dedal_diagram "dearbinge.dearbinge-client-test"
+
+	repositories (
+
+		repository genRepo
+	)

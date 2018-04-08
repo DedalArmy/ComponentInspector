@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="denimgroup.threadfix-ham">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="denimgroup.threadfix-ham.src.test.resources.code.spring.test-security.xml_config" implements="//@architectureDescriptions[name='denimgroup.threadfix-ham.src.test.resources.code.spring.test-security.xml_spec']">
+    <configComponents name="com.denimgroup.threadfix.service.CustomUserDetailServiceImpl" id="_ArJ1UDqYEeiP29_qDiwNWQ" realizes="_AsbnyDqYEeiP29_qDiwNWQ" implements="_Ar-7wDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="com.denimgroup.threadfix.service.ThreadFixPasswordEncoder" id="_ArJ1UTqYEeiP29_qDiwNWQ" realizes="_Asbn1DqYEeiP29_qDiwNWQ" implements="_AsLwEDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.springframework.security.authentication.dao.ReflectionSaltSource" id="_ArKcYDqYEeiP29_qDiwNWQ" realizes="_AsbnvDqYEeiP29_qDiwNWQ" implements="_AsbnsDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="denimgroup.threadfix-ham.src.test.resources.code.spring.test-security.xml_asm" instantiates="//@architectureDescriptions[name='denimgroup.threadfix-ham.src.test.resources.code.spring.test-security.xml_config']">
+    <assmComponents name="customUserDetailService" id="_ArKcYTqYEeiP29_qDiwNWQ" instantiates="_ArJ1UDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_customUserDetailService" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="ThreadFixPasswordEncoder" id="_ArKcYjqYEeiP29_qDiwNWQ" instantiates="_ArJ1UTqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_ThreadFixPasswordEncoder" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="saltSource" id="_ArKcYzqYEeiP29_qDiwNWQ" instantiates="_ArKcYDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_saltSource" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="denimgroup.threadfix-ham.src.test.resources.code.spring.test-security.xml_spec">
+    <specComponents name="Object_role" id="_AsbnvDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_AsbnyDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_Asbn1DqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="denimgroup.threadfix-ham.target.test-classes.code.spring.test-security.xml_config" implements="//@architectureDescriptions[name='denimgroup.threadfix-ham.target.test-classes.code.spring.test-security.xml_spec']">
+    <configComponents name="com.denimgroup.threadfix.service.CustomUserDetailServiceImpl" id="_Asw-4DqYEeiP29_qDiwNWQ" realizes="_AtewnDqYEeiP29_qDiwNWQ" implements="_AtBdkDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="com.denimgroup.threadfix.service.ThreadFixPasswordEncoder" id="_Asw-4TqYEeiP29_qDiwNWQ" realizes="_AtewtDqYEeiP29_qDiwNWQ" implements="_AtO48DqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.springframework.security.authentication.dao.ReflectionSaltSource" id="_Asw-4jqYEeiP29_qDiwNWQ" realizes="_AtewqDqYEeiP29_qDiwNWQ" implements="_AtewkDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="denimgroup.threadfix-ham.target.test-classes.code.spring.test-security.xml_asm" instantiates="//@architectureDescriptions[name='denimgroup.threadfix-ham.target.test-classes.code.spring.test-security.xml_config']">
+    <assmComponents name="customUserDetailService" id="_Asw-4zqYEeiP29_qDiwNWQ" instantiates="_Asw-4DqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_customUserDetailService" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="ThreadFixPasswordEncoder" id="_Asw-5DqYEeiP29_qDiwNWQ" instantiates="_Asw-4TqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_ThreadFixPasswordEncoder" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="saltSource" id="_Asw-5TqYEeiP29_qDiwNWQ" instantiates="_Asw-4jqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_saltSource" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="denimgroup.threadfix-ham.target.test-classes.code.spring.test-security.xml_spec">
+    <specComponents name="Object_role" id="_AtewnDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_AtewqDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_AtewtDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_Ar-7wDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_AsLwEDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_AsbnsDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_AtBdkDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_AtO48DqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_AtewkDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_Ar-7wTqYEeiP29_qDiwNWQ"/>
+      <signatures name="wait" type="void" id="_Ar-7wjqYEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_Ar-7wzqYEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Ar-7xDqYEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_Ar-7xTqYEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_Ar-7xjqYEeiP29_qDiwNWQ"/>
+      <signatures name="getClass" type="java.lang.Class" id="_Ar-7xzqYEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_Ar-7yDqYEeiP29_qDiwNWQ"/>
+      <signatures name="notify" type="void" id="_Ar-7yTqYEeiP29_qDiwNWQ"/>
+      <signatures name="notifyAll" type="void" id="_Ar-7yjqYEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_Ar-7yzqYEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

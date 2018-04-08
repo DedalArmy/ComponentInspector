@@ -1,0 +1,6 @@
+dedal_diagram "eclipse.unit-tests"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,6 @@
+dedal_diagram "crashub.distrib"
+
+	repositories (
+
+		repository genRepo
+	)

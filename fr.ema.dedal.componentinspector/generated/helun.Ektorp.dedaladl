@@ -1,0 +1,6 @@
+dedal_diagram "helun.Ektorp"
+
+	repositories (
+
+		repository genRepo
+	)

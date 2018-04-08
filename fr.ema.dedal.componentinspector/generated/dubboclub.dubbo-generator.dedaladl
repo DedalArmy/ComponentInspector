@@ -1,0 +1,6 @@
+dedal_diagram "dubboclub.dubbo-generator"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,6 @@
+dedal_diagram "wosyingjun.beauty_ssm_cluster"
+
+	repositories (
+
+		repository genRepo
+	)

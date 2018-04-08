@@ -1,0 +1,1916 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="wro4j.wro4j">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="wro4j.wro4j.wro4j.wro4j-extensions.src.test.resources.configurableWroFilter-context.xml_config" implements="//@architectureDescriptions[name='wro4j.wro4j.wro4j.wro4j-extensions.src.test.resources.configurableWroFilter-context.xml_spec']">
+    <configComponents name="ro.isdc.wro.http.ConfigurableWroFilter" id="_baxGADqtEeiP29_qDiwNWQ" realizes="_benE8jqtEeiP29_qDiwNWQ" implements="_bclD4DqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IConfigurableWroFilter" type="IConfigurableWroFilter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProperties_ConfigurableWroFilter" direction="REQUIRED" type="IProperties_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_ConfigurableWroFilter" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_ConfigurableWroFilter" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationMBean_ConfigurableWroFilter" direction="REQUIRED" type="WroConfigurationMBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfiguration_ConfigurableWroFilter" direction="REQUIRED" type="IWroConfiguration_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationChangeListener_ConfigurableWroFilter" direction="REQUIRED" type="WroConfigurationChangeListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroManagerFactory_ConfigurableWroFilter" direction="REQUIRED" type="WroManagerFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestHandlerFactory_ConfigurableWroFilter" direction="REQUIRED" type="RequestHandlerFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterable_ConfigurableWroFilter" direction="REQUIRED" type="Iterable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_ConfigurableWroFilter" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResponseHeadersConfigurer_ConfigurableWroFilter" direction="REQUIRED" type="IResponseHeadersConfigurer_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInjector_ConfigurableWroFilter" direction="REQUIRED" type="IInjector_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnection_ConfigurableWroFilter" direction="REQUIRED" type="MBeanServerConnection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServer_ConfigurableWroFilter" direction="REQUIRED" type="MBeanServer"/>
+      <attributes name="debug" type="boolean"/>
+      <attributes name="gzipEnabled" type="boolean"/>
+      <attributes name="jmxEnabled" type="boolean"/>
+      <attributes name="mbeanName" type="java.lang.String"/>
+      <attributes name="cacheUpdatePeriod" type="long"/>
+      <attributes name="modelUpdatePeriod" type="long"/>
+      <attributes name="disableCache" type="boolean"/>
+      <attributes name="encoding" type="java.lang.String"/>
+      <attributes name="properties" type="java.util.Properties"/>
+      <attributes name="LOG" type="org.slf4j.Logger"/>
+      <attributes name="MBEAN_PREFIX" type="java.lang.String"/>
+      <attributes name="ATTRIBUTE_PASSED_THROUGH_FILTER" type="java.lang.String"/>
+      <attributes name="filterConfig" type="javax.servlet.FilterConfig"/>
+      <attributes name="wroConfigurationFactory" type="ro.isdc.wro.util.ObjectFactory"/>
+      <attributes name="wroConfiguration" type="ro.isdc.wro.config.jmx.WroConfiguration"/>
+      <attributes name="wroManagerFactory" type="ro.isdc.wro.manager.factory.WroManagerFactory"/>
+      <attributes name="requestHandlerFactory" type="ro.isdc.wro.http.handler.factory.RequestHandlerFactory"/>
+      <attributes name="requestHandlers" type="java.util.Collection"/>
+      <attributes name="headersConfigurer" type="ro.isdc.wro.http.support.ResponseHeadersConfigurer"/>
+      <attributes name="enable" type="boolean"/>
+      <attributes name="injector" type="ro.isdc.wro.model.group.processor.Injector"/>
+      <attributes name="mbeanServer" type="javax.management.MBeanServer"/>
+    </configComponents>
+    <configConnections clientIntElem="IProperties_ConfigurableWroFilter" refID="_baxGATqtEeiP29_qDiwNWQ" property="&quot;properties&quot;" clientClassElem="_baxGADqtEeiP29_qDiwNWQ" serverClassElem="_baxGAjqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="wro4j.wro4j.wro4j.wro4j-extensions.src.test.resources.configurableWroFilter-context.xml_asm" instantiates="//@architectureDescriptions[name='wro4j.wro4j.wro4j.wro4j-extensions.src.test.resources.configurableWroFilter-context.xml_config']">
+    <assmComponents name="filter" id="_baxGAzqtEeiP29_qDiwNWQ" instantiates="_baxGADqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IConfigurableWroFilter_filter" type="IConfigurableWroFilter_Type" instantiates="IConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter_filter" direction="REQUIRED" instantiates="null_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter_filter" direction="REQUIRED" type="Comparable" instantiates="IComparable_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter_filter" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter_filter" direction="REQUIRED" type="IString_Type" instantiates="IString_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter_filter" direction="REQUIRED" instantiates="null_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter_filter" direction="REQUIRED" type="Comparable" instantiates="IComparable_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter_filter" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter_filter" direction="REQUIRED" type="IString_Type" instantiates="IString_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProperties_ConfigurableWroFilter_filter" direction="REQUIRED" type="IProperties_Type" instantiates="IProperties_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_ConfigurableWroFilter_filter" direction="REQUIRED" type="Logger" instantiates="ILogger_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter_filter" direction="REQUIRED" instantiates="null_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter_filter" direction="REQUIRED" type="Comparable" instantiates="IComparable_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter_filter" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter_filter" direction="REQUIRED" type="IString_Type" instantiates="IString_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter_filter" direction="REQUIRED" instantiates="null_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter_filter" direction="REQUIRED" type="Comparable" instantiates="IComparable_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter_filter" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter_filter" direction="REQUIRED" type="IString_Type" instantiates="IString_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_ConfigurableWroFilter_filter" direction="REQUIRED" type="FilterConfig" instantiates="IFilterConfig_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter_filter" direction="REQUIRED" type="ObjectFactory" instantiates="IObjectFactory_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationMBean_ConfigurableWroFilter_filter" direction="REQUIRED" type="WroConfigurationMBean" instantiates="IWroConfigurationMBean_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfiguration_ConfigurableWroFilter_filter" direction="REQUIRED" type="IWroConfiguration_Type" instantiates="IWroConfiguration_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter_filter" direction="REQUIRED" type="ObjectFactory" instantiates="IObjectFactory_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationChangeListener_ConfigurableWroFilter_filter" direction="REQUIRED" type="WroConfigurationChangeListener" instantiates="IWroConfigurationChangeListener_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroManagerFactory_ConfigurableWroFilter_filter" direction="REQUIRED" type="WroManagerFactory" instantiates="IWroManagerFactory_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter_filter" direction="REQUIRED" type="ObjectFactory" instantiates="IObjectFactory_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestHandlerFactory_ConfigurableWroFilter_filter" direction="REQUIRED" type="RequestHandlerFactory" instantiates="IRequestHandlerFactory_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterable_ConfigurableWroFilter_filter" direction="REQUIRED" type="Iterable" instantiates="IIterable_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_ConfigurableWroFilter_filter" direction="REQUIRED" type="Collection" instantiates="ICollection_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResponseHeadersConfigurer_ConfigurableWroFilter_filter" direction="REQUIRED" type="IResponseHeadersConfigurer_Type" instantiates="IResponseHeadersConfigurer_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInjector_ConfigurableWroFilter_filter" direction="REQUIRED" type="IInjector_Type" instantiates="IInjector_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnection_ConfigurableWroFilter_filter" direction="REQUIRED" type="MBeanServerConnection" instantiates="IMBeanServerConnection_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServer_ConfigurableWroFilter_filter" direction="REQUIRED" type="MBeanServer" instantiates="IMBeanServer_ConfigurableWroFilter"/>
+    </assmComponents>
+    <assemblyConnections clientIntElem="IProperties_ConfigurableWroFilter_filter" refID="_baxGBDqtEeiP29_qDiwNWQ" property="filter.properties" clientInstElem="_baxGAzqtEeiP29_qDiwNWQ" serverInstElem="_baxGBTqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="wro4j.wro4j.wro4j.wro4j-extensions.src.test.resources.configurableWroFilter-context.xml_spec">
+    <specComponents name="ConfigurableWroFilter_role" id="_benE8jqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IConfigurableWroFilterConfigurableWroFilter_role" type="IConfigurableWroFilter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullConfigurableWroFilter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableConfigurableWroFilter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceConfigurableWroFilter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringConfigurableWroFilter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullConfigurableWroFilter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableConfigurableWroFilter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceConfigurableWroFilter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringConfigurableWroFilter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertiesConfigurableWroFilter_role" direction="REQUIRED" type="IProperties_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerConfigurableWroFilter_role" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullConfigurableWroFilter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableConfigurableWroFilter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceConfigurableWroFilter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringConfigurableWroFilter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullConfigurableWroFilter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableConfigurableWroFilter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceConfigurableWroFilter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringConfigurableWroFilter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfigConfigurableWroFilter_role" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactoryConfigurableWroFilter_role" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationMBeanConfigurableWroFilter_role" direction="REQUIRED" type="WroConfigurationMBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationConfigurableWroFilter_role" direction="REQUIRED" type="IWroConfiguration_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactoryConfigurableWroFilter_role" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationChangeListenerConfigurableWroFilter_role" direction="REQUIRED" type="WroConfigurationChangeListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroManagerFactoryConfigurableWroFilter_role" direction="REQUIRED" type="WroManagerFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactoryConfigurableWroFilter_role" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestHandlerFactoryConfigurableWroFilter_role" direction="REQUIRED" type="RequestHandlerFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterableConfigurableWroFilter_role" direction="REQUIRED" type="Iterable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionConfigurableWroFilter_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResponseHeadersConfigurerConfigurableWroFilter_role" direction="REQUIRED" type="IResponseHeadersConfigurer_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInjectorConfigurableWroFilter_role" direction="REQUIRED" type="IInjector_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnectionConfigurableWroFilter_role" direction="REQUIRED" type="MBeanServerConnection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConfigurableWroFilter_role" direction="REQUIRED" type="MBeanServer"/>
+    </specComponents>
+    <specConnections clientIntElem="IPropertiesConfigurableWroFilter_role" refID="_beo66jqtEeiP29_qDiwNWQ" clientCompElem="_benE8jqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="wro4j.wro4j.wro4j.wro4j-extensions.target.test-classes.configurableWroFilter-context.xml_config" implements="//@architectureDescriptions[name='wro4j.wro4j.wro4j.wro4j-extensions.target.test-classes.configurableWroFilter-context.xml_spec']">
+    <configComponents name="ro.isdc.wro.http.ConfigurableWroFilter" id="_be9pgDqtEeiP29_qDiwNWQ" realizes="_be-7WjqtEeiP29_qDiwNWQ" implements="_be9phjqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IConfigurableWroFilter" type="IConfigurableWroFilter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProperties_ConfigurableWroFilter" direction="REQUIRED" type="IProperties_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_ConfigurableWroFilter" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_ConfigurableWroFilter" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationMBean_ConfigurableWroFilter" direction="REQUIRED" type="WroConfigurationMBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfiguration_ConfigurableWroFilter" direction="REQUIRED" type="IWroConfiguration_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationChangeListener_ConfigurableWroFilter" direction="REQUIRED" type="WroConfigurationChangeListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroManagerFactory_ConfigurableWroFilter" direction="REQUIRED" type="WroManagerFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestHandlerFactory_ConfigurableWroFilter" direction="REQUIRED" type="RequestHandlerFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterable_ConfigurableWroFilter" direction="REQUIRED" type="Iterable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_ConfigurableWroFilter" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResponseHeadersConfigurer_ConfigurableWroFilter" direction="REQUIRED" type="IResponseHeadersConfigurer_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInjector_ConfigurableWroFilter" direction="REQUIRED" type="IInjector_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnection_ConfigurableWroFilter" direction="REQUIRED" type="MBeanServerConnection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServer_ConfigurableWroFilter" direction="REQUIRED" type="MBeanServer"/>
+      <attributes name="debug" type="boolean"/>
+      <attributes name="gzipEnabled" type="boolean"/>
+      <attributes name="jmxEnabled" type="boolean"/>
+      <attributes name="mbeanName" type="java.lang.String"/>
+      <attributes name="cacheUpdatePeriod" type="long"/>
+      <attributes name="modelUpdatePeriod" type="long"/>
+      <attributes name="disableCache" type="boolean"/>
+      <attributes name="encoding" type="java.lang.String"/>
+      <attributes name="properties" type="java.util.Properties"/>
+      <attributes name="LOG" type="org.slf4j.Logger"/>
+      <attributes name="MBEAN_PREFIX" type="java.lang.String"/>
+      <attributes name="ATTRIBUTE_PASSED_THROUGH_FILTER" type="java.lang.String"/>
+      <attributes name="filterConfig" type="javax.servlet.FilterConfig"/>
+      <attributes name="wroConfigurationFactory" type="ro.isdc.wro.util.ObjectFactory"/>
+      <attributes name="wroConfiguration" type="ro.isdc.wro.config.jmx.WroConfiguration"/>
+      <attributes name="wroManagerFactory" type="ro.isdc.wro.manager.factory.WroManagerFactory"/>
+      <attributes name="requestHandlerFactory" type="ro.isdc.wro.http.handler.factory.RequestHandlerFactory"/>
+      <attributes name="requestHandlers" type="java.util.Collection"/>
+      <attributes name="headersConfigurer" type="ro.isdc.wro.http.support.ResponseHeadersConfigurer"/>
+      <attributes name="enable" type="boolean"/>
+      <attributes name="injector" type="ro.isdc.wro.model.group.processor.Injector"/>
+      <attributes name="mbeanServer" type="javax.management.MBeanServer"/>
+    </configComponents>
+    <configConnections clientIntElem="IProperties_ConfigurableWroFilter" refID="_be9pgTqtEeiP29_qDiwNWQ" property="&quot;properties&quot;" clientClassElem="_be9pgDqtEeiP29_qDiwNWQ" serverClassElem="_be9pgjqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="wro4j.wro4j.wro4j.wro4j-extensions.target.test-classes.configurableWroFilter-context.xml_asm" instantiates="//@architectureDescriptions[name='wro4j.wro4j.wro4j.wro4j-extensions.target.test-classes.configurableWroFilter-context.xml_config']">
+    <assmComponents name="filter" id="_be9pgzqtEeiP29_qDiwNWQ" instantiates="_be9pgDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IConfigurableWroFilter_filter" type="IConfigurableWroFilter_Type" instantiates="IConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter_filter" direction="REQUIRED" instantiates="null_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter_filter" direction="REQUIRED" type="Comparable" instantiates="IComparable_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter_filter" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter_filter" direction="REQUIRED" type="IString_Type" instantiates="IString_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter_filter" direction="REQUIRED" instantiates="null_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter_filter" direction="REQUIRED" type="Comparable" instantiates="IComparable_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter_filter" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter_filter" direction="REQUIRED" type="IString_Type" instantiates="IString_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProperties_ConfigurableWroFilter_filter" direction="REQUIRED" type="IProperties_Type" instantiates="IProperties_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_ConfigurableWroFilter_filter" direction="REQUIRED" type="Logger" instantiates="ILogger_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter_filter" direction="REQUIRED" instantiates="null_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter_filter" direction="REQUIRED" type="Comparable" instantiates="IComparable_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter_filter" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter_filter" direction="REQUIRED" type="IString_Type" instantiates="IString_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter_filter" direction="REQUIRED" instantiates="null_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter_filter" direction="REQUIRED" type="Comparable" instantiates="IComparable_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter_filter" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter_filter" direction="REQUIRED" type="IString_Type" instantiates="IString_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_ConfigurableWroFilter_filter" direction="REQUIRED" type="FilterConfig" instantiates="IFilterConfig_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter_filter" direction="REQUIRED" type="ObjectFactory" instantiates="IObjectFactory_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationMBean_ConfigurableWroFilter_filter" direction="REQUIRED" type="WroConfigurationMBean" instantiates="IWroConfigurationMBean_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfiguration_ConfigurableWroFilter_filter" direction="REQUIRED" type="IWroConfiguration_Type" instantiates="IWroConfiguration_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter_filter" direction="REQUIRED" type="ObjectFactory" instantiates="IObjectFactory_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationChangeListener_ConfigurableWroFilter_filter" direction="REQUIRED" type="WroConfigurationChangeListener" instantiates="IWroConfigurationChangeListener_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroManagerFactory_ConfigurableWroFilter_filter" direction="REQUIRED" type="WroManagerFactory" instantiates="IWroManagerFactory_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter_filter" direction="REQUIRED" type="ObjectFactory" instantiates="IObjectFactory_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestHandlerFactory_ConfigurableWroFilter_filter" direction="REQUIRED" type="RequestHandlerFactory" instantiates="IRequestHandlerFactory_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterable_ConfigurableWroFilter_filter" direction="REQUIRED" type="Iterable" instantiates="IIterable_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_ConfigurableWroFilter_filter" direction="REQUIRED" type="Collection" instantiates="ICollection_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResponseHeadersConfigurer_ConfigurableWroFilter_filter" direction="REQUIRED" type="IResponseHeadersConfigurer_Type" instantiates="IResponseHeadersConfigurer_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInjector_ConfigurableWroFilter_filter" direction="REQUIRED" type="IInjector_Type" instantiates="IInjector_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnection_ConfigurableWroFilter_filter" direction="REQUIRED" type="MBeanServerConnection" instantiates="IMBeanServerConnection_ConfigurableWroFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServer_ConfigurableWroFilter_filter" direction="REQUIRED" type="MBeanServer" instantiates="IMBeanServer_ConfigurableWroFilter"/>
+    </assmComponents>
+    <assemblyConnections clientIntElem="IProperties_ConfigurableWroFilter_filter" refID="_be9phDqtEeiP29_qDiwNWQ" property="filter.properties" clientInstElem="_be9pgzqtEeiP29_qDiwNWQ" serverInstElem="_be9phTqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="wro4j.wro4j.wro4j.wro4j-extensions.target.test-classes.configurableWroFilter-context.xml_spec">
+    <specComponents name="ConfigurableWroFilter_role" id="_be-7WjqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IConfigurableWroFilterConfigurableWroFilter_role" type="IConfigurableWroFilter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullConfigurableWroFilter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableConfigurableWroFilter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceConfigurableWroFilter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringConfigurableWroFilter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullConfigurableWroFilter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableConfigurableWroFilter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceConfigurableWroFilter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringConfigurableWroFilter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertiesConfigurableWroFilter_role" direction="REQUIRED" type="IProperties_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerConfigurableWroFilter_role" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullConfigurableWroFilter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableConfigurableWroFilter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceConfigurableWroFilter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringConfigurableWroFilter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullConfigurableWroFilter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableConfigurableWroFilter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceConfigurableWroFilter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringConfigurableWroFilter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfigConfigurableWroFilter_role" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactoryConfigurableWroFilter_role" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationMBeanConfigurableWroFilter_role" direction="REQUIRED" type="WroConfigurationMBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationConfigurableWroFilter_role" direction="REQUIRED" type="IWroConfiguration_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactoryConfigurableWroFilter_role" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationChangeListenerConfigurableWroFilter_role" direction="REQUIRED" type="WroConfigurationChangeListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroManagerFactoryConfigurableWroFilter_role" direction="REQUIRED" type="WroManagerFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactoryConfigurableWroFilter_role" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestHandlerFactoryConfigurableWroFilter_role" direction="REQUIRED" type="RequestHandlerFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterableConfigurableWroFilter_role" direction="REQUIRED" type="Iterable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionConfigurableWroFilter_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResponseHeadersConfigurerConfigurableWroFilter_role" direction="REQUIRED" type="IResponseHeadersConfigurer_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInjectorConfigurableWroFilter_role" direction="REQUIRED" type="IInjector_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnectionConfigurableWroFilter_role" direction="REQUIRED" type="MBeanServerConnection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConfigurableWroFilter_role" direction="REQUIRED" type="MBeanServer"/>
+    </specComponents>
+    <specConnections clientIntElem="IPropertiesConfigurableWroFilter_role" refID="_bfBVezqtEeiP29_qDiwNWQ" clientCompElem="_be-7WjqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="ro_isdc_wro_http_ConfigurableWroFilter_Type" id="_bclD4DqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" type="IConfigurableWroFilter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProperties_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="IProperties_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationMBean_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="WroConfigurationMBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfiguration_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="IWroConfiguration_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationChangeListener_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="WroConfigurationChangeListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroManagerFactory_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="WroManagerFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestHandlerFactory_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="RequestHandlerFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterable_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="Iterable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResponseHeadersConfigurer_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="IResponseHeadersConfigurer_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInjector_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="IInjector_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnection_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="MBeanServerConnection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServer_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="MBeanServer"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="ro_isdc_wro_http_ConfigurableWroFilter_Type" id="_be9phjqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" type="IConfigurableWroFilter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProperties_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="IProperties_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationMBean_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="WroConfigurationMBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfiguration_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="IWroConfiguration_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroConfigurationChangeListener_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="WroConfigurationChangeListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWroManagerFactory_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="WroManagerFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFactory_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="ObjectFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestHandlerFactory_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="RequestHandlerFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterable_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="Iterable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResponseHeadersConfigurer_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="IResponseHeadersConfigurer_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInjector_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="IInjector_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnection_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="MBeanServerConnection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServer_ConfigurableWroFilter_ro_isdc_wro_http_ConfigurableWroFilter_Type" direction="REQUIRED" type="MBeanServer"/>
+    </components>
+    <interfaceTypes name="IConfigurableWroFilter_Type">
+      <signatures name="init" type="void" id="_bd-LADqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.FilterConfig" id="_bd-LATqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="destroy" type="void" id="_bd-LAjqtEeiP29_qDiwNWQ"/>
+      <signatures name="doFilter" type="void" id="_bd-LAzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletRequest" id="_bd-LBDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.ServletResponse" id="_bd-LBTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.servlet.FilterChain" id="_bd-LBjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$100" type="long" id="_bd-LBzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="ro.isdc.wro.http.WroFilter" id="_bd-LCDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-LCTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$200" type="ro.isdc.wro.manager.factory.WroManagerFactory" id="_bd-LCjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="ro.isdc.wro.http.WroFilter" id="_bd-LCzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$002" type="ro.isdc.wro.http.support.ResponseHeadersConfigurer" id="_bd-LDDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="ro.isdc.wro.http.WroFilter" id="_bd-LDTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="ro.isdc.wro.http.support.ResponseHeadersConfigurer" id="_bd-LDjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="registerMBean" type="void" id="_bd-LDzqtEeiP29_qDiwNWQ"/>
+      <signatures name="unregisterMBean" type="void" id="_bd-LEDqtEeiP29_qDiwNWQ"/>
+      <signatures name="createConfiguration" type="ro.isdc.wro.config.jmx.WroConfiguration" id="_bd-LETqtEeiP29_qDiwNWQ"/>
+      <signatures name="getContextPath" type="java.lang.String" id="_bd-LEjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getConfiguration" type="ro.isdc.wro.config.jmx.WroConfiguration" id="_bd-LEzqtEeiP29_qDiwNWQ"/>
+      <signatures name="createInjector" type="ro.isdc.wro.model.group.processor.Injector" id="_bd-LFDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getMBeanServer" type="javax.management.MBeanServer" id="_bd-LFTqtEeiP29_qDiwNWQ"/>
+      <signatures name="processRequest" type="void" id="_bd-LFjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_bd-LFzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletResponse" id="_bd-LGDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setConfiguration" type="void" id="_bd-LGTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="ro.isdc.wro.config.jmx.WroConfiguration" id="_bd-LGjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEnable" type="void" id="_bd-LGzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd-LHDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setResponseHeaders" type="void" id="_bd-LHTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletResponse" id="_bd-LHjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addPassThroughFilterAttribute" type="void" id="_bd-LHzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_bd-LIDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createRequestHandlers" type="java.util.Collection" id="_bd-LITqtEeiP29_qDiwNWQ"/>
+      <signatures name="newResponseHeadersConfigurer" type="ro.isdc.wro.http.support.ResponseHeadersConfigurer" id="_bd-LIjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getMBeanObjectName" type="javax.management.ObjectName" id="_bd-LIzqtEeiP29_qDiwNWQ"/>
+      <signatures name="newWroConfigurationFactory" type="ro.isdc.wro.util.ObjectFactory" id="_bd-LJDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.FilterConfig" id="_bd-LJTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isPassedThroughyWroFilter" type="boolean" id="_bd-LJjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_bd-LJzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="handledWithRequestHandler" type="boolean" id="_bd-LKDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_bd-LKTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletResponse" id="_bd-LKjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="newWroManagerFactory" type="ro.isdc.wro.manager.factory.WroManagerFactory" id="_bd-LKzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setRequestHandlerFactory" type="void" id="_bd-LLDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="ro.isdc.wro.http.handler.factory.RequestHandlerFactory" id="_bd-LLTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getWroManagerFactory" type="ro.isdc.wro.manager.factory.WroManagerFactory" id="_bd-LLjqtEeiP29_qDiwNWQ"/>
+      <signatures name="createWroManagerFactory" type="ro.isdc.wro.manager.factory.WroManagerFactory" id="_bd-LLzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setWroConfigurationFactory" type="void" id="_bd-LMDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="ro.isdc.wro.util.ObjectFactory" id="_bd-LMTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onRequestProcessed" type="void" id="_bd-LMjqtEeiP29_qDiwNWQ"/>
+      <signatures name="newRequestHandlerFactory" type="ro.isdc.wro.http.handler.factory.RequestHandlerFactory" id="_bd-LMzqtEeiP29_qDiwNWQ"/>
+      <signatures name="registerChangeListeners" type="void" id="_bd-LNDqtEeiP29_qDiwNWQ"/>
+      <signatures name="setWroManagerFactory" type="void" id="_bd-LNTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="ro.isdc.wro.manager.factory.WroManagerFactory" id="_bd-LNjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getWroConfigurationFactory" type="ro.isdc.wro.util.ObjectFactory" id="_bd-LNzqtEeiP29_qDiwNWQ"/>
+      <signatures name="isFilterActive" type="boolean" id="_bd-LODqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_bd-LOTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueAsLong" type="long" id="_bd-LOjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-LOzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="newMBeanName" type="java.lang.String" id="_bd-LPDqtEeiP29_qDiwNWQ"/>
+      <signatures name="onException" type="void" id="_bd-LPTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Exception" id="_bd-LPjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletResponse" id="_bd-LPzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.servlet.FilterChain" id="_bd-LQDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doInit" type="void" id="_bd-LQTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.FilterConfig" id="_bd-LQjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setProperties" type="void" id="_bd-LQzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Properties" id="_bd-LRDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEncoding" type="java.lang.String" id="_bd-LRTqtEeiP29_qDiwNWQ"/>
+      <signatures name="setEncoding" type="void" id="_bd-LRjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-LRzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDebug" type="void" id="_bd-LSDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd-LSTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setJmxEnabled" type="void" id="_bd-LSjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd-LSzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setModelUpdatePeriod" type="void" id="_bd-LTDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_bd-LTTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setCacheUpdatePeriod" type="void" id="_bd-LTjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_bd-LTzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setGzipEnabled" type="void" id="_bd-LUDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd-LUTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setMbeanName" type="void" id="_bd-LUjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-LUzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDisableCache" type="void" id="_bd-LVDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd-LVTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Filter">
+      <signatures name="init" type="void" id="_bd-LVjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.FilterConfig" id="_bd-LVzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="destroy" type="void" id="_bd-LWDqtEeiP29_qDiwNWQ"/>
+      <signatures name="doFilter" type="void" id="_bd-LWTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletRequest" id="_bd-LWjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.ServletResponse" id="_bd-LWzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.servlet.FilterChain" id="_bd-LXDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IWroFilter_Type">
+      <signatures name="init" type="void" id="_bd-LXTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.FilterConfig" id="_bd-LXjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="destroy" type="void" id="_bd-LXzqtEeiP29_qDiwNWQ"/>
+      <signatures name="doFilter" type="void" id="_bd-LYDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletRequest" id="_bd-LYTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.ServletResponse" id="_bd-LYjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.servlet.FilterChain" id="_bd-LYzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$100" type="long" id="_bd-LZDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="ro.isdc.wro.http.WroFilter" id="_bd-LZTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-LZjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$200" type="ro.isdc.wro.manager.factory.WroManagerFactory" id="_bd-LZzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="ro.isdc.wro.http.WroFilter" id="_bd-LaDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$002" type="ro.isdc.wro.http.support.ResponseHeadersConfigurer" id="_bd-LaTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="ro.isdc.wro.http.WroFilter" id="_bd-LajqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="ro.isdc.wro.http.support.ResponseHeadersConfigurer" id="_bd-LazqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="registerMBean" type="void" id="_bd-LbDqtEeiP29_qDiwNWQ"/>
+      <signatures name="unregisterMBean" type="void" id="_bd-LbTqtEeiP29_qDiwNWQ"/>
+      <signatures name="createConfiguration" type="ro.isdc.wro.config.jmx.WroConfiguration" id="_bd-LbjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getContextPath" type="java.lang.String" id="_bd-LbzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getConfiguration" type="ro.isdc.wro.config.jmx.WroConfiguration" id="_bd-LcDqtEeiP29_qDiwNWQ"/>
+      <signatures name="createInjector" type="ro.isdc.wro.model.group.processor.Injector" id="_bd-LcTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getMBeanServer" type="javax.management.MBeanServer" id="_bd-LcjqtEeiP29_qDiwNWQ"/>
+      <signatures name="processRequest" type="void" id="_bd-LczqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_bd-LdDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletResponse" id="_bd-LdTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setConfiguration" type="void" id="_bd-LdjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="ro.isdc.wro.config.jmx.WroConfiguration" id="_bd-LdzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEnable" type="void" id="_bd-LeDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd-LeTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setResponseHeaders" type="void" id="_bd-LejqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletResponse" id="_bd-LezqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addPassThroughFilterAttribute" type="void" id="_bd-LfDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_bd-LfTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createRequestHandlers" type="java.util.Collection" id="_bd-LfjqtEeiP29_qDiwNWQ"/>
+      <signatures name="newResponseHeadersConfigurer" type="ro.isdc.wro.http.support.ResponseHeadersConfigurer" id="_bd-LfzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getMBeanObjectName" type="javax.management.ObjectName" id="_bd-LgDqtEeiP29_qDiwNWQ"/>
+      <signatures name="newWroConfigurationFactory" type="ro.isdc.wro.util.ObjectFactory" id="_bd-LgTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.FilterConfig" id="_bd-LgjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isPassedThroughyWroFilter" type="boolean" id="_bd-LgzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_bd-LhDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="handledWithRequestHandler" type="boolean" id="_bd-LhTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_bd-LhjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletResponse" id="_bd-LhzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="newWroManagerFactory" type="ro.isdc.wro.manager.factory.WroManagerFactory" id="_bd-LiDqtEeiP29_qDiwNWQ"/>
+      <signatures name="setRequestHandlerFactory" type="void" id="_bd-LiTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="ro.isdc.wro.http.handler.factory.RequestHandlerFactory" id="_bd-LijqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getWroManagerFactory" type="ro.isdc.wro.manager.factory.WroManagerFactory" id="_bd-LizqtEeiP29_qDiwNWQ"/>
+      <signatures name="createWroManagerFactory" type="ro.isdc.wro.manager.factory.WroManagerFactory" id="_bd-LjDqtEeiP29_qDiwNWQ"/>
+      <signatures name="setWroConfigurationFactory" type="void" id="_bd-LjTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="ro.isdc.wro.util.ObjectFactory" id="_bd-LjjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onRequestProcessed" type="void" id="_bd-LjzqtEeiP29_qDiwNWQ"/>
+      <signatures name="newRequestHandlerFactory" type="ro.isdc.wro.http.handler.factory.RequestHandlerFactory" id="_bd-LkDqtEeiP29_qDiwNWQ"/>
+      <signatures name="registerChangeListeners" type="void" id="_bd-LkTqtEeiP29_qDiwNWQ"/>
+      <signatures name="setWroManagerFactory" type="void" id="_bd-LkjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="ro.isdc.wro.manager.factory.WroManagerFactory" id="_bd-LkzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getWroConfigurationFactory" type="ro.isdc.wro.util.ObjectFactory" id="_bd-LlDqtEeiP29_qDiwNWQ"/>
+      <signatures name="isFilterActive" type="boolean" id="_bd-LlTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_bd-LljqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueAsLong" type="long" id="_bd-LlzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-LmDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="newMBeanName" type="java.lang.String" id="_bd-LmTqtEeiP29_qDiwNWQ"/>
+      <signatures name="onException" type="void" id="_bd-LmjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Exception" id="_bd-LmzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletResponse" id="_bd-LnDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.servlet.FilterChain" id="_bd-LnTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doInit" type="void" id="_bd-LnjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.FilterConfig" id="_bd-LnzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Comparable">
+      <signatures name="compareTo" type="int" id="_bd-LpzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-LqDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="CharSequence">
+      <signatures name="toString" type="java.lang.String" id="_bd-LqTqtEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_bd-LqjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-LqzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_bd-LrDqtEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_bd-LrTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-LrjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_bd-LrzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_bd-LsDqtEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_bd-LsTqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IString_Type">
+      <signatures name="compareTo" type="int" id="_bd-LsjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-LszqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_bd-LtDqtEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_bd-LtTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-LtjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_bd-LtzqtEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_bd-LuDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-LuTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_bd-LujqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_bd-LuzqtEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_bd-LvDqtEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$chars$0" type="java.util.Spliterator.OfInt" id="_bd-LvTqtEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$codePoints$1" type="java.util.Spliterator.OfInt" id="_bd-LvjqtEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_bd-LvzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-LwDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_bd-LwTqtEeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_bd-LwjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-LwzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_bd-LxDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueOf" type="java.lang.String" id="_bd-LxTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-LxjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkBounds" type="void" id="_bd-LxzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_bd-LyDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_bd-LyTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_bd-LyjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointAt" type="int" id="_bd-LyzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-LzDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointBefore" type="int" id="_bd-LzTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-LzjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointCount" type="int" id="_bd-LzzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-L0DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_bd-L0TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compareToIgnoreCase" type="int" id="_bd-L0jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-L0zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="concat" type="java.lang.String" id="_bd-L1DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-L1TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contains" type="boolean" id="_bd-L1jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_bd-L1zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contentEquals" type="boolean" id="_bd-L2DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_bd-L2TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyValueOf" type="java.lang.String" id="_bd-L2jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char[]" id="_bd-L2zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="endsWith" type="boolean" id="_bd-L3DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-L3TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equalsIgnoreCase" type="boolean" id="_bd-L3jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-L3zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="format" type="java.lang.String" id="_bd-L4DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_bd-L4TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-L4jqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_bd-L4zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBytes" type="void" id="_bd-L5DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-L5TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_bd-L5jqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_bd-L5zqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_bd-L6DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChars" type="void" id="_bd-L6TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-L6jqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_bd-L6zqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="char[]" id="_bd-L7DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_bd-L7TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="indexOfSupplementary" type="int" id="_bd-L7jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-L7zqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_bd-L8DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="intern" type="java.lang.String" id="_bd-L8TqtEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_bd-L8jqtEeiP29_qDiwNWQ"/>
+      <signatures name="join" type="java.lang.String" id="_bd-L8zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_bd-L9DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.CharSequence[]" id="_bd-L9TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOf" type="int" id="_bd-L9jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-L9zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOfSupplementary" type="int" id="_bd-L-DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-L-TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_bd-L-jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="matches" type="boolean" id="_bd-L-zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-L_DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nonSyncContentEquals" type="boolean" id="_bd-L_TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.AbstractStringBuilder" id="_bd-L_jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="offsetByCodePoints" type="int" id="_bd-L_zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-MADqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_bd-MATqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="regionMatches" type="boolean" id="_bd-MAjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-MAzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-MBDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_bd-MBTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_bd-MBjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="java.lang.String" id="_bd-MBzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char" id="_bd-MCDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="char" id="_bd-MCTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="java.lang.String" id="_bd-MCjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-MCzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-MDDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceFirst" type="java.lang.String" id="_bd-MDTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-MDjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-MDzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="split" type="java.lang.String[]" id="_bd-MEDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-METqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="startsWith" type="boolean" id="_bd-MEjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-MEzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_bd-MFDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="substring" type="java.lang.String" id="_bd-MFTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-MFjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCharArray" type="char[]" id="_bd-MFzqtEeiP29_qDiwNWQ"/>
+      <signatures name="toLowerCase" type="java.lang.String" id="_bd-MGDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_bd-MGTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUpperCase" type="java.lang.String" id="_bd-MGjqtEeiP29_qDiwNWQ"/>
+      <signatures name="trim" type="java.lang.String" id="_bd-MGzqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IProperties_Type">
+      <signatures name="remove" type="java.lang.Object" id="_bd-ymzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-ynDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_bd-ynTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-ynjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_bd-ynzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-yoDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-yoTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_bd-yojqtEeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_bd-yozqtEeiP29_qDiwNWQ"/>
+      <signatures name="elements" type="java.util.Enumeration" id="_bd-ypDqtEeiP29_qDiwNWQ"/>
+      <signatures name="keys" type="java.util.Enumeration" id="_bd-ypTqtEeiP29_qDiwNWQ"/>
+      <signatures name="remove" type="java.lang.Object" id="_bd-ypjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-ypzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_bd-yqDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-yqTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_bd-yqjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-yqzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-yrDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_bd-yrTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-yrjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="values" type="java.util.Collection" id="_bd-yrzqtEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_bd-ysDqtEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_bd-ysTqtEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_bd-ysjqtEeiP29_qDiwNWQ"/>
+      <signatures name="replace" type="java.lang.Object" id="_bd-yszqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-ytDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-ytTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="void" id="_bd-ytjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiFunction" id="_bd-ytzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="size" type="int" id="_bd-yuDqtEeiP29_qDiwNWQ"/>
+      <signatures name="entrySet" type="java.util.Set" id="_bd-yuTqtEeiP29_qDiwNWQ"/>
+      <signatures name="putAll" type="void" id="_bd-yujqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_bd-yuzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="putIfAbsent" type="java.lang.Object" id="_bd-yvDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-yvTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-yvjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="keySet" type="java.util.Set" id="_bd-yvzqtEeiP29_qDiwNWQ"/>
+      <signatures name="compute" type="java.lang.Object" id="_bd-ywDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-ywTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_bd-ywjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfAbsent" type="java.lang.Object" id="_bd-ywzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-yxDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.Function" id="_bd-yxTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfPresent" type="java.lang.Object" id="_bd-yxjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-yxzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_bd-yyDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsKey" type="boolean" id="_bd-yyTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-yyjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsValue" type="boolean" id="_bd-yyzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-yzDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forEach" type="void" id="_bd-yzTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiConsumer" id="_bd-yzjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getOrDefault" type="java.lang.Object" id="_bd-yzzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-y0DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-y0TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="merge" type="java.lang.Object" id="_bd-y0jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-y0zqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-y1DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.function.BiFunction" id="_bd-y1TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_bd-y1jqtEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_bd-y1zqtEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_bd-y2DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-y2TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$100" type="java.util.Iterator" id="_bd-y2jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_bd-y2zqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_bd-y3DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$200" type="int" id="_bd-y3TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_bd-y3jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readObject" type="void" id="_bd-y3zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.ObjectInputStream" id="_bd-y4DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="writeObject" type="void" id="_bd-y4TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.ObjectOutputStream" id="_bd-y4jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$400" type="java.util.Hashtable.Entry[]" id="_bd-y4zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_bd-y5DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$210" type="int" id="_bd-y5TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_bd-y5jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$500" type="int" id="_bd-y5zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_bd-y6DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$508" type="int" id="_bd-y6TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_bd-y6jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addEntry" type="void" id="_bd-y6zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-y7DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-y7TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-y7jqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_bd-y7zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEnumeration" type="java.util.Enumeration" id="_bd-y8DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-y8TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getIterator" type="java.util.Iterator" id="_bd-y8jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-y8zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="reconstitutionPut" type="void" id="_bd-y9DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable.Entry[]" id="_bd-y9TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-y9jqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-y9zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rehash" type="void" id="_bd-y-DqtEeiP29_qDiwNWQ"/>
+      <signatures name="setProperty" type="java.lang.Object" id="_bd-y-TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-y-jqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-y-zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProperty" type="java.lang.String" id="_bd-y_DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-y_TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="load" type="void" id="_bd-y_jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.Reader" id="_bd-y_zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="load0" type="void" id="_bd-zADqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Properties.LineReader" id="_bd-zATqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="enumerate" type="void" id="_bd-zAjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_bd-zAzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="list" type="void" id="_bd-zBDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.PrintStream" id="_bd-zBTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="enumerateStringProperties" type="void" id="_bd-zBjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_bd-zBzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="loadConvert" type="java.lang.String" id="_bd-zCDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char[]" id="_bd-zCTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_bd-zCjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_bd-zCzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="char[]" id="_bd-zDDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="loadFromXML" type="void" id="_bd-zDTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.InputStream" id="_bd-zDjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="propertyNames" type="java.util.Enumeration" id="_bd-zDzqtEeiP29_qDiwNWQ"/>
+      <signatures name="save" type="void" id="_bd-zEDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.OutputStream" id="_bd-zETqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-zEjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="saveConvert" type="java.lang.String" id="_bd-zEzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-zFDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_bd-zFTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_bd-zFjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="store" type="void" id="_bd-zFzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.Writer" id="_bd-zGDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-zGTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="store0" type="void" id="_bd-zGjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.BufferedWriter" id="_bd-zGzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-zHDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_bd-zHTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="storeToXML" type="void" id="_bd-zHjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.OutputStream" id="_bd-zHzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-zIDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stringPropertyNames" type="java.util.Set" id="_bd-zITqtEeiP29_qDiwNWQ"/>
+      <signatures name="toHex" type="char" id="_bd-zIjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-zIzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="writeComments" type="void" id="_bd-zJDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.BufferedWriter" id="_bd-zJTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-zJjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Map">
+      <signatures name="remove" type="java.lang.Object" id="_bd-zJzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zKDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_bd-zKTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zKjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-zKzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_bd-zLDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zLTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_bd-zLjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zLzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-zMDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_bd-zMTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zMjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="values" type="java.util.Collection" id="_bd-zMzqtEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_bd-zNDqtEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_bd-zNTqtEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_bd-zNjqtEeiP29_qDiwNWQ"/>
+      <signatures name="replace" type="java.lang.Object" id="_bd-zNzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zODqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-zOTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="boolean" id="_bd-zOjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zOzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-zPDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-zPTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="void" id="_bd-zPjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiFunction" id="_bd-zPzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="size" type="int" id="_bd-zQDqtEeiP29_qDiwNWQ"/>
+      <signatures name="entrySet" type="java.util.Set" id="_bd-zQTqtEeiP29_qDiwNWQ"/>
+      <signatures name="putAll" type="void" id="_bd-zQjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_bd-zQzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="putIfAbsent" type="java.lang.Object" id="_bd-zRDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zRTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-zRjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="keySet" type="java.util.Set" id="_bd-zRzqtEeiP29_qDiwNWQ"/>
+      <signatures name="compute" type="java.lang.Object" id="_bd-zSDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zSTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_bd-zSjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfAbsent" type="java.lang.Object" id="_bd-zSzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zTDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.Function" id="_bd-zTTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfPresent" type="java.lang.Object" id="_bd-zTjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zTzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_bd-zUDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsKey" type="boolean" id="_bd-zUTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zUjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsValue" type="boolean" id="_bd-zUzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zVDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forEach" type="void" id="_bd-zVTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiConsumer" id="_bd-zVjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getOrDefault" type="java.lang.Object" id="_bd-zVzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zWDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-zWTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="merge" type="java.lang.Object" id="_bd-zWjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zWzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-zXDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.function.BiFunction" id="_bd-zXTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IHashtable_Type">
+      <signatures name="remove" type="java.lang.Object" id="_bd-zXjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zXzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_bd-zYDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zYTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_bd-zYjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zYzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-zZDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_bd-zZTqtEeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_bd-zZjqtEeiP29_qDiwNWQ"/>
+      <signatures name="elements" type="java.util.Enumeration" id="_bd-zZzqtEeiP29_qDiwNWQ"/>
+      <signatures name="keys" type="java.util.Enumeration" id="_bd-zaDqtEeiP29_qDiwNWQ"/>
+      <signatures name="remove" type="java.lang.Object" id="_bd-zaTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zajqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_bd-zazqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zbDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_bd-zbTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zbjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-zbzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_bd-zcDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zcTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="values" type="java.util.Collection" id="_bd-zcjqtEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_bd-zczqtEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_bd-zdDqtEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_bd-zdTqtEeiP29_qDiwNWQ"/>
+      <signatures name="replace" type="java.lang.Object" id="_bd-zdjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zdzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-zeDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="void" id="_bd-zeTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiFunction" id="_bd-zejqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="size" type="int" id="_bd-zezqtEeiP29_qDiwNWQ"/>
+      <signatures name="entrySet" type="java.util.Set" id="_bd-zfDqtEeiP29_qDiwNWQ"/>
+      <signatures name="putAll" type="void" id="_bd-zfTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_bd-zfjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="putIfAbsent" type="java.lang.Object" id="_bd-zfzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zgDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-zgTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="keySet" type="java.util.Set" id="_bd-zgjqtEeiP29_qDiwNWQ"/>
+      <signatures name="compute" type="java.lang.Object" id="_bd-zgzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zhDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_bd-zhTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfAbsent" type="java.lang.Object" id="_bd-zhjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zhzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.Function" id="_bd-ziDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfPresent" type="java.lang.Object" id="_bd-ziTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zijqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_bd-zizqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsKey" type="boolean" id="_bd-zjDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zjTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsValue" type="boolean" id="_bd-zjjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zjzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forEach" type="void" id="_bd-zkDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiConsumer" id="_bd-zkTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getOrDefault" type="java.lang.Object" id="_bd-zkjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zkzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-zlDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="merge" type="java.lang.Object" id="_bd-zlTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zljqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-zlzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.function.BiFunction" id="_bd-zmDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_bd-zmTqtEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_bd-zmjqtEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_bd-zmzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-znDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$100" type="java.util.Iterator" id="_bd-znTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_bd-znjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_bd-znzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$200" type="int" id="_bd-zoDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_bd-zoTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readObject" type="void" id="_bd-zojqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.ObjectInputStream" id="_bd-zozqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="writeObject" type="void" id="_bd-zpDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.ObjectOutputStream" id="_bd-zpTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$400" type="java.util.Hashtable.Entry[]" id="_bd-zpjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_bd-zpzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$210" type="int" id="_bd-zqDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_bd-zqTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$500" type="int" id="_bd-zqjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_bd-zqzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$508" type="int" id="_bd-zrDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_bd-zrTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addEntry" type="void" id="_bd-zrjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-zrzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-zsDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-zsTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_bd-zsjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEnumeration" type="java.util.Enumeration" id="_bd-zszqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-ztDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getIterator" type="java.util.Iterator" id="_bd-ztTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-ztjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="reconstitutionPut" type="void" id="_bd-ztzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable.Entry[]" id="_bd-zuDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-zuTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-zujqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rehash" type="void" id="_bd-zuzqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IDictionary_Type">
+      <signatures name="remove" type="java.lang.Object" id="_bd-zvDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zvTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_bd-zvjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zvzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_bd-zwDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd-zwTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-zwjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_bd-zwzqtEeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_bd-zxDqtEeiP29_qDiwNWQ"/>
+      <signatures name="elements" type="java.util.Enumeration" id="_bd-zxTqtEeiP29_qDiwNWQ"/>
+      <signatures name="keys" type="java.util.Enumeration" id="_bd-zxjqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Logger">
+      <signatures name="getName" type="java.lang.String" id="_bd-z_jqtEeiP29_qDiwNWQ"/>
+      <signatures name="debug" type="void" id="_bd-z_zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0ADqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0ATqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_bd-0AjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_bd-0AzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0BDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0BTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-0BjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_bd-0BzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_bd-0CDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0CTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_bd-0CjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0CzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0DDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_bd-0DTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_bd-0DjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0DzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0EDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_bd-0ETqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0EjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0EzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-0FDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_bd-0FTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0FjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_bd-0FzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_bd-0GDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0GTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_bd-0GjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_bd-0GzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0HDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-0HTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-0HjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_bd-0HzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0IDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-0ITqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_bd-0IjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0IzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0JDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_bd-0JTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0JjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0JzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-0KDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_bd-0KTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0KjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0KzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-0LDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_bd-0LTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_bd-0LjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0LzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0MDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_bd-0MTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_bd-0MjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0MzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0NDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_bd-0NTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_bd-0NjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0NzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_bd-0ODqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0OTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-0OjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_bd-0OzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0PDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-0PTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-0PjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_bd-0PzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0QDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_bd-0QTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_bd-0QjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0QzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_bd-0RDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_bd-0RTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0RjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_bd-0RzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_bd-0SDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0STqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_bd-0SjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_bd-0SzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0TDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-0TTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-0TjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_bd-0TzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0UDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-0UTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_bd-0UjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0UzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0VDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-0VTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_bd-0VjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_bd-0VzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0WDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_bd-0WTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0WjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0WzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_bd-0XDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0XTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0XjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_bd-0XzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_bd-0YDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0YTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0YjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_bd-0YzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_bd-0ZDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0ZTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0ZjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-0ZzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_bd-0aDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0aTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_bd-0ajqtEeiP29_qDiwNWQ"/>
+      <signatures name="info" type="void" id="_bd-0azqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0bDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0bTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_bd-0bjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_bd-0bzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0cDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0cTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_bd-0cjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_bd-0czqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0dDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-0dTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-0djqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_bd-0dzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0eDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-0eTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_bd-0ejqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0ezqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_bd-0fDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0fTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_bd-0fjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_bd-0fzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0gDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0gTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-0gjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_bd-0gzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_bd-0hDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0hTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0hjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-0hzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_bd-0iDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0iTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0ijqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_bd-0izqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0jDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_bd-0jTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTraceEnabled" type="boolean" id="_bd-0jjqtEeiP29_qDiwNWQ"/>
+      <signatures name="isTraceEnabled" type="boolean" id="_bd-0jzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0kDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_bd-0kTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0kjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0kzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_bd-0lDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_bd-0lTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0ljqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0lzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_bd-0mDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_bd-0mTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0mjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_bd-0mzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_bd-0nDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0nTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-0njqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-0nzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_bd-0oDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0oTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_bd-0ojqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_bd-0ozqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0pDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_bd-0pTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_bd-0pjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-0pzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_bd-0qDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0qTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0qjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-0qzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_bd-0rDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_bd-0rTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0rjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0rzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_bd-0sDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0sTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_bd-0sjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_bd-0szqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isDebugEnabled" type="boolean" id="_bd-0tDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0tTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isDebugEnabled" type="boolean" id="_bd-0tjqtEeiP29_qDiwNWQ"/>
+      <signatures name="isErrorEnabled" type="boolean" id="_bd-0tzqtEeiP29_qDiwNWQ"/>
+      <signatures name="isErrorEnabled" type="boolean" id="_bd-0uDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0uTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isWarnEnabled" type="boolean" id="_bd-0ujqtEeiP29_qDiwNWQ"/>
+      <signatures name="isWarnEnabled" type="boolean" id="_bd-0uzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_bd-0vDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="FilterConfig">
+      <signatures name="getFilterName" type="java.lang.String" id="_bd-1vTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getServletContext" type="javax.servlet.ServletContext" id="_bd-1vjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getInitParameterNames" type="java.util.Enumeration" id="_bd-1vzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getInitParameter" type="java.lang.String" id="_bd-1wDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-1wTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ObjectFactory">
+      <signatures name="create" type="java.lang.Object" id="_bd-1wjqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="WroConfigurationMBean">
+      <signatures name="getEncoding" type="java.lang.String" id="_bd-1wzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setEncoding" type="void" id="_bd-1xDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd-1xTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDebug" type="void" id="_bd-1xjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd-1xzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isDebug" type="boolean" id="_bd-1yDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getConnectionTimeout" type="int" id="_bd-1yTqtEeiP29_qDiwNWQ"/>
+      <signatures name="setConnectionTimeout" type="void" id="_bd-1yjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd-1yzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setModelUpdatePeriod" type="void" id="_bd-1zDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_bd-1zTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setCacheUpdatePeriod" type="void" id="_bd-1zjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_bd-1zzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setIgnoreMissingResources" type="void" id="_bd-10DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd-10TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setResourceWatcherUpdatePeriod" type="void" id="_bd-10jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_bd-10zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setCacheGzippedContent" type="void" id="_bd-11DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd-11TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getResourceWatcherUpdatePeriod" type="long" id="_bd-11jqtEeiP29_qDiwNWQ"/>
+      <signatures name="isIgnoreEmptyGroup" type="boolean" id="_bd-11zqtEeiP29_qDiwNWQ"/>
+      <signatures name="isMinimizeEnabled" type="boolean" id="_bd-12DqtEeiP29_qDiwNWQ"/>
+      <signatures name="setMinimizeEnabled" type="void" id="_bd-12TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd-12jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCacheUpdatePeriod" type="long" id="_bd-12zqtEeiP29_qDiwNWQ"/>
+      <signatures name="getModelUpdatePeriod" type="long" id="_bd-13DqtEeiP29_qDiwNWQ"/>
+      <signatures name="setIgnoreEmptyGroup" type="void" id="_bd-13TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd-13jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isIgnoreMissingResources" type="boolean" id="_bd-13zqtEeiP29_qDiwNWQ"/>
+      <signatures name="isCacheGzippedContent" type="boolean" id="_bd-14DqtEeiP29_qDiwNWQ"/>
+      <signatures name="setGzipEnabled" type="void" id="_bd-14TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd-14jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isGzipEnabled" type="boolean" id="_bd-14zqtEeiP29_qDiwNWQ"/>
+      <signatures name="reloadCache" type="void" id="_bd-15DqtEeiP29_qDiwNWQ"/>
+      <signatures name="reloadModel" type="void" id="_bd-15TqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IWroConfiguration_Type">
+      <signatures name="getEncoding" type="java.lang.String" id="_bd_ZIDqtEeiP29_qDiwNWQ"/>
+      <signatures name="setEncoding" type="void" id="_bd_ZITqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd_ZIjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDebug" type="void" id="_bd_ZIzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd_ZJDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isDebug" type="boolean" id="_bd_ZJTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getConnectionTimeout" type="int" id="_bd_ZJjqtEeiP29_qDiwNWQ"/>
+      <signatures name="setConnectionTimeout" type="void" id="_bd_ZJzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_bd_ZKDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setModelUpdatePeriod" type="void" id="_bd_ZKTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_bd_ZKjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setCacheUpdatePeriod" type="void" id="_bd_ZKzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_bd_ZLDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setIgnoreMissingResources" type="void" id="_bd_ZLTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd_ZLjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setResourceWatcherUpdatePeriod" type="void" id="_bd_ZLzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_bd_ZMDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setCacheGzippedContent" type="void" id="_bd_ZMTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd_ZMjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getResourceWatcherUpdatePeriod" type="long" id="_bd_ZMzqtEeiP29_qDiwNWQ"/>
+      <signatures name="isIgnoreEmptyGroup" type="boolean" id="_bd_ZNDqtEeiP29_qDiwNWQ"/>
+      <signatures name="isMinimizeEnabled" type="boolean" id="_bd_ZNTqtEeiP29_qDiwNWQ"/>
+      <signatures name="setMinimizeEnabled" type="void" id="_bd_ZNjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd_ZNzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCacheUpdatePeriod" type="long" id="_bd_ZODqtEeiP29_qDiwNWQ"/>
+      <signatures name="getModelUpdatePeriod" type="long" id="_bd_ZOTqtEeiP29_qDiwNWQ"/>
+      <signatures name="setIgnoreEmptyGroup" type="void" id="_bd_ZOjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd_ZOzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isIgnoreMissingResources" type="boolean" id="_bd_ZPDqtEeiP29_qDiwNWQ"/>
+      <signatures name="isCacheGzippedContent" type="boolean" id="_bd_ZPTqtEeiP29_qDiwNWQ"/>
+      <signatures name="setGzipEnabled" type="void" id="_bd_ZPjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd_ZPzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isGzipEnabled" type="boolean" id="_bd_ZQDqtEeiP29_qDiwNWQ"/>
+      <signatures name="reloadCache" type="void" id="_bd_ZQTqtEeiP29_qDiwNWQ"/>
+      <signatures name="reloadModel" type="void" id="_bd_ZQjqtEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_bd_ZQzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd_ZRDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_bd_ZRTqtEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_bd_ZRjqtEeiP29_qDiwNWQ"/>
+      <signatures name="destroy" type="void" id="_bd_ZRzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getHeader" type="java.lang.String" id="_bd_ZSDqtEeiP29_qDiwNWQ"/>
+      <signatures name="registerModelUpdatePeriodChangeListener" type="void" id="_bd_ZSTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.beans.PropertyChangeListener" id="_bd_ZSjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="registerCacheUpdatePeriodChangeListener" type="void" id="_bd_ZSzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.beans.PropertyChangeListener" id="_bd_ZTDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setHeader" type="void" id="_bd_ZTTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd_ZTjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getObjectName" type="java.lang.String" id="_bd_ZTzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setJmxEnabled" type="void" id="_bd_ZUDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd_ZUTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="reloadModelWithNewValue" type="void" id="_bd_ZUjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Long" id="_bd_ZUzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isIgnoreFailingProcessor" type="boolean" id="_bd_ZVDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getWroManagerClassName" type="java.lang.String" id="_bd_ZVTqtEeiP29_qDiwNWQ"/>
+      <signatures name="setIgnoreFailingProcessor" type="void" id="_bd_ZVjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd_ZVzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setResourceWatcherAsync" type="void" id="_bd_ZWDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd_ZWTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isResourceWatcherAsync" type="boolean" id="_bd_ZWjqtEeiP29_qDiwNWQ"/>
+      <signatures name="reloadCacheWithNewValue" type="void" id="_bd_ZWzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Long" id="_bd_ZXDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setWroManagerClassName" type="void" id="_bd_ZXTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd_ZXjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isParallelPreprocessing" type="boolean" id="_bd_ZXzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setParallelPreprocessing" type="void" id="_bd_ZYDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_bd_ZYTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setMbeanName" type="void" id="_bd_ZYjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bd_ZYzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isJmxEnabled" type="boolean" id="_bd_ZZDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getMbeanName" type="java.lang.String" id="_bd_ZZTqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="WroConfigurationChangeListener">
+      <signatures name="onCachePeriodChanged" type="void" id="_bd_ZijqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_bd_ZizqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onModelPeriodChanged" type="void" id="_bd_ZjDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_bd_ZjTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="WroManagerFactory">
+      <signatures name="destroy" type="void" id="_bd_ZjjqtEeiP29_qDiwNWQ"/>
+      <signatures name="create" type="java.lang.Object" id="_bd_ZjzqtEeiP29_qDiwNWQ"/>
+      <signatures name="onCachePeriodChanged" type="void" id="_bd_ZkDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_bd_ZkTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onModelPeriodChanged" type="void" id="_bd_ZkjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_bd_ZkzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="RequestHandlerFactory">
+      <signatures name="create" type="java.lang.Object" id="_bd_ZlTqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Iterable">
+      <signatures name="iterator" type="java.util.Iterator" id="_bd_ZljqtEeiP29_qDiwNWQ"/>
+      <signatures name="spliterator" type="java.util.Spliterator" id="_bd_ZlzqtEeiP29_qDiwNWQ"/>
+      <signatures name="forEach" type="void" id="_bd_ZmDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Consumer" id="_bd_ZmTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Collection">
+      <signatures name="add" type="boolean" id="_bd_ZmjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd_ZmzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_bd_ZnDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd_ZnTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_bd_ZnjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd_ZnzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_bd_ZoDqtEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_bd_ZoTqtEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_bd_ZojqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bd_ZozqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_bd_ZpDqtEeiP29_qDiwNWQ"/>
+      <signatures name="iterator" type="java.util.Iterator" id="_bd_ZpTqtEeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_bd_ZpjqtEeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_bd_ZpzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_bd_ZqDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toArray" type="java.lang.Object[]" id="_bd_ZqTqtEeiP29_qDiwNWQ"/>
+      <signatures name="spliterator" type="java.util.Spliterator" id="_bd_ZqjqtEeiP29_qDiwNWQ"/>
+      <signatures name="addAll" type="boolean" id="_bd_ZqzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_bd_ZrDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stream" type="java.util.stream.Stream" id="_bd_ZrTqtEeiP29_qDiwNWQ"/>
+      <signatures name="containsAll" type="boolean" id="_bd_ZrjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_bd_ZrzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeAll" type="boolean" id="_bd_ZsDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_bd_ZsTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeIf" type="boolean" id="_bd_ZsjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Predicate" id="_bd_ZszqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retainAll" type="boolean" id="_bd_ZtDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_bd_ZtTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parallelStream" type="java.util.stream.Stream" id="_bd_ZtjqtEeiP29_qDiwNWQ"/>
+      <signatures name="forEach" type="void" id="_bd_ZtzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Consumer" id="_bd_ZuDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IResponseHeadersConfigurer_Type">
+      <signatures name="access$000" type="void" id="_bemdIDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_bemdITqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parseHeader" type="void" id="_bemdIjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bemdIzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="noCache" type="ro.isdc.wro.http.support.ResponseHeadersConfigurer" id="_bemdJDqtEeiP29_qDiwNWQ"/>
+      <signatures name="setHeaders" type="void" id="_bemdJTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletResponse" id="_bemdJjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addNoCacheHeaders" type="void" id="_bemdJzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_bemdKDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="configureDefaultHeaders" type="void" id="_bemdKTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_bemdKjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="configureFromHeadersAsString" type="void" id="_bemdKzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getLastModifiedTimestamp" type="java.lang.Long" id="_bemdLDqtEeiP29_qDiwNWQ"/>
+      <signatures name="fromConfig" type="ro.isdc.wro.http.support.ResponseHeadersConfigurer" id="_bemdLTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="ro.isdc.wro.config.jmx.WroConfiguration" id="_bemdLjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="emptyHeaders" type="ro.isdc.wro.http.support.ResponseHeadersConfigurer" id="_bemdLzqtEeiP29_qDiwNWQ"/>
+      <signatures name="withHeadersSet" type="ro.isdc.wro.http.support.ResponseHeadersConfigurer" id="_bemdMDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_bemdMTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="initHeaderValues" type="void" id="_bemdMjqtEeiP29_qDiwNWQ"/>
+      <signatures name="initTimestamp" type="long" id="_bemdMzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getHeadersMap" type="java.util.Map" id="_bemdNDqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IInjector_Type">
+      <signatures name="inject" type="java.lang.Object" id="_bemdNTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bemdNjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="processInjectAnnotation" type="void" id="_bemdNzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bemdODqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="acceptAnnotatedField" type="boolean" id="_bemdOTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bemdOjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.reflect.Field" id="_bemdOzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAllFields" type="java.util.Collection" id="_bemdPDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bemdPTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeKey" type="int" id="_bemdPjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_bemdPzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="MBeanServerConnection">
+      <signatures name="invoke" type="java.lang.Object" id="_benEMDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEMTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_benEMjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_benEMzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.String[]" id="_benENDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isRegistered" type="boolean" id="_benENTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benENjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAttributes" type="javax.management.AttributeList" id="_benENzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEODqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String[]" id="_benEOTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAttribute" type="java.lang.Object" id="_benEOjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEOzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_benEPDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addNotificationListener" type="void" id="_benEPTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEPjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benEPzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.NotificationFilter" id="_benEQDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_benEQTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addNotificationListener" type="void" id="_benEQjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEQzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.NotificationListener" id="_benERDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.NotificationFilter" id="_benERTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_benERjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createMBean" type="javax.management.ObjectInstance" id="_benERzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_benESDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benESTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createMBean" type="javax.management.ObjectInstance" id="_benESjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_benESzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benETDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_benETTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.String[]" id="_benETjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createMBean" type="javax.management.ObjectInstance" id="_benETzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_benEUDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benEUTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.ObjectName" id="_benEUjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createMBean" type="javax.management.ObjectInstance" id="_benEUzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_benEVDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benEVTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.ObjectName" id="_benEVjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object[]" id="_benEVzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="java.lang.String[]" id="_benEWDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDomains" type="java.lang.String[]" id="_benEWTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getMBeanCount" type="java.lang.Integer" id="_benEWjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getMBeanInfo" type="javax.management.MBeanInfo" id="_benEWzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEXDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getObjectInstance" type="javax.management.ObjectInstance" id="_benEXTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEXjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="queryMBeans" type="java.util.Set" id="_benEXzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEYDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.QueryExp" id="_benEYTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="queryNames" type="java.util.Set" id="_benEYjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEYzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.QueryExp" id="_benEZDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeNotificationListener" type="void" id="_benEZTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEZjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benEZzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeNotificationListener" type="void" id="_benEaDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEaTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benEajqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.NotificationFilter" id="_benEazqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_benEbDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeNotificationListener" type="void" id="_benEbTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEbjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.NotificationListener" id="_benEbzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.NotificationFilter" id="_benEcDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_benEcTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeNotificationListener" type="void" id="_benEcjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEczqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.NotificationListener" id="_benEdDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="unregisterMBean" type="void" id="_benEdTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEdjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAttribute" type="void" id="_benEdzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEeDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.Attribute" id="_benEeTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAttributes" type="javax.management.AttributeList" id="_benEejqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEezqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.AttributeList" id="_benEfDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInstanceOf" type="boolean" id="_benEfTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEfjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_benEfzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultDomain" type="java.lang.String" id="_benEgDqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="MBeanServer">
+      <signatures name="invoke" type="java.lang.Object" id="_benEgTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEgjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_benEgzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_benEhDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.String[]" id="_benEhTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClassLoader" type="java.lang.ClassLoader" id="_benEhjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEhzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isRegistered" type="boolean" id="_benEiDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEiTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAttributes" type="javax.management.AttributeList" id="_benEijqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEizqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String[]" id="_benEjDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAttribute" type="java.lang.Object" id="_benEjTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEjjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_benEjzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addNotificationListener" type="void" id="_benEkDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEkTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.NotificationListener" id="_benEkjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.NotificationFilter" id="_benEkzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_benElDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addNotificationListener" type="void" id="_benElTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEljqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benElzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.NotificationFilter" id="_benEmDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_benEmTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createMBean" type="javax.management.ObjectInstance" id="_benEmjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_benEmzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benEnDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createMBean" type="javax.management.ObjectInstance" id="_benEnTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_benEnjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benEnzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.ObjectName" id="_benEoDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object[]" id="_benEoTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="java.lang.String[]" id="_benEojqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createMBean" type="javax.management.ObjectInstance" id="_benEozqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_benEpDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benEpTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_benEpjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.String[]" id="_benEpzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createMBean" type="javax.management.ObjectInstance" id="_benEqDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_benEqTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benEqjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.ObjectName" id="_benEqzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="deserialize" type="java.io.ObjectInputStream" id="_benErDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_benErTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benErjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_benErzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="deserialize" type="java.io.ObjectInputStream" id="_benEsDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_benEsTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="byte[]" id="_benEsjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="deserialize" type="java.io.ObjectInputStream" id="_benEszqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEtDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="byte[]" id="_benEtTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClassLoaderFor" type="java.lang.ClassLoader" id="_benEtjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEtzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClassLoaderRepository" type="javax.management.loading.ClassLoaderRepository" id="_benEuDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getDomains" type="java.lang.String[]" id="_benEuTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getMBeanCount" type="java.lang.Integer" id="_benEujqtEeiP29_qDiwNWQ"/>
+      <signatures name="getMBeanInfo" type="javax.management.MBeanInfo" id="_benEuzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEvDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getObjectInstance" type="javax.management.ObjectInstance" id="_benEvTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEvjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="queryMBeans" type="java.util.Set" id="_benEvzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEwDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.QueryExp" id="_benEwTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="queryNames" type="java.util.Set" id="_benEwjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEwzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.QueryExp" id="_benExDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="registerMBean" type="javax.management.ObjectInstance" id="_benExTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_benExjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benExzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeNotificationListener" type="void" id="_benEyDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEyTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.NotificationListener" id="_benEyjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeNotificationListener" type="void" id="_benEyzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEzDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benEzTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeNotificationListener" type="void" id="_benEzjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benEzzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.NotificationListener" id="_benE0DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.NotificationFilter" id="_benE0TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_benE0jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeNotificationListener" type="void" id="_benE0zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benE1DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benE1TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.NotificationFilter" id="_benE1jqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_benE1zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="unregisterMBean" type="void" id="_benE2DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benE2TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="instantiate" type="java.lang.Object" id="_benE2jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_benE2zqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benE3DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_benE3TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.String[]" id="_benE3jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="instantiate" type="java.lang.Object" id="_benE3zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_benE4DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="instantiate" type="java.lang.Object" id="_benE4TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_benE4jqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_benE4zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="instantiate" type="java.lang.Object" id="_benE5DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_benE5TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_benE5jqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String[]" id="_benE5zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAttribute" type="void" id="_benE6DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benE6TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.Attribute" id="_benE6jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAttributes" type="javax.management.AttributeList" id="_benE6zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benE7DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.AttributeList" id="_benE7TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInstanceOf" type="boolean" id="_benE7jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_benE7zqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_benE8DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultDomain" type="java.lang.String" id="_benE8TqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

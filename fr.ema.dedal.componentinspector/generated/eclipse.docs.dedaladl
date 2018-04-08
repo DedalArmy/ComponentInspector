@@ -1,0 +1,6 @@
+dedal_diagram "eclipse.docs"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="gsh199449.src">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="gsh199449.src.main.resources.mvc-dispatcher-servlet.xml_config" implements="//@architectureDescriptions[name='gsh199449.src.main.resources.mvc-dispatcher-servlet.xml_spec']">
+    <configComponents name="org.springframework.http.converter.json.GsonHttpMessageConverter" id="_G3QD0DqbEeiP29_qDiwNWQ" realizes="_G3TJ_TqbEeiP29_qDiwNWQ" implements="_G3SgEDqbEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IGsonHttpMessageConverter" type="IGsonHttpMessageConverter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IGson_GsonHttpMessageConverter" direction="REQUIRED" type="IGson_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GsonHttpMessageConverter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharset_GsonHttpMessageConverter" direction="REQUIRED" type="ICharset_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_GsonHttpMessageConverter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GsonHttpMessageConverter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_GsonHttpMessageConverter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_GsonHttpMessageConverter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_GsonHttpMessageConverter" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_GsonHttpMessageConverter" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IList_GsonHttpMessageConverter" direction="REQUIRED" type="List"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GsonHttpMessageConverter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharset_GsonHttpMessageConverter" direction="REQUIRED" type="ICharset_Type"/>
+      <attributes name="gson" type="com.google.gson.Gson"/>
+      <attributes name="DEFAULT_CHARSET" type="java.nio.charset.Charset"/>
+      <attributes name="jsonPrefix" type="java.lang.String"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="supportedMediaTypes" type="java.util.List"/>
+      <attributes name="defaultCharset" type="java.nio.charset.Charset"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="gsh199449.src.main.resources.mvc-dispatcher-servlet.xml_asm" instantiates="//@architectureDescriptions[name='gsh199449.src.main.resources.mvc-dispatcher-servlet.xml_config']">
+    <assmComponents name="org.springframework.http.converter.json.GsonHttpMessageConverter1" id="_G3QD0TqbEeiP29_qDiwNWQ" instantiates="_G3QD0DqbEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IGsonHttpMessageConverter_org.springframework.http.converter.json.GsonHttpMessageConverter1" type="IGsonHttpMessageConverter_Type" instantiates="IGsonHttpMessageConverter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IGson_GsonHttpMessageConverter_org.springframework.http.converter.json.GsonHttpMessageConverter1" direction="REQUIRED" type="IGson_Type" instantiates="IGson_GsonHttpMessageConverter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GsonHttpMessageConverter_org.springframework.http.converter.json.GsonHttpMessageConverter1" direction="REQUIRED" type="Comparable" instantiates="IComparable_GsonHttpMessageConverter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharset_GsonHttpMessageConverter_org.springframework.http.converter.json.GsonHttpMessageConverter1" direction="REQUIRED" type="ICharset_Type" instantiates="ICharset_GsonHttpMessageConverter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_GsonHttpMessageConverter_org.springframework.http.converter.json.GsonHttpMessageConverter1" direction="REQUIRED" instantiates="null_GsonHttpMessageConverter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GsonHttpMessageConverter_org.springframework.http.converter.json.GsonHttpMessageConverter1" direction="REQUIRED" type="Comparable" instantiates="IComparable_GsonHttpMessageConverter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_GsonHttpMessageConverter_org.springframework.http.converter.json.GsonHttpMessageConverter1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_GsonHttpMessageConverter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_GsonHttpMessageConverter_org.springframework.http.converter.json.GsonHttpMessageConverter1" direction="REQUIRED" type="IString_Type" instantiates="IString_GsonHttpMessageConverter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_GsonHttpMessageConverter_org.springframework.http.converter.json.GsonHttpMessageConverter1" direction="REQUIRED" type="Log" instantiates="ILog_GsonHttpMessageConverter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_GsonHttpMessageConverter_org.springframework.http.converter.json.GsonHttpMessageConverter1" direction="REQUIRED" type="Collection" instantiates="ICollection_GsonHttpMessageConverter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IList_GsonHttpMessageConverter_org.springframework.http.converter.json.GsonHttpMessageConverter1" direction="REQUIRED" type="List" instantiates="IList_GsonHttpMessageConverter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GsonHttpMessageConverter_org.springframework.http.converter.json.GsonHttpMessageConverter1" direction="REQUIRED" type="Comparable" instantiates="IComparable_GsonHttpMessageConverter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharset_GsonHttpMessageConverter_org.springframework.http.converter.json.GsonHttpMessageConverter1" direction="REQUIRED" type="ICharset_Type" instantiates="ICharset_GsonHttpMessageConverter"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="gsh199449.src.main.resources.mvc-dispatcher-servlet.xml_spec">
+    <specComponents name="GsonHttpMessageConverter_role" id="_G3TJ_TqbEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IGsonHttpMessageConverterGsonHttpMessageConverter_role" type="IGsonHttpMessageConverter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IGsonGsonHttpMessageConverter_role" direction="REQUIRED" type="IGson_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableGsonHttpMessageConverter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharsetGsonHttpMessageConverter_role" direction="REQUIRED" type="ICharset_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullGsonHttpMessageConverter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableGsonHttpMessageConverter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceGsonHttpMessageConverter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringGsonHttpMessageConverter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogGsonHttpMessageConverter_role" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionGsonHttpMessageConverter_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListGsonHttpMessageConverter_role" direction="REQUIRED" type="List"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableGsonHttpMessageConverter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharsetGsonHttpMessageConverter_role" direction="REQUIRED" type="ICharset_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="org_springframework_http_converter_json_GsonHttpMessageConverter_Type" id="_G3SgEDqbEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IGsonHttpMessageConverter_org_springframework_http_converter_json_GsonHttpMessageConverter_Type" type="IGsonHttpMessageConverter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IGson_GsonHttpMessageConverter_org_springframework_http_converter_json_GsonHttpMessageConverter_Type" direction="REQUIRED" type="IGson_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GsonHttpMessageConverter_org_springframework_http_converter_json_GsonHttpMessageConverter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharset_GsonHttpMessageConverter_org_springframework_http_converter_json_GsonHttpMessageConverter_Type" direction="REQUIRED" type="ICharset_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_GsonHttpMessageConverter_org_springframework_http_converter_json_GsonHttpMessageConverter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GsonHttpMessageConverter_org_springframework_http_converter_json_GsonHttpMessageConverter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_GsonHttpMessageConverter_org_springframework_http_converter_json_GsonHttpMessageConverter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_GsonHttpMessageConverter_org_springframework_http_converter_json_GsonHttpMessageConverter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_GsonHttpMessageConverter_org_springframework_http_converter_json_GsonHttpMessageConverter_Type" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_GsonHttpMessageConverter_org_springframework_http_converter_json_GsonHttpMessageConverter_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IList_GsonHttpMessageConverter_org_springframework_http_converter_json_GsonHttpMessageConverter_Type" direction="REQUIRED" type="List"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GsonHttpMessageConverter_org_springframework_http_converter_json_GsonHttpMessageConverter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharset_GsonHttpMessageConverter_org_springframework_http_converter_json_GsonHttpMessageConverter_Type" direction="REQUIRED" type="ICharset_Type"/>
+    </components>
+    <interfaceTypes name="IGsonHttpMessageConverter_Type">
+      <signatures name="write" type="void" id="_G3THIDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3THITqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THIjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.HttpOutputMessage" id="_G3THIzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="read" type="java.lang.Object" id="_G3THJDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THJTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpInputMessage" id="_G3THJjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canRead" type="boolean" id="_G3THJzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THKDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THKTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canWrite" type="boolean" id="_G3THKjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THKzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THLDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSupportedMediaTypes" type="java.util.List" id="_G3THLTqbEeiP29_qDiwNWQ"/>
+      <signatures name="getContentLength" type="java.lang.Long" id="_G3THLjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3THLzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THMDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readInternal" type="java.lang.Object" id="_G3THMTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THMjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpInputMessage" id="_G3THMzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="writeInternal" type="void" id="_G3THNDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3THNTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpOutputMessage" id="_G3THNjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDefaultCharset" type="void" id="_G3THNzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.nio.charset.Charset" id="_G3THODqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="supports" type="boolean" id="_G3THOTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THOjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addDefaultHeaders" type="void" id="_G3THOzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.HttpHeaders" id="_G3THPDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_G3THPTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.MediaType" id="_G3THPjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultContentType" type="org.springframework.http.MediaType" id="_G3THPzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3THQDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setSupportedMediaTypes" type="void" id="_G3THQTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.List" id="_G3THQjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultCharset" type="java.nio.charset.Charset" id="_G3THQzqbEeiP29_qDiwNWQ"/>
+      <signatures name="write" type="void" id="_G3THRDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3THRTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THRjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.HttpOutputMessage" id="_G3THRzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="read" type="java.lang.Object" id="_G3THSDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THSTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpInputMessage" id="_G3THSjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canRead" type="boolean" id="_G3THSzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THTDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THTTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canWrite" type="boolean" id="_G3THTjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THTzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THUDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSupportedMediaTypes" type="java.util.List" id="_G3THUTqbEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$write$0" type="void" id="_G3THUjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3THUzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.reflect.Type" id="_G3THVDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.HttpHeaders" id="_G3THVTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.io.OutputStream" id="_G3THVjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getReader" type="java.io.Reader" id="_G3THVzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.HttpInputMessage" id="_G3THWDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getWriter" type="java.io.Writer" id="_G3THWTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.HttpOutputMessage" id="_G3THWjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCharset" type="java.nio.charset.Charset" id="_G3THWzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.HttpHeaders" id="_G3THXDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setJsonPrefix" type="void" id="_G3THXTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3THXjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setPrefixJson" type="void" id="_G3THXzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_G3THYDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readResolved" type="java.lang.Object" id="_G3THYTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.reflect.Type" id="_G3THYjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpInputMessage" id="_G3THYzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getGson" type="com.google.gson.Gson" id="_G3THZDqbEeiP29_qDiwNWQ"/>
+      <signatures name="setGson" type="void" id="_G3THZTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.google.gson.Gson" id="_G3THZjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IAbstractJsonHttpMessageConverter_Type">
+      <signatures name="write" type="void" id="_G3THZzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3THaDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THaTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.HttpOutputMessage" id="_G3THajqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="read" type="java.lang.Object" id="_G3THazqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THbDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpInputMessage" id="_G3THbTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canRead" type="boolean" id="_G3THbjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THbzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THcDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canWrite" type="boolean" id="_G3THcTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THcjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THczqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSupportedMediaTypes" type="java.util.List" id="_G3THdDqbEeiP29_qDiwNWQ"/>
+      <signatures name="getContentLength" type="java.lang.Long" id="_G3THdTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3THdjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THdzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readInternal" type="java.lang.Object" id="_G3THeDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THeTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpInputMessage" id="_G3THejqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="writeInternal" type="void" id="_G3THezqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3THfDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpOutputMessage" id="_G3THfTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDefaultCharset" type="void" id="_G3THfjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.nio.charset.Charset" id="_G3THfzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="supports" type="boolean" id="_G3THgDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THgTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addDefaultHeaders" type="void" id="_G3THgjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.HttpHeaders" id="_G3THgzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_G3THhDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.MediaType" id="_G3THhTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultContentType" type="org.springframework.http.MediaType" id="_G3THhjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3THhzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setSupportedMediaTypes" type="void" id="_G3THiDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.List" id="_G3THiTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultCharset" type="java.nio.charset.Charset" id="_G3THijqbEeiP29_qDiwNWQ"/>
+      <signatures name="write" type="void" id="_G3THizqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3THjDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THjTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.HttpOutputMessage" id="_G3THjjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="read" type="java.lang.Object" id="_G3THjzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THkDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpInputMessage" id="_G3THkTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canRead" type="boolean" id="_G3THkjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THkzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THlDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canWrite" type="boolean" id="_G3THlTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THljqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THlzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSupportedMediaTypes" type="java.util.List" id="_G3THmDqbEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$write$0" type="void" id="_G3THmTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3THmjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.reflect.Type" id="_G3THmzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.HttpHeaders" id="_G3THnDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.io.OutputStream" id="_G3THnTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getReader" type="java.io.Reader" id="_G3THnjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.HttpInputMessage" id="_G3THnzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getWriter" type="java.io.Writer" id="_G3THoDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.HttpOutputMessage" id="_G3THoTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCharset" type="java.nio.charset.Charset" id="_G3THojqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.HttpHeaders" id="_G3THozqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setJsonPrefix" type="void" id="_G3THpDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3THpTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setPrefixJson" type="void" id="_G3THpjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_G3THpzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readResolved" type="java.lang.Object" id="_G3THqDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.reflect.Type" id="_G3THqTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpInputMessage" id="_G3THqjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="GenericHttpMessageConverter">
+      <signatures name="write" type="void" id="_G3THqzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3THrDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.reflect.Type" id="_G3THrTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.MediaType" id="_G3THrjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="org.springframework.http.HttpOutputMessage" id="_G3THrzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="read" type="java.lang.Object" id="_G3THsDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.reflect.Type" id="_G3THsTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_G3THsjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.HttpInputMessage" id="_G3THszqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canRead" type="boolean" id="_G3THtDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.reflect.Type" id="_G3THtTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_G3THtjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.MediaType" id="_G3THtzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canWrite" type="boolean" id="_G3THuDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.reflect.Type" id="_G3THuTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_G3THujqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.MediaType" id="_G3THuzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="write" type="void" id="_G3THvDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3THvTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THvjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.HttpOutputMessage" id="_G3THvzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="read" type="java.lang.Object" id="_G3THwDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THwTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpInputMessage" id="_G3THwjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canRead" type="boolean" id="_G3THwzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THxDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THxTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canWrite" type="boolean" id="_G3THxjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THxzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THyDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSupportedMediaTypes" type="java.util.List" id="_G3THyTqbEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IAbstractGenericHttpMessageConverter_Type">
+      <signatures name="write" type="void" id="_G3THyjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3THyzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3THzDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.HttpOutputMessage" id="_G3THzTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="read" type="java.lang.Object" id="_G3THzjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3THzzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpInputMessage" id="_G3TH0DqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canRead" type="boolean" id="_G3TH0TqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3TH0jqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3TH0zqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canWrite" type="boolean" id="_G3TH1DqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3TH1TqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3TH1jqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSupportedMediaTypes" type="java.util.List" id="_G3TH1zqbEeiP29_qDiwNWQ"/>
+      <signatures name="getContentLength" type="java.lang.Long" id="_G3TH2DqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TH2TqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3TH2jqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readInternal" type="java.lang.Object" id="_G3TH2zqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3TH3DqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpInputMessage" id="_G3TH3TqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="writeInternal" type="void" id="_G3TH3jqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TH3zqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpOutputMessage" id="_G3TH4DqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDefaultCharset" type="void" id="_G3TH4TqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.nio.charset.Charset" id="_G3TH4jqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="supports" type="boolean" id="_G3TH4zqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3TH5DqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addDefaultHeaders" type="void" id="_G3TH5TqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.HttpHeaders" id="_G3TH5jqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_G3TH5zqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.MediaType" id="_G3TH6DqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultContentType" type="org.springframework.http.MediaType" id="_G3TH6TqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TH6jqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setSupportedMediaTypes" type="void" id="_G3TH6zqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.List" id="_G3TH7DqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultCharset" type="java.nio.charset.Charset" id="_G3TH7TqbEeiP29_qDiwNWQ"/>
+      <signatures name="write" type="void" id="_G3TH7jqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TH7zqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3TH8DqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.HttpOutputMessage" id="_G3TH8TqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="read" type="java.lang.Object" id="_G3TH8jqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3TH8zqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpInputMessage" id="_G3TH9DqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canRead" type="boolean" id="_G3TH9TqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3TH9jqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3TH9zqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canWrite" type="boolean" id="_G3TH-DqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3TH-TqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3TH-jqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSupportedMediaTypes" type="java.util.List" id="_G3TH-zqbEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$write$0" type="void" id="_G3TH_DqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TH_TqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.reflect.Type" id="_G3TH_jqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.HttpHeaders" id="_G3TH_zqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.io.OutputStream" id="_G3TIADqbEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="HttpMessageConverter">
+      <signatures name="write" type="void" id="_G3TIATqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TIAjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3TIAzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.HttpOutputMessage" id="_G3TIBDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="read" type="java.lang.Object" id="_G3TIBTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3TIBjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpInputMessage" id="_G3TIBzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canRead" type="boolean" id="_G3TICDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3TICTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3TICjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canWrite" type="boolean" id="_G3TICzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3TIDDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3TIDTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSupportedMediaTypes" type="java.util.List" id="_G3TIDjqbEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IAbstractHttpMessageConverter_Type">
+      <signatures name="write" type="void" id="_G3TIDzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TIEDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3TIETqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.HttpOutputMessage" id="_G3TIEjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="read" type="java.lang.Object" id="_G3TIEzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3TIFDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpInputMessage" id="_G3TIFTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canRead" type="boolean" id="_G3TIFjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3TIFzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3TIGDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canWrite" type="boolean" id="_G3TIGTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3TIGjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3TIGzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSupportedMediaTypes" type="java.util.List" id="_G3TIHDqbEeiP29_qDiwNWQ"/>
+      <signatures name="getContentLength" type="java.lang.Long" id="_G3TIHTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TIHjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.MediaType" id="_G3TIHzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readInternal" type="java.lang.Object" id="_G3TIIDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3TIITqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpInputMessage" id="_G3TIIjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="writeInternal" type="void" id="_G3TIIzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TIJDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.HttpOutputMessage" id="_G3TIJTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDefaultCharset" type="void" id="_G3TIJjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.nio.charset.Charset" id="_G3TIJzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="supports" type="boolean" id="_G3TIKDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3TIKTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addDefaultHeaders" type="void" id="_G3TIKjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.HttpHeaders" id="_G3TIKzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_G3TILDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.http.MediaType" id="_G3TILTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultContentType" type="org.springframework.http.MediaType" id="_G3TILjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TILzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setSupportedMediaTypes" type="void" id="_G3TIMDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.List" id="_G3TIMTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultCharset" type="java.nio.charset.Charset" id="_G3TIMjqbEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IGson_Type">
+      <signatures name="toString" type="java.lang.String" id="_G3TIbjqbEeiP29_qDiwNWQ"/>
+      <signatures name="getAdapter" type="com.google.gson.TypeAdapter" id="_G3TIbzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_G3TIcDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="fromJson" type="java.lang.Object" id="_G3TIcTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.Reader" id="_G3TIcjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.reflect.Type" id="_G3TIczqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="newJsonWriter" type="com.google.gson.stream.JsonWriter" id="_G3TIdDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.Writer" id="_G3TIdTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="longAdapter" type="com.google.gson.TypeAdapter" id="_G3TIdjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.google.gson.LongSerializationPolicy" id="_G3TIdzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="floatAdapter" type="com.google.gson.TypeAdapter" id="_G3TIeDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_G3TIeTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="htmlSafe" type="boolean" id="_G3TIejqbEeiP29_qDiwNWQ"/>
+      <signatures name="serializeNulls" type="boolean" id="_G3TIezqbEeiP29_qDiwNWQ"/>
+      <signatures name="doubleAdapter" type="com.google.gson.TypeAdapter" id="_G3TIfDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_G3TIfTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toJsonTree" type="com.google.gson.JsonElement" id="_G3TIfjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TIfzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.reflect.Type" id="_G3TIgDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="excluder" type="com.google.gson.internal.Excluder" id="_G3TIgTqbEeiP29_qDiwNWQ"/>
+      <signatures name="newJsonReader" type="com.google.gson.stream.JsonReader" id="_G3TIgjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.Reader" id="_G3TIgzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="atomicLongArrayAdapter" type="com.google.gson.TypeAdapter" id="_G3TIhDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.google.gson.TypeAdapter" id="_G3TIhTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkValidFloatingPoint" type="void" id="_G3TIhjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="double" id="_G3TIhzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="assertFullConsumption" type="void" id="_G3TIiDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TIiTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.google.gson.stream.JsonReader" id="_G3TIijqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="atomicLongAdapter" type="com.google.gson.TypeAdapter" id="_G3TIizqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.google.gson.TypeAdapter" id="_G3TIjDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDelegateAdapter" type="com.google.gson.TypeAdapter" id="_G3TIjTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.google.gson.TypeAdapterFactory" id="_G3TIjjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.google.gson.reflect.TypeToken" id="_G3TIjzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="fieldNamingStrategy" type="com.google.gson.FieldNamingStrategy" id="_G3TIkDqbEeiP29_qDiwNWQ"/>
+      <signatures name="toJson" type="java.lang.String" id="_G3TIkTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TIkjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.reflect.Type" id="_G3TIkzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Comparable">
+      <signatures name="compareTo" type="int" id="_G3TIlDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TIlTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ICharset_Type">
+      <signatures name="compareTo" type="int" id="_G3TIljqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TIlzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="name" type="java.lang.String" id="_G3TImDqbEeiP29_qDiwNWQ"/>
+      <signatures name="put" type="void" id="_G3TImTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Iterator" id="_G3TImjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.Map" id="_G3TImzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forName" type="java.nio.charset.Charset" id="_G3TInDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TInTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="cache" type="void" id="_G3TInjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TInzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.nio.charset.Charset" id="_G3TIoDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_G3TIoTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TIojqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_G3TIozqbEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_G3TIpDqbEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_G3TIpTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.nio.charset.Charset" id="_G3TIpjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="decode" type="java.nio.CharBuffer" id="_G3TIpzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.nio.ByteBuffer" id="_G3TIqDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="encode" type="java.nio.ByteBuffer" id="_G3TIqTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.nio.CharBuffer" id="_G3TIqjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$100" type="java.nio.charset.spi.CharsetProvider" id="_G3TIqzqbEeiP29_qDiwNWQ"/>
+      <signatures name="access$200" type="void" id="_G3TIrDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Iterator" id="_G3TIrTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.Map" id="_G3TIrjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$000" type="java.util.Iterator" id="_G3TIrzqbEeiP29_qDiwNWQ"/>
+      <signatures name="checkName" type="void" id="_G3TIsDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TIsTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isRegistered" type="boolean" id="_G3TIsjqbEeiP29_qDiwNWQ"/>
+      <signatures name="lookup" type="java.nio.charset.Charset" id="_G3TIszqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TItDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="defaultCharset" type="java.nio.charset.Charset" id="_G3TItTqbEeiP29_qDiwNWQ"/>
+      <signatures name="isSupported" type="boolean" id="_G3TItjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TItzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="newEncoder" type="java.nio.charset.CharsetEncoder" id="_G3TIuDqbEeiP29_qDiwNWQ"/>
+      <signatures name="aliases" type="java.util.Set" id="_G3TIuTqbEeiP29_qDiwNWQ"/>
+      <signatures name="atBugLevel" type="boolean" id="_G3TIujqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TIuzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="availableCharsets" type="java.util.SortedMap" id="_G3TIvDqbEeiP29_qDiwNWQ"/>
+      <signatures name="canEncode" type="boolean" id="_G3TIvTqbEeiP29_qDiwNWQ"/>
+      <signatures name="displayName" type="java.lang.String" id="_G3TIvjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_G3TIvzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lookup2" type="java.nio.charset.Charset" id="_G3TIwDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TIwTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lookupExtendedCharset" type="java.nio.charset.Charset" id="_G3TIwjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TIwzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lookupViaProviders" type="java.nio.charset.Charset" id="_G3TIxDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TIxTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="newDecoder" type="java.nio.charset.CharsetDecoder" id="_G3TIxjqbEeiP29_qDiwNWQ"/>
+      <signatures name="providers" type="java.util.Iterator" id="_G3TIxzqbEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="CharSequence">
+      <signatures name="toString" type="java.lang.String" id="_G3TIzDqbEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_G3TIzTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TIzjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_G3TIzzqbEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_G3TI0DqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TI0TqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_G3TI0jqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_G3TI0zqbEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_G3TI1DqbEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IString_Type">
+      <signatures name="compareTo" type="int" id="_G3TI1TqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TI1jqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_G3TI1zqbEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_G3TI2DqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TI2TqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_G3TI2jqbEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_G3TI2zqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TI3DqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_G3TI3TqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_G3TI3jqbEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_G3TI3zqbEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$chars$0" type="java.util.Spliterator.OfInt" id="_G3TI4DqbEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$codePoints$1" type="java.util.Spliterator.OfInt" id="_G3TI4TqbEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_G3TI4jqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TI4zqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_G3TI5DqbEeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_G3TI5TqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TI5jqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_G3TI5zqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueOf" type="java.lang.String" id="_G3TI6DqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TI6TqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkBounds" type="void" id="_G3TI6jqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_G3TI6zqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_G3TI7DqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_G3TI7TqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointAt" type="int" id="_G3TI7jqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TI7zqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointBefore" type="int" id="_G3TI8DqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TI8TqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointCount" type="int" id="_G3TI8jqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TI8zqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_G3TI9DqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compareToIgnoreCase" type="int" id="_G3TI9TqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TI9jqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="concat" type="java.lang.String" id="_G3TI9zqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TI-DqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contains" type="boolean" id="_G3TI-TqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_G3TI-jqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contentEquals" type="boolean" id="_G3TI-zqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_G3TI_DqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyValueOf" type="java.lang.String" id="_G3TI_TqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char[]" id="_G3TI_jqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="endsWith" type="boolean" id="_G3TI_zqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TJADqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equalsIgnoreCase" type="boolean" id="_G3TJATqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TJAjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="format" type="java.lang.String" id="_G3TJAzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_G3TJBDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_G3TJBTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_G3TJBjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBytes" type="void" id="_G3TJBzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TJCDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_G3TJCTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_G3TJCjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_G3TJCzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChars" type="void" id="_G3TJDDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TJDTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_G3TJDjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="char[]" id="_G3TJDzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_G3TJEDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="indexOfSupplementary" type="int" id="_G3TJETqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TJEjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_G3TJEzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="intern" type="java.lang.String" id="_G3TJFDqbEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_G3TJFTqbEeiP29_qDiwNWQ"/>
+      <signatures name="join" type="java.lang.String" id="_G3TJFjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_G3TJFzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.CharSequence[]" id="_G3TJGDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOf" type="int" id="_G3TJGTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TJGjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOfSupplementary" type="int" id="_G3TJGzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TJHDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_G3TJHTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="matches" type="boolean" id="_G3TJHjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TJHzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nonSyncContentEquals" type="boolean" id="_G3TJIDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.AbstractStringBuilder" id="_G3TJITqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="offsetByCodePoints" type="int" id="_G3TJIjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TJIzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_G3TJJDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="regionMatches" type="boolean" id="_G3TJJTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TJJjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_G3TJJzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_G3TJKDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_G3TJKTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="java.lang.String" id="_G3TJKjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char" id="_G3TJKzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="char" id="_G3TJLDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="java.lang.String" id="_G3TJLTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TJLjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_G3TJLzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceFirst" type="java.lang.String" id="_G3TJMDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TJMTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_G3TJMjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="split" type="java.lang.String[]" id="_G3TJMzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TJNDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="startsWith" type="boolean" id="_G3TJNTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_G3TJNjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_G3TJNzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="substring" type="java.lang.String" id="_G3TJODqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TJOTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCharArray" type="char[]" id="_G3TJOjqbEeiP29_qDiwNWQ"/>
+      <signatures name="toLowerCase" type="java.lang.String" id="_G3TJOzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_G3TJPDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUpperCase" type="java.lang.String" id="_G3TJPTqbEeiP29_qDiwNWQ"/>
+      <signatures name="trim" type="java.lang.String" id="_G3TJPjqbEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Log">
+      <signatures name="debug" type="void" id="_G3TJSjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJSzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_G3TJTDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_G3TJTTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJTjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_G3TJTzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJUDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_G3TJUTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJUjqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_G3TJUzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_G3TJVDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJVTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_G3TJVjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_G3TJVzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJWDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_G3TJWTqbEeiP29_qDiwNWQ"/>
+      <signatures name="info" type="void" id="_G3TJWjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJWzqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_G3TJXDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_G3TJXTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJXjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTraceEnabled" type="boolean" id="_G3TJXzqbEeiP29_qDiwNWQ"/>
+      <signatures name="warn" type="void" id="_G3TJYDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJYTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_G3TJYjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_G3TJYzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJZDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isDebugEnabled" type="boolean" id="_G3TJZTqbEeiP29_qDiwNWQ"/>
+      <signatures name="fatal" type="void" id="_G3TJZjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJZzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="fatal" type="void" id="_G3TJaDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJaTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_G3TJajqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isErrorEnabled" type="boolean" id="_G3TJazqbEeiP29_qDiwNWQ"/>
+      <signatures name="isFatalEnabled" type="boolean" id="_G3TJbDqbEeiP29_qDiwNWQ"/>
+      <signatures name="isWarnEnabled" type="boolean" id="_G3TJbTqbEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Collection">
+      <signatures name="add" type="boolean" id="_G3TJbjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJbzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_G3TJcDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJcTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_G3TJcjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJczqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_G3TJdDqbEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_G3TJdTqbEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_G3TJdjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJdzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_G3TJeDqbEeiP29_qDiwNWQ"/>
+      <signatures name="iterator" type="java.util.Iterator" id="_G3TJeTqbEeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_G3TJejqbEeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_G3TJezqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_G3TJfDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toArray" type="java.lang.Object[]" id="_G3TJfTqbEeiP29_qDiwNWQ"/>
+      <signatures name="spliterator" type="java.util.Spliterator" id="_G3TJfjqbEeiP29_qDiwNWQ"/>
+      <signatures name="addAll" type="boolean" id="_G3TJfzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_G3TJgDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stream" type="java.util.stream.Stream" id="_G3TJgTqbEeiP29_qDiwNWQ"/>
+      <signatures name="containsAll" type="boolean" id="_G3TJgjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_G3TJgzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeAll" type="boolean" id="_G3TJhDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_G3TJhTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeIf" type="boolean" id="_G3TJhjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Predicate" id="_G3TJhzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retainAll" type="boolean" id="_G3TJiDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_G3TJiTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parallelStream" type="java.util.stream.Stream" id="_G3TJijqbEeiP29_qDiwNWQ"/>
+      <signatures name="forEach" type="void" id="_G3TJizqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Consumer" id="_G3TJjDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="List">
+      <signatures name="add" type="boolean" id="_G3TJjTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJjjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="add" type="void" id="_G3TJjzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TJkDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_G3TJkTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="java.lang.Object" id="_G3TJkjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TJkzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_G3TJlDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJlTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_G3TJljqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TJlzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_G3TJmDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJmTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_G3TJmjqbEeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_G3TJmzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJnDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="clear" type="void" id="_G3TJnTqbEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_G3TJnjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJnzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_G3TJoDqbEeiP29_qDiwNWQ"/>
+      <signatures name="iterator" type="java.util.Iterator" id="_G3TJoTqbEeiP29_qDiwNWQ"/>
+      <signatures name="lastIndexOf" type="int" id="_G3TJojqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_G3TJozqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="void" id="_G3TJpDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.UnaryOperator" id="_G3TJpTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="size" type="int" id="_G3TJpjqbEeiP29_qDiwNWQ"/>
+      <signatures name="subList" type="java.util.List" id="_G3TJpzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TJqDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_G3TJqTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toArray" type="java.lang.Object[]" id="_G3TJqjqbEeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_G3TJqzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_G3TJrDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="spliterator" type="java.util.Spliterator" id="_G3TJrTqbEeiP29_qDiwNWQ"/>
+      <signatures name="addAll" type="boolean" id="_G3TJrjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_G3TJrzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addAll" type="boolean" id="_G3TJsDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TJsTqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.Collection" id="_G3TJsjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="set" type="java.lang.Object" id="_G3TJszqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TJtDqbEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_G3TJtTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsAll" type="boolean" id="_G3TJtjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_G3TJtzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="listIterator" type="java.util.ListIterator" id="_G3TJuDqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_G3TJuTqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="listIterator" type="java.util.ListIterator" id="_G3TJujqbEeiP29_qDiwNWQ"/>
+      <signatures name="removeAll" type="boolean" id="_G3TJuzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_G3TJvDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retainAll" type="boolean" id="_G3TJvTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_G3TJvjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="sort" type="void" id="_G3TJvzqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Comparator" id="_G3TJwDqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stream" type="java.util.stream.Stream" id="_G3TJwTqbEeiP29_qDiwNWQ"/>
+      <signatures name="removeIf" type="boolean" id="_G3TJwjqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Predicate" id="_G3TJwzqbEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parallelStream" type="java.util.stream.Stream" id="_G3TJxDqbEeiP29_qDiwNWQ"/>
+      <signatures name="forEach" type="void" id="_G3TJxTqbEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Consumer" id="_G3TJxjqbEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

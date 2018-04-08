@@ -1,0 +1,6 @@
+dedal_diagram "goldmansachs.serialization-tests"
+
+	repositories (
+
+		repository genRepo
+	)

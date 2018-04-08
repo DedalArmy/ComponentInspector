@@ -1,0 +1,6 @@
+dedal_diagram "DSpace.dspace-rdf"
+
+	repositories (
+
+		repository genRepo
+	)

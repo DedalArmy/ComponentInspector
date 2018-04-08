@@ -1,0 +1,6 @@
+dedal_diagram "dearbinge..git"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,6 @@
+dedal_diagram "cucumber.kotlin-java8"
+
+	repositories (
+
+		repository genRepo
+	)

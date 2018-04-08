@@ -1,0 +1,6 @@
+dedal_diagram "checkstyle.checkstyle"
+
+	repositories (
+
+		repository genRepo
+	)

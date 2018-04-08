@@ -1,0 +1,1403 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="DSpace.dspace-rest">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="DSpace.dspace-rest.src.main.webapp.WEB-INF.applicationContext.xml_config" implements="//@architectureDescriptions[name='DSpace.dspace-rest.src.main.webapp.WEB-INF.applicationContext.xml_spec']">
+    <configComponents name="org.dspace.utils.DSpace" id="_W79TADqaEeiP29_qDiwNWQ" realizes="_XYzBzDqaEeiP29_qDiwNWQ" implements="_XCIzgDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpace" type="IDSpace_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonLifecycle_DSpace" direction="REQUIRED" type="CommonLifecycle"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceKernel_DSpace" direction="REQUIRED" type="DSpaceKernel"/>
+      <attributes name="kernel" type="org.dspace.kernel.DSpaceKernel"/>
+    </configComponents>
+    <configComponents name="dspace" id="_W79TATqaEeiP29_qDiwNWQ" realizes="_XYzB4DqaEeiP29_qDiwNWQ" implements="_XXNEkDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.dspace.usage.LoggerUsageEventListener" id="_W79TAjqaEeiP29_qDiwNWQ" realizes="_XYzAzDqaEeiP29_qDiwNWQ" implements="_XX0IkDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerUsageEventListener" type="ILoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_LoggerUsageEventListener" direction="REQUIRED" type="ILogger_Type"/>
+      <attributes name="log" type="org.apache.log4j.Logger"/>
+    </configComponents>
+    <configConnections refID="_W79TAzqaEeiP29_qDiwNWQ" property="&quot;eventService&quot;" clientClassElem="_W79TAjqaEeiP29_qDiwNWQ" serverClassElem="_W79TATqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="DSpace.dspace-rest.src.main.webapp.WEB-INF.applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='DSpace.dspace-rest.src.main.webapp.WEB-INF.applicationContext.xml_config']">
+    <assmComponents name="dspace" id="_W79TBDqaEeiP29_qDiwNWQ" instantiates="_W79TADqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpace_dspace" type="IDSpace_Type" instantiates="IDSpace"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonLifecycle_DSpace_dspace" direction="REQUIRED" type="CommonLifecycle" instantiates="ICommonLifecycle_DSpace"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceKernel_DSpace_dspace" direction="REQUIRED" type="DSpaceKernel" instantiates="IDSpaceKernel_DSpace"/>
+    </assmComponents>
+    <assmComponents name="dspace.eventService" id="_W79TBTqaEeiP29_qDiwNWQ" instantiates="_W79TATqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_dspace.eventService" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="org.dspace.usage.LoggerUsageEventListener1" id="_W79TBjqaEeiP29_qDiwNWQ" instantiates="_W79TAjqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerUsageEventListener_org.dspace.usage.LoggerUsageEventListener1" type="ILoggerUsageEventListener_Type" instantiates="ILoggerUsageEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_LoggerUsageEventListener_org.dspace.usage.LoggerUsageEventListener1" direction="REQUIRED" type="ILogger_Type" instantiates="ILogger_LoggerUsageEventListener"/>
+    </assmComponents>
+    <assemblyConnections refID="_W79TBzqaEeiP29_qDiwNWQ" serverInstElem="_W79TBTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="DSpace.dspace-rest.src.main.webapp.WEB-INF.applicationContext.xml_spec">
+    <specComponents name="LoggerUsageEventListener_role" id="_XYzAzDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerUsageEventListenerLoggerUsageEventListener_role" type="ILoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerLoggerUsageEventListener_role" direction="REQUIRED" type="ILogger_Type"/>
+    </specComponents>
+    <specComponents name="DSpace_role" id="_XYzBzDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceDSpace_role" type="IDSpace_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonLifecycleDSpace_role" direction="REQUIRED" type="CommonLifecycle"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceKernelDSpace_role" direction="REQUIRED" type="DSpaceKernel"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_XYzB4DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specConnections refID="_XYzB7DqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="DSpace.dspace-rest.src.main.webapp.WEB-INF.security-applicationContext.xml_config" implements="//@architectureDescriptions[name='DSpace.dspace-rest.src.main.webapp.WEB-INF.security-applicationContext.xml_spec']">
+    <configComponents name="org.springframework.security.web.FilterChainProxy" id="_XZJlUDqaEeiP29_qDiwNWQ" realizes="_XhOjyTqaEeiP29_qDiwNWQ" implements="_XaJq4DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterChainProxy" type="IFilterChainProxy_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_FilterChainProxy" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FilterChainProxy" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FilterChainProxy" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FilterChainProxy" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FilterChainProxy" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_FilterChainProxy" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IList_FilterChainProxy" direction="REQUIRED" type="List"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterChainValidator_FilterChainProxy" direction="REQUIRED" type="FilterChainValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpFirewall_FilterChainProxy" direction="REQUIRED" type="HttpFirewall"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_FilterChainProxy" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FilterChainProxy" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FilterChainProxy" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FilterChainProxy" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FilterChainProxy" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyResolver_FilterChainProxy" direction="REQUIRED" type="PropertyResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironment_FilterChainProxy" direction="REQUIRED" type="Environment"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServletContext_FilterChainProxy" direction="REQUIRED" type="ServletContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_FilterChainProxy" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_FilterChainProxy" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_FilterChainProxy" direction="REQUIRED" type="Set"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="FILTER_APPLIED" type="java.lang.String"/>
+      <attributes name="filterChains" type="java.util.List"/>
+      <attributes name="filterChainValidator" type="org.springframework.security.web.FilterChainProxy.FilterChainValidator"/>
+      <attributes name="firewall" type="org.springframework.security.web.firewall.HttpFirewall"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="beanName" type="java.lang.String"/>
+      <attributes name="environment" type="org.springframework.core.env.Environment"/>
+      <attributes name="servletContext" type="javax.servlet.ServletContext"/>
+      <attributes name="filterConfig" type="javax.servlet.FilterConfig"/>
+      <attributes name="requiredProperties" type="java.util.Set"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="DSpace.dspace-rest.src.main.webapp.WEB-INF.security-applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='DSpace.dspace-rest.src.main.webapp.WEB-INF.security-applicationContext.xml_config']">
+    <assmComponents name="springSecurityFilterChain" id="_XZJlUTqaEeiP29_qDiwNWQ" instantiates="_XZJlUDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterChainProxy_springSecurityFilterChain" type="IFilterChainProxy_Type" instantiates="IFilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="Log" instantiates="ILog_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" instantiates="null_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="Comparable" instantiates="IComparable_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="IString_Type" instantiates="IString_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="Collection" instantiates="ICollection_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IList_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="List" instantiates="IList_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterChainValidator_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="FilterChainValidator" instantiates="IFilterChainValidator_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpFirewall_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="HttpFirewall" instantiates="IHttpFirewall_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="Log" instantiates="ILog_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" instantiates="null_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="Comparable" instantiates="IComparable_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="IString_Type" instantiates="IString_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyResolver_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="PropertyResolver" instantiates="IPropertyResolver_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironment_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="Environment" instantiates="IEnvironment_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServletContext_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="ServletContext" instantiates="IServletContext_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="FilterConfig" instantiates="IFilterConfig_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="Collection" instantiates="ICollection_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="Set" instantiates="ISet_FilterChainProxy"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="DSpace.dspace-rest.src.main.webapp.WEB-INF.security-applicationContext.xml_spec">
+    <specComponents name="FilterChainProxy_role" id="_XhOjyTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterChainProxyFilterChainProxy_role" type="IFilterChainProxy_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogFilterChainProxy_role" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullFilterChainProxy_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableFilterChainProxy_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceFilterChainProxy_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringFilterChainProxy_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionFilterChainProxy_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListFilterChainProxy_role" direction="REQUIRED" type="List"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterChainValidatorFilterChainProxy_role" direction="REQUIRED" type="FilterChainValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpFirewallFilterChainProxy_role" direction="REQUIRED" type="HttpFirewall"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogFilterChainProxy_role" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullFilterChainProxy_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableFilterChainProxy_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceFilterChainProxy_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringFilterChainProxy_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyResolverFilterChainProxy_role" direction="REQUIRED" type="PropertyResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentFilterChainProxy_role" direction="REQUIRED" type="Environment"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServletContextFilterChainProxy_role" direction="REQUIRED" type="ServletContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfigFilterChainProxy_role" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionFilterChainProxy_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISetFilterChainProxy_role" direction="REQUIRED" type="Set"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="DSpace.dspace-rest.target.dspace-rest-7.0-SNAPSHOT.WEB-INF.applicationContext.xml_config" implements="//@architectureDescriptions[name='DSpace.dspace-rest.target.dspace-rest-7.0-SNAPSHOT.WEB-INF.applicationContext.xml_spec']">
+    <configComponents name="org.dspace.utils.DSpace" id="_Xhj6cDqaEeiP29_qDiwNWQ" realizes="_XiquvDqaEeiP29_qDiwNWQ" implements="_XhkhgTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpace" type="IDSpace_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonLifecycle_DSpace" direction="REQUIRED" type="CommonLifecycle"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceKernel_DSpace" direction="REQUIRED" type="DSpaceKernel"/>
+      <attributes name="kernel" type="org.dspace.kernel.DSpaceKernel"/>
+    </configComponents>
+    <configComponents name="dspace" id="_Xhj6cTqaEeiP29_qDiwNWQ" realizes="_XiqusDqaEeiP29_qDiwNWQ" implements="_XiqGoDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.dspace.usage.LoggerUsageEventListener" id="_Xhj6cjqaEeiP29_qDiwNWQ" realizes="_XiqtsDqaEeiP29_qDiwNWQ" implements="_XiqGrDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerUsageEventListener" type="ILoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_LoggerUsageEventListener" direction="REQUIRED" type="ILogger_Type"/>
+      <attributes name="log" type="org.apache.log4j.Logger"/>
+    </configComponents>
+    <configConnections refID="_Xhj6czqaEeiP29_qDiwNWQ" property="&quot;eventService&quot;" clientClassElem="_Xhj6cjqaEeiP29_qDiwNWQ" serverClassElem="_Xhj6cTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="DSpace.dspace-rest.target.dspace-rest-7.0-SNAPSHOT.WEB-INF.applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='DSpace.dspace-rest.target.dspace-rest-7.0-SNAPSHOT.WEB-INF.applicationContext.xml_config']">
+    <assmComponents name="dspace" id="_Xhj6dDqaEeiP29_qDiwNWQ" instantiates="_Xhj6cDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpace_dspace" type="IDSpace_Type" instantiates="IDSpace"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonLifecycle_DSpace_dspace" direction="REQUIRED" type="CommonLifecycle" instantiates="ICommonLifecycle_DSpace"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceKernel_DSpace_dspace" direction="REQUIRED" type="DSpaceKernel" instantiates="IDSpaceKernel_DSpace"/>
+    </assmComponents>
+    <assmComponents name="dspace.eventService" id="_Xhj6dTqaEeiP29_qDiwNWQ" instantiates="_Xhj6cTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_dspace.eventService" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="org.dspace.usage.LoggerUsageEventListener1" id="_Xhj6djqaEeiP29_qDiwNWQ" instantiates="_Xhj6cjqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerUsageEventListener_org.dspace.usage.LoggerUsageEventListener1" type="ILoggerUsageEventListener_Type" instantiates="ILoggerUsageEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_LoggerUsageEventListener_org.dspace.usage.LoggerUsageEventListener1" direction="REQUIRED" type="ILogger_Type" instantiates="ILogger_LoggerUsageEventListener"/>
+    </assmComponents>
+    <assemblyConnections refID="_XhkhgDqaEeiP29_qDiwNWQ" serverInstElem="_Xhj6dTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="DSpace.dspace-rest.target.dspace-rest-7.0-SNAPSHOT.WEB-INF.applicationContext.xml_spec">
+    <specComponents name="LoggerUsageEventListener_role" id="_XiqtsDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerUsageEventListenerLoggerUsageEventListener_role" type="ILoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerLoggerUsageEventListener_role" direction="REQUIRED" type="ILogger_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_XiqusDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="DSpace_role" id="_XiquvDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceDSpace_role" type="IDSpace_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonLifecycleDSpace_role" direction="REQUIRED" type="CommonLifecycle"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceKernelDSpace_role" direction="REQUIRED" type="DSpaceKernel"/>
+    </specComponents>
+    <specConnections refID="_Xiqu0DqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="DSpace.dspace-rest.target.dspace-rest-7.0-SNAPSHOT.WEB-INF.security-applicationContext.xml_config" implements="//@architectureDescriptions[name='DSpace.dspace-rest.target.dspace-rest-7.0-SNAPSHOT.WEB-INF.security-applicationContext.xml_spec']">
+    <configComponents name="org.springframework.security.web.FilterChainProxy" id="_XjChIDqaEeiP29_qDiwNWQ" realizes="_XjDvQDqaEeiP29_qDiwNWQ" implements="_XjDIMDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterChainProxy" type="IFilterChainProxy_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_FilterChainProxy" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FilterChainProxy" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FilterChainProxy" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FilterChainProxy" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FilterChainProxy" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_FilterChainProxy" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IList_FilterChainProxy" direction="REQUIRED" type="List"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterChainValidator_FilterChainProxy" direction="REQUIRED" type="FilterChainValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpFirewall_FilterChainProxy" direction="REQUIRED" type="HttpFirewall"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_FilterChainProxy" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FilterChainProxy" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FilterChainProxy" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FilterChainProxy" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FilterChainProxy" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyResolver_FilterChainProxy" direction="REQUIRED" type="PropertyResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironment_FilterChainProxy" direction="REQUIRED" type="Environment"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServletContext_FilterChainProxy" direction="REQUIRED" type="ServletContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_FilterChainProxy" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_FilterChainProxy" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_FilterChainProxy" direction="REQUIRED" type="Set"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="FILTER_APPLIED" type="java.lang.String"/>
+      <attributes name="filterChains" type="java.util.List"/>
+      <attributes name="filterChainValidator" type="org.springframework.security.web.FilterChainProxy.FilterChainValidator"/>
+      <attributes name="firewall" type="org.springframework.security.web.firewall.HttpFirewall"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="beanName" type="java.lang.String"/>
+      <attributes name="environment" type="org.springframework.core.env.Environment"/>
+      <attributes name="servletContext" type="javax.servlet.ServletContext"/>
+      <attributes name="filterConfig" type="javax.servlet.FilterConfig"/>
+      <attributes name="requiredProperties" type="java.util.Set"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="DSpace.dspace-rest.target.dspace-rest-7.0-SNAPSHOT.WEB-INF.security-applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='DSpace.dspace-rest.target.dspace-rest-7.0-SNAPSHOT.WEB-INF.security-applicationContext.xml_config']">
+    <assmComponents name="springSecurityFilterChain" id="_XjChITqaEeiP29_qDiwNWQ" instantiates="_XjChIDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterChainProxy_springSecurityFilterChain" type="IFilterChainProxy_Type" instantiates="IFilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="Log" instantiates="ILog_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" instantiates="null_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="Comparable" instantiates="IComparable_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="IString_Type" instantiates="IString_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="Collection" instantiates="ICollection_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IList_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="List" instantiates="IList_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterChainValidator_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="FilterChainValidator" instantiates="IFilterChainValidator_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpFirewall_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="HttpFirewall" instantiates="IHttpFirewall_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="Log" instantiates="ILog_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" instantiates="null_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="Comparable" instantiates="IComparable_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="IString_Type" instantiates="IString_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyResolver_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="PropertyResolver" instantiates="IPropertyResolver_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironment_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="Environment" instantiates="IEnvironment_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServletContext_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="ServletContext" instantiates="IServletContext_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="FilterConfig" instantiates="IFilterConfig_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="Collection" instantiates="ICollection_FilterChainProxy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_FilterChainProxy_springSecurityFilterChain" direction="REQUIRED" type="Set" instantiates="ISet_FilterChainProxy"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="DSpace.dspace-rest.target.dspace-rest-7.0-SNAPSHOT.WEB-INF.security-applicationContext.xml_spec">
+    <specComponents name="FilterChainProxy_role" id="_XjDvQDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterChainProxyFilterChainProxy_role" type="IFilterChainProxy_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogFilterChainProxy_role" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullFilterChainProxy_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableFilterChainProxy_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceFilterChainProxy_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringFilterChainProxy_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionFilterChainProxy_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListFilterChainProxy_role" direction="REQUIRED" type="List"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterChainValidatorFilterChainProxy_role" direction="REQUIRED" type="FilterChainValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpFirewallFilterChainProxy_role" direction="REQUIRED" type="HttpFirewall"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogFilterChainProxy_role" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullFilterChainProxy_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableFilterChainProxy_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceFilterChainProxy_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringFilterChainProxy_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyResolverFilterChainProxy_role" direction="REQUIRED" type="PropertyResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentFilterChainProxy_role" direction="REQUIRED" type="Environment"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServletContextFilterChainProxy_role" direction="REQUIRED" type="ServletContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfigFilterChainProxy_role" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionFilterChainProxy_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISetFilterChainProxy_role" direction="REQUIRED" type="Set"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="org_dspace_utils_DSpace_Type" id="_XCIzgDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpace_org_dspace_utils_DSpace_Type" type="IDSpace_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonLifecycle_DSpace_org_dspace_utils_DSpace_Type" direction="REQUIRED" type="CommonLifecycle"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceKernel_DSpace_org_dspace_utils_DSpace_Type" direction="REQUIRED" type="DSpaceKernel"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_XXNEkDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_dspace_usage_LoggerUsageEventListener_Type" id="_XX0IkDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerUsageEventListener_org_dspace_usage_LoggerUsageEventListener_Type" type="ILoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_LoggerUsageEventListener_org_dspace_usage_LoggerUsageEventListener_Type" direction="REQUIRED" type="ILogger_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_security_web_FilterChainProxy_Type" id="_XaJq4DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" type="IFilterChainProxy_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IList_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="List"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterChainValidator_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="FilterChainValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpFirewall_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="HttpFirewall"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyResolver_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="PropertyResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironment_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="Environment"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServletContext_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="ServletContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="Set"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_dspace_utils_DSpace_Type" id="_XhkhgTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpace_org_dspace_utils_DSpace_Type" type="IDSpace_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonLifecycle_DSpace_org_dspace_utils_DSpace_Type" direction="REQUIRED" type="CommonLifecycle"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceKernel_DSpace_org_dspace_utils_DSpace_Type" direction="REQUIRED" type="DSpaceKernel"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_XiqGoDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_dspace_usage_LoggerUsageEventListener_Type" id="_XiqGrDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerUsageEventListener_org_dspace_usage_LoggerUsageEventListener_Type" type="ILoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_LoggerUsageEventListener_org_dspace_usage_LoggerUsageEventListener_Type" direction="REQUIRED" type="ILogger_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_security_web_FilterChainProxy_Type" id="_XjDIMDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" type="IFilterChainProxy_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IList_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="List"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterChainValidator_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="FilterChainValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpFirewall_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="HttpFirewall"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyResolver_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="PropertyResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironment_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="Environment"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServletContext_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="ServletContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_FilterChainProxy_org_springframework_security_web_FilterChainProxy_Type" direction="REQUIRED" type="Set"/>
+    </components>
+    <interfaceTypes name="IDSpace_Type">
+      <signatures name="getSingletonService" type="java.lang.Object" id="_XDjv0DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_XDjv0TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEventService" type="org.dspace.services.EventService" id="_XDjv0jqaEeiP29_qDiwNWQ"/>
+      <signatures name="getConfigurationService" type="org.dspace.services.ConfigurationService" id="_XDjv0zqaEeiP29_qDiwNWQ"/>
+      <signatures name="getServiceManager" type="org.dspace.kernel.ServiceManager" id="_XDjv1DqaEeiP29_qDiwNWQ"/>
+      <signatures name="getRequestService" type="org.dspace.services.RequestService" id="_XDjv1TqaEeiP29_qDiwNWQ"/>
+      <signatures name="getKernel" type="org.dspace.kernel.DSpaceKernel" id="_XDjv1jqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="CommonLifecycle">
+      <signatures name="start" type="void" id="_XDjv1zqaEeiP29_qDiwNWQ"/>
+      <signatures name="destroy" type="void" id="_XDjv2DqaEeiP29_qDiwNWQ"/>
+      <signatures name="stop" type="void" id="_XDjv2TqaEeiP29_qDiwNWQ"/>
+      <signatures name="getManagedBean" type="java.lang.Object" id="_XDjv2jqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="DSpaceKernel">
+      <signatures name="isRunning" type="boolean" id="_XDkW4DqaEeiP29_qDiwNWQ"/>
+      <signatures name="getConfigurationService" type="org.dspace.services.ConfigurationService" id="_XDkW4TqaEeiP29_qDiwNWQ"/>
+      <signatures name="getServiceManager" type="org.dspace.kernel.ServiceManager" id="_XDkW4jqaEeiP29_qDiwNWQ"/>
+      <signatures name="getMBeanName" type="java.lang.String" id="_XDkW4zqaEeiP29_qDiwNWQ"/>
+      <signatures name="start" type="void" id="_XDkW5DqaEeiP29_qDiwNWQ"/>
+      <signatures name="destroy" type="void" id="_XDkW5TqaEeiP29_qDiwNWQ"/>
+      <signatures name="stop" type="void" id="_XDkW5jqaEeiP29_qDiwNWQ"/>
+      <signatures name="getManagedBean" type="java.lang.Object" id="_XDkW5zqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_XXNEkTqaEeiP29_qDiwNWQ"/>
+      <signatures name="wait" type="void" id="_XXNEkjqaEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_XXNEkzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XXNElDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_XXNElTqaEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_XXNEljqaEeiP29_qDiwNWQ"/>
+      <signatures name="getClass" type="java.lang.Class" id="_XXNElzqaEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_XXNEmDqaEeiP29_qDiwNWQ"/>
+      <signatures name="notify" type="void" id="_XXNEmTqaEeiP29_qDiwNWQ"/>
+      <signatures name="notifyAll" type="void" id="_XXNEmjqaEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_XXNEmzqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ILoggerUsageEventListener_Type">
+      <signatures name="getResourcePrefix" type="java.lang.String" id="_XYmywDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getEventNamePrefixes" type="java.lang.String[]" id="_XYmywTqaEeiP29_qDiwNWQ"/>
+      <signatures name="receiveEvent" type="void" id="_XYmywjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.services.model.Event" id="_XYmywzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEventService" type="void" id="_XYmyxDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.services.EventService" id="_XYmyxTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="formatMessage" type="java.lang.String" id="_XYmyxjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.content.DSpaceObject" id="_XYmyxzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="formatAction" type="java.lang.String" id="_XYmyyDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.usage.UsageEvent.Action" id="_XYmyyTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.dspace.content.DSpaceObject" id="_XYyY8DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="EventListener">
+      <signatures name="getResourcePrefix" type="java.lang.String" id="_XYyY8TqaEeiP29_qDiwNWQ"/>
+      <signatures name="getEventNamePrefixes" type="java.lang.String[]" id="_XYyY8jqaEeiP29_qDiwNWQ"/>
+      <signatures name="receiveEvent" type="void" id="_XYzAADqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.services.model.Event" id="_XYzAATqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IAbstractUsageEventListener_Type">
+      <signatures name="getResourcePrefix" type="java.lang.String" id="_XYzAAjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getEventNamePrefixes" type="java.lang.String[]" id="_XYzAAzqaEeiP29_qDiwNWQ"/>
+      <signatures name="receiveEvent" type="void" id="_XYzABDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.services.model.Event" id="_XYzABTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEventService" type="void" id="_XYzABjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.services.EventService" id="_XYzABzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ILogger_Type">
+      <signatures name="removeAllAppenders" type="void" id="_XYzADDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getAllAppenders" type="java.util.Enumeration" id="_XYzADTqaEeiP29_qDiwNWQ"/>
+      <signatures name="removeAppender" type="void" id="_XYzADjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzADzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAttached" type="boolean" id="_XYzAEDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_XYzAETqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addAppender" type="void" id="_XYzAEjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_XYzAEzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAppender" type="org.apache.log4j.Appender" id="_XYzAFDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzAFTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="shutdown" type="void" id="_XYzAFjqaEeiP29_qDiwNWQ"/>
+      <signatures name="log" type="void" id="_XYzAFzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzAGDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.log4j.Priority" id="_XYzAGTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XYzAGjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Throwable" id="_XYzAGzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getName" type="java.lang.String" id="_XYzAHDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getInstance" type="org.apache.log4j.Category" id="_XYzAHTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzAHjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getParent" type="org.apache.log4j.Category" id="_XYzAHzqaEeiP29_qDiwNWQ"/>
+      <signatures name="debug" type="void" id="_XYzAIDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XYzAITqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XYzAIjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setPriority" type="void" id="_XYzAIzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Priority" id="_XYzAJDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getPriority" type="org.apache.log4j.Level" id="_XYzAJTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getRoot" type="org.apache.log4j.Category" id="_XYzAJjqaEeiP29_qDiwNWQ"/>
+      <signatures name="exists" type="org.apache.log4j.Logger" id="_XYzAJzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzAKDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_XYzAKTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XYzAKjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_XYzAKzqaEeiP29_qDiwNWQ"/>
+      <signatures name="info" type="void" id="_XYzALDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XYzALTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XYzALjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="class$" type="java.lang.Class" id="_XYzALzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzAMDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forcedLog" type="void" id="_XYzAMTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzAMjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.log4j.Priority" id="_XYzAMzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XYzANDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Throwable" id="_XYzANTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultHierarchy" type="org.apache.log4j.spi.LoggerRepository" id="_XYzANjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getCurrentCategories" type="java.util.Enumeration" id="_XYzANzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getResourceBundle" type="java.util.ResourceBundle" id="_XYzAODqaEeiP29_qDiwNWQ"/>
+      <signatures name="getLoggerRepository" type="org.apache.log4j.spi.LoggerRepository" id="_XYzAOTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getResourceBundleString" type="java.lang.String" id="_XYzAOjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzAOzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setResourceBundle" type="void" id="_XYzAPDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.ResourceBundle" id="_XYzAPTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChainedPriority" type="org.apache.log4j.Priority" id="_XYzAPjqaEeiP29_qDiwNWQ"/>
+      <signatures name="closeNestedAppenders" type="void" id="_XYzAPzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getEffectiveLevel" type="org.apache.log4j.Level" id="_XYzAQDqaEeiP29_qDiwNWQ"/>
+      <signatures name="fireRemoveAppenderEvent" type="void" id="_XYzAQTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_XYzAQjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLevel" type="org.apache.log4j.Level" id="_XYzAQzqaEeiP29_qDiwNWQ"/>
+      <signatures name="isEnabledFor" type="boolean" id="_XYzARDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Priority" id="_XYzARTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_XYzARjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XYzARzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XYzASDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAdditivity" type="boolean" id="_XYzASTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getHierarchy" type="org.apache.log4j.spi.LoggerRepository" id="_XYzASjqaEeiP29_qDiwNWQ"/>
+      <signatures name="isDebugEnabled" type="boolean" id="_XYzASzqaEeiP29_qDiwNWQ"/>
+      <signatures name="fatal" type="void" id="_XYzATDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XYzATTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAdditivity" type="void" id="_XYzATjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_XYzATzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="l7dlog" type="void" id="_XYzAUDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Priority" id="_XYzAUTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XYzAUjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_XYzAUzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setHierarchy" type="void" id="_XYzAVDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.spi.LoggerRepository" id="_XYzAVTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="callAppenders" type="void" id="_XYzAVjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.spi.LoggingEvent" id="_XYzAVzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="assertLog" type="void" id="_XYzAWDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_XYzAWTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XYzAWjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setLevel" type="void" id="_XYzAWzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Level" id="_XYzAXDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_XYzAXTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XYzAXjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLogger" type="org.apache.log4j.Logger" id="_XYzAXzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_XYzAYDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRootLogger" type="org.apache.log4j.Logger" id="_XYzAYTqaEeiP29_qDiwNWQ"/>
+      <signatures name="isTraceEnabled" type="boolean" id="_XYzAYjqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="AppenderAttachable">
+      <signatures name="removeAllAppenders" type="void" id="_XYzAYzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getAllAppenders" type="java.util.Enumeration" id="_XYzAZDqaEeiP29_qDiwNWQ"/>
+      <signatures name="removeAppender" type="void" id="_XYzAZTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzAZjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeAppender" type="void" id="_XYzAZzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_XYzAaDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAttached" type="boolean" id="_XYzAaTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_XYzAajqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addAppender" type="void" id="_XYzAazqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_XYzAbDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAppender" type="org.apache.log4j.Appender" id="_XYzAbTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzAbjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ICategory_Type">
+      <signatures name="removeAllAppenders" type="void" id="_XYzAbzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getAllAppenders" type="java.util.Enumeration" id="_XYzAcDqaEeiP29_qDiwNWQ"/>
+      <signatures name="removeAppender" type="void" id="_XYzAcTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzAcjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAttached" type="boolean" id="_XYzAczqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_XYzAdDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addAppender" type="void" id="_XYzAdTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_XYzAdjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAppender" type="org.apache.log4j.Appender" id="_XYzAdzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzAeDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="shutdown" type="void" id="_XYzAeTqaEeiP29_qDiwNWQ"/>
+      <signatures name="log" type="void" id="_XYzAejqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzAezqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.log4j.Priority" id="_XYzAfDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XYzAfTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Throwable" id="_XYzAfjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getName" type="java.lang.String" id="_XYzAfzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getInstance" type="org.apache.log4j.Category" id="_XYzAgDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzAgTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getParent" type="org.apache.log4j.Category" id="_XYzAgjqaEeiP29_qDiwNWQ"/>
+      <signatures name="debug" type="void" id="_XYzAgzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XYzAhDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XYzAhTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setPriority" type="void" id="_XYzAhjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Priority" id="_XYzAhzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getPriority" type="org.apache.log4j.Level" id="_XYzAiDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getRoot" type="org.apache.log4j.Category" id="_XYzAiTqaEeiP29_qDiwNWQ"/>
+      <signatures name="exists" type="org.apache.log4j.Logger" id="_XYzAijqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzAizqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_XYzAjDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XYzAjTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_XYzAjjqaEeiP29_qDiwNWQ"/>
+      <signatures name="info" type="void" id="_XYzAjzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XYzAkDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XYzAkTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="class$" type="java.lang.Class" id="_XYzAkjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzAkzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forcedLog" type="void" id="_XYzAlDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzAlTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.log4j.Priority" id="_XYzAljqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XYzAlzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Throwable" id="_XYzAmDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultHierarchy" type="org.apache.log4j.spi.LoggerRepository" id="_XYzAmTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getCurrentCategories" type="java.util.Enumeration" id="_XYzAmjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getResourceBundle" type="java.util.ResourceBundle" id="_XYzAmzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getLoggerRepository" type="org.apache.log4j.spi.LoggerRepository" id="_XYzAnDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getResourceBundleString" type="java.lang.String" id="_XYzAnTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XYzAnjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setResourceBundle" type="void" id="_XYzAnzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.ResourceBundle" id="_XYzAoDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChainedPriority" type="org.apache.log4j.Priority" id="_XYzAoTqaEeiP29_qDiwNWQ"/>
+      <signatures name="closeNestedAppenders" type="void" id="_XYzAojqaEeiP29_qDiwNWQ"/>
+      <signatures name="getEffectiveLevel" type="org.apache.log4j.Level" id="_XYzAozqaEeiP29_qDiwNWQ"/>
+      <signatures name="fireRemoveAppenderEvent" type="void" id="_XYzApDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_XYzApTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLevel" type="org.apache.log4j.Level" id="_XYzApjqaEeiP29_qDiwNWQ"/>
+      <signatures name="isEnabledFor" type="boolean" id="_XYzApzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Priority" id="_XYzAqDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_XYzAqTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XYzAqjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XYzAqzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAdditivity" type="boolean" id="_XYzArDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getHierarchy" type="org.apache.log4j.spi.LoggerRepository" id="_XYzArTqaEeiP29_qDiwNWQ"/>
+      <signatures name="isDebugEnabled" type="boolean" id="_XYzArjqaEeiP29_qDiwNWQ"/>
+      <signatures name="fatal" type="void" id="_XYzArzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XYzAsDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAdditivity" type="void" id="_XYzAsTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_XYzAsjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="l7dlog" type="void" id="_XYzAszqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Priority" id="_XYzAtDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XYzAtTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_XYzAtjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setHierarchy" type="void" id="_XYzAtzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.spi.LoggerRepository" id="_XYzAuDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="callAppenders" type="void" id="_XYzAuTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.spi.LoggingEvent" id="_XYzAujqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="assertLog" type="void" id="_XYzAuzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_XYzAvDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XYzAvTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setLevel" type="void" id="_XYzAvjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Level" id="_XYzAvzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IFilterChainProxy_Type">
+      <signatures name="init" type="void" id="_XfL74DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.FilterConfig" id="_XfL74TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="destroy" type="void" id="_XfL74jqaEeiP29_qDiwNWQ"/>
+      <signatures name="doFilter" type="void" id="_XfL74zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletRequest" id="_XfL75DqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.ServletResponse" id="_XfL75TqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.servlet.FilterChain" id="_XfL75jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setBeanName" type="void" id="_XfL75zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XfL76DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEnvironment" type="void" id="_XfL76TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.core.env.Environment" id="_XfL76jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEnvironment" type="org.springframework.core.env.Environment" id="_XfL76zqaEeiP29_qDiwNWQ"/>
+      <signatures name="setServletContext" type="void" id="_XfL77DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletContext" id="_XfL77TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="afterPropertiesSet" type="void" id="_XfL77jqaEeiP29_qDiwNWQ"/>
+      <signatures name="destroy" type="void" id="_XfL77zqaEeiP29_qDiwNWQ"/>
+      <signatures name="createEnvironment" type="org.springframework.core.env.Environment" id="_XfL78DqaEeiP29_qDiwNWQ"/>
+      <signatures name="getFilterName" type="java.lang.String" id="_XfL78TqaEeiP29_qDiwNWQ"/>
+      <signatures name="addRequiredProperty" type="void" id="_XfL78jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XfL78zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getServletContext" type="javax.servlet.ServletContext" id="_XfL79DqaEeiP29_qDiwNWQ"/>
+      <signatures name="initFilterBean" type="void" id="_XfL79TqaEeiP29_qDiwNWQ"/>
+      <signatures name="getFilterConfig" type="javax.servlet.FilterConfig" id="_XfL79jqaEeiP29_qDiwNWQ"/>
+      <signatures name="initBeanWrapper" type="void" id="_XfL79zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.beans.BeanWrapper" id="_XfL7-DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_XfL7-TqaEeiP29_qDiwNWQ"/>
+      <signatures name="access$200" type="org.apache.commons.logging.Log" id="_XfL7-jqaEeiP29_qDiwNWQ"/>
+      <signatures name="doFilterInternal" type="void" id="_XfL7-zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletRequest" id="_XfL7_DqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.ServletResponse" id="_XfL7_TqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.servlet.FilterChain" id="_XfL7_jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFilters" type="java.util.List" id="_XfL7_zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XfL8ADqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFilterChainMap" type="java.util.Map" id="_XfL8ATqaEeiP29_qDiwNWQ"/>
+      <signatures name="setFilterChainMap" type="void" id="_XfL8AjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_XfL8AzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setFilterChainValidator" type="void" id="_XfL8BDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.security.web.FilterChainProxy.FilterChainValidator" id="_XfL8BTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setFirewall" type="void" id="_XfL8BjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.security.web.firewall.HttpFirewall" id="_XfL8BzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFilterChains" type="java.util.List" id="_XfL8CDqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Filter">
+      <signatures name="init" type="void" id="_XfL8CTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.FilterConfig" id="_XfL8CjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="destroy" type="void" id="_XfL8CzqaEeiP29_qDiwNWQ"/>
+      <signatures name="doFilter" type="void" id="_XfL8DDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletRequest" id="_XfL8DTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.ServletResponse" id="_XfL8DjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.servlet.FilterChain" id="_XfL8DzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="BeanNameAware">
+      <signatures name="setBeanName" type="void" id="_XfL8EDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XfL8ETqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="EnvironmentAware">
+      <signatures name="setEnvironment" type="void" id="_XfL8EjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.core.env.Environment" id="_XfL8EzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="EnvironmentCapable">
+      <signatures name="getEnvironment" type="org.springframework.core.env.Environment" id="_XfL8FDqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ServletContextAware">
+      <signatures name="setServletContext" type="void" id="_XfL8FTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletContext" id="_XfL8FjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="InitializingBean">
+      <signatures name="afterPropertiesSet" type="void" id="_XfL8FzqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="DisposableBean">
+      <signatures name="destroy" type="void" id="_XfL8GDqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IGenericFilterBean_Type">
+      <signatures name="init" type="void" id="_XfL8GTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.FilterConfig" id="_XfL8GjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="destroy" type="void" id="_XfL8GzqaEeiP29_qDiwNWQ"/>
+      <signatures name="doFilter" type="void" id="_XfL8HDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletRequest" id="_XfL8HTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.ServletResponse" id="_XfL8HjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.servlet.FilterChain" id="_XfL8HzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setBeanName" type="void" id="_XfL8IDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XfL8ITqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEnvironment" type="void" id="_XfL8IjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.core.env.Environment" id="_XfL8IzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEnvironment" type="org.springframework.core.env.Environment" id="_XfL8JDqaEeiP29_qDiwNWQ"/>
+      <signatures name="setServletContext" type="void" id="_XfL8JTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletContext" id="_XfL8JjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="afterPropertiesSet" type="void" id="_XfL8JzqaEeiP29_qDiwNWQ"/>
+      <signatures name="destroy" type="void" id="_XfL8KDqaEeiP29_qDiwNWQ"/>
+      <signatures name="createEnvironment" type="org.springframework.core.env.Environment" id="_XfL8KTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getFilterName" type="java.lang.String" id="_XfL8KjqaEeiP29_qDiwNWQ"/>
+      <signatures name="addRequiredProperty" type="void" id="_XfL8KzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XfL8LDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getServletContext" type="javax.servlet.ServletContext" id="_XfL8LTqaEeiP29_qDiwNWQ"/>
+      <signatures name="initFilterBean" type="void" id="_XfL8LjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getFilterConfig" type="javax.servlet.FilterConfig" id="_XfL8LzqaEeiP29_qDiwNWQ"/>
+      <signatures name="initBeanWrapper" type="void" id="_XfL8MDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.beans.BeanWrapper" id="_XfL8MTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Log">
+      <signatures name="debug" type="void" id="_XfL8QjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL8QzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XfL8RDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_XfL8RTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL8RjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_XfL8RzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL8SDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_XfL8STqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL8SjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XfL8SzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_XfL8TDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL8TTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XfL8TjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_XfL8TzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL8UDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_XfL8UTqaEeiP29_qDiwNWQ"/>
+      <signatures name="info" type="void" id="_XfL8UjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL8UzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XfL8VDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_XfL8VTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL8VjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTraceEnabled" type="boolean" id="_XfL8VzqaEeiP29_qDiwNWQ"/>
+      <signatures name="warn" type="void" id="_XfL8WDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL8WTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XfL8WjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_XfL8WzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL8XDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isDebugEnabled" type="boolean" id="_XfL8XTqaEeiP29_qDiwNWQ"/>
+      <signatures name="fatal" type="void" id="_XfL8XjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL8XzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="fatal" type="void" id="_XfL8YDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL8YTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XfL8YjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isErrorEnabled" type="boolean" id="_XfL8YzqaEeiP29_qDiwNWQ"/>
+      <signatures name="isFatalEnabled" type="boolean" id="_XfL8ZDqaEeiP29_qDiwNWQ"/>
+      <signatures name="isWarnEnabled" type="boolean" id="_XfL8ZTqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Comparable">
+      <signatures name="compareTo" type="int" id="_XfL8ZjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL8ZzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="CharSequence">
+      <signatures name="toString" type="java.lang.String" id="_XfL8aDqaEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_XfL8aTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL8ajqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_XfL8azqaEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_XfL8bDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL8bTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_XfL8bjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_XfL8bzqaEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_XfL8cDqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IString_Type">
+      <signatures name="compareTo" type="int" id="_XfL8cTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL8cjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_XfL8czqaEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_XfL8dDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL8dTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_XfL8djqaEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_XfL8dzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL8eDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_XfL8eTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_XfL8ejqaEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_XfL8ezqaEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$chars$0" type="java.util.Spliterator.OfInt" id="_XfL8fDqaEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$codePoints$1" type="java.util.Spliterator.OfInt" id="_XfL8fTqaEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_XfL8fjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL8fzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_XfL8gDqaEeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_XfL8gTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XfL8gjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_XfL8gzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueOf" type="java.lang.String" id="_XfL8hDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL8hTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkBounds" type="void" id="_XfL8hjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_XfL8hzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_XfL8iDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_XfL8iTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointAt" type="int" id="_XfL8ijqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL8izqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointBefore" type="int" id="_XfL8jDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL8jTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointCount" type="int" id="_XfL8jjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL8jzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_XfL8kDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compareToIgnoreCase" type="int" id="_XfL8kTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XfL8kjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="concat" type="java.lang.String" id="_XfL8kzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XfL8lDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contains" type="boolean" id="_XfL8lTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_XfL8ljqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contentEquals" type="boolean" id="_XfL8lzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_XfL8mDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyValueOf" type="java.lang.String" id="_XfL8mTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char[]" id="_XfL8mjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="endsWith" type="boolean" id="_XfL8mzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XfL8nDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equalsIgnoreCase" type="boolean" id="_XfL8nTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XfL8njqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="format" type="java.lang.String" id="_XfL8nzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_XfL8oDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XfL8oTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_XfL8ojqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBytes" type="void" id="_XfL8ozqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL8pDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_XfL8pTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_XfL8pjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_XfL8pzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChars" type="void" id="_XfL8qDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL8qTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_XfL8qjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="char[]" id="_XfL8qzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_XfL8rDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="indexOfSupplementary" type="int" id="_XfL8rTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL8rjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_XfL8rzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="intern" type="java.lang.String" id="_XfL8sDqaEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_XfL8sTqaEeiP29_qDiwNWQ"/>
+      <signatures name="join" type="java.lang.String" id="_XfL8sjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_XfL8szqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.CharSequence[]" id="_XfL8tDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOf" type="int" id="_XfL8tTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL8tjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOfSupplementary" type="int" id="_XfL8tzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL8uDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_XfL8uTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="matches" type="boolean" id="_XfL8ujqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XfL8uzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nonSyncContentEquals" type="boolean" id="_XfL8vDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.AbstractStringBuilder" id="_XfL8vTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="offsetByCodePoints" type="int" id="_XfL8vjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL8vzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_XfL8wDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="regionMatches" type="boolean" id="_XfL8wTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL8wjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XfL8wzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_XfL8xDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_XfL8xTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="java.lang.String" id="_XfL8xjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char" id="_XfL8xzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="char" id="_XfL8yDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="java.lang.String" id="_XfL8yTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XfL8yjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XfL8yzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceFirst" type="java.lang.String" id="_XfL8zDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XfL8zTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XfL8zjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="split" type="java.lang.String[]" id="_XfL8zzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XfL80DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="startsWith" type="boolean" id="_XfL80TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XfL80jqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_XfL80zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="substring" type="java.lang.String" id="_XfL81DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL81TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCharArray" type="char[]" id="_XfL81jqaEeiP29_qDiwNWQ"/>
+      <signatures name="toLowerCase" type="java.lang.String" id="_XfL81zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_XfL82DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUpperCase" type="java.lang.String" id="_XfL82TqaEeiP29_qDiwNWQ"/>
+      <signatures name="trim" type="java.lang.String" id="_XfL82jqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Collection">
+      <signatures name="add" type="boolean" id="_XfL85jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL85zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_XfL86DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL86TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_XfL86jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL86zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_XfL87DqaEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_XfL87TqaEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_XfL87jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL87zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_XfL88DqaEeiP29_qDiwNWQ"/>
+      <signatures name="iterator" type="java.util.Iterator" id="_XfL88TqaEeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_XfL88jqaEeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_XfL88zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_XfL89DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toArray" type="java.lang.Object[]" id="_XfL89TqaEeiP29_qDiwNWQ"/>
+      <signatures name="spliterator" type="java.util.Spliterator" id="_XfL89jqaEeiP29_qDiwNWQ"/>
+      <signatures name="addAll" type="boolean" id="_XfL89zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XfL8-DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stream" type="java.util.stream.Stream" id="_XfL8-TqaEeiP29_qDiwNWQ"/>
+      <signatures name="containsAll" type="boolean" id="_XfL8-jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XfL8-zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeAll" type="boolean" id="_XfL8_DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XfL8_TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeIf" type="boolean" id="_XfL8_jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Predicate" id="_XfL8_zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retainAll" type="boolean" id="_XfL9ADqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XfL9ATqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parallelStream" type="java.util.stream.Stream" id="_XfL9AjqaEeiP29_qDiwNWQ"/>
+      <signatures name="forEach" type="void" id="_XfL9AzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Consumer" id="_XfL9BDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="List">
+      <signatures name="add" type="boolean" id="_XfL9BTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL9BjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="add" type="void" id="_XfL9BzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL9CDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XfL9CTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="java.lang.Object" id="_XfL9CjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL9CzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_XfL9DDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL9DTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_XfL9DjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL9DzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_XfL9EDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL9ETqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_XfL9EjqaEeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_XfL9EzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL9FDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="clear" type="void" id="_XfL9FTqaEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_XfL9FjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL9FzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_XfL9GDqaEeiP29_qDiwNWQ"/>
+      <signatures name="iterator" type="java.util.Iterator" id="_XfL9GTqaEeiP29_qDiwNWQ"/>
+      <signatures name="lastIndexOf" type="int" id="_XfL9GjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XfL9GzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="void" id="_XfL9HDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.UnaryOperator" id="_XfL9HTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="size" type="int" id="_XfL9HjqaEeiP29_qDiwNWQ"/>
+      <signatures name="subList" type="java.util.List" id="_XfL9HzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL9IDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_XfL9ITqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toArray" type="java.lang.Object[]" id="_XfL9IjqaEeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_XfL9IzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_XfL9JDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="spliterator" type="java.util.Spliterator" id="_XfL9JTqaEeiP29_qDiwNWQ"/>
+      <signatures name="addAll" type="boolean" id="_XfL9JjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XfL9JzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addAll" type="boolean" id="_XfL9KDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL9KTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.Collection" id="_XfL9KjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="set" type="java.lang.Object" id="_XfL9KzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL9LDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XfL9LTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsAll" type="boolean" id="_XfL9LjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XfL9LzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="listIterator" type="java.util.ListIterator" id="_XfL9MDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XfL9MTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="listIterator" type="java.util.ListIterator" id="_XfL9MjqaEeiP29_qDiwNWQ"/>
+      <signatures name="removeAll" type="boolean" id="_XfL9MzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XfL9NDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retainAll" type="boolean" id="_XfL9NTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XfL9NjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="sort" type="void" id="_XfL9NzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Comparator" id="_XfL9ODqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stream" type="java.util.stream.Stream" id="_XfL9OTqaEeiP29_qDiwNWQ"/>
+      <signatures name="removeIf" type="boolean" id="_XfL9OjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Predicate" id="_XfL9OzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parallelStream" type="java.util.stream.Stream" id="_XfL9PDqaEeiP29_qDiwNWQ"/>
+      <signatures name="forEach" type="void" id="_XfL9PTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Consumer" id="_XfL9PjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="FilterChainValidator">
+      <signatures name="validate" type="void" id="_XfL9PzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.security.web.FilterChainProxy" id="_XfL9QDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="HttpFirewall">
+      <signatures name="getFirewalledResponse" type="javax.servlet.http.HttpServletResponse" id="_XhN8MDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletResponse" id="_XhN8MTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFirewalledRequest" type="org.springframework.security.web.firewall.FirewalledRequest" id="_XhN8MjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_XhN8MzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="PropertyResolver">
+      <signatures name="getProperty" type="java.lang.Object" id="_XhN82DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN82TqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_XhN82jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProperty" type="java.lang.String" id="_XhN82zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN83DqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XhN83TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProperty" type="java.lang.String" id="_XhN83jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN83zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProperty" type="java.lang.Object" id="_XhN84DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN84TqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_XhN84jqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XhN84zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsProperty" type="boolean" id="_XhN85DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN85TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resolveRequiredPlaceholders" type="java.lang.String" id="_XhN85jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN85zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRequiredProperty" type="java.lang.String" id="_XhN86DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN86TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRequiredProperty" type="java.lang.Object" id="_XhN86jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN86zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_XhN87DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resolvePlaceholders" type="java.lang.String" id="_XhN87TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN87jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Environment">
+      <signatures name="acceptsProfiles" type="boolean" id="_XhN87zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String[]" id="_XhN88DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultProfiles" type="java.lang.String[]" id="_XhN88TqaEeiP29_qDiwNWQ"/>
+      <signatures name="getActiveProfiles" type="java.lang.String[]" id="_XhN88jqaEeiP29_qDiwNWQ"/>
+      <signatures name="getProperty" type="java.lang.Object" id="_XhN88zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN89DqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_XhN89TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProperty" type="java.lang.String" id="_XhN89jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN89zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XhN8-DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProperty" type="java.lang.String" id="_XhN8-TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN8-jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProperty" type="java.lang.Object" id="_XhN8-zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN8_DqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_XhN8_TqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XhN8_jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsProperty" type="boolean" id="_XhN8_zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN9ADqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resolveRequiredPlaceholders" type="java.lang.String" id="_XhN9ATqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN9AjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRequiredProperty" type="java.lang.String" id="_XhN9AzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN9BDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRequiredProperty" type="java.lang.Object" id="_XhN9BTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN9BjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_XhN9BzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resolvePlaceholders" type="java.lang.String" id="_XhN9CDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN9CTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ServletContext">
+      <signatures name="log" type="void" id="_XhN9CjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN9CzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XhN9DDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="log" type="void" id="_XhN9DTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Exception" id="_XhN9DjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XhN9DzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="log" type="void" id="_XhN9EDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN9ETqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClassLoader" type="java.lang.ClassLoader" id="_XhN9EjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getResource" type="java.net.URL" id="_XhN9EzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN9FDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getResourceAsStream" type="java.io.InputStream" id="_XhN9FTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN9FjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getContext" type="javax.servlet.ServletContext" id="_XhN9FzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN9GDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAttribute" type="java.lang.Object" id="_XhN9GTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN9GjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAttribute" type="void" id="_XhN9GzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN9HDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XhN9HTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRealPath" type="java.lang.String" id="_XhN9HjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN9HzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addFilter" type="javax.servlet.FilterRegistration.Dynamic" id="_XhN9IDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN9ITqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XhN9IjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addFilter" type="javax.servlet.FilterRegistration.Dynamic" id="_XhN9IzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN9JDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_XhN9JTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addFilter" type="javax.servlet.FilterRegistration.Dynamic" id="_XhN9JjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN9JzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.Filter" id="_XhN9KDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addListener" type="void" id="_XhN9KTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_XhN9KjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addListener" type="void" id="_XhN9KzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhN9LDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addListener" type="void" id="_XhN9LTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.EventListener" id="_XhN9LjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getServlet" type="javax.servlet.Servlet" id="_XhOjQDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhOjQTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setRequestCharacterEncoding" type="void" id="_XhOjQjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhOjQzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSessionTimeout" type="int" id="_XhOjRDqaEeiP29_qDiwNWQ"/>
+      <signatures name="setSessionTimeout" type="void" id="_XhOjRTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XhOjRjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEffectiveSessionTrackingModes" type="java.util.Set" id="_XhOjRzqaEeiP29_qDiwNWQ"/>
+      <signatures name="setResponseCharacterEncoding" type="void" id="_XhOjSDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhOjSTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getVirtualServerName" type="java.lang.String" id="_XhOjSjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getResponseCharacterEncoding" type="java.lang.String" id="_XhOjSzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getJspConfigDescriptor" type="javax.servlet.descriptor.JspConfigDescriptor" id="_XhOjTDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getRequestCharacterEncoding" type="java.lang.String" id="_XhOjTTqaEeiP29_qDiwNWQ"/>
+      <signatures name="removeAttribute" type="void" id="_XhOjTjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhOjTzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMimeType" type="java.lang.String" id="_XhOjUDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhOjUTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getResourcePaths" type="java.util.Set" id="_XhOjUjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhOjUzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMajorVersion" type="int" id="_XhOjVDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getMinorVersion" type="int" id="_XhOjVTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getContextPath" type="java.lang.String" id="_XhOjVjqaEeiP29_qDiwNWQ"/>
+      <signatures name="createFilter" type="javax.servlet.Filter" id="_XhOjVzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_XhOjWDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getServletRegistrations" type="java.util.Map" id="_XhOjWTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getEffectiveMajorVersion" type="int" id="_XhOjWjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getServletContextName" type="java.lang.String" id="_XhOjWzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getNamedDispatcher" type="javax.servlet.RequestDispatcher" id="_XhOjXDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhOjXTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getServletRegistration" type="javax.servlet.ServletRegistration" id="_XhOjXjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhOjXzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getInitParameterNames" type="java.util.Enumeration" id="_XhOjYDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getFilterRegistration" type="javax.servlet.FilterRegistration" id="_XhOjYTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhOjYjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFilterRegistrations" type="java.util.Map" id="_XhOjYzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getSessionCookieConfig" type="javax.servlet.SessionCookieConfig" id="_XhOjZDqaEeiP29_qDiwNWQ"/>
+      <signatures name="setSessionTrackingModes" type="void" id="_XhOjZTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Set" id="_XhOjZjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEffectiveMinorVersion" type="int" id="_XhOjZzqaEeiP29_qDiwNWQ"/>
+      <signatures name="createServlet" type="javax.servlet.Servlet" id="_XhOjaDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_XhOjaTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addJspFile" type="javax.servlet.ServletRegistration.Dynamic" id="_XhOjajqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhOjazqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XhOjbDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="declareRoles" type="void" id="_XhOjbTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String[]" id="_XhOjbjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setInitParameter" type="boolean" id="_XhOjbzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhOjcDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XhOjcTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getServerInfo" type="java.lang.String" id="_XhOjcjqaEeiP29_qDiwNWQ"/>
+      <signatures name="createListener" type="java.util.EventListener" id="_XhOjczqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_XhOjdDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addServlet" type="javax.servlet.ServletRegistration.Dynamic" id="_XhOjdTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhOjdjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_XhOjdzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addServlet" type="javax.servlet.ServletRegistration.Dynamic" id="_XhOjeDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhOjeTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.Servlet" id="_XhOjejqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addServlet" type="javax.servlet.ServletRegistration.Dynamic" id="_XhOjezqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhOjfDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XhOjfTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getInitParameter" type="java.lang.String" id="_XhOjfjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhOjfzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getServlets" type="java.util.Enumeration" id="_XhOjgDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getServletNames" type="java.util.Enumeration" id="_XhOjgTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getRequestDispatcher" type="javax.servlet.RequestDispatcher" id="_XhOjgjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhOjgzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultSessionTrackingModes" type="java.util.Set" id="_XhOjhDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getAttributeNames" type="java.util.Enumeration" id="_XhOjhTqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="FilterConfig">
+      <signatures name="getFilterName" type="java.lang.String" id="_XhOjhjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getServletContext" type="javax.servlet.ServletContext" id="_XhOjhzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getInitParameterNames" type="java.util.Enumeration" id="_XhOjiDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getInitParameter" type="java.lang.String" id="_XhOjiTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XhOjijqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Set">
+      <signatures name="add" type="boolean" id="_XhOjqjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XhOjqzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_XhOjrDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XhOjrTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_XhOjrjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XhOjrzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_XhOjsDqaEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_XhOjsTqaEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_XhOjsjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XhOjszqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_XhOjtDqaEeiP29_qDiwNWQ"/>
+      <signatures name="iterator" type="java.util.Iterator" id="_XhOjtTqaEeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_XhOjtjqaEeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_XhOjtzqaEeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_XhOjuDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_XhOjuTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="spliterator" type="java.util.Spliterator" id="_XhOjujqaEeiP29_qDiwNWQ"/>
+      <signatures name="addAll" type="boolean" id="_XhOjuzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XhOjvDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsAll" type="boolean" id="_XhOjvTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XhOjvjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeAll" type="boolean" id="_XhOjvzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XhOjwDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retainAll" type="boolean" id="_XhOjwTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XhOjwjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stream" type="java.util.stream.Stream" id="_XhOjwzqaEeiP29_qDiwNWQ"/>
+      <signatures name="removeIf" type="boolean" id="_XhOjxDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Predicate" id="_XhOjxTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parallelStream" type="java.util.stream.Stream" id="_XhOjxjqaEeiP29_qDiwNWQ"/>
+      <signatures name="forEach" type="void" id="_XhOjxzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Consumer" id="_XhOjyDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

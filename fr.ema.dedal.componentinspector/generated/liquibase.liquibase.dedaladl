@@ -1,0 +1,6 @@
+dedal_diagram "liquibase.liquibase"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,6 @@
+dedal_diagram "find-sec-bugs.plugin-graph"
+
+	repositories (
+
+		repository genRepo
+	)

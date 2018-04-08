@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="fengjiachun.jupiter-example">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="fengjiachun.jupiter-example.src.main.resources.spring-consumer.xml_config" implements="//@architectureDescriptions[name='fengjiachun.jupiter-example.src.main.resources.spring-consumer.xml_spec']">
+    <configComponents name="org.jupiter.example.spring.interceptor.consumer.MyGlobalConsumerInterceptor1" id="_zpYgwDqaEeiP29_qDiwNWQ" realizes="_zqNnPDqaEeiP29_qDiwNWQ" implements="_zqAy4DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.jupiter.example.spring.interceptor.consumer.MyGlobalConsumerInterceptor2" id="_zpYgwTqaEeiP29_qDiwNWQ" realizes="_zqNnSDqaEeiP29_qDiwNWQ" implements="_zqNnMDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="fengjiachun.jupiter-example.src.main.resources.spring-consumer.xml_asm" instantiates="//@architectureDescriptions[name='fengjiachun.jupiter-example.src.main.resources.spring-consumer.xml_config']">
+    <assmComponents name="globalInterceptor1" id="_zpYgwjqaEeiP29_qDiwNWQ" instantiates="_zpYgwDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_globalInterceptor1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="globalInterceptor2" id="_zpYgwzqaEeiP29_qDiwNWQ" instantiates="_zpYgwTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_globalInterceptor2" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="fengjiachun.jupiter-example.src.main.resources.spring-consumer.xml_spec">
+    <specComponents name="Object_role" id="_zqNnPDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_zqNnSDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="fengjiachun.jupiter-example.src.main.resources.spring-provider.xml_config" implements="//@architectureDescriptions[name='fengjiachun.jupiter-example.src.main.resources.spring-provider.xml_spec']">
+    <configComponents name="org.jupiter.example.spring.interceptor.provider.MyGlobalProviderInterceptor1" id="_zqjlcDqaEeiP29_qDiwNWQ" realizes="_zrD72DqaEeiP29_qDiwNWQ" implements="_zqxn4DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.jupiter.example.spring.interceptor.provider.MyGlobalProviderInterceptor2" id="_zqjlcTqaEeiP29_qDiwNWQ" realizes="_zrD75DqaEeiP29_qDiwNWQ" implements="_zq3ugDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.jupiter.example.spring.flow.MyGlobalFlowController" id="_zqjlcjqaEeiP29_qDiwNWQ" realizes="_zrD7zDqaEeiP29_qDiwNWQ" implements="_zrD7wDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="fengjiachun.jupiter-example.src.main.resources.spring-provider.xml_asm" instantiates="//@architectureDescriptions[name='fengjiachun.jupiter-example.src.main.resources.spring-provider.xml_config']">
+    <assmComponents name="globalInterceptor1" id="_zqjlczqaEeiP29_qDiwNWQ" instantiates="_zqjlcDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_globalInterceptor1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="globalInterceptor2" id="_zqjldDqaEeiP29_qDiwNWQ" instantiates="_zqjlcTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_globalInterceptor2" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="globalFlowController" id="_zqjldTqaEeiP29_qDiwNWQ" instantiates="_zqjlcjqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_globalFlowController" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="fengjiachun.jupiter-example.src.main.resources.spring-provider.xml_spec">
+    <specComponents name="Object_role" id="_zrD7zDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_zrD72DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_zrD75DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="fengjiachun.jupiter-example.target.classes.spring-consumer.xml_config" implements="//@architectureDescriptions[name='fengjiachun.jupiter-example.target.classes.spring-consumer.xml_spec']">
+    <configComponents name="org.jupiter.example.spring.interceptor.consumer.MyGlobalConsumerInterceptor1" id="_zsEBUDqaEeiP29_qDiwNWQ" realizes="_zsKH8DqaEeiP29_qDiwNWQ" implements="_zsHEoDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.jupiter.example.spring.interceptor.consumer.MyGlobalConsumerInterceptor2" id="_zsEBUTqaEeiP29_qDiwNWQ" realizes="_zsKH_DqaEeiP29_qDiwNWQ" implements="_zsJg4DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="fengjiachun.jupiter-example.target.classes.spring-consumer.xml_asm" instantiates="//@architectureDescriptions[name='fengjiachun.jupiter-example.target.classes.spring-consumer.xml_config']">
+    <assmComponents name="globalInterceptor1" id="_zsEBUjqaEeiP29_qDiwNWQ" instantiates="_zsEBUDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_globalInterceptor1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="globalInterceptor2" id="_zsEBUzqaEeiP29_qDiwNWQ" instantiates="_zsEBUTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_globalInterceptor2" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="fengjiachun.jupiter-example.target.classes.spring-consumer.xml_spec">
+    <specComponents name="Object_role" id="_zsKH8DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_zsKH_DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="fengjiachun.jupiter-example.target.classes.spring-provider.xml_config" implements="//@architectureDescriptions[name='fengjiachun.jupiter-example.target.classes.spring-provider.xml_spec']">
+    <configComponents name="org.jupiter.example.spring.interceptor.provider.MyGlobalProviderInterceptor1" id="_zseRADqaEeiP29_qDiwNWQ" realizes="_zsmz7DqaEeiP29_qDiwNWQ" implements="_zshUUDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.jupiter.example.spring.interceptor.provider.MyGlobalProviderInterceptor2" id="_zseRATqaEeiP29_qDiwNWQ" realizes="_zsm0BDqaEeiP29_qDiwNWQ" implements="_zsjwkDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.jupiter.example.spring.flow.MyGlobalFlowController" id="_zseRAjqaEeiP29_qDiwNWQ" realizes="_zsmz-DqaEeiP29_qDiwNWQ" implements="_zsmz4DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="fengjiachun.jupiter-example.target.classes.spring-provider.xml_asm" instantiates="//@architectureDescriptions[name='fengjiachun.jupiter-example.target.classes.spring-provider.xml_config']">
+    <assmComponents name="globalInterceptor1" id="_zseRAzqaEeiP29_qDiwNWQ" instantiates="_zseRADqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_globalInterceptor1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="globalInterceptor2" id="_zseRBDqaEeiP29_qDiwNWQ" instantiates="_zseRATqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_globalInterceptor2" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="globalFlowController" id="_zseRBTqaEeiP29_qDiwNWQ" instantiates="_zseRAjqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_globalFlowController" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="fengjiachun.jupiter-example.target.classes.spring-provider.xml_spec">
+    <specComponents name="Object_role" id="_zsmz7DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_zsmz-DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_zsm0BDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_zqAy4DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_zqNnMDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_zqxn4DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_zq3ugDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_zrD7wDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_zsHEoDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_zsJg4DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_zshUUDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_zsjwkDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_zsmz4DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_zqAy4TqaEeiP29_qDiwNWQ"/>
+      <signatures name="wait" type="void" id="_zqAy4jqaEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_zqAy4zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_zqAy5DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_zqAy5TqaEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_zqAy5jqaEeiP29_qDiwNWQ"/>
+      <signatures name="getClass" type="java.lang.Class" id="_zqAy5zqaEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_zqAy6DqaEeiP29_qDiwNWQ"/>
+      <signatures name="notify" type="void" id="_zqAy6TqaEeiP29_qDiwNWQ"/>
+      <signatures name="notifyAll" type="void" id="_zqAy6jqaEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_zqAy6zqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

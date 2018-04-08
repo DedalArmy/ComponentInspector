@@ -1,0 +1,1839 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="limeng32.mybatis.flying">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="limeng32.mybatis.flying.mybatis.flying.src.test.resources.spring-test-no-context-provider.xml_config" implements="//@architectureDescriptions[name='limeng32.mybatis.flying.mybatis.flying.src.test.resources.spring-test-no-context-provider.xml_spec']">
+    <configComponents name="com.atomikos.jdbc.AtomikosDataSourceBean" id="_0l7H4DqiEeiP29_qDiwNWQ" realizes="_0nAuiDqiEeiP29_qDiwNWQ" implements="_0m9CoDqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.springframework.jdbc.datasource.SingleConnectionDataSource" id="_0l7H4TqiEeiP29_qDiwNWQ" realizes="_0nAulDqiEeiP29_qDiwNWQ" implements="_0m_e4DqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartDataSource_SingleConnectionDataSource" type="SmartDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SingleConnectionDataSource" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISingleConnectionDataSource" type="ISingleConnectionDataSource_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBoolean_SingleConnectionDataSource" direction="REQUIRED" type="IBoolean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_SingleConnectionDataSource" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAutoCloseable_SingleConnectionDataSource" direction="REQUIRED" type="AutoCloseable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConnection_SingleConnectionDataSource" direction="REQUIRED" type="Connection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_SingleConnectionDataSource" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAutoCloseable_SingleConnectionDataSource" direction="REQUIRED" type="AutoCloseable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConnection_SingleConnectionDataSource" direction="REQUIRED" type="Connection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_SingleConnectionDataSource" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProperties_SingleConnectionDataSource" direction="REQUIRED" type="IProperties_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_SingleConnectionDataSource" direction="REQUIRED" type="Log"/>
+      <attributes name="suppressClose" type="boolean"/>
+      <attributes name="autoCommit" type="java.lang.Boolean"/>
+      <attributes name="target" type="java.sql.Connection"/>
+      <attributes name="connection" type="java.sql.Connection"/>
+      <attributes name="connectionMonitor" type="java.lang.Object"/>
+      <attributes name="url" type="java.lang.String"/>
+      <attributes name="username" type="java.lang.String"/>
+      <attributes name="password" type="java.lang.String"/>
+      <attributes name="catalog" type="java.lang.String"/>
+      <attributes name="schema" type="java.lang.String"/>
+      <attributes name="connectionProperties" type="java.util.Properties"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="limeng32.mybatis.flying.mybatis.flying.src.test.resources.spring-test-no-context-provider.xml_asm" instantiates="//@architectureDescriptions[name='limeng32.mybatis.flying.mybatis.flying.src.test.resources.spring-test-no-context-provider.xml_config']">
+    <assmComponents name="dataSource1" id="_0l7H4jqiEeiP29_qDiwNWQ" instantiates="_0l7H4DqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_dataSource1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="smartDataSource1" id="_0l7H4zqiEeiP29_qDiwNWQ" instantiates="_0l7H4TqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartDataSource_SingleConnectionDataSource_smartDataSource1" type="SmartDataSource" instantiates="ISmartDataSource_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SingleConnectionDataSource_smartDataSource1" type="DisposableBean" instantiates="IDisposableBean_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISingleConnectionDataSource_smartDataSource1" type="ISingleConnectionDataSource_Type" instantiates="ISingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" instantiates="null_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Comparable" instantiates="IComparable_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBoolean_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="IBoolean_Type" instantiates="IBoolean_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Wrapper" instantiates="IWrapper_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAutoCloseable_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="AutoCloseable" instantiates="IAutoCloseable_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConnection_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Connection" instantiates="IConnection_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Wrapper" instantiates="IWrapper_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAutoCloseable_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="AutoCloseable" instantiates="IAutoCloseable_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConnection_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Connection" instantiates="IConnection_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="IObject_Type" instantiates="IObject_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" instantiates="null_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Comparable" instantiates="IComparable_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="IString_Type" instantiates="IString_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" instantiates="null_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Comparable" instantiates="IComparable_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="IString_Type" instantiates="IString_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" instantiates="null_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Comparable" instantiates="IComparable_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="IString_Type" instantiates="IString_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" instantiates="null_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Comparable" instantiates="IComparable_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="IString_Type" instantiates="IString_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" instantiates="null_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Comparable" instantiates="IComparable_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="IString_Type" instantiates="IString_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProperties_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="IProperties_Type" instantiates="IProperties_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Log" instantiates="ILog_SingleConnectionDataSource"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="limeng32.mybatis.flying.mybatis.flying.src.test.resources.spring-test-no-context-provider.xml_spec">
+    <specComponents name="Object_role" id="_0nAuiDqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="SingleConnectionDataSource_role" id="_0nAulDqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartDataSourceSingleConnectionDataSource_role" type="SmartDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBeanSingleConnectionDataSource_role" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISingleConnectionDataSourceSingleConnectionDataSource_role" type="ISingleConnectionDataSource_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullSingleConnectionDataSource_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableSingleConnectionDataSource_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBooleanSingleConnectionDataSource_role" direction="REQUIRED" type="IBoolean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapperSingleConnectionDataSource_role" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAutoCloseableSingleConnectionDataSource_role" direction="REQUIRED" type="AutoCloseable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConnectionSingleConnectionDataSource_role" direction="REQUIRED" type="Connection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapperSingleConnectionDataSource_role" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAutoCloseableSingleConnectionDataSource_role" direction="REQUIRED" type="AutoCloseable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConnectionSingleConnectionDataSource_role" direction="REQUIRED" type="Connection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectSingleConnectionDataSource_role" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullSingleConnectionDataSource_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableSingleConnectionDataSource_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceSingleConnectionDataSource_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringSingleConnectionDataSource_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullSingleConnectionDataSource_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableSingleConnectionDataSource_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceSingleConnectionDataSource_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringSingleConnectionDataSource_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullSingleConnectionDataSource_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableSingleConnectionDataSource_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceSingleConnectionDataSource_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringSingleConnectionDataSource_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullSingleConnectionDataSource_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableSingleConnectionDataSource_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceSingleConnectionDataSource_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringSingleConnectionDataSource_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullSingleConnectionDataSource_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableSingleConnectionDataSource_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceSingleConnectionDataSource_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringSingleConnectionDataSource_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertiesSingleConnectionDataSource_role" direction="REQUIRED" type="IProperties_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogSingleConnectionDataSource_role" direction="REQUIRED" type="Log"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="limeng32.mybatis.flying.mybatis.flying.src.test.resources.spring-test.xml_config" implements="//@architectureDescriptions[name='limeng32.mybatis.flying.mybatis.flying.src.test.resources.spring-test.xml_spec']">
+    <configComponents name="indi.mybatis.flying.FlyingContextProvider" id="_0nZHgDqiEeiP29_qDiwNWQ" realizes="_0nf1ujqiEeiP29_qDiwNWQ" implements="_0nfOIDqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_FlyingContextProvider" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFlyingContextProvider" type="IFlyingContextProvider_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_FlyingContextProvider" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_FlyingContextProvider" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_FlyingContextProvider" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_FlyingContextProvider" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_FlyingContextProvider" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_FlyingContextProvider" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_FlyingContextProvider" direction="REQUIRED" type="ApplicationContext"/>
+      <attributes name="context" type="org.springframework.context.ApplicationContext"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="limeng32.mybatis.flying.mybatis.flying.src.test.resources.spring-test.xml_asm" instantiates="//@architectureDescriptions[name='limeng32.mybatis.flying.mybatis.flying.src.test.resources.spring-test.xml_config']">
+    <assmComponents name="applicationContextProvder" id="_0nZHgTqiEeiP29_qDiwNWQ" instantiates="_0nZHgDqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_FlyingContextProvider_applicationContextProvder" type="ApplicationContextAware" instantiates="IApplicationContextAware_FlyingContextProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFlyingContextProvider_applicationContextProvder" type="IFlyingContextProvider_Type" instantiates="IFlyingContextProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_FlyingContextProvider_applicationContextProvder" direction="REQUIRED" type="EnvironmentCapable" instantiates="IEnvironmentCapable_FlyingContextProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_FlyingContextProvider_applicationContextProvder" direction="REQUIRED" type="ListableBeanFactory" instantiates="IListableBeanFactory_FlyingContextProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_FlyingContextProvider_applicationContextProvder" direction="REQUIRED" type="HierarchicalBeanFactory" instantiates="IHierarchicalBeanFactory_FlyingContextProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_FlyingContextProvider_applicationContextProvder" direction="REQUIRED" type="MessageSource" instantiates="IMessageSource_FlyingContextProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_FlyingContextProvider_applicationContextProvder" direction="REQUIRED" type="ApplicationEventPublisher" instantiates="IApplicationEventPublisher_FlyingContextProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_FlyingContextProvider_applicationContextProvder" direction="REQUIRED" type="ResourcePatternResolver" instantiates="IResourcePatternResolver_FlyingContextProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_FlyingContextProvider_applicationContextProvder" direction="REQUIRED" type="ApplicationContext" instantiates="IApplicationContext_FlyingContextProvider"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="limeng32.mybatis.flying.mybatis.flying.src.test.resources.spring-test.xml_spec">
+    <specComponents name="FlyingContextProvider_role" id="_0nf1ujqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAwareFlyingContextProvider_role" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFlyingContextProviderFlyingContextProvider_role" type="IFlyingContextProvider_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapableFlyingContextProvider_role" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactoryFlyingContextProvider_role" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactoryFlyingContextProvider_role" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSourceFlyingContextProvider_role" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisherFlyingContextProvider_role" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolverFlyingContextProvider_role" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextFlyingContextProvider_role" direction="REQUIRED" type="ApplicationContext"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="limeng32.mybatis.flying.mybatis.flying.target.test-classes.spring-test-no-context-provider.xml_config" implements="//@architectureDescriptions[name='limeng32.mybatis.flying.mybatis.flying.target.test-classes.spring-test-no-context-provider.xml_spec']">
+    <configComponents name="com.atomikos.jdbc.AtomikosDataSourceBean" id="_0n0lUDqiEeiP29_qDiwNWQ" realizes="_0oG8GzqiEeiP29_qDiwNWQ" implements="_0oFrEDqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.springframework.jdbc.datasource.SingleConnectionDataSource" id="_0n1MYDqiEeiP29_qDiwNWQ" realizes="_0oG8JzqiEeiP29_qDiwNWQ" implements="_0oFrHDqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartDataSource_SingleConnectionDataSource" type="SmartDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SingleConnectionDataSource" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISingleConnectionDataSource" type="ISingleConnectionDataSource_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBoolean_SingleConnectionDataSource" direction="REQUIRED" type="IBoolean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_SingleConnectionDataSource" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAutoCloseable_SingleConnectionDataSource" direction="REQUIRED" type="AutoCloseable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConnection_SingleConnectionDataSource" direction="REQUIRED" type="Connection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_SingleConnectionDataSource" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAutoCloseable_SingleConnectionDataSource" direction="REQUIRED" type="AutoCloseable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConnection_SingleConnectionDataSource" direction="REQUIRED" type="Connection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_SingleConnectionDataSource" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProperties_SingleConnectionDataSource" direction="REQUIRED" type="IProperties_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_SingleConnectionDataSource" direction="REQUIRED" type="Log"/>
+      <attributes name="suppressClose" type="boolean"/>
+      <attributes name="autoCommit" type="java.lang.Boolean"/>
+      <attributes name="target" type="java.sql.Connection"/>
+      <attributes name="connection" type="java.sql.Connection"/>
+      <attributes name="connectionMonitor" type="java.lang.Object"/>
+      <attributes name="url" type="java.lang.String"/>
+      <attributes name="username" type="java.lang.String"/>
+      <attributes name="password" type="java.lang.String"/>
+      <attributes name="catalog" type="java.lang.String"/>
+      <attributes name="schema" type="java.lang.String"/>
+      <attributes name="connectionProperties" type="java.util.Properties"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="limeng32.mybatis.flying.mybatis.flying.target.test-classes.spring-test-no-context-provider.xml_asm" instantiates="//@architectureDescriptions[name='limeng32.mybatis.flying.mybatis.flying.target.test-classes.spring-test-no-context-provider.xml_config']">
+    <assmComponents name="dataSource1" id="_0n1MYTqiEeiP29_qDiwNWQ" instantiates="_0n0lUDqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_dataSource1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="smartDataSource1" id="_0n1MYjqiEeiP29_qDiwNWQ" instantiates="_0n1MYDqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartDataSource_SingleConnectionDataSource_smartDataSource1" type="SmartDataSource" instantiates="ISmartDataSource_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SingleConnectionDataSource_smartDataSource1" type="DisposableBean" instantiates="IDisposableBean_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISingleConnectionDataSource_smartDataSource1" type="ISingleConnectionDataSource_Type" instantiates="ISingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" instantiates="null_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Comparable" instantiates="IComparable_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBoolean_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="IBoolean_Type" instantiates="IBoolean_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Wrapper" instantiates="IWrapper_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAutoCloseable_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="AutoCloseable" instantiates="IAutoCloseable_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConnection_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Connection" instantiates="IConnection_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Wrapper" instantiates="IWrapper_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAutoCloseable_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="AutoCloseable" instantiates="IAutoCloseable_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConnection_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Connection" instantiates="IConnection_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="IObject_Type" instantiates="IObject_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" instantiates="null_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Comparable" instantiates="IComparable_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="IString_Type" instantiates="IString_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" instantiates="null_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Comparable" instantiates="IComparable_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="IString_Type" instantiates="IString_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" instantiates="null_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Comparable" instantiates="IComparable_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="IString_Type" instantiates="IString_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" instantiates="null_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Comparable" instantiates="IComparable_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="IString_Type" instantiates="IString_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" instantiates="null_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Comparable" instantiates="IComparable_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="IString_Type" instantiates="IString_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProperties_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="IProperties_Type" instantiates="IProperties_SingleConnectionDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_SingleConnectionDataSource_smartDataSource1" direction="REQUIRED" type="Log" instantiates="ILog_SingleConnectionDataSource"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="limeng32.mybatis.flying.mybatis.flying.target.test-classes.spring-test-no-context-provider.xml_spec">
+    <specComponents name="Object_role" id="_0oG8GzqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="SingleConnectionDataSource_role" id="_0oG8JzqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartDataSourceSingleConnectionDataSource_role" type="SmartDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBeanSingleConnectionDataSource_role" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISingleConnectionDataSourceSingleConnectionDataSource_role" type="ISingleConnectionDataSource_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullSingleConnectionDataSource_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableSingleConnectionDataSource_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBooleanSingleConnectionDataSource_role" direction="REQUIRED" type="IBoolean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapperSingleConnectionDataSource_role" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAutoCloseableSingleConnectionDataSource_role" direction="REQUIRED" type="AutoCloseable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConnectionSingleConnectionDataSource_role" direction="REQUIRED" type="Connection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapperSingleConnectionDataSource_role" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAutoCloseableSingleConnectionDataSource_role" direction="REQUIRED" type="AutoCloseable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConnectionSingleConnectionDataSource_role" direction="REQUIRED" type="Connection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectSingleConnectionDataSource_role" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullSingleConnectionDataSource_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableSingleConnectionDataSource_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceSingleConnectionDataSource_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringSingleConnectionDataSource_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullSingleConnectionDataSource_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableSingleConnectionDataSource_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceSingleConnectionDataSource_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringSingleConnectionDataSource_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullSingleConnectionDataSource_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableSingleConnectionDataSource_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceSingleConnectionDataSource_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringSingleConnectionDataSource_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullSingleConnectionDataSource_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableSingleConnectionDataSource_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceSingleConnectionDataSource_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringSingleConnectionDataSource_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullSingleConnectionDataSource_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableSingleConnectionDataSource_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceSingleConnectionDataSource_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringSingleConnectionDataSource_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertiesSingleConnectionDataSource_role" direction="REQUIRED" type="IProperties_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogSingleConnectionDataSource_role" direction="REQUIRED" type="Log"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="limeng32.mybatis.flying.mybatis.flying.target.test-classes.spring-test.xml_config" implements="//@architectureDescriptions[name='limeng32.mybatis.flying.mybatis.flying.target.test-classes.spring-test.xml_spec']">
+    <configComponents name="indi.mybatis.flying.FlyingContextProvider" id="_0ofTsDqiEeiP29_qDiwNWQ" realizes="_0of7iTqiEeiP29_qDiwNWQ" implements="_0of6wDqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_FlyingContextProvider" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFlyingContextProvider" type="IFlyingContextProvider_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_FlyingContextProvider" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_FlyingContextProvider" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_FlyingContextProvider" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_FlyingContextProvider" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_FlyingContextProvider" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_FlyingContextProvider" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_FlyingContextProvider" direction="REQUIRED" type="ApplicationContext"/>
+      <attributes name="context" type="org.springframework.context.ApplicationContext"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="limeng32.mybatis.flying.mybatis.flying.target.test-classes.spring-test.xml_asm" instantiates="//@architectureDescriptions[name='limeng32.mybatis.flying.mybatis.flying.target.test-classes.spring-test.xml_config']">
+    <assmComponents name="applicationContextProvder" id="_0ofTsTqiEeiP29_qDiwNWQ" instantiates="_0ofTsDqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_FlyingContextProvider_applicationContextProvder" type="ApplicationContextAware" instantiates="IApplicationContextAware_FlyingContextProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFlyingContextProvider_applicationContextProvder" type="IFlyingContextProvider_Type" instantiates="IFlyingContextProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_FlyingContextProvider_applicationContextProvder" direction="REQUIRED" type="EnvironmentCapable" instantiates="IEnvironmentCapable_FlyingContextProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_FlyingContextProvider_applicationContextProvder" direction="REQUIRED" type="ListableBeanFactory" instantiates="IListableBeanFactory_FlyingContextProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_FlyingContextProvider_applicationContextProvder" direction="REQUIRED" type="HierarchicalBeanFactory" instantiates="IHierarchicalBeanFactory_FlyingContextProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_FlyingContextProvider_applicationContextProvder" direction="REQUIRED" type="MessageSource" instantiates="IMessageSource_FlyingContextProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_FlyingContextProvider_applicationContextProvder" direction="REQUIRED" type="ApplicationEventPublisher" instantiates="IApplicationEventPublisher_FlyingContextProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_FlyingContextProvider_applicationContextProvder" direction="REQUIRED" type="ResourcePatternResolver" instantiates="IResourcePatternResolver_FlyingContextProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_FlyingContextProvider_applicationContextProvder" direction="REQUIRED" type="ApplicationContext" instantiates="IApplicationContext_FlyingContextProvider"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="limeng32.mybatis.flying.mybatis.flying.target.test-classes.spring-test.xml_spec">
+    <specComponents name="FlyingContextProvider_role" id="_0of7iTqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAwareFlyingContextProvider_role" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFlyingContextProviderFlyingContextProvider_role" type="IFlyingContextProvider_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapableFlyingContextProvider_role" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactoryFlyingContextProvider_role" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactoryFlyingContextProvider_role" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSourceFlyingContextProvider_role" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisherFlyingContextProvider_role" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolverFlyingContextProvider_role" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextFlyingContextProvider_role" direction="REQUIRED" type="ApplicationContext"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_0m9CoDqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" id="_0m_e4DqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartDataSource_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" type="SmartDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" type="ISingleConnectionDataSource_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBoolean_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="IBoolean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAutoCloseable_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="AutoCloseable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConnection_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Connection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAutoCloseable_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="AutoCloseable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConnection_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Connection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProperties_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="IProperties_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Log"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="indi_mybatis_flying_FlyingContextProvider_Type" id="_0nfOIDqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_FlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" type="IFlyingContextProvider_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_FlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_FlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_FlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_FlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_FlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_FlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_FlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" direction="REQUIRED" type="ApplicationContext"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_0oFrEDqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" id="_0oFrHDqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartDataSource_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" type="SmartDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" type="ISingleConnectionDataSource_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBoolean_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="IBoolean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAutoCloseable_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="AutoCloseable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConnection_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Connection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAutoCloseable_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="AutoCloseable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConnection_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Connection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProperties_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="IProperties_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_SingleConnectionDataSource_org_springframework_jdbc_datasource_SingleConnectionDataSource_Type" direction="REQUIRED" type="Log"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="indi_mybatis_flying_FlyingContextProvider_Type" id="_0of6wDqiEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_FlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" type="IFlyingContextProvider_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_FlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_FlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_FlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_FlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_FlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_FlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_FlyingContextProvider_indi_mybatis_flying_FlyingContextProvider_Type" direction="REQUIRED" type="ApplicationContext"/>
+    </components>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_0m9CoTqiEeiP29_qDiwNWQ"/>
+      <signatures name="wait" type="void" id="_0m9CojqiEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_0m9CozqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0m9CpDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_0m9CpTqiEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_0m9CpjqiEeiP29_qDiwNWQ"/>
+      <signatures name="getClass" type="java.lang.Class" id="_0m9CpzqiEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_0m9CqDqiEeiP29_qDiwNWQ"/>
+      <signatures name="notify" type="void" id="_0m9CqTqiEeiP29_qDiwNWQ"/>
+      <signatures name="notifyAll" type="void" id="_0m9CqjqiEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_0m9CqzqiEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="SmartDataSource">
+      <signatures name="shouldClose" type="boolean" id="_0m_e4TqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.sql.Connection" id="_0m_e4jqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getConnection" type="java.sql.Connection" id="_0m_e4zqiEeiP29_qDiwNWQ"/>
+      <signatures name="getConnection" type="java.sql.Connection" id="_0m_e5DqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_e5TqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0m_e5jqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLogWriter" type="java.io.PrintWriter" id="_0m_e5zqiEeiP29_qDiwNWQ"/>
+      <signatures name="getParentLogger" type="java.util.logging.Logger" id="_0m_e6DqiEeiP29_qDiwNWQ"/>
+      <signatures name="setLogWriter" type="void" id="_0m_e6TqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.PrintWriter" id="_0m_e6jqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setLoginTimeout" type="void" id="_0m_e6zqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0m_e7DqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLoginTimeout" type="int" id="_0m_e7TqiEeiP29_qDiwNWQ"/>
+      <signatures name="unwrap" type="java.lang.Object" id="_0m_e7jqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0m_e7zqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isWrapperFor" type="boolean" id="_0m_e8DqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0m_e8TqiEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="DisposableBean">
+      <signatures name="destroy" type="void" id="_0m_e8jqiEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ISingleConnectionDataSource_Type">
+      <signatures name="getLogWriter" type="java.io.PrintWriter" id="_0m_e8zqiEeiP29_qDiwNWQ"/>
+      <signatures name="getParentLogger" type="java.util.logging.Logger" id="_0m_e9DqiEeiP29_qDiwNWQ"/>
+      <signatures name="setLogWriter" type="void" id="_0m_e9TqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.PrintWriter" id="_0m_e9jqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setLoginTimeout" type="void" id="_0m_e9zqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0m_e-DqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLoginTimeout" type="int" id="_0m_e-TqiEeiP29_qDiwNWQ"/>
+      <signatures name="unwrap" type="java.lang.Object" id="_0m_e-jqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0m_e-zqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isWrapperFor" type="boolean" id="_0m_e_DqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0m_e_TqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getConnection" type="java.sql.Connection" id="_0m_e_jqiEeiP29_qDiwNWQ"/>
+      <signatures name="getCatalog" type="java.lang.String" id="_0m_e_zqiEeiP29_qDiwNWQ"/>
+      <signatures name="getSchema" type="java.lang.String" id="_0m_fADqiEeiP29_qDiwNWQ"/>
+      <signatures name="setSchema" type="void" id="_0m_fATqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fAjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getConnectionProperties" type="java.util.Properties" id="_0m_fAzqiEeiP29_qDiwNWQ"/>
+      <signatures name="getConnectionFromDriver" type="java.sql.Connection" id="_0m_fBDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Properties" id="_0m_fBTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setUsername" type="void" id="_0m_fBjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fBzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setConnectionProperties" type="void" id="_0m_fCDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Properties" id="_0m_fCTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setPassword" type="void" id="_0m_fCjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fCzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setUrl" type="void" id="_0m_fDDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fDTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getUrl" type="java.lang.String" id="_0m_fDjqiEeiP29_qDiwNWQ"/>
+      <signatures name="setCatalog" type="void" id="_0m_fDzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fEDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getUsername" type="java.lang.String" id="_0m_fETqiEeiP29_qDiwNWQ"/>
+      <signatures name="getPassword" type="java.lang.String" id="_0m_fEjqiEeiP29_qDiwNWQ"/>
+      <signatures name="getConnectionFromDriverManager" type="java.sql.Connection" id="_0m_fEzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fFDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.Properties" id="_0m_fFTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDriverClassName" type="void" id="_0m_fFjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fFzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLogWriter" type="java.io.PrintWriter" id="_0m_fGDqiEeiP29_qDiwNWQ"/>
+      <signatures name="getParentLogger" type="java.util.logging.Logger" id="_0m_fGTqiEeiP29_qDiwNWQ"/>
+      <signatures name="setLogWriter" type="void" id="_0m_fGjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.PrintWriter" id="_0m_fGzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setLoginTimeout" type="void" id="_0m_fHDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0m_fHTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLoginTimeout" type="int" id="_0m_fHjqiEeiP29_qDiwNWQ"/>
+      <signatures name="unwrap" type="java.lang.Object" id="_0m_fHzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0m_fIDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isWrapperFor" type="boolean" id="_0m_fITqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0m_fIjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getConnection" type="java.sql.Connection" id="_0m_fIzqiEeiP29_qDiwNWQ"/>
+      <signatures name="shouldClose" type="boolean" id="_0m_fJDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.sql.Connection" id="_0m_fJTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="destroy" type="void" id="_0m_fJjqiEeiP29_qDiwNWQ"/>
+      <signatures name="setAutoCommit" type="void" id="_0m_fJzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0m_fKDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareConnection" type="void" id="_0m_fKTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.sql.Connection" id="_0m_fKjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="closeConnection" type="void" id="_0m_fKzqiEeiP29_qDiwNWQ"/>
+      <signatures name="setSuppressClose" type="void" id="_0m_fLDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0m_fLTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isSuppressClose" type="boolean" id="_0m_fLjqiEeiP29_qDiwNWQ"/>
+      <signatures name="initConnection" type="void" id="_0m_fLzqiEeiP29_qDiwNWQ"/>
+      <signatures name="resetConnection" type="void" id="_0m_fMDqiEeiP29_qDiwNWQ"/>
+      <signatures name="getCloseSuppressingConnectionProxy" type="java.sql.Connection" id="_0m_fMTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.sql.Connection" id="_0m_fMjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAutoCommitValue" type="java.lang.Boolean" id="_0m_fMzqiEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IDriverManagerDataSource_Type">
+      <signatures name="getLogWriter" type="java.io.PrintWriter" id="_0m_fNDqiEeiP29_qDiwNWQ"/>
+      <signatures name="getParentLogger" type="java.util.logging.Logger" id="_0m_fNTqiEeiP29_qDiwNWQ"/>
+      <signatures name="setLogWriter" type="void" id="_0m_fNjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.PrintWriter" id="_0m_fNzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setLoginTimeout" type="void" id="_0m_fODqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0m_fOTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLoginTimeout" type="int" id="_0m_fOjqiEeiP29_qDiwNWQ"/>
+      <signatures name="unwrap" type="java.lang.Object" id="_0m_fOzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0m_fPDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isWrapperFor" type="boolean" id="_0m_fPTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0m_fPjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getConnection" type="java.sql.Connection" id="_0m_fPzqiEeiP29_qDiwNWQ"/>
+      <signatures name="getCatalog" type="java.lang.String" id="_0m_fQDqiEeiP29_qDiwNWQ"/>
+      <signatures name="getSchema" type="java.lang.String" id="_0m_fQTqiEeiP29_qDiwNWQ"/>
+      <signatures name="setSchema" type="void" id="_0m_fQjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fQzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getConnectionProperties" type="java.util.Properties" id="_0m_fRDqiEeiP29_qDiwNWQ"/>
+      <signatures name="getConnectionFromDriver" type="java.sql.Connection" id="_0m_fRTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Properties" id="_0m_fRjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setUsername" type="void" id="_0m_fRzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fSDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setConnectionProperties" type="void" id="_0m_fSTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Properties" id="_0m_fSjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setPassword" type="void" id="_0m_fSzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fTDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setUrl" type="void" id="_0m_fTTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fTjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getUrl" type="java.lang.String" id="_0m_fTzqiEeiP29_qDiwNWQ"/>
+      <signatures name="setCatalog" type="void" id="_0m_fUDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fUTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getUsername" type="java.lang.String" id="_0m_fUjqiEeiP29_qDiwNWQ"/>
+      <signatures name="getPassword" type="java.lang.String" id="_0m_fUzqiEeiP29_qDiwNWQ"/>
+      <signatures name="getConnectionFromDriverManager" type="java.sql.Connection" id="_0m_fVDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fVTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.Properties" id="_0m_fVjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDriverClassName" type="void" id="_0m_fVzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fWDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IAbstractDriverBasedDataSource_Type">
+      <signatures name="getLogWriter" type="java.io.PrintWriter" id="_0m_fWTqiEeiP29_qDiwNWQ"/>
+      <signatures name="getParentLogger" type="java.util.logging.Logger" id="_0m_fWjqiEeiP29_qDiwNWQ"/>
+      <signatures name="setLogWriter" type="void" id="_0m_fWzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.PrintWriter" id="_0m_fXDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setLoginTimeout" type="void" id="_0m_fXTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0m_fXjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLoginTimeout" type="int" id="_0m_fXzqiEeiP29_qDiwNWQ"/>
+      <signatures name="unwrap" type="java.lang.Object" id="_0m_fYDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0m_fYTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isWrapperFor" type="boolean" id="_0m_fYjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0m_fYzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getConnection" type="java.sql.Connection" id="_0m_fZDqiEeiP29_qDiwNWQ"/>
+      <signatures name="getCatalog" type="java.lang.String" id="_0m_fZTqiEeiP29_qDiwNWQ"/>
+      <signatures name="getSchema" type="java.lang.String" id="_0m_fZjqiEeiP29_qDiwNWQ"/>
+      <signatures name="setSchema" type="void" id="_0m_fZzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_faDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getConnectionProperties" type="java.util.Properties" id="_0m_faTqiEeiP29_qDiwNWQ"/>
+      <signatures name="getConnectionFromDriver" type="java.sql.Connection" id="_0m_fajqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Properties" id="_0m_fazqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setUsername" type="void" id="_0m_fbDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fbTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setConnectionProperties" type="void" id="_0m_fbjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Properties" id="_0m_fbzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setPassword" type="void" id="_0m_fcDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fcTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setUrl" type="void" id="_0m_fcjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fczqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getUrl" type="java.lang.String" id="_0m_fdDqiEeiP29_qDiwNWQ"/>
+      <signatures name="setCatalog" type="void" id="_0m_fdTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fdjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getUsername" type="java.lang.String" id="_0m_fdzqiEeiP29_qDiwNWQ"/>
+      <signatures name="getPassword" type="java.lang.String" id="_0m_feDqiEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="DataSource">
+      <signatures name="getConnection" type="java.sql.Connection" id="_0m_feTqiEeiP29_qDiwNWQ"/>
+      <signatures name="getConnection" type="java.sql.Connection" id="_0m_fejqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0m_fezqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0m_ffDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLogWriter" type="java.io.PrintWriter" id="_0m_ffTqiEeiP29_qDiwNWQ"/>
+      <signatures name="getParentLogger" type="java.util.logging.Logger" id="_0m_ffjqiEeiP29_qDiwNWQ"/>
+      <signatures name="setLogWriter" type="void" id="_0m_ffzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.PrintWriter" id="_0m_fgDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setLoginTimeout" type="void" id="_0m_fgTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0m_fgjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLoginTimeout" type="int" id="_0m_fgzqiEeiP29_qDiwNWQ"/>
+      <signatures name="unwrap" type="java.lang.Object" id="_0m_fhDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0m_fhTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isWrapperFor" type="boolean" id="_0m_fhjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0m_fhzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IAbstractDataSource_Type">
+      <signatures name="getLogWriter" type="java.io.PrintWriter" id="_0m_fiDqiEeiP29_qDiwNWQ"/>
+      <signatures name="getParentLogger" type="java.util.logging.Logger" id="_0m_fiTqiEeiP29_qDiwNWQ"/>
+      <signatures name="setLogWriter" type="void" id="_0m_fijqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.PrintWriter" id="_0m_fizqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setLoginTimeout" type="void" id="_0m_fjDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0m_fjTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLoginTimeout" type="int" id="_0m_fjjqiEeiP29_qDiwNWQ"/>
+      <signatures name="unwrap" type="java.lang.Object" id="_0m_fjzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0m_fkDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isWrapperFor" type="boolean" id="_0m_fkTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0m_fkjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getConnection" type="java.sql.Connection" id="_0m_fkzqiEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="CommonDataSource">
+      <signatures name="getLogWriter" type="java.io.PrintWriter" id="_0m_flDqiEeiP29_qDiwNWQ"/>
+      <signatures name="getParentLogger" type="java.util.logging.Logger" id="_0m_flTqiEeiP29_qDiwNWQ"/>
+      <signatures name="setLogWriter" type="void" id="_0m_fljqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.PrintWriter" id="_0m_flzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setLoginTimeout" type="void" id="_0m_fmDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0m_fmTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLoginTimeout" type="int" id="_0m_fmjqiEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Wrapper">
+      <signatures name="unwrap" type="java.lang.Object" id="_0m_fmzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0m_fnDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isWrapperFor" type="boolean" id="_0m_fnTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0m_fnjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Comparable">
+      <signatures name="compareTo" type="int" id="_0m_fzzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0m_f0DqiEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IBoolean_Type">
+      <signatures name="compareTo" type="int" id="_0m_f0TqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0m_f0jqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_0nAF8DqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAF8TqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_0nAF8jqiEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_0nAF8zqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0nAF9DqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBoolean" type="boolean" id="_0nAF9TqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAF9jqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="booleanValue" type="boolean" id="_0nAF9zqiEeiP29_qDiwNWQ"/>
+      <signatures name="valueOf" type="java.lang.Boolean" id="_0nAF-DqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0nAF-TqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compare" type="int" id="_0nAF-jqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0nAF-zqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_0nAF_DqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="logicalAnd" type="boolean" id="_0nAF_TqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0nAF_jqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_0nAF_zqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="logicalOr" type="boolean" id="_0nAGADqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0nAGATqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_0nAGAjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="logicalXor" type="boolean" id="_0nAGAzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0nAGBDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_0nAGBTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parseBoolean" type="boolean" id="_0nAGBjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGBzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="AutoCloseable">
+      <signatures name="close" type="void" id="_0nAGDjqiEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Connection">
+      <signatures name="setReadOnly" type="void" id="_0nAGDzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0nAGEDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="close" type="void" id="_0nAGETqiEeiP29_qDiwNWQ"/>
+      <signatures name="isReadOnly" type="boolean" id="_0nAGEjqiEeiP29_qDiwNWQ"/>
+      <signatures name="isValid" type="boolean" id="_0nAGEzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAGFDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="abort" type="void" id="_0nAGFTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.concurrent.Executor" id="_0nAGFjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getWarnings" type="java.sql.SQLWarning" id="_0nAGFzqiEeiP29_qDiwNWQ"/>
+      <signatures name="clearWarnings" type="void" id="_0nAGGDqiEeiP29_qDiwNWQ"/>
+      <signatures name="commit" type="void" id="_0nAGGTqiEeiP29_qDiwNWQ"/>
+      <signatures name="createArrayOf" type="java.sql.Array" id="_0nAGGjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGGzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_0nAGHDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createBlob" type="java.sql.Blob" id="_0nAGHTqiEeiP29_qDiwNWQ"/>
+      <signatures name="createClob" type="java.sql.Clob" id="_0nAGHjqiEeiP29_qDiwNWQ"/>
+      <signatures name="createNClob" type="java.sql.NClob" id="_0nAGHzqiEeiP29_qDiwNWQ"/>
+      <signatures name="createSQLXML" type="java.sql.SQLXML" id="_0nAGIDqiEeiP29_qDiwNWQ"/>
+      <signatures name="createStruct" type="java.sql.Struct" id="_0nAGITqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGIjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_0nAGIzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCatalog" type="java.lang.String" id="_0nAGJDqiEeiP29_qDiwNWQ"/>
+      <signatures name="getClientInfo" type="java.lang.String" id="_0nAGJTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGJjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClientInfo" type="java.util.Properties" id="_0nAGJzqiEeiP29_qDiwNWQ"/>
+      <signatures name="getHoldability" type="int" id="_0nAGKDqiEeiP29_qDiwNWQ"/>
+      <signatures name="getMetaData" type="java.sql.DatabaseMetaData" id="_0nAGKTqiEeiP29_qDiwNWQ"/>
+      <signatures name="getNetworkTimeout" type="int" id="_0nAGKjqiEeiP29_qDiwNWQ"/>
+      <signatures name="getSchema" type="java.lang.String" id="_0nAGKzqiEeiP29_qDiwNWQ"/>
+      <signatures name="getTypeMap" type="java.util.Map" id="_0nAGLDqiEeiP29_qDiwNWQ"/>
+      <signatures name="nativeSQL" type="java.lang.String" id="_0nAGLTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGLjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareCall" type="java.sql.CallableStatement" id="_0nAGLzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGMDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareCall" type="java.sql.CallableStatement" id="_0nAGMTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGMjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAGMzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_0nAGNDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_0nAGNTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareCall" type="java.sql.CallableStatement" id="_0nAGNjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGNzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAGODqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_0nAGOTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareStatement" type="java.sql.PreparedStatement" id="_0nAGOjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGOzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAGPDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_0nAGPTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_0nAGPjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareStatement" type="java.sql.PreparedStatement" id="_0nAGPzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGQDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareStatement" type="java.sql.PreparedStatement" id="_0nAGQTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGQjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAGQzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareStatement" type="java.sql.PreparedStatement" id="_0nAGRDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGRTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int[]" id="_0nAGRjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareStatement" type="java.sql.PreparedStatement" id="_0nAGRzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGSDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String[]" id="_0nAGSTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareStatement" type="java.sql.PreparedStatement" id="_0nAGSjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGSzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAGTDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_0nAGTTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="releaseSavepoint" type="void" id="_0nAGTjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.sql.Savepoint" id="_0nAGTzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setClientInfo" type="void" id="_0nAGUDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Properties" id="_0nAGUTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setClientInfo" type="void" id="_0nAGUjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGUzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0nAGVDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setHoldability" type="void" id="_0nAGVTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAGVjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setNetworkTimeout" type="void" id="_0nAGVzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.concurrent.Executor" id="_0nAGWDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAGWTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setSavepoint" type="java.sql.Savepoint" id="_0nAGWjqiEeiP29_qDiwNWQ"/>
+      <signatures name="setSavepoint" type="java.sql.Savepoint" id="_0nAGWzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGXDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setSchema" type="void" id="_0nAGXTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGXjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTypeMap" type="void" id="_0nAGXzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_0nAGYDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTransactionIsolation" type="void" id="_0nAGYTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAGYjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTransactionIsolation" type="int" id="_0nAGYzqiEeiP29_qDiwNWQ"/>
+      <signatures name="getAutoCommit" type="boolean" id="_0nAGZDqiEeiP29_qDiwNWQ"/>
+      <signatures name="createStatement" type="java.sql.Statement" id="_0nAGZTqiEeiP29_qDiwNWQ"/>
+      <signatures name="createStatement" type="java.sql.Statement" id="_0nAGZjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAGZzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAGaDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createStatement" type="java.sql.Statement" id="_0nAGaTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAGajqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAGazqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_0nAGbDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setCatalog" type="void" id="_0nAGbTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAGbjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isClosed" type="boolean" id="_0nAGbzqiEeiP29_qDiwNWQ"/>
+      <signatures name="rollback" type="void" id="_0nAGcDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.sql.Savepoint" id="_0nAGcTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rollback" type="void" id="_0nAGcjqiEeiP29_qDiwNWQ"/>
+      <signatures name="setAutoCommit" type="void" id="_0nAGczqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0nAGdDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="unwrap" type="java.lang.Object" id="_0nAGdTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nAGdjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isWrapperFor" type="boolean" id="_0nAGdzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nAGeDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="CharSequence">
+      <signatures name="toString" type="java.lang.String" id="_0nAG9TqiEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_0nAG9jqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAG9zqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_0nAG-DqiEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_0nAG-TqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAG-jqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAG-zqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_0nAG_DqiEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_0nAG_TqiEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IString_Type">
+      <signatures name="compareTo" type="int" id="_0nAG_jqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAG_zqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_0nAHADqiEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_0nAHATqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAHAjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_0nAHAzqiEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_0nAHBDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAHBTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAHBjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_0nAHBzqiEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_0nAHCDqiEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$chars$0" type="java.util.Spliterator.OfInt" id="_0nAHCTqiEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$codePoints$1" type="java.util.Spliterator.OfInt" id="_0nAHCjqiEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_0nAHCzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAHDDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_0nAHDTqiEeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_0nAHDjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAHDzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAHEDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueOf" type="java.lang.String" id="_0nAHETqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAHEjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkBounds" type="void" id="_0nAHEzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_0nAHFDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAHFTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_0nAHFjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointAt" type="int" id="_0nAHFzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAHGDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointBefore" type="int" id="_0nAHGTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAHGjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointCount" type="int" id="_0nAHGzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAHHDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAHHTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compareToIgnoreCase" type="int" id="_0nAHHjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAHHzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="concat" type="java.lang.String" id="_0nAHIDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAHITqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contains" type="boolean" id="_0nAHIjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_0nAHIzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contentEquals" type="boolean" id="_0nAHJDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_0nAHJTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyValueOf" type="java.lang.String" id="_0nAHJjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char[]" id="_0nAHJzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="endsWith" type="boolean" id="_0nAHKDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAHKTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equalsIgnoreCase" type="boolean" id="_0nAHKjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAHKzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="format" type="java.lang.String" id="_0nAHLDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_0nAHLTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0nAHLjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_0nAHLzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBytes" type="void" id="_0nAHMDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAHMTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAHMjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_0nAHMzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_0nAHNDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChars" type="void" id="_0nAHNTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAHNjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAHNzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="char[]" id="_0nAHODqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_0nAHOTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="indexOfSupplementary" type="int" id="_0nAHOjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAHOzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAHPDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="intern" type="java.lang.String" id="_0nAHPTqiEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_0nAHPjqiEeiP29_qDiwNWQ"/>
+      <signatures name="join" type="java.lang.String" id="_0nAHPzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_0nAHQDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.CharSequence[]" id="_0nAHQTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOf" type="int" id="_0nAHQjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAHQzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOfSupplementary" type="int" id="_0nAHRDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAHRTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAHRjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="matches" type="boolean" id="_0nAHRzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAHSDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nonSyncContentEquals" type="boolean" id="_0nAHSTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.AbstractStringBuilder" id="_0nAHSjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="offsetByCodePoints" type="int" id="_0nAHSzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAHTDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAHTTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="regionMatches" type="boolean" id="_0nAHTjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAHTzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0nAHUDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_0nAHUTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_0nAHUjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="java.lang.String" id="_0nAHUzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char" id="_0nAHVDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="char" id="_0nAHVTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="java.lang.String" id="_0nAHVjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAHVzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0nAHWDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceFirst" type="java.lang.String" id="_0nAHWTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAHWjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0nAHWzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="split" type="java.lang.String[]" id="_0nAHXDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAHXTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="startsWith" type="boolean" id="_0nAHXjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAHXzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAHYDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="substring" type="java.lang.String" id="_0nAHYTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAHYjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCharArray" type="char[]" id="_0nAHYzqiEeiP29_qDiwNWQ"/>
+      <signatures name="toLowerCase" type="java.lang.String" id="_0nAHZDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_0nAHZTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUpperCase" type="java.lang.String" id="_0nAHZjqiEeiP29_qDiwNWQ"/>
+      <signatures name="trim" type="java.lang.String" id="_0nAHZzqiEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IProperties_Type">
+      <signatures name="remove" type="java.lang.Object" id="_0nAtATqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtAjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_0nAtAzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtBDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_0nAtBTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtBjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAtBzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_0nAtCDqiEeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_0nAtCTqiEeiP29_qDiwNWQ"/>
+      <signatures name="elements" type="java.util.Enumeration" id="_0nAtCjqiEeiP29_qDiwNWQ"/>
+      <signatures name="keys" type="java.util.Enumeration" id="_0nAtCzqiEeiP29_qDiwNWQ"/>
+      <signatures name="remove" type="java.lang.Object" id="_0nAtDDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtDTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_0nAtDjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtDzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_0nAtEDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtETqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAtEjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_0nAtEzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtFDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="values" type="java.util.Collection" id="_0nAtFTqiEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_0nAtFjqiEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_0nAtFzqiEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_0nAtGDqiEeiP29_qDiwNWQ"/>
+      <signatures name="replace" type="java.lang.Object" id="_0nAtGTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtGjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAtGzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="void" id="_0nAtHDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiFunction" id="_0nAtHTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="size" type="int" id="_0nAtHjqiEeiP29_qDiwNWQ"/>
+      <signatures name="entrySet" type="java.util.Set" id="_0nAtHzqiEeiP29_qDiwNWQ"/>
+      <signatures name="putAll" type="void" id="_0nAtIDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_0nAtITqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="putIfAbsent" type="java.lang.Object" id="_0nAtIjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtIzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAtJDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="keySet" type="java.util.Set" id="_0nAtJTqiEeiP29_qDiwNWQ"/>
+      <signatures name="compute" type="java.lang.Object" id="_0nAtJjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtJzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_0nAtKDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfAbsent" type="java.lang.Object" id="_0nAtKTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtKjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.Function" id="_0nAtKzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfPresent" type="java.lang.Object" id="_0nAtLDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtLTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_0nAtLjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsKey" type="boolean" id="_0nAtLzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtMDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsValue" type="boolean" id="_0nAtMTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtMjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forEach" type="void" id="_0nAtMzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiConsumer" id="_0nAtNDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getOrDefault" type="java.lang.Object" id="_0nAtNTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtNjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAtNzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="merge" type="java.lang.Object" id="_0nAtODqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtOTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAtOjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.function.BiFunction" id="_0nAtOzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_0nAtPDqiEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_0nAtPTqiEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_0nAtPjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtPzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$100" type="java.util.Iterator" id="_0nAtQDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_0nAtQTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAtQjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$200" type="int" id="_0nAtQzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_0nAtRDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readObject" type="void" id="_0nAtRTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.ObjectInputStream" id="_0nAtRjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="writeObject" type="void" id="_0nAtRzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.ObjectOutputStream" id="_0nAtSDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$400" type="java.util.Hashtable.Entry[]" id="_0nAtSTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_0nAtSjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$210" type="int" id="_0nAtSzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_0nAtTDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$500" type="int" id="_0nAtTTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_0nAtTjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$508" type="int" id="_0nAtTzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_0nAtUDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addEntry" type="void" id="_0nAtUTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAtUjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAtUzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_0nAtVDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_0nAtVTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEnumeration" type="java.util.Enumeration" id="_0nAtVjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAtVzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getIterator" type="java.util.Iterator" id="_0nAtWDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAtWTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="reconstitutionPut" type="void" id="_0nAtWjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable.Entry[]" id="_0nAtWzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAtXDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_0nAtXTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rehash" type="void" id="_0nAtXjqiEeiP29_qDiwNWQ"/>
+      <signatures name="setProperty" type="java.lang.Object" id="_0nAtXzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAtYDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0nAtYTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProperty" type="java.lang.String" id="_0nAtYjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAtYzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="load" type="void" id="_0nAtZDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.Reader" id="_0nAtZTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="load0" type="void" id="_0nAtZjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Properties.LineReader" id="_0nAtZzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="enumerate" type="void" id="_0nAtaDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_0nAtaTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="list" type="void" id="_0nAtajqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.PrintStream" id="_0nAtazqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="enumerateStringProperties" type="void" id="_0nAtbDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_0nAtbTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="loadConvert" type="java.lang.String" id="_0nAtbjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char[]" id="_0nAtbzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAtcDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_0nAtcTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="char[]" id="_0nAtcjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="loadFromXML" type="void" id="_0nAtczqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.InputStream" id="_0nAtdDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="propertyNames" type="java.util.Enumeration" id="_0nAtdTqiEeiP29_qDiwNWQ"/>
+      <signatures name="save" type="void" id="_0nAtdjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.OutputStream" id="_0nAtdzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0nAteDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="saveConvert" type="java.lang.String" id="_0nAteTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nAtejqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_0nAtezqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_0nAtfDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="store" type="void" id="_0nAtfTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.Writer" id="_0nAtfjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0nAtfzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="store0" type="void" id="_0nAtgDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.BufferedWriter" id="_0nAtgTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0nAtgjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_0nAtgzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="storeToXML" type="void" id="_0nAthDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.OutputStream" id="_0nAthTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0nAthjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stringPropertyNames" type="java.util.Set" id="_0nAthzqiEeiP29_qDiwNWQ"/>
+      <signatures name="toHex" type="char" id="_0nAtiDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAtiTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="writeComments" type="void" id="_0nAtijqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.BufferedWriter" id="_0nAtizqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0nAtjDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Map">
+      <signatures name="remove" type="java.lang.Object" id="_0nAtjTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtjjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_0nAtjzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtkDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAtkTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_0nAtkjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtkzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_0nAtlDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtlTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAtljqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_0nAtlzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtmDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="values" type="java.util.Collection" id="_0nAtmTqiEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_0nAtmjqiEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_0nAtmzqiEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_0nAtnDqiEeiP29_qDiwNWQ"/>
+      <signatures name="replace" type="java.lang.Object" id="_0nAtnTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtnjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAtnzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="boolean" id="_0nAtoDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtoTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAtojqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_0nAtozqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="void" id="_0nAtpDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiFunction" id="_0nAtpTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="size" type="int" id="_0nAtpjqiEeiP29_qDiwNWQ"/>
+      <signatures name="entrySet" type="java.util.Set" id="_0nAtpzqiEeiP29_qDiwNWQ"/>
+      <signatures name="putAll" type="void" id="_0nAtqDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_0nAtqTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="putIfAbsent" type="java.lang.Object" id="_0nAtqjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtqzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAtrDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="keySet" type="java.util.Set" id="_0nAtrTqiEeiP29_qDiwNWQ"/>
+      <signatures name="compute" type="java.lang.Object" id="_0nAtrjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtrzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_0nAtsDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfAbsent" type="java.lang.Object" id="_0nAtsTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtsjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.Function" id="_0nAtszqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfPresent" type="java.lang.Object" id="_0nAttDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAttTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_0nAttjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsKey" type="boolean" id="_0nAttzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtuDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsValue" type="boolean" id="_0nAtuTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtujqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forEach" type="void" id="_0nAtuzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiConsumer" id="_0nAtvDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getOrDefault" type="java.lang.Object" id="_0nAtvTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtvjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAtvzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="merge" type="java.lang.Object" id="_0nAtwDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtwTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAtwjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.function.BiFunction" id="_0nAtwzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IHashtable_Type">
+      <signatures name="remove" type="java.lang.Object" id="_0nAtxDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtxTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_0nAtxjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtxzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_0nAtyDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAtyTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAtyjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_0nAtyzqiEeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_0nAtzDqiEeiP29_qDiwNWQ"/>
+      <signatures name="elements" type="java.util.Enumeration" id="_0nAtzTqiEeiP29_qDiwNWQ"/>
+      <signatures name="keys" type="java.util.Enumeration" id="_0nAtzjqiEeiP29_qDiwNWQ"/>
+      <signatures name="remove" type="java.lang.Object" id="_0nAtzzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAt0DqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_0nAt0TqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAt0jqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_0nAt0zqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAt1DqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAt1TqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_0nAt1jqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAt1zqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="values" type="java.util.Collection" id="_0nAt2DqiEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_0nAt2TqiEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_0nAt2jqiEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_0nAt2zqiEeiP29_qDiwNWQ"/>
+      <signatures name="replace" type="java.lang.Object" id="_0nAt3DqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAt3TqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAt3jqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="void" id="_0nAt3zqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiFunction" id="_0nAt4DqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="size" type="int" id="_0nAt4TqiEeiP29_qDiwNWQ"/>
+      <signatures name="entrySet" type="java.util.Set" id="_0nAt4jqiEeiP29_qDiwNWQ"/>
+      <signatures name="putAll" type="void" id="_0nAt4zqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_0nAt5DqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="putIfAbsent" type="java.lang.Object" id="_0nAt5TqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAt5jqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAt5zqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="keySet" type="java.util.Set" id="_0nAt6DqiEeiP29_qDiwNWQ"/>
+      <signatures name="compute" type="java.lang.Object" id="_0nAt6TqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAt6jqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_0nAt6zqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfAbsent" type="java.lang.Object" id="_0nAt7DqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAt7TqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.Function" id="_0nAt7jqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfPresent" type="java.lang.Object" id="_0nAt7zqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAt8DqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_0nAt8TqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsKey" type="boolean" id="_0nAt8jqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAt8zqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsValue" type="boolean" id="_0nAt9DqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAt9TqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forEach" type="void" id="_0nAt9jqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiConsumer" id="_0nAt9zqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getOrDefault" type="java.lang.Object" id="_0nAt-DqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAt-TqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAt-jqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="merge" type="java.lang.Object" id="_0nAt-zqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAt_DqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAt_TqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.function.BiFunction" id="_0nAt_jqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_0nAt_zqiEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_0nAuADqiEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_0nAuATqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAuAjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$100" type="java.util.Iterator" id="_0nAuAzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_0nAuBDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0nAuBTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$200" type="int" id="_0nAuBjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_0nAuBzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readObject" type="void" id="_0nAuCDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.ObjectInputStream" id="_0nAuCTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="writeObject" type="void" id="_0nAuCjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.ObjectOutputStream" id="_0nAuCzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$400" type="java.util.Hashtable.Entry[]" id="_0nAuDDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_0nAuDTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$210" type="int" id="_0nAuDjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_0nAuDzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$500" type="int" id="_0nAuEDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_0nAuETqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$508" type="int" id="_0nAuEjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable" id="_0nAuEzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addEntry" type="void" id="_0nAuFDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAuFTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAuFjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_0nAuFzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_0nAuGDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEnumeration" type="java.util.Enumeration" id="_0nAuGTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAuGjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getIterator" type="java.util.Iterator" id="_0nAuGzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0nAuHDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="reconstitutionPut" type="void" id="_0nAuHTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Hashtable.Entry[]" id="_0nAuHjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAuHzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_0nAuIDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rehash" type="void" id="_0nAuITqiEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IDictionary_Type">
+      <signatures name="remove" type="java.lang.Object" id="_0nAuIjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAuIzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_0nAuJDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAuJTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_0nAuJjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAuJzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0nAuKDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_0nAuKTqiEeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_0nAuKjqiEeiP29_qDiwNWQ"/>
+      <signatures name="elements" type="java.util.Enumeration" id="_0nAuKzqiEeiP29_qDiwNWQ"/>
+      <signatures name="keys" type="java.util.Enumeration" id="_0nAuLDqiEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Log">
+      <signatures name="debug" type="void" id="_0nAuZDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAuZTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_0nAuZjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_0nAuZzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAuaDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_0nAuaTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAuajqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_0nAuazqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAubDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_0nAubTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_0nAubjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAubzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_0nAucDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_0nAucTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAucjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_0nAuczqiEeiP29_qDiwNWQ"/>
+      <signatures name="info" type="void" id="_0nAudDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAudTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_0nAudjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_0nAudzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAueDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTraceEnabled" type="boolean" id="_0nAueTqiEeiP29_qDiwNWQ"/>
+      <signatures name="warn" type="void" id="_0nAuejqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAuezqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_0nAufDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_0nAufTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAufjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isDebugEnabled" type="boolean" id="_0nAufzqiEeiP29_qDiwNWQ"/>
+      <signatures name="fatal" type="void" id="_0nAugDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAugTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="fatal" type="void" id="_0nAugjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nAugzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_0nAuhDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isErrorEnabled" type="boolean" id="_0nAuhTqiEeiP29_qDiwNWQ"/>
+      <signatures name="isFatalEnabled" type="boolean" id="_0nAuhjqiEeiP29_qDiwNWQ"/>
+      <signatures name="isWarnEnabled" type="boolean" id="_0nAuhzqiEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ApplicationContextAware">
+      <signatures name="setApplicationContext" type="void" id="_0nfOITqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.context.ApplicationContext" id="_0nfOIjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IFlyingContextProvider_Type">
+      <signatures name="setApplicationContext" type="void" id="_0nfOIzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.context.ApplicationContext" id="_0nfOJDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getApplicationContext" type="org.springframework.context.ApplicationContext" id="_0nfOJTqiEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="EnvironmentCapable">
+      <signatures name="getEnvironment" type="org.springframework.core.env.Environment" id="_0nfOKDqiEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ListableBeanFactory">
+      <signatures name="containsBeanDefinition" type="boolean" id="_0nfOKTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nfOKjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanDefinitionCount" type="int" id="_0nfOKzqiEeiP29_qDiwNWQ"/>
+      <signatures name="getBeanDefinitionNames" type="java.lang.String[]" id="_0nfOLDqiEeiP29_qDiwNWQ"/>
+      <signatures name="getBeansWithAnnotation" type="java.util.Map" id="_0nfOLTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nfOLjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="findAnnotationOnBean" type="java.lang.annotation.Annotation" id="_0nfOLzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nfOMDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_0nfOMTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForType" type="java.lang.String[]" id="_0nfOMjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.core.ResolvableType" id="_0nfOMzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForType" type="java.lang.String[]" id="_0nfONDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nfONTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_0nfONjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_0nfONzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForType" type="java.lang.String[]" id="_0nfOODqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nfOOTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForAnnotation" type="java.lang.String[]" id="_0nfOOjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nfOOzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeansOfType" type="java.util.Map" id="_0nfOPDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nfOPTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeansOfType" type="java.util.Map" id="_0nfOPjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nfOPzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_0nfOQDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_0nfOQTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getType" type="java.lang.Class" id="_0nfOQjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nfOQzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAliases" type="java.lang.String[]" id="_0nfORDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nfORTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isSingleton" type="boolean" id="_0nfORjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nfORzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_0nfOSDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nfOSTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_0nfOSjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_0nfOSzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nfOTDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_0nfOTTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nfOTjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_0nfOTzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_0nfOUDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nfOUTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_0nfOUjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nfOUzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_0nfOVDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isPrototype" type="boolean" id="_0nfOVTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nfOVjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTypeMatch" type="boolean" id="_0nfOVzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nfOWDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_0nfOWTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTypeMatch" type="boolean" id="_0nfOWjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nfOWzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.core.ResolvableType" id="_0nfOXDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsBean" type="boolean" id="_0nfOXTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nfOXjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="HierarchicalBeanFactory">
+      <signatures name="getParentBeanFactory" type="org.springframework.beans.factory.BeanFactory" id="_0nf1MDqiEeiP29_qDiwNWQ"/>
+      <signatures name="containsLocalBean" type="boolean" id="_0nf1MTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1MjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getType" type="java.lang.Class" id="_0nf1MzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1NDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAliases" type="java.lang.String[]" id="_0nf1NTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1NjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isSingleton" type="boolean" id="_0nf1NzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1ODqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_0nf1OTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1OjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_0nf1OzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_0nf1PDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1PTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_0nf1PjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1PzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_0nf1QDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_0nf1QTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nf1QjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_0nf1QzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nf1RDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_0nf1RTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isPrototype" type="boolean" id="_0nf1RjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1RzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTypeMatch" type="boolean" id="_0nf1SDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1STqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_0nf1SjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTypeMatch" type="boolean" id="_0nf1SzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1TDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.core.ResolvableType" id="_0nf1TTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsBean" type="boolean" id="_0nf1TjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1TzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="MessageSource">
+      <signatures name="getMessage" type="java.lang.String" id="_0nf1UDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1UTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_0nf1UjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_0nf1UzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.util.Locale" id="_0nf1VDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMessage" type="java.lang.String" id="_0nf1VTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1VjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_0nf1VzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.Locale" id="_0nf1WDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMessage" type="java.lang.String" id="_0nf1WTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.context.MessageSourceResolvable" id="_0nf1WjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.Locale" id="_0nf1WzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ApplicationEventPublisher">
+      <signatures name="publishEvent" type="void" id="_0nf1XDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.context.ApplicationEvent" id="_0nf1XTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="publishEvent" type="void" id="_0nf1XjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nf1XzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ResourcePatternResolver">
+      <signatures name="getResources" type="org.springframework.core.io.Resource[]" id="_0nf1YDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1YTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClassLoader" type="java.lang.ClassLoader" id="_0nf1YjqiEeiP29_qDiwNWQ"/>
+      <signatures name="getResource" type="org.springframework.core.io.Resource" id="_0nf1YzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1ZDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ApplicationContext">
+      <signatures name="getParent" type="org.springframework.context.ApplicationContext" id="_0nf1ZTqiEeiP29_qDiwNWQ"/>
+      <signatures name="getId" type="java.lang.String" id="_0nf1ZjqiEeiP29_qDiwNWQ"/>
+      <signatures name="getDisplayName" type="java.lang.String" id="_0nf1ZzqiEeiP29_qDiwNWQ"/>
+      <signatures name="getAutowireCapableBeanFactory" type="org.springframework.beans.factory.config.AutowireCapableBeanFactory" id="_0nf1aDqiEeiP29_qDiwNWQ"/>
+      <signatures name="getApplicationName" type="java.lang.String" id="_0nf1aTqiEeiP29_qDiwNWQ"/>
+      <signatures name="getStartupDate" type="long" id="_0nf1ajqiEeiP29_qDiwNWQ"/>
+      <signatures name="getEnvironment" type="org.springframework.core.env.Environment" id="_0nf1azqiEeiP29_qDiwNWQ"/>
+      <signatures name="containsBeanDefinition" type="boolean" id="_0nf1bDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1bTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanDefinitionCount" type="int" id="_0nf1bjqiEeiP29_qDiwNWQ"/>
+      <signatures name="getBeanDefinitionNames" type="java.lang.String[]" id="_0nf1bzqiEeiP29_qDiwNWQ"/>
+      <signatures name="getBeansWithAnnotation" type="java.util.Map" id="_0nf1cDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nf1cTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="findAnnotationOnBean" type="java.lang.annotation.Annotation" id="_0nf1cjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1czqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_0nf1dDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForType" type="java.lang.String[]" id="_0nf1dTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.core.ResolvableType" id="_0nf1djqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForType" type="java.lang.String[]" id="_0nf1dzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nf1eDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_0nf1eTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_0nf1ejqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForType" type="java.lang.String[]" id="_0nf1ezqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nf1fDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForAnnotation" type="java.lang.String[]" id="_0nf1fTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nf1fjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeansOfType" type="java.util.Map" id="_0nf1fzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nf1gDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeansOfType" type="java.util.Map" id="_0nf1gTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nf1gjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_0nf1gzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_0nf1hDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getType" type="java.lang.Class" id="_0nf1hTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1hjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAliases" type="java.lang.String[]" id="_0nf1hzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1iDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isSingleton" type="boolean" id="_0nf1iTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1ijqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_0nf1izqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1jDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_0nf1jTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_0nf1jjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1jzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_0nf1kDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1kTqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_0nf1kjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_0nf1kzqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nf1lDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_0nf1lTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0nf1ljqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_0nf1lzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isPrototype" type="boolean" id="_0nf1mDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1mTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTypeMatch" type="boolean" id="_0nf1mjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1mzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_0nf1nDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTypeMatch" type="boolean" id="_0nf1nTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1njqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.core.ResolvableType" id="_0nf1nzqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsBean" type="boolean" id="_0nf1oDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1oTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getParentBeanFactory" type="org.springframework.beans.factory.BeanFactory" id="_0nf1ojqiEeiP29_qDiwNWQ"/>
+      <signatures name="containsLocalBean" type="boolean" id="_0nf1ozqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1pDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMessage" type="java.lang.String" id="_0nf1pTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1pjqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_0nf1pzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_0nf1qDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.util.Locale" id="_0nf1qTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMessage" type="java.lang.String" id="_0nf1qjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1qzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_0nf1rDqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.Locale" id="_0nf1rTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMessage" type="java.lang.String" id="_0nf1rjqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.context.MessageSourceResolvable" id="_0nf1rzqiEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.Locale" id="_0nf1sDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="publishEvent" type="void" id="_0nf1sTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.context.ApplicationEvent" id="_0nf1sjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="publishEvent" type="void" id="_0nf1szqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0nf1tDqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getResources" type="org.springframework.core.io.Resource[]" id="_0nf1tTqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1tjqiEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClassLoader" type="java.lang.ClassLoader" id="_0nf1tzqiEeiP29_qDiwNWQ"/>
+      <signatures name="getResource" type="org.springframework.core.io.Resource" id="_0nf1uDqiEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0nf1uTqiEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

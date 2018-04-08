@@ -1,0 +1,6 @@
+dedal_diagram "FlowCI.config"
+
+	repositories (
+
+		repository genRepo
+	)

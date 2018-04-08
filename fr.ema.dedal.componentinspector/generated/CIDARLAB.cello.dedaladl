@@ -1,0 +1,6 @@
+dedal_diagram "CIDARLAB.cello"
+
+	repositories (
+
+		repository genRepo
+	)

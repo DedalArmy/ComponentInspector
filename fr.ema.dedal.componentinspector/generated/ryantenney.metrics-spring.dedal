@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="ryantenney.metrics-spring">
-  <architectureDescriptions xsi:type="dedal:Configuration" name="ryantenney.metrics-spring.src.test.resources.custom-registries.xml_config" implements="//@architectureDescriptions[name='ryantenney.metrics-spring.src.test.resources.custom-registries.xml_spec']">
-    <configComponents name="com.ryantenney.metrics.spring.RegistryTest.CustomMetricRegistry" id="_v1lSEDplEeiRsKs_vMU-IQ" realizes="_v26vZjplEeiRsKs_vMU-IQ" implements="_v2nz4DplEeiRsKs_vMU-IQ">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ryantenney.metrics-spring.metrics-spring.src.test.resources.custom-registries.xml_config" implements="//@architectureDescriptions[name='ryantenney.metrics-spring.metrics-spring.src.test.resources.custom-registries.xml_spec']">
+    <configComponents name="com.ryantenney.metrics.spring.RegistryTest.CustomMetricRegistry" id="_XVFU8DqrEeiP29_qDiwNWQ" realizes="_XWGCADqrEeiP29_qDiwNWQ" implements="_XVuOIDqrEeiP29_qDiwNWQ">
       <compInterfaces xsi:type="dedal:Interface" name="ICustomMetricRegistry" type="ICustomMetricRegistry_Type"/>
       <compInterfaces xsi:type="dedal:Interface" name="IMap_CustomMetricRegistry" direction="REQUIRED" type="Map"/>
       <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_CustomMetricRegistry" direction="REQUIRED" type="ConcurrentMap"/>
@@ -10,7 +10,7 @@
       <attributes name="metrics" type="java.util.concurrent.ConcurrentMap"/>
       <attributes name="listeners" type="java.util.List"/>
     </configComponents>
-    <configComponents name="com.ryantenney.metrics.spring.RegistryTest.CustomHealthCheckRegistry" id="_v1lSETplEeiRsKs_vMU-IQ" realizes="_v26HwDplEeiRsKs_vMU-IQ" implements="_v23rgDplEeiRsKs_vMU-IQ">
+    <configComponents name="com.ryantenney.metrics.spring.RegistryTest.CustomHealthCheckRegistry" id="_XVFU8TqrEeiP29_qDiwNWQ" realizes="_XWGFgDqrEeiP29_qDiwNWQ" implements="_XWEzcDqrEeiP29_qDiwNWQ">
       <compInterfaces xsi:type="dedal:Interface" name="ICustomHealthCheckRegistry" type="ICustomHealthCheckRegistry_Type"/>
       <compInterfaces xsi:type="dedal:Interface" name="ILogger_CustomHealthCheckRegistry" direction="REQUIRED" type="Logger"/>
       <compInterfaces xsi:type="dedal:Interface" name="IMap_CustomHealthCheckRegistry" direction="REQUIRED" type="Map"/>
@@ -19,29 +19,23 @@
       <attributes name="healthChecks" type="java.util.concurrent.ConcurrentMap"/>
     </configComponents>
   </architectureDescriptions>
-  <architectureDescriptions xsi:type="dedal:Assembly" name="ryantenney.metrics-spring.src.test.resources.custom-registries.xml_asm" instantiates="//@architectureDescriptions[name='ryantenney.metrics-spring.src.test.resources.custom-registries.xml_config']">
-    <assmComponents name="metrics" id="_v1lSEjplEeiRsKs_vMU-IQ" instantiates="_v1lSEDplEeiRsKs_vMU-IQ">
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ryantenney.metrics-spring.metrics-spring.src.test.resources.custom-registries.xml_asm" instantiates="//@architectureDescriptions[name='ryantenney.metrics-spring.metrics-spring.src.test.resources.custom-registries.xml_config']">
+    <assmComponents name="metrics" id="_XVFU8jqrEeiP29_qDiwNWQ" instantiates="_XVFU8DqrEeiP29_qDiwNWQ">
       <compInterfaces xsi:type="dedal:Interface" name="ICustomMetricRegistry_metrics" type="ICustomMetricRegistry_Type" instantiates="ICustomMetricRegistry"/>
       <compInterfaces xsi:type="dedal:Interface" name="IMap_CustomMetricRegistry_metrics" direction="REQUIRED" type="Map" instantiates="IMap_CustomMetricRegistry"/>
       <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_CustomMetricRegistry_metrics" direction="REQUIRED" type="ConcurrentMap" instantiates="IConcurrentMap_CustomMetricRegistry"/>
       <compInterfaces xsi:type="dedal:Interface" name="ICollection_CustomMetricRegistry_metrics" direction="REQUIRED" type="Collection" instantiates="ICollection_CustomMetricRegistry"/>
       <compInterfaces xsi:type="dedal:Interface" name="IList_CustomMetricRegistry_metrics" direction="REQUIRED" type="List" instantiates="IList_CustomMetricRegistry"/>
     </assmComponents>
-    <assmComponents name="health" id="_v1l5IDplEeiRsKs_vMU-IQ" instantiates="_v1lSETplEeiRsKs_vMU-IQ">
+    <assmComponents name="health" id="_XVF8ADqrEeiP29_qDiwNWQ" instantiates="_XVFU8TqrEeiP29_qDiwNWQ">
       <compInterfaces xsi:type="dedal:Interface" name="ICustomHealthCheckRegistry_health" type="ICustomHealthCheckRegistry_Type" instantiates="ICustomHealthCheckRegistry"/>
       <compInterfaces xsi:type="dedal:Interface" name="ILogger_CustomHealthCheckRegistry_health" direction="REQUIRED" type="Logger" instantiates="ILogger_CustomHealthCheckRegistry"/>
       <compInterfaces xsi:type="dedal:Interface" name="IMap_CustomHealthCheckRegistry_health" direction="REQUIRED" type="Map" instantiates="IMap_CustomHealthCheckRegistry"/>
       <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_CustomHealthCheckRegistry_health" direction="REQUIRED" type="ConcurrentMap" instantiates="IConcurrentMap_CustomHealthCheckRegistry"/>
     </assmComponents>
   </architectureDescriptions>
-  <architectureDescriptions xsi:type="dedal:Specification" name="ryantenney.metrics-spring.src.test.resources.custom-registries.xml_spec">
-    <specComponents name="HealthCheckRegistry_role" id="_v26HwDplEeiRsKs_vMU-IQ">
-      <compInterfaces xsi:type="dedal:Interface" name="IHealthCheckRegistryHealthCheckRegistry_role" type="IHealthCheckRegistry_Type"/>
-      <compInterfaces xsi:type="dedal:Interface" name="ILoggerHealthCheckRegistry_role" direction="REQUIRED" type="Logger"/>
-      <compInterfaces xsi:type="dedal:Interface" name="IMapHealthCheckRegistry_role" direction="REQUIRED" type="Map"/>
-      <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMapHealthCheckRegistry_role" direction="REQUIRED" type="ConcurrentMap"/>
-    </specComponents>
-    <specComponents name="MetricRegistry_role" id="_v26vZjplEeiRsKs_vMU-IQ">
+  <architectureDescriptions xsi:type="dedal:Specification" name="ryantenney.metrics-spring.metrics-spring.src.test.resources.custom-registries.xml_spec">
+    <specComponents name="MetricRegistry_role" id="_XWGCADqrEeiP29_qDiwNWQ">
       <compInterfaces xsi:type="dedal:Interface" name="IMetricSetMetricRegistry_role" type="MetricSet"/>
       <compInterfaces xsi:type="dedal:Interface" name="IMetricRegistryMetricRegistry_role" type="IMetricRegistry_Type"/>
       <compInterfaces xsi:type="dedal:Interface" name="IMapMetricRegistry_role" direction="REQUIRED" type="Map"/>
@@ -49,9 +43,15 @@
       <compInterfaces xsi:type="dedal:Interface" name="ICollectionMetricRegistry_role" direction="REQUIRED" type="Collection"/>
       <compInterfaces xsi:type="dedal:Interface" name="IListMetricRegistry_role" direction="REQUIRED" type="List"/>
     </specComponents>
+    <specComponents name="HealthCheckRegistry_role" id="_XWGFgDqrEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IHealthCheckRegistryHealthCheckRegistry_role" type="IHealthCheckRegistry_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerHealthCheckRegistry_role" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapHealthCheckRegistry_role" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMapHealthCheckRegistry_role" direction="REQUIRED" type="ConcurrentMap"/>
+    </specComponents>
   </architectureDescriptions>
-  <architectureDescriptions xsi:type="dedal:Configuration" name="ryantenney.metrics-spring.target.test-classes.custom-registries.xml_config" implements="//@architectureDescriptions[name='ryantenney.metrics-spring.target.test-classes.custom-registries.xml_spec']">
-    <configComponents name="com.ryantenney.metrics.spring.RegistryTest.CustomMetricRegistry" id="_wI7r4DplEeiRsKs_vMU-IQ" realizes="_wJGsuzplEeiRsKs_vMU-IQ" implements="_wJBygDplEeiRsKs_vMU-IQ">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ryantenney.metrics-spring.metrics-spring.target.test-classes.custom-registries.xml_config" implements="//@architectureDescriptions[name='ryantenney.metrics-spring.metrics-spring.target.test-classes.custom-registries.xml_spec']">
+    <configComponents name="com.ryantenney.metrics.spring.RegistryTest.CustomMetricRegistry" id="_XchZsDqrEeiP29_qDiwNWQ" realizes="_Xcm_GjqrEeiP29_qDiwNWQ" implements="_Xcj18DqrEeiP29_qDiwNWQ">
       <compInterfaces xsi:type="dedal:Interface" name="ICustomMetricRegistry" type="ICustomMetricRegistry_Type"/>
       <compInterfaces xsi:type="dedal:Interface" name="IMap_CustomMetricRegistry" direction="REQUIRED" type="Map"/>
       <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_CustomMetricRegistry" direction="REQUIRED" type="ConcurrentMap"/>
@@ -60,7 +60,7 @@
       <attributes name="metrics" type="java.util.concurrent.ConcurrentMap"/>
       <attributes name="listeners" type="java.util.List"/>
     </configComponents>
-    <configComponents name="com.ryantenney.metrics.spring.RegistryTest.CustomHealthCheckRegistry" id="_wI7r4TplEeiRsKs_vMU-IQ" realizes="_wJHUdjplEeiRsKs_vMU-IQ" implements="_wJFc4DplEeiRsKs_vMU-IQ">
+    <configComponents name="com.ryantenney.metrics.spring.RegistryTest.CustomHealthCheckRegistry" id="_XchZsTqrEeiP29_qDiwNWQ" realizes="_Xcm7pDqrEeiP29_qDiwNWQ" implements="_XcmSMDqrEeiP29_qDiwNWQ">
       <compInterfaces xsi:type="dedal:Interface" name="ICustomHealthCheckRegistry" type="ICustomHealthCheckRegistry_Type"/>
       <compInterfaces xsi:type="dedal:Interface" name="ILogger_CustomHealthCheckRegistry" direction="REQUIRED" type="Logger"/>
       <compInterfaces xsi:type="dedal:Interface" name="IMap_CustomHealthCheckRegistry" direction="REQUIRED" type="Map"/>
@@ -69,771 +69,781 @@
       <attributes name="healthChecks" type="java.util.concurrent.ConcurrentMap"/>
     </configComponents>
   </architectureDescriptions>
-  <architectureDescriptions xsi:type="dedal:Assembly" name="ryantenney.metrics-spring.target.test-classes.custom-registries.xml_asm" instantiates="//@architectureDescriptions[name='ryantenney.metrics-spring.target.test-classes.custom-registries.xml_config']">
-    <assmComponents name="metrics" id="_wI8S8DplEeiRsKs_vMU-IQ" instantiates="_wI7r4DplEeiRsKs_vMU-IQ">
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ryantenney.metrics-spring.metrics-spring.target.test-classes.custom-registries.xml_asm" instantiates="//@architectureDescriptions[name='ryantenney.metrics-spring.metrics-spring.target.test-classes.custom-registries.xml_config']">
+    <assmComponents name="metrics" id="_XchZsjqrEeiP29_qDiwNWQ" instantiates="_XchZsDqrEeiP29_qDiwNWQ">
       <compInterfaces xsi:type="dedal:Interface" name="ICustomMetricRegistry_metrics" type="ICustomMetricRegistry_Type" instantiates="ICustomMetricRegistry"/>
       <compInterfaces xsi:type="dedal:Interface" name="IMap_CustomMetricRegistry_metrics" direction="REQUIRED" type="Map" instantiates="IMap_CustomMetricRegistry"/>
       <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_CustomMetricRegistry_metrics" direction="REQUIRED" type="ConcurrentMap" instantiates="IConcurrentMap_CustomMetricRegistry"/>
       <compInterfaces xsi:type="dedal:Interface" name="ICollection_CustomMetricRegistry_metrics" direction="REQUIRED" type="Collection" instantiates="ICollection_CustomMetricRegistry"/>
       <compInterfaces xsi:type="dedal:Interface" name="IList_CustomMetricRegistry_metrics" direction="REQUIRED" type="List" instantiates="IList_CustomMetricRegistry"/>
     </assmComponents>
-    <assmComponents name="health" id="_wI8S8TplEeiRsKs_vMU-IQ" instantiates="_wI7r4TplEeiRsKs_vMU-IQ">
+    <assmComponents name="health" id="_XchZszqrEeiP29_qDiwNWQ" instantiates="_XchZsTqrEeiP29_qDiwNWQ">
       <compInterfaces xsi:type="dedal:Interface" name="ICustomHealthCheckRegistry_health" type="ICustomHealthCheckRegistry_Type" instantiates="ICustomHealthCheckRegistry"/>
       <compInterfaces xsi:type="dedal:Interface" name="ILogger_CustomHealthCheckRegistry_health" direction="REQUIRED" type="Logger" instantiates="ILogger_CustomHealthCheckRegistry"/>
       <compInterfaces xsi:type="dedal:Interface" name="IMap_CustomHealthCheckRegistry_health" direction="REQUIRED" type="Map" instantiates="IMap_CustomHealthCheckRegistry"/>
       <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_CustomHealthCheckRegistry_health" direction="REQUIRED" type="ConcurrentMap" instantiates="IConcurrentMap_CustomHealthCheckRegistry"/>
     </assmComponents>
   </architectureDescriptions>
-  <architectureDescriptions xsi:type="dedal:Specification" name="ryantenney.metrics-spring.target.test-classes.custom-registries.xml_spec">
-    <specComponents name="MetricRegistry_role" id="_wJGsuzplEeiRsKs_vMU-IQ">
+  <architectureDescriptions xsi:type="dedal:Specification" name="ryantenney.metrics-spring.metrics-spring.target.test-classes.custom-registries.xml_spec">
+    <specComponents name="HealthCheckRegistry_role" id="_Xcm7pDqrEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IHealthCheckRegistryHealthCheckRegistry_role" type="IHealthCheckRegistry_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerHealthCheckRegistry_role" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapHealthCheckRegistry_role" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMapHealthCheckRegistry_role" direction="REQUIRED" type="ConcurrentMap"/>
+    </specComponents>
+    <specComponents name="MetricRegistry_role" id="_Xcm_GjqrEeiP29_qDiwNWQ">
       <compInterfaces xsi:type="dedal:Interface" name="IMetricSetMetricRegistry_role" type="MetricSet"/>
       <compInterfaces xsi:type="dedal:Interface" name="IMetricRegistryMetricRegistry_role" type="IMetricRegistry_Type"/>
       <compInterfaces xsi:type="dedal:Interface" name="IMapMetricRegistry_role" direction="REQUIRED" type="Map"/>
       <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMapMetricRegistry_role" direction="REQUIRED" type="ConcurrentMap"/>
       <compInterfaces xsi:type="dedal:Interface" name="ICollectionMetricRegistry_role" direction="REQUIRED" type="Collection"/>
       <compInterfaces xsi:type="dedal:Interface" name="IListMetricRegistry_role" direction="REQUIRED" type="List"/>
-    </specComponents>
-    <specComponents name="HealthCheckRegistry_role" id="_wJHUdjplEeiRsKs_vMU-IQ">
-      <compInterfaces xsi:type="dedal:Interface" name="IHealthCheckRegistryHealthCheckRegistry_role" type="IHealthCheckRegistry_Type"/>
-      <compInterfaces xsi:type="dedal:Interface" name="ILoggerHealthCheckRegistry_role" direction="REQUIRED" type="Logger"/>
-      <compInterfaces xsi:type="dedal:Interface" name="IMapHealthCheckRegistry_role" direction="REQUIRED" type="Map"/>
-      <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMapHealthCheckRegistry_role" direction="REQUIRED" type="ConcurrentMap"/>
     </specComponents>
   </architectureDescriptions>
   <repositories name="genRepo">
-    <components xsi:type="dedal:CompType" name="com_ryantenney_metrics_spring_RegistryTest$CustomMetricRegistry_Type" id="_v2nz4DplEeiRsKs_vMU-IQ">
+    <components xsi:type="dedal:CompType" name="com_ryantenney_metrics_spring_RegistryTest$CustomMetricRegistry_Type" id="_XVuOIDqrEeiP29_qDiwNWQ">
       <compInterfaces xsi:type="dedal:Interface" name="ICustomMetricRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomMetricRegistry_Type" type="ICustomMetricRegistry_Type"/>
       <compInterfaces xsi:type="dedal:Interface" name="IMap_CustomMetricRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomMetricRegistry_Type" direction="REQUIRED" type="Map"/>
       <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_CustomMetricRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomMetricRegistry_Type" direction="REQUIRED" type="ConcurrentMap"/>
       <compInterfaces xsi:type="dedal:Interface" name="ICollection_CustomMetricRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomMetricRegistry_Type" direction="REQUIRED" type="Collection"/>
       <compInterfaces xsi:type="dedal:Interface" name="IList_CustomMetricRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomMetricRegistry_Type" direction="REQUIRED" type="List"/>
     </components>
-    <components xsi:type="dedal:CompType" name="com_ryantenney_metrics_spring_RegistryTest$CustomHealthCheckRegistry_Type" id="_v23rgDplEeiRsKs_vMU-IQ">
+    <components xsi:type="dedal:CompType" name="com_ryantenney_metrics_spring_RegistryTest$CustomHealthCheckRegistry_Type" id="_XWEzcDqrEeiP29_qDiwNWQ">
       <compInterfaces xsi:type="dedal:Interface" name="ICustomHealthCheckRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomHealthCheckRegistry_Type" type="ICustomHealthCheckRegistry_Type"/>
       <compInterfaces xsi:type="dedal:Interface" name="ILogger_CustomHealthCheckRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomHealthCheckRegistry_Type" direction="REQUIRED" type="Logger"/>
       <compInterfaces xsi:type="dedal:Interface" name="IMap_CustomHealthCheckRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomHealthCheckRegistry_Type" direction="REQUIRED" type="Map"/>
       <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_CustomHealthCheckRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomHealthCheckRegistry_Type" direction="REQUIRED" type="ConcurrentMap"/>
     </components>
-    <components xsi:type="dedal:CompType" name="com_ryantenney_metrics_spring_RegistryTest$CustomMetricRegistry_Type" id="_wJBygDplEeiRsKs_vMU-IQ">
+    <components xsi:type="dedal:CompType" name="com_ryantenney_metrics_spring_RegistryTest$CustomMetricRegistry_Type" id="_Xcj18DqrEeiP29_qDiwNWQ">
       <compInterfaces xsi:type="dedal:Interface" name="ICustomMetricRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomMetricRegistry_Type" type="ICustomMetricRegistry_Type"/>
       <compInterfaces xsi:type="dedal:Interface" name="IMap_CustomMetricRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomMetricRegistry_Type" direction="REQUIRED" type="Map"/>
       <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_CustomMetricRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomMetricRegistry_Type" direction="REQUIRED" type="ConcurrentMap"/>
       <compInterfaces xsi:type="dedal:Interface" name="ICollection_CustomMetricRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomMetricRegistry_Type" direction="REQUIRED" type="Collection"/>
       <compInterfaces xsi:type="dedal:Interface" name="IList_CustomMetricRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomMetricRegistry_Type" direction="REQUIRED" type="List"/>
     </components>
-    <components xsi:type="dedal:CompType" name="com_ryantenney_metrics_spring_RegistryTest$CustomHealthCheckRegistry_Type" id="_wJFc4DplEeiRsKs_vMU-IQ">
+    <components xsi:type="dedal:CompType" name="com_ryantenney_metrics_spring_RegistryTest$CustomHealthCheckRegistry_Type" id="_XcmSMDqrEeiP29_qDiwNWQ">
       <compInterfaces xsi:type="dedal:Interface" name="ICustomHealthCheckRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomHealthCheckRegistry_Type" type="ICustomHealthCheckRegistry_Type"/>
       <compInterfaces xsi:type="dedal:Interface" name="ILogger_CustomHealthCheckRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomHealthCheckRegistry_Type" direction="REQUIRED" type="Logger"/>
       <compInterfaces xsi:type="dedal:Interface" name="IMap_CustomHealthCheckRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomHealthCheckRegistry_Type" direction="REQUIRED" type="Map"/>
       <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_CustomHealthCheckRegistry_com_ryantenney_metrics_spring_RegistryTest$CustomHealthCheckRegistry_Type" direction="REQUIRED" type="ConcurrentMap"/>
     </components>
     <interfaceTypes name="ICustomMetricRegistry_Type">
-      <signatures name="getMetrics" type="java.util.Map" id="_v2yL8DplEeiRsKs_vMU-IQ"/>
-      <signatures name="name" type="java.lang.String" id="_v2yL8TplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yL8jplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String[]" id="_v2yL8zplEeiRsKs_vMU-IQ"/>
+      <signatures name="getMetrics" type="java.util.Map" id="_XWBwIDqrEeiP29_qDiwNWQ"/>
+      <signatures name="name" type="java.lang.String" id="_XWBwITqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwIjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String[]" id="_XWBwIzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="remove" type="boolean" id="_v2yL9DplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yL9TplEeiRsKs_vMU-IQ"/>
+      <signatures name="remove" type="boolean" id="_XWBwJDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwJTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="append" type="void" id="_v2yL9jplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.StringBuilder" id="_v2yL9zplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v2yL-DplEeiRsKs_vMU-IQ"/>
+      <signatures name="append" type="void" id="_XWBwJjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.StringBuilder" id="_XWBwJzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWBwKDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="register" type="com.codahale.metrics.Metric" id="_v2yL-TplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yL-jplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_v2yL-zplEeiRsKs_vMU-IQ"/>
+      <signatures name="register" type="com.codahale.metrics.Metric" id="_XWBwKTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwKjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_XWBwKzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="timer" type="com.codahale.metrics.Timer" id="_v2yL_DplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yL_TplEeiRsKs_vMU-IQ"/>
+      <signatures name="timer" type="com.codahale.metrics.Timer" id="_XWBwLDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwLTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="getNames" type="java.util.SortedSet" id="_v2yL_jplEeiRsKs_vMU-IQ"/>
-      <signatures name="counter" type="com.codahale.metrics.Counter" id="_v2yL_zplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yMADplEeiRsKs_vMU-IQ"/>
+      <signatures name="counter" type="com.codahale.metrics.Counter" id="_XWBwLjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwLzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="buildMap" type="java.util.concurrent.ConcurrentMap" id="_v2yMATplEeiRsKs_vMU-IQ"/>
-      <signatures name="removeListener" type="void" id="_v2yMAjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="com.codahale.metrics.MetricRegistryListener" id="_v2yMAzplEeiRsKs_vMU-IQ"/>
+      <signatures name="meter" type="com.codahale.metrics.Meter" id="_XWBwMDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwMTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="addListener" type="void" id="_v2yMBDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="com.codahale.metrics.MetricRegistryListener" id="_v2yMBTplEeiRsKs_vMU-IQ"/>
+      <signatures name="removeListener" type="void" id="_XWBwMjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.codahale.metrics.MetricRegistryListener" id="_XWBwMzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="notifyListenerOfAddedMetric" type="void" id="_v2yMBjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="com.codahale.metrics.MetricRegistryListener" id="_v2yMBzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_v2yMCDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.String" id="_v2yMCTplEeiRsKs_vMU-IQ"/>
+      <signatures name="addListener" type="void" id="_XWBwNDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.codahale.metrics.MetricRegistryListener" id="_XWBwNTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="notifyListenerOfRemovedMetric" type="void" id="_v2yMCjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yMCzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_v2yMDDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="com.codahale.metrics.MetricRegistryListener" id="_v2yMDTplEeiRsKs_vMU-IQ"/>
+      <signatures name="buildMap" type="java.util.concurrent.ConcurrentMap" id="_XWBwNjqrEeiP29_qDiwNWQ"/>
+      <signatures name="getNames" type="java.util.SortedSet" id="_XWBwNzqrEeiP29_qDiwNWQ"/>
+      <signatures name="notifyListenerOfAddedMetric" type="void" id="_XWBwODqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.codahale.metrics.MetricRegistryListener" id="_XWBwOTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_XWBwOjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_XWBwOzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="getGauges" type="java.util.SortedMap" id="_v2yMDjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="com.codahale.metrics.MetricFilter" id="_v2yMDzplEeiRsKs_vMU-IQ"/>
+      <signatures name="notifyListenerOfRemovedMetric" type="void" id="_XWBwPDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwPTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_XWBwPjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="com.codahale.metrics.MetricRegistryListener" id="_XWBwPzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="getHistograms" type="java.util.SortedMap" id="_v2yMEDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="com.codahale.metrics.MetricFilter" id="_v2yMETplEeiRsKs_vMU-IQ"/>
+      <signatures name="getMeters" type="java.util.SortedMap" id="_XWBwQDqrEeiP29_qDiwNWQ"/>
+      <signatures name="getTimers" type="java.util.SortedMap" id="_XWBwQTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.codahale.metrics.MetricFilter" id="_XWBwQjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="getMeters" type="java.util.SortedMap" id="_v2yMEjplEeiRsKs_vMU-IQ"/>
-      <signatures name="getTimers" type="java.util.SortedMap" id="_v2yMEzplEeiRsKs_vMU-IQ"/>
-      <signatures name="onMetricRemoved" type="void" id="_v2yMFDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yMFTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_v2yMFjplEeiRsKs_vMU-IQ"/>
+      <signatures name="getOrAdd" type="com.codahale.metrics.Metric" id="_XWBwQzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwRDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.codahale.metrics.MetricRegistry.MetricBuilder" id="_XWBwRTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="onMetricAdded" type="void" id="_v2yMFzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yMGDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_v2yMGTplEeiRsKs_vMU-IQ"/>
+      <signatures name="getGauges" type="java.util.SortedMap" id="_XWBwRjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.codahale.metrics.MetricFilter" id="_XWBwRzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="meter" type="com.codahale.metrics.Meter" id="_v2yMGjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yMGzplEeiRsKs_vMU-IQ"/>
+      <signatures name="getCounters" type="java.util.SortedMap" id="_XWBwSDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.codahale.metrics.MetricFilter" id="_XWBwSTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="histogram" type="com.codahale.metrics.Histogram" id="_v2yMHDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yMHTplEeiRsKs_vMU-IQ"/>
+      <signatures name="removeMatching" type="void" id="_XWBwSjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.codahale.metrics.MetricFilter" id="_XWBwSzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="getOrAdd" type="com.codahale.metrics.Metric" id="_v2yMHjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yMHzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="com.codahale.metrics.MetricRegistry.MetricBuilder" id="_v2yMIDplEeiRsKs_vMU-IQ"/>
+      <signatures name="getHistograms" type="java.util.SortedMap" id="_XWBwTDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.codahale.metrics.MetricFilter" id="_XWBwTTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="removeMatching" type="void" id="_v2yMITplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="com.codahale.metrics.MetricFilter" id="_v2yMIjplEeiRsKs_vMU-IQ"/>
+      <signatures name="registerAll" type="void" id="_XWBwTjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwTzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.codahale.metrics.MetricSet" id="_XWBwUDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="getCounters" type="java.util.SortedMap" id="_v2yMIzplEeiRsKs_vMU-IQ"/>
-      <signatures name="registerAll" type="void" id="_v2yMJDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="com.codahale.metrics.MetricSet" id="_v2yMJTplEeiRsKs_vMU-IQ"/>
+      <signatures name="histogram" type="com.codahale.metrics.Histogram" id="_XWBwUTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwUjqrEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onMetricAdded" type="void" id="_XWBwUzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwVDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_XWBwVTqrEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onMetricRemoved" type="void" id="_XWBwVjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwVzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_XWBwWDqrEeiP29_qDiwNWQ"/>
       </signatures>
     </interfaceTypes>
     <interfaceTypes name="MetricSet">
-      <signatures name="getMetrics" type="java.util.Map" id="_v2yzADplEeiRsKs_vMU-IQ"/>
+      <signatures name="getMetrics" type="java.util.Map" id="_XWBwWTqrEeiP29_qDiwNWQ"/>
     </interfaceTypes>
     <interfaceTypes name="IMetricRegistry_Type">
-      <signatures name="getMetrics" type="java.util.Map" id="_v2yzATplEeiRsKs_vMU-IQ"/>
-      <signatures name="name" type="java.lang.String" id="_v2yzAjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yzAzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String[]" id="_v2yzBDplEeiRsKs_vMU-IQ"/>
+      <signatures name="getMetrics" type="java.util.Map" id="_XWBwWjqrEeiP29_qDiwNWQ"/>
+      <signatures name="name" type="java.lang.String" id="_XWBwWzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwXDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String[]" id="_XWBwXTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="remove" type="boolean" id="_v2yzBTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yzBjplEeiRsKs_vMU-IQ"/>
+      <signatures name="remove" type="boolean" id="_XWBwXjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwXzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="append" type="void" id="_v2yzBzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.StringBuilder" id="_v2yzCDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v2yzCTplEeiRsKs_vMU-IQ"/>
+      <signatures name="append" type="void" id="_XWBwYDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.StringBuilder" id="_XWBwYTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWBwYjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="register" type="com.codahale.metrics.Metric" id="_v2yzCjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yzCzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_v2yzDDplEeiRsKs_vMU-IQ"/>
+      <signatures name="register" type="com.codahale.metrics.Metric" id="_XWBwYzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwZDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_XWBwZTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="timer" type="com.codahale.metrics.Timer" id="_v2yzDTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yzDjplEeiRsKs_vMU-IQ"/>
+      <signatures name="timer" type="com.codahale.metrics.Timer" id="_XWBwZjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwZzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="getNames" type="java.util.SortedSet" id="_v2yzDzplEeiRsKs_vMU-IQ"/>
-      <signatures name="counter" type="com.codahale.metrics.Counter" id="_v2yzEDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yzETplEeiRsKs_vMU-IQ"/>
+      <signatures name="counter" type="com.codahale.metrics.Counter" id="_XWBwaDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwaTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="buildMap" type="java.util.concurrent.ConcurrentMap" id="_v2yzEjplEeiRsKs_vMU-IQ"/>
-      <signatures name="removeListener" type="void" id="_v2yzEzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="com.codahale.metrics.MetricRegistryListener" id="_v2yzFDplEeiRsKs_vMU-IQ"/>
+      <signatures name="meter" type="com.codahale.metrics.Meter" id="_XWBwajqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwazqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="addListener" type="void" id="_v2yzFTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="com.codahale.metrics.MetricRegistryListener" id="_v2yzFjplEeiRsKs_vMU-IQ"/>
+      <signatures name="removeListener" type="void" id="_XWBwbDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.codahale.metrics.MetricRegistryListener" id="_XWBwbTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="notifyListenerOfAddedMetric" type="void" id="_v2yzFzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="com.codahale.metrics.MetricRegistryListener" id="_v2yzGDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_v2yzGTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.String" id="_v2yzGjplEeiRsKs_vMU-IQ"/>
+      <signatures name="addListener" type="void" id="_XWBwbjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.codahale.metrics.MetricRegistryListener" id="_XWBwbzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="notifyListenerOfRemovedMetric" type="void" id="_v2yzGzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yzHDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_v2yzHTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="com.codahale.metrics.MetricRegistryListener" id="_v2yzHjplEeiRsKs_vMU-IQ"/>
+      <signatures name="buildMap" type="java.util.concurrent.ConcurrentMap" id="_XWBwcDqrEeiP29_qDiwNWQ"/>
+      <signatures name="getNames" type="java.util.SortedSet" id="_XWBwcTqrEeiP29_qDiwNWQ"/>
+      <signatures name="notifyListenerOfAddedMetric" type="void" id="_XWBwcjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.codahale.metrics.MetricRegistryListener" id="_XWBwczqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_XWBwdDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_XWBwdTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="getGauges" type="java.util.SortedMap" id="_v2yzHzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="com.codahale.metrics.MetricFilter" id="_v2yzIDplEeiRsKs_vMU-IQ"/>
+      <signatures name="notifyListenerOfRemovedMetric" type="void" id="_XWBwdjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwdzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_XWBweDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="com.codahale.metrics.MetricRegistryListener" id="_XWBweTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="getHistograms" type="java.util.SortedMap" id="_v2yzITplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="com.codahale.metrics.MetricFilter" id="_v2yzIjplEeiRsKs_vMU-IQ"/>
+      <signatures name="getMeters" type="java.util.SortedMap" id="_XWBwejqrEeiP29_qDiwNWQ"/>
+      <signatures name="getTimers" type="java.util.SortedMap" id="_XWBwezqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.codahale.metrics.MetricFilter" id="_XWBwfDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="getMeters" type="java.util.SortedMap" id="_v2yzIzplEeiRsKs_vMU-IQ"/>
-      <signatures name="getTimers" type="java.util.SortedMap" id="_v2yzJDplEeiRsKs_vMU-IQ"/>
-      <signatures name="onMetricRemoved" type="void" id="_v2yzJTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yzJjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_v2yzJzplEeiRsKs_vMU-IQ"/>
+      <signatures name="getOrAdd" type="com.codahale.metrics.Metric" id="_XWBwfTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwfjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.codahale.metrics.MetricRegistry.MetricBuilder" id="_XWBwfzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="onMetricAdded" type="void" id="_v2yzKDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yzKTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_v2yzKjplEeiRsKs_vMU-IQ"/>
+      <signatures name="getGauges" type="java.util.SortedMap" id="_XWBwgDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.codahale.metrics.MetricFilter" id="_XWBwgTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="meter" type="com.codahale.metrics.Meter" id="_v2yzKzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yzLDplEeiRsKs_vMU-IQ"/>
+      <signatures name="getCounters" type="java.util.SortedMap" id="_XWBwgjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.codahale.metrics.MetricFilter" id="_XWBwgzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="histogram" type="com.codahale.metrics.Histogram" id="_v2yzLTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yzLjplEeiRsKs_vMU-IQ"/>
+      <signatures name="removeMatching" type="void" id="_XWBwhDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.codahale.metrics.MetricFilter" id="_XWBwhTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="getOrAdd" type="com.codahale.metrics.Metric" id="_v2yzLzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2yzMDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="com.codahale.metrics.MetricRegistry.MetricBuilder" id="_v2yzMTplEeiRsKs_vMU-IQ"/>
+      <signatures name="getHistograms" type="java.util.SortedMap" id="_XWBwhjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.codahale.metrics.MetricFilter" id="_XWBwhzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="removeMatching" type="void" id="_v2yzMjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="com.codahale.metrics.MetricFilter" id="_v2yzMzplEeiRsKs_vMU-IQ"/>
+      <signatures name="registerAll" type="void" id="_XWBwiDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwiTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.codahale.metrics.MetricSet" id="_XWBwijqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="getCounters" type="java.util.SortedMap" id="_v2yzNDplEeiRsKs_vMU-IQ"/>
-      <signatures name="registerAll" type="void" id="_v2yzNTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="com.codahale.metrics.MetricSet" id="_v2yzNjplEeiRsKs_vMU-IQ"/>
+      <signatures name="histogram" type="com.codahale.metrics.Histogram" id="_XWBwizqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwjDqrEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onMetricAdded" type="void" id="_XWBwjTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwjjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_XWBwjzqrEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onMetricRemoved" type="void" id="_XWBwkDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWBwkTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.codahale.metrics.Metric" id="_XWBwkjqrEeiP29_qDiwNWQ"/>
       </signatures>
     </interfaceTypes>
     <interfaceTypes name="Map">
-      <signatures name="remove" type="java.lang.Object" id="_v2yzODplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzOTplEeiRsKs_vMU-IQ"/>
+      <signatures name="remove" type="java.lang.Object" id="_XWBwlDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWBwlTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="remove" type="boolean" id="_v2yzOjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzOzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2yzPDplEeiRsKs_vMU-IQ"/>
+      <signatures name="remove" type="boolean" id="_XWBwljqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWBwlzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWBwmDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="get" type="java.lang.Object" id="_v2yzPTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzPjplEeiRsKs_vMU-IQ"/>
+      <signatures name="get" type="java.lang.Object" id="_XWBwmTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWBwmjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="put" type="java.lang.Object" id="_v2yzPzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzQDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2yzQTplEeiRsKs_vMU-IQ"/>
+      <signatures name="put" type="java.lang.Object" id="_XWBwmzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWBwnDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWBwnTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="equals" type="boolean" id="_v2yzQjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzQzplEeiRsKs_vMU-IQ"/>
+      <signatures name="equals" type="boolean" id="_XWBwnjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWBwnzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="values" type="java.util.Collection" id="_v2yzRDplEeiRsKs_vMU-IQ"/>
-      <signatures name="hashCode" type="int" id="_v2yzRTplEeiRsKs_vMU-IQ"/>
-      <signatures name="clear" type="void" id="_v2yzRjplEeiRsKs_vMU-IQ"/>
-      <signatures name="isEmpty" type="boolean" id="_v2yzRzplEeiRsKs_vMU-IQ"/>
-      <signatures name="replace" type="java.lang.Object" id="_v2yzSDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzSTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2yzSjplEeiRsKs_vMU-IQ"/>
+      <signatures name="values" type="java.util.Collection" id="_XWBwoDqrEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_XWBwoTqrEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_XWBwojqrEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_XWBwozqrEeiP29_qDiwNWQ"/>
+      <signatures name="replace" type="java.lang.Object" id="_XWBwpDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWBwpTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWBwpjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="replace" type="boolean" id="_v2yzSzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzTDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2yzTTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object" id="_v2yzTjplEeiRsKs_vMU-IQ"/>
+      <signatures name="replace" type="boolean" id="_XWBwpzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWBwqDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWBwqTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XWBwqjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="replaceAll" type="void" id="_v2yzTzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.function.BiFunction" id="_v2yzUDplEeiRsKs_vMU-IQ"/>
+      <signatures name="replaceAll" type="void" id="_XWBwqzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiFunction" id="_XWBwrDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="size" type="int" id="_v2yzUTplEeiRsKs_vMU-IQ"/>
-      <signatures name="entrySet" type="java.util.Set" id="_v2yzUjplEeiRsKs_vMU-IQ"/>
-      <signatures name="putAll" type="void" id="_v2yzUzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.Map" id="_v2yzVDplEeiRsKs_vMU-IQ"/>
+      <signatures name="size" type="int" id="_XWBwrTqrEeiP29_qDiwNWQ"/>
+      <signatures name="entrySet" type="java.util.Set" id="_XWBwrjqrEeiP29_qDiwNWQ"/>
+      <signatures name="putAll" type="void" id="_XWBwrzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_XWBwsDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="putIfAbsent" type="java.lang.Object" id="_v2yzVTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzVjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2yzVzplEeiRsKs_vMU-IQ"/>
+      <signatures name="putIfAbsent" type="java.lang.Object" id="_XWBwsTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWBwsjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWBwszqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="keySet" type="java.util.Set" id="_v2yzWDplEeiRsKs_vMU-IQ"/>
-      <signatures name="compute" type="java.lang.Object" id="_v2yzWTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzWjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.util.function.BiFunction" id="_v2yzWzplEeiRsKs_vMU-IQ"/>
+      <signatures name="keySet" type="java.util.Set" id="_XWBwtDqrEeiP29_qDiwNWQ"/>
+      <signatures name="compute" type="java.lang.Object" id="_XWBwtTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWBwtjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_XWBwtzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="computeIfAbsent" type="java.lang.Object" id="_v2yzXDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzXTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.util.function.Function" id="_v2yzXjplEeiRsKs_vMU-IQ"/>
+      <signatures name="computeIfAbsent" type="java.lang.Object" id="_XWBwuDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWBwuTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.Function" id="_XWBwujqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="computeIfPresent" type="java.lang.Object" id="_v2yzXzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzYDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.util.function.BiFunction" id="_v2yzYTplEeiRsKs_vMU-IQ"/>
+      <signatures name="computeIfPresent" type="java.lang.Object" id="_XWBwuzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWBwvDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_XWBwvTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="containsKey" type="boolean" id="_v2yzYjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzYzplEeiRsKs_vMU-IQ"/>
+      <signatures name="containsKey" type="boolean" id="_XWBwvjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWBwvzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="containsValue" type="boolean" id="_v2yzZDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzZTplEeiRsKs_vMU-IQ"/>
+      <signatures name="containsValue" type="boolean" id="_XWBwwDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWBwwTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="forEach" type="void" id="_v2yzZjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.function.BiConsumer" id="_v2yzZzplEeiRsKs_vMU-IQ"/>
+      <signatures name="forEach" type="void" id="_XWBwwjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiConsumer" id="_XWBwwzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="getOrDefault" type="java.lang.Object" id="_v2yzaDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzaTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2yzajplEeiRsKs_vMU-IQ"/>
+      <signatures name="getOrDefault" type="java.lang.Object" id="_XWBwxDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWBwxTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWBwxjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="merge" type="java.lang.Object" id="_v2yzazplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzbDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2yzbTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.util.function.BiFunction" id="_v2yzbjplEeiRsKs_vMU-IQ"/>
+      <signatures name="merge" type="java.lang.Object" id="_XWBwxzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWBwyDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWBwyTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.function.BiFunction" id="_XWBwyjqrEeiP29_qDiwNWQ"/>
       </signatures>
     </interfaceTypes>
     <interfaceTypes name="ConcurrentMap">
-      <signatures name="remove" type="boolean" id="_v2yzbzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzcDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2yzcTplEeiRsKs_vMU-IQ"/>
+      <signatures name="remove" type="boolean" id="_XWCXMDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXMTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWCXMjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="replace" type="boolean" id="_v2yzcjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzczplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2yzdDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object" id="_v2yzdTplEeiRsKs_vMU-IQ"/>
+      <signatures name="replace" type="boolean" id="_XWCXMzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXNDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWCXNTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XWCXNjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="replace" type="java.lang.Object" id="_v2yzdjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzdzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2yzeDplEeiRsKs_vMU-IQ"/>
+      <signatures name="replace" type="java.lang.Object" id="_XWCXNzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXODqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWCXOTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="replaceAll" type="void" id="_v2yzeTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.function.BiFunction" id="_v2yzejplEeiRsKs_vMU-IQ"/>
+      <signatures name="replaceAll" type="void" id="_XWCXOjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiFunction" id="_XWCXOzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="putIfAbsent" type="java.lang.Object" id="_v2yzezplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzfDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2yzfTplEeiRsKs_vMU-IQ"/>
+      <signatures name="putIfAbsent" type="java.lang.Object" id="_XWCXPDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXPTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWCXPjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="compute" type="java.lang.Object" id="_v2yzfjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzfzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.util.function.BiFunction" id="_v2yzgDplEeiRsKs_vMU-IQ"/>
+      <signatures name="compute" type="java.lang.Object" id="_XWCXPzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXQDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_XWCXQTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="computeIfAbsent" type="java.lang.Object" id="_v2yzgTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzgjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.util.function.Function" id="_v2yzgzplEeiRsKs_vMU-IQ"/>
+      <signatures name="computeIfAbsent" type="java.lang.Object" id="_XWCXQjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXQzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.Function" id="_XWCXRDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="computeIfPresent" type="java.lang.Object" id="_v2yzhDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzhTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.util.function.BiFunction" id="_v2yzhjplEeiRsKs_vMU-IQ"/>
+      <signatures name="computeIfPresent" type="java.lang.Object" id="_XWCXRTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXRjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_XWCXRzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="forEach" type="void" id="_v2yzhzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.function.BiConsumer" id="_v2yziDplEeiRsKs_vMU-IQ"/>
+      <signatures name="forEach" type="void" id="_XWCXSDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiConsumer" id="_XWCXSTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="getOrDefault" type="java.lang.Object" id="_v2yziTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzijplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2yzizplEeiRsKs_vMU-IQ"/>
+      <signatures name="getOrDefault" type="java.lang.Object" id="_XWCXSjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXSzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWCXTDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="merge" type="java.lang.Object" id="_v2yzjDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzjTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2yzjjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.util.function.BiFunction" id="_v2yzjzplEeiRsKs_vMU-IQ"/>
+      <signatures name="merge" type="java.lang.Object" id="_XWCXTTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXTjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWCXTzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.function.BiFunction" id="_XWCXUDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="remove" type="java.lang.Object" id="_v2yzkDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzkTplEeiRsKs_vMU-IQ"/>
+      <signatures name="remove" type="java.lang.Object" id="_XWCXUTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXUjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="get" type="java.lang.Object" id="_v2yzkjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzkzplEeiRsKs_vMU-IQ"/>
+      <signatures name="get" type="java.lang.Object" id="_XWCXUzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXVDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="put" type="java.lang.Object" id="_v2yzlDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzlTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2yzljplEeiRsKs_vMU-IQ"/>
+      <signatures name="put" type="java.lang.Object" id="_XWCXVTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXVjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWCXVzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="equals" type="boolean" id="_v2yzlzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzmDplEeiRsKs_vMU-IQ"/>
+      <signatures name="equals" type="boolean" id="_XWCXWDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXWTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="values" type="java.util.Collection" id="_v2yzmTplEeiRsKs_vMU-IQ"/>
-      <signatures name="hashCode" type="int" id="_v2yzmjplEeiRsKs_vMU-IQ"/>
-      <signatures name="clear" type="void" id="_v2yzmzplEeiRsKs_vMU-IQ"/>
-      <signatures name="isEmpty" type="boolean" id="_v2yznDplEeiRsKs_vMU-IQ"/>
-      <signatures name="size" type="int" id="_v2yznTplEeiRsKs_vMU-IQ"/>
-      <signatures name="entrySet" type="java.util.Set" id="_v2yznjplEeiRsKs_vMU-IQ"/>
-      <signatures name="putAll" type="void" id="_v2yznzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.Map" id="_v2yzoDplEeiRsKs_vMU-IQ"/>
+      <signatures name="values" type="java.util.Collection" id="_XWCXWjqrEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_XWCXWzqrEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_XWCXXDqrEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_XWCXXTqrEeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_XWCXXjqrEeiP29_qDiwNWQ"/>
+      <signatures name="entrySet" type="java.util.Set" id="_XWCXXzqrEeiP29_qDiwNWQ"/>
+      <signatures name="putAll" type="void" id="_XWCXYDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_XWCXYTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="keySet" type="java.util.Set" id="_v2yzoTplEeiRsKs_vMU-IQ"/>
-      <signatures name="containsKey" type="boolean" id="_v2yzojplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzozplEeiRsKs_vMU-IQ"/>
+      <signatures name="keySet" type="java.util.Set" id="_XWCXYjqrEeiP29_qDiwNWQ"/>
+      <signatures name="containsKey" type="boolean" id="_XWCXYzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXZDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="containsValue" type="boolean" id="_v2yzpDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzpTplEeiRsKs_vMU-IQ"/>
+      <signatures name="containsValue" type="boolean" id="_XWCXZTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXZjqrEeiP29_qDiwNWQ"/>
       </signatures>
     </interfaceTypes>
     <interfaceTypes name="Collection">
-      <signatures name="add" type="boolean" id="_v2yzpjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzpzplEeiRsKs_vMU-IQ"/>
+      <signatures name="add" type="boolean" id="_XWCXZzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXaDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="remove" type="boolean" id="_v2yzqDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzqTplEeiRsKs_vMU-IQ"/>
+      <signatures name="remove" type="boolean" id="_XWCXaTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXajqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="equals" type="boolean" id="_v2yzqjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzqzplEeiRsKs_vMU-IQ"/>
+      <signatures name="equals" type="boolean" id="_XWCXazqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXbDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="hashCode" type="int" id="_v2yzrDplEeiRsKs_vMU-IQ"/>
-      <signatures name="clear" type="void" id="_v2yzrTplEeiRsKs_vMU-IQ"/>
-      <signatures name="contains" type="boolean" id="_v2yzrjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzrzplEeiRsKs_vMU-IQ"/>
+      <signatures name="hashCode" type="int" id="_XWCXbTqrEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_XWCXbjqrEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_XWCXbzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXcDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="isEmpty" type="boolean" id="_v2yzsDplEeiRsKs_vMU-IQ"/>
-      <signatures name="iterator" type="java.util.Iterator" id="_v2yzsTplEeiRsKs_vMU-IQ"/>
-      <signatures name="size" type="int" id="_v2yzsjplEeiRsKs_vMU-IQ"/>
-      <signatures name="toArray" type="java.lang.Object[]" id="_v2yzszplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object[]" id="_v2yztDplEeiRsKs_vMU-IQ"/>
+      <signatures name="isEmpty" type="boolean" id="_XWCXcTqrEeiP29_qDiwNWQ"/>
+      <signatures name="iterator" type="java.util.Iterator" id="_XWCXcjqrEeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_XWCXczqrEeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_XWCXdDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_XWCXdTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="toArray" type="java.lang.Object[]" id="_v2yztTplEeiRsKs_vMU-IQ"/>
-      <signatures name="spliterator" type="java.util.Spliterator" id="_v2yztjplEeiRsKs_vMU-IQ"/>
-      <signatures name="addAll" type="boolean" id="_v2yztzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.Collection" id="_v2yzuDplEeiRsKs_vMU-IQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_XWCXdjqrEeiP29_qDiwNWQ"/>
+      <signatures name="spliterator" type="java.util.Spliterator" id="_XWCXdzqrEeiP29_qDiwNWQ"/>
+      <signatures name="addAll" type="boolean" id="_XWCXeDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XWCXeTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="stream" type="java.util.stream.Stream" id="_v2yzuTplEeiRsKs_vMU-IQ"/>
-      <signatures name="containsAll" type="boolean" id="_v2yzujplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.Collection" id="_v2yzuzplEeiRsKs_vMU-IQ"/>
+      <signatures name="stream" type="java.util.stream.Stream" id="_XWCXejqrEeiP29_qDiwNWQ"/>
+      <signatures name="containsAll" type="boolean" id="_XWCXezqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XWCXfDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="removeAll" type="boolean" id="_v2yzvDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.Collection" id="_v2yzvTplEeiRsKs_vMU-IQ"/>
+      <signatures name="removeAll" type="boolean" id="_XWCXfTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XWCXfjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="removeIf" type="boolean" id="_v2yzvjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.function.Predicate" id="_v2yzvzplEeiRsKs_vMU-IQ"/>
+      <signatures name="removeIf" type="boolean" id="_XWCXfzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Predicate" id="_XWCXgDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="retainAll" type="boolean" id="_v2yzwDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.Collection" id="_v2yzwTplEeiRsKs_vMU-IQ"/>
+      <signatures name="retainAll" type="boolean" id="_XWCXgTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XWCXgjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="parallelStream" type="java.util.stream.Stream" id="_v2yzwjplEeiRsKs_vMU-IQ"/>
-      <signatures name="forEach" type="void" id="_v2yzwzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.function.Consumer" id="_v2yzxDplEeiRsKs_vMU-IQ"/>
+      <signatures name="parallelStream" type="java.util.stream.Stream" id="_XWCXgzqrEeiP29_qDiwNWQ"/>
+      <signatures name="forEach" type="void" id="_XWCXhDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Consumer" id="_XWCXhTqrEeiP29_qDiwNWQ"/>
       </signatures>
     </interfaceTypes>
     <interfaceTypes name="List">
-      <signatures name="add" type="boolean" id="_v2yzxTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzxjplEeiRsKs_vMU-IQ"/>
+      <signatures name="add" type="boolean" id="_XWCXhjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXhzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="add" type="void" id="_v2yzxzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="int" id="_v2yzyDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2yzyTplEeiRsKs_vMU-IQ"/>
+      <signatures name="add" type="void" id="_XWCXiDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XWCXiTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWCXijqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="remove" type="java.lang.Object" id="_v2yzyjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="int" id="_v2yzyzplEeiRsKs_vMU-IQ"/>
+      <signatures name="remove" type="java.lang.Object" id="_XWCXizqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XWCXjDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="remove" type="boolean" id="_v2yzzDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yzzTplEeiRsKs_vMU-IQ"/>
+      <signatures name="remove" type="boolean" id="_XWCXjTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXjjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="get" type="java.lang.Object" id="_v2yzzjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="int" id="_v2yzzzplEeiRsKs_vMU-IQ"/>
+      <signatures name="get" type="java.lang.Object" id="_XWCXjzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XWCXkDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="equals" type="boolean" id="_v2yz0DplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yz0TplEeiRsKs_vMU-IQ"/>
+      <signatures name="equals" type="boolean" id="_XWCXkTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXkjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="hashCode" type="int" id="_v2yz0jplEeiRsKs_vMU-IQ"/>
-      <signatures name="indexOf" type="int" id="_v2yz0zplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yz1DplEeiRsKs_vMU-IQ"/>
+      <signatures name="hashCode" type="int" id="_XWCXkzqrEeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_XWCXlDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXlTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="clear" type="void" id="_v2yz1TplEeiRsKs_vMU-IQ"/>
-      <signatures name="contains" type="boolean" id="_v2yz1jplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yz1zplEeiRsKs_vMU-IQ"/>
+      <signatures name="clear" type="void" id="_XWCXljqrEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_XWCXlzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXmDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="isEmpty" type="boolean" id="_v2yz2DplEeiRsKs_vMU-IQ"/>
-      <signatures name="iterator" type="java.util.Iterator" id="_v2yz2TplEeiRsKs_vMU-IQ"/>
-      <signatures name="lastIndexOf" type="int" id="_v2yz2jplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object" id="_v2yz2zplEeiRsKs_vMU-IQ"/>
+      <signatures name="isEmpty" type="boolean" id="_XWCXmTqrEeiP29_qDiwNWQ"/>
+      <signatures name="iterator" type="java.util.Iterator" id="_XWCXmjqrEeiP29_qDiwNWQ"/>
+      <signatures name="lastIndexOf" type="int" id="_XWCXmzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_XWCXnDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="replaceAll" type="void" id="_v2yz3DplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.function.UnaryOperator" id="_v2yz3TplEeiRsKs_vMU-IQ"/>
+      <signatures name="replaceAll" type="void" id="_XWCXnTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.UnaryOperator" id="_XWCXnjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="size" type="int" id="_v2yz3jplEeiRsKs_vMU-IQ"/>
-      <signatures name="subList" type="java.util.List" id="_v2yz3zplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="int" id="_v2yz4DplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="int" id="_v2yz4TplEeiRsKs_vMU-IQ"/>
+      <signatures name="size" type="int" id="_XWCXnzqrEeiP29_qDiwNWQ"/>
+      <signatures name="subList" type="java.util.List" id="_XWCXoDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XWCXoTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_XWCXojqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="toArray" type="java.lang.Object[]" id="_v2yz4jplEeiRsKs_vMU-IQ"/>
-      <signatures name="toArray" type="java.lang.Object[]" id="_v2yz4zplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.Object[]" id="_v2yz5DplEeiRsKs_vMU-IQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_XWCXozqrEeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_XWCXpDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_XWCXpTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="spliterator" type="java.util.Spliterator" id="_v2yz5TplEeiRsKs_vMU-IQ"/>
-      <signatures name="addAll" type="boolean" id="_v2yz5jplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.Collection" id="_v2yz5zplEeiRsKs_vMU-IQ"/>
+      <signatures name="spliterator" type="java.util.Spliterator" id="_XWCXpjqrEeiP29_qDiwNWQ"/>
+      <signatures name="addAll" type="boolean" id="_XWCXpzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XWCXqDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="addAll" type="boolean" id="_v2yz6DplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="int" id="_v2yz6TplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.util.Collection" id="_v2yz6jplEeiRsKs_vMU-IQ"/>
+      <signatures name="addAll" type="boolean" id="_XWCXqTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XWCXqjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.Collection" id="_XWCXqzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="set" type="java.lang.Object" id="_v2yz6zplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="int" id="_v2yz7DplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2yz7TplEeiRsKs_vMU-IQ"/>
+      <signatures name="set" type="java.lang.Object" id="_XWCXrDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XWCXrTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWCXrjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="containsAll" type="boolean" id="_v2yz7jplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.Collection" id="_v2yz7zplEeiRsKs_vMU-IQ"/>
+      <signatures name="containsAll" type="boolean" id="_XWCXrzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XWCXsDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="listIterator" type="java.util.ListIterator" id="_v2yz8DplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="int" id="_v2yz8TplEeiRsKs_vMU-IQ"/>
+      <signatures name="listIterator" type="java.util.ListIterator" id="_XWCXsTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_XWCXsjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="listIterator" type="java.util.ListIterator" id="_v2yz8jplEeiRsKs_vMU-IQ"/>
-      <signatures name="removeAll" type="boolean" id="_v2yz8zplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.Collection" id="_v2yz9DplEeiRsKs_vMU-IQ"/>
+      <signatures name="listIterator" type="java.util.ListIterator" id="_XWCXszqrEeiP29_qDiwNWQ"/>
+      <signatures name="removeAll" type="boolean" id="_XWCXtDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XWCXtTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="retainAll" type="boolean" id="_v2yz9TplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.Collection" id="_v2yz9jplEeiRsKs_vMU-IQ"/>
+      <signatures name="retainAll" type="boolean" id="_XWCXtjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_XWCXtzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="sort" type="void" id="_v2yz9zplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.Comparator" id="_v2yz-DplEeiRsKs_vMU-IQ"/>
+      <signatures name="sort" type="void" id="_XWCXuDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Comparator" id="_XWCXuTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="stream" type="java.util.stream.Stream" id="_v2yz-TplEeiRsKs_vMU-IQ"/>
-      <signatures name="removeIf" type="boolean" id="_v2yz-jplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.function.Predicate" id="_v2yz-zplEeiRsKs_vMU-IQ"/>
+      <signatures name="stream" type="java.util.stream.Stream" id="_XWCXujqrEeiP29_qDiwNWQ"/>
+      <signatures name="removeIf" type="boolean" id="_XWCXuzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Predicate" id="_XWCXvDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="parallelStream" type="java.util.stream.Stream" id="_v2yz_DplEeiRsKs_vMU-IQ"/>
-      <signatures name="forEach" type="void" id="_v2yz_TplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.function.Consumer" id="_v2yz_jplEeiRsKs_vMU-IQ"/>
+      <signatures name="parallelStream" type="java.util.stream.Stream" id="_XWCXvTqrEeiP29_qDiwNWQ"/>
+      <signatures name="forEach" type="void" id="_XWCXvjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Consumer" id="_XWCXvzqrEeiP29_qDiwNWQ"/>
       </signatures>
     </interfaceTypes>
     <interfaceTypes name="ICustomHealthCheckRegistry_Type">
-      <signatures name="register" type="void" id="_v245oDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v245oTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="com.codahale.metrics.health.HealthCheck" id="_v245ojplEeiRsKs_vMU-IQ"/>
+      <signatures name="register" type="void" id="_XWFagDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFagTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.codahale.metrics.health.HealthCheck" id="_XWFagjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="unregister" type="void" id="_v245ozplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v245pDplEeiRsKs_vMU-IQ"/>
+      <signatures name="unregister" type="void" id="_XWFagzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFahDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="getNames" type="java.util.SortedSet" id="_v245pTplEeiRsKs_vMU-IQ"/>
-      <signatures name="runHealthCheck" type="com.codahale.metrics.health.HealthCheck.Result" id="_v245pjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v245pzplEeiRsKs_vMU-IQ"/>
+      <signatures name="getNames" type="java.util.SortedSet" id="_XWFahTqrEeiP29_qDiwNWQ"/>
+      <signatures name="runHealthChecks" type="java.util.SortedMap" id="_XWFahjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.concurrent.ExecutorService" id="_XWFahzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="runHealthChecks" type="java.util.SortedMap" id="_v245qDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.concurrent.ExecutorService" id="_v245qTplEeiRsKs_vMU-IQ"/>
+      <signatures name="runHealthCheck" type="com.codahale.metrics.health.HealthCheck.Result" id="_XWFaiDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFaiTqrEeiP29_qDiwNWQ"/>
       </signatures>
     </interfaceTypes>
     <interfaceTypes name="IHealthCheckRegistry_Type">
-      <signatures name="register" type="void" id="_v245qjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v245qzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="com.codahale.metrics.health.HealthCheck" id="_v245rDplEeiRsKs_vMU-IQ"/>
+      <signatures name="register" type="void" id="_XWFaijqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFaizqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="com.codahale.metrics.health.HealthCheck" id="_XWFajDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="unregister" type="void" id="_v245rTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v245rjplEeiRsKs_vMU-IQ"/>
+      <signatures name="unregister" type="void" id="_XWFajTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFajjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="getNames" type="java.util.SortedSet" id="_v245rzplEeiRsKs_vMU-IQ"/>
-      <signatures name="runHealthCheck" type="com.codahale.metrics.health.HealthCheck.Result" id="_v245sDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v245sTplEeiRsKs_vMU-IQ"/>
+      <signatures name="getNames" type="java.util.SortedSet" id="_XWFajzqrEeiP29_qDiwNWQ"/>
+      <signatures name="runHealthChecks" type="java.util.SortedMap" id="_XWFakDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.concurrent.ExecutorService" id="_XWFakTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="runHealthChecks" type="java.util.SortedMap" id="_v245sjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.util.concurrent.ExecutorService" id="_v245szplEeiRsKs_vMU-IQ"/>
+      <signatures name="runHealthCheck" type="com.codahale.metrics.health.HealthCheck.Result" id="_XWFakjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFakzqrEeiP29_qDiwNWQ"/>
       </signatures>
     </interfaceTypes>
     <interfaceTypes name="Logger">
-      <signatures name="getName" type="java.lang.String" id="_v245tDplEeiRsKs_vMU-IQ"/>
-      <signatures name="debug" type="void" id="_v245tTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v245tjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v245tzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object[]" id="_v245uDplEeiRsKs_vMU-IQ"/>
+      <signatures name="getName" type="java.lang.String" id="_XWFalDqrEeiP29_qDiwNWQ"/>
+      <signatures name="debug" type="void" id="_XWFalTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFaljqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFalzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_XWFamDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="debug" type="void" id="_v245uTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v245ujplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v245uzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object" id="_v245vDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg3" type="java.lang.Object" id="_v245vTplEeiRsKs_vMU-IQ"/>
+      <signatures name="debug" type="void" id="_XWFamTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFamjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFamzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XWFanDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_XWFanTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="debug" type="void" id="_v245vjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v245vzplEeiRsKs_vMU-IQ"/>
+      <signatures name="debug" type="void" id="_XWFanjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFanzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="debug" type="void" id="_v245wDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v245wTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v245wjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Throwable" id="_v245wzplEeiRsKs_vMU-IQ"/>
+      <signatures name="debug" type="void" id="_XWFaoDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFaoTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFaojqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_XWFaozqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="debug" type="void" id="_v245xDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v245xTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v245xjplEeiRsKs_vMU-IQ"/>
+      <signatures name="debug" type="void" id="_XWFapDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFapTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFapjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="debug" type="void" id="_v245xzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v245yDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v245yTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object" id="_v245yjplEeiRsKs_vMU-IQ"/>
+      <signatures name="debug" type="void" id="_XWFapzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFaqDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFaqTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XWFaqjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="debug" type="void" id="_v245yzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v245zDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Throwable" id="_v245zTplEeiRsKs_vMU-IQ"/>
+      <signatures name="debug" type="void" id="_XWFaqzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFarDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XWFarTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="debug" type="void" id="_v245zjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v245zzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object[]" id="_v2450DplEeiRsKs_vMU-IQ"/>
+      <signatures name="debug" type="void" id="_XWFarjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFarzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_XWFasDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="debug" type="void" id="_v2450TplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2450jplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2450zplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object" id="_v2451DplEeiRsKs_vMU-IQ"/>
+      <signatures name="debug" type="void" id="_XWFasTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFasjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWFaszqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XWFatDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="debug" type="void" id="_v2451TplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2451jplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2451zplEeiRsKs_vMU-IQ"/>
+      <signatures name="debug" type="void" id="_XWFatTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFatjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWFatzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="error" type="void" id="_v2452DplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v2452TplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v2452jplEeiRsKs_vMU-IQ"/>
+      <signatures name="error" type="void" id="_XWFauDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFauTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFaujqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="error" type="void" id="_v2452zplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v2453DplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v2453TplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object" id="_v2453jplEeiRsKs_vMU-IQ"/>
+      <signatures name="error" type="void" id="_XWFauzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFavDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFavTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XWFavjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="error" type="void" id="_v2453zplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v2454DplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v2454TplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object" id="_v2454jplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg3" type="java.lang.Object" id="_v2454zplEeiRsKs_vMU-IQ"/>
+      <signatures name="error" type="void" id="_XWFavzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFawDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFawTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XWFawjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_XWFawzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="error" type="void" id="_v2455DplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v2455TplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v2455jplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object[]" id="_v2455zplEeiRsKs_vMU-IQ"/>
+      <signatures name="error" type="void" id="_XWFaxDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFaxTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFaxjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_XWFaxzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="error" type="void" id="_v2456DplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v2456TplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v2456jplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Throwable" id="_v2456zplEeiRsKs_vMU-IQ"/>
+      <signatures name="error" type="void" id="_XWFayDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFayTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFayjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_XWFayzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="error" type="void" id="_v2457DplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2457TplEeiRsKs_vMU-IQ"/>
+      <signatures name="error" type="void" id="_XWFazDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFazTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="error" type="void" id="_v2457jplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2457zplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2458DplEeiRsKs_vMU-IQ"/>
+      <signatures name="error" type="void" id="_XWFazjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFazzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWFa0DqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="error" type="void" id="_v2458TplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2458jplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v2458zplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object" id="_v2459DplEeiRsKs_vMU-IQ"/>
+      <signatures name="error" type="void" id="_XWFa0TqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFa0jqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWFa0zqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XWFa1DqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="error" type="void" id="_v2459TplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v2459jplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object[]" id="_v2459zplEeiRsKs_vMU-IQ"/>
+      <signatures name="error" type="void" id="_XWFa1TqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFa1jqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_XWFa1zqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="error" type="void" id="_v245-DplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v245-TplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Throwable" id="_v245-jplEeiRsKs_vMU-IQ"/>
+      <signatures name="error" type="void" id="_XWFa2DqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFa2TqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XWFa2jqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="trace" type="void" id="_v245-zplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v245_DplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Throwable" id="_v245_TplEeiRsKs_vMU-IQ"/>
+      <signatures name="trace" type="void" id="_XWFa2zqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFa3DqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XWFa3TqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="trace" type="void" id="_v245_jplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v245_zplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object[]" id="_v246ADplEeiRsKs_vMU-IQ"/>
+      <signatures name="trace" type="void" id="_XWFa3jqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFa3zqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_XWFa4DqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="trace" type="void" id="_v246ATplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v246AjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v246AzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object" id="_v246BDplEeiRsKs_vMU-IQ"/>
+      <signatures name="trace" type="void" id="_XWFa4TqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFa4jqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWFa4zqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XWFa5DqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="trace" type="void" id="_v246BTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v246BjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v246BzplEeiRsKs_vMU-IQ"/>
+      <signatures name="trace" type="void" id="_XWFa5TqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFa5jqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWFa5zqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="trace" type="void" id="_v246CDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246CTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v246CjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object" id="_v246CzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg3" type="java.lang.Object" id="_v246DDplEeiRsKs_vMU-IQ"/>
+      <signatures name="trace" type="void" id="_XWFa6DqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFa6TqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFa6jqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XWFa6zqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_XWFa7DqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="trace" type="void" id="_v246DTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v246DjplEeiRsKs_vMU-IQ"/>
+      <signatures name="trace" type="void" id="_XWFa7TqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFa7jqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="trace" type="void" id="_v246DzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246EDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v246ETplEeiRsKs_vMU-IQ"/>
+      <signatures name="trace" type="void" id="_XWFa7zqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFa8DqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFa8TqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="trace" type="void" id="_v246EjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246EzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v246FDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Throwable" id="_v246FTplEeiRsKs_vMU-IQ"/>
+      <signatures name="trace" type="void" id="_XWFa8jqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFa8zqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFa9DqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_XWFa9TqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="trace" type="void" id="_v246FjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246FzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v246GDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object[]" id="_v246GTplEeiRsKs_vMU-IQ"/>
+      <signatures name="trace" type="void" id="_XWFa9jqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFa9zqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFa-DqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_XWFa-TqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="trace" type="void" id="_v246GjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246GzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v246HDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object" id="_v246HTplEeiRsKs_vMU-IQ"/>
+      <signatures name="trace" type="void" id="_XWFa-jqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFa-zqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFa_DqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XWFa_TqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="isInfoEnabled" type="boolean" id="_v246HjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246HzplEeiRsKs_vMU-IQ"/>
+      <signatures name="isInfoEnabled" type="boolean" id="_XWFa_jqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFa_zqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="isInfoEnabled" type="boolean" id="_v246IDplEeiRsKs_vMU-IQ"/>
-      <signatures name="info" type="void" id="_v246ITplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246IjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v246IzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Throwable" id="_v246JDplEeiRsKs_vMU-IQ"/>
+      <signatures name="isInfoEnabled" type="boolean" id="_XWFbADqrEeiP29_qDiwNWQ"/>
+      <signatures name="info" type="void" id="_XWFbATqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFbAjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFbAzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_XWFbBDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="info" type="void" id="_v246JTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246JjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v246JzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object[]" id="_v246KDplEeiRsKs_vMU-IQ"/>
+      <signatures name="info" type="void" id="_XWFbBTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFbBjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFbBzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_XWFbCDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="info" type="void" id="_v246KTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v246KjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object[]" id="_v246KzplEeiRsKs_vMU-IQ"/>
+      <signatures name="info" type="void" id="_XWFbCTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFbCjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWFbCzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XWFbDDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="info" type="void" id="_v246LDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v246LTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v246LjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object" id="_v246LzplEeiRsKs_vMU-IQ"/>
+      <signatures name="info" type="void" id="_XWFbDTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFbDjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWFbDzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="info" type="void" id="_v246MDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v246MTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v246MjplEeiRsKs_vMU-IQ"/>
+      <signatures name="info" type="void" id="_XWFbEDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFbETqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="info" type="void" id="_v246MzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v246NDplEeiRsKs_vMU-IQ"/>
+      <signatures name="info" type="void" id="_XWFbEjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFbEzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XWFbFDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="info" type="void" id="_v246NTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v246NjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Throwable" id="_v246NzplEeiRsKs_vMU-IQ"/>
+      <signatures name="info" type="void" id="_XWFbFTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFbFjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFbFzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XWFbGDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_XWFbGTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="info" type="void" id="_v246ODplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246OTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v246OjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object" id="_v246OzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg3" type="java.lang.Object" id="_v246PDplEeiRsKs_vMU-IQ"/>
+      <signatures name="info" type="void" id="_XWFbGjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFbGzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFbHDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XWFbHTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="info" type="void" id="_v246PTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246PjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v246PzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object" id="_v246QDplEeiRsKs_vMU-IQ"/>
+      <signatures name="info" type="void" id="_XWFbHjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFbHzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFbIDqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="info" type="void" id="_v246QTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246QjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v246QzplEeiRsKs_vMU-IQ"/>
+      <signatures name="info" type="void" id="_XWFbITqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFbIjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_XWFbIzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="isErrorEnabled" type="boolean" id="_v246RDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246RTplEeiRsKs_vMU-IQ"/>
+      <signatures name="isTraceEnabled" type="boolean" id="_XWFbJDqrEeiP29_qDiwNWQ"/>
+      <signatures name="isTraceEnabled" type="boolean" id="_XWFbJTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFbJjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="isErrorEnabled" type="boolean" id="_v246RjplEeiRsKs_vMU-IQ"/>
-      <signatures name="isWarnEnabled" type="boolean" id="_v246RzplEeiRsKs_vMU-IQ"/>
-      <signatures name="isWarnEnabled" type="boolean" id="_v246SDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246STplEeiRsKs_vMU-IQ"/>
+      <signatures name="warn" type="void" id="_XWFbJzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFbKDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFbKTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_XWFbKjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="isTraceEnabled" type="boolean" id="_v246SjplEeiRsKs_vMU-IQ"/>
-      <signatures name="isTraceEnabled" type="boolean" id="_v246SzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246TDplEeiRsKs_vMU-IQ"/>
+      <signatures name="warn" type="void" id="_XWFbKzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFbLDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFbLTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_XWFbLjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="isDebugEnabled" type="boolean" id="_v246TTplEeiRsKs_vMU-IQ"/>
-      <signatures name="isDebugEnabled" type="boolean" id="_v246TjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246TzplEeiRsKs_vMU-IQ"/>
+      <signatures name="warn" type="void" id="_XWFbLzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFbMDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_XWFbMTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="warn" type="void" id="_v246UDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v246UTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v246UjplEeiRsKs_vMU-IQ"/>
+      <signatures name="warn" type="void" id="_XWFbMjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFbMzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWFbNDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XWFbNTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="warn" type="void" id="_v246UzplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v246VDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object[]" id="_v246VTplEeiRsKs_vMU-IQ"/>
+      <signatures name="warn" type="void" id="_XWFbNjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFbNzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_XWFbODqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="warn" type="void" id="_v246VjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246VzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v246WDplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Throwable" id="_v246WTplEeiRsKs_vMU-IQ"/>
+      <signatures name="warn" type="void" id="_XWFbOTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFbOjqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_XWFbOzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="warn" type="void" id="_v246WjplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v246WzplEeiRsKs_vMU-IQ"/>
+      <signatures name="warn" type="void" id="_XWFbPDqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_XWFbPTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="warn" type="void" id="_v246XDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v246XTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Object" id="_v246XjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object" id="_v246XzplEeiRsKs_vMU-IQ"/>
+      <signatures name="warn" type="void" id="_XWFbPjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFbPzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFbQDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XWFbQTqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_XWFbQjqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="warn" type="void" id="_v246YDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246YTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v246YjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object[]" id="_v246YzplEeiRsKs_vMU-IQ"/>
+      <signatures name="warn" type="void" id="_XWFbQzqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFbRDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFbRTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="warn" type="void" id="_v246ZDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246ZTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v246ZjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object" id="_v246ZzplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg3" type="java.lang.Object" id="_v246aDplEeiRsKs_vMU-IQ"/>
+      <signatures name="warn" type="void" id="_XWFbRjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFbRzqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_XWFbSDqrEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_XWFbSTqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="warn" type="void" id="_v246aTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246ajplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v246azplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg2" type="java.lang.Object" id="_v246bDplEeiRsKs_vMU-IQ"/>
+      <signatures name="isDebugEnabled" type="boolean" id="_XWFbSjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFbSzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="warn" type="void" id="_v246bTplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="org.slf4j.Marker" id="_v246bjplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.String" id="_v246bzplEeiRsKs_vMU-IQ"/>
+      <signatures name="isDebugEnabled" type="boolean" id="_XWFbTDqrEeiP29_qDiwNWQ"/>
+      <signatures name="isErrorEnabled" type="boolean" id="_XWFbTTqrEeiP29_qDiwNWQ"/>
+      <signatures name="isErrorEnabled" type="boolean" id="_XWFbTjqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFbTzqrEeiP29_qDiwNWQ"/>
       </signatures>
-      <signatures name="warn" type="void" id="_v246cDplEeiRsKs_vMU-IQ">
-        <parameters name="arg0" type="java.lang.String" id="_v246cTplEeiRsKs_vMU-IQ"/>
-        <parameters name="arg1" type="java.lang.Throwable" id="_v246cjplEeiRsKs_vMU-IQ"/>
+      <signatures name="isWarnEnabled" type="boolean" id="_XWFbUDqrEeiP29_qDiwNWQ"/>
+      <signatures name="isWarnEnabled" type="boolean" id="_XWFbUTqrEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_XWFbUjqrEeiP29_qDiwNWQ"/>
       </signatures>
     </interfaceTypes>
   </repositories>

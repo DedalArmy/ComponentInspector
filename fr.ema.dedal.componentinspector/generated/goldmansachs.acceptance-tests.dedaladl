@@ -1,0 +1,6 @@
+dedal_diagram "goldmansachs.acceptance-tests"
+
+	repositories (
+
+		repository genRepo
+	)

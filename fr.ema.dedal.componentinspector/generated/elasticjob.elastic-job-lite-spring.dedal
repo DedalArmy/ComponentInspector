@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="elasticjob.elastic-job-lite-spring">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="elasticjob.elastic-job-lite-spring.src.test.resources.META-INF.job.withJobRef.xml_config" implements="//@architectureDescriptions[name='elasticjob.elastic-job-lite-spring.src.test.resources.META-INF.job.withJobRef.xml_spec']">
+    <configComponents name="io.elasticjob.lite.spring.fixture.job.ref.RefFooSimpleElasticJob" id="_pQDVcDqaEeiP29_qDiwNWQ" realizes="_pRCz_DqaEeiP29_qDiwNWQ" implements="_pQ64IDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="io.elasticjob.lite.spring.fixture.job.ref.RefFooDataflowElasticJob" id="_pQDVcTqaEeiP29_qDiwNWQ" realizes="_pRC0CDqaEeiP29_qDiwNWQ" implements="_pRCz8DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="elasticjob.elastic-job-lite-spring.src.test.resources.META-INF.job.withJobRef.xml_asm" instantiates="//@architectureDescriptions[name='elasticjob.elastic-job-lite-spring.src.test.resources.META-INF.job.withJobRef.xml_config']">
+    <assmComponents name="refSimpleJob" id="_pQDVcjqaEeiP29_qDiwNWQ" instantiates="_pQDVcDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_refSimpleJob" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="refDataflowJob" id="_pQDVczqaEeiP29_qDiwNWQ" instantiates="_pQDVcTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_refDataflowJob" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="elasticjob.elastic-job-lite-spring.src.test.resources.META-INF.job.withJobRef.xml_spec">
+    <specComponents name="Object_role" id="_pRCz_DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_pRC0CDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="elasticjob.elastic-job-lite-spring.target.test-classes.META-INF.job.withJobRef.xml_config" implements="//@architectureDescriptions[name='elasticjob.elastic-job-lite-spring.target.test-classes.META-INF.job.withJobRef.xml_spec']">
+    <configComponents name="io.elasticjob.lite.spring.fixture.job.ref.RefFooSimpleElasticJob" id="_pUAoYDqaEeiP29_qDiwNWQ" realizes="_pUJyaDqaEeiP29_qDiwNWQ" implements="_pUFg4DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="io.elasticjob.lite.spring.fixture.job.ref.RefFooDataflowElasticJob" id="_pUAoYTqaEeiP29_qDiwNWQ" realizes="_pUJyXDqaEeiP29_qDiwNWQ" implements="_pUJyUDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="elasticjob.elastic-job-lite-spring.target.test-classes.META-INF.job.withJobRef.xml_asm" instantiates="//@architectureDescriptions[name='elasticjob.elastic-job-lite-spring.target.test-classes.META-INF.job.withJobRef.xml_config']">
+    <assmComponents name="refSimpleJob" id="_pUAoYjqaEeiP29_qDiwNWQ" instantiates="_pUAoYDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_refSimpleJob" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="refDataflowJob" id="_pUBPcDqaEeiP29_qDiwNWQ" instantiates="_pUAoYTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_refDataflowJob" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="elasticjob.elastic-job-lite-spring.target.test-classes.META-INF.job.withJobRef.xml_spec">
+    <specComponents name="Object_role" id="_pUJyXDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_pUJyaDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_pQ64IDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_pRCz8DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_pUFg4DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_pUJyUDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_pQ64ITqaEeiP29_qDiwNWQ"/>
+      <signatures name="wait" type="void" id="_pQ64IjqaEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_pQ64IzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_pQ64JDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_pQ64JTqaEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_pQ64JjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getClass" type="java.lang.Class" id="_pQ64JzqaEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_pQ64KDqaEeiP29_qDiwNWQ"/>
+      <signatures name="notify" type="void" id="_pQ64KTqaEeiP29_qDiwNWQ"/>
+      <signatures name="notifyAll" type="void" id="_pQ64KjqaEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_pQ64KzqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

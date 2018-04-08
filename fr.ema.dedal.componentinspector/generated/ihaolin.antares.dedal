@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="ihaolin.antares">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ihaolin.antares.antares.antares-client-spring.src.test.resources.antares-context.xml_config" implements="//@architectureDescriptions[name='ihaolin.antares.antares.antares-client-spring.src.test.resources.antares-context.xml_spec']">
+    <configComponents name="me.hao0.antares.client.core.SpringAntaresClient" id="_N61MkDqhEeiP29_qDiwNWQ" realizes="_N936fjqhEeiP29_qDiwNWQ" implements="_N7bpgDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_SpringAntaresClient" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SpringAntaresClient" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISpringAntaresClient" type="ISpringAntaresClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_SpringAntaresClient" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_SpringAntaresClient" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_SpringAntaresClient" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_SpringAntaresClient" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_SpringAntaresClient" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_SpringAntaresClient" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_SpringAntaresClient" direction="REQUIRED" type="ApplicationContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAntaresClient_SpringAntaresClient" direction="REQUIRED" type="AntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleAntaresClient_SpringAntaresClient" direction="REQUIRED" type="ISimpleAntaresClient_Type"/>
+      <attributes name="springContext" type="org.springframework.context.ApplicationContext"/>
+      <attributes name="client" type="me.hao0.antares.client.core.SimpleAntaresClient"/>
+    </configComponents>
+    <configComponents name="me.hao0.antares.client.job.DemoJob" id="_N61MkTqhEeiP29_qDiwNWQ" realizes="_N935sDqhEeiP29_qDiwNWQ" implements="_N9L9ADqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJob" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IJobListener_DemoJob" type="JobListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IJobResultListener_DemoJob" type="JobResultListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJob" type="IDemoJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJob" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJob" direction="REQUIRED" type="IRandom_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJob" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAtomicLong_DemoJob" direction="REQUIRED" type="IAtomicLong_Type"/>
+      <attributes name="random" type="java.util.Random"/>
+      <attributes name="counter" type="java.util.concurrent.atomic.AtomicLong"/>
+    </configComponents>
+    <configComponents name="me.hao0.antares.client.job.DemoJobA" id="_N61MkjqhEeiP29_qDiwNWQ" realizes="_N94h9TqhEeiP29_qDiwNWQ" implements="_N9dCwDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJobA" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobA" type="IDemoJobA_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJobA" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJobA" direction="REQUIRED" type="IRandom_Type"/>
+      <attributes name="random" type="java.util.Random"/>
+    </configComponents>
+    <configComponents name="me.hao0.antares.client.job.DemoJobB" id="_N61MkzqhEeiP29_qDiwNWQ" realizes="_N94hnDqhEeiP29_qDiwNWQ" implements="_N9kXgDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJobB" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobB" type="IDemoJobB_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJobB" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJobB" direction="REQUIRED" type="IRandom_Type"/>
+      <attributes name="random" type="java.util.Random"/>
+    </configComponents>
+    <configComponents name="me.hao0.antares.client.job.HelloJob" id="_N61MlDqhEeiP29_qDiwNWQ" realizes="_N936QDqhEeiP29_qDiwNWQ" implements="_N9p3EDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_HelloJob" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloJob" type="IHelloJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_HelloJob" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_HelloJob" direction="REQUIRED" type="IRandom_Type"/>
+      <attributes name="random" type="java.util.Random"/>
+    </configComponents>
+    <configComponents name="me.hao0.antares.client.job.MyScriptJob" id="_N61MlTqhEeiP29_qDiwNWQ" realizes="_N94h8jqhEeiP29_qDiwNWQ" implements="_N9yZ8DqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMyScriptJob" type="IMyScriptJob_Type"/>
+    </configComponents>
+    <configComponents name="me.hao0.antares.client.job.TimeoutJob" id="_N61MljqhEeiP29_qDiwNWQ" realizes="_N94hXjqhEeiP29_qDiwNWQ" implements="_N935gDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_TimeoutJob" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITimeoutJob" type="ITimeoutJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TimeoutJob" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_TimeoutJob" direction="REQUIRED" type="IRandom_Type"/>
+      <attributes name="random" type="java.util.Random"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ihaolin.antares.antares.antares-client-spring.src.test.resources.antares-context.xml_asm" instantiates="//@architectureDescriptions[name='ihaolin.antares.antares.antares-client-spring.src.test.resources.antares-context.xml_config']">
+    <assmComponents name="me.hao0.antares.client.core.SpringAntaresClient1" id="_N61MlzqhEeiP29_qDiwNWQ" instantiates="_N61MkDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" type="InitializingBean" instantiates="IInitializingBean_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" type="DisposableBean" instantiates="IDisposableBean_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" type="ISpringAntaresClient_Type" instantiates="ISpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="EnvironmentCapable" instantiates="IEnvironmentCapable_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ListableBeanFactory" instantiates="IListableBeanFactory_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="HierarchicalBeanFactory" instantiates="IHierarchicalBeanFactory_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="MessageSource" instantiates="IMessageSource_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ApplicationEventPublisher" instantiates="IApplicationEventPublisher_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ResourcePatternResolver" instantiates="IResourcePatternResolver_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ApplicationContext" instantiates="IApplicationContext_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAntaresClient_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="AntaresClient" instantiates="IAntaresClient_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleAntaresClient_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ISimpleAntaresClient_Type" instantiates="ISimpleAntaresClient_SpringAntaresClient"/>
+    </assmComponents>
+    <assmComponents name="me.hao0.antares.client.job.DemoJob1" id="_N61zoDqhEeiP29_qDiwNWQ" instantiates="_N61MkTqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJob_me.hao0.antares.client.job.DemoJob1" type="DefaultJob" instantiates="IDefaultJob_DemoJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IJobListener_DemoJob_me.hao0.antares.client.job.DemoJob1" type="JobListener" instantiates="IJobListener_DemoJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IJobResultListener_DemoJob_me.hao0.antares.client.job.DemoJob1" type="JobResultListener" instantiates="IJobResultListener_DemoJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJob_me.hao0.antares.client.job.DemoJob1" type="IDemoJob_Type" instantiates="IDemoJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJob_me.hao0.antares.client.job.DemoJob1" direction="REQUIRED" instantiates="null_DemoJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJob_me.hao0.antares.client.job.DemoJob1" direction="REQUIRED" type="IRandom_Type" instantiates="IRandom_DemoJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJob_me.hao0.antares.client.job.DemoJob1" direction="REQUIRED" instantiates="null_DemoJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAtomicLong_DemoJob_me.hao0.antares.client.job.DemoJob1" direction="REQUIRED" type="IAtomicLong_Type" instantiates="IAtomicLong_DemoJob"/>
+    </assmComponents>
+    <assmComponents name="me.hao0.antares.client.job.DemoJobA1" id="_N61zoTqhEeiP29_qDiwNWQ" instantiates="_N61MkjqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJobA_me.hao0.antares.client.job.DemoJobA1" type="DefaultJob" instantiates="IDefaultJob_DemoJobA"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobA_me.hao0.antares.client.job.DemoJobA1" type="IDemoJobA_Type" instantiates="IDemoJobA"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJobA_me.hao0.antares.client.job.DemoJobA1" direction="REQUIRED" instantiates="null_DemoJobA"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJobA_me.hao0.antares.client.job.DemoJobA1" direction="REQUIRED" type="IRandom_Type" instantiates="IRandom_DemoJobA"/>
+    </assmComponents>
+    <assmComponents name="me.hao0.antares.client.job.DemoJobB1" id="_N61zojqhEeiP29_qDiwNWQ" instantiates="_N61MkzqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJobB_me.hao0.antares.client.job.DemoJobB1" type="DefaultJob" instantiates="IDefaultJob_DemoJobB"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobB_me.hao0.antares.client.job.DemoJobB1" type="IDemoJobB_Type" instantiates="IDemoJobB"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJobB_me.hao0.antares.client.job.DemoJobB1" direction="REQUIRED" instantiates="null_DemoJobB"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJobB_me.hao0.antares.client.job.DemoJobB1" direction="REQUIRED" type="IRandom_Type" instantiates="IRandom_DemoJobB"/>
+    </assmComponents>
+    <assmComponents name="me.hao0.antares.client.job.HelloJob1" id="_N61zozqhEeiP29_qDiwNWQ" instantiates="_N61MlDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_HelloJob_me.hao0.antares.client.job.HelloJob1" type="DefaultJob" instantiates="IDefaultJob_HelloJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloJob_me.hao0.antares.client.job.HelloJob1" type="IHelloJob_Type" instantiates="IHelloJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_HelloJob_me.hao0.antares.client.job.HelloJob1" direction="REQUIRED" instantiates="null_HelloJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_HelloJob_me.hao0.antares.client.job.HelloJob1" direction="REQUIRED" type="IRandom_Type" instantiates="IRandom_HelloJob"/>
+    </assmComponents>
+    <assmComponents name="me.hao0.antares.client.job.MyScriptJob1" id="_N61zpDqhEeiP29_qDiwNWQ" instantiates="_N61MlTqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMyScriptJob_me.hao0.antares.client.job.MyScriptJob1" type="IMyScriptJob_Type" instantiates="IMyScriptJob"/>
+    </assmComponents>
+    <assmComponents name="me.hao0.antares.client.job.TimeoutJob1" id="_N61zpTqhEeiP29_qDiwNWQ" instantiates="_N61MljqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_TimeoutJob_me.hao0.antares.client.job.TimeoutJob1" type="DefaultJob" instantiates="IDefaultJob_TimeoutJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITimeoutJob_me.hao0.antares.client.job.TimeoutJob1" type="ITimeoutJob_Type" instantiates="ITimeoutJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TimeoutJob_me.hao0.antares.client.job.TimeoutJob1" direction="REQUIRED" instantiates="null_TimeoutJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_TimeoutJob_me.hao0.antares.client.job.TimeoutJob1" direction="REQUIRED" type="IRandom_Type" instantiates="IRandom_TimeoutJob"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ihaolin.antares.antares.antares-client-spring.src.test.resources.antares-context.xml_spec">
+    <specComponents name="DemoJob_role" id="_N935sDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJobDemoJob_role" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IJobListenerDemoJob_role" type="JobListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IJobResultListenerDemoJob_role" type="JobResultListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobDemoJob_role" type="IDemoJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullDemoJob_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandomDemoJob_role" direction="REQUIRED" type="IRandom_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullDemoJob_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAtomicLongDemoJob_role" direction="REQUIRED" type="IAtomicLong_Type"/>
+    </specComponents>
+    <specComponents name="HelloJob_role" id="_N936QDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJobHelloJob_role" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloJobHelloJob_role" type="IHelloJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullHelloJob_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandomHelloJob_role" direction="REQUIRED" type="IRandom_Type"/>
+    </specComponents>
+    <specComponents name="SpringAntaresClient_role" id="_N936fjqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBeanSpringAntaresClient_role" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBeanSpringAntaresClient_role" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISpringAntaresClientSpringAntaresClient_role" type="ISpringAntaresClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapableSpringAntaresClient_role" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactorySpringAntaresClient_role" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactorySpringAntaresClient_role" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSourceSpringAntaresClient_role" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisherSpringAntaresClient_role" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolverSpringAntaresClient_role" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextSpringAntaresClient_role" direction="REQUIRED" type="ApplicationContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAntaresClientSpringAntaresClient_role" direction="REQUIRED" type="AntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleAntaresClientSpringAntaresClient_role" direction="REQUIRED" type="ISimpleAntaresClient_Type"/>
+    </specComponents>
+    <specComponents name="TimeoutJob_role" id="_N94hXjqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJobTimeoutJob_role" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITimeoutJobTimeoutJob_role" type="ITimeoutJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTimeoutJob_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandomTimeoutJob_role" direction="REQUIRED" type="IRandom_Type"/>
+    </specComponents>
+    <specComponents name="DemoJobB_role" id="_N94hnDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJobDemoJobB_role" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobBDemoJobB_role" type="IDemoJobB_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullDemoJobB_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandomDemoJobB_role" direction="REQUIRED" type="IRandom_Type"/>
+    </specComponents>
+    <specComponents name="Job_role" id="_N94h8jqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IJobJob_role" type="Job"/>
+    </specComponents>
+    <specComponents name="DemoJobA_role" id="_N94h9TqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJobDemoJobA_role" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobADemoJobA_role" type="IDemoJobA_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullDemoJobA_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandomDemoJobA_role" direction="REQUIRED" type="IRandom_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ihaolin.antares.antares.antares-client-spring.target.test-classes.antares-context.xml_config" implements="//@architectureDescriptions[name='ihaolin.antares.antares.antares-client-spring.target.test-classes.antares-context.xml_spec']">
+    <configComponents name="me.hao0.antares.client.core.SpringAntaresClient" id="_N-NQsDqhEeiP29_qDiwNWQ" realizes="_N-PGpzqhEeiP29_qDiwNWQ" implements="_N-N3xTqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_SpringAntaresClient" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SpringAntaresClient" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISpringAntaresClient" type="ISpringAntaresClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_SpringAntaresClient" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_SpringAntaresClient" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_SpringAntaresClient" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_SpringAntaresClient" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_SpringAntaresClient" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_SpringAntaresClient" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_SpringAntaresClient" direction="REQUIRED" type="ApplicationContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAntaresClient_SpringAntaresClient" direction="REQUIRED" type="AntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleAntaresClient_SpringAntaresClient" direction="REQUIRED" type="ISimpleAntaresClient_Type"/>
+      <attributes name="springContext" type="org.springframework.context.ApplicationContext"/>
+      <attributes name="client" type="me.hao0.antares.client.core.SimpleAntaresClient"/>
+    </configComponents>
+    <configComponents name="me.hao0.antares.client.job.DemoJob" id="_N-NQsTqhEeiP29_qDiwNWQ" realizes="_N-OhQDqhEeiP29_qDiwNWQ" implements="_N-OgBTqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJob" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IJobListener_DemoJob" type="JobListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IJobResultListener_DemoJob" type="JobResultListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJob" type="IDemoJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJob" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJob" direction="REQUIRED" type="IRandom_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJob" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAtomicLong_DemoJob" direction="REQUIRED" type="IAtomicLong_Type"/>
+      <attributes name="random" type="java.util.Random"/>
+      <attributes name="counter" type="java.util.concurrent.atomic.AtomicLong"/>
+    </configComponents>
+    <configComponents name="me.hao0.antares.client.job.DemoJobA" id="_N-NQsjqhEeiP29_qDiwNWQ" realizes="_N-PIQzqhEeiP29_qDiwNWQ" implements="_N-OgdzqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJobA" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobA" type="IDemoJobA_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJobA" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJobA" direction="REQUIRED" type="IRandom_Type"/>
+      <attributes name="random" type="java.util.Random"/>
+    </configComponents>
+    <configComponents name="me.hao0.antares.client.job.DemoJobB" id="_N-NQszqhEeiP29_qDiwNWQ" realizes="_N-PGKzqhEeiP29_qDiwNWQ" implements="_N-OgpzqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJobB" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobB" type="IDemoJobB_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJobB" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJobB" direction="REQUIRED" type="IRandom_Type"/>
+      <attributes name="random" type="java.util.Random"/>
+    </configComponents>
+    <configComponents name="me.hao0.antares.client.job.HelloJob" id="_N-NQtDqhEeiP29_qDiwNWQ" realizes="_N-PGaTqhEeiP29_qDiwNWQ" implements="_N-Og1zqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_HelloJob" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloJob" type="IHelloJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_HelloJob" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_HelloJob" direction="REQUIRED" type="IRandom_Type"/>
+      <attributes name="random" type="java.util.Random"/>
+    </configComponents>
+    <configComponents name="me.hao0.antares.client.job.MyScriptJob" id="_N-NQtTqhEeiP29_qDiwNWQ" realizes="_N-PI1zqhEeiP29_qDiwNWQ" implements="_N-OhBzqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMyScriptJob" type="IMyScriptJob_Type"/>
+    </configComponents>
+    <configComponents name="me.hao0.antares.client.job.TimeoutJob" id="_N-NQtjqhEeiP29_qDiwNWQ" realizes="_N-PIgTqhEeiP29_qDiwNWQ" implements="_N-OhEDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_TimeoutJob" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITimeoutJob" type="ITimeoutJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TimeoutJob" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_TimeoutJob" direction="REQUIRED" type="IRandom_Type"/>
+      <attributes name="random" type="java.util.Random"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ihaolin.antares.antares.antares-client-spring.target.test-classes.antares-context.xml_asm" instantiates="//@architectureDescriptions[name='ihaolin.antares.antares.antares-client-spring.target.test-classes.antares-context.xml_config']">
+    <assmComponents name="me.hao0.antares.client.core.SpringAntaresClient1" id="_N-NQtzqhEeiP29_qDiwNWQ" instantiates="_N-NQsDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" type="InitializingBean" instantiates="IInitializingBean_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" type="DisposableBean" instantiates="IDisposableBean_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" type="ISpringAntaresClient_Type" instantiates="ISpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="EnvironmentCapable" instantiates="IEnvironmentCapable_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ListableBeanFactory" instantiates="IListableBeanFactory_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="HierarchicalBeanFactory" instantiates="IHierarchicalBeanFactory_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="MessageSource" instantiates="IMessageSource_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ApplicationEventPublisher" instantiates="IApplicationEventPublisher_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ResourcePatternResolver" instantiates="IResourcePatternResolver_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ApplicationContext" instantiates="IApplicationContext_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAntaresClient_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="AntaresClient" instantiates="IAntaresClient_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleAntaresClient_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ISimpleAntaresClient_Type" instantiates="ISimpleAntaresClient_SpringAntaresClient"/>
+    </assmComponents>
+    <assmComponents name="me.hao0.antares.client.job.DemoJob1" id="_N-NQuDqhEeiP29_qDiwNWQ" instantiates="_N-NQsTqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJob_me.hao0.antares.client.job.DemoJob1" type="DefaultJob" instantiates="IDefaultJob_DemoJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IJobListener_DemoJob_me.hao0.antares.client.job.DemoJob1" type="JobListener" instantiates="IJobListener_DemoJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IJobResultListener_DemoJob_me.hao0.antares.client.job.DemoJob1" type="JobResultListener" instantiates="IJobResultListener_DemoJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJob_me.hao0.antares.client.job.DemoJob1" type="IDemoJob_Type" instantiates="IDemoJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJob_me.hao0.antares.client.job.DemoJob1" direction="REQUIRED" instantiates="null_DemoJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJob_me.hao0.antares.client.job.DemoJob1" direction="REQUIRED" type="IRandom_Type" instantiates="IRandom_DemoJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJob_me.hao0.antares.client.job.DemoJob1" direction="REQUIRED" instantiates="null_DemoJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAtomicLong_DemoJob_me.hao0.antares.client.job.DemoJob1" direction="REQUIRED" type="IAtomicLong_Type" instantiates="IAtomicLong_DemoJob"/>
+    </assmComponents>
+    <assmComponents name="me.hao0.antares.client.job.DemoJobA1" id="_N-N3wDqhEeiP29_qDiwNWQ" instantiates="_N-NQsjqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJobA_me.hao0.antares.client.job.DemoJobA1" type="DefaultJob" instantiates="IDefaultJob_DemoJobA"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobA_me.hao0.antares.client.job.DemoJobA1" type="IDemoJobA_Type" instantiates="IDemoJobA"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJobA_me.hao0.antares.client.job.DemoJobA1" direction="REQUIRED" instantiates="null_DemoJobA"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJobA_me.hao0.antares.client.job.DemoJobA1" direction="REQUIRED" type="IRandom_Type" instantiates="IRandom_DemoJobA"/>
+    </assmComponents>
+    <assmComponents name="me.hao0.antares.client.job.DemoJobB1" id="_N-N3wTqhEeiP29_qDiwNWQ" instantiates="_N-NQszqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJobB_me.hao0.antares.client.job.DemoJobB1" type="DefaultJob" instantiates="IDefaultJob_DemoJobB"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobB_me.hao0.antares.client.job.DemoJobB1" type="IDemoJobB_Type" instantiates="IDemoJobB"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJobB_me.hao0.antares.client.job.DemoJobB1" direction="REQUIRED" instantiates="null_DemoJobB"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJobB_me.hao0.antares.client.job.DemoJobB1" direction="REQUIRED" type="IRandom_Type" instantiates="IRandom_DemoJobB"/>
+    </assmComponents>
+    <assmComponents name="me.hao0.antares.client.job.HelloJob1" id="_N-N3wjqhEeiP29_qDiwNWQ" instantiates="_N-NQtDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_HelloJob_me.hao0.antares.client.job.HelloJob1" type="DefaultJob" instantiates="IDefaultJob_HelloJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloJob_me.hao0.antares.client.job.HelloJob1" type="IHelloJob_Type" instantiates="IHelloJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_HelloJob_me.hao0.antares.client.job.HelloJob1" direction="REQUIRED" instantiates="null_HelloJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_HelloJob_me.hao0.antares.client.job.HelloJob1" direction="REQUIRED" type="IRandom_Type" instantiates="IRandom_HelloJob"/>
+    </assmComponents>
+    <assmComponents name="me.hao0.antares.client.job.MyScriptJob1" id="_N-N3wzqhEeiP29_qDiwNWQ" instantiates="_N-NQtTqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMyScriptJob_me.hao0.antares.client.job.MyScriptJob1" type="IMyScriptJob_Type" instantiates="IMyScriptJob"/>
+    </assmComponents>
+    <assmComponents name="me.hao0.antares.client.job.TimeoutJob1" id="_N-N3xDqhEeiP29_qDiwNWQ" instantiates="_N-NQtjqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_TimeoutJob_me.hao0.antares.client.job.TimeoutJob1" type="DefaultJob" instantiates="IDefaultJob_TimeoutJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITimeoutJob_me.hao0.antares.client.job.TimeoutJob1" type="ITimeoutJob_Type" instantiates="ITimeoutJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TimeoutJob_me.hao0.antares.client.job.TimeoutJob1" direction="REQUIRED" instantiates="null_TimeoutJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_TimeoutJob_me.hao0.antares.client.job.TimeoutJob1" direction="REQUIRED" type="IRandom_Type" instantiates="IRandom_TimeoutJob"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ihaolin.antares.antares.antares-client-spring.target.test-classes.antares-context.xml_spec">
+    <specComponents name="DemoJob_role" id="_N-OhQDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJobDemoJob_role" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IJobListenerDemoJob_role" type="JobListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IJobResultListenerDemoJob_role" type="JobResultListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobDemoJob_role" type="IDemoJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullDemoJob_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandomDemoJob_role" direction="REQUIRED" type="IRandom_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullDemoJob_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAtomicLongDemoJob_role" direction="REQUIRED" type="IAtomicLong_Type"/>
+    </specComponents>
+    <specComponents name="DemoJobB_role" id="_N-PGKzqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJobDemoJobB_role" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobBDemoJobB_role" type="IDemoJobB_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullDemoJobB_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandomDemoJobB_role" direction="REQUIRED" type="IRandom_Type"/>
+    </specComponents>
+    <specComponents name="HelloJob_role" id="_N-PGaTqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJobHelloJob_role" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloJobHelloJob_role" type="IHelloJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullHelloJob_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandomHelloJob_role" direction="REQUIRED" type="IRandom_Type"/>
+    </specComponents>
+    <specComponents name="SpringAntaresClient_role" id="_N-PGpzqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBeanSpringAntaresClient_role" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBeanSpringAntaresClient_role" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISpringAntaresClientSpringAntaresClient_role" type="ISpringAntaresClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapableSpringAntaresClient_role" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactorySpringAntaresClient_role" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactorySpringAntaresClient_role" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSourceSpringAntaresClient_role" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisherSpringAntaresClient_role" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolverSpringAntaresClient_role" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextSpringAntaresClient_role" direction="REQUIRED" type="ApplicationContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAntaresClientSpringAntaresClient_role" direction="REQUIRED" type="AntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleAntaresClientSpringAntaresClient_role" direction="REQUIRED" type="ISimpleAntaresClient_Type"/>
+    </specComponents>
+    <specComponents name="DemoJobA_role" id="_N-PIQzqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJobDemoJobA_role" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobADemoJobA_role" type="IDemoJobA_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullDemoJobA_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandomDemoJobA_role" direction="REQUIRED" type="IRandom_Type"/>
+    </specComponents>
+    <specComponents name="TimeoutJob_role" id="_N-PIgTqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJobTimeoutJob_role" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITimeoutJobTimeoutJob_role" type="ITimeoutJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTimeoutJob_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandomTimeoutJob_role" direction="REQUIRED" type="IRandom_Type"/>
+    </specComponents>
+    <specComponents name="Job_role" id="_N-PI1zqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IJobJob_role" type="Job"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ihaolin.antares.antares.antares-demo.src.main.resources.antares-context.xml_config" implements="//@architectureDescriptions[name='ihaolin.antares.antares.antares-demo.src.main.resources.antares-context.xml_spec']">
+    <configComponents name="me.hao0.antares.client.core.SpringAntaresClient" id="_N-j2ADqhEeiP29_qDiwNWQ" realizes="_N-kepjqhEeiP29_qDiwNWQ" implements="_N-kdEDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_SpringAntaresClient" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SpringAntaresClient" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISpringAntaresClient" type="ISpringAntaresClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_SpringAntaresClient" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_SpringAntaresClient" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_SpringAntaresClient" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_SpringAntaresClient" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_SpringAntaresClient" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_SpringAntaresClient" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_SpringAntaresClient" direction="REQUIRED" type="ApplicationContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAntaresClient_SpringAntaresClient" direction="REQUIRED" type="AntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleAntaresClient_SpringAntaresClient" direction="REQUIRED" type="ISimpleAntaresClient_Type"/>
+      <attributes name="springContext" type="org.springframework.context.ApplicationContext"/>
+      <attributes name="client" type="me.hao0.antares.client.core.SimpleAntaresClient"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ihaolin.antares.antares.antares-demo.src.main.resources.antares-context.xml_asm" instantiates="//@architectureDescriptions[name='ihaolin.antares.antares.antares-demo.src.main.resources.antares-context.xml_config']">
+    <assmComponents name="me.hao0.antares.client.core.SpringAntaresClient1" id="_N-j2ATqhEeiP29_qDiwNWQ" instantiates="_N-j2ADqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" type="InitializingBean" instantiates="IInitializingBean_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" type="DisposableBean" instantiates="IDisposableBean_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" type="ISpringAntaresClient_Type" instantiates="ISpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="EnvironmentCapable" instantiates="IEnvironmentCapable_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ListableBeanFactory" instantiates="IListableBeanFactory_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="HierarchicalBeanFactory" instantiates="IHierarchicalBeanFactory_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="MessageSource" instantiates="IMessageSource_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ApplicationEventPublisher" instantiates="IApplicationEventPublisher_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ResourcePatternResolver" instantiates="IResourcePatternResolver_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ApplicationContext" instantiates="IApplicationContext_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAntaresClient_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="AntaresClient" instantiates="IAntaresClient_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleAntaresClient_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ISimpleAntaresClient_Type" instantiates="ISimpleAntaresClient_SpringAntaresClient"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ihaolin.antares.antares.antares-demo.src.main.resources.antares-context.xml_spec">
+    <specComponents name="SpringAntaresClient_role" id="_N-kepjqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBeanSpringAntaresClient_role" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBeanSpringAntaresClient_role" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISpringAntaresClientSpringAntaresClient_role" type="ISpringAntaresClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapableSpringAntaresClient_role" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactorySpringAntaresClient_role" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactorySpringAntaresClient_role" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSourceSpringAntaresClient_role" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisherSpringAntaresClient_role" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolverSpringAntaresClient_role" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextSpringAntaresClient_role" direction="REQUIRED" type="ApplicationContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAntaresClientSpringAntaresClient_role" direction="REQUIRED" type="AntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleAntaresClientSpringAntaresClient_role" direction="REQUIRED" type="ISimpleAntaresClient_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ihaolin.antares.antares.antares-demo.target.classes.antares-context.xml_config" implements="//@architectureDescriptions[name='ihaolin.antares.antares.antares-demo.target.classes.antares-context.xml_spec']">
+    <configComponents name="me.hao0.antares.client.core.SpringAntaresClient" id="_N-7CYDqhEeiP29_qDiwNWQ" realizes="_N-7rBjqhEeiP29_qDiwNWQ" implements="_N-7pcDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_SpringAntaresClient" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SpringAntaresClient" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISpringAntaresClient" type="ISpringAntaresClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_SpringAntaresClient" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_SpringAntaresClient" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_SpringAntaresClient" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_SpringAntaresClient" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_SpringAntaresClient" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_SpringAntaresClient" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_SpringAntaresClient" direction="REQUIRED" type="ApplicationContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAntaresClient_SpringAntaresClient" direction="REQUIRED" type="AntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleAntaresClient_SpringAntaresClient" direction="REQUIRED" type="ISimpleAntaresClient_Type"/>
+      <attributes name="springContext" type="org.springframework.context.ApplicationContext"/>
+      <attributes name="client" type="me.hao0.antares.client.core.SimpleAntaresClient"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ihaolin.antares.antares.antares-demo.target.classes.antares-context.xml_asm" instantiates="//@architectureDescriptions[name='ihaolin.antares.antares.antares-demo.target.classes.antares-context.xml_config']">
+    <assmComponents name="me.hao0.antares.client.core.SpringAntaresClient1" id="_N-7CYTqhEeiP29_qDiwNWQ" instantiates="_N-7CYDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" type="InitializingBean" instantiates="IInitializingBean_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" type="DisposableBean" instantiates="IDisposableBean_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" type="ISpringAntaresClient_Type" instantiates="ISpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="EnvironmentCapable" instantiates="IEnvironmentCapable_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ListableBeanFactory" instantiates="IListableBeanFactory_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="HierarchicalBeanFactory" instantiates="IHierarchicalBeanFactory_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="MessageSource" instantiates="IMessageSource_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ApplicationEventPublisher" instantiates="IApplicationEventPublisher_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ResourcePatternResolver" instantiates="IResourcePatternResolver_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ApplicationContext" instantiates="IApplicationContext_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAntaresClient_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="AntaresClient" instantiates="IAntaresClient_SpringAntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleAntaresClient_SpringAntaresClient_me.hao0.antares.client.core.SpringAntaresClient1" direction="REQUIRED" type="ISimpleAntaresClient_Type" instantiates="ISimpleAntaresClient_SpringAntaresClient"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ihaolin.antares.antares.antares-demo.target.classes.antares-context.xml_spec">
+    <specComponents name="SpringAntaresClient_role" id="_N-7rBjqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBeanSpringAntaresClient_role" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBeanSpringAntaresClient_role" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISpringAntaresClientSpringAntaresClient_role" type="ISpringAntaresClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapableSpringAntaresClient_role" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactorySpringAntaresClient_role" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactorySpringAntaresClient_role" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSourceSpringAntaresClient_role" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisherSpringAntaresClient_role" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolverSpringAntaresClient_role" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextSpringAntaresClient_role" direction="REQUIRED" type="ApplicationContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAntaresClientSpringAntaresClient_role" direction="REQUIRED" type="AntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleAntaresClientSpringAntaresClient_role" direction="REQUIRED" type="ISimpleAntaresClient_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="me_hao0_antares_client_core_SpringAntaresClient_Type" id="_N7bpgDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" type="ISpringAntaresClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ApplicationContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAntaresClient_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="AntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleAntaresClient_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ISimpleAntaresClient_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="me_hao0_antares_client_job_DemoJob_Type" id="_N9L9ADqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJob_me_hao0_antares_client_job_DemoJob_Type" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IJobListener_DemoJob_me_hao0_antares_client_job_DemoJob_Type" type="JobListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IJobResultListener_DemoJob_me_hao0_antares_client_job_DemoJob_Type" type="JobResultListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJob_me_hao0_antares_client_job_DemoJob_Type" type="IDemoJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJob_me_hao0_antares_client_job_DemoJob_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJob_me_hao0_antares_client_job_DemoJob_Type" direction="REQUIRED" type="IRandom_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJob_me_hao0_antares_client_job_DemoJob_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAtomicLong_DemoJob_me_hao0_antares_client_job_DemoJob_Type" direction="REQUIRED" type="IAtomicLong_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="me_hao0_antares_client_job_DemoJobA_Type" id="_N9dCwDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJobA_me_hao0_antares_client_job_DemoJobA_Type" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobA_me_hao0_antares_client_job_DemoJobA_Type" type="IDemoJobA_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJobA_me_hao0_antares_client_job_DemoJobA_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJobA_me_hao0_antares_client_job_DemoJobA_Type" direction="REQUIRED" type="IRandom_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="me_hao0_antares_client_job_DemoJobB_Type" id="_N9kXgDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJobB_me_hao0_antares_client_job_DemoJobB_Type" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobB_me_hao0_antares_client_job_DemoJobB_Type" type="IDemoJobB_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJobB_me_hao0_antares_client_job_DemoJobB_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJobB_me_hao0_antares_client_job_DemoJobB_Type" direction="REQUIRED" type="IRandom_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="me_hao0_antares_client_job_HelloJob_Type" id="_N9p3EDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_HelloJob_me_hao0_antares_client_job_HelloJob_Type" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloJob_me_hao0_antares_client_job_HelloJob_Type" type="IHelloJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_HelloJob_me_hao0_antares_client_job_HelloJob_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_HelloJob_me_hao0_antares_client_job_HelloJob_Type" direction="REQUIRED" type="IRandom_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="me_hao0_antares_client_job_MyScriptJob_Type" id="_N9yZ8DqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMyScriptJob_me_hao0_antares_client_job_MyScriptJob_Type" type="IMyScriptJob_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="me_hao0_antares_client_job_TimeoutJob_Type" id="_N935gDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_TimeoutJob_me_hao0_antares_client_job_TimeoutJob_Type" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITimeoutJob_me_hao0_antares_client_job_TimeoutJob_Type" type="ITimeoutJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TimeoutJob_me_hao0_antares_client_job_TimeoutJob_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_TimeoutJob_me_hao0_antares_client_job_TimeoutJob_Type" direction="REQUIRED" type="IRandom_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="me_hao0_antares_client_core_SpringAntaresClient_Type" id="_N-N3xTqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" type="ISpringAntaresClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ApplicationContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAntaresClient_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="AntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleAntaresClient_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ISimpleAntaresClient_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="me_hao0_antares_client_job_DemoJob_Type" id="_N-OgBTqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJob_me_hao0_antares_client_job_DemoJob_Type" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IJobListener_DemoJob_me_hao0_antares_client_job_DemoJob_Type" type="JobListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IJobResultListener_DemoJob_me_hao0_antares_client_job_DemoJob_Type" type="JobResultListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJob_me_hao0_antares_client_job_DemoJob_Type" type="IDemoJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJob_me_hao0_antares_client_job_DemoJob_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJob_me_hao0_antares_client_job_DemoJob_Type" direction="REQUIRED" type="IRandom_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJob_me_hao0_antares_client_job_DemoJob_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAtomicLong_DemoJob_me_hao0_antares_client_job_DemoJob_Type" direction="REQUIRED" type="IAtomicLong_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="me_hao0_antares_client_job_DemoJobA_Type" id="_N-OgdzqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJobA_me_hao0_antares_client_job_DemoJobA_Type" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobA_me_hao0_antares_client_job_DemoJobA_Type" type="IDemoJobA_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJobA_me_hao0_antares_client_job_DemoJobA_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJobA_me_hao0_antares_client_job_DemoJobA_Type" direction="REQUIRED" type="IRandom_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="me_hao0_antares_client_job_DemoJobB_Type" id="_N-OgpzqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_DemoJobB_me_hao0_antares_client_job_DemoJobB_Type" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDemoJobB_me_hao0_antares_client_job_DemoJobB_Type" type="IDemoJobB_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_DemoJobB_me_hao0_antares_client_job_DemoJobB_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_DemoJobB_me_hao0_antares_client_job_DemoJobB_Type" direction="REQUIRED" type="IRandom_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="me_hao0_antares_client_job_HelloJob_Type" id="_N-Og1zqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_HelloJob_me_hao0_antares_client_job_HelloJob_Type" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloJob_me_hao0_antares_client_job_HelloJob_Type" type="IHelloJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_HelloJob_me_hao0_antares_client_job_HelloJob_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_HelloJob_me_hao0_antares_client_job_HelloJob_Type" direction="REQUIRED" type="IRandom_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="me_hao0_antares_client_job_MyScriptJob_Type" id="_N-OhBzqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMyScriptJob_me_hao0_antares_client_job_MyScriptJob_Type" type="IMyScriptJob_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="me_hao0_antares_client_job_TimeoutJob_Type" id="_N-OhEDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDefaultJob_TimeoutJob_me_hao0_antares_client_job_TimeoutJob_Type" type="DefaultJob"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITimeoutJob_me_hao0_antares_client_job_TimeoutJob_Type" type="ITimeoutJob_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TimeoutJob_me_hao0_antares_client_job_TimeoutJob_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRandom_TimeoutJob_me_hao0_antares_client_job_TimeoutJob_Type" direction="REQUIRED" type="IRandom_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="me_hao0_antares_client_core_SpringAntaresClient_Type" id="_N-kdEDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" type="ISpringAntaresClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ApplicationContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAntaresClient_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="AntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleAntaresClient_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ISimpleAntaresClient_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="me_hao0_antares_client_core_SpringAntaresClient_Type" id="_N-7pcDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" type="ISpringAntaresClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCapable_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="EnvironmentCapable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHierarchicalBeanFactory_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="HierarchicalBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMessageSource_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="MessageSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationEventPublisher_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ApplicationEventPublisher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcePatternResolver_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ResourcePatternResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContext_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ApplicationContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAntaresClient_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="AntaresClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleAntaresClient_SpringAntaresClient_me_hao0_antares_client_core_SpringAntaresClient_Type" direction="REQUIRED" type="ISimpleAntaresClient_Type"/>
+    </components>
+    <interfaceTypes name="InitializingBean">
+      <signatures name="afterPropertiesSet" type="void" id="_N8Ph0DqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="DisposableBean">
+      <signatures name="destroy" type="void" id="_N8Ph0TqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ISpringAntaresClient_Type">
+      <signatures name="afterPropertiesSet" type="void" id="_N8Ph0jqhEeiP29_qDiwNWQ"/>
+      <signatures name="destroy" type="void" id="_N8Ph0zqhEeiP29_qDiwNWQ"/>
+      <signatures name="registerJobs" type="void" id="_N8Ph1DqhEeiP29_qDiwNWQ"/>
+      <signatures name="setExecutorThreadCount" type="void" id="_N8Ph1TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Integer" id="_N8Ph1jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="EnvironmentCapable">
+      <signatures name="getEnvironment" type="org.springframework.core.env.Environment" id="_N8Ph2TqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ListableBeanFactory">
+      <signatures name="containsBeanDefinition" type="boolean" id="_N8Ph2jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8Ph2zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanDefinitionCount" type="int" id="_N8Ph3DqhEeiP29_qDiwNWQ"/>
+      <signatures name="getBeanDefinitionNames" type="java.lang.String[]" id="_N8Ph3TqhEeiP29_qDiwNWQ"/>
+      <signatures name="getBeansWithAnnotation" type="java.util.Map" id="_N8Ph3jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8Ph3zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="findAnnotationOnBean" type="java.lang.annotation.Annotation" id="_N8Ph4DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8Ph4TqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_N8Ph4jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForType" type="java.lang.String[]" id="_N8Ph4zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.core.ResolvableType" id="_N8Ph5DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForType" type="java.lang.String[]" id="_N8Ph5TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8Ph5jqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_N8Ph5zqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_N8Ph6DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForType" type="java.lang.String[]" id="_N8Ph6TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8Ph6jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForAnnotation" type="java.lang.String[]" id="_N8Ph6zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8Ph7DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeansOfType" type="java.util.Map" id="_N8Ph7TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8Ph7jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeansOfType" type="java.util.Map" id="_N8Ph7zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8Ph8DqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_N8Ph8TqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_N8Ph8jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getType" type="java.lang.Class" id="_N8Ph8zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8Ph9DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAliases" type="java.lang.String[]" id="_N8Ph9TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8Ph9jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isSingleton" type="boolean" id="_N8Ph9zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8Ph-DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_N8Ph-TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8Ph-jqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_N8Ph-zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_N8Ph_DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8Ph_TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_N8Ph_jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8Ph_zqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_N8PiADqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_N8PiATqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8PiAjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_N8PiAzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8PiBDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_N8PiBTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isPrototype" type="boolean" id="_N8PiBjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8PiBzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTypeMatch" type="boolean" id="_N8PiCDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8PiCTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_N8PiCjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTypeMatch" type="boolean" id="_N8PiCzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8PiDDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.core.ResolvableType" id="_N8PiDTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsBean" type="boolean" id="_N8PiDjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8PiDzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="HierarchicalBeanFactory">
+      <signatures name="getParentBeanFactory" type="org.springframework.beans.factory.BeanFactory" id="_N8PiEDqhEeiP29_qDiwNWQ"/>
+      <signatures name="containsLocalBean" type="boolean" id="_N8PiETqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8PiEjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getType" type="java.lang.Class" id="_N8PiEzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8PiFDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAliases" type="java.lang.String[]" id="_N8PiFTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8PiFjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isSingleton" type="boolean" id="_N8PiFzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8PiGDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_N8PiGTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8PiGjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_N8PiGzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_N8PiHDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8PiHTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_N8PiHjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8PiHzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_N8PiIDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_N8PiITqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8PiIjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_N8PiIzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8PiJDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_N8PiJTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isPrototype" type="boolean" id="_N8PiJjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8PiJzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTypeMatch" type="boolean" id="_N8QI4DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QI4TqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_N8QI4jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTypeMatch" type="boolean" id="_N8QI4zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QI5DqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.core.ResolvableType" id="_N8QI5TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsBean" type="boolean" id="_N8QI5jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QI5zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="MessageSource">
+      <signatures name="getMessage" type="java.lang.String" id="_N8QI6DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QI6TqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_N8QI6jqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_N8QI6zqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.util.Locale" id="_N8QI7DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMessage" type="java.lang.String" id="_N8QI7TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QI7jqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_N8QI7zqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.Locale" id="_N8QI8DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMessage" type="java.lang.String" id="_N8QI8TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.context.MessageSourceResolvable" id="_N8QI8jqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.Locale" id="_N8QI8zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ApplicationEventPublisher">
+      <signatures name="publishEvent" type="void" id="_N8QI9DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.context.ApplicationEvent" id="_N8QI9TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="publishEvent" type="void" id="_N8QI9jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_N8QI9zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ResourcePatternResolver">
+      <signatures name="getResources" type="org.springframework.core.io.Resource[]" id="_N8QI-DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QI-TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClassLoader" type="java.lang.ClassLoader" id="_N8QI-jqhEeiP29_qDiwNWQ"/>
+      <signatures name="getResource" type="org.springframework.core.io.Resource" id="_N8QI-zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QI_DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ApplicationContext">
+      <signatures name="getParent" type="org.springframework.context.ApplicationContext" id="_N8QI_TqhEeiP29_qDiwNWQ"/>
+      <signatures name="getId" type="java.lang.String" id="_N8QI_jqhEeiP29_qDiwNWQ"/>
+      <signatures name="getDisplayName" type="java.lang.String" id="_N8QI_zqhEeiP29_qDiwNWQ"/>
+      <signatures name="getAutowireCapableBeanFactory" type="org.springframework.beans.factory.config.AutowireCapableBeanFactory" id="_N8QJADqhEeiP29_qDiwNWQ"/>
+      <signatures name="getApplicationName" type="java.lang.String" id="_N8QJATqhEeiP29_qDiwNWQ"/>
+      <signatures name="getStartupDate" type="long" id="_N8QJAjqhEeiP29_qDiwNWQ"/>
+      <signatures name="getEnvironment" type="org.springframework.core.env.Environment" id="_N8QJAzqhEeiP29_qDiwNWQ"/>
+      <signatures name="containsBeanDefinition" type="boolean" id="_N8QJBDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QJBTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanDefinitionCount" type="int" id="_N8QJBjqhEeiP29_qDiwNWQ"/>
+      <signatures name="getBeanDefinitionNames" type="java.lang.String[]" id="_N8QJBzqhEeiP29_qDiwNWQ"/>
+      <signatures name="getBeansWithAnnotation" type="java.util.Map" id="_N8QJCDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8QJCTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="findAnnotationOnBean" type="java.lang.annotation.Annotation" id="_N8QJCjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QJCzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_N8QJDDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForType" type="java.lang.String[]" id="_N8QJDTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.core.ResolvableType" id="_N8QJDjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForType" type="java.lang.String[]" id="_N8QJDzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8QJEDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_N8QJETqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_N8QJEjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForType" type="java.lang.String[]" id="_N8QJEzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8QJFDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForAnnotation" type="java.lang.String[]" id="_N8QJFTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8QJFjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeansOfType" type="java.util.Map" id="_N8QJFzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8QJGDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeansOfType" type="java.util.Map" id="_N8QJGTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8QJGjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_N8QJGzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_N8QJHDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getType" type="java.lang.Class" id="_N8QJHTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QJHjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAliases" type="java.lang.String[]" id="_N8QJHzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QJIDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isSingleton" type="boolean" id="_N8QJITqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QJIjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_N8QJIzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QJJDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_N8QJJTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_N8QJJjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QJJzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_N8QJKDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QJKTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_N8QJKjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_N8QJKzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8QJLDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_N8QJLTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_N8QJLjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_N8QJLzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isPrototype" type="boolean" id="_N8QJMDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QJMTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTypeMatch" type="boolean" id="_N8QJMjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QJMzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_N8QJNDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTypeMatch" type="boolean" id="_N8QJNTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QJNjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.core.ResolvableType" id="_N8QJNzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsBean" type="boolean" id="_N8QJODqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QJOTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getParentBeanFactory" type="org.springframework.beans.factory.BeanFactory" id="_N8QJOjqhEeiP29_qDiwNWQ"/>
+      <signatures name="containsLocalBean" type="boolean" id="_N8QJOzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QJPDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMessage" type="java.lang.String" id="_N8QJPTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QJPjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_N8QJPzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_N8QJQDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.util.Locale" id="_N8QJQTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMessage" type="java.lang.String" id="_N8QJQjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QJQzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_N8QJRDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.Locale" id="_N8QJRTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMessage" type="java.lang.String" id="_N8QJRjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.context.MessageSourceResolvable" id="_N8QJRzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.Locale" id="_N8QJSDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="publishEvent" type="void" id="_N8QJSTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.context.ApplicationEvent" id="_N8QJSjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="publishEvent" type="void" id="_N8QJSzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_N8QJTDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getResources" type="org.springframework.core.io.Resource[]" id="_N8QJTTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QJTjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClassLoader" type="java.lang.ClassLoader" id="_N8QJTzqhEeiP29_qDiwNWQ"/>
+      <signatures name="getResource" type="org.springframework.core.io.Resource" id="_N8QJUDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N8QJUTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="AntaresClient">
+      <signatures name="getJobManager" type="me.hao0.antares.client.job.JobManager" id="_N82l0DqhEeiP29_qDiwNWQ"/>
+      <signatures name="getAppName" type="java.lang.String" id="_N82l0TqhEeiP29_qDiwNWQ"/>
+      <signatures name="registerJob" type="void" id="_N82l0jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.Job" id="_N82l0zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getHttp" type="me.hao0.antares.client.core.AntaresHttpAgent" id="_N82l1DqhEeiP29_qDiwNWQ"/>
+      <signatures name="getZk" type="me.hao0.antares.common.zk.ZkClient" id="_N82l1TqhEeiP29_qDiwNWQ"/>
+      <signatures name="getAppSecret" type="java.lang.String" id="_N82l1jqhEeiP29_qDiwNWQ"/>
+      <signatures name="getHttpServers" type="java.util.List" id="_N82l1zqhEeiP29_qDiwNWQ"/>
+      <signatures name="removeHttpServer" type="void" id="_N82l2DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N82l2TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addHttpServer" type="void" id="_N82l2jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N82l2zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getZkServers" type="java.lang.String" id="_N82l3DqhEeiP29_qDiwNWQ"/>
+      <signatures name="getClientVersion" type="java.lang.String" id="_N82l3TqhEeiP29_qDiwNWQ"/>
+      <signatures name="getZkNamespace" type="java.lang.String" id="_N82l3jqhEeiP29_qDiwNWQ"/>
+      <signatures name="setJobExecutor" type="void" id="_N82l3zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.execute.JobExecutor" id="_N82l4DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getJobExecutor" type="me.hao0.antares.client.job.execute.JobExecutor" id="_N82l4TqhEeiP29_qDiwNWQ"/>
+      <signatures name="getExecutorThreadCount" type="java.lang.Integer" id="_N82l4jqhEeiP29_qDiwNWQ"/>
+      <signatures name="shutdown" type="void" id="_N82l4zqhEeiP29_qDiwNWQ"/>
+      <signatures name="start" type="void" id="_N82l5DqhEeiP29_qDiwNWQ"/>
+      <signatures name="isShutdown" type="boolean" id="_N82l5TqhEeiP29_qDiwNWQ"/>
+      <signatures name="isStart" type="boolean" id="_N82l5jqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ISimpleAntaresClient_Type">
+      <signatures name="shutdown" type="void" id="_N87eUDqhEeiP29_qDiwNWQ"/>
+      <signatures name="start" type="void" id="_N87eUTqhEeiP29_qDiwNWQ"/>
+      <signatures name="isShutdown" type="boolean" id="_N87eUjqhEeiP29_qDiwNWQ"/>
+      <signatures name="isStart" type="boolean" id="_N87eUzqhEeiP29_qDiwNWQ"/>
+      <signatures name="doStart" type="void" id="_N87eVDqhEeiP29_qDiwNWQ"/>
+      <signatures name="doShutdown" type="void" id="_N87eVTqhEeiP29_qDiwNWQ"/>
+      <signatures name="shutdown" type="void" id="_N87eVjqhEeiP29_qDiwNWQ"/>
+      <signatures name="start" type="void" id="_N87eVzqhEeiP29_qDiwNWQ"/>
+      <signatures name="isShutdown" type="boolean" id="_N87eWDqhEeiP29_qDiwNWQ"/>
+      <signatures name="isStart" type="boolean" id="_N87eWTqhEeiP29_qDiwNWQ"/>
+      <signatures name="getJobManager" type="me.hao0.antares.client.job.JobManager" id="_N87eWjqhEeiP29_qDiwNWQ"/>
+      <signatures name="getAppName" type="java.lang.String" id="_N87eWzqhEeiP29_qDiwNWQ"/>
+      <signatures name="registerJob" type="void" id="_N87eXDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.Job" id="_N87eXTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getHttp" type="me.hao0.antares.client.core.AntaresHttpAgent" id="_N87eXjqhEeiP29_qDiwNWQ"/>
+      <signatures name="getZk" type="me.hao0.antares.common.zk.ZkClient" id="_N87eXzqhEeiP29_qDiwNWQ"/>
+      <signatures name="getAppSecret" type="java.lang.String" id="_N87eYDqhEeiP29_qDiwNWQ"/>
+      <signatures name="getHttpServers" type="java.util.List" id="_N87eYTqhEeiP29_qDiwNWQ"/>
+      <signatures name="removeHttpServer" type="void" id="_N87eYjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N87eYzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addHttpServer" type="void" id="_N87eZDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N87eZTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getZkServers" type="java.lang.String" id="_N87eZjqhEeiP29_qDiwNWQ"/>
+      <signatures name="getClientVersion" type="java.lang.String" id="_N87eZzqhEeiP29_qDiwNWQ"/>
+      <signatures name="getZkNamespace" type="java.lang.String" id="_N87eaDqhEeiP29_qDiwNWQ"/>
+      <signatures name="setJobExecutor" type="void" id="_N87eaTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.execute.JobExecutor" id="_N87eajqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getJobExecutor" type="me.hao0.antares.client.job.execute.JobExecutor" id="_N87eazqhEeiP29_qDiwNWQ"/>
+      <signatures name="getExecutorThreadCount" type="java.lang.Integer" id="_N87ebDqhEeiP29_qDiwNWQ"/>
+      <signatures name="afterStart" type="void" id="_N87ebTqhEeiP29_qDiwNWQ"/>
+      <signatures name="afterShutdown" type="void" id="_N87ebjqhEeiP29_qDiwNWQ"/>
+      <signatures name="setExecutorThreadCount" type="void" id="_N87ebzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Integer" id="_N87ecDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="shutdown" type="void" id="_N87ecTqhEeiP29_qDiwNWQ"/>
+      <signatures name="start" type="void" id="_N87ecjqhEeiP29_qDiwNWQ"/>
+      <signatures name="isShutdown" type="boolean" id="_N87eczqhEeiP29_qDiwNWQ"/>
+      <signatures name="isStart" type="boolean" id="_N87edDqhEeiP29_qDiwNWQ"/>
+      <signatures name="getJobManager" type="me.hao0.antares.client.job.JobManager" id="_N87edTqhEeiP29_qDiwNWQ"/>
+      <signatures name="getAppName" type="java.lang.String" id="_N87edjqhEeiP29_qDiwNWQ"/>
+      <signatures name="registerJob" type="void" id="_N87edzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.Job" id="_N87eeDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getHttp" type="me.hao0.antares.client.core.AntaresHttpAgent" id="_N87eeTqhEeiP29_qDiwNWQ"/>
+      <signatures name="getZk" type="me.hao0.antares.common.zk.ZkClient" id="_N87eejqhEeiP29_qDiwNWQ"/>
+      <signatures name="getAppSecret" type="java.lang.String" id="_N87eezqhEeiP29_qDiwNWQ"/>
+      <signatures name="getHttpServers" type="java.util.List" id="_N87efDqhEeiP29_qDiwNWQ"/>
+      <signatures name="removeHttpServer" type="void" id="_N87efTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N87efjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addHttpServer" type="void" id="_N87efzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N87egDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getZkServers" type="java.lang.String" id="_N87egTqhEeiP29_qDiwNWQ"/>
+      <signatures name="getClientVersion" type="java.lang.String" id="_N87egjqhEeiP29_qDiwNWQ"/>
+      <signatures name="getZkNamespace" type="java.lang.String" id="_N87egzqhEeiP29_qDiwNWQ"/>
+      <signatures name="setJobExecutor" type="void" id="_N87ehDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.execute.JobExecutor" id="_N87ehTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getJobExecutor" type="me.hao0.antares.client.job.execute.JobExecutor" id="_N87ehjqhEeiP29_qDiwNWQ"/>
+      <signatures name="getExecutorThreadCount" type="java.lang.Integer" id="_N87ehzqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IAbstractAntaresClient_Type">
+      <signatures name="shutdown" type="void" id="_N87enzqhEeiP29_qDiwNWQ"/>
+      <signatures name="start" type="void" id="_N87eoDqhEeiP29_qDiwNWQ"/>
+      <signatures name="isShutdown" type="boolean" id="_N87eoTqhEeiP29_qDiwNWQ"/>
+      <signatures name="isStart" type="boolean" id="_N87eojqhEeiP29_qDiwNWQ"/>
+      <signatures name="doStart" type="void" id="_N87eozqhEeiP29_qDiwNWQ"/>
+      <signatures name="doShutdown" type="void" id="_N87epDqhEeiP29_qDiwNWQ"/>
+      <signatures name="shutdown" type="void" id="_N87epTqhEeiP29_qDiwNWQ"/>
+      <signatures name="start" type="void" id="_N87epjqhEeiP29_qDiwNWQ"/>
+      <signatures name="isShutdown" type="boolean" id="_N87epzqhEeiP29_qDiwNWQ"/>
+      <signatures name="isStart" type="boolean" id="_N87eqDqhEeiP29_qDiwNWQ"/>
+      <signatures name="getJobManager" type="me.hao0.antares.client.job.JobManager" id="_N87eqTqhEeiP29_qDiwNWQ"/>
+      <signatures name="getAppName" type="java.lang.String" id="_N87eqjqhEeiP29_qDiwNWQ"/>
+      <signatures name="registerJob" type="void" id="_N87eqzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.Job" id="_N87erDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getHttp" type="me.hao0.antares.client.core.AntaresHttpAgent" id="_N87erTqhEeiP29_qDiwNWQ"/>
+      <signatures name="getZk" type="me.hao0.antares.common.zk.ZkClient" id="_N87erjqhEeiP29_qDiwNWQ"/>
+      <signatures name="getAppSecret" type="java.lang.String" id="_N87erzqhEeiP29_qDiwNWQ"/>
+      <signatures name="getHttpServers" type="java.util.List" id="_N87esDqhEeiP29_qDiwNWQ"/>
+      <signatures name="removeHttpServer" type="void" id="_N87esTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N87esjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addHttpServer" type="void" id="_N87eszqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_N87etDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getZkServers" type="java.lang.String" id="_N87etTqhEeiP29_qDiwNWQ"/>
+      <signatures name="getClientVersion" type="java.lang.String" id="_N87etjqhEeiP29_qDiwNWQ"/>
+      <signatures name="getZkNamespace" type="java.lang.String" id="_N87etzqhEeiP29_qDiwNWQ"/>
+      <signatures name="setJobExecutor" type="void" id="_N87euDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.execute.JobExecutor" id="_N87euTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getJobExecutor" type="me.hao0.antares.client.job.execute.JobExecutor" id="_N87eujqhEeiP29_qDiwNWQ"/>
+      <signatures name="getExecutorThreadCount" type="java.lang.Integer" id="_N87euzqhEeiP29_qDiwNWQ"/>
+      <signatures name="afterStart" type="void" id="_N87evDqhEeiP29_qDiwNWQ"/>
+      <signatures name="afterShutdown" type="void" id="_N87evTqhEeiP29_qDiwNWQ"/>
+      <signatures name="setExecutorThreadCount" type="void" id="_N87evjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Integer" id="_N87evzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Lifecycle">
+      <signatures name="shutdown" type="void" id="_N87ewDqhEeiP29_qDiwNWQ"/>
+      <signatures name="start" type="void" id="_N87ewTqhEeiP29_qDiwNWQ"/>
+      <signatures name="isShutdown" type="boolean" id="_N87ewjqhEeiP29_qDiwNWQ"/>
+      <signatures name="isStart" type="boolean" id="_N87ewzqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IComponent_Type">
+      <signatures name="shutdown" type="void" id="_N87exDqhEeiP29_qDiwNWQ"/>
+      <signatures name="start" type="void" id="_N87exTqhEeiP29_qDiwNWQ"/>
+      <signatures name="isShutdown" type="boolean" id="_N87exjqhEeiP29_qDiwNWQ"/>
+      <signatures name="isStart" type="boolean" id="_N87exzqhEeiP29_qDiwNWQ"/>
+      <signatures name="doStart" type="void" id="_N87eyDqhEeiP29_qDiwNWQ"/>
+      <signatures name="doShutdown" type="void" id="_N87eyTqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="DefaultJob">
+      <signatures name="execute" type="me.hao0.antares.client.job.JobResult" id="_N9T40DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.JobContext" id="_N9T40TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="JobListener">
+      <signatures name="onAfter" type="void" id="_N9T40jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.JobContext" id="_N9T40zqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="me.hao0.antares.client.job.JobResult" id="_N9T41DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onBefore" type="void" id="_N9T41TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.JobContext" id="_N9T41jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="JobResultListener">
+      <signatures name="onSuccess" type="void" id="_N9T41zqhEeiP29_qDiwNWQ"/>
+      <signatures name="onFail" type="void" id="_N9T42DqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IDemoJob_Type">
+      <signatures name="execute" type="me.hao0.antares.client.job.JobResult" id="_N9T42TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.JobContext" id="_N9T42jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onAfter" type="void" id="_N9T42zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.JobContext" id="_N9T43DqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="me.hao0.antares.client.job.JobResult" id="_N9T43TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onBefore" type="void" id="_N9T43jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.JobContext" id="_N9T43zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onSuccess" type="void" id="_N9T44DqhEeiP29_qDiwNWQ"/>
+      <signatures name="onFail" type="void" id="_N9T44TqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Job">
+      <signatures name="execute" type="me.hao0.antares.client.job.JobResult" id="_N9T44jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.JobContext" id="_N9T44zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IRandom_Type">
+      <signatures name="next" type="int" id="_N9T47TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_N9T47jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readObject" type="void" id="_N9T47zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.ObjectInputStream" id="_N9T48DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="writeObject" type="void" id="_N9T48TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.ObjectOutputStream" id="_N9T48jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nextInt" type="int" id="_N9T48zqhEeiP29_qDiwNWQ"/>
+      <signatures name="nextDouble" type="double" id="_N9T49DqhEeiP29_qDiwNWQ"/>
+      <signatures name="nextBytes" type="void" id="_N9T49TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_N9T49jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nextBoolean" type="boolean" id="_N9T49zqhEeiP29_qDiwNWQ"/>
+      <signatures name="nextFloat" type="float" id="_N9T4-DqhEeiP29_qDiwNWQ"/>
+      <signatures name="nextLong" type="long" id="_N9T4-TqhEeiP29_qDiwNWQ"/>
+      <signatures name="doubles" type="java.util.stream.DoubleStream" id="_N9T4-jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="double" id="_N9T4-zqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="double" id="_N9T4_DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="initialScramble" type="long" id="_N9T4_TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_N9T4_jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="internalNextDouble" type="double" id="_N9T4_zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="double" id="_N9T5ADqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="double" id="_N9T5ATqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="internalNextInt" type="int" id="_N9T5AjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_N9T5AzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_N9T5BDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="internalNextLong" type="long" id="_N9T5BTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_N9T5BjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="long" id="_N9T5BzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="ints" type="java.util.stream.IntStream" id="_N9T5CDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_N9T5CTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_N9T5CjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_N9T5CzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="longs" type="java.util.stream.LongStream" id="_N9T5DDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_N9T5DTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nextGaussian" type="double" id="_N9T5DjqhEeiP29_qDiwNWQ"/>
+      <signatures name="resetSeed" type="void" id="_N9T5DzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_N9T5EDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="seedUniquifier" type="long" id="_N9T5ETqhEeiP29_qDiwNWQ"/>
+      <signatures name="setSeed" type="void" id="_N9T5EjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_N9T5EzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IAtomicLong_Type">
+      <signatures name="byteValue" type="byte" id="_N9T5FDqhEeiP29_qDiwNWQ"/>
+      <signatures name="shortValue" type="short" id="_N9T5FTqhEeiP29_qDiwNWQ"/>
+      <signatures name="intValue" type="int" id="_N9T5FjqhEeiP29_qDiwNWQ"/>
+      <signatures name="longValue" type="long" id="_N9T5FzqhEeiP29_qDiwNWQ"/>
+      <signatures name="floatValue" type="float" id="_N9T5GDqhEeiP29_qDiwNWQ"/>
+      <signatures name="doubleValue" type="double" id="_N9T5GTqhEeiP29_qDiwNWQ"/>
+      <signatures name="get" type="long" id="_N9T5GjqhEeiP29_qDiwNWQ"/>
+      <signatures name="toString" type="java.lang.String" id="_N9T5GzqhEeiP29_qDiwNWQ"/>
+      <signatures name="set" type="void" id="_N9T5HDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_N9T5HTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lazySet" type="void" id="_N9T5HjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_N9T5HzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compareAndSet" type="boolean" id="_N9T5IDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_N9T5ITqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="long" id="_N9T5IjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="accumulateAndGet" type="long" id="_N9T5IzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_N9T5JDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.LongBinaryOperator" id="_N9T5JTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAndAccumulate" type="long" id="_N9T5JjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_N9T5JzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.LongBinaryOperator" id="_N9T5KDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAndSet" type="long" id="_N9T5KTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_N9T5KjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAndUpdate" type="long" id="_N9T5KzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.LongUnaryOperator" id="_N9T5LDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="updateAndGet" type="long" id="_N9T5LTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.LongUnaryOperator" id="_N9T5LjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="weakCompareAndSet" type="boolean" id="_N9T5LzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_N9T5MDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="long" id="_N9T5MTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAndAdd" type="long" id="_N9T5MjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_N9T5MzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addAndGet" type="long" id="_N9T5NDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_N9T5NTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="decrementAndGet" type="long" id="_N9T5NjqhEeiP29_qDiwNWQ"/>
+      <signatures name="getAndDecrement" type="long" id="_N9T5NzqhEeiP29_qDiwNWQ"/>
+      <signatures name="getAndIncrement" type="long" id="_N9T5ODqhEeiP29_qDiwNWQ"/>
+      <signatures name="incrementAndGet" type="long" id="_N9T5OTqhEeiP29_qDiwNWQ"/>
+      <signatures name="VMSupportsCS8" type="boolean" id="_N9T5OjqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="INumber_Type">
+      <signatures name="byteValue" type="byte" id="_N9T5OzqhEeiP29_qDiwNWQ"/>
+      <signatures name="shortValue" type="short" id="_N9T5PDqhEeiP29_qDiwNWQ"/>
+      <signatures name="intValue" type="int" id="_N9T5PTqhEeiP29_qDiwNWQ"/>
+      <signatures name="longValue" type="long" id="_N9T5PjqhEeiP29_qDiwNWQ"/>
+      <signatures name="floatValue" type="float" id="_N9T5PzqhEeiP29_qDiwNWQ"/>
+      <signatures name="doubleValue" type="double" id="_N9T5QDqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IDemoJobA_Type">
+      <signatures name="execute" type="me.hao0.antares.client.job.JobResult" id="_N9dCwzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.JobContext" id="_N9dCxDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IDemoJobB_Type">
+      <signatures name="execute" type="me.hao0.antares.client.job.JobResult" id="_N9kXgzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.JobContext" id="_N9kXhDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IHelloJob_Type">
+      <signatures name="execute" type="me.hao0.antares.client.job.JobResult" id="_N9p3EzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.JobContext" id="_N9p3FDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IMyScriptJob_Type">
+      <signatures name="execute" type="me.hao0.antares.client.job.JobResult" id="_N9yZ8TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.JobContext" id="_N9yZ8jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IScriptJob_Type">
+      <signatures name="execute" type="me.hao0.antares.client.job.JobResult" id="_N9yZ9TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.JobContext" id="_N9yZ9jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ITimeoutJob_Type">
+      <signatures name="execute" type="me.hao0.antares.client.job.JobResult" id="_N935gzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="me.hao0.antares.client.job.JobContext" id="_N935hDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

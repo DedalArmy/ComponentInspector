@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="bill1012.AdminEAP">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="bill1012.AdminEAP.AdminEAP-web.src.main.resources.spring-redis.xml_config" implements="//@architectureDescriptions[name='bill1012.AdminEAP.AdminEAP-web.src.main.resources.spring-redis.xml_spec']">
+    <configComponents name="redis.clients.jedis.JedisPoolConfig" id="_jMkF0DqWEeiP29_qDiwNWQ" realizes="_jSo4ujqWEeiP29_qDiwNWQ" implements="_jQN2wDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" id="_jMkF0TqWEeiP29_qDiwNWQ" realizes="_jSo4ojqWEeiP29_qDiwNWQ" implements="_jRfpIDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.springframework.data.redis.core.StringRedisTemplate" id="_jMkF0jqWEeiP29_qDiwNWQ" realizes="_jSo4rjqWEeiP29_qDiwNWQ" implements="_jSoRkDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configConnections refID="_jMkF0zqWEeiP29_qDiwNWQ" property="&quot;poolConfig&quot;" clientClassElem="_jMkF0TqWEeiP29_qDiwNWQ" serverClassElem="_jMkF0DqWEeiP29_qDiwNWQ"/>
+    <configConnections refID="_jMks4DqWEeiP29_qDiwNWQ" property="&quot;connectionFactory&quot;" clientClassElem="_jMkF0jqWEeiP29_qDiwNWQ" serverClassElem="_jMkF0TqWEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="bill1012.AdminEAP.AdminEAP-web.src.main.resources.spring-redis.xml_asm" instantiates="//@architectureDescriptions[name='bill1012.AdminEAP.AdminEAP-web.src.main.resources.spring-redis.xml_config']">
+    <assmComponents name="poolConfig" id="_jMks4TqWEeiP29_qDiwNWQ" instantiates="_jMkF0DqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_poolConfig" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="connectionFactory" id="_jMks4jqWEeiP29_qDiwNWQ" instantiates="_jMkF0TqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_connectionFactory" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="redisTemplate" id="_jMks4zqWEeiP29_qDiwNWQ" instantiates="_jMkF0jqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_redisTemplate" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assemblyConnections refID="_jMks5DqWEeiP29_qDiwNWQ" property="connectionFactory.poolConfig" clientInstElem="_jMks4jqWEeiP29_qDiwNWQ" serverInstElem="_jMks4TqWEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_jMks5TqWEeiP29_qDiwNWQ" property="redisTemplate.connectionFactory" clientInstElem="_jMks4zqWEeiP29_qDiwNWQ" serverInstElem="_jMks4jqWEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="bill1012.AdminEAP.AdminEAP-web.src.main.resources.spring-redis.xml_spec">
+    <specComponents name="Object_role" id="_jSo4ojqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_jSo4rjqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_jSo4ujqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specConnections refID="_jSo4xjqWEeiP29_qDiwNWQ"/>
+    <specConnections refID="_jSo4xzqWEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_jQN2wDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_jRfpIDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_jSoRkDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_jQN2wTqWEeiP29_qDiwNWQ"/>
+      <signatures name="wait" type="void" id="_jQN2wjqWEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_jQN2wzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_jQN2xDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_jQN2xTqWEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_jQN2xjqWEeiP29_qDiwNWQ"/>
+      <signatures name="getClass" type="java.lang.Class" id="_jQN2xzqWEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_jQN2yDqWEeiP29_qDiwNWQ"/>
+      <signatures name="notify" type="void" id="_jQN2yTqWEeiP29_qDiwNWQ"/>
+      <signatures name="notifyAll" type="void" id="_jQN2yjqWEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_jQN2yzqWEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

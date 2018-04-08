@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="DSpace.dspace-oai">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="DSpace.dspace-oai.src.main.webapp.WEB-INF.spring.applicationContext.xml_config" implements="//@architectureDescriptions[name='DSpace.dspace-oai.src.main.webapp.WEB-INF.spring.applicationContext.xml_spec']">
+    <configComponents name="org.dspace.utils.DSpace" id="_TLl_wDqaEeiP29_qDiwNWQ" realizes="_Tyqo3jqaEeiP29_qDiwNWQ" implements="_TPiroDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpace" type="IDSpace_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonLifecycle_DSpace" direction="REQUIRED" type="CommonLifecycle"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceKernel_DSpace" direction="REQUIRED" type="DSpaceKernel"/>
+      <attributes name="kernel" type="org.dspace.kernel.DSpaceKernel"/>
+    </configComponents>
+    <configComponents name="dspace" id="_TLl_wTqaEeiP29_qDiwNWQ" realizes="_Tyqo0jqaEeiP29_qDiwNWQ" implements="_TfBSEDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.dspace.usage.LoggerUsageEventListener" id="_TLl_wjqaEeiP29_qDiwNWQ" realizes="_Typ_wDqaEeiP29_qDiwNWQ" implements="_TfqyUDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerUsageEventListener" type="ILoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_LoggerUsageEventListener" direction="REQUIRED" type="ILogger_Type"/>
+      <attributes name="log" type="org.apache.log4j.Logger"/>
+    </configComponents>
+    <configComponents name="org.dspace.statistics.SolrLoggerUsageEventListener" id="_TLmm0DqaEeiP29_qDiwNWQ" realizes="_TyqAwDqaEeiP29_qDiwNWQ" implements="_Tg46UDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISolrLoggerUsageEventListener" type="ISolrLoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_SolrLoggerUsageEventListener" direction="REQUIRED" type="ILogger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISolrLoggerService_SolrLoggerUsageEventListener" direction="REQUIRED" type="SolrLoggerService"/>
+      <attributes name="log" type="org.apache.log4j.Logger"/>
+      <attributes name="solrLoggerService" type="org.dspace.statistics.service.SolrLoggerService"/>
+    </configComponents>
+    <configComponents name="org.dspace.google.GoogleRecorderEventListener" id="_TLmm0TqaEeiP29_qDiwNWQ" realizes="_TyqCGTqaEeiP29_qDiwNWQ" implements="_Tmz8IDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IGoogleRecorderEventListener" type="IGoogleRecorderEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_GoogleRecorderEventListener" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GoogleRecorderEventListener" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_GoogleRecorderEventListener" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_GoogleRecorderEventListener" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpClient_GoogleRecorderEventListener" direction="REQUIRED" type="HttpClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICloseable_GoogleRecorderEventListener" direction="REQUIRED" type="Closeable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICloseableHttpClient_GoogleRecorderEventListener" direction="REQUIRED" type="ICloseableHttpClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_GoogleRecorderEventListener" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GoogleRecorderEventListener" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_GoogleRecorderEventListener" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_GoogleRecorderEventListener" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_GoogleRecorderEventListener" direction="REQUIRED" type="ILogger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IContentServiceFactory_GoogleRecorderEventListener" direction="REQUIRED" type="IContentServiceFactory_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConfigurationService_GoogleRecorderEventListener" direction="REQUIRED" type="ConfigurationService"/>
+      <attributes name="analyticsKey" type="java.lang.String"/>
+      <attributes name="httpclient" type="org.apache.http.impl.client.CloseableHttpClient"/>
+      <attributes name="GoogleURL" type="java.lang.String"/>
+      <attributes name="log" type="org.apache.log4j.Logger"/>
+      <attributes name="contentServiceFactory" type="org.dspace.content.factory.ContentServiceFactory"/>
+      <attributes name="configurationService" type="org.dspace.services.ConfigurationService"/>
+    </configComponents>
+    <configConnections refID="_TLmm0jqaEeiP29_qDiwNWQ" property="&quot;eventService&quot;" clientClassElem="_TLl_wjqaEeiP29_qDiwNWQ" serverClassElem="_TLl_wTqaEeiP29_qDiwNWQ"/>
+    <configConnections refID="_TLmm0zqaEeiP29_qDiwNWQ" property="&quot;eventService&quot;" clientClassElem="_TLmm0DqaEeiP29_qDiwNWQ" serverClassElem="_TLl_wTqaEeiP29_qDiwNWQ"/>
+    <configConnections refID="_TLmm1DqaEeiP29_qDiwNWQ" property="&quot;eventService&quot;" clientClassElem="_TLmm0TqaEeiP29_qDiwNWQ" serverClassElem="_TLl_wTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="DSpace.dspace-oai.src.main.webapp.WEB-INF.spring.applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='DSpace.dspace-oai.src.main.webapp.WEB-INF.spring.applicationContext.xml_config']">
+    <assmComponents name="dspace" id="_TLmm1TqaEeiP29_qDiwNWQ" instantiates="_TLl_wDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpace_dspace" type="IDSpace_Type" instantiates="IDSpace"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonLifecycle_DSpace_dspace" direction="REQUIRED" type="CommonLifecycle" instantiates="ICommonLifecycle_DSpace"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceKernel_DSpace_dspace" direction="REQUIRED" type="DSpaceKernel" instantiates="IDSpaceKernel_DSpace"/>
+    </assmComponents>
+    <assmComponents name="dspace.eventService" id="_TLmm1jqaEeiP29_qDiwNWQ" instantiates="_TLl_wTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_dspace.eventService" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="org.dspace.usage.LoggerUsageEventListener1" id="_TLmm1zqaEeiP29_qDiwNWQ" instantiates="_TLl_wjqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerUsageEventListener_org.dspace.usage.LoggerUsageEventListener1" type="ILoggerUsageEventListener_Type" instantiates="ILoggerUsageEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_LoggerUsageEventListener_org.dspace.usage.LoggerUsageEventListener1" direction="REQUIRED" type="ILogger_Type" instantiates="ILogger_LoggerUsageEventListener"/>
+    </assmComponents>
+    <assmComponents name="org.dspace.statistics.SolrLoggerUsageEventListener1" id="_TLmm2DqaEeiP29_qDiwNWQ" instantiates="_TLmm0DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISolrLoggerUsageEventListener_org.dspace.statistics.SolrLoggerUsageEventListener1" type="ISolrLoggerUsageEventListener_Type" instantiates="ISolrLoggerUsageEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_SolrLoggerUsageEventListener_org.dspace.statistics.SolrLoggerUsageEventListener1" direction="REQUIRED" type="ILogger_Type" instantiates="ILogger_SolrLoggerUsageEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISolrLoggerService_SolrLoggerUsageEventListener_org.dspace.statistics.SolrLoggerUsageEventListener1" direction="REQUIRED" type="SolrLoggerService" instantiates="ISolrLoggerService_SolrLoggerUsageEventListener"/>
+    </assmComponents>
+    <assmComponents name="org.dspace.google.GoogleRecorderEventListener1" id="_TLmm2TqaEeiP29_qDiwNWQ" instantiates="_TLmm0TqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IGoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" type="IGoogleRecorderEventListener_Type" instantiates="IGoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" instantiates="null_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="Comparable" instantiates="IComparable_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="IString_Type" instantiates="IString_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpClient_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="HttpClient" instantiates="IHttpClient_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICloseable_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="Closeable" instantiates="ICloseable_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICloseableHttpClient_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="ICloseableHttpClient_Type" instantiates="ICloseableHttpClient_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" instantiates="null_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="Comparable" instantiates="IComparable_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="IString_Type" instantiates="IString_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="ILogger_Type" instantiates="ILogger_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IContentServiceFactory_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="IContentServiceFactory_Type" instantiates="IContentServiceFactory_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConfigurationService_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="ConfigurationService" instantiates="IConfigurationService_GoogleRecorderEventListener"/>
+    </assmComponents>
+    <assemblyConnections refID="_TLnN4DqaEeiP29_qDiwNWQ" serverInstElem="_TLmm1jqaEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_TLnN4TqaEeiP29_qDiwNWQ" serverInstElem="_TLmm1jqaEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_TLnN4jqaEeiP29_qDiwNWQ" serverInstElem="_TLmm1jqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="DSpace.dspace-oai.src.main.webapp.WEB-INF.spring.applicationContext.xml_spec">
+    <specComponents name="LoggerUsageEventListener_role" id="_Typ_wDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerUsageEventListenerLoggerUsageEventListener_role" type="ILoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerLoggerUsageEventListener_role" direction="REQUIRED" type="ILogger_Type"/>
+    </specComponents>
+    <specComponents name="SolrLoggerUsageEventListener_role" id="_TyqAwDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISolrLoggerUsageEventListenerSolrLoggerUsageEventListener_role" type="ISolrLoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerSolrLoggerUsageEventListener_role" direction="REQUIRED" type="ILogger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISolrLoggerServiceSolrLoggerUsageEventListener_role" direction="REQUIRED" type="SolrLoggerService"/>
+    </specComponents>
+    <specComponents name="GoogleRecorderEventListener_role" id="_TyqCGTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IGoogleRecorderEventListenerGoogleRecorderEventListener_role" type="IGoogleRecorderEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullGoogleRecorderEventListener_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableGoogleRecorderEventListener_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceGoogleRecorderEventListener_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringGoogleRecorderEventListener_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpClientGoogleRecorderEventListener_role" direction="REQUIRED" type="HttpClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICloseableGoogleRecorderEventListener_role" direction="REQUIRED" type="Closeable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICloseableHttpClientGoogleRecorderEventListener_role" direction="REQUIRED" type="ICloseableHttpClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullGoogleRecorderEventListener_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableGoogleRecorderEventListener_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceGoogleRecorderEventListener_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringGoogleRecorderEventListener_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerGoogleRecorderEventListener_role" direction="REQUIRED" type="ILogger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IContentServiceFactoryGoogleRecorderEventListener_role" direction="REQUIRED" type="IContentServiceFactory_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConfigurationServiceGoogleRecorderEventListener_role" direction="REQUIRED" type="ConfigurationService"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_Tyqo0jqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="DSpace_role" id="_Tyqo3jqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceDSpace_role" type="IDSpace_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonLifecycleDSpace_role" direction="REQUIRED" type="CommonLifecycle"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceKernelDSpace_role" direction="REQUIRED" type="DSpaceKernel"/>
+    </specComponents>
+    <specConnections refID="_Tyqo8jqaEeiP29_qDiwNWQ"/>
+    <specConnections refID="_Tyqo8zqaEeiP29_qDiwNWQ"/>
+    <specConnections refID="_Tyqo9DqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="DSpace.dspace-oai.target.dspace-oai-7.0-SNAPSHOT.WEB-INF.spring.applicationContext.xml_config" implements="//@architectureDescriptions[name='DSpace.dspace-oai.target.dspace-oai-7.0-SNAPSHOT.WEB-INF.spring.applicationContext.xml_spec']">
+    <configComponents name="org.dspace.utils.DSpace" id="_Ty_W8DqaEeiP29_qDiwNWQ" realizes="_T0EX3zqaEeiP29_qDiwNWQ" implements="_TzAlEzqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpace" type="IDSpace_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonLifecycle_DSpace" direction="REQUIRED" type="CommonLifecycle"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceKernel_DSpace" direction="REQUIRED" type="DSpaceKernel"/>
+      <attributes name="kernel" type="org.dspace.kernel.DSpaceKernel"/>
+    </configComponents>
+    <configComponents name="dspace" id="_Ty_W8TqaEeiP29_qDiwNWQ" realizes="_T0EX8zqaEeiP29_qDiwNWQ" implements="_T0Dt8DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.dspace.usage.LoggerUsageEventListener" id="_Ty_W8jqaEeiP29_qDiwNWQ" realizes="_T0E8GzqaEeiP29_qDiwNWQ" implements="_T0Dt_DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerUsageEventListener" type="ILoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_LoggerUsageEventListener" direction="REQUIRED" type="ILogger_Type"/>
+      <attributes name="log" type="org.apache.log4j.Logger"/>
+    </configComponents>
+    <configComponents name="org.dspace.statistics.SolrLoggerUsageEventListener" id="_Ty_-ADqaEeiP29_qDiwNWQ" realizes="_T0FjQjqaEeiP29_qDiwNWQ" implements="_T0Du1jqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISolrLoggerUsageEventListener" type="ISolrLoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_SolrLoggerUsageEventListener" direction="REQUIRED" type="ILogger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISolrLoggerService_SolrLoggerUsageEventListener" direction="REQUIRED" type="SolrLoggerService"/>
+      <attributes name="log" type="org.apache.log4j.Logger"/>
+      <attributes name="solrLoggerService" type="org.dspace.statistics.service.SolrLoggerService"/>
+    </configComponents>
+    <configComponents name="org.dspace.google.GoogleRecorderEventListener" id="_Ty_-ATqaEeiP29_qDiwNWQ" realizes="_T0E9GzqaEeiP29_qDiwNWQ" implements="_T0EVaDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IGoogleRecorderEventListener" type="IGoogleRecorderEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_GoogleRecorderEventListener" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GoogleRecorderEventListener" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_GoogleRecorderEventListener" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_GoogleRecorderEventListener" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpClient_GoogleRecorderEventListener" direction="REQUIRED" type="HttpClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICloseable_GoogleRecorderEventListener" direction="REQUIRED" type="Closeable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICloseableHttpClient_GoogleRecorderEventListener" direction="REQUIRED" type="ICloseableHttpClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_GoogleRecorderEventListener" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GoogleRecorderEventListener" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_GoogleRecorderEventListener" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_GoogleRecorderEventListener" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_GoogleRecorderEventListener" direction="REQUIRED" type="ILogger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IContentServiceFactory_GoogleRecorderEventListener" direction="REQUIRED" type="IContentServiceFactory_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConfigurationService_GoogleRecorderEventListener" direction="REQUIRED" type="ConfigurationService"/>
+      <attributes name="analyticsKey" type="java.lang.String"/>
+      <attributes name="httpclient" type="org.apache.http.impl.client.CloseableHttpClient"/>
+      <attributes name="GoogleURL" type="java.lang.String"/>
+      <attributes name="log" type="org.apache.log4j.Logger"/>
+      <attributes name="contentServiceFactory" type="org.dspace.content.factory.ContentServiceFactory"/>
+      <attributes name="configurationService" type="org.dspace.services.ConfigurationService"/>
+    </configComponents>
+    <configConnections refID="_Ty_-AjqaEeiP29_qDiwNWQ" property="&quot;eventService&quot;" clientClassElem="_Ty_W8jqaEeiP29_qDiwNWQ" serverClassElem="_Ty_W8TqaEeiP29_qDiwNWQ"/>
+    <configConnections refID="_Ty_-AzqaEeiP29_qDiwNWQ" property="&quot;eventService&quot;" clientClassElem="_Ty_-ADqaEeiP29_qDiwNWQ" serverClassElem="_Ty_W8TqaEeiP29_qDiwNWQ"/>
+    <configConnections refID="_Ty_-BDqaEeiP29_qDiwNWQ" property="&quot;eventService&quot;" clientClassElem="_Ty_-ATqaEeiP29_qDiwNWQ" serverClassElem="_Ty_W8TqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="DSpace.dspace-oai.target.dspace-oai-7.0-SNAPSHOT.WEB-INF.spring.applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='DSpace.dspace-oai.target.dspace-oai-7.0-SNAPSHOT.WEB-INF.spring.applicationContext.xml_config']">
+    <assmComponents name="dspace" id="_Ty_-BTqaEeiP29_qDiwNWQ" instantiates="_Ty_W8DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpace_dspace" type="IDSpace_Type" instantiates="IDSpace"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonLifecycle_DSpace_dspace" direction="REQUIRED" type="CommonLifecycle" instantiates="ICommonLifecycle_DSpace"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceKernel_DSpace_dspace" direction="REQUIRED" type="DSpaceKernel" instantiates="IDSpaceKernel_DSpace"/>
+    </assmComponents>
+    <assmComponents name="dspace.eventService" id="_Ty_-BjqaEeiP29_qDiwNWQ" instantiates="_Ty_W8TqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_dspace.eventService" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="org.dspace.usage.LoggerUsageEventListener1" id="_Ty_-BzqaEeiP29_qDiwNWQ" instantiates="_Ty_W8jqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerUsageEventListener_org.dspace.usage.LoggerUsageEventListener1" type="ILoggerUsageEventListener_Type" instantiates="ILoggerUsageEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_LoggerUsageEventListener_org.dspace.usage.LoggerUsageEventListener1" direction="REQUIRED" type="ILogger_Type" instantiates="ILogger_LoggerUsageEventListener"/>
+    </assmComponents>
+    <assmComponents name="org.dspace.statistics.SolrLoggerUsageEventListener1" id="_Ty_-CDqaEeiP29_qDiwNWQ" instantiates="_Ty_-ADqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISolrLoggerUsageEventListener_org.dspace.statistics.SolrLoggerUsageEventListener1" type="ISolrLoggerUsageEventListener_Type" instantiates="ISolrLoggerUsageEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_SolrLoggerUsageEventListener_org.dspace.statistics.SolrLoggerUsageEventListener1" direction="REQUIRED" type="ILogger_Type" instantiates="ILogger_SolrLoggerUsageEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISolrLoggerService_SolrLoggerUsageEventListener_org.dspace.statistics.SolrLoggerUsageEventListener1" direction="REQUIRED" type="SolrLoggerService" instantiates="ISolrLoggerService_SolrLoggerUsageEventListener"/>
+    </assmComponents>
+    <assmComponents name="org.dspace.google.GoogleRecorderEventListener1" id="_Ty_-CTqaEeiP29_qDiwNWQ" instantiates="_Ty_-ATqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IGoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" type="IGoogleRecorderEventListener_Type" instantiates="IGoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" instantiates="null_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="Comparable" instantiates="IComparable_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="IString_Type" instantiates="IString_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpClient_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="HttpClient" instantiates="IHttpClient_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICloseable_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="Closeable" instantiates="ICloseable_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICloseableHttpClient_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="ICloseableHttpClient_Type" instantiates="ICloseableHttpClient_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" instantiates="null_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="Comparable" instantiates="IComparable_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="IString_Type" instantiates="IString_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="ILogger_Type" instantiates="ILogger_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IContentServiceFactory_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="IContentServiceFactory_Type" instantiates="IContentServiceFactory_GoogleRecorderEventListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConfigurationService_GoogleRecorderEventListener_org.dspace.google.GoogleRecorderEventListener1" direction="REQUIRED" type="ConfigurationService" instantiates="IConfigurationService_GoogleRecorderEventListener"/>
+    </assmComponents>
+    <assemblyConnections refID="_TzAlEDqaEeiP29_qDiwNWQ" serverInstElem="_Ty_-BjqaEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_TzAlETqaEeiP29_qDiwNWQ" serverInstElem="_Ty_-BjqaEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_TzAlEjqaEeiP29_qDiwNWQ" serverInstElem="_Ty_-BjqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="DSpace.dspace-oai.target.dspace-oai-7.0-SNAPSHOT.WEB-INF.spring.applicationContext.xml_spec">
+    <specComponents name="DSpace_role" id="_T0EX3zqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceDSpace_role" type="IDSpace_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonLifecycleDSpace_role" direction="REQUIRED" type="CommonLifecycle"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceKernelDSpace_role" direction="REQUIRED" type="DSpaceKernel"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_T0EX8zqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="LoggerUsageEventListener_role" id="_T0E8GzqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerUsageEventListenerLoggerUsageEventListener_role" type="ILoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerLoggerUsageEventListener_role" direction="REQUIRED" type="ILogger_Type"/>
+    </specComponents>
+    <specComponents name="GoogleRecorderEventListener_role" id="_T0E9GzqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IGoogleRecorderEventListenerGoogleRecorderEventListener_role" type="IGoogleRecorderEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullGoogleRecorderEventListener_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableGoogleRecorderEventListener_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceGoogleRecorderEventListener_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringGoogleRecorderEventListener_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpClientGoogleRecorderEventListener_role" direction="REQUIRED" type="HttpClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICloseableGoogleRecorderEventListener_role" direction="REQUIRED" type="Closeable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICloseableHttpClientGoogleRecorderEventListener_role" direction="REQUIRED" type="ICloseableHttpClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullGoogleRecorderEventListener_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableGoogleRecorderEventListener_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceGoogleRecorderEventListener_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringGoogleRecorderEventListener_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerGoogleRecorderEventListener_role" direction="REQUIRED" type="ILogger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IContentServiceFactoryGoogleRecorderEventListener_role" direction="REQUIRED" type="IContentServiceFactory_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConfigurationServiceGoogleRecorderEventListener_role" direction="REQUIRED" type="ConfigurationService"/>
+    </specComponents>
+    <specComponents name="SolrLoggerUsageEventListener_role" id="_T0FjQjqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISolrLoggerUsageEventListenerSolrLoggerUsageEventListener_role" type="ISolrLoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerSolrLoggerUsageEventListener_role" direction="REQUIRED" type="ILogger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISolrLoggerServiceSolrLoggerUsageEventListener_role" direction="REQUIRED" type="SolrLoggerService"/>
+    </specComponents>
+    <specConnections refID="_T0FkmzqaEeiP29_qDiwNWQ"/>
+    <specConnections refID="_T0FknDqaEeiP29_qDiwNWQ"/>
+    <specConnections refID="_T0FknTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="org_dspace_utils_DSpace_Type" id="_TPiroDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpace_org_dspace_utils_DSpace_Type" type="IDSpace_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonLifecycle_DSpace_org_dspace_utils_DSpace_Type" direction="REQUIRED" type="CommonLifecycle"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceKernel_DSpace_org_dspace_utils_DSpace_Type" direction="REQUIRED" type="DSpaceKernel"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_TfBSEDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_dspace_usage_LoggerUsageEventListener_Type" id="_TfqyUDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerUsageEventListener_org_dspace_usage_LoggerUsageEventListener_Type" type="ILoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_LoggerUsageEventListener_org_dspace_usage_LoggerUsageEventListener_Type" direction="REQUIRED" type="ILogger_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_dspace_statistics_SolrLoggerUsageEventListener_Type" id="_Tg46UDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISolrLoggerUsageEventListener_org_dspace_statistics_SolrLoggerUsageEventListener_Type" type="ISolrLoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_SolrLoggerUsageEventListener_org_dspace_statistics_SolrLoggerUsageEventListener_Type" direction="REQUIRED" type="ILogger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISolrLoggerService_SolrLoggerUsageEventListener_org_dspace_statistics_SolrLoggerUsageEventListener_Type" direction="REQUIRED" type="SolrLoggerService"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_dspace_google_GoogleRecorderEventListener_Type" id="_Tmz8IDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IGoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" type="IGoogleRecorderEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpClient_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="HttpClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICloseable_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="Closeable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICloseableHttpClient_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="ICloseableHttpClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="ILogger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IContentServiceFactory_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="IContentServiceFactory_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConfigurationService_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="ConfigurationService"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_dspace_utils_DSpace_Type" id="_TzAlEzqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpace_org_dspace_utils_DSpace_Type" type="IDSpace_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonLifecycle_DSpace_org_dspace_utils_DSpace_Type" direction="REQUIRED" type="CommonLifecycle"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDSpaceKernel_DSpace_org_dspace_utils_DSpace_Type" direction="REQUIRED" type="DSpaceKernel"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_T0Dt8DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_dspace_usage_LoggerUsageEventListener_Type" id="_T0Dt_DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerUsageEventListener_org_dspace_usage_LoggerUsageEventListener_Type" type="ILoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_LoggerUsageEventListener_org_dspace_usage_LoggerUsageEventListener_Type" direction="REQUIRED" type="ILogger_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_dspace_statistics_SolrLoggerUsageEventListener_Type" id="_T0Du1jqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISolrLoggerUsageEventListener_org_dspace_statistics_SolrLoggerUsageEventListener_Type" type="ISolrLoggerUsageEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_SolrLoggerUsageEventListener_org_dspace_statistics_SolrLoggerUsageEventListener_Type" direction="REQUIRED" type="ILogger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISolrLoggerService_SolrLoggerUsageEventListener_org_dspace_statistics_SolrLoggerUsageEventListener_Type" direction="REQUIRED" type="SolrLoggerService"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_dspace_google_GoogleRecorderEventListener_Type" id="_T0EVaDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IGoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" type="IGoogleRecorderEventListener_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpClient_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="HttpClient"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICloseable_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="Closeable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICloseableHttpClient_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="ICloseableHttpClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="ILogger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IContentServiceFactory_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="IContentServiceFactory_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConfigurationService_GoogleRecorderEventListener_org_dspace_google_GoogleRecorderEventListener_Type" direction="REQUIRED" type="ConfigurationService"/>
+    </components>
+    <interfaceTypes name="IDSpace_Type">
+      <signatures name="getSingletonService" type="java.lang.Object" id="_TRAEMDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_TRAEMTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEventService" type="org.dspace.services.EventService" id="_TRAEMjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getConfigurationService" type="org.dspace.services.ConfigurationService" id="_TRAEMzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getServiceManager" type="org.dspace.kernel.ServiceManager" id="_TRAENDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getRequestService" type="org.dspace.services.RequestService" id="_TRAENTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getKernel" type="org.dspace.kernel.DSpaceKernel" id="_TRAENjqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="CommonLifecycle">
+      <signatures name="start" type="void" id="_TRArQDqaEeiP29_qDiwNWQ"/>
+      <signatures name="destroy" type="void" id="_TRArQTqaEeiP29_qDiwNWQ"/>
+      <signatures name="stop" type="void" id="_TRArQjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getManagedBean" type="java.lang.Object" id="_TRArQzqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="DSpaceKernel">
+      <signatures name="isRunning" type="boolean" id="_TRArRDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getConfigurationService" type="org.dspace.services.ConfigurationService" id="_TRArRTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getServiceManager" type="org.dspace.kernel.ServiceManager" id="_TRArRjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getMBeanName" type="java.lang.String" id="_TRArRzqaEeiP29_qDiwNWQ"/>
+      <signatures name="start" type="void" id="_TRArSDqaEeiP29_qDiwNWQ"/>
+      <signatures name="destroy" type="void" id="_TRArSTqaEeiP29_qDiwNWQ"/>
+      <signatures name="stop" type="void" id="_TRArSjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getManagedBean" type="java.lang.Object" id="_TRArSzqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_TfBSETqaEeiP29_qDiwNWQ"/>
+      <signatures name="wait" type="void" id="_TfBSEjqaEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_TfBSEzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_TfBSFDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_TfBSFTqaEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_TfBSFjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getClass" type="java.lang.Class" id="_TfBSFzqaEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_TfBSGDqaEeiP29_qDiwNWQ"/>
+      <signatures name="notify" type="void" id="_TfBSGTqaEeiP29_qDiwNWQ"/>
+      <signatures name="notifyAll" type="void" id="_TfBSGjqaEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_TfBSGzqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ILoggerUsageEventListener_Type">
+      <signatures name="getResourcePrefix" type="java.lang.String" id="_TgfRsDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getEventNamePrefixes" type="java.lang.String[]" id="_TgfRsTqaEeiP29_qDiwNWQ"/>
+      <signatures name="receiveEvent" type="void" id="_TgfRsjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.services.model.Event" id="_TgfRszqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEventService" type="void" id="_TgfRtDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.services.EventService" id="_TgfRtTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="formatMessage" type="java.lang.String" id="_TgfRtjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.content.DSpaceObject" id="_TgfRtzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="formatAction" type="java.lang.String" id="_TgfRuDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.usage.UsageEvent.Action" id="_TgfRuTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.dspace.content.DSpaceObject" id="_TgsGADqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="EventListener">
+      <signatures name="getResourcePrefix" type="java.lang.String" id="_TgsGATqaEeiP29_qDiwNWQ"/>
+      <signatures name="getEventNamePrefixes" type="java.lang.String[]" id="_TgsGAjqaEeiP29_qDiwNWQ"/>
+      <signatures name="receiveEvent" type="void" id="_TgsGAzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.services.model.Event" id="_TgsGBDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IAbstractUsageEventListener_Type">
+      <signatures name="getResourcePrefix" type="java.lang.String" id="_TgsGBTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getEventNamePrefixes" type="java.lang.String[]" id="_TgsGBjqaEeiP29_qDiwNWQ"/>
+      <signatures name="receiveEvent" type="void" id="_TgsGBzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.services.model.Event" id="_TgsGCDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEventService" type="void" id="_TgsGCTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.services.EventService" id="_TgsGCjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ILogger_Type">
+      <signatures name="removeAllAppenders" type="void" id="_TgstEDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getAllAppenders" type="java.util.Enumeration" id="_TgstETqaEeiP29_qDiwNWQ"/>
+      <signatures name="removeAppender" type="void" id="_TgstEjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgstEzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAttached" type="boolean" id="_TgstFDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_TgstFTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addAppender" type="void" id="_TgstFjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_TgstFzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAppender" type="org.apache.log4j.Appender" id="_TgstGDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgstGTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="shutdown" type="void" id="_TgstGjqaEeiP29_qDiwNWQ"/>
+      <signatures name="log" type="void" id="_TgstGzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgstHDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.log4j.Priority" id="_TgstHTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_TgstHjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Throwable" id="_TgstHzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getName" type="java.lang.String" id="_TgstIDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getInstance" type="org.apache.log4j.Category" id="_TgstITqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgstIjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getParent" type="org.apache.log4j.Category" id="_TgstIzqaEeiP29_qDiwNWQ"/>
+      <signatures name="debug" type="void" id="_TgstJDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_TgstJTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_TgstJjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setPriority" type="void" id="_TgstJzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Priority" id="_TgstKDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getPriority" type="org.apache.log4j.Level" id="_TgstKTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getRoot" type="org.apache.log4j.Category" id="_TgstKjqaEeiP29_qDiwNWQ"/>
+      <signatures name="exists" type="org.apache.log4j.Logger" id="_TgstKzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgstLDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_TgstLTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_TgstLjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_TgstLzqaEeiP29_qDiwNWQ"/>
+      <signatures name="info" type="void" id="_TgstMDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_TgstMTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_TgstMjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="class$" type="java.lang.Class" id="_TgstMzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgstNDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forcedLog" type="void" id="_TgstNTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgstNjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.log4j.Priority" id="_TgstNzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_TgstODqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Throwable" id="_TgstOTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultHierarchy" type="org.apache.log4j.spi.LoggerRepository" id="_TgstOjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getCurrentCategories" type="java.util.Enumeration" id="_TgstOzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getResourceBundle" type="java.util.ResourceBundle" id="_TgstPDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getLoggerRepository" type="org.apache.log4j.spi.LoggerRepository" id="_TgstPTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getResourceBundleString" type="java.lang.String" id="_TgstPjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgstPzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setResourceBundle" type="void" id="_TgstQDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.ResourceBundle" id="_TgstQTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChainedPriority" type="org.apache.log4j.Priority" id="_TgstQjqaEeiP29_qDiwNWQ"/>
+      <signatures name="closeNestedAppenders" type="void" id="_TgstQzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getEffectiveLevel" type="org.apache.log4j.Level" id="_TgstRDqaEeiP29_qDiwNWQ"/>
+      <signatures name="fireRemoveAppenderEvent" type="void" id="_TgstRTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_TgstRjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLevel" type="org.apache.log4j.Level" id="_TgstRzqaEeiP29_qDiwNWQ"/>
+      <signatures name="isEnabledFor" type="boolean" id="_TgstSDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Priority" id="_TgstSTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_TgstSjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_TgstSzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_TgstTDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAdditivity" type="boolean" id="_TgstTTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getHierarchy" type="org.apache.log4j.spi.LoggerRepository" id="_TgstTjqaEeiP29_qDiwNWQ"/>
+      <signatures name="isDebugEnabled" type="boolean" id="_TgstTzqaEeiP29_qDiwNWQ"/>
+      <signatures name="fatal" type="void" id="_TgstUDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_TgstUTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAdditivity" type="void" id="_TgstUjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_TgstUzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="l7dlog" type="void" id="_TgstVDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Priority" id="_TgstVTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_TgstVjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_TgstVzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setHierarchy" type="void" id="_TgstWDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.spi.LoggerRepository" id="_TgstWTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="callAppenders" type="void" id="_TgstWjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.spi.LoggingEvent" id="_TgstWzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="assertLog" type="void" id="_TgstXDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_TgstXTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_TgstXjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setLevel" type="void" id="_TgstXzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Level" id="_TgstYDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_TgstYTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_TgstYjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLogger" type="org.apache.log4j.Logger" id="_TgstYzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_TgstZDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRootLogger" type="org.apache.log4j.Logger" id="_TgstZTqaEeiP29_qDiwNWQ"/>
+      <signatures name="isTraceEnabled" type="boolean" id="_TgstZjqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="AppenderAttachable">
+      <signatures name="removeAllAppenders" type="void" id="_TgstZzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getAllAppenders" type="java.util.Enumeration" id="_TgstaDqaEeiP29_qDiwNWQ"/>
+      <signatures name="removeAppender" type="void" id="_TgstaTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgstajqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeAppender" type="void" id="_TgstazqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_TgstbDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAttached" type="boolean" id="_TgstbTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_TgstbjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addAppender" type="void" id="_TgstbzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_TgstcDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAppender" type="org.apache.log4j.Appender" id="_TgstcTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgstcjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ICategory_Type">
+      <signatures name="removeAllAppenders" type="void" id="_TgstczqaEeiP29_qDiwNWQ"/>
+      <signatures name="getAllAppenders" type="java.util.Enumeration" id="_TgstdDqaEeiP29_qDiwNWQ"/>
+      <signatures name="removeAppender" type="void" id="_TgstdTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgstdjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAttached" type="boolean" id="_TgstdzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_TgsteDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addAppender" type="void" id="_TgsteTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_TgstejqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAppender" type="org.apache.log4j.Appender" id="_TgstezqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgstfDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="shutdown" type="void" id="_TgstfTqaEeiP29_qDiwNWQ"/>
+      <signatures name="log" type="void" id="_TgstfjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgstfzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.log4j.Priority" id="_TgstgDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_TgstgTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Throwable" id="_TgstgjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getName" type="java.lang.String" id="_TgstgzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getInstance" type="org.apache.log4j.Category" id="_TgsthDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgsthTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getParent" type="org.apache.log4j.Category" id="_TgsthjqaEeiP29_qDiwNWQ"/>
+      <signatures name="debug" type="void" id="_TgsthzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_TgstiDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_TgstiTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setPriority" type="void" id="_TgstijqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Priority" id="_TgstizqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getPriority" type="org.apache.log4j.Level" id="_TgstjDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getRoot" type="org.apache.log4j.Category" id="_TgstjTqaEeiP29_qDiwNWQ"/>
+      <signatures name="exists" type="org.apache.log4j.Logger" id="_TgstjjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgstjzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_TgstkDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_TgstkTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_TgstkjqaEeiP29_qDiwNWQ"/>
+      <signatures name="info" type="void" id="_TgstkzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_TgstlDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_TgstlTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="class$" type="java.lang.Class" id="_TgstljqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgstlzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forcedLog" type="void" id="_TgstmDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgstmTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.log4j.Priority" id="_TgstmjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_TgstmzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Throwable" id="_TgstnDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultHierarchy" type="org.apache.log4j.spi.LoggerRepository" id="_TgstnTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getCurrentCategories" type="java.util.Enumeration" id="_TgstnjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getResourceBundle" type="java.util.ResourceBundle" id="_TgstnzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getLoggerRepository" type="org.apache.log4j.spi.LoggerRepository" id="_TgstoDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getResourceBundleString" type="java.lang.String" id="_TgstoTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TgstojqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setResourceBundle" type="void" id="_TgstozqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.ResourceBundle" id="_TgstpDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChainedPriority" type="org.apache.log4j.Priority" id="_TgstpTqaEeiP29_qDiwNWQ"/>
+      <signatures name="closeNestedAppenders" type="void" id="_TgstpjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getEffectiveLevel" type="org.apache.log4j.Level" id="_TgstpzqaEeiP29_qDiwNWQ"/>
+      <signatures name="fireRemoveAppenderEvent" type="void" id="_TgstqDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Appender" id="_TgstqTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLevel" type="org.apache.log4j.Level" id="_TgstqjqaEeiP29_qDiwNWQ"/>
+      <signatures name="isEnabledFor" type="boolean" id="_TgstqzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Priority" id="_TgstrDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_TgstrTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_TgstrjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_TgstrzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAdditivity" type="boolean" id="_TgstsDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getHierarchy" type="org.apache.log4j.spi.LoggerRepository" id="_TgstsTqaEeiP29_qDiwNWQ"/>
+      <signatures name="isDebugEnabled" type="boolean" id="_TgstsjqaEeiP29_qDiwNWQ"/>
+      <signatures name="fatal" type="void" id="_TgstszqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_TgsttDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAdditivity" type="void" id="_TgsttTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_TgsttjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="l7dlog" type="void" id="_TgsttzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Priority" id="_TgstuDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_TgstuTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_TgstujqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setHierarchy" type="void" id="_TgstuzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.spi.LoggerRepository" id="_TgstvDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="callAppenders" type="void" id="_TgstvTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.spi.LoggingEvent" id="_TgstvjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="assertLog" type="void" id="_TgstvzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_TgstwDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_TgstwTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setLevel" type="void" id="_TgstwjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.log4j.Level" id="_TgstwzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ISolrLoggerUsageEventListener_Type">
+      <signatures name="getResourcePrefix" type="java.lang.String" id="_ThFHkDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getEventNamePrefixes" type="java.lang.String[]" id="_ThFHkTqaEeiP29_qDiwNWQ"/>
+      <signatures name="receiveEvent" type="void" id="_ThFHkjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.services.model.Event" id="_ThFHkzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEventService" type="void" id="_ThFHlDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.services.EventService" id="_ThFHlTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setSolrLoggerService" type="void" id="_ThFHljqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.statistics.service.SolrLoggerService" id="_ThFHlzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="SolrLoggerService">
+      <signatures name="update" type="void" id="_TmnH0DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TmnH0TqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_TmnH0jqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.List" id="_TmnH0zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.util.List" id="_TmnH1DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="query" type="org.apache.solr.client.solrj.response.QueryResponse" id="_TmnH1TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TmnH1jqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_TmnH1zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_TmnH2DqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_TmnH2TqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="int" id="_TmnH2jqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg5" type="java.lang.String" id="_TmnH2zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg6" type="java.lang.String" id="_TmnH3DqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg7" type="java.lang.String" id="_TmnH3TqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg8" type="java.util.List" id="_TmnH3jqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg9" type="java.lang.String" id="_TmnH3zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg10" type="boolean" id="_TmnH4DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="query" type="void" id="_TmnH4TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TmnH4jqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_TmnH4zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="markRobotByUserAgent" type="void" id="_TmnH5DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TmnH5TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="reindexBitstreamHits" type="void" id="_TmnH5jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_TmnH5zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getIgnoreSpiderIPs" type="java.lang.String" id="_TmnH6DqaEeiP29_qDiwNWQ"/>
+      <signatures name="deleteRobotsByIsBotFlag" type="void" id="_TmnH6TqaEeiP29_qDiwNWQ"/>
+      <signatures name="post" type="void" id="_TmnH6jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.content.DSpaceObject" id="_TmnH6zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletRequest" id="_TmnH7DqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.dspace.eperson.EPerson" id="_TmnH7TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="queryFacetQuery" type="java.util.Map" id="_TmnH7jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TmnH7zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_TmnH8DqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.List" id="_TmnH8TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="queryTotal" type="org.dspace.statistics.ObjectCount" id="_TmnH8jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TmnH8zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_TmnH9DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeIndex" type="void" id="_TmnH9TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TmnH9jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="postWorkflow" type="void" id="_TmnH9zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.usage.UsageWorkflowEvent" id="_TmnH-DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="queryField" type="java.util.Map" id="_TmnH-TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TmnH-jqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.List" id="_TmnH-zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_TmnH_DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="markRobotsByIP" type="void" id="_TmnH_TqaEeiP29_qDiwNWQ"/>
+      <signatures name="optimizeSOLR" type="void" id="_TmnH_jqaEeiP29_qDiwNWQ"/>
+      <signatures name="shardSolrIndex" type="void" id="_TmnH_zqaEeiP29_qDiwNWQ"/>
+      <signatures name="postSearch" type="void" id="_TmnIADqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.content.DSpaceObject" id="_TmnIATqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletRequest" id="_TmnIAjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.dspace.eperson.EPerson" id="_TmnIAzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.util.List" id="_TmnIBDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="int" id="_TmnIBTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg5" type="java.lang.String" id="_TmnIBjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg6" type="java.lang.String" id="_TmnIBzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg7" type="int" id="_TmnICDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg8" type="org.dspace.content.DSpaceObject" id="_TmnICTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="storeParents" type="void" id="_TmnICjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.solr.common.SolrInputDocument" id="_TmnICzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.dspace.content.DSpaceObject" id="_TmnIDDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="deleteRobotsByIP" type="void" id="_TmnIDTqaEeiP29_qDiwNWQ"/>
+      <signatures name="queryFacetField" type="org.dspace.statistics.ObjectCount[]" id="_TmnIDjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TmnIDzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_TmnIEDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_TmnIETqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_TmnIEjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="boolean" id="_TmnIEzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg5" type="java.util.List" id="_TmnIFDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isUseProxies" type="boolean" id="_TmnIFTqaEeiP29_qDiwNWQ"/>
+      <signatures name="postView" type="void" id="_TmnIFjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.content.DSpaceObject" id="_TmnIFzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletRequest" id="_TmnIGDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.dspace.eperson.EPerson" id="_TmnIGTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="postView" type="void" id="_TmnIGjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.content.DSpaceObject" id="_TmnIGzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_TmnIHDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_TmnIHTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.String" id="_TmnIHjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="org.dspace.eperson.EPerson" id="_TmnIHzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="deleteIP" type="void" id="_TmnIIDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TmnIITqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="queryFacetDate" type="org.dspace.statistics.ObjectCount[]" id="_TmnIIjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TmnIIzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_TmnIJDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_TmnIJTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.String" id="_TmnIJjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="java.lang.String" id="_TmnIJzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg5" type="java.lang.String" id="_TmnIKDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg6" type="boolean" id="_TmnIKTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg7" type="org.dspace.core.Context" id="_TmnIKjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="exportHits" type="void" id="_TmnIKzqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IGoogleRecorderEventListener_Type">
+      <signatures name="getResourcePrefix" type="java.lang.String" id="_TqaCsDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getEventNamePrefixes" type="java.lang.String[]" id="_TqaCsTqaEeiP29_qDiwNWQ"/>
+      <signatures name="receiveEvent" type="void" id="_TqaCsjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.services.model.Event" id="_TqaCszqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEventService" type="void" id="_TqaCtDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.services.EventService" id="_TqaCtTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getObjectName" type="java.lang.String" id="_TqaCtjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.usage.UsageEvent" id="_TqaCtzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="logEvent" type="void" id="_TqaCuDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.usage.UsageEvent" id="_TqaCuTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_TqaCujqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_TqaCuzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setConfigurationService" type="void" id="_TqaCvDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.services.ConfigurationService" id="_TqaCvTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setContentServiceFactory" type="void" id="_TqaCvjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.content.factory.ContentServiceFactory" id="_TqaCvzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getIPAddress" type="java.lang.String" id="_TqaCwDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_TqaCwTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getParentType" type="java.lang.String" id="_TqaCwjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.usage.UsageEvent" id="_TqaCwzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Comparable">
+      <signatures name="compareTo" type="int" id="_TqaC0jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_TqaC0zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="CharSequence">
+      <signatures name="toString" type="java.lang.String" id="_TqaC1DqaEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_TqaC1TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_TqaC1jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_TqaC1zqaEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_TqaC2DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_TqaC2TqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_TqaC2jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_TqaC2zqaEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_TqaC3DqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IString_Type">
+      <signatures name="compareTo" type="int" id="_TqaC3TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_TqaC3jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_TqaC3zqaEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_TqaC4DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_TqaC4TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_TqaC4jqaEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_TqaC4zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_TqaC5DqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_TqaC5TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_TqaC5jqaEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_TqaC5zqaEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$chars$0" type="java.util.Spliterator.OfInt" id="_TqaC6DqaEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$codePoints$1" type="java.util.Spliterator.OfInt" id="_TqaC6TqaEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_TqaC6jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_TqaC6zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_TqaC7DqaEeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_TqaC7TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TqaC7jqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_TqaC7zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueOf" type="java.lang.String" id="_TqaC8DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_TqaC8TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkBounds" type="void" id="_TqaC8jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_TqaC8zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_TqaC9DqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_TqaC9TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointAt" type="int" id="_TqaC9jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_TqaC9zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointBefore" type="int" id="_TqaC-DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_TqaC-TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointCount" type="int" id="_TqaC-jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_TqaC-zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_TqaC_DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compareToIgnoreCase" type="int" id="_TqaC_TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TqaC_jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="concat" type="java.lang.String" id="_TqaC_zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TqaDADqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contains" type="boolean" id="_TqaDATqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_TqaDAjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contentEquals" type="boolean" id="_TqaDAzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_TqaDBDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyValueOf" type="java.lang.String" id="_TqaDBTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char[]" id="_TqaDBjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="endsWith" type="boolean" id="_TqaDBzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TqaDCDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equalsIgnoreCase" type="boolean" id="_TqaDCTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TqaDCjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="format" type="java.lang.String" id="_TqaDCzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_TqaDDDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_TqaDDTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_TqaDDjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBytes" type="void" id="_TqaDDzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_TqaDEDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_TqaDETqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_TqaDEjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_TqaDEzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChars" type="void" id="_TqaDFDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_TqaDFTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_TqaDFjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="char[]" id="_TqaDFzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_TqaDGDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="indexOfSupplementary" type="int" id="_TqaDGTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_TqaDGjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_TqaDGzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="intern" type="java.lang.String" id="_TqaDHDqaEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_TqaDHTqaEeiP29_qDiwNWQ"/>
+      <signatures name="join" type="java.lang.String" id="_TqaDHjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_TqaDHzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.CharSequence[]" id="_TqaDIDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOf" type="int" id="_TqaDITqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_TqaDIjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOfSupplementary" type="int" id="_TqaDIzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_TqaDJDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_TqaDJTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="matches" type="boolean" id="_TqaDJjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TqaDJzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nonSyncContentEquals" type="boolean" id="_TqaDKDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.AbstractStringBuilder" id="_TqaDKTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="offsetByCodePoints" type="int" id="_TqaDKjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_TqaDKzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_TqaDLDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="regionMatches" type="boolean" id="_TqaDLTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_TqaDLjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_TqaDLzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_TqaDMDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_TqaDMTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="java.lang.String" id="_TqaDMjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char" id="_TqaDMzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="char" id="_TqaDNDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="java.lang.String" id="_TqaDNTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TqaDNjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_TqaDNzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceFirst" type="java.lang.String" id="_TqaDODqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TqaDOTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_TqaDOjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="split" type="java.lang.String[]" id="_TqaDOzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TqaDPDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="startsWith" type="boolean" id="_TqaDPTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TqaDPjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_TqaDPzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="substring" type="java.lang.String" id="_TqaDQDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_TqaDQTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCharArray" type="char[]" id="_TqaDQjqaEeiP29_qDiwNWQ"/>
+      <signatures name="toLowerCase" type="java.lang.String" id="_TqaDQzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_TqaDRDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUpperCase" type="java.lang.String" id="_TqaDRTqaEeiP29_qDiwNWQ"/>
+      <signatures name="trim" type="java.lang.String" id="_TqaDRjqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="HttpClient">
+      <signatures name="execute" type="org.apache.http.HttpResponse" id="_Tuc1MDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.http.HttpHost" id="_Tuc1MTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.http.HttpRequest" id="_Tuc1MjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="execute" type="java.lang.Object" id="_Tuc1MzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.http.HttpHost" id="_Tuc1NDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.http.HttpRequest" id="_Tuc1NTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.apache.http.client.ResponseHandler" id="_Tuc1NjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="org.apache.http.protocol.HttpContext" id="_Tuc1NzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="execute" type="java.lang.Object" id="_Tuc1ODqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.http.client.methods.HttpUriRequest" id="_Tuc1OTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.http.client.ResponseHandler" id="_Tuc1OjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="execute" type="java.lang.Object" id="_Tuc1OzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.http.client.methods.HttpUriRequest" id="_Tuc1PDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.http.client.ResponseHandler" id="_Tuc1PTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.apache.http.protocol.HttpContext" id="_Tuc1PjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="execute" type="java.lang.Object" id="_Tuc1PzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.http.HttpHost" id="_Tuc1QDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.http.HttpRequest" id="_Tuc1QTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.apache.http.client.ResponseHandler" id="_Tuc1QjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="execute" type="org.apache.http.HttpResponse" id="_Tuc1QzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.http.client.methods.HttpUriRequest" id="_Tuc1RDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.http.protocol.HttpContext" id="_Tuc1RTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="execute" type="org.apache.http.HttpResponse" id="_Tuc1RjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.http.client.methods.HttpUriRequest" id="_Tuc1RzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="execute" type="org.apache.http.HttpResponse" id="_Tuc1SDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.http.HttpHost" id="_Tuc1STqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.http.HttpRequest" id="_Tuc1SjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.apache.http.protocol.HttpContext" id="_Tuc1SzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getParams" type="org.apache.http.params.HttpParams" id="_Tuc1TDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getConnectionManager" type="org.apache.http.conn.ClientConnectionManager" id="_Tuc1TTqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Closeable">
+      <signatures name="close" type="void" id="_Tuc1TjqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ICloseableHttpClient_Type">
+      <signatures name="execute" type="org.apache.http.HttpResponse" id="_TvBc8DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.http.HttpHost" id="_TvBc8TqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.http.HttpRequest" id="_TvBc8jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getParams" type="org.apache.http.params.HttpParams" id="_TvBc8zqaEeiP29_qDiwNWQ"/>
+      <signatures name="getConnectionManager" type="org.apache.http.conn.ClientConnectionManager" id="_TvBc9DqaEeiP29_qDiwNWQ"/>
+      <signatures name="close" type="void" id="_TvBc9TqaEeiP29_qDiwNWQ"/>
+      <signatures name="doExecute" type="org.apache.http.client.methods.CloseableHttpResponse" id="_TvBc9jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.http.HttpHost" id="_TvBc9zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.http.HttpRequest" id="_TvBc-DqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.apache.http.protocol.HttpContext" id="_TvBc-TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="determineTarget" type="org.apache.http.HttpHost" id="_TvBc-jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.http.client.methods.HttpUriRequest" id="_TvBc-zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="AutoCloseable">
+      <signatures name="close" type="void" id="_TvBdGjqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IContentServiceFactory_Type">
+      <signatures name="getInstance" type="org.dspace.content.factory.ContentServiceFactory" id="_TyfnsDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getMetadataValueService" type="org.dspace.content.service.MetadataValueService" id="_TyfnsTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getDSpaceObjectServices" type="java.util.List" id="_TyfnsjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getMetadataFieldService" type="org.dspace.content.service.MetadataFieldService" id="_TyfnszqaEeiP29_qDiwNWQ"/>
+      <signatures name="getInstallItemService" type="org.dspace.content.service.InstallItemService" id="_TyfntDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getWorkspaceItemService" type="org.dspace.content.service.WorkspaceItemService" id="_TyfntTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getSupervisedItemService" type="org.dspace.content.service.SupervisedItemService" id="_TyfntjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getMetadataSchemaService" type="org.dspace.content.service.MetadataSchemaService" id="_TyfntzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getDSpaceLegacyObjectService" type="org.dspace.content.service.DSpaceObjectLegacySupportService" id="_TyfnuDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_TyfnuTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getInProgressSubmissionService" type="org.dspace.content.service.InProgressSubmissionService" id="_TyfnujqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.content.InProgressSubmission" id="_TyfnuzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBundleService" type="org.dspace.content.service.BundleService" id="_TyfnvDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getItemService" type="org.dspace.content.service.ItemService" id="_TyfnvTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getDSpaceObjectLegacySupportServices" type="java.util.List" id="_TyfnvjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getSiteService" type="org.dspace.content.service.SiteService" id="_TyfnvzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getCommunityService" type="org.dspace.content.service.CommunityService" id="_TyfnwDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getBitstreamFormatService" type="org.dspace.content.service.BitstreamFormatService" id="_TyfnwTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getCollectionService" type="org.dspace.content.service.CollectionService" id="_TyfnwjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getDSpaceObjectService" type="org.dspace.content.service.DSpaceObjectService" id="_TyfnwzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.dspace.content.DSpaceObject" id="_TyfnxDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBitstreamService" type="org.dspace.content.service.BitstreamService" id="_TyfnxTqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ConfigurationService">
+      <signatures name="setProperty" type="boolean" id="_TypYsDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TypYsTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_TypYsjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProperty" type="java.lang.String" id="_TypYszqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TypYtDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProperty" type="java.lang.String" id="_TypYtTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TypYtjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_TypYtzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProperties" type="java.util.Properties" id="_TypYuDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getBooleanProperty" type="boolean" id="_TypYuTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TypYujqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBooleanProperty" type="boolean" id="_TypYuzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TypYvDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_TypYvTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getIntProperty" type="int" id="_TypYvjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TypYvzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_TypYwDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getIntProperty" type="int" id="_TypYwTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TypYwjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getPropertyValue" type="java.lang.Object" id="_TypYwzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TypYxDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLongProperty" type="long" id="_TypYxTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TypYxjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="long" id="_TypYxzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLongProperty" type="long" id="_TypYyDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TypYyTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getArrayProperty" type="java.lang.String[]" id="_TypYyjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TypYyzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String[]" id="_TypYzDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getArrayProperty" type="java.lang.String[]" id="_TypYzTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TypYzjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="reloadConfig" type="void" id="_TypYzzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getPropertyKeys" type="java.util.List" id="_TypY0DqaEeiP29_qDiwNWQ"/>
+      <signatures name="getPropertyKeys" type="java.util.List" id="_TypY0TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TypY0jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hasProperty" type="boolean" id="_TypY0zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TypY1DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getConfiguration" type="org.apache.commons.configuration.Configuration" id="_TypY1TqaEeiP29_qDiwNWQ"/>
+      <signatures name="getPropertyAsType" type="java.lang.Object" id="_TypY1jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TypY1zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_TypY2DqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_TypY2TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getPropertyAsType" type="java.lang.Object" id="_TypY2jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TypY2zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_TypY3DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getPropertyAsType" type="java.lang.Object" id="_TypY3TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_TypY3jqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_TypY3zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

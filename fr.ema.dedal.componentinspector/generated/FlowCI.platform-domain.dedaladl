@@ -1,0 +1,6 @@
+dedal_diagram "FlowCI.platform-domain"
+
+	repositories (
+
+		repository genRepo
+	)

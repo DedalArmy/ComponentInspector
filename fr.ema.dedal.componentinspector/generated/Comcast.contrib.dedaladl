@@ -1,0 +1,6 @@
+dedal_diagram "Comcast.contrib"
+
+	repositories (
+
+		repository genRepo
+	)

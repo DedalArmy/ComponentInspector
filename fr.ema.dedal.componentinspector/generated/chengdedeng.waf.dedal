@@ -1,0 +1,2095 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="chengdedeng.waf">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="chengdedeng.waf.src.main.resources.spring.applicationContext.xml_config" implements="//@architectureDescriptions[name='chengdedeng.waf.src.main.resources.spring.applicationContext.xml_spec']">
+    <configComponents name="info.yangguo.waf.util.PooledAllocatorStats" id="_tHTbMDqXEeiP29_qDiwNWQ" realizes="_tK3vDjqXEeiP29_qDiwNWQ" implements="_tHqnkDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IPooledAllocatorStats" type="IPooledAllocatorStats_Type"/>
+    </configComponents>
+    <configComponents name="org.springframework.jmx.export.MBeanExporter" id="_tHTbMTqXEeiP29_qDiwNWQ" realizes="_tK2f1zqXEeiP29_qDiwNWQ" implements="_tK1QXzqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExportOperations_MBeanExporter" type="MBeanExportOperations"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanClassLoaderAware_MBeanExporter" type="BeanClassLoaderAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactoryAware_MBeanExporter" type="BeanFactoryAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartInitializingSingleton_MBeanExporter" type="SmartInitializingSingleton"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_MBeanExporter" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporter" type="IMBeanExporter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_MBeanExporter" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInteger_MBeanExporter" direction="REQUIRED" type="IInteger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanInfoAssembler_MBeanExporter" direction="REQUIRED" type="MBeanInfoAssembler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectNamingStrategy_MBeanExporter" direction="REQUIRED" type="ObjectNamingStrategy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter" direction="REQUIRED" type="Set"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporterListener_MBeanExporter" direction="REQUIRED" type="MBeanExporterListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter" direction="REQUIRED" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INotificationListenerBean_MBeanExporter" direction="REQUIRED" type="INotificationListenerBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClassLoader_MBeanExporter" direction="REQUIRED" type="IClassLoader_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactory_MBeanExporter" direction="REQUIRED" type="BeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_MBeanExporter" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_MBeanExporter" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnection_MBeanExporter" direction="REQUIRED" type="MBeanServerConnection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServer_MBeanExporter" direction="REQUIRED" type="MBeanServer"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter" direction="REQUIRED" type="Set"/>
+      <attributes name="AUTODETECT_NONE" type="int"/>
+      <attributes name="AUTODETECT_MBEAN" type="int"/>
+      <attributes name="AUTODETECT_ASSEMBLER" type="int"/>
+      <attributes name="AUTODETECT_ALL" type="int"/>
+      <attributes name="WILDCARD" type="java.lang.String"/>
+      <attributes name="MR_TYPE_OBJECT_REFERENCE" type="java.lang.String"/>
+      <attributes name="CONSTANT_PREFIX_AUTODETECT" type="java.lang.String"/>
+      <attributes name="constants" type="org.springframework.core.Constants"/>
+      <attributes name="beans" type="java.util.Map"/>
+      <attributes name="autodetectMode" type="java.lang.Integer"/>
+      <attributes name="allowEagerInit" type="boolean"/>
+      <attributes name="assembler" type="org.springframework.jmx.export.assembler.MBeanInfoAssembler"/>
+      <attributes name="namingStrategy" type="org.springframework.jmx.export.naming.ObjectNamingStrategy"/>
+      <attributes name="ensureUniqueRuntimeObjectNames" type="boolean"/>
+      <attributes name="exposeManagedResourceClassLoader" type="boolean"/>
+      <attributes name="excludedBeans" type="java.util.Set"/>
+      <attributes name="listeners" type="org.springframework.jmx.export.MBeanExporterListener"/>
+      <attributes name="notificationListeners" type="org.springframework.jmx.export.NotificationListenerBean"/>
+      <attributes name="registeredNotificationListeners" type="java.util.Map"/>
+      <attributes name="beanClassLoader" type="java.lang.ClassLoader"/>
+      <attributes name="beanFactory" type="org.springframework.beans.factory.ListableBeanFactory"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="server" type="javax.management.MBeanServer"/>
+      <attributes name="registeredBeans" type="java.util.Set"/>
+      <attributes name="registrationPolicy" type="org.springframework.jmx.support.RegistrationPolicy"/>
+    </configComponents>
+    <configConnections clientIntElem="IMap_MBeanExporter" refID="_tHTbMjqXEeiP29_qDiwNWQ" property="&quot;beans&quot;" clientClassElem="_tHTbMTqXEeiP29_qDiwNWQ" serverClassElem="_tHTbMDqXEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="chengdedeng.waf.src.main.resources.spring.applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='chengdedeng.waf.src.main.resources.spring.applicationContext.xml_config']">
+    <assmComponents name="pooledstats" id="_tHUCQDqXEeiP29_qDiwNWQ" instantiates="_tHTbMDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IPooledAllocatorStats_pooledstats" type="IPooledAllocatorStats_Type" instantiates="IPooledAllocatorStats"/>
+    </assmComponents>
+    <assmComponents name="org.springframework.jmx.export.MBeanExporter1" id="_tHUCQTqXEeiP29_qDiwNWQ" instantiates="_tHTbMTqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExportOperations_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="MBeanExportOperations" instantiates="IMBeanExportOperations_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanClassLoaderAware_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="BeanClassLoaderAware" instantiates="IBeanClassLoaderAware_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactoryAware_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="BeanFactoryAware" instantiates="IBeanFactoryAware_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="InitializingBean" instantiates="IInitializingBean_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartInitializingSingleton_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="SmartInitializingSingleton" instantiates="ISmartInitializingSingleton_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="DisposableBean" instantiates="IDisposableBean_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="IMBeanExporter_Type" instantiates="IMBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" instantiates="null_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Comparable" instantiates="IComparable_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IString_Type" instantiates="IString_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" instantiates="null_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Comparable" instantiates="IComparable_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IString_Type" instantiates="IString_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" instantiates="null_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Comparable" instantiates="IComparable_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IString_Type" instantiates="IString_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IConstants_Type" instantiates="IConstants_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Map" instantiates="IMap_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Comparable" instantiates="IComparable_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInteger_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IInteger_Type" instantiates="IInteger_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanInfoAssembler_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="MBeanInfoAssembler" instantiates="IMBeanInfoAssembler_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectNamingStrategy_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="ObjectNamingStrategy" instantiates="IObjectNamingStrategy_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Collection" instantiates="ICollection_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Set" instantiates="ISet_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporterListener_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="MBeanExporterListener" instantiates="IMBeanExporterListener_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="InitializingBean" instantiates="IInitializingBean_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INotificationListenerBean_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="INotificationListenerBean_Type" instantiates="INotificationListenerBean_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Map" instantiates="IMap_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClassLoader_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IClassLoader_Type" instantiates="IClassLoader_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactory_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="BeanFactory" instantiates="IBeanFactory_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="ListableBeanFactory" instantiates="IListableBeanFactory_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Log" instantiates="ILog_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnection_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="MBeanServerConnection" instantiates="IMBeanServerConnection_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServer_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="MBeanServer" instantiates="IMBeanServer_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Collection" instantiates="ICollection_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Set" instantiates="ISet_MBeanExporter"/>
+    </assmComponents>
+    <assemblyConnections refID="_tHUCQjqXEeiP29_qDiwNWQ" serverInstElem="_tHUCQDqXEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="chengdedeng.waf.src.main.resources.spring.applicationContext.xml_spec">
+    <specComponents name="MBeanExporter_role" id="_tK2f1zqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExportOperationsMBeanExporter_role" type="MBeanExportOperations"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanClassLoaderAwareMBeanExporter_role" type="BeanClassLoaderAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactoryAwareMBeanExporter_role" type="BeanFactoryAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBeanMBeanExporter_role" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartInitializingSingletonMBeanExporter_role" type="SmartInitializingSingleton"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBeanMBeanExporter_role" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporterMBeanExporter_role" type="IMBeanExporter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullMBeanExporter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableMBeanExporter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceMBeanExporter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringMBeanExporter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullMBeanExporter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableMBeanExporter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceMBeanExporter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringMBeanExporter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullMBeanExporter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableMBeanExporter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceMBeanExporter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringMBeanExporter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstantsMBeanExporter_role" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapMBeanExporter_role" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableMBeanExporter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIntegerMBeanExporter_role" direction="REQUIRED" type="IInteger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanInfoAssemblerMBeanExporter_role" direction="REQUIRED" type="MBeanInfoAssembler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectNamingStrategyMBeanExporter_role" direction="REQUIRED" type="ObjectNamingStrategy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionMBeanExporter_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISetMBeanExporter_role" direction="REQUIRED" type="Set"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporterListenerMBeanExporter_role" direction="REQUIRED" type="MBeanExporterListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBeanMBeanExporter_role" direction="REQUIRED" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INotificationListenerBeanMBeanExporter_role" direction="REQUIRED" type="INotificationListenerBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapMBeanExporter_role" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClassLoaderMBeanExporter_role" direction="REQUIRED" type="IClassLoader_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactoryMBeanExporter_role" direction="REQUIRED" type="BeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactoryMBeanExporter_role" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogMBeanExporter_role" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnectionMBeanExporter_role" direction="REQUIRED" type="MBeanServerConnection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerMBeanExporter_role" direction="REQUIRED" type="MBeanServer"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionMBeanExporter_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISetMBeanExporter_role" direction="REQUIRED" type="Set"/>
+    </specComponents>
+    <specComponents name="PooledAllocatorStats_role" id="_tK3vDjqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IPooledAllocatorStatsPooledAllocatorStats_role" type="IPooledAllocatorStats_Type"/>
+    </specComponents>
+    <specConnections clientIntElem="IMapMBeanExporter_role" refID="_tK3vHjqXEeiP29_qDiwNWQ" clientCompElem="_tK2f1zqXEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="chengdedeng.waf.target.classes.spring.applicationContext.xml_config" implements="//@architectureDescriptions[name='chengdedeng.waf.target.classes.spring.applicationContext.xml_spec']">
+    <configComponents name="info.yangguo.waf.util.PooledAllocatorStats" id="_tLOR4DqXEeiP29_qDiwNWQ" realizes="_tLQH4DqXEeiP29_qDiwNWQ" implements="_tLO48jqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IPooledAllocatorStats" type="IPooledAllocatorStats_Type"/>
+    </configComponents>
+    <configComponents name="org.springframework.jmx.export.MBeanExporter" id="_tLOR4TqXEeiP29_qDiwNWQ" realizes="_tLQH8DqXEeiP29_qDiwNWQ" implements="_tLO5AjqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExportOperations_MBeanExporter" type="MBeanExportOperations"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanClassLoaderAware_MBeanExporter" type="BeanClassLoaderAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactoryAware_MBeanExporter" type="BeanFactoryAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartInitializingSingleton_MBeanExporter" type="SmartInitializingSingleton"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_MBeanExporter" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporter" type="IMBeanExporter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_MBeanExporter" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInteger_MBeanExporter" direction="REQUIRED" type="IInteger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanInfoAssembler_MBeanExporter" direction="REQUIRED" type="MBeanInfoAssembler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectNamingStrategy_MBeanExporter" direction="REQUIRED" type="ObjectNamingStrategy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter" direction="REQUIRED" type="Set"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporterListener_MBeanExporter" direction="REQUIRED" type="MBeanExporterListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter" direction="REQUIRED" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INotificationListenerBean_MBeanExporter" direction="REQUIRED" type="INotificationListenerBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClassLoader_MBeanExporter" direction="REQUIRED" type="IClassLoader_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactory_MBeanExporter" direction="REQUIRED" type="BeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_MBeanExporter" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_MBeanExporter" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnection_MBeanExporter" direction="REQUIRED" type="MBeanServerConnection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServer_MBeanExporter" direction="REQUIRED" type="MBeanServer"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter" direction="REQUIRED" type="Set"/>
+      <attributes name="AUTODETECT_NONE" type="int"/>
+      <attributes name="AUTODETECT_MBEAN" type="int"/>
+      <attributes name="AUTODETECT_ASSEMBLER" type="int"/>
+      <attributes name="AUTODETECT_ALL" type="int"/>
+      <attributes name="WILDCARD" type="java.lang.String"/>
+      <attributes name="MR_TYPE_OBJECT_REFERENCE" type="java.lang.String"/>
+      <attributes name="CONSTANT_PREFIX_AUTODETECT" type="java.lang.String"/>
+      <attributes name="constants" type="org.springframework.core.Constants"/>
+      <attributes name="beans" type="java.util.Map"/>
+      <attributes name="autodetectMode" type="java.lang.Integer"/>
+      <attributes name="allowEagerInit" type="boolean"/>
+      <attributes name="assembler" type="org.springframework.jmx.export.assembler.MBeanInfoAssembler"/>
+      <attributes name="namingStrategy" type="org.springframework.jmx.export.naming.ObjectNamingStrategy"/>
+      <attributes name="ensureUniqueRuntimeObjectNames" type="boolean"/>
+      <attributes name="exposeManagedResourceClassLoader" type="boolean"/>
+      <attributes name="excludedBeans" type="java.util.Set"/>
+      <attributes name="listeners" type="org.springframework.jmx.export.MBeanExporterListener"/>
+      <attributes name="notificationListeners" type="org.springframework.jmx.export.NotificationListenerBean"/>
+      <attributes name="registeredNotificationListeners" type="java.util.Map"/>
+      <attributes name="beanClassLoader" type="java.lang.ClassLoader"/>
+      <attributes name="beanFactory" type="org.springframework.beans.factory.ListableBeanFactory"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="server" type="javax.management.MBeanServer"/>
+      <attributes name="registeredBeans" type="java.util.Set"/>
+      <attributes name="registrationPolicy" type="org.springframework.jmx.support.RegistrationPolicy"/>
+    </configComponents>
+    <configConnections clientIntElem="IMap_MBeanExporter" refID="_tLOR4jqXEeiP29_qDiwNWQ" property="&quot;beans&quot;" clientClassElem="_tLOR4TqXEeiP29_qDiwNWQ" serverClassElem="_tLOR4DqXEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="chengdedeng.waf.target.classes.spring.applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='chengdedeng.waf.target.classes.spring.applicationContext.xml_config']">
+    <assmComponents name="pooledstats" id="_tLOR4zqXEeiP29_qDiwNWQ" instantiates="_tLOR4DqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IPooledAllocatorStats_pooledstats" type="IPooledAllocatorStats_Type" instantiates="IPooledAllocatorStats"/>
+    </assmComponents>
+    <assmComponents name="org.springframework.jmx.export.MBeanExporter1" id="_tLO48DqXEeiP29_qDiwNWQ" instantiates="_tLOR4TqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExportOperations_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="MBeanExportOperations" instantiates="IMBeanExportOperations_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanClassLoaderAware_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="BeanClassLoaderAware" instantiates="IBeanClassLoaderAware_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactoryAware_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="BeanFactoryAware" instantiates="IBeanFactoryAware_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="InitializingBean" instantiates="IInitializingBean_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartInitializingSingleton_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="SmartInitializingSingleton" instantiates="ISmartInitializingSingleton_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="DisposableBean" instantiates="IDisposableBean_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="IMBeanExporter_Type" instantiates="IMBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" instantiates="null_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Comparable" instantiates="IComparable_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IString_Type" instantiates="IString_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" instantiates="null_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Comparable" instantiates="IComparable_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IString_Type" instantiates="IString_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" instantiates="null_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Comparable" instantiates="IComparable_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IString_Type" instantiates="IString_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IConstants_Type" instantiates="IConstants_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Map" instantiates="IMap_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Comparable" instantiates="IComparable_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInteger_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IInteger_Type" instantiates="IInteger_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanInfoAssembler_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="MBeanInfoAssembler" instantiates="IMBeanInfoAssembler_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectNamingStrategy_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="ObjectNamingStrategy" instantiates="IObjectNamingStrategy_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Collection" instantiates="ICollection_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Set" instantiates="ISet_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporterListener_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="MBeanExporterListener" instantiates="IMBeanExporterListener_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="InitializingBean" instantiates="IInitializingBean_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INotificationListenerBean_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="INotificationListenerBean_Type" instantiates="INotificationListenerBean_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Map" instantiates="IMap_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClassLoader_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IClassLoader_Type" instantiates="IClassLoader_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactory_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="BeanFactory" instantiates="IBeanFactory_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="ListableBeanFactory" instantiates="IListableBeanFactory_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Log" instantiates="ILog_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnection_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="MBeanServerConnection" instantiates="IMBeanServerConnection_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServer_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="MBeanServer" instantiates="IMBeanServer_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Collection" instantiates="ICollection_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Set" instantiates="ISet_MBeanExporter"/>
+    </assmComponents>
+    <assemblyConnections refID="_tLO48TqXEeiP29_qDiwNWQ" serverInstElem="_tLOR4zqXEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="chengdedeng.waf.target.classes.spring.applicationContext.xml_spec">
+    <specComponents name="PooledAllocatorStats_role" id="_tLQH4DqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IPooledAllocatorStatsPooledAllocatorStats_role" type="IPooledAllocatorStats_Type"/>
+    </specComponents>
+    <specComponents name="MBeanExporter_role" id="_tLQH8DqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExportOperationsMBeanExporter_role" type="MBeanExportOperations"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanClassLoaderAwareMBeanExporter_role" type="BeanClassLoaderAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactoryAwareMBeanExporter_role" type="BeanFactoryAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBeanMBeanExporter_role" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartInitializingSingletonMBeanExporter_role" type="SmartInitializingSingleton"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBeanMBeanExporter_role" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporterMBeanExporter_role" type="IMBeanExporter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullMBeanExporter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableMBeanExporter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceMBeanExporter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringMBeanExporter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullMBeanExporter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableMBeanExporter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceMBeanExporter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringMBeanExporter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullMBeanExporter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableMBeanExporter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceMBeanExporter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringMBeanExporter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstantsMBeanExporter_role" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapMBeanExporter_role" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableMBeanExporter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIntegerMBeanExporter_role" direction="REQUIRED" type="IInteger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanInfoAssemblerMBeanExporter_role" direction="REQUIRED" type="MBeanInfoAssembler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectNamingStrategyMBeanExporter_role" direction="REQUIRED" type="ObjectNamingStrategy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionMBeanExporter_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISetMBeanExporter_role" direction="REQUIRED" type="Set"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporterListenerMBeanExporter_role" direction="REQUIRED" type="MBeanExporterListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBeanMBeanExporter_role" direction="REQUIRED" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INotificationListenerBeanMBeanExporter_role" direction="REQUIRED" type="INotificationListenerBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapMBeanExporter_role" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClassLoaderMBeanExporter_role" direction="REQUIRED" type="IClassLoader_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactoryMBeanExporter_role" direction="REQUIRED" type="BeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactoryMBeanExporter_role" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogMBeanExporter_role" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnectionMBeanExporter_role" direction="REQUIRED" type="MBeanServerConnection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerMBeanExporter_role" direction="REQUIRED" type="MBeanServer"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionMBeanExporter_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISetMBeanExporter_role" direction="REQUIRED" type="Set"/>
+    </specComponents>
+    <specConnections clientIntElem="IMapMBeanExporter_role" refID="_tLQzcjqXEeiP29_qDiwNWQ" clientCompElem="_tLQH8DqXEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="chengdedeng.waf.target.jsw.waf.conf.spring.applicationContext.xml_config" implements="//@architectureDescriptions[name='chengdedeng.waf.target.jsw.waf.conf.spring.applicationContext.xml_spec']">
+    <configComponents name="info.yangguo.waf.util.PooledAllocatorStats" id="_tLmFUDqXEeiP29_qDiwNWQ" realizes="_tLolCDqXEeiP29_qDiwNWQ" implements="_tLmsYTqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IPooledAllocatorStats" type="IPooledAllocatorStats_Type"/>
+    </configComponents>
+    <configComponents name="org.springframework.jmx.export.MBeanExporter" id="_tLmFUTqXEeiP29_qDiwNWQ" realizes="_tLnXWjqXEeiP29_qDiwNWQ" implements="_tLmscTqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExportOperations_MBeanExporter" type="MBeanExportOperations"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanClassLoaderAware_MBeanExporter" type="BeanClassLoaderAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactoryAware_MBeanExporter" type="BeanFactoryAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartInitializingSingleton_MBeanExporter" type="SmartInitializingSingleton"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_MBeanExporter" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporter" type="IMBeanExporter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_MBeanExporter" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInteger_MBeanExporter" direction="REQUIRED" type="IInteger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanInfoAssembler_MBeanExporter" direction="REQUIRED" type="MBeanInfoAssembler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectNamingStrategy_MBeanExporter" direction="REQUIRED" type="ObjectNamingStrategy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter" direction="REQUIRED" type="Set"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporterListener_MBeanExporter" direction="REQUIRED" type="MBeanExporterListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter" direction="REQUIRED" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INotificationListenerBean_MBeanExporter" direction="REQUIRED" type="INotificationListenerBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClassLoader_MBeanExporter" direction="REQUIRED" type="IClassLoader_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactory_MBeanExporter" direction="REQUIRED" type="BeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_MBeanExporter" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_MBeanExporter" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnection_MBeanExporter" direction="REQUIRED" type="MBeanServerConnection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServer_MBeanExporter" direction="REQUIRED" type="MBeanServer"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter" direction="REQUIRED" type="Set"/>
+      <attributes name="AUTODETECT_NONE" type="int"/>
+      <attributes name="AUTODETECT_MBEAN" type="int"/>
+      <attributes name="AUTODETECT_ASSEMBLER" type="int"/>
+      <attributes name="AUTODETECT_ALL" type="int"/>
+      <attributes name="WILDCARD" type="java.lang.String"/>
+      <attributes name="MR_TYPE_OBJECT_REFERENCE" type="java.lang.String"/>
+      <attributes name="CONSTANT_PREFIX_AUTODETECT" type="java.lang.String"/>
+      <attributes name="constants" type="org.springframework.core.Constants"/>
+      <attributes name="beans" type="java.util.Map"/>
+      <attributes name="autodetectMode" type="java.lang.Integer"/>
+      <attributes name="allowEagerInit" type="boolean"/>
+      <attributes name="assembler" type="org.springframework.jmx.export.assembler.MBeanInfoAssembler"/>
+      <attributes name="namingStrategy" type="org.springframework.jmx.export.naming.ObjectNamingStrategy"/>
+      <attributes name="ensureUniqueRuntimeObjectNames" type="boolean"/>
+      <attributes name="exposeManagedResourceClassLoader" type="boolean"/>
+      <attributes name="excludedBeans" type="java.util.Set"/>
+      <attributes name="listeners" type="org.springframework.jmx.export.MBeanExporterListener"/>
+      <attributes name="notificationListeners" type="org.springframework.jmx.export.NotificationListenerBean"/>
+      <attributes name="registeredNotificationListeners" type="java.util.Map"/>
+      <attributes name="beanClassLoader" type="java.lang.ClassLoader"/>
+      <attributes name="beanFactory" type="org.springframework.beans.factory.ListableBeanFactory"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="server" type="javax.management.MBeanServer"/>
+      <attributes name="registeredBeans" type="java.util.Set"/>
+      <attributes name="registrationPolicy" type="org.springframework.jmx.support.RegistrationPolicy"/>
+    </configComponents>
+    <configConnections clientIntElem="IMap_MBeanExporter" refID="_tLmFUjqXEeiP29_qDiwNWQ" property="&quot;beans&quot;" clientClassElem="_tLmFUTqXEeiP29_qDiwNWQ" serverClassElem="_tLmFUDqXEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="chengdedeng.waf.target.jsw.waf.conf.spring.applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='chengdedeng.waf.target.jsw.waf.conf.spring.applicationContext.xml_config']">
+    <assmComponents name="pooledstats" id="_tLmFUzqXEeiP29_qDiwNWQ" instantiates="_tLmFUDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IPooledAllocatorStats_pooledstats" type="IPooledAllocatorStats_Type" instantiates="IPooledAllocatorStats"/>
+    </assmComponents>
+    <assmComponents name="org.springframework.jmx.export.MBeanExporter1" id="_tLmFVDqXEeiP29_qDiwNWQ" instantiates="_tLmFUTqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExportOperations_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="MBeanExportOperations" instantiates="IMBeanExportOperations_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanClassLoaderAware_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="BeanClassLoaderAware" instantiates="IBeanClassLoaderAware_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactoryAware_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="BeanFactoryAware" instantiates="IBeanFactoryAware_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="InitializingBean" instantiates="IInitializingBean_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartInitializingSingleton_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="SmartInitializingSingleton" instantiates="ISmartInitializingSingleton_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="DisposableBean" instantiates="IDisposableBean_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporter_org.springframework.jmx.export.MBeanExporter1" type="IMBeanExporter_Type" instantiates="IMBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" instantiates="null_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Comparable" instantiates="IComparable_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IString_Type" instantiates="IString_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" instantiates="null_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Comparable" instantiates="IComparable_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IString_Type" instantiates="IString_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" instantiates="null_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Comparable" instantiates="IComparable_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IString_Type" instantiates="IString_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IConstants_Type" instantiates="IConstants_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Map" instantiates="IMap_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Comparable" instantiates="IComparable_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInteger_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IInteger_Type" instantiates="IInteger_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanInfoAssembler_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="MBeanInfoAssembler" instantiates="IMBeanInfoAssembler_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectNamingStrategy_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="ObjectNamingStrategy" instantiates="IObjectNamingStrategy_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Collection" instantiates="ICollection_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Set" instantiates="ISet_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporterListener_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="MBeanExporterListener" instantiates="IMBeanExporterListener_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="InitializingBean" instantiates="IInitializingBean_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INotificationListenerBean_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="INotificationListenerBean_Type" instantiates="INotificationListenerBean_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Map" instantiates="IMap_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClassLoader_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="IClassLoader_Type" instantiates="IClassLoader_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactory_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="BeanFactory" instantiates="IBeanFactory_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="ListableBeanFactory" instantiates="IListableBeanFactory_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Log" instantiates="ILog_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnection_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="MBeanServerConnection" instantiates="IMBeanServerConnection_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServer_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="MBeanServer" instantiates="IMBeanServer_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Collection" instantiates="ICollection_MBeanExporter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter_org.springframework.jmx.export.MBeanExporter1" direction="REQUIRED" type="Set" instantiates="ISet_MBeanExporter"/>
+    </assmComponents>
+    <assemblyConnections refID="_tLmsYDqXEeiP29_qDiwNWQ" serverInstElem="_tLmFUzqXEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="chengdedeng.waf.target.jsw.waf.conf.spring.applicationContext.xml_spec">
+    <specComponents name="MBeanExporter_role" id="_tLnXWjqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExportOperationsMBeanExporter_role" type="MBeanExportOperations"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanClassLoaderAwareMBeanExporter_role" type="BeanClassLoaderAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactoryAwareMBeanExporter_role" type="BeanFactoryAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBeanMBeanExporter_role" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartInitializingSingletonMBeanExporter_role" type="SmartInitializingSingleton"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBeanMBeanExporter_role" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporterMBeanExporter_role" type="IMBeanExporter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullMBeanExporter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableMBeanExporter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceMBeanExporter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringMBeanExporter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullMBeanExporter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableMBeanExporter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceMBeanExporter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringMBeanExporter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullMBeanExporter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableMBeanExporter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceMBeanExporter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringMBeanExporter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstantsMBeanExporter_role" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapMBeanExporter_role" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableMBeanExporter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIntegerMBeanExporter_role" direction="REQUIRED" type="IInteger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanInfoAssemblerMBeanExporter_role" direction="REQUIRED" type="MBeanInfoAssembler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectNamingStrategyMBeanExporter_role" direction="REQUIRED" type="ObjectNamingStrategy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionMBeanExporter_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISetMBeanExporter_role" direction="REQUIRED" type="Set"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporterListenerMBeanExporter_role" direction="REQUIRED" type="MBeanExporterListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBeanMBeanExporter_role" direction="REQUIRED" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INotificationListenerBeanMBeanExporter_role" direction="REQUIRED" type="INotificationListenerBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapMBeanExporter_role" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClassLoaderMBeanExporter_role" direction="REQUIRED" type="IClassLoader_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactoryMBeanExporter_role" direction="REQUIRED" type="BeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactoryMBeanExporter_role" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogMBeanExporter_role" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnectionMBeanExporter_role" direction="REQUIRED" type="MBeanServerConnection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerMBeanExporter_role" direction="REQUIRED" type="MBeanServer"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionMBeanExporter_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISetMBeanExporter_role" direction="REQUIRED" type="Set"/>
+    </specComponents>
+    <specComponents name="PooledAllocatorStats_role" id="_tLolCDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IPooledAllocatorStatsPooledAllocatorStats_role" type="IPooledAllocatorStats_Type"/>
+    </specComponents>
+    <specConnections clientIntElem="IMapMBeanExporter_role" refID="_tLolGDqXEeiP29_qDiwNWQ" clientCompElem="_tLnXWjqXEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="info_yangguo_waf_util_PooledAllocatorStats_Type" id="_tHqnkDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IPooledAllocatorStats_info_yangguo_waf_util_PooledAllocatorStats_Type" type="IPooledAllocatorStats_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_jmx_export_MBeanExporter_Type" id="_tK1QXzqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExportOperations_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="MBeanExportOperations"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanClassLoaderAware_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="BeanClassLoaderAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactoryAware_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="BeanFactoryAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartInitializingSingleton_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="SmartInitializingSingleton"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="IMBeanExporter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInteger_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IInteger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanInfoAssembler_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="MBeanInfoAssembler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectNamingStrategy_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="ObjectNamingStrategy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Set"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporterListener_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="MBeanExporterListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INotificationListenerBean_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="INotificationListenerBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClassLoader_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IClassLoader_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactory_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="BeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnection_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="MBeanServerConnection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServer_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="MBeanServer"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Set"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="info_yangguo_waf_util_PooledAllocatorStats_Type" id="_tLO48jqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IPooledAllocatorStats_info_yangguo_waf_util_PooledAllocatorStats_Type" type="IPooledAllocatorStats_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_jmx_export_MBeanExporter_Type" id="_tLO5AjqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExportOperations_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="MBeanExportOperations"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanClassLoaderAware_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="BeanClassLoaderAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactoryAware_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="BeanFactoryAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartInitializingSingleton_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="SmartInitializingSingleton"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="IMBeanExporter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInteger_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IInteger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanInfoAssembler_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="MBeanInfoAssembler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectNamingStrategy_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="ObjectNamingStrategy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Set"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporterListener_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="MBeanExporterListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INotificationListenerBean_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="INotificationListenerBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClassLoader_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IClassLoader_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactory_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="BeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnection_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="MBeanServerConnection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServer_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="MBeanServer"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Set"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="info_yangguo_waf_util_PooledAllocatorStats_Type" id="_tLmsYTqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IPooledAllocatorStats_info_yangguo_waf_util_PooledAllocatorStats_Type" type="IPooledAllocatorStats_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_jmx_export_MBeanExporter_Type" id="_tLmscTqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExportOperations_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="MBeanExportOperations"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanClassLoaderAware_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="BeanClassLoaderAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactoryAware_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="BeanFactoryAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISmartInitializingSingleton_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="SmartInitializingSingleton"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" type="IMBeanExporter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInteger_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IInteger_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanInfoAssembler_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="MBeanInfoAssembler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectNamingStrategy_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="ObjectNamingStrategy"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Set"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanExporterListener_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="MBeanExporterListener"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INotificationListenerBean_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="INotificationListenerBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClassLoader_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="IClassLoader_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IBeanFactory_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="BeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IListableBeanFactory_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="ListableBeanFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServerConnection_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="MBeanServerConnection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMBeanServer_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="MBeanServer"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_MBeanExporter_org_springframework_jmx_export_MBeanExporter_Type" direction="REQUIRED" type="Set"/>
+    </components>
+    <interfaceTypes name="IPooledAllocatorStats_Type">
+      <signatures name="metricsOfChunkLists" type="java.util.Map" id="_tK1QUDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.List" id="_tK1QUTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="metricsOfPoolSubpage" type="java.util.Map" id="_tK1QUjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="io.netty.buffer.PoolSubpageMetric" id="_tK1QUzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="metricsOfPoolArena" type="java.util.Map" id="_tK1QVDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="io.netty.buffer.PoolArenaMetric" id="_tK1QVTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="metricsOfPoolChunkList" type="java.util.Map" id="_tK1QVjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="io.netty.buffer.PoolChunkListMetric" id="_tK1QVzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMetricAsString" type="java.lang.String" id="_tK1QWDqXEeiP29_qDiwNWQ"/>
+      <signatures name="metricsOfSubpages" type="java.util.Map" id="_tK1QWTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK1QWjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.List" id="_tK1QWzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="metricsOfPoolChunk" type="java.util.Map" id="_tK1QXDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="io.netty.buffer.PoolChunkMetric" id="_tK1QXTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMetrics" type="java.util.Map" id="_tK1QXjqXEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="MBeanExportOperations">
+      <signatures name="unregisterManagedResource" type="void" id="_tK1QYDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK1QYTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="registerManagedResource" type="void" id="_tK1QYjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK1QYzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK1QZDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="registerManagedResource" type="javax.management.ObjectName" id="_tK1QZTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK1QZjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="BeanClassLoaderAware">
+      <signatures name="setBeanClassLoader" type="void" id="_tK1QZzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.ClassLoader" id="_tK1QaDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="BeanFactoryAware">
+      <signatures name="setBeanFactory" type="void" id="_tK1QaTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.beans.factory.BeanFactory" id="_tK1QajqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="InitializingBean">
+      <signatures name="afterPropertiesSet" type="void" id="_tK1QazqXEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="SmartInitializingSingleton">
+      <signatures name="afterSingletonsInstantiated" type="void" id="_tK1QbDqXEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="DisposableBean">
+      <signatures name="destroy" type="void" id="_tK1QbTqXEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IMBeanExporter_Type">
+      <signatures name="getServer" type="javax.management.MBeanServer" id="_tK1QbjqXEeiP29_qDiwNWQ"/>
+      <signatures name="setServer" type="void" id="_tK1QbzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.MBeanServer" id="_tK1QcDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRegisteredObjectNames" type="javax.management.ObjectName[]" id="_tK1QcTqXEeiP29_qDiwNWQ"/>
+      <signatures name="setRegistrationPolicy" type="void" id="_tK1QcjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.jmx.support.RegistrationPolicy" id="_tK1QczqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onRegister" type="void" id="_tK1QdDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK1QdTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_tK1QdjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onUnregister" type="void" id="_tK1QdzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK1QeDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="unregisterBeans" type="void" id="_tK1QeTqXEeiP29_qDiwNWQ"/>
+      <signatures name="doRegister" type="void" id="_tK1QejqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK1QezqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK1QfDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doUnregister" type="void" id="_tK1QfTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK1QfjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="unregisterManagedResource" type="void" id="_tK1QfzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK1QgDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="registerManagedResource" type="void" id="_tK1QgTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK1QgjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK1QgzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setBeanClassLoader" type="void" id="_tK1QhDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.ClassLoader" id="_tK1QhTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setBeanFactory" type="void" id="_tK1QhjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.beans.factory.BeanFactory" id="_tK1QhzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="afterPropertiesSet" type="void" id="_tK1QiDqXEeiP29_qDiwNWQ"/>
+      <signatures name="afterSingletonsInstantiated" type="void" id="_tK1QiTqXEeiP29_qDiwNWQ"/>
+      <signatures name="destroy" type="void" id="_tK1QijqXEeiP29_qDiwNWQ"/>
+      <signatures name="access$100" type="void" id="_tK1QizqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.jmx.export.MBeanExporter" id="_tK1QjDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_tK1QjTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.modelmbean.ModelMBean" id="_tK1QjjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="javax.management.ObjectName" id="_tK1QjzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMBeanInfo" type="javax.management.modelmbean.ModelMBeanInfo" id="_tK1QkDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK1QkTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK1QkjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setBeans" type="void" id="_tK1QkzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_tK1QlDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getObjectName" type="javax.management.ObjectName" id="_tK1QlTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK1QljqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK1QlzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="notifyListenersOfRegistration" type="void" id="_tK1QmDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK1QmTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createAndConfigureMBean" type="javax.management.modelmbean.ModelMBean" id="_tK1QmjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK1QmzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK1QnDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="registerNotificationListeners" type="void" id="_tK1QnTqXEeiP29_qDiwNWQ"/>
+      <signatures name="unregisterNotificationListeners" type="void" id="_tK1QnjqXEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$registerBeans$1" type="boolean" id="_tK1QnzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK1QoDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK1QoTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setNotificationListenerMappings" type="void" id="_tK1QojqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_tK1QozqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAutodetectMode" type="void" id="_tK1QpDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK1QpTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setNotificationListeners" type="void" id="_tK1QpjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.jmx.export.NotificationListenerBean[]" id="_tK1QpzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isBeanDefinitionAbstract" type="boolean" id="_tK1QqDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.beans.factory.ListableBeanFactory" id="_tK1QqTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK1QqjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAutodetectModeName" type="void" id="_tK1QqzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK1QrDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setNamingStrategy" type="void" id="_tK1QrTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.jmx.export.naming.ObjectNamingStrategy" id="_tK1QrjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isBeanDefinitionLazyInit" type="boolean" id="_tK1QrzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.beans.factory.ListableBeanFactory" id="_tK1QsDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK1QsTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="adaptMBeanIfPossible" type="javax.management.DynamicMBean" id="_tK1QsjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK1QszqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="notifyListenersOfUnregistration" type="void" id="_tK1QtDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK1QtTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAllowEagerInit" type="void" id="_tK1QtjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_tK1QtzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lambda$registerBeans$2" type="void" id="_tK1QuDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK1QuTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_tK1QujqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="registerBeanInstance" type="javax.management.ObjectName" id="_tK1QuzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK1QvDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK1QvTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="registerBeanNameOrInstance" type="javax.management.ObjectName" id="_tK1QvjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK1QvzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK1QwDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAutodetect" type="void" id="_tK1QwTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_tK1QwjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="autodetect" type="void" id="_tK1QwzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_tK1QxDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.jmx.export.MBeanExporter.AutodetectCallback" id="_tK1QxTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAssembler" type="void" id="_tK1QxjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.jmx.export.assembler.MBeanInfoAssembler" id="_tK1QxzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setExcludedBeans" type="void" id="_tK1QyDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String[]" id="_tK1QyTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isExcluded" type="boolean" id="_tK1QyjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK1QyzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createModelMBean" type="javax.management.modelmbean.ModelMBean" id="_tK1QzDqXEeiP29_qDiwNWQ"/>
+      <signatures name="addExcludedBean" type="void" id="_tK1QzTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK1QzjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setListeners" type="void" id="_tK1QzzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.jmx.export.MBeanExporterListener[]" id="_tK1Q0DqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isMBean" type="boolean" id="_tK1Q0TqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK1Q0jqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="registerBeans" type="void" id="_tK1Q0zqXEeiP29_qDiwNWQ"/>
+      <signatures name="registerLazyInit" type="javax.management.ObjectName" id="_tK1Q1DqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK1Q1TqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK1Q1jqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceNotificationListenerBeanNameKeysIfNecessary" type="void" id="_tK1Q1zqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK13YDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK13YTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lambda$unregisterNotificationListeners$3" type="void" id="_tK13YjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.jmx.export.NotificationListenerBean" id="_tK13YzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName[]" id="_tK13ZDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEnsureUniqueRuntimeObjectNames" type="void" id="_tK13ZTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_tK13ZjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setExposeManagedResourceClassLoader" type="void" id="_tK13ZzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_tK13aDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lambda$setNotificationListenerMappings$0" type="void" id="_tK13aTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.List" id="_tK13ajqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_tK13azqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.NotificationListener" id="_tK13bDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="injectNotificationPublisherIfNecessary" type="void" id="_tK13bTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK13bjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.modelmbean.ModelMBean" id="_tK13bzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.ObjectName" id="_tK13cDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IMBeanRegistrationSupport_Type">
+      <signatures name="getServer" type="javax.management.MBeanServer" id="_tK13cTqXEeiP29_qDiwNWQ"/>
+      <signatures name="setServer" type="void" id="_tK13cjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.MBeanServer" id="_tK13czqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRegisteredObjectNames" type="javax.management.ObjectName[]" id="_tK13dDqXEeiP29_qDiwNWQ"/>
+      <signatures name="setRegistrationPolicy" type="void" id="_tK13dTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.jmx.support.RegistrationPolicy" id="_tK13djqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onRegister" type="void" id="_tK13dzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK13eDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_tK13eTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onUnregister" type="void" id="_tK13ejqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK13ezqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="unregisterBeans" type="void" id="_tK13fDqXEeiP29_qDiwNWQ"/>
+      <signatures name="doRegister" type="void" id="_tK13fTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK13fjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK13fzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doUnregister" type="void" id="_tK13gDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK13gTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Comparable">
+      <signatures name="compareTo" type="int" id="_tK13kDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK13kTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="CharSequence">
+      <signatures name="toString" type="java.lang.String" id="_tK13kjqXEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_tK13kzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK13lDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_tK13lTqXEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_tK13ljqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK13lzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK13mDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_tK13mTqXEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_tK13mjqXEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IString_Type">
+      <signatures name="compareTo" type="int" id="_tK13mzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK13nDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_tK13nTqXEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_tK13njqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK13nzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_tK13oDqXEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_tK13oTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK13ojqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK13ozqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_tK13pDqXEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_tK13pTqXEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$chars$0" type="java.util.Spliterator.OfInt" id="_tK13pjqXEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$codePoints$1" type="java.util.Spliterator.OfInt" id="_tK13pzqXEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_tK13qDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK13qTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_tK13qjqXEeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_tK13qzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK13rDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK13rTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueOf" type="java.lang.String" id="_tK13rjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK13rzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkBounds" type="void" id="_tK13sDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_tK13sTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK13sjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_tK13szqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointAt" type="int" id="_tK13tDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK13tTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointBefore" type="int" id="_tK13tjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK13tzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointCount" type="int" id="_tK13uDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK13uTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK13ujqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compareToIgnoreCase" type="int" id="_tK13uzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK13vDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="concat" type="java.lang.String" id="_tK13vTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK13vjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contains" type="boolean" id="_tK13vzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_tK13wDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contentEquals" type="boolean" id="_tK13wTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_tK13wjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyValueOf" type="java.lang.String" id="_tK13wzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char[]" id="_tK13xDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="endsWith" type="boolean" id="_tK13xTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK13xjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equalsIgnoreCase" type="boolean" id="_tK13xzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK13yDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="format" type="java.lang.String" id="_tK13yTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_tK13yjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK13yzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_tK13zDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBytes" type="void" id="_tK13zTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK13zjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK13zzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_tK130DqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_tK130TqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChars" type="void" id="_tK130jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK130zqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK131DqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="char[]" id="_tK131TqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_tK131jqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="indexOfSupplementary" type="int" id="_tK131zqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK132DqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK132TqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="intern" type="java.lang.String" id="_tK132jqXEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_tK132zqXEeiP29_qDiwNWQ"/>
+      <signatures name="join" type="java.lang.String" id="_tK133DqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_tK133TqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.CharSequence[]" id="_tK133jqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOf" type="int" id="_tK133zqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK134DqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOfSupplementary" type="int" id="_tK134TqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK134jqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK134zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="matches" type="boolean" id="_tK135DqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK135TqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nonSyncContentEquals" type="boolean" id="_tK135jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.AbstractStringBuilder" id="_tK135zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="offsetByCodePoints" type="int" id="_tK136DqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK136TqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK136jqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="regionMatches" type="boolean" id="_tK136zqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK137DqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK137TqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_tK137jqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_tK137zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="java.lang.String" id="_tK138DqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char" id="_tK138TqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="char" id="_tK138jqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="java.lang.String" id="_tK138zqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK139DqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK139TqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceFirst" type="java.lang.String" id="_tK139jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK139zqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK13-DqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="split" type="java.lang.String[]" id="_tK13-TqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK13-jqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="startsWith" type="boolean" id="_tK13-zqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK13_DqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK13_TqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="substring" type="java.lang.String" id="_tK13_jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK13_zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCharArray" type="char[]" id="_tK14ADqXEeiP29_qDiwNWQ"/>
+      <signatures name="toLowerCase" type="java.lang.String" id="_tK14ATqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_tK14AjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUpperCase" type="java.lang.String" id="_tK14AzqXEeiP29_qDiwNWQ"/>
+      <signatures name="trim" type="java.lang.String" id="_tK14BDqXEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IConstants_Type">
+      <signatures name="getSize" type="int" id="_tK15EDqXEeiP29_qDiwNWQ"/>
+      <signatures name="getClassName" type="java.lang.String" id="_tK15ETqXEeiP29_qDiwNWQ"/>
+      <signatures name="asNumber" type="java.lang.Number" id="_tK15EjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK15EzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="asObject" type="java.lang.Object" id="_tK15FDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK15FTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFieldCache" type="java.util.Map" id="_tK15FjqXEeiP29_qDiwNWQ"/>
+      <signatures name="toCode" type="java.lang.String" id="_tK15FzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15GDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK15GTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getValues" type="java.util.Set" id="_tK15GjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK15GzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCodeForSuffix" type="java.lang.String" id="_tK15HDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15HTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK15HjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="asString" type="java.lang.String" id="_tK15HzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK15IDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getNames" type="java.util.Set" id="_tK15ITqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK15IjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getValuesForSuffix" type="java.util.Set" id="_tK15IzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK15JDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getNamesForProperty" type="java.util.Set" id="_tK15JTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK15JjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getValuesForProperty" type="java.util.Set" id="_tK15JzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK15KDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="propertyToConstantNamePrefix" type="java.lang.String" id="_tK15KTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK15KjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getNamesForSuffix" type="java.util.Set" id="_tK15KzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK15LDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCodeForProperty" type="java.lang.String" id="_tK15LTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15LjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK15LzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Map">
+      <signatures name="remove" type="java.lang.Object" id="_tK15MDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15MTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_tK15MjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15MzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_tK15NDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_tK15NTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15NjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_tK15NzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15ODqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_tK15OTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_tK15OjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15OzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="values" type="java.util.Collection" id="_tK15PDqXEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_tK15PTqXEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_tK15PjqXEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_tK15PzqXEeiP29_qDiwNWQ"/>
+      <signatures name="replace" type="java.lang.Object" id="_tK15QDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15QTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_tK15QjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="boolean" id="_tK15QzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15RDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_tK15RTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_tK15RjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="void" id="_tK15RzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiFunction" id="_tK15SDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="size" type="int" id="_tK15STqXEeiP29_qDiwNWQ"/>
+      <signatures name="entrySet" type="java.util.Set" id="_tK15SjqXEeiP29_qDiwNWQ"/>
+      <signatures name="putAll" type="void" id="_tK15SzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_tK15TDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="putIfAbsent" type="java.lang.Object" id="_tK15TTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15TjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_tK15TzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="keySet" type="java.util.Set" id="_tK15UDqXEeiP29_qDiwNWQ"/>
+      <signatures name="compute" type="java.lang.Object" id="_tK15UTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15UjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_tK15UzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfAbsent" type="java.lang.Object" id="_tK15VDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15VTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.Function" id="_tK15VjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfPresent" type="java.lang.Object" id="_tK15VzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15WDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_tK15WTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsKey" type="boolean" id="_tK15WjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15WzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsValue" type="boolean" id="_tK15XDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15XTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forEach" type="void" id="_tK15XjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiConsumer" id="_tK15XzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getOrDefault" type="java.lang.Object" id="_tK15YDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15YTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_tK15YjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="merge" type="java.lang.Object" id="_tK15YzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15ZDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_tK15ZTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.function.BiFunction" id="_tK15ZjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IInteger_Type">
+      <signatures name="byteValue" type="byte" id="_tK15aTqXEeiP29_qDiwNWQ"/>
+      <signatures name="shortValue" type="short" id="_tK15ajqXEeiP29_qDiwNWQ"/>
+      <signatures name="intValue" type="int" id="_tK15azqXEeiP29_qDiwNWQ"/>
+      <signatures name="longValue" type="long" id="_tK15bDqXEeiP29_qDiwNWQ"/>
+      <signatures name="floatValue" type="float" id="_tK15bTqXEeiP29_qDiwNWQ"/>
+      <signatures name="doubleValue" type="double" id="_tK15bjqXEeiP29_qDiwNWQ"/>
+      <signatures name="compareTo" type="int" id="_tK15bzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15cDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="numberOfLeadingZeros" type="int" id="_tK15cTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15cjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="numberOfTrailingZeros" type="int" id="_tK15czqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15dDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="bitCount" type="int" id="_tK15dTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15djqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_tK15dzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15eDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_tK15eTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15ejqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK15ezqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_tK15fDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15fTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="min" type="int" id="_tK15fjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15fzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK15gDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="max" type="int" id="_tK15gTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15gjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK15gzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="reverseBytes" type="int" id="_tK15hDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15hTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueOf" type="java.lang.Integer" id="_tK15hjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK15hzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK15iDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toHexString" type="java.lang.String" id="_tK15iTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15ijqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compare" type="int" id="_tK15izqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15jDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK15jTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="decode" type="java.lang.Integer" id="_tK15jjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK15jzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChars" type="void" id="_tK15kDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15kTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK15kjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="char[]" id="_tK15kzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="reverse" type="int" id="_tK15lDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15lTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stringSize" type="int" id="_tK15ljqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15lzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="sum" type="int" id="_tK15mDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15mTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK15mjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parseInt" type="int" id="_tK15mzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK15nDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUnsignedLong" type="long" id="_tK15nTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15njqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compareUnsigned" type="int" id="_tK15nzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15oDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK15oTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="divideUnsigned" type="int" id="_tK15ojqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15ozqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK15pDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="formatUnsignedInt" type="int" id="_tK15pTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15pjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK15pzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="char[]" id="_tK15qDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_tK15qTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="int" id="_tK15qjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getInteger" type="java.lang.Integer" id="_tK15qzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK15rDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Integer" id="_tK15rTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="highestOneBit" type="int" id="_tK15rjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15rzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lowestOneBit" type="int" id="_tK15sDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15sTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parseUnsignedInt" type="int" id="_tK15sjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK15szqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remainderUnsigned" type="int" id="_tK15tDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15tTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK15tjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rotateLeft" type="int" id="_tK15tzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15uDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK15uTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rotateRight" type="int" id="_tK15ujqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15uzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK15vDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="signum" type="int" id="_tK15vTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15vjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toBinaryString" type="java.lang.String" id="_tK15vzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15wDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toOctalString" type="java.lang.String" id="_tK15wTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15wjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUnsignedString" type="java.lang.String" id="_tK15wzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15xDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUnsignedString0" type="java.lang.String" id="_tK15xTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_tK15xjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK15xzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="INumber_Type">
+      <signatures name="byteValue" type="byte" id="_tK15yDqXEeiP29_qDiwNWQ"/>
+      <signatures name="shortValue" type="short" id="_tK15yTqXEeiP29_qDiwNWQ"/>
+      <signatures name="intValue" type="int" id="_tK15yjqXEeiP29_qDiwNWQ"/>
+      <signatures name="longValue" type="long" id="_tK15yzqXEeiP29_qDiwNWQ"/>
+      <signatures name="floatValue" type="float" id="_tK15zDqXEeiP29_qDiwNWQ"/>
+      <signatures name="doubleValue" type="double" id="_tK15zTqXEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="MBeanInfoAssembler">
+      <signatures name="getMBeanInfo" type="javax.management.modelmbean.ModelMBeanInfo" id="_tK150DqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK150TqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK150jqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ObjectNamingStrategy">
+      <signatures name="getObjectName" type="javax.management.ObjectName" id="_tK150zqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK151DqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK151TqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Collection">
+      <signatures name="add" type="boolean" id="_tK151jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK151zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_tK152DqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK152TqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_tK152jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK152zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_tK153DqXEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_tK153TqXEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_tK153jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK153zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_tK154DqXEeiP29_qDiwNWQ"/>
+      <signatures name="iterator" type="java.util.Iterator" id="_tK154TqXEeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_tK154jqXEeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_tK154zqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_tK155DqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toArray" type="java.lang.Object[]" id="_tK155TqXEeiP29_qDiwNWQ"/>
+      <signatures name="spliterator" type="java.util.Spliterator" id="_tK155jqXEeiP29_qDiwNWQ"/>
+      <signatures name="addAll" type="boolean" id="_tK155zqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_tK156DqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stream" type="java.util.stream.Stream" id="_tK156TqXEeiP29_qDiwNWQ"/>
+      <signatures name="containsAll" type="boolean" id="_tK156jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_tK156zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeAll" type="boolean" id="_tK157DqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_tK157TqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeIf" type="boolean" id="_tK157jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Predicate" id="_tK157zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retainAll" type="boolean" id="_tK158DqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_tK158TqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parallelStream" type="java.util.stream.Stream" id="_tK158jqXEeiP29_qDiwNWQ"/>
+      <signatures name="forEach" type="void" id="_tK158zqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Consumer" id="_tK159DqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Set">
+      <signatures name="add" type="boolean" id="_tK159TqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK159jqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_tK159zqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15-DqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_tK15-TqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15-jqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_tK15-zqXEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_tK15_DqXEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_tK15_TqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK15_jqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_tK15_zqXEeiP29_qDiwNWQ"/>
+      <signatures name="iterator" type="java.util.Iterator" id="_tK16ADqXEeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_tK16ATqXEeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_tK16AjqXEeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_tK16AzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_tK16BDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="spliterator" type="java.util.Spliterator" id="_tK16BTqXEeiP29_qDiwNWQ"/>
+      <signatures name="addAll" type="boolean" id="_tK16BjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_tK16BzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsAll" type="boolean" id="_tK16CDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_tK16CTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeAll" type="boolean" id="_tK16CjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_tK16CzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retainAll" type="boolean" id="_tK16DDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_tK16DTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stream" type="java.util.stream.Stream" id="_tK16DjqXEeiP29_qDiwNWQ"/>
+      <signatures name="removeIf" type="boolean" id="_tK16DzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Predicate" id="_tK16EDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parallelStream" type="java.util.stream.Stream" id="_tK16ETqXEeiP29_qDiwNWQ"/>
+      <signatures name="forEach" type="void" id="_tK16EjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Consumer" id="_tK16EzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="MBeanExporterListener">
+      <signatures name="mbeanRegistered" type="void" id="_tK16FDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK16FTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="mbeanUnregistered" type="void" id="_tK16FjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK16FzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="INotificationListenerBean_Type">
+      <signatures name="equals" type="boolean" id="_tK16GTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK16GjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_tK16GzqXEeiP29_qDiwNWQ"/>
+      <signatures name="getResolvedObjectNames" type="javax.management.ObjectName[]" id="_tK16HDqXEeiP29_qDiwNWQ"/>
+      <signatures name="setMappedObjectNames" type="void" id="_tK16HTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_tK16HjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setNotificationListener" type="void" id="_tK16HzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.NotificationListener" id="_tK16IDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getNotificationListener" type="javax.management.NotificationListener" id="_tK16ITqXEeiP29_qDiwNWQ"/>
+      <signatures name="getNotificationFilter" type="javax.management.NotificationFilter" id="_tK16IjqXEeiP29_qDiwNWQ"/>
+      <signatures name="setNotificationFilter" type="void" id="_tK16IzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.NotificationFilter" id="_tK16JDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setMappedObjectName" type="void" id="_tK16JTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK16JjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setHandback" type="void" id="_tK16JzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK16KDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getHandback" type="java.lang.Object" id="_tK16KTqXEeiP29_qDiwNWQ"/>
+      <signatures name="afterPropertiesSet" type="void" id="_tK16KjqXEeiP29_qDiwNWQ"/>
+      <signatures name="replaceObjectName" type="void" id="_tK16KzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK16LDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_tK16LTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="INotificationListenerHolder_Type">
+      <signatures name="equals" type="boolean" id="_tK16LjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK16LzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_tK16MDqXEeiP29_qDiwNWQ"/>
+      <signatures name="getResolvedObjectNames" type="javax.management.ObjectName[]" id="_tK16MTqXEeiP29_qDiwNWQ"/>
+      <signatures name="setMappedObjectNames" type="void" id="_tK16MjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_tK16MzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setNotificationListener" type="void" id="_tK16NDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.NotificationListener" id="_tK16NTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getNotificationListener" type="javax.management.NotificationListener" id="_tK16NjqXEeiP29_qDiwNWQ"/>
+      <signatures name="getNotificationFilter" type="javax.management.NotificationFilter" id="_tK16NzqXEeiP29_qDiwNWQ"/>
+      <signatures name="setNotificationFilter" type="void" id="_tK16ODqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.NotificationFilter" id="_tK16OTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setMappedObjectName" type="void" id="_tK16OjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK16OzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setHandback" type="void" id="_tK16PDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK16PTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getHandback" type="java.lang.Object" id="_tK16PjqXEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IClassLoader_Type">
+      <signatures name="loadClass" type="java.lang.Class" id="_tK16dzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16eDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_tK16eTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="loadClassInternal" type="java.lang.Class" id="_tK16ejqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16ezqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="findNative" type="long" id="_tK16fDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.ClassLoader" id="_tK16fTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK16fjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addClass" type="void" id="_tK16fzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK16gDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSystemClassLoader" type="java.lang.ClassLoader" id="_tK16gTqXEeiP29_qDiwNWQ"/>
+      <signatures name="checkPackageAccess" type="void" id="_tK16gjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK16gzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.security.ProtectionDomain" id="_tK16hDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="registerNatives" type="void" id="_tK16hTqXEeiP29_qDiwNWQ"/>
+      <signatures name="access$100" type="java.util.Stack" id="_tK16hjqXEeiP29_qDiwNWQ"/>
+      <signatures name="checkClassLoaderPermission" type="void" id="_tK16hzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.ClassLoader" id="_tK16iDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_tK16iTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="desiredAssertionStatus" type="boolean" id="_tK16ijqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16izqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClassLoader" type="java.lang.ClassLoader" id="_tK16jDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK16jTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getPackage" type="java.lang.Package" id="_tK16jjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16jzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getResource" type="java.net.URL" id="_tK16kDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16kTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getResourceAsStream" type="java.io.InputStream" id="_tK16kjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16kzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSystemResource" type="java.net.URL" id="_tK16lDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16lTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSystemResourceAsStream" type="java.io.InputStream" id="_tK16ljqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16lzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setSigners" type="void" id="_tK16mDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK16mTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_tK16mjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$000" type="java.util.Vector" id="_tK16mzqXEeiP29_qDiwNWQ"/>
+      <signatures name="checkCerts" type="void" id="_tK16nDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16nTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.security.CodeSource" id="_tK16njqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkCreateClassLoader" type="java.lang.Void" id="_tK16nzqXEeiP29_qDiwNWQ"/>
+      <signatures name="checkName" type="boolean" id="_tK16oDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16oTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="clearAssertionStatus" type="void" id="_tK16ojqXEeiP29_qDiwNWQ"/>
+      <signatures name="compareCerts" type="boolean" id="_tK16ozqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.security.cert.Certificate[]" id="_tK16pDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.security.cert.Certificate[]" id="_tK16pTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="defineClass" type="java.lang.Class" id="_tK16pjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_tK16pzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_tK16qDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_tK16qTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="defineClass0" type="java.lang.Class" id="_tK16qjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16qzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="byte[]" id="_tK16rDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_tK16rTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_tK16rjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="java.security.ProtectionDomain" id="_tK16rzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="defineClass1" type="java.lang.Class" id="_tK16sDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16sTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="byte[]" id="_tK16sjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_tK16szqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_tK16tDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="java.security.ProtectionDomain" id="_tK16tTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg5" type="java.lang.String" id="_tK16tjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="defineClass2" type="java.lang.Class" id="_tK16tzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16uDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.nio.ByteBuffer" id="_tK16uTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_tK16ujqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_tK16uzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="java.security.ProtectionDomain" id="_tK16vDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg5" type="java.lang.String" id="_tK16vTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="defineClassSourceLocation" type="java.lang.String" id="_tK16vjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.security.ProtectionDomain" id="_tK16vzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="definePackage" type="java.lang.Package" id="_tK16wDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16wTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK16wjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_tK16wzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.String" id="_tK16xDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="java.lang.String" id="_tK16xTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg5" type="java.lang.String" id="_tK16xjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg6" type="java.lang.String" id="_tK16xzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg7" type="java.net.URL" id="_tK16yDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="findBootstrapClass" type="java.lang.Class" id="_tK16yTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16yjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="findBootstrapClassOrNull" type="java.lang.Class" id="_tK16yzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16zDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="findBuiltinLib" type="java.lang.String" id="_tK16zTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16zjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="findClass" type="java.lang.Class" id="_tK16zzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK160DqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="findLibrary" type="java.lang.String" id="_tK160TqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK160jqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="findLoadedClass" type="java.lang.Class" id="_tK160zqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK161DqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="findLoadedClass0" type="java.lang.Class" id="_tK161TqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK161jqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="findResource" type="java.net.URL" id="_tK161zqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK162DqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="findResources" type="java.util.Enumeration" id="_tK162TqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK162jqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="findSystemClass" type="java.lang.Class" id="_tK162zqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK163DqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBootstrapClassPath" type="sun.misc.URLClassPath" id="_tK163TqXEeiP29_qDiwNWQ"/>
+      <signatures name="getBootstrapResource" type="java.net.URL" id="_tK163jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK163zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBootstrapResources" type="java.util.Enumeration" id="_tK164DqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK164TqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClassLoadingLock" type="java.lang.Object" id="_tK164jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK164zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getPackages" type="java.lang.Package[]" id="_tK165DqXEeiP29_qDiwNWQ"/>
+      <signatures name="getParent" type="java.lang.ClassLoader" id="_tK165TqXEeiP29_qDiwNWQ"/>
+      <signatures name="getResources" type="java.util.Enumeration" id="_tK165jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK165zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSystemResources" type="java.util.Enumeration" id="_tK166DqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK166TqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="initSystemClassLoader" type="void" id="_tK166jqXEeiP29_qDiwNWQ"/>
+      <signatures name="initializeJavaAssertionMaps" type="void" id="_tK166zqXEeiP29_qDiwNWQ"/>
+      <signatures name="initializePath" type="java.lang.String[]" id="_tK167DqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK167TqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAncestor" type="boolean" id="_tK167jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.ClassLoader" id="_tK167zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="loadLibrary" type="void" id="_tK168DqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK168TqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK168jqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_tK168zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="loadLibrary0" type="boolean" id="_tK169DqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK169TqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.io.File" id="_tK169jqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="needsClassLoaderPermissionCheck" type="boolean" id="_tK169zqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.ClassLoader" id="_tK16-DqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.ClassLoader" id="_tK16-TqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="postDefineClass" type="void" id="_tK16-jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK16-zqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.security.ProtectionDomain" id="_tK16_DqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="preDefineClass" type="java.security.ProtectionDomain" id="_tK16_TqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK16_jqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.security.ProtectionDomain" id="_tK16_zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="registerAsParallelCapable" type="boolean" id="_tK17ADqXEeiP29_qDiwNWQ"/>
+      <signatures name="resolveClass" type="void" id="_tK17ATqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK17AjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resolveClass0" type="void" id="_tK17AzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK17BDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retrieveDirectives" type="java.lang.AssertionStatusDirectives" id="_tK17BTqXEeiP29_qDiwNWQ"/>
+      <signatures name="setClassAssertionStatus" type="void" id="_tK17BjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK17BzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_tK17CDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDefaultAssertionStatus" type="void" id="_tK17CTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_tK17CjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setPackageAssertionStatus" type="void" id="_tK17CzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK17DDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_tK17DTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="BeanFactory">
+      <signatures name="getType" type="java.lang.Class" id="_tK17DjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK17DzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAliases" type="java.lang.String[]" id="_tK17EDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK17ETqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isSingleton" type="boolean" id="_tK17EjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK17EzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_tK17FDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK17FTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_tK17FjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_tK17FzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK17GDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_tK17GTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK17GjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_tK17GzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_tK17HDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK17HTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_tK2ecDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK2ecTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_tK2ecjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isPrototype" type="boolean" id="_tK2eczqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2edDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTypeMatch" type="boolean" id="_tK2edTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2edjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_tK2edzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTypeMatch" type="boolean" id="_tK2eeDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2eeTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.core.ResolvableType" id="_tK2eejqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsBean" type="boolean" id="_tK2eezqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2efDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ListableBeanFactory">
+      <signatures name="containsBeanDefinition" type="boolean" id="_tK2efTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2efjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanDefinitionCount" type="int" id="_tK2efzqXEeiP29_qDiwNWQ"/>
+      <signatures name="getBeanDefinitionNames" type="java.lang.String[]" id="_tK2egDqXEeiP29_qDiwNWQ"/>
+      <signatures name="getBeansWithAnnotation" type="java.util.Map" id="_tK2egTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK2egjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="findAnnotationOnBean" type="java.lang.annotation.Annotation" id="_tK2egzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2ehDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_tK2ehTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForType" type="java.lang.String[]" id="_tK2ehjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.core.ResolvableType" id="_tK2ehzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForType" type="java.lang.String[]" id="_tK2eiDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK2eiTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_tK2eijqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_tK2eizqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForType" type="java.lang.String[]" id="_tK2ejDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK2ejTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeanNamesForAnnotation" type="java.lang.String[]" id="_tK2ejjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK2ejzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeansOfType" type="java.util.Map" id="_tK2ekDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK2ekTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBeansOfType" type="java.util.Map" id="_tK2ekjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK2ekzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_tK2elDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_tK2elTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getType" type="java.lang.Class" id="_tK2eljqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2elzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAliases" type="java.lang.String[]" id="_tK2emDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2emTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isSingleton" type="boolean" id="_tK2emjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2emzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_tK2enDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2enTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_tK2enjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_tK2enzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2eoDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_tK2eoTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2eojqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_tK2eozqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_tK2epDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK2epTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBean" type="java.lang.Object" id="_tK2epjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_tK2epzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_tK2eqDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isPrototype" type="boolean" id="_tK2eqTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2eqjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTypeMatch" type="boolean" id="_tK2eqzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2erDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_tK2erTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTypeMatch" type="boolean" id="_tK2erjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2erzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.core.ResolvableType" id="_tK2esDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsBean" type="boolean" id="_tK2esTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2esjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Log">
+      <signatures name="debug" type="void" id="_tK2eszqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK2etDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_tK2etTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_tK2etjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK2etzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_tK2euDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK2euTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_tK2eujqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK2euzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_tK2evDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_tK2evTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK2evjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_tK2evzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_tK2ewDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK2ewTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_tK2ewjqXEeiP29_qDiwNWQ"/>
+      <signatures name="info" type="void" id="_tK2ewzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK2exDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_tK2exTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_tK2exjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK2exzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTraceEnabled" type="boolean" id="_tK2eyDqXEeiP29_qDiwNWQ"/>
+      <signatures name="warn" type="void" id="_tK2eyTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK2eyjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_tK2eyzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_tK2ezDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK2ezTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isDebugEnabled" type="boolean" id="_tK2ezjqXEeiP29_qDiwNWQ"/>
+      <signatures name="fatal" type="void" id="_tK2ezzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK2e0DqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="fatal" type="void" id="_tK2e0TqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK2e0jqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_tK2e0zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isErrorEnabled" type="boolean" id="_tK2e1DqXEeiP29_qDiwNWQ"/>
+      <signatures name="isFatalEnabled" type="boolean" id="_tK2e1TqXEeiP29_qDiwNWQ"/>
+      <signatures name="isWarnEnabled" type="boolean" id="_tK2e1jqXEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="MBeanServerConnection">
+      <signatures name="invoke" type="java.lang.Object" id="_tK2e1zqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2e2DqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK2e2TqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_tK2e2jqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.String[]" id="_tK2e2zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isRegistered" type="boolean" id="_tK2e3DqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2e3TqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAttributes" type="javax.management.AttributeList" id="_tK2e3jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2e3zqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String[]" id="_tK2e4DqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAttribute" type="java.lang.Object" id="_tK2e4TqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2e4jqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK2e4zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addNotificationListener" type="void" id="_tK2e5DqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2e5TqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2e5jqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.NotificationFilter" id="_tK2e5zqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_tK2e6DqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addNotificationListener" type="void" id="_tK2e6TqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2e6jqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.NotificationListener" id="_tK2e6zqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.NotificationFilter" id="_tK2e7DqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_tK2e7TqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createMBean" type="javax.management.ObjectInstance" id="_tK2e7jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2e7zqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2e8DqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createMBean" type="javax.management.ObjectInstance" id="_tK2e8TqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2e8jqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2e8zqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_tK2e9DqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.String[]" id="_tK2e9TqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createMBean" type="javax.management.ObjectInstance" id="_tK2e9jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2e9zqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2e-DqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.ObjectName" id="_tK2e-TqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createMBean" type="javax.management.ObjectInstance" id="_tK2e-jqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2e-zqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2e_DqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.ObjectName" id="_tK2e_TqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object[]" id="_tK2e_jqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="java.lang.String[]" id="_tK2e_zqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDomains" type="java.lang.String[]" id="_tK2fADqXEeiP29_qDiwNWQ"/>
+      <signatures name="getMBeanCount" type="java.lang.Integer" id="_tK2fATqXEeiP29_qDiwNWQ"/>
+      <signatures name="getMBeanInfo" type="javax.management.MBeanInfo" id="_tK2fAjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fAzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getObjectInstance" type="javax.management.ObjectInstance" id="_tK2fBDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fBTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="queryMBeans" type="java.util.Set" id="_tK2fBjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fBzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.QueryExp" id="_tK2fCDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="queryNames" type="java.util.Set" id="_tK2fCTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fCjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.QueryExp" id="_tK2fCzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeNotificationListener" type="void" id="_tK2fDDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fDTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2fDjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeNotificationListener" type="void" id="_tK2fDzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fEDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2fETqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.NotificationFilter" id="_tK2fEjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_tK2fEzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeNotificationListener" type="void" id="_tK2fFDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fFTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.NotificationListener" id="_tK2fFjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.NotificationFilter" id="_tK2fFzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_tK2fGDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeNotificationListener" type="void" id="_tK2fGTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fGjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.NotificationListener" id="_tK2fGzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="unregisterMBean" type="void" id="_tK2fHDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fHTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAttribute" type="void" id="_tK2fHjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fHzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.Attribute" id="_tK2fIDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAttributes" type="javax.management.AttributeList" id="_tK2fITqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fIjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.AttributeList" id="_tK2fIzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInstanceOf" type="boolean" id="_tK2fJDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fJTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK2fJjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultDomain" type="java.lang.String" id="_tK2fJzqXEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="MBeanServer">
+      <signatures name="invoke" type="java.lang.Object" id="_tK2fKDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fKTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK2fKjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_tK2fKzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.String[]" id="_tK2fLDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClassLoader" type="java.lang.ClassLoader" id="_tK2fLTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fLjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isRegistered" type="boolean" id="_tK2fLzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fMDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAttributes" type="javax.management.AttributeList" id="_tK2fMTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fMjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String[]" id="_tK2fMzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAttribute" type="java.lang.Object" id="_tK2fNDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fNTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK2fNjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addNotificationListener" type="void" id="_tK2fNzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fODqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.NotificationListener" id="_tK2fOTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.NotificationFilter" id="_tK2fOjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_tK2fOzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addNotificationListener" type="void" id="_tK2fPDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fPTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2fPjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.NotificationFilter" id="_tK2fPzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_tK2fQDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createMBean" type="javax.management.ObjectInstance" id="_tK2fQTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2fQjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2fQzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createMBean" type="javax.management.ObjectInstance" id="_tK2fRDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2fRTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2fRjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.ObjectName" id="_tK2fRzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object[]" id="_tK2fSDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="java.lang.String[]" id="_tK2fSTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createMBean" type="javax.management.ObjectInstance" id="_tK2fSjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2fSzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2fTDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_tK2fTTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.String[]" id="_tK2fTjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createMBean" type="javax.management.ObjectInstance" id="_tK2fTzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2fUDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2fUTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.ObjectName" id="_tK2fUjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="deserialize" type="java.io.ObjectInputStream" id="_tK2fUzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2fVDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2fVTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_tK2fVjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="deserialize" type="java.io.ObjectInputStream" id="_tK2fVzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2fWDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="byte[]" id="_tK2fWTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="deserialize" type="java.io.ObjectInputStream" id="_tK2fWjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fWzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="byte[]" id="_tK2fXDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClassLoaderFor" type="java.lang.ClassLoader" id="_tK2fXTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fXjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClassLoaderRepository" type="javax.management.loading.ClassLoaderRepository" id="_tK2fXzqXEeiP29_qDiwNWQ"/>
+      <signatures name="getDomains" type="java.lang.String[]" id="_tK2fYDqXEeiP29_qDiwNWQ"/>
+      <signatures name="getMBeanCount" type="java.lang.Integer" id="_tK2fYTqXEeiP29_qDiwNWQ"/>
+      <signatures name="getMBeanInfo" type="javax.management.MBeanInfo" id="_tK2fYjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fYzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getObjectInstance" type="javax.management.ObjectInstance" id="_tK2fZDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fZTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="queryMBeans" type="java.util.Set" id="_tK2fZjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fZzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.QueryExp" id="_tK2faDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="queryNames" type="java.util.Set" id="_tK2faTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fajqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.QueryExp" id="_tK2fazqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="registerMBean" type="javax.management.ObjectInstance" id="_tK2fbDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_tK2fbTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2fbjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeNotificationListener" type="void" id="_tK2fbzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fcDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.NotificationListener" id="_tK2fcTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeNotificationListener" type="void" id="_tK2fcjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fczqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2fdDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeNotificationListener" type="void" id="_tK2fdTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fdjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.NotificationListener" id="_tK2fdzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.NotificationFilter" id="_tK2feDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_tK2feTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeNotificationListener" type="void" id="_tK2fejqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fezqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2ffDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.management.NotificationFilter" id="_tK2ffTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_tK2ffjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="unregisterMBean" type="void" id="_tK2ffzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fgDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="instantiate" type="java.lang.Object" id="_tK2fgTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2fgjqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2fgzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_tK2fhDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.String[]" id="_tK2fhTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="instantiate" type="java.lang.Object" id="_tK2fhjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2fhzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="instantiate" type="java.lang.Object" id="_tK2fiDqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2fiTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.ObjectName" id="_tK2fijqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="instantiate" type="java.lang.Object" id="_tK2fizqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_tK2fjDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_tK2fjTqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String[]" id="_tK2fjjqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAttribute" type="void" id="_tK2fjzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fkDqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.Attribute" id="_tK2fkTqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAttributes" type="javax.management.AttributeList" id="_tK2fkjqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fkzqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.management.AttributeList" id="_tK2flDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInstanceOf" type="boolean" id="_tK2flTqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.management.ObjectName" id="_tK2fljqXEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_tK2flzqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultDomain" type="java.lang.String" id="_tK2fmDqXEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

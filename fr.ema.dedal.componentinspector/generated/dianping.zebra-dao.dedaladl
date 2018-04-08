@@ -1,0 +1,6 @@
+dedal_diagram "dianping.zebra-dao"
+
+	repositories (
+
+		repository genRepo
+	)

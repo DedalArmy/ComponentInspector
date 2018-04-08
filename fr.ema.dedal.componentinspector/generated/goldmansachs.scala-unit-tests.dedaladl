@@ -1,0 +1,6 @@
+dedal_diagram "goldmansachs.scala-unit-tests"
+
+	repositories (
+
+		repository genRepo
+	)

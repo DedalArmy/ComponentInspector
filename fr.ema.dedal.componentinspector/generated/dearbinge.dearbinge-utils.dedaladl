@@ -1,0 +1,6 @@
+dedal_diagram "dearbinge.dearbinge-utils"
+
+	repositories (
+
+		repository genRepo
+	)

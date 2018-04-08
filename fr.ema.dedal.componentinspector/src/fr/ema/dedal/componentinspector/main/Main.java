@@ -3,11 +3,13 @@
  */
 package fr.ema.dedal.componentinspector.main;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -55,14 +57,21 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 
+		Date date = new Date();
+		
 		/*
 		 * CONFIGURATION OF THE LIBRARY PATH
 		 */
 		String libPath = "";
 		String singlePath = "";
 		String sdslPath = "";
-		String out = "./generated/metrics.csv";
+		String out = "./generated_metrics_results/metrics"+date.toString().replaceAll(":", "_").replaceAll(" ", "")+".csv";
 		
+		laucnhReconstruction(args, libPath, singlePath, sdslPath, out);
+	}
+
+	private static void laucnhReconstruction(String[] args, String libPath, String singlePath, String sdslPath,
+			String out) {
 		switch (args.length) {
 		case 0:
 			libPath = DEFAULT_LIB;

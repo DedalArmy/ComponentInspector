@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="spring-projects.spring-retry">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="spring-projects.spring-retry.spring-retry.src.test.resources.org.springframework.retry.interceptor.retry-transaction-test.xml_config" implements="//@architectureDescriptions[name='spring-projects.spring-retry.spring-retry.src.test.resources.org.springframework.retry.interceptor.retry-transaction-test.xml_spec']">
+    <configComponents name="org.springframework.retry.interceptor.RetryOperationsInterceptorTests$ServiceImpl" id="_2Et1kDqsEeiP29_qDiwNWQ" realizes="_2GjC0TqsEeiP29_qDiwNWQ" implements="_2FfRoDqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IService_ServiceImpl" type="Service"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServiceImpl" type="IServiceImpl_Type"/>
+      <attributes name="enteredTransaction" type="boolean"/>
+    </configComponents>
+    <configComponents name="org.springframework.retry.interceptor.RetryOperationsInterceptor" id="_2Et1kTqsEeiP29_qDiwNWQ" realizes="_2GjC1DqsEeiP29_qDiwNWQ" implements="_2F3sIDqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMethodInterceptor_RetryOperationsInterceptor" type="MethodInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRetryOperationsInterceptor" type="IRetryOperationsInterceptor_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRetryOperations_RetryOperationsInterceptor" direction="REQUIRED" type="RetryOperations"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMethodInvocationRecoverer_RetryOperationsInterceptor" direction="REQUIRED" type="MethodInvocationRecoverer"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_RetryOperationsInterceptor" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_RetryOperationsInterceptor" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_RetryOperationsInterceptor" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_RetryOperationsInterceptor" direction="REQUIRED" type="IString_Type"/>
+      <attributes name="retryOperations" type="org.springframework.retry.RetryOperations"/>
+      <attributes name="recoverer" type="org.springframework.retry.interceptor.MethodInvocationRecoverer"/>
+      <attributes name="label" type="java.lang.String"/>
+    </configComponents>
+    <configComponents name="org.springframework.retry.ResourcelessTransactionManager" id="_2Et1kjqsEeiP29_qDiwNWQ" realizes="_2GjrNjqsEeiP29_qDiwNWQ" implements="_2GjBkDqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcelessTransactionManager" type="IResourcelessTransactionManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_ResourcelessTransactionManager" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_ResourcelessTransactionManager" direction="REQUIRED" type="Log"/>
+      <attributes name="SYNCHRONIZATION_ALWAYS" type="int"/>
+      <attributes name="SYNCHRONIZATION_ON_ACTUAL_TRANSACTION" type="int"/>
+      <attributes name="SYNCHRONIZATION_NEVER" type="int"/>
+      <attributes name="constants" type="org.springframework.core.Constants"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="transactionSynchronization" type="int"/>
+      <attributes name="defaultTimeout" type="int"/>
+      <attributes name="nestedTransactionAllowed" type="boolean"/>
+      <attributes name="validateExistingTransaction" type="boolean"/>
+      <attributes name="globalRollbackOnParticipationFailure" type="boolean"/>
+      <attributes name="failEarlyOnGlobalRollbackOnly" type="boolean"/>
+      <attributes name="rollbackOnCommitFailure" type="boolean"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="spring-projects.spring-retry.spring-retry.src.test.resources.org.springframework.retry.interceptor.retry-transaction-test.xml_asm" instantiates="//@architectureDescriptions[name='spring-projects.spring-retry.spring-retry.src.test.resources.org.springframework.retry.interceptor.retry-transaction-test.xml_config']">
+    <assmComponents name="bean" id="_2EucoDqsEeiP29_qDiwNWQ" instantiates="_2Et1kDqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IService_ServiceImpl_bean" type="Service" instantiates="IService_ServiceImpl"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServiceImpl_bean" type="IServiceImpl_Type" instantiates="IServiceImpl"/>
+    </assmComponents>
+    <assmComponents name="retryAdvice" id="_2EucoTqsEeiP29_qDiwNWQ" instantiates="_2Et1kTqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMethodInterceptor_RetryOperationsInterceptor_retryAdvice" type="MethodInterceptor" instantiates="IMethodInterceptor_RetryOperationsInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRetryOperationsInterceptor_retryAdvice" type="IRetryOperationsInterceptor_Type" instantiates="IRetryOperationsInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRetryOperations_RetryOperationsInterceptor_retryAdvice" direction="REQUIRED" type="RetryOperations" instantiates="IRetryOperations_RetryOperationsInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMethodInvocationRecoverer_RetryOperationsInterceptor_retryAdvice" direction="REQUIRED" type="MethodInvocationRecoverer" instantiates="IMethodInvocationRecoverer_RetryOperationsInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_RetryOperationsInterceptor_retryAdvice" direction="REQUIRED" instantiates="null_RetryOperationsInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_RetryOperationsInterceptor_retryAdvice" direction="REQUIRED" type="Comparable" instantiates="IComparable_RetryOperationsInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_RetryOperationsInterceptor_retryAdvice" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_RetryOperationsInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_RetryOperationsInterceptor_retryAdvice" direction="REQUIRED" type="IString_Type" instantiates="IString_RetryOperationsInterceptor"/>
+    </assmComponents>
+    <assmComponents name="transactionManager" id="_2EucojqsEeiP29_qDiwNWQ" instantiates="_2Et1kjqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcelessTransactionManager_transactionManager" type="IResourcelessTransactionManager_Type" instantiates="IResourcelessTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_ResourcelessTransactionManager_transactionManager" direction="REQUIRED" type="IConstants_Type" instantiates="IConstants_ResourcelessTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_ResourcelessTransactionManager_transactionManager" direction="REQUIRED" type="Log" instantiates="ILog_ResourcelessTransactionManager"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="spring-projects.spring-retry.spring-retry.src.test.resources.org.springframework.retry.interceptor.retry-transaction-test.xml_spec">
+    <specComponents name="Service_role" id="_2GjC0TqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IServiceService_role" type="Service"/>
+    </specComponents>
+    <specComponents name="RetryOperationsInterceptor_role" id="_2GjC1DqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMethodInterceptorRetryOperationsInterceptor_role" type="MethodInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRetryOperationsInterceptorRetryOperationsInterceptor_role" type="IRetryOperationsInterceptor_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRetryOperationsRetryOperationsInterceptor_role" direction="REQUIRED" type="RetryOperations"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMethodInvocationRecovererRetryOperationsInterceptor_role" direction="REQUIRED" type="MethodInvocationRecoverer"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullRetryOperationsInterceptor_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableRetryOperationsInterceptor_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceRetryOperationsInterceptor_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringRetryOperationsInterceptor_role" direction="REQUIRED" type="IString_Type"/>
+    </specComponents>
+    <specComponents name="AbstractPlatformTransactionManager_role" id="_2GjrNjqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IPlatformTransactionManagerAbstractPlatformTransactionManager_role" type="PlatformTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullAbstractPlatformTransactionManager_role"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAbstractPlatformTransactionManagerAbstractPlatformTransactionManager_role" type="IAbstractPlatformTransactionManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstantsAbstractPlatformTransactionManager_role" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogAbstractPlatformTransactionManager_role" direction="REQUIRED" type="Log"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="spring-projects.spring-retry.spring-retry.target.test-classes.org.springframework.retry.interceptor.retry-transaction-test.xml_config" implements="//@architectureDescriptions[name='spring-projects.spring-retry.spring-retry.target.test-classes.org.springframework.retry.interceptor.retry-transaction-test.xml_spec']">
+    <configComponents name="org.springframework.retry.interceptor.RetryOperationsInterceptorTests$ServiceImpl" id="_2G8DIDqsEeiP29_qDiwNWQ" realizes="_2G95yTqsEeiP29_qDiwNWQ" implements="_2G8qMzqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IService_ServiceImpl" type="Service"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServiceImpl" type="IServiceImpl_Type"/>
+      <attributes name="enteredTransaction" type="boolean"/>
+    </configComponents>
+    <configComponents name="org.springframework.retry.interceptor.RetryOperationsInterceptor" id="_2G8DITqsEeiP29_qDiwNWQ" realizes="_2G95GjqsEeiP29_qDiwNWQ" implements="_2G8qPTqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMethodInterceptor_RetryOperationsInterceptor" type="MethodInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRetryOperationsInterceptor" type="IRetryOperationsInterceptor_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRetryOperations_RetryOperationsInterceptor" direction="REQUIRED" type="RetryOperations"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMethodInvocationRecoverer_RetryOperationsInterceptor" direction="REQUIRED" type="MethodInvocationRecoverer"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_RetryOperationsInterceptor" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_RetryOperationsInterceptor" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_RetryOperationsInterceptor" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_RetryOperationsInterceptor" direction="REQUIRED" type="IString_Type"/>
+      <attributes name="retryOperations" type="org.springframework.retry.RetryOperations"/>
+      <attributes name="recoverer" type="org.springframework.retry.interceptor.MethodInvocationRecoverer"/>
+      <attributes name="label" type="java.lang.String"/>
+    </configComponents>
+    <configComponents name="org.springframework.retry.ResourcelessTransactionManager" id="_2G8DIjqsEeiP29_qDiwNWQ" realizes="_2G9UazqsEeiP29_qDiwNWQ" implements="_2G8q2TqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcelessTransactionManager" type="IResourcelessTransactionManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_ResourcelessTransactionManager" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_ResourcelessTransactionManager" direction="REQUIRED" type="Log"/>
+      <attributes name="SYNCHRONIZATION_ALWAYS" type="int"/>
+      <attributes name="SYNCHRONIZATION_ON_ACTUAL_TRANSACTION" type="int"/>
+      <attributes name="SYNCHRONIZATION_NEVER" type="int"/>
+      <attributes name="constants" type="org.springframework.core.Constants"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="transactionSynchronization" type="int"/>
+      <attributes name="defaultTimeout" type="int"/>
+      <attributes name="nestedTransactionAllowed" type="boolean"/>
+      <attributes name="validateExistingTransaction" type="boolean"/>
+      <attributes name="globalRollbackOnParticipationFailure" type="boolean"/>
+      <attributes name="failEarlyOnGlobalRollbackOnly" type="boolean"/>
+      <attributes name="rollbackOnCommitFailure" type="boolean"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="spring-projects.spring-retry.spring-retry.target.test-classes.org.springframework.retry.interceptor.retry-transaction-test.xml_asm" instantiates="//@architectureDescriptions[name='spring-projects.spring-retry.spring-retry.target.test-classes.org.springframework.retry.interceptor.retry-transaction-test.xml_config']">
+    <assmComponents name="bean" id="_2G8qMDqsEeiP29_qDiwNWQ" instantiates="_2G8DIDqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IService_ServiceImpl_bean" type="Service" instantiates="IService_ServiceImpl"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServiceImpl_bean" type="IServiceImpl_Type" instantiates="IServiceImpl"/>
+    </assmComponents>
+    <assmComponents name="retryAdvice" id="_2G8qMTqsEeiP29_qDiwNWQ" instantiates="_2G8DITqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMethodInterceptor_RetryOperationsInterceptor_retryAdvice" type="MethodInterceptor" instantiates="IMethodInterceptor_RetryOperationsInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRetryOperationsInterceptor_retryAdvice" type="IRetryOperationsInterceptor_Type" instantiates="IRetryOperationsInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRetryOperations_RetryOperationsInterceptor_retryAdvice" direction="REQUIRED" type="RetryOperations" instantiates="IRetryOperations_RetryOperationsInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMethodInvocationRecoverer_RetryOperationsInterceptor_retryAdvice" direction="REQUIRED" type="MethodInvocationRecoverer" instantiates="IMethodInvocationRecoverer_RetryOperationsInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_RetryOperationsInterceptor_retryAdvice" direction="REQUIRED" instantiates="null_RetryOperationsInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_RetryOperationsInterceptor_retryAdvice" direction="REQUIRED" type="Comparable" instantiates="IComparable_RetryOperationsInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_RetryOperationsInterceptor_retryAdvice" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_RetryOperationsInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_RetryOperationsInterceptor_retryAdvice" direction="REQUIRED" type="IString_Type" instantiates="IString_RetryOperationsInterceptor"/>
+    </assmComponents>
+    <assmComponents name="transactionManager" id="_2G8qMjqsEeiP29_qDiwNWQ" instantiates="_2G8DIjqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcelessTransactionManager_transactionManager" type="IResourcelessTransactionManager_Type" instantiates="IResourcelessTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_ResourcelessTransactionManager_transactionManager" direction="REQUIRED" type="IConstants_Type" instantiates="IConstants_ResourcelessTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_ResourcelessTransactionManager_transactionManager" direction="REQUIRED" type="Log" instantiates="ILog_ResourcelessTransactionManager"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="spring-projects.spring-retry.spring-retry.target.test-classes.org.springframework.retry.interceptor.retry-transaction-test.xml_spec">
+    <specComponents name="AbstractPlatformTransactionManager_role" id="_2G9UazqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IPlatformTransactionManagerAbstractPlatformTransactionManager_role" type="PlatformTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullAbstractPlatformTransactionManager_role"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAbstractPlatformTransactionManagerAbstractPlatformTransactionManager_role" type="IAbstractPlatformTransactionManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstantsAbstractPlatformTransactionManager_role" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogAbstractPlatformTransactionManager_role" direction="REQUIRED" type="Log"/>
+    </specComponents>
+    <specComponents name="RetryOperationsInterceptor_role" id="_2G95GjqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMethodInterceptorRetryOperationsInterceptor_role" type="MethodInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRetryOperationsInterceptorRetryOperationsInterceptor_role" type="IRetryOperationsInterceptor_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRetryOperationsRetryOperationsInterceptor_role" direction="REQUIRED" type="RetryOperations"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMethodInvocationRecovererRetryOperationsInterceptor_role" direction="REQUIRED" type="MethodInvocationRecoverer"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullRetryOperationsInterceptor_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableRetryOperationsInterceptor_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceRetryOperationsInterceptor_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringRetryOperationsInterceptor_role" direction="REQUIRED" type="IString_Type"/>
+    </specComponents>
+    <specComponents name="Service_role" id="_2G95yTqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IServiceService_role" type="Service"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="org_springframework_retry_interceptor_RetryOperationsInterceptorTests$ServiceImpl_Type" id="_2FfRoDqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IService_ServiceImpl_org_springframework_retry_interceptor_RetryOperationsInterceptorTests$ServiceImpl_Type" type="Service"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServiceImpl_org_springframework_retry_interceptor_RetryOperationsInterceptorTests$ServiceImpl_Type" type="IServiceImpl_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" id="_2F3sIDqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMethodInterceptor_RetryOperationsInterceptor_org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" type="MethodInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRetryOperationsInterceptor_org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" type="IRetryOperationsInterceptor_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRetryOperations_RetryOperationsInterceptor_org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" direction="REQUIRED" type="RetryOperations"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMethodInvocationRecoverer_RetryOperationsInterceptor_org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" direction="REQUIRED" type="MethodInvocationRecoverer"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_RetryOperationsInterceptor_org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_RetryOperationsInterceptor_org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_RetryOperationsInterceptor_org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_RetryOperationsInterceptor_org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" direction="REQUIRED" type="IString_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_retry_ResourcelessTransactionManager_Type" id="_2GjBkDqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcelessTransactionManager_org_springframework_retry_ResourcelessTransactionManager_Type" type="IResourcelessTransactionManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_ResourcelessTransactionManager_org_springframework_retry_ResourcelessTransactionManager_Type" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_ResourcelessTransactionManager_org_springframework_retry_ResourcelessTransactionManager_Type" direction="REQUIRED" type="Log"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_retry_interceptor_RetryOperationsInterceptorTests$ServiceImpl_Type" id="_2G8qMzqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IService_ServiceImpl_org_springframework_retry_interceptor_RetryOperationsInterceptorTests$ServiceImpl_Type" type="Service"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServiceImpl_org_springframework_retry_interceptor_RetryOperationsInterceptorTests$ServiceImpl_Type" type="IServiceImpl_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" id="_2G8qPTqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IMethodInterceptor_RetryOperationsInterceptor_org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" type="MethodInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRetryOperationsInterceptor_org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" type="IRetryOperationsInterceptor_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRetryOperations_RetryOperationsInterceptor_org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" direction="REQUIRED" type="RetryOperations"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMethodInvocationRecoverer_RetryOperationsInterceptor_org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" direction="REQUIRED" type="MethodInvocationRecoverer"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_RetryOperationsInterceptor_org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_RetryOperationsInterceptor_org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_RetryOperationsInterceptor_org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_RetryOperationsInterceptor_org_springframework_retry_interceptor_RetryOperationsInterceptor_Type" direction="REQUIRED" type="IString_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_retry_ResourcelessTransactionManager_Type" id="_2G8q2TqsEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IResourcelessTransactionManager_org_springframework_retry_ResourcelessTransactionManager_Type" type="IResourcelessTransactionManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_ResourcelessTransactionManager_org_springframework_retry_ResourcelessTransactionManager_Type" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_ResourcelessTransactionManager_org_springframework_retry_ResourcelessTransactionManager_Type" direction="REQUIRED" type="Log"/>
+    </components>
+    <interfaceTypes name="Service">
+      <signatures name="service" type="void" id="_2FstADqsEeiP29_qDiwNWQ"/>
+      <signatures name="doTansactional" type="void" id="_2FstATqsEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IServiceImpl_Type">
+      <signatures name="service" type="void" id="_2FstAjqsEeiP29_qDiwNWQ"/>
+      <signatures name="doTansactional" type="void" id="_2FstAzqsEeiP29_qDiwNWQ"/>
+      <signatures name="access$302" type="boolean" id="_2FstBDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.retry.interceptor.RetryOperationsInterceptorTests.ServiceImpl" id="_2FstBTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_2FstBjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="MethodInterceptor">
+      <signatures name="invoke" type="java.lang.Object" id="_2GKAADqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.aopalliance.intercept.MethodInvocation" id="_2GKAATqsEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IRetryOperationsInterceptor_Type">
+      <signatures name="invoke" type="java.lang.Object" id="_2GKnEDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.aopalliance.intercept.MethodInvocation" id="_2GKnETqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setLabel" type="void" id="_2GKnEjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GKnEzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setRetryOperations" type="void" id="_2GKnFDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.retry.RetryOperations" id="_2GKnFTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setRecoverer" type="void" id="_2GKnFjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.retry.interceptor.MethodInvocationRecoverer" id="_2GKnFzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="RetryOperations">
+      <signatures name="execute" type="java.lang.Object" id="_2GYCcDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.retry.RetryCallback" id="_2GYCcTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.retry.RecoveryCallback" id="_2GYCcjqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.retry.RetryState" id="_2GYCczqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="execute" type="java.lang.Object" id="_2GYCdDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.retry.RetryCallback" id="_2GYCdTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.retry.RetryState" id="_2GYCdjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="execute" type="java.lang.Object" id="_2GYCdzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.retry.RetryCallback" id="_2GYCeDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.retry.RecoveryCallback" id="_2GYCeTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="execute" type="java.lang.Object" id="_2GYCejqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.retry.RetryCallback" id="_2GYCezqsEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="MethodInvocationRecoverer">
+      <signatures name="recover" type="java.lang.Object" id="_2GYCfDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_2GYCfTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_2GYCfjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Comparable">
+      <signatures name="compareTo" type="int" id="_2GYCfzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GYCgDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="CharSequence">
+      <signatures name="toString" type="java.lang.String" id="_2GYCgTqsEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_2GYCgjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GYCgzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_2GYChDqsEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_2GYChTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GYChjqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_2GYChzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_2GYCiDqsEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_2GYCiTqsEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IString_Type">
+      <signatures name="compareTo" type="int" id="_2GYCijqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GYCizqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_2GYCjDqsEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_2GYCjTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GYCjjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_2GYCjzqsEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_2GYCkDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GYCkTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_2GYCkjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_2GYCkzqsEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_2GYClDqsEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$chars$0" type="java.util.Spliterator.OfInt" id="_2GYClTqsEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$codePoints$1" type="java.util.Spliterator.OfInt" id="_2GYCljqsEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_2GYClzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GYCmDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_2GYCmTqsEeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_2GYCmjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GYCmzqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_2GYCnDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueOf" type="java.lang.String" id="_2GYCnTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GYCnjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkBounds" type="void" id="_2GYCnzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_2GYCoDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_2GYCoTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_2GYCojqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointAt" type="int" id="_2GYCozqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GYCpDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointBefore" type="int" id="_2GYCpTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GYCpjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointCount" type="int" id="_2GYCpzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GYCqDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_2GYCqTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compareToIgnoreCase" type="int" id="_2GYCqjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GYCqzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="concat" type="java.lang.String" id="_2GYCrDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GYCrTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contains" type="boolean" id="_2GYCrjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_2GYCrzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contentEquals" type="boolean" id="_2GYCsDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_2GYCsTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyValueOf" type="java.lang.String" id="_2GYCsjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char[]" id="_2GYCszqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="endsWith" type="boolean" id="_2GYCtDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GYCtTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equalsIgnoreCase" type="boolean" id="_2GYCtjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GYCtzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="format" type="java.lang.String" id="_2GYCuDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_2GYCuTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_2GYCujqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_2GYCuzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBytes" type="void" id="_2GYCvDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GYCvTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_2GYCvjqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_2GYCvzqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_2GYCwDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChars" type="void" id="_2GYCwTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GYCwjqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_2GYCwzqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="char[]" id="_2GYCxDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_2GYCxTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="indexOfSupplementary" type="int" id="_2GYCxjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GYCxzqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_2GYCyDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="intern" type="java.lang.String" id="_2GYCyTqsEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_2GYCyjqsEeiP29_qDiwNWQ"/>
+      <signatures name="join" type="java.lang.String" id="_2GYCyzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_2GYCzDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.CharSequence[]" id="_2GYCzTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOf" type="int" id="_2GYCzjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GYCzzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOfSupplementary" type="int" id="_2GYC0DqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GYC0TqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_2GYC0jqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="matches" type="boolean" id="_2GYC0zqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GYC1DqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nonSyncContentEquals" type="boolean" id="_2GYC1TqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.AbstractStringBuilder" id="_2GYC1jqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="offsetByCodePoints" type="int" id="_2GYC1zqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GYC2DqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_2GYC2TqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="regionMatches" type="boolean" id="_2GYC2jqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GYC2zqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_2GYC3DqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_2GYC3TqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_2GYC3jqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="java.lang.String" id="_2GYC3zqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char" id="_2GYC4DqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="char" id="_2GYC4TqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="java.lang.String" id="_2GYC4jqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GYC4zqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_2GYC5DqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceFirst" type="java.lang.String" id="_2GYC5TqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GYC5jqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_2GYC5zqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="split" type="java.lang.String[]" id="_2GYC6DqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GYC6TqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="startsWith" type="boolean" id="_2GYC6jqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GYC6zqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_2GYC7DqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="substring" type="java.lang.String" id="_2GYC7TqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GYC7jqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCharArray" type="char[]" id="_2GYC7zqsEeiP29_qDiwNWQ"/>
+      <signatures name="toLowerCase" type="java.lang.String" id="_2GYC8DqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_2GYC8TqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUpperCase" type="java.lang.String" id="_2GYC8jqsEeiP29_qDiwNWQ"/>
+      <signatures name="trim" type="java.lang.String" id="_2GYC8zqsEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IResourcelessTransactionManager_Type">
+      <signatures name="commit" type="void" id="_2GjBkTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionStatus" id="_2GjBkjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTransaction" type="org.springframework.transaction.TransactionStatus" id="_2GjBkzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_2GjBlDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rollback" type="void" id="_2GjBlTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionStatus" id="_2GjBljqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readObject" type="void" id="_2GjBlzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.ObjectInputStream" id="_2GjBmDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resume" type="void" id="_2GjBmTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjBmjqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.transaction.support.AbstractPlatformTransactionManager.SuspendedResourcesHolder" id="_2GjBmzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="suspend" type="org.springframework.transaction.support.AbstractPlatformTransactionManager.SuspendedResourcesHolder" id="_2GjBnDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjBnTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTransactionSynchronizationName" type="void" id="_2GjBnjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GjBnzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setGlobalRollbackOnParticipationFailure" type="void" id="_2GjBoDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_2GjBoTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isGlobalRollbackOnParticipationFailure" type="boolean" id="_2GjBojqsEeiP29_qDiwNWQ"/>
+      <signatures name="registerAfterCompletionWithExistingTransaction" type="void" id="_2GjBozqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjBpDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.List" id="_2GjBpTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="newTransactionStatus" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjBpjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_2GjBpzqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_2GjBqDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_2GjBqTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="boolean" id="_2GjBqjqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="boolean" id="_2GjBqzqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg5" type="java.lang.Object" id="_2GjBrDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setNestedTransactionAllowed" type="void" id="_2GjBrTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_2GjBrjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareSynchronization" type="void" id="_2GjBrzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjBsDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.transaction.TransactionDefinition" id="_2GjBsTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isNestedTransactionAllowed" type="boolean" id="_2GjBsjqsEeiP29_qDiwNWQ"/>
+      <signatures name="prepareTransactionStatus" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjBszqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_2GjBtDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_2GjBtTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_2GjBtjqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="boolean" id="_2GjBtzqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="boolean" id="_2GjBuDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg5" type="java.lang.Object" id="_2GjBuTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isRollbackOnCommitFailure" type="boolean" id="_2GjBujqsEeiP29_qDiwNWQ"/>
+      <signatures name="handleExistingTransaction" type="org.springframework.transaction.TransactionStatus" id="_2GjBuzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_2GjBvDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_2GjBvTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_2GjBvjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resumeAfterBeginException" type="void" id="_2GjBvzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjBwDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.transaction.support.AbstractPlatformTransactionManager.SuspendedResourcesHolder" id="_2GjBwTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_2GjBwjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doSetRollbackOnly" type="void" id="_2GjBwzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjBxDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isFailEarlyOnGlobalRollbackOnly" type="boolean" id="_2GjBxTqsEeiP29_qDiwNWQ"/>
+      <signatures name="doCleanupAfterCompletion" type="void" id="_2GjBxjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjBxzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTransactionSynchronization" type="void" id="_2GjByDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GjByTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDefaultTimeout" type="void" id="_2GjByjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GjByzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isExistingTransaction" type="boolean" id="_2GjBzDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjBzTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTransactionSynchronization" type="int" id="_2GjBzjqsEeiP29_qDiwNWQ"/>
+      <signatures name="getDefaultTimeout" type="int" id="_2GjBzzqsEeiP29_qDiwNWQ"/>
+      <signatures name="setValidateExistingTransaction" type="void" id="_2GjB0DqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_2GjB0TqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isValidateExistingTransaction" type="boolean" id="_2GjB0jqsEeiP29_qDiwNWQ"/>
+      <signatures name="setFailEarlyOnGlobalRollbackOnly" type="void" id="_2GjB0zqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_2GjB1DqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setRollbackOnCommitFailure" type="void" id="_2GjB1TqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_2GjB1jqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doSuspendSynchronization" type="java.util.List" id="_2GjB1zqsEeiP29_qDiwNWQ"/>
+      <signatures name="cleanupAfterCompletion" type="void" id="_2GjB2DqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjB2TqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="invokeAfterCompletion" type="void" id="_2GjB2jqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.List" id="_2GjB2zqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_2GjB3DqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="triggerBeforeCommit" type="void" id="_2GjB3TqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjB3jqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doResumeSynchronization" type="void" id="_2GjB3zqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.List" id="_2GjB4DqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="useSavepointForNestedTransaction" type="boolean" id="_2GjB4TqsEeiP29_qDiwNWQ"/>
+      <signatures name="shouldCommitOnGlobalRollbackOnly" type="boolean" id="_2GjB4jqsEeiP29_qDiwNWQ"/>
+      <signatures name="triggerAfterCompletion" type="void" id="_2GjB4zqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjB5DqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_2GjB5TqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="triggerAfterCommit" type="void" id="_2GjB5jqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjB5zqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doRollbackOnCommitException" type="void" id="_2GjB6DqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjB6TqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_2GjB6jqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="triggerBeforeCompletion" type="void" id="_2GjB6zqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjB7DqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doCommit" type="void" id="_2GjB7TqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjB7jqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doRollback" type="void" id="_2GjB7zqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjB8DqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doGetTransaction" type="java.lang.Object" id="_2GjB8TqsEeiP29_qDiwNWQ"/>
+      <signatures name="doResume" type="void" id="_2GjB8jqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjB8zqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_2GjB9DqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doBegin" type="void" id="_2GjB9TqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjB9jqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.transaction.TransactionDefinition" id="_2GjB9zqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="determineTimeout" type="int" id="_2GjB-DqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_2GjB-TqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doSuspend" type="java.lang.Object" id="_2GjB-jqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjB-zqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareForCommit" type="void" id="_2GjB_DqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjB_TqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="processCommit" type="void" id="_2GjB_jqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjB_zqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="processRollback" type="void" id="_2GjCADqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjCATqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_2GjCAjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="PlatformTransactionManager">
+      <signatures name="commit" type="void" id="_2GjCAzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionStatus" id="_2GjCBDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTransaction" type="org.springframework.transaction.TransactionStatus" id="_2GjCBTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_2GjCBjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rollback" type="void" id="_2GjCBzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionStatus" id="_2GjCCDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IAbstractPlatformTransactionManager_Type">
+      <signatures name="commit" type="void" id="_2GjCCTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionStatus" id="_2GjCCjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTransaction" type="org.springframework.transaction.TransactionStatus" id="_2GjCCzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_2GjCDDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rollback" type="void" id="_2GjCDTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionStatus" id="_2GjCDjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readObject" type="void" id="_2GjCDzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.ObjectInputStream" id="_2GjCEDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resume" type="void" id="_2GjCETqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCEjqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.transaction.support.AbstractPlatformTransactionManager.SuspendedResourcesHolder" id="_2GjCEzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="suspend" type="org.springframework.transaction.support.AbstractPlatformTransactionManager.SuspendedResourcesHolder" id="_2GjCFDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCFTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTransactionSynchronizationName" type="void" id="_2GjCFjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GjCFzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setGlobalRollbackOnParticipationFailure" type="void" id="_2GjCGDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_2GjCGTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isGlobalRollbackOnParticipationFailure" type="boolean" id="_2GjCGjqsEeiP29_qDiwNWQ"/>
+      <signatures name="registerAfterCompletionWithExistingTransaction" type="void" id="_2GjCGzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCHDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.List" id="_2GjCHTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="newTransactionStatus" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjCHjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_2GjCHzqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_2GjCIDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_2GjCITqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="boolean" id="_2GjCIjqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="boolean" id="_2GjCIzqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg5" type="java.lang.Object" id="_2GjCJDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setNestedTransactionAllowed" type="void" id="_2GjCJTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_2GjCJjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareSynchronization" type="void" id="_2GjCJzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjCKDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.transaction.TransactionDefinition" id="_2GjCKTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isNestedTransactionAllowed" type="boolean" id="_2GjCKjqsEeiP29_qDiwNWQ"/>
+      <signatures name="prepareTransactionStatus" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjCKzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_2GjCLDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_2GjCLTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_2GjCLjqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="boolean" id="_2GjCLzqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="boolean" id="_2GjCMDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg5" type="java.lang.Object" id="_2GjCMTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isRollbackOnCommitFailure" type="boolean" id="_2GjCMjqsEeiP29_qDiwNWQ"/>
+      <signatures name="handleExistingTransaction" type="org.springframework.transaction.TransactionStatus" id="_2GjCMzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_2GjCNDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_2GjCNTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_2GjCNjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resumeAfterBeginException" type="void" id="_2GjCNzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCODqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.transaction.support.AbstractPlatformTransactionManager.SuspendedResourcesHolder" id="_2GjCOTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_2GjCOjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doSetRollbackOnly" type="void" id="_2GjCOzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjCPDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isFailEarlyOnGlobalRollbackOnly" type="boolean" id="_2GjCPTqsEeiP29_qDiwNWQ"/>
+      <signatures name="doCleanupAfterCompletion" type="void" id="_2GjCPjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCPzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTransactionSynchronization" type="void" id="_2GjCQDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GjCQTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDefaultTimeout" type="void" id="_2GjCQjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_2GjCQzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isExistingTransaction" type="boolean" id="_2GjCRDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCRTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTransactionSynchronization" type="int" id="_2GjCRjqsEeiP29_qDiwNWQ"/>
+      <signatures name="getDefaultTimeout" type="int" id="_2GjCRzqsEeiP29_qDiwNWQ"/>
+      <signatures name="setValidateExistingTransaction" type="void" id="_2GjCSDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_2GjCSTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isValidateExistingTransaction" type="boolean" id="_2GjCSjqsEeiP29_qDiwNWQ"/>
+      <signatures name="setFailEarlyOnGlobalRollbackOnly" type="void" id="_2GjCSzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_2GjCTDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setRollbackOnCommitFailure" type="void" id="_2GjCTTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_2GjCTjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doSuspendSynchronization" type="java.util.List" id="_2GjCTzqsEeiP29_qDiwNWQ"/>
+      <signatures name="cleanupAfterCompletion" type="void" id="_2GjCUDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjCUTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="invokeAfterCompletion" type="void" id="_2GjCUjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.List" id="_2GjCUzqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_2GjCVDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="triggerBeforeCommit" type="void" id="_2GjCVTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjCVjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doResumeSynchronization" type="void" id="_2GjCVzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.List" id="_2GjCWDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="useSavepointForNestedTransaction" type="boolean" id="_2GjCWTqsEeiP29_qDiwNWQ"/>
+      <signatures name="shouldCommitOnGlobalRollbackOnly" type="boolean" id="_2GjCWjqsEeiP29_qDiwNWQ"/>
+      <signatures name="triggerAfterCompletion" type="void" id="_2GjCWzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjCXDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_2GjCXTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="triggerAfterCommit" type="void" id="_2GjCXjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjCXzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doRollbackOnCommitException" type="void" id="_2GjCYDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjCYTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_2GjCYjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="triggerBeforeCompletion" type="void" id="_2GjCYzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjCZDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doCommit" type="void" id="_2GjCZTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjCZjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doRollback" type="void" id="_2GjCZzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjCaDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doGetTransaction" type="java.lang.Object" id="_2GjCaTqsEeiP29_qDiwNWQ"/>
+      <signatures name="doResume" type="void" id="_2GjCajqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCazqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_2GjCbDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doBegin" type="void" id="_2GjCbTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCbjqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.transaction.TransactionDefinition" id="_2GjCbzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="determineTimeout" type="int" id="_2GjCcDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_2GjCcTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doSuspend" type="java.lang.Object" id="_2GjCcjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCczqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareForCommit" type="void" id="_2GjCdDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjCdTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="processCommit" type="void" id="_2GjCdjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjCdzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="processRollback" type="void" id="_2GjCeDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_2GjCeTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_2GjCejqsEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IConstants_Type">
+      <signatures name="getSize" type="int" id="_2GjCgTqsEeiP29_qDiwNWQ"/>
+      <signatures name="getClassName" type="java.lang.String" id="_2GjCgjqsEeiP29_qDiwNWQ"/>
+      <signatures name="asNumber" type="java.lang.Number" id="_2GjCgzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GjChDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="asObject" type="java.lang.Object" id="_2GjChTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GjChjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFieldCache" type="java.util.Map" id="_2GjChzqsEeiP29_qDiwNWQ"/>
+      <signatures name="toCode" type="java.lang.String" id="_2GjCiDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCiTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_2GjCijqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getValues" type="java.util.Set" id="_2GjCizqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GjCjDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCodeForSuffix" type="java.lang.String" id="_2GjCjTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCjjqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_2GjCjzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="asString" type="java.lang.String" id="_2GjCkDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GjCkTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getNames" type="java.util.Set" id="_2GjCkjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GjCkzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getValuesForSuffix" type="java.util.Set" id="_2GjClDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GjClTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getNamesForProperty" type="java.util.Set" id="_2GjCljqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GjClzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getValuesForProperty" type="java.util.Set" id="_2GjCmDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GjCmTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="propertyToConstantNamePrefix" type="java.lang.String" id="_2GjCmjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GjCmzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getNamesForSuffix" type="java.util.Set" id="_2GjCnDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_2GjCnTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCodeForProperty" type="java.lang.String" id="_2GjCnjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCnzqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_2GjCoDqsEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Log">
+      <signatures name="debug" type="void" id="_2GjCoTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCojqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_2GjCozqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_2GjCpDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCpTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_2GjCpjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCpzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_2GjCqDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCqTqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_2GjCqjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_2GjCqzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCrDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_2GjCrTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_2GjCrjqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCrzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_2GjCsDqsEeiP29_qDiwNWQ"/>
+      <signatures name="info" type="void" id="_2GjCsTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCsjqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_2GjCszqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_2GjCtDqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCtTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTraceEnabled" type="boolean" id="_2GjCtjqsEeiP29_qDiwNWQ"/>
+      <signatures name="warn" type="void" id="_2GjCtzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCuDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_2GjCuTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_2GjCujqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCuzqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isDebugEnabled" type="boolean" id="_2GjCvDqsEeiP29_qDiwNWQ"/>
+      <signatures name="fatal" type="void" id="_2GjCvTqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCvjqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="fatal" type="void" id="_2GjCvzqsEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2GjCwDqsEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_2GjCwTqsEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isErrorEnabled" type="boolean" id="_2GjCwjqsEeiP29_qDiwNWQ"/>
+      <signatures name="isFatalEnabled" type="boolean" id="_2GjCwzqsEeiP29_qDiwNWQ"/>
+      <signatures name="isWarnEnabled" type="boolean" id="_2GjCxDqsEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

@@ -1,0 +1,6 @@
+dedal_diagram "ngageoint.mrgeo"
+
+	repositories (
+
+		repository genRepo
+	)

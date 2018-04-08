@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="ff4j.ff4j-webapi-jersey2x">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ff4j.ff4j-webapi-jersey2x.src.test.resources.spring-context.xml_config" implements="//@architectureDescriptions[name='ff4j.ff4j-webapi-jersey2x.src.test.resources.spring-context.xml_spec']">
+    <configComponents name="org.ff4j.FF4j" id="_0zKzUDqaEeiP29_qDiwNWQ" realizes="_0zp7mDqaEeiP29_qDiwNWQ" implements="_0zfjcDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.ff4j.web.jersey2.store.FeatureStoreHttp" id="_0zKzUTqaEeiP29_qDiwNWQ" realizes="_0zp7jDqaEeiP29_qDiwNWQ" implements="_0zp7gDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configConnections refID="_0zKzUjqaEeiP29_qDiwNWQ" property="&quot;store&quot;" clientClassElem="_0zKzUDqaEeiP29_qDiwNWQ" serverClassElem="_0zKzUTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ff4j.ff4j-webapi-jersey2x.src.test.resources.spring-context.xml_asm" instantiates="//@architectureDescriptions[name='ff4j.ff4j-webapi-jersey2x.src.test.resources.spring-context.xml_config']">
+    <assmComponents name="ff4j" id="_0zLaYDqaEeiP29_qDiwNWQ" instantiates="_0zKzUDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_ff4j" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="ff4j.store" id="_0zLaYTqaEeiP29_qDiwNWQ" instantiates="_0zKzUTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_ff4j.store" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assemblyConnections refID="_0zLaYjqaEeiP29_qDiwNWQ" property="ff4j.store" clientInstElem="_0zLaYDqaEeiP29_qDiwNWQ" serverInstElem="_0zLaYTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ff4j.ff4j-webapi-jersey2x.src.test.resources.spring-context.xml_spec">
+    <specComponents name="Object_role" id="_0zp7jDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_0zp7mDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specConnections refID="_0zp7pDqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ff4j.ff4j-webapi-jersey2x.src.test.resources.test-WebApi-context.xml_config" implements="//@architectureDescriptions[name='ff4j.ff4j-webapi-jersey2x.src.test.resources.test-WebApi-context.xml_spec']">
+    <configComponents name="org.ff4j.FF4j" id="_0z-roDqaEeiP29_qDiwNWQ" realizes="_00MuEDqaEeiP29_qDiwNWQ" implements="_00CWADqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.ff4j.store.InMemoryFeatureStore" id="_0z-roTqaEeiP29_qDiwNWQ" realizes="_00MuHDqaEeiP29_qDiwNWQ" implements="_00GncDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.ff4j.web.resources.FeatureStoreResource" id="_0z-rojqaEeiP29_qDiwNWQ" realizes="_00MHDjqaEeiP29_qDiwNWQ" implements="_00MHADqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configConnections refID="_0z-rozqaEeiP29_qDiwNWQ" property="&quot;store&quot;" clientClassElem="_0z-roDqaEeiP29_qDiwNWQ" serverClassElem="_0z-roTqaEeiP29_qDiwNWQ"/>
+    <configConnections refID="_0z_SsDqaEeiP29_qDiwNWQ" property="&quot;store&quot;" clientClassElem="_0z-rojqaEeiP29_qDiwNWQ" serverClassElem="_0z-roTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ff4j.ff4j-webapi-jersey2x.src.test.resources.test-WebApi-context.xml_asm" instantiates="//@architectureDescriptions[name='ff4j.ff4j-webapi-jersey2x.src.test.resources.test-WebApi-context.xml_config']">
+    <assmComponents name="ff4j" id="_0z_SsTqaEeiP29_qDiwNWQ" instantiates="_0z-roDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_ff4j" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="ff4j.store" id="_0z_SsjqaEeiP29_qDiwNWQ" instantiates="_0z-roTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_ff4j.store" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="ff4j.webapi.store" id="_0z_SszqaEeiP29_qDiwNWQ" instantiates="_0z-rojqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_ff4j.webapi.store" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assemblyConnections refID="_0z_StDqaEeiP29_qDiwNWQ" property="ff4j.store" clientInstElem="_0z_SsTqaEeiP29_qDiwNWQ" serverInstElem="_0z_SsjqaEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_0z_StTqaEeiP29_qDiwNWQ" property="ff4j.webapi.store.store" clientInstElem="_0z_SszqaEeiP29_qDiwNWQ" serverInstElem="_0z_SsjqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ff4j.ff4j-webapi-jersey2x.src.test.resources.test-WebApi-context.xml_spec">
+    <specComponents name="Object_role" id="_00MHDjqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_00MuEDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_00MuHDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specConnections refID="_00MuKDqaEeiP29_qDiwNWQ"/>
+    <specConnections refID="_00MuKTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ff4j.ff4j-webapi-jersey2x.target.test-classes.spring-context.xml_config" implements="//@architectureDescriptions[name='ff4j.ff4j-webapi-jersey2x.target.test-classes.spring-context.xml_spec']">
+    <configComponents name="org.ff4j.FF4j" id="_00jTYDqaEeiP29_qDiwNWQ" realizes="_00qBHDqaEeiP29_qDiwNWQ" implements="_00m9wDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.ff4j.web.jersey2.store.FeatureStoreHttp" id="_00jTYTqaEeiP29_qDiwNWQ" realizes="_00qBKDqaEeiP29_qDiwNWQ" implements="_00qBEDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configConnections refID="_00j6cDqaEeiP29_qDiwNWQ" property="&quot;store&quot;" clientClassElem="_00jTYDqaEeiP29_qDiwNWQ" serverClassElem="_00jTYTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ff4j.ff4j-webapi-jersey2x.target.test-classes.spring-context.xml_asm" instantiates="//@architectureDescriptions[name='ff4j.ff4j-webapi-jersey2x.target.test-classes.spring-context.xml_config']">
+    <assmComponents name="ff4j" id="_00j6cTqaEeiP29_qDiwNWQ" instantiates="_00jTYDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_ff4j" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="ff4j.store" id="_00j6cjqaEeiP29_qDiwNWQ" instantiates="_00jTYTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_ff4j.store" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assemblyConnections refID="_00j6czqaEeiP29_qDiwNWQ" property="ff4j.store" clientInstElem="_00j6cTqaEeiP29_qDiwNWQ" serverInstElem="_00j6cjqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ff4j.ff4j-webapi-jersey2x.target.test-classes.spring-context.xml_spec">
+    <specComponents name="Object_role" id="_00qBHDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_00qBKDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specConnections refID="_00qBNDqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ff4j.ff4j-webapi-jersey2x.target.test-classes.test-WebApi-context.xml_config" implements="//@architectureDescriptions[name='ff4j.ff4j-webapi-jersey2x.target.test-classes.test-WebApi-context.xml_spec']">
+    <configComponents name="org.ff4j.FF4j" id="_00-xMDqaEeiP29_qDiwNWQ" realizes="_01NavjqaEeiP29_qDiwNWQ" implements="_01CbkDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.ff4j.store.InMemoryFeatureStore" id="_00-xMTqaEeiP29_qDiwNWQ" realizes="_01Na1jqaEeiP29_qDiwNWQ" implements="_01GtADqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.ff4j.web.resources.FeatureStoreResource" id="_00-xMjqaEeiP29_qDiwNWQ" realizes="_01NayjqaEeiP29_qDiwNWQ" implements="_01NasDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configConnections refID="_00_YQDqaEeiP29_qDiwNWQ" property="&quot;store&quot;" clientClassElem="_00-xMDqaEeiP29_qDiwNWQ" serverClassElem="_00-xMTqaEeiP29_qDiwNWQ"/>
+    <configConnections refID="_00_YQTqaEeiP29_qDiwNWQ" property="&quot;store&quot;" clientClassElem="_00-xMjqaEeiP29_qDiwNWQ" serverClassElem="_00-xMTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ff4j.ff4j-webapi-jersey2x.target.test-classes.test-WebApi-context.xml_asm" instantiates="//@architectureDescriptions[name='ff4j.ff4j-webapi-jersey2x.target.test-classes.test-WebApi-context.xml_config']">
+    <assmComponents name="ff4j" id="_00_YQjqaEeiP29_qDiwNWQ" instantiates="_00-xMDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_ff4j" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="ff4j.store" id="_00_YQzqaEeiP29_qDiwNWQ" instantiates="_00-xMTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_ff4j.store" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="ff4j.webapi.store" id="_00_YRDqaEeiP29_qDiwNWQ" instantiates="_00-xMjqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_ff4j.webapi.store" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assemblyConnections refID="_00_YRTqaEeiP29_qDiwNWQ" property="ff4j.store" clientInstElem="_00_YQjqaEeiP29_qDiwNWQ" serverInstElem="_00_YQzqaEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_00_YRjqaEeiP29_qDiwNWQ" property="ff4j.webapi.store.store" clientInstElem="_00_YRDqaEeiP29_qDiwNWQ" serverInstElem="_00_YQzqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ff4j.ff4j-webapi-jersey2x.target.test-classes.test-WebApi-context.xml_spec">
+    <specComponents name="Object_role" id="_01NavjqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_01NayjqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_01Na1jqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specConnections refID="_01Na4jqaEeiP29_qDiwNWQ"/>
+    <specConnections refID="_01Na4zqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_0zfjcDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_0zp7gDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_00CWADqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_00GncDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_00MHADqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_00m9wDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_00qBEDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_01CbkDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_01GtADqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_01NasDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_0zfjcTqaEeiP29_qDiwNWQ"/>
+      <signatures name="wait" type="void" id="_0zfjcjqaEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_0zfjczqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0zfjdDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_0zfjdTqaEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_0zfjdjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getClass" type="java.lang.Class" id="_0zfjdzqaEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_0zfjeDqaEeiP29_qDiwNWQ"/>
+      <signatures name="notify" type="void" id="_0zfjeTqaEeiP29_qDiwNWQ"/>
+      <signatures name="notifyAll" type="void" id="_0zfjejqaEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_0zfjezqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

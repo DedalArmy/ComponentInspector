@@ -1,0 +1,6 @@
+dedal_diagram "dangdangdotcom.config-face"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,6 @@
+dedal_diagram "elasticjob..git"
+
+	repositories (
+
+		repository genRepo
+	)

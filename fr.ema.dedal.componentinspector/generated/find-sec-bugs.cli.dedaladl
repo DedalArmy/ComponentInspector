@@ -1,0 +1,6 @@
+dedal_diagram "find-sec-bugs.cli"
+
+	repositories (
+
+		repository genRepo
+	)

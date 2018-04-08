@@ -1,0 +1,6 @@
+dedal_diagram "Comcast.jrugged-core"
+
+	repositories (
+
+		repository genRepo
+	)

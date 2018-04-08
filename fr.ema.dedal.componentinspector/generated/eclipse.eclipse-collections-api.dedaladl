@@ -1,0 +1,6 @@
+dedal_diagram "eclipse.eclipse-collections-api"
+
+	repositories (
+
+		repository genRepo
+	)

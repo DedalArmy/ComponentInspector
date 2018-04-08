@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="yu199195.hmily">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-inventory.src.main.resources.applicationContext.xml_config" implements="//@architectureDescriptions[name='yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-inventory.src.main.resources.applicationContext.xml_spec']">
+    <configComponents name="com.hmily.tcc.core.bootstrap.TccTransactionBootstrap" id="_p8lJoDqtEeiP29_qDiwNWQ" realizes="_p-ueyzqtEeiP29_qDiwNWQ" implements="_p9-QwDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccFileConfig_Type"/>
+      <attributes name="tccInitService" type="com.hmily.tcc.core.service.TccInitService"/>
+      <attributes name="repositorySuffix" type="java.lang.String"/>
+      <attributes name="serializer" type="java.lang.String"/>
+      <attributes name="scheduledThreadMax" type="int"/>
+      <attributes name="scheduledDelay" type="int"/>
+      <attributes name="retryMax" type="int"/>
+      <attributes name="recoverDelayTime" type="int"/>
+      <attributes name="repositorySupport" type="java.lang.String"/>
+      <attributes name="bufferSize" type="int"/>
+      <attributes name="tccDbConfig" type="com.hmily.tcc.common.config.TccDbConfig"/>
+      <attributes name="tccMongoConfig" type="com.hmily.tcc.common.config.TccMongoConfig"/>
+      <attributes name="tccRedisConfig" type="com.hmily.tcc.common.config.TccRedisConfig"/>
+      <attributes name="tccZookeeperConfig" type="com.hmily.tcc.common.config.TccZookeeperConfig"/>
+      <attributes name="tccFileConfig" type="com.hmily.tcc.common.config.TccFileConfig"/>
+    </configComponents>
+    <configConnections clientIntElem="ITccDbConfig_TccTransactionBootstrap" refID="_p8lJoTqtEeiP29_qDiwNWQ" property="&quot;tccDbConfig&quot;" clientClassElem="_p8lJoDqtEeiP29_qDiwNWQ" serverClassElem="_p8lJojqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-inventory.src.main.resources.applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-inventory.src.main.resources.applicationContext.xml_config']">
+    <assmComponents name="tccTransactionBootstrap" id="_p8lJozqtEeiP29_qDiwNWQ" instantiates="_p8lJoDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap_tccTransactionBootstrap" type="ApplicationContextAware" instantiates="IApplicationContextAware_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap_tccTransactionBootstrap" type="ITccTransactionBootstrap_Type" instantiates="ITccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="TccInitService" instantiates="ITccInitService_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccDbConfig_Type" instantiates="ITccDbConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccMongoConfig_Type" instantiates="ITccMongoConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccRedisConfig_Type" instantiates="ITccRedisConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccZookeeperConfig_Type" instantiates="ITccZookeeperConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccFileConfig_Type" instantiates="ITccFileConfig_TccTransactionBootstrap"/>
+    </assmComponents>
+    <assemblyConnections clientIntElem="ITccDbConfig_TccTransactionBootstrap_tccTransactionBootstrap" refID="_p8lJpDqtEeiP29_qDiwNWQ" property="tccTransactionBootstrap.tccDbConfig" clientInstElem="_p8lJozqtEeiP29_qDiwNWQ" serverInstElem="_p8lJpTqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-inventory.src.main.resources.applicationContext.xml_spec">
+    <specComponents name="TccTransactionBootstrap_role" id="_p-ueyzqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAwareTccTransactionBootstrap_role" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrapTccTransactionBootstrap_role" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitServiceTccTransactionBootstrap_role" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccFileConfig_Type"/>
+    </specComponents>
+    <specConnections clientIntElem="ITccDbConfigTccTransactionBootstrap_role" refID="_p-vvJTqtEeiP29_qDiwNWQ" clientCompElem="_p-ueyzqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-inventory.target.classes.applicationContext.xml_config" implements="//@architectureDescriptions[name='yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-inventory.target.classes.applicationContext.xml_spec']">
+    <configComponents name="com.hmily.tcc.core.bootstrap.TccTransactionBootstrap" id="_p_cQYDqtEeiP29_qDiwNWQ" realizes="_p_dgFzqtEeiP29_qDiwNWQ" implements="_p_c3cTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccFileConfig_Type"/>
+      <attributes name="tccInitService" type="com.hmily.tcc.core.service.TccInitService"/>
+      <attributes name="repositorySuffix" type="java.lang.String"/>
+      <attributes name="serializer" type="java.lang.String"/>
+      <attributes name="scheduledThreadMax" type="int"/>
+      <attributes name="scheduledDelay" type="int"/>
+      <attributes name="retryMax" type="int"/>
+      <attributes name="recoverDelayTime" type="int"/>
+      <attributes name="repositorySupport" type="java.lang.String"/>
+      <attributes name="bufferSize" type="int"/>
+      <attributes name="tccDbConfig" type="com.hmily.tcc.common.config.TccDbConfig"/>
+      <attributes name="tccMongoConfig" type="com.hmily.tcc.common.config.TccMongoConfig"/>
+      <attributes name="tccRedisConfig" type="com.hmily.tcc.common.config.TccRedisConfig"/>
+      <attributes name="tccZookeeperConfig" type="com.hmily.tcc.common.config.TccZookeeperConfig"/>
+      <attributes name="tccFileConfig" type="com.hmily.tcc.common.config.TccFileConfig"/>
+    </configComponents>
+    <configConnections clientIntElem="ITccDbConfig_TccTransactionBootstrap" refID="_p_cQYTqtEeiP29_qDiwNWQ" property="&quot;tccDbConfig&quot;" clientClassElem="_p_cQYDqtEeiP29_qDiwNWQ" serverClassElem="_p_cQYjqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-inventory.target.classes.applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-inventory.target.classes.applicationContext.xml_config']">
+    <assmComponents name="tccTransactionBootstrap" id="_p_cQYzqtEeiP29_qDiwNWQ" instantiates="_p_cQYDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap_tccTransactionBootstrap" type="ApplicationContextAware" instantiates="IApplicationContextAware_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap_tccTransactionBootstrap" type="ITccTransactionBootstrap_Type" instantiates="ITccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="TccInitService" instantiates="ITccInitService_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccDbConfig_Type" instantiates="ITccDbConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccMongoConfig_Type" instantiates="ITccMongoConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccRedisConfig_Type" instantiates="ITccRedisConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccZookeeperConfig_Type" instantiates="ITccZookeeperConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccFileConfig_Type" instantiates="ITccFileConfig_TccTransactionBootstrap"/>
+    </assmComponents>
+    <assemblyConnections clientIntElem="ITccDbConfig_TccTransactionBootstrap_tccTransactionBootstrap" refID="_p_cQZDqtEeiP29_qDiwNWQ" property="tccTransactionBootstrap.tccDbConfig" clientInstElem="_p_cQYzqtEeiP29_qDiwNWQ" serverInstElem="_p_c3cDqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-inventory.target.classes.applicationContext.xml_spec">
+    <specComponents name="TccTransactionBootstrap_role" id="_p_dgFzqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAwareTccTransactionBootstrap_role" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrapTccTransactionBootstrap_role" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitServiceTccTransactionBootstrap_role" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccFileConfig_Type"/>
+    </specComponents>
+    <specConnections clientIntElem="ITccDbConfigTccTransactionBootstrap_role" refID="_p_euPTqtEeiP29_qDiwNWQ" clientCompElem="_p_dgFzqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-order.src.main.resources.applicationContext.xml_config" implements="//@architectureDescriptions[name='yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-order.src.main.resources.applicationContext.xml_spec']">
+    <configComponents name="com.hmily.tcc.core.bootstrap.TccTransactionBootstrap" id="_qAIM4DqtEeiP29_qDiwNWQ" realizes="_qAI2YzqtEeiP29_qDiwNWQ" implements="_qAIM5jqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccFileConfig_Type"/>
+      <attributes name="tccInitService" type="com.hmily.tcc.core.service.TccInitService"/>
+      <attributes name="repositorySuffix" type="java.lang.String"/>
+      <attributes name="serializer" type="java.lang.String"/>
+      <attributes name="scheduledThreadMax" type="int"/>
+      <attributes name="scheduledDelay" type="int"/>
+      <attributes name="retryMax" type="int"/>
+      <attributes name="recoverDelayTime" type="int"/>
+      <attributes name="repositorySupport" type="java.lang.String"/>
+      <attributes name="bufferSize" type="int"/>
+      <attributes name="tccDbConfig" type="com.hmily.tcc.common.config.TccDbConfig"/>
+      <attributes name="tccMongoConfig" type="com.hmily.tcc.common.config.TccMongoConfig"/>
+      <attributes name="tccRedisConfig" type="com.hmily.tcc.common.config.TccRedisConfig"/>
+      <attributes name="tccZookeeperConfig" type="com.hmily.tcc.common.config.TccZookeeperConfig"/>
+      <attributes name="tccFileConfig" type="com.hmily.tcc.common.config.TccFileConfig"/>
+    </configComponents>
+    <configConnections clientIntElem="ITccDbConfig_TccTransactionBootstrap" refID="_qAIM4TqtEeiP29_qDiwNWQ" property="&quot;tccDbConfig&quot;" clientClassElem="_qAIM4DqtEeiP29_qDiwNWQ" serverClassElem="_qAIM4jqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-order.src.main.resources.applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-order.src.main.resources.applicationContext.xml_config']">
+    <assmComponents name="tccTransactionBootstrap" id="_qAIM4zqtEeiP29_qDiwNWQ" instantiates="_qAIM4DqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap_tccTransactionBootstrap" type="ApplicationContextAware" instantiates="IApplicationContextAware_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap_tccTransactionBootstrap" type="ITccTransactionBootstrap_Type" instantiates="ITccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="TccInitService" instantiates="ITccInitService_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccDbConfig_Type" instantiates="ITccDbConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccMongoConfig_Type" instantiates="ITccMongoConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccRedisConfig_Type" instantiates="ITccRedisConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccZookeeperConfig_Type" instantiates="ITccZookeeperConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccFileConfig_Type" instantiates="ITccFileConfig_TccTransactionBootstrap"/>
+    </assmComponents>
+    <assemblyConnections clientIntElem="ITccDbConfig_TccTransactionBootstrap_tccTransactionBootstrap" refID="_qAIM5DqtEeiP29_qDiwNWQ" property="tccTransactionBootstrap.tccDbConfig" clientInstElem="_qAIM4zqtEeiP29_qDiwNWQ" serverInstElem="_qAIM5TqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-order.src.main.resources.applicationContext.xml_spec">
+    <specComponents name="TccTransactionBootstrap_role" id="_qAI2YzqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAwareTccTransactionBootstrap_role" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrapTccTransactionBootstrap_role" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitServiceTccTransactionBootstrap_role" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccFileConfig_Type"/>
+    </specComponents>
+    <specConnections clientIntElem="ITccDbConfigTccTransactionBootstrap_role" refID="_qAKFDzqtEeiP29_qDiwNWQ" clientCompElem="_qAI2YzqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-order.target.classes.applicationContext.xml_config" implements="//@architectureDescriptions[name='yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-order.target.classes.applicationContext.xml_spec']">
+    <configComponents name="com.hmily.tcc.core.bootstrap.TccTransactionBootstrap" id="_qA1XgDqtEeiP29_qDiwNWQ" realizes="_qA2l-jqtEeiP29_qDiwNWQ" implements="_qA1-kTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccFileConfig_Type"/>
+      <attributes name="tccInitService" type="com.hmily.tcc.core.service.TccInitService"/>
+      <attributes name="repositorySuffix" type="java.lang.String"/>
+      <attributes name="serializer" type="java.lang.String"/>
+      <attributes name="scheduledThreadMax" type="int"/>
+      <attributes name="scheduledDelay" type="int"/>
+      <attributes name="retryMax" type="int"/>
+      <attributes name="recoverDelayTime" type="int"/>
+      <attributes name="repositorySupport" type="java.lang.String"/>
+      <attributes name="bufferSize" type="int"/>
+      <attributes name="tccDbConfig" type="com.hmily.tcc.common.config.TccDbConfig"/>
+      <attributes name="tccMongoConfig" type="com.hmily.tcc.common.config.TccMongoConfig"/>
+      <attributes name="tccRedisConfig" type="com.hmily.tcc.common.config.TccRedisConfig"/>
+      <attributes name="tccZookeeperConfig" type="com.hmily.tcc.common.config.TccZookeeperConfig"/>
+      <attributes name="tccFileConfig" type="com.hmily.tcc.common.config.TccFileConfig"/>
+    </configComponents>
+    <configConnections clientIntElem="ITccDbConfig_TccTransactionBootstrap" refID="_qA1XgTqtEeiP29_qDiwNWQ" property="&quot;tccDbConfig&quot;" clientClassElem="_qA1XgDqtEeiP29_qDiwNWQ" serverClassElem="_qA1XgjqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-order.target.classes.applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-order.target.classes.applicationContext.xml_config']">
+    <assmComponents name="tccTransactionBootstrap" id="_qA1XgzqtEeiP29_qDiwNWQ" instantiates="_qA1XgDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap_tccTransactionBootstrap" type="ApplicationContextAware" instantiates="IApplicationContextAware_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap_tccTransactionBootstrap" type="ITccTransactionBootstrap_Type" instantiates="ITccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="TccInitService" instantiates="ITccInitService_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccDbConfig_Type" instantiates="ITccDbConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccMongoConfig_Type" instantiates="ITccMongoConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccRedisConfig_Type" instantiates="ITccRedisConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccZookeeperConfig_Type" instantiates="ITccZookeeperConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccFileConfig_Type" instantiates="ITccFileConfig_TccTransactionBootstrap"/>
+    </assmComponents>
+    <assemblyConnections clientIntElem="ITccDbConfig_TccTransactionBootstrap_tccTransactionBootstrap" refID="_qA1XhDqtEeiP29_qDiwNWQ" property="tccTransactionBootstrap.tccDbConfig" clientInstElem="_qA1XgzqtEeiP29_qDiwNWQ" serverInstElem="_qA1-kDqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-dubbo.hmily-tcc-demo-dubbo-order.target.classes.applicationContext.xml_spec">
+    <specComponents name="TccTransactionBootstrap_role" id="_qA2l-jqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAwareTccTransactionBootstrap_role" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrapTccTransactionBootstrap_role" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitServiceTccTransactionBootstrap_role" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccFileConfig_Type"/>
+    </specComponents>
+    <specConnections clientIntElem="ITccDbConfigTccTransactionBootstrap_role" refID="_qA3z4TqtEeiP29_qDiwNWQ" clientCompElem="_qA2l-jqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-inventory.src.main.resources.applicationContext.xml_config" implements="//@architectureDescriptions[name='yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-inventory.src.main.resources.applicationContext.xml_spec']">
+    <configComponents name="com.hmily.tcc.core.bootstrap.TccTransactionBootstrap" id="_qBh7EDqtEeiP29_qDiwNWQ" realizes="_qBjKRzqtEeiP29_qDiwNWQ" implements="_qBiiIjqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccFileConfig_Type"/>
+      <attributes name="tccInitService" type="com.hmily.tcc.core.service.TccInitService"/>
+      <attributes name="repositorySuffix" type="java.lang.String"/>
+      <attributes name="serializer" type="java.lang.String"/>
+      <attributes name="scheduledThreadMax" type="int"/>
+      <attributes name="scheduledDelay" type="int"/>
+      <attributes name="retryMax" type="int"/>
+      <attributes name="recoverDelayTime" type="int"/>
+      <attributes name="repositorySupport" type="java.lang.String"/>
+      <attributes name="bufferSize" type="int"/>
+      <attributes name="tccDbConfig" type="com.hmily.tcc.common.config.TccDbConfig"/>
+      <attributes name="tccMongoConfig" type="com.hmily.tcc.common.config.TccMongoConfig"/>
+      <attributes name="tccRedisConfig" type="com.hmily.tcc.common.config.TccRedisConfig"/>
+      <attributes name="tccZookeeperConfig" type="com.hmily.tcc.common.config.TccZookeeperConfig"/>
+      <attributes name="tccFileConfig" type="com.hmily.tcc.common.config.TccFileConfig"/>
+    </configComponents>
+    <configConnections clientIntElem="ITccDbConfig_TccTransactionBootstrap" refID="_qBh7ETqtEeiP29_qDiwNWQ" property="&quot;tccDbConfig&quot;" clientClassElem="_qBh7EDqtEeiP29_qDiwNWQ" serverClassElem="_qBh7EjqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-inventory.src.main.resources.applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-inventory.src.main.resources.applicationContext.xml_config']">
+    <assmComponents name="tccTransactionBootstrap" id="_qBh7EzqtEeiP29_qDiwNWQ" instantiates="_qBh7EDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap_tccTransactionBootstrap" type="ApplicationContextAware" instantiates="IApplicationContextAware_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap_tccTransactionBootstrap" type="ITccTransactionBootstrap_Type" instantiates="ITccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="TccInitService" instantiates="ITccInitService_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccDbConfig_Type" instantiates="ITccDbConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccMongoConfig_Type" instantiates="ITccMongoConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccRedisConfig_Type" instantiates="ITccRedisConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccZookeeperConfig_Type" instantiates="ITccZookeeperConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccFileConfig_Type" instantiates="ITccFileConfig_TccTransactionBootstrap"/>
+    </assmComponents>
+    <assemblyConnections clientIntElem="ITccDbConfig_TccTransactionBootstrap_tccTransactionBootstrap" refID="_qBiiIDqtEeiP29_qDiwNWQ" property="tccTransactionBootstrap.tccDbConfig" clientInstElem="_qBh7EzqtEeiP29_qDiwNWQ" serverInstElem="_qBiiITqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-inventory.src.main.resources.applicationContext.xml_spec">
+    <specComponents name="TccTransactionBootstrap_role" id="_qBjKRzqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAwareTccTransactionBootstrap_role" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrapTccTransactionBootstrap_role" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitServiceTccTransactionBootstrap_role" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccFileConfig_Type"/>
+    </specComponents>
+    <specConnections clientIntElem="ITccDbConfigTccTransactionBootstrap_role" refID="_qBkYbTqtEeiP29_qDiwNWQ" clientCompElem="_qBjKRzqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-inventory.target.classes.applicationContext.xml_config" implements="//@architectureDescriptions[name='yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-inventory.target.classes.applicationContext.xml_spec']">
+    <configComponents name="com.hmily.tcc.core.bootstrap.TccTransactionBootstrap" id="_qB7jsDqtEeiP29_qDiwNWQ" realizes="_qB8zaDqtEeiP29_qDiwNWQ" implements="_qB8KxTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccFileConfig_Type"/>
+      <attributes name="tccInitService" type="com.hmily.tcc.core.service.TccInitService"/>
+      <attributes name="repositorySuffix" type="java.lang.String"/>
+      <attributes name="serializer" type="java.lang.String"/>
+      <attributes name="scheduledThreadMax" type="int"/>
+      <attributes name="scheduledDelay" type="int"/>
+      <attributes name="retryMax" type="int"/>
+      <attributes name="recoverDelayTime" type="int"/>
+      <attributes name="repositorySupport" type="java.lang.String"/>
+      <attributes name="bufferSize" type="int"/>
+      <attributes name="tccDbConfig" type="com.hmily.tcc.common.config.TccDbConfig"/>
+      <attributes name="tccMongoConfig" type="com.hmily.tcc.common.config.TccMongoConfig"/>
+      <attributes name="tccRedisConfig" type="com.hmily.tcc.common.config.TccRedisConfig"/>
+      <attributes name="tccZookeeperConfig" type="com.hmily.tcc.common.config.TccZookeeperConfig"/>
+      <attributes name="tccFileConfig" type="com.hmily.tcc.common.config.TccFileConfig"/>
+    </configComponents>
+    <configConnections clientIntElem="ITccDbConfig_TccTransactionBootstrap" refID="_qB8KwDqtEeiP29_qDiwNWQ" property="&quot;tccDbConfig&quot;" clientClassElem="_qB7jsDqtEeiP29_qDiwNWQ" serverClassElem="_qB8KwTqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-inventory.target.classes.applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-inventory.target.classes.applicationContext.xml_config']">
+    <assmComponents name="tccTransactionBootstrap" id="_qB8KwjqtEeiP29_qDiwNWQ" instantiates="_qB7jsDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap_tccTransactionBootstrap" type="ApplicationContextAware" instantiates="IApplicationContextAware_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap_tccTransactionBootstrap" type="ITccTransactionBootstrap_Type" instantiates="ITccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="TccInitService" instantiates="ITccInitService_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccDbConfig_Type" instantiates="ITccDbConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccMongoConfig_Type" instantiates="ITccMongoConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccRedisConfig_Type" instantiates="ITccRedisConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccZookeeperConfig_Type" instantiates="ITccZookeeperConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccFileConfig_Type" instantiates="ITccFileConfig_TccTransactionBootstrap"/>
+    </assmComponents>
+    <assemblyConnections clientIntElem="ITccDbConfig_TccTransactionBootstrap_tccTransactionBootstrap" refID="_qB8KwzqtEeiP29_qDiwNWQ" property="tccTransactionBootstrap.tccDbConfig" clientInstElem="_qB8KwjqtEeiP29_qDiwNWQ" serverInstElem="_qB8KxDqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-inventory.target.classes.applicationContext.xml_spec">
+    <specComponents name="TccTransactionBootstrap_role" id="_qB8zaDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAwareTccTransactionBootstrap_role" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrapTccTransactionBootstrap_role" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitServiceTccTransactionBootstrap_role" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccFileConfig_Type"/>
+    </specComponents>
+    <specConnections clientIntElem="ITccDbConfigTccTransactionBootstrap_role" refID="_qB-CoDqtEeiP29_qDiwNWQ" clientCompElem="_qB8zaDqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-order.src.main.resources.applicationContext.xml_config" implements="//@architectureDescriptions[name='yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-order.src.main.resources.applicationContext.xml_spec']">
+    <configComponents name="com.hmily.tcc.core.bootstrap.TccTransactionBootstrap" id="_qCT-MDqtEeiP29_qDiwNWQ" realizes="_qCVM6TqtEeiP29_qDiwNWQ" implements="_qCUlQDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccFileConfig_Type"/>
+      <attributes name="tccInitService" type="com.hmily.tcc.core.service.TccInitService"/>
+      <attributes name="repositorySuffix" type="java.lang.String"/>
+      <attributes name="serializer" type="java.lang.String"/>
+      <attributes name="scheduledThreadMax" type="int"/>
+      <attributes name="scheduledDelay" type="int"/>
+      <attributes name="retryMax" type="int"/>
+      <attributes name="recoverDelayTime" type="int"/>
+      <attributes name="repositorySupport" type="java.lang.String"/>
+      <attributes name="bufferSize" type="int"/>
+      <attributes name="tccDbConfig" type="com.hmily.tcc.common.config.TccDbConfig"/>
+      <attributes name="tccMongoConfig" type="com.hmily.tcc.common.config.TccMongoConfig"/>
+      <attributes name="tccRedisConfig" type="com.hmily.tcc.common.config.TccRedisConfig"/>
+      <attributes name="tccZookeeperConfig" type="com.hmily.tcc.common.config.TccZookeeperConfig"/>
+      <attributes name="tccFileConfig" type="com.hmily.tcc.common.config.TccFileConfig"/>
+    </configComponents>
+    <configConnections clientIntElem="ITccDbConfig_TccTransactionBootstrap" refID="_qCT-MTqtEeiP29_qDiwNWQ" property="&quot;tccDbConfig&quot;" clientClassElem="_qCT-MDqtEeiP29_qDiwNWQ" serverClassElem="_qCT-MjqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-order.src.main.resources.applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-order.src.main.resources.applicationContext.xml_config']">
+    <assmComponents name="tccTransactionBootstrap" id="_qCT-MzqtEeiP29_qDiwNWQ" instantiates="_qCT-MDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap_tccTransactionBootstrap" type="ApplicationContextAware" instantiates="IApplicationContextAware_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap_tccTransactionBootstrap" type="ITccTransactionBootstrap_Type" instantiates="ITccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="TccInitService" instantiates="ITccInitService_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccDbConfig_Type" instantiates="ITccDbConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccMongoConfig_Type" instantiates="ITccMongoConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccRedisConfig_Type" instantiates="ITccRedisConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccZookeeperConfig_Type" instantiates="ITccZookeeperConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccFileConfig_Type" instantiates="ITccFileConfig_TccTransactionBootstrap"/>
+    </assmComponents>
+    <assemblyConnections clientIntElem="ITccDbConfig_TccTransactionBootstrap_tccTransactionBootstrap" refID="_qCT-NDqtEeiP29_qDiwNWQ" property="tccTransactionBootstrap.tccDbConfig" clientInstElem="_qCT-MzqtEeiP29_qDiwNWQ" serverInstElem="_qCT-NTqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-order.src.main.resources.applicationContext.xml_spec">
+    <specComponents name="TccTransactionBootstrap_role" id="_qCVM6TqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAwareTccTransactionBootstrap_role" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrapTccTransactionBootstrap_role" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitServiceTccTransactionBootstrap_role" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccFileConfig_Type"/>
+    </specComponents>
+    <specConnections clientIntElem="ITccDbConfigTccTransactionBootstrap_role" refID="_qCWbmDqtEeiP29_qDiwNWQ" clientCompElem="_qCVM6TqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-order.target.classes.applicationContext.xml_config" implements="//@architectureDescriptions[name='yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-order.target.classes.applicationContext.xml_spec']">
+    <configComponents name="com.hmily.tcc.core.bootstrap.TccTransactionBootstrap" id="_qCuN4DqtEeiP29_qDiwNWQ" realizes="_qCu3djqtEeiP29_qDiwNWQ" implements="_qCuN5jqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap" direction="REQUIRED" type="ITccFileConfig_Type"/>
+      <attributes name="tccInitService" type="com.hmily.tcc.core.service.TccInitService"/>
+      <attributes name="repositorySuffix" type="java.lang.String"/>
+      <attributes name="serializer" type="java.lang.String"/>
+      <attributes name="scheduledThreadMax" type="int"/>
+      <attributes name="scheduledDelay" type="int"/>
+      <attributes name="retryMax" type="int"/>
+      <attributes name="recoverDelayTime" type="int"/>
+      <attributes name="repositorySupport" type="java.lang.String"/>
+      <attributes name="bufferSize" type="int"/>
+      <attributes name="tccDbConfig" type="com.hmily.tcc.common.config.TccDbConfig"/>
+      <attributes name="tccMongoConfig" type="com.hmily.tcc.common.config.TccMongoConfig"/>
+      <attributes name="tccRedisConfig" type="com.hmily.tcc.common.config.TccRedisConfig"/>
+      <attributes name="tccZookeeperConfig" type="com.hmily.tcc.common.config.TccZookeeperConfig"/>
+      <attributes name="tccFileConfig" type="com.hmily.tcc.common.config.TccFileConfig"/>
+    </configComponents>
+    <configConnections clientIntElem="ITccDbConfig_TccTransactionBootstrap" refID="_qCuN4TqtEeiP29_qDiwNWQ" property="&quot;tccDbConfig&quot;" clientClassElem="_qCuN4DqtEeiP29_qDiwNWQ" serverClassElem="_qCuN4jqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-order.target.classes.applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-order.target.classes.applicationContext.xml_config']">
+    <assmComponents name="tccTransactionBootstrap" id="_qCuN4zqtEeiP29_qDiwNWQ" instantiates="_qCuN4DqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap_tccTransactionBootstrap" type="ApplicationContextAware" instantiates="IApplicationContextAware_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap_tccTransactionBootstrap" type="ITccTransactionBootstrap_Type" instantiates="ITccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="TccInitService" instantiates="ITccInitService_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" instantiates="null_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="Comparable" instantiates="IComparable_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="IString_Type" instantiates="IString_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccDbConfig_Type" instantiates="ITccDbConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccMongoConfig_Type" instantiates="ITccMongoConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccRedisConfig_Type" instantiates="ITccRedisConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccZookeeperConfig_Type" instantiates="ITccZookeeperConfig_TccTransactionBootstrap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap_tccTransactionBootstrap" direction="REQUIRED" type="ITccFileConfig_Type" instantiates="ITccFileConfig_TccTransactionBootstrap"/>
+    </assmComponents>
+    <assemblyConnections clientIntElem="ITccDbConfig_TccTransactionBootstrap_tccTransactionBootstrap" refID="_qCuN5DqtEeiP29_qDiwNWQ" property="tccTransactionBootstrap.tccDbConfig" clientInstElem="_qCuN4zqtEeiP29_qDiwNWQ" serverInstElem="_qCuN5TqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="yu199195.hmily.hmily.hmily-tcc-demo.hmily-tcc-demo-springcloud.hmily-tcc-demo-springcloud-order.target.classes.applicationContext.xml_spec">
+    <specComponents name="TccTransactionBootstrap_role" id="_qCu3djqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAwareTccTransactionBootstrap_role" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrapTccTransactionBootstrap_role" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitServiceTccTransactionBootstrap_role" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullTccTransactionBootstrap_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableTccTransactionBootstrap_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceTccTransactionBootstrap_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringTccTransactionBootstrap_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfigTccTransactionBootstrap_role" direction="REQUIRED" type="ITccFileConfig_Type"/>
+    </specComponents>
+    <specConnections clientIntElem="ITccDbConfigTccTransactionBootstrap_role" refID="_qCwrPTqtEeiP29_qDiwNWQ" clientCompElem="_qCu3djqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" id="_p9-QwDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccFileConfig_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" id="_p_c3cTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccFileConfig_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" id="_qAIM5jqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccFileConfig_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" id="_qA1-kTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccFileConfig_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" id="_qBiiIjqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccFileConfig_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" id="_qB8KxTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccFileConfig_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" id="_qCUlQDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccFileConfig_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" id="_qCuN5jqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IApplicationContextAware_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" type="ApplicationContextAware"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" type="ITccTransactionBootstrap_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccInitService_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="TccInitService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccDbConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccDbConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccMongoConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccMongoConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccRedisConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccRedisConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccZookeeperConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccZookeeperConfig_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITccFileConfig_TccTransactionBootstrap_com_hmily_tcc_core_bootstrap_TccTransactionBootstrap_Type" direction="REQUIRED" type="ITccFileConfig_Type"/>
+    </components>
+    <interfaceTypes name="ApplicationContextAware">
+      <signatures name="setApplicationContext" type="void" id="_p-tQkDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.context.ApplicationContext" id="_p-tQkTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ITccTransactionBootstrap_Type">
+      <signatures name="equals" type="boolean" id="_p-tQkjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_p-tQkzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_p-tQlDqtEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_p-tQlTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getSerializer" type="java.lang.String" id="_p-tQljqtEeiP29_qDiwNWQ"/>
+      <signatures name="setSerializer" type="void" id="_p-tQlzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-tQmDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBufferSize" type="int" id="_p-tQmTqtEeiP29_qDiwNWQ"/>
+      <signatures name="setBufferSize" type="void" id="_p-tQmjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tQmzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canEqual" type="boolean" id="_p-tQnDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_p-tQnTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTccDbConfig" type="com.hmily.tcc.common.config.TccDbConfig" id="_p-tQnjqtEeiP29_qDiwNWQ"/>
+      <signatures name="setTccDbConfig" type="void" id="_p-tQnzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.hmily.tcc.common.config.TccDbConfig" id="_p-tQoDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTccFileConfig" type="void" id="_p-tQoTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.hmily.tcc.common.config.TccFileConfig" id="_p-tQojqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRetryMax" type="int" id="_p-tQozqtEeiP29_qDiwNWQ"/>
+      <signatures name="getTccFileConfig" type="com.hmily.tcc.common.config.TccFileConfig" id="_p-tQpDqtEeiP29_qDiwNWQ"/>
+      <signatures name="setRetryMax" type="void" id="_p-tQpTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tQpjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setRepositorySupport" type="void" id="_p-tQpzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-tQqDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getScheduledThreadMax" type="int" id="_p-tQqTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getTccMongoConfig" type="com.hmily.tcc.common.config.TccMongoConfig" id="_p-tQqjqtEeiP29_qDiwNWQ"/>
+      <signatures name="setRepositorySuffix" type="void" id="_p-tQqzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-tQrDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTccMongoConfig" type="void" id="_p-tQrTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.hmily.tcc.common.config.TccMongoConfig" id="_p-tQrjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTccZookeeperConfig" type="com.hmily.tcc.common.config.TccZookeeperConfig" id="_p-tQrzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setTccZookeeperConfig" type="void" id="_p-tQsDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.hmily.tcc.common.config.TccZookeeperConfig" id="_p-tQsTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setScheduledDelay" type="void" id="_p-tQsjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tQszqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRepositorySupport" type="java.lang.String" id="_p-tQtDqtEeiP29_qDiwNWQ"/>
+      <signatures name="setRecoverDelayTime" type="void" id="_p-tQtTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tQtjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setScheduledThreadMax" type="void" id="_p-tQtzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tQuDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTccRedisConfig" type="void" id="_p-tQuTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.hmily.tcc.common.config.TccRedisConfig" id="_p-tQujqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRecoverDelayTime" type="int" id="_p-tQuzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getScheduledDelay" type="int" id="_p-tQvDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getRepositorySuffix" type="java.lang.String" id="_p-tQvTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getTccRedisConfig" type="com.hmily.tcc.common.config.TccRedisConfig" id="_p-tQvjqtEeiP29_qDiwNWQ"/>
+      <signatures name="setApplicationContext" type="void" id="_p-tQvzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.context.ApplicationContext" id="_p-tQwDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="start" type="void" id="_p-tQwTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.hmily.tcc.common.config.TccConfig" id="_p-tQwjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ITccConfig_Type">
+      <signatures name="equals" type="boolean" id="_p-tQwzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_p-tQxDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_p-tQxTqtEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_p-tQxjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getSerializer" type="java.lang.String" id="_p-tQxzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setSerializer" type="void" id="_p-tQyDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-tQyTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBufferSize" type="int" id="_p-tQyjqtEeiP29_qDiwNWQ"/>
+      <signatures name="setBufferSize" type="void" id="_p-tQyzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tQzDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canEqual" type="boolean" id="_p-tQzTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_p-tQzjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTccDbConfig" type="com.hmily.tcc.common.config.TccDbConfig" id="_p-tQzzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setTccDbConfig" type="void" id="_p-tQ0DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.hmily.tcc.common.config.TccDbConfig" id="_p-tQ0TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTccFileConfig" type="void" id="_p-tQ0jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.hmily.tcc.common.config.TccFileConfig" id="_p-tQ0zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRetryMax" type="int" id="_p-tQ1DqtEeiP29_qDiwNWQ"/>
+      <signatures name="getTccFileConfig" type="com.hmily.tcc.common.config.TccFileConfig" id="_p-tQ1TqtEeiP29_qDiwNWQ"/>
+      <signatures name="setRetryMax" type="void" id="_p-tQ1jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tQ1zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setRepositorySupport" type="void" id="_p-tQ2DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-tQ2TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getScheduledThreadMax" type="int" id="_p-tQ2jqtEeiP29_qDiwNWQ"/>
+      <signatures name="getTccMongoConfig" type="com.hmily.tcc.common.config.TccMongoConfig" id="_p-tQ2zqtEeiP29_qDiwNWQ"/>
+      <signatures name="setRepositorySuffix" type="void" id="_p-tQ3DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-tQ3TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTccMongoConfig" type="void" id="_p-tQ3jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.hmily.tcc.common.config.TccMongoConfig" id="_p-tQ3zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTccZookeeperConfig" type="com.hmily.tcc.common.config.TccZookeeperConfig" id="_p-tQ4DqtEeiP29_qDiwNWQ"/>
+      <signatures name="setTccZookeeperConfig" type="void" id="_p-tQ4TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.hmily.tcc.common.config.TccZookeeperConfig" id="_p-tQ4jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setScheduledDelay" type="void" id="_p-tQ4zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tQ5DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRepositorySupport" type="java.lang.String" id="_p-tQ5TqtEeiP29_qDiwNWQ"/>
+      <signatures name="setRecoverDelayTime" type="void" id="_p-tQ5jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tQ5zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setScheduledThreadMax" type="void" id="_p-tQ6DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tQ6TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTccRedisConfig" type="void" id="_p-tQ6jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.hmily.tcc.common.config.TccRedisConfig" id="_p-tQ6zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRecoverDelayTime" type="int" id="_p-tQ7DqtEeiP29_qDiwNWQ"/>
+      <signatures name="getScheduledDelay" type="int" id="_p-tQ7TqtEeiP29_qDiwNWQ"/>
+      <signatures name="getRepositorySuffix" type="java.lang.String" id="_p-tQ7jqtEeiP29_qDiwNWQ"/>
+      <signatures name="getTccRedisConfig" type="com.hmily.tcc.common.config.TccRedisConfig" id="_p-tQ7zqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="TccInitService">
+      <signatures name="initialization" type="void" id="_p-tQ8jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="com.hmily.tcc.common.config.TccConfig" id="_p-tQ8zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Comparable">
+      <signatures name="compareTo" type="int" id="_p-tQ9DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_p-tQ9TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="CharSequence">
+      <signatures name="toString" type="java.lang.String" id="_p-tQ9jqtEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_p-tQ9zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tQ-DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_p-tQ-TqtEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_p-tQ-jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tQ-zqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_p-tQ_DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_p-tQ_TqtEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_p-tQ_jqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IString_Type">
+      <signatures name="compareTo" type="int" id="_p-tQ_zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_p-tRADqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_p-tRATqtEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_p-tRAjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tRAzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_p-tRBDqtEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_p-tRBTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tRBjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_p-tRBzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_p-tRCDqtEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_p-tRCTqtEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$chars$0" type="java.util.Spliterator.OfInt" id="_p-tRCjqtEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$codePoints$1" type="java.util.Spliterator.OfInt" id="_p-tRCzqtEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_p-tRDDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_p-tRDTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_p-tRDjqtEeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_p-tRDzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-tREDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_p-tRETqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueOf" type="java.lang.String" id="_p-tREjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tREzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkBounds" type="void" id="_p-tRFDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_p-tRFTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_p-tRFjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_p-tRFzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointAt" type="int" id="_p-tRGDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tRGTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointBefore" type="int" id="_p-tRGjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tRGzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointCount" type="int" id="_p-tRHDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tRHTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_p-tRHjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compareToIgnoreCase" type="int" id="_p-tRHzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-tRIDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="concat" type="java.lang.String" id="_p-tRITqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-tRIjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contains" type="boolean" id="_p-tRIzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_p-tRJDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contentEquals" type="boolean" id="_p-tRJTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_p-tRJjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyValueOf" type="java.lang.String" id="_p-tRJzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char[]" id="_p-tRKDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="endsWith" type="boolean" id="_p-tRKTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-tRKjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equalsIgnoreCase" type="boolean" id="_p-tRKzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-tRLDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="format" type="java.lang.String" id="_p-tRLTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_p-tRLjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_p-tRLzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_p-tRMDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBytes" type="void" id="_p-tRMTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tRMjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_p-tRMzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_p-tRNDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_p-tRNTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChars" type="void" id="_p-tRNjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tRNzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_p-tRODqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="char[]" id="_p-tROTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_p-tROjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="indexOfSupplementary" type="int" id="_p-tROzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tRPDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_p-tRPTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="intern" type="java.lang.String" id="_p-tRPjqtEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_p-tRPzqtEeiP29_qDiwNWQ"/>
+      <signatures name="join" type="java.lang.String" id="_p-tRQDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_p-tRQTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.CharSequence[]" id="_p-tRQjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOf" type="int" id="_p-tRQzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tRRDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOfSupplementary" type="int" id="_p-tRRTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tRRjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_p-tRRzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="matches" type="boolean" id="_p-tRSDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-tRSTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nonSyncContentEquals" type="boolean" id="_p-tRSjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.AbstractStringBuilder" id="_p-tRSzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="offsetByCodePoints" type="int" id="_p-tRTDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tRTTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_p-tRTjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="regionMatches" type="boolean" id="_p-tRTzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tRUDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_p-tRUTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_p-tRUjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_p-tRUzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="java.lang.String" id="_p-tRVDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char" id="_p-tRVTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="char" id="_p-tRVjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="java.lang.String" id="_p-tRVzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-tRWDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_p-tRWTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceFirst" type="java.lang.String" id="_p-tRWjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-tRWzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_p-tRXDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="split" type="java.lang.String[]" id="_p-tRXTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-tRXjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="startsWith" type="boolean" id="_p-tRXzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-tRYDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_p-tRYTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="substring" type="java.lang.String" id="_p-tRYjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-tRYzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCharArray" type="char[]" id="_p-tRZDqtEeiP29_qDiwNWQ"/>
+      <signatures name="toLowerCase" type="java.lang.String" id="_p-tRZTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_p-tRZjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUpperCase" type="java.lang.String" id="_p-tRZzqtEeiP29_qDiwNWQ"/>
+      <signatures name="trim" type="java.lang.String" id="_p-tRaDqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ITccDbConfig_Type">
+      <signatures name="equals" type="boolean" id="_p-t3qzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_p-t3rDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_p-t3rTqtEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_p-t3rjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getTimeBetweenEvictionRunsMillis" type="int" id="_p-t3rzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setTimeBetweenEvictionRunsMillis" type="void" id="_p-t3sDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-t3sTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMinEvictableIdleTimeMillis" type="int" id="_p-t3sjqtEeiP29_qDiwNWQ"/>
+      <signatures name="setValidationQuery" type="void" id="_p-t3szqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-t3tDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getValidationQuery" type="java.lang.String" id="_p-t3tTqtEeiP29_qDiwNWQ"/>
+      <signatures name="setPoolPreparedStatements" type="void" id="_p-t3tjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Boolean" id="_p-t3tzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDriverClassName" type="java.lang.String" id="_p-t3uDqtEeiP29_qDiwNWQ"/>
+      <signatures name="setMinEvictableIdleTimeMillis" type="void" id="_p-t3uTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-t3ujqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setUsername" type="void" id="_p-t3uzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-t3vDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDriverClassName" type="void" id="_p-t3vTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-t3vjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMaxPoolPreparedStatementPerConnectionSize" type="int" id="_p-t3vzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setMaxPoolPreparedStatementPerConnectionSize" type="void" id="_p-t3wDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-t3wTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setPassword" type="void" id="_p-t3wjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-t3wzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setUrl" type="void" id="_p-t3xDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-t3xTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getUrl" type="java.lang.String" id="_p-t3xjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getUsername" type="java.lang.String" id="_p-t3xzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getPassword" type="java.lang.String" id="_p-t3yDqtEeiP29_qDiwNWQ"/>
+      <signatures name="canEqual" type="boolean" id="_p-t3yTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_p-t3yjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setMaxActive" type="void" id="_p-t3yzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-t3zDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMaxActive" type="int" id="_p-t3zTqtEeiP29_qDiwNWQ"/>
+      <signatures name="setMaxWait" type="void" id="_p-t3zjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-t3zzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMaxWait" type="int" id="_p-t30DqtEeiP29_qDiwNWQ"/>
+      <signatures name="getMinIdle" type="int" id="_p-t30TqtEeiP29_qDiwNWQ"/>
+      <signatures name="setInitialSize" type="void" id="_p-t30jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-t30zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTestWhileIdle" type="java.lang.Boolean" id="_p-t31DqtEeiP29_qDiwNWQ"/>
+      <signatures name="getInitialSize" type="int" id="_p-t31TqtEeiP29_qDiwNWQ"/>
+      <signatures name="getTestOnBorrow" type="java.lang.Boolean" id="_p-t31jqtEeiP29_qDiwNWQ"/>
+      <signatures name="setTestOnBorrow" type="void" id="_p-t31zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Boolean" id="_p-t32DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTestOnReturn" type="void" id="_p-t32TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Boolean" id="_p-t32jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTestWhileIdle" type="void" id="_p-t32zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Boolean" id="_p-t33DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTestOnReturn" type="java.lang.Boolean" id="_p-t33TqtEeiP29_qDiwNWQ"/>
+      <signatures name="setMinIdle" type="void" id="_p-t33jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-t33zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getPoolPreparedStatements" type="java.lang.Boolean" id="_p-t34DqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ITccMongoConfig_Type">
+      <signatures name="equals" type="boolean" id="_p-t34TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_p-t34jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_p-t34zqtEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_p-t35DqtEeiP29_qDiwNWQ"/>
+      <signatures name="canEqual" type="boolean" id="_p-t35TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_p-t35jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMongoUserName" type="java.lang.String" id="_p-t35zqtEeiP29_qDiwNWQ"/>
+      <signatures name="setMongoUserName" type="void" id="_p-t36DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-t36TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setMongoUserPwd" type="void" id="_p-t36jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-t36zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMongoDbName" type="java.lang.String" id="_p-t37DqtEeiP29_qDiwNWQ"/>
+      <signatures name="setMongoDbName" type="void" id="_p-t37TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-t37jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMongoUserPwd" type="java.lang.String" id="_p-t37zqtEeiP29_qDiwNWQ"/>
+      <signatures name="setMongoDbUrl" type="void" id="_p-t38DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-t38TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMongoDbUrl" type="java.lang.String" id="_p-t38jqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ITccRedisConfig_Type">
+      <signatures name="equals" type="boolean" id="_p-t38zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_p-t39DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_p-t39TqtEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_p-t39jqtEeiP29_qDiwNWQ"/>
+      <signatures name="getHostName" type="java.lang.String" id="_p-t39zqtEeiP29_qDiwNWQ"/>
+      <signatures name="getPort" type="int" id="_p-t3-DqtEeiP29_qDiwNWQ"/>
+      <signatures name="getTimeBetweenEvictionRunsMillis" type="long" id="_p-t3-TqtEeiP29_qDiwNWQ"/>
+      <signatures name="setTimeBetweenEvictionRunsMillis" type="void" id="_p-t3-jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_p-t3-zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setNumTestsPerEvictionRun" type="void" id="_p-t3_DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-t3_TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMinEvictableIdleTimeMillis" type="long" id="_p-t3_jqtEeiP29_qDiwNWQ"/>
+      <signatures name="getNumTestsPerEvictionRun" type="int" id="_p-t3_zqtEeiP29_qDiwNWQ"/>
+      <signatures name="setMinEvictableIdleTimeMillis" type="void" id="_p-t4ADqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_p-t4ATqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setBlockWhenExhausted" type="void" id="_p-t4AjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_p-t4AzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setPassword" type="void" id="_p-t4BDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-t4BTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTimeOut" type="void" id="_p-t4BjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-t4BzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTimeOut" type="int" id="_p-t4CDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getPassword" type="java.lang.String" id="_p-t4CTqtEeiP29_qDiwNWQ"/>
+      <signatures name="canEqual" type="boolean" id="_p-t4CjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_p-t4CzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setPort" type="void" id="_p-t4DDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-t4DTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setCluster" type="void" id="_p-t4DjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Boolean" id="_p-t4DzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setHostName" type="void" id="_p-t4EDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-t4ETqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCluster" type="java.lang.Boolean" id="_p-t4EjqtEeiP29_qDiwNWQ"/>
+      <signatures name="setSoftMinEvictableIdleTimeMillis" type="void" id="_p-t4EzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_p-t4FDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSoftMinEvictableIdleTimeMillis" type="long" id="_p-t4FTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getMinIdle" type="int" id="_p-t4FjqtEeiP29_qDiwNWQ"/>
+      <signatures name="setMaxIdle" type="void" id="_p-t4FzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-t4GDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setMaxWaitMillis" type="void" id="_p-t4GTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="long" id="_p-t4GjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTestOnCreate" type="java.lang.Boolean" id="_p-t4GzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getMaxIdle" type="int" id="_p-t4HDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getTestWhileIdle" type="java.lang.Boolean" id="_p-t4HTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getMaxTotal" type="int" id="_p-t4HjqtEeiP29_qDiwNWQ"/>
+      <signatures name="setMaxTotal" type="void" id="_p-t4HzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-t4IDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMaxWaitMillis" type="long" id="_p-t4ITqtEeiP29_qDiwNWQ"/>
+      <signatures name="getTestOnBorrow" type="java.lang.Boolean" id="_p-t4IjqtEeiP29_qDiwNWQ"/>
+      <signatures name="setTestOnBorrow" type="void" id="_p-t4IzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Boolean" id="_p-t4JDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTestOnReturn" type="void" id="_p-t4JTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Boolean" id="_p-t4JjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTestOnCreate" type="void" id="_p-t4JzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Boolean" id="_p-t4KDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTestWhileIdle" type="void" id="_p-t4KTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Boolean" id="_p-t4KjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTestOnReturn" type="java.lang.Boolean" id="_p-t4KzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setMinIdle" type="void" id="_p-t4LDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-t4LTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setClusterUrl" type="void" id="_p-t4LjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-t4LzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClusterUrl" type="java.lang.String" id="_p-t4MDqtEeiP29_qDiwNWQ"/>
+      <signatures name="isBlockWhenExhausted" type="boolean" id="_p-t4MTqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ITccZookeeperConfig_Type">
+      <signatures name="equals" type="boolean" id="_p-uesDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_p-uesTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_p-uesjqtEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_p-ueszqtEeiP29_qDiwNWQ"/>
+      <signatures name="getHost" type="java.lang.String" id="_p-uetDqtEeiP29_qDiwNWQ"/>
+      <signatures name="canEqual" type="boolean" id="_p-uetTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_p-uetjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setHost" type="void" id="_p-uetzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-ueuDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setRootPath" type="void" id="_p-ueuTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-ueujqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRootPath" type="java.lang.String" id="_p-ueuzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getSessionTimeOut" type="int" id="_p-uevDqtEeiP29_qDiwNWQ"/>
+      <signatures name="setSessionTimeOut" type="void" id="_p-uevTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_p-uevjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ITccFileConfig_Type">
+      <signatures name="equals" type="boolean" id="_p-uevzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_p-uewDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_p-uewTqtEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_p-uewjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getPath" type="java.lang.String" id="_p-uewzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getPrefix" type="java.lang.String" id="_p-uexDqtEeiP29_qDiwNWQ"/>
+      <signatures name="setPath" type="void" id="_p-uexTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-uexjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setPrefix" type="void" id="_p-uexzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_p-ueyDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="canEqual" type="boolean" id="_p-ueyTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_p-ueyjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

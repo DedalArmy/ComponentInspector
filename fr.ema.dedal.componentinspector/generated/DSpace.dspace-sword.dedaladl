@@ -1,0 +1,6 @@
+dedal_diagram "DSpace.dspace-sword"
+
+	repositories (
+
+		repository genRepo
+	)

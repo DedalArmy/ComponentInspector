@@ -1,0 +1,6 @@
+dedal_diagram "gsh199449..git"
+
+	repositories (
+
+		repository genRepo
+	)

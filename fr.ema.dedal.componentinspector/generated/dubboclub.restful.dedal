@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="dubboclub.restful">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dubboclub.restful.src.test.resources.dubbo.xml_config" implements="//@architectureDescriptions[name='dubboclub.restful.src.test.resources.dubbo.xml_spec']">
+    <configComponents name="net.dubboclub.restful.server.FirstRestfulServiceImpl" id="_dd7yQDqaEeiP29_qDiwNWQ" realizes="_decInTqaEeiP29_qDiwNWQ" implements="_deSXkDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulService_FirstRestfulServiceImpl" type="FirstRestfulService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulServiceImpl" type="IFirstRestfulServiceImpl_Type"/>
+    </configComponents>
+    <configComponents name="net.dubboclub.restful.server.FirstRestfulServiceImpl1" id="_dd7yQTqaEeiP29_qDiwNWQ" realizes="_decIqTqaEeiP29_qDiwNWQ" implements="_debhgDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulService1_FirstRestfulServiceImpl1" type="FirstRestfulService1"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulServiceImpl1" type="IFirstRestfulServiceImpl1_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dubboclub.restful.src.test.resources.dubbo.xml_asm" instantiates="//@architectureDescriptions[name='dubboclub.restful.src.test.resources.dubbo.xml_config']">
+    <assmComponents name="firstRestfulService" id="_dd8ZUDqaEeiP29_qDiwNWQ" instantiates="_dd7yQDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulService_FirstRestfulServiceImpl_firstRestfulService" type="FirstRestfulService" instantiates="IFirstRestfulService_FirstRestfulServiceImpl"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulServiceImpl_firstRestfulService" type="IFirstRestfulServiceImpl_Type" instantiates="IFirstRestfulServiceImpl"/>
+    </assmComponents>
+    <assmComponents name="firstRestfulServiceImpl1" id="_dd8ZUTqaEeiP29_qDiwNWQ" instantiates="_dd7yQTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulService1_FirstRestfulServiceImpl1_firstRestfulServiceImpl1" type="FirstRestfulService1" instantiates="IFirstRestfulService1_FirstRestfulServiceImpl1"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulServiceImpl1_firstRestfulServiceImpl1" type="IFirstRestfulServiceImpl1_Type" instantiates="IFirstRestfulServiceImpl1"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dubboclub.restful.src.test.resources.dubbo.xml_spec">
+    <specComponents name="FirstRestfulService_role" id="_decInTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulServiceFirstRestfulService_role" type="FirstRestfulService"/>
+    </specComponents>
+    <specComponents name="FirstRestfulService1_role" id="_decIqTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulService1FirstRestfulService1_role" type="FirstRestfulService1"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dubboclub.restful.target.test-classes.dubbo.xml_config" implements="//@architectureDescriptions[name='dubboclub.restful.target.test-classes.dubbo.xml_spec']">
+    <configComponents name="net.dubboclub.restful.server.FirstRestfulServiceImpl" id="_dfFBwDqaEeiP29_qDiwNWQ" realizes="_dfFo9DqaEeiP29_qDiwNWQ" implements="_dfFo0TqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulService_FirstRestfulServiceImpl" type="FirstRestfulService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulServiceImpl" type="IFirstRestfulServiceImpl_Type"/>
+    </configComponents>
+    <configComponents name="net.dubboclub.restful.server.FirstRestfulServiceImpl1" id="_dfFBwTqaEeiP29_qDiwNWQ" realizes="_dfFo6DqaEeiP29_qDiwNWQ" implements="_dfFo2DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulService1_FirstRestfulServiceImpl1" type="FirstRestfulService1"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulServiceImpl1" type="IFirstRestfulServiceImpl1_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dubboclub.restful.target.test-classes.dubbo.xml_asm" instantiates="//@architectureDescriptions[name='dubboclub.restful.target.test-classes.dubbo.xml_config']">
+    <assmComponents name="firstRestfulService" id="_dfFBwjqaEeiP29_qDiwNWQ" instantiates="_dfFBwDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulService_FirstRestfulServiceImpl_firstRestfulService" type="FirstRestfulService" instantiates="IFirstRestfulService_FirstRestfulServiceImpl"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulServiceImpl_firstRestfulService" type="IFirstRestfulServiceImpl_Type" instantiates="IFirstRestfulServiceImpl"/>
+    </assmComponents>
+    <assmComponents name="firstRestfulServiceImpl1" id="_dfFo0DqaEeiP29_qDiwNWQ" instantiates="_dfFBwTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulService1_FirstRestfulServiceImpl1_firstRestfulServiceImpl1" type="FirstRestfulService1" instantiates="IFirstRestfulService1_FirstRestfulServiceImpl1"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulServiceImpl1_firstRestfulServiceImpl1" type="IFirstRestfulServiceImpl1_Type" instantiates="IFirstRestfulServiceImpl1"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dubboclub.restful.target.test-classes.dubbo.xml_spec">
+    <specComponents name="FirstRestfulService1_role" id="_dfFo6DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulService1FirstRestfulService1_role" type="FirstRestfulService1"/>
+    </specComponents>
+    <specComponents name="FirstRestfulService_role" id="_dfFo9DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulServiceFirstRestfulService_role" type="FirstRestfulService"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="net_dubboclub_restful_server_FirstRestfulServiceImpl_Type" id="_deSXkDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulService_FirstRestfulServiceImpl_net_dubboclub_restful_server_FirstRestfulServiceImpl_Type" type="FirstRestfulService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulServiceImpl_net_dubboclub_restful_server_FirstRestfulServiceImpl_Type" type="IFirstRestfulServiceImpl_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="net_dubboclub_restful_server_FirstRestfulServiceImpl1_Type" id="_debhgDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulService1_FirstRestfulServiceImpl1_net_dubboclub_restful_server_FirstRestfulServiceImpl1_Type" type="FirstRestfulService1"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulServiceImpl1_net_dubboclub_restful_server_FirstRestfulServiceImpl1_Type" type="IFirstRestfulServiceImpl1_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="net_dubboclub_restful_server_FirstRestfulServiceImpl_Type" id="_dfFo0TqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulService_FirstRestfulServiceImpl_net_dubboclub_restful_server_FirstRestfulServiceImpl_Type" type="FirstRestfulService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulServiceImpl_net_dubboclub_restful_server_FirstRestfulServiceImpl_Type" type="IFirstRestfulServiceImpl_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="net_dubboclub_restful_server_FirstRestfulServiceImpl1_Type" id="_dfFo2DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulService1_FirstRestfulServiceImpl1_net_dubboclub_restful_server_FirstRestfulServiceImpl1_Type" type="FirstRestfulService1"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFirstRestfulServiceImpl1_net_dubboclub_restful_server_FirstRestfulServiceImpl1_Type" type="IFirstRestfulServiceImpl1_Type"/>
+    </components>
+    <interfaceTypes name="FirstRestfulService">
+      <signatures name="sayHello" type="java.lang.String" id="_deS-oDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_deS-oTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IFirstRestfulServiceImpl_Type">
+      <signatures name="sayHello" type="java.lang.String" id="_deS-ojqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_deS-ozqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="FirstRestfulService1">
+      <signatures name="sayHello" type="java.lang.String" id="_debhgTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_debhgjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IFirstRestfulServiceImpl1_Type">
+      <signatures name="sayHello" type="java.lang.String" id="_decIkDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_decIkTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

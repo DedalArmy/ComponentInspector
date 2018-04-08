@@ -1,0 +1,6 @@
+dedal_diagram "eclipse.jmh-tests"
+
+	repositories (
+
+		repository genRepo
+	)

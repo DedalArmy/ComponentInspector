@@ -1,0 +1,6 @@
+dedal_diagram "gaussic..git"
+
+	repositories (
+
+		repository genRepo
+	)

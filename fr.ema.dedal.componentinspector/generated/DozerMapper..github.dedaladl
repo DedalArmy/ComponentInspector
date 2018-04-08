@@ -1,0 +1,6 @@
+dedal_diagram "DozerMapper..github"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,6 @@
+dedal_diagram "FlowCI.platform-cloud"
+
+	repositories (
+
+		repository genRepo
+	)

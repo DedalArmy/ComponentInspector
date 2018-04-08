@@ -1,0 +1,6 @@
+dedal_diagram "Elricyo..idea"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,6 @@
+dedal_diagram "Zephery.newblog"
+
+	repositories (
+
+		repository genRepo
+	)

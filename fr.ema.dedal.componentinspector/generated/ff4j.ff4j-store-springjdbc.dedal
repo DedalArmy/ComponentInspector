@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="ff4j.ff4j-store-springjdbc">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ff4j.ff4j-store-springjdbc.src.test.resources.applicationContext-jdbc-test.xml_config" implements="//@architectureDescriptions[name='ff4j.ff4j-store-springjdbc.src.test.resources.applicationContext-jdbc-test.xml_spec']">
+    <configComponents name="org.ff4j.FF4j" id="_0l4lQDqaEeiP29_qDiwNWQ" realizes="_0mVR_TqaEeiP29_qDiwNWQ" implements="_0mGAoDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.ff4j.springjdbc.store.FeatureStoreSpringJdbc" id="_0l4lQTqaEeiP29_qDiwNWQ" realizes="_0mVSCTqaEeiP29_qDiwNWQ" implements="_0mUDEDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.springframework.jdbc.datasource.DataSourceTransactionManager" id="_0l4lQjqaEeiP29_qDiwNWQ" realizes="_0mUrljqaEeiP29_qDiwNWQ" implements="_0mUDHDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IResourceTransactionManager_DataSourceTransactionManager" type="ResourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_DataSourceTransactionManager" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDataSourceTransactionManager" type="IDataSourceTransactionManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonDataSource_DataSourceTransactionManager" direction="REQUIRED" type="CommonDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_DataSourceTransactionManager" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDataSource_DataSourceTransactionManager" direction="REQUIRED" type="DataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_DataSourceTransactionManager" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_DataSourceTransactionManager" direction="REQUIRED" type="Log"/>
+      <attributes name="dataSource" type="javax.sql.DataSource"/>
+      <attributes name="enforceReadOnly" type="boolean"/>
+      <attributes name="SYNCHRONIZATION_ALWAYS" type="int"/>
+      <attributes name="SYNCHRONIZATION_ON_ACTUAL_TRANSACTION" type="int"/>
+      <attributes name="SYNCHRONIZATION_NEVER" type="int"/>
+      <attributes name="constants" type="org.springframework.core.Constants"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="transactionSynchronization" type="int"/>
+      <attributes name="defaultTimeout" type="int"/>
+      <attributes name="nestedTransactionAllowed" type="boolean"/>
+      <attributes name="validateExistingTransaction" type="boolean"/>
+      <attributes name="globalRollbackOnParticipationFailure" type="boolean"/>
+      <attributes name="failEarlyOnGlobalRollbackOnly" type="boolean"/>
+      <attributes name="rollbackOnCommitFailure" type="boolean"/>
+    </configComponents>
+    <configConnections refID="_0l4lQzqaEeiP29_qDiwNWQ" property="&quot;featureStore&quot;" clientClassElem="_0l4lQDqaEeiP29_qDiwNWQ" serverClassElem="_0l4lQTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ff4j.ff4j-store-springjdbc.src.test.resources.applicationContext-jdbc-test.xml_asm" instantiates="//@architectureDescriptions[name='ff4j.ff4j-store-springjdbc.src.test.resources.applicationContext-jdbc-test.xml_config']">
+    <assmComponents name="ff4j" id="_0l4lRDqaEeiP29_qDiwNWQ" instantiates="_0l4lQDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_ff4j" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="dbStore" id="_0l4lRTqaEeiP29_qDiwNWQ" instantiates="_0l4lQTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_dbStore" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="transactionManager" id="_0l4lRjqaEeiP29_qDiwNWQ" instantiates="_0l4lQjqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IResourceTransactionManager_DataSourceTransactionManager_transactionManager" type="ResourceTransactionManager" instantiates="IResourceTransactionManager_DataSourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_DataSourceTransactionManager_transactionManager" type="InitializingBean" instantiates="IInitializingBean_DataSourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDataSourceTransactionManager_transactionManager" type="IDataSourceTransactionManager_Type" instantiates="IDataSourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonDataSource_DataSourceTransactionManager_transactionManager" direction="REQUIRED" type="CommonDataSource" instantiates="ICommonDataSource_DataSourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_DataSourceTransactionManager_transactionManager" direction="REQUIRED" type="Wrapper" instantiates="IWrapper_DataSourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDataSource_DataSourceTransactionManager_transactionManager" direction="REQUIRED" type="DataSource" instantiates="IDataSource_DataSourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_DataSourceTransactionManager_transactionManager" direction="REQUIRED" type="IConstants_Type" instantiates="IConstants_DataSourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_DataSourceTransactionManager_transactionManager" direction="REQUIRED" type="Log" instantiates="ILog_DataSourceTransactionManager"/>
+    </assmComponents>
+    <assemblyConnections refID="_0l4lRzqaEeiP29_qDiwNWQ" property="ff4j.featureStore" clientInstElem="_0l4lRDqaEeiP29_qDiwNWQ" serverInstElem="_0l4lRTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ff4j.ff4j-store-springjdbc.src.test.resources.applicationContext-jdbc-test.xml_spec">
+    <specComponents name="DataSourceTransactionManager_role" id="_0mUrljqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IResourceTransactionManagerDataSourceTransactionManager_role" type="ResourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBeanDataSourceTransactionManager_role" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDataSourceTransactionManagerDataSourceTransactionManager_role" type="IDataSourceTransactionManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonDataSourceDataSourceTransactionManager_role" direction="REQUIRED" type="CommonDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapperDataSourceTransactionManager_role" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDataSourceDataSourceTransactionManager_role" direction="REQUIRED" type="DataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstantsDataSourceTransactionManager_role" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogDataSourceTransactionManager_role" direction="REQUIRED" type="Log"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_0mVR_TqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_0mVSCTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specConnections refID="_0mVSFTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ff4j.ff4j-store-springjdbc.target.test-classes.applicationContext-jdbc-test.xml_config" implements="//@architectureDescriptions[name='ff4j.ff4j-store-springjdbc.target.test-classes.applicationContext-jdbc-test.xml_spec']">
+    <configComponents name="org.ff4j.FF4j" id="_0mpaQDqaEeiP29_qDiwNWQ" realizes="_0muUQzqaEeiP29_qDiwNWQ" implements="_0msdkDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.ff4j.springjdbc.store.FeatureStoreSpringJdbc" id="_0mpaQTqaEeiP29_qDiwNWQ" realizes="_0muUTzqaEeiP29_qDiwNWQ" implements="_0muSwDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.springframework.jdbc.datasource.DataSourceTransactionManager" id="_0mpaQjqaEeiP29_qDiwNWQ" realizes="_0muUWzqaEeiP29_qDiwNWQ" implements="_0muSzDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IResourceTransactionManager_DataSourceTransactionManager" type="ResourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_DataSourceTransactionManager" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDataSourceTransactionManager" type="IDataSourceTransactionManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonDataSource_DataSourceTransactionManager" direction="REQUIRED" type="CommonDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_DataSourceTransactionManager" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDataSource_DataSourceTransactionManager" direction="REQUIRED" type="DataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_DataSourceTransactionManager" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_DataSourceTransactionManager" direction="REQUIRED" type="Log"/>
+      <attributes name="dataSource" type="javax.sql.DataSource"/>
+      <attributes name="enforceReadOnly" type="boolean"/>
+      <attributes name="SYNCHRONIZATION_ALWAYS" type="int"/>
+      <attributes name="SYNCHRONIZATION_ON_ACTUAL_TRANSACTION" type="int"/>
+      <attributes name="SYNCHRONIZATION_NEVER" type="int"/>
+      <attributes name="constants" type="org.springframework.core.Constants"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="transactionSynchronization" type="int"/>
+      <attributes name="defaultTimeout" type="int"/>
+      <attributes name="nestedTransactionAllowed" type="boolean"/>
+      <attributes name="validateExistingTransaction" type="boolean"/>
+      <attributes name="globalRollbackOnParticipationFailure" type="boolean"/>
+      <attributes name="failEarlyOnGlobalRollbackOnly" type="boolean"/>
+      <attributes name="rollbackOnCommitFailure" type="boolean"/>
+    </configComponents>
+    <configConnections refID="_0mqBUDqaEeiP29_qDiwNWQ" property="&quot;featureStore&quot;" clientClassElem="_0mpaQDqaEeiP29_qDiwNWQ" serverClassElem="_0mpaQTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ff4j.ff4j-store-springjdbc.target.test-classes.applicationContext-jdbc-test.xml_asm" instantiates="//@architectureDescriptions[name='ff4j.ff4j-store-springjdbc.target.test-classes.applicationContext-jdbc-test.xml_config']">
+    <assmComponents name="ff4j" id="_0mqBUTqaEeiP29_qDiwNWQ" instantiates="_0mpaQDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_ff4j" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="dbStore" id="_0mqBUjqaEeiP29_qDiwNWQ" instantiates="_0mpaQTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_dbStore" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="transactionManager" id="_0mqBUzqaEeiP29_qDiwNWQ" instantiates="_0mpaQjqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IResourceTransactionManager_DataSourceTransactionManager_transactionManager" type="ResourceTransactionManager" instantiates="IResourceTransactionManager_DataSourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_DataSourceTransactionManager_transactionManager" type="InitializingBean" instantiates="IInitializingBean_DataSourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDataSourceTransactionManager_transactionManager" type="IDataSourceTransactionManager_Type" instantiates="IDataSourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonDataSource_DataSourceTransactionManager_transactionManager" direction="REQUIRED" type="CommonDataSource" instantiates="ICommonDataSource_DataSourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_DataSourceTransactionManager_transactionManager" direction="REQUIRED" type="Wrapper" instantiates="IWrapper_DataSourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDataSource_DataSourceTransactionManager_transactionManager" direction="REQUIRED" type="DataSource" instantiates="IDataSource_DataSourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_DataSourceTransactionManager_transactionManager" direction="REQUIRED" type="IConstants_Type" instantiates="IConstants_DataSourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_DataSourceTransactionManager_transactionManager" direction="REQUIRED" type="Log" instantiates="ILog_DataSourceTransactionManager"/>
+    </assmComponents>
+    <assemblyConnections refID="_0mqBVDqaEeiP29_qDiwNWQ" property="ff4j.featureStore" clientInstElem="_0mqBUTqaEeiP29_qDiwNWQ" serverInstElem="_0mqBUjqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ff4j.ff4j-store-springjdbc.target.test-classes.applicationContext-jdbc-test.xml_spec">
+    <specComponents name="Object_role" id="_0muUQzqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_0muUTzqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="DataSourceTransactionManager_role" id="_0muUWzqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IResourceTransactionManagerDataSourceTransactionManager_role" type="ResourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBeanDataSourceTransactionManager_role" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDataSourceTransactionManagerDataSourceTransactionManager_role" type="IDataSourceTransactionManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonDataSourceDataSourceTransactionManager_role" direction="REQUIRED" type="CommonDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapperDataSourceTransactionManager_role" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDataSourceDataSourceTransactionManager_role" direction="REQUIRED" type="DataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstantsDataSourceTransactionManager_role" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogDataSourceTransactionManager_role" direction="REQUIRED" type="Log"/>
+    </specComponents>
+    <specConnections refID="_0mu7iDqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_0mGAoDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_0mUDEDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" id="_0mUDHDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IResourceTransactionManager_DataSourceTransactionManager_org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" type="ResourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_DataSourceTransactionManager_org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDataSourceTransactionManager_org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" type="IDataSourceTransactionManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonDataSource_DataSourceTransactionManager_org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" direction="REQUIRED" type="CommonDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_DataSourceTransactionManager_org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDataSource_DataSourceTransactionManager_org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" direction="REQUIRED" type="DataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_DataSourceTransactionManager_org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_DataSourceTransactionManager_org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" direction="REQUIRED" type="Log"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_0msdkDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_0muSwDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" id="_0muSzDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IResourceTransactionManager_DataSourceTransactionManager_org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" type="ResourceTransactionManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_DataSourceTransactionManager_org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDataSourceTransactionManager_org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" type="IDataSourceTransactionManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICommonDataSource_DataSourceTransactionManager_org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" direction="REQUIRED" type="CommonDataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IWrapper_DataSourceTransactionManager_org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" direction="REQUIRED" type="Wrapper"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDataSource_DataSourceTransactionManager_org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" direction="REQUIRED" type="DataSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConstants_DataSourceTransactionManager_org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" direction="REQUIRED" type="IConstants_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_DataSourceTransactionManager_org_springframework_jdbc_datasource_DataSourceTransactionManager_Type" direction="REQUIRED" type="Log"/>
+    </components>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_0mGAoTqaEeiP29_qDiwNWQ"/>
+      <signatures name="wait" type="void" id="_0mGAojqaEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_0mGAozqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mGApDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_0mGApTqaEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_0mGApjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getClass" type="java.lang.Class" id="_0mGApzqaEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_0mGAqDqaEeiP29_qDiwNWQ"/>
+      <signatures name="notify" type="void" id="_0mGAqTqaEeiP29_qDiwNWQ"/>
+      <signatures name="notifyAll" type="void" id="_0mGAqjqaEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_0mGAqzqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ResourceTransactionManager">
+      <signatures name="getResourceFactory" type="java.lang.Object" id="_0mUqIDqaEeiP29_qDiwNWQ"/>
+      <signatures name="commit" type="void" id="_0mUqITqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionStatus" id="_0mUqIjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTransaction" type="org.springframework.transaction.TransactionStatus" id="_0mUqIzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_0mUqJDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rollback" type="void" id="_0mUqJTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionStatus" id="_0mUqJjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="InitializingBean">
+      <signatures name="afterPropertiesSet" type="void" id="_0mUqJzqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IDataSourceTransactionManager_Type">
+      <signatures name="commit" type="void" id="_0mUqKDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionStatus" id="_0mUqKTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTransaction" type="org.springframework.transaction.TransactionStatus" id="_0mUqKjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_0mUqKzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rollback" type="void" id="_0mUqLDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionStatus" id="_0mUqLTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readObject" type="void" id="_0mUqLjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.ObjectInputStream" id="_0mUqLzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resume" type="void" id="_0mUqMDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUqMTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.transaction.support.AbstractPlatformTransactionManager.SuspendedResourcesHolder" id="_0mUqMjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="suspend" type="org.springframework.transaction.support.AbstractPlatformTransactionManager.SuspendedResourcesHolder" id="_0mUqMzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUqNDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTransactionSynchronizationName" type="void" id="_0mUqNTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0mUqNjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setGlobalRollbackOnParticipationFailure" type="void" id="_0mUqNzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0mUqODqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isGlobalRollbackOnParticipationFailure" type="boolean" id="_0mUqOTqaEeiP29_qDiwNWQ"/>
+      <signatures name="registerAfterCompletionWithExistingTransaction" type="void" id="_0mUqOjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUqOzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.List" id="_0mUqPDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="newTransactionStatus" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUqPTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_0mUqPjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0mUqPzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_0mUqQDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="boolean" id="_0mUqQTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="boolean" id="_0mUqQjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg5" type="java.lang.Object" id="_0mUqQzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setNestedTransactionAllowed" type="void" id="_0mUqRDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0mUqRTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareSynchronization" type="void" id="_0mUqRjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUqRzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.transaction.TransactionDefinition" id="_0mUqSDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isNestedTransactionAllowed" type="boolean" id="_0mUqSTqaEeiP29_qDiwNWQ"/>
+      <signatures name="prepareTransactionStatus" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUqSjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_0mUqSzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0mUqTDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_0mUqTTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="boolean" id="_0mUqTjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="boolean" id="_0mUqTzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg5" type="java.lang.Object" id="_0mUqUDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isRollbackOnCommitFailure" type="boolean" id="_0mUqUTqaEeiP29_qDiwNWQ"/>
+      <signatures name="handleExistingTransaction" type="org.springframework.transaction.TransactionStatus" id="_0mUqUjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_0mUqUzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0mUqVDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_0mUqVTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resumeAfterBeginException" type="void" id="_0mUqVjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUqVzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.transaction.support.AbstractPlatformTransactionManager.SuspendedResourcesHolder" id="_0mUqWDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_0mUqWTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doSetRollbackOnly" type="void" id="_0mUqWjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUqWzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isFailEarlyOnGlobalRollbackOnly" type="boolean" id="_0mUqXDqaEeiP29_qDiwNWQ"/>
+      <signatures name="doCleanupAfterCompletion" type="void" id="_0mUqXTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUqXjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTransactionSynchronization" type="void" id="_0mUqXzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0mUqYDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDefaultTimeout" type="void" id="_0mUqYTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0mUqYjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isExistingTransaction" type="boolean" id="_0mUqYzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUqZDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTransactionSynchronization" type="int" id="_0mUqZTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getDefaultTimeout" type="int" id="_0mUqZjqaEeiP29_qDiwNWQ"/>
+      <signatures name="setValidateExistingTransaction" type="void" id="_0mUqZzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0mUqaDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isValidateExistingTransaction" type="boolean" id="_0mUqaTqaEeiP29_qDiwNWQ"/>
+      <signatures name="setFailEarlyOnGlobalRollbackOnly" type="void" id="_0mUqajqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0mUqazqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setRollbackOnCommitFailure" type="void" id="_0mUqbDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0mUqbTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doSuspendSynchronization" type="java.util.List" id="_0mUqbjqaEeiP29_qDiwNWQ"/>
+      <signatures name="cleanupAfterCompletion" type="void" id="_0mUqbzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUqcDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="invokeAfterCompletion" type="void" id="_0mUqcTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.List" id="_0mUqcjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0mUqczqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="triggerBeforeCommit" type="void" id="_0mUqdDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUqdTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doResumeSynchronization" type="void" id="_0mUqdjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.List" id="_0mUqdzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="useSavepointForNestedTransaction" type="boolean" id="_0mUqeDqaEeiP29_qDiwNWQ"/>
+      <signatures name="shouldCommitOnGlobalRollbackOnly" type="boolean" id="_0mUqeTqaEeiP29_qDiwNWQ"/>
+      <signatures name="triggerAfterCompletion" type="void" id="_0mUqejqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUqezqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0mUqfDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="triggerAfterCommit" type="void" id="_0mUqfTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUqfjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doRollbackOnCommitException" type="void" id="_0mUqfzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUqgDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_0mUqgTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="triggerBeforeCompletion" type="void" id="_0mUqgjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUqgzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doCommit" type="void" id="_0mUqhDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUqhTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doRollback" type="void" id="_0mUqhjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUqhzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doGetTransaction" type="java.lang.Object" id="_0mUqiDqaEeiP29_qDiwNWQ"/>
+      <signatures name="doResume" type="void" id="_0mUqiTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUqijqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0mUqizqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doBegin" type="void" id="_0mUqjDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUqjTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.transaction.TransactionDefinition" id="_0mUqjjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="determineTimeout" type="int" id="_0mUqjzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_0mUqkDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doSuspend" type="java.lang.Object" id="_0mUqkTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUqkjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareForCommit" type="void" id="_0mUqkzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUqlDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="processCommit" type="void" id="_0mUqlTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUqljqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="processRollback" type="void" id="_0mUqlzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUqmDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_0mUqmTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="commit" type="void" id="_0mUqmjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionStatus" id="_0mUqmzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTransaction" type="org.springframework.transaction.TransactionStatus" id="_0mUqnDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_0mUqnTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rollback" type="void" id="_0mUqnjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionStatus" id="_0mUqnzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getResourceFactory" type="java.lang.Object" id="_0mUqoDqaEeiP29_qDiwNWQ"/>
+      <signatures name="afterPropertiesSet" type="void" id="_0mUqoTqaEeiP29_qDiwNWQ"/>
+      <signatures name="isEnforceReadOnly" type="boolean" id="_0mUqojqaEeiP29_qDiwNWQ"/>
+      <signatures name="prepareTransactionalConnection" type="void" id="_0mUqozqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.sql.Connection" id="_0mUqpDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.transaction.TransactionDefinition" id="_0mUqpTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEnforceReadOnly" type="void" id="_0mUqpjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0mUqpzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="obtainDataSource" type="javax.sql.DataSource" id="_0mUqqDqaEeiP29_qDiwNWQ"/>
+      <signatures name="setDataSource" type="void" id="_0mUqqTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.sql.DataSource" id="_0mUqqjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDataSource" type="javax.sql.DataSource" id="_0mUqqzqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="PlatformTransactionManager">
+      <signatures name="commit" type="void" id="_0mUqrDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionStatus" id="_0mUqrTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTransaction" type="org.springframework.transaction.TransactionStatus" id="_0mUqrjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_0mUqrzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rollback" type="void" id="_0mUqsDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionStatus" id="_0mUqsTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IAbstractPlatformTransactionManager_Type">
+      <signatures name="commit" type="void" id="_0mUqsjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionStatus" id="_0mUqszqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTransaction" type="org.springframework.transaction.TransactionStatus" id="_0mUqtDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_0mUqtTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rollback" type="void" id="_0mUqtjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionStatus" id="_0mUqtzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readObject" type="void" id="_0mUquDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.ObjectInputStream" id="_0mUquTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resume" type="void" id="_0mUqujqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUquzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.transaction.support.AbstractPlatformTransactionManager.SuspendedResourcesHolder" id="_0mUqvDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="suspend" type="org.springframework.transaction.support.AbstractPlatformTransactionManager.SuspendedResourcesHolder" id="_0mUqvTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUqvjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTransactionSynchronizationName" type="void" id="_0mUqvzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0mUqwDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setGlobalRollbackOnParticipationFailure" type="void" id="_0mUqwTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0mUqwjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isGlobalRollbackOnParticipationFailure" type="boolean" id="_0mUqwzqaEeiP29_qDiwNWQ"/>
+      <signatures name="registerAfterCompletionWithExistingTransaction" type="void" id="_0mUqxDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUqxTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.List" id="_0mUqxjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="newTransactionStatus" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUqxzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_0mUqyDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0mUqyTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_0mUqyjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="boolean" id="_0mUqyzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="boolean" id="_0mUqzDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg5" type="java.lang.Object" id="_0mUqzTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setNestedTransactionAllowed" type="void" id="_0mUqzjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0mUqzzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareSynchronization" type="void" id="_0mUq0DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUq0TqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.transaction.TransactionDefinition" id="_0mUq0jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isNestedTransactionAllowed" type="boolean" id="_0mUq0zqaEeiP29_qDiwNWQ"/>
+      <signatures name="prepareTransactionStatus" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUq1DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_0mUq1TqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0mUq1jqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_0mUq1zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="boolean" id="_0mUq2DqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="boolean" id="_0mUq2TqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg5" type="java.lang.Object" id="_0mUq2jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isRollbackOnCommitFailure" type="boolean" id="_0mUq2zqaEeiP29_qDiwNWQ"/>
+      <signatures name="handleExistingTransaction" type="org.springframework.transaction.TransactionStatus" id="_0mUq3DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_0mUq3TqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0mUq3jqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_0mUq3zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resumeAfterBeginException" type="void" id="_0mUq4DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUq4TqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.transaction.support.AbstractPlatformTransactionManager.SuspendedResourcesHolder" id="_0mUq4jqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_0mUq4zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doSetRollbackOnly" type="void" id="_0mUq5DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUq5TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isFailEarlyOnGlobalRollbackOnly" type="boolean" id="_0mUq5jqaEeiP29_qDiwNWQ"/>
+      <signatures name="doCleanupAfterCompletion" type="void" id="_0mUq5zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUq6DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTransactionSynchronization" type="void" id="_0mUq6TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0mUq6jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDefaultTimeout" type="void" id="_0mUq6zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0mUq7DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isExistingTransaction" type="boolean" id="_0mUq7TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUq7jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTransactionSynchronization" type="int" id="_0mUq7zqaEeiP29_qDiwNWQ"/>
+      <signatures name="getDefaultTimeout" type="int" id="_0mUq8DqaEeiP29_qDiwNWQ"/>
+      <signatures name="setValidateExistingTransaction" type="void" id="_0mUq8TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0mUq8jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isValidateExistingTransaction" type="boolean" id="_0mUq8zqaEeiP29_qDiwNWQ"/>
+      <signatures name="setFailEarlyOnGlobalRollbackOnly" type="void" id="_0mUq9DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0mUq9TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setRollbackOnCommitFailure" type="void" id="_0mUq9jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0mUq9zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doSuspendSynchronization" type="java.util.List" id="_0mUq-DqaEeiP29_qDiwNWQ"/>
+      <signatures name="cleanupAfterCompletion" type="void" id="_0mUq-TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUq-jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="invokeAfterCompletion" type="void" id="_0mUq-zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.List" id="_0mUq_DqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0mUq_TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="triggerBeforeCommit" type="void" id="_0mUq_jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUq_zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doResumeSynchronization" type="void" id="_0mUrADqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.List" id="_0mUrATqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="useSavepointForNestedTransaction" type="boolean" id="_0mUrAjqaEeiP29_qDiwNWQ"/>
+      <signatures name="shouldCommitOnGlobalRollbackOnly" type="boolean" id="_0mUrAzqaEeiP29_qDiwNWQ"/>
+      <signatures name="triggerAfterCompletion" type="void" id="_0mUrBDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUrBTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0mUrBjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="triggerAfterCommit" type="void" id="_0mUrBzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUrCDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doRollbackOnCommitException" type="void" id="_0mUrCTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUrCjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_0mUrCzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="triggerBeforeCompletion" type="void" id="_0mUrDDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUrDTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doCommit" type="void" id="_0mUrDjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUrDzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doRollback" type="void" id="_0mUrEDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUrETqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doGetTransaction" type="java.lang.Object" id="_0mUrEjqaEeiP29_qDiwNWQ"/>
+      <signatures name="doResume" type="void" id="_0mUrEzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUrFDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0mUrFTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doBegin" type="void" id="_0mUrFjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUrFzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.transaction.TransactionDefinition" id="_0mUrGDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="determineTimeout" type="int" id="_0mUrGTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.TransactionDefinition" id="_0mUrGjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doSuspend" type="java.lang.Object" id="_0mUrGzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUrHDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="prepareForCommit" type="void" id="_0mUrHTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUrHjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="processCommit" type="void" id="_0mUrHzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUrIDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="processRollback" type="void" id="_0mUrITqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.transaction.support.DefaultTransactionStatus" id="_0mUrIjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_0mUrIzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="CommonDataSource">
+      <signatures name="getLogWriter" type="java.io.PrintWriter" id="_0mUrODqaEeiP29_qDiwNWQ"/>
+      <signatures name="getParentLogger" type="java.util.logging.Logger" id="_0mUrOTqaEeiP29_qDiwNWQ"/>
+      <signatures name="setLogWriter" type="void" id="_0mUrOjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.PrintWriter" id="_0mUrOzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setLoginTimeout" type="void" id="_0mUrPDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0mUrPTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLoginTimeout" type="int" id="_0mUrPjqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Wrapper">
+      <signatures name="unwrap" type="java.lang.Object" id="_0mUrPzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0mUrQDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isWrapperFor" type="boolean" id="_0mUrQTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0mUrQjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="DataSource">
+      <signatures name="getConnection" type="java.sql.Connection" id="_0mUrQzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getConnection" type="java.sql.Connection" id="_0mUrRDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0mUrRTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0mUrRjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLogWriter" type="java.io.PrintWriter" id="_0mUrRzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getParentLogger" type="java.util.logging.Logger" id="_0mUrSDqaEeiP29_qDiwNWQ"/>
+      <signatures name="setLogWriter" type="void" id="_0mUrSTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.PrintWriter" id="_0mUrSjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setLoginTimeout" type="void" id="_0mUrSzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0mUrTDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getLoginTimeout" type="int" id="_0mUrTTqaEeiP29_qDiwNWQ"/>
+      <signatures name="unwrap" type="java.lang.Object" id="_0mUrTjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0mUrTzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isWrapperFor" type="boolean" id="_0mUrUDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_0mUrUTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IConstants_Type">
+      <signatures name="getSize" type="int" id="_0mUrUjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getClassName" type="java.lang.String" id="_0mUrUzqaEeiP29_qDiwNWQ"/>
+      <signatures name="asNumber" type="java.lang.Number" id="_0mUrVDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0mUrVTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="asObject" type="java.lang.Object" id="_0mUrVjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0mUrVzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFieldCache" type="java.util.Map" id="_0mUrWDqaEeiP29_qDiwNWQ"/>
+      <signatures name="toCode" type="java.lang.String" id="_0mUrWTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUrWjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0mUrWzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getValues" type="java.util.Set" id="_0mUrXDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0mUrXTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCodeForSuffix" type="java.lang.String" id="_0mUrXjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUrXzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0mUrYDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="asString" type="java.lang.String" id="_0mUrYTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0mUrYjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getNames" type="java.util.Set" id="_0mUrYzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0mUrZDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getValuesForSuffix" type="java.util.Set" id="_0mUrZTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0mUrZjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getNamesForProperty" type="java.util.Set" id="_0mUrZzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0mUraDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getValuesForProperty" type="java.util.Set" id="_0mUraTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0mUrajqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="propertyToConstantNamePrefix" type="java.lang.String" id="_0mUrazqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0mUrbDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getNamesForSuffix" type="java.util.Set" id="_0mUrbTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0mUrbjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCodeForProperty" type="java.lang.String" id="_0mUrbzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUrcDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0mUrcTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Log">
+      <signatures name="debug" type="void" id="_0mUrcjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUrczqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_0mUrdDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_0mUrdTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUrdjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_0mUrdzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUreDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_0mUreTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUrejqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_0mUrezqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_0mUrfDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUrfTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_0mUrfjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_0mUrfzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUrgDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_0mUrgTqaEeiP29_qDiwNWQ"/>
+      <signatures name="info" type="void" id="_0mUrgjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUrgzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_0mUrhDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_0mUrhTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUrhjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTraceEnabled" type="boolean" id="_0mUrhzqaEeiP29_qDiwNWQ"/>
+      <signatures name="warn" type="void" id="_0mUriDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUriTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_0mUrijqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_0mUrizqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUrjDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isDebugEnabled" type="boolean" id="_0mUrjTqaEeiP29_qDiwNWQ"/>
+      <signatures name="fatal" type="void" id="_0mUrjjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUrjzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="fatal" type="void" id="_0mUrkDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0mUrkTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_0mUrkjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isErrorEnabled" type="boolean" id="_0mUrkzqaEeiP29_qDiwNWQ"/>
+      <signatures name="isFatalEnabled" type="boolean" id="_0mUrlDqaEeiP29_qDiwNWQ"/>
+      <signatures name="isWarnEnabled" type="boolean" id="_0mUrlTqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

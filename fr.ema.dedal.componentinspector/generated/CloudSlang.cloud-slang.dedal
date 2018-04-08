@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="CloudSlang.cloud-slang">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="CloudSlang.cloud-slang.cloudslang-cli.src.main.resources.META-INF.spring.slangCliContext.xml_config">
+    <configComponents name="io.cloudslang.lang.commons.configuration.SlangCommonsSpringConfig" id="_17M5wDqXEeiP29_qDiwNWQ"/>
+    <comptypes name="io_cloudslang_lang_commons_configuration_SlangCommonsSpringConfig_Type" id="_17plsDqXEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="CloudSlang.cloud-slang.cloudslang-cli.src.main.resources.META-INF.spring.slangCliContext.xml_asm" instantiates="//@architectureDescriptions[name='CloudSlang.cloud-slang.cloudslang-cli.src.main.resources.META-INF.spring.slangCliContext.xml_config']">
+    <assmComponents name="io.cloudslang.lang.commons.configuration.SlangCommonsSpringConfig1" id="_17Ng0DqXEeiP29_qDiwNWQ" instantiates="_17M5wDqXEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="CloudSlang.cloud-slang.cloudslang-cli.src.test.resources.META-INF.spring.test-spring-shell-plugin.xml_config" implements="//@architectureDescriptions[name='CloudSlang.cloud-slang.cloudslang-cli.src.test.resources.META-INF.spring.test-spring-shell-plugin.xml_spec']">
+    <configComponents name="io.cloudslang.lang.cli.configuration.SlangCliTestConfig" id="_18TtADqXEeiP29_qDiwNWQ" realizes="_19WO0zqXEeiP29_qDiwNWQ" implements="_19A3oDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISlangCliTestConfig" type="ISlangCliTestConfig_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="CloudSlang.cloud-slang.cloudslang-cli.src.test.resources.META-INF.spring.test-spring-shell-plugin.xml_asm" instantiates="//@architectureDescriptions[name='CloudSlang.cloud-slang.cloudslang-cli.src.test.resources.META-INF.spring.test-spring-shell-plugin.xml_config']">
+    <assmComponents name="io.cloudslang.lang.cli.configuration.SlangCliTestConfig1" id="_18TtATqXEeiP29_qDiwNWQ" instantiates="_18TtADqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISlangCliTestConfig_io.cloudslang.lang.cli.configuration.SlangCliTestConfig1" type="ISlangCliTestConfig_Type" instantiates="ISlangCliTestConfig"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="CloudSlang.cloud-slang.cloudslang-cli.src.test.resources.META-INF.spring.test-spring-shell-plugin.xml_spec">
+    <specComponents name="SlangCliTestConfig_role" id="_19WO0zqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISlangCliTestConfigSlangCliTestConfig_role" type="ISlangCliTestConfig_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="CloudSlang.cloud-slang.cloudslang-cli.target.classes.META-INF.spring.slangCliContext.xml_config">
+    <configComponents name="io.cloudslang.lang.commons.configuration.SlangCommonsSpringConfig" id="_19q-8DqXEeiP29_qDiwNWQ"/>
+    <comptypes name="io_cloudslang_lang_commons_configuration_SlangCommonsSpringConfig_Type" id="_19rmADqXEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="CloudSlang.cloud-slang.cloudslang-cli.target.classes.META-INF.spring.slangCliContext.xml_asm" instantiates="//@architectureDescriptions[name='CloudSlang.cloud-slang.cloudslang-cli.target.classes.META-INF.spring.slangCliContext.xml_config']">
+    <assmComponents name="io.cloudslang.lang.commons.configuration.SlangCommonsSpringConfig1" id="_19q-8TqXEeiP29_qDiwNWQ" instantiates="_19q-8DqXEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="CloudSlang.cloud-slang.cloudslang-cli.target.test-classes.META-INF.spring.test-spring-shell-plugin.xml_config" implements="//@architectureDescriptions[name='CloudSlang.cloud-slang.cloudslang-cli.target.test-classes.META-INF.spring.test-spring-shell-plugin.xml_spec']">
+    <configComponents name="io.cloudslang.lang.cli.configuration.SlangCliTestConfig" id="_1-VtUDqXEeiP29_qDiwNWQ" realizes="_1-WUZDqXEeiP29_qDiwNWQ" implements="_1-WUYDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISlangCliTestConfig" type="ISlangCliTestConfig_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="CloudSlang.cloud-slang.cloudslang-cli.target.test-classes.META-INF.spring.test-spring-shell-plugin.xml_asm" instantiates="//@architectureDescriptions[name='CloudSlang.cloud-slang.cloudslang-cli.target.test-classes.META-INF.spring.test-spring-shell-plugin.xml_config']">
+    <assmComponents name="io.cloudslang.lang.cli.configuration.SlangCliTestConfig1" id="_1-VtUTqXEeiP29_qDiwNWQ" instantiates="_1-VtUDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISlangCliTestConfig_io.cloudslang.lang.cli.configuration.SlangCliTestConfig1" type="ISlangCliTestConfig_Type" instantiates="ISlangCliTestConfig"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="CloudSlang.cloud-slang.cloudslang-cli.target.test-classes.META-INF.spring.test-spring-shell-plugin.xml_spec">
+    <specComponents name="SlangCliTestConfig_role" id="_1-WUZDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISlangCliTestConfigSlangCliTestConfig_role" type="ISlangCliTestConfig_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="CloudSlang.cloud-slang.cloudslang-content-verifier.src.main.resources.spring.testRunnerContext.xml_config" implements="//@architectureDescriptions[name='CloudSlang.cloud-slang.cloudslang-content-verifier.src.main.resources.spring.testRunnerContext.xml_spec']">
+    <configComponents name="io.cloudslang.lang.tools.build.configuration.SlangBuildSpringConfiguration" id="_1-qdcDqXEeiP29_qDiwNWQ" realizes="_2EBeljqXEeiP29_qDiwNWQ" implements="_2AGn4DqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISlangBuildSpringConfiguration" type="ISlangBuildSpringConfiguration_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="CloudSlang.cloud-slang.cloudslang-content-verifier.src.main.resources.spring.testRunnerContext.xml_asm" instantiates="//@architectureDescriptions[name='CloudSlang.cloud-slang.cloudslang-content-verifier.src.main.resources.spring.testRunnerContext.xml_config']">
+    <assmComponents name="io.cloudslang.lang.tools.build.configuration.SlangBuildSpringConfiguration1" id="_1-qdcTqXEeiP29_qDiwNWQ" instantiates="_1-qdcDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISlangBuildSpringConfiguration_io.cloudslang.lang.tools.build.configuration.SlangBuildSpringConfiguration1" type="ISlangBuildSpringConfiguration_Type" instantiates="ISlangBuildSpringConfiguration"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="CloudSlang.cloud-slang.cloudslang-content-verifier.src.main.resources.spring.testRunnerContext.xml_spec">
+    <specComponents name="SlangBuildSpringConfiguration_role" id="_2EBeljqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISlangBuildSpringConfigurationSlangBuildSpringConfiguration_role" type="ISlangBuildSpringConfiguration_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="CloudSlang.cloud-slang.cloudslang-content-verifier.target.classes.spring.testRunnerContext.xml_config" implements="//@architectureDescriptions[name='CloudSlang.cloud-slang.cloudslang-content-verifier.target.classes.spring.testRunnerContext.xml_spec']">
+    <configComponents name="io.cloudslang.lang.tools.build.configuration.SlangBuildSpringConfiguration" id="_2EWOsDqXEeiP29_qDiwNWQ" realizes="_2EWOvjqXEeiP29_qDiwNWQ" implements="_2EWOsjqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISlangBuildSpringConfiguration" type="ISlangBuildSpringConfiguration_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="CloudSlang.cloud-slang.cloudslang-content-verifier.target.classes.spring.testRunnerContext.xml_asm" instantiates="//@architectureDescriptions[name='CloudSlang.cloud-slang.cloudslang-content-verifier.target.classes.spring.testRunnerContext.xml_config']">
+    <assmComponents name="io.cloudslang.lang.tools.build.configuration.SlangBuildSpringConfiguration1" id="_2EWOsTqXEeiP29_qDiwNWQ" instantiates="_2EWOsDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISlangBuildSpringConfiguration_io.cloudslang.lang.tools.build.configuration.SlangBuildSpringConfiguration1" type="ISlangBuildSpringConfiguration_Type" instantiates="ISlangBuildSpringConfiguration"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="CloudSlang.cloud-slang.cloudslang-content-verifier.target.classes.spring.testRunnerContext.xml_spec">
+    <specComponents name="SlangBuildSpringConfiguration_role" id="_2EWOvjqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISlangBuildSpringConfigurationSlangBuildSpringConfiguration_role" type="ISlangBuildSpringConfiguration_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="CloudSlang.cloud-slang.cloudslang-tests.src.test.resources.META-INF.spring.systemTestContext.xml_config">
+    <configComponents name="io.cloudslang.lang.commons.configuration.SlangCommonsSpringConfig" id="_2Eq-0DqXEeiP29_qDiwNWQ"/>
+    <comptypes name="io_cloudslang_lang_commons_configuration_SlangCommonsSpringConfig_Type" id="_2Eq-0jqXEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="CloudSlang.cloud-slang.cloudslang-tests.src.test.resources.META-INF.spring.systemTestContext.xml_asm" instantiates="//@architectureDescriptions[name='CloudSlang.cloud-slang.cloudslang-tests.src.test.resources.META-INF.spring.systemTestContext.xml_config']">
+    <assmComponents name="io.cloudslang.lang.commons.configuration.SlangCommonsSpringConfig1" id="_2Eq-0TqXEeiP29_qDiwNWQ" instantiates="_2Eq-0DqXEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="CloudSlang.cloud-slang.cloudslang-tests.target.test-classes.META-INF.spring.systemTestContext.xml_config">
+    <configComponents name="io.cloudslang.lang.commons.configuration.SlangCommonsSpringConfig" id="_2E_u8DqXEeiP29_qDiwNWQ"/>
+    <comptypes name="io_cloudslang_lang_commons_configuration_SlangCommonsSpringConfig_Type" id="_2FAWATqXEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="CloudSlang.cloud-slang.cloudslang-tests.target.test-classes.META-INF.spring.systemTestContext.xml_asm" instantiates="//@architectureDescriptions[name='CloudSlang.cloud-slang.cloudslang-tests.target.test-classes.META-INF.spring.systemTestContext.xml_config']">
+    <assmComponents name="io.cloudslang.lang.commons.configuration.SlangCommonsSpringConfig1" id="_2FAWADqXEeiP29_qDiwNWQ" instantiates="_2E_u8DqXEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="io_cloudslang_lang_cli_configuration_SlangCliTestConfig_Type" id="_19A3oDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISlangCliTestConfig_io_cloudslang_lang_cli_configuration_SlangCliTestConfig_Type" type="ISlangCliTestConfig_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="io_cloudslang_lang_cli_configuration_SlangCliTestConfig_Type" id="_1-WUYDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISlangCliTestConfig_io_cloudslang_lang_cli_configuration_SlangCliTestConfig_Type" type="ISlangCliTestConfig_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="io_cloudslang_lang_tools_build_configuration_SlangBuildSpringConfiguration_Type" id="_2AGn4DqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISlangBuildSpringConfiguration_io_cloudslang_lang_tools_build_configuration_SlangBuildSpringConfiguration_Type" type="ISlangBuildSpringConfiguration_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="io_cloudslang_lang_tools_build_configuration_SlangBuildSpringConfiguration_Type" id="_2EWOsjqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISlangBuildSpringConfiguration_io_cloudslang_lang_tools_build_configuration_SlangBuildSpringConfiguration_Type" type="ISlangBuildSpringConfiguration_Type"/>
+    </components>
+    <interfaceTypes name="ISlangCliTestConfig_Type">
+      <signatures name="slangSourceService" type="io.cloudslang.lang.commons.services.api.SlangSourceService" id="_19WO0DqXEeiP29_qDiwNWQ"/>
+      <signatures name="compilerHelper" type="io.cloudslang.lang.cli.utils.CompilerHelper" id="_19WO0TqXEeiP29_qDiwNWQ"/>
+      <signatures name="scoreServices" type="io.cloudslang.lang.cli.services.ScoreServices" id="_19WO0jqXEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ISlangBuildSpringConfiguration_Type">
+      <signatures name="loggingSlangTestCaseEventListener" type="io.cloudslang.lang.tools.build.tester.parallel.report.LoggingSlangTestCaseEventListener" id="_2EA3gDqXEeiP29_qDiwNWQ"/>
+      <signatures name="parser" type="io.cloudslang.lang.tools.build.tester.parse.TestCasesYamlParser" id="_2EA3gTqXEeiP29_qDiwNWQ"/>
+      <signatures name="slangContentVerifier" type="io.cloudslang.lang.tools.build.verifier.SlangContentVerifier" id="_2EA3gjqXEeiP29_qDiwNWQ"/>
+      <signatures name="parallelTestCaseExecutorService" type="io.cloudslang.lang.tools.build.tester.parallel.services.ParallelTestCaseExecutorService" id="_2EA3gzqXEeiP29_qDiwNWQ"/>
+      <signatures name="reportGeneratorService" type="io.cloudslang.lang.tools.build.tester.parallel.report.SlangTestCaseRunReportGeneratorService" id="_2EA3hDqXEeiP29_qDiwNWQ"/>
+      <signatures name="testCaseEventDispatchService" type="io.cloudslang.lang.tools.build.tester.parallel.services.TestCaseEventDispatchService" id="_2EBekDqXEeiP29_qDiwNWQ"/>
+      <signatures name="runConfigurationService" type="io.cloudslang.lang.tools.build.tester.runconfiguration.TestRunInfoServiceImpl" id="_2EBekTqXEeiP29_qDiwNWQ"/>
+      <signatures name="staticValidator" type="io.cloudslang.lang.tools.build.validation.StaticValidator" id="_2EBekjqXEeiP29_qDiwNWQ"/>
+      <signatures name="slangBuild" type="io.cloudslang.lang.tools.build.SlangBuilder" id="_2EBekzqXEeiP29_qDiwNWQ"/>
+      <signatures name="slangTestRunner" type="io.cloudslang.lang.tools.build.tester.SlangTestRunner" id="_2EBelDqXEeiP29_qDiwNWQ"/>
+      <signatures name="loggingService" type="io.cloudslang.lang.logging.LoggingServiceImpl" id="_2EBelTqXEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

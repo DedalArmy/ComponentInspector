@@ -1,0 +1,6 @@
+dedal_diagram "elasticjob.elastic-job-lite-lifecycle"
+
+	repositories (
+
+		repository genRepo
+	)

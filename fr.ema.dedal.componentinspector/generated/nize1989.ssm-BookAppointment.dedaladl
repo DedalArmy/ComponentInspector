@@ -1,0 +1,6 @@
+dedal_diagram "nize1989.ssm-BookAppointment"
+
+	repositories (
+
+		repository genRepo
+	)

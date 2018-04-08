@@ -1,0 +1,6 @@
+dedal_diagram "code4craft.blackhole"
+
+	repositories (
+
+		repository genRepo
+	)

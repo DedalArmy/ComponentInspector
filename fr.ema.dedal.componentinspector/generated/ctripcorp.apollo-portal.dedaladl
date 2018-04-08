@@ -1,0 +1,6 @@
+dedal_diagram "ctripcorp.apollo-portal"
+
+	repositories (
+
+		repository genRepo
+	)

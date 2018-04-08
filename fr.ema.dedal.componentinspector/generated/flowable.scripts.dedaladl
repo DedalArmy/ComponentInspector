@@ -1,0 +1,6 @@
+dedal_diagram "flowable.scripts"
+
+	repositories (
+
+		repository genRepo
+	)

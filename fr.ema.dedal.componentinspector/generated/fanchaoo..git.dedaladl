@@ -1,0 +1,6 @@
+dedal_diagram "fanchaoo..git"
+
+	repositories (
+
+		repository genRepo
+	)

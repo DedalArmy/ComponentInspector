@@ -1,0 +1,6 @@
+dedal_diagram "goldmansachs..settings"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,6 @@
+dedal_diagram "LiuJishuai.ssm"
+
+	repositories (
+
+		repository genRepo
+	)

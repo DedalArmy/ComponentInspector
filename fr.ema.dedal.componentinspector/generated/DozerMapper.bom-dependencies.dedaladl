@@ -1,0 +1,6 @@
+dedal_diagram "DozerMapper.bom-dependencies"
+
+	repositories (
+
+		repository genRepo
+	)

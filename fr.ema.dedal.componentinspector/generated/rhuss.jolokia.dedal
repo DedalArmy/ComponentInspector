@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="rhuss.jolokia">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="rhuss.jolokia.jolokia.agent.jvm-spring.src.test.resources.spring-jolokia-plain-beans.xml_config">
+    <configComponents id="_W-hPEDqrEeiP29_qDiwNWQ"/>
+    <configComponents name="&quot;org.jolokia.jvmagent.spring.SpringJolokiaConfigHolder&quot;" id="_W-hPETqrEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="rhuss.jolokia.jolokia.agent.jvm-spring.src.test.resources.spring-jolokia-plain-beans.xml_asm" instantiates="//@architectureDescriptions[name='rhuss.jolokia.jolokia.agent.jvm-spring.src.test.resources.spring-jolokia-plain-beans.xml_config']">
+    <assmComponents name="server" id="_W-hPEjqrEeiP29_qDiwNWQ"/>
+    <assmComponents name="org.jolokia.jvmagent.spring.SpringJolokiaConfigHolder1" id="_W-hPEzqrEeiP29_qDiwNWQ" instantiates="_W-hPETqrEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="rhuss.jolokia.jolokia.agent.jvm-spring.target.test-classes.spring-jolokia-plain-beans.xml_config">
+    <configComponents id="_W_WVgDqrEeiP29_qDiwNWQ"/>
+    <configComponents name="&quot;org.jolokia.jvmagent.spring.SpringJolokiaConfigHolder&quot;" id="_W_W8kDqrEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="rhuss.jolokia.jolokia.agent.jvm-spring.target.test-classes.spring-jolokia-plain-beans.xml_asm" instantiates="//@architectureDescriptions[name='rhuss.jolokia.jolokia.agent.jvm-spring.target.test-classes.spring-jolokia-plain-beans.xml_config']">
+    <assmComponents name="server" id="_W_W8kTqrEeiP29_qDiwNWQ"/>
+    <assmComponents name="org.jolokia.jvmagent.spring.SpringJolokiaConfigHolder1" id="_W_W8kjqrEeiP29_qDiwNWQ" instantiates="_W_W8kDqrEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <repositories name="genRepo"/>
+</dedal:DedalDiagram>

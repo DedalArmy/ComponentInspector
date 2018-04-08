@@ -1,0 +1,6 @@
+dedal_diagram "google.jdk8-tests"
+
+	repositories (
+
+		repository genRepo
+	)

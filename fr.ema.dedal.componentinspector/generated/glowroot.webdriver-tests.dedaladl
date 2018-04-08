@@ -1,0 +1,6 @@
+dedal_diagram "glowroot.webdriver-tests"
+
+	repositories (
+
+		repository genRepo
+	)

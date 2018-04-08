@@ -1,0 +1,6 @@
+dedal_diagram "elasticjob.elastic-job-lite-core"
+
+	repositories (
+
+		repository genRepo
+	)

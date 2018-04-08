@@ -1,0 +1,6 @@
+dedal_diagram "crashub.target"
+
+	repositories (
+
+		repository genRepo
+	)

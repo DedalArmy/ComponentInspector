@@ -316,7 +316,7 @@ public class JarInspector {
 				Metrics.addNbConnexions();
 			} catch (Exception e)
 			{
-				logger.error("A problem occured while setting spec connection with error " + e.getCause());
+				logger.error("A problem occured while setting spec connection with error " + e.getCause(), e);
 			}
 		});
 	}
@@ -334,15 +334,20 @@ public class JarInspector {
 			{
 				for(Interaction inter2 : rserver.getCompInterfaces())
 				{
-					Class<?> icli = this.roleIntToType.get(tempRoleConnection.getClientCompElem()).get(tempRoleConnection.getClientIntElem());
-					Class<?> iserv = this.roleIntToType.get(rserver).get(inter2);
-					if(this.roleIntToType.get(rserver).get(inter2).isAssignableFrom(this.compIntToType.get(cserver).get(inter))
-							&& icli.isAssignableFrom(iserv))
-					{
-						tempRoleConnection.setServerCompElem(rserver);
-						tempRoleConnection.setServerIntElem(inter2);
-						return tempRoleConnection;
+					try {
+						Class<?> icli = this.roleIntToType.get(tempRoleConnection.getClientCompElem()).get(tempRoleConnection.getClientIntElem());
+						Class<?> iserv = this.roleIntToType.get(rserver).get(inter2);
+						if(this.roleIntToType.get(rserver).get(inter2).isAssignableFrom(this.compIntToType.get(cserver).get(inter))
+								&& icli.isAssignableFrom(iserv))
+						{
+							tempRoleConnection.setServerCompElem(rserver);
+							tempRoleConnection.setServerIntElem(inter2);
+							return tempRoleConnection;
+						}
+					} catch (NullPointerException e) {
+						logger.error("A problem occured when trying to find server role. -> " + e.getMessage());
 					}
+					
 				}
 			}
 		}
@@ -360,7 +365,7 @@ public class JarInspector {
 		{
 				for(Interaction inter2 : rclient.getCompInterfaces())
 				{
-					if(this.intToClass.get(iclient).equals(this.roleIntToType.get(rclient).get(inter2)))
+					if(this.intToClass.containsKey(iclient) && this.intToClass.get(iclient).equals(this.roleIntToType.get(rclient).get(inter2)))
 					{
 						tempRoleConnection.setClientCompElem(rclient);
 						tempRoleConnection.setClientIntElem(inter2);
@@ -447,18 +452,21 @@ public class JarInspector {
 			intServToCon.forEach((initServ, con) -> {
 				CompClass server = con.getServerClassElem();
 				Interaction finalServ = transform.get(con);
-				server.getCompInterfaces().add(finalServ);
-				con.setServerIntElem(finalServ);
-				if(!server.getCompInterfaces().contains(finalServ))
-					server.getCompInterfaces().add(finalServ);
-				if(!connected(initServ, config.getConfigConnections()))
+				if(finalServ!=null)
 				{
-					server.getCompInterfaces().remove(initServ);
+					server.getCompInterfaces().add(finalServ);
+					con.setServerIntElem(finalServ);
+					if(!server.getCompInterfaces().contains(finalServ))
+						server.getCompInterfaces().add(finalServ);
+					if(!connected(initServ, config.getConfigConnections()))
+					{
+						server.getCompInterfaces().remove(initServ);
+					}
 				}
 			});
 		}
 		catch (Exception e) {
-			logger.error("A problem occured when building interfaces with error " + e.getCause());
+			logger.error("A problem occured when building interfaces with error " + e.getCause(), e);
 		}
 	}
 
@@ -499,7 +507,7 @@ public class JarInspector {
 		if(clientClass != null)
 			server.getCompInterfaces().forEach(ci -> {
 				Class<?> ciClass = (this.compIntToType.get(server)).get(ci);
-				if(clientClass.isAssignableFrom(ciClass))
+				if(ciClass!=null && clientClass.isAssignableFrom(ciClass))
 				{
 					con.setServerIntElem(ci);
 				}
@@ -565,7 +573,7 @@ public class JarInspector {
 				result.putAll(buildAbstractInterfacesMultiplyConnected(config, server, client));
 			}
 			catch (Exception e) {
-				logger.error("A problem occured when setting most abstract provided interfaces with error " + e.getCause());
+				logger.error("A problem occured when setting most abstract provided interfaces with error " + e.getCause(), e);
 			}
 		}
 		else // a server interface of a connection cannot be connected to 0 client interface
@@ -592,7 +600,7 @@ public class JarInspector {
 				ClassConnection newConnection = this.findConnection(config, iserv, (Interface) icli);
 				Interface newServerInterface = assignNewServerInterface(iserv, (Interface) icli);
 				result.put(newConnection,newServerInterface);
-				if(server.equals(newServerInterface))
+				if(server!=null && server.equals(newServerInterface))
 					changed = true;
 			}
 			if(changed)
@@ -617,7 +625,8 @@ public class JarInspector {
 		ClassConnection result = new DedalFactoryImpl().createClassConnection();
 		for(ClassConnection cc : config.getConfigConnections())
 		{
-			if(iserv.equals(cc.getServerIntElem()) && icli.equals(cc.getClientIntElem()))
+			if(iserv != null && icli != null 
+					&& iserv.equals(cc.getServerIntElem()) && icli.equals(cc.getClientIntElem()))
 			{
 				return cc;
 			}
@@ -631,7 +640,7 @@ public class JarInspector {
 	 */
 	private Interface assignNewServerInterface(Interface iserv, Interface icli) {
 		Interface intToAssign = this.getMostSatisfyingInterface(iserv, icli);
-		if(!intToAssign.equals(iserv))
+		if(intToAssign!=null && !intToAssign.equals(iserv))
 		{
 			return intToAssign;
 		}
@@ -713,8 +722,9 @@ public class JarInspector {
 		{
 			for(Interaction i2 : value)
 			{
-				if(!((this.intToClass.get((Interface) i1).isAssignableFrom(this.intToClass.get((Interface) i2)))
-						||(this.intToClass.get((Interface) i2).isAssignableFrom(this.intToClass.get((Interface) i1)))))
+				if((this.intToClass.containsKey(i1) && this.intToClass.containsKey(i2)
+						&&!((this.intToClass.get((Interface) i1).isAssignableFrom(this.intToClass.get((Interface) i2)))
+						||(this.intToClass.get((Interface) i2).isAssignableFrom(this.intToClass.get((Interface) i1))))))
 					return Boolean.FALSE;
 			}
 		}
@@ -724,13 +734,16 @@ public class JarInspector {
 	private Interface getMostSatisfyingInterface(Interface iserv, Interface icli) {
 		Class<?> baseCliClass = this.intToClass.get(icli);
 		Interface result = iserv;
-		for(Interface i : this.candidateInterfaces.get(iserv))
+		if(iserv != null)
 		{
-			if(this.intToClass.get(i).isAssignableFrom(this.intToClass.get(result)) && baseCliClass.isAssignableFrom(this.intToClass.get(i)))
+			for(Interface i : this.candidateInterfaces.get(iserv))
 			{
-				if(this.intToClass.get(i).equals(baseCliClass))
-					return i;
-				result = i;	
+				if(this.intToClass.get(i).isAssignableFrom(this.intToClass.get(result)) && baseCliClass.isAssignableFrom(this.intToClass.get(i)))
+				{
+					if(this.intToClass.get(i).equals(baseCliClass))
+						return i;
+					result = i;	
+				}
 			}
 		}
 		return result;

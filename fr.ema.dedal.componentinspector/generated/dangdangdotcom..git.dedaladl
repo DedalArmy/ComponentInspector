@@ -1,0 +1,6 @@
+dedal_diagram "dangdangdotcom..git"
+
+	repositories (
+
+		repository genRepo
+	)

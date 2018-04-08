@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="hot13399.spring-mvc-mini">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="hot13399.spring-mvc-mini.spring-mvc-mini.src.main.webapp.WEB-INF.spring.root-context.xml_config" implements="//@architectureDescriptions[name='hot13399.spring-mvc-mini.spring-mvc-mini.src.main.webapp.WEB-INF.spring.root-context.xml_spec']">
+    <configComponents name="org.springframework.security.web.csrf.CsrfFilter" id="_M5FbsDqhEeiP29_qDiwNWQ" realizes="_NAu9qzqhEeiP29_qDiwNWQ" implements="_M-ECUDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfFilter" type="ICsrfFilter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestMatcher_CsrfFilter" direction="REQUIRED" type="RequestMatcher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_CsrfFilter" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfTokenRepository_CsrfFilter" direction="REQUIRED" type="CsrfTokenRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestMatcher_CsrfFilter" direction="REQUIRED" type="RequestMatcher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAccessDeniedHandler_CsrfFilter" direction="REQUIRED" type="AccessDeniedHandler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfFilter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfFilter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfFilter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfFilter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_CsrfFilter" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfFilter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfFilter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfFilter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfFilter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyResolver_CsrfFilter" direction="REQUIRED" type="PropertyResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironment_CsrfFilter" direction="REQUIRED" type="Environment"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServletContext_CsrfFilter" direction="REQUIRED" type="ServletContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_CsrfFilter" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_CsrfFilter" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_CsrfFilter" direction="REQUIRED" type="Set"/>
+      <attributes name="DEFAULT_CSRF_MATCHER" type="org.springframework.security.web.util.matcher.RequestMatcher"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="tokenRepository" type="org.springframework.security.web.csrf.CsrfTokenRepository"/>
+      <attributes name="requireCsrfProtectionMatcher" type="org.springframework.security.web.util.matcher.RequestMatcher"/>
+      <attributes name="accessDeniedHandler" type="org.springframework.security.web.access.AccessDeniedHandler"/>
+      <attributes name="ALREADY_FILTERED_SUFFIX" type="java.lang.String"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="beanName" type="java.lang.String"/>
+      <attributes name="environment" type="org.springframework.core.env.Environment"/>
+      <attributes name="servletContext" type="javax.servlet.ServletContext"/>
+      <attributes name="filterConfig" type="javax.servlet.FilterConfig"/>
+      <attributes name="requiredProperties" type="java.util.Set"/>
+    </configComponents>
+    <configComponents name="org.springframework.security.web.servlet.support.csrf.CsrfRequestDataValueProcessor" id="_M5FbsTqhEeiP29_qDiwNWQ" realizes="_NAu8QDqhEeiP29_qDiwNWQ" implements="_NAuUwDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestDataValueProcessor_CsrfRequestDataValueProcessor" type="RequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfRequestDataValueProcessor" type="ICsrfRequestDataValueProcessor_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfRequestDataValueProcessor" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPattern_CsrfRequestDataValueProcessor" direction="REQUIRED" type="IPattern_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfRequestDataValueProcessor" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfRequestDataValueProcessor" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfRequestDataValueProcessor" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfRequestDataValueProcessor" direction="REQUIRED" type="IString_Type"/>
+      <attributes name="DISABLE_CSRF_TOKEN_PATTERN" type="java.util.regex.Pattern"/>
+      <attributes name="DISABLE_CSRF_TOKEN_ATTR" type="java.lang.String"/>
+    </configComponents>
+    <configConnections refID="_M5FbsjqhEeiP29_qDiwNWQ" clientClassElem="_M5FbsDqhEeiP29_qDiwNWQ" serverClassElem="_M5FbszqhEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="hot13399.spring-mvc-mini.spring-mvc-mini.src.main.webapp.WEB-INF.spring.root-context.xml_asm" instantiates="//@architectureDescriptions[name='hot13399.spring-mvc-mini.spring-mvc-mini.src.main.webapp.WEB-INF.spring.root-context.xml_config']">
+    <assmComponents name="csrfFilter" id="_M5FbtDqhEeiP29_qDiwNWQ" instantiates="_M5FbsDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfFilter_csrfFilter" type="ICsrfFilter_Type" instantiates="ICsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestMatcher_CsrfFilter_csrfFilter" direction="REQUIRED" type="RequestMatcher" instantiates="IRequestMatcher_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_CsrfFilter_csrfFilter" direction="REQUIRED" type="Log" instantiates="ILog_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfTokenRepository_CsrfFilter_csrfFilter" direction="REQUIRED" type="CsrfTokenRepository" instantiates="ICsrfTokenRepository_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestMatcher_CsrfFilter_csrfFilter" direction="REQUIRED" type="RequestMatcher" instantiates="IRequestMatcher_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAccessDeniedHandler_CsrfFilter_csrfFilter" direction="REQUIRED" type="AccessDeniedHandler" instantiates="IAccessDeniedHandler_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfFilter_csrfFilter" direction="REQUIRED" instantiates="null_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfFilter_csrfFilter" direction="REQUIRED" type="Comparable" instantiates="IComparable_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfFilter_csrfFilter" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfFilter_csrfFilter" direction="REQUIRED" type="IString_Type" instantiates="IString_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_CsrfFilter_csrfFilter" direction="REQUIRED" type="Log" instantiates="ILog_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfFilter_csrfFilter" direction="REQUIRED" instantiates="null_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfFilter_csrfFilter" direction="REQUIRED" type="Comparable" instantiates="IComparable_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfFilter_csrfFilter" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfFilter_csrfFilter" direction="REQUIRED" type="IString_Type" instantiates="IString_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyResolver_CsrfFilter_csrfFilter" direction="REQUIRED" type="PropertyResolver" instantiates="IPropertyResolver_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironment_CsrfFilter_csrfFilter" direction="REQUIRED" type="Environment" instantiates="IEnvironment_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServletContext_CsrfFilter_csrfFilter" direction="REQUIRED" type="ServletContext" instantiates="IServletContext_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_CsrfFilter_csrfFilter" direction="REQUIRED" type="FilterConfig" instantiates="IFilterConfig_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_CsrfFilter_csrfFilter" direction="REQUIRED" type="Collection" instantiates="ICollection_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_CsrfFilter_csrfFilter" direction="REQUIRED" type="Set" instantiates="ISet_CsrfFilter"/>
+    </assmComponents>
+    <assmComponents name="requestDataValueProcessor" id="_M5FbtTqhEeiP29_qDiwNWQ" instantiates="_M5FbsTqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestDataValueProcessor_CsrfRequestDataValueProcessor_requestDataValueProcessor" type="RequestDataValueProcessor" instantiates="IRequestDataValueProcessor_CsrfRequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfRequestDataValueProcessor_requestDataValueProcessor" type="ICsrfRequestDataValueProcessor_Type" instantiates="ICsrfRequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfRequestDataValueProcessor_requestDataValueProcessor" direction="REQUIRED" instantiates="null_CsrfRequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPattern_CsrfRequestDataValueProcessor_requestDataValueProcessor" direction="REQUIRED" type="IPattern_Type" instantiates="IPattern_CsrfRequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfRequestDataValueProcessor_requestDataValueProcessor" direction="REQUIRED" instantiates="null_CsrfRequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfRequestDataValueProcessor_requestDataValueProcessor" direction="REQUIRED" type="Comparable" instantiates="IComparable_CsrfRequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfRequestDataValueProcessor_requestDataValueProcessor" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_CsrfRequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfRequestDataValueProcessor_requestDataValueProcessor" direction="REQUIRED" type="IString_Type" instantiates="IString_CsrfRequestDataValueProcessor"/>
+    </assmComponents>
+    <assemblyConnections refID="_M5GCwDqhEeiP29_qDiwNWQ" clientInstElem="_M5FbtDqhEeiP29_qDiwNWQ" serverInstElem="_M5GCwTqhEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="hot13399.spring-mvc-mini.spring-mvc-mini.src.main.webapp.WEB-INF.spring.root-context.xml_spec">
+    <specComponents name="CsrfRequestDataValueProcessor_role" id="_NAu8QDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestDataValueProcessorCsrfRequestDataValueProcessor_role" type="RequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfRequestDataValueProcessorCsrfRequestDataValueProcessor_role" type="ICsrfRequestDataValueProcessor_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCsrfRequestDataValueProcessor_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPatternCsrfRequestDataValueProcessor_role" direction="REQUIRED" type="IPattern_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCsrfRequestDataValueProcessor_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableCsrfRequestDataValueProcessor_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceCsrfRequestDataValueProcessor_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringCsrfRequestDataValueProcessor_role" direction="REQUIRED" type="IString_Type"/>
+    </specComponents>
+    <specComponents name="CsrfFilter_role" id="_NAu9qzqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfFilterCsrfFilter_role" type="ICsrfFilter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestMatcherCsrfFilter_role" direction="REQUIRED" type="RequestMatcher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogCsrfFilter_role" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfTokenRepositoryCsrfFilter_role" direction="REQUIRED" type="CsrfTokenRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestMatcherCsrfFilter_role" direction="REQUIRED" type="RequestMatcher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAccessDeniedHandlerCsrfFilter_role" direction="REQUIRED" type="AccessDeniedHandler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCsrfFilter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableCsrfFilter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceCsrfFilter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringCsrfFilter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogCsrfFilter_role" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCsrfFilter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableCsrfFilter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceCsrfFilter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringCsrfFilter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyResolverCsrfFilter_role" direction="REQUIRED" type="PropertyResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCsrfFilter_role" direction="REQUIRED" type="Environment"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServletContextCsrfFilter_role" direction="REQUIRED" type="ServletContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfigCsrfFilter_role" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionCsrfFilter_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISetCsrfFilter_role" direction="REQUIRED" type="Set"/>
+    </specComponents>
+    <specConnections refID="_NAwxxjqhEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="hot13399.spring-mvc-mini.spring-mvc-mini.target.spring-mvc-mini.WEB-INF.spring.root-context.xml_config" implements="//@architectureDescriptions[name='hot13399.spring-mvc-mini.spring-mvc-mini.target.spring-mvc-mini.WEB-INF.spring.root-context.xml_spec']">
+    <configComponents name="org.springframework.security.web.csrf.CsrfFilter" id="_NCczEDqhEeiP29_qDiwNWQ" realizes="_NCeCnTqhEeiP29_qDiwNWQ" implements="_NCdaIDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfFilter" type="ICsrfFilter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestMatcher_CsrfFilter" direction="REQUIRED" type="RequestMatcher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_CsrfFilter" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfTokenRepository_CsrfFilter" direction="REQUIRED" type="CsrfTokenRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestMatcher_CsrfFilter" direction="REQUIRED" type="RequestMatcher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAccessDeniedHandler_CsrfFilter" direction="REQUIRED" type="AccessDeniedHandler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfFilter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfFilter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfFilter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfFilter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_CsrfFilter" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfFilter" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfFilter" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfFilter" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfFilter" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyResolver_CsrfFilter" direction="REQUIRED" type="PropertyResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironment_CsrfFilter" direction="REQUIRED" type="Environment"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServletContext_CsrfFilter" direction="REQUIRED" type="ServletContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_CsrfFilter" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_CsrfFilter" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_CsrfFilter" direction="REQUIRED" type="Set"/>
+      <attributes name="DEFAULT_CSRF_MATCHER" type="org.springframework.security.web.util.matcher.RequestMatcher"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="tokenRepository" type="org.springframework.security.web.csrf.CsrfTokenRepository"/>
+      <attributes name="requireCsrfProtectionMatcher" type="org.springframework.security.web.util.matcher.RequestMatcher"/>
+      <attributes name="accessDeniedHandler" type="org.springframework.security.web.access.AccessDeniedHandler"/>
+      <attributes name="ALREADY_FILTERED_SUFFIX" type="java.lang.String"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="beanName" type="java.lang.String"/>
+      <attributes name="environment" type="org.springframework.core.env.Environment"/>
+      <attributes name="servletContext" type="javax.servlet.ServletContext"/>
+      <attributes name="filterConfig" type="javax.servlet.FilterConfig"/>
+      <attributes name="requiredProperties" type="java.util.Set"/>
+    </configComponents>
+    <configComponents name="org.springframework.security.web.servlet.support.csrf.CsrfRequestDataValueProcessor" id="_NCczETqhEeiP29_qDiwNWQ" realizes="_NCf38zqhEeiP29_qDiwNWQ" implements="_NCeBTzqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestDataValueProcessor_CsrfRequestDataValueProcessor" type="RequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfRequestDataValueProcessor" type="ICsrfRequestDataValueProcessor_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfRequestDataValueProcessor" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPattern_CsrfRequestDataValueProcessor" direction="REQUIRED" type="IPattern_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfRequestDataValueProcessor" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfRequestDataValueProcessor" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfRequestDataValueProcessor" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfRequestDataValueProcessor" direction="REQUIRED" type="IString_Type"/>
+      <attributes name="DISABLE_CSRF_TOKEN_PATTERN" type="java.util.regex.Pattern"/>
+      <attributes name="DISABLE_CSRF_TOKEN_ATTR" type="java.lang.String"/>
+    </configComponents>
+    <configConnections refID="_NCczEjqhEeiP29_qDiwNWQ" clientClassElem="_NCczEDqhEeiP29_qDiwNWQ" serverClassElem="_NCczEzqhEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="hot13399.spring-mvc-mini.spring-mvc-mini.target.spring-mvc-mini.WEB-INF.spring.root-context.xml_asm" instantiates="//@architectureDescriptions[name='hot13399.spring-mvc-mini.spring-mvc-mini.target.spring-mvc-mini.WEB-INF.spring.root-context.xml_config']">
+    <assmComponents name="csrfFilter" id="_NCczFDqhEeiP29_qDiwNWQ" instantiates="_NCczEDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfFilter_csrfFilter" type="ICsrfFilter_Type" instantiates="ICsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestMatcher_CsrfFilter_csrfFilter" direction="REQUIRED" type="RequestMatcher" instantiates="IRequestMatcher_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_CsrfFilter_csrfFilter" direction="REQUIRED" type="Log" instantiates="ILog_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfTokenRepository_CsrfFilter_csrfFilter" direction="REQUIRED" type="CsrfTokenRepository" instantiates="ICsrfTokenRepository_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestMatcher_CsrfFilter_csrfFilter" direction="REQUIRED" type="RequestMatcher" instantiates="IRequestMatcher_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAccessDeniedHandler_CsrfFilter_csrfFilter" direction="REQUIRED" type="AccessDeniedHandler" instantiates="IAccessDeniedHandler_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfFilter_csrfFilter" direction="REQUIRED" instantiates="null_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfFilter_csrfFilter" direction="REQUIRED" type="Comparable" instantiates="IComparable_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfFilter_csrfFilter" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfFilter_csrfFilter" direction="REQUIRED" type="IString_Type" instantiates="IString_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_CsrfFilter_csrfFilter" direction="REQUIRED" type="Log" instantiates="ILog_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfFilter_csrfFilter" direction="REQUIRED" instantiates="null_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfFilter_csrfFilter" direction="REQUIRED" type="Comparable" instantiates="IComparable_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfFilter_csrfFilter" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfFilter_csrfFilter" direction="REQUIRED" type="IString_Type" instantiates="IString_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyResolver_CsrfFilter_csrfFilter" direction="REQUIRED" type="PropertyResolver" instantiates="IPropertyResolver_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironment_CsrfFilter_csrfFilter" direction="REQUIRED" type="Environment" instantiates="IEnvironment_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServletContext_CsrfFilter_csrfFilter" direction="REQUIRED" type="ServletContext" instantiates="IServletContext_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_CsrfFilter_csrfFilter" direction="REQUIRED" type="FilterConfig" instantiates="IFilterConfig_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_CsrfFilter_csrfFilter" direction="REQUIRED" type="Collection" instantiates="ICollection_CsrfFilter"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_CsrfFilter_csrfFilter" direction="REQUIRED" type="Set" instantiates="ISet_CsrfFilter"/>
+    </assmComponents>
+    <assmComponents name="requestDataValueProcessor" id="_NCczFTqhEeiP29_qDiwNWQ" instantiates="_NCczETqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestDataValueProcessor_CsrfRequestDataValueProcessor_requestDataValueProcessor" type="RequestDataValueProcessor" instantiates="IRequestDataValueProcessor_CsrfRequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfRequestDataValueProcessor_requestDataValueProcessor" type="ICsrfRequestDataValueProcessor_Type" instantiates="ICsrfRequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfRequestDataValueProcessor_requestDataValueProcessor" direction="REQUIRED" instantiates="null_CsrfRequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPattern_CsrfRequestDataValueProcessor_requestDataValueProcessor" direction="REQUIRED" type="IPattern_Type" instantiates="IPattern_CsrfRequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfRequestDataValueProcessor_requestDataValueProcessor" direction="REQUIRED" instantiates="null_CsrfRequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfRequestDataValueProcessor_requestDataValueProcessor" direction="REQUIRED" type="Comparable" instantiates="IComparable_CsrfRequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfRequestDataValueProcessor_requestDataValueProcessor" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_CsrfRequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfRequestDataValueProcessor_requestDataValueProcessor" direction="REQUIRED" type="IString_Type" instantiates="IString_CsrfRequestDataValueProcessor"/>
+    </assmComponents>
+    <assemblyConnections refID="_NCczFjqhEeiP29_qDiwNWQ" clientInstElem="_NCczFDqhEeiP29_qDiwNWQ" serverInstElem="_NCczFzqhEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="hot13399.spring-mvc-mini.spring-mvc-mini.target.spring-mvc-mini.WEB-INF.spring.root-context.xml_spec">
+    <specComponents name="CsrfFilter_role" id="_NCeCnTqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfFilterCsrfFilter_role" type="ICsrfFilter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestMatcherCsrfFilter_role" direction="REQUIRED" type="RequestMatcher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogCsrfFilter_role" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfTokenRepositoryCsrfFilter_role" direction="REQUIRED" type="CsrfTokenRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestMatcherCsrfFilter_role" direction="REQUIRED" type="RequestMatcher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAccessDeniedHandlerCsrfFilter_role" direction="REQUIRED" type="AccessDeniedHandler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCsrfFilter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableCsrfFilter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceCsrfFilter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringCsrfFilter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogCsrfFilter_role" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCsrfFilter_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableCsrfFilter_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceCsrfFilter_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringCsrfFilter_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyResolverCsrfFilter_role" direction="REQUIRED" type="PropertyResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironmentCsrfFilter_role" direction="REQUIRED" type="Environment"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServletContextCsrfFilter_role" direction="REQUIRED" type="ServletContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfigCsrfFilter_role" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionCsrfFilter_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISetCsrfFilter_role" direction="REQUIRED" type="Set"/>
+    </specComponents>
+    <specComponents name="CsrfRequestDataValueProcessor_role" id="_NCf38zqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestDataValueProcessorCsrfRequestDataValueProcessor_role" type="RequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfRequestDataValueProcessorCsrfRequestDataValueProcessor_role" type="ICsrfRequestDataValueProcessor_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCsrfRequestDataValueProcessor_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPatternCsrfRequestDataValueProcessor_role" direction="REQUIRED" type="IPattern_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCsrfRequestDataValueProcessor_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableCsrfRequestDataValueProcessor_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceCsrfRequestDataValueProcessor_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringCsrfRequestDataValueProcessor_role" direction="REQUIRED" type="IString_Type"/>
+    </specComponents>
+    <specConnections refID="_NCf5XjqhEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="org_springframework_security_web_csrf_CsrfFilter_Type" id="_M-ECUDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" type="ICsrfFilter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestMatcher_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="RequestMatcher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfTokenRepository_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="CsrfTokenRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestMatcher_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="RequestMatcher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAccessDeniedHandler_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="AccessDeniedHandler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyResolver_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="PropertyResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironment_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="Environment"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServletContext_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="ServletContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="Set"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" id="_NAuUwDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestDataValueProcessor_CsrfRequestDataValueProcessor_org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" type="RequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfRequestDataValueProcessor_org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" type="ICsrfRequestDataValueProcessor_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfRequestDataValueProcessor_org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPattern_CsrfRequestDataValueProcessor_org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" direction="REQUIRED" type="IPattern_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfRequestDataValueProcessor_org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfRequestDataValueProcessor_org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfRequestDataValueProcessor_org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfRequestDataValueProcessor_org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" direction="REQUIRED" type="IString_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_security_web_csrf_CsrfFilter_Type" id="_NCdaIDqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" type="ICsrfFilter_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestMatcher_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="RequestMatcher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfTokenRepository_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="CsrfTokenRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestMatcher_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="RequestMatcher"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAccessDeniedHandler_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="AccessDeniedHandler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyResolver_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="PropertyResolver"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEnvironment_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="Environment"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IServletContext_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="ServletContext"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFilterConfig_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="FilterConfig"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_CsrfFilter_org_springframework_security_web_csrf_CsrfFilter_Type" direction="REQUIRED" type="Set"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" id="_NCeBTzqhEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IRequestDataValueProcessor_CsrfRequestDataValueProcessor_org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" type="RequestDataValueProcessor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICsrfRequestDataValueProcessor_org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" type="ICsrfRequestDataValueProcessor_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfRequestDataValueProcessor_org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPattern_CsrfRequestDataValueProcessor_org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" direction="REQUIRED" type="IPattern_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_CsrfRequestDataValueProcessor_org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_CsrfRequestDataValueProcessor_org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_CsrfRequestDataValueProcessor_org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_CsrfRequestDataValueProcessor_org_springframework_security_web_servlet_support_csrf_CsrfRequestDataValueProcessor_Type" direction="REQUIRED" type="IString_Type"/>
+    </components>
+    <interfaceTypes name="ICsrfFilter_Type">
+      <signatures name="init" type="void" id="_NAWhUDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.FilterConfig" id="_NAWhUTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="destroy" type="void" id="_NAWhUjqhEeiP29_qDiwNWQ"/>
+      <signatures name="doFilter" type="void" id="_NAWhUzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletRequest" id="_NAWhVDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.ServletResponse" id="_NAWhVTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.servlet.FilterChain" id="_NAWhVjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setBeanName" type="void" id="_NAWhVzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAWhWDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEnvironment" type="void" id="_NAWhWTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.core.env.Environment" id="_NAWhWjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEnvironment" type="org.springframework.core.env.Environment" id="_NAWhWzqhEeiP29_qDiwNWQ"/>
+      <signatures name="setServletContext" type="void" id="_NAWhXDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletContext" id="_NAWhXTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="afterPropertiesSet" type="void" id="_NAWhXjqhEeiP29_qDiwNWQ"/>
+      <signatures name="destroy" type="void" id="_NAWhXzqhEeiP29_qDiwNWQ"/>
+      <signatures name="createEnvironment" type="org.springframework.core.env.Environment" id="_NAWhYDqhEeiP29_qDiwNWQ"/>
+      <signatures name="getFilterName" type="java.lang.String" id="_NAWhYTqhEeiP29_qDiwNWQ"/>
+      <signatures name="addRequiredProperty" type="void" id="_NAWhYjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAWhYzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getServletContext" type="javax.servlet.ServletContext" id="_NAWhZDqhEeiP29_qDiwNWQ"/>
+      <signatures name="initFilterBean" type="void" id="_NAWhZTqhEeiP29_qDiwNWQ"/>
+      <signatures name="getFilterConfig" type="javax.servlet.FilterConfig" id="_NAWhZjqhEeiP29_qDiwNWQ"/>
+      <signatures name="initBeanWrapper" type="void" id="_NAWhZzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.beans.BeanWrapper" id="_NAWhaDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAlreadyFilteredAttributeName" type="java.lang.String" id="_NAWhaTqhEeiP29_qDiwNWQ"/>
+      <signatures name="shouldNotFilterErrorDispatch" type="boolean" id="_NAWhajqhEeiP29_qDiwNWQ"/>
+      <signatures name="shouldNotFilterAsyncDispatch" type="boolean" id="_NAWhazqhEeiP29_qDiwNWQ"/>
+      <signatures name="doFilterInternal" type="void" id="_NAWhbDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAWhbTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletResponse" id="_NAWhbjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.servlet.FilterChain" id="_NAWhbzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="skipDispatch" type="boolean" id="_NAWhcDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAWhcTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAsyncStarted" type="boolean" id="_NAWhcjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAWhczqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAsyncDispatch" type="boolean" id="_NAWhdDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAWhdTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="shouldNotFilter" type="boolean" id="_NAWhdjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAWhdzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAccessDeniedHandler" type="void" id="_NAWheDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.security.web.access.AccessDeniedHandler" id="_NAWheTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setRequireCsrfProtectionMatcher" type="void" id="_NAWhejqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.security.web.util.matcher.RequestMatcher" id="_NAWhezqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IOncePerRequestFilter_Type">
+      <signatures name="init" type="void" id="_NAWhfDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.FilterConfig" id="_NAWhfTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="destroy" type="void" id="_NAWhfjqhEeiP29_qDiwNWQ"/>
+      <signatures name="doFilter" type="void" id="_NAWhfzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletRequest" id="_NAWhgDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.ServletResponse" id="_NAWhgTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.servlet.FilterChain" id="_NAWhgjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setBeanName" type="void" id="_NAWhgzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAWhhDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEnvironment" type="void" id="_NAWhhTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.core.env.Environment" id="_NAWhhjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEnvironment" type="org.springframework.core.env.Environment" id="_NAWhhzqhEeiP29_qDiwNWQ"/>
+      <signatures name="setServletContext" type="void" id="_NAWhiDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletContext" id="_NAWhiTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="afterPropertiesSet" type="void" id="_NAWhijqhEeiP29_qDiwNWQ"/>
+      <signatures name="destroy" type="void" id="_NAWhizqhEeiP29_qDiwNWQ"/>
+      <signatures name="createEnvironment" type="org.springframework.core.env.Environment" id="_NAWhjDqhEeiP29_qDiwNWQ"/>
+      <signatures name="getFilterName" type="java.lang.String" id="_NAWhjTqhEeiP29_qDiwNWQ"/>
+      <signatures name="addRequiredProperty" type="void" id="_NAWhjjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAWhjzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getServletContext" type="javax.servlet.ServletContext" id="_NAWhkDqhEeiP29_qDiwNWQ"/>
+      <signatures name="initFilterBean" type="void" id="_NAWhkTqhEeiP29_qDiwNWQ"/>
+      <signatures name="getFilterConfig" type="javax.servlet.FilterConfig" id="_NAWhkjqhEeiP29_qDiwNWQ"/>
+      <signatures name="initBeanWrapper" type="void" id="_NAWhkzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.beans.BeanWrapper" id="_NAWhlDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAlreadyFilteredAttributeName" type="java.lang.String" id="_NAWhlTqhEeiP29_qDiwNWQ"/>
+      <signatures name="shouldNotFilterErrorDispatch" type="boolean" id="_NAWhljqhEeiP29_qDiwNWQ"/>
+      <signatures name="shouldNotFilterAsyncDispatch" type="boolean" id="_NAWhlzqhEeiP29_qDiwNWQ"/>
+      <signatures name="doFilterInternal" type="void" id="_NAWhmDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAWhmTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletResponse" id="_NAWhmjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.servlet.FilterChain" id="_NAWhmzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="skipDispatch" type="boolean" id="_NAWhnDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAWhnTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAsyncStarted" type="boolean" id="_NAWhnjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAWhnzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAsyncDispatch" type="boolean" id="_NAWhoDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAWhoTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="shouldNotFilter" type="boolean" id="_NAWhojqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAWhozqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Filter">
+      <signatures name="init" type="void" id="_NAWhpDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.FilterConfig" id="_NAWhpTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="destroy" type="void" id="_NAWhpjqhEeiP29_qDiwNWQ"/>
+      <signatures name="doFilter" type="void" id="_NAWhpzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletRequest" id="_NAWhqDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.ServletResponse" id="_NAWhqTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.servlet.FilterChain" id="_NAWhqjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="BeanNameAware">
+      <signatures name="setBeanName" type="void" id="_NAWhqzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAWhrDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="EnvironmentAware">
+      <signatures name="setEnvironment" type="void" id="_NAWhrTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.core.env.Environment" id="_NAWhrjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="EnvironmentCapable">
+      <signatures name="getEnvironment" type="org.springframework.core.env.Environment" id="_NAWhrzqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ServletContextAware">
+      <signatures name="setServletContext" type="void" id="_NAWhsDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletContext" id="_NAWhsTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="InitializingBean">
+      <signatures name="afterPropertiesSet" type="void" id="_NAWhsjqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="DisposableBean">
+      <signatures name="destroy" type="void" id="_NAWhszqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IGenericFilterBean_Type">
+      <signatures name="init" type="void" id="_NAWhtDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.FilterConfig" id="_NAWhtTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="destroy" type="void" id="_NAWhtjqhEeiP29_qDiwNWQ"/>
+      <signatures name="doFilter" type="void" id="_NAWhtzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletRequest" id="_NAWhuDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.ServletResponse" id="_NAWhuTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.servlet.FilterChain" id="_NAWhujqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setBeanName" type="void" id="_NAWhuzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAWhvDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEnvironment" type="void" id="_NAWhvTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.core.env.Environment" id="_NAWhvjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEnvironment" type="org.springframework.core.env.Environment" id="_NAWhvzqhEeiP29_qDiwNWQ"/>
+      <signatures name="setServletContext" type="void" id="_NAWhwDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.ServletContext" id="_NAWhwTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="afterPropertiesSet" type="void" id="_NAWhwjqhEeiP29_qDiwNWQ"/>
+      <signatures name="destroy" type="void" id="_NAWhwzqhEeiP29_qDiwNWQ"/>
+      <signatures name="createEnvironment" type="org.springframework.core.env.Environment" id="_NAWhxDqhEeiP29_qDiwNWQ"/>
+      <signatures name="getFilterName" type="java.lang.String" id="_NAWhxTqhEeiP29_qDiwNWQ"/>
+      <signatures name="addRequiredProperty" type="void" id="_NAWhxjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAWhxzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getServletContext" type="javax.servlet.ServletContext" id="_NAWhyDqhEeiP29_qDiwNWQ"/>
+      <signatures name="initFilterBean" type="void" id="_NAWhyTqhEeiP29_qDiwNWQ"/>
+      <signatures name="getFilterConfig" type="javax.servlet.FilterConfig" id="_NAWhyjqhEeiP29_qDiwNWQ"/>
+      <signatures name="initBeanWrapper" type="void" id="_NAWhyzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.beans.BeanWrapper" id="_NAWhzDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="RequestMatcher">
+      <signatures name="matches" type="boolean" id="_NAWh3TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAWh3jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Log">
+      <signatures name="debug" type="void" id="_NAWh3zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAWh4DqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_NAWh4TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_NAWh4jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAWh4zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_NAWh5DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAWh5TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_NAWh5jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAWh5zqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_NAWh6DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_NAWh6TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAWh6jqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_NAWh6zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_NAWh7DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAWh7TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_NAWh7jqhEeiP29_qDiwNWQ"/>
+      <signatures name="info" type="void" id="_NAWh7zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAWh8DqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_NAWh8TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_NAWh8jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAWh8zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTraceEnabled" type="boolean" id="_NAWh9DqhEeiP29_qDiwNWQ"/>
+      <signatures name="warn" type="void" id="_NAWh9TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAWh9jqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_NAWh9zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_NAWh-DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAWh-TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isDebugEnabled" type="boolean" id="_NAWh-jqhEeiP29_qDiwNWQ"/>
+      <signatures name="fatal" type="void" id="_NAWh-zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAWh_DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="fatal" type="void" id="_NAWh_TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAWh_jqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_NAWh_zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isErrorEnabled" type="boolean" id="_NAWiADqhEeiP29_qDiwNWQ"/>
+      <signatures name="isFatalEnabled" type="boolean" id="_NAWiATqhEeiP29_qDiwNWQ"/>
+      <signatures name="isWarnEnabled" type="boolean" id="_NAWiAjqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="CsrfTokenRepository">
+      <signatures name="generateToken" type="org.springframework.security.web.csrf.CsrfToken" id="_NAXIYDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAXIYTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="saveToken" type="void" id="_NAXIYjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.security.web.csrf.CsrfToken" id="_NAXIYzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletRequest" id="_NAXIZDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="javax.servlet.http.HttpServletResponse" id="_NAXIZTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="loadToken" type="org.springframework.security.web.csrf.CsrfToken" id="_NAXIZjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAXIZzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="AccessDeniedHandler">
+      <signatures name="handle" type="void" id="_NAXIajqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAXIazqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletResponse" id="_NAXIbDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.security.access.AccessDeniedException" id="_NAXIbTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Comparable">
+      <signatures name="compareTo" type="int" id="_NAXIbjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAXIbzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="CharSequence">
+      <signatures name="toString" type="java.lang.String" id="_NAXIcDqhEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_NAXIcTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAXIcjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_NAXIczqhEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_NAXIdDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAXIdTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAXIdjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_NAXIdzqhEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_NAXIeDqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IString_Type">
+      <signatures name="compareTo" type="int" id="_NAXIeTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAXIejqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_NAXIezqhEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_NAXIfDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAXIfTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_NAXIfjqhEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_NAXIfzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAXIgDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAXIgTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_NAXIgjqhEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_NAXIgzqhEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$chars$0" type="java.util.Spliterator.OfInt" id="_NAXIhDqhEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$codePoints$1" type="java.util.Spliterator.OfInt" id="_NAXIhTqhEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_NAXIhjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAXIhzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_NAXIiDqhEeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_NAXIiTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXIijqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAXIizqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueOf" type="java.lang.String" id="_NAXIjDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAXIjTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkBounds" type="void" id="_NAXIjjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_NAXIjzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAXIkDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_NAXIkTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointAt" type="int" id="_NAXIkjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAXIkzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointBefore" type="int" id="_NAXIlDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAXIlTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointCount" type="int" id="_NAXIljqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAXIlzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAXImDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compareToIgnoreCase" type="int" id="_NAXImTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXImjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="concat" type="java.lang.String" id="_NAXImzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXInDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contains" type="boolean" id="_NAXInTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_NAXInjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contentEquals" type="boolean" id="_NAXInzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_NAXIoDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyValueOf" type="java.lang.String" id="_NAXIoTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char[]" id="_NAXIojqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="endsWith" type="boolean" id="_NAXIozqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXIpDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equalsIgnoreCase" type="boolean" id="_NAXIpTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXIpjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="format" type="java.lang.String" id="_NAXIpzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_NAXIqDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAXIqTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_NAXIqjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBytes" type="void" id="_NAXIqzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAXIrDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAXIrTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_NAXIrjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_NAXIrzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChars" type="void" id="_NAXIsDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAXIsTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAXIsjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="char[]" id="_NAXIszqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_NAXItDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="indexOfSupplementary" type="int" id="_NAXItTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAXItjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAXItzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="intern" type="java.lang.String" id="_NAXIuDqhEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_NAXIuTqhEeiP29_qDiwNWQ"/>
+      <signatures name="join" type="java.lang.String" id="_NAXIujqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_NAXIuzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.CharSequence[]" id="_NAXIvDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOf" type="int" id="_NAXIvTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAXIvjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOfSupplementary" type="int" id="_NAXIvzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAXIwDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAXIwTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="matches" type="boolean" id="_NAXIwjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXIwzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nonSyncContentEquals" type="boolean" id="_NAXIxDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.AbstractStringBuilder" id="_NAXIxTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="offsetByCodePoints" type="int" id="_NAXIxjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAXIxzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAXIyDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="regionMatches" type="boolean" id="_NAXIyTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAXIyjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAXIyzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_NAXIzDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_NAXIzTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="java.lang.String" id="_NAXIzjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char" id="_NAXIzzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="char" id="_NAXI0DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="java.lang.String" id="_NAXI0TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXI0jqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAXI0zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceFirst" type="java.lang.String" id="_NAXI1DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXI1TqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAXI1jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="split" type="java.lang.String[]" id="_NAXI1zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXI2DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="startsWith" type="boolean" id="_NAXI2TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXI2jqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAXI2zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="substring" type="java.lang.String" id="_NAXI3DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAXI3TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCharArray" type="char[]" id="_NAXI3jqhEeiP29_qDiwNWQ"/>
+      <signatures name="toLowerCase" type="java.lang.String" id="_NAXI3zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_NAXI4DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUpperCase" type="java.lang.String" id="_NAXI4TqhEeiP29_qDiwNWQ"/>
+      <signatures name="trim" type="java.lang.String" id="_NAXI4jqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="PropertyResolver">
+      <signatures name="getProperty" type="java.lang.Object" id="_NAXJkjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJkzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_NAXJlDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProperty" type="java.lang.String" id="_NAXJlTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJljqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAXJlzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProperty" type="java.lang.String" id="_NAXJmDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJmTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProperty" type="java.lang.Object" id="_NAXJmjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJmzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_NAXJnDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_NAXJnTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsProperty" type="boolean" id="_NAXJnjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJnzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resolveRequiredPlaceholders" type="java.lang.String" id="_NAXJoDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJoTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRequiredProperty" type="java.lang.String" id="_NAXJojqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJozqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRequiredProperty" type="java.lang.Object" id="_NAXJpDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJpTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_NAXJpjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resolvePlaceholders" type="java.lang.String" id="_NAXJpzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJqDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Environment">
+      <signatures name="acceptsProfiles" type="boolean" id="_NAXJqTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String[]" id="_NAXJqjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultProfiles" type="java.lang.String[]" id="_NAXJqzqhEeiP29_qDiwNWQ"/>
+      <signatures name="getActiveProfiles" type="java.lang.String[]" id="_NAXJrDqhEeiP29_qDiwNWQ"/>
+      <signatures name="getProperty" type="java.lang.Object" id="_NAXJrTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJrjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_NAXJrzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProperty" type="java.lang.String" id="_NAXJsDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJsTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAXJsjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProperty" type="java.lang.String" id="_NAXJszqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJtDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProperty" type="java.lang.Object" id="_NAXJtTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJtjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_NAXJtzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_NAXJuDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsProperty" type="boolean" id="_NAXJuTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJujqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resolveRequiredPlaceholders" type="java.lang.String" id="_NAXJuzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJvDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRequiredProperty" type="java.lang.String" id="_NAXJvTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJvjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRequiredProperty" type="java.lang.Object" id="_NAXJvzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJwDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_NAXJwTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resolvePlaceholders" type="java.lang.String" id="_NAXJwjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJwzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ServletContext">
+      <signatures name="log" type="void" id="_NAXJxDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJxTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_NAXJxjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="log" type="void" id="_NAXJxzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Exception" id="_NAXJyDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAXJyTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="log" type="void" id="_NAXJyjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJyzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClassLoader" type="java.lang.ClassLoader" id="_NAXJzDqhEeiP29_qDiwNWQ"/>
+      <signatures name="getResource" type="java.net.URL" id="_NAXJzTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJzjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getResourceAsStream" type="java.io.InputStream" id="_NAXJzzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJ0DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getContext" type="javax.servlet.ServletContext" id="_NAXJ0TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJ0jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAttribute" type="java.lang.Object" id="_NAXJ0zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJ1DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAttribute" type="void" id="_NAXJ1TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJ1jqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_NAXJ1zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRealPath" type="java.lang.String" id="_NAXJ2DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJ2TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addFilter" type="javax.servlet.FilterRegistration.Dynamic" id="_NAXJ2jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJ2zqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAXJ3DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addFilter" type="javax.servlet.FilterRegistration.Dynamic" id="_NAXJ3TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJ3jqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_NAXJ3zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addFilter" type="javax.servlet.FilterRegistration.Dynamic" id="_NAXJ4DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJ4TqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.Filter" id="_NAXJ4jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addListener" type="void" id="_NAXJ4zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_NAXJ5DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addListener" type="void" id="_NAXJ5TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJ5jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addListener" type="void" id="_NAXJ5zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.EventListener" id="_NAXJ6DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getServlet" type="javax.servlet.Servlet" id="_NAXJ6TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJ6jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setRequestCharacterEncoding" type="void" id="_NAXJ6zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJ7DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSessionTimeout" type="int" id="_NAXJ7TqhEeiP29_qDiwNWQ"/>
+      <signatures name="setSessionTimeout" type="void" id="_NAXJ7jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAXJ7zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEffectiveSessionTrackingModes" type="java.util.Set" id="_NAXJ8DqhEeiP29_qDiwNWQ"/>
+      <signatures name="setResponseCharacterEncoding" type="void" id="_NAXJ8TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJ8jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getVirtualServerName" type="java.lang.String" id="_NAXJ8zqhEeiP29_qDiwNWQ"/>
+      <signatures name="getResponseCharacterEncoding" type="java.lang.String" id="_NAXJ9DqhEeiP29_qDiwNWQ"/>
+      <signatures name="getJspConfigDescriptor" type="javax.servlet.descriptor.JspConfigDescriptor" id="_NAXJ9TqhEeiP29_qDiwNWQ"/>
+      <signatures name="getRequestCharacterEncoding" type="java.lang.String" id="_NAXJ9jqhEeiP29_qDiwNWQ"/>
+      <signatures name="removeAttribute" type="void" id="_NAXJ9zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJ-DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMimeType" type="java.lang.String" id="_NAXJ-TqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJ-jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getResourcePaths" type="java.util.Set" id="_NAXJ-zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXJ_DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMajorVersion" type="int" id="_NAXJ_TqhEeiP29_qDiwNWQ"/>
+      <signatures name="getMinorVersion" type="int" id="_NAXJ_jqhEeiP29_qDiwNWQ"/>
+      <signatures name="getContextPath" type="java.lang.String" id="_NAXJ_zqhEeiP29_qDiwNWQ"/>
+      <signatures name="createFilter" type="javax.servlet.Filter" id="_NAXKADqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_NAXKATqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getServletRegistrations" type="java.util.Map" id="_NAXKAjqhEeiP29_qDiwNWQ"/>
+      <signatures name="getEffectiveMajorVersion" type="int" id="_NAXKAzqhEeiP29_qDiwNWQ"/>
+      <signatures name="getServletContextName" type="java.lang.String" id="_NAXKBDqhEeiP29_qDiwNWQ"/>
+      <signatures name="getNamedDispatcher" type="javax.servlet.RequestDispatcher" id="_NAXKBTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXKBjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getServletRegistration" type="javax.servlet.ServletRegistration" id="_NAXKBzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXKCDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getInitParameterNames" type="java.util.Enumeration" id="_NAXKCTqhEeiP29_qDiwNWQ"/>
+      <signatures name="getFilterRegistration" type="javax.servlet.FilterRegistration" id="_NAXKCjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXKCzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFilterRegistrations" type="java.util.Map" id="_NAXKDDqhEeiP29_qDiwNWQ"/>
+      <signatures name="getSessionCookieConfig" type="javax.servlet.SessionCookieConfig" id="_NAXKDTqhEeiP29_qDiwNWQ"/>
+      <signatures name="setSessionTrackingModes" type="void" id="_NAXKDjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Set" id="_NAXKDzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEffectiveMinorVersion" type="int" id="_NAXKEDqhEeiP29_qDiwNWQ"/>
+      <signatures name="createServlet" type="javax.servlet.Servlet" id="_NAXKETqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_NAXKEjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addJspFile" type="javax.servlet.ServletRegistration.Dynamic" id="_NAXKEzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXKFDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAXKFTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="declareRoles" type="void" id="_NAXKFjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String[]" id="_NAXKFzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setInitParameter" type="boolean" id="_NAXKGDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXKGTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAXKGjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getServerInfo" type="java.lang.String" id="_NAXKGzqhEeiP29_qDiwNWQ"/>
+      <signatures name="createListener" type="java.util.EventListener" id="_NAXKHDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_NAXKHTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addServlet" type="javax.servlet.ServletRegistration.Dynamic" id="_NAXKHjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXKHzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_NAXKIDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addServlet" type="javax.servlet.ServletRegistration.Dynamic" id="_NAXKITqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXKIjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.Servlet" id="_NAXKIzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addServlet" type="javax.servlet.ServletRegistration.Dynamic" id="_NAXKJDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXKJTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAXKJjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getInitParameter" type="java.lang.String" id="_NAXKJzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXKKDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getServlets" type="java.util.Enumeration" id="_NAXKKTqhEeiP29_qDiwNWQ"/>
+      <signatures name="getServletNames" type="java.util.Enumeration" id="_NAXKKjqhEeiP29_qDiwNWQ"/>
+      <signatures name="getRequestDispatcher" type="javax.servlet.RequestDispatcher" id="_NAXKKzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXKLDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDefaultSessionTrackingModes" type="java.util.Set" id="_NAXKLTqhEeiP29_qDiwNWQ"/>
+      <signatures name="getAttributeNames" type="java.util.Enumeration" id="_NAXKLjqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="FilterConfig">
+      <signatures name="getFilterName" type="java.lang.String" id="_NAXKLzqhEeiP29_qDiwNWQ"/>
+      <signatures name="getServletContext" type="javax.servlet.ServletContext" id="_NAXKMDqhEeiP29_qDiwNWQ"/>
+      <signatures name="getInitParameterNames" type="java.util.Enumeration" id="_NAXKMTqhEeiP29_qDiwNWQ"/>
+      <signatures name="getInitParameter" type="java.lang.String" id="_NAXKMjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAXKMzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Collection">
+      <signatures name="add" type="boolean" id="_NAXKNDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAXKNTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_NAXKNjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAXKNzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_NAXKODqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAXKOTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_NAXKOjqhEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_NAXKOzqhEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_NAXKPDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAXKPTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_NAXKPjqhEeiP29_qDiwNWQ"/>
+      <signatures name="iterator" type="java.util.Iterator" id="_NAXKPzqhEeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_NAXKQDqhEeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_NAXKQTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_NAXKQjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toArray" type="java.lang.Object[]" id="_NAXKQzqhEeiP29_qDiwNWQ"/>
+      <signatures name="spliterator" type="java.util.Spliterator" id="_NAXKRDqhEeiP29_qDiwNWQ"/>
+      <signatures name="addAll" type="boolean" id="_NAXKRTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_NAXKRjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stream" type="java.util.stream.Stream" id="_NAXKRzqhEeiP29_qDiwNWQ"/>
+      <signatures name="containsAll" type="boolean" id="_NAXKSDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_NAXKSTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeAll" type="boolean" id="_NAXKSjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_NAXKSzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeIf" type="boolean" id="_NAXKTDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Predicate" id="_NAXKTTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retainAll" type="boolean" id="_NAXKTjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_NAXKTzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parallelStream" type="java.util.stream.Stream" id="_NAXKUDqhEeiP29_qDiwNWQ"/>
+      <signatures name="forEach" type="void" id="_NAXKUTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Consumer" id="_NAXKUjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Set">
+      <signatures name="add" type="boolean" id="_NAXKUzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAXKVDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_NAXKVTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAXKVjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_NAXKVzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAXKWDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_NAXKWTqhEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_NAXKWjqhEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_NAXKWzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_NAXKXDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_NAXKXTqhEeiP29_qDiwNWQ"/>
+      <signatures name="iterator" type="java.util.Iterator" id="_NAXKXjqhEeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_NAXKXzqhEeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_NAXKYDqhEeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_NAXKYTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_NAXKYjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="spliterator" type="java.util.Spliterator" id="_NAXKYzqhEeiP29_qDiwNWQ"/>
+      <signatures name="addAll" type="boolean" id="_NAXKZDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_NAXKZTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsAll" type="boolean" id="_NAXKZjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_NAXKZzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeAll" type="boolean" id="_NAXKaDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_NAXKaTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retainAll" type="boolean" id="_NAXKajqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_NAXKazqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stream" type="java.util.stream.Stream" id="_NAXKbDqhEeiP29_qDiwNWQ"/>
+      <signatures name="removeIf" type="boolean" id="_NAXKbTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Predicate" id="_NAXKbjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parallelStream" type="java.util.stream.Stream" id="_NAXKbzqhEeiP29_qDiwNWQ"/>
+      <signatures name="forEach" type="void" id="_NAXKcDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Consumer" id="_NAXKcTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="RequestDataValueProcessor">
+      <signatures name="processUrl" type="java.lang.String" id="_NAuUwTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAuUwjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAuUwzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="processAction" type="java.lang.String" id="_NAuUxDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAuUxTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAuUxjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_NAuUxzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="processFormFieldValue" type="java.lang.String" id="_NAuUyDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAuUyTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAuUyjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_NAuUyzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.String" id="_NAuUzDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getExtraHiddenFields" type="java.util.Map" id="_NAuUzTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAuUzjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ICsrfRequestDataValueProcessor_Type">
+      <signatures name="processUrl" type="java.lang.String" id="_NAuUzzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAuU0DqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAuU0TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="processAction" type="java.lang.String" id="_NAuU0jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAuU0zqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAuU1DqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_NAuU1TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="processFormFieldValue" type="java.lang.String" id="_NAuU1jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAuU1zqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAuU2DqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_NAuU2TqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.String" id="_NAuU2jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getExtraHiddenFields" type="java.util.Map" id="_NAuU2zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_NAuU3DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IPattern_Type">
+      <signatures name="clazz" type="java.util.regex.Pattern.CharProperty" id="_NAuU6zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_NAuU7DqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_NAuU7TqhEeiP29_qDiwNWQ"/>
+      <signatures name="flags" type="int" id="_NAuU7jqhEeiP29_qDiwNWQ"/>
+      <signatures name="append" type="void" id="_NAuU7zqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuU8DqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAuU8TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClass" type="int" id="_NAuU8jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuU8zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compile" type="java.util.regex.Pattern" id="_NAuU9DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAuU9TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="matcher" type="java.util.regex.Matcher" id="_NAuU9jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_NAuU9zqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="matches" type="boolean" id="_NAuU-DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAuU-TqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.CharSequence" id="_NAuU-jqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="next" type="int" id="_NAuU-zqhEeiP29_qDiwNWQ"/>
+      <signatures name="split" type="java.lang.String[]" id="_NAuU_DqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_NAuU_TqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$200" type="boolean" id="_NAuU_jqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuU_zqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAuVADqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_NAuVATqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$300" type="int" id="_NAuVAjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_NAuVAzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAuVBDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_NAuVBTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readObject" type="void" id="_NAuVBjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.ObjectInputStream" id="_NAuVBzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="accept" type="void" id="_NAuVCDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuVCTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_NAuVCjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="read" type="int" id="_NAuVCzqhEeiP29_qDiwNWQ"/>
+      <signatures name="access$400" type="boolean" id="_NAuVDDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.regex.Matcher" id="_NAuVDTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAuVDjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.CharSequence" id="_NAuVDzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$600" type="java.util.regex.Pattern.CharProperty" id="_NAuVEDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuVETqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAuVEjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="normalize" type="void" id="_NAuVEzqhEeiP29_qDiwNWQ"/>
+      <signatures name="mark" type="void" id="_NAuVFDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuVFTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="skip" type="int" id="_NAuVFjqhEeiP29_qDiwNWQ"/>
+      <signatures name="ref" type="java.util.regex.Pattern.Node" id="_NAuVFzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuVGDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="peek" type="int" id="_NAuVGTqhEeiP29_qDiwNWQ"/>
+      <signatures name="c" type="int" id="_NAuVGjqhEeiP29_qDiwNWQ"/>
+      <signatures name="range" type="java.util.regex.Pattern.CharProperty" id="_NAuVGzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.regex.Pattern.BitClass" id="_NAuVHDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="java.util.regex.PatternSyntaxException" id="_NAuVHTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAuVHjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="x" type="int" id="_NAuVHzqhEeiP29_qDiwNWQ"/>
+      <signatures name="escape" type="int" id="_NAuVIDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_NAuVITqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_NAuVIjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_NAuVIzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="quote" type="java.lang.String" id="_NAuVJDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAuVJTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="pattern" type="java.lang.String" id="_NAuVJjqhEeiP29_qDiwNWQ"/>
+      <signatures name="RemoveQEQuoting" type="void" id="_NAuVJzqhEeiP29_qDiwNWQ"/>
+      <signatures name="addFlag" type="void" id="_NAuVKDqhEeiP29_qDiwNWQ"/>
+      <signatures name="asPredicate" type="java.util.function.Predicate" id="_NAuVKTqhEeiP29_qDiwNWQ"/>
+      <signatures name="atom" type="java.util.regex.Pattern.Node" id="_NAuVKjqhEeiP29_qDiwNWQ"/>
+      <signatures name="bitsOrSingle" type="java.util.regex.Pattern.CharProperty" id="_NAuVKzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.regex.Pattern.BitClass" id="_NAuVLDqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAuVLTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="caseInsensitiveRangeFor" type="java.util.regex.Pattern.CharProperty" id="_NAuVLjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuVLzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAuVMDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="charPropertyNodeFor" type="java.util.regex.Pattern.CharProperty" id="_NAuVMTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAuVMjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="closure" type="java.util.regex.Pattern.Node" id="_NAuVMzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.regex.Pattern.Node" id="_NAuVNDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="composeOneStep" type="java.lang.String" id="_NAuVNTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAuVNjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="countChars" type="int" id="_NAuVNzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_NAuVODqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAuVOTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_NAuVOjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="countCodePoints" type="int" id="_NAuVOzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_NAuVPDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createGroup" type="java.util.regex.Pattern.Node" id="_NAuVPTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_NAuVPjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="cursor" type="int" id="_NAuVPzqhEeiP29_qDiwNWQ"/>
+      <signatures name="expr" type="java.util.regex.Pattern.Node" id="_NAuVQDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.regex.Pattern.Node" id="_NAuVQTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="family" type="java.util.regex.Pattern.CharProperty" id="_NAuVQjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_NAuVQzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_NAuVRDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="findSupplementary" type="boolean" id="_NAuVRTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuVRjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAuVRzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="group0" type="java.util.regex.Pattern.Node" id="_NAuVSDqhEeiP29_qDiwNWQ"/>
+      <signatures name="groupname" type="java.lang.String" id="_NAuVSTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuVSjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="has" type="boolean" id="_NAuVSzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuVTDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hasBaseCharacter" type="boolean" id="_NAuVTTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.regex.Matcher" id="_NAuVTjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAuVTzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.CharSequence" id="_NAuVUDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="inRange" type="boolean" id="_NAuVUTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuVUjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAuVUzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_NAuVVDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="intersection" type="java.util.regex.Pattern.CharProperty" id="_NAuVVTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.regex.Pattern.CharProperty" id="_NAuVVjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.regex.Pattern.CharProperty" id="_NAuVVzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isLineSeparator" type="boolean" id="_NAuVWDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuVWTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isSupplementary" type="boolean" id="_NAuVWjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuVWzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lambda$asPredicate$0" type="boolean" id="_NAuVXDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAuVXTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="namedGroups" type="java.util.Map" id="_NAuVXjqhEeiP29_qDiwNWQ"/>
+      <signatures name="newSingle" type="java.util.regex.Pattern.CharProperty" id="_NAuVXzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuVYDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="newSlice" type="java.util.regex.Pattern.Node" id="_NAuVYTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int[]" id="_NAuVYjqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAuVYzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_NAuVZDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nextEscaped" type="int" id="_NAuVZTqhEeiP29_qDiwNWQ"/>
+      <signatures name="normalizeCharClass" type="int" id="_NAuVZjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.StringBuilder" id="_NAuVZzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAuVaDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="o" type="int" id="_NAuVaTqhEeiP29_qDiwNWQ"/>
+      <signatures name="parsePastLine" type="int" id="_NAuVajqhEeiP29_qDiwNWQ"/>
+      <signatures name="parsePastWhitespace" type="int" id="_NAuVazqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuVbDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="peekPastLine" type="int" id="_NAuVbTqhEeiP29_qDiwNWQ"/>
+      <signatures name="peekPastWhitespace" type="int" id="_NAuVbjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuVbzqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="printObjectTree" type="void" id="_NAuVcDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.regex.Pattern.Node" id="_NAuVcTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="produceEquivalentAlternation" type="java.lang.String" id="_NAuVcjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAuVczqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="producePermutations" type="java.lang.String[]" id="_NAuVdDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAuVdTqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rangeFor" type="java.util.regex.Pattern.CharProperty" id="_NAuVdjqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuVdzqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_NAuVeDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readEscaped" type="int" id="_NAuVeTqhEeiP29_qDiwNWQ"/>
+      <signatures name="sequence" type="java.util.regex.Pattern.Node" id="_NAuVejqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.regex.Pattern.Node" id="_NAuVezqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDifference" type="java.util.regex.Pattern.CharProperty" id="_NAuVfDqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.regex.Pattern.CharProperty" id="_NAuVfTqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.regex.Pattern.CharProperty" id="_NAuVfjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setcursor" type="void" id="_NAuVfzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_NAuVgDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="splitAsStream" type="java.util.stream.Stream" id="_NAuVgTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_NAuVgjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="subFlag" type="void" id="_NAuVgzqhEeiP29_qDiwNWQ"/>
+      <signatures name="u" type="int" id="_NAuVhDqhEeiP29_qDiwNWQ"/>
+      <signatures name="unicodeBlockPropertyFor" type="java.util.regex.Pattern.CharProperty" id="_NAuVhTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAuVhjqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="unicodeScriptPropertyFor" type="java.util.regex.Pattern.CharProperty" id="_NAuVhzqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_NAuViDqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="union" type="java.util.regex.Pattern.CharProperty" id="_NAuViTqhEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.regex.Pattern.CharProperty" id="_NAuVijqhEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.regex.Pattern.CharProperty" id="_NAuVizqhEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="unread" type="void" id="_NAuVjDqhEeiP29_qDiwNWQ"/>
+      <signatures name="uxxxx" type="int" id="_NAuVjTqhEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

@@ -1,0 +1,6 @@
+dedal_diagram "ctripcorp.apollo-common"
+
+	repositories (
+
+		repository genRepo
+	)

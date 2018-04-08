@@ -1,0 +1,6 @@
+dedal_diagram "DozerMapper.plugins-parent"
+
+	repositories (
+
+		repository genRepo
+	)

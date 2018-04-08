@@ -1,0 +1,6 @@
+dedal_diagram "denimgroup.threadfix-data-access"
+
+	repositories (
+
+		repository genRepo
+	)

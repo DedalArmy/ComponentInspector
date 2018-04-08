@@ -1,0 +1,6 @@
+dedal_diagram "cucumber.needle"
+
+	repositories (
+
+		repository genRepo
+	)

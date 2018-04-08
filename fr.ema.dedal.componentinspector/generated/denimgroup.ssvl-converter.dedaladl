@@ -1,0 +1,6 @@
+dedal_diagram "denimgroup.ssvl-converter"
+
+	repositories (
+
+		repository genRepo
+	)

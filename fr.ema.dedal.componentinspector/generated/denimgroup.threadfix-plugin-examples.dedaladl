@@ -1,0 +1,6 @@
+dedal_diagram "denimgroup.threadfix-plugin-examples"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,6 @@
+dedal_diagram "google.extensions"
+
+	repositories (
+
+		repository genRepo
+	)
