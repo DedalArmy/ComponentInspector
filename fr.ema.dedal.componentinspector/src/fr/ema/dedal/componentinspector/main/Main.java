@@ -3,7 +3,6 @@
  */
 package fr.ema.dedal.componentinspector.main;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -70,8 +69,8 @@ public class Main {
 		laucnhReconstruction(args, libPath, singlePath, sdslPath, out);
 	}
 
-	private static void laucnhReconstruction(String[] args, String libPath, String singlePath, String sdslPath,
-			String out) {
+	private static void laucnhReconstruction(String[] args, String libPath, String singlePath, String sdslPath, String out) {
+		
 		switch (args.length) {
 		case 0:
 			libPath = DEFAULT_LIB;
@@ -94,7 +93,6 @@ public class Main {
 				out = tempArgs.get(tempArgs.indexOf(OUT)+1);
 			}
 			break;
-
 		default:
 			break;
 		}
@@ -106,22 +104,9 @@ public class Main {
 			logger.info("sdslPath = " + sdslPath);
 		}		
 
-		List<DedalDiagram> reconstructedArchitectures = new ArrayList<>();
-		if(!"".equals(libPath)) {
-			reconstructedArchitectures.addAll(Explorer.generateAll(libPath));
-		} else 
-			if(!("".equals(singlePath) || "".equals(sdslPath)))
-			reconstructedArchitectures.add(Explorer.generate(singlePath, sdslPath));
-		else
-			logger.error("The Dedal diagram could not be generated due to path issues.");
+		List<DedalDiagram> reconstructedArchitectures = reconstruct(libPath, singlePath, sdslPath);
 
-		if(!reconstructedArchitectures.isEmpty())
-			for(DedalDiagram dd : reconstructedArchitectures)
-			{
-				saveDiagram(dd);
-			}
-		else
-			logger.error("No architecture were reconstructed.");
+		saveArchitectures(reconstructedArchitectures);
 
 		try {
 			exportMetrics(out);
@@ -133,6 +118,37 @@ public class Main {
 		{
 			logger.info("The end");
 		}
+	}
+
+	/**
+	 * @param reconstructedArchitectures
+	 */
+	private static void saveArchitectures(List<DedalDiagram> reconstructedArchitectures) {
+		if(!reconstructedArchitectures.isEmpty())
+			for(DedalDiagram dd : reconstructedArchitectures)
+			{
+				saveDiagram(dd);
+			}
+		else
+			logger.error("No architecture were reconstructed.");
+	}
+
+	/**
+	 * @param libPath
+	 * @param singlePath
+	 * @param sdslPath
+	 * @return
+	 */
+	private static List<DedalDiagram> reconstruct(String libPath, String singlePath, String sdslPath) {
+		List<DedalDiagram> reconstructedArchitectures = new ArrayList<>();
+		if(!"".equals(libPath)) {
+			reconstructedArchitectures.addAll(Explorer.generateAll(libPath));
+		} else 
+			if(!("".equals(singlePath) || "".equals(sdslPath)))
+			reconstructedArchitectures.add(Explorer.generate(singlePath, sdslPath));
+		else
+			logger.error("The Dedal diagram could not be generated due to path issues.");
+		return reconstructedArchitectures;
 	}
 
 	private static void exportMetrics(String out) throws FileNotFoundException, UnsupportedEncodingException {

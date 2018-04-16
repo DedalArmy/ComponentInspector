@@ -1,4 +1,5 @@
 Manifest-Version: 1.0
+Premain-Class: fr.ema.dedal.componentinspector.main.InstrumentHook
 Bundle-ManifestVersion: 2
 Bundle-Name: Componentinspector
 Bundle-SymbolicName: fr.ema.dedal.componentinspector
@@ -24,7 +25,5 @@ Require-Bundle: fr.ema.dedal.metamodel;bundle-version="0.1.0",
  org.xtext.spring.springConfig.edit;bundle-version="1.0.0",
  org.xtext.spring.springConfig.ide;bundle-version="1.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- org.codehaus.groovy;bundle-version="2.0.8",
- org.codehaus.groovy.eclipse;bundle-version="2.9.2",
  org.eclipse.m2m.qvt.oml
 Import-Package: org.eclipse.osgi.service.debug;version="1.2.0"

@@ -130,6 +130,7 @@ public class RoleExtractor {
 		 * Else the current component role is returned as the only member of the resulting List.
 		 */
 		Metrics.addNbCompsRoles();
+//		Metrics.addNbClasses();
 		result = new ArrayList<>();
 		result.add(tempRole);
 		roleToClass.put(tempRole, objectToInspect);

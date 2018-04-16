@@ -168,21 +168,21 @@ public class InterfaceInspector {
 	 */
 	public List<Interface> calculateInterfaces(Class<?> objectToInspect)
 	{
-		Metrics.addNbClasses();
+//		Metrics.addNbClasses();
 		List<Interface> result = new ArrayList<>();
 		if(objectToInspect.getInterfaces().length > 0)
 		{
 			Class<?>[] interfaces = objectToInspect.getInterfaces();
 			for (Class<?> i : interfaces) {
 				Interface tempInt = this.getDedalInterface(i);
-				Metrics.addNbInterfaces();
+//				Metrics.addNbInterfaces();
 				result.add(tempInt);
 			}
 		}
 		if(objectToInspect.isInterface())
 		{
 			result.add(this.getDedalInterface(objectToInspect));
-			Metrics.addNbInterfaces();
+//			Metrics.addNbInterfaces();
 			return result;
 		}
 		Interface current = mapAsInterface(objectToInspect);
@@ -265,7 +265,7 @@ public class InterfaceInspector {
 	 */
 	private Interface getDedalInterface(Class<?> inter)
 	{
-		Metrics.addNbClasses();
+//		Metrics.addNbClasses();
 		Interface result = new DedalFactoryImpl().createInterface();
 		if(inter.getMethods().length > 0)
 		{

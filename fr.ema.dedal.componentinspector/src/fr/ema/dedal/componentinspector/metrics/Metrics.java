@@ -28,6 +28,9 @@ public class Metrics {
 	public static void addNbClasses(){
 		Metrics.nbClasses++;
 	}
+	public static void addNbClasses(int nb){
+		Metrics.nbClasses+=nb;
+	}
 	public static double getNbSpringXML() {
 		return nbSpringXML;
 	}

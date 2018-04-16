@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="genDedalDiag">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="__\testSpring\HAS_xml_config" implements="//@architectureDescriptions[name='__\testSpring\HAS_xml_spec']">
+    <configComponents name="fr.ema.examples.has.config.AdjustableLamp" id="_XLjT0EFhEeiQ7tvhCUNITA" realizes="_XNDIqUFhEeiQ7tvhCUNITA" implements="_XM5XoEFhEeiQ7tvhCUNITA">
+      <compInterfaces xsi:type="dedal:Interface" name="ILight" type="ILight_Type"/>
+      <attributes name="intensity" type="int"/>
+      <attributes name="state" type="fr.ema.examples.has.spec.Light.State"/>
+    </configComponents>
+    <configComponents name="fr.ema.examples.has.config.Clock" id="_XLtE0EFhEeiQ7tvhCUNITA" realizes="_XNDIsUFhEeiQ7tvhCUNITA" implements="_XM5Xp0FhEeiQ7tvhCUNITA">
+      <compInterfaces xsi:type="dedal:Interface" name="ITime_Clock" type="Time"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITime" type="Time"/>
+    </configComponents>
+    <configComponents name="fr.ema.examples.has.config.Orchestrator" id="_XL210EFhEeiQ7tvhCUNITA" realizes="_XNDI4UFhEeiQ7tvhCUNITA" implements="_XM5Xq0FhEeiQ7tvhCUNITA">
+      <compInterfaces xsi:type="dedal:Interface" name="IOrchestrator" type="IOrchestrator_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILight_Orchestrator" direction="REQUIRED" type="ILight_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITime_Orchestrator" direction="REQUIRED" type="Time"/>
+      <attributes name="lights" type="fr.ema.examples.has.spec.Light"/>
+      <attributes name="clock" type="fr.ema.examples.has.spec.Time"/>
+    </configComponents>
+    <configConnections serverIntElem="ILight" clientIntElem="ILight_Orchestrator" refID="_XL__wEFhEeiQ7tvhCUNITA" property="&quot;lights&quot;" clientClassElem="_XL210EFhEeiQ7tvhCUNITA" serverClassElem="_XLjT0EFhEeiQ7tvhCUNITA"/>
+    <configConnections serverIntElem="ITime" clientIntElem="ITime_Orchestrator" refID="_XL__wUFhEeiQ7tvhCUNITA" property="&quot;clock&quot;" clientClassElem="_XL210EFhEeiQ7tvhCUNITA" serverClassElem="_XLtE0EFhEeiQ7tvhCUNITA"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="__\testSpring\HAS_xml_asm" instantiates="//@architectureDescriptions[name='__\testSpring\HAS_xml_config']">
+    <assmComponents name="lampDesk" id="_XL__wkFhEeiQ7tvhCUNITA" instantiates="_XLjT0EFhEeiQ7tvhCUNITA">
+      <compInterfaces xsi:type="dedal:Interface" name="ILight_lampDesk" type="ILight_Type" instantiates="ILight"/>
+    </assmComponents>
+    <assmComponents name="lampSitting" id="_XL__w0FhEeiQ7tvhCUNITA" instantiates="_XLjT0EFhEeiQ7tvhCUNITA">
+      <compInterfaces xsi:type="dedal:Interface" name="ILight_lampSitting" type="ILight_Type" instantiates="ILight"/>
+    </assmComponents>
+    <assmComponents name="clock1" id="_XL__xEFhEeiQ7tvhCUNITA" instantiates="_XLtE0EFhEeiQ7tvhCUNITA">
+      <compInterfaces xsi:type="dedal:Interface" name="ITime_Clock_clock1" type="Time" instantiates="ITime_Clock"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITime_clock1" type="Time" instantiates="ITime"/>
+    </assmComponents>
+    <assmComponents name="orchestrator1" id="_XL__xUFhEeiQ7tvhCUNITA" instantiates="_XL210EFhEeiQ7tvhCUNITA">
+      <compInterfaces xsi:type="dedal:Interface" name="IOrchestrator_orchestrator1" type="IOrchestrator_Type" instantiates="IOrchestrator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILight_Orchestrator_orchestrator1" direction="REQUIRED" type="ILight_Type" instantiates="ILight_Orchestrator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITime_Orchestrator_orchestrator1" direction="REQUIRED" type="Time" instantiates="ITime_Orchestrator"/>
+    </assmComponents>
+    <assemblyConnections serverIntElem="ILight_lampDesk" clientIntElem="ILight_Orchestrator_orchestrator1" refID="_XL__xkFhEeiQ7tvhCUNITA" property="orchestrator1.lights" clientInstElem="_XL__xUFhEeiQ7tvhCUNITA" serverInstElem="_XL__wkFhEeiQ7tvhCUNITA"/>
+    <assemblyConnections serverIntElem="ILight_lampSitting" clientIntElem="ILight_Orchestrator_orchestrator1" refID="_XL__x0FhEeiQ7tvhCUNITA" property="orchestrator1.lights" clientInstElem="_XL__xUFhEeiQ7tvhCUNITA" serverInstElem="_XL__w0FhEeiQ7tvhCUNITA"/>
+    <assemblyConnections serverIntElem="ITime_clock1" clientIntElem="ITime_Orchestrator_orchestrator1" refID="_XMJwwEFhEeiQ7tvhCUNITA" property="orchestrator1.clock" clientInstElem="_XL__xUFhEeiQ7tvhCUNITA" serverInstElem="_XL__xEFhEeiQ7tvhCUNITA"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="__\testSpring\HAS_xml_spec">
+    <specComponents name="Light_role" id="_XNDIqUFhEeiQ7tvhCUNITA">
+      <compInterfaces xsi:type="dedal:Interface" name="ILightLight_role" type="ILight_Type"/>
+    </specComponents>
+    <specComponents name="Time_role" id="_XNDIsUFhEeiQ7tvhCUNITA">
+      <compInterfaces xsi:type="dedal:Interface" name="ITimeTime_role" type="Time"/>
+    </specComponents>
+    <specComponents name="HomeOrchestrator_role" id="_XNDI4UFhEeiQ7tvhCUNITA">
+      <compInterfaces xsi:type="dedal:Interface" name="IHomeOrchestratorHomeOrchestrator_role" type="IHomeOrchestrator_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILightHomeOrchestrator_role" direction="REQUIRED" type="ILight_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITimeHomeOrchestrator_role" direction="REQUIRED" type="Time"/>
+    </specComponents>
+    <specConnections serverIntElem="ILightLight_role" clientIntElem="ILightHomeOrchestrator_role" refID="_XNDI5kFhEeiQ7tvhCUNITA" clientCompElem="_XNDI4UFhEeiQ7tvhCUNITA" serverCompElem="_XNDIqUFhEeiQ7tvhCUNITA"/>
+    <specConnections serverIntElem="ITimeTime_role" clientIntElem="ITimeHomeOrchestrator_role" refID="_XNDI50FhEeiQ7tvhCUNITA" clientCompElem="_XNDI4UFhEeiQ7tvhCUNITA" serverCompElem="_XNDIsUFhEeiQ7tvhCUNITA"/>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="fr_ema_examples_has_config_AdjustableLamp_Type" id="_XM5XoEFhEeiQ7tvhCUNITA">
+      <compInterfaces xsi:type="dedal:Interface" name="IAdjustableLamp_fr_ema_examples_has_config_AdjustableLamp_Type" type="IAdjustableLamp_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="fr_ema_examples_has_config_Clock_Type" id="_XM5Xp0FhEeiQ7tvhCUNITA">
+      <compInterfaces xsi:type="dedal:Interface" name="ITime_Clock_fr_ema_examples_has_config_Clock_Type" type="Time"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClock_fr_ema_examples_has_config_Clock_Type" type="IClock_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="fr_ema_examples_has_config_Orchestrator_Type" id="_XM5Xq0FhEeiQ7tvhCUNITA">
+      <compInterfaces xsi:type="dedal:Interface" name="IOrchestrator_fr_ema_examples_has_config_Orchestrator_Type" type="IOrchestrator_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILight_Orchestrator_fr_ema_examples_has_config_Orchestrator_Type" direction="REQUIRED" type="ILight_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITime_Orchestrator_fr_ema_examples_has_config_Orchestrator_Type" direction="REQUIRED" type="Time"/>
+    </components>
+    <interfaceTypes name="IAdjustableLamp_Type">
+      <signatures name="switchState" type="void" id="_XM5XoUFhEeiQ7tvhCUNITA">
+        <parameters name="arg0" type="fr.ema.examples.has.spec.Light.State" id="_XM5XokFhEeiQ7tvhCUNITA"/>
+      </signatures>
+      <signatures name="adjustIntensity" type="void" id="_XM5Xo0FhEeiQ7tvhCUNITA">
+        <parameters name="arg0" type="int" id="_XM5XpEFhEeiQ7tvhCUNITA"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ILight_Type">
+      <signatures name="switchState" type="void" id="_XM5XpUFhEeiQ7tvhCUNITA">
+        <parameters name="arg0" type="fr.ema.examples.has.spec.Light.State" id="_XM5XpkFhEeiQ7tvhCUNITA"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Time">
+      <signatures name="run" type="void" id="_XM5XqEFhEeiQ7tvhCUNITA"/>
+    </interfaceTypes>
+    <interfaceTypes name="IClock_Type">
+      <signatures name="run" type="void" id="_XM5XqUFhEeiQ7tvhCUNITA"/>
+    </interfaceTypes>
+    <interfaceTypes name="IOrchestrator_Type">
+      <signatures name="run" type="void" id="_XM5XrEFhEeiQ7tvhCUNITA"/>
+      <signatures name="getLights" type="fr.ema.examples.has.spec.Light[]" id="_XM5XrUFhEeiQ7tvhCUNITA"/>
+      <signatures name="setLights" type="void" id="_XM5XrkFhEeiQ7tvhCUNITA">
+        <parameters name="arg0" type="fr.ema.examples.has.spec.Light[]" id="_XM5Xr0FhEeiQ7tvhCUNITA"/>
+      </signatures>
+      <signatures name="getClock" type="fr.ema.examples.has.spec.Time" id="_XM5XsEFhEeiQ7tvhCUNITA"/>
+      <signatures name="setClock" type="void" id="_XM5XsUFhEeiQ7tvhCUNITA">
+        <parameters name="arg0" type="fr.ema.examples.has.spec.Time" id="_XM5XskFhEeiQ7tvhCUNITA"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IHomeOrchestratorImpl_Type">
+      <signatures name="run" type="void" id="_XM5Xs0FhEeiQ7tvhCUNITA"/>
+      <signatures name="getLights" type="fr.ema.examples.has.spec.Light[]" id="_XM5XtEFhEeiQ7tvhCUNITA"/>
+      <signatures name="setLights" type="void" id="_XM5XtUFhEeiQ7tvhCUNITA">
+        <parameters name="arg0" type="fr.ema.examples.has.spec.Light[]" id="_XM5XtkFhEeiQ7tvhCUNITA"/>
+      </signatures>
+      <signatures name="getClock" type="fr.ema.examples.has.spec.Time" id="_XM5Xt0FhEeiQ7tvhCUNITA"/>
+      <signatures name="setClock" type="void" id="_XM5XuEFhEeiQ7tvhCUNITA">
+        <parameters name="arg0" type="fr.ema.examples.has.spec.Time" id="_XM5XuUFhEeiQ7tvhCUNITA"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IHomeOrchestrator_Type">
+      <signatures name="run" type="void" id="_XM5XukFhEeiQ7tvhCUNITA"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

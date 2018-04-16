@@ -2,11 +2,14 @@ package fr.ema.dedal.componentinspector.inspector;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.instrument.Instrumentation;
+import java.lang.reflect.Field;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Vector;
 
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
@@ -29,6 +32,7 @@ import dedal.RoleConnection;
 import dedal.Specification;
 import dedal.impl.DedalFactoryImpl;
 import fr.ema.dedal.componentinspector.classloader.JarLoader;
+import fr.ema.dedal.componentinspector.main.InstrumentHook;
 import fr.ema.dedal.componentinspector.metrics.Metrics;
 
 /**
@@ -48,7 +52,6 @@ public class JarInspector {
 	Map<CompClass, Map<Interface, Class<?>>> compIntToType = null;
 	Map<CompRole, Map<Interface, Class<?>>> roleIntToType = null;
 	DedalFactory factory;
-
 	/**
 	 * @param jarLoader 
 	 * @param string
@@ -159,13 +162,30 @@ public class JarInspector {
 			Metrics.addNbConnexionlessArchis();
 		
 		reconstructArchitecture(dedalDiagram, repo, spec, config, asm);
-		
+				
 		if(!(spec.getSpecComponents().isEmpty()&&spec.getSpecConnections().isEmpty()))
 		{
 			Metrics.addNbSpecs();
 			if(areEquivalent(spec, config))
 				Metrics.addNbSpecsEqualsConf();
 		}
+		
+		
+//		Instrumentation instrumentation = InstrumentHook.getInstrumentation();
+//		int nb = instrumentation.getInitiatedClasses(jarLoader).length;
+//		System.out.println(nb);
+		
+		Field f;
+		try {
+			f = ClassLoader.class.getDeclaredField("classes");
+			f.setAccessible(true);
+			Vector<Class> classes =  (Vector<Class>) f.get(jarLoader);
+			System.out.println(classes.size());
+			Metrics.addNbClasses(classes.size());
+		} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
+			logger.error("Error while counting loaded classes");
+		}
+
 	}
 
 	/**
@@ -263,7 +283,8 @@ public class JarInspector {
 		if(logger.isInfoEnabled())
 			logger.info("URL : " + sdslPath);
 
-		reconstructArchitecture(dedalDiagram, repo, spec, config, asm);
+//		reconstructArchitecture(dedalDiagram, repo, spec, config, asm);
+		reconstructArchitectureWithMetrics(dedalDiagram, repo, spec, config, asm);
 
 	}
 
@@ -275,15 +296,15 @@ public class JarInspector {
 	 * @param config
 	 */
 	private void setSpecificationFromConfiguration(Repository repo, Specification spec, Configuration config) {
-		this.compToClass.forEach((key,value) -> {
+		this.compToClass.forEach((cclass,clazz) -> {
 			try {
-				RoleExtractor re = new RoleExtractor(value, key, this.intToClass, repo);
+				RoleExtractor re = new RoleExtractor(clazz, cclass, this.intToClass, repo);
 				List<CompRole> extractedRoles = re.calculateSuperTypes();
 				this.roleIntToType.putAll(re.getRoleToIntToType());
 				this.intToClass.putAll(re.getIntToType());
 				this.roleToClass.putAll(re.getRoleToClass());
 				spec.getSpecComponents().addAll(extractedRoles);
-				key.getRealizes().addAll(extractedRoles);
+				cclass.getRealizes().addAll(extractedRoles);
 				if(extractedRoles.size()>1)
 					Metrics.addNbCompClassMultiRoles();
 				for(CompRole er : extractedRoles)
@@ -464,6 +485,7 @@ public class JarInspector {
 					}
 				}
 			});
+			config.getConfigComponents().forEach(cc -> cc.getCompInterfaces().forEach(ci -> Metrics.addNbInterfaces()));
 		}
 		catch (Exception e) {
 			logger.error("A problem occured when building interfaces with error " + e.getCause(), e);
@@ -758,7 +780,6 @@ public class JarInspector {
 				Metrics.addNbCompsInst();
 				c.getInstantiates().getCompInterfaces().forEach(ci -> {
 					Metrics.addNbInterfaces();
-					Metrics.addNbInterfaces(); // *2 to take assembly interfaces into account
 					Interaction tempInteraction = EcoreUtil.copy(ci);
 					tempInteraction.setName(ci.getName() + "_" + c.getName());
 					if(ci instanceof Interface)
@@ -781,6 +802,7 @@ public class JarInspector {
 		for(CompClass tempCompClass : config.getConfigComponents())
 		{
 			Metrics.addNbCompsClasses();
+//			Metrics.addNbClasses();
 			if(logger.isInfoEnabled())
 			{
 				logger.info("compName : " + tempCompClass.getName());
