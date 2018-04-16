@@ -2,7 +2,6 @@ package fr.ema.dedal.componentinspector.inspector;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.lang.instrument.Instrumentation;
 import java.lang.reflect.Field;
 import java.net.URI;
 import java.util.ArrayList;
@@ -32,7 +31,6 @@ import dedal.RoleConnection;
 import dedal.Specification;
 import dedal.impl.DedalFactoryImpl;
 import fr.ema.dedal.componentinspector.classloader.JarLoader;
-import fr.ema.dedal.componentinspector.main.InstrumentHook;
 import fr.ema.dedal.componentinspector.metrics.Metrics;
 
 /**
@@ -41,6 +39,7 @@ import fr.ema.dedal.componentinspector.metrics.Metrics;
  */
 public class JarInspector {
 
+	private static final String CLASSES = "classes";
 	static final Logger logger = Logger.getLogger(JarInspector.class);
 	JarLoader jarLoader = null;
 	Map<URI, List<Class<?>>> jarMapping = null;
@@ -110,7 +109,6 @@ public class JarInspector {
 	public void setJarMapping(Map<URI, List<Class<?>>> jarMapping) {
 		this.jarMapping = jarMapping;
 	}
-	
 
 	/**
 	 * 
@@ -177,13 +175,12 @@ public class JarInspector {
 		
 		Field f;
 		try {
-			f = ClassLoader.class.getDeclaredField("classes");
+			f = ClassLoader.class.getDeclaredField(CLASSES);
 			f.setAccessible(true);
-			Vector<Class> classes =  (Vector<Class>) f.get(jarLoader);
-			System.out.println(classes.size());
+			Vector<Class<?>> classes =  (Vector<Class<?>>) f.get(jarLoader);
 			Metrics.addNbClasses(classes.size());
 		} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
-			logger.error("Error while counting loaded classes");
+			logger.error("Error while counting loaded classes", e);
 		}
 
 	}
@@ -283,7 +280,6 @@ public class JarInspector {
 		if(logger.isInfoEnabled())
 			logger.info("URL : " + sdslPath);
 
-//		reconstructArchitecture(dedalDiagram, repo, spec, config, asm);
 		reconstructArchitectureWithMetrics(dedalDiagram, repo, spec, config, asm);
 
 	}
@@ -802,7 +798,6 @@ public class JarInspector {
 		for(CompClass tempCompClass : config.getConfigComponents())
 		{
 			Metrics.addNbCompsClasses();
-//			Metrics.addNbClasses();
 			if(logger.isInfoEnabled())
 			{
 				logger.info("compName : " + tempCompClass.getName());

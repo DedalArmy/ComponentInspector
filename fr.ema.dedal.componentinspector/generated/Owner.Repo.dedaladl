@@ -1,0 +1,310 @@
+dedal_diagram "Owner.Repo"
+
+	architecture_descriptions (
+
+		configuration Owner.Repo.HAS.xml_config
+			implements "Owner.Repo.HAS.xml_spec" component_classes
+
+		primitive_component_class fr.ema.examples.has.config.AdjustableLamp as
+		Light_role
+			id "_5vKXMEF0Eeiti9nZwBgudA"
+			implements fr_ema_examples_has_config_AdjustableLamp_Type
+			attributes (
+				^int intensity;
+				"fr.ema.examples.has.spec.Light.State" state
+			)
+			interfaces
+				interface ILight
+					interface_direction provided
+					implementation ILight_Type;
+
+		primitive_component_class fr.ema.examples.has.config.Clock as Time_role
+			id "_5vMMYEF0Eeiti9nZwBgudA"
+			implements fr_ema_examples_has_config_Clock_Type
+			interfaces
+				interface ITime_Clock
+					interface_direction provided
+					implementation Time;
+				interface ITime
+					interface_direction provided
+					implementation Time;
+
+		primitive_component_class fr.ema.examples.has.config.Orchestrator as
+		HomeOrchestrator_role
+			id "_5vMzcEF0Eeiti9nZwBgudA"
+			implements fr_ema_examples_has_config_Orchestrator_Type
+			attributes (
+				"fr.ema.examples.has.spec.Light" lights;
+				"fr.ema.examples.has.spec.Time" clock
+			)
+			interfaces
+				interface IOrchestrator
+					interface_direction provided
+					implementation IOrchestrator_Type;
+				interface ILight_Orchestrator
+					interface_direction required
+					implementation ILight_Type;
+				interface ITime_Orchestrator
+					interface_direction required
+					implementation Time
+
+			configConnections (
+
+				class_connection "_5vcEAEF0Eeiti9nZwBgudA" property "\"lights\""
+					client "fr.ema.examples.has.config.Orchestrator".ILight_Orchestrator
+					server "fr.ema.examples.has.config.AdjustableLamp".ILight;
+
+				class_connection "_5vdSIEF0Eeiti9nZwBgudA" property "\"clock\""
+					client "fr.ema.examples.has.config.Orchestrator".ITime_Orchestrator
+					server "fr.ema.examples.has.config.Clock".ITime
+			);
+
+		assembly Owner.Repo.HAS.xml_asm
+			instance_of "Owner.Repo.HAS.xml_config"
+
+			component_instances (
+
+				component_instance lampDesk
+					id "_5vegQEF0Eeiti9nZwBgudA"
+					instance_of "fr.ema.examples.has.config.AdjustableLamp"
+					component_interfaces
+						interface ILight_lampDesk
+							interface_direction provided
+							implementation ILight_Type
+							instantiates ILight;
+
+				component_instance lampSitting
+					id "_5vfuYEF0Eeiti9nZwBgudA"
+					instance_of "fr.ema.examples.has.config.AdjustableLamp"
+					component_interfaces
+						interface ILight_lampSitting
+							interface_direction provided
+							implementation ILight_Type
+							instantiates ILight;
+
+				component_instance clock1
+					id "_5vgVcEF0Eeiti9nZwBgudA"
+					instance_of "fr.ema.examples.has.config.Clock"
+					component_interfaces
+						interface ITime_Clock_clock1
+							interface_direction provided
+							implementation Time
+							instantiates ITime_Clock;
+						interface ITime_clock1
+							interface_direction provided
+							implementation Time
+							instantiates ITime;
+
+				component_instance orchestrator1
+					id "_5vgVcUF0Eeiti9nZwBgudA"
+					instance_of "fr.ema.examples.has.config.Orchestrator"
+					component_interfaces
+						interface IOrchestrator_orchestrator1
+							interface_direction provided
+							implementation IOrchestrator_Type
+							instantiates IOrchestrator;
+						interface ILight_Orchestrator_orchestrator1
+							interface_direction required
+							implementation ILight_Type
+							instantiates ILight_Orchestrator;
+						interface ITime_Orchestrator_orchestrator1
+							interface_direction required
+							implementation Time
+							instantiates ITime_Orchestrator
+			)
+
+			assembly_connections (
+
+				instance_connection "_5vhjkEF0Eeiti9nZwBgudA"
+					client orchestrator1.ILight_Orchestrator_orchestrator1
+					server lampDesk.ILight_lampDesk;
+
+				instance_connection "_5vixsEF0Eeiti9nZwBgudA"
+					client orchestrator1.ILight_Orchestrator_orchestrator1
+					server lampSitting.ILight_lampSitting;
+
+				instance_connection "_5vixsUF0Eeiti9nZwBgudA"
+					client orchestrator1.ITime_Orchestrator_orchestrator1
+					server clock1.ITime_clock1
+			);
+
+		specification Owner.Repo.HAS.xml_spec component_roles
+
+		component_role HomeOrchestrator_role
+			id "_5v1ssEF0Eeiti9nZwBgudA" required_interfaces
+				interface IHomeOrchestratorHomeOrchestrator_role
+					interface_direction provided
+					implementation IHomeOrchestrator_Type;
+				interface ILightHomeOrchestrator_role
+					interface_direction required
+					implementation ILight_Type;
+				interface ITimeHomeOrchestrator_role
+					interface_direction required
+					implementation Time;
+
+		component_role Light_role
+			id "_5v2TuUF0Eeiti9nZwBgudA" required_interfaces
+				interface ILightLight_role
+					interface_direction provided
+					implementation ILight_Type;
+
+		component_role Time_role
+			id "_5v26xkF0Eeiti9nZwBgudA" required_interfaces
+				interface ITimeTime_role
+					interface_direction provided
+					implementation Time
+
+		connections
+
+		connection "_5v3h0EF0Eeiti9nZwBgudA"
+			client HomeOrchestrator_role.ILightHomeOrchestrator_role
+			server Light_role.ILightLight_role
+
+		connection "_5v3h0UF0Eeiti9nZwBgudA"
+			client HomeOrchestrator_role.ITimeHomeOrchestrator_role
+			server Time_role.ITimeTime_role
+	)
+
+	repositories (
+
+		repository genRepo
+
+			components (
+
+				component_type fr_ema_examples_has_config_AdjustableLamp_Type
+					id "_5vo4UEF0Eeiti9nZwBgudA" required_interfaces
+						interface IAdjustableLamp_fr_ema_examples_has_config_AdjustableLamp_Type
+							interface_direction provided
+							implementation IAdjustableLamp_Type;
+
+				component_type fr_ema_examples_has_config_Clock_Type
+					id "_5vr7oEF0Eeiti9nZwBgudA" required_interfaces
+						interface ITime_Clock_fr_ema_examples_has_config_Clock_Type
+							interface_direction provided
+							implementation Time;
+						interface IClock_fr_ema_examples_has_config_Clock_Type
+							interface_direction provided
+							implementation IClock_Type;
+
+				component_type fr_ema_examples_has_config_Orchestrator_Type
+					id "_5vtJwEF0Eeiti9nZwBgudA" required_interfaces
+						interface IOrchestrator_fr_ema_examples_has_config_Orchestrator_Type
+							interface_direction provided
+							implementation IOrchestrator_Type;
+						interface
+				ILight_Orchestrator_fr_ema_examples_has_config_Orchestrator_Type
+							interface_direction required
+							implementation ILight_Type;
+						interface
+				ITime_Orchestrator_fr_ema_examples_has_config_Orchestrator_Type
+							interface_direction required
+							implementation Time
+			)
+
+		interface_types (
+
+			type IAdjustableLamp_Type
+				signatures (
+					signature "_5vqGcEF0Eeiti9nZwBgudA" name switchState
+
+					type void parameters (
+						parameter "_5vqtgEF0Eeiti9nZwBgudA" name arg0
+
+						type "fr.ema.examples.has.spec.Light.State"
+					);
+					signature "_5vqtgUF0Eeiti9nZwBgudA" name adjustIntensity
+
+					type void parameters (
+						parameter "_5vqtgkF0Eeiti9nZwBgudA" name arg0
+
+						type ^int
+					)
+				);
+
+			type ILight_Type
+				signatures (
+					signature "_5vqtg0F0Eeiti9nZwBgudA" name switchState
+
+					type void parameters (
+						parameter "_5vqthEF0Eeiti9nZwBgudA" name arg0
+
+						type "fr.ema.examples.has.spec.Light.State"
+					)
+				);
+
+			type Time
+				signatures (
+					signature "_5vsisEF0Eeiti9nZwBgudA" name run
+
+					type void
+				);
+
+			type IClock_Type
+				signatures (
+					signature "_5vsisUF0Eeiti9nZwBgudA" name run
+
+					type void
+				);
+
+			type IOrchestrator_Type
+				signatures (
+					signature "_5vtJwUF0Eeiti9nZwBgudA" name run
+
+					type void;
+					signature "_5vtJwkF0Eeiti9nZwBgudA" name getLights
+
+					type "fr.ema.examples.has.spec.Light[]";
+					signature "_5vtJw0F0Eeiti9nZwBgudA" name setLights
+
+					type void parameters (
+						parameter "_5vtJxEF0Eeiti9nZwBgudA" name arg0
+
+						type "fr.ema.examples.has.spec.Light[]"
+					);
+					signature "_5vtJxUF0Eeiti9nZwBgudA" name getClock
+
+					type "fr.ema.examples.has.spec.Time";
+					signature "_5vtJxkF0Eeiti9nZwBgudA" name setClock
+
+					type void parameters (
+						parameter "_5vtJx0F0Eeiti9nZwBgudA" name arg0
+
+						type "fr.ema.examples.has.spec.Time"
+					)
+				);
+
+			type IHomeOrchestratorImpl_Type
+				signatures (
+					signature "_5vtJyEF0Eeiti9nZwBgudA" name run
+
+					type void;
+					signature "_5vtJyUF0Eeiti9nZwBgudA" name getLights
+
+					type "fr.ema.examples.has.spec.Light[]";
+					signature "_5vtJykF0Eeiti9nZwBgudA" name setLights
+
+					type void parameters (
+						parameter "_5vtJy0F0Eeiti9nZwBgudA" name arg0
+
+						type "fr.ema.examples.has.spec.Light[]"
+					);
+					signature "_5vtJzEF0Eeiti9nZwBgudA" name getClock
+
+					type "fr.ema.examples.has.spec.Time";
+					signature "_5vtJzUF0Eeiti9nZwBgudA" name setClock
+
+					type void parameters (
+						parameter "_5vtJzkF0Eeiti9nZwBgudA" name arg0
+
+						type "fr.ema.examples.has.spec.Time"
+					)
+				);
+
+			type IHomeOrchestrator_Type
+				signatures (
+					signature "_5vtJz0F0Eeiti9nZwBgudA" name run
+
+					type void
+				)
+		)
+	)

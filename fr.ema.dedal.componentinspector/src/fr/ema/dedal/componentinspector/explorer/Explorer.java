@@ -104,13 +104,14 @@ public class Explorer {
 	 * @param parent
 	 */
 	private static void generateDedalDiagram(List<DedalDiagram> result, URI folder, File f, File parent) {
+		JarLoader jarLoader = null;
 		try {
 			DedalDiagram dd = new DedalFactoryImpl().createDedalDiagram();
 			dd.setName(parent.getName() + "." + f.getName());
 			List<URI> xmlFiles = recursivelyGetFileURIs(folder, XML);
-			List<URI> xmlSpringFiles = scanFiles(xmlFiles, BEANS, BEAN);
 			List<URI> jarFiles = recursivelyGetFileURIs(folder, JAR, WAR);
-			List<URI> subFolders = recursivelyGetFolders(folder);
+			
+//			List<URI> subFolders = recursivelyGetFolders(folder);
 
 			URL[] jarUrlsToLoad = new URL[jarFiles.size()];
 			for(int i = 0; i<jarFiles.size(); i++)
@@ -118,19 +119,28 @@ public class Explorer {
 				jarUrlsToLoad[i]=jarFiles.get(i).toURL();
 			}
 
-			URL[] urlsToLoad = new URL[subFolders.size()];
-			for(int i = 0; i<subFolders.size(); i++)
-			{
-				urlsToLoad[i]=subFolders.get(i).toURL();
-			}
-			JarLoader jarLoader = new JarLoader(urlsToLoad, jarUrlsToLoad);
+			URL[] urlsToLoad = {};
+//			URL[] urlsToLoad = new URL[subFolders.size()];
+//			for(int i = 0; i<subFolders.size(); i++)
+//			{
+//				urlsToLoad[i]=subFolders.get(i).toURL();
+//			}
+			jarLoader = new JarLoader(urlsToLoad , jarUrlsToLoad);
+//			List<URI> xmlFiles = jarLoader.getFilesFromJars(XML);
+			List<URI> xmlSpringFiles = scanFiles(xmlFiles, BEANS, BEAN);
 			JarInspector jarInspector = new JarInspector(jarLoader);
 			jarInspector.generate(dd, xmlSpringFiles);
-			jarLoader.close();
 			result.add(dd);
 		} catch(Exception | Error e) 
 		{
 			logger.error("the Dedal diagram could not be extracted... reconstruction ended with error " + e.getCause());
+		}
+		finally {
+			try {
+				jarLoader.close();
+			} catch (IOException | NullPointerException e) {
+				logger.error("Error while closing jarLoader", e);
+			}
 		}
 	}
 
