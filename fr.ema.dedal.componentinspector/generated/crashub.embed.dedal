@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="crashub.embed">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="crashub.embed.spring.src.test.resources.org.crsh.spring.spring.xml_config" implements="//@architectureDescriptions[name='crashub.embed.spring.src.test.resources.org.crsh.spring.spring.xml_spec']">
+    <configComponents name="org.crsh.spring.SpringBootstrap" id="_4Etj8DqXEeiP29_qDiwNWQ" realizes="_4FEJRDqXEeiP29_qDiwNWQ" implements="_4FAe4DqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.crsh.spring.Foo" id="_4EuLADqXEeiP29_qDiwNWQ" realizes="_4FEJQjqXEeiP29_qDiwNWQ" implements="_4FEJQDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFoo" type="IFoo_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="crashub.embed.spring.src.test.resources.org.crsh.spring.spring.xml_asm" instantiates="//@architectureDescriptions[name='crashub.embed.spring.src.test.resources.org.crsh.spring.spring.xml_config']">
+    <assmComponents name="org.crsh.spring.SpringBootstrap1" id="_4EuLATqXEeiP29_qDiwNWQ" instantiates="_4Etj8DqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_org.crsh.spring.SpringBootstrap1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="foo" id="_4EuLAjqXEeiP29_qDiwNWQ" instantiates="_4EuLADqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFoo_foo" type="IFoo_Type" instantiates="IFoo"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="crashub.embed.spring.src.test.resources.org.crsh.spring.spring.xml_spec">
+    <specComponents name="Foo_role" id="_4FEJQjqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFooFoo_role" type="IFoo_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_4FEJRDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="crashub.embed.spring.target.test-classes.org.crsh.spring.spring.xml_config" implements="//@architectureDescriptions[name='crashub.embed.spring.target.test-classes.org.crsh.spring.spring.xml_spec']">
+    <configComponents name="org.crsh.spring.SpringBootstrap" id="_4FYSUDqXEeiP29_qDiwNWQ" realizes="_4FaHjjqXEeiP29_qDiwNWQ" implements="_4FaHgDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.crsh.spring.Foo" id="_4FYSUTqXEeiP29_qDiwNWQ" realizes="_4FaHmjqXEeiP29_qDiwNWQ" implements="_4FaHjDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFoo" type="IFoo_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="crashub.embed.spring.target.test-classes.org.crsh.spring.spring.xml_asm" instantiates="//@architectureDescriptions[name='crashub.embed.spring.target.test-classes.org.crsh.spring.spring.xml_config']">
+    <assmComponents name="org.crsh.spring.SpringBootstrap1" id="_4FYSUjqXEeiP29_qDiwNWQ" instantiates="_4FYSUDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_org.crsh.spring.SpringBootstrap1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="foo" id="_4FY5YDqXEeiP29_qDiwNWQ" instantiates="_4FYSUTqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFoo_foo" type="IFoo_Type" instantiates="IFoo"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="crashub.embed.spring.target.test-classes.org.crsh.spring.spring.xml_spec">
+    <specComponents name="Object_role" id="_4FaHjjqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Foo_role" id="_4FaHmjqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFooFoo_role" type="IFoo_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_4FAe4DqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_crsh_spring_Foo_Type" id="_4FEJQDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFoo_org_crsh_spring_Foo_Type" type="IFoo_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_4FaHgDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_crsh_spring_Foo_Type" id="_4FaHjDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFoo_org_crsh_spring_Foo_Type" type="IFoo_Type"/>
+    </components>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_4FAe4TqXEeiP29_qDiwNWQ"/>
+      <signatures name="wait" type="void" id="_4FAe4jqXEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_4FAe4zqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_4FAe5DqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_4FAe5TqXEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_4FAe5jqXEeiP29_qDiwNWQ"/>
+      <signatures name="getClass" type="java.lang.Class" id="_4FAe5zqXEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_4FAe6DqXEeiP29_qDiwNWQ"/>
+      <signatures name="notify" type="void" id="_4FAe6TqXEeiP29_qDiwNWQ"/>
+      <signatures name="notifyAll" type="void" id="_4FAe6jqXEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_4FAe6zqXEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IFoo_Type">
+      <signatures name="getValue" type="java.lang.String" id="_4FEJQTqXEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

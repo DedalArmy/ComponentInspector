@@ -1,0 +1,6 @@
+dedal_diagram "foxinmy.script"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,6 @@
+dedal_diagram "apache.storm"
+
+	repositories (
+
+		repository genRepo
+	)

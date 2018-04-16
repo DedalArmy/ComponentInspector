@@ -1,0 +1,6 @@
+dedal_diagram "find-sec-bugs.findbugs-test-util"
+
+	repositories (
+
+		repository genRepo
+	)

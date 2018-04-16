@@ -1,0 +1,6 @@
+dedal_diagram "afrous.Cynthia"
+
+	repositories (
+
+		repository genRepo
+	)

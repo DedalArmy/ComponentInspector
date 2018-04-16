@@ -1,0 +1,6 @@
+dedal_diagram "JaceyRx.Examination_System"
+
+	repositories (
+
+		repository genRepo
+	)

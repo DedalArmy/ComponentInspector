@@ -1,0 +1,6 @@
+dedal_diagram "DozerMapper.tests"
+
+	repositories (
+
+		repository genRepo
+	)

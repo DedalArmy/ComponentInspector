@@ -1,0 +1,6 @@
+dedal_diagram "goldmansachs.unit-tests-java8"
+
+	repositories (
+
+		repository genRepo
+	)

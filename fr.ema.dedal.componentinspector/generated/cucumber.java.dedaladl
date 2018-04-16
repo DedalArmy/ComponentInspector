@@ -1,0 +1,6 @@
+dedal_diagram "cucumber.java"
+
+	repositories (
+
+		repository genRepo
+	)

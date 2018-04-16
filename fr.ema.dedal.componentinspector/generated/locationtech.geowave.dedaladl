@@ -1,0 +1,6 @@
+dedal_diagram "locationtech.geowave"
+
+	repositories (
+
+		repository genRepo
+	)

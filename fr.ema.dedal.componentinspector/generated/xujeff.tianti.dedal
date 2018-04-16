@@ -1,0 +1,1455 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="xujeff.tianti">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="xujeff.tianti.tianti.tianti-modules.tianti-module-admin.src.main.resources.applicationContext-shiro.xml_config">
+    <configComponents name="org.apache.shiro.web.servlet.SimpleCookie" id="_lRD1sDqtEeiP29_qDiwNWQ" implements="_ldhkYDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICookie_SimpleCookie" type="Cookie"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleCookie" type="ISimpleCookie_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_SimpleCookie" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <attributes name="DEFAULT_MAX_AGE" type="int"/>
+      <attributes name="DEFAULT_VERSION" type="int"/>
+      <attributes name="NAME_VALUE_DELIMITER" type="java.lang.String"/>
+      <attributes name="ATTRIBUTE_DELIMITER" type="java.lang.String"/>
+      <attributes name="DAY_MILLIS" type="long"/>
+      <attributes name="GMT_TIME_ZONE_ID" type="java.lang.String"/>
+      <attributes name="COOKIE_DATE_FORMAT_STRING" type="java.lang.String"/>
+      <attributes name="COOKIE_HEADER_NAME" type="java.lang.String"/>
+      <attributes name="PATH_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="EXPIRES_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="MAXAGE_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="DOMAIN_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="VERSION_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="COMMENT_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="SECURE_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="HTTP_ONLY_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="log" type="org.slf4j.Logger"/>
+      <attributes name="name" type="java.lang.String"/>
+      <attributes name="value" type="java.lang.String"/>
+      <attributes name="comment" type="java.lang.String"/>
+      <attributes name="domain" type="java.lang.String"/>
+      <attributes name="path" type="java.lang.String"/>
+      <attributes name="maxAge" type="int"/>
+      <attributes name="version" type="int"/>
+      <attributes name="secure" type="boolean"/>
+      <attributes name="httpOnly" type="boolean"/>
+    </configComponents>
+    <configComponents name="org.apache.shiro.web.mgt.CookieRememberMeManager" id="_lRD1sTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICookieRememberMeManager" type="ICookieRememberMeManager_Type"/>
+      <attributes name="log" type="org.slf4j.Logger"/>
+      <attributes name="DEFAULT_REMEMBER_ME_COOKIE_NAME" type="java.lang.String"/>
+      <attributes name="cookie" type="org.apache.shiro.web.servlet.Cookie"/>
+      <attributes name="log" type="org.slf4j.Logger"/>
+      <attributes name="serializer" type="org.apache.shiro.io.Serializer"/>
+      <attributes name="cipherService" type="org.apache.shiro.crypto.CipherService"/>
+      <attributes name="encryptionCipherKey" type="byte"/>
+      <attributes name="decryptionCipherKey" type="byte"/>
+    </configComponents>
+    <configComponents name="com.jeff.tianti.shiro.RememberAuthenticationFilter" id="_lRD1sjqtEeiP29_qDiwNWQ"/>
+    <configComponents name="com.jeff.tianti.shiro.ShiroDBRealm" id="_lRD1szqtEeiP29_qDiwNWQ"/>
+    <configComponents name="org.apache.shiro.web.mgt.DefaultWebSecurityManager" id="_lRD1tDqtEeiP29_qDiwNWQ"/>
+    <configComponents name="org.apache.shiro.spring.web.ShiroFilterFactoryBean" id="_lRD1tTqtEeiP29_qDiwNWQ"/>
+    <configComponents name="org.apache.shiro.spring.LifecycleBeanPostProcessor" id="_lRD1tjqtEeiP29_qDiwNWQ"/>
+    <configConnections refID="_lREcwDqtEeiP29_qDiwNWQ" property="&quot;cookie&quot;" clientClassElem="_lRD1sTqtEeiP29_qDiwNWQ" serverClassElem="_lREcwTqtEeiP29_qDiwNWQ"/>
+    <configConnections refID="_lREcwjqtEeiP29_qDiwNWQ" property="&quot;realm&quot;" clientClassElem="_lRD1tDqtEeiP29_qDiwNWQ" serverClassElem="_lRD1szqtEeiP29_qDiwNWQ"/>
+    <configConnections refID="_lREcwzqtEeiP29_qDiwNWQ" property="&quot;rememberMeManager&quot;" clientClassElem="_lRD1tDqtEeiP29_qDiwNWQ" serverClassElem="_lRD1sTqtEeiP29_qDiwNWQ"/>
+    <configConnections refID="_lREcxDqtEeiP29_qDiwNWQ" property="&quot;securityManager&quot;" clientClassElem="_lRD1tTqtEeiP29_qDiwNWQ" serverClassElem="_lRD1tDqtEeiP29_qDiwNWQ"/>
+    <comptypes name="org_apache_shiro_web_mgt_CookieRememberMeManager_Type" id="_lfCnUDqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="xujeff.tianti.tianti.tianti-modules.tianti-module-admin.src.main.resources.applicationContext-shiro.xml_asm" instantiates="//@architectureDescriptions[name='xujeff.tianti.tianti.tianti-modules.tianti-module-admin.src.main.resources.applicationContext-shiro.xml_config']">
+    <assmComponents name="sessionIdCookie" id="_lREcxTqtEeiP29_qDiwNWQ" instantiates="_lREcwTqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="rememberMeCookie" id="_lREcxjqtEeiP29_qDiwNWQ" instantiates="_lREcwTqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="rememberMeManager" id="_lRFD0DqtEeiP29_qDiwNWQ" instantiates="_lRD1sTqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="rememberAuthFilter" id="_lRFD0TqtEeiP29_qDiwNWQ" instantiates="_lRD1sjqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="myRealm" id="_lRFD0jqtEeiP29_qDiwNWQ" instantiates="_lRD1szqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="securityManager" id="_lRFD0zqtEeiP29_qDiwNWQ" instantiates="_lRD1tDqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="shiroFilter" id="_lRFD1DqtEeiP29_qDiwNWQ" instantiates="_lRD1tTqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="lifecycleBeanPostProcessor" id="_lRFD1TqtEeiP29_qDiwNWQ" instantiates="_lRD1tjqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_lRFD1jqtEeiP29_qDiwNWQ" property="rememberMeManager.cookie" clientInstElem="_lRFD0DqtEeiP29_qDiwNWQ" serverInstElem="_lREcxjqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_lRFq4DqtEeiP29_qDiwNWQ" property="securityManager.realm" clientInstElem="_lRFD0zqtEeiP29_qDiwNWQ" serverInstElem="_lRFD0jqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_lRFq4TqtEeiP29_qDiwNWQ" property="securityManager.rememberMeManager" clientInstElem="_lRFD0zqtEeiP29_qDiwNWQ" serverInstElem="_lRFD0DqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_lRFq4jqtEeiP29_qDiwNWQ" property="shiroFilter.securityManager" clientInstElem="_lRFD1DqtEeiP29_qDiwNWQ" serverInstElem="_lRFD0zqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="xujeff.tianti.tianti.tianti-modules.tianti-module-admin.target.classes.applicationContext-shiro.xml_config">
+    <configComponents name="org.apache.shiro.web.servlet.SimpleCookie" id="_lnpwwDqtEeiP29_qDiwNWQ" implements="_lnrl8DqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICookie_SimpleCookie" type="Cookie"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleCookie" type="ISimpleCookie_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_SimpleCookie" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <attributes name="DEFAULT_MAX_AGE" type="int"/>
+      <attributes name="DEFAULT_VERSION" type="int"/>
+      <attributes name="NAME_VALUE_DELIMITER" type="java.lang.String"/>
+      <attributes name="ATTRIBUTE_DELIMITER" type="java.lang.String"/>
+      <attributes name="DAY_MILLIS" type="long"/>
+      <attributes name="GMT_TIME_ZONE_ID" type="java.lang.String"/>
+      <attributes name="COOKIE_DATE_FORMAT_STRING" type="java.lang.String"/>
+      <attributes name="COOKIE_HEADER_NAME" type="java.lang.String"/>
+      <attributes name="PATH_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="EXPIRES_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="MAXAGE_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="DOMAIN_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="VERSION_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="COMMENT_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="SECURE_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="HTTP_ONLY_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="log" type="org.slf4j.Logger"/>
+      <attributes name="name" type="java.lang.String"/>
+      <attributes name="value" type="java.lang.String"/>
+      <attributes name="comment" type="java.lang.String"/>
+      <attributes name="domain" type="java.lang.String"/>
+      <attributes name="path" type="java.lang.String"/>
+      <attributes name="maxAge" type="int"/>
+      <attributes name="version" type="int"/>
+      <attributes name="secure" type="boolean"/>
+      <attributes name="httpOnly" type="boolean"/>
+    </configComponents>
+    <configComponents name="org.apache.shiro.web.mgt.CookieRememberMeManager" id="_lnpwwTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICookieRememberMeManager" type="ICookieRememberMeManager_Type"/>
+      <attributes name="log" type="org.slf4j.Logger"/>
+      <attributes name="DEFAULT_REMEMBER_ME_COOKIE_NAME" type="java.lang.String"/>
+      <attributes name="cookie" type="org.apache.shiro.web.servlet.Cookie"/>
+      <attributes name="log" type="org.slf4j.Logger"/>
+      <attributes name="serializer" type="org.apache.shiro.io.Serializer"/>
+      <attributes name="cipherService" type="org.apache.shiro.crypto.CipherService"/>
+      <attributes name="encryptionCipherKey" type="byte"/>
+      <attributes name="decryptionCipherKey" type="byte"/>
+    </configComponents>
+    <configComponents name="com.jeff.tianti.shiro.RememberAuthenticationFilter" id="_lnpwwjqtEeiP29_qDiwNWQ"/>
+    <configComponents name="com.jeff.tianti.shiro.ShiroDBRealm" id="_lnpwwzqtEeiP29_qDiwNWQ"/>
+    <configComponents name="org.apache.shiro.web.mgt.DefaultWebSecurityManager" id="_lnpwxDqtEeiP29_qDiwNWQ"/>
+    <configComponents name="org.apache.shiro.spring.web.ShiroFilterFactoryBean" id="_lnpwxTqtEeiP29_qDiwNWQ"/>
+    <configComponents name="org.apache.shiro.spring.LifecycleBeanPostProcessor" id="_lnpwxjqtEeiP29_qDiwNWQ"/>
+    <configConnections refID="_lnqX0DqtEeiP29_qDiwNWQ" property="&quot;cookie&quot;" clientClassElem="_lnpwwTqtEeiP29_qDiwNWQ" serverClassElem="_lnqX0TqtEeiP29_qDiwNWQ"/>
+    <configConnections refID="_lnqX0jqtEeiP29_qDiwNWQ" property="&quot;realm&quot;" clientClassElem="_lnpwxDqtEeiP29_qDiwNWQ" serverClassElem="_lnpwwzqtEeiP29_qDiwNWQ"/>
+    <configConnections refID="_lnqX0zqtEeiP29_qDiwNWQ" property="&quot;rememberMeManager&quot;" clientClassElem="_lnpwxDqtEeiP29_qDiwNWQ" serverClassElem="_lnpwwTqtEeiP29_qDiwNWQ"/>
+    <configConnections refID="_lnqX1DqtEeiP29_qDiwNWQ" property="&quot;securityManager&quot;" clientClassElem="_lnpwxTqtEeiP29_qDiwNWQ" serverClassElem="_lnpwxDqtEeiP29_qDiwNWQ"/>
+    <comptypes name="org_apache_shiro_web_mgt_CookieRememberMeManager_Type" id="_lntcdjqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="xujeff.tianti.tianti.tianti-modules.tianti-module-admin.target.classes.applicationContext-shiro.xml_asm" instantiates="//@architectureDescriptions[name='xujeff.tianti.tianti.tianti-modules.tianti-module-admin.target.classes.applicationContext-shiro.xml_config']">
+    <assmComponents name="sessionIdCookie" id="_lnqX1TqtEeiP29_qDiwNWQ" instantiates="_lnqX0TqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="rememberMeCookie" id="_lnqX1jqtEeiP29_qDiwNWQ" instantiates="_lnqX0TqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="rememberMeManager" id="_lnqX1zqtEeiP29_qDiwNWQ" instantiates="_lnpwwTqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="rememberAuthFilter" id="_lnq-4DqtEeiP29_qDiwNWQ" instantiates="_lnpwwjqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="myRealm" id="_lnq-4TqtEeiP29_qDiwNWQ" instantiates="_lnpwwzqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="securityManager" id="_lnq-4jqtEeiP29_qDiwNWQ" instantiates="_lnpwxDqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="shiroFilter" id="_lnq-4zqtEeiP29_qDiwNWQ" instantiates="_lnpwxTqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="lifecycleBeanPostProcessor" id="_lnq-5DqtEeiP29_qDiwNWQ" instantiates="_lnpwxjqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_lnq-5TqtEeiP29_qDiwNWQ" property="rememberMeManager.cookie" clientInstElem="_lnqX1zqtEeiP29_qDiwNWQ" serverInstElem="_lnqX1jqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_lnq-5jqtEeiP29_qDiwNWQ" property="securityManager.realm" clientInstElem="_lnq-4jqtEeiP29_qDiwNWQ" serverInstElem="_lnq-4TqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_lnq-5zqtEeiP29_qDiwNWQ" property="securityManager.rememberMeManager" clientInstElem="_lnq-4jqtEeiP29_qDiwNWQ" serverInstElem="_lnqX1zqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_lnq-6DqtEeiP29_qDiwNWQ" property="shiroFilter.securityManager" clientInstElem="_lnq-4zqtEeiP29_qDiwNWQ" serverInstElem="_lnq-4jqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="xujeff.tianti.tianti.tianti-modules.tianti-module-admin.target.tianti-module-admin.WEB-INF.classes.applicationContext-shiro.xml_config">
+    <configComponents name="org.apache.shiro.web.servlet.SimpleCookie" id="_lo0OYDqtEeiP29_qDiwNWQ" implements="_lo2DkzqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICookie_SimpleCookie" type="Cookie"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleCookie" type="ISimpleCookie_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_SimpleCookie" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie" direction="REQUIRED" type="IString_Type"/>
+      <attributes name="DEFAULT_MAX_AGE" type="int"/>
+      <attributes name="DEFAULT_VERSION" type="int"/>
+      <attributes name="NAME_VALUE_DELIMITER" type="java.lang.String"/>
+      <attributes name="ATTRIBUTE_DELIMITER" type="java.lang.String"/>
+      <attributes name="DAY_MILLIS" type="long"/>
+      <attributes name="GMT_TIME_ZONE_ID" type="java.lang.String"/>
+      <attributes name="COOKIE_DATE_FORMAT_STRING" type="java.lang.String"/>
+      <attributes name="COOKIE_HEADER_NAME" type="java.lang.String"/>
+      <attributes name="PATH_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="EXPIRES_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="MAXAGE_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="DOMAIN_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="VERSION_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="COMMENT_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="SECURE_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="HTTP_ONLY_ATTRIBUTE_NAME" type="java.lang.String"/>
+      <attributes name="log" type="org.slf4j.Logger"/>
+      <attributes name="name" type="java.lang.String"/>
+      <attributes name="value" type="java.lang.String"/>
+      <attributes name="comment" type="java.lang.String"/>
+      <attributes name="domain" type="java.lang.String"/>
+      <attributes name="path" type="java.lang.String"/>
+      <attributes name="maxAge" type="int"/>
+      <attributes name="version" type="int"/>
+      <attributes name="secure" type="boolean"/>
+      <attributes name="httpOnly" type="boolean"/>
+    </configComponents>
+    <configComponents name="org.apache.shiro.web.mgt.CookieRememberMeManager" id="_lo0OYTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICookieRememberMeManager" type="ICookieRememberMeManager_Type"/>
+      <attributes name="log" type="org.slf4j.Logger"/>
+      <attributes name="DEFAULT_REMEMBER_ME_COOKIE_NAME" type="java.lang.String"/>
+      <attributes name="cookie" type="org.apache.shiro.web.servlet.Cookie"/>
+      <attributes name="log" type="org.slf4j.Logger"/>
+      <attributes name="serializer" type="org.apache.shiro.io.Serializer"/>
+      <attributes name="cipherService" type="org.apache.shiro.crypto.CipherService"/>
+      <attributes name="encryptionCipherKey" type="byte"/>
+      <attributes name="decryptionCipherKey" type="byte"/>
+    </configComponents>
+    <configComponents name="com.jeff.tianti.shiro.RememberAuthenticationFilter" id="_lo0OYjqtEeiP29_qDiwNWQ"/>
+    <configComponents name="com.jeff.tianti.shiro.ShiroDBRealm" id="_lo0OYzqtEeiP29_qDiwNWQ"/>
+    <configComponents name="org.apache.shiro.web.mgt.DefaultWebSecurityManager" id="_lo0OZDqtEeiP29_qDiwNWQ"/>
+    <configComponents name="org.apache.shiro.spring.web.ShiroFilterFactoryBean" id="_lo0OZTqtEeiP29_qDiwNWQ"/>
+    <configComponents name="org.apache.shiro.spring.LifecycleBeanPostProcessor" id="_lo0OZjqtEeiP29_qDiwNWQ"/>
+    <configConnections refID="_lo01cDqtEeiP29_qDiwNWQ" property="&quot;cookie&quot;" clientClassElem="_lo0OYTqtEeiP29_qDiwNWQ" serverClassElem="_lo01cTqtEeiP29_qDiwNWQ"/>
+    <configConnections refID="_lo01cjqtEeiP29_qDiwNWQ" property="&quot;realm&quot;" clientClassElem="_lo0OZDqtEeiP29_qDiwNWQ" serverClassElem="_lo0OYzqtEeiP29_qDiwNWQ"/>
+    <configConnections refID="_lo01czqtEeiP29_qDiwNWQ" property="&quot;rememberMeManager&quot;" clientClassElem="_lo0OZDqtEeiP29_qDiwNWQ" serverClassElem="_lo0OYTqtEeiP29_qDiwNWQ"/>
+    <configConnections refID="_lo01dDqtEeiP29_qDiwNWQ" property="&quot;securityManager&quot;" clientClassElem="_lo0OZTqtEeiP29_qDiwNWQ" serverClassElem="_lo0OZDqtEeiP29_qDiwNWQ"/>
+    <comptypes name="org_apache_shiro_web_mgt_CookieRememberMeManager_Type" id="_lo36pTqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="xujeff.tianti.tianti.tianti-modules.tianti-module-admin.target.tianti-module-admin.WEB-INF.classes.applicationContext-shiro.xml_asm" instantiates="//@architectureDescriptions[name='xujeff.tianti.tianti.tianti-modules.tianti-module-admin.target.tianti-module-admin.WEB-INF.classes.applicationContext-shiro.xml_config']">
+    <assmComponents name="sessionIdCookie" id="_lo01dTqtEeiP29_qDiwNWQ" instantiates="_lo01cTqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="rememberMeCookie" id="_lo1cgDqtEeiP29_qDiwNWQ" instantiates="_lo01cTqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="rememberMeManager" id="_lo1cgTqtEeiP29_qDiwNWQ" instantiates="_lo0OYTqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="rememberAuthFilter" id="_lo1cgjqtEeiP29_qDiwNWQ" instantiates="_lo0OYjqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="myRealm" id="_lo1cgzqtEeiP29_qDiwNWQ" instantiates="_lo0OYzqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="securityManager" id="_lo1chDqtEeiP29_qDiwNWQ" instantiates="_lo0OZDqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="shiroFilter" id="_lo1chTqtEeiP29_qDiwNWQ" instantiates="_lo0OZTqtEeiP29_qDiwNWQ"/>
+    <assmComponents name="lifecycleBeanPostProcessor" id="_lo1chjqtEeiP29_qDiwNWQ" instantiates="_lo0OZjqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_lo1chzqtEeiP29_qDiwNWQ" property="rememberMeManager.cookie" clientInstElem="_lo1cgTqtEeiP29_qDiwNWQ" serverInstElem="_lo1cgDqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_lo2DkDqtEeiP29_qDiwNWQ" property="securityManager.realm" clientInstElem="_lo1chDqtEeiP29_qDiwNWQ" serverInstElem="_lo1cgzqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_lo2DkTqtEeiP29_qDiwNWQ" property="securityManager.rememberMeManager" clientInstElem="_lo1chDqtEeiP29_qDiwNWQ" serverInstElem="_lo1cgTqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_lo2DkjqtEeiP29_qDiwNWQ" property="shiroFilter.securityManager" clientInstElem="_lo1chTqtEeiP29_qDiwNWQ" serverInstElem="_lo1chDqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="org_apache_shiro_web_servlet_SimpleCookie_Type" id="_ldhkYDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICookie_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" type="Cookie"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" type="ISimpleCookie_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_apache_shiro_web_servlet_SimpleCookie_Type" id="_lnrl8DqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICookie_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" type="Cookie"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" type="ISimpleCookie_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_apache_shiro_web_servlet_SimpleCookie_Type" id="_lo2DkzqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICookie_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" type="Cookie"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" type="ISimpleCookie_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_SimpleCookie_org_apache_shiro_web_servlet_SimpleCookie_Type" direction="REQUIRED" type="IString_Type"/>
+    </components>
+    <interfaceTypes name="Cookie">
+      <signatures name="getName" type="java.lang.String" id="_ldiLcDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getValue" type="java.lang.String" id="_ldiLcTqtEeiP29_qDiwNWQ"/>
+      <signatures name="setName" type="void" id="_ldiLcjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiLczqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setValue" type="void" id="_ldiLdDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiLdTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getPath" type="java.lang.String" id="_ldiLdjqtEeiP29_qDiwNWQ"/>
+      <signatures name="setComment" type="void" id="_ldiLdzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiLeDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setVersion" type="void" id="_ldiLeTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiLejqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDomain" type="java.lang.String" id="_ldiLezqtEeiP29_qDiwNWQ"/>
+      <signatures name="getComment" type="java.lang.String" id="_ldiLfDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getVersion" type="int" id="_ldiLfTqtEeiP29_qDiwNWQ"/>
+      <signatures name="setDomain" type="void" id="_ldiLfjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiLfzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isHttpOnly" type="boolean" id="_ldiLgDqtEeiP29_qDiwNWQ"/>
+      <signatures name="setMaxAge" type="void" id="_ldiLgTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiLgjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setHttpOnly" type="void" id="_ldiLgzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_ldiLhDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setSecure" type="void" id="_ldiLhTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_ldiLhjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMaxAge" type="int" id="_ldiLhzqtEeiP29_qDiwNWQ"/>
+      <signatures name="removeFrom" type="void" id="_ldiLiDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_ldiLiTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletResponse" id="_ldiLijqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isSecure" type="boolean" id="_ldiLizqtEeiP29_qDiwNWQ"/>
+      <signatures name="setPath" type="void" id="_ldiLjDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiLjTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readValue" type="java.lang.String" id="_ldiLjjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_ldiLjzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletResponse" id="_ldiLkDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="saveTo" type="void" id="_ldiLkTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_ldiLkjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletResponse" id="_ldiLkzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ISimpleCookie_Type">
+      <signatures name="getName" type="java.lang.String" id="_ldiLlDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getValue" type="java.lang.String" id="_ldiLlTqtEeiP29_qDiwNWQ"/>
+      <signatures name="setName" type="void" id="_ldiLljqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiLlzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setValue" type="void" id="_ldiLmDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiLmTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getPath" type="java.lang.String" id="_ldiLmjqtEeiP29_qDiwNWQ"/>
+      <signatures name="setComment" type="void" id="_ldiLmzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiLnDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setVersion" type="void" id="_ldiLnTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiLnjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDomain" type="java.lang.String" id="_ldiLnzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getComment" type="java.lang.String" id="_ldiLoDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getVersion" type="int" id="_ldiLoTqtEeiP29_qDiwNWQ"/>
+      <signatures name="setDomain" type="void" id="_ldiLojqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiLozqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isHttpOnly" type="boolean" id="_ldiLpDqtEeiP29_qDiwNWQ"/>
+      <signatures name="setMaxAge" type="void" id="_ldiLpTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiLpjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setHttpOnly" type="void" id="_ldiLpzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_ldiLqDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setSecure" type="void" id="_ldiLqTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_ldiLqjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMaxAge" type="int" id="_ldiLqzqtEeiP29_qDiwNWQ"/>
+      <signatures name="removeFrom" type="void" id="_ldiLrDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_ldiLrTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletResponse" id="_ldiLrjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isSecure" type="boolean" id="_ldiLrzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setPath" type="void" id="_ldiLsDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiLsTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readValue" type="java.lang.String" id="_ldiLsjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_ldiLszqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletResponse" id="_ldiLtDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="saveTo" type="void" id="_ldiLtTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_ldiLtjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="javax.servlet.http.HttpServletResponse" id="_ldiLtzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCookie" type="javax.servlet.http.Cookie" id="_ldiLuDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_ldiLuTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldiLujqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="appendPath" type="void" id="_ldiLuzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.StringBuilder" id="_ldiLvDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldiLvTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="appendDomain" type="void" id="_ldiLvjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.StringBuilder" id="_ldiLvzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldiLwDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="calculatePath" type="java.lang.String" id="_ldiLwTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletRequest" id="_ldiLwjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addCookieHeader" type="void" id="_ldiLwzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpServletResponse" id="_ldiLxDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldiLxTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_ldiLxjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.String" id="_ldiLxzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="java.lang.String" id="_ldiLyDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg5" type="java.lang.String" id="_ldiLyTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg6" type="int" id="_ldiLyjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg7" type="int" id="_ldiLyzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg8" type="boolean" id="_ldiLzDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg9" type="boolean" id="_ldiLzTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="buildHeaderValue" type="java.lang.String" id="_ldiLzjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiLzzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldiL0DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.String" id="_ldiL0TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.String" id="_ldiL0jqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg4" type="java.lang.String" id="_ldiL0zqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg5" type="int" id="_ldiL1DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg6" type="int" id="_ldiL1TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg7" type="boolean" id="_ldiL1jqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg8" type="boolean" id="_ldiL1zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="appendHttpOnly" type="void" id="_ldiL2DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.StringBuilder" id="_ldiL2TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_ldiL2jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="pathMatches" type="boolean" id="_ldiL2zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiL3DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldiL3TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="appendVersion" type="void" id="_ldiL3jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.StringBuilder" id="_ldiL3zqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ldiL4DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="appendComment" type="void" id="_ldiL4TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.StringBuilder" id="_ldiL4jqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldiL4zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="appendSecure" type="void" id="_ldiL5DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.StringBuilder" id="_ldiL5TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_ldiL5jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="appendExpires" type="void" id="_ldiL5zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.StringBuilder" id="_ldiL6DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ldiL6TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCookieDate" type="java.lang.String" id="_ldiL6jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Date" id="_ldiL6zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Comparable">
+      <signatures name="compareTo" type="int" id="_ldiMEDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_ldiMETqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="CharSequence">
+      <signatures name="toString" type="java.lang.String" id="_ldiMEjqtEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_ldiMEzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiMFDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_ldiMFTqtEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_ldiMFjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiMFzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ldiMGDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_ldiMGTqtEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_ldiMGjqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IString_Type">
+      <signatures name="compareTo" type="int" id="_ldiMGzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_ldiMHDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_ldiMHTqtEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_ldiMHjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiMHzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_ldiMIDqtEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_ldiMITqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiMIjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ldiMIzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_ldiMJDqtEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_ldiMJTqtEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$chars$0" type="java.util.Spliterator.OfInt" id="_ldiMJjqtEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$codePoints$1" type="java.util.Spliterator.OfInt" id="_ldiMJzqtEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_ldiMKDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_ldiMKTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_ldiMKjqtEeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_ldiMKzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiMLDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ldiMLTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueOf" type="java.lang.String" id="_ldiMLjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiMLzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkBounds" type="void" id="_ldiMMDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_ldiMMTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ldiMMjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_ldiMMzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointAt" type="int" id="_ldiMNDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiMNTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointBefore" type="int" id="_ldiMNjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiMNzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointCount" type="int" id="_ldiMODqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiMOTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ldiMOjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compareToIgnoreCase" type="int" id="_ldiMOzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiMPDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="concat" type="java.lang.String" id="_ldiMPTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiMPjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contains" type="boolean" id="_ldiMPzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_ldiMQDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contentEquals" type="boolean" id="_ldiMQTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_ldiMQjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyValueOf" type="java.lang.String" id="_ldiMQzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char[]" id="_ldiMRDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="endsWith" type="boolean" id="_ldiMRTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiMRjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equalsIgnoreCase" type="boolean" id="_ldiMRzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiMSDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="format" type="java.lang.String" id="_ldiMSTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_ldiMSjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldiMSzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_ldiMTDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBytes" type="void" id="_ldiMTTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiMTjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ldiMTzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_ldiMUDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_ldiMUTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChars" type="void" id="_ldiMUjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiMUzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ldiMVDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="char[]" id="_ldiMVTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_ldiMVjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="indexOfSupplementary" type="int" id="_ldiMVzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiMWDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ldiMWTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="intern" type="java.lang.String" id="_ldiMWjqtEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_ldiMWzqtEeiP29_qDiwNWQ"/>
+      <signatures name="join" type="java.lang.String" id="_ldiMXDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_ldiMXTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.CharSequence[]" id="_ldiMXjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOf" type="int" id="_ldiMXzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiMYDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOfSupplementary" type="int" id="_ldiMYTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiMYjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ldiMYzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="matches" type="boolean" id="_ldiMZDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiMZTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nonSyncContentEquals" type="boolean" id="_ldiMZjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.AbstractStringBuilder" id="_ldiMZzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="offsetByCodePoints" type="int" id="_ldiMaDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiMaTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ldiMajqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="regionMatches" type="boolean" id="_ldiMazqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiMbDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldiMbTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_ldiMbjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_ldiMbzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="java.lang.String" id="_ldiMcDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char" id="_ldiMcTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="char" id="_ldiMcjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="java.lang.String" id="_ldiMczqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiMdDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldiMdTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceFirst" type="java.lang.String" id="_ldiMdjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiMdzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldiMeDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="split" type="java.lang.String[]" id="_ldiMeTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiMejqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="startsWith" type="boolean" id="_ldiMezqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldiMfDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ldiMfTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="substring" type="java.lang.String" id="_ldiMfjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ldiMfzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCharArray" type="char[]" id="_ldiMgDqtEeiP29_qDiwNWQ"/>
+      <signatures name="toLowerCase" type="java.lang.String" id="_ldiMgTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_ldiMgjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUpperCase" type="java.lang.String" id="_ldiMgzqtEeiP29_qDiwNWQ"/>
+      <signatures name="trim" type="java.lang.String" id="_ldiMhDqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Logger">
+      <signatures name="getName" type="java.lang.String" id="_ldjaCTqtEeiP29_qDiwNWQ"/>
+      <signatures name="debug" type="void" id="_ldjaCjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaCzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjaDDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_ldjaDTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_ldjaDjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaDzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjaEDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_ldjaETqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_ldjaEjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_ldjaEzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjaFDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_ldjaFTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaFjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjaFzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_ldjaGDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_ldjaGTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaGjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjaGzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_ldjaHDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaHTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjaHjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_ldjaHzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_ldjaIDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjaITqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_ldjaIjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_ldjaIzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjaJDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_ldjaJTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_ldjaJjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjaJzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_ldjaKDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_ldjaKTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_ldjaKjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjaKzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_ldjaLDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_ldjaLTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaLjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjaLzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_ldjaMDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaMTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjaMjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_ldjaMzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_ldjaNDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaNTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjaNjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_ldjaNzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_ldjaODqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_ldjaOTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaOjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjaOzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_ldjaPDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_ldjaPTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaPjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjaPzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_ldjaQDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_ldjaQTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjaQjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_ldjaQzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjaRDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_ldjaRTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_ldjaRjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjaRzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_ldjaSDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_ldjaSTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_ldjaSjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjaSzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_ldjaTDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_ldjaTTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjaTjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_ldjaTzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_ldjaUDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjaUTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_ldjaUjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_ldjaUzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjaVDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_ldjaVTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_ldjaVjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjaVzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_ldjaWDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_ldjaWTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_ldjaWjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjaWzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_ldjaXDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_ldjaXTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaXjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjaXzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_ldjaYDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_ldjaYTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_ldjaYjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjaYzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_ldjaZDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaZTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjaZjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_ldjaZzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaaDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjaaTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_ldjaajqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_ldjaazqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjabDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjabTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_ldjabjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_ldjabzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjacDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjacTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_ldjacjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_ldjaczqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjadDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_ldjadTqtEeiP29_qDiwNWQ"/>
+      <signatures name="info" type="void" id="_ldjadjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjadzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjaeDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_ldjaeTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_ldjaejqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaezqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjafDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_ldjafTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_ldjafjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjafzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_ldjagDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_ldjagTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_ldjagjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjagzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_ldjahDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_ldjahTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjahjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_ldjahzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjaiDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_ldjaiTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_ldjaijqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaizqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjajDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_ldjajTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_ldjajjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_ldjajzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjakDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjakTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_ldjakjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_ldjakzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjalDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjalTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_ldjaljqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjalzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_ldjamDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTraceEnabled" type="boolean" id="_ldjamTqtEeiP29_qDiwNWQ"/>
+      <signatures name="isTraceEnabled" type="boolean" id="_ldjamjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjamzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_ldjanDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjanTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjanjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_ldjanzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_ldjaoDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaoTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjaojqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_ldjaozqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_ldjapDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjapTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_ldjapjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_ldjapzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjaqDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_ldjaqTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_ldjaqjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_ldjaqzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjarDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_ldjarTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_ldjarjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjarzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_ldjasDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_ldjasTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ldjasjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_ldjaszqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjatDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjatTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_ldjatjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_ldjatzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_ldjauDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjauTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjaujqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_ldjauzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjavDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ldjavTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_ldjavjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isDebugEnabled" type="boolean" id="_ldjavzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjawDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isDebugEnabled" type="boolean" id="_ldjawTqtEeiP29_qDiwNWQ"/>
+      <signatures name="isErrorEnabled" type="boolean" id="_ldjawjqtEeiP29_qDiwNWQ"/>
+      <signatures name="isErrorEnabled" type="boolean" id="_ldjawzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaxDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isWarnEnabled" type="boolean" id="_ldjaxTqtEeiP29_qDiwNWQ"/>
+      <signatures name="isWarnEnabled" type="boolean" id="_ldjaxjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_ldjaxzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ICookieRememberMeManager_Type">
+      <signatures name="getRememberedPrincipals" type="org.apache.shiro.subject.PrincipalCollection" id="_lk7M4DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.SubjectContext" id="_lk7M4TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onSuccessfulLogin" type="void" id="_lk7M4jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.Subject" id="_lk7M4zqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.shiro.authc.AuthenticationToken" id="_lk7M5DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.apache.shiro.authc.AuthenticationInfo" id="_lk7M5TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onFailedLogin" type="void" id="_lk7M5jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.Subject" id="_lk7M5zqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.shiro.authc.AuthenticationToken" id="_lk7M6DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.apache.shiro.authc.AuthenticationException" id="_lk7M6TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onLogout" type="void" id="_lk7M6jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.Subject" id="_lk7M6zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forgetIdentity" type="void" id="_lk7M7DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.SubjectContext" id="_lk7M7TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="encrypt" type="byte[]" id="_lk7M7jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_lk7M7zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="decrypt" type="byte[]" id="_lk7M8DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_lk7M8TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="deserialize" type="org.apache.shiro.subject.PrincipalCollection" id="_lk7M8jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_lk7M8zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="serialize" type="byte[]" id="_lk7M9DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.PrincipalCollection" id="_lk7M9TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSerializer" type="org.apache.shiro.io.Serializer" id="_lk7M9jqtEeiP29_qDiwNWQ"/>
+      <signatures name="setSerializer" type="void" id="_lk7M9zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.io.Serializer" id="_lk7M-DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEncryptionCipherKey" type="void" id="_lk7M-TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_lk7M-jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEncryptionCipherKey" type="byte[]" id="_lk7M-zqtEeiP29_qDiwNWQ"/>
+      <signatures name="convertPrincipalsToBytes" type="byte[]" id="_lk7M_DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.PrincipalCollection" id="_lk7M_TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRememberedSerializedIdentity" type="byte[]" id="_lk7M_jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.SubjectContext" id="_lk7M_zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rememberSerializedIdentity" type="void" id="_lk7NADqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.Subject" id="_lk7NATqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="byte[]" id="_lk7NAjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDecryptionCipherKey" type="void" id="_lk7NAzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_lk7NBDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="convertBytesToPrincipals" type="org.apache.shiro.subject.PrincipalCollection" id="_lk7NBTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_lk7NBjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.shiro.subject.SubjectContext" id="_lk7NBzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDecryptionCipherKey" type="byte[]" id="_lk7NCDqtEeiP29_qDiwNWQ"/>
+      <signatures name="onRememberedPrincipalFailure" type="org.apache.shiro.subject.PrincipalCollection" id="_lk7NCTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.RuntimeException" id="_lk7NCjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.shiro.subject.SubjectContext" id="_lk7NCzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getIdentityToRemember" type="org.apache.shiro.subject.PrincipalCollection" id="_lk7NDDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.Subject" id="_lk7NDTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.shiro.authc.AuthenticationInfo" id="_lk7NDjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCipherKey" type="byte[]" id="_lk7NDzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setCipherKey" type="void" id="_lk7NEDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_lk7NETqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rememberIdentity" type="void" id="_lk7NEjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.Subject" id="_lk7NEzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.shiro.authc.AuthenticationToken" id="_lk7NFDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.apache.shiro.authc.AuthenticationInfo" id="_lk7NFTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setCipherService" type="void" id="_lk7NFjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.crypto.CipherService" id="_lk7NFzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCipherService" type="org.apache.shiro.crypto.CipherService" id="_lk7NGDqtEeiP29_qDiwNWQ"/>
+      <signatures name="isRememberMe" type="boolean" id="_lk7NGTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.authc.AuthenticationToken" id="_lk7NGjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isIdentityRemoved" type="boolean" id="_lk7NGzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.web.subject.WebSubjectContext" id="_lk7NHDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCookie" type="org.apache.shiro.web.servlet.Cookie" id="_lk7NHTqtEeiP29_qDiwNWQ"/>
+      <signatures name="setCookie" type="void" id="_lk7NHjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.web.servlet.Cookie" id="_lk7NHzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="ensurePadding" type="java.lang.String" id="_lk7NIDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_lk7NITqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="RememberMeManager">
+      <signatures name="getRememberedPrincipals" type="org.apache.shiro.subject.PrincipalCollection" id="_lk7NIjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.SubjectContext" id="_lk7NIzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onSuccessfulLogin" type="void" id="_lk7NJDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.Subject" id="_lk7NJTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.shiro.authc.AuthenticationToken" id="_lk7NJjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.apache.shiro.authc.AuthenticationInfo" id="_lk7NJzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onFailedLogin" type="void" id="_lk7NKDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.Subject" id="_lk7NKTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.shiro.authc.AuthenticationToken" id="_lk7NKjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.apache.shiro.authc.AuthenticationException" id="_lk7NKzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onLogout" type="void" id="_lk7NLDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.Subject" id="_lk7NLTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forgetIdentity" type="void" id="_lk7NLjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.SubjectContext" id="_lk7NLzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IAbstractRememberMeManager_Type">
+      <signatures name="getRememberedPrincipals" type="org.apache.shiro.subject.PrincipalCollection" id="_lk7NMDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.SubjectContext" id="_lk7NMTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onSuccessfulLogin" type="void" id="_lk7NMjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.Subject" id="_lk7NMzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.shiro.authc.AuthenticationToken" id="_lk7NNDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.apache.shiro.authc.AuthenticationInfo" id="_lk7NNTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onFailedLogin" type="void" id="_lk7NNjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.Subject" id="_lk7NNzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.shiro.authc.AuthenticationToken" id="_lk7NODqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.apache.shiro.authc.AuthenticationException" id="_lk7NOTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="onLogout" type="void" id="_lk7NOjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.Subject" id="_lk7NOzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forgetIdentity" type="void" id="_lk7NPDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.SubjectContext" id="_lk7NPTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="encrypt" type="byte[]" id="_lk7NPjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_lk7NPzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="decrypt" type="byte[]" id="_lk7NQDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_lk7NQTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="deserialize" type="org.apache.shiro.subject.PrincipalCollection" id="_lk7NQjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_lk7NQzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="serialize" type="byte[]" id="_lk7NRDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.PrincipalCollection" id="_lk7NRTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSerializer" type="org.apache.shiro.io.Serializer" id="_lk7NRjqtEeiP29_qDiwNWQ"/>
+      <signatures name="setSerializer" type="void" id="_lk7NRzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.io.Serializer" id="_lk7NSDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEncryptionCipherKey" type="void" id="_lk7NSTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_lk7NSjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEncryptionCipherKey" type="byte[]" id="_lk7NSzqtEeiP29_qDiwNWQ"/>
+      <signatures name="convertPrincipalsToBytes" type="byte[]" id="_lk7NTDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.PrincipalCollection" id="_lk7NTTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRememberedSerializedIdentity" type="byte[]" id="_lk7NTjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.SubjectContext" id="_lk7NTzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rememberSerializedIdentity" type="void" id="_lk7NUDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.Subject" id="_lk7NUTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="byte[]" id="_lk7NUjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setDecryptionCipherKey" type="void" id="_lk7NUzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_lk7NVDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="convertBytesToPrincipals" type="org.apache.shiro.subject.PrincipalCollection" id="_lk7NVTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_lk7NVjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.shiro.subject.SubjectContext" id="_lk7NVzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDecryptionCipherKey" type="byte[]" id="_lk7NWDqtEeiP29_qDiwNWQ"/>
+      <signatures name="onRememberedPrincipalFailure" type="org.apache.shiro.subject.PrincipalCollection" id="_lk7NWTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.RuntimeException" id="_lk7NWjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.shiro.subject.SubjectContext" id="_lk7NWzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getIdentityToRemember" type="org.apache.shiro.subject.PrincipalCollection" id="_lk7NXDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.Subject" id="_lk7NXTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.shiro.authc.AuthenticationInfo" id="_lk7NXjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCipherKey" type="byte[]" id="_lk7NXzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setCipherKey" type="void" id="_lk7NYDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_lk7NYTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="rememberIdentity" type="void" id="_lk7NYjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.subject.Subject" id="_lk7NYzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.apache.shiro.authc.AuthenticationToken" id="_lk7NZDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.apache.shiro.authc.AuthenticationInfo" id="_lk7NZTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setCipherService" type="void" id="_lk7NZjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.crypto.CipherService" id="_lk7NZzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCipherService" type="org.apache.shiro.crypto.CipherService" id="_lk7NaDqtEeiP29_qDiwNWQ"/>
+      <signatures name="isRememberMe" type="boolean" id="_lk7NaTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.apache.shiro.authc.AuthenticationToken" id="_lk7NajqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Serializer">
+      <signatures name="deserialize" type="java.lang.Object" id="_llcxUDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_llcxUTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="serialize" type="byte[]" id="_llcxUjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_llcxUzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="CipherService">
+      <signatures name="encrypt" type="void" id="_lmn2ADqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.InputStream" id="_lmn2ATqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.io.OutputStream" id="_lmn2AjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_lmn2AzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="encrypt" type="org.apache.shiro.util.ByteSource" id="_lmn2BDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_lmn2BTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="byte[]" id="_lmn2BjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="decrypt" type="void" id="_lmn2BzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.InputStream" id="_lmn2CDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.io.OutputStream" id="_lmn2CTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_lmn2CjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="decrypt" type="org.apache.shiro.util.ByteSource" id="_lmn2CzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_lmn2DDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="byte[]" id="_lmn2DTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

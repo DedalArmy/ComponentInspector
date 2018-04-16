@@ -1,0 +1,6 @@
+dedal_diagram "denimgroup.threadfix-scanner-plugin"
+
+	repositories (
+
+		repository genRepo
+	)

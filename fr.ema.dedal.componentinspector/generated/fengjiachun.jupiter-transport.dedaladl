@@ -1,0 +1,6 @@
+dedal_diagram "fengjiachun.jupiter-transport"
+
+	repositories (
+
+		repository genRepo
+	)

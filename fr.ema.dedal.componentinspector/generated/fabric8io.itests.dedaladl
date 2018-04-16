@@ -1,0 +1,6 @@
+dedal_diagram "fabric8io.itests"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="togglz.togglz">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="togglz.togglz.togglz.spring-web.src.test.resources.applicationContext-container.xml_config" implements="//@architectureDescriptions[name='togglz.togglz.togglz.spring-web.src.test.resources.applicationContext-container.xml_spec']">
+    <configComponents name="org.togglz.core.user.NoOpUserProvider" id="_EaqAYDqtEeiP29_qDiwNWQ" realizes="_EiS5jTqtEeiP29_qDiwNWQ" implements="_EchooDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IUserProvider_NoOpUserProvider" type="UserProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INoOpUserProvider" type="INoOpUserProvider_Type"/>
+    </configComponents>
+    <configComponents name="org.togglz.core.repository.mem.InMemoryStateRepository" id="_EaqAYTqtEeiP29_qDiwNWQ" realizes="_EiS5jzqtEeiP29_qDiwNWQ" implements="_EdSdoDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IStateRepository_InMemoryStateRepository" type="StateRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryStateRepository" type="IInMemoryStateRepository_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryStateRepository" direction="REQUIRED" type="Map"/>
+      <attributes name="states" type="java.util.Map"/>
+    </configComponents>
+    <configComponents name="org.togglz.spring.manager.FeatureManagerFactory" id="_EaqAYjqtEeiP29_qDiwNWQ" realizes="_EiS53DqtEeiP29_qDiwNWQ" implements="_EhJC4DqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_FeatureManagerFactory" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureManagerFactory" type="IFeatureManagerFactory_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureManagerBuilder_FeatureManagerFactory" direction="REQUIRED" type="IFeatureManagerBuilder_Type"/>
+      <attributes name="builder" type="org.togglz.core.manager.FeatureManagerBuilder"/>
+    </configComponents>
+    <configConnections refID="_EaqAYzqtEeiP29_qDiwNWQ" property="&quot;stateRepository&quot;" clientClassElem="_EaqAYjqtEeiP29_qDiwNWQ" serverClassElem="_EaqAYTqtEeiP29_qDiwNWQ"/>
+    <configConnections refID="_EaqncDqtEeiP29_qDiwNWQ" property="&quot;userProvider&quot;" clientClassElem="_EaqAYjqtEeiP29_qDiwNWQ" serverClassElem="_EaqAYDqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="togglz.togglz.togglz.spring-web.src.test.resources.applicationContext-container.xml_asm" instantiates="//@architectureDescriptions[name='togglz.togglz.togglz.spring-web.src.test.resources.applicationContext-container.xml_config']">
+    <assmComponents name="userProvider" id="_EaqncTqtEeiP29_qDiwNWQ" instantiates="_EaqAYDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IUserProvider_NoOpUserProvider_userProvider" type="UserProvider" instantiates="IUserProvider_NoOpUserProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INoOpUserProvider_userProvider" type="INoOpUserProvider_Type" instantiates="INoOpUserProvider"/>
+    </assmComponents>
+    <assmComponents name="stateRepository" id="_EaqncjqtEeiP29_qDiwNWQ" instantiates="_EaqAYTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IStateRepository_InMemoryStateRepository_stateRepository" type="StateRepository" instantiates="IStateRepository_InMemoryStateRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryStateRepository_stateRepository" type="IInMemoryStateRepository_Type" instantiates="IInMemoryStateRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryStateRepository_stateRepository" direction="REQUIRED" type="Map" instantiates="IMap_InMemoryStateRepository"/>
+    </assmComponents>
+    <assmComponents name="featureManager" id="_EaqnczqtEeiP29_qDiwNWQ" instantiates="_EaqAYjqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_FeatureManagerFactory_featureManager" type="FactoryBean" instantiates="IFactoryBean_FeatureManagerFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureManagerFactory_featureManager" type="IFeatureManagerFactory_Type" instantiates="IFeatureManagerFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureManagerBuilder_FeatureManagerFactory_featureManager" direction="REQUIRED" type="IFeatureManagerBuilder_Type" instantiates="IFeatureManagerBuilder_FeatureManagerFactory"/>
+    </assmComponents>
+    <assemblyConnections refID="_EaqndDqtEeiP29_qDiwNWQ" property="featureManager.stateRepository" clientInstElem="_EaqnczqtEeiP29_qDiwNWQ" serverInstElem="_EaqncjqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_EaqndTqtEeiP29_qDiwNWQ" property="featureManager.userProvider" clientInstElem="_EaqnczqtEeiP29_qDiwNWQ" serverInstElem="_EaqncTqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="togglz.togglz.togglz.spring-web.src.test.resources.applicationContext-container.xml_spec">
+    <specComponents name="UserProvider_role" id="_EiS5jTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IUserProviderUserProvider_role" type="UserProvider"/>
+    </specComponents>
+    <specComponents name="InMemoryStateRepository_role" id="_EiS5jzqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IStateRepositoryInMemoryStateRepository_role" type="StateRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryStateRepositoryInMemoryStateRepository_role" type="IInMemoryStateRepository_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapInMemoryStateRepository_role" direction="REQUIRED" type="Map"/>
+    </specComponents>
+    <specComponents name="FeatureManagerFactory_role" id="_EiS53DqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBeanFeatureManagerFactory_role" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureManagerFactoryFeatureManagerFactory_role" type="IFeatureManagerFactory_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureManagerBuilderFeatureManagerFactory_role" direction="REQUIRED" type="IFeatureManagerBuilder_Type"/>
+    </specComponents>
+    <specConnections refID="_EiS6ETqtEeiP29_qDiwNWQ"/>
+    <specConnections refID="_EiTggDqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="togglz.togglz.togglz.spring-web.src.test.resources.applicationContext-proxy.xml_config" implements="//@architectureDescriptions[name='togglz.togglz.togglz.spring-web.src.test.resources.applicationContext-proxy.xml_spec']">
+    <configComponents name="org.togglz.spring.test.proxy.SomeServiceActive" id="_Eio3sDqtEeiP29_qDiwNWQ" realizes="_ElUYSzqtEeiP29_qDiwNWQ" implements="_EkQoUDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeService_SomeServiceActive" type="SomeService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceActive" type="ISomeServiceActive_Type"/>
+    </configComponents>
+    <configComponents name="org.togglz.spring.test.proxy.SomeServiceInactive" id="_Eio3sTqtEeiP29_qDiwNWQ" realizes="_ElUYRDqtEeiP29_qDiwNWQ" implements="_EkvJcDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeService_SomeServiceInactive" type="SomeService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceInactive" type="ISomeServiceInactive_Type"/>
+    </configComponents>
+    <configComponents name="org.togglz.spring.proxy.FeatureProxyFactoryBean" id="_Eio3sjqtEeiP29_qDiwNWQ" realizes="_ElUYUjqtEeiP29_qDiwNWQ" implements="_ElTKIDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_FeatureProxyFactoryBean" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_FeatureProxyFactoryBean" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureProxyFactoryBean" type="IFeatureProxyFactoryBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FeatureProxyFactoryBean" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FeatureProxyFactoryBean" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FeatureProxyFactoryBean" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FeatureProxyFactoryBean" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_FeatureProxyFactoryBean" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_FeatureProxyFactoryBean" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FeatureProxyFactoryBean" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IGenericDeclaration_FeatureProxyFactoryBean" direction="REQUIRED" type="GenericDeclaration"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IType_FeatureProxyFactoryBean" direction="REQUIRED" type="Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAnnotatedElement_FeatureProxyFactoryBean" direction="REQUIRED" type="AnnotatedElement"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClass_FeatureProxyFactoryBean" direction="REQUIRED" type="IClass_Type"/>
+      <attributes name="feature" type="java.lang.String"/>
+      <attributes name="active" type="java.lang.Object"/>
+      <attributes name="inactive" type="java.lang.Object"/>
+      <attributes name="proxyType" type="java.lang.Class"/>
+      <attributes name="initialized" type="boolean"/>
+    </configComponents>
+    <configConnections serverIntElem="ISomeServiceActive" clientIntElem="IObject_FeatureProxyFactoryBean" refID="_Eio3szqtEeiP29_qDiwNWQ" property="&quot;active&quot;" clientClassElem="_Eio3sjqtEeiP29_qDiwNWQ" serverClassElem="_Eio3sDqtEeiP29_qDiwNWQ"/>
+    <configConnections serverIntElem="ISomeServiceInactive" clientIntElem="IObject_FeatureProxyFactoryBean" refID="_EipewDqtEeiP29_qDiwNWQ" property="&quot;inactive&quot;" clientClassElem="_Eio3sjqtEeiP29_qDiwNWQ" serverClassElem="_Eio3sTqtEeiP29_qDiwNWQ"/>
+    <configConnections serverIntElem="ISomeServiceActive" clientIntElem="IObject_FeatureProxyFactoryBean" refID="_EipewTqtEeiP29_qDiwNWQ" property="&quot;active&quot;" clientClassElem="_Eio3sjqtEeiP29_qDiwNWQ" serverClassElem="_Eio3sDqtEeiP29_qDiwNWQ"/>
+    <configConnections serverIntElem="ISomeServiceInactive" clientIntElem="IObject_FeatureProxyFactoryBean" refID="_EipewjqtEeiP29_qDiwNWQ" property="&quot;inactive&quot;" clientClassElem="_Eio3sjqtEeiP29_qDiwNWQ" serverClassElem="_Eio3sTqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="togglz.togglz.togglz.spring-web.src.test.resources.applicationContext-proxy.xml_asm" instantiates="//@architectureDescriptions[name='togglz.togglz.togglz.spring-web.src.test.resources.applicationContext-proxy.xml_config']">
+    <assmComponents name="someServiceActive" id="_EipewzqtEeiP29_qDiwNWQ" instantiates="_Eio3sDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeService_SomeServiceActive_someServiceActive" type="SomeService" instantiates="ISomeService_SomeServiceActive"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceActive_someServiceActive" type="ISomeServiceActive_Type" instantiates="ISomeServiceActive"/>
+    </assmComponents>
+    <assmComponents name="someServiceInactive" id="_EipexDqtEeiP29_qDiwNWQ" instantiates="_Eio3sTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeService_SomeServiceInactive_someServiceInactive" type="SomeService" instantiates="ISomeService_SomeServiceInactive"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceInactive_someServiceInactive" type="ISomeServiceInactive_Type" instantiates="ISomeServiceInactive"/>
+    </assmComponents>
+    <assmComponents name="someServiceManuallySetProxyType" id="_EipexTqtEeiP29_qDiwNWQ" instantiates="_Eio3sjqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_FeatureProxyFactoryBean_someServiceManuallySetProxyType" type="FactoryBean" instantiates="IFactoryBean_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_FeatureProxyFactoryBean_someServiceManuallySetProxyType" type="InitializingBean" instantiates="IInitializingBean_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureProxyFactoryBean_someServiceManuallySetProxyType" type="IFeatureProxyFactoryBean_Type" instantiates="IFeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" instantiates="null_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="Comparable" instantiates="IComparable_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="IString_Type" instantiates="IString_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="IObject_Type" instantiates="IObject_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="IObject_Type" instantiates="IObject_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" instantiates="null_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IGenericDeclaration_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="GenericDeclaration" instantiates="IGenericDeclaration_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IType_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="Type" instantiates="IType_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAnnotatedElement_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="AnnotatedElement" instantiates="IAnnotatedElement_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClass_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="IClass_Type" instantiates="IClass_FeatureProxyFactoryBean"/>
+    </assmComponents>
+    <assmComponents name="someServiceAutoDetectProxyType" id="_EipexjqtEeiP29_qDiwNWQ" instantiates="_Eio3sjqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" type="FactoryBean" instantiates="IFactoryBean_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" type="InitializingBean" instantiates="IInitializingBean_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureProxyFactoryBean_someServiceAutoDetectProxyType" type="IFeatureProxyFactoryBean_Type" instantiates="IFeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" instantiates="null_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="Comparable" instantiates="IComparable_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="IString_Type" instantiates="IString_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="IObject_Type" instantiates="IObject_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="IObject_Type" instantiates="IObject_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" instantiates="null_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IGenericDeclaration_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="GenericDeclaration" instantiates="IGenericDeclaration_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IType_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="Type" instantiates="IType_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAnnotatedElement_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="AnnotatedElement" instantiates="IAnnotatedElement_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClass_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="IClass_Type" instantiates="IClass_FeatureProxyFactoryBean"/>
+    </assmComponents>
+    <assemblyConnections serverIntElem="ISomeServiceActive_someServiceActive" clientIntElem="IObject_FeatureProxyFactoryBean_someServiceManuallySetProxyType" refID="_EipexzqtEeiP29_qDiwNWQ" property="someServiceManuallySetProxyType.active" clientInstElem="_EipexTqtEeiP29_qDiwNWQ" serverInstElem="_EipewzqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections serverIntElem="ISomeServiceInactive_someServiceInactive" clientIntElem="IObject_FeatureProxyFactoryBean_someServiceManuallySetProxyType" refID="_EipeyDqtEeiP29_qDiwNWQ" property="someServiceManuallySetProxyType.inactive" clientInstElem="_EipexTqtEeiP29_qDiwNWQ" serverInstElem="_EipexDqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections serverIntElem="ISomeServiceActive_someServiceActive" clientIntElem="IObject_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" refID="_EipeyTqtEeiP29_qDiwNWQ" property="someServiceAutoDetectProxyType.active" clientInstElem="_EipexjqtEeiP29_qDiwNWQ" serverInstElem="_EipewzqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections serverIntElem="ISomeServiceInactive_someServiceInactive" clientIntElem="IObject_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" refID="_EipeyjqtEeiP29_qDiwNWQ" property="someServiceAutoDetectProxyType.inactive" clientInstElem="_EipexjqtEeiP29_qDiwNWQ" serverInstElem="_EipexDqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="togglz.togglz.togglz.spring-web.src.test.resources.applicationContext-proxy.xml_spec">
+    <specComponents name="SomeServiceInactive_role" id="_ElUYRDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceSomeServiceInactive_role" type="SomeService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceInactiveSomeServiceInactive_role" type="ISomeServiceInactive_Type"/>
+    </specComponents>
+    <specComponents name="SomeServiceActive_role" id="_ElUYSzqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceSomeServiceActive_role" type="SomeService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceActiveSomeServiceActive_role" type="ISomeServiceActive_Type"/>
+    </specComponents>
+    <specComponents name="FeatureProxyFactoryBean_role" id="_ElUYUjqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBeanFeatureProxyFactoryBean_role" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBeanFeatureProxyFactoryBean_role" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureProxyFactoryBeanFeatureProxyFactoryBean_role" type="IFeatureProxyFactoryBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullFeatureProxyFactoryBean_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableFeatureProxyFactoryBean_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceFeatureProxyFactoryBean_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringFeatureProxyFactoryBean_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFeatureProxyFactoryBean_role" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFeatureProxyFactoryBean_role" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullFeatureProxyFactoryBean_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IGenericDeclarationFeatureProxyFactoryBean_role" direction="REQUIRED" type="GenericDeclaration"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITypeFeatureProxyFactoryBean_role" direction="REQUIRED" type="Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAnnotatedElementFeatureProxyFactoryBean_role" direction="REQUIRED" type="AnnotatedElement"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClassFeatureProxyFactoryBean_role" direction="REQUIRED" type="IClass_Type"/>
+    </specComponents>
+    <specConnections serverIntElem="ISomeServiceSomeServiceActive_role" clientIntElem="IObjectFeatureProxyFactoryBean_role" refID="_ElUaLjqtEeiP29_qDiwNWQ" clientCompElem="_ElUYUjqtEeiP29_qDiwNWQ" serverCompElem="_ElUYSzqtEeiP29_qDiwNWQ"/>
+    <specConnections serverIntElem="ISomeServiceSomeServiceInactive_role" clientIntElem="IObjectFeatureProxyFactoryBean_role" refID="_ElUaLzqtEeiP29_qDiwNWQ" clientCompElem="_ElUYUjqtEeiP29_qDiwNWQ" serverCompElem="_ElUYRDqtEeiP29_qDiwNWQ"/>
+    <specConnections serverIntElem="ISomeServiceSomeServiceActive_role" clientIntElem="IObjectFeatureProxyFactoryBean_role" refID="_ElUaMDqtEeiP29_qDiwNWQ" clientCompElem="_ElUYUjqtEeiP29_qDiwNWQ" serverCompElem="_ElUYSzqtEeiP29_qDiwNWQ"/>
+    <specConnections serverIntElem="ISomeServiceSomeServiceInactive_role" clientIntElem="IObjectFeatureProxyFactoryBean_role" refID="_ElUaMTqtEeiP29_qDiwNWQ" clientCompElem="_ElUYUjqtEeiP29_qDiwNWQ" serverCompElem="_ElUYRDqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="togglz.togglz.togglz.spring-web.target.test-classes.applicationContext-container.xml_config" implements="//@architectureDescriptions[name='togglz.togglz.togglz.spring-web.target.test-classes.applicationContext-container.xml_spec']">
+    <configComponents name="org.togglz.core.user.NoOpUserProvider" id="_El94gDqtEeiP29_qDiwNWQ" realizes="_El-gDjqtEeiP29_qDiwNWQ" implements="_El-fkTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IUserProvider_NoOpUserProvider" type="UserProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INoOpUserProvider" type="INoOpUserProvider_Type"/>
+    </configComponents>
+    <configComponents name="org.togglz.core.repository.mem.InMemoryStateRepository" id="_El94gTqtEeiP29_qDiwNWQ" realizes="_El-gEDqtEeiP29_qDiwNWQ" implements="_El-flTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IStateRepository_InMemoryStateRepository" type="StateRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryStateRepository" type="IInMemoryStateRepository_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryStateRepository" direction="REQUIRED" type="Map"/>
+      <attributes name="states" type="java.util.Map"/>
+    </configComponents>
+    <configComponents name="org.togglz.spring.manager.FeatureManagerFactory" id="_El94gjqtEeiP29_qDiwNWQ" realizes="_El-gXTqtEeiP29_qDiwNWQ" implements="_El-f2TqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_FeatureManagerFactory" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureManagerFactory" type="IFeatureManagerFactory_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureManagerBuilder_FeatureManagerFactory" direction="REQUIRED" type="IFeatureManagerBuilder_Type"/>
+      <attributes name="builder" type="org.togglz.core.manager.FeatureManagerBuilder"/>
+    </configComponents>
+    <configConnections refID="_El94gzqtEeiP29_qDiwNWQ" property="&quot;stateRepository&quot;" clientClassElem="_El94gjqtEeiP29_qDiwNWQ" serverClassElem="_El94gTqtEeiP29_qDiwNWQ"/>
+    <configConnections refID="_El94hDqtEeiP29_qDiwNWQ" property="&quot;userProvider&quot;" clientClassElem="_El94gjqtEeiP29_qDiwNWQ" serverClassElem="_El94gDqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="togglz.togglz.togglz.spring-web.target.test-classes.applicationContext-container.xml_asm" instantiates="//@architectureDescriptions[name='togglz.togglz.togglz.spring-web.target.test-classes.applicationContext-container.xml_config']">
+    <assmComponents name="userProvider" id="_El94hTqtEeiP29_qDiwNWQ" instantiates="_El94gDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IUserProvider_NoOpUserProvider_userProvider" type="UserProvider" instantiates="IUserProvider_NoOpUserProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INoOpUserProvider_userProvider" type="INoOpUserProvider_Type" instantiates="INoOpUserProvider"/>
+    </assmComponents>
+    <assmComponents name="stateRepository" id="_El94hjqtEeiP29_qDiwNWQ" instantiates="_El94gTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IStateRepository_InMemoryStateRepository_stateRepository" type="StateRepository" instantiates="IStateRepository_InMemoryStateRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryStateRepository_stateRepository" type="IInMemoryStateRepository_Type" instantiates="IInMemoryStateRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryStateRepository_stateRepository" direction="REQUIRED" type="Map" instantiates="IMap_InMemoryStateRepository"/>
+    </assmComponents>
+    <assmComponents name="featureManager" id="_El94hzqtEeiP29_qDiwNWQ" instantiates="_El94gjqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_FeatureManagerFactory_featureManager" type="FactoryBean" instantiates="IFactoryBean_FeatureManagerFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureManagerFactory_featureManager" type="IFeatureManagerFactory_Type" instantiates="IFeatureManagerFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureManagerBuilder_FeatureManagerFactory_featureManager" direction="REQUIRED" type="IFeatureManagerBuilder_Type" instantiates="IFeatureManagerBuilder_FeatureManagerFactory"/>
+    </assmComponents>
+    <assemblyConnections refID="_El94iDqtEeiP29_qDiwNWQ" property="featureManager.stateRepository" clientInstElem="_El94hzqtEeiP29_qDiwNWQ" serverInstElem="_El94hjqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_El-fkDqtEeiP29_qDiwNWQ" property="featureManager.userProvider" clientInstElem="_El94hzqtEeiP29_qDiwNWQ" serverInstElem="_El94hTqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="togglz.togglz.togglz.spring-web.target.test-classes.applicationContext-container.xml_spec">
+    <specComponents name="UserProvider_role" id="_El-gDjqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IUserProviderUserProvider_role" type="UserProvider"/>
+    </specComponents>
+    <specComponents name="InMemoryStateRepository_role" id="_El-gEDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IStateRepositoryInMemoryStateRepository_role" type="StateRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryStateRepositoryInMemoryStateRepository_role" type="IInMemoryStateRepository_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapInMemoryStateRepository_role" direction="REQUIRED" type="Map"/>
+    </specComponents>
+    <specComponents name="FeatureManagerFactory_role" id="_El-gXTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBeanFeatureManagerFactory_role" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureManagerFactoryFeatureManagerFactory_role" type="IFeatureManagerFactory_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureManagerBuilderFeatureManagerFactory_role" direction="REQUIRED" type="IFeatureManagerBuilder_Type"/>
+    </specComponents>
+    <specConnections refID="_El-gkjqtEeiP29_qDiwNWQ"/>
+    <specConnections refID="_El-gkzqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="togglz.togglz.togglz.spring-web.target.test-classes.applicationContext-proxy.xml_config" implements="//@architectureDescriptions[name='togglz.togglz.togglz.spring-web.target.test-classes.applicationContext-proxy.xml_spec']">
+    <configComponents name="org.togglz.spring.test.proxy.SomeServiceActive" id="_EmZ9YDqtEeiP29_qDiwNWQ" realizes="_EmbzqjqtEeiP29_qDiwNWQ" implements="_EmbLhDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeService_SomeServiceActive" type="SomeService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceActive" type="ISomeServiceActive_Type"/>
+    </configComponents>
+    <configComponents name="org.togglz.spring.test.proxy.SomeServiceInactive" id="_EmZ9YTqtEeiP29_qDiwNWQ" realizes="_EmbzozqtEeiP29_qDiwNWQ" implements="_EmbLiDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeService_SomeServiceInactive" type="SomeService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceInactive" type="ISomeServiceInactive_Type"/>
+    </configComponents>
+    <configComponents name="org.togglz.spring.proxy.FeatureProxyFactoryBean" id="_EmZ9YjqtEeiP29_qDiwNWQ" realizes="_EmbzsTqtEeiP29_qDiwNWQ" implements="_EmbLjDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_FeatureProxyFactoryBean" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_FeatureProxyFactoryBean" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureProxyFactoryBean" type="IFeatureProxyFactoryBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FeatureProxyFactoryBean" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FeatureProxyFactoryBean" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FeatureProxyFactoryBean" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FeatureProxyFactoryBean" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_FeatureProxyFactoryBean" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_FeatureProxyFactoryBean" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FeatureProxyFactoryBean" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IGenericDeclaration_FeatureProxyFactoryBean" direction="REQUIRED" type="GenericDeclaration"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IType_FeatureProxyFactoryBean" direction="REQUIRED" type="Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAnnotatedElement_FeatureProxyFactoryBean" direction="REQUIRED" type="AnnotatedElement"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClass_FeatureProxyFactoryBean" direction="REQUIRED" type="IClass_Type"/>
+      <attributes name="feature" type="java.lang.String"/>
+      <attributes name="active" type="java.lang.Object"/>
+      <attributes name="inactive" type="java.lang.Object"/>
+      <attributes name="proxyType" type="java.lang.Class"/>
+      <attributes name="initialized" type="boolean"/>
+    </configComponents>
+    <configConnections serverIntElem="ISomeServiceActive" clientIntElem="IObject_FeatureProxyFactoryBean" refID="_EmakcDqtEeiP29_qDiwNWQ" property="&quot;active&quot;" clientClassElem="_EmZ9YjqtEeiP29_qDiwNWQ" serverClassElem="_EmZ9YDqtEeiP29_qDiwNWQ"/>
+    <configConnections serverIntElem="ISomeServiceInactive" clientIntElem="IObject_FeatureProxyFactoryBean" refID="_EmakcTqtEeiP29_qDiwNWQ" property="&quot;inactive&quot;" clientClassElem="_EmZ9YjqtEeiP29_qDiwNWQ" serverClassElem="_EmZ9YTqtEeiP29_qDiwNWQ"/>
+    <configConnections serverIntElem="ISomeServiceActive" clientIntElem="IObject_FeatureProxyFactoryBean" refID="_EmakcjqtEeiP29_qDiwNWQ" property="&quot;active&quot;" clientClassElem="_EmZ9YjqtEeiP29_qDiwNWQ" serverClassElem="_EmZ9YDqtEeiP29_qDiwNWQ"/>
+    <configConnections serverIntElem="ISomeServiceInactive" clientIntElem="IObject_FeatureProxyFactoryBean" refID="_EmakczqtEeiP29_qDiwNWQ" property="&quot;inactive&quot;" clientClassElem="_EmZ9YjqtEeiP29_qDiwNWQ" serverClassElem="_EmZ9YTqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="togglz.togglz.togglz.spring-web.target.test-classes.applicationContext-proxy.xml_asm" instantiates="//@architectureDescriptions[name='togglz.togglz.togglz.spring-web.target.test-classes.applicationContext-proxy.xml_config']">
+    <assmComponents name="someServiceActive" id="_EmakdDqtEeiP29_qDiwNWQ" instantiates="_EmZ9YDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeService_SomeServiceActive_someServiceActive" type="SomeService" instantiates="ISomeService_SomeServiceActive"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceActive_someServiceActive" type="ISomeServiceActive_Type" instantiates="ISomeServiceActive"/>
+    </assmComponents>
+    <assmComponents name="someServiceInactive" id="_EmakdTqtEeiP29_qDiwNWQ" instantiates="_EmZ9YTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeService_SomeServiceInactive_someServiceInactive" type="SomeService" instantiates="ISomeService_SomeServiceInactive"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceInactive_someServiceInactive" type="ISomeServiceInactive_Type" instantiates="ISomeServiceInactive"/>
+    </assmComponents>
+    <assmComponents name="someServiceManuallySetProxyType" id="_EmakdjqtEeiP29_qDiwNWQ" instantiates="_EmZ9YjqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_FeatureProxyFactoryBean_someServiceManuallySetProxyType" type="FactoryBean" instantiates="IFactoryBean_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_FeatureProxyFactoryBean_someServiceManuallySetProxyType" type="InitializingBean" instantiates="IInitializingBean_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureProxyFactoryBean_someServiceManuallySetProxyType" type="IFeatureProxyFactoryBean_Type" instantiates="IFeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" instantiates="null_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="Comparable" instantiates="IComparable_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="IString_Type" instantiates="IString_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="IObject_Type" instantiates="IObject_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="IObject_Type" instantiates="IObject_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" instantiates="null_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IGenericDeclaration_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="GenericDeclaration" instantiates="IGenericDeclaration_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IType_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="Type" instantiates="IType_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAnnotatedElement_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="AnnotatedElement" instantiates="IAnnotatedElement_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClass_FeatureProxyFactoryBean_someServiceManuallySetProxyType" direction="REQUIRED" type="IClass_Type" instantiates="IClass_FeatureProxyFactoryBean"/>
+    </assmComponents>
+    <assmComponents name="someServiceAutoDetectProxyType" id="_EmakdzqtEeiP29_qDiwNWQ" instantiates="_EmZ9YjqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" type="FactoryBean" instantiates="IFactoryBean_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" type="InitializingBean" instantiates="IInitializingBean_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureProxyFactoryBean_someServiceAutoDetectProxyType" type="IFeatureProxyFactoryBean_Type" instantiates="IFeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" instantiates="null_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="Comparable" instantiates="IComparable_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="IString_Type" instantiates="IString_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="IObject_Type" instantiates="IObject_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="IObject_Type" instantiates="IObject_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" instantiates="null_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IGenericDeclaration_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="GenericDeclaration" instantiates="IGenericDeclaration_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IType_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="Type" instantiates="IType_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAnnotatedElement_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="AnnotatedElement" instantiates="IAnnotatedElement_FeatureProxyFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClass_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" direction="REQUIRED" type="IClass_Type" instantiates="IClass_FeatureProxyFactoryBean"/>
+    </assmComponents>
+    <assemblyConnections serverIntElem="ISomeServiceActive_someServiceActive" clientIntElem="IObject_FeatureProxyFactoryBean_someServiceManuallySetProxyType" refID="_EmbLgDqtEeiP29_qDiwNWQ" property="someServiceManuallySetProxyType.active" clientInstElem="_EmakdjqtEeiP29_qDiwNWQ" serverInstElem="_EmakdDqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections serverIntElem="ISomeServiceInactive_someServiceInactive" clientIntElem="IObject_FeatureProxyFactoryBean_someServiceManuallySetProxyType" refID="_EmbLgTqtEeiP29_qDiwNWQ" property="someServiceManuallySetProxyType.inactive" clientInstElem="_EmakdjqtEeiP29_qDiwNWQ" serverInstElem="_EmakdTqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections serverIntElem="ISomeServiceActive_someServiceActive" clientIntElem="IObject_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" refID="_EmbLgjqtEeiP29_qDiwNWQ" property="someServiceAutoDetectProxyType.active" clientInstElem="_EmakdzqtEeiP29_qDiwNWQ" serverInstElem="_EmakdDqtEeiP29_qDiwNWQ"/>
+    <assemblyConnections serverIntElem="ISomeServiceInactive_someServiceInactive" clientIntElem="IObject_FeatureProxyFactoryBean_someServiceAutoDetectProxyType" refID="_EmbLgzqtEeiP29_qDiwNWQ" property="someServiceAutoDetectProxyType.inactive" clientInstElem="_EmakdzqtEeiP29_qDiwNWQ" serverInstElem="_EmakdTqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="togglz.togglz.togglz.spring-web.target.test-classes.applicationContext-proxy.xml_spec">
+    <specComponents name="SomeServiceInactive_role" id="_EmbzozqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceSomeServiceInactive_role" type="SomeService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceInactiveSomeServiceInactive_role" type="ISomeServiceInactive_Type"/>
+    </specComponents>
+    <specComponents name="SomeServiceActive_role" id="_EmbzqjqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceSomeServiceActive_role" type="SomeService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceActiveSomeServiceActive_role" type="ISomeServiceActive_Type"/>
+    </specComponents>
+    <specComponents name="FeatureProxyFactoryBean_role" id="_EmbzsTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBeanFeatureProxyFactoryBean_role" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBeanFeatureProxyFactoryBean_role" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureProxyFactoryBeanFeatureProxyFactoryBean_role" type="IFeatureProxyFactoryBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullFeatureProxyFactoryBean_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableFeatureProxyFactoryBean_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceFeatureProxyFactoryBean_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringFeatureProxyFactoryBean_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFeatureProxyFactoryBean_role" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectFeatureProxyFactoryBean_role" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullFeatureProxyFactoryBean_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IGenericDeclarationFeatureProxyFactoryBean_role" direction="REQUIRED" type="GenericDeclaration"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITypeFeatureProxyFactoryBean_role" direction="REQUIRED" type="Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAnnotatedElementFeatureProxyFactoryBean_role" direction="REQUIRED" type="AnnotatedElement"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClassFeatureProxyFactoryBean_role" direction="REQUIRED" type="IClass_Type"/>
+    </specComponents>
+    <specConnections serverIntElem="ISomeServiceSomeServiceActive_role" clientIntElem="IObjectFeatureProxyFactoryBean_role" refID="_EmcbVjqtEeiP29_qDiwNWQ" clientCompElem="_EmbzsTqtEeiP29_qDiwNWQ" serverCompElem="_EmbzqjqtEeiP29_qDiwNWQ"/>
+    <specConnections serverIntElem="ISomeServiceSomeServiceInactive_role" clientIntElem="IObjectFeatureProxyFactoryBean_role" refID="_EmcbVzqtEeiP29_qDiwNWQ" clientCompElem="_EmbzsTqtEeiP29_qDiwNWQ" serverCompElem="_EmbzozqtEeiP29_qDiwNWQ"/>
+    <specConnections serverIntElem="ISomeServiceSomeServiceActive_role" clientIntElem="IObjectFeatureProxyFactoryBean_role" refID="_EmcbWDqtEeiP29_qDiwNWQ" clientCompElem="_EmbzsTqtEeiP29_qDiwNWQ" serverCompElem="_EmbzqjqtEeiP29_qDiwNWQ"/>
+    <specConnections serverIntElem="ISomeServiceSomeServiceInactive_role" clientIntElem="IObjectFeatureProxyFactoryBean_role" refID="_EmcbWTqtEeiP29_qDiwNWQ" clientCompElem="_EmbzsTqtEeiP29_qDiwNWQ" serverCompElem="_EmbzozqtEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="org_togglz_core_user_NoOpUserProvider_Type" id="_EchooDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IUserProvider_NoOpUserProvider_org_togglz_core_user_NoOpUserProvider_Type" type="UserProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INoOpUserProvider_org_togglz_core_user_NoOpUserProvider_Type" type="INoOpUserProvider_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_togglz_core_repository_mem_InMemoryStateRepository_Type" id="_EdSdoDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IStateRepository_InMemoryStateRepository_org_togglz_core_repository_mem_InMemoryStateRepository_Type" type="StateRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryStateRepository_org_togglz_core_repository_mem_InMemoryStateRepository_Type" type="IInMemoryStateRepository_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryStateRepository_org_togglz_core_repository_mem_InMemoryStateRepository_Type" direction="REQUIRED" type="Map"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_togglz_spring_manager_FeatureManagerFactory_Type" id="_EhJC4DqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_FeatureManagerFactory_org_togglz_spring_manager_FeatureManagerFactory_Type" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureManagerFactory_org_togglz_spring_manager_FeatureManagerFactory_Type" type="IFeatureManagerFactory_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureManagerBuilder_FeatureManagerFactory_org_togglz_spring_manager_FeatureManagerFactory_Type" direction="REQUIRED" type="IFeatureManagerBuilder_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_togglz_spring_test_proxy_SomeServiceActive_Type" id="_EkQoUDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeService_SomeServiceActive_org_togglz_spring_test_proxy_SomeServiceActive_Type" type="SomeService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceActive_org_togglz_spring_test_proxy_SomeServiceActive_Type" type="ISomeServiceActive_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_togglz_spring_test_proxy_SomeServiceInactive_Type" id="_EkvJcDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeService_SomeServiceInactive_org_togglz_spring_test_proxy_SomeServiceInactive_Type" type="SomeService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceInactive_org_togglz_spring_test_proxy_SomeServiceInactive_Type" type="ISomeServiceInactive_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" id="_ElTKIDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" type="IFeatureProxyFactoryBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IGenericDeclaration_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="GenericDeclaration"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IType_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAnnotatedElement_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="AnnotatedElement"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClass_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="IClass_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_togglz_core_user_NoOpUserProvider_Type" id="_El-fkTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IUserProvider_NoOpUserProvider_org_togglz_core_user_NoOpUserProvider_Type" type="UserProvider"/>
+      <compInterfaces xsi:type="dedal:Interface" name="INoOpUserProvider_org_togglz_core_user_NoOpUserProvider_Type" type="INoOpUserProvider_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_togglz_core_repository_mem_InMemoryStateRepository_Type" id="_El-flTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IStateRepository_InMemoryStateRepository_org_togglz_core_repository_mem_InMemoryStateRepository_Type" type="StateRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryStateRepository_org_togglz_core_repository_mem_InMemoryStateRepository_Type" type="IInMemoryStateRepository_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryStateRepository_org_togglz_core_repository_mem_InMemoryStateRepository_Type" direction="REQUIRED" type="Map"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_togglz_spring_manager_FeatureManagerFactory_Type" id="_El-f2TqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_FeatureManagerFactory_org_togglz_spring_manager_FeatureManagerFactory_Type" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureManagerFactory_org_togglz_spring_manager_FeatureManagerFactory_Type" type="IFeatureManagerFactory_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureManagerBuilder_FeatureManagerFactory_org_togglz_spring_manager_FeatureManagerFactory_Type" direction="REQUIRED" type="IFeatureManagerBuilder_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_togglz_spring_test_proxy_SomeServiceActive_Type" id="_EmbLhDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeService_SomeServiceActive_org_togglz_spring_test_proxy_SomeServiceActive_Type" type="SomeService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceActive_org_togglz_spring_test_proxy_SomeServiceActive_Type" type="ISomeServiceActive_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_togglz_spring_test_proxy_SomeServiceInactive_Type" id="_EmbLiDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeService_SomeServiceInactive_org_togglz_spring_test_proxy_SomeServiceInactive_Type" type="SomeService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISomeServiceInactive_org_togglz_spring_test_proxy_SomeServiceInactive_Type" type="ISomeServiceInactive_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" id="_EmbLjDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" type="IFeatureProxyFactoryBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="IObject_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IGenericDeclaration_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="GenericDeclaration"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IType_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAnnotatedElement_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="AnnotatedElement"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IClass_FeatureProxyFactoryBean_org_togglz_spring_proxy_FeatureProxyFactoryBean_Type" direction="REQUIRED" type="IClass_Type"/>
+    </components>
+    <interfaceTypes name="UserProvider">
+      <signatures name="getCurrentUser" type="org.togglz.core.user.FeatureUser" id="_Ect14DqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="INoOpUserProvider_Type">
+      <signatures name="getCurrentUser" type="org.togglz.core.user.FeatureUser" id="_Ect14TqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="StateRepository">
+      <signatures name="getFeatureState" type="org.togglz.core.repository.FeatureState" id="_Edt7cDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.togglz.core.Feature" id="_Edt7cTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setFeatureState" type="void" id="_Edt7cjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.togglz.core.repository.FeatureState" id="_Edt7czqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IInMemoryStateRepository_Type">
+      <signatures name="getFeatureState" type="org.togglz.core.repository.FeatureState" id="_Edt7dDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.togglz.core.Feature" id="_Edt7dTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setFeatureState" type="void" id="_Edt7djqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.togglz.core.repository.FeatureState" id="_Edt7dzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Map">
+      <signatures name="remove" type="java.lang.Object" id="_Edt7fDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Edt7fTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_Edt7fjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Edt7fzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_Edt7gDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_Edt7gTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Edt7gjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_Edt7gzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Edt7hDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_Edt7hTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_Edt7hjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Edt7hzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="values" type="java.util.Collection" id="_Edt7iDqtEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_Edt7iTqtEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_Edt7ijqtEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_Edt7izqtEeiP29_qDiwNWQ"/>
+      <signatures name="replace" type="java.lang.Object" id="_Edt7jDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Edt7jTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_Edt7jjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="boolean" id="_Edt7jzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Edt7kDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_Edt7kTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_Edt7kjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="void" id="_Edt7kzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiFunction" id="_Edt7lDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="size" type="int" id="_Edt7lTqtEeiP29_qDiwNWQ"/>
+      <signatures name="entrySet" type="java.util.Set" id="_Edt7ljqtEeiP29_qDiwNWQ"/>
+      <signatures name="putAll" type="void" id="_Edt7lzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_Edt7mDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="putIfAbsent" type="java.lang.Object" id="_Edt7mTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Edt7mjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_Edt7mzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="keySet" type="java.util.Set" id="_Edt7nDqtEeiP29_qDiwNWQ"/>
+      <signatures name="compute" type="java.lang.Object" id="_Edt7nTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Edt7njqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_Edt7nzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfAbsent" type="java.lang.Object" id="_Edt7oDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Edt7oTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.Function" id="_Edt7ojqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfPresent" type="java.lang.Object" id="_Edt7ozqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Edt7pDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_Edt7pTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsKey" type="boolean" id="_Edt7pjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Edt7pzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsValue" type="boolean" id="_Edt7qDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Edt7qTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forEach" type="void" id="_Edt7qjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiConsumer" id="_Edt7qzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getOrDefault" type="java.lang.Object" id="_Edt7rDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Edt7rTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_Edt7rjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="merge" type="java.lang.Object" id="_Edt7rzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Edt7sDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_Edt7sTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.function.BiFunction" id="_Edt7sjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="FactoryBean">
+      <signatures name="getObject" type="java.lang.Object" id="_EhXFUDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getObjectType" type="java.lang.Class" id="_EhXFUTqtEeiP29_qDiwNWQ"/>
+      <signatures name="isSingleton" type="boolean" id="_EhXFUjqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IFeatureManagerFactory_Type">
+      <signatures name="getObject" type="java.lang.Object" id="_Eh6e8DqtEeiP29_qDiwNWQ"/>
+      <signatures name="getObjectType" type="java.lang.Class" id="_Eh6e8TqtEeiP29_qDiwNWQ"/>
+      <signatures name="isSingleton" type="boolean" id="_Eh6e8jqtEeiP29_qDiwNWQ"/>
+      <signatures name="setName" type="void" id="_Eh6e8zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_Eh6e9DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTogglzConfig" type="void" id="_Eh6e9TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.togglz.core.manager.TogglzConfig" id="_Eh6e9jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setFeatureEnums" type="void" id="_Eh6e9zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class[]" id="_Eh6e-DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setUserProvider" type="void" id="_Eh6e-TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.togglz.core.user.UserProvider" id="_Eh6e-jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setFeatureEnum" type="void" id="_Eh6e-zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_Eh6e_DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setFeatureProvider" type="void" id="_Eh6e_TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.togglz.core.spi.FeatureProvider" id="_Eh6e_jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setStateRepository" type="void" id="_Eh6e_zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.togglz.core.repository.StateRepository" id="_Eh6fADqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IFeatureManagerBuilder_Type">
+      <signatures name="name" type="org.togglz.core.manager.FeatureManagerBuilder" id="_EiS5cDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_EiS5cTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="begin" type="org.togglz.core.manager.FeatureManagerBuilder" id="_EiS5cjqtEeiP29_qDiwNWQ"/>
+      <signatures name="build" type="org.togglz.core.manager.FeatureManager" id="_EiS5czqtEeiP29_qDiwNWQ"/>
+      <signatures name="featureEnum" type="org.togglz.core.manager.FeatureManagerBuilder" id="_EiS5dDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_EiS5dTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="togglzConfig" type="org.togglz.core.manager.FeatureManagerBuilder" id="_EiS5djqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.togglz.core.manager.TogglzConfig" id="_EiS5dzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="featureProvider" type="org.togglz.core.manager.FeatureManagerBuilder" id="_EiS5eDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.togglz.core.spi.FeatureProvider" id="_EiS5eTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="featureEnums" type="org.togglz.core.manager.FeatureManagerBuilder" id="_EiS5ejqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class[]" id="_EiS5ezqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stateRepository" type="org.togglz.core.manager.FeatureManagerBuilder" id="_EiS5fDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.togglz.core.repository.StateRepository" id="_EiS5fTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="userProvider" type="org.togglz.core.manager.FeatureManagerBuilder" id="_EiS5fjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.togglz.core.user.UserProvider" id="_EiS5fzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="activationStrategyProvider" type="org.togglz.core.manager.FeatureManagerBuilder" id="_EiS5gDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.togglz.core.activation.ActivationStrategyProvider" id="_EiS5gTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="activationStrategy" type="org.togglz.core.manager.FeatureManagerBuilder" id="_EiS5gjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.togglz.core.spi.ActivationStrategy" id="_EiS5gzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="featureClass" type="org.togglz.core.manager.FeatureManagerBuilder" id="_EiS5hDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_EiS5hTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="SomeService">
+      <signatures name="whoAreYou" type="java.lang.String" id="_EkQoUTqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ISomeServiceActive_Type">
+      <signatures name="whoAreYou" type="java.lang.String" id="_EkQoUjqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ISomeServiceInactive_Type">
+      <signatures name="whoAreYou" type="java.lang.String" id="_EkvJcjqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="InitializingBean">
+      <signatures name="afterPropertiesSet" type="void" id="_ElTxMzqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IFeatureProxyFactoryBean_Type">
+      <signatures name="getObject" type="java.lang.Object" id="_ElTxNDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getObjectType" type="java.lang.Class" id="_ElTxNTqtEeiP29_qDiwNWQ"/>
+      <signatures name="isSingleton" type="boolean" id="_ElTxNjqtEeiP29_qDiwNWQ"/>
+      <signatures name="afterPropertiesSet" type="void" id="_ElTxNzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getFeature" type="java.lang.String" id="_ElTxODqtEeiP29_qDiwNWQ"/>
+      <signatures name="getProxyType" type="java.lang.Class" id="_ElTxOTqtEeiP29_qDiwNWQ"/>
+      <signatures name="setFeature" type="void" id="_ElTxOjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTxOzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getActive" type="java.lang.Object" id="_ElTxPDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getInactive" type="java.lang.Object" id="_ElTxPTqtEeiP29_qDiwNWQ"/>
+      <signatures name="setInactive" type="void" id="_ElTxPjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_ElTxPzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setProxyType" type="void" id="_ElTxQDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTxQTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setActive" type="void" id="_ElTxQjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_ElTxQzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEffectiveProxyType" type="java.lang.Class" id="_ElTxRDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getSuitableClassLoader" type="java.lang.ClassLoader" id="_ElTxRTqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Comparable">
+      <signatures name="compareTo" type="int" id="_ElTxSjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_ElTxSzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="CharSequence">
+      <signatures name="toString" type="java.lang.String" id="_ElTxTDqtEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_ElTxTTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTxTjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_ElTxTzqtEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_ElTxUDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTxUTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ElTxUjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_ElTxUzqtEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_ElTxVDqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IString_Type">
+      <signatures name="compareTo" type="int" id="_ElTxVTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_ElTxVjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_ElTxVzqtEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_ElTxWDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTxWTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_ElTxWjqtEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_ElTxWzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTxXDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ElTxXTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_ElTxXjqtEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_ElTxXzqtEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$chars$0" type="java.util.Spliterator.OfInt" id="_ElTxYDqtEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$codePoints$1" type="java.util.Spliterator.OfInt" id="_ElTxYTqtEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_ElTxYjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_ElTxYzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_ElTxZDqtEeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_ElTxZTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTxZjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ElTxZzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueOf" type="java.lang.String" id="_ElTxaDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTxaTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkBounds" type="void" id="_ElTxajqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_ElTxazqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ElTxbDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_ElTxbTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointAt" type="int" id="_ElTxbjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTxbzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointBefore" type="int" id="_ElTxcDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTxcTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointCount" type="int" id="_ElTxcjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTxczqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ElTxdDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compareToIgnoreCase" type="int" id="_ElTxdTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTxdjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="concat" type="java.lang.String" id="_ElTxdzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTxeDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contains" type="boolean" id="_ElTxeTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_ElTxejqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contentEquals" type="boolean" id="_ElTxezqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_ElTxfDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyValueOf" type="java.lang.String" id="_ElTxfTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char[]" id="_ElTxfjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="endsWith" type="boolean" id="_ElTxfzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTxgDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equalsIgnoreCase" type="boolean" id="_ElTxgTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTxgjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="format" type="java.lang.String" id="_ElTxgzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_ElTxhDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ElTxhTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_ElTxhjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBytes" type="void" id="_ElTxhzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTxiDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ElTxiTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_ElTxijqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_ElTxizqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChars" type="void" id="_ElTxjDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTxjTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ElTxjjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="char[]" id="_ElTxjzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_ElTxkDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="indexOfSupplementary" type="int" id="_ElTxkTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTxkjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ElTxkzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="intern" type="java.lang.String" id="_ElTxlDqtEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_ElTxlTqtEeiP29_qDiwNWQ"/>
+      <signatures name="join" type="java.lang.String" id="_ElTxljqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_ElTxlzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.CharSequence[]" id="_ElTxmDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOf" type="int" id="_ElTxmTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTxmjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOfSupplementary" type="int" id="_ElTxmzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTxnDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ElTxnTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="matches" type="boolean" id="_ElTxnjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTxnzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nonSyncContentEquals" type="boolean" id="_ElTxoDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.AbstractStringBuilder" id="_ElTxoTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="offsetByCodePoints" type="int" id="_ElTxojqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTxozqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ElTxpDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="regionMatches" type="boolean" id="_ElTxpTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTxpjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ElTxpzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_ElTxqDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_ElTxqTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="java.lang.String" id="_ElTxqjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char" id="_ElTxqzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="char" id="_ElTxrDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="java.lang.String" id="_ElTxrTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTxrjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ElTxrzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceFirst" type="java.lang.String" id="_ElTxsDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTxsTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ElTxsjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="split" type="java.lang.String[]" id="_ElTxszqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTxtDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="startsWith" type="boolean" id="_ElTxtTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTxtjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ElTxtzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="substring" type="java.lang.String" id="_ElTxuDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTxuTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCharArray" type="char[]" id="_ElTxujqtEeiP29_qDiwNWQ"/>
+      <signatures name="toLowerCase" type="java.lang.String" id="_ElTxuzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_ElTxvDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUpperCase" type="java.lang.String" id="_ElTxvTqtEeiP29_qDiwNWQ"/>
+      <signatures name="trim" type="java.lang.String" id="_ElTxvjqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_ElTxyjqtEeiP29_qDiwNWQ"/>
+      <signatures name="wait" type="void" id="_ElTxyzqtEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_ElTxzDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_ElTxzTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_ElTxzjqtEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_ElTxzzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getClass" type="java.lang.Class" id="_ElTx0DqtEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_ElTx0TqtEeiP29_qDiwNWQ"/>
+      <signatures name="notify" type="void" id="_ElTx0jqtEeiP29_qDiwNWQ"/>
+      <signatures name="notifyAll" type="void" id="_ElTx0zqtEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_ElTx1DqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="GenericDeclaration">
+      <signatures name="getTypeParameters" type="java.lang.reflect.TypeVariable[]" id="_ElTx4DqtEeiP29_qDiwNWQ"/>
+      <signatures name="getAnnotation" type="java.lang.annotation.Annotation" id="_ElTx4TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTx4jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAnnotations" type="java.lang.annotation.Annotation[]" id="_ElTx4zqtEeiP29_qDiwNWQ"/>
+      <signatures name="getAnnotationsByType" type="java.lang.annotation.Annotation[]" id="_ElTx5DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTx5TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDeclaredAnnotation" type="java.lang.annotation.Annotation" id="_ElTx5jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTx5zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDeclaredAnnotations" type="java.lang.annotation.Annotation[]" id="_ElTx6DqtEeiP29_qDiwNWQ"/>
+      <signatures name="getDeclaredAnnotationsByType" type="java.lang.annotation.Annotation[]" id="_ElTx6TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTx6jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAnnotationPresent" type="boolean" id="_ElTx6zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTx7DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Type">
+      <signatures name="getTypeName" type="java.lang.String" id="_ElTx7TqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="AnnotatedElement">
+      <signatures name="getAnnotation" type="java.lang.annotation.Annotation" id="_ElTx7jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTx7zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAnnotations" type="java.lang.annotation.Annotation[]" id="_ElTx8DqtEeiP29_qDiwNWQ"/>
+      <signatures name="getAnnotationsByType" type="java.lang.annotation.Annotation[]" id="_ElTx8TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTx8jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDeclaredAnnotation" type="java.lang.annotation.Annotation" id="_ElTx8zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTx9DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDeclaredAnnotations" type="java.lang.annotation.Annotation[]" id="_ElTx9TqtEeiP29_qDiwNWQ"/>
+      <signatures name="getDeclaredAnnotationsByType" type="java.lang.annotation.Annotation[]" id="_ElTx9jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTx9zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAnnotationPresent" type="boolean" id="_ElTx-DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTx-TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IClass_Type">
+      <signatures name="getAnnotation" type="java.lang.annotation.Annotation" id="_ElTx-jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTx-zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAnnotations" type="java.lang.annotation.Annotation[]" id="_ElTx_DqtEeiP29_qDiwNWQ"/>
+      <signatures name="getAnnotationsByType" type="java.lang.annotation.Annotation[]" id="_ElTx_TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTx_jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDeclaredAnnotation" type="java.lang.annotation.Annotation" id="_ElTx_zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTyADqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDeclaredAnnotations" type="java.lang.annotation.Annotation[]" id="_ElTyATqtEeiP29_qDiwNWQ"/>
+      <signatures name="getDeclaredAnnotationsByType" type="java.lang.annotation.Annotation[]" id="_ElTyAjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTyAzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAnnotationPresent" type="boolean" id="_ElTyBDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTyBTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lambda$getDeclaredAnnotationsByType$0" type="java.lang.annotation.Annotation" id="_ElTyBjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.annotation.Annotation" id="_ElTyBzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.annotation.Annotation" id="_ElTyCDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTypeParameters" type="java.lang.reflect.TypeVariable[]" id="_ElTyCTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getTypeName" type="java.lang.String" id="_ElTyCjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getAnnotation" type="java.lang.annotation.Annotation" id="_ElTyCzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTyDDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAnnotations" type="java.lang.annotation.Annotation[]" id="_ElTyDTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getAnnotationsByType" type="java.lang.annotation.Annotation[]" id="_ElTyDjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTyDzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDeclaredAnnotation" type="java.lang.annotation.Annotation" id="_ElTyEDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTyETqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDeclaredAnnotations" type="java.lang.annotation.Annotation[]" id="_ElTyEjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getDeclaredAnnotationsByType" type="java.lang.annotation.Annotation[]" id="_ElTyEzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTyFDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAnnotationPresent" type="boolean" id="_ElTyFTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTyFjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lambda$getDeclaredAnnotationsByType$0" type="java.lang.annotation.Annotation" id="_ElTyFzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.annotation.Annotation" id="_ElTyGDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.annotation.Annotation" id="_ElTyGTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkPackageAccess" type="void" id="_ElTyGjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.ClassLoader" id="_ElTyGzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_ElTyHDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forName" type="java.lang.Class" id="_ElTyHTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTyHjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forName0" type="java.lang.Class" id="_ElTyHzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTyIDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_ElTyITqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.ClassLoader" id="_ElTyIjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Class" id="_ElTyIzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_ElTyJDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getProtectionDomain" type="java.security.ProtectionDomain" id="_ElTyJTqtEeiP29_qDiwNWQ"/>
+      <signatures name="isAssignableFrom" type="boolean" id="_ElTyJjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTyJzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInstance" type="boolean" id="_ElTyKDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_ElTyKTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getModifiers" type="int" id="_ElTyKjqtEeiP29_qDiwNWQ"/>
+      <signatures name="isInterface" type="boolean" id="_ElTyKzqtEeiP29_qDiwNWQ"/>
+      <signatures name="isArray" type="boolean" id="_ElTyLDqtEeiP29_qDiwNWQ"/>
+      <signatures name="isPrimitive" type="boolean" id="_ElTyLTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getSuperclass" type="java.lang.Class" id="_ElTyLjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getComponentType" type="java.lang.Class" id="_ElTyLzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getName" type="java.lang.String" id="_ElTyMDqtEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_ElTyMTqtEeiP29_qDiwNWQ"/>
+      <signatures name="access$100" type="java.lang.reflect.Field[]" id="_ElTyMjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTyMzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_ElTyNDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$200" type="java.lang.reflect.Field" id="_ElTyNTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.reflect.Field[]" id="_ElTyNjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ElTyNzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$300" type="boolean" id="_ElTyODqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_ElTyOTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_ElTyOjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$402" type="boolean" id="_ElTyOzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_ElTyPDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$502" type="boolean" id="_ElTyPTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_ElTyPjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addAll" type="void" id="_ElTyPzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_ElTyQDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.reflect.Field[]" id="_ElTyQTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="annotationData" type="java.lang.Class.AnnotationData" id="_ElTyQjqtEeiP29_qDiwNWQ"/>
+      <signatures name="argumentTypesToString" type="java.lang.String" id="_ElTyQzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class[]" id="_ElTyRDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="arrayContentsEq" type="boolean" id="_ElTyRTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_ElTyRjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_ElTyRzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="asSubclass" type="java.lang.Class" id="_ElTySDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTySTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="cannotCastMsg" type="java.lang.String" id="_ElTySjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_ElTySzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="casAnnotationType" type="boolean" id="_ElTyTDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="sun.reflect.annotation.AnnotationType" id="_ElTyTTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="sun.reflect.annotation.AnnotationType" id="_ElTyTjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="cast" type="java.lang.Object" id="_ElTyTzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_ElTyUDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkInitted" type="void" id="_ElTyUTqtEeiP29_qDiwNWQ"/>
+      <signatures name="checkMemberAccess" type="void" id="_ElTyUjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTyUzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class" id="_ElTyVDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_ElTyVTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyConstructors" type="java.lang.reflect.Constructor[]" id="_ElTyVjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.reflect.Constructor[]" id="_ElTyVzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyFields" type="java.lang.reflect.Field[]" id="_ElTyWDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.reflect.Field[]" id="_ElTyWTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyMethods" type="java.lang.reflect.Method[]" id="_ElTyWjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.reflect.Method[]" id="_ElTyWzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createAnnotationData" type="java.lang.Class.AnnotationData" id="_ElTyXDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_ElTyXTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="desiredAssertionStatus" type="boolean" id="_ElTyXjqtEeiP29_qDiwNWQ"/>
+      <signatures name="desiredAssertionStatus0" type="boolean" id="_ElTyXzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class" id="_ElTyYDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="enumConstantDirectory" type="java.util.Map" id="_ElTyYTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getAnnotatedInterfaces" type="java.lang.reflect.AnnotatedType[]" id="_ElTyYjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getAnnotatedSuperclass" type="java.lang.reflect.AnnotatedType" id="_ElTyYzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getAnnotationType" type="sun.reflect.annotation.AnnotationType" id="_ElTyZDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getCanonicalName" type="java.lang.String" id="_ElTyZTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getClassLoader" type="java.lang.ClassLoader" id="_ElTyZjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getClassLoader0" type="java.lang.ClassLoader" id="_ElTyZzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getClasses" type="java.lang.Class[]" id="_ElTyaDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getConstantPool" type="sun.reflect.ConstantPool" id="_ElTyaTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getConstructor" type="java.lang.reflect.Constructor" id="_ElTyajqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class[]" id="_ElTyazqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getConstructor0" type="java.lang.reflect.Constructor" id="_ElTybDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class[]" id="_ElTybTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ElTybjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getConstructors" type="java.lang.reflect.Constructor[]" id="_ElTybzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getDeclaredAnnotationMap" type="java.util.Map" id="_ElTycDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getDeclaredClasses" type="java.lang.Class[]" id="_ElTycTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getDeclaredClasses0" type="java.lang.Class[]" id="_ElTycjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getDeclaredConstructor" type="java.lang.reflect.Constructor" id="_ElTyczqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Class[]" id="_ElTydDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDeclaredConstructors" type="java.lang.reflect.Constructor[]" id="_ElTydTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getDeclaredConstructors0" type="java.lang.reflect.Constructor[]" id="_ElTydjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_ElTydzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDeclaredField" type="java.lang.reflect.Field" id="_ElTyeDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTyeTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDeclaredFields" type="java.lang.reflect.Field[]" id="_ElTyejqtEeiP29_qDiwNWQ"/>
+      <signatures name="getDeclaredFields0" type="java.lang.reflect.Field[]" id="_ElTyezqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_ElTyfDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDeclaredMethod" type="java.lang.reflect.Method" id="_ElTyfTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTyfjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class[]" id="_ElTyfzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDeclaredMethods" type="java.lang.reflect.Method[]" id="_ElTygDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getDeclaredMethods0" type="java.lang.reflect.Method[]" id="_ElTygTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_ElTygjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDeclaringClass" type="java.lang.Class" id="_ElTygzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getDeclaringClass0" type="java.lang.Class" id="_ElTyhDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getEnclosingClass" type="java.lang.Class" id="_ElTyhTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getEnclosingConstructor" type="java.lang.reflect.Constructor" id="_ElTyhjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getEnclosingMethod" type="java.lang.reflect.Method" id="_ElTyhzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getEnclosingMethod0" type="java.lang.Object[]" id="_ElTyiDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getEnclosingMethodInfo" type="java.lang.Class.EnclosingMethodInfo" id="_ElTyiTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getEnumConstants" type="java.lang.Object[]" id="_ElTyijqtEeiP29_qDiwNWQ"/>
+      <signatures name="getEnumConstantsShared" type="java.lang.Object[]" id="_ElTyizqtEeiP29_qDiwNWQ"/>
+      <signatures name="getExecutableTypeAnnotationBytes" type="byte[]" id="_ElTyjDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.reflect.Executable" id="_ElTyjTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFactory" type="sun.reflect.generics.factory.GenericsFactory" id="_ElTyjjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getField" type="java.lang.reflect.Field" id="_ElTyjzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTykDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getField0" type="java.lang.reflect.Field" id="_ElTykTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTykjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFields" type="java.lang.reflect.Field[]" id="_ElTykzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getGenericInfo" type="sun.reflect.generics.repository.ClassRepository" id="_ElTylDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getGenericInterfaces" type="java.lang.reflect.Type[]" id="_ElTylTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getGenericSignature0" type="java.lang.String" id="_ElTyljqtEeiP29_qDiwNWQ"/>
+      <signatures name="getGenericSuperclass" type="java.lang.reflect.Type" id="_ElTylzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getInterfaces" type="java.lang.Class[]" id="_ElTymDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getInterfaces0" type="java.lang.Class[]" id="_ElTymTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getMethod" type="java.lang.reflect.Method" id="_ElTymjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTymzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class[]" id="_ElTynDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMethod0" type="java.lang.reflect.Method" id="_ElTynTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTynjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class[]" id="_ElTynzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_ElTyoDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMethods" type="java.lang.reflect.Method[]" id="_ElTyoTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getName0" type="java.lang.String" id="_ElTyojqtEeiP29_qDiwNWQ"/>
+      <signatures name="getPackage" type="java.lang.Package" id="_ElTyozqtEeiP29_qDiwNWQ"/>
+      <signatures name="getPrimitiveClass" type="java.lang.Class" id="_ElTypDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTypTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProtectionDomain0" type="java.security.ProtectionDomain" id="_ElTypjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getRawAnnotations" type="byte[]" id="_ElTypzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getRawTypeAnnotations" type="byte[]" id="_ElTyqDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getReflectionFactory" type="sun.reflect.ReflectionFactory" id="_ElTyqTqtEeiP29_qDiwNWQ"/>
+      <signatures name="getResource" type="java.net.URL" id="_ElTyqjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTyqzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getResourceAsStream" type="java.io.InputStream" id="_ElTyrDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTyrTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSigners" type="java.lang.Object[]" id="_ElTyrjqtEeiP29_qDiwNWQ"/>
+      <signatures name="getSimpleBinaryName" type="java.lang.String" id="_ElTyrzqtEeiP29_qDiwNWQ"/>
+      <signatures name="getSimpleName" type="java.lang.String" id="_ElTysDqtEeiP29_qDiwNWQ"/>
+      <signatures name="isAnnotation" type="boolean" id="_ElTysTqtEeiP29_qDiwNWQ"/>
+      <signatures name="isAnonymousClass" type="boolean" id="_ElTysjqtEeiP29_qDiwNWQ"/>
+      <signatures name="isAsciiDigit" type="boolean" id="_ElTyszqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char" id="_ElTytDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEnum" type="boolean" id="_ElTytTqtEeiP29_qDiwNWQ"/>
+      <signatures name="isLocalClass" type="boolean" id="_ElTytjqtEeiP29_qDiwNWQ"/>
+      <signatures name="isLocalOrAnonymousClass" type="boolean" id="_ElTytzqtEeiP29_qDiwNWQ"/>
+      <signatures name="isMemberClass" type="boolean" id="_ElTyuDqtEeiP29_qDiwNWQ"/>
+      <signatures name="isSynthetic" type="boolean" id="_ElTyuTqtEeiP29_qDiwNWQ"/>
+      <signatures name="newInstance" type="java.lang.Object" id="_ElTyujqtEeiP29_qDiwNWQ"/>
+      <signatures name="newReflectionData" type="java.lang.Class.ReflectionData" id="_ElTyuzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.ref.SoftReference" id="_ElTyvDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_ElTyvTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="privateGetDeclaredConstructors" type="java.lang.reflect.Constructor[]" id="_ElTyvjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_ElTyvzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="privateGetDeclaredFields" type="java.lang.reflect.Field[]" id="_ElTywDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_ElTywTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="privateGetDeclaredMethods" type="java.lang.reflect.Method[]" id="_ElTywjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_ElTywzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="privateGetMethodRecursive" type="java.lang.reflect.Method" id="_ElTyxDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTyxTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Class[]" id="_ElTyxjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="boolean" id="_ElTyxzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Class.MethodArray" id="_ElTyyDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="privateGetPublicFields" type="java.lang.reflect.Field[]" id="_ElTyyTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Set" id="_ElTyyjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="privateGetPublicMethods" type="java.lang.reflect.Method[]" id="_ElTyyzqtEeiP29_qDiwNWQ"/>
+      <signatures name="reflectionData" type="java.lang.Class.ReflectionData" id="_ElTyzDqtEeiP29_qDiwNWQ"/>
+      <signatures name="resolveName" type="java.lang.String" id="_ElTyzTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_ElTyzjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="searchFields" type="java.lang.reflect.Field" id="_ElTyzzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.reflect.Field[]" id="_ElTy0DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ElTy0TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="searchMethods" type="java.lang.reflect.Method" id="_ElTy0jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.reflect.Method[]" id="_ElTy0zqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_ElTy1DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Class[]" id="_ElTy1TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setSigners" type="void" id="_ElTy1jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_ElTy1zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toClass" type="java.lang.Class" id="_ElTy2DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.reflect.Type" id="_ElTy2TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toGenericString" type="java.lang.String" id="_ElTy2jqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

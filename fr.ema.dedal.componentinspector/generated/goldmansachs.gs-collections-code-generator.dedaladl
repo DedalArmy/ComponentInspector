@@ -1,0 +1,6 @@
+dedal_diagram "goldmansachs.gs-collections-code-generator"
+
+	repositories (
+
+		repository genRepo
+	)

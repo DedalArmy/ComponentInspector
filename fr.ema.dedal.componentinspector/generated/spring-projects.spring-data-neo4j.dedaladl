@@ -1,0 +1,6 @@
+dedal_diagram "spring-projects.spring-data-neo4j"
+
+	repositories (
+
+		repository genRepo
+	)

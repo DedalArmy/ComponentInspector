@@ -1,0 +1,6 @@
+dedal_diagram "ff4j.ff4j-store-couchbase"
+
+	repositories (
+
+		repository genRepo
+	)

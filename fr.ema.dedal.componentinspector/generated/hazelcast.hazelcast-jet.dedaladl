@@ -1,0 +1,6 @@
+dedal_diagram "hazelcast.hazelcast-jet"
+
+	repositories (
+
+		repository genRepo
+	)

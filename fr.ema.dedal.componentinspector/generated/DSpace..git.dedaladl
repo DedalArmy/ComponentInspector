@@ -1,0 +1,6 @@
+dedal_diagram "DSpace..git"
+
+	repositories (
+
+		repository genRepo
+	)

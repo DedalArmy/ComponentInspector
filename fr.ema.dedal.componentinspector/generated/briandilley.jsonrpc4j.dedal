@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="briandilley.jsonrpc4j">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="briandilley.jsonrpc4j.src.test.resources.clientApplicationContext.xml_config" implements="//@architectureDescriptions[name='briandilley.jsonrpc4j.src.test.resources.clientApplicationContext.xml_spec']">
+    <configComponents name="com.googlecode.jsonrpc4j.spring.AutoJsonRpcClientProxyCreator" id="_mGh8kDqWEeiP29_qDiwNWQ" realizes="_mGxNLDqWEeiP29_qDiwNWQ" implements="_mGxNIDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="briandilley.jsonrpc4j.src.test.resources.clientApplicationContext.xml_asm" instantiates="//@architectureDescriptions[name='briandilley.jsonrpc4j.src.test.resources.clientApplicationContext.xml_config']">
+    <assmComponents name="com.googlecode.jsonrpc4j.spring.AutoJsonRpcClientProxyCreator1" id="_mGh8kTqWEeiP29_qDiwNWQ" instantiates="_mGh8kDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.googlecode.jsonrpc4j.spring.AutoJsonRpcClientProxyCreator1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="briandilley.jsonrpc4j.src.test.resources.clientApplicationContext.xml_spec">
+    <specComponents name="Object_role" id="_mGxNLDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="briandilley.jsonrpc4j.src.test.resources.serverApplicationContext.xml_config" implements="//@architectureDescriptions[name='briandilley.jsonrpc4j.src.test.resources.serverApplicationContext.xml_spec']">
+    <configComponents name="com.googlecode.jsonrpc4j.spring.service.ServiceImpl" id="_mHFWMDqWEeiP29_qDiwNWQ" realizes="_mHT_sDqWEeiP29_qDiwNWQ" implements="_mHLc0DqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="com.googlecode.jsonrpc4j.spring.servicesansinterface.ServiceSansInterfaceImpl" id="_mHFWMTqWEeiP29_qDiwNWQ" realizes="_mHT_vDqWEeiP29_qDiwNWQ" implements="_mHQVUDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="com.googlecode.jsonrpc4j.spring.AutoJsonRpcServiceExporter" id="_mHFWMjqWEeiP29_qDiwNWQ" realizes="_mHT_yDqWEeiP29_qDiwNWQ" implements="_mHTYoDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="briandilley.jsonrpc4j.src.test.resources.serverApplicationContext.xml_asm" instantiates="//@architectureDescriptions[name='briandilley.jsonrpc4j.src.test.resources.serverApplicationContext.xml_config']">
+    <assmComponents name="com.googlecode.jsonrpc4j.spring.service.ServiceImpl1" id="_mHFWMzqWEeiP29_qDiwNWQ" instantiates="_mHFWMDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.googlecode.jsonrpc4j.spring.service.ServiceImpl1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="com.googlecode.jsonrpc4j.spring.servicesansinterface.ServiceSansInterfaceImpl1" id="_mHFWNDqWEeiP29_qDiwNWQ" instantiates="_mHFWMTqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.googlecode.jsonrpc4j.spring.servicesansinterface.ServiceSansInterfaceImpl1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="com.googlecode.jsonrpc4j.spring.AutoJsonRpcServiceExporter1" id="_mHFWNTqWEeiP29_qDiwNWQ" instantiates="_mHFWMjqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.googlecode.jsonrpc4j.spring.AutoJsonRpcServiceExporter1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="briandilley.jsonrpc4j.src.test.resources.serverApplicationContext.xml_spec">
+    <specComponents name="Object_role" id="_mHT_sDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_mHT_vDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_mHT_yDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="briandilley.jsonrpc4j.src.test.resources.serverApplicationContextB.xml_config" implements="//@architectureDescriptions[name='briandilley.jsonrpc4j.src.test.resources.serverApplicationContextB.xml_spec']">
+    <configComponents name="com.googlecode.jsonrpc4j.spring.serviceb.TemperatureImpl" id="_mHov0DqWEeiP29_qDiwNWQ" realizes="_mH2LVDqWEeiP29_qDiwNWQ" implements="_mHtoUDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="com.googlecode.jsonrpc4j.spring.serviceb.NoopTemperatureImpl" id="_mHov0TqWEeiP29_qDiwNWQ" realizes="_mH2LPDqWEeiP29_qDiwNWQ" implements="_mHyg0DqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="com.googlecode.jsonrpc4j.spring.AutoJsonRpcServiceImplExporter" id="_mHov0jqWEeiP29_qDiwNWQ" realizes="_mH2LSDqWEeiP29_qDiwNWQ" implements="_mH2LMDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="briandilley.jsonrpc4j.src.test.resources.serverApplicationContextB.xml_asm" instantiates="//@architectureDescriptions[name='briandilley.jsonrpc4j.src.test.resources.serverApplicationContextB.xml_config']">
+    <assmComponents name="com.googlecode.jsonrpc4j.spring.serviceb.TemperatureImpl1" id="_mHov0zqWEeiP29_qDiwNWQ" instantiates="_mHov0DqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.googlecode.jsonrpc4j.spring.serviceb.TemperatureImpl1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="com.googlecode.jsonrpc4j.spring.serviceb.NoopTemperatureImpl1" id="_mHov1DqWEeiP29_qDiwNWQ" instantiates="_mHov0TqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.googlecode.jsonrpc4j.spring.serviceb.NoopTemperatureImpl1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="com.googlecode.jsonrpc4j.spring.AutoJsonRpcServiceImplExporter1" id="_mHov1TqWEeiP29_qDiwNWQ" instantiates="_mHov0jqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.googlecode.jsonrpc4j.spring.AutoJsonRpcServiceImplExporter1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="briandilley.jsonrpc4j.src.test.resources.serverApplicationContextB.xml_spec">
+    <specComponents name="Object_role" id="_mH2LPDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_mH2LSDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_mH2LVDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_mGxNIDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_mHLc0DqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_mHQVUDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_mHTYoDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_mHtoUDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_mHyg0DqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_mH2LMDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_mGxNITqWEeiP29_qDiwNWQ"/>
+      <signatures name="wait" type="void" id="_mGxNIjqWEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_mGxNIzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_mGxNJDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_mGxNJTqWEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_mGxNJjqWEeiP29_qDiwNWQ"/>
+      <signatures name="getClass" type="java.lang.Class" id="_mGxNJzqWEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_mGxNKDqWEeiP29_qDiwNWQ"/>
+      <signatures name="notify" type="void" id="_mGxNKTqWEeiP29_qDiwNWQ"/>
+      <signatures name="notifyAll" type="void" id="_mGxNKjqWEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_mGxNKzqWEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

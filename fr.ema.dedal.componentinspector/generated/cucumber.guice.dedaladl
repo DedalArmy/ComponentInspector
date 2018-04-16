@@ -1,0 +1,6 @@
+dedal_diagram "cucumber.guice"
+
+	repositories (
+
+		repository genRepo
+	)

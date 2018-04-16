@@ -1,0 +1,6 @@
+dedal_diagram "eugenp.eclipse"
+
+	repositories (
+
+		repository genRepo
+	)

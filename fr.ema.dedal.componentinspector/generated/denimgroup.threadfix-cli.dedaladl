@@ -1,0 +1,6 @@
+dedal_diagram "denimgroup.threadfix-cli"
+
+	repositories (
+
+		repository genRepo
+	)

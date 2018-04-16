@@ -1,0 +1,6 @@
+dedal_diagram "glowroot.wire-api"
+
+	repositories (
+
+		repository genRepo
+	)

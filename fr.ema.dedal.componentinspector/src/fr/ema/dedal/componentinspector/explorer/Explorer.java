@@ -8,14 +8,10 @@ import java.net.URL;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 
 import org.apache.log4j.Logger;
-import org.xeustechnologies.jcl.JarClassLoader;
-
 import dedal.DedalDiagram;
 import fr.ema.dedal.componentinspector.classloader.FolderLoader;
 import fr.ema.dedal.componentinspector.classloader.JarLoader;
@@ -91,36 +87,7 @@ public class Explorer {
 				File parent = new File(f.getParent());
 				if(f.isDirectory())
 				{
-					try {
-					DedalDiagram dd = new DedalFactoryImpl().createDedalDiagram();
-					dd.setName(parent.getName() + "." + f.getName());
-					List<URI> xmlFiles = recursivelyGetFileURIs(folder, XML);
-					List<URI> xmlSpringFiles = scanFiles(xmlFiles, BEANS, BEAN);
-					List<URI> jarFiles = recursivelyGetFileURIs(folder, JAR, WAR);
-					List<URI> subFolders = recursivelyGetFolders(folder);
-					
-					URL[] jarUrlsToLoad = new URL[jarFiles.size()];
-					for(int i = 0; i<jarFiles.size(); i++)
-					{
-						jarUrlsToLoad[i]=jarFiles.get(i).toURL();
-					}
-
-					URL[] urlsToLoad = new URL[subFolders.size()];
-					for(int i = 0; i<subFolders.size(); i++)
-					{
-						urlsToLoad[i]=subFolders.get(i).toURL();
-					}
-					JarLoader jarLoader = new JarLoader(urlsToLoad, jarUrlsToLoad);
-//					Map<URI, List<Class<?>>> classes = loadClasses(f, jarLoader);
-					JarInspector jarInspector = new JarInspector(jarLoader);
-//					JarInspector jarInspector = new JarInspector(f.getPath());
-					jarInspector.generate(dd, xmlSpringFiles);
-					jarLoader.close();
-					result.add(dd);
-					} catch(Exception | Error e) 
-					{
-						logger.error("the Dedal diagram could not be extracted... reconstruction ended with error " + e.getCause());
-					}
+					generateDedalDiagram(result, folder, f, parent);
 				}
 			}
 			return result;
@@ -128,6 +95,53 @@ public class Explorer {
 			logger.error(e.getMessage(), e);
 		}
 		return Collections.emptyList();
+	}
+
+	/**
+	 * @param result
+	 * @param folder
+	 * @param f
+	 * @param parent
+	 */
+	private static void generateDedalDiagram(List<DedalDiagram> result, URI folder, File f, File parent) {
+		JarLoader jarLoader = null;
+		try {
+			DedalDiagram dd = new DedalFactoryImpl().createDedalDiagram();
+			dd.setName(parent.getName() + "." + f.getName());
+			List<URI> xmlFiles = recursivelyGetFileURIs(folder, XML);
+			List<URI> jarFiles = recursivelyGetFileURIs(folder, JAR, WAR);
+			
+//			List<URI> subFolders = recursivelyGetFolders(folder);
+
+			URL[] jarUrlsToLoad = new URL[jarFiles.size()];
+			for(int i = 0; i<jarFiles.size(); i++)
+			{
+				jarUrlsToLoad[i]=jarFiles.get(i).toURL();
+			}
+
+			URL[] urlsToLoad = {};
+//			URL[] urlsToLoad = new URL[subFolders.size()];
+//			for(int i = 0; i<subFolders.size(); i++)
+//			{
+//				urlsToLoad[i]=subFolders.get(i).toURL();
+//			}
+			jarLoader = new JarLoader(urlsToLoad , jarUrlsToLoad);
+//			List<URI> xmlFiles = jarLoader.getFilesFromJars(XML);
+			List<URI> xmlSpringFiles = scanFiles(xmlFiles, BEANS, BEAN);
+			JarInspector jarInspector = new JarInspector(jarLoader);
+			jarInspector.generate(dd, xmlSpringFiles);
+			result.add(dd);
+		} catch(Exception | Error e) 
+		{
+			logger.error("the Dedal diagram could not be extracted... reconstruction ended with error " + e.getCause());
+		}
+		finally {
+			try {
+				jarLoader.close();
+			} catch (IOException | NullPointerException e) {
+				logger.error("Error while closing jarLoader", e);
+			}
+		}
 	}
 
 	private static List<URI> recursivelyGetFolders(URI folder) {
@@ -151,22 +165,6 @@ public class Explorer {
 	}
 
 	/**
-	 * @param f
-	 * @param jarloarder
-	 * @return 
-	 */
-	private static Map<URI, List<Class<?>>> loadClasses(File f, JarLoader jarloarder) {
-		Map<URI, List<Class<?>>> classes = new HashMap<>();
-		try
-		{
-			classes = jarloarder.loadClasses(f.getName());
-		}catch (Exception e) {
-			logger.error(e.getMessage(),e);
-		}
-		return classes;
-	}
-
-	/**
 	 * Loads and inspects the jar file.
 	 * @param singlePath
 	 * @param sdslPath
@@ -182,9 +180,6 @@ public class Explorer {
 		 * Let's extract some component classes.
 		 */
 		
-//		List<URI> jar = (new ArrayList<>());
-//		jar.add(URI.create(singlePath));
-//		JarInspector jarInspector = new JarInspector(singlePath);
 		JarInspector jarInspector = new JarInspector(jarloader);
 		jarInspector.generate(result, sdslPath);
 	}
@@ -199,7 +194,7 @@ public class Explorer {
 	{
 		List<URI> result = new ArrayList<>();
 		File f1 = new File(folder);
-		if(f1.isDirectory()) // && !f1.getName().contains("lib") && !f1.getName().contains("dependenc"))
+		if(f1.isDirectory())
 		{
 			List<URI> tempURIs = FolderLoader.loadFolder(Paths.get(folder));
 			for(URI uri : tempURIs)

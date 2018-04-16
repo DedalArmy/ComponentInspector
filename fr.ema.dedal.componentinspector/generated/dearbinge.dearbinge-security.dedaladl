@@ -1,0 +1,6 @@
+dedal_diagram "dearbinge.dearbinge-security"
+
+	repositories (
+
+		repository genRepo
+	)

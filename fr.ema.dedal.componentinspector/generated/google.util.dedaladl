@@ -1,0 +1,6 @@
+dedal_diagram "google.util"
+
+	repositories (
+
+		repository genRepo
+	)

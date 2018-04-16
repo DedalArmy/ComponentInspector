@@ -1,0 +1,6 @@
+dedal_diagram "glowroot.ui"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,6 @@
+dedal_diagram "brianway.springmvc-mybatis-learning"
+
+	repositories (
+
+		repository genRepo
+	)

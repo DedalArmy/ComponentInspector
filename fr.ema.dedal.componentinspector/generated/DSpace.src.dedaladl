@@ -1,0 +1,6 @@
+dedal_diagram "DSpace.src"
+
+	repositories (
+
+		repository genRepo
+	)

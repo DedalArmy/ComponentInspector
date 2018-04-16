@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="vert-x3.vertx-examples">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="vert-x3.vertx-examples.vertx-examples.camel-bridge-examples.src.main.resources.META-INF.spring.camelContext.xml_config" implements="//@architectureDescriptions[name='vert-x3.vertx-examples.vertx-examples.camel-bridge-examples.src.main.resources.META-INF.spring.camelContext.xml_spec']">
+    <configComponents name="io.vertx.example.camel.rmi.HelloServiceImpl" id="_Jg5hcDqtEeiP29_qDiwNWQ" realizes="_JhmsLjqtEeiP29_qDiwNWQ" implements="_JhmFADqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloService_HelloServiceImpl" type="HelloService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloServiceImpl" type="IHelloServiceImpl_Type"/>
+    </configComponents>
+    <configComponents name="java.rmi.registry.LocateRegistry" id="_Jg5hcTqtEeiP29_qDiwNWQ" realizes="_JhmsGzqtEeiP29_qDiwNWQ" implements="_JhmsFDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILocateRegistry" type="ILocateRegistry_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="vert-x3.vertx-examples.vertx-examples.camel-bridge-examples.src.main.resources.META-INF.spring.camelContext.xml_asm" instantiates="//@architectureDescriptions[name='vert-x3.vertx-examples.vertx-examples.camel-bridge-examples.src.main.resources.META-INF.spring.camelContext.xml_config']">
+    <assmComponents name="helloServiceBean" id="_Jg5hcjqtEeiP29_qDiwNWQ" instantiates="_Jg5hcDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloService_HelloServiceImpl_helloServiceBean" type="HelloService" instantiates="IHelloService_HelloServiceImpl"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloServiceImpl_helloServiceBean" type="IHelloServiceImpl_Type" instantiates="IHelloServiceImpl"/>
+    </assmComponents>
+    <assmComponents name="rmiServer" id="_Jg5hczqtEeiP29_qDiwNWQ" instantiates="_Jg5hcTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILocateRegistry_rmiServer" type="ILocateRegistry_Type" instantiates="ILocateRegistry"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="vert-x3.vertx-examples.vertx-examples.camel-bridge-examples.src.main.resources.META-INF.spring.camelContext.xml_spec">
+    <specComponents name="LocateRegistry_role" id="_JhmsGzqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILocateRegistryLocateRegistry_role" type="ILocateRegistry_Type"/>
+    </specComponents>
+    <specComponents name="Remote_role" id="_JhmsLjqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="nullRemote_role"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="vert-x3.vertx-examples.vertx-examples.camel-bridge-examples.target.classes.META-INF.spring.camelContext.xml_config" implements="//@architectureDescriptions[name='vert-x3.vertx-examples.vertx-examples.camel-bridge-examples.target.classes.META-INF.spring.camelContext.xml_spec']">
+    <configComponents name="io.vertx.example.camel.rmi.HelloServiceImpl" id="_Jh7cMDqtEeiP29_qDiwNWQ" realizes="_Jh8DYzqtEeiP29_qDiwNWQ" implements="_Jh8DQjqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloService_HelloServiceImpl" type="HelloService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloServiceImpl" type="IHelloServiceImpl_Type"/>
+    </configComponents>
+    <configComponents name="java.rmi.registry.LocateRegistry" id="_Jh7cMTqtEeiP29_qDiwNWQ" realizes="_Jh8DUDqtEeiP29_qDiwNWQ" implements="_Jh8DSTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILocateRegistry" type="ILocateRegistry_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="vert-x3.vertx-examples.vertx-examples.camel-bridge-examples.target.classes.META-INF.spring.camelContext.xml_asm" instantiates="//@architectureDescriptions[name='vert-x3.vertx-examples.vertx-examples.camel-bridge-examples.target.classes.META-INF.spring.camelContext.xml_config']">
+    <assmComponents name="helloServiceBean" id="_Jh8DQDqtEeiP29_qDiwNWQ" instantiates="_Jh7cMDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloService_HelloServiceImpl_helloServiceBean" type="HelloService" instantiates="IHelloService_HelloServiceImpl"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloServiceImpl_helloServiceBean" type="IHelloServiceImpl_Type" instantiates="IHelloServiceImpl"/>
+    </assmComponents>
+    <assmComponents name="rmiServer" id="_Jh8DQTqtEeiP29_qDiwNWQ" instantiates="_Jh7cMTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILocateRegistry_rmiServer" type="ILocateRegistry_Type" instantiates="ILocateRegistry"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="vert-x3.vertx-examples.vertx-examples.camel-bridge-examples.target.classes.META-INF.spring.camelContext.xml_spec">
+    <specComponents name="LocateRegistry_role" id="_Jh8DUDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILocateRegistryLocateRegistry_role" type="ILocateRegistry_Type"/>
+    </specComponents>
+    <specComponents name="Remote_role" id="_Jh8DYzqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="nullRemote_role"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="io_vertx_example_camel_rmi_HelloServiceImpl_Type" id="_JhmFADqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloService_HelloServiceImpl_io_vertx_example_camel_rmi_HelloServiceImpl_Type" type="HelloService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloServiceImpl_io_vertx_example_camel_rmi_HelloServiceImpl_Type" type="IHelloServiceImpl_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_rmi_registry_LocateRegistry_Type" id="_JhmsFDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILocateRegistry_java_rmi_registry_LocateRegistry_Type" type="ILocateRegistry_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="io_vertx_example_camel_rmi_HelloServiceImpl_Type" id="_Jh8DQjqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloService_HelloServiceImpl_io_vertx_example_camel_rmi_HelloServiceImpl_Type" type="HelloService"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloServiceImpl_io_vertx_example_camel_rmi_HelloServiceImpl_Type" type="IHelloServiceImpl_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_rmi_registry_LocateRegistry_Type" id="_Jh8DSTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ILocateRegistry_java_rmi_registry_LocateRegistry_Type" type="ILocateRegistry_Type"/>
+    </components>
+    <interfaceTypes name="HelloService">
+      <signatures name="hello" type="java.lang.String" id="_JhmFATqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_JhmFAjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IHelloServiceImpl_Type">
+      <signatures name="hello" type="java.lang.String" id="_JhmsEDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_JhmsETqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ILocateRegistry_Type">
+      <signatures name="getRegistry" type="java.rmi.registry.Registry" id="_JhmsFTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_JhmsFjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createRegistry" type="java.rmi.registry.Registry" id="_JhmsFzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_JhmsGDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.rmi.server.RMIClientSocketFactory" id="_JhmsGTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.rmi.server.RMIServerSocketFactory" id="_JhmsGjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

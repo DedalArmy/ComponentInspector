@@ -1,0 +1,6 @@
+dedal_diagram "DSpace.dspace-solr"
+
+	repositories (
+
+		repository genRepo
+	)

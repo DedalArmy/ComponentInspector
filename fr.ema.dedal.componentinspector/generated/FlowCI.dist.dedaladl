@@ -1,0 +1,6 @@
+dedal_diagram "FlowCI.dist"
+
+	repositories (
+
+		repository genRepo
+	)

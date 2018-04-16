@@ -1,0 +1,6 @@
+dedal_diagram "FlowCI.platform-util-git"
+
+	repositories (
+
+		repository genRepo
+	)

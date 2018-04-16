@@ -1,0 +1,6 @@
+dedal_diagram "eclipse.test-coverage"
+
+	repositories (
+
+		repository genRepo
+	)

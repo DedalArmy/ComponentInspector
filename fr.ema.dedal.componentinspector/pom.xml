@@ -18,6 +18,12 @@
     </plugins>
   </build>
   <dependencies>
+  <!-- https://mvnrepository.com/artifact/org.eclipse.emf.codegen.ecore/ui -->
+	<dependency>
+	    <groupId>org.eclipse.emf.codegen.ecore</groupId>
+	    <artifactId>ui</artifactId>
+	    <version>2.3.0-v200706262000</version>
+	</dependency>
   	<!-- https://mvnrepository.com/artifact/com.codahale.metrics/metrics-core -->
 	<dependency>
 	    <groupId>com.codahale.metrics</groupId>

@@ -1,0 +1,6 @@
+dedal_diagram "dadoonet..git"
+
+	repositories (
+
+		repository genRepo
+	)

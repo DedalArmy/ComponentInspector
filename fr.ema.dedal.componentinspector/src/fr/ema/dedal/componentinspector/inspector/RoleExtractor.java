@@ -22,6 +22,7 @@ import dedal.Interface;
 import dedal.InterfaceType;
 import dedal.Repository;
 import dedal.impl.DedalFactoryImpl;
+import fr.ema.dedal.componentinspector.metrics.Metrics;
 
 /**
  * @author aleborgne
@@ -38,6 +39,7 @@ public class RoleExtractor {
 	private Map<Interface, Class<?>> intToType;
 	private Map<CompRole, Map<Interface, Class<?>>> roleToIntToType = null;
 	private Repository repo;
+	private Map<CompRole, Class<?>> roleToClass;
 
 	/**
 	 * Constructor
@@ -52,6 +54,7 @@ public class RoleExtractor {
 		this.config = (Configuration) cc.eContainer();
 		this.dedalDiagram = (DedalDiagram) config.eContainer();
 		this.roleToIntToType = new HashMap<>();
+		this.roleToClass = new HashMap<>();
 		if(interfaceToClass!=null)
 			this.intToType = interfaceToClass;
 		else
@@ -65,6 +68,10 @@ public class RoleExtractor {
 
 	public Map<CompRole, Map<Interface, Class<?>>> getRoleToIntToType() {
 		return roleToIntToType;
+	}
+
+	public Map<CompRole, Class<?>> getRoleToClass() {
+		return roleToClass;
 	}
 
 	/**
@@ -122,8 +129,11 @@ public class RoleExtractor {
 		/**
 		 * Else the current component role is returned as the only member of the resulting List.
 		 */
+		Metrics.addNbCompsRoles();
+//		Metrics.addNbClasses();
 		result = new ArrayList<>();
 		result.add(tempRole);
+		roleToClass.put(tempRole, objectToInspect);
 		return result;
 	}
 

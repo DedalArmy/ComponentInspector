@@ -1,0 +1,6 @@
+dedal_diagram "flowable..git"
+
+	repositories (
+
+		repository genRepo
+	)

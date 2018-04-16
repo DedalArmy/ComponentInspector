@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="wolfboys.opencron">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="wolfboys.opencron.opencron.opencron-server.src.main.resources.app-websocket.xml_config" implements="//@architectureDescriptions[name='wolfboys.opencron.opencron.opencron-server.src.main.resources.app-websocket.xml_spec']">
+    <configComponents name="org.opencron.server.websocket.TerminalHandler" id="_Zp8ooDqtEeiP29_qDiwNWQ" realizes="_Z_34xzqtEeiP29_qDiwNWQ" implements="_Z4qaEDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandler" type="ITerminalHandler_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalClient_TerminalHandler" direction="REQUIRED" type="ITerminalClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalService_TerminalHandler" direction="REQUIRED" type="ITerminalService_Type"/>
+      <attributes name="terminalClient" type="org.opencron.server.service.TerminalService.TerminalClient"/>
+      <attributes name="terminalService" type="org.opencron.server.service.TerminalService"/>
+    </configComponents>
+    <configComponents name="org.opencron.server.websocket.TerminalHandShaker" id="_Zp8ooTqtEeiP29_qDiwNWQ" realizes="_Z_335DqtEeiP29_qDiwNWQ" implements="_Z_0yADqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandShaker" type="ITerminalHandShaker_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TerminalHandShaker" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TerminalHandShaker" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TerminalHandShaker" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TerminalHandShaker" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterable_TerminalHandShaker" direction="REQUIRED" type="Iterable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_TerminalHandShaker" direction="REQUIRED" type="Collection"/>
+      <attributes name="HTTP_SESSION_ID_ATTR_NAME" type="java.lang.String"/>
+      <attributes name="attributeNames" type="java.util.Collection"/>
+      <attributes name="copyAllAttributes" type="boolean"/>
+      <attributes name="copyHttpSessionId" type="boolean"/>
+      <attributes name="createSession" type="boolean"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="wolfboys.opencron.opencron.opencron-server.src.main.resources.app-websocket.xml_asm" instantiates="//@architectureDescriptions[name='wolfboys.opencron.opencron.opencron-server.src.main.resources.app-websocket.xml_config']">
+    <assmComponents name="terminalHandler" id="_Zp8oojqtEeiP29_qDiwNWQ" instantiates="_Zp8ooDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandler_terminalHandler" type="ITerminalHandler_Type" instantiates="ITerminalHandler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalClient_TerminalHandler_terminalHandler" direction="REQUIRED" type="ITerminalClient_Type" instantiates="ITerminalClient_TerminalHandler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalService_TerminalHandler_terminalHandler" direction="REQUIRED" type="ITerminalService_Type" instantiates="ITerminalService_TerminalHandler"/>
+    </assmComponents>
+    <assmComponents name="webSocketHandShaker" id="_Zp8oozqtEeiP29_qDiwNWQ" instantiates="_Zp8ooTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandShaker_webSocketHandShaker" type="ITerminalHandShaker_Type" instantiates="ITerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" instantiates="null_TerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" type="Comparable" instantiates="IComparable_TerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" type="IString_Type" instantiates="IString_TerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterable_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" type="Iterable" instantiates="IIterable_TerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" type="Collection" instantiates="ICollection_TerminalHandShaker"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="wolfboys.opencron.opencron.opencron-server.src.main.resources.app-websocket.xml_spec">
+    <specComponents name="HttpSessionHandshakeInterceptor_role" id="_Z_335DqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IHandshakeInterceptorHttpSessionHandshakeInterceptor_role" type="HandshakeInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpSessionHandshakeInterceptorHttpSessionHandshakeInterceptor_role" type="IHttpSessionHandshakeInterceptor_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullHttpSessionHandshakeInterceptor_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableHttpSessionHandshakeInterceptor_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceHttpSessionHandshakeInterceptor_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringHttpSessionHandshakeInterceptor_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterableHttpSessionHandshakeInterceptor_role" direction="REQUIRED" type="Iterable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionHttpSessionHandshakeInterceptor_role" direction="REQUIRED" type="Collection"/>
+    </specComponents>
+    <specComponents name="TerminalHandler_role" id="_Z_34xzqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandlerTerminalHandler_role" type="ITerminalHandler_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalClientTerminalHandler_role" direction="REQUIRED" type="ITerminalClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalServiceTerminalHandler_role" direction="REQUIRED" type="ITerminalService_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="wolfboys.opencron.opencron.opencron-server.target.classes.app-websocket.xml_config" implements="//@architectureDescriptions[name='wolfboys.opencron.opencron.opencron-server.target.classes.app-websocket.xml_spec']">
+    <configComponents name="org.opencron.server.websocket.TerminalHandler" id="_aAzCYDqtEeiP29_qDiwNWQ" realizes="_aA0QgDqtEeiP29_qDiwNWQ" implements="_aAzCZDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandler" type="ITerminalHandler_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalClient_TerminalHandler" direction="REQUIRED" type="ITerminalClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalService_TerminalHandler" direction="REQUIRED" type="ITerminalService_Type"/>
+      <attributes name="terminalClient" type="org.opencron.server.service.TerminalService.TerminalClient"/>
+      <attributes name="terminalService" type="org.opencron.server.service.TerminalService"/>
+    </configComponents>
+    <configComponents name="org.opencron.server.websocket.TerminalHandShaker" id="_aAzCYTqtEeiP29_qDiwNWQ" realizes="_aAzsBTqtEeiP29_qDiwNWQ" implements="_aAzpcDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandShaker" type="ITerminalHandShaker_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TerminalHandShaker" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TerminalHandShaker" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TerminalHandShaker" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TerminalHandShaker" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterable_TerminalHandShaker" direction="REQUIRED" type="Iterable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_TerminalHandShaker" direction="REQUIRED" type="Collection"/>
+      <attributes name="HTTP_SESSION_ID_ATTR_NAME" type="java.lang.String"/>
+      <attributes name="attributeNames" type="java.util.Collection"/>
+      <attributes name="copyAllAttributes" type="boolean"/>
+      <attributes name="copyHttpSessionId" type="boolean"/>
+      <attributes name="createSession" type="boolean"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="wolfboys.opencron.opencron.opencron-server.target.classes.app-websocket.xml_asm" instantiates="//@architectureDescriptions[name='wolfboys.opencron.opencron.opencron-server.target.classes.app-websocket.xml_config']">
+    <assmComponents name="terminalHandler" id="_aAzCYjqtEeiP29_qDiwNWQ" instantiates="_aAzCYDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandler_terminalHandler" type="ITerminalHandler_Type" instantiates="ITerminalHandler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalClient_TerminalHandler_terminalHandler" direction="REQUIRED" type="ITerminalClient_Type" instantiates="ITerminalClient_TerminalHandler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalService_TerminalHandler_terminalHandler" direction="REQUIRED" type="ITerminalService_Type" instantiates="ITerminalService_TerminalHandler"/>
+    </assmComponents>
+    <assmComponents name="webSocketHandShaker" id="_aAzCYzqtEeiP29_qDiwNWQ" instantiates="_aAzCYTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandShaker_webSocketHandShaker" type="ITerminalHandShaker_Type" instantiates="ITerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" instantiates="null_TerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" type="Comparable" instantiates="IComparable_TerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" type="IString_Type" instantiates="IString_TerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterable_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" type="Iterable" instantiates="IIterable_TerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" type="Collection" instantiates="ICollection_TerminalHandShaker"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="wolfboys.opencron.opencron.opencron-server.target.classes.app-websocket.xml_spec">
+    <specComponents name="HttpSessionHandshakeInterceptor_role" id="_aAzsBTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IHandshakeInterceptorHttpSessionHandshakeInterceptor_role" type="HandshakeInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpSessionHandshakeInterceptorHttpSessionHandshakeInterceptor_role" type="IHttpSessionHandshakeInterceptor_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullHttpSessionHandshakeInterceptor_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableHttpSessionHandshakeInterceptor_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceHttpSessionHandshakeInterceptor_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringHttpSessionHandshakeInterceptor_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterableHttpSessionHandshakeInterceptor_role" direction="REQUIRED" type="Iterable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionHttpSessionHandshakeInterceptor_role" direction="REQUIRED" type="Collection"/>
+    </specComponents>
+    <specComponents name="TerminalHandler_role" id="_aA0QgDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandlerTerminalHandler_role" type="ITerminalHandler_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalClientTerminalHandler_role" direction="REQUIRED" type="ITerminalClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalServiceTerminalHandler_role" direction="REQUIRED" type="ITerminalService_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="wolfboys.opencron.opencron.opencron-server.target.opencron-server-1.1.0-RELEASE.WEB-INF.classes.app-websocket.xml_config" implements="//@architectureDescriptions[name='wolfboys.opencron.opencron.opencron-server.target.opencron-server-1.1.0-RELEASE.WEB-INF.classes.app-websocket.xml_spec']">
+    <configComponents name="org.opencron.server.websocket.TerminalHandler" id="_aBJAoDqtEeiP29_qDiwNWQ" realizes="_aBKPAzqtEeiP29_qDiwNWQ" implements="_aBJApDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandler" type="ITerminalHandler_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalClient_TerminalHandler" direction="REQUIRED" type="ITerminalClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalService_TerminalHandler" direction="REQUIRED" type="ITerminalService_Type"/>
+      <attributes name="terminalClient" type="org.opencron.server.service.TerminalService.TerminalClient"/>
+      <attributes name="terminalService" type="org.opencron.server.service.TerminalService"/>
+    </configComponents>
+    <configComponents name="org.opencron.server.websocket.TerminalHandShaker" id="_aBJAoTqtEeiP29_qDiwNWQ" realizes="_aBJqYDqtEeiP29_qDiwNWQ" implements="_aBJnyzqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandShaker" type="ITerminalHandShaker_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TerminalHandShaker" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TerminalHandShaker" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TerminalHandShaker" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TerminalHandShaker" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterable_TerminalHandShaker" direction="REQUIRED" type="Iterable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_TerminalHandShaker" direction="REQUIRED" type="Collection"/>
+      <attributes name="HTTP_SESSION_ID_ATTR_NAME" type="java.lang.String"/>
+      <attributes name="attributeNames" type="java.util.Collection"/>
+      <attributes name="copyAllAttributes" type="boolean"/>
+      <attributes name="copyHttpSessionId" type="boolean"/>
+      <attributes name="createSession" type="boolean"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="wolfboys.opencron.opencron.opencron-server.target.opencron-server-1.1.0-RELEASE.WEB-INF.classes.app-websocket.xml_asm" instantiates="//@architectureDescriptions[name='wolfboys.opencron.opencron.opencron-server.target.opencron-server-1.1.0-RELEASE.WEB-INF.classes.app-websocket.xml_config']">
+    <assmComponents name="terminalHandler" id="_aBJAojqtEeiP29_qDiwNWQ" instantiates="_aBJAoDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandler_terminalHandler" type="ITerminalHandler_Type" instantiates="ITerminalHandler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalClient_TerminalHandler_terminalHandler" direction="REQUIRED" type="ITerminalClient_Type" instantiates="ITerminalClient_TerminalHandler"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalService_TerminalHandler_terminalHandler" direction="REQUIRED" type="ITerminalService_Type" instantiates="ITerminalService_TerminalHandler"/>
+    </assmComponents>
+    <assmComponents name="webSocketHandShaker" id="_aBJAozqtEeiP29_qDiwNWQ" instantiates="_aBJAoTqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandShaker_webSocketHandShaker" type="ITerminalHandShaker_Type" instantiates="ITerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" instantiates="null_TerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" type="Comparable" instantiates="IComparable_TerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_TerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" type="IString_Type" instantiates="IString_TerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterable_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" type="Iterable" instantiates="IIterable_TerminalHandShaker"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_TerminalHandShaker_webSocketHandShaker" direction="REQUIRED" type="Collection" instantiates="ICollection_TerminalHandShaker"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="wolfboys.opencron.opencron.opencron-server.target.opencron-server-1.1.0-RELEASE.WEB-INF.classes.app-websocket.xml_spec">
+    <specComponents name="HttpSessionHandshakeInterceptor_role" id="_aBJqYDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IHandshakeInterceptorHttpSessionHandshakeInterceptor_role" type="HandshakeInterceptor"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpSessionHandshakeInterceptorHttpSessionHandshakeInterceptor_role" type="IHttpSessionHandshakeInterceptor_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullHttpSessionHandshakeInterceptor_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableHttpSessionHandshakeInterceptor_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceHttpSessionHandshakeInterceptor_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringHttpSessionHandshakeInterceptor_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterableHttpSessionHandshakeInterceptor_role" direction="REQUIRED" type="Iterable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionHttpSessionHandshakeInterceptor_role" direction="REQUIRED" type="Collection"/>
+    </specComponents>
+    <specComponents name="TerminalHandler_role" id="_aBKPAzqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandlerTerminalHandler_role" type="ITerminalHandler_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalClientTerminalHandler_role" direction="REQUIRED" type="ITerminalClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalServiceTerminalHandler_role" direction="REQUIRED" type="ITerminalService_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="org_opencron_server_websocket_TerminalHandler_Type" id="_Z4qaEDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandler_org_opencron_server_websocket_TerminalHandler_Type" type="ITerminalHandler_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalClient_TerminalHandler_org_opencron_server_websocket_TerminalHandler_Type" direction="REQUIRED" type="ITerminalClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalService_TerminalHandler_org_opencron_server_websocket_TerminalHandler_Type" direction="REQUIRED" type="ITerminalService_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_opencron_server_websocket_TerminalHandShaker_Type" id="_Z_0yADqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" type="ITerminalHandShaker_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterable_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED" type="Iterable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED" type="Collection"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_opencron_server_websocket_TerminalHandler_Type" id="_aAzCZDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandler_org_opencron_server_websocket_TerminalHandler_Type" type="ITerminalHandler_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalClient_TerminalHandler_org_opencron_server_websocket_TerminalHandler_Type" direction="REQUIRED" type="ITerminalClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalService_TerminalHandler_org_opencron_server_websocket_TerminalHandler_Type" direction="REQUIRED" type="ITerminalService_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_opencron_server_websocket_TerminalHandShaker_Type" id="_aAzpcDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" type="ITerminalHandShaker_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterable_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED" type="Iterable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED" type="Collection"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_opencron_server_websocket_TerminalHandler_Type" id="_aBJApDqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandler_org_opencron_server_websocket_TerminalHandler_Type" type="ITerminalHandler_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalClient_TerminalHandler_org_opencron_server_websocket_TerminalHandler_Type" direction="REQUIRED" type="ITerminalClient_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalService_TerminalHandler_org_opencron_server_websocket_TerminalHandler_Type" direction="REQUIRED" type="ITerminalService_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_opencron_server_websocket_TerminalHandShaker_Type" id="_aBJnyzqtEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ITerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" type="ITerminalHandShaker_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IIterable_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED" type="Iterable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_TerminalHandShaker_org_opencron_server_websocket_TerminalHandShaker_Type" direction="REQUIRED" type="Collection"/>
+    </components>
+    <interfaceTypes name="ITerminalHandler_Type">
+      <signatures name="handleMessage" type="void" id="_Z-CpUDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpUTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.web.socket.WebSocketMessage" id="_Z-CpUjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="handleTransportError" type="void" id="_Z-CpUzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpVDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_Z-CpVTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="afterConnectionEstablished" type="void" id="_Z-CpVjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpVzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="afterConnectionClosed" type="void" id="_Z-CpWDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpWTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.web.socket.CloseStatus" id="_Z-CpWjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="supportsPartialMessages" type="boolean" id="_Z-CpWzqtEeiP29_qDiwNWQ"/>
+      <signatures name="handleTextMessage" type="void" id="_Z-CpXDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpXTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.web.socket.TextMessage" id="_Z-CpXjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="handlePongMessage" type="void" id="_Z-CpXzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpYDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.web.socket.PongMessage" id="_Z-CpYTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="handleBinaryMessage" type="void" id="_Z-CpYjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpYzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.web.socket.BinaryMessage" id="_Z-CpZDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClient" type="org.opencron.server.service.TerminalService.TerminalClient" id="_Z-CpZTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpZjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.opencron.server.domain.Terminal" id="_Z-CpZzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="closeTerminal" type="void" id="_Z-CpaDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpaTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ITextWebSocketHandler_Type">
+      <signatures name="handleMessage" type="void" id="_Z-CpajqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpazqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.web.socket.WebSocketMessage" id="_Z-CpbDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="handleTransportError" type="void" id="_Z-CpbTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpbjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_Z-CpbzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="afterConnectionEstablished" type="void" id="_Z-CpcDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpcTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="afterConnectionClosed" type="void" id="_Z-CpcjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpczqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.web.socket.CloseStatus" id="_Z-CpdDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="supportsPartialMessages" type="boolean" id="_Z-CpdTqtEeiP29_qDiwNWQ"/>
+      <signatures name="handleTextMessage" type="void" id="_Z-CpdjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpdzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.web.socket.TextMessage" id="_Z-CpeDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="handlePongMessage" type="void" id="_Z-CpeTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpejqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.web.socket.PongMessage" id="_Z-CpezqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="handleBinaryMessage" type="void" id="_Z-CpfDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpfTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.web.socket.BinaryMessage" id="_Z-CpfjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="WebSocketHandler">
+      <signatures name="handleMessage" type="void" id="_Z-CpfzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpgDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.web.socket.WebSocketMessage" id="_Z-CpgTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="handleTransportError" type="void" id="_Z-CpgjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpgzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_Z-CphDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="afterConnectionEstablished" type="void" id="_Z-CphTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CphjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="afterConnectionClosed" type="void" id="_Z-CphzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpiDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.web.socket.CloseStatus" id="_Z-CpiTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="supportsPartialMessages" type="boolean" id="_Z-CpijqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IAbstractWebSocketHandler_Type">
+      <signatures name="handleMessage" type="void" id="_Z-CpizqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpjDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.web.socket.WebSocketMessage" id="_Z-CpjTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="handleTransportError" type="void" id="_Z-CpjjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpjzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_Z-CpkDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="afterConnectionEstablished" type="void" id="_Z-CpkTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpkjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="afterConnectionClosed" type="void" id="_Z-CpkzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CplDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.web.socket.CloseStatus" id="_Z-CplTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="supportsPartialMessages" type="boolean" id="_Z-CpljqtEeiP29_qDiwNWQ"/>
+      <signatures name="handleTextMessage" type="void" id="_Z-CplzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpmDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.web.socket.TextMessage" id="_Z-CpmTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="handlePongMessage" type="void" id="_Z-CpmjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpmzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.web.socket.PongMessage" id="_Z-CpnDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="handleBinaryMessage" type="void" id="_Z-CpnTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.web.socket.WebSocketSession" id="_Z-CpnjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.web.socket.BinaryMessage" id="_Z-CpnzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ITerminalClient_Type">
+      <signatures name="access$100" type="java.io.InputStream" id="_Z-DQYDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.service.TerminalService.TerminalClient" id="_Z-DQYTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$200" type="boolean" id="_Z-DQYjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.service.TerminalService.TerminalClient" id="_Z-DQYzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$300" type="java.lang.String" id="_Z-DQZDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.service.TerminalService.TerminalClient" id="_Z-DQZTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$402" type="java.lang.String" id="_Z-DQZjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.service.TerminalService.TerminalClient" id="_Z-DQZzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_Z-DQaDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$000" type="org.springframework.web.socket.WebSocketSession" id="_Z-DQaTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.service.TerminalService.TerminalClient" id="_Z-DQajqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="write" type="void" id="_Z-DQazqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_Z-DQbDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$400" type="java.lang.String" id="_Z-DQbTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.service.TerminalService.TerminalClient" id="_Z-DQbjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$600" type="boolean" id="_Z-DQbzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.service.TerminalService.TerminalClient" id="_Z-DQcDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="resize" type="void" id="_Z-DQcTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Integer" id="_Z-DQcjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Integer" id="_Z-DQczqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Integer" id="_Z-DQdDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Integer" id="_Z-DQdTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$700" type="boolean" id="_Z-DQdjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.service.TerminalService.TerminalClient" id="_Z-DQdzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$800" type="java.lang.StringBuffer" id="_Z-DQeDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.service.TerminalService.TerminalClient" id="_Z-DQeTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$702" type="boolean" id="_Z-DQejqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.service.TerminalService.TerminalClient" id="_Z-DQezqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_Z-DQfDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$902" type="boolean" id="_Z-DQfTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.service.TerminalService.TerminalClient" id="_Z-DQfjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_Z-DQfzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getHttpSessionId" type="java.lang.String" id="_Z-DQgDqtEeiP29_qDiwNWQ"/>
+      <signatures name="setTerminal" type="void" id="_Z-DQgTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.domain.Terminal" id="_Z-DQgjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTerminal" type="org.opencron.server.domain.Terminal" id="_Z-DQgzqtEeiP29_qDiwNWQ"/>
+      <signatures name="disconnect" type="void" id="_Z-DQhDqtEeiP29_qDiwNWQ"/>
+      <signatures name="isClosed" type="boolean" id="_Z-DQhTqtEeiP29_qDiwNWQ"/>
+      <signatures name="upload" type="void" id="_Z-DQhjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_Z-DQhzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_Z-DQiDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="long" id="_Z-DQiTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getWebSocketSession" type="org.springframework.web.socket.WebSocketSession" id="_Z-DQijqtEeiP29_qDiwNWQ"/>
+      <signatures name="openTerminal" type="void" id="_Z-DQizqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_Z-DQjDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_Z-DQjTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_Z-DQjjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_Z-DQjzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClientId" type="java.lang.String" id="_Z-DQkDqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ITerminalService_Type">
+      <signatures name="delete" type="java.lang.String" id="_Z-kNwDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="javax.servlet.http.HttpSession" id="_Z-kNwTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Long" id="_Z-kNwjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$500" type="org.slf4j.Logger" id="_Z-kNwzqtEeiP29_qDiwNWQ"/>
+      <signatures name="merge" type="boolean" id="_Z-kNxDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.domain.Terminal" id="_Z-kNxTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="exists" type="boolean" id="_Z-kNxjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Long" id="_Z-kNxzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_Z-kNyDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="auth" type="org.opencron.server.domain.Terminal.AuthStatus" id="_Z-kNyTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.domain.Terminal" id="_Z-kNyjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getListByUser" type="java.util.List" id="_Z-kNyzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.domain.User" id="_Z-kNzDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="theme" type="void" id="_Z-kNzTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.domain.Terminal" id="_Z-kNzjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_Z-kNzzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="login" type="void" id="_Z-kN0DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.domain.Terminal" id="_Z-kN0TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getPageBeanByUser" type="org.opencron.server.tag.PageBean" id="_Z-kN0jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.opencron.server.tag.PageBean" id="_Z-kN0zqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Long" id="_Z-kN1DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getById" type="org.opencron.server.domain.Terminal" id="_Z-kN1TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Long" id="_Z-kN1jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ITerminalHandShaker_Type">
+      <signatures name="beforeHandshake" type="boolean" id="_Z_31UDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.server.ServerHttpRequest" id="_Z_31UTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.server.ServerHttpResponse" id="_Z_31UjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.web.socket.WebSocketHandler" id="_Z_31UzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.util.Map" id="_Z_31VDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="afterHandshake" type="void" id="_Z_31VTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.server.ServerHttpRequest" id="_Z_31VjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.server.ServerHttpResponse" id="_Z_31VzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.web.socket.WebSocketHandler" id="_Z_31WDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Exception" id="_Z_31WTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setCreateSession" type="void" id="_Z_31WjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_Z_31WzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isCreateSession" type="boolean" id="_Z_31XDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getSession" type="javax.servlet.http.HttpSession" id="_Z_31XTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.server.ServerHttpRequest" id="_Z_31XjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAttributeNames" type="java.util.Collection" id="_Z_31XzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setCopyAllAttributes" type="void" id="_Z_31YDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_Z_31YTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isCopyHttpSessionId" type="boolean" id="_Z_31YjqtEeiP29_qDiwNWQ"/>
+      <signatures name="isCopyAllAttributes" type="boolean" id="_Z_31YzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setCopyHttpSessionId" type="void" id="_Z_31ZDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_Z_31ZTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="HandshakeInterceptor">
+      <signatures name="beforeHandshake" type="boolean" id="_Z_31ZjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.server.ServerHttpRequest" id="_Z_31ZzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.server.ServerHttpResponse" id="_Z_31aDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.web.socket.WebSocketHandler" id="_Z_31aTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.util.Map" id="_Z_31ajqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="afterHandshake" type="void" id="_Z_31azqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.server.ServerHttpRequest" id="_Z_31bDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.server.ServerHttpResponse" id="_Z_31bTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.web.socket.WebSocketHandler" id="_Z_31bjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Exception" id="_Z_31bzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IHttpSessionHandshakeInterceptor_Type">
+      <signatures name="beforeHandshake" type="boolean" id="_Z_31cDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.server.ServerHttpRequest" id="_Z_31cTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.server.ServerHttpResponse" id="_Z_31cjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.web.socket.WebSocketHandler" id="_Z_31czqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.util.Map" id="_Z_31dDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="afterHandshake" type="void" id="_Z_31dTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.server.ServerHttpRequest" id="_Z_31djqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.springframework.http.server.ServerHttpResponse" id="_Z_31dzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.springframework.web.socket.WebSocketHandler" id="_Z_31eDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Exception" id="_Z_31eTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setCreateSession" type="void" id="_Z_31ejqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_Z_31ezqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isCreateSession" type="boolean" id="_Z_31fDqtEeiP29_qDiwNWQ"/>
+      <signatures name="getSession" type="javax.servlet.http.HttpSession" id="_Z_31fTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.http.server.ServerHttpRequest" id="_Z_31fjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAttributeNames" type="java.util.Collection" id="_Z_31fzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setCopyAllAttributes" type="void" id="_Z_31gDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_Z_31gTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isCopyHttpSessionId" type="boolean" id="_Z_31gjqtEeiP29_qDiwNWQ"/>
+      <signatures name="isCopyAllAttributes" type="boolean" id="_Z_31gzqtEeiP29_qDiwNWQ"/>
+      <signatures name="setCopyHttpSessionId" type="void" id="_Z_31hDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_Z_31hTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Comparable">
+      <signatures name="compareTo" type="int" id="_Z_31kDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Z_31kTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="CharSequence">
+      <signatures name="toString" type="java.lang.String" id="_Z_31kjqtEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_Z_31kzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_Z_31lDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_Z_31lTqtEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_Z_31ljqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_Z_31lzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_Z_31mDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_Z_31mTqtEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_Z_31mjqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IString_Type">
+      <signatures name="compareTo" type="int" id="_Z_31mzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Z_31nDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_Z_31nTqtEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_Z_31njqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_Z_31nzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_Z_31oDqtEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_Z_31oTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_Z_31ojqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_Z_31ozqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_Z_31pDqtEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_Z_31pTqtEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$chars$0" type="java.util.Spliterator.OfInt" id="_Z_31pjqtEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$codePoints$1" type="java.util.Spliterator.OfInt" id="_Z_31pzqtEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_Z_31qDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Z_31qTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_Z_31qjqtEeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_Z_31qzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_Z_31rDqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_Z_31rTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueOf" type="java.lang.String" id="_Z_31rjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_Z_31rzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkBounds" type="void" id="_Z_31sDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_Z_31sTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_Z_31sjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_Z_31szqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointAt" type="int" id="_Z_31tDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_Z_31tTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointBefore" type="int" id="_Z_31tjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_Z_31tzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointCount" type="int" id="_Z_31uDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_Z_31uTqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_Z_31ujqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compareToIgnoreCase" type="int" id="_Z_31uzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_Z_31vDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="concat" type="java.lang.String" id="_Z_31vTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_Z_31vjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contains" type="boolean" id="_Z_31vzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_Z_31wDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contentEquals" type="boolean" id="_Z_31wTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_Z_31wjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyValueOf" type="java.lang.String" id="_Z_31wzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char[]" id="_Z_31xDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="endsWith" type="boolean" id="_Z_31xTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_Z_31xjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equalsIgnoreCase" type="boolean" id="_Z_31xzqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_Z_31yDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="format" type="java.lang.String" id="_Z_31yTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_Z_31yjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_Z_31yzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_Z_31zDqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBytes" type="void" id="_Z_31zTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_Z_31zjqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_Z_31zzqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_Z_310DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_Z_310TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChars" type="void" id="_Z_310jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_Z_310zqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_Z_311DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="char[]" id="_Z_311TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_Z_311jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="indexOfSupplementary" type="int" id="_Z_311zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_Z_312DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_Z_312TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="intern" type="java.lang.String" id="_Z_312jqtEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_Z_312zqtEeiP29_qDiwNWQ"/>
+      <signatures name="join" type="java.lang.String" id="_Z_313DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_Z_313TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.CharSequence[]" id="_Z_313jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOf" type="int" id="_Z_313zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_Z_314DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOfSupplementary" type="int" id="_Z_314TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_Z_314jqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_Z_314zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="matches" type="boolean" id="_Z_315DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_Z_315TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nonSyncContentEquals" type="boolean" id="_Z_315jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.AbstractStringBuilder" id="_Z_315zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="offsetByCodePoints" type="int" id="_Z_316DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_Z_316TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_Z_316jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="regionMatches" type="boolean" id="_Z_316zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_Z_317DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_Z_317TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_Z_317jqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_Z_317zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="java.lang.String" id="_Z_318DqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char" id="_Z_318TqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="char" id="_Z_318jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="java.lang.String" id="_Z_318zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_Z_319DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_Z_319TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceFirst" type="java.lang.String" id="_Z_319jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_Z_319zqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_Z_31-DqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="split" type="java.lang.String[]" id="_Z_31-TqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_Z_31-jqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="startsWith" type="boolean" id="_Z_31-zqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_Z_31_DqtEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_Z_31_TqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="substring" type="java.lang.String" id="_Z_31_jqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_Z_31_zqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCharArray" type="char[]" id="_Z_32ADqtEeiP29_qDiwNWQ"/>
+      <signatures name="toLowerCase" type="java.lang.String" id="_Z_32ATqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_Z_32AjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUpperCase" type="java.lang.String" id="_Z_32AzqtEeiP29_qDiwNWQ"/>
+      <signatures name="trim" type="java.lang.String" id="_Z_32BDqtEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Iterable">
+      <signatures name="iterator" type="java.util.Iterator" id="_Z_32EDqtEeiP29_qDiwNWQ"/>
+      <signatures name="spliterator" type="java.util.Spliterator" id="_Z_32ETqtEeiP29_qDiwNWQ"/>
+      <signatures name="forEach" type="void" id="_Z_32EjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Consumer" id="_Z_32EzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Collection">
+      <signatures name="add" type="boolean" id="_Z_32FDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Z_32FTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_Z_32FjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Z_32FzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_Z_32GDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Z_32GTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_Z_32GjqtEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_Z_32GzqtEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_Z_32HDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_Z_32HTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_Z_32HjqtEeiP29_qDiwNWQ"/>
+      <signatures name="iterator" type="java.util.Iterator" id="_Z_32HzqtEeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_Z_32IDqtEeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_Z_32ITqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_Z_32IjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toArray" type="java.lang.Object[]" id="_Z_32IzqtEeiP29_qDiwNWQ"/>
+      <signatures name="spliterator" type="java.util.Spliterator" id="_Z_32JDqtEeiP29_qDiwNWQ"/>
+      <signatures name="addAll" type="boolean" id="_Z_32JTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_Z_32JjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stream" type="java.util.stream.Stream" id="_Z_32JzqtEeiP29_qDiwNWQ"/>
+      <signatures name="containsAll" type="boolean" id="_Z_32KDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_Z_32KTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeAll" type="boolean" id="_Z_32KjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_Z_32KzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeIf" type="boolean" id="_Z_32LDqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Predicate" id="_Z_32LTqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retainAll" type="boolean" id="_Z_32LjqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_Z_32LzqtEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parallelStream" type="java.util.stream.Stream" id="_Z_32MDqtEeiP29_qDiwNWQ"/>
+      <signatures name="forEach" type="void" id="_Z_32MTqtEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Consumer" id="_Z_32MjqtEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

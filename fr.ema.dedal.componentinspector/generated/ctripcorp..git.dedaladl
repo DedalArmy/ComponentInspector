@@ -1,0 +1,6 @@
+dedal_diagram "ctripcorp..git"
+
+	repositories (
+
+		repository genRepo
+	)

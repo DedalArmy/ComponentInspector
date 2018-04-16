@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="dianping.zebra-ds-monitor-client">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dianping.zebra-ds-monitor-client.src.main.resources.config.spring.common.appcontext-ds-monitor.xml_config" implements="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.src.main.resources.config.spring.common.appcontext-ds-monitor.xml_spec']">
+    <configComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoMonitor" id="_H1nQ4DqYEeiP29_qDiwNWQ" realizes="_H2HnPDqYEeiP29_qDiwNWQ" implements="_H2HnMDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dianping.zebra-ds-monitor-client.src.main.resources.config.spring.common.appcontext-ds-monitor.xml_asm" instantiates="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.src.main.resources.config.spring.common.appcontext-ds-monitor.xml_config']">
+    <assmComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoMonitor1" id="_H1nQ4TqYEeiP29_qDiwNWQ" instantiates="_H1nQ4DqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.dianping.zebra.monitor.spring.DataSourceAutoMonitor1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dianping.zebra-ds-monitor-client.src.main.resources.config.spring.common.appcontext-ds-monitor.xml_spec">
+    <specComponents name="Object_role" id="_H2HnPDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dianping.zebra-ds-monitor-client.src.main.resources.config.spring.common.appcontext-ds-replacer.xml_config" implements="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.src.main.resources.config.spring.common.appcontext-ds-replacer.xml_spec']">
+    <configComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoReplacer" id="_H2cXUDqYEeiP29_qDiwNWQ" realizes="_H2lhTDqYEeiP29_qDiwNWQ" implements="_H2lhQDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dianping.zebra-ds-monitor-client.src.main.resources.config.spring.common.appcontext-ds-replacer.xml_asm" instantiates="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.src.main.resources.config.spring.common.appcontext-ds-replacer.xml_config']">
+    <assmComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoReplacer1" id="_H2cXUTqYEeiP29_qDiwNWQ" instantiates="_H2cXUDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.dianping.zebra.monitor.spring.DataSourceAutoReplacer1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dianping.zebra-ds-monitor-client.src.main.resources.config.spring.common.appcontext-ds-replacer.xml_spec">
+    <specComponents name="Object_role" id="_H2lhTDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dianping.zebra-ds-monitor-client.src.main.resources.config.spring.dbcon.appcontext-ds-replacer.xml_config" implements="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.src.main.resources.config.spring.dbcon.appcontext-ds-replacer.xml_spec']">
+    <configComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoReplacer" id="_H26RYDqYEeiP29_qDiwNWQ" realizes="_H3ECbDqYEeiP29_qDiwNWQ" implements="_H3ECYDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dianping.zebra-ds-monitor-client.src.main.resources.config.spring.dbcon.appcontext-ds-replacer.xml_asm" instantiates="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.src.main.resources.config.spring.dbcon.appcontext-ds-replacer.xml_config']">
+    <assmComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoReplacer1" id="_H26RYTqYEeiP29_qDiwNWQ" instantiates="_H26RYDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.dianping.zebra.monitor.spring.DataSourceAutoReplacer1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dianping.zebra-ds-monitor-client.src.main.resources.config.spring.dbcon.appcontext-ds-replacer.xml_spec">
+    <specComponents name="Object_role" id="_H3ECbDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dianping.zebra-ds-monitor-client.src.main.resources.config.spring.local.appcontext-ds-replacer.xml_config" implements="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.src.main.resources.config.spring.local.appcontext-ds-replacer.xml_spec']">
+    <configComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoReplacer" id="_H3YygDqYEeiP29_qDiwNWQ" realizes="_H3h8fDqYEeiP29_qDiwNWQ" implements="_H3h8cDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dianping.zebra-ds-monitor-client.src.main.resources.config.spring.local.appcontext-ds-replacer.xml_asm" instantiates="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.src.main.resources.config.spring.local.appcontext-ds-replacer.xml_config']">
+    <assmComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoReplacer1" id="_H3YygTqYEeiP29_qDiwNWQ" instantiates="_H3YygDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.dianping.zebra.monitor.spring.DataSourceAutoReplacer1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dianping.zebra-ds-monitor-client.src.main.resources.config.spring.local.appcontext-ds-replacer.xml_spec">
+    <specComponents name="Object_role" id="_H3h8fDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dianping.zebra-ds-monitor-client.src.main.resources.config.spring.local.dbcon.appcontext-ds-replacer.xml_config" implements="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.src.main.resources.config.spring.local.dbcon.appcontext-ds-replacer.xml_spec']">
+    <configComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoReplacer" id="_H33ToDqYEeiP29_qDiwNWQ" realizes="_H4BErDqYEeiP29_qDiwNWQ" implements="_H4BEoDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dianping.zebra-ds-monitor-client.src.main.resources.config.spring.local.dbcon.appcontext-ds-replacer.xml_asm" instantiates="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.src.main.resources.config.spring.local.dbcon.appcontext-ds-replacer.xml_config']">
+    <assmComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoReplacer1" id="_H33ToTqYEeiP29_qDiwNWQ" instantiates="_H33ToDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.dianping.zebra.monitor.spring.DataSourceAutoReplacer1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dianping.zebra-ds-monitor-client.src.main.resources.config.spring.local.dbcon.appcontext-ds-replacer.xml_spec">
+    <specComponents name="Object_role" id="_H4BErDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dianping.zebra-ds-monitor-client.target.classes.config.spring.common.appcontext-ds-monitor.xml_config" implements="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.target.classes.config.spring.common.appcontext-ds-monitor.xml_spec']">
+    <configComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoMonitor" id="_H4XC4DqYEeiP29_qDiwNWQ" realizes="_H4gM3DqYEeiP29_qDiwNWQ" implements="_H4gM0DqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dianping.zebra-ds-monitor-client.target.classes.config.spring.common.appcontext-ds-monitor.xml_asm" instantiates="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.target.classes.config.spring.common.appcontext-ds-monitor.xml_config']">
+    <assmComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoMonitor1" id="_H4XC4TqYEeiP29_qDiwNWQ" instantiates="_H4XC4DqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.dianping.zebra.monitor.spring.DataSourceAutoMonitor1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dianping.zebra-ds-monitor-client.target.classes.config.spring.common.appcontext-ds-monitor.xml_spec">
+    <specComponents name="Object_role" id="_H4gM3DqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dianping.zebra-ds-monitor-client.target.classes.config.spring.common.appcontext-ds-replacer.xml_config" implements="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.target.classes.config.spring.common.appcontext-ds-replacer.xml_spec']">
+    <configComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoReplacer" id="_H4088DqYEeiP29_qDiwNWQ" realizes="_H4-G7DqYEeiP29_qDiwNWQ" implements="_H4-G4DqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dianping.zebra-ds-monitor-client.target.classes.config.spring.common.appcontext-ds-replacer.xml_asm" instantiates="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.target.classes.config.spring.common.appcontext-ds-replacer.xml_config']">
+    <assmComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoReplacer1" id="_H4088TqYEeiP29_qDiwNWQ" instantiates="_H4088DqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.dianping.zebra.monitor.spring.DataSourceAutoReplacer1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dianping.zebra-ds-monitor-client.target.classes.config.spring.common.appcontext-ds-replacer.xml_spec">
+    <specComponents name="Object_role" id="_H4-G7DqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dianping.zebra-ds-monitor-client.target.classes.config.spring.dbcon.appcontext-ds-replacer.xml_config" implements="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.target.classes.config.spring.dbcon.appcontext-ds-replacer.xml_spec']">
+    <configComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoReplacer" id="_H5S3ADqYEeiP29_qDiwNWQ" realizes="_H5cA_DqYEeiP29_qDiwNWQ" implements="_H5cA8DqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dianping.zebra-ds-monitor-client.target.classes.config.spring.dbcon.appcontext-ds-replacer.xml_asm" instantiates="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.target.classes.config.spring.dbcon.appcontext-ds-replacer.xml_config']">
+    <assmComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoReplacer1" id="_H5S3ATqYEeiP29_qDiwNWQ" instantiates="_H5S3ADqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.dianping.zebra.monitor.spring.DataSourceAutoReplacer1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dianping.zebra-ds-monitor-client.target.classes.config.spring.dbcon.appcontext-ds-replacer.xml_spec">
+    <specComponents name="Object_role" id="_H5cA_DqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dianping.zebra-ds-monitor-client.target.classes.config.spring.local.appcontext-ds-replacer.xml_config" implements="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.target.classes.config.spring.local.appcontext-ds-replacer.xml_spec']">
+    <configComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoReplacer" id="_H5wxEDqYEeiP29_qDiwNWQ" realizes="_H557DDqYEeiP29_qDiwNWQ" implements="_H557ADqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dianping.zebra-ds-monitor-client.target.classes.config.spring.local.appcontext-ds-replacer.xml_asm" instantiates="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.target.classes.config.spring.local.appcontext-ds-replacer.xml_config']">
+    <assmComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoReplacer1" id="_H5wxETqYEeiP29_qDiwNWQ" instantiates="_H5wxEDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.dianping.zebra.monitor.spring.DataSourceAutoReplacer1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dianping.zebra-ds-monitor-client.target.classes.config.spring.local.appcontext-ds-replacer.xml_spec">
+    <specComponents name="Object_role" id="_H557DDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dianping.zebra-ds-monitor-client.target.classes.config.spring.local.dbcon.appcontext-ds-replacer.xml_config" implements="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.target.classes.config.spring.local.dbcon.appcontext-ds-replacer.xml_spec']">
+    <configComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoReplacer" id="_H6OrIDqYEeiP29_qDiwNWQ" realizes="_H6X1HDqYEeiP29_qDiwNWQ" implements="_H6X1EDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dianping.zebra-ds-monitor-client.target.classes.config.spring.local.dbcon.appcontext-ds-replacer.xml_asm" instantiates="//@architectureDescriptions[name='dianping.zebra-ds-monitor-client.target.classes.config.spring.local.dbcon.appcontext-ds-replacer.xml_config']">
+    <assmComponents name="com.dianping.zebra.monitor.spring.DataSourceAutoReplacer1" id="_H6OrITqYEeiP29_qDiwNWQ" instantiates="_H6OrIDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.dianping.zebra.monitor.spring.DataSourceAutoReplacer1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dianping.zebra-ds-monitor-client.target.classes.config.spring.local.dbcon.appcontext-ds-replacer.xml_spec">
+    <specComponents name="Object_role" id="_H6X1HDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_H2HnMDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_H2lhQDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_H3ECYDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_H3h8cDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_H4BEoDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_H4gM0DqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_H4-G4DqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_H5cA8DqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_H557ADqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_H6X1EDqYEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_H2HnMTqYEeiP29_qDiwNWQ"/>
+      <signatures name="wait" type="void" id="_H2HnMjqYEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_H2HnMzqYEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_H2HnNDqYEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_H2HnNTqYEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_H2HnNjqYEeiP29_qDiwNWQ"/>
+      <signatures name="getClass" type="java.lang.Class" id="_H2HnNzqYEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_H2HnODqYEeiP29_qDiwNWQ"/>
+      <signatures name="notify" type="void" id="_H2HnOTqYEeiP29_qDiwNWQ"/>
+      <signatures name="notifyAll" type="void" id="_H2HnOjqYEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_H2HnOzqYEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

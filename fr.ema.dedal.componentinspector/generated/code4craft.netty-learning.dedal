@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="code4craft.netty-learning">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="code4craft.netty-learning.netty-3.7.src.main.resources.org.jboss.netty.container.spring.beans.xml_config" implements="//@architectureDescriptions[name='code4craft.netty-learning.netty-3.7.src.main.resources.org.jboss.netty.container.spring.beans.xml_spec']">
+    <configComponents name="org.jboss.netty.container.spring.NettyLoggerConfigurator" id="_2KbokDqXEeiP29_qDiwNWQ" realizes="_2LhNvDqXEeiP29_qDiwNWQ" implements="_2LhNsDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="code4craft.netty-learning.netty-3.7.src.main.resources.org.jboss.netty.container.spring.beans.xml_asm" instantiates="//@architectureDescriptions[name='code4craft.netty-learning.netty-3.7.src.main.resources.org.jboss.netty.container.spring.beans.xml_config']">
+    <assmComponents name="org.jboss.netty.internal.LoggerConfigurator" id="_2KbokTqXEeiP29_qDiwNWQ" instantiates="_2KbokDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_org.jboss.netty.internal.LoggerConfigurator" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="code4craft.netty-learning.netty-3.7.src.main.resources.org.jboss.netty.container.spring.beans.xml_spec">
+    <specComponents name="Object_role" id="_2LhNvDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_2LhNsDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_2LhNsTqXEeiP29_qDiwNWQ"/>
+      <signatures name="wait" type="void" id="_2LhNsjqXEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_2LhNszqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_2LhNtDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_2LhNtTqXEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_2LhNtjqXEeiP29_qDiwNWQ"/>
+      <signatures name="getClass" type="java.lang.Class" id="_2LhNtzqXEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_2LhNuDqXEeiP29_qDiwNWQ"/>
+      <signatures name="notify" type="void" id="_2LhNuTqXEeiP29_qDiwNWQ"/>
+      <signatures name="notifyAll" type="void" id="_2LhNujqXEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_2LhNuzqXEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

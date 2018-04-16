@@ -1,0 +1,6 @@
+dedal_diagram "jfaster.mango"
+
+	repositories (
+
+		repository genRepo
+	)

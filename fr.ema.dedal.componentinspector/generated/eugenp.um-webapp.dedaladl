@@ -1,0 +1,6 @@
+dedal_diagram "eugenp.um-webapp"
+
+	repositories (
+
+		repository genRepo
+	)

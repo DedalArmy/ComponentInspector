@@ -1,0 +1,6 @@
+dedal_diagram "eclipse.artwork"
+
+	repositories (
+
+		repository genRepo
+	)

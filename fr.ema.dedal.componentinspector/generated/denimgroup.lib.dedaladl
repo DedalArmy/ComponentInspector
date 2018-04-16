@@ -1,0 +1,6 @@
+dedal_diagram "denimgroup.lib"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,6 @@
+dedal_diagram "mybatis.mybatis-3"
+
+	repositories (
+
+		repository genRepo
+	)

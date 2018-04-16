@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="ff4j.ff4j-core">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ff4j.ff4j-core.src.test.resources.applicationContext.xml_config" implements="//@architectureDescriptions[name='ff4j.ff4j-core.src.test.resources.applicationContext.xml_spec']">
+    <configComponents name="org.ff4j.store.InMemoryFeatureStore" id="_0I1c4DqaEeiP29_qDiwNWQ" realizes="_0LwPCjqaEeiP29_qDiwNWQ" implements="_0JXBUDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryFeatureStore" type="IInMemoryFeatureStore_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_InMemoryFeatureStore" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_InMemoryFeatureStore" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_InMemoryFeatureStore" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_InMemoryFeatureStore" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryFeatureStore" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryFeatureStore" direction="REQUIRED" type="Map"/>
+      <attributes name="fileName" type="java.lang.String"/>
+      <attributes name="featuresMap" type="java.util.Map"/>
+      <attributes name="featureGroups" type="java.util.Map"/>
+    </configComponents>
+    <configComponents name="org.ff4j.cache.InMemoryCacheManager" id="_0I1c4TqaEeiP29_qDiwNWQ" realizes="_0Lvo8zqaEeiP29_qDiwNWQ" implements="_0J1icDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFF4JCacheManager_InMemoryCacheManager" type="FF4JCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryCacheManager" type="IInMemoryCacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_InMemoryCacheManager" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_InMemoryCacheManager" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_InMemoryCacheManager" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_InMemoryCacheManager" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryCacheManager" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryCacheManager" direction="REQUIRED" type="Map"/>
+      <attributes name="DEFAULT_CACHENAME" type="java.lang.String"/>
+      <attributes name="featuresCache" type="java.util.Map"/>
+      <attributes name="propertyCache" type="java.util.Map"/>
+    </configComponents>
+    <configComponents name="org.ff4j.cache.FeatureStoreCacheProxy" id="_0I1c4jqaEeiP29_qDiwNWQ" realizes="_0LwSFTqaEeiP29_qDiwNWQ" implements="_0Kd0kDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.ff4j.FF4j" id="_0I1c4zqaEeiP29_qDiwNWQ" realizes="_0LvnDjqaEeiP29_qDiwNWQ" implements="_0KoMoDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFF4j" type="IFF4j_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FF4j" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FF4j" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FF4j" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FF4j" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FF4j" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FF4j" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FF4j" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FF4j" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureStore_FF4j" direction="REQUIRED" type="FeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyStore_FF4j" direction="REQUIRED" type="PropertyStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAuthorizationsManager_FF4j" direction="REQUIRED" type="AuthorizationsManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEventRepository_FF4j" direction="REQUIRED" type="EventRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEventPublisher_FF4j" direction="REQUIRED" type="IEventPublisher_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IThreadLocal_FF4j" direction="REQUIRED" type="IThreadLocal_Type"/>
+      <attributes name="startTime" type="long"/>
+      <attributes name="version" type="java.lang.String"/>
+      <attributes name="source" type="java.lang.String"/>
+      <attributes name="fstore" type="org.ff4j.core.FeatureStore"/>
+      <attributes name="pStore" type="org.ff4j.property.store.PropertyStore"/>
+      <attributes name="autocreate" type="boolean"/>
+      <attributes name="authorizationsManager" type="org.ff4j.security.AuthorizationsManager"/>
+      <attributes name="enableAudit" type="boolean"/>
+      <attributes name="eventRepository" type="org.ff4j.audit.repository.EventRepository"/>
+      <attributes name="eventPublisher" type="org.ff4j.audit.EventPublisher"/>
+      <attributes name="shutdownEventPublisher" type="boolean"/>
+      <attributes name="initialized" type="boolean"/>
+      <attributes name="currentExecutionContext" type="java.lang.ThreadLocal"/>
+      <attributes name="alterBeanThrowInvocationTargetException" type="boolean"/>
+    </configComponents>
+    <configConnections refID="_0I1c5DqaEeiP29_qDiwNWQ" property="&quot;target&quot;" clientClassElem="_0I1c4jqaEeiP29_qDiwNWQ" serverClassElem="_0I1c4DqaEeiP29_qDiwNWQ"/>
+    <configConnections refID="_0I1c5TqaEeiP29_qDiwNWQ" property="&quot;cacheManager&quot;" clientClassElem="_0I1c4jqaEeiP29_qDiwNWQ" serverClassElem="_0I1c4TqaEeiP29_qDiwNWQ"/>
+    <configConnections refID="_0I1c5jqaEeiP29_qDiwNWQ" property="&quot;store&quot;" clientClassElem="_0I1c4zqaEeiP29_qDiwNWQ" serverClassElem="_0I1c4jqaEeiP29_qDiwNWQ"/>
+    <configConnections clientIntElem="IAuthorizationsManager_FF4j" refID="_0I2D8DqaEeiP29_qDiwNWQ" property="&quot;authorizationsManager&quot;" clientClassElem="_0I1c4zqaEeiP29_qDiwNWQ" serverClassElem="_0I2D8TqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ff4j.ff4j-core.src.test.resources.applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='ff4j.ff4j-core.src.test.resources.applicationContext.xml_config']">
+    <assmComponents name="ff4j.store" id="_0I2D8jqaEeiP29_qDiwNWQ" instantiates="_0I1c4DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryFeatureStore_ff4j.store" type="IInMemoryFeatureStore_Type" instantiates="IInMemoryFeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_InMemoryFeatureStore_ff4j.store" direction="REQUIRED" instantiates="null_InMemoryFeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_InMemoryFeatureStore_ff4j.store" direction="REQUIRED" type="Comparable" instantiates="IComparable_InMemoryFeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_InMemoryFeatureStore_ff4j.store" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_InMemoryFeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_InMemoryFeatureStore_ff4j.store" direction="REQUIRED" type="IString_Type" instantiates="IString_InMemoryFeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryFeatureStore_ff4j.store" direction="REQUIRED" type="Map" instantiates="IMap_InMemoryFeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryFeatureStore_ff4j.store" direction="REQUIRED" type="Map" instantiates="IMap_InMemoryFeatureStore"/>
+    </assmComponents>
+    <assmComponents name="ff4j.cache" id="_0I2D8zqaEeiP29_qDiwNWQ" instantiates="_0I1c4TqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFF4JCacheManager_InMemoryCacheManager_ff4j.cache" type="FF4JCacheManager" instantiates="IFF4JCacheManager_InMemoryCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryCacheManager_ff4j.cache" type="IInMemoryCacheManager_Type" instantiates="IInMemoryCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_InMemoryCacheManager_ff4j.cache" direction="REQUIRED" instantiates="null_InMemoryCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_InMemoryCacheManager_ff4j.cache" direction="REQUIRED" type="Comparable" instantiates="IComparable_InMemoryCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_InMemoryCacheManager_ff4j.cache" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_InMemoryCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_InMemoryCacheManager_ff4j.cache" direction="REQUIRED" type="IString_Type" instantiates="IString_InMemoryCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryCacheManager_ff4j.cache" direction="REQUIRED" type="Map" instantiates="IMap_InMemoryCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryCacheManager_ff4j.cache" direction="REQUIRED" type="Map" instantiates="IMap_InMemoryCacheManager"/>
+    </assmComponents>
+    <assmComponents name="ff4j.storeproxy" id="_0I2D9DqaEeiP29_qDiwNWQ" instantiates="_0I1c4jqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_ff4j.storeproxy" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="ff4j" id="_0I2D9TqaEeiP29_qDiwNWQ" instantiates="_0I1c4zqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFF4j_ff4j" type="IFF4j_Type" instantiates="IFF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FF4j_ff4j" direction="REQUIRED" instantiates="null_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FF4j_ff4j" direction="REQUIRED" type="Comparable" instantiates="IComparable_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FF4j_ff4j" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FF4j_ff4j" direction="REQUIRED" type="IString_Type" instantiates="IString_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FF4j_ff4j" direction="REQUIRED" instantiates="null_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FF4j_ff4j" direction="REQUIRED" type="Comparable" instantiates="IComparable_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FF4j_ff4j" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FF4j_ff4j" direction="REQUIRED" type="IString_Type" instantiates="IString_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureStore_FF4j_ff4j" direction="REQUIRED" type="FeatureStore" instantiates="IFeatureStore_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyStore_FF4j_ff4j" direction="REQUIRED" type="PropertyStore" instantiates="IPropertyStore_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAuthorizationsManager_FF4j_ff4j" direction="REQUIRED" type="AuthorizationsManager" instantiates="IAuthorizationsManager_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEventRepository_FF4j_ff4j" direction="REQUIRED" type="EventRepository" instantiates="IEventRepository_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEventPublisher_FF4j_ff4j" direction="REQUIRED" type="IEventPublisher_Type" instantiates="IEventPublisher_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IThreadLocal_FF4j_ff4j" direction="REQUIRED" type="IThreadLocal_Type" instantiates="IThreadLocal_FF4j"/>
+    </assmComponents>
+    <assemblyConnections refID="_0I2D9jqaEeiP29_qDiwNWQ" property="ff4j.storeproxy.target" clientInstElem="_0I2D9DqaEeiP29_qDiwNWQ" serverInstElem="_0I2D8jqaEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_0I2D9zqaEeiP29_qDiwNWQ" property="ff4j.storeproxy.cacheManager" clientInstElem="_0I2D9DqaEeiP29_qDiwNWQ" serverInstElem="_0I2D8zqaEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_0I2D-DqaEeiP29_qDiwNWQ" property="ff4j.store" clientInstElem="_0I2D9TqaEeiP29_qDiwNWQ" serverInstElem="_0I2D9DqaEeiP29_qDiwNWQ"/>
+    <assemblyConnections clientIntElem="IAuthorizationsManager_FF4j_ff4j" refID="_0I2D-TqaEeiP29_qDiwNWQ" property="ff4j.authorizationsManager" clientInstElem="_0I2D9TqaEeiP29_qDiwNWQ" serverInstElem="_0I2D-jqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ff4j.ff4j-core.src.test.resources.applicationContext.xml_spec">
+    <specComponents name="FF4j_role" id="_0LvnDjqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFF4jFF4j_role" type="IFF4j_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullFF4j_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableFF4j_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceFF4j_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringFF4j_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullFF4j_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableFF4j_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceFF4j_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringFF4j_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureStoreFF4j_role" direction="REQUIRED" type="FeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyStoreFF4j_role" direction="REQUIRED" type="PropertyStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAuthorizationsManagerFF4j_role" direction="REQUIRED" type="AuthorizationsManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEventRepositoryFF4j_role" direction="REQUIRED" type="EventRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEventPublisherFF4j_role" direction="REQUIRED" type="IEventPublisher_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IThreadLocalFF4j_role" direction="REQUIRED" type="IThreadLocal_Type"/>
+    </specComponents>
+    <specComponents name="InMemoryCacheManager_role" id="_0Lvo8zqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFF4JCacheManagerInMemoryCacheManager_role" type="FF4JCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryCacheManagerInMemoryCacheManager_role" type="IInMemoryCacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullInMemoryCacheManager_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableInMemoryCacheManager_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceInMemoryCacheManager_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringInMemoryCacheManager_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapInMemoryCacheManager_role" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapInMemoryCacheManager_role" direction="REQUIRED" type="Map"/>
+    </specComponents>
+    <specComponents name="InMemoryFeatureStore_role" id="_0LwPCjqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryFeatureStoreInMemoryFeatureStore_role" type="IInMemoryFeatureStore_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullInMemoryFeatureStore_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableInMemoryFeatureStore_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceInMemoryFeatureStore_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringInMemoryFeatureStore_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapInMemoryFeatureStore_role" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapInMemoryFeatureStore_role" direction="REQUIRED" type="Map"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_0LwSFTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specConnections refID="_0LwSITqaEeiP29_qDiwNWQ"/>
+    <specConnections refID="_0Lw1EDqaEeiP29_qDiwNWQ"/>
+    <specConnections refID="_0Lw1ETqaEeiP29_qDiwNWQ"/>
+    <specConnections clientIntElem="IAuthorizationsManagerFF4j_role" refID="_0Lw1EjqaEeiP29_qDiwNWQ" clientCompElem="_0LvnDjqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ff4j.ff4j-core.target.test-classes.applicationContext.xml_config" implements="//@architectureDescriptions[name='ff4j.ff4j-core.target.test-classes.applicationContext.xml_spec']">
+    <configComponents name="org.ff4j.store.InMemoryFeatureStore" id="_0MJ2oDqaEeiP29_qDiwNWQ" realizes="_0MU2yTqaEeiP29_qDiwNWQ" implements="_0MLExTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryFeatureStore" type="IInMemoryFeatureStore_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_InMemoryFeatureStore" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_InMemoryFeatureStore" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_InMemoryFeatureStore" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_InMemoryFeatureStore" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryFeatureStore" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryFeatureStore" direction="REQUIRED" type="Map"/>
+      <attributes name="fileName" type="java.lang.String"/>
+      <attributes name="featuresMap" type="java.util.Map"/>
+      <attributes name="featureGroups" type="java.util.Map"/>
+    </configComponents>
+    <configComponents name="org.ff4j.cache.InMemoryCacheManager" id="_0MJ2oTqaEeiP29_qDiwNWQ" realizes="_0MU51DqaEeiP29_qDiwNWQ" implements="_0MLtgDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFF4JCacheManager_InMemoryCacheManager" type="FF4JCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryCacheManager" type="IInMemoryCacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_InMemoryCacheManager" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_InMemoryCacheManager" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_InMemoryCacheManager" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_InMemoryCacheManager" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryCacheManager" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryCacheManager" direction="REQUIRED" type="Map"/>
+      <attributes name="DEFAULT_CACHENAME" type="java.lang.String"/>
+      <attributes name="featuresCache" type="java.util.Map"/>
+      <attributes name="propertyCache" type="java.util.Map"/>
+    </configComponents>
+    <configComponents name="org.ff4j.cache.FeatureStoreCacheProxy" id="_0MJ2ojqaEeiP29_qDiwNWQ" realizes="_0MU2vTqaEeiP29_qDiwNWQ" implements="_0MTnoDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.ff4j.FF4j" id="_0MJ2ozqaEeiP29_qDiwNWQ" realizes="_0MUQmTqaEeiP29_qDiwNWQ" implements="_0MUOsDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFF4j" type="IFF4j_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FF4j" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FF4j" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FF4j" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FF4j" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FF4j" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FF4j" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FF4j" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FF4j" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureStore_FF4j" direction="REQUIRED" type="FeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyStore_FF4j" direction="REQUIRED" type="PropertyStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAuthorizationsManager_FF4j" direction="REQUIRED" type="AuthorizationsManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEventRepository_FF4j" direction="REQUIRED" type="EventRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEventPublisher_FF4j" direction="REQUIRED" type="IEventPublisher_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IThreadLocal_FF4j" direction="REQUIRED" type="IThreadLocal_Type"/>
+      <attributes name="startTime" type="long"/>
+      <attributes name="version" type="java.lang.String"/>
+      <attributes name="source" type="java.lang.String"/>
+      <attributes name="fstore" type="org.ff4j.core.FeatureStore"/>
+      <attributes name="pStore" type="org.ff4j.property.store.PropertyStore"/>
+      <attributes name="autocreate" type="boolean"/>
+      <attributes name="authorizationsManager" type="org.ff4j.security.AuthorizationsManager"/>
+      <attributes name="enableAudit" type="boolean"/>
+      <attributes name="eventRepository" type="org.ff4j.audit.repository.EventRepository"/>
+      <attributes name="eventPublisher" type="org.ff4j.audit.EventPublisher"/>
+      <attributes name="shutdownEventPublisher" type="boolean"/>
+      <attributes name="initialized" type="boolean"/>
+      <attributes name="currentExecutionContext" type="java.lang.ThreadLocal"/>
+      <attributes name="alterBeanThrowInvocationTargetException" type="boolean"/>
+    </configComponents>
+    <configConnections refID="_0MKdsDqaEeiP29_qDiwNWQ" property="&quot;target&quot;" clientClassElem="_0MJ2ojqaEeiP29_qDiwNWQ" serverClassElem="_0MJ2oDqaEeiP29_qDiwNWQ"/>
+    <configConnections refID="_0MKdsTqaEeiP29_qDiwNWQ" property="&quot;cacheManager&quot;" clientClassElem="_0MJ2ojqaEeiP29_qDiwNWQ" serverClassElem="_0MJ2oTqaEeiP29_qDiwNWQ"/>
+    <configConnections refID="_0MKdsjqaEeiP29_qDiwNWQ" property="&quot;store&quot;" clientClassElem="_0MJ2ozqaEeiP29_qDiwNWQ" serverClassElem="_0MJ2ojqaEeiP29_qDiwNWQ"/>
+    <configConnections clientIntElem="IAuthorizationsManager_FF4j" refID="_0MKdszqaEeiP29_qDiwNWQ" property="&quot;authorizationsManager&quot;" clientClassElem="_0MJ2ozqaEeiP29_qDiwNWQ" serverClassElem="_0MKdtDqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ff4j.ff4j-core.target.test-classes.applicationContext.xml_asm" instantiates="//@architectureDescriptions[name='ff4j.ff4j-core.target.test-classes.applicationContext.xml_config']">
+    <assmComponents name="ff4j.store" id="_0MKdtTqaEeiP29_qDiwNWQ" instantiates="_0MJ2oDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryFeatureStore_ff4j.store" type="IInMemoryFeatureStore_Type" instantiates="IInMemoryFeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_InMemoryFeatureStore_ff4j.store" direction="REQUIRED" instantiates="null_InMemoryFeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_InMemoryFeatureStore_ff4j.store" direction="REQUIRED" type="Comparable" instantiates="IComparable_InMemoryFeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_InMemoryFeatureStore_ff4j.store" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_InMemoryFeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_InMemoryFeatureStore_ff4j.store" direction="REQUIRED" type="IString_Type" instantiates="IString_InMemoryFeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryFeatureStore_ff4j.store" direction="REQUIRED" type="Map" instantiates="IMap_InMemoryFeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryFeatureStore_ff4j.store" direction="REQUIRED" type="Map" instantiates="IMap_InMemoryFeatureStore"/>
+    </assmComponents>
+    <assmComponents name="ff4j.cache" id="_0MKdtjqaEeiP29_qDiwNWQ" instantiates="_0MJ2oTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFF4JCacheManager_InMemoryCacheManager_ff4j.cache" type="FF4JCacheManager" instantiates="IFF4JCacheManager_InMemoryCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryCacheManager_ff4j.cache" type="IInMemoryCacheManager_Type" instantiates="IInMemoryCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_InMemoryCacheManager_ff4j.cache" direction="REQUIRED" instantiates="null_InMemoryCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_InMemoryCacheManager_ff4j.cache" direction="REQUIRED" type="Comparable" instantiates="IComparable_InMemoryCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_InMemoryCacheManager_ff4j.cache" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_InMemoryCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_InMemoryCacheManager_ff4j.cache" direction="REQUIRED" type="IString_Type" instantiates="IString_InMemoryCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryCacheManager_ff4j.cache" direction="REQUIRED" type="Map" instantiates="IMap_InMemoryCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryCacheManager_ff4j.cache" direction="REQUIRED" type="Map" instantiates="IMap_InMemoryCacheManager"/>
+    </assmComponents>
+    <assmComponents name="ff4j.storeproxy" id="_0MKdtzqaEeiP29_qDiwNWQ" instantiates="_0MJ2ojqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_ff4j.storeproxy" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="ff4j" id="_0MKduDqaEeiP29_qDiwNWQ" instantiates="_0MJ2ozqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFF4j_ff4j" type="IFF4j_Type" instantiates="IFF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FF4j_ff4j" direction="REQUIRED" instantiates="null_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FF4j_ff4j" direction="REQUIRED" type="Comparable" instantiates="IComparable_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FF4j_ff4j" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FF4j_ff4j" direction="REQUIRED" type="IString_Type" instantiates="IString_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FF4j_ff4j" direction="REQUIRED" instantiates="null_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FF4j_ff4j" direction="REQUIRED" type="Comparable" instantiates="IComparable_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FF4j_ff4j" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FF4j_ff4j" direction="REQUIRED" type="IString_Type" instantiates="IString_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureStore_FF4j_ff4j" direction="REQUIRED" type="FeatureStore" instantiates="IFeatureStore_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyStore_FF4j_ff4j" direction="REQUIRED" type="PropertyStore" instantiates="IPropertyStore_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAuthorizationsManager_FF4j_ff4j" direction="REQUIRED" type="AuthorizationsManager" instantiates="IAuthorizationsManager_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEventRepository_FF4j_ff4j" direction="REQUIRED" type="EventRepository" instantiates="IEventRepository_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEventPublisher_FF4j_ff4j" direction="REQUIRED" type="IEventPublisher_Type" instantiates="IEventPublisher_FF4j"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IThreadLocal_FF4j_ff4j" direction="REQUIRED" type="IThreadLocal_Type" instantiates="IThreadLocal_FF4j"/>
+    </assmComponents>
+    <assemblyConnections refID="_0MLEwDqaEeiP29_qDiwNWQ" property="ff4j.storeproxy.target" clientInstElem="_0MKdtzqaEeiP29_qDiwNWQ" serverInstElem="_0MKdtTqaEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_0MLEwTqaEeiP29_qDiwNWQ" property="ff4j.storeproxy.cacheManager" clientInstElem="_0MKdtzqaEeiP29_qDiwNWQ" serverInstElem="_0MKdtjqaEeiP29_qDiwNWQ"/>
+    <assemblyConnections refID="_0MLEwjqaEeiP29_qDiwNWQ" property="ff4j.store" clientInstElem="_0MKduDqaEeiP29_qDiwNWQ" serverInstElem="_0MKdtzqaEeiP29_qDiwNWQ"/>
+    <assemblyConnections clientIntElem="IAuthorizationsManager_FF4j_ff4j" refID="_0MLEwzqaEeiP29_qDiwNWQ" property="ff4j.authorizationsManager" clientInstElem="_0MKduDqaEeiP29_qDiwNWQ" serverInstElem="_0MLExDqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ff4j.ff4j-core.target.test-classes.applicationContext.xml_spec">
+    <specComponents name="FF4j_role" id="_0MUQmTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFF4jFF4j_role" type="IFF4j_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullFF4j_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableFF4j_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceFF4j_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringFF4j_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullFF4j_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableFF4j_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceFF4j_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringFF4j_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureStoreFF4j_role" direction="REQUIRED" type="FeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyStoreFF4j_role" direction="REQUIRED" type="PropertyStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAuthorizationsManagerFF4j_role" direction="REQUIRED" type="AuthorizationsManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEventRepositoryFF4j_role" direction="REQUIRED" type="EventRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEventPublisherFF4j_role" direction="REQUIRED" type="IEventPublisher_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IThreadLocalFF4j_role" direction="REQUIRED" type="IThreadLocal_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_0MU2vTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="InMemoryFeatureStore_role" id="_0MU2yTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryFeatureStoreInMemoryFeatureStore_role" type="IInMemoryFeatureStore_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullInMemoryFeatureStore_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableInMemoryFeatureStore_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceInMemoryFeatureStore_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringInMemoryFeatureStore_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapInMemoryFeatureStore_role" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapInMemoryFeatureStore_role" direction="REQUIRED" type="Map"/>
+    </specComponents>
+    <specComponents name="InMemoryCacheManager_role" id="_0MU51DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFF4JCacheManagerInMemoryCacheManager_role" type="FF4JCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryCacheManagerInMemoryCacheManager_role" type="IInMemoryCacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullInMemoryCacheManager_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableInMemoryCacheManager_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceInMemoryCacheManager_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringInMemoryCacheManager_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapInMemoryCacheManager_role" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapInMemoryCacheManager_role" direction="REQUIRED" type="Map"/>
+    </specComponents>
+    <specConnections refID="_0MVd0jqaEeiP29_qDiwNWQ"/>
+    <specConnections refID="_0MVd0zqaEeiP29_qDiwNWQ"/>
+    <specConnections refID="_0MVd1DqaEeiP29_qDiwNWQ"/>
+    <specConnections clientIntElem="IAuthorizationsManagerFF4j_role" refID="_0MVd1TqaEeiP29_qDiwNWQ" clientCompElem="_0MUQmTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="org_ff4j_store_InMemoryFeatureStore_Type" id="_0JXBUDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryFeatureStore_org_ff4j_store_InMemoryFeatureStore_Type" type="IInMemoryFeatureStore_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_InMemoryFeatureStore_org_ff4j_store_InMemoryFeatureStore_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_InMemoryFeatureStore_org_ff4j_store_InMemoryFeatureStore_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_InMemoryFeatureStore_org_ff4j_store_InMemoryFeatureStore_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_InMemoryFeatureStore_org_ff4j_store_InMemoryFeatureStore_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryFeatureStore_org_ff4j_store_InMemoryFeatureStore_Type" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryFeatureStore_org_ff4j_store_InMemoryFeatureStore_Type" direction="REQUIRED" type="Map"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_ff4j_cache_InMemoryCacheManager_Type" id="_0J1icDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFF4JCacheManager_InMemoryCacheManager_org_ff4j_cache_InMemoryCacheManager_Type" type="FF4JCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryCacheManager_org_ff4j_cache_InMemoryCacheManager_Type" type="IInMemoryCacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_InMemoryCacheManager_org_ff4j_cache_InMemoryCacheManager_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_InMemoryCacheManager_org_ff4j_cache_InMemoryCacheManager_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_InMemoryCacheManager_org_ff4j_cache_InMemoryCacheManager_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_InMemoryCacheManager_org_ff4j_cache_InMemoryCacheManager_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryCacheManager_org_ff4j_cache_InMemoryCacheManager_Type" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryCacheManager_org_ff4j_cache_InMemoryCacheManager_Type" direction="REQUIRED" type="Map"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_0Kd0kDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_ff4j_FF4j_Type" id="_0KoMoDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFF4j_org_ff4j_FF4j_Type" type="IFF4j_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureStore_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="FeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyStore_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="PropertyStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAuthorizationsManager_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="AuthorizationsManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEventRepository_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="EventRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEventPublisher_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="IEventPublisher_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IThreadLocal_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="IThreadLocal_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_ff4j_store_InMemoryFeatureStore_Type" id="_0MLExTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryFeatureStore_org_ff4j_store_InMemoryFeatureStore_Type" type="IInMemoryFeatureStore_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_InMemoryFeatureStore_org_ff4j_store_InMemoryFeatureStore_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_InMemoryFeatureStore_org_ff4j_store_InMemoryFeatureStore_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_InMemoryFeatureStore_org_ff4j_store_InMemoryFeatureStore_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_InMemoryFeatureStore_org_ff4j_store_InMemoryFeatureStore_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryFeatureStore_org_ff4j_store_InMemoryFeatureStore_Type" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryFeatureStore_org_ff4j_store_InMemoryFeatureStore_Type" direction="REQUIRED" type="Map"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_ff4j_cache_InMemoryCacheManager_Type" id="_0MLtgDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFF4JCacheManager_InMemoryCacheManager_org_ff4j_cache_InMemoryCacheManager_Type" type="FF4JCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInMemoryCacheManager_org_ff4j_cache_InMemoryCacheManager_Type" type="IInMemoryCacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_InMemoryCacheManager_org_ff4j_cache_InMemoryCacheManager_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_InMemoryCacheManager_org_ff4j_cache_InMemoryCacheManager_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_InMemoryCacheManager_org_ff4j_cache_InMemoryCacheManager_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_InMemoryCacheManager_org_ff4j_cache_InMemoryCacheManager_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryCacheManager_org_ff4j_cache_InMemoryCacheManager_Type" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_InMemoryCacheManager_org_ff4j_cache_InMemoryCacheManager_Type" direction="REQUIRED" type="Map"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_0MTnoDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_ff4j_FF4j_Type" id="_0MUOsDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFF4j_org_ff4j_FF4j_Type" type="IFF4j_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IFeatureStore_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="FeatureStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IPropertyStore_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="PropertyStore"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IAuthorizationsManager_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="AuthorizationsManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEventRepository_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="EventRepository"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEventPublisher_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="IEventPublisher_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IThreadLocal_FF4j_org_ff4j_FF4j_Type" direction="REQUIRED" type="IThreadLocal_Type"/>
+    </components>
+    <interfaceTypes name="IInMemoryFeatureStore_Type">
+      <signatures name="update" type="void" id="_0JrKYDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.core.Feature" id="_0JrKYTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="clear" type="void" id="_0JrKYjqaEeiP29_qDiwNWQ"/>
+      <signatures name="delete" type="void" id="_0JrKYzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKZDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="read" type="org.ff4j.core.Feature" id="_0JrKZTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKZjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="create" type="void" id="_0JrKZzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.core.Feature" id="_0JrKaDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="disable" type="void" id="_0JrKaTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKajqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="enable" type="void" id="_0JrKazqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKbDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="exist" type="boolean" id="_0JrKbTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKbjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="grantRoleOnFeature" type="void" id="_0JrKbzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKcDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0JrKcTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeRoleFromFeature" type="void" id="_0JrKcjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKczqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0JrKdDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createSchema" type="void" id="_0JrKdTqaEeiP29_qDiwNWQ"/>
+      <signatures name="enableGroup" type="void" id="_0JrKdjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKdzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeFromGroup" type="void" id="_0JrKeDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKeTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0JrKejqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readGroup" type="java.util.Map" id="_0JrKezqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKfDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="existGroup" type="boolean" id="_0JrKfTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKfjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addToGroup" type="void" id="_0JrKfzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKgDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0JrKgTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="importFeatures" type="void" id="_0JrKgjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_0JrKgzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="disableGroup" type="void" id="_0JrKhDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKhTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readAllGroups" type="java.util.Set" id="_0JrKhjqaEeiP29_qDiwNWQ"/>
+      <signatures name="readAll" type="java.util.Map" id="_0JrKhzqaEeiP29_qDiwNWQ"/>
+      <signatures name="toString" type="java.lang.String" id="_0JrKiDqaEeiP29_qDiwNWQ"/>
+      <signatures name="toJson" type="java.lang.String" id="_0JrKiTqaEeiP29_qDiwNWQ"/>
+      <signatures name="assertFeatureNotExist" type="void" id="_0JrKijqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKizqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="assertFeatureExist" type="void" id="_0JrKjDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKjTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="assertFeatureNotNull" type="void" id="_0JrKjjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.core.Feature" id="_0JrKjzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="importFeaturesFromXmlFile" type="java.util.Map" id="_0JrKkDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKkTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="assertGroupExist" type="void" id="_0JrKkjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKkzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFileName" type="java.lang.String" id="_0JrKlDqaEeiP29_qDiwNWQ"/>
+      <signatures name="setLocation" type="void" id="_0JrKlTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKljqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="buildGroupsFromFeatures" type="void" id="_0JrKlzqaEeiP29_qDiwNWQ"/>
+      <signatures name="loadConfFile" type="void" id="_0JrKmDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKmTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="loadConf" type="void" id="_0JrKmjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.io.InputStream" id="_0JrKmzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="updateFeature" type="void" id="_0JrKnDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.core.Feature" id="_0JrKnTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="FeatureStore">
+      <signatures name="update" type="void" id="_0JrKnjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.core.Feature" id="_0JrKnzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="clear" type="void" id="_0JrKoDqaEeiP29_qDiwNWQ"/>
+      <signatures name="delete" type="void" id="_0JrKoTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKojqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="read" type="org.ff4j.core.Feature" id="_0JrKozqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKpDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="create" type="void" id="_0JrKpTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.core.Feature" id="_0JrKpjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="disable" type="void" id="_0JrKpzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKqDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="enable" type="void" id="_0JrKqTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKqjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="exist" type="boolean" id="_0JrKqzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKrDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="grantRoleOnFeature" type="void" id="_0JrKrTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKrjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0JrKrzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeRoleFromFeature" type="void" id="_0JrKsDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKsTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0JrKsjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createSchema" type="void" id="_0JrKszqaEeiP29_qDiwNWQ"/>
+      <signatures name="enableGroup" type="void" id="_0JrKtDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKtTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeFromGroup" type="void" id="_0JrKtjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKtzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0JrKuDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readGroup" type="java.util.Map" id="_0JrKuTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKujqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="existGroup" type="boolean" id="_0JrKuzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKvDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addToGroup" type="void" id="_0JrKvTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKvjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0JrKvzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="importFeatures" type="void" id="_0JrKwDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_0JrKwTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="disableGroup" type="void" id="_0JrKwjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKwzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readAllGroups" type="java.util.Set" id="_0JrKxDqaEeiP29_qDiwNWQ"/>
+      <signatures name="readAll" type="java.util.Map" id="_0JrKxTqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IAbstractFeatureStore_Type">
+      <signatures name="update" type="void" id="_0JrKxjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.core.Feature" id="_0JrKxzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="clear" type="void" id="_0JrKyDqaEeiP29_qDiwNWQ"/>
+      <signatures name="delete" type="void" id="_0JrKyTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKyjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="read" type="org.ff4j.core.Feature" id="_0JrKyzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrKzDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="create" type="void" id="_0JrKzTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.core.Feature" id="_0JrKzjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="disable" type="void" id="_0JrKzzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrK0DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="enable" type="void" id="_0JrK0TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrK0jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="exist" type="boolean" id="_0JrK0zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrK1DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="grantRoleOnFeature" type="void" id="_0JrK1TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrK1jqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0JrK1zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeRoleFromFeature" type="void" id="_0JrK2DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrK2TqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0JrK2jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createSchema" type="void" id="_0JrK2zqaEeiP29_qDiwNWQ"/>
+      <signatures name="enableGroup" type="void" id="_0JrK3DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrK3TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeFromGroup" type="void" id="_0JrK3jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrK3zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0JrK4DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readGroup" type="java.util.Map" id="_0JrK4TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrK4jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="existGroup" type="boolean" id="_0JrK4zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrK5DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addToGroup" type="void" id="_0JrK5TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrK5jqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0JrK5zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="importFeatures" type="void" id="_0JrK6DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_0JrK6TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="disableGroup" type="void" id="_0JrK6jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrK6zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readAllGroups" type="java.util.Set" id="_0JrK7DqaEeiP29_qDiwNWQ"/>
+      <signatures name="readAll" type="java.util.Map" id="_0JrK7TqaEeiP29_qDiwNWQ"/>
+      <signatures name="toString" type="java.lang.String" id="_0JrK7jqaEeiP29_qDiwNWQ"/>
+      <signatures name="toJson" type="java.lang.String" id="_0JrK7zqaEeiP29_qDiwNWQ"/>
+      <signatures name="assertFeatureNotExist" type="void" id="_0JrK8DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrK8TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="assertFeatureExist" type="void" id="_0JrK8jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrK8zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="assertFeatureNotNull" type="void" id="_0JrK9DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.core.Feature" id="_0JrK9TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="importFeaturesFromXmlFile" type="java.util.Map" id="_0JrK9jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrK9zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="assertGroupExist" type="void" id="_0JrK-DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrK-TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Comparable">
+      <signatures name="compareTo" type="int" id="_0JrLIjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrLIzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="CharSequence">
+      <signatures name="toString" type="java.lang.String" id="_0JrLJDqaEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_0JrLJTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0JrLJjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_0JrLJzqaEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_0JrLKDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0JrLKTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0JrLKjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_0JrLKzqaEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_0JrLLDqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IString_Type">
+      <signatures name="compareTo" type="int" id="_0JrLLTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrLLjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_0JrLLzqaEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_0JrLMDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0JrLMTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_0JrLMjqaEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_0JrLMzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0JrLNDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0JrLNTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_0JrLNjqaEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_0JrLNzqaEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$chars$0" type="java.util.Spliterator.OfInt" id="_0JrLODqaEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$codePoints$1" type="java.util.Spliterator.OfInt" id="_0JrLOTqaEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_0JrLOjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrLOzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_0JrLPDqaEeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_0JrLPTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrLPjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0JrLPzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueOf" type="java.lang.String" id="_0JrLQDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0JrLQTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkBounds" type="void" id="_0JrLQjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_0JrLQzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0JrLRDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_0JrLRTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointAt" type="int" id="_0JrLRjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0JrLRzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointBefore" type="int" id="_0JrLSDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0JrLSTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointCount" type="int" id="_0JrLSjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0JrLSzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0JrLTDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compareToIgnoreCase" type="int" id="_0JrLTTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrLTjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="concat" type="java.lang.String" id="_0JrLTzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrLUDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contains" type="boolean" id="_0JrLUTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_0JrLUjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contentEquals" type="boolean" id="_0JrLUzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_0JrLVDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyValueOf" type="java.lang.String" id="_0JrLVTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char[]" id="_0JrLVjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="endsWith" type="boolean" id="_0JrLVzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrLWDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equalsIgnoreCase" type="boolean" id="_0JrLWTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrLWjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="format" type="java.lang.String" id="_0JrLWzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_0JrLXDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0JrLXTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_0JrLXjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBytes" type="void" id="_0JrLXzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0JrLYDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0JrLYTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_0JrLYjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_0JrLYzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChars" type="void" id="_0JrLZDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0JrLZTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0JrLZjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="char[]" id="_0JrLZzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_0JrLaDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="indexOfSupplementary" type="int" id="_0JrLaTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0JrLajqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0JrLazqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="intern" type="java.lang.String" id="_0JrLbDqaEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_0JrLbTqaEeiP29_qDiwNWQ"/>
+      <signatures name="join" type="java.lang.String" id="_0JrLbjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_0JrLbzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.CharSequence[]" id="_0JrLcDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOf" type="int" id="_0JrLcTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0JrLcjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOfSupplementary" type="int" id="_0JrLczqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0JrLdDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0JrLdTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="matches" type="boolean" id="_0JrLdjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrLdzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nonSyncContentEquals" type="boolean" id="_0JrLeDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.AbstractStringBuilder" id="_0JrLeTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="offsetByCodePoints" type="int" id="_0JrLejqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0JrLezqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0JrLfDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="regionMatches" type="boolean" id="_0JrLfTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0JrLfjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0JrLfzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_0JrLgDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_0JrLgTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="java.lang.String" id="_0JrLgjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char" id="_0JrLgzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="char" id="_0JrLhDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="java.lang.String" id="_0JrLhTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrLhjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0JrLhzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceFirst" type="java.lang.String" id="_0JrLiDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrLiTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0JrLijqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="split" type="java.lang.String[]" id="_0JrLizqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrLjDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="startsWith" type="boolean" id="_0JrLjTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0JrLjjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_0JrLjzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="substring" type="java.lang.String" id="_0JrLkDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_0JrLkTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCharArray" type="char[]" id="_0JrLkjqaEeiP29_qDiwNWQ"/>
+      <signatures name="toLowerCase" type="java.lang.String" id="_0JrLkzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_0JrLlDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUpperCase" type="java.lang.String" id="_0JrLlTqaEeiP29_qDiwNWQ"/>
+      <signatures name="trim" type="java.lang.String" id="_0JrLljqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Map">
+      <signatures name="remove" type="java.lang.Object" id="_0JrLojqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrLozqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_0JrLpDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrLpTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0JrLpjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_0JrLpzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrLqDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_0JrLqTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrLqjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0JrLqzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_0JrLrDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrLrTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="values" type="java.util.Collection" id="_0JrLrjqaEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_0JrLrzqaEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_0JrLsDqaEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_0JrLsTqaEeiP29_qDiwNWQ"/>
+      <signatures name="replace" type="java.lang.Object" id="_0JrLsjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrLszqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0JrLtDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="boolean" id="_0JrLtTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrLtjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0JrLtzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_0JrLuDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="void" id="_0JrLuTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiFunction" id="_0JrLujqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="size" type="int" id="_0JrLuzqaEeiP29_qDiwNWQ"/>
+      <signatures name="entrySet" type="java.util.Set" id="_0JrLvDqaEeiP29_qDiwNWQ"/>
+      <signatures name="putAll" type="void" id="_0JrLvTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_0JrLvjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="putIfAbsent" type="java.lang.Object" id="_0JrLvzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrLwDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0JrLwTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="keySet" type="java.util.Set" id="_0JrLwjqaEeiP29_qDiwNWQ"/>
+      <signatures name="compute" type="java.lang.Object" id="_0JrLwzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrLxDqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_0JrLxTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfAbsent" type="java.lang.Object" id="_0JrLxjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrLxzqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.Function" id="_0JrLyDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfPresent" type="java.lang.Object" id="_0JrLyTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrLyjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_0JrLyzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsKey" type="boolean" id="_0JrLzDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrLzTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsValue" type="boolean" id="_0JrLzjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrLzzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forEach" type="void" id="_0JrL0DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiConsumer" id="_0JrL0TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getOrDefault" type="java.lang.Object" id="_0JrL0jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrL0zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0JrL1DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="merge" type="java.lang.Object" id="_0JrL1TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0JrL1jqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0JrL1zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.function.BiFunction" id="_0JrL2DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="FF4JCacheManager">
+      <signatures name="getProperty" type="org.ff4j.property.Property" id="_0KEzADqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0KEzATqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFeature" type="org.ff4j.core.Feature" id="_0KEzAjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0KEzAzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="putProperty" type="void" id="_0KEzBDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.property.Property" id="_0KEzBTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="clearProperties" type="void" id="_0KEzBjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getFeatureNativeCache" type="java.lang.Object" id="_0KEzBzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getCacheProviderName" type="java.lang.String" id="_0KEzCDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getPropertyNativeCache" type="java.lang.Object" id="_0KEzCTqaEeiP29_qDiwNWQ"/>
+      <signatures name="listCachedPropertyNames" type="java.util.Set" id="_0KEzCjqaEeiP29_qDiwNWQ"/>
+      <signatures name="listCachedFeatureNames" type="java.util.Set" id="_0KEzCzqaEeiP29_qDiwNWQ"/>
+      <signatures name="evictProperty" type="void" id="_0KEzDDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0KEzDTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="putFeature" type="void" id="_0KEzDjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.core.Feature" id="_0KEzDzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="clearFeatures" type="void" id="_0KEzEDqaEeiP29_qDiwNWQ"/>
+      <signatures name="evictFeature" type="void" id="_0KEzETqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0KEzEjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IInMemoryCacheManager_Type">
+      <signatures name="getProperty" type="org.ff4j.property.Property" id="_0KFaEDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0KFaETqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFeature" type="org.ff4j.core.Feature" id="_0KFaEjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0KFaEzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="putProperty" type="void" id="_0KFaFDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.property.Property" id="_0KFaFTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="clearProperties" type="void" id="_0KFaFjqaEeiP29_qDiwNWQ"/>
+      <signatures name="getFeatureNativeCache" type="java.lang.Object" id="_0KFaFzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getCacheProviderName" type="java.lang.String" id="_0KFaGDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getPropertyNativeCache" type="java.lang.Object" id="_0KFaGTqaEeiP29_qDiwNWQ"/>
+      <signatures name="listCachedPropertyNames" type="java.util.Set" id="_0KFaGjqaEeiP29_qDiwNWQ"/>
+      <signatures name="listCachedFeatureNames" type="java.util.Set" id="_0KFaGzqaEeiP29_qDiwNWQ"/>
+      <signatures name="evictProperty" type="void" id="_0KFaHDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0KFaHTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="putFeature" type="void" id="_0KFaHjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.core.Feature" id="_0KFaHzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="clearFeatures" type="void" id="_0KFaIDqaEeiP29_qDiwNWQ"/>
+      <signatures name="evictFeature" type="void" id="_0KFaITqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0KFaIjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getPropertyCache" type="java.util.Map" id="_0KFaIzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getFeaturesCache" type="java.util.Map" id="_0KFaJDqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_0Kd0kTqaEeiP29_qDiwNWQ"/>
+      <signatures name="wait" type="void" id="_0Kd0kjqaEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_0Kd0kzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0Kd0lDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_0Kd0lTqaEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_0Kd0ljqaEeiP29_qDiwNWQ"/>
+      <signatures name="getClass" type="java.lang.Class" id="_0Kd0lzqaEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_0Kd0mDqaEeiP29_qDiwNWQ"/>
+      <signatures name="notify" type="void" id="_0Kd0mTqaEeiP29_qDiwNWQ"/>
+      <signatures name="notifyAll" type="void" id="_0Kd0mjqaEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_0Kd0mzqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IFF4j_Type">
+      <signatures name="getProperty" type="org.ff4j.property.Property" id="_0LLmQDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLmQTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="cache" type="org.ff4j.FF4j" id="_0LLmQjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.cache.FF4JCacheManager" id="_0LLmQzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_0LLmRDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getProperties" type="java.util.Map" id="_0LLmRTqaEeiP29_qDiwNWQ"/>
+      <signatures name="init" type="void" id="_0LLmRjqaEeiP29_qDiwNWQ"/>
+      <signatures name="delete" type="org.ff4j.FF4j" id="_0LLmRzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLmSDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="check" type="boolean" id="_0LLmSTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLmSjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stop" type="void" id="_0LLmSzqaEeiP29_qDiwNWQ"/>
+      <signatures name="disable" type="org.ff4j.FF4j" id="_0LLmTDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLmTTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="enable" type="org.ff4j.FF4j" id="_0LLmTjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLmTzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getVersion" type="java.lang.String" id="_0LLmUDqaEeiP29_qDiwNWQ"/>
+      <signatures name="audit" type="org.ff4j.FF4j" id="_0LLmUTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0LLmUjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getStartTime" type="long" id="_0LLmUzqaEeiP29_qDiwNWQ"/>
+      <signatures name="getSource" type="java.lang.String" id="_0LLmVDqaEeiP29_qDiwNWQ"/>
+      <signatures name="getFeatures" type="java.util.Map" id="_0LLmVTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getFeature" type="org.ff4j.core.Feature" id="_0LLmVjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLmVzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCurrentContext" type="org.ff4j.core.FlippingExecutionContext" id="_0LLmWDqaEeiP29_qDiwNWQ"/>
+      <signatures name="createFeature" type="org.ff4j.FF4j" id="_0LLmWTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.core.Feature" id="_0LLmWjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setFileName" type="void" id="_0LLmWzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLmXDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createProperty" type="org.ff4j.FF4j" id="_0LLmXTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.property.Property" id="_0LLmXjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAlterBeanThrowInvocationTargetException" type="boolean" id="_0LLmXzqaEeiP29_qDiwNWQ"/>
+      <signatures name="enableAlterBeanThrowInvocationTargetException" type="void" id="_0LLmYDqaEeiP29_qDiwNWQ"/>
+      <signatures name="disableAlterBeanThrowInvocationTargetException" type="void" id="_0LLmYTqaEeiP29_qDiwNWQ"/>
+      <signatures name="exist" type="boolean" id="_0LLmYjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLmYzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkOveridingStrategy" type="boolean" id="_0LLmZDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLmZTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.ff4j.core.FlippingStrategy" id="_0LLmZjqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="org.ff4j.core.FlippingExecutionContext" id="_0LLmZzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setPropertiesStore" type="void" id="_0LLmaDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.property.store.PropertyStore" id="_0LLmaTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAuthorizationsManager" type="org.ff4j.security.AuthorizationsManager" id="_0LLmajqaEeiP29_qDiwNWQ"/>
+      <signatures name="getEventPublisher" type="org.ff4j.audit.EventPublisher" id="_0LLmazqaEeiP29_qDiwNWQ"/>
+      <signatures name="getPropertyAsString" type="java.lang.String" id="_0LLmbDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLmbTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getConcretePropertyStore" type="org.ff4j.property.store.PropertyStore" id="_0LLmbjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.property.store.PropertyStore" id="_0LLmbzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEventRepository" type="org.ff4j.audit.repository.EventRepository" id="_0LLmcDqaEeiP29_qDiwNWQ"/>
+      <signatures name="setEventPublisher" type="void" id="_0LLmcTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventPublisher" id="_0LLmcjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getConcreteFeatureStore" type="org.ff4j.core.FeatureStore" id="_0LLmczqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.core.FeatureStore" id="_0LLmdDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAuthorizationsManager" type="void" id="_0LLmdTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.security.AuthorizationsManager" id="_0LLmdjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEventRepository" type="void" id="_0LLmdzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.repository.EventRepository" id="_0LLmeDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeCurrentContext" type="void" id="_0LLmeTqaEeiP29_qDiwNWQ"/>
+      <signatures name="getPropertiesStore" type="org.ff4j.property.store.PropertyStore" id="_0LLmejqaEeiP29_qDiwNWQ"/>
+      <signatures name="createSchema" type="void" id="_0LLmezqaEeiP29_qDiwNWQ"/>
+      <signatures name="enableGroup" type="org.ff4j.FF4j" id="_0LLmfDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLmfTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="importFeatures" type="org.ff4j.FF4j" id="_0LLmfjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_0LLmfzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="disableGroup" type="org.ff4j.FF4j" id="_0LLmgDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLmgTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="importProperties" type="org.ff4j.FF4j" id="_0LLmgjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_0LLmgzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="exportFeatures" type="java.io.InputStream" id="_0LLmhDqaEeiP29_qDiwNWQ"/>
+      <signatures name="parseXmlConfig" type="org.ff4j.conf.XmlConfig" id="_0LLmhTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLmhjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setFeatureStore" type="void" id="_0LLmhzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.core.FeatureStore" id="_0LLmiDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAutocreate" type="void" id="_0LLmiTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0LLmijqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFeatureStore" type="org.ff4j.core.FeatureStore" id="_0LLmizqaEeiP29_qDiwNWQ"/>
+      <signatures name="isAutocreate" type="boolean" id="_0LLmjDqaEeiP29_qDiwNWQ"/>
+      <signatures name="autoCreate" type="org.ff4j.FF4j" id="_0LLmjTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0LLmjjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEnableAudit" type="boolean" id="_0LLmjzqaEeiP29_qDiwNWQ"/>
+      <signatures name="publishCheck" type="void" id="_0LLmkDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLmkTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_0LLmkjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCacheProxy" type="org.ff4j.cache.FF4jCacheProxy" id="_0LLmkzqaEeiP29_qDiwNWQ"/>
+      <signatures name="setAuthManager" type="void" id="_0LLmlDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLmlTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setEnableAudit" type="void" id="_0LLmljqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_0LLmlzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAllowed" type="boolean" id="_0LLmmDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.core.Feature" id="_0LLmmTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="deleteProperty" type="org.ff4j.FF4j" id="_0LLmmjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLmmzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="PropertyStore">
+      <signatures name="clear" type="void" id="_0LLnxDqaEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_0LLnxTqaEeiP29_qDiwNWQ"/>
+      <signatures name="createProperty" type="void" id="_0LLnxjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.property.Property" id="_0LLnxzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="listPropertyNames" type="java.util.Set" id="_0LLnyDqaEeiP29_qDiwNWQ"/>
+      <signatures name="readAllProperties" type="java.util.Map" id="_0LLnyTqaEeiP29_qDiwNWQ"/>
+      <signatures name="createSchema" type="void" id="_0LLnyjqaEeiP29_qDiwNWQ"/>
+      <signatures name="importProperties" type="void" id="_0LLnyzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_0LLnzDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readProperty" type="org.ff4j.property.Property" id="_0LLnzTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLnzjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="readProperty" type="org.ff4j.property.Property" id="_0LLnzzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLn0DqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.ff4j.property.Property" id="_0LLn0TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="updateProperty" type="void" id="_0LLn0jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLn0zqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_0LLn1DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="updateProperty" type="void" id="_0LLn1TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.property.Property" id="_0LLn1jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="existProperty" type="boolean" id="_0LLn1zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLn2DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="deleteProperty" type="void" id="_0LLn2TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LLn2jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="AuthorizationsManager">
+      <signatures name="toJson" type="java.lang.String" id="_0LLn2zqaEeiP29_qDiwNWQ"/>
+      <signatures name="getCurrentUserName" type="java.lang.String" id="_0LLn3DqaEeiP29_qDiwNWQ"/>
+      <signatures name="getCurrentUserPermissions" type="java.util.Set" id="_0LLn3TqaEeiP29_qDiwNWQ"/>
+      <signatures name="listAllPermissions" type="java.util.Set" id="_0LLn3jqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="EventRepository">
+      <signatures name="purgeFeatureUsage" type="void" id="_0Lu_4DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0Lu_4TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFeatureUsagePieChart" type="org.ff4j.audit.chart.PieChart" id="_0Lu_4jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0Lu_4zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSourceHitCount" type="java.util.Map" id="_0Lu_5DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0Lu_5TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSourcePieChart" type="org.ff4j.audit.chart.PieChart" id="_0Lu_5jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0Lu_5zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFeatureUsageHistory" type="org.ff4j.audit.chart.TimeSeriesChart" id="_0Lu_6DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0Lu_6TqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.concurrent.TimeUnit" id="_0Lu_6jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getSourceBarChart" type="org.ff4j.audit.chart.BarChart" id="_0Lu_6zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0Lu_7DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFeatureUsageBarChart" type="org.ff4j.audit.chart.BarChart" id="_0Lu_7TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0Lu_7jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="searchFeatureUsageEvents" type="org.ff4j.audit.EventSeries" id="_0Lu_7zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0Lu_8DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFeatureUsageHitCount" type="java.util.Map" id="_0Lu_8TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0Lu_8jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFeatureUsageTotalHitCount" type="int" id="_0Lu_8zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0Lu_9DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createSchema" type="void" id="_0Lu_9TqaEeiP29_qDiwNWQ"/>
+      <signatures name="getUserHitCount" type="java.util.Map" id="_0Lu_9jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0Lu_9zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getUserBarChart" type="org.ff4j.audit.chart.BarChart" id="_0Lu_-DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0Lu_-TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAuditTrail" type="org.ff4j.audit.EventSeries" id="_0Lu_-jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0Lu_-zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="saveEvent" type="boolean" id="_0Lu__DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.Event" id="_0Lu__TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getUserPieChart" type="org.ff4j.audit.chart.PieChart" id="_0Lu__jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0Lu__zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="purgeAuditTrail" type="void" id="_0LvAADqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0LvAATqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getHostBarChart" type="org.ff4j.audit.chart.BarChart" id="_0LvAAjqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0LvAAzqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEventByUUID" type="org.ff4j.audit.Event" id="_0LvABDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_0LvABTqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Long" id="_0LvABjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getHostHitCount" type="java.util.Map" id="_0LvABzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0LvACDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getHostPieChart" type="org.ff4j.audit.chart.PieChart" id="_0LvACTqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.EventQueryDefinition" id="_0LvACjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IEventPublisher_Type">
+      <signatures name="stop" type="void" id="_0Lvm8DqaEeiP29_qDiwNWQ"/>
+      <signatures name="publish" type="void" id="_0Lvm8TqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.Event" id="_0Lvm8jqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getRepository" type="org.ff4j.audit.repository.EventRepository" id="_0Lvm8zqaEeiP29_qDiwNWQ"/>
+      <signatures name="setRepository" type="void" id="_0Lvm9DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.ff4j.audit.repository.EventRepository" id="_0Lvm9TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IThreadLocal_Type">
+      <signatures name="remove" type="void" id="_0Lvm9jqaEeiP29_qDiwNWQ"/>
+      <signatures name="get" type="java.lang.Object" id="_0Lvm9zqaEeiP29_qDiwNWQ"/>
+      <signatures name="access$400" type="int" id="_0Lvm-DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.ThreadLocal" id="_0Lvm-TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createInheritedMap" type="java.lang.ThreadLocal.ThreadLocalMap" id="_0Lvm-jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.ThreadLocal.ThreadLocalMap" id="_0Lvm-zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="set" type="void" id="_0Lvm_DqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0Lvm_TqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="childValue" type="java.lang.Object" id="_0Lvm_jqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0Lvm_zqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createMap" type="void" id="_0LvnADqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Thread" id="_0LvnATqaEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_0LvnAjqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMap" type="java.lang.ThreadLocal.ThreadLocalMap" id="_0LvnAzqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Thread" id="_0LvnBDqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="initialValue" type="java.lang.Object" id="_0LvnBTqaEeiP29_qDiwNWQ"/>
+      <signatures name="nextHashCode" type="int" id="_0LvnBjqaEeiP29_qDiwNWQ"/>
+      <signatures name="setInitialValue" type="java.lang.Object" id="_0LvnBzqaEeiP29_qDiwNWQ"/>
+      <signatures name="withInitial" type="java.lang.ThreadLocal" id="_0LvnCDqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Supplier" id="_0LvnCTqaEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

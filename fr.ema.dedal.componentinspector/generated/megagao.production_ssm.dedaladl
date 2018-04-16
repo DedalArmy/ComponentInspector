@@ -1,0 +1,6 @@
+dedal_diagram "megagao.production_ssm"
+
+	repositories (
+
+		repository genRepo
+	)

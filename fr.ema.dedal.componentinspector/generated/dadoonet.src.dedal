@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="dadoonet.src">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dadoonet.src.test.resources.annotation-rest-context.xml_config" implements="//@architectureDescriptions[name='dadoonet.src.test.resources.annotation-rest-context.xml_spec']">
+    <configComponents name="fr.pilato.spring.elasticsearch.it.annotation.rest.AppConfig" id="_7NG4QDqXEeiP29_qDiwNWQ" realizes="_7OOSkDqXEeiP29_qDiwNWQ" implements="_7ONrgDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dadoonet.src.test.resources.annotation-rest-context.xml_asm" instantiates="//@architectureDescriptions[name='dadoonet.src.test.resources.annotation-rest-context.xml_config']">
+    <assmComponents name="fr.pilato.spring.elasticsearch.it.annotation.rest.AppConfig1" id="_7NG4QTqXEeiP29_qDiwNWQ" instantiates="_7NG4QDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_fr.pilato.spring.elasticsearch.it.annotation.rest.AppConfig1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dadoonet.src.test.resources.annotation-rest-context.xml_spec">
+    <specComponents name="Object_role" id="_7OOSkDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dadoonet.src.test.resources.annotation-transport-context.xml_config" implements="//@architectureDescriptions[name='dadoonet.src.test.resources.annotation-transport-context.xml_spec']">
+    <configComponents name="fr.pilato.spring.elasticsearch.it.annotation.transport.AppConfig" id="_7OiboDqXEeiP29_qDiwNWQ" realizes="_7O5oADqXEeiP29_qDiwNWQ" implements="_7O5A8DqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dadoonet.src.test.resources.annotation-transport-context.xml_asm" instantiates="//@architectureDescriptions[name='dadoonet.src.test.resources.annotation-transport-context.xml_config']">
+    <assmComponents name="fr.pilato.spring.elasticsearch.it.annotation.transport.AppConfig1" id="_7OiboTqXEeiP29_qDiwNWQ" instantiates="_7OiboDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_fr.pilato.spring.elasticsearch.it.annotation.transport.AppConfig1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dadoonet.src.test.resources.annotation-transport-context.xml_spec">
+    <specComponents name="Object_role" id="_7O5oADqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dadoonet.src.test.resources.models.rest.no-namespace.no-namespace-context.xml_config" implements="//@architectureDescriptions[name='dadoonet.src.test.resources.models.rest.no-namespace.no-namespace-context.xml_spec']">
+    <configComponents name="fr.pilato.spring.elasticsearch.ElasticsearchRestClientFactoryBean" id="_7SHUEDqXEeiP29_qDiwNWQ" realizes="_7SVWjDqXEeiP29_qDiwNWQ" implements="_7SVWgDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dadoonet.src.test.resources.models.rest.no-namespace.no-namespace-context.xml_asm" instantiates="//@architectureDescriptions[name='dadoonet.src.test.resources.models.rest.no-namespace.no-namespace-context.xml_config']">
+    <assmComponents name="esClient" id="_7SHUETqXEeiP29_qDiwNWQ" instantiates="_7SHUEDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_esClient" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dadoonet.src.test.resources.models.rest.no-namespace.no-namespace-context.xml_spec">
+    <specComponents name="Object_role" id="_7SVWjDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dadoonet.src.test.resources.models.rest.plugins.plugins-context.xml_config" implements="//@architectureDescriptions[name='dadoonet.src.test.resources.models.rest.plugins.plugins-context.xml_spec']">
+    <configComponents name="fr.pilato.spring.elasticsearch.ElasticsearchTransportClientFactoryBean" id="_7SqGoDqXEeiP29_qDiwNWQ" realizes="_7S4JHDqXEeiP29_qDiwNWQ" implements="_7S4JEDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dadoonet.src.test.resources.models.rest.plugins.plugins-context.xml_asm" instantiates="//@architectureDescriptions[name='dadoonet.src.test.resources.models.rest.plugins.plugins-context.xml_config']">
+    <assmComponents name="esClient" id="_7SqGoTqXEeiP29_qDiwNWQ" instantiates="_7SqGoDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_esClient" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dadoonet.src.test.resources.models.rest.plugins.plugins-context.xml_spec">
+    <specComponents name="Object_role" id="_7S4JHDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dadoonet.src.test.resources.models.rest-xpack.no-namespace.no-namespace-context.xml_config" implements="//@architectureDescriptions[name='dadoonet.src.test.resources.models.rest-xpack.no-namespace.no-namespace-context.xml_spec']">
+    <configComponents name="fr.pilato.spring.elasticsearch.ElasticsearchRestClientFactoryBean" id="_7ZrUoDqXEeiP29_qDiwNWQ" realizes="_7Z5XHDqXEeiP29_qDiwNWQ" implements="_7Z5XEDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dadoonet.src.test.resources.models.rest-xpack.no-namespace.no-namespace-context.xml_asm" instantiates="//@architectureDescriptions[name='dadoonet.src.test.resources.models.rest-xpack.no-namespace.no-namespace-context.xml_config']">
+    <assmComponents name="esClient" id="_7Zr7sDqXEeiP29_qDiwNWQ" instantiates="_7ZrUoDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_esClient" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dadoonet.src.test.resources.models.rest-xpack.no-namespace.no-namespace-context.xml_spec">
+    <specComponents name="Object_role" id="_7Z5XHDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dadoonet.src.test.resources.models.transport.no-namespace.no-namespace-context.xml_config" implements="//@architectureDescriptions[name='dadoonet.src.test.resources.models.transport.no-namespace.no-namespace-context.xml_spec']">
+    <configComponents name="fr.pilato.spring.elasticsearch.ElasticsearchTransportClientFactoryBean" id="_7istwDqXEeiP29_qDiwNWQ" realizes="_7i6wPDqXEeiP29_qDiwNWQ" implements="_7i6wMDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dadoonet.src.test.resources.models.transport.no-namespace.no-namespace-context.xml_asm" instantiates="//@architectureDescriptions[name='dadoonet.src.test.resources.models.transport.no-namespace.no-namespace-context.xml_config']">
+    <assmComponents name="esClient" id="_7istwTqXEeiP29_qDiwNWQ" instantiates="_7istwDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_esClient" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dadoonet.src.test.resources.models.transport.no-namespace.no-namespace-context.xml_spec">
+    <specComponents name="Object_role" id="_7i6wPDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dadoonet.src.test.resources.models.transport.plugins.plugins-context.xml_config" implements="//@architectureDescriptions[name='dadoonet.src.test.resources.models.transport.plugins.plugins-context.xml_spec']">
+    <configComponents name="fr.pilato.spring.elasticsearch.ElasticsearchTransportClientFactoryBean" id="_7jO5QDqXEeiP29_qDiwNWQ" realizes="_7jc7vDqXEeiP29_qDiwNWQ" implements="_7jc7sDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dadoonet.src.test.resources.models.transport.plugins.plugins-context.xml_asm" instantiates="//@architectureDescriptions[name='dadoonet.src.test.resources.models.transport.plugins.plugins-context.xml_config']">
+    <assmComponents name="esClient" id="_7jPgUDqXEeiP29_qDiwNWQ" instantiates="_7jO5QDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_esClient" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dadoonet.src.test.resources.models.transport.plugins.plugins-context.xml_spec">
+    <specComponents name="Object_role" id="_7jc7vDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dadoonet.src.test.resources.models.transport-xpack.no-namespace.no-namespace-context.xml_config" implements="//@architectureDescriptions[name='dadoonet.src.test.resources.models.transport-xpack.no-namespace.no-namespace-context.xml_spec']">
+    <configComponents name="fr.pilato.spring.elasticsearch.ElasticsearchTransportClientFactoryBean" id="_7qibIDqXEeiP29_qDiwNWQ" realizes="_7qxErDqXEeiP29_qDiwNWQ" implements="_7qxEoDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dadoonet.src.test.resources.models.transport-xpack.no-namespace.no-namespace-context.xml_asm" instantiates="//@architectureDescriptions[name='dadoonet.src.test.resources.models.transport-xpack.no-namespace.no-namespace-context.xml_config']">
+    <assmComponents name="esClient" id="_7qibITqXEeiP29_qDiwNWQ" instantiates="_7qibIDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_esClient" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dadoonet.src.test.resources.models.transport-xpack.no-namespace.no-namespace-context.xml_spec">
+    <specComponents name="Object_role" id="_7qxErDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="dadoonet.src.test.resources.models.transport-xpack.plugins.plugins-context.xml_config" implements="//@architectureDescriptions[name='dadoonet.src.test.resources.models.transport-xpack.plugins.plugins-context.xml_spec']">
+    <configComponents name="fr.pilato.spring.elasticsearch.ElasticsearchTransportClientFactoryBean" id="_7rF0wDqXEeiP29_qDiwNWQ" realizes="_7rT3PDqXEeiP29_qDiwNWQ" implements="_7rT3MDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="dadoonet.src.test.resources.models.transport-xpack.plugins.plugins-context.xml_asm" instantiates="//@architectureDescriptions[name='dadoonet.src.test.resources.models.transport-xpack.plugins.plugins-context.xml_config']">
+    <assmComponents name="esClient" id="_7rGb0DqXEeiP29_qDiwNWQ" instantiates="_7rF0wDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_esClient" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="dadoonet.src.test.resources.models.transport-xpack.plugins.plugins-context.xml_spec">
+    <specComponents name="Object_role" id="_7rT3PDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_7ONrgDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_7O5A8DqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_7SVWgDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_7S4JEDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_7Z5XEDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_7i6wMDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_7jc7sDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_7qxEoDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_7rT3MDqXEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_7ONrgTqXEeiP29_qDiwNWQ"/>
+      <signatures name="wait" type="void" id="_7ONrgjqXEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_7ONrgzqXEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_7ONrhDqXEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_7ONrhTqXEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_7ONrhjqXEeiP29_qDiwNWQ"/>
+      <signatures name="getClass" type="java.lang.Class" id="_7ONrhzqXEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_7ONriDqXEeiP29_qDiwNWQ"/>
+      <signatures name="notify" type="void" id="_7ONriTqXEeiP29_qDiwNWQ"/>
+      <signatures name="notifyAll" type="void" id="_7ONrijqXEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_7ONrizqXEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

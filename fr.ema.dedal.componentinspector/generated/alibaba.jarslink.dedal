@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="alibaba.jarslink">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="alibaba.jarslink.jarslink-module-demo.src.main.resources.META-INF.spring.demo.xml_config" implements="//@architectureDescriptions[name='alibaba.jarslink.jarslink-module-demo.src.main.resources.META-INF.spring.demo.xml_spec']">
+    <configComponents name="com.alipay.jarslink.demo.HelloWorldAction" id="_4qKpIDqREeiP29_qDiwNWQ" realizes="_4rAWszqREeiP29_qDiwNWQ" implements="_4q0JYDqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IAction_HelloWorldAction" type="Action"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloWorldAction" type="IHelloWorldAction_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="alibaba.jarslink.jarslink-module-demo.src.main.resources.META-INF.spring.demo.xml_asm" instantiates="//@architectureDescriptions[name='alibaba.jarslink.jarslink-module-demo.src.main.resources.META-INF.spring.demo.xml_config']">
+    <assmComponents name="helloWorldAction" id="_4qKpITqREeiP29_qDiwNWQ" instantiates="_4qKpIDqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IAction_HelloWorldAction_helloWorldAction" type="Action" instantiates="IAction_HelloWorldAction"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloWorldAction_helloWorldAction" type="IHelloWorldAction_Type" instantiates="IHelloWorldAction"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="alibaba.jarslink.jarslink-module-demo.src.main.resources.META-INF.spring.demo.xml_spec">
+    <specComponents name="Action_role" id="_4rAWszqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IActionAction_role" type="Action"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="alibaba.jarslink.jarslink-module-demo.target.classes.META-INF.spring.demo.xml_config" implements="//@architectureDescriptions[name='alibaba.jarslink.jarslink-module-demo.target.classes.META-INF.spring.demo.xml_spec']">
+    <configComponents name="com.alipay.jarslink.demo.HelloWorldAction" id="_4re3wDqREeiP29_qDiwNWQ" realizes="_4rfe5zqREeiP29_qDiwNWQ" implements="_4rfe0DqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IAction_HelloWorldAction" type="Action"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloWorldAction" type="IHelloWorldAction_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="alibaba.jarslink.jarslink-module-demo.target.classes.META-INF.spring.demo.xml_asm" instantiates="//@architectureDescriptions[name='alibaba.jarslink.jarslink-module-demo.target.classes.META-INF.spring.demo.xml_config']">
+    <assmComponents name="helloWorldAction" id="_4re3wTqREeiP29_qDiwNWQ" instantiates="_4re3wDqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IAction_HelloWorldAction_helloWorldAction" type="Action" instantiates="IAction_HelloWorldAction"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloWorldAction_helloWorldAction" type="IHelloWorldAction_Type" instantiates="IHelloWorldAction"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="alibaba.jarslink.jarslink-module-demo.target.classes.META-INF.spring.demo.xml_spec">
+    <specComponents name="Action_role" id="_4rfe5zqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IActionAction_role" type="Action"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="com_alipay_jarslink_demo_HelloWorldAction_Type" id="_4q0JYDqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IAction_HelloWorldAction_com_alipay_jarslink_demo_HelloWorldAction_Type" type="Action"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloWorldAction_com_alipay_jarslink_demo_HelloWorldAction_Type" type="IHelloWorldAction_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="com_alipay_jarslink_demo_HelloWorldAction_Type" id="_4rfe0DqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IAction_HelloWorldAction_com_alipay_jarslink_demo_HelloWorldAction_Type" type="Action"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHelloWorldAction_com_alipay_jarslink_demo_HelloWorldAction_Type" type="IHelloWorldAction_Type"/>
+    </components>
+    <interfaceTypes name="Action">
+      <signatures name="execute" type="java.lang.Object" id="_4q0JYTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_4q0JYjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getActionName" type="java.lang.String" id="_4q0JYzqREeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IHelloWorldAction_Type">
+      <signatures name="execute" type="java.lang.Object" id="_4rAWoDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_4rAWoTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getActionName" type="java.lang.String" id="_4rAWojqREeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

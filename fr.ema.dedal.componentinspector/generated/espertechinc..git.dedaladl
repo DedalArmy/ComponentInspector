@@ -1,0 +1,6 @@
+dedal_diagram "espertechinc..git"
+
+	repositories (
+
+		repository genRepo
+	)

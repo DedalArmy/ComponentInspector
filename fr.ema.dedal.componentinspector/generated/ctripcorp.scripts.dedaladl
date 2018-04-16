@@ -1,0 +1,6 @@
+dedal_diagram "ctripcorp.scripts"
+
+	repositories (
+
+		repository genRepo
+	)

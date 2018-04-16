@@ -1,0 +1,6 @@
+dedal_diagram "espertechinc.esperio-db"
+
+	repositories (
+
+		repository genRepo
+	)

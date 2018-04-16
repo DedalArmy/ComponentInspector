@@ -1,0 +1,6 @@
+dedal_diagram "flowable.docs"
+
+	repositories (
+
+		repository genRepo
+	)

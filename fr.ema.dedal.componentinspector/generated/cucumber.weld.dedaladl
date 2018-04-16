@@ -1,0 +1,6 @@
+dedal_diagram "cucumber.weld"
+
+	repositories (
+
+		repository genRepo
+	)

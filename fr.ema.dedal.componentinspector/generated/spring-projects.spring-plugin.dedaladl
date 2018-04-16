@@ -1,0 +1,6 @@
+dedal_diagram "spring-projects.spring-plugin"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,6 @@
+dedal_diagram "google.latest-api-diffs"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,6 @@
+dedal_diagram "cucumber.openejb"
+
+	repositories (
+
+		repository genRepo
+	)

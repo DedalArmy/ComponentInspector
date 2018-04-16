@@ -1,0 +1,6 @@
+dedal_diagram "fengjiachun.jupiter-all"
+
+	repositories (
+
+		repository genRepo
+	)

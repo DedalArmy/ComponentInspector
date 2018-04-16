@@ -1,0 +1,6 @@
+dedal_diagram "Dempsy.dempsy-framework.core"
+
+	repositories (
+
+		repository genRepo
+	)

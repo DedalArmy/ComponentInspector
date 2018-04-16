@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="ff4j.ff4j-cli">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ff4j.ff4j-cli.src.test.resources.ff4j-cli-config.xml_config" implements="//@architectureDescriptions[name='ff4j.ff4j-cli.src.test.resources.ff4j-cli-config.xml_spec']">
+    <configComponents name="org.ff4j.FF4j" id="_0DlwgDqaEeiP29_qDiwNWQ" realizes="_0D1BHDqaEeiP29_qDiwNWQ" implements="_0Dyk0DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.ff4j.store.InMemoryFeatureStore" id="_0DlwgTqaEeiP29_qDiwNWQ" realizes="_0D1BKDqaEeiP29_qDiwNWQ" implements="_0D1BEDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configConnections refID="_0DmXkDqaEeiP29_qDiwNWQ" property="&quot;featureStore&quot;" clientClassElem="_0DlwgDqaEeiP29_qDiwNWQ" serverClassElem="_0DlwgTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ff4j.ff4j-cli.src.test.resources.ff4j-cli-config.xml_asm" instantiates="//@architectureDescriptions[name='ff4j.ff4j-cli.src.test.resources.ff4j-cli-config.xml_config']">
+    <assmComponents name="dev" id="_0DmXkTqaEeiP29_qDiwNWQ" instantiates="_0DlwgDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_dev" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="int" id="_0DmXkjqaEeiP29_qDiwNWQ" instantiates="_0DlwgDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_int" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="INT.STORE" id="_0DmXkzqaEeiP29_qDiwNWQ" instantiates="_0DlwgTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_INT.STORE" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assemblyConnections refID="_0DmXlDqaEeiP29_qDiwNWQ" property="int.featureStore" clientInstElem="_0DmXkjqaEeiP29_qDiwNWQ" serverInstElem="_0DmXkzqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ff4j.ff4j-cli.src.test.resources.ff4j-cli-config.xml_spec">
+    <specComponents name="Object_role" id="_0D1BHDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_0D1BKDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specConnections refID="_0D1BNDqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ff4j.ff4j-cli.target.test-classes.ff4j-cli-config.xml_config" implements="//@architectureDescriptions[name='ff4j.ff4j-cli.target.test-classes.ff4j-cli-config.xml_spec']">
+    <configComponents name="org.ff4j.FF4j" id="_0EJxMDqaEeiP29_qDiwNWQ" realizes="_0EQe7DqaEeiP29_qDiwNWQ" implements="_0EM0gDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configComponents name="org.ff4j.store.InMemoryFeatureStore" id="_0EJxMTqaEeiP29_qDiwNWQ" realizes="_0EQe-DqaEeiP29_qDiwNWQ" implements="_0EQe4DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+    <configConnections refID="_0EJxMjqaEeiP29_qDiwNWQ" property="&quot;featureStore&quot;" clientClassElem="_0EJxMDqaEeiP29_qDiwNWQ" serverClassElem="_0EJxMTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ff4j.ff4j-cli.target.test-classes.ff4j-cli-config.xml_asm" instantiates="//@architectureDescriptions[name='ff4j.ff4j-cli.target.test-classes.ff4j-cli-config.xml_config']">
+    <assmComponents name="dev" id="_0EJxMzqaEeiP29_qDiwNWQ" instantiates="_0EJxMDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_dev" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="int" id="_0EJxNDqaEeiP29_qDiwNWQ" instantiates="_0EJxMDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_int" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assmComponents name="INT.STORE" id="_0EJxNTqaEeiP29_qDiwNWQ" instantiates="_0EJxMTqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_INT.STORE" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+    <assemblyConnections refID="_0EKYQDqaEeiP29_qDiwNWQ" property="int.featureStore" clientInstElem="_0EJxNDqaEeiP29_qDiwNWQ" serverInstElem="_0EJxNTqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ff4j.ff4j-cli.target.test-classes.ff4j-cli-config.xml_spec">
+    <specComponents name="Object_role" id="_0EQe7DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specComponents name="Object_role" id="_0EQe-DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+    <specConnections refID="_0EQfBDqaEeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_0Dyk0DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_0D1BEDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_0EM0gDqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_0EQe4DqaEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_0Dyk0TqaEeiP29_qDiwNWQ"/>
+      <signatures name="wait" type="void" id="_0Dyk0jqaEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_0Dyk0zqaEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_0Dyk1DqaEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_0Dyk1TqaEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_0Dyk1jqaEeiP29_qDiwNWQ"/>
+      <signatures name="getClass" type="java.lang.Class" id="_0Dyk1zqaEeiP29_qDiwNWQ"/>
+      <signatures name="clone" type="java.lang.Object" id="_0Dyk2DqaEeiP29_qDiwNWQ"/>
+      <signatures name="notify" type="void" id="_0Dyk2TqaEeiP29_qDiwNWQ"/>
+      <signatures name="notifyAll" type="void" id="_0Dyk2jqaEeiP29_qDiwNWQ"/>
+      <signatures name="registerNatives" type="void" id="_0Dyk2zqaEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

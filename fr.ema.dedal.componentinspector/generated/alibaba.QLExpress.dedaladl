@@ -1,0 +1,6 @@
+dedal_diagram "alibaba.QLExpress"
+
+	repositories (
+
+		repository genRepo
+	)

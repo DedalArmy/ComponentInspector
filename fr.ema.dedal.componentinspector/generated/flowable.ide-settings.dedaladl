@@ -1,0 +1,6 @@
+dedal_diagram "flowable.ide-settings"
+
+	repositories (
+
+		repository genRepo
+	)

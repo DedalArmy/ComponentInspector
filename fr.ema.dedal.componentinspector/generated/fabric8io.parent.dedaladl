@@ -1,0 +1,6 @@
+dedal_diagram "fabric8io.parent"
+
+	repositories (
+
+		repository genRepo
+	)

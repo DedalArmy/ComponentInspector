@@ -1,0 +1,6 @@
+dedal_diagram "ff4j.ff4j-spring-boot-starter"
+
+	repositories (
+
+		repository genRepo
+	)

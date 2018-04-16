@@ -1,0 +1,6 @@
+dedal_diagram "goldmansachs.jmh-scala-tests"
+
+	repositories (
+
+		repository genRepo
+	)

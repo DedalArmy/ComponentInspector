@@ -1,0 +1,6 @@
+dedal_diagram "cucumber.android"
+
+	repositories (
+
+		repository genRepo
+	)

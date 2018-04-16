@@ -1,0 +1,6 @@
+dedal_diagram "cucumber.testng"
+
+	repositories (
+
+		repository genRepo
+	)

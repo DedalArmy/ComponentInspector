@@ -1,0 +1,6 @@
+dedal_diagram "goldmansachs.junit-trait-runner"
+
+	repositories (
+
+		repository genRepo
+	)

@@ -1,0 +1,6 @@
+dedal_diagram "cucumber.continuous-deployment"
+
+	repositories (
+
+		repository genRepo
+	)

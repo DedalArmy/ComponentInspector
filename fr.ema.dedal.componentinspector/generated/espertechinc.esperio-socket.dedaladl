@@ -1,0 +1,6 @@
+dedal_diagram "espertechinc.esperio-socket"
+
+	repositories (
+
+		repository genRepo
+	)

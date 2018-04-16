@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="ameizi.oltu-oauth2-example">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ameizi.oltu-oauth2-example.zetark-oauth2-server.src.main.resources.spring-config-cache.xml_config" implements="//@architectureDescriptions[name='ameizi.oltu-oauth2-example.zetark-oauth2-server.src.main.resources.spring-config-cache.xml_spec']">
+    <configComponents name="org.springframework.cache.ehcache.EhCacheCacheManager" id="_5kpUYDqREeiP29_qDiwNWQ" realizes="_5sis-TqREeiP29_qDiwNWQ" implements="_5ot8EDqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheCacheManager" type="IEhCacheCacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheCacheManager" direction="REQUIRED" type="ICacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_EhCacheCacheManager" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_EhCacheCacheManager" direction="REQUIRED" type="ConcurrentMap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_EhCacheCacheManager" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_EhCacheCacheManager" direction="REQUIRED" type="Set"/>
+      <attributes name="cacheManager" type="net.sf.ehcache.CacheManager"/>
+      <attributes name="transactionAware" type="boolean"/>
+      <attributes name="cacheMap" type="java.util.concurrent.ConcurrentMap"/>
+      <attributes name="cacheNames" type="java.util.Set"/>
+    </configComponents>
+    <configComponents name="org.springframework.cache.ehcache.EhCacheManagerFactoryBean" id="_5kpUYTqREeiP29_qDiwNWQ" realizes="_5siGEDqREeiP29_qDiwNWQ" implements="_5sheADqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_EhCacheManagerFactoryBean" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_EhCacheManagerFactoryBean" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_EhCacheManagerFactoryBean" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheManagerFactoryBean" type="IEhCacheManagerFactoryBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_EhCacheManagerFactoryBean" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInputStreamSource_EhCacheManagerFactoryBean" direction="REQUIRED" type="InputStreamSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResource_EhCacheManagerFactoryBean" direction="REQUIRED" type="Resource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_EhCacheManagerFactoryBean" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_EhCacheManagerFactoryBean" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_EhCacheManagerFactoryBean" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_EhCacheManagerFactoryBean" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheManagerFactoryBean" direction="REQUIRED" type="ICacheManager_Type"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="configLocation" type="org.springframework.core.io.Resource"/>
+      <attributes name="cacheManagerName" type="java.lang.String"/>
+      <attributes name="acceptExisting" type="boolean"/>
+      <attributes name="shared" type="boolean"/>
+      <attributes name="cacheManager" type="net.sf.ehcache.CacheManager"/>
+      <attributes name="locallyManaged" type="boolean"/>
+    </configComponents>
+    <configConnections serverIntElem="ICacheManager_EhCacheManagerFactoryBean" clientIntElem="ICacheManager_EhCacheCacheManager" refID="_5kp7cDqREeiP29_qDiwNWQ" property="&quot;cacheManager&quot;" clientClassElem="_5kpUYDqREeiP29_qDiwNWQ" serverClassElem="_5kpUYTqREeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ameizi.oltu-oauth2-example.zetark-oauth2-server.src.main.resources.spring-config-cache.xml_asm" instantiates="//@architectureDescriptions[name='ameizi.oltu-oauth2-example.zetark-oauth2-server.src.main.resources.spring-config-cache.xml_config']">
+    <assmComponents name="springCacheManager" id="_5kp7cTqREeiP29_qDiwNWQ" instantiates="_5kpUYDqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheCacheManager_springCacheManager" type="IEhCacheCacheManager_Type" instantiates="IEhCacheCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheCacheManager_springCacheManager" direction="REQUIRED" type="ICacheManager_Type" instantiates="ICacheManager_EhCacheCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_EhCacheCacheManager_springCacheManager" direction="REQUIRED" type="Map" instantiates="IMap_EhCacheCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_EhCacheCacheManager_springCacheManager" direction="REQUIRED" type="ConcurrentMap" instantiates="IConcurrentMap_EhCacheCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_EhCacheCacheManager_springCacheManager" direction="REQUIRED" type="Collection" instantiates="ICollection_EhCacheCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_EhCacheCacheManager_springCacheManager" direction="REQUIRED" type="Set" instantiates="ISet_EhCacheCacheManager"/>
+    </assmComponents>
+    <assmComponents name="ehcacheManager" id="_5kp7cjqREeiP29_qDiwNWQ" instantiates="_5kpUYTqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_EhCacheManagerFactoryBean_ehcacheManager" type="FactoryBean" instantiates="IFactoryBean_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_EhCacheManagerFactoryBean_ehcacheManager" type="InitializingBean" instantiates="IInitializingBean_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_EhCacheManagerFactoryBean_ehcacheManager" type="DisposableBean" instantiates="IDisposableBean_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheManagerFactoryBean_ehcacheManager" type="IEhCacheManagerFactoryBean_Type" instantiates="IEhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="Log" instantiates="ILog_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInputStreamSource_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="InputStreamSource" instantiates="IInputStreamSource_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResource_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="Resource" instantiates="IResource_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" instantiates="null_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="Comparable" instantiates="IComparable_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="IString_Type" instantiates="IString_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="ICacheManager_Type" instantiates="ICacheManager_EhCacheManagerFactoryBean"/>
+    </assmComponents>
+    <assemblyConnections serverIntElem="ICacheManager_EhCacheManagerFactoryBean_ehcacheManager" clientIntElem="ICacheManager_EhCacheCacheManager_springCacheManager" refID="_5kp7czqREeiP29_qDiwNWQ" property="springCacheManager.cacheManager" clientInstElem="_5kp7cTqREeiP29_qDiwNWQ" serverInstElem="_5kp7cjqREeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ameizi.oltu-oauth2-example.zetark-oauth2-server.src.main.resources.spring-config-cache.xml_spec">
+    <specComponents name="EhCacheManagerFactoryBean_role" id="_5siGEDqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBeanEhCacheManagerFactoryBean_role" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBeanEhCacheManagerFactoryBean_role" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBeanEhCacheManagerFactoryBean_role" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheManagerFactoryBeanEhCacheManagerFactoryBean_role" type="IEhCacheManagerFactoryBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogEhCacheManagerFactoryBean_role" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInputStreamSourceEhCacheManagerFactoryBean_role" direction="REQUIRED" type="InputStreamSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourceEhCacheManagerFactoryBean_role" direction="REQUIRED" type="Resource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullEhCacheManagerFactoryBean_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableEhCacheManagerFactoryBean_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceEhCacheManagerFactoryBean_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringEhCacheManagerFactoryBean_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManagerEhCacheManagerFactoryBean_role" direction="REQUIRED" type="ICacheManager_Type"/>
+    </specComponents>
+    <specComponents name="EhCacheCacheManager_role" id="_5sis-TqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheCacheManagerEhCacheCacheManager_role" type="IEhCacheCacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManagerEhCacheCacheManager_role" direction="REQUIRED" type="ICacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapEhCacheCacheManager_role" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMapEhCacheCacheManager_role" direction="REQUIRED" type="ConcurrentMap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionEhCacheCacheManager_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISetEhCacheCacheManager_role" direction="REQUIRED" type="Set"/>
+    </specComponents>
+    <specConnections serverIntElem="ICacheManagerEhCacheManagerFactoryBean_role" clientIntElem="ICacheManagerEhCacheCacheManager_role" refID="_5sjV4zqREeiP29_qDiwNWQ" clientCompElem="_5sis-TqREeiP29_qDiwNWQ" serverCompElem="_5siGEDqREeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ameizi.oltu-oauth2-example.zetark-oauth2-server.target.classes.spring-config-cache.xml_config" implements="//@architectureDescriptions[name='ameizi.oltu-oauth2-example.zetark-oauth2-server.target.classes.spring-config-cache.xml_spec']">
+    <configComponents name="org.springframework.cache.ehcache.EhCacheCacheManager" id="_5tGs0DqREeiP29_qDiwNWQ" realizes="_5tIjSzqREeiP29_qDiwNWQ" implements="_5tH68DqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheCacheManager" type="IEhCacheCacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheCacheManager" direction="REQUIRED" type="ICacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_EhCacheCacheManager" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_EhCacheCacheManager" direction="REQUIRED" type="ConcurrentMap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_EhCacheCacheManager" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_EhCacheCacheManager" direction="REQUIRED" type="Set"/>
+      <attributes name="cacheManager" type="net.sf.ehcache.CacheManager"/>
+      <attributes name="transactionAware" type="boolean"/>
+      <attributes name="cacheMap" type="java.util.concurrent.ConcurrentMap"/>
+      <attributes name="cacheNames" type="java.util.Set"/>
+    </configComponents>
+    <configComponents name="org.springframework.cache.ehcache.EhCacheManagerFactoryBean" id="_5tGs0TqREeiP29_qDiwNWQ" realizes="_5tJMWzqREeiP29_qDiwNWQ" implements="_5tH8XjqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_EhCacheManagerFactoryBean" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_EhCacheManagerFactoryBean" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_EhCacheManagerFactoryBean" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheManagerFactoryBean" type="IEhCacheManagerFactoryBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_EhCacheManagerFactoryBean" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInputStreamSource_EhCacheManagerFactoryBean" direction="REQUIRED" type="InputStreamSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResource_EhCacheManagerFactoryBean" direction="REQUIRED" type="Resource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_EhCacheManagerFactoryBean" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_EhCacheManagerFactoryBean" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_EhCacheManagerFactoryBean" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_EhCacheManagerFactoryBean" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheManagerFactoryBean" direction="REQUIRED" type="ICacheManager_Type"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="configLocation" type="org.springframework.core.io.Resource"/>
+      <attributes name="cacheManagerName" type="java.lang.String"/>
+      <attributes name="acceptExisting" type="boolean"/>
+      <attributes name="shared" type="boolean"/>
+      <attributes name="cacheManager" type="net.sf.ehcache.CacheManager"/>
+      <attributes name="locallyManaged" type="boolean"/>
+    </configComponents>
+    <configConnections serverIntElem="ICacheManager_EhCacheManagerFactoryBean" clientIntElem="ICacheManager_EhCacheCacheManager" refID="_5tHT4DqREeiP29_qDiwNWQ" property="&quot;cacheManager&quot;" clientClassElem="_5tGs0DqREeiP29_qDiwNWQ" serverClassElem="_5tGs0TqREeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ameizi.oltu-oauth2-example.zetark-oauth2-server.target.classes.spring-config-cache.xml_asm" instantiates="//@architectureDescriptions[name='ameizi.oltu-oauth2-example.zetark-oauth2-server.target.classes.spring-config-cache.xml_config']">
+    <assmComponents name="springCacheManager" id="_5tHT4TqREeiP29_qDiwNWQ" instantiates="_5tGs0DqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheCacheManager_springCacheManager" type="IEhCacheCacheManager_Type" instantiates="IEhCacheCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheCacheManager_springCacheManager" direction="REQUIRED" type="ICacheManager_Type" instantiates="ICacheManager_EhCacheCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_EhCacheCacheManager_springCacheManager" direction="REQUIRED" type="Map" instantiates="IMap_EhCacheCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_EhCacheCacheManager_springCacheManager" direction="REQUIRED" type="ConcurrentMap" instantiates="IConcurrentMap_EhCacheCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_EhCacheCacheManager_springCacheManager" direction="REQUIRED" type="Collection" instantiates="ICollection_EhCacheCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_EhCacheCacheManager_springCacheManager" direction="REQUIRED" type="Set" instantiates="ISet_EhCacheCacheManager"/>
+    </assmComponents>
+    <assmComponents name="ehcacheManager" id="_5tHT4jqREeiP29_qDiwNWQ" instantiates="_5tGs0TqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_EhCacheManagerFactoryBean_ehcacheManager" type="FactoryBean" instantiates="IFactoryBean_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_EhCacheManagerFactoryBean_ehcacheManager" type="InitializingBean" instantiates="IInitializingBean_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_EhCacheManagerFactoryBean_ehcacheManager" type="DisposableBean" instantiates="IDisposableBean_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheManagerFactoryBean_ehcacheManager" type="IEhCacheManagerFactoryBean_Type" instantiates="IEhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="Log" instantiates="ILog_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInputStreamSource_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="InputStreamSource" instantiates="IInputStreamSource_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResource_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="Resource" instantiates="IResource_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" instantiates="null_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="Comparable" instantiates="IComparable_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="IString_Type" instantiates="IString_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="ICacheManager_Type" instantiates="ICacheManager_EhCacheManagerFactoryBean"/>
+    </assmComponents>
+    <assemblyConnections serverIntElem="ICacheManager_EhCacheManagerFactoryBean_ehcacheManager" clientIntElem="ICacheManager_EhCacheCacheManager_springCacheManager" refID="_5tHT4zqREeiP29_qDiwNWQ" property="springCacheManager.cacheManager" clientInstElem="_5tHT4TqREeiP29_qDiwNWQ" serverInstElem="_5tHT4jqREeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ameizi.oltu-oauth2-example.zetark-oauth2-server.target.classes.spring-config-cache.xml_spec">
+    <specComponents name="EhCacheCacheManager_role" id="_5tIjSzqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheCacheManagerEhCacheCacheManager_role" type="IEhCacheCacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManagerEhCacheCacheManager_role" direction="REQUIRED" type="ICacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapEhCacheCacheManager_role" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMapEhCacheCacheManager_role" direction="REQUIRED" type="ConcurrentMap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionEhCacheCacheManager_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISetEhCacheCacheManager_role" direction="REQUIRED" type="Set"/>
+    </specComponents>
+    <specComponents name="EhCacheManagerFactoryBean_role" id="_5tJMWzqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBeanEhCacheManagerFactoryBean_role" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBeanEhCacheManagerFactoryBean_role" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBeanEhCacheManagerFactoryBean_role" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheManagerFactoryBeanEhCacheManagerFactoryBean_role" type="IEhCacheManagerFactoryBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogEhCacheManagerFactoryBean_role" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInputStreamSourceEhCacheManagerFactoryBean_role" direction="REQUIRED" type="InputStreamSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourceEhCacheManagerFactoryBean_role" direction="REQUIRED" type="Resource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullEhCacheManagerFactoryBean_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableEhCacheManagerFactoryBean_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceEhCacheManagerFactoryBean_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringEhCacheManagerFactoryBean_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManagerEhCacheManagerFactoryBean_role" direction="REQUIRED" type="ICacheManager_Type"/>
+    </specComponents>
+    <specConnections serverIntElem="ICacheManagerEhCacheManagerFactoryBean_role" clientIntElem="ICacheManagerEhCacheCacheManager_role" refID="_5tJwrTqREeiP29_qDiwNWQ" clientCompElem="_5tIjSzqREeiP29_qDiwNWQ" serverCompElem="_5tJMWzqREeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="ameizi.oltu-oauth2-example.zetark-oauth2-server.target.zetark-oauth2-server.WEB-INF.classes.spring-config-cache.xml_config" implements="//@architectureDescriptions[name='ameizi.oltu-oauth2-example.zetark-oauth2-server.target.zetark-oauth2-server.WEB-INF.classes.spring-config-cache.xml_spec']">
+    <configComponents name="org.springframework.cache.ehcache.EhCacheCacheManager" id="_5toRQDqREeiP29_qDiwNWQ" realizes="_5tquyzqREeiP29_qDiwNWQ" implements="_5tpfYDqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheCacheManager" type="IEhCacheCacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheCacheManager" direction="REQUIRED" type="ICacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_EhCacheCacheManager" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_EhCacheCacheManager" direction="REQUIRED" type="ConcurrentMap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_EhCacheCacheManager" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_EhCacheCacheManager" direction="REQUIRED" type="Set"/>
+      <attributes name="cacheManager" type="net.sf.ehcache.CacheManager"/>
+      <attributes name="transactionAware" type="boolean"/>
+      <attributes name="cacheMap" type="java.util.concurrent.ConcurrentMap"/>
+      <attributes name="cacheNames" type="java.util.Set"/>
+    </configComponents>
+    <configComponents name="org.springframework.cache.ehcache.EhCacheManagerFactoryBean" id="_5toRQTqREeiP29_qDiwNWQ" realizes="_5tsiujqREeiP29_qDiwNWQ" implements="_5tqH3TqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_EhCacheManagerFactoryBean" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_EhCacheManagerFactoryBean" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_EhCacheManagerFactoryBean" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheManagerFactoryBean" type="IEhCacheManagerFactoryBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_EhCacheManagerFactoryBean" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInputStreamSource_EhCacheManagerFactoryBean" direction="REQUIRED" type="InputStreamSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResource_EhCacheManagerFactoryBean" direction="REQUIRED" type="Resource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_EhCacheManagerFactoryBean" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_EhCacheManagerFactoryBean" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_EhCacheManagerFactoryBean" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_EhCacheManagerFactoryBean" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheManagerFactoryBean" direction="REQUIRED" type="ICacheManager_Type"/>
+      <attributes name="logger" type="org.apache.commons.logging.Log"/>
+      <attributes name="configLocation" type="org.springframework.core.io.Resource"/>
+      <attributes name="cacheManagerName" type="java.lang.String"/>
+      <attributes name="acceptExisting" type="boolean"/>
+      <attributes name="shared" type="boolean"/>
+      <attributes name="cacheManager" type="net.sf.ehcache.CacheManager"/>
+      <attributes name="locallyManaged" type="boolean"/>
+    </configComponents>
+    <configConnections serverIntElem="ICacheManager_EhCacheManagerFactoryBean" clientIntElem="ICacheManager_EhCacheCacheManager" refID="_5to4UDqREeiP29_qDiwNWQ" property="&quot;cacheManager&quot;" clientClassElem="_5toRQDqREeiP29_qDiwNWQ" serverClassElem="_5toRQTqREeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="ameizi.oltu-oauth2-example.zetark-oauth2-server.target.zetark-oauth2-server.WEB-INF.classes.spring-config-cache.xml_asm" instantiates="//@architectureDescriptions[name='ameizi.oltu-oauth2-example.zetark-oauth2-server.target.zetark-oauth2-server.WEB-INF.classes.spring-config-cache.xml_config']">
+    <assmComponents name="springCacheManager" id="_5to4UTqREeiP29_qDiwNWQ" instantiates="_5toRQDqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheCacheManager_springCacheManager" type="IEhCacheCacheManager_Type" instantiates="IEhCacheCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheCacheManager_springCacheManager" direction="REQUIRED" type="ICacheManager_Type" instantiates="ICacheManager_EhCacheCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_EhCacheCacheManager_springCacheManager" direction="REQUIRED" type="Map" instantiates="IMap_EhCacheCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_EhCacheCacheManager_springCacheManager" direction="REQUIRED" type="ConcurrentMap" instantiates="IConcurrentMap_EhCacheCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_EhCacheCacheManager_springCacheManager" direction="REQUIRED" type="Collection" instantiates="ICollection_EhCacheCacheManager"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_EhCacheCacheManager_springCacheManager" direction="REQUIRED" type="Set" instantiates="ISet_EhCacheCacheManager"/>
+    </assmComponents>
+    <assmComponents name="ehcacheManager" id="_5to4UjqREeiP29_qDiwNWQ" instantiates="_5toRQTqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_EhCacheManagerFactoryBean_ehcacheManager" type="FactoryBean" instantiates="IFactoryBean_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_EhCacheManagerFactoryBean_ehcacheManager" type="InitializingBean" instantiates="IInitializingBean_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_EhCacheManagerFactoryBean_ehcacheManager" type="DisposableBean" instantiates="IDisposableBean_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheManagerFactoryBean_ehcacheManager" type="IEhCacheManagerFactoryBean_Type" instantiates="IEhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="Log" instantiates="ILog_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInputStreamSource_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="InputStreamSource" instantiates="IInputStreamSource_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResource_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="Resource" instantiates="IResource_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" instantiates="null_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="Comparable" instantiates="IComparable_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="IString_Type" instantiates="IString_EhCacheManagerFactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheManagerFactoryBean_ehcacheManager" direction="REQUIRED" type="ICacheManager_Type" instantiates="ICacheManager_EhCacheManagerFactoryBean"/>
+    </assmComponents>
+    <assemblyConnections serverIntElem="ICacheManager_EhCacheManagerFactoryBean_ehcacheManager" clientIntElem="ICacheManager_EhCacheCacheManager_springCacheManager" refID="_5to4UzqREeiP29_qDiwNWQ" property="springCacheManager.cacheManager" clientInstElem="_5to4UTqREeiP29_qDiwNWQ" serverInstElem="_5to4UjqREeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="ameizi.oltu-oauth2-example.zetark-oauth2-server.target.zetark-oauth2-server.WEB-INF.classes.spring-config-cache.xml_spec">
+    <specComponents name="EhCacheCacheManager_role" id="_5tquyzqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheCacheManagerEhCacheCacheManager_role" type="IEhCacheCacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManagerEhCacheCacheManager_role" direction="REQUIRED" type="ICacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapEhCacheCacheManager_role" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMapEhCacheCacheManager_role" direction="REQUIRED" type="ConcurrentMap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollectionEhCacheCacheManager_role" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISetEhCacheCacheManager_role" direction="REQUIRED" type="Set"/>
+    </specComponents>
+    <specComponents name="EhCacheManagerFactoryBean_role" id="_5tsiujqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBeanEhCacheManagerFactoryBean_role" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBeanEhCacheManagerFactoryBean_role" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBeanEhCacheManagerFactoryBean_role" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheManagerFactoryBeanEhCacheManagerFactoryBean_role" type="IEhCacheManagerFactoryBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogEhCacheManagerFactoryBean_role" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInputStreamSourceEhCacheManagerFactoryBean_role" direction="REQUIRED" type="InputStreamSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResourceEhCacheManagerFactoryBean_role" direction="REQUIRED" type="Resource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullEhCacheManagerFactoryBean_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableEhCacheManagerFactoryBean_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceEhCacheManagerFactoryBean_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringEhCacheManagerFactoryBean_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManagerEhCacheManagerFactoryBean_role" direction="REQUIRED" type="ICacheManager_Type"/>
+    </specComponents>
+    <specConnections serverIntElem="ICacheManagerEhCacheManagerFactoryBean_role" clientIntElem="ICacheManagerEhCacheCacheManager_role" refID="_5ttJwjqREeiP29_qDiwNWQ" clientCompElem="_5tquyzqREeiP29_qDiwNWQ" serverCompElem="_5tsiujqREeiP29_qDiwNWQ"/>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="org_springframework_cache_ehcache_EhCacheCacheManager_Type" id="_5ot8EDqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" type="IEhCacheCacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" direction="REQUIRED" type="ICacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_EhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_EhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" direction="REQUIRED" type="ConcurrentMap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_EhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_EhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" direction="REQUIRED" type="Set"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" id="_5sheADqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" type="IEhCacheManagerFactoryBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInputStreamSource_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="InputStreamSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResource_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="Resource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="ICacheManager_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_cache_ehcache_EhCacheCacheManager_Type" id="_5tH68DqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" type="IEhCacheCacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" direction="REQUIRED" type="ICacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_EhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_EhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" direction="REQUIRED" type="ConcurrentMap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_EhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_EhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" direction="REQUIRED" type="Set"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" id="_5tH8XjqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" type="IEhCacheManagerFactoryBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInputStreamSource_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="InputStreamSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResource_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="Resource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="ICacheManager_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_cache_ehcache_EhCacheCacheManager_Type" id="_5tpfYDqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" type="IEhCacheCacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" direction="REQUIRED" type="ICacheManager_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_EhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IConcurrentMap_EhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" direction="REQUIRED" type="ConcurrentMap"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICollection_EhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" direction="REQUIRED" type="Collection"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ISet_EhCacheCacheManager_org_springframework_cache_ehcache_EhCacheCacheManager_Type" direction="REQUIRED" type="Set"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" id="_5tqH3TqREeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="IFactoryBean_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" type="FactoryBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInitializingBean_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" type="InitializingBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IDisposableBean_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" type="DisposableBean"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IEhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" type="IEhCacheManagerFactoryBean_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILog_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="Log"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IInputStreamSource_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="InputStreamSource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IResource_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="Resource"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICacheManager_EhCacheManagerFactoryBean_org_springframework_cache_ehcache_EhCacheManagerFactoryBean_Type" direction="REQUIRED" type="ICacheManager_Type"/>
+    </components>
+    <interfaceTypes name="IEhCacheCacheManager_Type">
+      <signatures name="getCache" type="org.springframework.cache.Cache" id="_5o0pwDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5o0pwTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCacheNames" type="java.util.Collection" id="_5o0pwjqREeiP29_qDiwNWQ"/>
+      <signatures name="afterPropertiesSet" type="void" id="_5o0pwzqREeiP29_qDiwNWQ"/>
+      <signatures name="addCache" type="void" id="_5o0pxDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.cache.Cache" id="_5o0pxTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="decorateCache" type="org.springframework.cache.Cache" id="_5o0pxjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.cache.Cache" id="_5o0pxzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="updateCacheNames" type="void" id="_5o0pyDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5o0pyTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="loadCaches" type="java.util.Collection" id="_5o0pyjqREeiP29_qDiwNWQ"/>
+      <signatures name="initializeCaches" type="void" id="_5o0pyzqREeiP29_qDiwNWQ"/>
+      <signatures name="lookupCache" type="org.springframework.cache.Cache" id="_5o0pzDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5o0pzTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMissingCache" type="org.springframework.cache.Cache" id="_5o0pzjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5o0pzzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTransactionAware" type="void" id="_5o0p0DqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_5o0p0TqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTransactionAware" type="boolean" id="_5o0p0jqREeiP29_qDiwNWQ"/>
+      <signatures name="getCacheManager" type="net.sf.ehcache.CacheManager" id="_5o0p0zqREeiP29_qDiwNWQ"/>
+      <signatures name="setCacheManager" type="void" id="_5o0p1DqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.CacheManager" id="_5o0p1TqREeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IAbstractTransactionSupportingCacheManager_Type">
+      <signatures name="getCache" type="org.springframework.cache.Cache" id="_5o0p1jqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5o0p1zqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCacheNames" type="java.util.Collection" id="_5o0p2DqREeiP29_qDiwNWQ"/>
+      <signatures name="afterPropertiesSet" type="void" id="_5o0p2TqREeiP29_qDiwNWQ"/>
+      <signatures name="addCache" type="void" id="_5o0p2jqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.cache.Cache" id="_5o0p2zqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="decorateCache" type="org.springframework.cache.Cache" id="_5o0p3DqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.cache.Cache" id="_5o0p3TqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="updateCacheNames" type="void" id="_5o0p3jqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5o0p3zqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="loadCaches" type="java.util.Collection" id="_5o0p4DqREeiP29_qDiwNWQ"/>
+      <signatures name="initializeCaches" type="void" id="_5o0p4TqREeiP29_qDiwNWQ"/>
+      <signatures name="lookupCache" type="org.springframework.cache.Cache" id="_5o0p4jqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5o0p4zqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMissingCache" type="org.springframework.cache.Cache" id="_5o0p5DqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5o0p5TqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setTransactionAware" type="void" id="_5o0p5jqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_5o0p5zqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTransactionAware" type="boolean" id="_5o0p6DqREeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="CacheManager">
+      <signatures name="getCache" type="org.springframework.cache.Cache" id="_5o0p6TqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5o0p6jqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCacheNames" type="java.util.Collection" id="_5o0p6zqREeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="InitializingBean">
+      <signatures name="afterPropertiesSet" type="void" id="_5o0p7DqREeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IAbstractCacheManager_Type">
+      <signatures name="getCache" type="org.springframework.cache.Cache" id="_5o0p7TqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5o0p7jqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCacheNames" type="java.util.Collection" id="_5o0p7zqREeiP29_qDiwNWQ"/>
+      <signatures name="afterPropertiesSet" type="void" id="_5o0p8DqREeiP29_qDiwNWQ"/>
+      <signatures name="addCache" type="void" id="_5o0p8TqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.cache.Cache" id="_5o0p8jqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="decorateCache" type="org.springframework.cache.Cache" id="_5o0p8zqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.cache.Cache" id="_5o0p9DqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="updateCacheNames" type="void" id="_5o0p9TqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5o0p9jqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="loadCaches" type="java.util.Collection" id="_5o0p9zqREeiP29_qDiwNWQ"/>
+      <signatures name="initializeCaches" type="void" id="_5o0p-DqREeiP29_qDiwNWQ"/>
+      <signatures name="lookupCache" type="org.springframework.cache.Cache" id="_5o0p-TqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5o0p-jqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getMissingCache" type="org.springframework.cache.Cache" id="_5o0p-zqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5o0p_DqREeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ICacheManager_Type">
+      <signatures name="shutdown" type="void" id="_5sPxMDqREeiP29_qDiwNWQ"/>
+      <signatures name="toString" type="java.lang.String" id="_5sPxMTqREeiP29_qDiwNWQ"/>
+      <signatures name="getName" type="java.lang.String" id="_5sPxMjqREeiP29_qDiwNWQ"/>
+      <signatures name="access$100" type="void" id="_5sPxMzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.CacheManager" id="_5sPxNDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="access$200" type="org.slf4j.Logger" id="_5sPxNTqREeiP29_qDiwNWQ"/>
+      <signatures name="getInstance" type="net.sf.ehcache.CacheManager" id="_5sPxNjqREeiP29_qDiwNWQ"/>
+      <signatures name="access$000" type="void" id="_5sPxNzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.CacheManager" id="_5sPxODqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="init" type="void" id="_5sPxOTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.config.Configuration" id="_5sPxOjqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_5sPxOzqREeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.net.URL" id="_5sPxPDqREeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.io.InputStream" id="_5sPxPTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="create" type="net.sf.ehcache.CacheManager" id="_5sPxPjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.net.URL" id="_5sPxPzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setName" type="void" id="_5sPxQDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5sPxQTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeShutdownHook" type="void" id="_5sPxQjqREeiP29_qDiwNWQ"/>
+      <signatures name="getCache" type="net.sf.ehcache.Cache" id="_5sPxQzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5sPxRDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="configure" type="void" id="_5sPxRTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.config.ConfigurationHelper" id="_5sPxRjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="detectAndFixDiskStorePathConflict" type="void" id="_5sPxRzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.config.ConfigurationHelper" id="_5sPxSDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="detectAndFixCacheManagerPeerListenerConflict" type="void" id="_5sPxSTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.config.ConfigurationHelper" id="_5sPxSjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="assertNoCacheManagerExistsWithSameName" type="void" id="_5sPxSzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.config.Configuration" id="_5sPxTDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCacheManagerEventListenerRegistry" type="net.sf.ehcache.event.CacheManagerEventListenerRegistry" id="_5sPxTTqREeiP29_qDiwNWQ"/>
+      <signatures name="getConfiguration" type="net.sf.ehcache.config.Configuration" id="_5sPxTjqREeiP29_qDiwNWQ"/>
+      <signatures name="getStatus" type="net.sf.ehcache.Status" id="_5sPxTzqREeiP29_qDiwNWQ"/>
+      <signatures name="getCacheManager" type="net.sf.ehcache.CacheManager" id="_5sPxUDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5sPxUTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeCache" type="void" id="_5sPxUjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5sPxUzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClientUUID" type="java.lang.String" id="_5sPxVDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.terracotta.ClusteredInstanceFactory" id="_5sPxVTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="cacheExists" type="boolean" id="_5sPxVjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5sPxVzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="clearAll" type="void" id="_5sPxWDqREeiP29_qDiwNWQ"/>
+      <signatures name="addCacheNoCheck" type="net.sf.ehcache.Ehcache" id="_5sPxWTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.Ehcache" id="_5sPxWjqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_5sPxWzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removalAll" type="void" id="_5sPxXDqREeiP29_qDiwNWQ"/>
+      <signatures name="getOnDiskPool" type="net.sf.ehcache.pool.Pool" id="_5sPxXTqREeiP29_qDiwNWQ"/>
+      <signatures name="getCluster" type="net.sf.ehcache.cluster.CacheCluster" id="_5sPxXjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.cluster.ClusterScheme" id="_5sPxXzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getDiskStorePath" type="java.lang.String" id="_5sPxYDqREeiP29_qDiwNWQ"/>
+      <signatures name="getEhcache" type="net.sf.ehcache.Ehcache" id="_5sPxYTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5sPxYjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getOnHeapPool" type="net.sf.ehcache.pool.Pool" id="_5sPxYzqREeiP29_qDiwNWQ"/>
+      <signatures name="addCacheIfAbsent" type="net.sf.ehcache.Ehcache" id="_5sPxZDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.Ehcache" id="_5sPxZTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="doInit" type="void" id="_5sPxZjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.config.Configuration" id="_5sPxZzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClusterUUID" type="java.lang.String" id="_5sPxaDqREeiP29_qDiwNWQ"/>
+      <signatures name="checkStatus" type="void" id="_5sPxaTqREeiP29_qDiwNWQ"/>
+      <signatures name="getTimer" type="net.sf.ehcache.util.FailSafeTimer" id="_5sPxajqREeiP29_qDiwNWQ"/>
+      <signatures name="getCacheManagerPeerProvider" type="net.sf.ehcache.distribution.CacheManagerPeerProvider" id="_5sPxazqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5sPxbDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="initializeEhcache" type="void" id="_5sPxbTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.Ehcache" id="_5sPxbjqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_5sPxbzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCachePeerListener" type="net.sf.ehcache.distribution.CacheManagerPeerListener" id="_5sPxcDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5sPxcTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCacheManagerEventListener" type="net.sf.ehcache.event.CacheManagerEventListener" id="_5sPxcjqREeiP29_qDiwNWQ"/>
+      <signatures name="getSoftLockFactory" type="net.sf.ehcache.transaction.SoftLockFactory" id="_5sPxczqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5sPxdDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getOriginalConfigurationText" type="java.lang.String" id="_5sPxdTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5sPxdjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceCacheWithDecoratedCache" type="void" id="_5sPxdzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.Ehcache" id="_5sPxeDqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="net.sf.ehcache.Ehcache" id="_5sPxeTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createTerracottaEventReplicator" type="net.sf.ehcache.event.CacheEventListener" id="_5sPxejqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.Ehcache" id="_5sPxezqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createTransactionIDFactory" type="net.sf.ehcache.transaction.TransactionIDFactory" id="_5sPxfDqREeiP29_qDiwNWQ"/>
+      <signatures name="setCacheManagerEventListener" type="void" id="_5sPxfTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.event.CacheManagerEventListener" id="_5sPxfjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getClusteredInstanceFactory" type="net.sf.ehcache.terracotta.ClusteredInstanceFactory" id="_5sPxfzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.Ehcache" id="_5sPxgDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getTransactionController" type="net.sf.ehcache.TransactionController" id="_5sPxgTqREeiP29_qDiwNWQ"/>
+      <signatures name="createTerracottaWriteBehind" type="net.sf.ehcache.writer.writebehind.WriteBehind" id="_5sPxgjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.Ehcache" id="_5sPxgzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createSoftLockFactory" type="net.sf.ehcache.transaction.SoftLockFactory" id="_5sPxhDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.Ehcache" id="_5sPxhTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="clusterRejoinComplete" type="void" id="_5sPxhjqREeiP29_qDiwNWQ"/>
+      <signatures name="createTerracottaStore" type="net.sf.ehcache.store.Store" id="_5sPxhzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.Ehcache" id="_5sPxiDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addDecoratedCacheIfAbsent" type="void" id="_5sPxiTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.Ehcache" id="_5sPxijqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="clearAllStartingWith" type="void" id="_5sPxizqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5sPxjDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="reinitialisationCheck" type="void" id="_5sPxjTqREeiP29_qDiwNWQ"/>
+      <signatures name="addOrReplaceDecoratedCache" type="void" id="_5sPxjjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.Ehcache" id="_5sPxjzqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="net.sf.ehcache.Ehcache" id="_5sPxkDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkForUpdateIfNeeded" type="void" id="_5sPxkTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_5sPxkjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCacheManagerPeerProviders" type="java.util.Map" id="_5sPxkzqREeiP29_qDiwNWQ"/>
+      <signatures name="addConfiguredCaches" type="void" id="_5sPxlDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.config.ConfigurationHelper" id="_5sPxlTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getActiveConfigurationText" type="java.lang.String" id="_5sPxljqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5sPxlzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="cloneDefaultCache" type="net.sf.ehcache.Ehcache" id="_5sPxmDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5sPxmTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createDefaultCacheDecorators" type="java.util.List" id="_5sPxmjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.Ehcache" id="_5sPxmzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="clusterRejoinStarted" type="void" id="_5sPxnDqREeiP29_qDiwNWQ"/>
+      <signatures name="getNonstopActiveDelegateHolder" type="net.sf.ehcache.constructs.nonstop.NonstopActiveDelegateHolder" id="_5sPxnTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.Ehcache" id="_5sPxnjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="createSizeOfEngine" type="net.sf.ehcache.pool.SizeOfEngine" id="_5sPxnzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.Cache" id="_5sPxoDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getNonstopExecutorService" type="net.sf.ehcache.constructs.nonstop.NonstopExecutorService" id="_5sPxoTqREeiP29_qDiwNWQ"/>
+      <signatures name="addDecoratedCache" type="void" id="_5sPxojqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.Ehcache" id="_5sPxozqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="addShutdownHookIfRequired" type="void" id="_5sPxpDqREeiP29_qDiwNWQ"/>
+      <signatures name="internalAddDecoratedCache" type="void" id="_5sPxpTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.Ehcache" id="_5sPxpjqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="boolean" id="_5sPxpzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parseConfiguration" type="net.sf.ehcache.config.Configuration" id="_5sPxqDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5sPxqTqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.net.URL" id="_5sPxqjqREeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.io.InputStream" id="_5sPxqzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isNamed" type="boolean" id="_5sPxrDqREeiP29_qDiwNWQ"/>
+      <signatures name="getCacheNames" type="java.lang.String[]" id="_5sPxrTqREeiP29_qDiwNWQ"/>
+      <signatures name="addCache" type="void" id="_5sPxrjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="net.sf.ehcache.Ehcache" id="_5sPxrzqREeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Map">
+      <signatures name="remove" type="java.lang.Object" id="_5sPxsDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPxsTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_5sPxsjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPxszqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_5sPxtDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_5sPxtTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPxtjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_5sPxtzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPxuDqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_5sPxuTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_5sPxujqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPxuzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="values" type="java.util.Collection" id="_5sPxvDqREeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_5sPxvTqREeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_5sPxvjqREeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_5sPxvzqREeiP29_qDiwNWQ"/>
+      <signatures name="replace" type="java.lang.Object" id="_5sPxwDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPxwTqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_5sPxwjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="boolean" id="_5sPxwzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPxxDqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_5sPxxTqREeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_5sPxxjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="void" id="_5sPxxzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiFunction" id="_5sPxyDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="size" type="int" id="_5sPxyTqREeiP29_qDiwNWQ"/>
+      <signatures name="entrySet" type="java.util.Set" id="_5sPxyjqREeiP29_qDiwNWQ"/>
+      <signatures name="putAll" type="void" id="_5sPxyzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_5sPxzDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="putIfAbsent" type="java.lang.Object" id="_5sPxzTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPxzjqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_5sPxzzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="keySet" type="java.util.Set" id="_5sPx0DqREeiP29_qDiwNWQ"/>
+      <signatures name="compute" type="java.lang.Object" id="_5sPx0TqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPx0jqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_5sPx0zqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfAbsent" type="java.lang.Object" id="_5sPx1DqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPx1TqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.Function" id="_5sPx1jqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfPresent" type="java.lang.Object" id="_5sPx1zqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPx2DqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_5sPx2TqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsKey" type="boolean" id="_5sPx2jqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPx2zqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsValue" type="boolean" id="_5sPx3DqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPx3TqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forEach" type="void" id="_5sPx3jqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiConsumer" id="_5sPx3zqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getOrDefault" type="java.lang.Object" id="_5sPx4DqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPx4TqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_5sPx4jqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="merge" type="java.lang.Object" id="_5sPx4zqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPx5DqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_5sPx5TqREeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.function.BiFunction" id="_5sPx5jqREeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ConcurrentMap">
+      <signatures name="remove" type="boolean" id="_5sPx5zqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPx6DqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_5sPx6TqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="boolean" id="_5sPx6jqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPx6zqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_5sPx7DqREeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_5sPx7TqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="java.lang.Object" id="_5sPx7jqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPx7zqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_5sPx8DqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="void" id="_5sPx8TqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiFunction" id="_5sPx8jqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="putIfAbsent" type="java.lang.Object" id="_5sPx8zqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPx9DqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_5sPx9TqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compute" type="java.lang.Object" id="_5sPx9jqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPx9zqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_5sPx-DqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfAbsent" type="java.lang.Object" id="_5sPx-TqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPx-jqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.Function" id="_5sPx-zqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfPresent" type="java.lang.Object" id="_5sPx_DqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPx_TqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_5sPx_jqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forEach" type="void" id="_5sPx_zqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiConsumer" id="_5sPyADqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getOrDefault" type="java.lang.Object" id="_5sPyATqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPyAjqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_5sPyAzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="merge" type="java.lang.Object" id="_5sPyBDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPyBTqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_5sPyBjqREeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.function.BiFunction" id="_5sPyBzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="java.lang.Object" id="_5sPyCDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPyCTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_5sPyCjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPyCzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_5sPyDDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPyDTqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_5sPyDjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_5sPyDzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPyEDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="values" type="java.util.Collection" id="_5sPyETqREeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_5sPyEjqREeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_5sPyEzqREeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_5sPyFDqREeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_5sPyFTqREeiP29_qDiwNWQ"/>
+      <signatures name="entrySet" type="java.util.Set" id="_5sPyFjqREeiP29_qDiwNWQ"/>
+      <signatures name="putAll" type="void" id="_5sPyFzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_5sPyGDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="keySet" type="java.util.Set" id="_5sPyGTqREeiP29_qDiwNWQ"/>
+      <signatures name="containsKey" type="boolean" id="_5sPyGjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPyGzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsValue" type="boolean" id="_5sPyHDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPyHTqREeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Collection">
+      <signatures name="add" type="boolean" id="_5sPyHjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPyHzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_5sPyIDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPyITqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_5sPyIjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPyIzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_5sPyJDqREeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_5sPyJTqREeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_5sPyJjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPyJzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_5sPyKDqREeiP29_qDiwNWQ"/>
+      <signatures name="iterator" type="java.util.Iterator" id="_5sPyKTqREeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_5sPyKjqREeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_5sPyKzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_5sPyLDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toArray" type="java.lang.Object[]" id="_5sPyLTqREeiP29_qDiwNWQ"/>
+      <signatures name="spliterator" type="java.util.Spliterator" id="_5sPyLjqREeiP29_qDiwNWQ"/>
+      <signatures name="addAll" type="boolean" id="_5sPyLzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_5sPyMDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stream" type="java.util.stream.Stream" id="_5sPyMTqREeiP29_qDiwNWQ"/>
+      <signatures name="containsAll" type="boolean" id="_5sPyMjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_5sPyMzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeAll" type="boolean" id="_5sPyNDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_5sPyNTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeIf" type="boolean" id="_5sPyNjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Predicate" id="_5sPyNzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retainAll" type="boolean" id="_5sPyODqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_5sPyOTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parallelStream" type="java.util.stream.Stream" id="_5sPyOjqREeiP29_qDiwNWQ"/>
+      <signatures name="forEach" type="void" id="_5sPyOzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Consumer" id="_5sPyPDqREeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Set">
+      <signatures name="add" type="boolean" id="_5sPyPTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPyPjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_5sPyPzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPyQDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_5sPyQTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPyQjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_5sPyQzqREeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_5sPyRDqREeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_5sPyRTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sPyRjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isEmpty" type="boolean" id="_5sPyRzqREeiP29_qDiwNWQ"/>
+      <signatures name="iterator" type="java.util.Iterator" id="_5sPySDqREeiP29_qDiwNWQ"/>
+      <signatures name="size" type="int" id="_5sPySTqREeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_5sPySjqREeiP29_qDiwNWQ"/>
+      <signatures name="toArray" type="java.lang.Object[]" id="_5sPySzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object[]" id="_5sPyTDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="spliterator" type="java.util.Spliterator" id="_5sPyTTqREeiP29_qDiwNWQ"/>
+      <signatures name="addAll" type="boolean" id="_5sPyTjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_5sPyTzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsAll" type="boolean" id="_5sPyUDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_5sPyUTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="removeAll" type="boolean" id="_5sPyUjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_5sPyUzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retainAll" type="boolean" id="_5sPyVDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Collection" id="_5sPyVTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="stream" type="java.util.stream.Stream" id="_5sPyVjqREeiP29_qDiwNWQ"/>
+      <signatures name="removeIf" type="boolean" id="_5sPyVzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Predicate" id="_5sPyWDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parallelStream" type="java.util.stream.Stream" id="_5sPyWTqREeiP29_qDiwNWQ"/>
+      <signatures name="forEach" type="void" id="_5sPyWjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.Consumer" id="_5sPyWzqREeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="FactoryBean">
+      <signatures name="getObject" type="java.lang.Object" id="_5sheATqREeiP29_qDiwNWQ"/>
+      <signatures name="getObjectType" type="java.lang.Class" id="_5sheAjqREeiP29_qDiwNWQ"/>
+      <signatures name="isSingleton" type="boolean" id="_5sheAzqREeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="DisposableBean">
+      <signatures name="destroy" type="void" id="_5sheBTqREeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IEhCacheManagerFactoryBean_Type">
+      <signatures name="getObject" type="java.lang.Object" id="_5sheBjqREeiP29_qDiwNWQ"/>
+      <signatures name="getObjectType" type="java.lang.Class" id="_5sheBzqREeiP29_qDiwNWQ"/>
+      <signatures name="isSingleton" type="boolean" id="_5sheCDqREeiP29_qDiwNWQ"/>
+      <signatures name="afterPropertiesSet" type="void" id="_5sheCTqREeiP29_qDiwNWQ"/>
+      <signatures name="destroy" type="void" id="_5sheCjqREeiP29_qDiwNWQ"/>
+      <signatures name="setConfigLocation" type="void" id="_5sheCzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.springframework.core.io.Resource" id="_5sheDDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setShared" type="void" id="_5sheDTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_5sheDjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAcceptExisting" type="void" id="_5sheDzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_5sheEDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setCacheManagerName" type="void" id="_5sheETqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5sheEjqREeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Log">
+      <signatures name="debug" type="void" id="_5sheGDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sheGTqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_5sheGjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_5sheGzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sheHDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_5sheHTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sheHjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_5sheHzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sheIDqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_5sheITqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_5sheIjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sheIzqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_5sheJDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_5sheJTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sheJjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_5sheJzqREeiP29_qDiwNWQ"/>
+      <signatures name="info" type="void" id="_5sheKDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sheKTqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_5sheKjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_5sheKzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sheLDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTraceEnabled" type="boolean" id="_5sheLTqREeiP29_qDiwNWQ"/>
+      <signatures name="warn" type="void" id="_5sheLjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sheLzqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_5sheMDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_5sheMTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sheMjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isDebugEnabled" type="boolean" id="_5sheMzqREeiP29_qDiwNWQ"/>
+      <signatures name="fatal" type="void" id="_5sheNDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sheNTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="fatal" type="void" id="_5sheNjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5sheNzqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_5sheODqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isErrorEnabled" type="boolean" id="_5sheOTqREeiP29_qDiwNWQ"/>
+      <signatures name="isFatalEnabled" type="boolean" id="_5sheOjqREeiP29_qDiwNWQ"/>
+      <signatures name="isWarnEnabled" type="boolean" id="_5sheOzqREeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="InputStreamSource">
+      <signatures name="getInputStream" type="java.io.InputStream" id="_5shePDqREeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Resource">
+      <signatures name="getURL" type="java.net.URL" id="_5shePTqREeiP29_qDiwNWQ"/>
+      <signatures name="exists" type="boolean" id="_5shePjqREeiP29_qDiwNWQ"/>
+      <signatures name="isFile" type="boolean" id="_5shePzqREeiP29_qDiwNWQ"/>
+      <signatures name="lastModified" type="long" id="_5sheQDqREeiP29_qDiwNWQ"/>
+      <signatures name="getFile" type="java.io.File" id="_5sheQTqREeiP29_qDiwNWQ"/>
+      <signatures name="isOpen" type="boolean" id="_5sheQjqREeiP29_qDiwNWQ"/>
+      <signatures name="contentLength" type="long" id="_5sheQzqREeiP29_qDiwNWQ"/>
+      <signatures name="getURI" type="java.net.URI" id="_5sheRDqREeiP29_qDiwNWQ"/>
+      <signatures name="isReadable" type="boolean" id="_5sheRTqREeiP29_qDiwNWQ"/>
+      <signatures name="getDescription" type="java.lang.String" id="_5sheRjqREeiP29_qDiwNWQ"/>
+      <signatures name="readableChannel" type="java.nio.channels.ReadableByteChannel" id="_5sheRzqREeiP29_qDiwNWQ"/>
+      <signatures name="createRelative" type="org.springframework.core.io.Resource" id="_5sheSDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5sheSTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getFilename" type="java.lang.String" id="_5sheSjqREeiP29_qDiwNWQ"/>
+      <signatures name="getInputStream" type="java.io.InputStream" id="_5sheSzqREeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="Comparable">
+      <signatures name="compareTo" type="int" id="_5siFEDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5siFETqREeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="CharSequence">
+      <signatures name="toString" type="java.lang.String" id="_5siFEjqREeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_5siFEzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_5siFFDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_5siFFTqREeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_5siFFjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_5siFFzqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_5siFGDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_5siFGTqREeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_5siFGjqREeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IString_Type">
+      <signatures name="compareTo" type="int" id="_5siFGzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5siFHDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_5siFHTqREeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_5siFHjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_5siFHzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_5siFIDqREeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_5siFITqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_5siFIjqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_5siFIzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_5siFJDqREeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_5siFJTqREeiP29_qDiwNWQ"/>
+      <signatures name="lambda$chars$0" type="java.util.Spliterator.OfInt" id="_5siFJjqREeiP29_qDiwNWQ"/>
+      <signatures name="lambda$codePoints$1" type="java.util.Spliterator.OfInt" id="_5siFJzqREeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_5siFKDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_5siFKTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_5siFKjqREeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_5siFKzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5siFLDqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_5siFLTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueOf" type="java.lang.String" id="_5siFLjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_5siFLzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkBounds" type="void" id="_5siFMDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_5siFMTqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_5siFMjqREeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_5siFMzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointAt" type="int" id="_5siFNDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_5siFNTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointBefore" type="int" id="_5siFNjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_5siFNzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointCount" type="int" id="_5siFODqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_5siFOTqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_5siFOjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compareToIgnoreCase" type="int" id="_5siFOzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5siFPDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="concat" type="java.lang.String" id="_5siFPTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5siFPjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contains" type="boolean" id="_5siFPzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_5siFQDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contentEquals" type="boolean" id="_5siFQTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_5siFQjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyValueOf" type="java.lang.String" id="_5siFQzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char[]" id="_5siFRDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="endsWith" type="boolean" id="_5siFRTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5siFRjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equalsIgnoreCase" type="boolean" id="_5siFRzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5siFSDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="format" type="java.lang.String" id="_5siFSTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_5siFSjqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_5siFSzqREeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_5siFTDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBytes" type="void" id="_5siFTTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_5siFTjqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_5siFTzqREeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_5siFUDqREeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_5siFUTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChars" type="void" id="_5siFUjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_5siFUzqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_5siFVDqREeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="char[]" id="_5siFVTqREeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_5siFVjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="indexOfSupplementary" type="int" id="_5siFVzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_5siFWDqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_5siFWTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="intern" type="java.lang.String" id="_5siFWjqREeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_5siFWzqREeiP29_qDiwNWQ"/>
+      <signatures name="join" type="java.lang.String" id="_5siFXDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_5siFXTqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.CharSequence[]" id="_5siFXjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOf" type="int" id="_5siFXzqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_5siFYDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOfSupplementary" type="int" id="_5siFYTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_5siFYjqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_5siFYzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="matches" type="boolean" id="_5siFZDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5siFZTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nonSyncContentEquals" type="boolean" id="_5siFZjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.AbstractStringBuilder" id="_5siFZzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="offsetByCodePoints" type="int" id="_5siFaDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_5siFaTqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_5siFajqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="regionMatches" type="boolean" id="_5siFazqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_5siFbDqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_5siFbTqREeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_5siFbjqREeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_5siFbzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="java.lang.String" id="_5siFcDqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char" id="_5siFcTqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="char" id="_5siFcjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="java.lang.String" id="_5siFczqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5siFdDqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_5siFdTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceFirst" type="java.lang.String" id="_5siFdjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5siFdzqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_5siFeDqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="split" type="java.lang.String[]" id="_5siFeTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5siFejqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="startsWith" type="boolean" id="_5siFezqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_5siFfDqREeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_5siFfTqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="substring" type="java.lang.String" id="_5siFfjqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_5siFfzqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCharArray" type="char[]" id="_5siFgDqREeiP29_qDiwNWQ"/>
+      <signatures name="toLowerCase" type="java.lang.String" id="_5siFgTqREeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_5siFgjqREeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUpperCase" type="java.lang.String" id="_5siFgzqREeiP29_qDiwNWQ"/>
+      <signatures name="trim" type="java.lang.String" id="_5siFhDqREeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

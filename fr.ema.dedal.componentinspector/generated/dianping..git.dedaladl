@@ -1,0 +1,6 @@
+dedal_diagram "dianping..git"
+
+	repositories (
+
+		repository genRepo
+	)

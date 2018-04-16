@@ -1,0 +1,6 @@
+dedal_diagram "fengjiachun.jupiter-spring-support"
+
+	repositories (
+
+		repository genRepo
+	)

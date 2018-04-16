@@ -1,0 +1,6 @@
+dedal_diagram "dubboclub.circuitbreaker"
+
+	repositories (
+
+		repository genRepo
+	)

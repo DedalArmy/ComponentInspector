@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="apereo.java-cas-client">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="apereo.java-cas-client.cas-client-core.src.test.resources.cas20ProxyTicketValidator.xml_config" implements="//@architectureDescriptions[name='apereo.java-cas-client.cas-client-core.src.test.resources.cas20ProxyTicketValidator.xml_spec']">
+    <configComponents name="org.jasig.cas.client.validation.Cas20ProxyTicketValidator" id="_d_XoMDqWEeiP29_qDiwNWQ" realizes="_eAis4DqWEeiP29_qDiwNWQ" implements="_eABvgDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICas20ProxyTicketValidator" type="ICas20ProxyTicketValidator_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyList_Cas20ProxyTicketValidator" direction="REQUIRED" type="IProxyList_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyGrantingTicketStorage_Cas20ProxyTicketValidator" direction="REQUIRED" type="ProxyGrantingTicketStorage"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyRetriever_Cas20ProxyTicketValidator" direction="REQUIRED" type="ProxyRetriever"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_Cas20ProxyTicketValidator" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpURLConnectionFactory_Cas20ProxyTicketValidator" direction="REQUIRED" type="HttpURLConnectionFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_Cas20ProxyTicketValidator" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator" direction="REQUIRED" type="IString_Type"/>
+      <attributes name="acceptAnyProxy" type="boolean"/>
+      <attributes name="allowedProxyChains" type="org.jasig.cas.client.validation.ProxyList"/>
+      <attributes name="allowEmptyProxyChain" type="boolean"/>
+      <attributes name="proxyCallbackUrl" type="java.lang.String"/>
+      <attributes name="proxyGrantingTicketStorage" type="org.jasig.cas.client.proxy.ProxyGrantingTicketStorage"/>
+      <attributes name="proxyRetriever" type="org.jasig.cas.client.proxy.ProxyRetriever"/>
+      <attributes name="logger" type="org.slf4j.Logger"/>
+      <attributes name="urlConnectionFactory" type="org.jasig.cas.client.ssl.HttpURLConnectionFactory"/>
+      <attributes name="casServerUrlPrefix" type="java.lang.String"/>
+      <attributes name="renew" type="boolean"/>
+      <attributes name="customParameters" type="java.util.Map"/>
+      <attributes name="encoding" type="java.lang.String"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="apereo.java-cas-client.cas-client-core.src.test.resources.cas20ProxyTicketValidator.xml_asm" instantiates="//@architectureDescriptions[name='apereo.java-cas-client.cas-client-core.src.test.resources.cas20ProxyTicketValidator.xml_config']">
+    <assmComponents name="proxyTicketValidator" id="_d_XoMTqWEeiP29_qDiwNWQ" instantiates="_d_XoMDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICas20ProxyTicketValidator_proxyTicketValidator" type="ICas20ProxyTicketValidator_Type" instantiates="ICas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyList_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="IProxyList_Type" instantiates="IProxyList_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="Comparable" instantiates="IComparable_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="IString_Type" instantiates="IString_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyGrantingTicketStorage_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="ProxyGrantingTicketStorage" instantiates="IProxyGrantingTicketStorage_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyRetriever_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="ProxyRetriever" instantiates="IProxyRetriever_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="Logger" instantiates="ILogger_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpURLConnectionFactory_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="HttpURLConnectionFactory" instantiates="IHttpURLConnectionFactory_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="Comparable" instantiates="IComparable_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="IString_Type" instantiates="IString_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="Map" instantiates="IMap_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="Comparable" instantiates="IComparable_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="IString_Type" instantiates="IString_Cas20ProxyTicketValidator"/>
+    </assmComponents>
+    <assmComponents name="proxyTicketValidatorWithAllowAnyProxy" id="_d_XoMjqWEeiP29_qDiwNWQ" instantiates="_d_XoMDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" type="ICas20ProxyTicketValidator_Type" instantiates="ICas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyList_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="IProxyList_Type" instantiates="IProxyList_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="Comparable" instantiates="IComparable_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="IString_Type" instantiates="IString_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyGrantingTicketStorage_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="ProxyGrantingTicketStorage" instantiates="IProxyGrantingTicketStorage_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyRetriever_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="ProxyRetriever" instantiates="IProxyRetriever_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="Logger" instantiates="ILogger_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpURLConnectionFactory_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="HttpURLConnectionFactory" instantiates="IHttpURLConnectionFactory_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="Comparable" instantiates="IComparable_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="IString_Type" instantiates="IString_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="Map" instantiates="IMap_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="Comparable" instantiates="IComparable_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="IString_Type" instantiates="IString_Cas20ProxyTicketValidator"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="apereo.java-cas-client.cas-client-core.src.test.resources.cas20ProxyTicketValidator.xml_spec">
+    <specComponents name="Cas20ProxyTicketValidator_role" id="_eAis4DqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICas20ProxyTicketValidatorCas20ProxyTicketValidator_role" type="ICas20ProxyTicketValidator_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyListCas20ProxyTicketValidator_role" direction="REQUIRED" type="IProxyList_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCas20ProxyTicketValidator_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableCas20ProxyTicketValidator_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceCas20ProxyTicketValidator_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringCas20ProxyTicketValidator_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyGrantingTicketStorageCas20ProxyTicketValidator_role" direction="REQUIRED" type="ProxyGrantingTicketStorage"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCas20ProxyTicketValidator_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyRetrieverCas20ProxyTicketValidator_role" direction="REQUIRED" type="ProxyRetriever"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerCas20ProxyTicketValidator_role" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCas20ProxyTicketValidator_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpURLConnectionFactoryCas20ProxyTicketValidator_role" direction="REQUIRED" type="HttpURLConnectionFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCas20ProxyTicketValidator_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableCas20ProxyTicketValidator_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceCas20ProxyTicketValidator_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringCas20ProxyTicketValidator_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapCas20ProxyTicketValidator_role" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCas20ProxyTicketValidator_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableCas20ProxyTicketValidator_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceCas20ProxyTicketValidator_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringCas20ProxyTicketValidator_role" direction="REQUIRED" type="IString_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="apereo.java-cas-client.cas-client-core.target.test-classes.cas20ProxyTicketValidator.xml_config" implements="//@architectureDescriptions[name='apereo.java-cas-client.cas-client-core.target.test-classes.cas20ProxyTicketValidator.xml_spec']">
+    <configComponents name="org.jasig.cas.client.validation.Cas20ProxyTicketValidator" id="_eA5SMDqWEeiP29_qDiwNWQ" realizes="_eA58cTqWEeiP29_qDiwNWQ" implements="_eA5SMzqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICas20ProxyTicketValidator" type="ICas20ProxyTicketValidator_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyList_Cas20ProxyTicketValidator" direction="REQUIRED" type="IProxyList_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyGrantingTicketStorage_Cas20ProxyTicketValidator" direction="REQUIRED" type="ProxyGrantingTicketStorage"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyRetriever_Cas20ProxyTicketValidator" direction="REQUIRED" type="ProxyRetriever"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_Cas20ProxyTicketValidator" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpURLConnectionFactory_Cas20ProxyTicketValidator" direction="REQUIRED" type="HttpURLConnectionFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_Cas20ProxyTicketValidator" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator" direction="REQUIRED" type="IString_Type"/>
+      <attributes name="acceptAnyProxy" type="boolean"/>
+      <attributes name="allowedProxyChains" type="org.jasig.cas.client.validation.ProxyList"/>
+      <attributes name="allowEmptyProxyChain" type="boolean"/>
+      <attributes name="proxyCallbackUrl" type="java.lang.String"/>
+      <attributes name="proxyGrantingTicketStorage" type="org.jasig.cas.client.proxy.ProxyGrantingTicketStorage"/>
+      <attributes name="proxyRetriever" type="org.jasig.cas.client.proxy.ProxyRetriever"/>
+      <attributes name="logger" type="org.slf4j.Logger"/>
+      <attributes name="urlConnectionFactory" type="org.jasig.cas.client.ssl.HttpURLConnectionFactory"/>
+      <attributes name="casServerUrlPrefix" type="java.lang.String"/>
+      <attributes name="renew" type="boolean"/>
+      <attributes name="customParameters" type="java.util.Map"/>
+      <attributes name="encoding" type="java.lang.String"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="apereo.java-cas-client.cas-client-core.target.test-classes.cas20ProxyTicketValidator.xml_asm" instantiates="//@architectureDescriptions[name='apereo.java-cas-client.cas-client-core.target.test-classes.cas20ProxyTicketValidator.xml_config']">
+    <assmComponents name="proxyTicketValidator" id="_eA5SMTqWEeiP29_qDiwNWQ" instantiates="_eA5SMDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICas20ProxyTicketValidator_proxyTicketValidator" type="ICas20ProxyTicketValidator_Type" instantiates="ICas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyList_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="IProxyList_Type" instantiates="IProxyList_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="Comparable" instantiates="IComparable_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="IString_Type" instantiates="IString_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyGrantingTicketStorage_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="ProxyGrantingTicketStorage" instantiates="IProxyGrantingTicketStorage_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyRetriever_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="ProxyRetriever" instantiates="IProxyRetriever_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="Logger" instantiates="ILogger_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpURLConnectionFactory_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="HttpURLConnectionFactory" instantiates="IHttpURLConnectionFactory_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="Comparable" instantiates="IComparable_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="IString_Type" instantiates="IString_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="Map" instantiates="IMap_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="Comparable" instantiates="IComparable_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_proxyTicketValidator" direction="REQUIRED" type="IString_Type" instantiates="IString_Cas20ProxyTicketValidator"/>
+    </assmComponents>
+    <assmComponents name="proxyTicketValidatorWithAllowAnyProxy" id="_eA5SMjqWEeiP29_qDiwNWQ" instantiates="_eA5SMDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" type="ICas20ProxyTicketValidator_Type" instantiates="ICas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyList_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="IProxyList_Type" instantiates="IProxyList_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="Comparable" instantiates="IComparable_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="IString_Type" instantiates="IString_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyGrantingTicketStorage_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="ProxyGrantingTicketStorage" instantiates="IProxyGrantingTicketStorage_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyRetriever_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="ProxyRetriever" instantiates="IProxyRetriever_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="Logger" instantiates="ILogger_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpURLConnectionFactory_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="HttpURLConnectionFactory" instantiates="IHttpURLConnectionFactory_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="Comparable" instantiates="IComparable_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="IString_Type" instantiates="IString_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="Map" instantiates="IMap_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" instantiates="null_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="Comparable" instantiates="IComparable_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="CharSequence" instantiates="ICharSequence_Cas20ProxyTicketValidator"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_proxyTicketValidatorWithAllowAnyProxy" direction="REQUIRED" type="IString_Type" instantiates="IString_Cas20ProxyTicketValidator"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="apereo.java-cas-client.cas-client-core.target.test-classes.cas20ProxyTicketValidator.xml_spec">
+    <specComponents name="Cas20ProxyTicketValidator_role" id="_eA58cTqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICas20ProxyTicketValidatorCas20ProxyTicketValidator_role" type="ICas20ProxyTicketValidator_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyListCas20ProxyTicketValidator_role" direction="REQUIRED" type="IProxyList_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCas20ProxyTicketValidator_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableCas20ProxyTicketValidator_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceCas20ProxyTicketValidator_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringCas20ProxyTicketValidator_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyGrantingTicketStorageCas20ProxyTicketValidator_role" direction="REQUIRED" type="ProxyGrantingTicketStorage"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCas20ProxyTicketValidator_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyRetrieverCas20ProxyTicketValidator_role" direction="REQUIRED" type="ProxyRetriever"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILoggerCas20ProxyTicketValidator_role" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCas20ProxyTicketValidator_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpURLConnectionFactoryCas20ProxyTicketValidator_role" direction="REQUIRED" type="HttpURLConnectionFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCas20ProxyTicketValidator_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableCas20ProxyTicketValidator_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceCas20ProxyTicketValidator_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringCas20ProxyTicketValidator_role" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMapCas20ProxyTicketValidator_role" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="nullCas20ProxyTicketValidator_role" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparableCas20ProxyTicketValidator_role" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequenceCas20ProxyTicketValidator_role" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IStringCas20ProxyTicketValidator_role" direction="REQUIRED" type="IString_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" id="_eABvgDqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" type="ICas20ProxyTicketValidator_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyList_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="IProxyList_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyGrantingTicketStorage_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="ProxyGrantingTicketStorage"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyRetriever_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="ProxyRetriever"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpURLConnectionFactory_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="HttpURLConnectionFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="IString_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" id="_eA5SMzqWEeiP29_qDiwNWQ">
+      <compInterfaces xsi:type="dedal:Interface" name="ICas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" type="ICas20ProxyTicketValidator_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyList_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="IProxyList_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyGrantingTicketStorage_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="ProxyGrantingTicketStorage"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IProxyRetriever_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="ProxyRetriever"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ILogger_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="Logger"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IHttpURLConnectionFactory_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="HttpURLConnectionFactory"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="IString_Type"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IMap_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="Map"/>
+      <compInterfaces xsi:type="dedal:Interface" name="null_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IComparable_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="Comparable"/>
+      <compInterfaces xsi:type="dedal:Interface" name="ICharSequence_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="CharSequence"/>
+      <compInterfaces xsi:type="dedal:Interface" name="IString_Cas20ProxyTicketValidator_org_jasig_cas_client_validation_Cas20ProxyTicketValidator_Type" direction="REQUIRED" type="IString_Type"/>
+    </components>
+    <interfaceTypes name="ICas20ProxyTicketValidator_Type">
+      <signatures name="validate" type="org.jasig.cas.client.validation.Assertion" id="_eAiF0DqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiF0TqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiF0jqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEncoding" type="java.lang.String" id="_eAiF0zqWEeiP29_qDiwNWQ"/>
+      <signatures name="setEncoding" type="void" id="_eAiF1DqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiF1TqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="encodeUrl" type="java.lang.String" id="_eAiF1jqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiF1zqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getUrlSuffix" type="java.lang.String" id="_eAiF2DqWEeiP29_qDiwNWQ"/>
+      <signatures name="isRenew" type="boolean" id="_eAiF2TqWEeiP29_qDiwNWQ"/>
+      <signatures name="setRenew" type="void" id="_eAiF2jqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_eAiF2zqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retrieveResponseFromServer" type="java.lang.String" id="_eAiF3DqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.net.URL" id="_eAiF3TqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiF3jqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parseResponseFromServer" type="org.jasig.cas.client.validation.Assertion" id="_eAiF3zqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiF4DqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCustomParameters" type="java.util.Map" id="_eAiF4TqWEeiP29_qDiwNWQ"/>
+      <signatures name="populateUrlAttributeMap" type="void" id="_eAiF4jqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_eAiF4zqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="constructValidationUrl" type="java.lang.String" id="_eAiF5DqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiF5TqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiF5jqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setCustomParameters" type="void" id="_eAiF5zqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_eAiF6DqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getURLConnectionFactory" type="org.jasig.cas.client.ssl.HttpURLConnectionFactory" id="_eAiF6TqWEeiP29_qDiwNWQ"/>
+      <signatures name="getCasServerUrlPrefix" type="java.lang.String" id="_eAiF6jqWEeiP29_qDiwNWQ"/>
+      <signatures name="setURLConnectionFactory" type="void" id="_eAiF6zqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.jasig.cas.client.ssl.HttpURLConnectionFactory" id="_eAiF7DqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parseProxyGrantingTicketFromResponse" type="java.lang.String" id="_eAiF7TqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiF7jqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parseAuthenticationFailureFromResponse" type="java.lang.String" id="_eAiF7zqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiF8DqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setProxyCallbackUrl" type="void" id="_eAiF8TqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiF8jqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProxyGrantingTicketStorage" type="org.jasig.cas.client.proxy.ProxyGrantingTicketStorage" id="_eAiF8zqWEeiP29_qDiwNWQ"/>
+      <signatures name="setProxyGrantingTicketStorage" type="void" id="_eAiF9DqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.jasig.cas.client.proxy.ProxyGrantingTicketStorage" id="_eAiF9TqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProxyCallbackUrl" type="java.lang.String" id="_eAiF9jqWEeiP29_qDiwNWQ"/>
+      <signatures name="customParseResponse" type="void" id="_eAiF9zqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiF-DqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.jasig.cas.client.validation.Assertion" id="_eAiF-TqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setProxyRetriever" type="void" id="_eAiF-jqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.jasig.cas.client.proxy.ProxyRetriever" id="_eAiF-zqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProxyRetriever" type="org.jasig.cas.client.proxy.ProxyRetriever" id="_eAiF_DqWEeiP29_qDiwNWQ"/>
+      <signatures name="parsePrincipalFromResponse" type="java.lang.String" id="_eAiF_TqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiF_jqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="extractCustomAttributes" type="java.util.Map" id="_eAiF_zqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGADqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAcceptAnyProxy" type="boolean" id="_eAiGATqWEeiP29_qDiwNWQ"/>
+      <signatures name="parseProxiesFromResponse" type="java.util.List" id="_eAiGAjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGAzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getAllowedProxyChains" type="org.jasig.cas.client.validation.ProxyList" id="_eAiGBDqWEeiP29_qDiwNWQ"/>
+      <signatures name="setAcceptAnyProxy" type="void" id="_eAiGBTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_eAiGBjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setAllowedProxyChains" type="void" id="_eAiGBzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.jasig.cas.client.validation.ProxyList" id="_eAiGCDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isAllowEmptyProxyChain" type="boolean" id="_eAiGCTqWEeiP29_qDiwNWQ"/>
+      <signatures name="setAllowEmptyProxyChain" type="void" id="_eAiGCjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_eAiGCzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="ICas20ServiceTicketValidator_Type">
+      <signatures name="validate" type="org.jasig.cas.client.validation.Assertion" id="_eAiGDDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGDTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiGDjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEncoding" type="java.lang.String" id="_eAiGDzqWEeiP29_qDiwNWQ"/>
+      <signatures name="setEncoding" type="void" id="_eAiGEDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGETqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="encodeUrl" type="java.lang.String" id="_eAiGEjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGEzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getUrlSuffix" type="java.lang.String" id="_eAiGFDqWEeiP29_qDiwNWQ"/>
+      <signatures name="isRenew" type="boolean" id="_eAiGFTqWEeiP29_qDiwNWQ"/>
+      <signatures name="setRenew" type="void" id="_eAiGFjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_eAiGFzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retrieveResponseFromServer" type="java.lang.String" id="_eAiGGDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.net.URL" id="_eAiGGTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiGGjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parseResponseFromServer" type="org.jasig.cas.client.validation.Assertion" id="_eAiGGzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGHDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCustomParameters" type="java.util.Map" id="_eAiGHTqWEeiP29_qDiwNWQ"/>
+      <signatures name="populateUrlAttributeMap" type="void" id="_eAiGHjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_eAiGHzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="constructValidationUrl" type="java.lang.String" id="_eAiGIDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGITqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiGIjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setCustomParameters" type="void" id="_eAiGIzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_eAiGJDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getURLConnectionFactory" type="org.jasig.cas.client.ssl.HttpURLConnectionFactory" id="_eAiGJTqWEeiP29_qDiwNWQ"/>
+      <signatures name="getCasServerUrlPrefix" type="java.lang.String" id="_eAiGJjqWEeiP29_qDiwNWQ"/>
+      <signatures name="setURLConnectionFactory" type="void" id="_eAiGJzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.jasig.cas.client.ssl.HttpURLConnectionFactory" id="_eAiGKDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parseProxyGrantingTicketFromResponse" type="java.lang.String" id="_eAiGKTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGKjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parseAuthenticationFailureFromResponse" type="java.lang.String" id="_eAiGKzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGLDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setProxyCallbackUrl" type="void" id="_eAiGLTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGLjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProxyGrantingTicketStorage" type="org.jasig.cas.client.proxy.ProxyGrantingTicketStorage" id="_eAiGLzqWEeiP29_qDiwNWQ"/>
+      <signatures name="setProxyGrantingTicketStorage" type="void" id="_eAiGMDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.jasig.cas.client.proxy.ProxyGrantingTicketStorage" id="_eAiGMTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProxyCallbackUrl" type="java.lang.String" id="_eAiGMjqWEeiP29_qDiwNWQ"/>
+      <signatures name="customParseResponse" type="void" id="_eAiGMzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGNDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="org.jasig.cas.client.validation.Assertion" id="_eAiGNTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setProxyRetriever" type="void" id="_eAiGNjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.jasig.cas.client.proxy.ProxyRetriever" id="_eAiGNzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getProxyRetriever" type="org.jasig.cas.client.proxy.ProxyRetriever" id="_eAiGODqWEeiP29_qDiwNWQ"/>
+      <signatures name="parsePrincipalFromResponse" type="java.lang.String" id="_eAiGOTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGOjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="extractCustomAttributes" type="java.util.Map" id="_eAiGOzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGPDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IAbstractCasProtocolUrlBasedTicketValidator_Type">
+      <signatures name="validate" type="org.jasig.cas.client.validation.Assertion" id="_eAiGPTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGPjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiGPzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEncoding" type="java.lang.String" id="_eAiGQDqWEeiP29_qDiwNWQ"/>
+      <signatures name="setEncoding" type="void" id="_eAiGQTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGQjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="encodeUrl" type="java.lang.String" id="_eAiGQzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGRDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getUrlSuffix" type="java.lang.String" id="_eAiGRTqWEeiP29_qDiwNWQ"/>
+      <signatures name="isRenew" type="boolean" id="_eAiGRjqWEeiP29_qDiwNWQ"/>
+      <signatures name="setRenew" type="void" id="_eAiGRzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_eAiGSDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retrieveResponseFromServer" type="java.lang.String" id="_eAiGSTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.net.URL" id="_eAiGSjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiGSzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parseResponseFromServer" type="org.jasig.cas.client.validation.Assertion" id="_eAiGTDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGTTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCustomParameters" type="java.util.Map" id="_eAiGTjqWEeiP29_qDiwNWQ"/>
+      <signatures name="populateUrlAttributeMap" type="void" id="_eAiGTzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_eAiGUDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="constructValidationUrl" type="java.lang.String" id="_eAiGUTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGUjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiGUzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setCustomParameters" type="void" id="_eAiGVDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_eAiGVTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getURLConnectionFactory" type="org.jasig.cas.client.ssl.HttpURLConnectionFactory" id="_eAiGVjqWEeiP29_qDiwNWQ"/>
+      <signatures name="getCasServerUrlPrefix" type="java.lang.String" id="_eAiGVzqWEeiP29_qDiwNWQ"/>
+      <signatures name="setURLConnectionFactory" type="void" id="_eAiGWDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.jasig.cas.client.ssl.HttpURLConnectionFactory" id="_eAiGWTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="TicketValidator">
+      <signatures name="validate" type="org.jasig.cas.client.validation.Assertion" id="_eAiGWjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGWzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiGXDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IAbstractUrlBasedTicketValidator_Type">
+      <signatures name="validate" type="org.jasig.cas.client.validation.Assertion" id="_eAiGXTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGXjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiGXzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getEncoding" type="java.lang.String" id="_eAiGYDqWEeiP29_qDiwNWQ"/>
+      <signatures name="setEncoding" type="void" id="_eAiGYTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGYjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="encodeUrl" type="java.lang.String" id="_eAiGYzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGZDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getUrlSuffix" type="java.lang.String" id="_eAiGZTqWEeiP29_qDiwNWQ"/>
+      <signatures name="isRenew" type="boolean" id="_eAiGZjqWEeiP29_qDiwNWQ"/>
+      <signatures name="setRenew" type="void" id="_eAiGZzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="boolean" id="_eAiGaDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retrieveResponseFromServer" type="java.lang.String" id="_eAiGaTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.net.URL" id="_eAiGajqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiGazqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="parseResponseFromServer" type="org.jasig.cas.client.validation.Assertion" id="_eAiGbDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGbTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getCustomParameters" type="java.util.Map" id="_eAiGbjqWEeiP29_qDiwNWQ"/>
+      <signatures name="populateUrlAttributeMap" type="void" id="_eAiGbzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_eAiGcDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="constructValidationUrl" type="java.lang.String" id="_eAiGcTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGcjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiGczqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="setCustomParameters" type="void" id="_eAiGdDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_eAiGdTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getURLConnectionFactory" type="org.jasig.cas.client.ssl.HttpURLConnectionFactory" id="_eAiGdjqWEeiP29_qDiwNWQ"/>
+      <signatures name="getCasServerUrlPrefix" type="java.lang.String" id="_eAiGdzqWEeiP29_qDiwNWQ"/>
+      <signatures name="setURLConnectionFactory" type="void" id="_eAiGeDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.jasig.cas.client.ssl.HttpURLConnectionFactory" id="_eAiGeTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="IProxyList_Type">
+      <signatures name="toString" type="java.lang.String" id="_eAiGfTqWEeiP29_qDiwNWQ"/>
+      <signatures name="contains" type="boolean" id="_eAiGfjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String[]" id="_eAiGfzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Comparable">
+      <signatures name="compareTo" type="int" id="_eAiGgDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiGgTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="CharSequence">
+      <signatures name="toString" type="java.lang.String" id="_eAiGgjqWEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_eAiGgzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_eAiGhDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_eAiGhTqWEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_eAiGhjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_eAiGhzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_eAiGiDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_eAiGiTqWEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_eAiGijqWEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="IString_Type">
+      <signatures name="compareTo" type="int" id="_eAiGizqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiGjDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_eAiGjTqWEeiP29_qDiwNWQ"/>
+      <signatures name="charAt" type="char" id="_eAiGjjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_eAiGjzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="length" type="int" id="_eAiGkDqWEeiP29_qDiwNWQ"/>
+      <signatures name="subSequence" type="java.lang.CharSequence" id="_eAiGkTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_eAiGkjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_eAiGkzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="chars" type="java.util.stream.IntStream" id="_eAiGlDqWEeiP29_qDiwNWQ"/>
+      <signatures name="codePoints" type="java.util.stream.IntStream" id="_eAiGlTqWEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$chars$0" type="java.util.Spliterator.OfInt" id="_eAiGljqWEeiP29_qDiwNWQ"/>
+      <signatures name="lambda$codePoints$1" type="java.util.Spliterator.OfInt" id="_eAiGlzqWEeiP29_qDiwNWQ"/>
+      <signatures name="equals" type="boolean" id="_eAiGmDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiGmTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="hashCode" type="int" id="_eAiGmjqWEeiP29_qDiwNWQ"/>
+      <signatures name="indexOf" type="int" id="_eAiGmzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGnDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_eAiGnTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="valueOf" type="java.lang.String" id="_eAiGnjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_eAiGnzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="checkBounds" type="void" id="_eAiGoDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="byte[]" id="_eAiGoTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_eAiGojqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_eAiGozqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointAt" type="int" id="_eAiGpDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_eAiGpTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointBefore" type="int" id="_eAiGpjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_eAiGpzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="codePointCount" type="int" id="_eAiGqDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_eAiGqTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_eAiGqjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="compareToIgnoreCase" type="int" id="_eAiGqzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGrDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="concat" type="java.lang.String" id="_eAiGrTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGrjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contains" type="boolean" id="_eAiGrzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_eAiGsDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="contentEquals" type="boolean" id="_eAiGsTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_eAiGsjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="copyValueOf" type="java.lang.String" id="_eAiGszqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char[]" id="_eAiGtDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="endsWith" type="boolean" id="_eAiGtTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGtjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equalsIgnoreCase" type="boolean" id="_eAiGtzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiGuDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="format" type="java.lang.String" id="_eAiGuTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_eAiGujqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiGuzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_eAiGvDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getBytes" type="void" id="_eAiGvTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_eAiGvjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_eAiGvzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="byte[]" id="_eAiGwDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_eAiGwTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getChars" type="void" id="_eAiGwjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_eAiGwzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_eAiGxDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="char[]" id="_eAiGxTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_eAiGxjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="indexOfSupplementary" type="int" id="_eAiGxzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_eAiGyDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_eAiGyTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="intern" type="java.lang.String" id="_eAiGyjqWEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_eAiGyzqWEeiP29_qDiwNWQ"/>
+      <signatures name="join" type="java.lang.String" id="_eAiGzDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.CharSequence" id="_eAiGzTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.CharSequence[]" id="_eAiGzjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOf" type="int" id="_eAiGzzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_eAiG0DqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="lastIndexOfSupplementary" type="int" id="_eAiG0TqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_eAiG0jqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_eAiG0zqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="matches" type="boolean" id="_eAiG1DqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiG1TqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="nonSyncContentEquals" type="boolean" id="_eAiG1jqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.AbstractStringBuilder" id="_eAiG1zqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="offsetByCodePoints" type="int" id="_eAiG2DqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_eAiG2TqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_eAiG2jqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="regionMatches" type="boolean" id="_eAiG2zqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_eAiG3DqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiG3TqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="int" id="_eAiG3jqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="int" id="_eAiG3zqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="java.lang.String" id="_eAiG4DqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="char" id="_eAiG4TqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="char" id="_eAiG4jqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="java.lang.String" id="_eAiG4zqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiG5DqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiG5TqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceFirst" type="java.lang.String" id="_eAiG5jqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiG5zqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiG6DqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="split" type="java.lang.String[]" id="_eAiG6TqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiG6jqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="startsWith" type="boolean" id="_eAiG6zqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiG7DqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="int" id="_eAiG7TqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="substring" type="java.lang.String" id="_eAiG7jqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="int" id="_eAiG7zqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toCharArray" type="char[]" id="_eAiG8DqWEeiP29_qDiwNWQ"/>
+      <signatures name="toLowerCase" type="java.lang.String" id="_eAiG8TqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Locale" id="_eAiG8jqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="toUpperCase" type="java.lang.String" id="_eAiG8zqWEeiP29_qDiwNWQ"/>
+      <signatures name="trim" type="java.lang.String" id="_eAiG9DqWEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ProxyGrantingTicketStorage">
+      <signatures name="save" type="void" id="_eAiHADqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHATqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHAjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="retrieve" type="java.lang.String" id="_eAiHAzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHBDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="cleanUp" type="void" id="_eAiHBTqWEeiP29_qDiwNWQ"/>
+    </interfaceTypes>
+    <interfaceTypes name="ProxyRetriever">
+      <signatures name="getProxyTicketIdFor" type="java.lang.String" id="_eAiHBjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHBzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHCDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Logger">
+      <signatures name="getName" type="java.lang.String" id="_eAiHCTqWEeiP29_qDiwNWQ"/>
+      <signatures name="debug" type="void" id="_eAiHCjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHCzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHDDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_eAiHDTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_eAiHDjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHDzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHEDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_eAiHETqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_eAiHEjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_eAiHEzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHFDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_eAiHFTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHFjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHFzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_eAiHGDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_eAiHGTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHGjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHGzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_eAiHHDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHHTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHHjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_eAiHHzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_eAiHIDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHITqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_eAiHIjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_eAiHIzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHJDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_eAiHJTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_eAiHJjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHJzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_eAiHKDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_eAiHKTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="debug" type="void" id="_eAiHKjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHKzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_eAiHLDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_eAiHLTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHLjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHLzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_eAiHMDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHMTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHMjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_eAiHMzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_eAiHNDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHNTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHNjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_eAiHNzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_eAiHODqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_eAiHOTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHOjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHOzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_eAiHPDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_eAiHPTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHPjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHPzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_eAiHQDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_eAiHQTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHQjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_eAiHQzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHRDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_eAiHRTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_eAiHRjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHRzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_eAiHSDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_eAiHSTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_eAiHSjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHSzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_eAiHTDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="error" type="void" id="_eAiHTTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHTjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_eAiHTzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_eAiHUDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHUTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_eAiHUjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_eAiHUzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHVDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_eAiHVTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_eAiHVjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHVzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_eAiHWDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_eAiHWTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_eAiHWjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHWzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_eAiHXDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_eAiHXTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHXjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHXzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_eAiHYDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_eAiHYTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_eAiHYjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHYzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_eAiHZDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHZTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHZjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_eAiHZzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHaDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHaTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_eAiHajqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_eAiHazqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHbDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHbTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_eAiHbjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="trace" type="void" id="_eAiHbzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHcDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHcTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_eAiHcjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_eAiHczqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHdDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isInfoEnabled" type="boolean" id="_eAiHdTqWEeiP29_qDiwNWQ"/>
+      <signatures name="info" type="void" id="_eAiHdjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHdzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHeDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_eAiHeTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_eAiHejqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHezqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHfDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_eAiHfTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_eAiHfjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHfzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_eAiHgDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_eAiHgTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_eAiHgjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHgzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_eAiHhDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_eAiHhTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHhjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_eAiHhzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHiDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_eAiHiTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_eAiHijqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHizqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHjDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_eAiHjTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_eAiHjjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_eAiHjzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHkDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHkTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_eAiHkjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_eAiHkzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHlDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHlTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="info" type="void" id="_eAiHljqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHlzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_eAiHmDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isTraceEnabled" type="boolean" id="_eAiHmTqWEeiP29_qDiwNWQ"/>
+      <signatures name="isTraceEnabled" type="boolean" id="_eAiHmjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHmzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_eAiHnDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHnTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHnjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Throwable" id="_eAiHnzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_eAiHoDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHoTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHojqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object[]" id="_eAiHozqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_eAiHpDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHpTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Throwable" id="_eAiHpjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_eAiHpzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHqDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_eAiHqTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_eAiHqjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_eAiHqzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHrDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object[]" id="_eAiHrTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_eAiHrjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHrzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_eAiHsDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_eAiHsTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.String" id="_eAiHsjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_eAiHszqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHtDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHtTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_eAiHtjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg3" type="java.lang.Object" id="_eAiHtzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_eAiHuDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHuTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHujqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="warn" type="void" id="_eAiHuzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHvDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.String" id="_eAiHvTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_eAiHvjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isDebugEnabled" type="boolean" id="_eAiHvzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHwDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isDebugEnabled" type="boolean" id="_eAiHwTqWEeiP29_qDiwNWQ"/>
+      <signatures name="isErrorEnabled" type="boolean" id="_eAiHwjqWEeiP29_qDiwNWQ"/>
+      <signatures name="isErrorEnabled" type="boolean" id="_eAiHwzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHxDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="isWarnEnabled" type="boolean" id="_eAiHxTqWEeiP29_qDiwNWQ"/>
+      <signatures name="isWarnEnabled" type="boolean" id="_eAiHxjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="org.slf4j.Marker" id="_eAiHxzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="HttpURLConnectionFactory">
+      <signatures name="buildHttpURLConnection" type="java.net.HttpURLConnection" id="_eAiHyDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.net.URLConnection" id="_eAiHyTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+    <interfaceTypes name="Map">
+      <signatures name="remove" type="java.lang.Object" id="_eAiISjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiISzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="remove" type="boolean" id="_eAiITDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiITTqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_eAiITjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="get" type="java.lang.Object" id="_eAiITzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiIUDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="put" type="java.lang.Object" id="_eAiIUTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiIUjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_eAiIUzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="equals" type="boolean" id="_eAiIVDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiIVTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="values" type="java.util.Collection" id="_eAiIVjqWEeiP29_qDiwNWQ"/>
+      <signatures name="hashCode" type="int" id="_eAiIVzqWEeiP29_qDiwNWQ"/>
+      <signatures name="clear" type="void" id="_eAiIWDqWEeiP29_qDiwNWQ"/>
+      <signatures name="isEmpty" type="boolean" id="_eAiIWTqWEeiP29_qDiwNWQ"/>
+      <signatures name="replace" type="java.lang.Object" id="_eAiIWjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiIWzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_eAiIXDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replace" type="boolean" id="_eAiIXTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiIXjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_eAiIXzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.lang.Object" id="_eAiIYDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="replaceAll" type="void" id="_eAiIYTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiFunction" id="_eAiIYjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="size" type="int" id="_eAiIYzqWEeiP29_qDiwNWQ"/>
+      <signatures name="entrySet" type="java.util.Set" id="_eAiIZDqWEeiP29_qDiwNWQ"/>
+      <signatures name="putAll" type="void" id="_eAiIZTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.Map" id="_eAiIZjqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="putIfAbsent" type="java.lang.Object" id="_eAiIZzqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiIaDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_eAiIaTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="keySet" type="java.util.Set" id="_eAiIajqWEeiP29_qDiwNWQ"/>
+      <signatures name="compute" type="java.lang.Object" id="_eAiIazqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiIbDqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_eAiIbTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfAbsent" type="java.lang.Object" id="_eAiIbjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiIbzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.Function" id="_eAiIcDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="computeIfPresent" type="java.lang.Object" id="_eAiIcTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiIcjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.util.function.BiFunction" id="_eAiIczqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsKey" type="boolean" id="_eAiIdDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiIdTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="containsValue" type="boolean" id="_eAiIdjqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiIdzqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="forEach" type="void" id="_eAiIeDqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.util.function.BiConsumer" id="_eAiIeTqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="getOrDefault" type="java.lang.Object" id="_eAiIejqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiIezqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_eAiIfDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+      <signatures name="merge" type="java.lang.Object" id="_eAiIfTqWEeiP29_qDiwNWQ">
+        <parameters name="arg0" type="java.lang.Object" id="_eAiIfjqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg1" type="java.lang.Object" id="_eAiIfzqWEeiP29_qDiwNWQ"/>
+        <parameters name="arg2" type="java.util.function.BiFunction" id="_eAiIgDqWEeiP29_qDiwNWQ"/>
+      </signatures>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>
