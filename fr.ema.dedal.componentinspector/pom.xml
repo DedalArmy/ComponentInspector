@@ -14,8 +14,11 @@
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
+
       </plugin>
     </plugins>
+    
+    
   </build>
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.eclipse.emf.codegen.ecore/ui -->

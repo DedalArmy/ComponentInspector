@@ -64,7 +64,7 @@ public class Main {
 		String libPath = "";
 		String singlePath = "";
 		String sdslPath = "";
-		String out = "./generated_metrics_results/metrics"+date.toString().replaceAll(":", "_").replaceAll(" ", "")+".csv";
+		String out = "/generated_metrics_results/metrics"+date.toString().replaceAll(":", "_").replaceAll(" ", "")+".csv";
 		
 		laucnhReconstruction(args, libPath, singlePath, sdslPath, out);
 	}

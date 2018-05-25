@@ -27,14 +27,14 @@ import dedal.DedalPackage;
 
 public class SdslInspector {
 
-	static final String TRANSFORMATION_URI = "transforms/springToDedal.qvto";
+	static final String TRANSFORMATION_URI = "fr.ema.dedal.componentinspector/transforms/springToDedal.qvto";
 	static final Logger logger = Logger.getLogger(SdslInspector.class);
 
 	private SdslInspector() {}
 
 	public static List<EObject> extractDedalArtifacts(String sdslPath) {
 		TransformationExecutor executor = new TransformationExecutor(
-				org.eclipse.emf.common.util.URI.createFileURI(Paths.get(TRANSFORMATION_URI).toFile().getAbsolutePath()));
+				org.eclipse.emf.common.util.URI.createPlatformPluginURI(TRANSFORMATION_URI, false));
 		Injector injector = new SpringConfigDslStandaloneSetup().createInjectorAndDoEMFRegistration();
 		ResourceSet resourceSet = injector.getInstance(XtextResourceSet.class);
 		Resource inResource;
