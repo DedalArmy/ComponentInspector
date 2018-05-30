@@ -56,7 +56,7 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 
-		Date date = new Date();
+		
 		
 		/*
 		 * CONFIGURATION OF THE LIBRARY PATH
@@ -64,12 +64,17 @@ public class Main {
 		String libPath = "";
 		String singlePath = "";
 		String sdslPath = "";
-		String out = "/generated_metrics_results/metrics"+date.toString().replaceAll(":", "_").replaceAll(" ", "")+".csv";
+		String projectPath = "";
 		
-		laucnhReconstruction(args, libPath, singlePath, sdslPath, out);
+		
+		laucnhReconstruction(args, libPath, singlePath, sdslPath, projectPath);
 	}
 
-	private static void laucnhReconstruction(String[] args, String libPath, String singlePath, String sdslPath, String out) {
+	public static void laucnhReconstruction(String[] args, String libPath, String singlePath, String sdslPath, String projectPath) {
+		
+		Date date = new Date();
+		
+		String out = projectPath + "/generated_metrics_results/metrics"+date.toString().replaceAll(":", "_").replaceAll(" ", "")+".csv";
 		
 		switch (args.length) {
 		case 0:
@@ -106,7 +111,7 @@ public class Main {
 
 		List<DedalDiagram> reconstructedArchitectures = reconstruct(libPath, singlePath, sdslPath);
 
-		saveArchitectures(reconstructedArchitectures);
+		saveArchitectures(reconstructedArchitectures, projectPath);
 
 		try {
 			exportMetrics(out);
@@ -123,11 +128,11 @@ public class Main {
 	/**
 	 * @param reconstructedArchitectures
 	 */
-	private static void saveArchitectures(List<DedalDiagram> reconstructedArchitectures) {
+	private static void saveArchitectures(List<DedalDiagram> reconstructedArchitectures, String projectPath) {
 		if(!reconstructedArchitectures.isEmpty())
 			for(DedalDiagram dd : reconstructedArchitectures)
 			{
-				saveDiagram(dd);
+				saveDiagram(dd, projectPath);
 			}
 		else
 			logger.error("No architecture were reconstructed.");
@@ -177,7 +182,7 @@ public class Main {
 	/**
 	 * @param dedalDiagram
 	 */
-	private static void saveDiagram(DedalDiagram dedalDiagram) {
+	private static void saveDiagram(DedalDiagram dedalDiagram, String projectPath) {
 		Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
 
 		Injector injector = new DedalADLStandaloneSetup().createInjectorAndDoEMFRegistration();
@@ -196,11 +201,11 @@ public class Main {
 		});
 		dedalDiagram.getArchitectureDescriptions().removeAll(toRemoveFromDiagram);
 		
-		URI uri = URI.createURI("generated/"+ dedalDiagram.getName() +".dedaladl");
+		URI uri = URI.createURI("file:///"  + projectPath + "/generated/"+ dedalDiagram.getName() +".dedaladl");
 		Resource resource = resourceSet.createResource(uri);
 		
 
-		URI uri2 = URI.createURI("generated/"+ dedalDiagram.getName() +".dedal");
+		URI uri2 = URI.createURI("file:///" + projectPath + "/generated/"+ dedalDiagram.getName() +".dedal");
 		Resource resource2 = new XMIResourceImpl(uri2);
 
 		// Get the first model element and cast it to the right type, in my
