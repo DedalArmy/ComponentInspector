@@ -1,6 +1,0 @@
-dedal_diagram "megagao.IndoorPos"
-
-	repositories (
-
-		repository genRepo
-	)

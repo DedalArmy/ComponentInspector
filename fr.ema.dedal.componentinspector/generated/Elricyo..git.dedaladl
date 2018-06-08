@@ -1,6 +1,0 @@
-dedal_diagram "Elricyo..git"
-
-	repositories (
-
-		repository genRepo
-	)

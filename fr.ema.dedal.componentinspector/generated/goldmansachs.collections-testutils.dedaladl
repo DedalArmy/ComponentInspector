@@ -1,6 +1,0 @@
-dedal_diagram "goldmansachs.collections-testutils"
-
-	repositories (
-
-		repository genRepo
-	)

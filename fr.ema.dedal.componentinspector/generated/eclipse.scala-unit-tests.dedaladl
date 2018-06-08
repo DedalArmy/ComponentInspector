@@ -1,6 +1,0 @@
-dedal_diagram "eclipse.scala-unit-tests"
-
-	repositories (
-
-		repository genRepo
-	)

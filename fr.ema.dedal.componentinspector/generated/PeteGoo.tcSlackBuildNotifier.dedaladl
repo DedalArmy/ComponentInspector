@@ -1,6 +1,0 @@
-dedal_diagram "PeteGoo.tcSlackBuildNotifier"
-
-	repositories (
-
-		repository genRepo
-	)

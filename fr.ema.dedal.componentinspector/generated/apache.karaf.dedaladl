@@ -1,6 +1,0 @@
-dedal_diagram "apache.karaf"
-
-	repositories (
-
-		repository genRepo
-	)

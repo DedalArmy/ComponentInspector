@@ -1,6 +1,0 @@
-dedal_diagram "Wechat-Group.weixin-java-tools-springmvc"
-
-	repositories (
-
-		repository genRepo
-	)

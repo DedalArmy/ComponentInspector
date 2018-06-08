@@ -1,6 +1,0 @@
-dedal_diagram "FlowCI.docker"
-
-	repositories (
-
-		repository genRepo
-	)

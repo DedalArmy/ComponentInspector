@@ -1,6 +1,0 @@
-dedal_diagram "dearbinge..settings"
-
-	repositories (
-
-		repository genRepo
-	)

@@ -1,6 +1,0 @@
-dedal_diagram "dearbinge.dearbinge-data-domain"
-
-	repositories (
-
-		repository genRepo
-	)

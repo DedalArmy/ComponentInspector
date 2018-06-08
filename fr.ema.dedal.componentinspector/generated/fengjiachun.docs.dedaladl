@@ -1,6 +1,0 @@
-dedal_diagram "fengjiachun.docs"
-
-	repositories (
-
-		repository genRepo
-	)

@@ -1,6 +1,0 @@
-dedal_diagram "Comcast.jrugged-httpclient"
-
-	repositories (
-
-		repository genRepo
-	)

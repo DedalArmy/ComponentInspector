@@ -1,6 +1,0 @@
-dedal_diagram "denimgroup.threadfix-upgrade"
-
-	repositories (
-
-		repository genRepo
-	)

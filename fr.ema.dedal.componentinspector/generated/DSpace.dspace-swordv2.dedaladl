@@ -1,6 +1,0 @@
-dedal_diagram "DSpace.dspace-swordv2"
-
-	repositories (
-
-		repository genRepo
-	)

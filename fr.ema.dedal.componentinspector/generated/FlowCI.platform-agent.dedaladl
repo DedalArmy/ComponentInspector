@@ -1,6 +1,0 @@
-dedal_diagram "FlowCI.platform-agent"
-
-	repositories (
-
-		repository genRepo
-	)

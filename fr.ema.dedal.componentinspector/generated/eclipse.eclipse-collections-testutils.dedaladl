@@ -1,6 +1,0 @@
-dedal_diagram "eclipse.eclipse-collections-testutils"
-
-	repositories (
-
-		repository genRepo
-	)

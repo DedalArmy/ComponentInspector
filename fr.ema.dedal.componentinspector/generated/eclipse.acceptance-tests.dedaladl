@@ -1,6 +1,0 @@
-dedal_diagram "eclipse.acceptance-tests"
-
-	repositories (
-
-		repository genRepo
-	)

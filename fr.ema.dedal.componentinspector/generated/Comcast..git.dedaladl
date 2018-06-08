@@ -1,6 +1,0 @@
-dedal_diagram "Comcast..git"
-
-	repositories (
-
-		repository genRepo
-	)

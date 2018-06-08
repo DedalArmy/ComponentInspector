@@ -1,6 +1,0 @@
-dedal_diagram "Comcast.jrugged-aspects"
-
-	repositories (
-
-		repository genRepo
-	)

@@ -1,6 +1,0 @@
-dedal_diagram "dearbinge.dearbinge-openapi"
-
-	repositories (
-
-		repository genRepo
-	)

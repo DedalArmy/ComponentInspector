@@ -1,6 +1,0 @@
-dedal_diagram "crashub.plugins"
-
-	repositories (
-
-		repository genRepo
-	)

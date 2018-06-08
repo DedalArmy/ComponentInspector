@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="linkedin.sensei">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.example.cars.conf.plugins.xml_config" implements="//@architectureDescriptions[name='linkedin.sensei.example.cars.conf.plugins.xml_spec']">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_U9coAEcIEeiXUKtx7XluTw" realizes="_U_FmwEcIEeiXUKtx7XluTw" implements="_U_E_sEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.example.cars.conf.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.example.cars.conf.plugins.xml_config']">
+    <assmComponents name="demo" id="_U9coAUcIEeiXUKtx7XluTw" instantiates="_U9coAEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_demo" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="linkedin.sensei.example.cars.conf.plugins.xml_spec">
+    <specComponents name="Object_role" id="_U_FmwEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.perf.conf-perf.plugins.xml_config" implements="//@architectureDescriptions[name='linkedin.sensei.perf.conf-perf.plugins.xml_spec']">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_VAxBwEcIEeiXUKtx7XluTw" realizes="_VA3vfEcIEeiXUKtx7XluTw" implements="_VA3vcEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.perf.conf-perf.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.perf.conf-perf.plugins.xml_config']">
+    <assmComponents name="demo" id="_VAxBwUcIEeiXUKtx7XluTw" instantiates="_VAxBwEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_demo" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="linkedin.sensei.perf.conf-perf.plugins.xml_spec">
+    <specComponents name="Object_role" id="_VA3vfEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.bin.src.test.resources.refactored-configuration.custom-facets.xml_config" implements="//@architectureDescriptions[name='linkedin.sensei.sensei-core.bin.src.test.resources.refactored-configuration.custom-facets.xml_spec']">
+    <configComponents name="com.senseidb.test.plugin.MockRuntimeFacetHandlerFactory" id="_VBeMYEcIEeiXUKtx7XluTw" realizes="_VCBmDEcIEeiXUKtx7XluTw" implements="_VCBmAEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.bin.src.test.resources.refactored-configuration.custom-facets.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.bin.src.test.resources.refactored-configuration.custom-facets.xml_config']">
+    <assmComponents name="com.senseidb.test.plugin.MockRuntimeFacetHandlerFactory1" id="_VBeMYUcIEeiXUKtx7XluTw" instantiates="_VBeMYEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.senseidb.test.plugin.MockRuntimeFacetHandlerFactory1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="linkedin.sensei.sensei-core.bin.src.test.resources.refactored-configuration.custom-facets.xml_spec">
+    <specComponents name="Object_role" id="_VCBmDEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.bin.src.test.resources.refactored-configuration.plugins.xml_config" implements="//@architectureDescriptions[name='linkedin.sensei.sensei-core.bin.src.test.resources.refactored-configuration.plugins.xml_spec']">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_VCk_oEcIEeiXUKtx7XluTw" realizes="_VCrtXEcIEeiXUKtx7XluTw" implements="_VCrtUEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.bin.src.test.resources.refactored-configuration.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.bin.src.test.resources.refactored-configuration.plugins.xml_config']">
+    <assmComponents name="demo" id="_VClmsEcIEeiXUKtx7XluTw" instantiates="_VCk_oEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_demo" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="linkedin.sensei.sensei-core.bin.src.test.resources.refactored-configuration.plugins.xml_spec">
+    <specComponents name="Object_role" id="_VCrtXEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node1.plugins.xml_config" implements="//@architectureDescriptions[name='linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node1.plugins.xml_spec']">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_VD9fsEcIEeiXUKtx7XluTw" realizes="_VEENbEcIEeiXUKtx7XluTw" implements="_VEENYEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node1.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node1.plugins.xml_config']">
+    <assmComponents name="demo" id="_VD-GwEcIEeiXUKtx7XluTw" instantiates="_VD9fsEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_demo" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node1.plugins.xml_spec">
+    <specComponents name="Object_role" id="_VEENbEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node2.plugins.xml_config" implements="//@architectureDescriptions[name='linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node2.plugins.xml_spec']">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_VFbfUEcIEeiXUKtx7XluTw" realizes="_VFiNDEcIEeiXUKtx7XluTw" implements="_VFiNAEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node2.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node2.plugins.xml_config']">
+    <assmComponents name="demo" id="_VFcGYEcIEeiXUKtx7XluTw" instantiates="_VFbfUEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_demo" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="linkedin.sensei.sensei-core.bin.src.test.resources.test-conf.node2.plugins.xml_spec">
+    <specComponents name="Object_role" id="_VFiNDEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.src.test.resources.refactored-configuration.custom-facets.xml_config" implements="//@architectureDescriptions[name='linkedin.sensei.sensei-core.src.test.resources.refactored-configuration.custom-facets.xml_spec']">
+    <configComponents name="com.senseidb.test.plugin.MockRuntimeFacetHandlerFactory" id="_VGJRAEcIEeiXUKtx7XluTw" realizes="_VGPXrEcIEeiXUKtx7XluTw" implements="_VGPXoEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.src.test.resources.refactored-configuration.custom-facets.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.src.test.resources.refactored-configuration.custom-facets.xml_config']">
+    <assmComponents name="com.senseidb.test.plugin.MockRuntimeFacetHandlerFactory1" id="_VGJ4EEcIEeiXUKtx7XluTw" instantiates="_VGJRAEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_com.senseidb.test.plugin.MockRuntimeFacetHandlerFactory1" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="linkedin.sensei.sensei-core.src.test.resources.refactored-configuration.custom-facets.xml_spec">
+    <specComponents name="Object_role" id="_VGPXrEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.src.test.resources.refactored-configuration.plugins.xml_config" implements="//@architectureDescriptions[name='linkedin.sensei.sensei-core.src.test.resources.refactored-configuration.plugins.xml_spec']">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_VG--gEcIEeiXUKtx7XluTw" realizes="_VHFFLEcIEeiXUKtx7XluTw" implements="_VHFFIEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.src.test.resources.refactored-configuration.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.src.test.resources.refactored-configuration.plugins.xml_config']">
+    <assmComponents name="demo" id="_VG--gUcIEeiXUKtx7XluTw" instantiates="_VG--gEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_demo" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="linkedin.sensei.sensei-core.src.test.resources.refactored-configuration.plugins.xml_spec">
+    <specComponents name="Object_role" id="_VHFFLEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.src.test.resources.test-conf.node1.plugins.xml_config" implements="//@architectureDescriptions[name='linkedin.sensei.sensei-core.src.test.resources.test-conf.node1.plugins.xml_spec']">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_VIcXEEcIEeiXUKtx7XluTw" realizes="_VIjr3EcIEeiXUKtx7XluTw" implements="_VIjr0EcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.src.test.resources.test-conf.node1.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.src.test.resources.test-conf.node1.plugins.xml_config']">
+    <assmComponents name="demo" id="_VIc-IEcIEeiXUKtx7XluTw" instantiates="_VIcXEEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_demo" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="linkedin.sensei.sensei-core.src.test.resources.test-conf.node1.plugins.xml_spec">
+    <specComponents name="Object_role" id="_VIjr3EcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-core.src.test.resources.test-conf.node2.plugins.xml_config" implements="//@architectureDescriptions[name='linkedin.sensei.sensei-core.src.test.resources.test-conf.node2.plugins.xml_spec']">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_VJ4hgEcIEeiXUKtx7XluTw" realizes="_VKBrcEcIEeiXUKtx7XluTw" implements="_VKBEYEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-core.src.test.resources.test-conf.node2.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-core.src.test.resources.test-conf.node2.plugins.xml_config']">
+    <assmComponents name="demo" id="_VJ5IkEcIEeiXUKtx7XluTw" instantiates="_VJ4hgEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_demo" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="linkedin.sensei.sensei-core.src.test.resources.test-conf.node2.plugins.xml_spec">
+    <specComponents name="Object_role" id="_VKBrcEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Configuration" name="linkedin.sensei.sensei-federated-broker.src.test.resources.conf.plugins.xml_config" implements="//@architectureDescriptions[name='linkedin.sensei.sensei-federated-broker.src.test.resources.conf.plugins.xml_spec']">
+    <configComponents name="com.senseidb.search.node.impl.DemoZoieSystemFactory$DemoZoieFactoryFactory" id="_VLlKoEcIEeiXUKtx7XluTw" realizes="_VLr4XEcIEeiXUKtx7XluTw" implements="_VLr4UEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject" type="IObject_Type"/>
+    </configComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="linkedin.sensei.sensei-federated-broker.src.test.resources.conf.plugins.xml_asm" instantiates="//@architectureDescriptions[name='linkedin.sensei.sensei-federated-broker.src.test.resources.conf.plugins.xml_config']">
+    <assmComponents name="demo" id="_VLlxsEcIEeiXUKtx7XluTw" instantiates="_VLlKoEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_demo" type="IObject_Type" instantiates="IObject"/>
+    </assmComponents>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Specification" name="linkedin.sensei.sensei-federated-broker.src.test.resources.conf.plugins.xml_spec">
+    <specComponents name="Object_role" id="_VLr4XEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObjectObject_role" type="IObject_Type"/>
+    </specComponents>
+  </architectureDescriptions>
+  <repositories name="genRepo">
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_U_E_sEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_VA3vcEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_VCBmAEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_VCrtUEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_VEENYEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_VFiNAEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_VGPXoEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_VHFFIEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_VIjr0EcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_VKBEYEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <components xsi:type="dedal:CompType" name="java_lang_Object_Type" id="_VLr4UEcIEeiXUKtx7XluTw">
+      <compInterfaces xsi:type="dedal:Interface" name="IObject_java_lang_Object_Type" type="IObject_Type"/>
+    </components>
+    <interfaceTypes name="IObject_Type">
+      <signatures name="finalize" type="void" id="_U_E_sUcIEeiXUKtx7XluTw"/>
+      <signatures name="wait" type="void" id="_U_E_skcIEeiXUKtx7XluTw"/>
+      <signatures name="equals" type="boolean" id="_U_E_s0cIEeiXUKtx7XluTw">
+        <parameters name="arg0" type="java.lang.Object" id="_U_E_tEcIEeiXUKtx7XluTw"/>
+      </signatures>
+      <signatures name="toString" type="java.lang.String" id="_U_E_tUcIEeiXUKtx7XluTw"/>
+      <signatures name="hashCode" type="int" id="_U_E_tkcIEeiXUKtx7XluTw"/>
+      <signatures name="getClass" type="java.lang.Class" id="_U_E_t0cIEeiXUKtx7XluTw"/>
+      <signatures name="clone" type="java.lang.Object" id="_U_E_uEcIEeiXUKtx7XluTw"/>
+      <signatures name="notify" type="void" id="_U_E_uUcIEeiXUKtx7XluTw"/>
+      <signatures name="notifyAll" type="void" id="_U_E_ukcIEeiXUKtx7XluTw"/>
+      <signatures name="registerNatives" type="void" id="_U_E_u0cIEeiXUKtx7XluTw"/>
+    </interfaceTypes>
+  </repositories>
+</dedal:DedalDiagram>

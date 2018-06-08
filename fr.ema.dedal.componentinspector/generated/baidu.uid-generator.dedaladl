@@ -1,6 +1,0 @@
-dedal_diagram "baidu.uid-generator"
-
-	repositories (
-
-		repository genRepo
-	)

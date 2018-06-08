@@ -1,6 +1,0 @@
-dedal_diagram "iluwatar.java-design-patterns"
-
-	repositories (
-
-		repository genRepo
-	)

@@ -1,6 +1,0 @@
-dedal_diagram "wosyingjun.beauty_ssm"
-
-	repositories (
-
-		repository genRepo
-	)

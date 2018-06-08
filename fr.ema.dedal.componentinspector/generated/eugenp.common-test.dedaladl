@@ -1,6 +1,0 @@
-dedal_diagram "eugenp.common-test"
-
-	repositories (
-
-		repository genRepo
-	)

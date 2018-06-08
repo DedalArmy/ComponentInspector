@@ -1,6 +1,0 @@
-dedal_diagram "cucumber.core"
-
-	repositories (
-
-		repository genRepo
-	)

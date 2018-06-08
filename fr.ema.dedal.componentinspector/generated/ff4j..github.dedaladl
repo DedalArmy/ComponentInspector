@@ -1,6 +1,0 @@
-dedal_diagram "ff4j..github"
-
-	repositories (
-
-		repository genRepo
-	)

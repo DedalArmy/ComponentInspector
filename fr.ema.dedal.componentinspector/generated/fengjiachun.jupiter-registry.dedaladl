@@ -1,6 +1,0 @@
-dedal_diagram "fengjiachun.jupiter-registry"
-
-	repositories (
-
-		repository genRepo
-	)

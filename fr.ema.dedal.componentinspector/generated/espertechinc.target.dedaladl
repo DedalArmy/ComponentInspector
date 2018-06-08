@@ -1,6 +1,0 @@
-dedal_diagram "espertechinc.target"
-
-	repositories (
-
-		repository genRepo
-	)

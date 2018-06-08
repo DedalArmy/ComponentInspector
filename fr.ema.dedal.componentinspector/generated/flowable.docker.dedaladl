@@ -1,6 +1,0 @@
-dedal_diagram "flowable.docker"
-
-	repositories (
-
-		repository genRepo
-	)

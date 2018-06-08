@@ -1,6 +1,0 @@
-dedal_diagram "goldmansachs.collections-api"
-
-	repositories (
-
-		repository genRepo
-	)

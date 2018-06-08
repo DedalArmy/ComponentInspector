@@ -1,6 +1,0 @@
-dedal_diagram "bluejoe2008.openwebflow"
-
-	repositories (
-
-		repository genRepo
-	)

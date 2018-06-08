@@ -1,6 +1,0 @@
-dedal_diagram "FlowCI.platform-queue"
-
-	repositories (
-
-		repository genRepo
-	)

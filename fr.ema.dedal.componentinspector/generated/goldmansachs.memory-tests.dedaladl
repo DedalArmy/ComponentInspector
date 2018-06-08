@@ -1,6 +1,0 @@
-dedal_diagram "goldmansachs.memory-tests"
-
-	repositories (
-
-		repository genRepo
-	)

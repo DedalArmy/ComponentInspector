@@ -1,6 +1,0 @@
-dedal_diagram "Baeldung.spring-security-registration"
-
-	repositories (
-
-		repository genRepo
-	)

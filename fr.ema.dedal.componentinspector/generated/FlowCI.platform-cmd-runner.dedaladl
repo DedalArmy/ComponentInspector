@@ -1,6 +1,0 @@
-dedal_diagram "FlowCI.platform-cmd-runner"
-
-	repositories (
-
-		repository genRepo
-	)

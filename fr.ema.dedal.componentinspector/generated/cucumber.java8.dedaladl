@@ -1,6 +1,0 @@
-dedal_diagram "cucumber.java8"
-
-	repositories (
-
-		repository genRepo
-	)

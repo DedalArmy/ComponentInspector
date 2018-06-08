@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dedal="http://www.dedal.fr/metamodel" name="dangdangdotcom.config-face">
-  <repositories name="genRepo"/>
-</dedal:DedalDiagram>

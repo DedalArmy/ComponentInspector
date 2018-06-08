@@ -1,6 +1,0 @@
-dedal_diagram "dubboclub.cat-monitor"
-
-	repositories (
-
-		repository genRepo
-	)

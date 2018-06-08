@@ -1,6 +1,0 @@
-dedal_diagram "gsh199449.doc"
-
-	repositories (
-
-		repository genRepo
-	)

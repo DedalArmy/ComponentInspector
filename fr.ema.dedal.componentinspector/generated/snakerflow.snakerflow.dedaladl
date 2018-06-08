@@ -1,6 +1,0 @@
-dedal_diagram "snakerflow.snakerflow"
-
-	repositories (
-
-		repository genRepo
-	)

@@ -1,6 +1,0 @@
-dedal_diagram "google.bom"
-
-	repositories (
-
-		repository genRepo
-	)

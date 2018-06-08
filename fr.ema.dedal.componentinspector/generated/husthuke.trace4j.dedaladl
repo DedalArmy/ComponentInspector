@@ -1,6 +1,0 @@
-dedal_diagram "husthuke.trace4j"
-
-	repositories (
-
-		repository genRepo
-	)

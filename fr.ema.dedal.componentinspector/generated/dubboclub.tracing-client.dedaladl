@@ -1,6 +1,0 @@
-dedal_diagram "dubboclub.tracing-client"
-
-	repositories (
-
-		repository genRepo
-	)

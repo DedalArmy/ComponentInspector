@@ -1,6 +1,0 @@
-dedal_diagram "dubboclub..git"
-
-	repositories (
-
-		repository genRepo
-	)

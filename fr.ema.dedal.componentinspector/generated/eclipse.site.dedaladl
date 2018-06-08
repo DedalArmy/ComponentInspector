@@ -1,6 +1,0 @@
-dedal_diagram "eclipse.site"
-
-	repositories (
-
-		repository genRepo
-	)

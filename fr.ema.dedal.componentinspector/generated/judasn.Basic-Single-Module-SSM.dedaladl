@@ -1,6 +1,0 @@
-dedal_diagram "judasn.Basic-Single-Module-SSM"
-
-	repositories (
-
-		repository genRepo
-	)

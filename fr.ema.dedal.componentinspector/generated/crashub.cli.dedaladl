@@ -1,6 +1,0 @@
-dedal_diagram "crashub.cli"
-
-	repositories (
-
-		repository genRepo
-	)

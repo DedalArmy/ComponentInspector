@@ -1,6 +1,0 @@
-dedal_diagram "denimgroup.threadfix-importers"
-
-	repositories (
-
-		repository genRepo
-	)

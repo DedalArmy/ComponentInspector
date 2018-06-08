@@ -1,6 +1,0 @@
-dedal_diagram "ff4j.ff4j-utils-json"
-
-	repositories (
-
-		repository genRepo
-	)

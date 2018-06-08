@@ -1,6 +1,0 @@
-dedal_diagram "google.core"
-
-	repositories (
-
-		repository genRepo
-	)

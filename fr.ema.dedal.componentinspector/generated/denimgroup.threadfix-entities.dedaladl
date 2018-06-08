@@ -1,6 +1,0 @@
-dedal_diagram "denimgroup.threadfix-entities"
-
-	repositories (
-
-		repository genRepo
-	)

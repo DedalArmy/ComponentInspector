@@ -1,6 +1,0 @@
-dedal_diagram "spring-projects.spring-data-rest"
-
-	repositories (
-
-		repository genRepo
-	)

@@ -1,6 +1,0 @@
-dedal_diagram "denimgroup.threadfix-service-interfaces"
-
-	repositories (
-
-		repository genRepo
-	)

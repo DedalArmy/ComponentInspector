@@ -1,6 +1,0 @@
-dedal_diagram "espertechinc.esper-avro"
-
-	repositories (
-
-		repository genRepo
-	)

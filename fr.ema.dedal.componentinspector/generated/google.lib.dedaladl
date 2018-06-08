@@ -1,6 +1,0 @@
-dedal_diagram "google.lib"
-
-	repositories (
-
-		repository genRepo
-	)

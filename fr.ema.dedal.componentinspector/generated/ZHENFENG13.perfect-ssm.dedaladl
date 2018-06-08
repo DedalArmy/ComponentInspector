@@ -1,6 +1,0 @@
-dedal_diagram "ZHENFENG13.perfect-ssm"
-
-	repositories (
-
-		repository genRepo
-	)

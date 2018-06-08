@@ -1,6 +1,0 @@
-dedal_diagram "apache.incubator-netbeans"
-
-	repositories (
-
-		repository genRepo
-	)

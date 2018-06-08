@@ -1,6 +1,0 @@
-dedal_diagram "fabric8io..git"
-
-	repositories (
-
-		repository genRepo
-	)

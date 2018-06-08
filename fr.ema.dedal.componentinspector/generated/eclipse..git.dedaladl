@@ -1,6 +1,0 @@
-dedal_diagram "eclipse..git"
-
-	repositories (
-
-		repository genRepo
-	)

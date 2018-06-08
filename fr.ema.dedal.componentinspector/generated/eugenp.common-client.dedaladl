@@ -1,6 +1,0 @@
-dedal_diagram "eugenp.common-client"
-
-	repositories (
-
-		repository genRepo
-	)

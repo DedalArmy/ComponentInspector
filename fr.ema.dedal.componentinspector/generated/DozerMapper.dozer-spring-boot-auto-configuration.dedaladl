@@ -1,6 +1,0 @@
-dedal_diagram "DozerMapper.dozer-spring-boot-auto-configuration"
-
-	repositories (
-
-		repository genRepo
-	)

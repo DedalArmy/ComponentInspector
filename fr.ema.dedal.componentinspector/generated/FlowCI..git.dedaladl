@@ -1,6 +1,0 @@
-dedal_diagram "FlowCI..git"
-
-	repositories (
-
-		repository genRepo
-	)

@@ -1,6 +1,0 @@
-dedal_diagram "eclipse.junit-trait-runner"
-
-	repositories (
-
-		repository genRepo
-	)

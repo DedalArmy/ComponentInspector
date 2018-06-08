@@ -1,6 +1,0 @@
-dedal_diagram "dubboclub.tracing-api"
-
-	repositories (
-
-		repository genRepo
-	)

@@ -1,6 +1,0 @@
-dedal_diagram "foxinmy.weixin4j-base"
-
-	repositories (
-
-		repository genRepo
-	)

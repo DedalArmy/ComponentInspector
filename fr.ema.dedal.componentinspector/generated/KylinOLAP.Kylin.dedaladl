@@ -1,6 +1,0 @@
-dedal_diagram "KylinOLAP.Kylin"
-
-	repositories (
-
-		repository genRepo
-	)

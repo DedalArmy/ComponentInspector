@@ -1,6 +1,0 @@
-dedal_diagram "citerus.dddsample-core"
-
-	repositories (
-
-		repository genRepo
-	)

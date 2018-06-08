@@ -1,6 +1,0 @@
-dedal_diagram "FlowCI.platform-plugin"
-
-	repositories (
-
-		repository genRepo
-	)

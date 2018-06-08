@@ -1,6 +1,0 @@
-dedal_diagram "cucumber.osgi"
-
-	repositories (
-
-		repository genRepo
-	)

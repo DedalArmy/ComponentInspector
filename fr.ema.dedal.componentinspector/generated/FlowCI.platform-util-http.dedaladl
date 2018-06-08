@@ -1,6 +1,0 @@
-dedal_diagram "FlowCI.platform-util-http"
-
-	repositories (
-
-		repository genRepo
-	)

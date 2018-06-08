@@ -111,7 +111,7 @@ public class Explorer {
 			List<URI> xmlFiles = recursivelyGetFileURIs(folder, XML);
 			List<URI> jarFiles = recursivelyGetFileURIs(folder, JAR, WAR);
 			
-//			List<URI> subFolders = recursivelyGetFolders(folder);
+			List<URI> subFolders = recursivelyGetFolders(folder);
 
 			URL[] jarUrlsToLoad = new URL[jarFiles.size()];
 			for(int i = 0; i<jarFiles.size(); i++)
@@ -119,12 +119,12 @@ public class Explorer {
 				jarUrlsToLoad[i]=jarFiles.get(i).toURL();
 			}
 
-			URL[] urlsToLoad = {};
-//			URL[] urlsToLoad = new URL[subFolders.size()];
-//			for(int i = 0; i<subFolders.size(); i++)
-//			{
-//				urlsToLoad[i]=subFolders.get(i).toURL();
-//			}
+//			URL[] urlsToLoad = {};
+			URL[] urlsToLoad = new URL[subFolders.size()];
+			for(int i = 0; i<subFolders.size(); i++)
+			{
+				urlsToLoad[i]=subFolders.get(i).toURL();
+			}
 			jarLoader = new JarLoader(urlsToLoad , jarUrlsToLoad);
 //			List<URI> xmlFiles = jarLoader.getFilesFromJars(XML);
 			List<URI> xmlSpringFiles = scanFiles(xmlFiles, BEANS, BEAN);

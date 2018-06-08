@@ -1,6 +1,0 @@
-dedal_diagram "abel533.Mapper"
-
-	repositories (
-
-		repository genRepo
-	)

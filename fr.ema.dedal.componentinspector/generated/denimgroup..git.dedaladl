@@ -1,6 +1,0 @@
-dedal_diagram "denimgroup..git"
-
-	repositories (
-
-		repository genRepo
-	)

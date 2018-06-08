@@ -1,6 +1,0 @@
-dedal_diagram "DozerMapper..travis"
-
-	repositories (
-
-		repository genRepo
-	)

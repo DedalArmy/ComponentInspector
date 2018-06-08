@@ -1,6 +1,0 @@
-dedal_diagram "DozerMapper.proto"
-
-	repositories (
-
-		repository genRepo
-	)

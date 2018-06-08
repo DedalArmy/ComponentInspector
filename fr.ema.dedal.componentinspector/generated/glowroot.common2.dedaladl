@@ -1,6 +1,0 @@
-dedal_diagram "glowroot.common2"
-
-	repositories (
-
-		repository genRepo
-	)

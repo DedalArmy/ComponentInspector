@@ -1,6 +1,0 @@
-dedal_diagram "querydsl.querydsl"
-
-	repositories (
-
-		repository genRepo
-	)

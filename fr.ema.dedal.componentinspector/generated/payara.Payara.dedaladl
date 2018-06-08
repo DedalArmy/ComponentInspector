@@ -1,6 +1,0 @@
-dedal_diagram "payara.Payara"
-
-	repositories (
-
-		repository genRepo
-	)

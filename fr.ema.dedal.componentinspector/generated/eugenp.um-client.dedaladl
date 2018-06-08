@@ -1,6 +1,0 @@
-dedal_diagram "eugenp.um-client"
-
-	repositories (
-
-		repository genRepo
-	)

@@ -1,6 +1,0 @@
-dedal_diagram "FlowCI.platform-util-zk"
-
-	repositories (
-
-		repository genRepo
-	)

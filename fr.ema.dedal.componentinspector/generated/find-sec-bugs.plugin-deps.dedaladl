@@ -1,6 +1,0 @@
-dedal_diagram "find-sec-bugs.plugin-deps"
-
-	repositories (
-
-		repository genRepo
-	)

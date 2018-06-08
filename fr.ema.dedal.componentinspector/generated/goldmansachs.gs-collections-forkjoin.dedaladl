@@ -1,6 +1,0 @@
-dedal_diagram "goldmansachs.gs-collections-forkjoin"
-
-	repositories (
-
-		repository genRepo
-	)

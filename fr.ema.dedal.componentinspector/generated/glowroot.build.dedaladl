@@ -1,6 +1,0 @@
-dedal_diagram "glowroot.build"
-
-	repositories (
-
-		repository genRepo
-	)

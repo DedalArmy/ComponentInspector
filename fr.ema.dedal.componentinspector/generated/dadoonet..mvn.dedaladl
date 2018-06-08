@@ -1,6 +1,0 @@
-dedal_diagram "dadoonet..mvn"
-
-	repositories (
-
-		repository genRepo
-	)

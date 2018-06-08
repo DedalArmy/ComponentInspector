@@ -1,6 +1,0 @@
-dedal_diagram "imalexyang.ExamStack"
-
-	repositories (
-
-		repository genRepo
-	)

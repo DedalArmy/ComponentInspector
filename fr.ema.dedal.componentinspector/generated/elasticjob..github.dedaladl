@@ -1,6 +1,0 @@
-dedal_diagram "elasticjob..github"
-
-	repositories (
-
-		repository genRepo
-	)

@@ -1,6 +1,0 @@
-dedal_diagram "ctripcorp.apollo-configservice"
-
-	repositories (
-
-		repository genRepo
-	)

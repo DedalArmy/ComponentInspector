@@ -1,6 +1,0 @@
-dedal_diagram "mybatis.jpetstore-6"
-
-	repositories (
-
-		repository genRepo
-	)

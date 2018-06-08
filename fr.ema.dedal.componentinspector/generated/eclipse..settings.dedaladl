@@ -1,6 +1,0 @@
-dedal_diagram "eclipse..settings"
-
-	repositories (
-
-		repository genRepo
-	)

@@ -1,6 +1,0 @@
-dedal_diagram "denimgroup.report-plugin"
-
-	repositories (
-
-		repository genRepo
-	)

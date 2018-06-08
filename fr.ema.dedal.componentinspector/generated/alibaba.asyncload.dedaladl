@@ -1,6 +1,0 @@
-dedal_diagram "alibaba.asyncload"
-
-	repositories (
-
-		repository genRepo
-	)

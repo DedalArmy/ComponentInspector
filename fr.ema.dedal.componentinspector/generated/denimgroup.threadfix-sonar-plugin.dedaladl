@@ -1,6 +1,0 @@
-dedal_diagram "denimgroup.threadfix-sonar-plugin"
-
-	repositories (
-
-		repository genRepo
-	)

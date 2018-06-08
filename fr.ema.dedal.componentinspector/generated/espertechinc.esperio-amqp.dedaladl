@@ -1,6 +1,0 @@
-dedal_diagram "espertechinc.esperio-amqp"
-
-	repositories (
-
-		repository genRepo
-	)

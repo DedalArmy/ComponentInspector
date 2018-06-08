@@ -1,6 +1,0 @@
-dedal_diagram "espertechinc.esperio-csv"
-
-	repositories (
-
-		repository genRepo
-	)

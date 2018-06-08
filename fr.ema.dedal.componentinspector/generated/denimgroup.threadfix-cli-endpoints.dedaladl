@@ -1,6 +1,0 @@
-dedal_diagram "denimgroup.threadfix-cli-endpoints"
-
-	repositories (
-
-		repository genRepo
-	)

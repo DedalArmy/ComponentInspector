@@ -1,6 +1,0 @@
-dedal_diagram "dangdangdotcom.config-toolkit"
-
-	repositories (
-
-		repository genRepo
-	)

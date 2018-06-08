@@ -1,6 +1,0 @@
-dedal_diagram "allwefantasy.ServiceFramework"
-
-	repositories (
-
-		repository genRepo
-	)

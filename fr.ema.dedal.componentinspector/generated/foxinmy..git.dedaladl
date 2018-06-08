@@ -1,6 +1,0 @@
-dedal_diagram "foxinmy..git"
-
-	repositories (
-
-		repository genRepo
-	)
