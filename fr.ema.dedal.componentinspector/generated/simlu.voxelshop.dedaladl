@@ -1,6 +1,0 @@
-dedal_diagram "simlu.voxelshop"
-
-	repositories (
-
-		repository genRepo
-	)
