@@ -249,6 +249,22 @@ public class JarInspector {
 		setSpecificationFromConfiguration(repo, spec, config);
 		dedalDiagram.getArchitectureDescriptions().add(spec);
 		config.getImplements().add(spec);
+		
+		dedalDiagram.getArchitectureDescriptions().forEach(ad -> {
+			ad.setName(ad.getName().replaceAll("\\.", "_"));
+			ad.getInterfaceTypes().forEach(it -> {
+				it.setName(it.getName().replaceAll("\\.", "_"));
+			});
+		});
+		config.getConfigComponents().forEach(c -> {
+			c.setName(c.getName().replaceAll("\\.", "_"));
+		});
+		asm.getAssmComponents().forEach(c -> {
+			c.setName(c.getName().replaceAll("\\.", "_"));
+		});
+		spec.getSpecComponents().forEach(c -> {
+			c.setName(c.getName().replaceAll("\\.", "_"));
+		});
 	}
 
 	/**
@@ -685,7 +701,7 @@ public class JarInspector {
 		}
 		for(ClassConnection cc : targetedConnections)
 		{
-			List<Interaction> comparables =  assembleComparable((Interface) cc.getClientClassElem(), value);
+			List<Interaction> comparables =  assembleComparable((Interface) cc.getClientIntElem(), value);
 			Interface intToAssign = this.getMostSatisfyingInterface(iserv, comparables);
 			if(!intToAssign.equals(iserv))
 				result.put(cc,intToAssign);

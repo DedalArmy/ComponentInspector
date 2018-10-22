@@ -217,13 +217,25 @@ public class InterfaceInspector {
 	private void computeCandidateInterfaces(Class<?> objectToInspect, Interface derivedInterface) {
 		if(!(Object.class).equals(objectToInspect.getSuperclass()) && objectToInspect.getSuperclass()!=null)
 		{
-			this.candidateInterfaces.put(derivedInterface, this.calculateInterfaces(objectToInspect.getSuperclass()));
+//			List<Interface> calculateInterfaces = this.calculateInterfaces(objectToInspect.getSuperclass());
+			List<Interface> calculateInterfaces = new ArrayList<Interface>();
+			calculateInterfaces.add(this.mapAsInterface(objectToInspect.getSuperclass()));
+			if(this.candidateInterfaces.get(derivedInterface)!=null)
+				this.candidateInterfaces.get(derivedInterface).addAll(calculateInterfaces);
+			else
+				this.candidateInterfaces.put(derivedInterface, calculateInterfaces);
+			this.computeCandidateInterfaces(objectToInspect.getSuperclass(), calculateInterfaces.get(0));
 		}
 		if(objectToInspect.getInterfaces().length > 0)
 		{
 			Class<?>[] interfaces = objectToInspect.getInterfaces();
 			for (Class<?> i : interfaces) {
-				this.candidateInterfaces.put(derivedInterface, this.calculateInterfaces(i));
+				List<Interface> calculateInterfaces = this.calculateInterfaces(i);
+//				this.candidateInterfaces.put(derivedInterface, calculateInterfaces);
+				if(this.candidateInterfaces.get(derivedInterface)!=null)
+					this.candidateInterfaces.get(derivedInterface).addAll(calculateInterfaces);
+				else
+					this.candidateInterfaces.put(derivedInterface, calculateInterfaces);
 			}
 		}
 	}

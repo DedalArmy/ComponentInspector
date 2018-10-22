@@ -120,6 +120,16 @@ public class RoleExtractor {
 		{
 			result.addAll(calculateSuperTypes(i, splitContract(initialContract, i)));
 		}
+//		if(objectToInspect.getClasses().length > 0)
+//		{
+//			for (Class<?> clazz : objectToInspect.getClasses())
+//			{
+//				if(!(Object.class).equals(clazz))
+//				{
+//					result.addAll(calculateSuperTypes(clazz, splitContract(initialContract, clazz)));
+//				}
+//			}
+//		}
 		/**
 		 * If component classes have been extracted from supertypes and if they verify the current contract, then they are returned as effective component roles.
 		 */

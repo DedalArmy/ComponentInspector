@@ -47,7 +47,8 @@ public class ClassInspector extends InterfaceInspector {
 			logger.info("\t" + this.getObjectToInspect().getName() + " -- " + this.getObjectToInspect().getTypeName());
 
 			CompType tempCompType = new DedalFactoryImpl().createCompType();
-			tempCompType.setName(this.getObjectToInspect().getTypeName().replace('.', '_')+"_Type");
+//			tempCompType.setName(this.getObjectToInspect().getTypeName().replace('.', '_')+"_Type");
+			tempCompType.setName(this.getObjectToInspect().getCanonicalName().replace('.', '_')+"_Type");
 			this.getConfiguration().getComptypes().add(tempCompType);
 
 			try {
@@ -69,6 +70,7 @@ public class ClassInspector extends InterfaceInspector {
 	private void fillConfigComponent(CompType tempCompType, CompClass tempCompClass) {
 		mapAttributes(tempCompClass, this.getObjectToInspect());
 		List<Interface> providedInterfaces = this.calculateProvidedInterfaces();
+		
 		tempCompClass.getCompInterfaces().addAll(providedInterfaces);
 		List<Interface> requiredInterfaces = this.calculateRequiredInterfaces();
 		tempCompClass.getCompInterfaces().addAll(requiredInterfaces);
