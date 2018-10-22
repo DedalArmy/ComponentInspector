@@ -467,7 +467,7 @@ public class JarInspector {
 		 * Setting configurations
 		 */
 		Map<Interaction, List<Interaction>> mapServerToClients = new HashMap<>();
-		Map<Interface, ClassConnection> intServToCon = new HashMap<>();
+		Map<Interface, List<ClassConnection>> intServToCon = new HashMap<>();
 		
 		connectInterfaces(config, mapServerToClients, intServToCon);
 		
@@ -482,18 +482,20 @@ public class JarInspector {
 		mapServerToClients.forEach((key,value) -> transform.putAll(getMostAbstractProvidedInterfaces(config, key, value)));
 		
 		try {
-			intServToCon.forEach((initServ, con) -> {
-				CompClass server = con.getServerClassElem();
-				Interaction finalServ = transform.get(con);
-				if(finalServ!=null)
-				{
-					server.getCompInterfaces().add(finalServ);
-					con.setServerIntElem(finalServ);
-					if(!server.getCompInterfaces().contains(finalServ))
-						server.getCompInterfaces().add(finalServ);
-					if(!connected(initServ, config.getConfigConnections()))
+			intServToCon.forEach((initServ, lcon) -> {
+				for(ClassConnection con : lcon) {
+					CompClass server = con.getServerClassElem();
+					Interaction finalServ = transform.get(con);
+					if(finalServ!=null)
 					{
-						server.getCompInterfaces().remove(initServ);
+						server.getCompInterfaces().add(finalServ);
+						con.setServerIntElem(finalServ);
+						if(!server.getCompInterfaces().contains(finalServ))
+							server.getCompInterfaces().add(finalServ);
+						if(!connected(initServ, config.getConfigConnections()))
+						{
+							server.getCompInterfaces().remove(initServ);
+						}
 					}
 				}
 			});
@@ -510,7 +512,7 @@ public class JarInspector {
 	 * @param intServToCon
 	 */
 	private void connectInterfaces(Configuration config, Map<Interaction, List<Interaction>> mapServerToClients,
-			Map<Interface, ClassConnection> intServToCon) {
+			Map<Interface, List<ClassConnection>> intServToCon) {
 		config.getConfigConnections().forEach(con -> {
 			CompClass client = con.getClientClassElem();
 			CompClass server = con.getServerClassElem();
@@ -536,7 +538,7 @@ public class JarInspector {
 	 * @param clientClass
 	 */
 	private void matchCorrespondingServerInterface(Map<Interaction, List<Interaction>> mapServerToClients,
-			Map<Interface, ClassConnection> intServToCon, ClassConnection con, CompClass server,
+			Map<Interface, List<ClassConnection>> intServToCon, ClassConnection con, CompClass server,
 			final Class<?> clientClass) {
 		if(clientClass != null)
 			server.getCompInterfaces().forEach(ci -> {
@@ -547,7 +549,12 @@ public class JarInspector {
 				}
 			});
 		mapServerToClients.put(con.getServerIntElem(), new ArrayList<>());
-		intServToCon.put((Interface)con.getServerIntElem(),con);
+		List<ClassConnection> lcn = new ArrayList<>();
+		lcn.add(con);
+		if(intServToCon.get((Interface)con.getServerIntElem())==null)
+			intServToCon.put((Interface)con.getServerIntElem(),lcn);
+		else
+			intServToCon.get((Interface)con.getServerIntElem()).add(con);
 	}
 
 	/**
