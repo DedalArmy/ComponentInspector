@@ -13,6 +13,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.swing.JOptionPane;
+
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -130,12 +132,18 @@ public class Main {
 	 */
 	private static void saveArchitectures(List<DedalDiagram> reconstructedArchitectures, String projectPath) {
 		if(!reconstructedArchitectures.isEmpty())
+		{
 			for(DedalDiagram dd : reconstructedArchitectures)
 			{
 				saveDiagram(dd, projectPath);
 			}
+			JOptionPane.showMessageDialog(null, "Reconstruction complete");
+		}
 		else
+		{
 			logger.error("No architecture were reconstructed.");
+			JOptionPane.showMessageDialog(null, "Ooops! Something wrong happened during the reconstruction...");
+		}
 	}
 
 	/**
