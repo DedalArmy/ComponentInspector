@@ -4,8 +4,6 @@
 package fr.ema.dedal.componentinspector.inspector;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -13,7 +11,6 @@ import org.apache.log4j.Logger;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import dedal.Attribute;
 import dedal.CompClass;
-import dedal.CompRole;
 import dedal.CompType;
 import dedal.Configuration;
 import dedal.DIRECTION;
@@ -50,7 +47,8 @@ public class ClassInspector extends InterfaceInspector {
 			logger.info("\t" + this.getObjectToInspect().getName() + " -- " + this.getObjectToInspect().getTypeName());
 
 			CompType tempCompType = new DedalFactoryImpl().createCompType();
-			tempCompType.setName(this.getObjectToInspect().getTypeName().replace('.', '_')+"_Type");
+//			tempCompType.setName(this.getObjectToInspect().getTypeName().replace('.', '_')+"_Type");
+			tempCompType.setName(this.getObjectToInspect().getCanonicalName().replace('.', '_')+"_Type");
 			this.getConfiguration().getComptypes().add(tempCompType);
 
 			try {
@@ -72,6 +70,7 @@ public class ClassInspector extends InterfaceInspector {
 	private void fillConfigComponent(CompType tempCompType, CompClass tempCompClass) {
 		mapAttributes(tempCompClass, this.getObjectToInspect());
 		List<Interface> providedInterfaces = this.calculateProvidedInterfaces();
+		
 		tempCompClass.getCompInterfaces().addAll(providedInterfaces);
 		List<Interface> requiredInterfaces = this.calculateRequiredInterfaces();
 		tempCompClass.getCompInterfaces().addAll(requiredInterfaces);
@@ -89,26 +88,34 @@ public class ClassInspector extends InterfaceInspector {
 		Field[] fields = objectToInspect.getDeclaredFields().length>0? objectToInspect.getDeclaredFields() : null;
 		if (fields != null) {
 			for (Field field : fields) {
-				if(logger.isInfoEnabled())
-					logger.info("\t\t" + field.toGenericString());
-				Attribute tempAttribute = new DedalFactoryImpl().createAttribute();
-				tempAttribute.setName(field.getName());
-				
-				if(field.getType().isArray())
-					tempAttribute.setType(field.getType().getComponentType().getCanonicalName());
-				else
-				{
-					if(Collection.class.isAssignableFrom(field.getType()))
-						tempAttribute.setType(field.getType().getTypeName());
-					else 
-						tempAttribute.setType(field.getType().getCanonicalName());
-				}
-				tempCompClass.getAttributes().add(tempAttribute);
+				exploreField(tempCompClass, field);
 			}
 		}
-		if(!objectToInspect.getSuperclass().equals(Object.class) &&
+		if(!(Object.class).equals(objectToInspect.getSuperclass()) &&
 				objectToInspect.getSuperclass()!=null)
 			mapAttributes(tempCompClass, objectToInspect.getSuperclass());
+	}
+
+	/**
+	 * @param tempCompClass
+	 * @param field
+	 */
+	private void exploreField(CompClass tempCompClass, Field field) {
+		if(logger.isInfoEnabled())
+			logger.info("\t\t" + field.toGenericString());
+		Attribute tempAttribute = new DedalFactoryImpl().createAttribute();
+		tempAttribute.setName(field.getName());
+		
+		if(field.getType().isArray())
+			tempAttribute.setType(field.getType().getComponentType().getCanonicalName());
+		else
+		{
+			if(Collection.class.isAssignableFrom(field.getType()))
+				tempAttribute.setType(field.getType().getTypeName());
+			else 
+				tempAttribute.setType(field.getType().getCanonicalName());
+		}
+		tempCompClass.getAttributes().add(tempAttribute);
 	}
 
 	/**
@@ -120,7 +127,7 @@ public class ClassInspector extends InterfaceInspector {
 		result.forEach(pi -> {
 			String piName = pi.getName();
 			String objName = "I" + this.getObjectToInspect().getSimpleName();
-			String adId = (piName.equals(objName))?"":"_"+this.getObjectToInspect().getSimpleName();
+			String adId = (objName.equals(piName))?"":"_"+this.getObjectToInspect().getSimpleName();
 			pi.setName(piName+adId);
 		});
 		return result;
@@ -146,7 +153,7 @@ public class ClassInspector extends InterfaceInspector {
 		result.forEach(ri -> {
 			String riName = ri.getName();
 			String objName = this.getObjectToInspect().getSimpleName();
-			String adId = (riName.equals("I" + objName))?"":"_"+this.getObjectToInspect().getSimpleName();
+			String adId = (("I" + objName).equals(riName))?"":"_"+this.getObjectToInspect().getSimpleName();
 			ri.setName(ri.getName()+adId);
 		});
 		return result;

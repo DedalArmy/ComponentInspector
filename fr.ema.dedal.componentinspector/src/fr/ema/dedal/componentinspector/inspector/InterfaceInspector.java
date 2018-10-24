@@ -11,6 +11,9 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
+import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.eclipse.m2m.internal.qvt.oml.emf.util.EmfUtil;
+
 import dedal.Configuration;
 import dedal.DedalDiagram;
 import dedal.Interface;
@@ -19,6 +22,7 @@ import dedal.Parameter;
 import dedal.Repository;
 import dedal.Signature;
 import dedal.impl.DedalFactoryImpl;
+import fr.ema.dedal.componentinspector.metrics.Metrics;
 
 /**
  * @author Alexandre Le Borgne
@@ -167,20 +171,23 @@ public class InterfaceInspector {
 	 */
 	public List<Interface> calculateInterfaces(Class<?> objectToInspect)
 	{
+//		Metrics.addNbClasses();
 		List<Interface> result = new ArrayList<>();
-		if(objectToInspect.getInterfaces().length > 0)
-		{
-			Class<?>[] interfaces = objectToInspect.getInterfaces();
-			for (Class<?> i : interfaces) {
-				Interface tempInt = this.getDedalInterface(i);
-				result.add(tempInt);
-			}
-		}
-		if(objectToInspect.isInterface())
-		{
-			result.add(this.getDedalInterface(objectToInspect));
-			return result;
-		}
+//		if(objectToInspect.getInterfaces().length > 0)
+//		{
+//			Class<?>[] interfaces = objectToInspect.getInterfaces();
+//			for (Class<?> i : interfaces) {
+//				Interface tempInt = this.getDedalInterface(i);
+////				Metrics.addNbInterfaces();
+//				result.add(tempInt);
+//			}
+//		}
+//		if(objectToInspect.isInterface())
+//		{
+//			result.add(this.getDedalInterface(objectToInspect));
+////			Metrics.addNbInterfaces();
+//			return result;
+//		}
 		Interface current = mapAsInterface(objectToInspect);
 		computeCandidateInterfaces(objectToInspect, current);
 		result.add(current);
@@ -199,7 +206,8 @@ public class InterfaceInspector {
 		methods.addAll(recursivelyGetMethods(objectToInspect));
 		if(!methods.isEmpty())
 		{
-			Interface derivedInterface = this.deriveInterface("I" + objectToInspect.getSimpleName(), "I" + objectToInspect.getSimpleName() + "_Type",methods);
+//			Interface derivedInterface = this.deriveInterface("I" + objectToInspect.getSimpleName(), "I" + objectToInspect.getSimpleName() + "_Type",methods);
+			Interface derivedInterface = this.deriveInterface(EcoreUtil.generateUUID().replaceAll("-", ""), "I" + objectToInspect.getSimpleName(),methods);
 			this.interfaceToClassMap.put(derivedInterface, objectToInspect);
 			return derivedInterface;
 		}
@@ -213,13 +221,25 @@ public class InterfaceInspector {
 	private void computeCandidateInterfaces(Class<?> objectToInspect, Interface derivedInterface) {
 		if(!(Object.class).equals(objectToInspect.getSuperclass()) && objectToInspect.getSuperclass()!=null)
 		{
-			this.candidateInterfaces.put(derivedInterface, this.calculateInterfaces(objectToInspect.getSuperclass()));
+//			List<Interface> calculateInterfaces = this.calculateInterfaces(objectToInspect.getSuperclass());
+			List<Interface> calculateInterfaces = new ArrayList<Interface>();
+			calculateInterfaces.add(this.mapAsInterface(objectToInspect.getSuperclass()));
+			if(this.candidateInterfaces.get(derivedInterface)!=null)
+				this.candidateInterfaces.get(derivedInterface).addAll(calculateInterfaces);
+			else
+				this.candidateInterfaces.put(derivedInterface, calculateInterfaces);
+			this.computeCandidateInterfaces(objectToInspect.getSuperclass(), calculateInterfaces.get(0));
 		}
 		if(objectToInspect.getInterfaces().length > 0)
 		{
 			Class<?>[] interfaces = objectToInspect.getInterfaces();
 			for (Class<?> i : interfaces) {
-				this.candidateInterfaces.put(derivedInterface, this.calculateInterfaces(i));
+				List<Interface> calculateInterfaces = this.calculateInterfaces(i);
+//				this.candidateInterfaces.put(derivedInterface, calculateInterfaces);
+				if(this.candidateInterfaces.get(derivedInterface)!=null)
+					this.candidateInterfaces.get(derivedInterface).addAll(calculateInterfaces);
+				else
+					this.candidateInterfaces.put(derivedInterface, calculateInterfaces);
 			}
 		}
 	}
@@ -261,6 +281,7 @@ public class InterfaceInspector {
 	 */
 	private Interface getDedalInterface(Class<?> inter)
 	{
+//		Metrics.addNbClasses();
 		Interface result = new DedalFactoryImpl().createInterface();
 		if(inter.getMethods().length > 0)
 		{

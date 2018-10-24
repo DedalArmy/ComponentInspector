@@ -9,4 +9,10 @@
   <semanticResources>http://www.xtext.org/spring/SpringConfigDsl</semanticResources>
   <semanticResources>http://www.dedal.fr/metamodel</semanticResources>
   <semanticResources>transforms/springToDedal.qvto</semanticResources>
+  <semanticResources>generated/3pillarlabs.socialauth-master.dedal</semanticResources>
+  <semanticResources>generated/3pillarlabs.socialauth-master.dedaladl</semanticResources>
+  <semanticResources>generated/ryantenney.metrics-spring.dedaladl</semanticResources>
+  <semanticResources>generated/ryantenney.metrics-spring.dedal</semanticResources>
+  <semanticResources>generated/genDedalDiag.dedal</semanticResources>
+  <semanticResources>generated/genDedalDiag.dedaladl</semanticResources>
 </viewpoint:DAnalysis>

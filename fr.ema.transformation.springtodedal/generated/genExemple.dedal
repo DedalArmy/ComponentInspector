@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="Generated Diagram">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="SpringModel - http://www.xtext.org/spring/SpringConfigDslConfiguration">
+    <configComponents name="&quot;org.springframework.web.servlet.view.ContentNegotiatingViewResolver&quot;" id="_Ol4mYTZcEeigWc_oamw2Xg"/>
+    <configComponents name="&quot;org.brickred.socialauth.SocialAuthConfig&quot;" id="_Ol9e4DZcEeigWc_oamw2Xg"/>
+    <configComponents name="&quot;org.brickred.socialauth.spring.bean.SpringSocialAuthManager&quot;" id="_Ol_UEDZcEeigWc_oamw2Xg"/>
+    <configComponents name="&quot;org.brickred.socialauth.spring.bean.SocialAuthTemplate&quot;" id="_OmBJQDZcEeigWc_oamw2Xg"/>
+    <configComponents name="&quot;org.brickred.socialauth.spring.controller.SocialAuthWebController&quot;" id="_OmC-cDZcEeigWc_oamw2Xg"/>
+    <configComponents name="&quot;org.springframework.web.servlet.view.UrlBasedViewResolver&quot;" id="_Otu60DZcEeigWc_oamw2Xg"/>
+    <configConnections refID="_OtwI8DZcEeigWc_oamw2Xg" property="&quot;viewResolvers&quot;" clientClassElem="_Ol4mYTZcEeigWc_oamw2Xg" serverClassElem="_Otu60DZcEeigWc_oamw2Xg"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="SpringModel - http://www.xtext.org/spring/SpringConfigDslAssembly">
+    <assmComponents name="&quot;viewResolver&quot;" id="_O1ZCADZcEeigWc_oamw2Xg" instantiates="_Ol4mYTZcEeigWc_oamw2Xg"/>
+    <assmComponents name="&quot;socialAuthConfig&quot;" id="_PPtmgDZcEeigWc_oamw2Xg" instantiates="_Ol9e4DZcEeigWc_oamw2Xg"/>
+    <assmComponents name="&quot;socialAuthManager&quot;" id="_Pfl1kDZcEeigWc_oamw2Xg" instantiates="_Ol_UEDZcEeigWc_oamw2Xg"/>
+    <assmComponents name="&quot;socialAuthTemplate&quot;" id="_PuZtoDZcEeigWc_oamw2Xg" instantiates="_OmBJQDZcEeigWc_oamw2Xg"/>
+    <assmComponents name="&quot;socialAuthWebController&quot;" id="_P-c70DZcEeigWc_oamw2Xg" instantiates="_OmC-cDZcEeigWc_oamw2Xg"/>
+    <assmComponents name="&quot;org.springframework.web.servlet.view.UrlBasedViewResolver&quot;1" id="_QSqRQDZcEeigWc_oamw2Xg" instantiates="_Otu60DZcEeigWc_oamw2Xg"/>
+    <assemblyConnections refID="_bCuhkDZcEeigWc_oamw2Xg" property="viewResolver.viewResolvers" clientInstElem="_O1ZCADZcEeigWc_oamw2Xg" serverInstElem="_QSqRQDZcEeigWc_oamw2Xg"/>
+  </architectureDescriptions>
+</dedal:DedalDiagram>

@@ -3,6 +3,7 @@
  */
 package fr.ema.dedal.componentinspector.classloader;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.nio.file.Files;
@@ -28,17 +29,7 @@ public class FolderLoader {
 	public static final List<URI> loadFolder(Path path) throws IOException {
 		List<URI> uris = new ArrayList<>();
 		Stream<Path> stream = Files.list(path);
-		stream.forEach(p -> {
-			uris.add(p.toUri());
-//			try {
-//				Stream<Path> stream2 = Files.list(p.toAbsolutePath());
-//				stream2.forEach(p2 -> {
-//					uris.add(p2.toUri());
-//				});
-//			} catch (IOException e) {
-//				logger.error(e.getMessage(), e);
-//			}
-		});
+		stream.forEach(p -> uris.add(p.toUri()));
 		stream.close();
 		return uris;
 	}
