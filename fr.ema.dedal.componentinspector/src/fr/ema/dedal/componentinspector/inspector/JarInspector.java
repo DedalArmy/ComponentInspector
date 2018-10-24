@@ -1,7 +1,5 @@
 package fr.ema.dedal.componentinspector.inspector;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.lang.reflect.Field;
 import java.net.URI;
 import java.util.ArrayList;
@@ -34,29 +32,67 @@ import fr.ema.dedal.componentinspector.classloader.JarLoader;
 import fr.ema.dedal.componentinspector.metrics.Metrics;
 
 /**
+ * This class is designed for inspecting jar/war files and generate the Dedal diagram
  * @author Alexandre Le Borgne
- *
  */
 public class JarInspector {
 
-	private static final String CLASSES = "classes";
-	static final Logger logger = Logger.getLogger(JarInspector.class);
-	JarLoader jarLoader = null;
-	Map<URI, List<Class<?>>> jarMapping = null;
-	Map<CompRole, Class<?>> roleToClass = null;
-	Map<CompClass, Class<?>> compToClass = null;
-	Map<Interface, Class<?>> intToClass = null;
-	Map<Interface, List<Interface>> candidateInterfaces = null;
-	Map<CompClass, List<CompRole>> typeHierarchy = null;
-	Map<CompClass, Map<Interface, Class<?>>> compIntToType = null;
-	Map<CompRole, Map<Interface, Class<?>>> roleIntToType = null;
-	DedalFactory factory;
 	/**
-	 * @param jarLoader 
-	 * @param string
-	 * @throws IOException 
-	 * @throws ClassNotFoundException 
-	 * @throws FileNotFoundException 
+	 * static name of classes field in {@link ClassLoader}
+	 */
+	private static final String CLASSES = "classes";
+	/**
+	 * Logger
+	 */
+	static final Logger logger = Logger.getLogger(JarInspector.class);
+	/**
+	 * {@link JarLoader}
+	 */
+	JarLoader jarLoader = null;
+	/**
+	 * Map jar/war to their respective <code>List<Class?></code>
+	 */
+	Map<URI, List<Class<?>>> jarMapping = null;
+	/**
+	 * Map Dedal component roles to their respective Java {@link Class}
+	 */
+	Map<CompRole, Class<?>> roleToClass = null;
+	/**
+	 * Map Dedal component classes to their respective Java {@link Class}
+	 */
+	Map<CompClass, Class<?>> compToClass = null;
+	/**
+	 * Map Dedal interfaces to their respective Java {@link Class}
+	 */
+	Map<Interface, Class<?>> intToClass = null;
+	/**
+	 * Map Dedal interfaces to the list of their respective candidate interfaces
+	 */
+	Map<Interface, List<Interface>> candidateInterfaces = null;
+	/**
+	 * The type hierarchy of a Dedal component class
+	 */
+	Map<CompClass, List<CompRole>> typeHierarchy = null;
+	/**
+	 * Map Dedal component classes to a Map of their interfaces to corresponding Java classes
+	 */
+	Map<CompClass, Map<Interface, Class<?>>> compIntToType = null;
+	/**
+	 * Map Dedal component roles to a Map of their interfaces to corresponding Java classes
+	 */
+	Map<CompRole, Map<Interface, Class<?>>> roleIntToType = null;
+	/**
+	 * The {@link DedalFactory} object for generating the model artifacts
+	 */
+	DedalFactory factory;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////// Constructor, init, accessors	//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	/**
+	 * Constructor
+	 * @param jarLoader The JarLoader object that has loaded the jar/war files
 	 */
 	public JarInspector(JarLoader jarLoader) {
 		super();
@@ -70,7 +106,9 @@ public class JarInspector {
 		this.candidateInterfaces = new HashMap<>();
 		factory = DedalFactoryImpl.init();
 	}
-	
+	/**
+	 * Initialization
+	 */
 	private void init()
 	{
 		this.compToClass = new HashMap<>();
@@ -83,37 +121,45 @@ public class JarInspector {
 	}
 
 	/**
-	 * @return the _JarLoader
+	 * Get the {@link JarLoader}
+	 * @return {@link #jarLoader}
 	 */
 	public JarLoader getJarLoader() {
 		return jarLoader;
 	}
 
 	/**
-	 * @param jarLoader the _JarLoader to set
+	 * Set the {@link JarLoader} instance
+	 * @param jarLoader the {@link #jarLoader} to set
 	 */
 	public void setJarLoader(JarLoader jarLoader) {
 		this.jarLoader = jarLoader;
 	}
 
 	/**
-	 * @return the _JarMapping
+	 * Get the {@link #jarMapping}
+	 * @return #jarMapping
 	 */
 	public Map<URI, List<Class<?>>> getJarMapping() {
 		return jarMapping;
 	}
 
 	/**
-	 * @param jarMapping the _JarMapping to set
+	 * Set the {@link #jarMapping}
+	 * @param jarMapping the {@link #jarMapping} to set
 	 */
 	public void setJarMapping(Map<URI, List<Class<?>>> jarMapping) {
 		this.jarMapping = jarMapping;
 	}
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////Constructor, init, accessors	//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
 	/**
-	 * 
-	 * @param dd
-	 * @param xmlSpringFiles
+	 * Generates a Dedal diagram
+	 * @param dd The Dedal diagram to generate
+	 * @param xmlSpringFiles The list of Spring XML files
 	 */
 	public void generate(DedalDiagram dedalDiagram, List<URI> xmlSpringFiles) {
 		Repository repo = new DedalFactoryImpl().createRepository();
@@ -146,6 +192,7 @@ public class JarInspector {
 	}
 
 	/**
+	 * 
 	 * @param dedalDiagram
 	 * @param repo
 	 * @param spec
