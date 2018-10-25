@@ -1,5 +1,6 @@
 Manifest-Version: 1.0
 Premain-Class: fr.ema.dedal.componentinspector.main.InstrumentHook
+Automatic-Module-Name: ArchitectureReconstructor
 Bundle-ManifestVersion: 2
 Bundle-Name: Componentinspector
 Bundle-SymbolicName: fr.ema.dedal.componentinspector
@@ -14,3 +15,4 @@ Require-Bundle: fr.ema.dedal.metamodel;bundle-version="0.1.0";visibility:=reexpo
  org.eclipse.core.runtime;bundle-version="3.13.0",
  org.eclipse.m2m.qvt.oml,
  org.apache.log4j;bundle-version="1.2.15"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

@@ -1,5 +1,9 @@
 package fr.ema.dedal.componentinspector.inspector;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.Collections;
 import java.util.List;
 
@@ -8,6 +12,7 @@ import org.eclipse.core.runtime.IStatus;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -36,6 +41,7 @@ public class SdslInspector {
 	 * URI to the Spring to Dedal transformation file
 	 */
 	static final String TRANSFORMATION_URI = "fr.ema.dedal.componentinspector/transforms/springToDedal.qvto";
+	static final String TRANSFORMATION_JAR_URI = "fr/ema/dedal/componentinspector/transforms/springToDedal.qvto";
 	/**
 	 * Logger
 	 */
@@ -50,10 +56,24 @@ public class SdslInspector {
 	 * Extract artifacts from the parsing of Spring files and then transform them into the Dedal language
 	 * @param sdslPath is the String representing the Path to the Spring XML file
 	 * @return The List<EObject> containing Dedal features if the extraction finished normally, and an <b>empty</b> List<EObject> otherwise
+	 * @throws URISyntaxException 
 	 */
-	public static List<EObject> extractDedalArtifacts(String sdslPath) {
-		TransformationExecutor executor = new TransformationExecutor(
-				org.eclipse.emf.common.util.URI.createPlatformPluginURI(TRANSFORMATION_URI, false));
+	public static List<EObject> extractDedalArtifacts(String sdslPath) throws URISyntaxException {
+		TransformationExecutor executor;
+//		try {
+//			executor = new TransformationExecutor(
+//				org.eclipse.emf.common.util.URI.createPlatformPluginURI(TRANSFORMATION_URI, false));
+//		} catch (Exception e) {
+			ClassLoader cl = SdslInspector.class.getClassLoader();
+			URL resource = cl.getResource("springToDedal.qvto");
+			System.out.println("RESOURCE : " + resource);
+			java.net.URI uri = resource.toURI();
+			System.out.println("URI : " + uri);
+			String path = uri.getRawPath();
+			System.out.println("PATH : " + path);
+			executor = new TransformationExecutor(URI.createFileURI(path));
+//		}
+		
 		Injector injector = new SpringConfigDslStandaloneSetup().createInjectorAndDoEMFRegistration();
 		ResourceSet resourceSet = injector.getInstance(XtextResourceSet.class);
 		Resource inResource;

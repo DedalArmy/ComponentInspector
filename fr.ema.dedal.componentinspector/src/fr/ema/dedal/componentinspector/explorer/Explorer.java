@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -50,8 +51,8 @@ public class Explorer {
 			inspectJarFromSinglePath(singlePath, sdslPath, result);
 			return result;
 		} 
-		catch (IOException e) {
-			logger.error(e.getMessage(), e);
+		catch (IOException | URISyntaxException e) {
+			logger.error(e.getMessage() + e.getCause(), e);
 			return null;
 		}
 	}
@@ -65,17 +66,16 @@ public class Explorer {
 		 * 
 		 * Library
 		 * |
-		 * |----Owners
-		 * |	|
-		 * |	|----Repositories
+		 * |----Repositories
 		 */
 		try {
 			List<URI> repos = new ArrayList<>();
-			for(URI o : FolderLoader.loadFolder(Paths.get(libPath)))
-			{
-				if(new File(o).isDirectory())
-					repos.addAll(FolderLoader.loadFolder(Paths.get(o)));
-			}
+//			for(URI o : FolderLoader.loadFolder(Paths.get(libPath)))
+//			{
+//				if(new File(o).isDirectory())
+//					repos.addAll(FolderLoader.loadFolder(Paths.get(o)));
+//			}
+			repos.addAll(FolderLoader.loadFolder(Paths.get(libPath)));
 			if(logger.isInfoEnabled())
 			{
 				repos.forEach(r -> logger.info(r.toString()));
@@ -170,9 +170,10 @@ public class Explorer {
 	 * @param sdslPath
 	 * @param result
 	 * @throws MalformedURLException
+	 * @throws URISyntaxException 
 	 */
 	private static void inspectJarFromSinglePath(String singlePath, String sdslPath, DedalDiagram result)
-			throws MalformedURLException {
+			throws MalformedURLException, URISyntaxException {
 		URL[] urlToLoad=new URL[]{Paths.get(singlePath).toUri().toURL()};
 		JarLoader jarloader = new JarLoader(new URL[]{}, urlToLoad);
 

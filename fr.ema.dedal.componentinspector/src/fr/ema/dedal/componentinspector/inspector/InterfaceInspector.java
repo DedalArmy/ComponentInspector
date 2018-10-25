@@ -12,8 +12,6 @@ import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.eclipse.m2m.internal.qvt.oml.emf.util.EmfUtil;
-
 import dedal.Configuration;
 import dedal.DedalDiagram;
 import dedal.Interface;
@@ -22,7 +20,6 @@ import dedal.Parameter;
 import dedal.Repository;
 import dedal.Signature;
 import dedal.impl.DedalFactoryImpl;
-import fr.ema.dedal.componentinspector.metrics.Metrics;
 
 /**
  * @author Alexandre Le Borgne
@@ -279,21 +276,21 @@ public class InterfaceInspector {
 	 * @param inter
 	 * @return
 	 */
-	private Interface getDedalInterface(Class<?> inter)
-	{
-//		Metrics.addNbClasses();
-		Interface result = new DedalFactoryImpl().createInterface();
-		if(inter.getMethods().length > 0)
-		{
-			List<Method> tempMethods = new ArrayList<>();
-			for (Method method : inter.getMethods()) {
-				tempMethods.add(method);
-			}
-			result = deriveInterface("I" + inter.getSimpleName(), inter.getSimpleName(),tempMethods);
-			this.interfaceToClassMap.put(result, inter);
-		}
-		return result;
-	}
+//	private Interface getDedalInterface(Class<?> inter)
+//	{
+////		Metrics.addNbClasses();
+//		Interface result = new DedalFactoryImpl().createInterface();
+//		if(inter.getMethods().length > 0)
+//		{
+//			List<Method> tempMethods = new ArrayList<>();
+//			for (Method method : inter.getMethods()) {
+//				tempMethods.add(method);
+//			}
+//			result = deriveInterface("I" + inter.getSimpleName(), inter.getSimpleName(),tempMethods);
+//			this.interfaceToClassMap.put(result, inter);
+//		}
+//		return result;
+//	}
 
 	/**
 	 * 

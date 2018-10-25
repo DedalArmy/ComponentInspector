@@ -44,7 +44,7 @@ public class Main {
 
 	static final Logger logger = Logger.getLogger(Main.class);
 
-	private static final String DEFAULT_LIB = "I:\\MiniSandBox";
+	private static final String DEFAULT_LIB = "./Sandbox";
 	private static final String LIB = "-lib";
 	private static final String PATH = "-path";
 	private static final String SDSL = "-sdsl";
@@ -66,7 +66,7 @@ public class Main {
 		String libPath = "";
 		String singlePath = "";
 		String sdslPath = "";
-		String projectPath = "";
+		String projectPath = ".";
 		
 		
 		laucnhReconstruction(args, libPath, singlePath, sdslPath, projectPath);
@@ -209,11 +209,11 @@ public class Main {
 		});
 		dedalDiagram.getArchitectureDescriptions().removeAll(toRemoveFromDiagram);
 		
-		URI uri = URI.createURI("file:///"  + projectPath + "/generated/"+ dedalDiagram.getName() +".dedaladl");
+		URI uri = URI.createURI(/*"file:///"  + */projectPath + "/generated/"+ dedalDiagram.getName() +".dedaladl");
 		Resource resource = resourceSet.createResource(uri);
 		
 
-		URI uri2 = URI.createURI("file:///" + projectPath + "/generated/"+ dedalDiagram.getName() +".dedal");
+		URI uri2 = URI.createURI(/*"file:///" + */projectPath + "/generated/"+ dedalDiagram.getName() +".dedal");
 		Resource resource2 = new XMIResourceImpl(uri2);
 
 		// Get the first model element and cast it to the right type, in my
