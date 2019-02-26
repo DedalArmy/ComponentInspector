@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:springConfigDsl="http://www.xtext.org/spring/SpringConfigDsl" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis xmi:id="_GtsfgLfTEeef6_HWaojyxQ" selectedViews="_nJsgsLfnEeeHAfXMJ3csrg" version="12.1.0.201708031200">
+  <viewpoint:DAnalysis xmi:id="_GtsfgLfTEeef6_HWaojyxQ" selectedViews="_nJsgsLfnEeeHAfXMJ3csrg" version="13.0.0.201804031646">
     <semanticResources>Exemple.sdsl</semanticResources>
     <semanticResources>example2.sdsl</semanticResources>
     <semanticResources>HAS.sdsl</semanticResources>
     <semanticResources>exemple3.sdsl</semanticResources>
+    <semanticResources>applicationContext.sdsl</semanticResources>
+    <semanticResources>mybatis-servlet.sdsl</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_nJsgsLfnEeeHAfXMJ3csrg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/spring.design/description/spring.odesign#//@ownedViewpoints[name='SpringProject']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_VcpWIMPaEeewX5yqj2W3Hg" name="example2" repPath="#_N6YM0DbAEeiC-MWSILStTA">

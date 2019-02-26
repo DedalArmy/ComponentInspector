@@ -1,7 +1,5 @@
 package fr.ema.dedal.componentinspector.inspector;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.Collections;
@@ -60,64 +58,64 @@ public class SdslInspector {
 	 */
 	public static List<EObject> extractDedalArtifacts(String sdslPath) throws URISyntaxException {
 		TransformationExecutor executor;
-//		try {
-//			executor = new TransformationExecutor(
-//				org.eclipse.emf.common.util.URI.createPlatformPluginURI(TRANSFORMATION_URI, false));
-//		} catch (Exception e) {
-			ClassLoader cl = SdslInspector.class.getClassLoader();
-			URL resource = cl.getResource("springToDedal.qvto");
-			System.out.println("RESOURCE : " + resource);
-			java.net.URI uri = resource.toURI();
-			System.out.println("URI : " + uri);
-			String path = uri.getRawPath();
-			System.out.println("PATH : " + path);
-			executor = new TransformationExecutor(URI.createFileURI(path));
-//		}
-		
+		//		try {
+		//			executor = new TransformationExecutor(
+		//				org.eclipse.emf.common.util.URI.createPlatformPluginURI(TRANSFORMATION_URI, false));
+		//		} catch (Exception e) {
+		ClassLoader cl = SdslInspector.class.getClassLoader();
+		URL resource = cl.getResource("springToDedal.qvto");
+		System.out.println("RESOURCE : " + resource);
+		java.net.URI uri = resource.toURI();
+		System.out.println("URI : " + uri);
+		String path = uri.getRawPath();
+		System.out.println("PATH : " + path);
+		executor = new TransformationExecutor(URI.createFileURI(path));
+		//		}
+
 		Injector injector = new SpringConfigDslStandaloneSetup().createInjectorAndDoEMFRegistration();
 		ResourceSet resourceSet = injector.getInstance(XtextResourceSet.class);
 		Resource inResource;
-					inResource = resourceSet.getResource(org.eclipse.emf.common.util.URI.createFileURI(sdslPath),true);
-					EList<EObject> inObjects = inResource.getContents();
-		
-					/**
-					 * create the input extent with its initial contents
-					 */
-					ModelExtent input = new BasicModelExtent(inObjects);		
-					/**
-					 * create an empty extent to catch the output
-					 */
-					ModelExtent output = new BasicModelExtent();
-		
-					EPackage.Registry.INSTANCE.put(DedalPackage.eNS_URI,
-							DedalPackage.eINSTANCE);
-		
-					/**
-					 * setup the execution environment details -> 
-					 * configuration properties, logger, monitor object etc.
-					 */
-					ExecutionContextImpl context = new ExecutionContextImpl();
-					context.setConfigProperty("keepModeling", true);
-		
-					/**
-					 * run the transformation assigned to the executor with the given 
-					 * input and output and execution context
-					 */
-					ExecutionDiagnostic executorResult = executor.execute(context, input, output);
-					
-					/**
-					 * check the result for success
-					 */
-					if(executorResult.getSeverity() == Diagnostic.OK) {
-						return output.getContents();
-					} else {
-						/**
-						 * turn the result diagnostic into status and send it to error log			
-						 */
-						IStatus status = BasicDiagnostic.toIStatus(executorResult);
-						logger.error(status.getMessage());
-						return Collections.emptyList();
-					}
+		inResource = resourceSet.getResource(org.eclipse.emf.common.util.URI.createFileURI(sdslPath),true);
+		EList<EObject> inObjects = inResource.getContents();
+
+		/**
+		 * create the input extent with its initial contents
+		 */
+		ModelExtent input = new BasicModelExtent(inObjects);		
+		/**
+		 * create an empty extent to catch the output
+		 */
+		ModelExtent output = new BasicModelExtent();
+
+		EPackage.Registry.INSTANCE.put(DedalPackage.eNS_URI,
+				DedalPackage.eINSTANCE);
+
+		/**
+		 * setup the execution environment details -> 
+		 * configuration properties, logger, monitor object etc.
+		 */
+		ExecutionContextImpl context = new ExecutionContextImpl();
+		context.setConfigProperty("keepModeling", true);
+
+		/**
+		 * run the transformation assigned to the executor with the given 
+		 * input and output and execution context
+		 */
+		ExecutionDiagnostic executorResult = executor.execute(context, input, output);
+
+		/**
+		 * check the result for success
+		 */
+		if(executorResult.getSeverity() == Diagnostic.OK) {
+			return output.getContents();
+		} else {
+			/**
+			 * turn the result diagnostic into status and send it to error log			
+			 */
+			IStatus status = BasicDiagnostic.toIStatus(executorResult);
+			logger.error(status.getMessage());
+			return Collections.emptyList();
+		}
 	}
 
 }
