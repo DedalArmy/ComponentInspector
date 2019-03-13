@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dedal:DedalDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dedal="http://www.dedal.fr/metamodel" name="Generated Diagram">
+  <architectureDescriptions xsi:type="dedal:Configuration" name="SpringModel - http://www.xtext.org/spring/SpringConfigDslConfiguration">
+    <configComponents name="&quot;fr.ema.examples.has.config.AdjustableLamp&quot;" id="_oiKDUDtkEemq-qTqxHOjlA"/>
+    <configComponents name="&quot;fr.ema.examples.has.config.Clock&quot;" id="_oiLRcDtkEemq-qTqxHOjlA"/>
+    <configComponents name="&quot;fr.ema.examples.has.config.Orchestrator&quot;" id="_oiL4gDtkEemq-qTqxHOjlA"/>
+    <configConnections refID="_oiOUwDtkEemq-qTqxHOjlA" property="&quot;lights&quot;" clientClassElem="_oiL4gDtkEemq-qTqxHOjlA" serverClassElem="_oiKDUDtkEemq-qTqxHOjlA"/>
+    <configConnections refID="_oiPi4DtkEemq-qTqxHOjlA" property="&quot;clock&quot;" clientClassElem="_oiL4gDtkEemq-qTqxHOjlA" serverClassElem="_oiLRcDtkEemq-qTqxHOjlA"/>
+  </architectureDescriptions>
+  <architectureDescriptions xsi:type="dedal:Assembly" name="SpringModel - http://www.xtext.org/spring/SpringConfigDslAssembly">
+    <assmComponents name="&quot;lampDesk&quot;" id="_oiRYEDtkEemq-qTqxHOjlA" instantiates="_oiKDUDtkEemq-qTqxHOjlA"/>
+    <assmComponents name="&quot;lampSitting&quot;" id="_oiSmMDtkEemq-qTqxHOjlA" instantiates="_oiKDUDtkEemq-qTqxHOjlA"/>
+    <assmComponents name="&quot;clock1&quot;" id="_oiTNQDtkEemq-qTqxHOjlA" instantiates="_oiLRcDtkEemq-qTqxHOjlA"/>
+    <assmComponents name="&quot;orchestrator1&quot;" id="_oiTNQTtkEemq-qTqxHOjlA" instantiates="_oiL4gDtkEemq-qTqxHOjlA"/>
+    <assemblyConnections refID="_oiUbYDtkEemq-qTqxHOjlA" property="orchestrator1.lights" clientInstElem="_oiTNQTtkEemq-qTqxHOjlA" serverInstElem="_oiRYEDtkEemq-qTqxHOjlA"/>
+    <assemblyConnections refID="_oiVpgDtkEemq-qTqxHOjlA" property="orchestrator1.lights" clientInstElem="_oiTNQTtkEemq-qTqxHOjlA" serverInstElem="_oiSmMDtkEemq-qTqxHOjlA"/>
+    <assemblyConnections refID="_oiVpgTtkEemq-qTqxHOjlA" property="orchestrator1.clock" clientInstElem="_oiTNQTtkEemq-qTqxHOjlA" serverInstElem="_oiTNQDtkEemq-qTqxHOjlA"/>
+  </architectureDescriptions>
+</dedal:DedalDiagram>
